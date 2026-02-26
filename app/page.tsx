@@ -82,7 +82,7 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    import("../../lib/fetchCoins").then(({ fetchCoinsList }) =>
+    import("../lib/fetchCoins").then(({ fetchCoinsList }) =>
       fetchCoinsList()
         .then((data) => setAllCoins(data.coins ?? []))
         .catch(() => setAllCoins([]))
