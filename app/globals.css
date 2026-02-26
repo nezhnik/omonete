@@ -1,26 +1,138 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Блок монет на главной: брейкпоинты по разрешению (--hero-center = размер центральной монеты) */
+.hero-coins-wrap {
+  --hero-center: calc(280px + (100vw - 1024px) * 40 / 256); /* 1024→280, 1280→320 */
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@media (min-width: 1280px) {
+  .hero-coins-wrap {
+    --hero-center: calc(320px + (100vw - 1280px) * 40 / 160); /* 1280→320, 1440→360 */
+  }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 1440px) {
+  .hero-coins-wrap {
+    --hero-center: calc(360px + (100vw - 1440px) * 64 / 240); /* 1440→360, 1680→424 */
+  }
+}
+@media (min-width: 1680px) {
+  .hero-coins-wrap {
+    --hero-center: calc(424px + (100vw - 1680px) * 72 / 240); /* 1680→424, 1920→496 */
+  }
+}
+@media (min-width: 1920px) {
+  .hero-coins-wrap {
+    --hero-center: calc(496px + (100vw - 1920px) * 144 / 620); /* 1920→496, 2540→640 */
+  }
+}
+@media (min-width: 2540px) {
+  .hero-coins-wrap {
+    --hero-center: 640px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Большой заголовок под блоком монет: брейкпоинты по разрешению */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: calc(36px + (100vw - 1024px) * 4 / 256); /* 1024→36, 1280→40 */
+  }
+}
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: calc(40px + (100vw - 1280px) * 4 / 160); /* 1280→40, 1440→44 */
+  }
+}
+@media (min-width: 1440px) {
+  .hero-title {
+    font-size: calc(44px + (100vw - 1440px) * 4 / 240); /* 1440→44, 1680→48 */
+  }
+}
+@media (min-width: 1680px) {
+  .hero-title {
+    font-size: calc(48px + (100vw - 1680px) * 8 / 240); /* 1680→48, 1920→56 */
+  }
+}
+@media (min-width: 1920px) {
+  .hero-title {
+    font-size: calc(56px + (100vw - 1920px) * 8 / 620); /* 1920→56, 2540→64 */
+  }
+}
+@media (min-width: 2540px) {
+  .hero-title {
+    font-size: 72px;
+  }
+}
+
+/* Подзаголовок под блоком монет: брейкпоинты по разрешению */
+@media (min-width: 1024px) {
+  .hero-subtitle {
+    font-size: 20px; /* 1024–1280: 20 */
+  }
+}
+@media (min-width: 1280px) {
+  .hero-subtitle {
+    font-size: calc(20px + (100vw - 1280px) * 2 / 160); /* 1280→20, 1440→22 */
+  }
+}
+@media (min-width: 1440px) {
+  .hero-subtitle {
+    font-size: 22px; /* 1440–1680: 22 */
+  }
+}
+@media (min-width: 1680px) {
+  .hero-subtitle {
+    font-size: calc(22px + (100vw - 1680px) * 2 / 240); /* 1680→22, 1920→24 */
+  }
+}
+@media (min-width: 1920px) {
+  .hero-subtitle {
+    font-size: 24px; /* 1920–2540 и выше: 24 */
+  }
+}
+
+@keyframes skeleton-pulse-opacity {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.skeleton-pulse-opacity {
+  animation: skeleton-pulse-opacity 1.5s ease-in-out infinite;
+}
+
+/* Отключение width у .w-4: отключает фиксированную ширину (calc(var(--spacing) * 4)).
+   Включение этого правила вызывало ошибку центрирования стрелок в слайдере деталей монеты;
+   отключение решает проблему позиционирования. Правило не удаляем, только переопределяем. */
+.w-4 {
+  /* width: calc(var(--spacing) * 4); — закомментировано из-за центрирования стрелок */
+  width: unset;
+}
+
+/* Появление карточек каталога после скелетонов: снизу вверх с задержкой по индексу */
+@keyframes catalog-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимация галочки «добавлено в коллекцию»: лёгкий масштаб и появление */
+@keyframes collection-added {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-collection-added {
+  animation: collection-added 0.45s ease-out forwards;
 }

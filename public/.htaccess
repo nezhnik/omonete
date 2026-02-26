@@ -1,0 +1,16 @@
+# Редирект без завершающего слеша на URL со слешем (catalog/, portfolio/, login/, coins/...),
+# чтобы статика из подпапок (index.html) отдавалась и при запросе /catalog, /coins/sibir-silver и т.д.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(catalog|portfolio|login)$ $1/ [R=301,L]
+RewriteRule ^coins/([^/]+)$ coins/$1/ [R=301,L]
+</IfModule>
+
+# Защита изображений: запрет горячих ссылок (картинки только с нашего сайта или при прямом запросе)
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?omonete\.ru [NC]
+RewriteRule ^image/ - [F,L]
+</IfModule>
