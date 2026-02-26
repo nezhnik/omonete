@@ -6,6 +6,7 @@
     "dev": "next dev",
     "dev:lan": "next dev -H 0.0.0.0",
     "build": "npm run data:rectangular && npm run mints:webp && npm run data:export && next build",
+    "build:vercel": "next build",
     "mints:webp": "node scripts/convert-mints-to-webp.js",
     "data:rectangular": "node scripts/export-rectangular-from-xlsx.js",
     "data:export": "node scripts/export-coins-to-json.js",
