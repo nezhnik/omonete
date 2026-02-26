@@ -156,10 +156,18 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
       return;
     }
     setLoading(true);
-    fetch(`/api/metal-prices?period=${period}`)
-      .then((r) => r.json() as Promise<ApiResponse>)
-      .then((res) => {
-        if (res.ok && res[metal.apiSymbol!]) {
+    const url = `/api/metal-prices?period=${period}`;
+    fetch(url)
+      .then(async (r) => {
+        let res: ApiResponse;
+        try {
+          res = (await r.json()) as ApiResponse;
+        } catch {
+          setApiData(null);
+          setDataSource(null);
+          return;
+        }
+        if (res?.ok && res[metal.apiSymbol!]) {
           setApiData(res[metal.apiSymbol!]!);
           setDataSource(res.source ?? null);
         } else {

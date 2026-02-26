@@ -329,10 +329,8 @@ export default function PortfolioPage() {
       }
       const ids = Array.from(collectionIds);
       setLoading(true);
-      Promise.allSettled(
-        ids.map((id) =>
-          fetch(`/data/coins/${id}.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(id))))
-        )
+      import("../../lib/fetchCoins").then(({ fetchCoinById }) =>
+        Promise.allSettled(ids.map((id) => fetchCoinById(id)))
       ).then((results) => {
         const rows: PortfolioRow[] = [];
         results.forEach((res) => {
@@ -349,10 +347,8 @@ export default function PortfolioPage() {
     // Гость: демо-портфолио
     const ids = RUSSIAN_FEATURED_IDS;
     setLoading(true);
-    Promise.allSettled(
-      ids.map((id) =>
-        fetch(`/data/coins/${id}.json`).then((r) => (r.ok ? r.json() : Promise.reject(new Error(id))))
-      )
+    import("../../lib/fetchCoins").then(({ fetchCoinById }) =>
+      Promise.allSettled(ids.map((id) => fetchCoinById(id)))
     ).then((results) => {
       const rows: PortfolioRow[] = [];
       results.forEach((res) => {

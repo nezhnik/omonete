@@ -20,7 +20,10 @@
     "coins:check-mint": "node scripts/check-mint-issues.js",
     "coins:clean-mint": "node scripts/clean-mint-in-db.js",
     "coins:split-mint": "node scripts/split-mint-to-full-and-short.js",
-    "backup:coins": "node scripts/backup-coins-data.js"
+    "backup:coins": "node scripts/backup-coins-data.js",
+    "mints:export": "curl -s http://localhost:3000/api/mint-articles-export -o mint-articles.json",
+    "mints:export:standalone": "npx tsx scripts/export-mint-articles-standalone.ts",
+    "mints:import": "node scripts/import-mint-articles-to-db.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

@@ -82,10 +82,11 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
-    fetch("/data/coins.json")
-      .then((res) => res.json())
-      .then((data) => setAllCoins(data.coins ?? []))
-      .catch(() => setAllCoins([]));
+    import("../../lib/fetchCoins").then(({ fetchCoinsList }) =>
+      fetchCoinsList()
+        .then((data) => setAllCoins(data.coins ?? []))
+        .catch(() => setAllCoins([]))
+    );
   }, []);
 
   const ruCoins = allCoins.filter((c) => c.country === "Россия");

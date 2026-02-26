@@ -275,20 +275,21 @@ function CatalogPageContent() {
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
-    fetch("/data/coins.json")
-      .then((res) => res.json())
-      .then((data) => {
-        if (cancelled) return;
-        const list = data.coins ?? [];
-        setCoins(list);
-        setTotalCount(data.total ?? list.length);
-      })
-      .catch(() => {
-        if (!cancelled) setCoins([]);
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
-      });
+    import("../../lib/fetchCoins").then(({ fetchCoinsList }) =>
+      fetchCoinsList()
+        .then((data) => {
+          if (cancelled) return;
+          const list = data.coins ?? [];
+          setCoins(list);
+          setTotalCount(data.total ?? list.length);
+        })
+        .catch(() => {
+          if (!cancelled) setCoins([]);
+        })
+        .finally(() => {
+          if (!cancelled) setLoading(false);
+        })
+    );
     return () => {
       cancelled = true;
     };

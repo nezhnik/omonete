@@ -47,17 +47,17 @@ export function CoinPageClient({ id, initialData }: Props) {
     }
     setLoading(true);
     setError(false);
-    fetch(`/data/coins/${id}.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error();
-        return res.json();
-      })
-      .then((data) => {
-        setCoin(data.coin ?? null);
-        setSameSeries(data.sameSeries ?? []);
-      })
-      .catch(() => setError(true))
-      .finally(() => setLoading(false));
+    import("../../../lib/fetchCoins").then(({ fetchCoinById }) =>
+      fetchCoinById(id)
+        .then((data) => {
+          if (data) {
+            setCoin(data.coin ?? null);
+            setSameSeries((data.sameSeries as unknown[]) ?? []);
+          } else setError(true);
+        })
+        .catch(() => setError(true))
+        .finally(() => setLoading(false))
+    );
   }, [id, initialData]);
 
   if (loading) {

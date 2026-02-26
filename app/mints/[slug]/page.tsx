@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Header } from "../../../components/Header";
 import { MintArticle } from "../../../components/MintArticle";
-import { getMintArticle, getMintArticleSlugs, getOtherMints } from "../../../lib/mint-articles";
+import { fetchMintArticle } from "../../../lib/fetchMintArticle";
+import { getMintArticleSlugs, getOtherMints } from "../../../lib/mint-articles";
 
 export function generateStaticParams() {
   return getMintArticleSlugs().map((slug) => ({ slug }));
@@ -11,7 +12,7 @@ type Props = { params: Promise<{ slug: string }> };
 
 export default async function MintPage({ params }: Props) {
   const { slug } = await params;
-  const article = getMintArticle(slug);
+  const article = await fetchMintArticle(slug);
 
   if (!article) {
     return (
