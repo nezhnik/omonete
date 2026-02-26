@@ -1,0 +1,6 @@
+- http://localhost:3000/coins/2538/ — Александров
+- http://localhost:3000/coins/2537/ — Переславль-Залесский
+- http://localhost:3000/coins/3995/ — Юрьев-Польский
+- http://localhost:3000/coins/3994/ — Боголюбово
+- http://localhost:3000/coins/3403/ — Углич
+- http://localhost:3000/coins/3402/ — Ростов

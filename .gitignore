@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# резервная копия экспорта монет (можно убрать из .gitignore, если нужно закоммитить снимок)
+/backup-coins-data

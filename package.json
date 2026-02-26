@@ -4,11 +4,28 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "dev:lan": "next dev -H 0.0.0.0",
+    "build": "npm run data:rectangular && npm run mints:webp && npm run data:export && next build",
+    "mints:webp": "node scripts/convert-mints-to-webp.js",
+    "data:rectangular": "node scripts/export-rectangular-from-xlsx.js",
+    "data:export": "node scripts/export-coins-to-json.js",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "coins:sync": "node scripts/download-and-optimize-coins.js",
+    "coins:sync:all": "node scripts/download-and-optimize-coins.js --all",
+    "coins:dzi": "node scripts/download-dzi-coins.js",
+    "coins:dzi:all": "node scripts/download-dzi-coins.js --all",
+    "coins:fill-mint": "node scripts/fetch-cbr-characteristics.js --fill-mint-only --all",
+    "coins:fetch-rectangular": "node scripts/fetch-cbr-characteristics.js --rectangular-only",
+    "coins:check-mint": "node scripts/check-mint-issues.js",
+    "coins:clean-mint": "node scripts/clean-mint-in-db.js",
+    "coins:split-mint": "node scripts/split-mint-to-full-and-short.js",
+    "backup:coins": "node scripts/backup-coins-data.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.97.0",
+    "@tabler/icons-react": "^3.36.1",
+    "lottie-react": "^2.4.1",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -18,9 +35,13 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.3.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "mysql2": "^3.17.3",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "xlsx": "^0.18.5"
   }
 }

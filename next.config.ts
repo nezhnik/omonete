@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // trailingSlash оставляем для удобных URL (/catalog/, /portfolio/ и т.п.)
+  trailingSlash: true,
 };
 
 export default nextConfig;
