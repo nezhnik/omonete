@@ -122,7 +122,7 @@ const WEIGHT_LABELS = [
 
 function getWeightLabel(weightG: unknown, weightOz: unknown): string | null {
   const oz = weightOz && String(weightOz).trim();
-  if (oz && WEIGHT_OZ_TO_LABEL[oz]) return WEIGHT_OZ_TO_LABEL[oz];
+  if (typeof oz === "string" && oz in WEIGHT_OZ_TO_LABEL) return WEIGHT_OZ_TO_LABEL[oz as keyof typeof WEIGHT_OZ_TO_LABEL];
   const g = parseWeightG(weightG);
   if (g == null) return null;
   for (const { g: ref, label, tol = 0.2 } of WEIGHT_LABELS) {
@@ -246,9 +246,9 @@ function buildImageUrls(
     if (obverse) imageUrlsOut.push(obverse);
     if (reverse) imageUrlsOut.push(reverse);
   }
-  if (imageBox) imageUrlsOut.push(imageBox);
-  if (imageCertificate) imageUrlsOut.push(imageCertificate);
-  if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...imageUrls);
+  if (imageBox) imageUrlsOut.push(String(imageBox));
+  if (imageCertificate) imageUrlsOut.push(String(imageCertificate));
+  if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...(imageUrls as string[]));
   const imageUrl = firstImage || PLACEHOLDER;
   return { imageUrl, imageUrls: imageUrlsOut };
 }

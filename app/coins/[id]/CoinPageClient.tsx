@@ -51,8 +51,8 @@ export function CoinPageClient({ id, initialData }: Props) {
       fetchCoinById(id)
         .then((data) => {
           if (data) {
-            setCoin(data.coin ?? null);
-            setSameSeries((data.sameSeries as unknown[]) ?? []);
+            setCoin((data.coin ?? null) as CoinDetailData | null);
+            setSameSeries((data.sameSeries ?? []) as CoinSeriesItem[]);
           } else setError(true);
         })
         .catch(() => setError(true))

@@ -279,7 +279,7 @@ function CatalogPageContent() {
       fetchCoinsList()
         .then((data) => {
           if (cancelled) return;
-          const list = data.coins ?? [];
+          const list = (data.coins ?? []) as CatalogCoin[];
           setCoins(list);
           setTotalCount(data.total ?? list.length);
         })
