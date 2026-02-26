@@ -13,7 +13,7 @@ export async function GET() {
       const slugs = (rows as { slug: string }[]).map((r) => r.slug);
       await conn.end();
       if (slugs.length > 0) {
-        return NextResponse.json({ slugs });
+        return NextResponse.json({ slugs }, { headers: { "Cache-Control": "no-store, max-age=0" } });
       }
     } catch {
       await conn.end().catch(() => {});
@@ -22,5 +22,5 @@ export async function GET() {
     // DATABASE_URL не задан или БД недоступна
   }
   const slugs = getMintArticleSlugs();
-  return NextResponse.json({ slugs });
+  return NextResponse.json({ slugs }, { headers: { "Cache-Control": "no-store, max-age=0" } });
 }

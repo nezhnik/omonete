@@ -51,7 +51,7 @@ export async function GET(
       await conn.end();
       const arr = rows as Record<string, unknown>[];
       if (arr.length > 0) {
-        return NextResponse.json(rowToArticle(arr[0]));
+        return NextResponse.json(rowToArticle(arr[0]), { headers: { "Cache-Control": "no-store, max-age=0" } });
       }
     } catch {
       await conn.end().catch(() => {});
@@ -60,9 +60,10 @@ export async function GET(
     // БД недоступна — fallback на код
   }
 
+  const noStore = { "Cache-Control": "no-store, max-age=0" };
   const fromCode = getMintArticle(normalizedSlug);
   if (fromCode) {
-    return NextResponse.json(fromCode);
+    return NextResponse.json(fromCode, { headers: noStore });
   }
-  return NextResponse.json({ error: "not_found" }, { status: 404 });
+  return NextResponse.json({ error: "not_found" }, { status: 404, headers: noStore });
 }
