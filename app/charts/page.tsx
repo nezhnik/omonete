@@ -306,16 +306,11 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
     return () => cancelAnimationFrame(rafId);
   }, [pathCoords, showSkeleton, demoChart]);
 
-  // Драгметаллы (Au, Ag, Pt, Pd): как раньше — одна непрерывная линия, без разрывов
-  const allPathSimple =
-    animatedPathCoords.length > 0
-      ? `M ${animatedPathCoords.map((c) => `${c.x},${c.y}`).join(" L ")}`
-      : "";
-
-  // Только для меди: разрывать линию при нулевой цене (нет данных LME в этот день)
   const pathValues = useMemo(() => dataForChart.map((d) => d.value), [dataForChart]);
-  const allPathWithGapsCopper = useMemo(() => {
-    if (!isCopper || animatedPathCoords.length === 0) return "";
+
+  // Для всех металлов: разрывы в нулях (выходные/праздники ЦБ — не рисовать вертикальный обрыв до нуля)
+  const allPath = useMemo(() => {
+    if (animatedPathCoords.length === 0) return "";
     const parts: string[] = [];
     for (let i = 0; i < animatedPathCoords.length; i++) {
       const v = pathValues[i] ?? 0;
@@ -327,20 +322,21 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
       else parts.push(`L ${c.x},${c.y}`);
     }
     return parts.join(" ");
-  }, [isCopper, animatedPathCoords, pathValues]);
-
-  const allPath = isCopper ? allPathWithGapsCopper : allPathSimple;
+  }, [animatedPathCoords, pathValues]);
 
   // Четыре деления по оси Y: мин и макс за период, между ними два промежуточных (диапазон понятен)
   const yTicks = [min, min + range / 3, min + (2 * range) / 3, max];
 
   const startPrice = hasData ? (dataForChart[0]?.value ?? 0) : 0;
-  const startPriceForCopper = isCopper && hasData ? (dataForChart.find((d) => (d?.value ?? 0) > 0)?.value ?? 0) : startPrice;
+  const startPriceForDisplay =
+    hasData && startPrice <= 0
+      ? (dataForChart.find((d) => (d?.value ?? 0) > 0)?.value ?? 0)
+      : startPrice;
   const displayIndex = hasData ? (hoveredIndex ?? dataForChart.length - 1) : 0;
   const displayPoint = dataForChart[displayIndex];
-  // Для меди: если в выбранной точке цена 0 (нет данных LME), показываем последнюю ненулевую в периоде
+  // Если в выбранной точке цена 0 (выходной ЦБ и т.п.), показываем ближайшую ненулевую
   const displayPointForPrice =
-    isCopper && hasData && (displayPoint?.value ?? 0) <= 0
+    hasData && (displayPoint?.value ?? 0) <= 0
       ? (() => {
           for (let i = displayIndex; i >= 0; i--) {
             if ((dataForChart[i]?.value ?? 0) > 0) return dataForChart[i];
@@ -353,8 +349,8 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
       : displayPoint;
   const isHovering = hoveredIndex !== null;
 
-  // Рост/падение от начала периода до текущей (или наведённой) точки
-  const basePrice = isCopper ? startPriceForCopper : startPrice;
+  // Рост/падение от начала периода до текущей (или наведённой) точки; база — первая ненулевая при нуле в начале
+  const basePrice = startPriceForDisplay;
   const changeFromStart = (displayPointForPrice?.value ?? 0) - basePrice;
   const changePercentFromStart = basePrice !== 0 ? (changeFromStart / basePrice) * 100 : 0;
   const isPositiveFromStart = changeFromStart >= 0;
@@ -367,30 +363,22 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
         )
       : 0;
   const activePathSlice = animatedPathCoords.slice(0, displayIndexInPath + 1);
-  // Драгметаллы: одна непрерывная линия до точки наведения (как раньше)
-  const activePathDisplaySimple =
-    activePathSlice.length > 0
-      ? `M ${activePathSlice.map((c) => `${c.x},${c.y}`).join(" L ")}`
-      : "";
-  // Только для меди: разрывы при нуле при отрисовке активного отрезка
   const activeValuesSlice = pathValues.slice(0, displayIndexInPath + 1);
-  const activePathDisplayCopper =
-    isCopper && activePathSlice.length > 0
-      ? (() => {
-          const parts: string[] = [];
-          for (let i = 0; i < activePathSlice.length; i++) {
-            const v = activeValuesSlice[i] ?? 0;
-            if (v <= 0) continue;
-            const c = activePathSlice[i];
-            if (!c) continue;
-            const prev = i > 0 ? activeValuesSlice[i - 1] ?? 0 : 0;
-            if (prev <= 0) parts.push(`M ${c.x},${c.y}`);
-            else parts.push(`L ${c.x},${c.y}`);
-          }
-          return parts.join(" ");
-        })()
-      : "";
-  const activePathDisplay = isCopper ? activePathDisplayCopper : activePathDisplaySimple;
+  const buildActivePathWithGaps = (slice: { x: number; y: number }[], vals: number[]) => {
+    if (slice.length === 0) return "";
+    const parts: string[] = [];
+    for (let i = 0; i < slice.length; i++) {
+      const v = vals[i] ?? 0;
+      if (v <= 0) continue;
+      const c = slice[i];
+      if (!c) continue;
+      const prev = i > 0 ? vals[i - 1] ?? 0 : 0;
+      if (prev <= 0) parts.push(`M ${c.x},${c.y}`);
+      else parts.push(`L ${c.x},${c.y}`);
+    }
+    return parts.join(" ");
+  };
+  const activePathDisplay = buildActivePathWithGaps(activePathSlice, activeValuesSlice);
   const hoverPoint =
     animatedPathCoords.length > 0 && displayIndexInPath < animatedPathCoords.length
       ? animatedPathCoords[displayIndexInPath]
