@@ -12,6 +12,7 @@ const CBR_SOAP_URL = "https://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx";
 const CBR_COD = { 1: "xau", 2: "xag", 3: "xpt", 4: "xpd" };
 const CBR_DAILY_JSON = "https://www.cbr-xml-daily.ru/daily_json.js";
 const CBR_ARCHIVE = "https://www.cbr-xml-daily.ru/archive";
+const RUSCABLE_URL = "https://www.ruscable.ru/quotation/assets/ajax/lme.php";
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const OUTPUT_FILE = path.join(DATA_DIR, "metal-prices.json");
 
@@ -116,11 +117,11 @@ async function updateCbrRatesLastDays(conn, days = 3) {
   await ensureCbrRatesTable(conn);
   const to = (d) => d.toISOString().slice(0, 10);
   const end = new Date();
+  let updated = 0;
   for (let i = 0; i <= days; i++) {
     const d = new Date(end);
     d.setDate(d.getDate() - i);
     const dateStr = to(d);
-    const url = i === 0 ? CBR_DAILY_JSON : `${CBR_ARCHIVE}/${dateStr.replace(/-/g, "/").slice(0, 7)}/${dateStr.slice(8, 10)}/daily_json.js`;
     const correctUrl = i === 0 ? CBR_DAILY_JSON : `${CBR_ARCHIVE}/${dateStr.slice(0, 4)}/${dateStr.slice(5, 7)}/${dateStr.slice(8, 10)}/daily_json.js`;
     const res = await fetch(correctUrl);
     if (!res.ok) continue;
@@ -132,7 +133,51 @@ async function updateCbrRatesLastDays(conn, days = 3) {
       "INSERT INTO cbr_rates (date, usd_rub) VALUES (?, ?) ON DUPLICATE KEY UPDATE usd_rub = VALUES(usd_rub)",
       [dateStr, usdRub]
     );
+    updated++;
   }
+  if (updated) console.log("✓ Курсы ЦБ (USD/RUB) → cbr_rates:", updated, "дней");
+}
+
+/** Курс ЦБ на дату или последний известный на эту дату/раньше (для выходных — курс пятницы). */
+async function getUsdRubForDate(conn, dateStr) {
+  const [exact] = await conn.execute("SELECT usd_rub FROM cbr_rates WHERE date = ?", [dateStr]);
+  if (exact?.[0]?.usd_rub != null) return Number(exact[0].usd_rub);
+  const [prev] = await conn.execute(
+    "SELECT usd_rub FROM cbr_rates WHERE date <= ? ORDER BY date DESC LIMIT 1",
+    [dateStr]
+  );
+  return prev?.[0]?.usd_rub != null ? Number(prev[0].usd_rub) : null;
+}
+
+/** Медь за последние дни: один запрос к RusCable → курс из cbr_rates (на дату или последний известный) → INSERT/UPDATE metal_prices.xcu. */
+async function updateCopperLastDays(conn, days = 3) {
+  const end = new Date();
+  const start = new Date(end);
+  start.setDate(start.getDate() - days);
+  const dateFrom = start.toISOString().slice(0, 10);
+  const dateTo = end.toISOString().slice(0, 10);
+  const url = `${RUSCABLE_URL}?date_from=${dateFrom}&date_to=${dateTo}`;
+  const res = await fetch(url);
+  if (!res.ok) return;
+  const data = await res.json();
+  const dates = data?.copper?.dates || [];
+  const ranks = data?.copper?.ranks || [];
+  if (!dates.length) return;
+  let updated = 0;
+  for (let i = 0; i < dates.length; i++) {
+    const dateStr = dates[i];
+    const usdPerTonne = Number(ranks[i]);
+    if (!usdPerTonne || !dateStr) continue;
+    const usdRub = await getUsdRubForDate(conn, dateStr);
+    if (usdRub == null || usdRub <= 0) continue;
+    const xcu = (usdPerTonne / 1_000_000) * usdRub;
+    await conn.execute(
+      "INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, 0, 0, 0, 0, ?) ON DUPLICATE KEY UPDATE xcu = VALUES(xcu)",
+      [dateStr, xcu]
+    );
+    updated++;
+  }
+  if (updated) console.log("✓ Медь RusCable → БД (xcu):", updated, "дней");
 }
 
 /** Вставить массив строк в БД (ON DUPLICATE KEY UPDATE). */
@@ -286,9 +331,10 @@ function buildPeriodResponse(rows, period) {
     XPT: sampled.map((s) => ({ label: s.label, value: round(s.xpt) })),
     XPD: sampled.map((s) => ({ label: s.label, value: round(s.xpd) })),
   };
-  if (sampled.some((s) => Number(s.xcu) > 0)) {
-    res.XCU = sampled.map((s) => ({ label: s.label, value: round(s.xcu) }));
-  }
+  // Медь: данные с 2006 (RusCable), для периода «Все» начинаем с 2006; в серию только точки с ценой > 0, чтобы график без пробелов с нулём
+  const sampledCu = period === "all" ? sampled.filter((s) => s.date >= "2006-01-01") : sampled;
+  const cuPoints = sampledCu.filter((s) => Number(s.xcu) > 0).map((s) => ({ label: s.label, value: round(s.xcu) }));
+  if (cuPoints.length) res.XCU = cuPoints;
   return res;
 }
 
@@ -298,7 +344,6 @@ async function main() {
   try {
     await ensureTable(conn);
     await ensureCbrRatesTable(conn);
-    await updateCbrRatesLastDays(conn, 3);
     const [[{ cnt }]] = await conn.execute("SELECT COUNT(*) AS cnt FROM metal_prices");
     const needBackfill = (cnt || 0) < 500;
     const forceBackfill = process.env.BACKFILL_FROM_2003 === "1";
@@ -313,12 +358,18 @@ async function main() {
     }
 
     if (workingDay) {
-      await fetchAndInsert(conn, 3);
+      try {
+        await updateCbrRatesLastDays(conn, 3);
+        await fetchAndInsert(conn, 3);
+        await updateCopperLastDays(conn, 3);
+      } catch (err) {
+        console.error("Обновление с ЦБ/RusCable не удалось:", err.message);
+      }
     } else {
-      console.log("⊘ Выходной ЦБ: запрос и экспорт пропущены. Для принудительного запуска: FORCE_METAL_CRON=1 node scripts/cron-metal-prices.js");
-      return;
+      console.log("⊘ Выходной ЦБ: запросы пропущены. FORCE_METAL_CRON=1 для принудительного запуска.");
     }
 
+    // Всегда экспортируем из БД в JSON — на сайте будут данные с последней успешной выгрузки
     const [rows] = await conn.execute(
       "SELECT date, xau, xag, xpt, xpd, xcu FROM metal_prices ORDER BY date"
     );
@@ -340,6 +391,11 @@ async function main() {
     if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(out, null, 0), "utf8");
     console.log("✓ БД →", OUTPUT_FILE);
+    const last1m = out["1m"]?.XAU?.length ? out["1m"].XAU[out["1m"].XAU.length - 1] : null;
+    const lastLabel = last1m?.label ?? "—";
+    console.log("---");
+    console.log("Готово. Данные доходят до файла:", OUTPUT_FILE);
+    console.log("Периоды в JSON: 1m, 1y, 5y, 10y, all. Последняя точка в 1m (XAU):", lastLabel);
   } finally {
     await conn.end();
   }

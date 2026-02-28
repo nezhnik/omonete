@@ -14,6 +14,7 @@ type ApiResponse = {
   XAG?: DataPoint[];
   XPT?: DataPoint[];
   XPD?: DataPoint[];
+  XCU?: DataPoint[];
   error?: string;
 };
 
@@ -36,7 +37,7 @@ async function getMetalPricesStaticJson(): Promise<Record<string, ApiResponse> |
   return METAL_PRICES_STATIC_CACHE_PROMISE;
 }
 
-/** Металлы из фильтров каталога. В API: XAU, XPT, XPD, XAG. Медь (Cu) — только демо. Pt и Pd — цвет серебра для лучшей видимости на графиках. */
+/** Металлы из фильтров каталога. В API: XAU, XPT, XPD, XAG, XCU. Pt и Pd — цвет серебра для лучшей видимости на графиках. */
 const CHART_SILVER = "#C0C0C0";
 /** Бледный серый для ховера у Ag/Pt/Pd, чтобы отличался от линии цвета серебра */
 const CHART_HOVER_GRAY_LIGHT = "#E8E8EC";
@@ -46,7 +47,7 @@ const METALS = [
   { code: "Pt", name: "Платина", color: CHART_SILVER, apiSymbol: "XPT" as const },
   { code: "Pd", name: "Палладий", color: CHART_SILVER, apiSymbol: "XPD" as const },
   { code: "Ag", name: "Серебро", color: CHART_SILVER, apiSymbol: "XAG" as const },
-  { code: "Cu", name: "Медь", color: "#B87333", apiSymbol: null },
+  { code: "Cu", name: "Медь", color: "#B87333", apiSymbol: "XCU" as const },
 ] as const;
 
 export type ChartPeriod = "1m" | "1y" | "5y" | "10y" | "all";
@@ -76,10 +77,10 @@ const PERIOD_LENGTHS: Record<ChartPeriod, number> = {
   "all": 22,
 };
 
-/** Демо-данные по периоду: условные цены (для отображения тренда) */
+/** Демо-данные по периоду: условные цены (для скелетона и отображения тренда при отсутствии API) */
 function getDemoData(metalCode: string, period: ChartPeriod): DataPoint[] {
   const seed = metalCode.charCodeAt(0) + metalCode.charCodeAt(1);
-  const base = metalCode === "Au" ? 6000 : metalCode === "Ag" ? 80 : metalCode === "Pt" ? 3000 : metalCode === "Pd" ? 2500 : 70;
+  const base = metalCode === "Au" ? 6000 : metalCode === "Ag" ? 80 : metalCode === "Pt" ? 3000 : metalCode === "Pd" ? 2500 : metalCode === "Cu" ? 0.07 : 70;
   const n = PERIOD_LENGTHS[period];
   return Array.from({ length: n }, (_, i) => {
     const t = i / (n - 1) || 0;
@@ -176,6 +177,7 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
       return;
     }
     let cancelled = false;
+    const symbol = metal.apiSymbol;
     const isFirstLoad = firstLoadRef.current;
     if (isFirstLoad) {
       skeletonStartMsRef.current = Date.now();
@@ -183,23 +185,14 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
     }
     setLoading(true);
 
-    // Сначала статичный JSON (обновляется кроном), при отсутствии — API ЦБ
+    // Единственный источник — статичный JSON из БД (экспорт кроном). API не вызываем.
     getMetalPricesStaticJson()
       .then((byPeriod) => {
+        if (cancelled) return;
         const periodData = byPeriod?.[period];
-        if (periodData?.ok && periodData[metal.apiSymbol!]) {
-          if (cancelled) return;
-          setApiData(periodData[metal.apiSymbol!]!);
+        if (periodData?.ok && periodData[symbol]) {
+          setApiData(periodData[symbol]!);
           setDataSource(periodData.source ?? "static");
-          return;
-        }
-        return fetch(`/api/metal-prices?period=${period}`).then((r) => r.json() as Promise<ApiResponse>);
-      })
-      .then((res) => {
-        if (cancelled || res === undefined) return;
-        if (res?.ok && res[metal.apiSymbol!]) {
-          setApiData(res[metal.apiSymbol!]!);
-          setDataSource(res.source ?? null);
         } else {
           setApiData(null);
           setDataSource(null);
@@ -237,19 +230,27 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
     return apiData ?? [];
   }, [metal.apiSymbol, apiData, demoData]);
 
+  // Медь в данных хранится в руб/г (как и остальные металлы); для графика показываем руб/кг — так привычнее
+  const isCopper = metal.code === "Cu";
+  const dataForChart = useMemo(
+    () => (isCopper && data.length ? data.map((d) => ({ ...d, value: d.value * 1000 })) : data),
+    [isCopper, data]
+  );
+  const priceUnit = isCopper ? "₽/кг" : "₽";
+
   const showSkeleton = metal.apiSymbol !== null && showSkeletons;
   const showError = metal.apiSymbol !== null && !showSkeletons && !loading && !apiData?.length;
 
-  const hasData = data.length > 0;
-  const min = hasData ? Math.min(...data.map((d) => d.value)) : 0;
-  const max = hasData ? Math.max(...data.map((d) => d.value)) : 1;
+  const hasData = dataForChart.length > 0;
+  const min = hasData ? Math.min(...dataForChart.map((d) => d.value)) : 0;
+  const max = hasData ? Math.max(...dataForChart.map((d) => d.value)) : 1;
   const range = max - min || 1;
   const innerW = CHART_WIDTH - PADDING.left - PADDING.right;
   const innerH = CHART_HEIGHT - PADDING.top - PADDING.bottom;
 
   const coords = hasData
-    ? data.map((d, i) => {
-        const x = PADDING.left + (i / (data.length - 1 || 1)) * innerW;
+    ? dataForChart.map((d, i) => {
+        const x = PADDING.left + (i / (dataForChart.length - 1 || 1)) * innerW;
         const y = PADDING.top + innerH - ((d.value - min) / range) * innerH;
         return { x, y, value: d.value };
       })
@@ -305,45 +306,89 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
     return () => cancelAnimationFrame(rafId);
   }, [pathCoords, showSkeleton, demoChart]);
 
-  const allPath = animatedPathCoords.length
-    ? `M ${animatedPathCoords.map((c) => `${c.x},${c.y}`).join(" L ")}`
-    : "";
+  // Для меди: разрывать линию при нулевой цене (нет данных LME в этот день), чтобы не рисовать длинную нулевую полосу
+  const pathValues = useMemo(() => dataForChart.map((d) => d.value), [dataForChart]);
+  const buildPathWithGaps = useMemo(() => {
+    if (animatedPathCoords.length === 0) return "";
+    if (!isCopper) return `M ${animatedPathCoords.map((c) => `${c.x},${c.y}`).join(" L ")}`;
+    const parts: string[] = [];
+    for (let i = 0; i < animatedPathCoords.length; i++) {
+      const v = pathValues[i] ?? 0;
+      if (v <= 0) continue;
+      const c = animatedPathCoords[i];
+      if (!c) continue;
+      const prev = i > 0 ? pathValues[i - 1] ?? 0 : 0;
+      if (prev <= 0) parts.push(`M ${c.x},${c.y}`);
+      else parts.push(`L ${c.x},${c.y}`);
+    }
+    return parts.join(" ");
+  }, [animatedPathCoords, pathValues, isCopper]);
+
+  const allPath = buildPathWithGaps;
 
   // Четыре деления по оси Y: мин и макс за период, между ними два промежуточных (диапазон понятен)
   const yTicks = [min, min + range / 3, min + (2 * range) / 3, max];
 
-  const startPrice = hasData ? (data[0]?.value ?? 0) : 0;
-
-  const displayIndex = hasData ? (hoveredIndex ?? data.length - 1) : 0;
-  const displayPoint = data[displayIndex];
+  const startPrice = hasData ? (dataForChart[0]?.value ?? 0) : 0;
+  const startPriceForCopper = isCopper && hasData ? (dataForChart.find((d) => (d?.value ?? 0) > 0)?.value ?? 0) : startPrice;
+  const displayIndex = hasData ? (hoveredIndex ?? dataForChart.length - 1) : 0;
+  const displayPoint = dataForChart[displayIndex];
+  // Для меди: если в выбранной точке цена 0 (нет данных LME), показываем последнюю ненулевую в периоде
+  const displayPointForPrice =
+    isCopper && hasData && (displayPoint?.value ?? 0) <= 0
+      ? (() => {
+          for (let i = displayIndex; i >= 0; i--) {
+            if ((dataForChart[i]?.value ?? 0) > 0) return dataForChart[i];
+          }
+          for (let i = displayIndex + 1; i < dataForChart.length; i++) {
+            if ((dataForChart[i]?.value ?? 0) > 0) return dataForChart[i];
+          }
+          return displayPoint;
+        })()
+      : displayPoint;
   const isHovering = hoveredIndex !== null;
 
   // Рост/падение от начала периода до текущей (или наведённой) точки
-  const changeFromStart = (displayPoint?.value ?? 0) - startPrice;
-  const changePercentFromStart = startPrice !== 0 ? (changeFromStart / startPrice) * 100 : 0;
+  const basePrice = isCopper ? startPriceForCopper : startPrice;
+  const changeFromStart = (displayPointForPrice?.value ?? 0) - basePrice;
+  const changePercentFromStart = basePrice !== 0 ? (changeFromStart / basePrice) * 100 : 0;
   const isPositiveFromStart = changeFromStart >= 0;
 
   const displayIndexInPath =
-    data.length > 1 && animatedPathCoords.length > 1
+    dataForChart.length > 1 && animatedPathCoords.length > 1
       ? Math.min(
           animatedPathCoords.length - 1,
-          Math.round((displayIndex / (data.length - 1)) * (animatedPathCoords.length - 1))
+          Math.round((displayIndex / (dataForChart.length - 1)) * (animatedPathCoords.length - 1))
         )
       : 0;
-  const activePathDisplay =
-    animatedPathCoords.length > 0
-      ? `M ${animatedPathCoords
-          .slice(0, displayIndexInPath + 1)
-          .map((c) => `${c.x},${c.y}`)
-          .join(" L ")}`
-      : "";
+  const activePathSlice = animatedPathCoords.slice(0, displayIndexInPath + 1);
+  const activeValuesSlice = pathValues.slice(0, displayIndexInPath + 1);
+  const activePathWithGaps =
+    isCopper && activePathSlice.length > 0
+      ? (() => {
+          const parts: string[] = [];
+          for (let i = 0; i < activePathSlice.length; i++) {
+            const v = activeValuesSlice[i] ?? 0;
+            if (v <= 0) continue;
+            const c = activePathSlice[i];
+            if (!c) continue;
+            const prev = i > 0 ? activeValuesSlice[i - 1] ?? 0 : 0;
+            if (prev <= 0) parts.push(`M ${c.x},${c.y}`);
+            else parts.push(`L ${c.x},${c.y}`);
+          }
+          return parts.join(" ");
+        })()
+      : activePathSlice.length > 0
+        ? `M ${activePathSlice.map((c) => `${c.x},${c.y}`).join(" L ")}`
+        : "";
+  const activePathDisplay = activePathWithGaps;
   const hoverPoint =
     animatedPathCoords.length > 0 && displayIndexInPath < animatedPathCoords.length
       ? animatedPathCoords[displayIndexInPath]
       : null;
 
   const updateHoverFromClientX = (clientX: number) => {
-    if (data.length === 0 || loading) return;
+    if (dataForChart.length === 0 || loading) return;
     const svg = svgRef.current;
     if (!svg) return;
     const rect = svg.getBoundingClientRect();
@@ -351,8 +396,8 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
     const offsetX = (rect.width - CHART_WIDTH * scale) / 2;
     const svgX = (clientX - rect.left - offsetX) / scale;
     const t = (svgX - PADDING.left) / innerW;
-    const rawIndex = t * (data.length - 1);
-    const index = Math.round(Math.max(0, Math.min(data.length - 1, rawIndex)));
+    const rawIndex = t * (dataForChart.length - 1);
+    const index = Math.round(Math.max(0, Math.min(dataForChart.length - 1, rawIndex)));
     setHoveredIndex(index);
   };
 
@@ -477,11 +522,11 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
             </h2>
           </div>
           <p className="text-[28px] sm:text-[32px] font-bold text-black leading-tight mb-1">
-            {(displayPoint?.value ?? 0).toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₽
+            {(displayPointForPrice?.value ?? 0).toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {priceUnit}
           </p>
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className={isPositiveFromStart ? "text-[#16A34A]" : "text-[#DC2626]"} style={{ fontSize: "14px" }}>
-              {(isPositiveFromStart ? "+" : "") + changeFromStart.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₽
+              {(isPositiveFromStart ? "+" : "") + changeFromStart.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {priceUnit}
             </span>
             <span
               className={`inline-flex items-center gap-0.5 rounded-[300px] px-2 py-0.5 text-[13px] font-medium ${isPositiveFromStart ? "bg-[#DCFCE7] text-[#16A34A]" : "bg-[#FEE2E2] text-[#DC2626]"}`}
@@ -490,7 +535,7 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
               {Math.abs(changePercentFromStart).toFixed(2) + "%"}
             </span>
             <span className="text-[#666666] text-[14px]">
-              {isHovering && displayPoint ? displayPoint.label : PERIOD_LABEL[period]}
+              {isHovering && displayPointForPrice ? displayPointForPrice.label : PERIOD_LABEL[period]}
             </span>
           </div>
 
@@ -627,7 +672,7 @@ export default function ChartsPage() {
             </h1>
           <p className="text-[#656565] text-[16px] font-normal mb-8 max-w-[640px] lg:max-w-[720px]">
             {nbspAfterPrepositions(
-              "Динамика цен за грамм на драгоценные металлы. По ним удобно смотреть тренды и ориентироваться при оценке монет. Для меди пока демо-данные."
+              "Динамика цен за грамм на драгоценные металлы и медь. Данные ЦБ РФ и RusCable (медь в руб/г по курсу ЦБ). По графикам удобно смотреть тренды и оценивать монеты."
             )}
           </p>
           </header>

@@ -2,6 +2,7 @@
  * Медь: RusCable LME (USD/т) + курс ЦБ из БД (cbr_rates) → руб/г, запись в metal_prices.xcu.
  * Курсы ЦБ должны быть заранее в БД: node scripts/backfill-cbr-rates.js (2006–сегодня).
  * RusCable отдаёт данные с 2006 года.
+ * Если на дату LME нет курса ЦБ (выходной/праздник РФ), берётся последний известный курс (напр. пятница для субботы).
  *
  * Запуск: node scripts/backfill-copper-ruscable.js (нужен .env с DATABASE_URL).
  */
@@ -29,6 +30,17 @@ async function fetchRuscableRange(dateFrom, dateTo) {
   return dates.map((d, i) => ({ date: d, usdPerTonne: Number(ranks[i]) || 0 })).filter((r) => r.usdPerTonne > 0);
 }
 
+/** Курс ЦБ на дату или последний известный на эту дату/раньше (для выходных — курс пятницы и т.п.). */
+async function getUsdRubForDate(conn, dateStr) {
+  const [exact] = await conn.execute("SELECT usd_rub FROM cbr_rates WHERE date = ?", [dateStr]);
+  if (exact?.[0]?.usd_rub != null) return Number(exact[0].usd_rub);
+  const [prev] = await conn.execute(
+    "SELECT usd_rub FROM cbr_rates WHERE date <= ? ORDER BY date DESC LIMIT 1",
+    [dateStr]
+  );
+  return prev?.[0]?.usd_rub != null ? Number(prev[0].usd_rub) : null;
+}
+
 async function main() {
   const conn = await mysql.createConnection(getConfig());
   const fromYear = 2006;
@@ -45,23 +57,24 @@ async function main() {
     if (!rows.length) continue;
     total += rows.length;
     for (const r of rows) {
-      const [rows2] = await conn.execute("SELECT usd_rub FROM cbr_rates WHERE date = ?", [r.date]);
-      const row = rows2 && rows2[0];
-      const usdRub = row?.usd_rub != null ? Number(row.usd_rub) : null;
+      const usdRub = await getUsdRubForDate(conn, r.date);
       if (usdRub == null || usdRub <= 0) {
         noRate++;
         continue;
       }
       const xcu = (r.usdPerTonne / 1_000_000) * usdRub;
-      const [result] = await conn.execute("UPDATE metal_prices SET xcu = ? WHERE date = ?", [xcu, r.date]);
-      updated += result.affectedRows;
+      await conn.execute(
+        "INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, 0, 0, 0, 0, ?) ON DUPLICATE KEY UPDATE xcu = VALUES(xcu)",
+        [r.date, xcu]
+      );
+      updated++;
     }
     if (rows.length) console.log(y, "→", rows.length, "дней медь");
     await new Promise((r) => setTimeout(r, 300));
   }
 
-  console.log("✓ RusCable медь (2006–сегодня): обработано", total, "дней, обновлено в БД:", updated);
-  if (noRate) console.log("  Пропущено (нет курса ЦБ в cbr_rates):", noRate, "— запустите node scripts/backfill-cbr-rates.js");
+  console.log("✓ RusCable медь (2006–сегодня): обработано", total, "дней, записано в БД:", updated);
+  if (noRate) console.log("  Пропущено (нет курса ЦБ даже по предыдущим датам):", noRate);
   await conn.end();
 }
 

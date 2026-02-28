@@ -4,6 +4,17 @@
 
 ---
 
+## Текущий статус (чтобы не терять контекст)
+
+- **Крон на Reg.ru уже настроен.** В планировщике заданий Reg.ru добавлено задание: раз в день запуск `php .../cron-metal-prices.php`. Пользователю был прислан обновлённый код/инструкция, что именно вставить в планировщик; крон обновляет курс доллара, металлы ЦБ и медь за последние 3 дня и перезаписывает `data/metal-prices.json` на сервере.
+- **БД (MySQL на Reg.ru, доступ через phpMyAdmin):**
+  - **Таблицы для металлов и курса:** `metal_prices` (дата, xau, xag, xpt, xpd, xcu — цены в руб/г), `cbr_rates` (дата, usd_rub — курс ЦБ).
+  - **Данные уже занесены:** курс доллара с 1992 года (`cbr_rates`), металлы ЦБ с 2003 года, медь (xcu) с 2006 года (`metal_prices`). Бэкфилл выполнен один раз (`npm run backfill:all`); крон только подтягивает последние 3 дня.
+  - Подключение: `.env` в корне проекта и в корне сайта на сервере — строка `DATABASE_URL=mysql://user:password@host:port/database`. На Reg.ru хост/порт/база берутся из панели (phpMyAdmin).
+- При ответах по проекту опираться на этот статус: крон настроен, БД заполнена, phpMyAdmin — интерфейс к той же MySQL, что использует сайт и крон.
+
+---
+
 ## Кратко о проекте omonete.ru
 
 - **Тип проекта**: статический сайт на Next.js (App Router, `output: 'export'`), деплой через заливку папки `out` на хостинг.
@@ -83,14 +94,15 @@
 
 ### Reg.ru (PHP)
 
-- **Файлы**: `scripts/cron-metal-prices.php`, `scripts/cron-metal-prices-config.php.example` (скопировать в `cron-metal-prices-config.php`, не коммитить).
-- **Где лежат на сервере**: корень сайта (рядом с `data/`), например `www/omonete.ru/cron-metal-prices.php` и `cron-metal-prices-config.php`.
+- **Крон уже настроен:** в планировщике Reg.ru добавлено задание; пользователю был прислан обновлённый код/команда для вставки (запуск `php .../cron-metal-prices.php` раз в день).
+- **Файлы**: на сервере используется скрипт из сборки — `out/cron-metal-prices.php` (исходник `public/cron-metal-prices.php`). Он читает **`.env`** из корня сайта (переменная `DATABASE_URL`), а не отдельный config. Альтернативный вариант с конфигом: `scripts/cron-metal-prices.php` + `scripts/cron-metal-prices-config.php.example` (скопировать в `cron-metal-prices-config.php`, не коммитить).
+- **Где лежат на сервере**: корень сайта (рядом с `data/`), например `www/omonete.ru/cron-metal-prices.php`. В корне сайта — `.env` с `DATABASE_URL`.
 - **Расписание**: раз в день (например утром), команда:  
-  `/home/ЛОГИН/php-bin-regru-php82/bin/php /home/ЛОГИН/www/omonete.ru/cron-metal-prices.php`
-- **В выходной**: запрос к ЦБ и экспорт в JSON не выполняются (скрипт сразу выходит с сообщением).
-- **Обновление кода**: заменить на сервере файл `cron-metal-prices.php` новой версией из репозитория (та же логика с `isCbrWorkingDay`). Расписание и путь к PHP менять не нужно; конфиг `cron-metal-prices-config.php` тоже без изменений.
+  `/usr/bin/php /полный/путь/к/корню/сайта/cron-metal-prices.php`
+- **В выходной**: запросы к ЦБ не выполняются; экспорт БД → `data/metal-prices.json` выполняется всегда.
+- **Обновление кода**: заменить на сервере файл `cron-metal-prices.php` новой версией из репозитория (из `public/cron-metal-prices.php` после сборки). Расписание и путь к PHP менять не нужно.
 
-Подробнее: `docs/CRON_REG_RU_PHP.md`.
+Подробнее: `docs/CRON_REG_RU_PHP.md`, `docs/CRON_ЧТО_ОСТАЛОСЬ_И_КАК_РАБОТАЕТ.md`.
 
 ---
 

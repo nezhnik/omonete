@@ -26,6 +26,8 @@
     "mints:export:standalone": "npx tsx scripts/export-mint-articles-standalone.ts",
     "mints:import": "node scripts/import-mint-articles-to-db.js",
     "metal-prices:cron": "node scripts/cron-metal-prices.js",
+    "build:regru": "node scripts/backfill-cbr-rates.js && node scripts/backfill-copper-ruscable.js && npm run metal-prices:cron && npm run build",
+    "backfill:all": "node scripts/backfill-cbr-rates.js && FORCE_METAL_CRON=1 node scripts/cron-metal-prices.js && node scripts/backfill-copper-ruscable.js",
     "favicon": "node scripts/logo-to-favicon.js"
   },
   "dependencies": {

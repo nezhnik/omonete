@@ -261,6 +261,7 @@ type MetalPrices1m = {
   XAG?: { label: string; value: number }[];
   XPT?: { label: string; value: number }[];
   XPD?: { label: string; value: number }[];
+  XCU?: { label: string; value: number }[];
 };
 
 function getMetalChartData(api: MetalPrices1m | null, metal: string): { label: string; value: number }[] | null {
@@ -269,6 +270,7 @@ function getMetalChartData(api: MetalPrices1m | null, metal: string): { label: s
   if (metal === "Ag") return api.XAG ?? null;
   if (metal === "Pt") return api.XPT ?? null;
   if (metal === "Pd") return api.XPD ?? null;
+  if (metal === "Cu") return api.XCU ?? null;
   return null;
 }
 
@@ -308,18 +310,13 @@ export default function PortfolioPage() {
   }, []);
 
   useEffect(() => {
-    // Сначала статичный JSON (обновляется кроном), при отсутствии — API ЦБ
+    // Единственный источник — статичный JSON из БД (экспорт кроном). API не вызываем.
     fetch("/data/metal-prices.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((data: Record<string, MetalPrices1m> | null) => {
         const oneMonth = data?.["1m"];
-        if (oneMonth?.ok) {
-          setMetalPrices1m(oneMonth);
-          return;
-        }
-        return fetch("/api/metal-prices?period=1m").then((r) => r.json() as Promise<MetalPrices1m>);
+        if (oneMonth?.ok) setMetalPrices1m(oneMonth);
       })
-      .then((res) => res?.ok && setMetalPrices1m(res))
       .catch(() => {});
   }, []);
 
