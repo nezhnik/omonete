@@ -10,6 +10,8 @@ const path = require("path");
 
 const CBR_SOAP_URL = "https://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx";
 const CBR_COD = { 1: "xau", 2: "xag", 3: "xpt", 4: "xpd" };
+const CBR_DAILY_JSON = "https://www.cbr-xml-daily.ru/daily_json.js";
+const CBR_ARCHIVE = "https://www.cbr-xml-daily.ru/archive";
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const OUTPUT_FILE = path.join(DATA_DIR, "metal-prices.json");
 
@@ -66,7 +68,7 @@ async function fetchCbrRange(startDate, endDate) {
   const byDate = new Map();
   for (const { date, cod, price } of all) {
     let row = byDate.get(date);
-    if (!row) { row = { date, xau: 0, xag: 0, xpt: 0, xpd: 0 }; byDate.set(date, row); }
+    if (!row) { row = { date, xau: 0, xag: 0, xpt: 0, xpd: 0, xcu: 0 }; byDate.set(date, row); }
     row[cod] = price;
   }
   return Array.from(byDate.values()).sort((a, b) => a.date.localeCompare(b.date));
@@ -82,6 +84,7 @@ async function ensureTable(conn) {
       xag DECIMAL(12,4) NOT NULL DEFAULT 0,
       xpt DECIMAL(12,4) NOT NULL DEFAULT 0,
       xpd DECIMAL(12,4) NOT NULL DEFAULT 0,
+      xcu DECIMAL(12,4) NOT NULL DEFAULT 0,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
   `);
@@ -90,6 +93,46 @@ async function ensureTable(conn) {
   } catch (e) {
     if (e.code !== "ER_DUP_KEYNAME") throw e;
   }
+  try {
+    await conn.execute("ALTER TABLE metal_prices ADD COLUMN xcu DECIMAL(12,4) NOT NULL DEFAULT 0 AFTER xpd");
+  } catch (e) {
+    if (e.code !== "ER_DUP_FIELDNAME") throw e;
+  }
+}
+
+/** Таблица курсов ЦБ (USD/RUB) — для расчёта меди и своих данных по курсам. */
+async function ensureCbrRatesTable(conn) {
+  await conn.execute(`
+    CREATE TABLE IF NOT EXISTS cbr_rates (
+      date DATE NOT NULL PRIMARY KEY,
+      usd_rub DECIMAL(12,4) NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+  `);
+}
+
+/** Подтянуть курсы ЦБ за последние дни в cbr_rates (источник: cbr-xml-daily). */
+async function updateCbrRatesLastDays(conn, days = 3) {
+  await ensureCbrRatesTable(conn);
+  const to = (d) => d.toISOString().slice(0, 10);
+  const end = new Date();
+  for (let i = 0; i <= days; i++) {
+    const d = new Date(end);
+    d.setDate(d.getDate() - i);
+    const dateStr = to(d);
+    const url = i === 0 ? CBR_DAILY_JSON : `${CBR_ARCHIVE}/${dateStr.replace(/-/g, "/").slice(0, 7)}/${dateStr.slice(8, 10)}/daily_json.js`;
+    const correctUrl = i === 0 ? CBR_DAILY_JSON : `${CBR_ARCHIVE}/${dateStr.slice(0, 4)}/${dateStr.slice(5, 7)}/${dateStr.slice(8, 10)}/daily_json.js`;
+    const res = await fetch(correctUrl);
+    if (!res.ok) continue;
+    const data = await res.json();
+    const usd = data?.Valute?.USD;
+    if (usd == null || usd.Value == null) continue;
+    const usdRub = Number(usd.Value);
+    await conn.execute(
+      "INSERT INTO cbr_rates (date, usd_rub) VALUES (?, ?) ON DUPLICATE KEY UPDATE usd_rub = VALUES(usd_rub)",
+      [dateStr, usdRub]
+    );
+  }
 }
 
 /** Вставить массив строк в БД (ON DUPLICATE KEY UPDATE). */
@@ -97,8 +140,8 @@ function insertRows(conn, rows) {
   return Promise.all(
     rows.map((r) =>
       conn.execute(
-        "INSERT INTO metal_prices (date, xau, xag, xpt, xpd) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE xau=VALUES(xau), xag=VALUES(xag), xpt=VALUES(xpt), xpd=VALUES(xpd)",
-        [r.date, r.xau, r.xag, r.xpt, r.xpd]
+        "INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE xau=VALUES(xau), xag=VALUES(xag), xpt=VALUES(xpt), xpd=VALUES(xpd), xcu=VALUES(xcu)",
+        [r.date, r.xau, r.xag, r.xpt, r.xpd, r.xcu ?? 0]
       )
     )
   );
@@ -234,7 +277,7 @@ function buildPeriodResponse(rows, period) {
     });
   }
   const round = (v) => Math.round(Number(v) * 100) / 100;
-  return {
+  const res = {
     ok: true,
     period,
     source: "static",
@@ -243,16 +286,22 @@ function buildPeriodResponse(rows, period) {
     XPT: sampled.map((s) => ({ label: s.label, value: round(s.xpt) })),
     XPD: sampled.map((s) => ({ label: s.label, value: round(s.xpd) })),
   };
+  if (sampled.some((s) => Number(s.xcu) > 0)) {
+    res.XCU = sampled.map((s) => ({ label: s.label, value: round(s.xcu) }));
+  }
+  return res;
 }
 
 async function main() {
   const conn = await mysql.createConnection(getConfig());
+  const workingDay = shouldRunCron();
   try {
     await ensureTable(conn);
+    await ensureCbrRatesTable(conn);
+    await updateCbrRatesLastDays(conn, 3);
     const [[{ cnt }]] = await conn.execute("SELECT COUNT(*) AS cnt FROM metal_prices");
     const needBackfill = (cnt || 0) < 500;
     const forceBackfill = process.env.BACKFILL_FROM_2003 === "1";
-    const workingDay = shouldRunCron();
 
     if ((needBackfill || forceBackfill) && workingDay) {
       if (needBackfill) {
@@ -271,7 +320,7 @@ async function main() {
     }
 
     const [rows] = await conn.execute(
-      "SELECT date, xau, xag, xpt, xpd FROM metal_prices ORDER BY date"
+      "SELECT date, xau, xag, xpt, xpd, xcu FROM metal_prices ORDER BY date"
     );
     const allRows = (rows || []).map((r) => ({
       date: r.date instanceof Date ? r.date.toISOString().slice(0, 10) : String(r.date).slice(0, 10),
@@ -279,6 +328,7 @@ async function main() {
       xag: Number(r.xag),
       xpt: Number(r.xpt),
       xpd: Number(r.xpd),
+      xcu: Number(r.xcu ?? 0),
     }));
 
     const out = {};

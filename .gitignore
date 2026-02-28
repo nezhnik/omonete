@@ -35,6 +35,7 @@ yarn-error.log*
 
 # конфиг крона с паролем БД — не коммитить
 scripts/cron-metal-prices-config.php
+scripts/.cbr-usd-cache.json
 
 # временный файл скрипта favicon
 .favicon-temp.png
