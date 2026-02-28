@@ -306,11 +306,16 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
     return () => cancelAnimationFrame(rafId);
   }, [pathCoords, showSkeleton, demoChart]);
 
-  // Для меди: разрывать линию при нулевой цене (нет данных LME в этот день), чтобы не рисовать длинную нулевую полосу
+  // Драгметаллы (Au, Ag, Pt, Pd): как раньше — одна непрерывная линия, без разрывов
+  const allPathSimple =
+    animatedPathCoords.length > 0
+      ? `M ${animatedPathCoords.map((c) => `${c.x},${c.y}`).join(" L ")}`
+      : "";
+
+  // Только для меди: разрывать линию при нулевой цене (нет данных LME в этот день)
   const pathValues = useMemo(() => dataForChart.map((d) => d.value), [dataForChart]);
-  const buildPathWithGaps = useMemo(() => {
-    if (animatedPathCoords.length === 0) return "";
-    if (!isCopper) return `M ${animatedPathCoords.map((c) => `${c.x},${c.y}`).join(" L ")}`;
+  const allPathWithGapsCopper = useMemo(() => {
+    if (!isCopper || animatedPathCoords.length === 0) return "";
     const parts: string[] = [];
     for (let i = 0; i < animatedPathCoords.length; i++) {
       const v = pathValues[i] ?? 0;
@@ -322,9 +327,9 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
       else parts.push(`L ${c.x},${c.y}`);
     }
     return parts.join(" ");
-  }, [animatedPathCoords, pathValues, isCopper]);
+  }, [isCopper, animatedPathCoords, pathValues]);
 
-  const allPath = buildPathWithGaps;
+  const allPath = isCopper ? allPathWithGapsCopper : allPathSimple;
 
   // Четыре деления по оси Y: мин и макс за период, между ними два промежуточных (диапазон понятен)
   const yTicks = [min, min + range / 3, min + (2 * range) / 3, max];
@@ -362,8 +367,14 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
         )
       : 0;
   const activePathSlice = animatedPathCoords.slice(0, displayIndexInPath + 1);
+  // Драгметаллы: одна непрерывная линия до точки наведения (как раньше)
+  const activePathDisplaySimple =
+    activePathSlice.length > 0
+      ? `M ${activePathSlice.map((c) => `${c.x},${c.y}`).join(" L ")}`
+      : "";
+  // Только для меди: разрывы при нуле при отрисовке активного отрезка
   const activeValuesSlice = pathValues.slice(0, displayIndexInPath + 1);
-  const activePathWithGaps =
+  const activePathDisplayCopper =
     isCopper && activePathSlice.length > 0
       ? (() => {
           const parts: string[] = [];
@@ -378,10 +389,8 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
           }
           return parts.join(" ");
         })()
-      : activePathSlice.length > 0
-        ? `M ${activePathSlice.map((c) => `${c.x},${c.y}`).join(" L ")}`
-        : "";
-  const activePathDisplay = activePathWithGaps;
+      : "";
+  const activePathDisplay = isCopper ? activePathDisplayCopper : activePathDisplaySimple;
   const hoverPoint =
     animatedPathCoords.length > 0 && displayIndexInPath < animatedPathCoords.length
       ? animatedPathCoords[displayIndexInPath]
