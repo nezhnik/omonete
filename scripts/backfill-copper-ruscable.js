@@ -1,8 +1,6 @@
 /**
- * Медь: RusCable LME (USD/т) + курс ЦБ из БД (cbr_rates) → руб/г, запись в metal_prices.xcu.
- * Курсы ЦБ должны быть заранее в БД: node scripts/backfill-cbr-rates.js (2006–сегодня).
- * RusCable отдаёт данные с 2006 года.
- * Если на дату LME нет курса ЦБ (выходной/праздник РФ), берётся последний известный курс (напр. пятница для субботы).
+ * Медь: RusCable LME (USD/т) + курс ЦБ из БД (cbr_rates) → руб/тройская унция, запись в metal_prices.xcu.
+ * Обновляем только существующие строки (дни, когда есть данные ЦБ по драгметаллам). Новые строки не создаём.
  *
  * Запуск: node scripts/backfill-copper-ruscable.js (нужен .env с DATABASE_URL).
  */
@@ -10,6 +8,7 @@ require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
 
 const RUSCABLE_URL = "https://www.ruscable.ru/quotation/assets/ajax/lme.php";
+const GRAMS_PER_TROY_OZ = 31.1035;
 
 function getConfig() {
   const url = process.env.DATABASE_URL;
@@ -28,6 +27,13 @@ async function fetchRuscableRange(dateFrom, dateTo) {
   const dates = data?.copper?.dates || [];
   const ranks = data?.copper?.ranks || [];
   return dates.map((d, i) => ({ date: d, usdPerTonne: Number(ranks[i]) || 0 })).filter((r) => r.usdPerTonne > 0);
+}
+
+/** Пн–пт. Медь пишем только в существующие строки (дни ЦБ), выходные не добавляем. */
+function isWeekday(dateStr) {
+  const d = new Date(dateStr + "T12:00:00");
+  const day = d.getDay();
+  return day >= 1 && day <= 5;
 }
 
 /** Курс ЦБ на дату или последний известный на эту дату/раньше (для выходных — курс пятницы и т.п.). */
@@ -57,17 +63,16 @@ async function main() {
     if (!rows.length) continue;
     total += rows.length;
     for (const r of rows) {
+      if (!isWeekday(r.date)) continue;
       const usdRub = await getUsdRubForDate(conn, r.date);
       if (usdRub == null || usdRub <= 0) {
         noRate++;
         continue;
       }
-      const xcu = (r.usdPerTonne / 1_000_000) * usdRub;
-      await conn.execute(
-        "INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, 0, 0, 0, 0, ?) ON DUPLICATE KEY UPDATE xcu = VALUES(xcu)",
-        [r.date, xcu]
-      );
-      updated++;
+      const rubPerGram = (r.usdPerTonne / 1_000_000) * usdRub;
+      const xcu = Math.round(rubPerGram * GRAMS_PER_TROY_OZ * 100) / 100;
+      const [result] = await conn.execute("UPDATE metal_prices SET xcu = ? WHERE date = ?", [xcu, r.date]);
+      if (result.affectedRows) updated++;
     }
     if (rows.length) console.log(y, "→", rows.length, "дней медь");
     await new Promise((r) => setTimeout(r, 300));

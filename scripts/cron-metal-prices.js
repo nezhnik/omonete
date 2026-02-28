@@ -29,6 +29,13 @@ function shouldRunCron() {
   return isCbrWorkingDay();
 }
 
+/** Пн–пт (без субботы/воскресенья). Для меди: не заносить и не показывать данные по выходным. */
+function isWeekday(dateStr) {
+  const d = new Date(dateStr + "T12:00:00");
+  const day = d.getDay();
+  return day >= 1 && day <= 5;
+}
+
 function getConfig() {
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error("DATABASE_URL не задан");
@@ -149,7 +156,8 @@ async function getUsdRubForDate(conn, dateStr) {
   return prev?.[0]?.usd_rub != null ? Number(prev[0].usd_rub) : null;
 }
 
-/** Медь за последние дни: один запрос к RusCable → курс из cbr_rates (на дату или последний известный) → INSERT/UPDATE metal_prices.xcu. */
+/** Медь за последние дни: только обновляем xcu в существующих строках (дни, когда есть данные ЦБ). Новые строки не создаём — так же как логика по основным металлам. xcu храним в руб/тройская унция (как у драгметаллов). */
+const GRAMS_PER_TROY_OZ = 31.1035;
 async function updateCopperLastDays(conn, days = 3) {
   const end = new Date();
   const start = new Date(end);
@@ -166,18 +174,17 @@ async function updateCopperLastDays(conn, days = 3) {
   let updated = 0;
   for (let i = 0; i < dates.length; i++) {
     const dateStr = dates[i];
+    if (!isWeekday(dateStr)) continue;
     const usdPerTonne = Number(ranks[i]);
     if (!usdPerTonne || !dateStr) continue;
     const usdRub = await getUsdRubForDate(conn, dateStr);
     if (usdRub == null || usdRub <= 0) continue;
-    const xcu = (usdPerTonne / 1_000_000) * usdRub;
-    await conn.execute(
-      "INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, 0, 0, 0, 0, ?) ON DUPLICATE KEY UPDATE xcu = VALUES(xcu)",
-      [dateStr, xcu]
-    );
-    updated++;
+    const rubPerGram = (usdPerTonne / 1_000_000) * usdRub;
+    const xcu = Math.round(rubPerGram * GRAMS_PER_TROY_OZ * 100) / 100;
+    const [result] = await conn.execute("UPDATE metal_prices SET xcu = ? WHERE date = ?", [xcu, dateStr]);
+    if (result.affectedRows) updated++;
   }
-  if (updated) console.log("✓ Медь RusCable → БД (xcu):", updated, "дней");
+  if (updated) console.log("✓ Медь RusCable → БД (xcu, руб/унция):", updated, "дней");
 }
 
 /** Вставить массив строк в БД (ON DUPLICATE KEY UPDATE). */
@@ -279,18 +286,42 @@ function buildPeriodResponse(rows, period) {
   if (!range.length) return null;
   let sampled;
   if (period === "all") {
-    const byMonth = new Map();
-    range.forEach((r) => byMonth.set(r.date.slice(0, 7), r));
-    const keys = Array.from(byMonth.keys()).sort();
-    sampled = keys.map((k) => {
-      const r = byMonth.get(k);
-      const d = new Date(r.date + "T12:00:00");
-      return {
-        label: d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" }),
-        ...r,
-      };
-    });
-  } else if (period === "5y" || period === "10y") {
+    const round = (v) => Math.round(Number(v) * 100) / 100;
+    const monthMax = (key, filterRow) => {
+      const byMonth = new Map();
+      range.forEach((r) => {
+        if (filterRow && !filterRow(r)) return;
+        const k = r.date.slice(0, 7);
+        const val = Number(r[key]);
+        if (val <= 0) return;
+        if (!byMonth.has(k) || val > Number(byMonth.get(k)[key])) byMonth.set(k, r);
+      });
+      const keys = Array.from(byMonth.keys()).sort();
+      return keys.map((k) => {
+        const r = byMonth.get(k);
+        const d = new Date(r.date + "T12:00:00");
+        return {
+          label: d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" }),
+          value: round(r[key]),
+        };
+      });
+    };
+    const resAll = {
+      ok: true,
+      period,
+      source: "static",
+      XAU: monthMax("xau"),
+      XAG: monthMax("xag"),
+      XPT: monthMax("xpt"),
+      XPD: monthMax("xpd"),
+      XCU: monthMax("xcu", (r) => isWeekday(r.date) && r.date >= "2006-01-01"),
+    };
+    if (!resAll.XCU.length) delete resAll.XCU;
+    return resAll;
+  }
+
+  if (period === "1y" || period === "5y" || period === "10y") {
+    const round = (v) => Math.round(Number(v) * 100) / 100;
     const getWeekKey = (dateStr) => {
       const d = new Date(dateStr + "T12:00:00");
       const day = d.getDay();
@@ -298,18 +329,41 @@ function buildPeriodResponse(rows, period) {
       mon.setDate(d.getDate() - (day === 0 ? 6 : day - 1));
       return mon.toISOString().slice(0, 10);
     };
-    const byWeek = new Map();
-    range.forEach((r) => byWeek.set(getWeekKey(r.date), r));
-    const keys = Array.from(byWeek.keys()).sort();
-    sampled = keys.map((k) => {
-      const r = byWeek.get(k);
-      return {
-        label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short", year: "2-digit" }),
-        ...r,
-      };
-    });
-  } else {
-    sampled = range.map((r) => {
+    // Для каждого металла — своя выборка по неделям: день с макс. ценой по этому металлу в неделе, чтобы пики попадали в график
+    const weekMax = (key, filterRow) => {
+      const byWeek = new Map();
+      range.forEach((r) => {
+        if (filterRow && !filterRow(r)) return;
+        const k = getWeekKey(r.date);
+        const val = Number(r[key]);
+        if (val <= 0) return;
+        if (!byWeek.has(k) || val > Number(byWeek.get(k)[key])) byWeek.set(k, r);
+      });
+      const keys = Array.from(byWeek.keys()).sort();
+      return keys.map((k) => {
+        const r = byWeek.get(k);
+        return {
+          label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short", year: "2-digit" }),
+          value: round(r[key]),
+        };
+      });
+    };
+    const res5y10y = {
+      ok: true,
+      period,
+      source: "static",
+      XAU: weekMax("xau"),
+      XAG: weekMax("xag"),
+      XPT: weekMax("xpt"),
+      XPD: weekMax("xpd"),
+      XCU: weekMax("xcu", (r) => isWeekday(r.date)),
+    };
+    if (!res5y10y.XCU.length) delete res5y10y.XCU;
+    return res5y10y;
+  }
+
+  // 1m — все дни без выборки (каждый день = точка)
+  sampled = range.map((r) => {
       const d = new Date(r.date + "T12:00:00");
       const formatOptions =
         period === "1y"
@@ -320,20 +374,19 @@ function buildPeriodResponse(rows, period) {
         ...r,
       };
     });
-  }
-  const round = (v) => Math.round(Number(v) * 100) / 100;
+  const round2 = (v) => Math.round(Number(v) * 100) / 100;
+  // Драгметаллы: как с ЦБ — только рабочие дни. Строки на выходные/праздники появились из INSERT по меди (xau=xag=xpt=xpd=0); при экспорте такие точки пропускаем (value > 0).
+  const nonZero = (s, key) => Number(s[key]) > 0;
   const res = {
     ok: true,
     period,
     source: "static",
-    XAU: sampled.map((s) => ({ label: s.label, value: round(s.xau) })),
-    XAG: sampled.map((s) => ({ label: s.label, value: round(s.xag) })),
-    XPT: sampled.map((s) => ({ label: s.label, value: round(s.xpt) })),
-    XPD: sampled.map((s) => ({ label: s.label, value: round(s.xpd) })),
+    XAU: sampled.filter((s) => Number(s.xau) > 0).map((s) => ({ label: s.label, value: round2(s.xau) })),
+    XAG: sampled.filter((s) => Number(s.xag) > 0).map((s) => ({ label: s.label, value: round2(s.xag) })),
+    XPT: sampled.filter((s) => Number(s.xpt) > 0).map((s) => ({ label: s.label, value: round2(s.xpt) })),
+    XPD: sampled.filter((s) => Number(s.xpd) > 0).map((s) => ({ label: s.label, value: round2(s.xpd) })),
   };
-  // Медь: данные с 2006 (RusCable), для периода «Все» начинаем с 2006; в серию только точки с ценой > 0, чтобы график без пробелов с нулём
-  const sampledCu = period === "all" ? sampled.filter((s) => s.date >= "2006-01-01") : sampled;
-  const cuPoints = sampledCu.filter((s) => Number(s.xcu) > 0).map((s) => ({ label: s.label, value: round(s.xcu) }));
+  const cuPoints = sampled.filter((s) => isWeekday(s.date) && Number(s.xcu) > 0).map((s) => ({ label: s.label, value: round2(s.xcu) }));
   if (cuPoints.length) res.XCU = cuPoints;
   return res;
 }
@@ -382,7 +435,16 @@ async function main() {
       xcu: Number(r.xcu ?? 0),
     }));
 
+    let usdRub = null;
+    try {
+      const [[row]] = await conn.execute("SELECT usd_rub FROM cbr_rates ORDER BY date DESC LIMIT 1");
+      if (row && row.usd_rub != null) usdRub = Math.round(Number(row.usd_rub) * 100) / 100;
+    } catch (e) {
+      // cbr_rates может отсутствовать
+    }
+
     const out = {};
+    if (usdRub != null) out.usdRub = usdRub;
     for (const p of ["1m", "1y", "5y", "10y", "all"]) {
       const resp = buildPeriodResponse(allRows, p);
       if (resp && resp.XAU && resp.XAU.length) out[p] = resp;

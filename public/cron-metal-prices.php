@@ -286,6 +286,15 @@ function buildPeriodResponse(array $rows, $period) {
 }
 
 $out = [];
+// Курс доллара для переключателя валюты на фронте — последний из БД
+$usdRub = null;
+try {
+    $st = $pdo->query("SELECT usd_rub FROM cbr_rates ORDER BY date DESC LIMIT 1");
+    $row = $st ? $st->fetch(PDO::FETCH_OBJ) : null;
+    if ($row && isset($row->usd_rub)) $usdRub = round((float)$row->usd_rub * 100) / 100;
+} catch (Throwable $e) { /* cbr_rates может отсутствовать */ }
+if ($usdRub !== null) $out['usdRub'] = $usdRub;
+
 foreach (['1m', '1y', '5y', '10y', 'all'] as $p) {
     $resp = buildPeriodResponse($allRows, $p);
     if ($resp && !empty($resp['XAU'])) $out[$p] = $resp;

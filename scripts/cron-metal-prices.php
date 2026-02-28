@@ -152,14 +152,16 @@ function buildPeriodResponse(array $rows, string $period): ?array {
         }
     }
     $round = fn($v) => round((float) $v, 2);
+    // Драгметаллы: как с ЦБ — только рабочие дни. Выходные/праздники (строки с нулями от INSERT по меди) при экспорте пропускаем (value > 0).
+    $nonZero = function(array $s, string $key): bool { return (float) $s[$key] > 0; };
     return [
         'ok' => true,
         'period' => $period,
         'source' => 'static',
-        'XAU' => array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xau'])], $sampled),
-        'XAG' => array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xag'])], $sampled),
-        'XPT' => array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xpt'])], $sampled),
-        'XPD' => array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xpd'])], $sampled),
+        'XAU' => array_values(array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xau'])], array_filter($sampled, fn($s) => $nonZero($s, 'xau')))),
+        'XAG' => array_values(array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xag'])], array_filter($sampled, fn($s) => $nonZero($s, 'xag')))),
+        'XPT' => array_values(array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xpt'])], array_filter($sampled, fn($s) => $nonZero($s, 'xpt')))),
+        'XPD' => array_values(array_map(fn($s) => ['label' => $s['label'], 'value' => $round($s['xpd'])], array_filter($sampled, fn($s) => $nonZero($s, 'xpd')))),
     ];
 }
 
