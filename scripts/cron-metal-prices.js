@@ -97,7 +97,7 @@ function insertRows(conn, rows) {
   );
 }
 
-/** Заполнить БД за последние 10 лет чанками по 365 дней (как в API: те же диапазоны для графиков 1w–10y). */
+/** Заполнить БД за последние 10 лет чанками по 365 дней (как в API: те же диапазоны для графиков 1m–10y). */
 async function fetchBackfill10y(conn) {
   const end = new Date();
   const to = (d) => d.toISOString().slice(0, 10);
@@ -116,6 +116,28 @@ async function fetchBackfill10y(conn) {
     }
   }
   if (total) console.log("✓ ЦБ → БД (10 лет):", total, "дней");
+}
+
+/** Догрузить историю с 2003-07-07 до начала последних 10 лет (для периода «Все»). */
+async function fetchBackfillFrom2003(conn) {
+  const end = new Date();
+  end.setFullYear(end.getFullYear() - 10);
+  const to = (d) => d.toISOString().slice(0, 10);
+  const start = new Date("2003-07-07T12:00:00");
+  let total = 0;
+  let cur = new Date(start);
+  while (cur < end) {
+    const next = new Date(cur);
+    next.setFullYear(next.getFullYear() + 1);
+    const endCur = next > end ? end : new Date(next.getTime() - 86400000);
+    const rows = await fetchCbrRange(to(cur), to(endCur));
+    if (rows.length) {
+      await insertRows(conn, rows);
+      total += rows.length;
+    }
+    cur = next;
+  }
+  if (total) console.log("✓ ЦБ → БД (с 2003 г.):", total, "дней");
 }
 
 /** Добавить последние несколько дней (для ежедневного крона). */
@@ -138,10 +160,9 @@ function to(d) {
 /** Из всех строк БД выбрать диапазон по периоду. */
 function getRangeForPeriod(rows, period) {
   const end = new Date();
+  const CBR_FIRST_DATE = "2003-07-07";
   let start;
-  if (period === "1w") {
-    start = new Date(end); start.setDate(start.getDate() - 6);
-  } else if (period === "1m") {
+  if (period === "1m") {
     start = new Date(end); start.setMonth(start.getMonth() - 1);
   } else if (period === "1y") {
     start = new Date(end); start.setFullYear(start.getFullYear() - 1);
@@ -149,18 +170,32 @@ function getRangeForPeriod(rows, period) {
     start = new Date(end); start.setFullYear(start.getFullYear() - 5);
   } else if (period === "10y") {
     start = new Date(end); start.setFullYear(start.getFullYear() - 10);
+  } else if (period === "all") {
+    start = new Date(CBR_FIRST_DATE + "T12:00:00");
   } else return [];
   const startStr = to(start);
   const endStr = to(end);
   return rows.filter((r) => r.date >= startStr && r.date <= endStr);
 }
 
-/** Собрать ответ в формате API для одного периода (1w, 1m, 1y, 5y, 10y). */
+/** Собрать ответ в формате API для одного периода (1m, 1y, 5y, 10y, all). */
 function buildPeriodResponse(rows, period) {
   const range = getRangeForPeriod(rows, period);
   if (!range.length) return null;
   let sampled;
-  if (period === "5y" || period === "10y") {
+  if (period === "all") {
+    const byMonth = new Map();
+    range.forEach((r) => byMonth.set(r.date.slice(0, 7), r));
+    const keys = Array.from(byMonth.keys()).sort();
+    sampled = keys.map((k) => {
+      const r = byMonth.get(k);
+      const d = new Date(r.date + "T12:00:00");
+      return {
+        label: d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" }),
+        ...r,
+      };
+    });
+  } else if (period === "5y" || period === "10y") {
     const getWeekKey = (dateStr) => {
       const d = new Date(dateStr + "T12:00:00");
       const day = d.getDay();
@@ -213,6 +248,7 @@ async function main() {
 
     if (needBackfill && workingDay) {
       await fetchBackfill10y(conn);
+      await fetchBackfillFrom2003(conn);
     } else if (needBackfill && !workingDay) {
       console.log("⊘ Бэкфилл пропущен (выходной ЦБ), новых данных нет — запусти крон в рабочий день.");
     }
@@ -236,7 +272,7 @@ async function main() {
     }));
 
     const out = {};
-    for (const p of ["1w", "1m", "1y", "5y", "10y"]) {
+    for (const p of ["1m", "1y", "5y", "10y", "all"]) {
       const resp = buildPeriodResponse(allRows, p);
       if (resp && resp.XAU && resp.XAU.length) out[p] = resp;
     }

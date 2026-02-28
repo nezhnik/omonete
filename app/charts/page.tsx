@@ -49,31 +49,31 @@ const METALS = [
   { code: "Cu", name: "Медь", color: "#B87333", apiSymbol: null },
 ] as const;
 
-export type ChartPeriod = "1w" | "1m" | "1y" | "5y" | "10y";
+export type ChartPeriod = "1m" | "1y" | "5y" | "10y" | "all";
 
 const PERIODS: { value: ChartPeriod; label: string }[] = [
-  { value: "1w", label: "Неделя" },
   { value: "1m", label: "Месяц" },
   { value: "1y", label: "Год" },
   { value: "5y", label: "5 лет" },
   { value: "10y", label: "10 лет" },
+  { value: "all", label: "Все" },
 ];
 
 /** Подпись периода для блока «рост/падение за период» */
 const PERIOD_LABEL: Record<ChartPeriod, string> = {
-  "1w": "За неделю",
   "1m": "За месяц",
   "1y": "За год",
   "5y": "За 5 лет",
   "10y": "За 10 лет",
+  "all": "За весь период",
 };
 
 const PERIOD_LENGTHS: Record<ChartPeriod, number> = {
-  "1w": 7,
   "1m": 30,
   "1y": 12,
   "5y": 5,
   "10y": 10,
+  "all": 22,
 };
 
 /** Демо-данные по периоду: условные цены (для отображения тренда) */
@@ -87,10 +87,7 @@ function getDemoData(metalCode: string, period: ChartPeriod): DataPoint[] {
     const noise = Math.sin(i * 2.1 + seed) * 0.02;
     const value = Math.round(base * (1 + trend + noise) * 100) / 100;
     let label: string;
-    if (period === "1w") {
-      const d = new Date(); d.setDate(d.getDate() - (n - 1 - i));
-      label = d.toLocaleDateString("ru-RU", { day: "numeric", month: "short" });
-    } else if (period === "1m") label = `${i + 1}`;
+    if (period === "1m") label = `${i + 1}`;
     else if (period === "1y") {
       const d = new Date(); d.setMonth(d.getMonth() - (n - 1 - i));
       label = d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" });
@@ -448,11 +445,11 @@ function MetalChart({ metal }: { metal: (typeof METALS)[number] }) {
           </div>
           <div className="mt-4 flex w-full max-w-full relative rounded-[300px] bg-[#F1F1F2] p-1">
             <div className="flex w-full gap-1">
-              {PERIODS.map((p, i) => (
+                {PERIODS.map((p, i) => (
                 <div
                   key={p.value}
                   className={`flex-1 h-7 rounded-[300px] ${
-                    i === 2 ? "bg-white" : "bg-[#E4E4EA]"
+                    i === 1 ? "bg-white" : "bg-[#E4E4EA]"
                   }`}
                 />
               ))}

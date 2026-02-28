@@ -87,12 +87,13 @@ function dateTo(string $d): string {
 function getRangeForPeriod(array $rows, string $period): array {
     $end = new DateTime();
     $start = clone $end;
+    $cbrFirst = new DateTime('2003-07-07');
     switch ($period) {
-        case '1w': $start->modify('-6 days'); break;
         case '1m': $start->modify('-1 month'); break;
         case '1y': $start->modify('-1 year'); break;
         case '5y': $start->modify('-5 years'); break;
         case '10y': $start->modify('-10 years'); break;
+        case 'all': $start = $cbrFirst; break;
         default: return [];
     }
     $startStr = $start->format('Y-m-d');
@@ -106,7 +107,22 @@ function buildPeriodResponse(array $rows, string $period): ?array {
     $locale = 'ru_RU';
     $fmtShort = new IntlDateFormatter($locale, IntlDateFormatter::NONE, IntlDateFormatter::NONE, null, null, 'd MMM');
     $fmtYear = new IntlDateFormatter($locale, IntlDateFormatter::NONE, IntlDateFormatter::NONE, null, null, 'd MMM yy');
-    if ($period === '5y' || $period === '10y') {
+    $fmtMonthYear = new IntlDateFormatter($locale, IntlDateFormatter::NONE, IntlDateFormatter::NONE, null, null, 'MMM yy');
+    if ($period === 'all') {
+        $byMonth = [];
+        foreach ($range as $r) {
+            $key = substr($r['date'], 0, 7);
+            $byMonth[$key] = $r;
+        }
+        ksort($byMonth);
+        $sampled = [];
+        foreach ($byMonth as $r) {
+            $sampled[] = [
+                'label' => $fmtMonthYear->format(new DateTime($r['date'])),
+                'xau' => (float) $r['xau'], 'xag' => (float) $r['xag'], 'xpt' => (float) $r['xpt'], 'xpd' => (float) $r['xpd'],
+            ];
+        }
+    } elseif ($period === '5y' || $period === '10y') {
         $byWeek = [];
         foreach ($range as $r) {
             $dt = new DateTime($r['date'] . 'T12:00:00');
@@ -198,7 +214,7 @@ if ($workingDay) {
     }
 
     $out = [];
-    foreach (['1w', '1m', '1y', '5y', '10y'] as $p) {
+    foreach (['1m', '1y', '5y', '10y', 'all'] as $p) {
         $resp = buildPeriodResponse($allRows, $p);
         if ($resp && !empty($resp['XAU'])) $out[$p] = $resp;
     }

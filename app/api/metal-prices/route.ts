@@ -65,7 +65,25 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
   const dates = Array.from(byDate.keys()).sort();
   const rows = dates.map((d) => ({ date: d, ...byDate.get(d)! }));
   let sampled: { label: string; xau: number; xag: number; xpt: number; xpd: number }[];
-  if (period === "5y" || period === "10y") {
+  if (period === "all") {
+    const byMonth = new Map<string, (typeof rows)[0]>();
+    for (const r of rows) {
+      const key = r.date.slice(0, 7);
+      byMonth.set(key, r);
+    }
+    const keys = Array.from(byMonth.keys()).sort();
+    sampled = keys.map((k) => {
+      const r = byMonth.get(k)!;
+      const d = new Date(r.date + "T12:00:00");
+      return {
+        label: d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" }),
+        xau: r.xau,
+        xag: r.xag,
+        xpt: r.xpt,
+        xpd: r.xpd,
+      };
+    });
+  } else if (period === "5y" || period === "10y") {
     // Одна точка за неделю (последний день недели по понедельнику)
     const getWeekKey = (dateStr: string) => {
       const d = new Date(dateStr + "T12:00:00");
@@ -82,7 +100,7 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
       return { label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short", year: "2-digit" }), xau: r.xau, xag: r.xag, xpt: r.xpt, xpd: r.xpd };
     });
   } else {
-    // 1w, 1m, 1y — по дням (ЦБ даёт только дневные учётные цены)
+    // 1m, 1y — по дням
     sampled = rows.map((r) => {
       const d = new Date(r.date + "T12:00:00");
       const formatOptions =
@@ -113,11 +131,8 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
 function getDateRange(period: string): { start: string; end: string }[] {
   const end = new Date();
   const to = (d: Date) => d.toISOString().slice(0, 10);
+  const CBR_FIRST_DATE = "2003-07-07";
 
-  if (period === "1w") {
-    const start = new Date(end); start.setDate(start.getDate() - 6);
-    return [{ start: to(start), end: to(end) }];
-  }
   if (period === "1m") {
     const start = new Date(end); start.setMonth(start.getMonth() - 1);
     return [{ start: to(start), end: to(end) }];
@@ -139,6 +154,20 @@ function getDateRange(period: string): { start: string; end: string }[] {
       const yStart = new Date(yEnd); yStart.setFullYear(yStart.getFullYear() - 1);
       return { start: to(yStart), end: to(yEnd) };
     });
+  }
+  if (period === "all") {
+    const endStr = to(end);
+    const ranges: { start: string; end: string }[] = [];
+    let cur = new Date(CBR_FIRST_DATE + "T12:00:00");
+    while (cur < end) {
+      const next = new Date(cur);
+      next.setFullYear(next.getFullYear() + 1);
+      const startStr = to(cur);
+      const endStrChunk = next > end ? endStr : to(new Date(next.getTime() - 86400000));
+      ranges.push({ start: startStr, end: endStrChunk });
+      cur = next;
+    }
+    return ranges;
   }
   return [];
 }
