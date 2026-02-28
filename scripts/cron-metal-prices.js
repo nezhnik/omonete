@@ -1,6 +1,7 @@
 /**
  * Крон 1 раз в день: (1) запрос к ЦБ РФ → запись в metal_prices, (2) чтение из БД → public/data/metal-prices.json.
  * Запуск: node scripts/cron-metal-prices.js (нужен .env с DATABASE_URL).
+ * Один раз догрузить историю с 2003-07: BACKFILL_FROM_2003=1 FORCE_METAL_CRON=1 node scripts/cron-metal-prices.js
  */
 require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
@@ -17,6 +18,12 @@ function isCbrWorkingDay() {
   const d = new Date();
   const day = d.getDay();
   return day !== 0 && day !== 6;
+}
+
+/** Для одноразового ручного запуска: FORCE_METAL_CRON=1 node scripts/cron-metal-prices.js — выполнить даже в выходной. */
+function shouldRunCron() {
+  if (process.env.FORCE_METAL_CRON === "1") return true;
+  return isCbrWorkingDay();
 }
 
 function getConfig() {
@@ -244,10 +251,13 @@ async function main() {
     await ensureTable(conn);
     const [[{ cnt }]] = await conn.execute("SELECT COUNT(*) AS cnt FROM metal_prices");
     const needBackfill = (cnt || 0) < 500;
-    const workingDay = isCbrWorkingDay();
+    const forceBackfill = process.env.BACKFILL_FROM_2003 === "1";
+    const workingDay = shouldRunCron();
 
-    if (needBackfill && workingDay) {
-      await fetchBackfill10y(conn);
+    if ((needBackfill || forceBackfill) && workingDay) {
+      if (needBackfill) {
+        await fetchBackfill10y(conn);
+      }
       await fetchBackfillFrom2003(conn);
     } else if (needBackfill && !workingDay) {
       console.log("⊘ Бэкфилл пропущен (выходной ЦБ), новых данных нет — запусти крон в рабочий день.");
@@ -256,7 +266,7 @@ async function main() {
     if (workingDay) {
       await fetchAndInsert(conn, 3);
     } else {
-      console.log("⊘ Выходной ЦБ: запрос и экспорт пропущены, новых данных нет.");
+      console.log("⊘ Выходной ЦБ: запрос и экспорт пропущены. Для принудительного запуска: FORCE_METAL_CRON=1 node scripts/cron-metal-prices.js");
       return;
     }
 
