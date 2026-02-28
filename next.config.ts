@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // trailingSlash оставляем для удобных URL (/catalog/, /portfolio/ и т.п.)
   trailingSlash: true,
+  output: "export", // статический экспорт в папку out для деплоя на Reg.ru
 };
 
 export default nextConfig;

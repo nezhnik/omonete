@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { IconMenu2, IconUser, IconX } from "@tabler/icons-react";
 import { Button } from "./Button";
 import { Tabs } from "./Tabs";
@@ -29,24 +30,15 @@ const defaultNav: HeaderNavItem[] = [
   { label: "Главная", href: "/" },
   { label: "Каталог", href: "/catalog" },
   { label: "Монетные дворы", href: "/mints" },
-  { label: "Графики", href: "/charts" },
+  { label: "Графики металлов", href: "/charts" },
 ];
 
 export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps) {
-  const { isAuthorized, signOut, loading } = useAuth();
+  const { isAuthorized, signOut, loading, user } = useAuth();
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+  const router = useRouter();
 
-  // Показываем «Портфолио» при загрузке авторизации и при isAuthorized, чтобы при перезагрузке табы не прыгали и таб не пропадал
-  const resolvedNav = useMemo(() => {
-    const base = navItems ?? defaultNav;
-    const showPortfolio = loading || isAuthorized;
-    if (!showPortfolio) return base;
-    if (base.some((i) => i.href === "/portfolio")) return base;
-    const catalogIndex = base.findIndex((i) => i.href === "/catalog");
-    if (catalogIndex < 0) return [...base, { label: "Портфолио", href: "/portfolio" }];
-    const next = [...base];
-    next.splice(catalogIndex + 1, 0, { label: "Портфолио", href: "/portfolio" });
-    return next;
-  }, [navItems, isAuthorized, loading]);
+  const resolvedNav = useMemo(() => navItems ?? defaultNav, [navItems]);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -56,7 +48,8 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
   const profileRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const check = () => setIsMobile(typeof window !== "undefined" && window.innerWidth < MENU_BREAKPOINT);
+    const check = () =>
+      setIsMobile(typeof window !== "undefined" && window.innerWidth < MENU_BREAKPOINT);
     check();
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
@@ -65,6 +58,25 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
   useEffect(() => {
     if (menuOpen) setHeaderHidden(false);
   }, [menuOpen]);
+
+  // Аватар из локального профиля (как на странице Личных данных)
+  useEffect(() => {
+    if (!user?.id || typeof window === "undefined") {
+      setAvatarUrl(null);
+      return;
+    }
+    try {
+      const raw = localStorage.getItem(`profile_${user.id}`);
+      if (!raw) {
+        setAvatarUrl(null);
+        return;
+      }
+      const parsed = JSON.parse(raw) as { photoDataUrl?: string | null };
+      setAvatarUrl(parsed.photoDataUrl ?? null);
+    } catch {
+      setAvatarUrl(null);
+    }
+  }, [user?.id]);
 
   useEffect(() => {
     if (!profileOpen) return;
@@ -88,7 +100,8 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
   useEffect(() => {
     if (menuOpen) return;
     // Инициализация под текущую позицию скролла (важно для главной и при навигации)
-    const initScroll = () => (typeof window !== "undefined" && (lastScrollY.current = window.scrollY));
+    const initScroll = () =>
+      typeof window !== "undefined" && (lastScrollY.current = window.scrollY);
     initScroll();
     const onScroll = () => {
       const y = typeof window !== "undefined" ? window.scrollY : 0;
@@ -108,14 +121,18 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-white overflow-visible transition-transform duration-200 ease-out ${headerHidden ? "-translate-y-full" : ""}`}
+      className={`sticky top-0 z-50 bg-white overflow-visible transition-transform duration-200 ease-out ${
+        headerHidden ? "-translate-y-full" : ""
+      }`}
     >
-      <div className="w-full min-w-0 overflow-visible px-4 sm:px-6 lg:px-20">
+      <div className="w-full min-w-0 overflow-visible px-4 sm:px-6 lg:px-8 2xl:px-20">
         <div className="h-[72px] flex items-center overflow-visible">
           <div className="flex-1 min-w-0 flex items-center justify-start">
             <a href="/" className="flex items-center gap-3 cursor-pointer shrink-0">
               <img className="w-[73px] h-[40px]" src="/image/logo.png" alt="О монете" />
-              <span className="text-[20px] leading-[26px] font-semibold whitespace-nowrap">О монете</span>
+              <span className="text-[20px] leading-[26px] font-semibold whitespace-nowrap">
+                О монете
+              </span>
             </a>
           </div>
 
@@ -123,50 +140,59 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
             <Tabs items={resolvedNav} activePath={activePath} className="flex items-center gap-8 h-full" />
           </div>
 
-          {/* Справа: с lg — кнопки/иконка профиля, до lg — бургер */}
+          {/* Справа: с lg — иконка профиля или вход, до lg — бургер */}
           <div className="flex flex-1 min-w-0 items-center justify-end gap-2">
             <div className="hidden lg:flex gap-2 items-center">
-              {!loading && !isAuthorized && (
-                <Button href="/portfolio" variant="ghost">
-                  ДЕМО портфолио
-                </Button>
-              )}
-              {!loading && isAuthorized ? (
+              {(isAuthorized || loading) ? (
                 <div className="relative" ref={profileRef}>
                   <button
                     type="button"
                     onClick={() => setProfileOpen((v) => !v)}
-                    className="w-10 h-10 rounded-full border border-[#E4E4EA] flex items-center justify-center hover:bg-[#F1F1F2] cursor-pointer"
+                    className="w-12 h-12 rounded-full border border-[#E4E4EA] flex items-center justify-center hover:bg-[#F1F1F2] cursor-pointer"
                     aria-label="Меню профиля"
                   >
-                    <IconUser size={22} stroke={2} />
+                    {avatarUrl ? (
+                      <img
+                        src={avatarUrl}
+                        alt=""
+                        className="w-10 h-10 rounded-full object-cover"
+                      />
+                    ) : (
+                      <span className="w-8 h-8 rounded-full bg-[#F1F1F2]" aria-hidden />
+                    )}
                   </button>
-                  {profileOpen && (
-                    <div className="absolute right-0 mt-2 w-48 rounded-2xl bg-white shadow-lg border border-[#E4E4EA] py-2 z-50">
-                      <Link
-                        href="/profile"
-                        className="block px-4 py-2 text-[14px] text-[#11111B] hover:bg-[#F1F1F2]"
-                      >
-                        Профиль
-                      </Link>
-                      <Link
-                        href="/portfolio"
-                        className="block px-4 py-2 text-[14px] text-[#11111B] hover:bg-[#F1F1F2]"
-                      >
-                        Портфолио
-                      </Link>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setProfileOpen(false);
-                          signOut();
-                        }}
-                        className="w-full text-left px-4 py-2 text-[14px] text-[#CC0000] hover:bg-[#F1F1F2]"
-                      >
-                        Выйти
-                      </button>
-                    </div>
-                  )}
+                  <div
+                    className={`absolute right-0 mt-2 w-48 rounded-2xl bg-white shadow-lg border border-[#E4E4EA] py-2 z-50 transform origin-top transition-transform transition-opacity duration-250 ease-out ${
+                      profileOpen
+                        ? "opacity-100 translate-y-0 pointer-events-auto"
+                        : "opacity-0 -translate-y-4 pointer-events-none"
+                    }`}
+                    aria-hidden={!profileOpen}
+                  >
+                    <Link
+                      href="/profile"
+                      className="block px-4 py-2 text-[14px] text-[#11111B] hover:bg-[#F1F1F2]"
+                    >
+                      Личные данные
+                    </Link>
+                    <Link
+                      href="/portfolio"
+                      className="block px-4 py-2 text-[14px] text-[#11111B] hover:bg-[#F1F1F2]"
+                    >
+                      Портфолио
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={async () => {
+                        setProfileOpen(false);
+                        await signOut();
+                        router.push("/");
+                      }}
+                      className="w-full text-left px-4 py-2 text-[14px] text-[#CC0000] hover:bg-[#F1F1F2] cursor-pointer"
+                    >
+                      Выйти
+                    </button>
+                  </div>
                 </div>
               ) : !loading ? (
                 <Link href={LOGIN_PATH}>
@@ -199,58 +225,43 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
               {/* Сначала табы разделов сайта */}
               <div className="flex flex-col gap-1">
                 {resolvedNav.map((item) => {
-                  if (item.disabled) {
-                    return (
-                      <div
-                        key={item.href}
-                        className="py-3 px-3 text-[16px] font-medium text-[#11111B] opacity-40 cursor-not-allowed"
-                      >
-                        {item.label}
-                      </div>
-                    );
-                  }
                   const isActive = item.href === activePath;
                   return (
                     <Link
                       key={item.href}
                       href={item.href}
                       onClick={() => setMenuOpen(false)}
-                      className={`py-3 px-3 rounded-lg text-[16px] font-medium ${isActive ? "bg-[#F1F1F2] text-[#11111B]" : "text-[#11111B] hover:bg-[#F1F1F2]"}`}
+                      className={`py-3 px-3 rounded-lg text-[16px] font-medium ${
+                        isActive ? "bg-[#F1F1F2] text-[#11111B]" : "text-[#11111B] hover:bg-[#F1F1F2]"
+                      }`}
                     >
                       {item.label}
                     </Link>
                   );
                 })}
               </div>
-              {/* Внизу — кнопки Вход/Выйти и Портфолио */}
+              {/* Внизу — кнопки Вход / Выйти */}
               <div className="mt-4 pt-4 border-t border-[#E4E4EA] flex flex-col gap-2">
-                {!loading && (
-                  <>
-                    <Link href="/portfolio" onClick={() => setMenuOpen(false)}>
-                      <Button variant="ghost" className="w-full justify-center">
-                        {isAuthorized ? "Портфолио" : "ДЕМО портфолио"}
+                {!loading &&
+                  (isAuthorized ? (
+                    <Button
+                      variant="primary"
+                      className="w-full justify-center cursor-pointer"
+                      onClick={async () => {
+                        await signOut();
+                        setMenuOpen(false);
+                        router.push("/");
+                      }}
+                    >
+                      Выйти
+                    </Button>
+                  ) : (
+                    <Link href={LOGIN_PATH} onClick={() => setMenuOpen(false)}>
+                      <Button variant="primary" className="w-full justify-center">
+                        Вход
                       </Button>
                     </Link>
-                    {isAuthorized ? (
-                      <Button
-                        variant="primary"
-                        className="w-full justify-center"
-                        onClick={() => {
-                          signOut();
-                          setMenuOpen(false);
-                        }}
-                      >
-                        Выйти
-                      </Button>
-                    ) : (
-                      <Link href={LOGIN_PATH} onClick={() => setMenuOpen(false)}>
-                        <Button variant="primary" className="w-full justify-center">
-                          Вход
-                        </Button>
-                      </Link>
-                    )}
-                  </>
-                )}
+                  ))}
               </div>
             </div>
           </div>

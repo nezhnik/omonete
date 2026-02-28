@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState, ChangeEvent } from "react";
+import { useEffect, useState, ChangeEvent, useRef } from "react";
+import { IconCamera } from "@tabler/icons-react";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { useAuth } from "../../components/AuthProvider";
@@ -69,7 +70,10 @@ export default function ProfilePage() {
     photoDataUrl: null,
   });
   const [saving, setSaving] = useState(false);
+  const [savedNotice, setSavedNotice] = useState<string | null>(null);
+  const [savedVisible, setSavedVisible] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     const key = getStorageKey(user?.id ?? null);
@@ -96,6 +100,24 @@ export default function ProfilePage() {
       // ignore
     }
   }, [profile, user?.id]);
+
+  const handleSaveClick = () => {
+    setSaving(true);
+    try {
+      const key = getStorageKey(user?.id ?? null);
+      if (typeof window !== "undefined") {
+        localStorage.setItem(key, JSON.stringify(profile));
+      }
+      setSavedNotice("Данные сохранены");
+      setSavedVisible(true);
+      // через 2 секунды запускаем обратную анимацию
+      setTimeout(() => setSavedVisible(false), 2000);
+      // ещё через 250 мс убираем уведомление из DOM
+      setTimeout(() => setSavedNotice(null), 2250);
+    } finally {
+      setSaving(false);
+    }
+  };
 
   const handleChange =
     (field: keyof ProfileData) =>
@@ -124,30 +146,38 @@ export default function ProfilePage() {
       <Header activePath="/profile" />
 
       <main className="w-full px-4 sm:px-6 lg:px-20 pb-24">
+        {savedNotice && (
+          <div
+            className={`fixed top-[80px] left-1/2 -translate-x-1/2 z-40 px-4 py-2 rounded-[999px] bg-[#11111B] text-white text-[14px] shadow-lg transform transition-transform transition-opacity duration-250 ease-out ${
+              savedVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3"
+            }`}
+          >
+            {savedNotice}
+          </div>
+        )}
         <nav
           className="flex items-center gap-2 pt-6 text-[16px] font-medium text-[#666666]"
           aria-label="Хлебные крошки"
         >
-          <a href="/" className="hover:text-black">
-            Главная
-          </a>
+          <span className="text-[#666666]">Профиль</span>
           <span>/</span>
-          <span className="text-black">Профиль</span>
+          <span className="text-black">Личные данные</span>
         </nav>
 
         <article className="mt-8 max-w-[720px] mx-auto flex flex-col gap-8">
           <header className="flex flex-col gap-4">
             <h1 className="text-black text-[28px] sm:text-[40px] font-semibold leading-tight">
-              Профиль коллекционера
+              Личные данные
             </h1>
-            <p className="text-[#666666] text-[16px] leading-[1.6]">
-              Заполните информацию о себе и добавьте фотографию. Данные сохраняются на этом устройстве.
-            </p>
           </header>
 
           <section className="flex flex-col gap-6 border border-[#E4E4EA] rounded-2xl p-5 sm:p-6">
-            <div className="flex items-start gap-4">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#F1F1F2] flex items-center justify-center overflow-hidden shrink-0">
+            <div className="flex flex-col items-center gap-2">
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#F1F1F2] flex items-center justify-center overflow-hidden cursor-pointer border border-transparent hover:border-[#E4E4EA] transition-colors group"
+              >
                 {profile.photoDataUrl ? (
                   <img
                     src={profile.photoDataUrl}
@@ -159,32 +189,43 @@ export default function ProfilePage() {
                     Фото профиля
                   </span>
                 )}
-              </div>
-              <div className="flex-1 min-w-0 flex flex-col gap-3">
-                <div className="flex flex-col gap-2">
-                  <label className="text-[14px] font-medium text-[#11111B]">
-                    Фотография
-                  </label>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handlePhotoChange}
-                    className="block w-full text-[14px] text-[#11111B] file:mr-4 file:rounded-[300px] file:border file:border-[#E4E4EA] file:bg-[#F1F1F2] file:px-4 file:py-2 file:text-[14px] file:font-medium file:text-[#11111B] hover:file:bg-[#E4E4EA]"
-                  />
-                  <p className="text-[13px] text-[#666666]">
-                    Изображение будет автоматически сжато до&nbsp;{Math.round(MAX_AVATAR_BYTES / 1024)}&nbsp;КБ.
-                  </p>
-                  {error && (
-                    <p className="text-[13px] text-[#CC0000]">
-                      {error}
-                    </p>
-                  )}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <IconCamera size={22} stroke={2} className="text-white" />
                 </div>
-              </div>
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                onChange={handlePhotoChange}
+                className="hidden"
+              />
+              <p className="text-[13px] text-[#666666]">
+                Фото до 1 МБ
+              </p>
+              {error && (
+                <p className="text-[13px] text-[#CC0000]">
+                  {error}
+                </p>
+              )}
             </div>
-          </section>
 
-          <section className="flex flex-col gap-6 border border-[#E4E4EA] rounded-2xl p-5 sm:p-6">
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#11111B]" htmlFor="email">
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                value={user?.email ?? ""}
+                disabled
+                className="w-full rounded-[300px] border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#666666] outline-none cursor-not-allowed opacity-80"
+              />
+              <p className="text-[13px] text-[#666666]">
+                Этот email используется для входа и не может быть изменён
+              </p>
+            </div>
+
             <div className="flex flex-col gap-2">
               <label className="text-[14px] font-medium text-[#11111B]" htmlFor="fullName">
                 Имя и фамилия
@@ -200,34 +241,6 @@ export default function ProfilePage() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="text-[14px] font-medium text-[#11111B]" htmlFor="city">
-                Город
-              </label>
-              <input
-                id="city"
-                type="text"
-                value={profile.city}
-                onChange={handleChange("city")}
-                placeholder="Например, Москва"
-                className="w-full rounded-[300px] border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none focus:bg-white focus:border-[#11111B]"
-              />
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <label className="text-[14px] font-medium text-[#11111B]" htmlFor="about">
-                О себе
-              </label>
-              <textarea
-                id="about"
-                value={profile.about}
-                onChange={handleChange("about")}
-                placeholder="Расскажите пару предложений о себе и своей коллекции."
-                rows={4}
-                className="w-full rounded-2xl border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none resize-vertical focus:bg-white focus:border-[#11111B]"
-              />
-            </div>
-
-            <div className="flex flex-col gap-2">
               <label className="text-[14px] font-medium text-[#11111B]" htmlFor="contacts">
                 Контакты
               </label>
@@ -235,25 +248,29 @@ export default function ProfilePage() {
                 id="contacts"
                 value={profile.contacts}
                 onChange={handleChange("contacts")}
-                placeholder="E-mail, сайт или соцсети, если хотите ими поделиться."
+                placeholder="Телеграм, сайт или соцсети, если хотите ими поделиться."
                 rows={3}
                 className="w-full rounded-2xl border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none resize-vertical focus:bg-white focus:border-[#11111B]"
               />
+            </div>
+
+            <div className="mt-2">
+              <Button
+                type="button"
+                variant="primary"
+                disabled={saving}
+                className="shrink-0"
+                onClick={handleSaveClick}
+              >
+                {saving ? "Сохраняем…" : "Сохранить"}
+              </Button>
             </div>
           </section>
 
           <footer className="flex items-center justify-between gap-4">
             <p className="text-[13px] text-[#666666]">
-              Профиль сохраняется локально в браузере и привязан к вашему аккаунту.
+              Профиль пока сохраняется локально в браузере и привязан к вашему аккаунту.
             </p>
-            <Button
-              type="button"
-              variant="secondary"
-              disabled={saving}
-              className="shrink-0"
-            >
-              {saving ? "Сохраняем…" : "Сохранено"}
-            </Button>
           </footer>
         </article>
       </main>

@@ -109,12 +109,6 @@ export default function LoginPage() {
         >
           {mode === "in" ? "Нет аккаунта? Зарегистрироваться" : "Уже есть аккаунт? Войти"}
         </button>
-        <Link
-          href="/"
-          className="mt-6 px-6 py-3 rounded-[300px] border border-[#E4E4EA] text-[#11111B] text-[16px] font-medium hover:bg-[#F4F4F5] transition-colors cursor-pointer inline-block"
-        >
-          На главную
-        </Link>
       </main>
     </div>
   );

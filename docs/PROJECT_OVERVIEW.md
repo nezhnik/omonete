@@ -1,8 +1,23 @@
+# Обзор проекта omonete.ru
+
+**Быстрый контекст**: Next.js статический экспорт (`output: 'export'`), деплой — заливка папки `out/` на Reg.ru. Данные: монеты и дворы из MySQL → JSON в `public/data/`; цены металлов — ЦБ РФ → крон → `data/metal-prices.json`. API в проде не используется (папка убирается при билде). Портфолио и авторизация — Supabase.
+
+---
+
 ## Кратко о проекте omonete.ru
 
 - **Тип проекта**: статический сайт на Next.js (App Router, `output: 'export'`), деплой через заливку папки `out` на хостинг.
-- **Цель**: популяризация нумизматики — каталог монет, статьи о монетных дворах, удобный просмотр информации для новичков и коллекционеров.
-- **Основные разделы**: главная, каталог монет, детали монеты, страница монетных дворов, портфолио.
+- **Цель**: популяризация нумизматики — каталог монет, статьи о монетных дворах, графики цен металлов, портфолио коллекционера.
+- **Основные разделы**: главная, каталог монет, детали монеты, монетные дворы, графики металлов, портфолио, личные данные.
+
+---
+
+## 1. Экономия запросов к ЦБ (крон)
+
+- **Один запуск крона в рабочий день**: 1 запрос к ЦБ (последние 3 дня). При первом заполнении БД — до 10 запросов (бэкфилл за 10 лет).
+- **Уже сделано**: в выходные (суббота, воскресенье) запросы к ЦБ **не отправляются** — экспорт БД → JSON всё равно выполняется.
+- **Экономия за год только за счёт выходных**: 52×2 = **104 запроса**.
+- **Если добавить праздники**: ЦБ не публикует данные в нерабочие праздничные дни РФ (Новый год, 8 Марта, 9 Мая и т.д.). Таких дней в году обычно **около 14–16** (часть уже попадает в выходные). Дополнительная экономия при проверке «праздник»: **порядка 14 запросов в год**. Итого при выходных + праздниках: **~118 запросов в год** вместо 365.
 
 ---
 
@@ -13,10 +28,69 @@
   - `data:rectangular` → `public/data/rectangular-coins.json`
   - `mints:webp` → конвертация логотипов дворов в WebP (`public/image/Mints/*.webp`)
   - `data:export` → выгрузка монет и мд из БД в статические JSON (`public/data/coins*.json`, `public/data/mints.json`)
-  - `next build` + `output: 'export'` → генерация **папки `out/`** для деплоя.
+  - `move-api-for-export.js off` → временно убирает `app/api`, чтобы `next build` не падал на `force-dynamic`
+  - `next build` (output: 'export') → папка **`out/`**
+  - `clean-metal-prices-from-out.js` → удаляет `out/data/metal-prices.json` (на проде JSON обновляется кроном на сервере)
+  - `move-api-for-export.js on` → возвращает `app/api`
 - **Деплой**:
-  - После `npm run build` заливать **содержимое папки `out`** в корень сайта на хостинге (ISPmanager / Reg.ru).
-  - В корне сайта должны быть: `index.html`, `.htaccess`, папки `_next`, `catalog`, `coins`, `mints`, `image`, `data` и т.д.
+  - Заливать **содержимое `out/`** в корень сайта (Reg.ru / ISPmanager).
+  - На сервере в корне: `index.html`, `data/` (в т.ч. `data/metal-prices.json` пишет крон), `_next/`, `catalog/`, `coins/`, `mints/`, `image/` и т.д.
+
+---
+
+## API и внешние источники
+
+### ЦБ РФ (драгоценные металлы)
+
+- **Назначение**: учётные цены на золото, серебро, платину, палладий (руб/г). Медь ЦБ не публикует.
+- **Сервис**: `https://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx` (SOAP), метод `DragMetDynamic`, параметры `fromDate`, `ToDate`.
+- **Где используется**: крон (Node и PHP) запрашивает ЦБ и пишет в таблицу `metal_prices`, затем экспортирует в `data/metal-prices.json`. На фронте графики и портфолио читают этот JSON.
+
+### Роуты app/api (только dev / fallback)
+
+При `output: 'export'` папка `app/api` на время билда переносится в `.api-backup-for-export`, в `out/` не попадает. На Reg.ru API не работает.
+
+| Роут | Назначение |
+|------|------------|
+| `GET /api/metal-prices?period=1w|1m|1y|5y|10y` | Запрос к ЦБ, ответ в формате JSON для графиков. На проде не вызывается — данные из статического JSON. |
+| `GET /api/coins`, `GET /api/coins/[id]` | Список и одна монета из БД. На проде используются `/data/coins.json` и `/data/coins/[id].json`. |
+| `GET /api/mints`, `GET /api/mints/[slug]` | Список дворов и двор по slug. На проде — `/data/mints.json` и статика страниц дворов. |
+| `GET /api/mint-articles-export` | Экспорт статей дворов (если нужен JSON). |
+
+**Зачем API оставлен**: в режиме `npm run dev` графики могут брать данные из `/api/metal-prices`, если статического JSON ещё нет; плюс возможность позже переехать на хостинг с Node.
+
+---
+
+## Графики металлов
+
+- **Страница**: `app/charts/page.tsx`. Компонент графика: тот же файл, `MetalChart`.
+- **Источники данных (по приоритету)**:
+  1. Статический файл **`/data/metal-prices.json`** (обновляется кроном на сервере раз в день).
+  2. Fallback: **`/api/metal-prices?period=...`** (только в dev или если JSON недоступен).
+- **Формат JSON**: объект по периодам `1w`, `1m`, `1y`, `5y`, `10y`; в каждом — массивы `XAU`, `XAG`, `XPT`, `XPD` с элементами `{ label, value }`. Для периода «год» в `label` выводится год (например, «13 янв. 25»).
+- **Медь**: данных в ЦБ нет; на графике медь — демо-данные (подпись в описании страницы).
+- **Крон**: в рабочие дни (пн–пт) — запрос к ЦБ, обновление БД, экспорт в JSON; в выходные запрос и экспорт не выполняются (новых данных нет). См. `scripts/cron-metal-prices.js` и `scripts/cron-metal-prices.php`.
+
+---
+
+## Крон-задачи
+
+### Node (локально / свой сервер)
+
+- **Скрипт**: `scripts/cron-metal-prices.js`. Запуск: `node scripts/cron-metal-prices.js` или `npm run metal-prices:cron`.
+- **Нужен**: `.env` с `DATABASE_URL` (MySQL).
+- **Логика**: проверка `isCbrWorkingDay()` (не суббота, не воскресенье). В **рабочий день**: запрос к ЦБ за последние 3 дня, вставка в `metal_prices`, чтение из БД и запись `public/data/metal-prices.json`. В **выходной**: запрос к ЦБ и экспорт не выполняются (новых данных нет — лишние чтение БД и запись файла не делаем).
+
+### Reg.ru (PHP)
+
+- **Файлы**: `scripts/cron-metal-prices.php`, `scripts/cron-metal-prices-config.php.example` (скопировать в `cron-metal-prices-config.php`, не коммитить).
+- **Где лежат на сервере**: корень сайта (рядом с `data/`), например `www/omonete.ru/cron-metal-prices.php` и `cron-metal-prices-config.php`.
+- **Расписание**: раз в день (например утром), команда:  
+  `/home/ЛОГИН/php-bin-regru-php82/bin/php /home/ЛОГИН/www/omonete.ru/cron-metal-prices.php`
+- **В выходной**: запрос к ЦБ и экспорт в JSON не выполняются (скрипт сразу выходит с сообщением).
+- **Обновление кода**: заменить на сервере файл `cron-metal-prices.php` новой версией из репозитория (та же логика с `isCbrWorkingDay`). Расписание и путь к PHP менять не нужно; конфиг `cron-metal-prices-config.php` тоже без изменений.
+
+Подробнее: `docs/CRON_REG_RU_PHP.md`.
 
 ---
 
@@ -24,9 +98,10 @@
 
 - Источник данных: БД + скрипты в `scripts/` (экспорт в JSON).
 - Основные файлы:
-  - `public/data/coins.json` — список монет для каталога.
+  - `public/data/coins.json` — список монет для каталога (генерируется `scripts/export-coins-to-json.js`, входит в `npm run data:export`).
   - `public/data/coin-ids.json` — список ID для `generateStaticParams`.
   - `public/data/coins/[id].json` — отдельный JSON на каждую монету (детальная страница).
+- Загрузка на клиенте: `lib/fetchCoins.ts` — сначала запрос к `/data/coins.json` или `/data/coins/[id].json`, при необходимости fallback на `/api/coins` или `/api/coins/[id]`.
 - Страница монеты:
   - Роут: `app/coins/[id]/`
   - Серверная часть: `app/coins/[id]/page.tsx` — читает `public/data/coins/[id].json`.
@@ -97,7 +172,11 @@
 - **Главная страница**: `app/page.tsx`
 - **Каталог монет**: `app/catalog/page.tsx`
 - **Детали монеты**: `app/coins/[id]/page.tsx`, `app/coins/[id]/CoinPageClient.tsx`, `components/CoinDetail.tsx`
-- **Монетные дворы (список)**: `app/mints/page.tsx`
+- **Графики металлов**: `app/charts/page.tsx` (страница и компонент `MetalChart`)
+- **Портфолио**: `app/portfolio/page.tsx` (данные из Supabase + кеш в `AuthProvider`; цены металлов — `/data/metal-prices.json` или `/api/metal-prices`)
+- **Личные данные**: `app/profile/page.tsx`
+- **Монетные дворы (список)**: `app/mints/page.tsx` (данные из `public/data/mints.json` + `lib/mint-articles.ts`)
 - **Статья о монетном дворе**: `app/mints/[slug]/page.tsx`, `components/MintArticle.tsx`, данные в `lib/mint-articles.ts`
-- **Обработка картинок и данных**: папка `scripts/` (экспорт монет, загрузка и оптимизация изображений и т.п.)
+- **API (dev)**: `app/api/metal-prices/route.ts`, `app/api/coins/route.ts`, `app/api/coins/[id]/route.ts`, `app/api/mints/route.ts`, `app/api/mints/[slug]/route.ts`
+- **Скрипты сборки и крона**: `scripts/export-coins-to-json.js`, `scripts/cron-metal-prices.js`, `scripts/cron-metal-prices.php`, `scripts/move-api-for-export.js`, `scripts/clean-metal-prices-from-out.js`
 

@@ -10,9 +10,6 @@ import { formatNumber } from "../../lib/formatNumber";
 import { useAuth } from "../../components/AuthProvider";
 
 /** Первая — прямоугольная «Зайка» для проверки отображения; остальные — как в блоке «Российские» на главной */
-const RUSSIAN_FEATURED_IDS = ["3799", "2838", "3699", "2518", "3395", "3293", "3292", "3294", "2840", "3940", "3119"];
-
-/** Двор «ММД + СПМД» — показываем логотип Гознака */
 const MINT_TWO_RUSSIA = "Московский и Санкт-Петербургский монетные дворы";
 const GOZNAK_LOGO = "/image/Mints/goznak.webp";
 
@@ -29,8 +26,10 @@ function PortfolioTableSkeleton() {
             <col className="w-[360px]" />
             <col className="w-[264px]" />
             <col className="w-[196px]" />
+            {/* Тираж */}
             <col className="w-[104px]" />
-            <col className="w-[168px]" />
+            {/* Количество */}
+            <col className="w-[180px]" />
             <col className="w-[184px]" />
             <col className="w-[272px]" />
             <col className="w-10" />
@@ -46,7 +45,7 @@ function PortfolioTableSkeleton() {
               <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">Монетный двор / страна</th>
               <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">Номинал / металл</th>
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Тираж</th>
-              <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">В коллекции</th>
+              <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Количество</th>
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Цена покупки, ₽</th>
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Цена монеты / металла, ₽</th>
               <th className="pr-[0.75rem]" />
@@ -287,8 +286,13 @@ function parseWeightG(weightG: string | undefined): number | null {
   return Number.isFinite(num) && num > 0 ? num : null;
 }
 
+/** Подпись коллекции для кэша: одинаковый набор id даёт один и тот же sig */
+function collectionSig(ids: Set<string>): string {
+  return Array.from(ids).sort().join(",");
+}
+
 export default function PortfolioPage() {
-  const { isAuthorized, collectionIds, loading: authLoading } = useAuth();
+  const { isAuthorized, collectionIds, loading: authLoading, portfolioCache, setPortfolioCache } = useAuth();
   const [portfolioRows, setPortfolioRows] = useState<PortfolioRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [collectionCounts, setCollectionCounts] = useState<number[]>([]);
@@ -304,8 +308,17 @@ export default function PortfolioPage() {
   }, []);
 
   useEffect(() => {
-    fetch("/api/metal-prices?period=1m")
-      .then((r) => r.json() as Promise<MetalPrices1m>)
+    // Сначала статичный JSON (обновляется кроном), при отсутствии — API ЦБ
+    fetch("/data/metal-prices.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: Record<string, MetalPrices1m> | null) => {
+        const oneMonth = data?.["1m"];
+        if (oneMonth?.ok) {
+          setMetalPrices1m(oneMonth);
+          return;
+        }
+        return fetch("/api/metal-prices?period=1m").then((r) => r.json() as Promise<MetalPrices1m>);
+      })
       .then((res) => res?.ok && setMetalPrices1m(res))
       .catch(() => {});
   }, []);
@@ -327,6 +340,15 @@ export default function PortfolioPage() {
         setLoading(false);
         return;
       }
+      const sig = collectionSig(collectionIds);
+      // Кэш: при возврате на вкладку не делаем повторный запрос, пока коллекция не менялась
+      if (portfolioCache?.sig === sig && Array.isArray(portfolioCache.rows) && portfolioCache.rows.length > 0) {
+        const rows = portfolioCache.rows as PortfolioRow[];
+        setPortfolioRows(rows);
+        setCollectionCounts(rows.map((_, i) => (i % 2 === 0 ? 1 : 2)));
+        setLoading(false);
+        return;
+      }
       const ids = Array.from(collectionIds);
       setLoading(true);
       import("../../lib/fetchCoins").then(({ fetchCoinById }) =>
@@ -340,26 +362,16 @@ export default function PortfolioPage() {
         });
         setPortfolioRows(rows);
         setCollectionCounts(rows.map((_, i) => (i % 2 === 0 ? 1 : 2)));
+        setPortfolioCache({ sig, rows });
       }).finally(() => setLoading(false));
       return;
     }
 
-    // Гость: демо-портфолио
-    const ids = RUSSIAN_FEATURED_IDS;
-    setLoading(true);
-    import("../../lib/fetchCoins").then(({ fetchCoinById }) =>
-      Promise.allSettled(ids.map((id) => fetchCoinById(id)))
-    ).then((results) => {
-      const rows: PortfolioRow[] = [];
-      results.forEach((res) => {
-        if (res.status === "fulfilled" && res.value?.coin) {
-          rows.push(coinToPortfolioRow(res.value.coin as ApiCoin, rows.length));
-        }
-      });
-      setPortfolioRows(rows);
-      setCollectionCounts(rows.map((_, i) => (i % 2 === 0 ? 1 : 2)));
-    }).finally(() => setLoading(false));
-  }, [isAuthorized, collectionIds, authLoading]);
+    // Гость: не показываем демо-данные, только эмпти-стейт с призывом войти
+    setPortfolioRows([]);
+    setCollectionCounts([]);
+    setLoading(false);
+  }, [isAuthorized, collectionIds, authLoading, portfolioCache, setPortfolioCache]);
 
   const handleMinus = (index: number) => {
     setCollectionCounts((prev) => {
@@ -381,14 +393,14 @@ export default function PortfolioPage() {
     <div className="min-h-screen bg-white">
       <Header activePath="/portfolio" />
 
-      <main className="w-full px-4 sm:px-6 lg:px-20 pb-24">
+      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pb-24">
         {/* Хлебные крошки */}
         <nav className="flex items-center gap-2 pt-6 text-[16px] font-medium text-[#666666]" aria-label="Хлебные крошки">
-            <Link href="/" className="hover:text-black">
-              Главная
-            </Link>
-            <span>/</span>
-            <span className="text-black">Портфолио</span>
+          <Link href="/profile" className="hover:text-black">
+            Профиль
+          </Link>
+          <span>/</span>
+          <span className="text-black">Портфолио</span>
         </nav>
 
         <div className="mt-8 flex flex-col gap-8 w-full">
@@ -402,14 +414,32 @@ export default function PortfolioPage() {
                   ? "Ваши сохранённые монеты. Добавляйте монеты из каталога."
                   : isAuthorized
                     ? "Ваши сохранённые монеты. Добавляйте монеты из каталога."
-                    : "Демо-режим: пример коллекции. Войдите, чтобы вести свою коллекцию и добавлять монеты из каталога."}
+                    : "Войдите в аккаунт, чтобы добавлять монеты в коллекцию и отслеживать портфолио."}
               </p>
             </div>
+            {isAuthorized && (
             <Button href="/catalog" variant="secondary" className="shrink-0 w-fit">
               Добавить монеты из каталога
             </Button>
+            )}
           </div>
 
+          {/* Гость: только эмпти-стейт с призывом войти */}
+          {!authLoading && !isAuthorized && (
+            <div className="py-12 flex flex-col items-center justify-center gap-6 text-center">
+              <div className="w-24 h-24 rounded-full bg-[#E4E4EA] flex items-center justify-center" aria-hidden />
+              <p className="text-[#666666] text-[16px] leading-[1.5] max-w-[400px]">
+                Войдите, чтобы вести портфолио и добавлять монеты из каталога.
+              </p>
+              <Link href="/login">
+                <Button variant="primary">Вход</Button>
+              </Link>
+            </div>
+          )}
+
+          {/* Тулбар и таблица — только для авторизованных */}
+          {isAuthorized && (
+          <>
           {/* Тулбар: всегда виден; при загрузке счётчик — скелетон */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <span className="text-[#666666] text-[16px] font-normal">
@@ -476,8 +506,10 @@ export default function PortfolioPage() {
                   <col className="w-[360px]" />
                   <col className="w-[264px]" />
                   <col className="w-[196px]" />
+                  {/* Тираж */}
                   <col className="w-[104px]" />
-                  <col className="w-[168px]" />
+                  {/* Количество */}
+                  <col className="w-[180px]" />
                   <col className="w-[184px]" />
                   <col className="w-[272px]" />
                   <col className="w-10" />
@@ -502,7 +534,7 @@ export default function PortfolioPage() {
                       Тираж
                     </th>
                     <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">
-                      В коллекции
+                      Количество
                     </th>
                     <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">
                       Цена покупки, ₽
@@ -579,7 +611,7 @@ export default function PortfolioPage() {
                             type="button"
                             onClick={() => handleMinus(i)}
                             disabled={collectionCounts[i] <= 1}
-                            className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 hover:bg-[#11111B] hover:text-white hover:border-[#11111B] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[#11111B] disabled:hover:border-[#E4E4EA]"
+                            className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 enabled:group-hover:bg-white enabled:hover:bg-[#11111B] enabled:hover:text-white enabled:hover:border-[#11111B] disabled:opacity-40 disabled:cursor-not-allowed"
                             aria-label="Уменьшить"
                           >
                             <IconMinus size={16} stroke={2} />
@@ -613,7 +645,7 @@ export default function PortfolioPage() {
                           <button
                             type="button"
                             onClick={() => handlePlus(i)}
-                            className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 hover:bg-[#11111B] hover:text-white hover:border-[#11111B]"
+                            className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 group-hover:bg-white hover:bg-[#11111B] hover:text-white hover:border-[#11111B]"
                             aria-label="Увеличить"
                           >
                             <IconPlus size={16} stroke={2} />
@@ -654,6 +686,8 @@ export default function PortfolioPage() {
             </div>
             )}
           </div>
+          )}
+          </>
           )}
         </div>
       </main>

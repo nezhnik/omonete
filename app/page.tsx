@@ -54,6 +54,12 @@ const MINT_PLACEHOLDER = "/image/coin-placeholder.svg";
 
 export default function HomePage() {
   const { isAuthorized, inCollection, addToCollection, removeFromCollection } = useAuth();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const handleToggleCollection = useCallback((id: string) => {
     if (inCollection(id)) removeFromCollection(id);
     else addToCollection(id);
@@ -150,7 +156,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Header activePath="/" />
 
-      <main className="w-full px-4 sm:px-6 lg:px-20 overflow-x-hidden">
+      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 overflow-x-hidden">
         <section className="mt-0 lg:mt-12">
           <div className="flex flex-col items-center gap-6 md:gap-10">
             <div className="hero-coins-wrap flex flex-row items-end justify-center gap-2 md:gap-4 lg:gap-6">
@@ -250,9 +256,17 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-row gap-3 w-full sm:w-auto sm:inline-flex items-center">
-                <Button href="/login" variant="primary" className="flex-1 sm:flex-initial">
-                  Присоединиться
-                </Button>
+                {mounted && (
+                  isAuthorized ? (
+                    <Button href="/portfolio" variant="primary" className="flex-1 sm:flex-initial">
+                      В портфолио
+                    </Button>
+                  ) : (
+                    <Button href="/login" variant="primary" className="flex-1 sm:flex-initial">
+                      Присоединиться
+                    </Button>
+                  )
+                )}
                 <Button href="/catalog" variant="secondary" className="flex-1 sm:flex-initial">
                   В каталог
                 </Button>
@@ -334,14 +348,18 @@ export default function HomePage() {
           </div>
         </section>
 
-        <footer className="w-full py-10 mt-8 border-t border-[#E4E4EA] px-4 sm:pl-0 sm:pr-6 lg:pl-0 lg:pr-20">
+        <footer className="w-full py-10 mt-8 border-t border-[#E4E4EA] px-4 sm:pl-0 sm:pr-6 lg:pl-0 lg:pr-8 2xl:pr-20">
           <div className="flex flex-col gap-6 text-[#666666] text-[16px] max-w-[800px]">
             <nav className="flex flex-wrap items-center justify-start gap-4 sm:gap-6" aria-label="Навигация по сайту">
               <a href="/" className="text-black hover:opacity-80 transition-opacity" title="Главная страница omonete.ru">Главная</a>
               <a href="/catalog" className="text-black hover:opacity-80 transition-opacity" title="Каталог монет России и мира">Каталог монет</a>
               <a href="/mints" className="text-black hover:opacity-80 transition-opacity" title="Монетные дворы России и мира — статьи и история">Монетные дворы</a>
-              <a href="/portfolio" className="text-black hover:opacity-80 transition-opacity" title="Моя коллекция монет">Портфолио</a>
-              <a href="/login" className="text-black hover:opacity-80 transition-opacity" title="Вход в личный кабинет">Вход</a>
+              {mounted && isAuthorized && (
+                <a href="/portfolio" className="text-black hover:opacity-80 transition-opacity" title="Моя коллекция монет">Портфолио</a>
+              )}
+              {mounted && !isAuthorized && (
+                <a href="/login" className="text-black hover:opacity-80 transition-opacity" title="Вход в личный кабинет">Вход</a>
+              )}
             </nav>
             <p className="text-left text-[15px] leading-[1.5]">
               Нумизматика и коллекционирование: каталог памятных и инвестиционных монет России и мира, статьи о монетных дворах, ведение коллекции.

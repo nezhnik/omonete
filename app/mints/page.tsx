@@ -82,7 +82,7 @@ export default function MintsPage() {
     <div className="min-h-screen bg-white">
       <Header activePath="/mints" />
 
-      <main className="w-full px-4 sm:px-6 lg:px-20 pt-6 pb-20">
+      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-20">
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Монетные дворы
         </h1>

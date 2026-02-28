@@ -1,0 +1,14 @@
+<?php
+/**
+ * Скопируй как cron-metal-prices-config.php и укажи данные MySQL с Reg.ru.
+ * В .htaccess можно добавить: <Files "cron-metal-prices-config.php"> Require all denied </Files>
+ */
+if (php_sapi_name() !== 'cli' && !defined('CRON_METAL_PRICES')) {
+    header('HTTP/1.0 403 Forbidden');
+    exit;
+}
+$dbHost = 'localhost';        // хост БД (обычно localhost на Reg.ru)
+$dbPort = 3306;
+$dbName = 'u2524954_omonete_db'; // база с coins, mints, metal_prices
+$dbUser = 'u2524954_omonete_db'; // пользователь БД — уточни в панели Reg.ru (Базы данных)
+$dbPass = '';                 // пароль БД — укажи из панели Reg.ru

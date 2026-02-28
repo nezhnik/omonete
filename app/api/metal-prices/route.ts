@@ -83,10 +83,20 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
     });
   } else {
     // 1w, 1m, 1y — по дням (ЦБ даёт только дневные учётные цены)
-    sampled = rows.map((r) => ({
-      label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short" }),
-      xau: r.xau, xag: r.xag, xpt: r.xpt, xpd: r.xpd,
-    }));
+    sampled = rows.map((r) => {
+      const d = new Date(r.date + "T12:00:00");
+      const formatOptions =
+        period === "1y"
+          ? { day: "numeric", month: "short", year: "2-digit" }
+          : { day: "numeric", month: "short" };
+      return {
+        label: d.toLocaleDateString("ru-RU", formatOptions),
+        xau: r.xau,
+        xag: r.xag,
+        xpt: r.xpt,
+        xpd: r.xpd,
+      };
+    });
   }
   return {
     ok: true,

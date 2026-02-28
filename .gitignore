@@ -33,6 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# конфиг крона с паролем БД — не коммитить
+scripts/cron-metal-prices-config.php
+
+# временный файл скрипта favicon
+.favicon-temp.png
+
 # vercel
 .vercel
 

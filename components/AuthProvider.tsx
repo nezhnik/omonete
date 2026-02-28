@@ -3,13 +3,24 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { createClient } from "../lib/supabase";
 
+/** Кэш строк портфолио: при переключении вкладок не делаем повторный запрос; инвалидируется при add/remove монеты */
+export type PortfolioCacheEntry = { sig: string; rows: Record<string, unknown>[] };
+
+type AuthUser = {
+  id: string;
+  email?: string | null;
+};
+
 type AuthContextValue = {
-  user: { id: string } | null;
+  user: AuthUser | null;
   collectionIds: Set<string>;
   isAuthorized: boolean;
   addToCollection: (coinId: string) => Promise<void>;
   removeFromCollection: (coinId: string) => Promise<void>;
   inCollection: (coinId: string) => boolean;
+  /** Кэш портфолио (sig = отсортированный join collectionIds); null после add/remove */
+  portfolioCache: PortfolioCacheEntry | null;
+  setPortfolioCache: (entry: PortfolioCacheEntry | null) => void;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
   /** Отправка magic-link на email */
@@ -59,12 +70,13 @@ function useSupabase() {
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const supabase = useSupabase();
-  const [user, setUser] = useState<{ id: string } | null>(() => {
+  const [user, setUser] = useState<AuthUser | null>(() => {
     const id = getStoredUserId();
     return id ? { id } : null;
   });
   const [collectionIds, setCollectionIds] = useState<Set<string>>(new Set());
-  const [loading, setLoading] = useState(() => !getStoredUserId());
+  const [portfolioCache, setPortfolioCache] = useState<PortfolioCacheEntry | null>(null);
+  const [loading, setLoading] = useState(true);
 
   const fetchCollection = useCallback(async (userId: string) => {
     if (!supabase) return;
@@ -83,7 +95,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
     supabase.auth.getSession().then(async ({ data: { session } }) => {
       if (session?.user?.id) {
-        setUser({ id: session.user.id });
+        setUser({ id: session.user.id, email: session.user.email ?? null });
         await fetchCollection(session.user.id);
       }
       setLoading(false);
@@ -92,7 +104,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session?.user?.id) {
-        setUser({ id: session.user.id });
+        setUser({ id: session.user.id, email: session.user.email ?? null });
         fetchCollection(session.user.id);
       } else {
         setUser(null);
@@ -107,6 +119,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (!supabase || !user) return;
       await supabase.from("user_collection").insert({ user_id: user.id, coin_id: coinId });
       setCollectionIds((prev) => new Set(prev).add(coinId));
+      setPortfolioCache(null); // инвалидируем кэш: коллекция изменилась
     },
     [supabase, user]
   );
@@ -120,6 +133,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         next.delete(coinId);
         return next;
       });
+      setPortfolioCache(null); // инвалидируем кэш: коллекция изменилась
     },
     [supabase, user]
   );
@@ -167,6 +181,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     addToCollection,
     removeFromCollection,
     inCollection,
+    portfolioCache,
+    setPortfolioCache,
     signIn,
     signUp,
     sendMagicLink,
@@ -187,6 +203,8 @@ export function useAuth(): AuthContextValue {
       addToCollection: async () => {},
       removeFromCollection: async () => {},
       inCollection: () => false,
+      portfolioCache: null,
+      setPortfolioCache: () => {},
       signIn: async () => ({ error: "AuthProvider не подключён" }),
       signUp: async () => ({ error: "AuthProvider не подключён" }),
       sendMagicLink: async () => ({ error: "AuthProvider не подключён" }),
