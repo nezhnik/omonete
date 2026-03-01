@@ -28,7 +28,7 @@ type HeaderProps = {
 
 const defaultNav: HeaderNavItem[] = [
   { label: "Главная", href: "/" },
-  { label: "Каталог", href: "/catalog" },
+  { label: "Каталог монет", href: "/catalog" },
   { label: "Монетные дворы", href: "/mints" },
   { label: "Графики металлов", href: "/charts" },
 ];

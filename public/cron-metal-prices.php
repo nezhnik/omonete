@@ -295,6 +295,18 @@ try {
 } catch (Throwable $e) { /* cbr_rates может отсутствовать */ }
 if ($usdRub !== null) $out['usdRub'] = $usdRub;
 
+// Актуальная цена на последнюю дату — чтобы при переключении периода итоговая цена не менялась
+if (!empty($allRows)) {
+    $last = end($allRows);
+    $out['lastPrice'] = [
+        'XAU' => round((float)$last['xau'] * 100) / 100,
+        'XAG' => round((float)$last['xag'] * 100) / 100,
+        'XPT' => round((float)$last['xpt'] * 100) / 100,
+        'XPD' => round((float)$last['xpd'] * 100) / 100,
+    ];
+    if (!empty($last['xcu']) && (float)$last['xcu'] > 0) $out['lastPrice']['XCU'] = round((float)$last['xcu'] * 100) / 100;
+}
+
 foreach (['1m', '1y', '5y', '10y', 'all'] as $p) {
     $resp = buildPeriodResponse($allRows, $p);
     if ($resp && !empty($resp['XAU'])) $out[$p] = $resp;

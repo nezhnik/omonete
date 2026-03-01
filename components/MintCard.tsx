@@ -8,7 +8,7 @@ type MintCardProps = {
 
 export function MintCard({ id, name, country, imageUrl, href }: MintCardProps) {
   const card = (
-    <div className="w-full min-w-0 pt-4 pb-4 flex flex-col items-center gap-5 group">
+    <div className="w-full min-w-0 flex flex-col items-center gap-5 group">
       <div className="w-full h-[192px] md:h-[220px] xl:h-[296px] px-6 py-4 md:px-8 md:py-5 xl:px-10 xl:py-8 relative bg-[rgba(17,17,27,0.03)] rounded-2xl flex items-center justify-center transition-colors duration-200 group-hover:bg-[rgba(17,17,27,0.06)]">
         <img
           src={imageUrl}
@@ -43,7 +43,7 @@ export function MintCard({ id, name, country, imageUrl, href }: MintCardProps) {
 /** Скелетон карточки монетного двора (как в каталоге — анимация skeleton-pulse-opacity). */
 export function MintCardSkeleton() {
   return (
-    <div className="w-full min-w-0 pt-4 pb-4 flex flex-col items-center gap-5 skeleton-pulse-opacity" aria-hidden>
+    <div className="w-full min-w-0 flex flex-col items-center gap-5 skeleton-pulse-opacity" aria-hidden>
       <div className="w-full h-[192px] md:h-[220px] xl:h-[296px] rounded-2xl bg-[#E4E4EA]" />
       <div className="w-full flex items-start gap-3">
         <div className="flex-1 flex flex-col justify-center gap-1">

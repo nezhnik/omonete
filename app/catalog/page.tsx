@@ -567,13 +567,13 @@ const mintListByCount = useMemo(() => {
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Каталог монет
         </h1>
-        <p className="text-[#656565] text-[16px] font-normal mb-8 max-w-[640px] lg:max-w-[720px]">
+        <p className="text-[#656565] text-[16px] font-normal mb-3 sm:mb-8 max-w-[640px] lg:max-w-[720px]">
           {nbspAfterPrepositions(
             "Российские и иностранные монеты из драгоценных металлов"
           )}
         </p>
         {/* Панель: свитчер + сортировка + фильтры и поиск — без скелетона, сразу реальные элементы */}
-        <div className="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-0 sm:mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <>
           <div className="flex lg:inline-flex w-full lg:w-auto relative rounded-[300px] bg-[#F1F1F2] p-1 cursor-pointer flex-nowrap">
             <div
@@ -704,7 +704,7 @@ const mintListByCount = useMemo(() => {
 
         {/* Одна сетка 5 колонок на xl: панель = 1 колонка (сразу полная ширина), карточки 4 или 5 колонок — перестраиваются только правые */}
         <div
-          className={`mt-6 ${showPanel && isXl ? "lg:grid lg:grid-cols-5 lg:gap-6" : ""}`}
+          className={`mt-3 sm:mt-6 ${showPanel && isXl ? "lg:grid lg:grid-cols-5 lg:gap-6" : ""}`}
         >
           <div
             className={
@@ -765,7 +765,7 @@ const mintListByCount = useMemo(() => {
             ) : (
               <>
                 <div
-                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6"
+                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6"
                   style={
                     isXl
                       ? {
@@ -976,13 +976,13 @@ function CatalogPageFallback() {
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Каталог монет
         </h1>
-        <p className="text-[#656565] text-[16px] font-normal mb-8 max-w-[640px] lg:max-w-[720px]">
+        <p className="text-[#656565] text-[16px] font-normal mb-3 sm:mb-8 max-w-[640px] lg:max-w-[720px]">
           {nbspAfterPrepositions(
             "Российские и иностранные монеты из драгоценных металлов"
           )}
         </p>
         {/* Та же панель, что и в контенте — без мигания и серого блока при перезагрузке */}
-        <div className="mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-0 sm:mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex lg:inline-flex w-full lg:w-auto relative rounded-[300px] bg-[#F1F1F2] p-1 flex-nowrap pointer-events-none">
             <div className="absolute top-1 bottom-1 left-1 rounded-[300px] bg-white w-1/3 lg:w-[140px]" aria-hidden />
             <div className="relative z-10 flex-1 lg:flex-initial min-w-0 lg:min-w-[140px] px-3 lg:px-6 py-2 font-medium text-center flex flex-col items-center gap-0.5">
@@ -1017,7 +1017,7 @@ function CatalogPageFallback() {
             </Button>
           </div>
         </div>
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6">
+        <div className="mt-3 sm:mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6">
           {Array.from({ length: SKELETON_COUNT_DESKTOP }, (_, i) => (
             <div
               key={i}

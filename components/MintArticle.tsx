@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { IconArrowUp, IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import { IconArrowUp, IconChevronLeft, IconChevronRight, IconShare3 } from "@tabler/icons-react";
 import type { MintArticleData, MintForBlock } from "../lib/mint-articles";
 import { nbspAfterPrepositions } from "../lib/nbspPrepositions";
 import { MintCard } from "./MintCard";
@@ -21,6 +21,7 @@ export function MintArticle({ article, backHref = "/", backLabel = "Назад",
   const images = article.galleryImages?.length ? article.galleryImages : [article.logoUrl];
   const [selectedImage, setSelectedImage] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   useEffect(() => {
@@ -32,6 +33,36 @@ export function MintArticle({ article, backHref = "/", backLabel = "Назад",
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
+
+  const handleShare = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const title = article.name ? `${article.name} — О монетном дворе` : document.title;
+    const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
+    if (isDesktop) {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          setCopyToast(true);
+          window.setTimeout(() => setCopyToast(false), 2500);
+        }).catch(() => {});
+      }
+      return;
+    }
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title, url });
+      } catch (err) {
+        if ((err as Error).name !== "AbortError") copyFallback(url);
+      }
+    } else {
+      copyFallback(url);
+    }
+  };
+  function copyFallback(url: string) {
+    if (typeof navigator === "undefined" || !navigator.clipboard) return;
+    navigator.clipboard.writeText(url).catch(() => {});
+  }
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.targetTouches[0].clientX;
@@ -194,6 +225,16 @@ export function MintArticle({ article, backHref = "/", backLabel = "Назад",
             </section>
           )}
 
+          <button
+            type="button"
+            onClick={handleShare}
+            className="inline-flex items-center gap-2 mt-4 px-4 py-2.5 rounded-[300px] bg-transparent text-[#11111B] text-[16px] font-medium hover:bg-[#F1F1F2] transition-colors cursor-pointer w-fit"
+            aria-label="Поделиться статьёй"
+          >
+            <IconShare3 size={20} stroke={2} className="shrink-0" />
+            Поделиться
+          </button>
+
           {otherMints.length > 0 && (
             <section className="flex flex-col gap-6 pt-4">
               <h2 className="text-black text-[22px] sm:text-[24px] font-semibold leading-tight">
@@ -235,6 +276,16 @@ export function MintArticle({ article, backHref = "/", backLabel = "Назад",
         >
           <IconArrowUp size={24} stroke={2} className="shrink-0 block" />
         </button>
+      )}
+
+      {copyToast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap shadow-lg"
+        >
+          Ссылка на статью скопирована
+        </div>
       )}
     </div>
   );

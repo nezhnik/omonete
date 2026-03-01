@@ -86,13 +86,13 @@ export default function MintsPage() {
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Монетные дворы
         </h1>
-        <p className="text-[#656565] text-[16px] font-normal mb-8 max-w-[640px] lg:max-w-[720px]">
+        <p className="text-[#656565] text-[16px] font-normal mb-3 sm:mb-8 max-w-[640px] lg:max-w-[720px]">
           {nbspAfterPrepositions(
             "Познакомьтесь с историей и интересными фактами: от легендарных мастерских прошлого до современного производства памятных и инвестиционных монет"
           )}
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6">
           {showSkeletonGrid
             ? Array.from({ length: SKELETON_COUNT_DESKTOP }, (_, i) => (
                 <div

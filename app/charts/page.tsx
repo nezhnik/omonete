@@ -52,12 +52,12 @@ const METALS = [
 
 export type ChartPeriod = "1m" | "1y" | "5y" | "10y" | "all";
 
-const PERIODS: { value: ChartPeriod; label: string }[] = [
-  { value: "1m", label: "Месяц" },
-  { value: "1y", label: "Год" },
-  { value: "5y", label: "5 лет" },
-  { value: "10y", label: "10 лет" },
-  { value: "all", label: "Все" },
+const PERIODS: { value: ChartPeriod; label: string; shortLabel: string }[] = [
+  { value: "1m", label: "Месяц", shortLabel: "1м" },
+  { value: "1y", label: "Год", shortLabel: "1г" },
+  { value: "5y", label: "5 лет", shortLabel: "5л" },
+  { value: "10y", label: "10 лет", shortLabel: "10л" },
+  { value: "all", label: "Все", shortLabel: "Все" },
 ];
 
 /** Подпись периода для блока «рост/падение за период» */
@@ -160,6 +160,7 @@ function MetalChart({
   unit,
   setUnit,
   usdRub,
+  lastPrice,
 }: {
   metal: (typeof METALS)[number];
   currency: "RUB" | "USD";
@@ -167,6 +168,7 @@ function MetalChart({
   unit: "gr" | "oz";
   setUnit: (u: "gr" | "oz") => void;
   usdRub: number | null;
+  lastPrice: Record<string, number> | null;
 }) {
   const [period, setPeriod] = useState<ChartPeriod>("1y");
   const [apiData, setApiData] = useState<DataPoint[] | null>(null);
@@ -351,8 +353,16 @@ function MetalChart({
   const displayPoint = data[displayIndex];
   const isHovering = hoveredIndex !== null;
 
+  // Текущая цена: при наведении — точка под курсором; без наведения — lastPrice (если есть), чтобы при смене периода число не прыгало
+  const displayedValue =
+    isHovering
+      ? (displayPoint?.value ?? 0)
+      : lastPrice && metal.apiSymbol && lastPrice[metal.apiSymbol] != null
+        ? convertDisplayValue(lastPrice[metal.apiSymbol], metal.apiSymbol, currency, unit, usdRub)
+        : (displayPoint?.value ?? 0);
+
   // Рост/падение от начала периода до текущей (или наведённой) точки
-  const changeFromStart = (displayPoint?.value ?? 0) - startPrice;
+  const changeFromStart = displayedValue - startPrice;
   const changePercentFromStart = startPrice !== 0 ? (changeFromStart / startPrice) * 100 : 0;
   const isPositiveFromStart = changeFromStart >= 0;
 
@@ -508,11 +518,11 @@ function MetalChart({
               {metal.name}
               {metal.apiSymbol && <span className="text-[#666666] font-normal text-[16px] ml-1">{metal.apiSymbol}</span>}
             </h2>
-            <div className="flex items-center gap-2 shrink-0">
+            <div className="flex items-center gap-6 shrink-0">
               <button
                 type="button"
                 onClick={() => setCurrency(currency === "RUB" ? "USD" : "RUB")}
-                className="text-[#666666] hover:text-black text-[14px] font-medium transition-colors"
+                className="text-[#666666] hover:text-black text-[16px] font-medium transition-colors"
                 title={
                   currency === "RUB"
                     ? usdRub != null && usdRub > 0
@@ -524,20 +534,19 @@ function MetalChart({
               >
                 {currency === "RUB" ? "₽" : "$"}
               </button>
-              <span className="text-[#666666] text-[14px]">·</span>
               <button
                 type="button"
                 onClick={() => setUnit(unit === "gr" ? "oz" : "gr")}
-                className="text-[#666666] hover:text-black text-[14px] font-medium transition-colors"
+                className="text-[#666666] hover:text-black text-[16px] font-medium transition-colors"
                 title={unit === "gr" ? "Показать за унцию" : "Показать за грамм"}
                 aria-pressed={unit === "oz"}
               >
-                {unit === "gr" ? "гр." : "унция"}
+                {unit === "gr" ? "гр." : "oz"}
               </button>
             </div>
           </div>
           <p className="text-[28px] sm:text-[32px] font-bold text-black leading-tight mb-1">
-            {(displayPoint?.value ?? 0).toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
+            {displayedValue.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
             {currency === "RUB" ? "₽" : "$"}
           </p>
           <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -666,7 +675,9 @@ function MetalChart({
                 onClick={() => setPeriod(p.value)}
                 className="relative z-10 flex-1 min-w-0 px-3 py-2 text-[14px] font-medium cursor-pointer text-center rounded-[300px] transition-colors text-[#11111B] hover:opacity-80"
               >
-                {p.label}
+                <span className="md:hidden">{p.label}</span>
+                <span className="hidden md:inline 2xl:hidden">{p.shortLabel}</span>
+                <span className="hidden 2xl:inline">{p.label}</span>
               </button>
             ))}
           </div>
@@ -680,13 +691,15 @@ export default function ChartsPage() {
   const [currency, setCurrency] = useState<"RUB" | "USD">("RUB");
   const [unit, setUnit] = useState<"gr" | "oz">("gr");
   const [usdRub, setUsdRub] = useState<number | null>(null);
+  const [lastPrice, setLastPrice] = useState<Record<string, number> | null>(null);
 
   useEffect(() => {
     getMetalPricesStaticJson().then((data) => {
-      if (data && typeof (data as Record<string, unknown>).usdRub === "number") {
-        setUsdRub((data as Record<string, unknown>).usdRub as number);
-        return;
-      }
+      const d = data as Record<string, unknown>;
+      if (d?.usdRub != null && typeof d.usdRub === "number") setUsdRub(d.usdRub as number);
+      if (d?.lastPrice != null && typeof d.lastPrice === "object" && !Array.isArray(d.lastPrice))
+        setLastPrice(d.lastPrice as Record<string, number>);
+      if (d?.usdRub != null && typeof d.usdRub === "number") return;
       // Локально или старый JSON без usdRub — подтягиваем курс с ЦБ (тот же источник, что и крон)
       fetch("https://www.cbr-xml-daily.ru/daily_json.js")
         .then((r) => (r.ok ? r.json() : null))
@@ -702,20 +715,20 @@ export default function ChartsPage() {
     <div className="min-h-screen bg-white">
       <Header activePath="/charts" />
 
-      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-24">
-        <article className="w-full max-w-[720px] lg:max-w-none mx-auto flex flex-col gap-8">
+      <main className="w-full px-4 sm:px-6 md:px-8 2xl:px-20 pt-6 pb-24">
+        <article className="w-full max-w-[720px] md:max-w-none mx-auto flex flex-col gap-0">
           <header>
             <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
               Графики металлов
             </h1>
-          <p className="text-[#656565] text-[16px] font-normal mb-8 max-w-[640px] lg:max-w-[720px]">
+          <p className="text-[#656565] text-[16px] font-normal mb-3 md:mb-8 max-w-[640px] lg:max-w-[720px]">
             {nbspAfterPrepositions(
-              "Динамика цен за грамм на драгоценные металлы и медь. По ним удобно смотреть тренды и ориентироваться при оценке монет."
+              "Динамика цен за грамм на драгоценные металлы и медь. По ним удобно смотреть тренды и ориентироваться при оценке монет"
             )}
           </p>
           </header>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 2xl:gap-6">
             {METALS.map((metal) => (
               <MetalChart
                 key={metal.code}
@@ -725,6 +738,7 @@ export default function ChartsPage() {
                 unit={unit}
                 setUnit={setUnit}
                 usdRub={usdRub}
+                lastPrice={lastPrice}
               />
             ))}
           </div>

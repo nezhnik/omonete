@@ -2,8 +2,7 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
-import { IconChevronLeft, IconChevronRight, IconCheck } from "@tabler/icons-react";
-import { Button } from "./Button";
+import { IconChevronLeft, IconChevronRight, IconCheck, IconPlus, IconShare3 } from "@tabler/icons-react";
 import { cleanCoinTitle } from "../lib/cleanTitle";
 import { formatQualityDisplay } from "../lib/qualityDisplay";
 import { formatNumber, formatNumbersInString } from "../lib/formatNumber";
@@ -107,6 +106,26 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
+
+  const handleShare = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    const title = coin.title ? `${cleanCoinTitle(coin.title)} — О монете` : document.title;
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title, url });
+      } catch (err) {
+        if ((err as Error).name !== "AbortError") copyFallback(url);
+      }
+    } else {
+      copyFallback(url);
+    }
+  };
+  function copyFallback(url: string) {
+    if (typeof navigator === "undefined" || !navigator.clipboard) return;
+    navigator.clipboard.writeText(url).catch(() => {});
+  }
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.targetTouches[0].clientX;
@@ -232,25 +251,52 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России
             </p>
 
-            {/* Кнопка «Добавить / Удалить из коллекции» на мобильном и планшете */}
-            <div className="lg:hidden w-full">
+            {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа */}
+            <div className="lg:hidden flex items-center justify-end gap-3">
               {isAuthorized ? (
-                <Button
-                  variant="secondary"
-                  className="w-full rounded-2xl py-4 justify-center text-center"
-                  onClick={() => onToggleCollection?.(coin.id)}
-                >
-                  {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                </Button>
+                <div className="relative group/btn inline-flex">
+                  <button
+                    type="button"
+                    onClick={() => onToggleCollection?.(coin.id)}
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                  >
+                    {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
+                  </button>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
               ) : (
-                <Button
-                  variant="secondary"
-                  href="/login"
-                  className="w-full rounded-2xl py-4 justify-center text-center"
-                >
-                  Чтобы добавить в коллекцию, авторизуйтесь
-                </Button>
+                <div className="relative group/btn inline-flex">
+                  <a
+                    href="/login"
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label="Добавить в коллекцию"
+                  >
+                    <IconPlus size={22} stroke={2} />
+                  </a>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
+                    <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
               )}
+              <div className="relative group/btn inline-flex">
+                <button
+                  type="button"
+                  onClick={handleShare}
+                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  aria-label="Поделиться"
+                >
+                  <IconShare3 size={22} stroke={2} />
+                </button>
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                  Поделиться монетой
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -260,29 +306,57 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
           <div className="hidden lg:flex flex-col gap-2">
               <div className="flex flex-wrap items-center justify-between gap-4">
               <h1 className="text-black text-[28px] sm:text-[40px] font-semibold leading-tight">{cleanCoinTitle(coin.title)}</h1>
-              <div className="flex items-center gap-2">
-                {isAuthorized ? (
-                  <button
-                    type="button"
-                    onClick={() => onToggleCollection?.(coin.id)}
-                    className="flex items-center gap-2 text-black text-[16px] font-medium hover:opacity-80 cursor-pointer"
-                    title={coin.inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}
-                  >
-                    <span>{coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}</span>
-                    <span className="w-6 h-6 rounded flex items-center justify-center border-2 border-[#11111B]">
-                      {coin.inCollection && <IconCheck size={14} stroke={2} />}
-                    </span>
-                  </button>
-                ) : (
-                  <span className="text-black text-[16px] font-medium">
-                    Чтобы добавить монету в коллекцию, <span className="underline">авторизуйтесь</span>
-                  </span>
-                )}
-              </div>
             </div>
             {coin.seriesName && (
               <p className="text-[#656565] text-[16px] font-normal">{coin.seriesName}</p>
             )}
+            {/* Кнопки отдельно, справа */}
+            <div className="flex justify-end gap-3">
+              {isAuthorized ? (
+                <div className="relative group/btn inline-flex">
+                  <button
+                    type="button"
+                    onClick={() => onToggleCollection?.(coin.id)}
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                  >
+                    {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
+                  </button>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
+              ) : (
+                <div className="relative group/btn inline-flex">
+                  <a
+                    href="/login"
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label="Добавить в коллекцию"
+                  >
+                    <IconPlus size={22} stroke={2} />
+                  </a>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
+                    <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
+              )}
+              <div className="relative group/btn inline-flex">
+                <button
+                  type="button"
+                  onClick={handleShare}
+                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  aria-label="Поделиться"
+                >
+                  <IconShare3 size={22} stroke={2} />
+                </button>
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                  Поделиться монетой
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                </div>
+              </div>
+            </div>
           </div>
 
           <section>

@@ -297,7 +297,7 @@ function buildPeriodResponse(rows, period) {
         if (!byMonth.has(k) || val > Number(byMonth.get(k)[key])) byMonth.set(k, r);
       });
       const keys = Array.from(byMonth.keys()).sort();
-      return keys.map((k) => {
+      const arr = keys.map((k) => {
         const r = byMonth.get(k);
         const d = new Date(r.date + "T12:00:00");
         return {
@@ -305,6 +305,15 @@ function buildPeriodResponse(rows, period) {
           value: round(r[key]),
         };
       });
+      // В последнем месяце — последний день (актуальная цена)
+      if (arr.length > 0 && range.length > 0) {
+        const lastRow = range[range.length - 1];
+        if (filterRow && !filterRow(lastRow)) { /* оставляем макс */ } else {
+          const v = Number(lastRow[key]);
+          if (v > 0) arr[arr.length - 1] = { ...arr[arr.length - 1], value: round(v) };
+        }
+      }
+      return arr;
     };
     const resAll = {
       ok: true,
@@ -330,6 +339,7 @@ function buildPeriodResponse(rows, period) {
       return mon.toISOString().slice(0, 10);
     };
     // Для каждого металла — своя выборка по неделям: день с макс. ценой по этому металлу в неделе, чтобы пики попадали в график
+    // В последней неделе берём последний день (актуальная цена), чтобы при переключении периода итоговая цена не прыгала
     const weekMax = (key, filterRow) => {
       const byWeek = new Map();
       range.forEach((r) => {
@@ -340,13 +350,21 @@ function buildPeriodResponse(rows, period) {
         if (!byWeek.has(k) || val > Number(byWeek.get(k)[key])) byWeek.set(k, r);
       });
       const keys = Array.from(byWeek.keys()).sort();
-      return keys.map((k) => {
+      const arr = keys.map((k) => {
         const r = byWeek.get(k);
         return {
           label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short", year: "2-digit" }),
           value: round(r[key]),
         };
       });
+      if (arr.length > 0 && range.length > 0) {
+        const lastRow = range[range.length - 1];
+        if (filterRow && !filterRow(lastRow)) { /* оставляем макс */ } else {
+          const v = Number(lastRow[key]);
+          if (v > 0) arr[arr.length - 1] = { ...arr[arr.length - 1], value: round(v) };
+        }
+      }
+      return arr;
     };
     const res5y10y = {
       ok: true,
@@ -445,6 +463,18 @@ async function main() {
 
     const out = {};
     if (usdRub != null) out.usdRub = usdRub;
+    // Актуальная цена на последнюю дату — чтобы при переключении периода итоговая цена не менялась
+    if (allRows.length > 0) {
+      const last = allRows[allRows.length - 1];
+      const r2 = (v) => Math.round(Number(v) * 100) / 100;
+      out.lastPrice = {
+        XAU: r2(last.xau),
+        XAG: r2(last.xag),
+        XPT: r2(last.xpt),
+        XPD: r2(last.xpd),
+      };
+      if (Number(last.xcu) > 0) out.lastPrice.XCU = r2(last.xcu);
+    }
     for (const p of ["1m", "1y", "5y", "10y", "all"]) {
       const resp = buildPeriodResponse(allRows, p);
       if (resp && resp.XAU && resp.XAU.length) out[p] = resp;

@@ -318,14 +318,14 @@ export default function HomePage() {
                   ))}
                 </div>
                 <Button href="/catalog" variant="secondary" className="w-full sm:w-auto">
-                  Посмотреть все
+                  Посмотреть все монеты
                 </Button>
               </>
             )}
           </div>
         </section>
 
-        <section id="mints" className="mt-[120px] lg:mt-[15rem] pb-24">
+        <section id="mints" className="mt-[120px] lg:mt-[15rem] pb-8 sm:pb-24">
           <div className="flex flex-col items-center gap-6">
             <h2 className="w-full max-w-[616px] lg:max-w-[680px] text-center text-black font-semibold text-[28px] leading-tight sm:text-[40px] lg:text-[44px]">
               Узнайте больше про&nbsp;монетные дворы
@@ -343,12 +343,13 @@ export default function HomePage() {
             </div>
 
             <Button href="/mints" variant="secondary" className="w-full sm:w-auto">
-              Посмотреть все
+              Посмотреть все статьи
             </Button>
           </div>
         </section>
+      </main>
 
-        <footer className="w-full py-10 mt-8 border-t border-[#E4E4EA] px-4 sm:pl-0 sm:pr-6 lg:pl-0 lg:pr-8 2xl:pr-20">
+        <footer className="w-full py-10 mt-4 sm:mt-8 border-t-0 sm:border-t border-[#E4E4EA] bg-[#F1F1F2] px-4 sm:px-6 lg:px-8 2xl:px-20">
           <div className="flex flex-col gap-6 text-[#666666] text-[16px] max-w-[800px]">
             <nav className="flex flex-wrap items-center justify-start gap-4 sm:gap-6" aria-label="Навигация по сайту">
               <a href="/" className="text-black hover:opacity-80 transition-opacity" title="Главная страница omonete.ru">Главная</a>
@@ -383,7 +384,6 @@ export default function HomePage() {
             </p>
           </div>
         </footer>
-      </main>
     </div>
   );
 }
