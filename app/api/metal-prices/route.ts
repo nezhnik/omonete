@@ -66,14 +66,16 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
   const rows = dates.map((d) => ({ date: d, ...byDate.get(d)! }));
   let sampled: { label: string; xau: number; xag: number; xpt: number; xpd: number }[];
   if (period === "all") {
-    const byMonth = new Map<string, (typeof rows)[0]>();
+    // 1 точка за 2 недели
+    const BIWEEK_MS = 14 * 24 * 60 * 60 * 1000;
+    const getBiweekKey = (dateStr: string) => Math.floor(new Date(dateStr + "T12:00:00").getTime() / BIWEEK_MS);
+    const byBiweek = new Map<number, (typeof rows)[0]>();
     for (const r of rows) {
-      const key = r.date.slice(0, 7);
-      byMonth.set(key, r);
+      byBiweek.set(getBiweekKey(r.date), r);
     }
-    const keys = Array.from(byMonth.keys()).sort();
+    const keys = Array.from(byBiweek.keys()).sort((a, b) => a - b);
     sampled = keys.map((k) => {
-      const r = byMonth.get(k)!;
+      const r = byBiweek.get(k)!;
       const d = new Date(r.date + "T12:00:00");
       return {
         label: d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" }),

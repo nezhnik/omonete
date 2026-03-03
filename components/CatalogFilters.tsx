@@ -167,6 +167,8 @@ type CatalogFiltersProps = {
   onMintChange?: (values: string[]) => void;
   searchQuery?: string;
   onSearchChange?: (query: string) => void;
+  /** Скрыть поиск (когда он вынесен на страницу, напр. на мобильном) */
+  hideSearch?: boolean;
 };
 
 export function CatalogFilters({
@@ -187,6 +189,7 @@ export function CatalogFilters({
   onMintChange,
   searchQuery = "",
   onSearchChange,
+  hideSearch = false,
 }: CatalogFiltersProps) {
   const [weightListExpanded, setWeightListExpanded] = useState(false);
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
@@ -239,22 +242,24 @@ export function CatalogFilters({
         transform: slide ? "translateX(100%)" : "translateX(0)",
       }}
     >
-      {/* Поиск */}
-      <label
-        htmlFor="catalog-search-input"
-        className="flex items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white"
-      >
-        <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none" />
-        <input
-          id="catalog-search-input"
-          type="search"
-          value={searchQuery}
-          onChange={(e) => onSearchChange?.(e.target.value)}
-          placeholder="Поиск"
-          className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
-          aria-label="Поиск монет"
-        />
-      </label>
+      {/* Поиск (скрыт, если hideSearch — напр. вынесен на страницу на мобильном) */}
+      {!hideSearch && (
+        <label
+          htmlFor="catalog-search-input"
+          className="flex items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white"
+        >
+          <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none" />
+          <input
+            id="catalog-search-input"
+            type="search"
+            value={searchQuery}
+            onChange={(e) => onSearchChange?.(e.target.value)}
+            placeholder="Поиск"
+            className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
+            aria-label="Поиск монет"
+          />
+        </label>
+      )}
 
       {/* Металл */}
       <div className="flex flex-col gap-4">

@@ -102,29 +102,63 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
   const images = coin.imageUrls?.length ? coin.imageUrls : [coin.imageUrl];
   const rectangular = !!coin.rectangular;
   const [selectedImage, setSelectedImage] = useState(0);
+  const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
 
-  const handleShare = async (e: React.MouseEvent) => {
+  const handleShare = async (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
     e.stopPropagation();
     const url = typeof window !== "undefined" ? window.location.href : "";
     const title = coin.title ? `${cleanCoinTitle(coin.title)} — О монете` : document.title;
+    const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1280;
+    if (isDesktop) {
+      doCopyFallback(url);
+      return;
+    }
+    // На мобильных и планшетах — Web Share API (системное окно iOS/Android как на скрине)
+    const shareData: ShareData = { title, url };
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
-        await navigator.share({ title, url });
+        await navigator.share(shareData);
       } catch (err) {
-        if ((err as Error).name !== "AbortError") copyFallback(url);
+        if ((err as Error).name !== "AbortError") doCopyFallback(url);
       }
     } else {
-      copyFallback(url);
+      doCopyFallback(url);
     }
   };
-  function copyFallback(url: string) {
-    if (typeof navigator === "undefined" || !navigator.clipboard) return;
-    navigator.clipboard.writeText(url).catch(() => {});
+  function doCopyFallback(url: string) {
+    if (typeof navigator === "undefined") return;
+    const showToast = () => {
+      setCopyToast(true);
+      window.setTimeout(() => setCopyToast(false), 2500);
+    };
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(url).then(showToast).catch(() => {
+        legacyCopy(url) && showToast();
+      });
+    } else {
+      legacyCopy(url) && showToast();
+    }
+  }
+  function legacyCopy(url: string): boolean {
+    if (typeof document === "undefined") return false;
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = url;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+      return ok;
+    } catch {
+      return false;
+    }
   }
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -251,7 +285,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России
             </p>
 
-            {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа */}
+            {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа. Тултипы только на десктопе (lg+). На мобильном — Web Share API или копирование */}
             <div className="lg:hidden flex items-center justify-end gap-3">
               {isAuthorized ? (
                 <div className="relative group/btn inline-flex">
@@ -263,7 +297,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                   >
                     {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
                   </button>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 hidden lg:block">
                     {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
                     <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
                   </div>
@@ -277,7 +311,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                   >
                     <IconPlus size={22} stroke={2} />
                   </a>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max hidden lg:block">
                     <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
                     <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
                   </div>
@@ -287,12 +321,13 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 <button
                   type="button"
                   onClick={handleShare}
-                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  onTouchEnd={(e) => { e.preventDefault(); handleShare(e as unknown as React.MouseEvent); }}
+                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors touch-manipulation"
                   aria-label="Поделиться"
                 >
                   <IconShare3 size={22} stroke={2} />
                 </button>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 hidden lg:block">
                   Поделиться монетой
                   <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
                 </div>
@@ -559,6 +594,16 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
           )}
         </div>
       </div>
+
+      {copyToast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap shadow-lg"
+        >
+          Ссылка скопирована
+        </div>
+      )}
     </div>
   );
 }

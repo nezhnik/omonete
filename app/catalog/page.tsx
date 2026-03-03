@@ -7,7 +7,7 @@ import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { CoinCard, CoinCardSkeleton } from "../../components/CoinCard";
 import { CatalogFilters } from "../../components/CatalogFilters";
-import { IconAdjustmentsHorizontal, IconArrowUp, IconArrowsSort, IconX } from "@tabler/icons-react";
+import { IconAdjustmentsHorizontal, IconArrowUp, IconArrowsSort, IconSearch, IconX } from "@tabler/icons-react";
 import { formatNumber } from "../../lib/formatNumber";
 import { nbspAfterPrepositions } from "../../lib/nbspPrepositions";
 import { useAuth } from "../../components/AuthProvider";
@@ -81,7 +81,8 @@ function parseCatalogState(searchParams: URLSearchParams) {
   const selectedCountries = searchParams.getAll("country").filter((c) => VALID_COUNTRIES.includes(c));
   const selectedSeries = searchParams.getAll("series");
   const selectedMints = searchParams.getAll("mint");
-  const searchQuery = (searchParams.get("q") ?? "").trim();
+  /** Без trim: пробелы сохраняются в инпуте; при поиске normalizeSearch обрежет */
+  const searchQuery = searchParams.get("q") ?? "";
   return { filter, filtersOpen, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery };
 }
 
@@ -609,6 +610,23 @@ const mintListByCount = useMemo(() => {
             </button>
           </div>
 
+          {/* На мобильном: поиск под свитчером */}
+          <label
+            htmlFor="catalog-search-page-input"
+            className="lg:hidden flex items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white min-w-0"
+          >
+            <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
+            <input
+              id="catalog-search-page-input"
+              type="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Поиск"
+              className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
+              aria-label="Поиск монет"
+            />
+          </label>
+
           <div className="flex items-center justify-end gap-3 w-full lg:w-auto shrink-0">
               {/* Обёртка только для кнопки сортировки и дропдауна — дропдаун выровнен по правому краю кнопки */}
               <div className="relative">
@@ -730,10 +748,10 @@ const mintListByCount = useMemo(() => {
                   </p>
                 </div>
               ) : (
-                <div className="flex-1 min-h-0 flex flex-col items-center justify-center py-16 pb-32 lg:pb-[440px] px-4 text-center">
-                  <div className="w-[168px] h-[168px] mb-6 flex items-center justify-center">
+                <div className="flex-1 min-h-0 flex flex-col items-center pt-12 pb-20 lg:justify-center lg:py-16 lg:pb-[440px] px-4 text-center">
+                  <div className="w-24 h-24 lg:w-[168px] lg:h-[168px] mb-4 lg:mb-6 flex items-center justify-center mx-auto">
                     {eyesAnimationData ? (
-                      <Lottie animationData={eyesAnimationData} loop style={{ width: 168, height: 168 }} />
+                      <Lottie animationData={eyesAnimationData} loop className="w-full h-full" style={{ width: "100%", height: "100%" }} />
                     ) : (
                       <div className="w-full h-full rounded-full bg-[#E4E4EA]" aria-hidden />
                     )}
@@ -948,6 +966,7 @@ const mintListByCount = useMemo(() => {
                   onMintChange={setSelectedMints}
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
+                  hideSearch
                 />
               </div>
             </div>

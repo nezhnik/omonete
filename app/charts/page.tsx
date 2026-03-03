@@ -37,16 +37,18 @@ async function getMetalPricesStaticJson(): Promise<Record<string, ApiResponse | 
   return METAL_PRICES_STATIC_CACHE_PROMISE;
 }
 
-/** Металлы: XAU, XPT, XPD, XAG — ЦБ; XCU — медь (RusCable), те же даты что и у драгметаллов. Pt и Pd — цвет серебра для видимости. */
+/** Металлы: XAU, XPT, XPD, XAG — ЦБ; XCU — медь (RusCable), те же даты что и у драгметаллов. Pt и Pd — цвет серебра для видимости.
+ * Порядок как в фильтрах каталога: Ag, Au, Pt, Pd, Cu.
+ */
 const CHART_SILVER = "#C0C0C0";
 /** Бледный серый для ховера у Ag/Pt/Pd, чтобы отличался от линии цвета серебра */
 const CHART_HOVER_GRAY_LIGHT = "#E8E8EC";
 const CHART_HOVER_GRAY = "#D4D4D8";
 const METALS = [
+  { code: "Ag", name: "Серебро", color: CHART_SILVER, apiSymbol: "XAG" as const },
   { code: "Au", name: "Золото", color: "#D4AF37", apiSymbol: "XAU" as const },
   { code: "Pt", name: "Платина", color: CHART_SILVER, apiSymbol: "XPT" as const },
   { code: "Pd", name: "Палладий", color: CHART_SILVER, apiSymbol: "XPD" as const },
-  { code: "Ag", name: "Серебро", color: CHART_SILVER, apiSymbol: "XAG" as const },
   { code: "Cu", name: "Медь", color: "#B87333", apiSymbol: "XCU" as const },
 ] as const;
 
@@ -107,17 +109,21 @@ const MORPH_DURATION_MS = 220;
 
 /** Ресэмпл к N точкам (для морфинга при разном числе точек: неделя → 10 лет) */
 function sampleToN(points: { x: number; y: number }[], n: number): { x: number; y: number }[] {
-  if (points.length === 0) return [];
-  if (points.length === 1) return Array.from({ length: n }, () => ({ x: points[0].x, y: points[0].y }));
+  const valid = points.filter((p): p is { x: number; y: number } => p != null && typeof p.x === "number" && typeof p.y === "number");
+  if (valid.length === 0) return [];
+  if (valid.length === 1) return Array.from({ length: n }, () => ({ x: valid[0].x, y: valid[0].y }));
   return Array.from({ length: n }, (_, i) => {
     const t = i / (n - 1);
-    const idx = t * (points.length - 1);
+    const idx = t * (valid.length - 1);
     const lo = Math.floor(idx);
-    const hi = Math.min(lo + 1, points.length - 1);
+    const hi = Math.min(lo + 1, valid.length - 1);
     const f = idx - lo;
+    const plo = valid[lo];
+    const phi = valid[hi];
+    if (!plo || !phi) return valid[0];
     return {
-      x: points[lo].x + (points[hi].x - points[lo].x) * f,
-      y: points[lo].y + (points[hi].y - points[lo].y) * f,
+      x: plo.x + (phi.x - plo.x) * f,
+      y: plo.y + (phi.y - plo.y) * f,
     };
   });
 }
@@ -319,20 +325,28 @@ function MetalChart({
     if (pathCoords.length === 0) return;
     const start = animatedPathRef.current;
     if (start.length === 0) {
-      // Если почему-то старт пустой — берём демо как базу, чтобы морфинг был заметен
+      // Старт пустой — ставим демо и выходим, иначе морфинг перезапишет пустым
       if (demoChart.coords.length > 0) setAnimatedPathCoords(demoChart.coords);
+      return;
     }
     const from = start.length === pathCoords.length ? start : sampleToN(start, pathCoords.length);
+    if (from.length === 0) return;
     const startTime = performance.now();
     let rafId: number;
     const tick = () => {
       const t = Math.min((performance.now() - startTime) / MORPH_DURATION_MS, 1);
       const eased = easeOutCubic(t);
       setAnimatedPathCoords(
-        from.map((s, i) => ({
-          x: s.x + (pathCoords[i].x - s.x) * eased,
-          y: s.y + (pathCoords[i].y - s.y) * eased,
-        }))
+        from.map((s, i) => {
+          const target = pathCoords[i];
+          if (!s || !target || typeof s.x !== "number" || typeof target.x !== "number") {
+            return target ?? s ?? { x: PADDING.left, y: innerH / 2 };
+          }
+          return {
+            x: s.x + (target.x - s.x) * eased,
+            y: s.y + (target.y - s.y) * eased,
+          };
+        })
       );
       if (t < 1) rafId = requestAnimationFrame(tick);
     };
@@ -380,9 +394,13 @@ function MetalChart({
           .map((c) => `${c.x},${c.y}`)
           .join(" L ")}`
       : "";
-  const hoverPoint =
+  const rawHoverPoint =
     animatedPathCoords.length > 0 && displayIndexInPath < animatedPathCoords.length
       ? animatedPathCoords[displayIndexInPath]
+      : null;
+  const hoverPoint =
+    rawHoverPoint && typeof rawHoverPoint.x === "number" && typeof rawHoverPoint.y === "number"
+      ? rawHoverPoint
       : null;
 
   const updateHoverFromClientX = (clientX: number) => {
@@ -513,56 +531,59 @@ function MetalChart({
         </>
       ) : (
         <>
-          <div className="mb-3 flex items-start justify-between gap-2">
-            <h2 className="text-[18px] font-semibold text-black leading-tight">
-              {metal.name}
-              {metal.apiSymbol && <span className="text-[#666666] font-normal text-[16px] ml-1">{metal.apiSymbol}</span>}
-            </h2>
-            <div className="flex items-center gap-6 shrink-0">
-              <button
-                type="button"
-                onClick={() => setCurrency(currency === "RUB" ? "USD" : "RUB")}
-                className="text-[#666666] hover:text-black text-[16px] font-medium transition-colors"
-                title={
-                  currency === "RUB"
-                    ? usdRub != null && usdRub > 0
-                      ? "Показать в долларах"
-                      : "Курс доллара не загружен — обновите страницу"
-                    : "Показать в рублях"
-                }
-                aria-pressed={currency === "USD"}
-              >
-                {currency === "RUB" ? "₽" : "$"}
-              </button>
+          <div className="flex gap-3 sm:gap-4 mb-4">
+            {/* Левый блок: название, цена, динамика */}
+            <div className="flex-1 min-w-0">
+              <h2 className="text-[18px] font-semibold text-black leading-tight">
+                {metal.name}
+                {metal.apiSymbol && <span className="text-[#666666] font-normal text-[16px] ml-1">{metal.apiSymbol}</span>}
+              </h2>
+              <p className="text-[28px] sm:text-[1.75rem] font-bold text-black leading-tight mt-1 mb-0.5">
+                {displayedValue.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
+                <button
+                  type="button"
+                  onClick={() => setCurrency(currency === "RUB" ? "USD" : "RUB")}
+                  className="text-[28px] sm:text-[1.75rem] text-[#666666] hover:text-black font-bold transition-colors cursor-pointer p-0 m-0 align-baseline leading-none border-0 bg-transparent"
+                  title={
+                    currency === "RUB"
+                      ? usdRub != null && usdRub > 0
+                        ? "Показать в долларах"
+                        : "Курс доллара не загружен — обновите страницу"
+                      : "Показать в рублях"
+                  }
+                  aria-pressed={currency === "USD"}
+                >
+                  {currency === "RUB" ? "₽" : "$"}
+                </button>
+              </p>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className={isPositiveFromStart ? "text-[#16A34A]" : "text-[#DC2626]"} style={{ fontSize: "14px" }}>
+                  {(isPositiveFromStart ? "+" : "") + changeFromStart.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
+                  {currency === "RUB" ? "₽" : "$"}
+                </span>
+                <span
+                  className={`inline-flex items-center gap-0.5 rounded-[300px] px-2 py-0.5 text-[13px] font-medium ${isPositiveFromStart ? "bg-[#DCFCE7] text-[#16A34A]" : "bg-[#FEE2E2] text-[#DC2626]"}`}
+                >
+                  {isPositiveFromStart ? "↑" : "↓"}
+                  {Math.abs(changePercentFromStart).toFixed(2) + "%"}
+                </span>
+                <span className="text-[#666666] text-[14px]">
+                  {isHovering && displayPoint ? displayPoint.label : PERIOD_LABEL[period]}
+                </span>
+              </div>
+            </div>
+            {/* Правый блок: переключатель единицы веса */}
+            <div className="shrink-0 self-start">
               <button
                 type="button"
                 onClick={() => setUnit(unit === "gr" ? "oz" : "gr")}
-                className="text-[#666666] hover:text-black text-[16px] font-medium transition-colors"
+                className="text-[#666666] hover:text-black text-[16px] font-medium transition-colors cursor-pointer"
                 title={unit === "gr" ? "Показать за унцию" : "Показать за грамм"}
                 aria-pressed={unit === "oz"}
               >
-                {unit === "gr" ? "гр." : "oz"}
+                {unit === "gr" ? "за грамм" : "за унцию"}
               </button>
             </div>
-          </div>
-          <p className="text-[28px] sm:text-[32px] font-bold text-black leading-tight mb-1">
-            {displayedValue.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
-            {currency === "RUB" ? "₽" : "$"}
-          </p>
-          <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span className={isPositiveFromStart ? "text-[#16A34A]" : "text-[#DC2626]"} style={{ fontSize: "14px" }}>
-              {(isPositiveFromStart ? "+" : "") + changeFromStart.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
-              {currency === "RUB" ? "₽" : "$"}
-            </span>
-            <span
-              className={`inline-flex items-center gap-0.5 rounded-[300px] px-2 py-0.5 text-[13px] font-medium ${isPositiveFromStart ? "bg-[#DCFCE7] text-[#16A34A]" : "bg-[#FEE2E2] text-[#DC2626]"}`}
-            >
-              {isPositiveFromStart ? "↑" : "↓"}
-              {Math.abs(changePercentFromStart).toFixed(2) + "%"}
-            </span>
-            <span className="text-[#666666] text-[14px]">
-              {isHovering && displayPoint ? displayPoint.label : PERIOD_LABEL[period]}
-            </span>
           </div>
 
           {/* touch-action: none — на мобильном/планшете при касании графика страница не скроллится */}

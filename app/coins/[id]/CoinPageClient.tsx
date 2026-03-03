@@ -27,8 +27,8 @@ export function CoinPageClient({ id, initialData }: Props) {
   }, [inCollection, addToCollection, removeFromCollection]);
 
   const backHref = fromPortfolio ? "/portfolio" : catalogHref;
-  const backLabel = fromPortfolio ? "Назад в портфолио" : "Назад в каталог";
-  const breadcrumbLabel = fromPortfolio ? "Портфолио" : "Каталог";
+  const backLabel = fromPortfolio ? "Назад в коллекцию" : "Назад в каталог";
+  const breadcrumbLabel = fromPortfolio ? "Моя коллекция" : "Каталог";
 
   useEffect(() => {
     if (fromPortfolio) return;
@@ -78,7 +78,7 @@ export function CoinPageClient({ id, initialData }: Props) {
         <main className="w-full px-4 sm:px-6 lg:px-20 py-12">
           <p className="text-[#666666]">Монета не найдена.</p>
           <Link href={backHref} className="text-[#0098E8] font-medium pt-4 inline-block">
-            {fromPortfolio ? "Вернуться в портфолио" : "Вернуться в каталог"}
+            {fromPortfolio ? "Вернуться в коллекцию" : "Вернуться в каталог"}
           </Link>
         </main>
       </div>

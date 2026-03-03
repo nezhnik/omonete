@@ -397,21 +397,21 @@ export default function PortfolioPage() {
             Профиль
           </Link>
           <span>/</span>
-          <span className="text-black">Портфолио</span>
+          <span className="text-black">Моя коллекция</span>
         </nav>
 
         <div className="mt-8 flex flex-col gap-8 w-full">
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
             <div className="min-w-0">
               <h1 className="text-black text-[28px] sm:text-[40px] font-semibold leading-tight">
-                Портфолио
+                Моя коллекция
               </h1>
               <p className="text-[#666666] text-[16px] leading-[1.5] max-w-[640px] lg:max-w-[720px] mt-2">
                 {authLoading
                   ? "Ваши сохранённые монеты. Добавляйте монеты из каталога."
                   : isAuthorized
                     ? "Ваши сохранённые монеты. Добавляйте монеты из каталога."
-                    : "Войдите в аккаунт, чтобы добавлять монеты в коллекцию и отслеживать портфолио."}
+                    : "Войдите в аккаунт, чтобы добавлять монеты в коллекцию и вести учёт."}
               </p>
             </div>
             {isAuthorized && (
@@ -426,7 +426,7 @@ export default function PortfolioPage() {
             <div className="py-12 flex flex-col items-center justify-center gap-6 text-center">
               <div className="w-24 h-24 rounded-full bg-[#E4E4EA] flex items-center justify-center" aria-hidden />
               <p className="text-[#666666] text-[16px] leading-[1.5] max-w-[400px]">
-                Войдите, чтобы вести портфолио и добавлять монеты из каталога.
+                Войдите, чтобы вести коллекцию и добавлять монеты из каталога.
               </p>
               <Link href="/login">
                 <Button variant="primary">Вход</Button>
@@ -459,14 +459,15 @@ export default function PortfolioPage() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Поиск"
                   className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
-                  aria-label="Поиск монет в портфолио"
+                  aria-label="Поиск монет в коллекции"
                 />
               </label>
-              <button type="button" className="flex items-center gap-2 text-[16px] font-medium text-black hover:opacity-80">
+              {/* Скрыто до доработки и запросов пользователей */}
+              <button type="button" className="hidden flex items-center gap-2 text-[16px] font-medium text-black hover:opacity-80">
                 <IconDownload size={24} stroke={2} />
                 Скачать Excel
               </button>
-              <button type="button" className="flex items-center gap-2 text-[16px] font-medium text-black hover:opacity-80">
+              <button type="button" className="hidden flex items-center gap-2 text-[16px] font-medium text-black hover:opacity-80">
                 <IconShare size={24} stroke={2} />
                 Поделиться
               </button>
@@ -481,7 +482,7 @@ export default function PortfolioPage() {
             <div className="py-12 flex flex-col items-center justify-center gap-6 text-center">
               <div className="w-24 h-24 rounded-full bg-[#E4E4EA] flex items-center justify-center" aria-hidden />
               <p className="text-[#666666] text-[16px] leading-[1.5] max-w-[360px]">
-                У вас пока нет монет в портфолио. Откройте каталог и добавьте монеты — они появятся здесь.
+                У вас пока нет монет в коллекции. Откройте каталог и добавьте монеты — они появятся здесь.
               </p>
               <Button href="/catalog" variant="secondary" className="w-fit">
                 Перейти в каталог

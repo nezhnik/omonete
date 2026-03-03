@@ -36,6 +36,7 @@ const defaultNav: HeaderNavItem[] = [
 export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps) {
   const { isAuthorized, signOut, loading, user } = useAuth();
   const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+  const [profileName, setProfileName] = useState<string | null>(null);
   const router = useRouter();
 
   const resolvedNav = useMemo(() => navItems ?? defaultNav, [navItems]);
@@ -63,18 +64,23 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
   useEffect(() => {
     if (!user?.id || typeof window === "undefined") {
       setAvatarUrl(null);
+      setProfileName(null);
       return;
     }
     try {
       const raw = localStorage.getItem(`profile_${user.id}`);
       if (!raw) {
         setAvatarUrl(null);
+        setProfileName(null);
         return;
       }
-      const parsed = JSON.parse(raw) as { photoDataUrl?: string | null };
+      const parsed = JSON.parse(raw) as { photoDataUrl?: string | null; fullName?: string | null };
       setAvatarUrl(parsed.photoDataUrl ?? null);
+      const name = parsed.fullName;
+      setProfileName(name && name.trim() ? name.trim() : null);
     } catch {
       setAvatarUrl(null);
+      setProfileName(null);
     }
   }, [user?.id]);
 
@@ -179,7 +185,7 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
                       href="/portfolio"
                       className="block px-4 py-2 text-[14px] text-[#11111B] hover:bg-[#F1F1F2]"
                     >
-                      Портфолио
+                      Моя коллекция
                     </Link>
                     <button
                       type="button"
@@ -220,9 +226,39 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
             aria-hidden
             onClick={() => setMenuOpen(false)}
           />
-          <div className="fixed top-[72px] left-0 right-0 z-50 bg-white border-b border-[#E4E4EA] shadow-lg lg:hidden max-h-[calc(100vh-72px)] overflow-y-auto overflow-x-hidden">
+          <div className="fixed top-[72px] left-4 right-4 z-50 bg-white border border-[#E4E4EA] rounded-2xl shadow-lg lg:hidden max-h-[calc(100vh-72px)] overflow-y-auto overflow-x-hidden">
             <div className="px-4 py-4 flex flex-col">
-              {/* Сначала табы разделов сайта */}
+              {/* Вверху — профиль (если вошли) */}
+              {!loading && isAuthorized && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    router.push("/profile");
+                  }}
+                  className="w-full flex items-center gap-3 px-3 py-3 mb-3 rounded-2xl bg-[#F5F5F7] hover:bg-[#E4E4EA] text-left cursor-pointer"
+                >
+                  {avatarUrl ? (
+                    <img
+                      src={avatarUrl}
+                      alt=""
+                      className="w-10 h-10 rounded-full object-cover shrink-0"
+                    />
+                  ) : (
+                    <span className="w-10 h-10 rounded-full bg-[#E4E4EA] shrink-0" aria-hidden />
+                  )}
+                  <div className="flex-1 min-w-0 flex flex-col">
+                    <span className="text-[16px] font-medium text-[#11111B] truncate">
+                      {profileName ?? "Личный кабинет"}
+                    </span>
+                    <span className="text-[14px] text-[#666666] truncate">
+                      {user?.email ?? "Профиль и настройки"}
+                    </span>
+                  </div>
+                </button>
+              )}
+
+              {/* Список разделов сайта */}
               <div className="flex flex-col gap-1">
                 {resolvedNav.map((item) => {
                   const isActive = item.href === activePath;
@@ -239,30 +275,33 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
                     </Link>
                   );
                 })}
+
+                {/* Выход как пункт меню, если вошли */}
+                {!loading && isAuthorized && (
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      await signOut();
+                      setMenuOpen(false);
+                      router.push("/");
+                    }}
+                    className="py-3 px-3 rounded-lg text-[16px] font-medium text-[#CC0000] hover:bg-[#F1F1F2] text-left cursor-pointer"
+                  >
+                    Выйти
+                  </button>
+                )}
               </div>
-              {/* Внизу — кнопки Вход / Выйти */}
-              <div className="mt-4 pt-4 border-t border-[#E4E4EA] flex flex-col gap-2">
-                {!loading &&
-                  (isAuthorized ? (
-                    <Button
-                      variant="primary"
-                      className="w-full justify-center cursor-pointer"
-                      onClick={async () => {
-                        await signOut();
-                        setMenuOpen(false);
-                        router.push("/");
-                      }}
-                    >
-                      Выйти
+
+              {/* Если не авторизован — кнопка Вход внизу */}
+              {!loading && !isAuthorized && (
+                <div className="mt-4 pt-4 flex flex-col gap-2">
+                  <Link href={LOGIN_PATH} onClick={() => setMenuOpen(false)}>
+                    <Button variant="primary" className="w-full justify-center">
+                      Вход
                     </Button>
-                  ) : (
-                    <Link href={LOGIN_PATH} onClick={() => setMenuOpen(false)}>
-                      <Button variant="primary" className="w-full justify-center">
-                        Вход
-                      </Button>
-                    </Link>
-                  ))}
-              </div>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </>

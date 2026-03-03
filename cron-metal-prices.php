@@ -12,6 +12,7 @@ $CBR_DAILY_JSON = 'https://www.cbr-xml-daily.ru/daily_json.js';
 $CBR_ARCHIVE = 'https://www.cbr-xml-daily.ru/archive';
 $RUSCABLE_URL = 'https://www.ruscable.ru/quotation/assets/ajax/lme.php';
 $CBR_COD = [1 => 'xau', 2 => 'xag', 3 => 'xpt', 4 => 'xpd'];
+const GRAMS_PER_TROY_OZ = 31.1035;
 
 // Загрузка .env
 $envPath = __DIR__ . '/.env';
@@ -40,18 +41,6 @@ try {
     $pdo = new PDO($dsn, $dbUser, $dbPass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 } catch (PDOException $e) {
     exit("Ошибка БД: " . $e->getMessage() . "\n");
-}
-
-/** Курс ЦБ на дату или последний известный на эту дату/раньше (для выходных — курс пятницы). */
-function getUsdRubForDateCopper(PDO $pdo, string $dateStr): ?float {
-    $st = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date = ?");
-    $st->execute([$dateStr]);
-    $row = $st->fetch(PDO::FETCH_OBJ);
-    if ($row && $row->usd_rub) return (float)$row->usd_rub;
-    $st = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date <= ? ORDER BY date DESC LIMIT 1");
-    $st->execute([$dateStr]);
-    $row = $st->fetch(PDO::FETCH_OBJ);
-    return $row && $row->usd_rub ? (float)$row->usd_rub : null;
 }
 
 function isWorkingDay() {
@@ -85,7 +74,8 @@ $pdo->exec("CREATE TABLE IF NOT EXISTS cbr_rates (
 $doCopperBackfill = is_file(__DIR__ . '/.do-copper-backfill') || (getenv('BACKFILL_COPPER') === '1' || ($_ENV['BACKFILL_COPPER'] ?? '') === '1');
 if ($doCopperBackfill) {
     if (is_file(__DIR__ . '/.do-copper-backfill')) @unlink(__DIR__ . '/.do-copper-backfill');
-    $ins = $pdo->prepare("INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, 0, 0, 0, 0, ?) ON DUPLICATE KEY UPDATE xcu = VALUES(xcu)");
+    $upd = $pdo->prepare("UPDATE metal_prices SET xcu = ? WHERE date = ?");
+    $sel = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date = ?");
     $fromYear = 2006;
     $toYear = (int)date('Y');
     for ($y = $fromYear; $y <= $toYear; $y++) {
@@ -101,10 +91,11 @@ if ($doCopperBackfill) {
             $dateStr = $dates[$i] ?? null;
             $usdPerTonne = isset($ranks[$i]) ? (float)$ranks[$i] : 0;
             if (!$dateStr || !$usdPerTonne) continue;
-            $usdRub = getUsdRubForDateCopper($pdo, $dateStr);
-            if ($usdRub === null || $usdRub <= 0) continue;
-            $xcu = ($usdPerTonne / 1e6) * $usdRub;
-            $ins->execute([$dateStr, round($xcu, 4)]);
+            $sel->execute([$dateStr]);
+            $row = $sel->fetch(PDO::FETCH_OBJ);
+            if (!$row || !$row->usd_rub) continue;
+            $xcu = round(($usdPerTonne / 1e6) * (float)$row->usd_rub * GRAMS_PER_TROY_OZ, 2);
+            $upd->execute([$xcu, $dateStr]);
             $n++;
         }
         if ($n > 0) { /* optional: log */ }
@@ -168,7 +159,7 @@ if ($workingDay) {
             }
         }
 
-        // Медь RusCable за последние 3 дня (INSERT если строки нет — как на сайте RusCable без пропусков)
+        // Медь RusCable за последние 3 дня
         $dateFrom = date('Y-m-d', strtotime('-3 days'));
         $dateTo = date('Y-m-d');
         $ruscableJson = httpGet($RUSCABLE_URL . '?date_from=' . $dateFrom . '&date_to=' . $dateTo);
@@ -176,15 +167,17 @@ if ($workingDay) {
             $rc = @json_decode($ruscableJson, true);
             $dates = $rc['copper']['dates'] ?? [];
             $ranks = $rc['copper']['ranks'] ?? [];
-            $ins = $pdo->prepare("INSERT INTO metal_prices (date, xau, xag, xpt, xpd, xcu) VALUES (?, 0, 0, 0, 0, ?) ON DUPLICATE KEY UPDATE xcu = VALUES(xcu)");
+            $upd = $pdo->prepare("UPDATE metal_prices SET xcu = ? WHERE date = ?");
+            $sel = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date = ?");
             for ($i = 0; $i < count($dates); $i++) {
                 $dateStr = $dates[$i] ?? null;
                 $usdPerTonne = isset($ranks[$i]) ? (float)$ranks[$i] : 0;
                 if (!$dateStr || !$usdPerTonne) continue;
-                $usdRub = getUsdRubForDateCopper($pdo, $dateStr);
-                if ($usdRub === null || $usdRub <= 0) continue;
-                $xcu = ($usdPerTonne / 1e6) * $usdRub;
-                $ins->execute([$dateStr, round($xcu, 4)]);
+                $sel->execute([$dateStr]);
+                $r = $sel->fetch(PDO::FETCH_OBJ);
+                if (!$r || !$r->usd_rub) continue;
+                $xcu = round(($usdPerTonne / 1e6) * (float)$r->usd_rub * GRAMS_PER_TROY_OZ, 2);
+                $upd->execute([$xcu, $dateStr]);
             }
         }
     } catch (Throwable $e) {
@@ -272,7 +265,7 @@ function buildPeriodResponse(array $rows, $period) {
     unset($s);
 
     // Игнорируем строки с нулевыми значениями по каждому металлу —
-    // иначе провалы до 0 (строки только с медью от RusCable, когда ЦБ не имеет даты) попадали в график.
+    // иначе провалы до 0 (из-за строк только с медью или технических сбоев) попадали в график.
     $filterNonZero = function (array $rows, $key) {
         return array_values(array_filter($rows, function ($s) use ($key) {
             return isset($s[$key]) && (float)$s[$key] > 0;
@@ -306,34 +299,6 @@ function buildPeriodResponse(array $rows, $period) {
 }
 
 $out = [];
-// Курс доллара для переключателя валюты на фронте — последний из БД
-$usdRub = null;
-try {
-    $st = $pdo->query("SELECT usd_rub FROM cbr_rates ORDER BY date DESC LIMIT 1");
-    $row = $st ? $st->fetch(PDO::FETCH_OBJ) : null;
-    if ($row && isset($row->usd_rub)) $usdRub = round((float)$row->usd_rub * 100) / 100;
-} catch (Throwable $e) { /* cbr_rates может отсутствовать */ }
-if ($usdRub !== null) $out['usdRub'] = $usdRub;
-
-// Актуальная цена — последняя ненулевая по каждому металлу (избегаем нулей из строк только с медью)
-if (!empty($allRows)) {
-    $r2 = function ($v) { return round((float)$v * 100) / 100; };
-    $lastNonZero = function ($key) use ($allRows) {
-        for ($i = count($allRows) - 1; $i >= 0; $i--) {
-            $v = (float)($allRows[$i][$key] ?? 0);
-            if ($v > 0) return $v;
-        }
-        return null;
-    };
-    $out['lastPrice'] = [];
-    foreach (['xau' => 'XAU', 'xag' => 'XAG', 'xpt' => 'XPT', 'xpd' => 'XPD'] as $k => $sym) {
-        $v = $lastNonZero($k);
-        if ($v !== null) $out['lastPrice'][$sym] = $r2($v);
-    }
-    $vCu = $lastNonZero('xcu');
-    if ($vCu !== null) $out['lastPrice']['XCU'] = $r2($vCu);
-}
-
 foreach (['1m', '1y', '5y', '10y', 'all'] as $p) {
     $resp = buildPeriodResponse($allRows, $p);
     if ($resp && !empty($resp['XAU'])) $out[$p] = $resp;

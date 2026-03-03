@@ -259,7 +259,7 @@ export default function HomePage() {
                 {mounted && (
                   isAuthorized ? (
                     <Button href="/portfolio" variant="primary" className="flex-1 sm:flex-initial">
-                      В портфолио
+                      В коллекцию
                     </Button>
                   ) : (
                     <Button href="/login" variant="primary" className="flex-1 sm:flex-initial">
@@ -356,7 +356,7 @@ export default function HomePage() {
               <a href="/catalog" className="text-black hover:opacity-80 transition-opacity" title="Каталог монет России и мира">Каталог монет</a>
               <a href="/mints" className="text-black hover:opacity-80 transition-opacity" title="Монетные дворы России и мира — статьи и история">Монетные дворы</a>
               {mounted && isAuthorized && (
-                <a href="/portfolio" className="text-black hover:opacity-80 transition-opacity" title="Моя коллекция монет">Портфолио</a>
+                <a href="/portfolio" className="text-black hover:opacity-80 transition-opacity" title="Моя коллекция монет">Моя коллекция</a>
               )}
               {mounted && !isAuthorized && (
                 <a href="/login" className="text-black hover:opacity-80 transition-opacity" title="Вход в личный кабинет">Вход</a>

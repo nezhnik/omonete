@@ -44,8 +44,10 @@
   - `clean-metal-prices-from-out.js` → удаляет `out/data/metal-prices.json` (на проде JSON обновляется кроном на сервере)
   - `move-api-for-export.js on` → возвращает `app/api`
 - **Деплой**:
-  - Заливать **содержимое `out/`** в корень сайта (Reg.ru / ISPmanager).
-  - На сервере в корне: `index.html`, `data/` (в т.ч. `data/metal-prices.json` пишет крон), `_next/`, `catalog/`, `coins/`, `mints/`, `image/` и т.д.
+  - Заливать **содержимое `out/`** в корень сайта (Reg.ru / ISPmanager). Копировать всё что есть в `out/` — этого достаточно.
+  - В `out/` **нет** файла `data/metal-prices.json` (он удаляется при билде скриптом `clean-metal-prices-from-out.js`). На сервере этот файл создаёт и обновляет только крон; вручную и из репозитория его не обновляют.
+  - Скрипт `cron-metal-prices.php` в `out/` **есть** — при каждом деплое он обновляется на сервере вместе с остальным сайтом. Расписание крона в панели Reg.ru менять не нужно.
+  - На сервере в корне: `index.html`, `data/` (в т.ч. `data/metal-prices.json` пишет крон), `cron-metal-prices.php`, `_next/`, `catalog/`, `coins/`, `mints/`, `image/` и т.д.
 
 ---
 

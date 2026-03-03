@@ -287,25 +287,27 @@ function buildPeriodResponse(rows, period) {
   let sampled;
   if (period === "all") {
     const round = (v) => Math.round(Number(v) * 100) / 100;
-    const monthMax = (key, filterRow) => {
-      const byMonth = new Map();
+    const BIWEEK_MS = 14 * 24 * 60 * 60 * 1000;
+    const getBiweekKey = (dateStr) => Math.floor(new Date(dateStr + "T12:00:00").getTime() / BIWEEK_MS);
+    const biweekMax = (key, filterRow) => {
+      const byBiweek = new Map();
       range.forEach((r) => {
         if (filterRow && !filterRow(r)) return;
-        const k = r.date.slice(0, 7);
+        const k = getBiweekKey(r.date);
         const val = Number(r[key]);
         if (val <= 0) return;
-        if (!byMonth.has(k) || val > Number(byMonth.get(k)[key])) byMonth.set(k, r);
+        if (!byBiweek.has(k) || val > Number(byBiweek.get(k)[key])) byBiweek.set(k, r);
       });
-      const keys = Array.from(byMonth.keys()).sort();
+      const keys = Array.from(byBiweek.keys()).sort((a, b) => a - b);
       const arr = keys.map((k) => {
-        const r = byMonth.get(k);
+        const r = byBiweek.get(k);
         const d = new Date(r.date + "T12:00:00");
         return {
           label: d.toLocaleDateString("ru-RU", { month: "short", year: "2-digit" }),
           value: round(r[key]),
         };
       });
-      // В последнем месяце — последний день (актуальная цена)
+      // В последней двухнеделке — последний день (актуальная цена)
       if (arr.length > 0 && range.length > 0) {
         const lastRow = range[range.length - 1];
         if (filterRow && !filterRow(lastRow)) { /* оставляем макс */ } else {
@@ -319,17 +321,18 @@ function buildPeriodResponse(rows, period) {
       ok: true,
       period,
       source: "static",
-      XAU: monthMax("xau"),
-      XAG: monthMax("xag"),
-      XPT: monthMax("xpt"),
-      XPD: monthMax("xpd"),
-      XCU: monthMax("xcu", (r) => isWeekday(r.date) && r.date >= "2006-01-01"),
+      XAU: biweekMax("xau"),
+      XAG: biweekMax("xag"),
+      XPT: biweekMax("xpt"),
+      XPD: biweekMax("xpd"),
+      XCU: biweekMax("xcu", (r) => isWeekday(r.date) && r.date >= "2006-01-01"),
     };
     if (!resAll.XCU.length) delete resAll.XCU;
     return resAll;
   }
 
-  if (period === "1y" || period === "5y" || period === "10y") {
+  // 5y, 10y — по неделям; 1y — по дням (как в PHP), чтобы график за год был детализированным
+  if (period === "5y" || period === "10y") {
     const round = (v) => Math.round(Number(v) * 100) / 100;
     const getWeekKey = (dateStr) => {
       const d = new Date(dateStr + "T12:00:00");
@@ -380,7 +383,7 @@ function buildPeriodResponse(rows, period) {
     return res5y10y;
   }
 
-  // 1m — все дни без выборки (каждый день = точка)
+  // 1m, 1y — все дни без выборки (каждый день = точка), детализированный график
   sampled = range.map((r) => {
       const d = new Date(r.date + "T12:00:00");
       const formatOptions =
