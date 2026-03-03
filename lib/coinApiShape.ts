@@ -166,6 +166,7 @@ function isRectangular(catalogNumber: unknown, bases: string[]): boolean {
 export type ListCoin = {
   id: string;
   title: string;
+  titleEn?: string;
   country?: string;
   year: number;
   faceValue?: string;
@@ -186,6 +187,7 @@ export type ListCoin = {
 export type DetailCoin = {
   id: string;
   title: string;
+  titleEn?: string;
   seriesName?: string;
   imageUrl: string;
   imageUrls?: string[];
@@ -272,6 +274,7 @@ function rowToListCoin(
   return {
     id: String(r.id),
     title: cleanTitle(r.title),
+    titleEn: r.title_en && String(r.title_en).trim() ? String(r.title_en).trim() : undefined,
     country: (r.country as string) ?? "Россия",
     year: year ?? 0,
     faceValue: r.face_value as string | undefined,
@@ -307,6 +310,7 @@ function rowToDetailCoin(
   return {
     id: String(r.id),
     title: (r.title as string) ?? "",
+    titleEn: r.title_en && String(r.title_en).trim() ? String(r.title_en).trim() : undefined,
     seriesName: r.series as string | undefined,
     imageUrl,
     imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
@@ -366,7 +370,7 @@ function rowToSameSeriesItem(
 }
 
 const COINS_SELECT =
-  `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+  `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
    FROM coins ORDER BY release_date DESC, id DESC`;
 
 export async function getCoinsList(): Promise<{ coins: ListCoin[]; total: number }> {
@@ -406,7 +410,7 @@ export async function getCoinWithSameSeries(id: string): Promise<{ coin: DetailC
       // ignore
     }
     const [rows] = await conn.execute(
-      `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
        FROM coins WHERE id = ?`,
       [id]
     );
@@ -417,7 +421,7 @@ export async function getCoinWithSameSeries(id: string): Promise<{ coin: DetailC
     let sameSeries: SameSeriesItem[] = [];
     if (seriesName) {
       const [sameRows] = await conn.execute(
-        `SELECT id, title, series, face_value, metal, weight_g, weight_oz, image_urls, catalog_number, image_obverse, image_reverse FROM coins
+        `SELECT id, title, title_en, series, face_value, metal, weight_g, weight_oz, image_urls, catalog_number, image_obverse, image_reverse FROM coins
          WHERE series = ? AND id != ? ORDER BY release_date DESC LIMIT 12`,
         [seriesName, id]
       );

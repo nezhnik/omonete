@@ -139,12 +139,13 @@ function getWeightLabel(weightG, weightOz) {
   return null;
 }
 
-/** Показываем только монеты с обеими картинками в БД (аверс и реверс). Без картинок — не активны на сайте. */
 function hasImage(r) {
   const ob = r.image_obverse && String(r.image_obverse).trim();
   const rev = r.image_reverse && String(r.image_reverse).trim();
   return !!(ob && rev);
 }
+
+/** Экспортируем все монеты. Без картинок — placeholder. Иностранные монеты добавляются сначала без изображений. */
 
 /** Какую сторону показывать первой: "obverse" (уникальный аверс) или "reverse" (орёл). Читаем из coin-display-config.json */
 function getFirstImageSide() {
@@ -212,7 +213,7 @@ async function run() {
   let rows;
   try {
     [rows] = await conn.execute(
-      `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
        FROM coins ORDER BY release_date DESC, id DESC`
     );
   } catch (err) {
@@ -253,6 +254,12 @@ async function run() {
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.mint_short = null; });
+      } else if (/title_en/.test(err.message)) {
+        [rows] = await conn.execute(
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+           FROM coins ORDER BY release_date DESC, id DESC`
+        );
+        rows.forEach((r) => { r.title_en = null; });
       } else {
         throw err;
       }
@@ -260,10 +267,10 @@ async function run() {
       throw err;
     }
   }
-  const rowsWithImage = rows.filter(hasImage);
+  const rowsToExport = rows;
   const rectangularBases = getRectangularCatalogBases();
 
-  const listCoins = rowsWithImage.map((r) => {
+  const listCoins = rowsToExport.map((r) => {
     const imageObverse = r.image_obverse;
     const imageReverse = r.image_reverse;
     const imageUrls = r.image_urls;
@@ -293,6 +300,7 @@ async function run() {
     return {
       id: String(r.id),
       title: cleanTitle(r.title),
+      titleEn: r.title_en && String(r.title_en).trim() ? String(r.title_en).trim() : undefined,
       country: r.country ?? "Россия",
       year: year ?? 0,
       faceValue: r.face_value ?? undefined,
@@ -331,7 +339,7 @@ async function run() {
     console.log("✓ public/data/mints.json");
   }
 
-  for (const r of rowsWithImage) {
+  for (const r of rowsToExport) {
     const imageUrls = r.image_urls;
     const catalogNumber = r.catalog_number;
     const imageObverse = r.image_obverse;
@@ -426,7 +434,7 @@ async function run() {
       JSON.stringify({ coin, sameSeries })
     );
   }
-  console.log("✓ public/data/coins/*.json —", rowsWithImage.length, "монет (без изображения не экспортируются)");
+  console.log("✓ public/data/coins/*.json —", rowsToExport.length, "монет");
 
   await conn.end();
   console.log("Готово. Дальше: npm run build → залить out на сервер.");

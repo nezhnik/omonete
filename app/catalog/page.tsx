@@ -26,6 +26,7 @@ const VALID_COUNTRIES = ["Австралия", "Соединённые Штат�
 type CatalogCoin = {
   id: string;
   title: string;
+  titleEn?: string;
   country: string;
   year: number;
   faceValue?: string;
@@ -176,6 +177,7 @@ function coinMatchesSearch(coin: CatalogCoin, queryNorm: string): boolean {
     if (!textQuery) return shapeOk;
     const fields = [
       coin.title,
+      coin.titleEn,
       coin.seriesName,
       coin.country,
       coin.faceValue,
@@ -190,6 +192,7 @@ function coinMatchesSearch(coin: CatalogCoin, queryNorm: string): boolean {
   }
   const fields = [
     coin.title,
+    coin.titleEn,
     coin.seriesName,
     coin.country,
     coin.faceValue,

@@ -121,6 +121,7 @@ type PortfolioRow = {
   id: string;
   imageUrl: string;
   title: string;
+  titleEn?: string;
   series: string;
   mintName: string;
   mintCountry: string;
@@ -142,6 +143,7 @@ type PortfolioRow = {
 type ApiCoin = {
   id: string;
   title: string;
+  titleEn?: string;
   seriesName?: string;
   imageUrl: string;
   mintName?: string;
@@ -165,7 +167,7 @@ function normalizeSearchPortfolio(s: string): string {
 function portfolioRowMatchesSearch(row: PortfolioRow, queryNorm: string): boolean {
   if (!queryNorm) return true;
   const words = queryNorm.split(/\s+/).filter(Boolean);
-  const fields = [row.title, row.series, row.mintName, row.faceValue, row.metalLabel];
+  const fields = [row.title, row.titleEn, row.series, row.mintName, row.faceValue, row.metalLabel];
   const normFields = fields.map((f) => normalizeSearchPortfolio(f ?? ""));
   return words.every((w) => normFields.some((f) => f.includes(w)));
 }
@@ -197,6 +199,7 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
     id: coin.id,
     imageUrl: coin.imageUrl || "/image/coin-placeholder.svg",
     title: coin.title ?? "—",
+    titleEn: coin.titleEn,
     series: coin.seriesName ?? "—",
     mintName: coin.mintName ?? "—",
     mintCountry: coin.mintCountry ?? "Россия",

@@ -19,6 +19,16 @@
 
 ## Как собрать и залить (кратко)
 
+**Полный деплой с бэкапом и ASE:**
+
+```bash
+npm run deploy:regru
+```
+
+Делает по порядку: бэкап БД → ensure title_en → импорт ASE → сборка. Бэкап сохраняется в **`backup/db-coins-*.json`** (см. `docs/BACKUP_COINS_DB.md`).
+
+**Обычная сборка (без ASE):**
+
 1. **Локально** (при наличии DATABASE_URL в `.env`):
    ```bash
    npm run build:regru

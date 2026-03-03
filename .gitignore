@@ -50,5 +50,8 @@ next-env.d.ts
 # резервная копия экспорта монет (можно убрать из .gitignore, если нужно закоммитить снимок)
 /backup-coins-data
 
+# полный дамп таблицы coins (backup:db) — большие JSON-файлы
+/backup
+
 # экспорт статей для импорта в БД (генерируется из /api/mint-articles-export)
 mint-articles.json

@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проверка парсера ucoin — ASE</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font: 14px/1.4 sans-serif; padding: 16px; background: #f5f5f5; }
+    h1 { margin: 0 0 8px; }
+    .meta { color: #666; font-size: 12px; margin-bottom: 16px; }
+    table { border-collapse: collapse; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+    th, td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; font-size: 12px; }
+    th { background: #333; color: #fff; font-weight: 600; }
+    tr:nth-child(even) { background: #f9f9f9; }
+    td.empty { background: #fff3cd; color: #856404; }
+    .legend { margin-top: 16px; font-size: 12px; color: #666; }
+    .legend span { display: inline-block; padding: 2px 8px; margin-right: 8px; background: #fff3cd; }
+  </style>
+</head>
+<body>
+  <h1>Результат парсинга ucoin: American Silver Eagle</h1>
+  <p class="meta">Записей: 93 | Сравните с таблицей на исходной странице ucoin</p>
+  <div style="overflow-x: auto;">
+    <table>
+      <thead><tr><th>Название</th><th>Серия</th><th>Страна</th><th>Номинал</th><th>Дата выпуска</th><th>Монетный двор</th><th>Двор (коротко)</th><th>Металл</th><th>Проба</th><th>Тираж (число)</th><th>Тираж (отображение)</th><th>Вес (г)</th><th>Вес (унция)</th><th>Каталог №</th><th>Качество</th><th>Диаметр (мм)</th><th>Толщина (мм)</th><th>Аверс</th><th>Реверс</th></tr></thead>
+      <tbody>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2021</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2021-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">28274500</td>
+      <td class="" title="Тираж (отображение)">28 274 500</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2021-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2021 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2021-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">274536</td>
+      <td class="" title="Тираж (отображение)">274 536</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2021-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2021 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2021-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">416047</td>
+      <td class="" title="Тираж (отображение)">416 047</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2021-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2020</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2020-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">31329500</td>
+      <td class="" title="Тираж (отображение)">31 329 500</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2020-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2020 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2020-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">258727</td>
+      <td class="" title="Тираж (отображение)">258 727</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2020-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2020 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2020-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">154867</td>
+      <td class="" title="Тираж (отображение)">154 867</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2020-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2020 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2020-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">405558</td>
+      <td class="" title="Тираж (отображение)">405 558</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2020-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2019</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2019-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">14863500</td>
+      <td class="" title="Тираж (отображение)">14 863 500</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2019-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2019 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2019-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">202206</td>
+      <td class="" title="Тираж (отображение)">202 206</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2019-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2019 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2019-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">140779</td>
+      <td class="" title="Тираж (отображение)">140 779</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2019-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2019 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2019-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">410334</td>
+      <td class="" title="Тираж (отображение)">410 334</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2019-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2018</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2018-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">15700000</td>
+      <td class="" title="Тираж (отображение)">15 700 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2018-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2018 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2018-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">208271</td>
+      <td class="" title="Тираж (отображение)">208 271</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2018-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2018 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2018-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">138966</td>
+      <td class="" title="Тираж (отображение)">138 966</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2018-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2018 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2018-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">381811</td>
+      <td class="" title="Тираж (отображение)">381 811</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2018-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2017</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2017-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">22065500</td>
+      <td class="" title="Тираж (отображение)">22 065 500</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2017-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2017 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2017-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">124885</td>
+      <td class="" title="Тираж (отображение)">124 885</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2017-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2017 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2017-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">176739</td>
+      <td class="" title="Тираж (отображение)">176 739</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2017-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2017 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2017-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">400287</td>
+      <td class="" title="Тираж (отображение)">400 287</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2017-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2016</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2016-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">43503000</td>
+      <td class="" title="Тираж (отображение)">43 503 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2016-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2016 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2016-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">237753</td>
+      <td class="" title="Тираж (отображение)">237 753</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2016-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2016 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2016-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">651467</td>
+      <td class="" title="Тираж (отображение)">651 467</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2016-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2015</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2015-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">47079640</td>
+      <td class="" title="Тираж (отображение)">47 079 640</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2015-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2015 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2015-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">223879</td>
+      <td class="" title="Тираж (отображение)">223 879</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2015-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2015 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2015-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">707518</td>
+      <td class="" title="Тираж (отображение)">707 518</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2015-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2014</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2014-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">51085000</td>
+      <td class="" title="Тираж (отображение)">51 085 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2014-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2014 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2014-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">944757</td>
+      <td class="" title="Тираж (отображение)">944 757</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2014-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2013</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2013-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">42675001</td>
+      <td class="" title="Тираж (отображение)">42 675 001</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2013-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2013 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2013-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">253169</td>
+      <td class="" title="Тираж (отображение)">253 169</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2013-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2013 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2013-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">944770</td>
+      <td class="" title="Тираж (отображение)">944 770</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2013-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2012</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2012-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">33742501</td>
+      <td class="" title="Тираж (отображение)">33 742 501</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2012-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2012 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2012-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">506727</td>
+      <td class="" title="Тираж (отображение)">506 727</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2012-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2012 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2012-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">226120</td>
+      <td class="" title="Тираж (отображение)">226 120</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2012-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2012 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2012-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">877731</td>
+      <td class="" title="Тираж (отображение)">877 731</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2012-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2011</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2011-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">40020001</td>
+      <td class="" title="Тираж (отображение)">40 020 001</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2011-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2011 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2011-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">100000</td>
+      <td class="" title="Тираж (отображение)">100 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2011-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2011 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2011-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">100000</td>
+      <td class="" title="Тираж (отображение)">100 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2011-S-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2011 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2011-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">409809</td>
+      <td class="" title="Тираж (отображение)">409 809</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2011-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2011 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2011-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">950000</td>
+      <td class="" title="Тираж (отображение)">950 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2011-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2010</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2010-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">34764500</td>
+      <td class="" title="Тираж (отображение)">34 764 500</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2010-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2010 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2010-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">849861</td>
+      <td class="" title="Тираж (отображение)">849 861</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2010-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2009</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2009-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">30459000</td>
+      <td class="" title="Тираж (отображение)">30 459 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2009-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2008</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2008-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">20583000</td>
+      <td class="" title="Тираж (отображение)">20 583 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2008-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2008 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2008-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">580757</td>
+      <td class="" title="Тираж (отображение)">580 757</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2008-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2008 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2008-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">700979</td>
+      <td class="" title="Тираж (отображение)">700 979</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2008-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2007</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2007-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">9028036</td>
+      <td class="" title="Тираж (отображение)">9 028 036</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2007-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2007 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2007-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">621333</td>
+      <td class="" title="Тираж (отображение)">621 333</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2007-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2007 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2007-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">821759</td>
+      <td class="" title="Тираж (отображение)">821 759</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2007-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2006</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2006-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">10676522</td>
+      <td class="" title="Тираж (отображение)">10 676 522</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2006-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2006 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2006-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">250000</td>
+      <td class="" title="Тираж (отображение)">250 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2006-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2006 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2006-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">468000</td>
+      <td class="" title="Тираж (отображение)">468 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2006-W-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2006 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2006-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">1093600</td>
+      <td class="" title="Тираж (отображение)">1 093 600</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2006-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2005</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2005-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">8891025</td>
+      <td class="" title="Тираж (отображение)">8 891 025</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2005-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2005 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2005-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">816663</td>
+      <td class="" title="Тираж (отображение)">816 663</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2005-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2004</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2004-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">8882754</td>
+      <td class="" title="Тираж (отображение)">8 882 754</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2004-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2004 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2004-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">801602</td>
+      <td class="" title="Тираж (отображение)">801 602</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2004-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2003</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2003-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">8495008</td>
+      <td class="" title="Тираж (отображение)">8 495 008</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2003-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2003 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2003-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">747831</td>
+      <td class="" title="Тираж (отображение)">747 831</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2003-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2002</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2002-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">10539026</td>
+      <td class="" title="Тираж (отображение)">10 539 026</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2002-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2002 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2002-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">647342</td>
+      <td class="" title="Тираж (отображение)">647 342</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2002-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2001</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2001-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">9001711</td>
+      <td class="" title="Тираж (отображение)">9 001 711</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2001-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2001 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2001-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">746154</td>
+      <td class="" title="Тираж (отображение)">746 154</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2001-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2000</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2000-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">9239132</td>
+      <td class="" title="Тираж (отображение)">9 239 132</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2000-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 2000 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">2000-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">600743</td>
+      <td class="" title="Тираж (отображение)">600 743</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-2000-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1999</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1999-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">7408640</td>
+      <td class="" title="Тираж (отображение)">7 408 640</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1999-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1999 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1999-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">549330</td>
+      <td class="" title="Тираж (отображение)">549 330</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1999-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1998</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1998-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">4847547</td>
+      <td class="" title="Тираж (отображение)">4 847 547</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1998-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1998 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1998-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">450728</td>
+      <td class="" title="Тираж (отображение)">450 728</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1998-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1997</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1997-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">4295004</td>
+      <td class="" title="Тираж (отображение)">4 295 004</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1997-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1997 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1997-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">435368</td>
+      <td class="" title="Тираж (отображение)">435 368</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1997-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1996</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1996-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">3603386</td>
+      <td class="" title="Тираж (отображение)">3 603 386</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1996-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1996 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1996-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">500000</td>
+      <td class="" title="Тираж (отображение)">500 000</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1996-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1995</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1995-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">4672051</td>
+      <td class="" title="Тираж (отображение)">4 672 051</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1995-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1995 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1995-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">438511</td>
+      <td class="" title="Тираж (отображение)">438 511</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1995-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1995 (W)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1995-01-01</td>
+      <td class="" title="Монетный двор">Вест-Поинт</td>
+      <td class="" title="Двор (коротко)">West Point</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">30125</td>
+      <td class="" title="Тираж (отображение)">30 125</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1995-W-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1994</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1994-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">4227319</td>
+      <td class="" title="Тираж (отображение)">4 227 319</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1994-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1994 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1994-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">372168</td>
+      <td class="" title="Тираж (отображение)">372 168</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1994-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1993</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1993-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">6763762</td>
+      <td class="" title="Тираж (отображение)">6 763 762</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1993-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1993 (P)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1993-01-01</td>
+      <td class="" title="Монетный двор">Филадельфия</td>
+      <td class="" title="Двор (коротко)">Philadelphia</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">403625</td>
+      <td class="" title="Тираж (отображение)">403 625</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1993-P-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1992</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1992-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">5540068</td>
+      <td class="" title="Тираж (отображение)">5 540 068</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1992-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1992 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1992-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">498543</td>
+      <td class="" title="Тираж (отображение)">498 543</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1992-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1991</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1991-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">7191066</td>
+      <td class="" title="Тираж (отображение)">7 191 066</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1991-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1991 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1991-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">511924</td>
+      <td class="" title="Тираж (отображение)">511 924</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1991-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1990</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1990-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">5840210</td>
+      <td class="" title="Тираж (отображение)">5 840 210</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1990-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1990 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1990-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">695510</td>
+      <td class="" title="Тираж (отображение)">695 510</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1990-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1989</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1989-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">5203327</td>
+      <td class="" title="Тираж (отображение)">5 203 327</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1989-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1989 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1989-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">617694</td>
+      <td class="" title="Тираж (отображение)">617 694</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1989-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1988</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1988-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">5004646</td>
+      <td class="" title="Тираж (отображение)">5 004 646</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1988-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1988 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1988-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">557370</td>
+      <td class="" title="Тираж (отображение)">557 370</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1988-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1987</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1987-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">11442335</td>
+      <td class="" title="Тираж (отображение)">11 442 335</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1987-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1987 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1987-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">904732</td>
+      <td class="" title="Тираж (отображение)">904 732</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1987-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1986</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1986-01-01</td>
+      <td class="" title="Монетный двор">Монетный двор США</td>
+      <td class="" title="Двор (коротко)">US Mint</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">5393005</td>
+      <td class="" title="Тираж (отображение)">5 393 005</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1986-BU</td>
+      <td class="" title="Качество">АЦ</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr>
+    <tr>
+      
+      <td class="" title="Название">American Silver Eagle 1986 (S)</td>
+      <td class="" title="Серия">American Eagle</td>
+      <td class="" title="Страна">США</td>
+      <td class="" title="Номинал">1 доллар</td>
+      <td class="" title="Дата выпуска">1986-01-01</td>
+      <td class="" title="Монетный двор">Сан-Франциско</td>
+      <td class="" title="Двор (коротко)">San Francisco</td>
+      <td class="" title="Металл">Серебро</td>
+      <td class="" title="Проба">999/1000</td>
+      <td class="" title="Тираж (число)">1446778</td>
+      <td class="" title="Тираж (отображение)">1 446 778</td>
+      <td class="" title="Вес (г)">31,1035</td>
+      <td class="" title="Вес (унция)">1 унция</td>
+      <td class="" title="Каталог №">US-ASE-1986-S-P</td>
+      <td class="" title="Качество">Пруф</td>
+      <td class="" title="Диаметр (мм)">40,6</td>
+      <td class="" title="Толщина (мм)">2,98</td>
+      <td class="empty" title="Аверс">—</td>
+      <td class="empty" title="Реверс">—</td>
+    </tr></tbody>
+    </table>
+  </div>
+  <p class="legend"><span>Жёлтый</span> — поле пустое (проверьте, должно ли быть заполнено)</p>
+</body>
+</html>
