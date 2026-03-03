@@ -197,13 +197,13 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
   }
   return {
     id: coin.id,
-    imageUrl: coin.imageUrl || "/image/coin-placeholder.svg",
+    imageUrl: coin.imageUrl || "/image/coin-placeholder.png",
     title: coin.title ?? "—",
     titleEn: coin.titleEn,
     series: coin.seriesName ?? "—",
     mintName: coin.mintName ?? "—",
     mintCountry: coin.mintCountry ?? "Россия",
-    mintLogoUrl: coin.mintLogoUrl ?? "/image/coin-placeholder.svg",
+    mintLogoUrl: coin.mintLogoUrl ?? "/image/coin-placeholder.png",
     faceValue: coin.faceValue ?? "—",
     metal: coin.metalCode ?? "—",
     metalColor: coin.metalColor ?? "#C0C0C0",

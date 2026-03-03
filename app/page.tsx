@@ -50,7 +50,7 @@ const foreignMints = [
   { id: "canadian-mint", name: "Royal Canadian Mint", country: "Канада", imageUrl: "/image/Mints/canadian-mint.webp" },
 ];
 
-const MINT_PLACEHOLDER = "/image/coin-placeholder.svg";
+const MINT_PLACEHOLDER = "/image/coin-placeholder.png";
 
 export default function HomePage() {
   const { isAuthorized, inCollection, addToCollection, removeFromCollection } = useAuth();

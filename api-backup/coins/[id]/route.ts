@@ -4,7 +4,7 @@ import { getFirstImageSide } from "@/lib/coinDisplayConfig";
 import { metalOnly } from "@/lib/coinMeta";
 
 export const dynamic = "force-static";
-const PLACEHOLDER = "/image/coin-placeholder.svg";
+const PLACEHOLDER = "/image/coin-placeholder.png";
 
 function rowToCoinDetail(r: Record<string, unknown>, firstImageSide: "obverse" | "reverse") {
   const imageUrls = r.image_urls as string[] | null;

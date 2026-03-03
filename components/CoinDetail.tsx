@@ -282,7 +282,9 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               </div>
             )}
             <p className="text-center text-[#666666] text-[16px] font-normal">
-              Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России
+              {coin.mintCountry === "Россия"
+                ? "Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России"
+                : "Информация предоставлена в ознакомительных целях из открытых источников"}
             </p>
 
             {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа. Тултипы только на десктопе (lg+). На мобильном — Web Share API или копирование */}
@@ -494,12 +496,12 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                     if (el.src.endsWith("sales.gif")) {
                       el.onerror = () => {
                         el.onerror = null;
-                        el.src = "/image/coin-placeholder.svg";
+                        el.src = "/image/coin-placeholder.png";
                       };
                       el.src = "/image/sales.webp";
                     } else {
                       el.onerror = null;
-                      el.src = "/image/coin-placeholder.svg";
+                      el.src = "/image/coin-placeholder.png";
                     }
                   }}
                 />

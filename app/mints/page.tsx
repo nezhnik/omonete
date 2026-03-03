@@ -6,7 +6,7 @@ import { Header } from "../../components/Header";
 import { MintCard, MintCardSkeleton } from "../../components/MintCard";
 import { nbspAfterPrepositions } from "../../lib/nbspPrepositions";
 
-const MINT_PLACEHOLDER = "/image/coin-placeholder.svg";
+const MINT_PLACEHOLDER = "/image/coin-placeholder.png";
 
 const foreignMints = [
   { id: "us-mint", name: "Монетный двор США", country: "США", imageUrl: "/image/Mints/us-mint.webp" },

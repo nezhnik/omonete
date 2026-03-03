@@ -6,7 +6,7 @@ import { getConnection } from "./db";
 import fs from "fs";
 import path from "path";
 
-const PLACEHOLDER = "/image/coin-placeholder.svg";
+const PLACEHOLDER = "/image/coin-placeholder.png";
 
 type Row = Record<string, unknown>;
 
@@ -34,11 +34,12 @@ function cleanTitle(s: unknown): string {
     .trim();
 }
 
+/** 00–30 → 2000-е, 31–99 → 1900-е (ASE 1986–1999 и др.) */
 function yearFromCatalogSuffix(suffix: unknown): number | null {
   if (suffix == null || String(suffix).length !== 2) return null;
   const yy = parseInt(String(suffix), 10);
   if (Number.isNaN(yy) || yy < 0 || yy > 99) return null;
-  return 2000 + yy;
+  return yy <= 30 ? 2000 + yy : 1900 + yy;
 }
 
 function metalOnly(str: unknown): string {

@@ -8,7 +8,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 
-const PLACEHOLDER = "/image/coin-placeholder.svg";
+const PLACEHOLDER = "/image/coin-placeholder.png";
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const COINS_DIR = path.join(DATA_DIR, "coins");
 
@@ -38,12 +38,12 @@ function cleanTitle(s) {
     .trim();
 }
 
-/** Год из суффикса каталога: "26" → 2026, "10" → 2010. Без суффикса — null. */
+/** Год из суффикса каталога: "26" → 2026, "98" → 1998. 00–30 → 2000-е, 31–99 → 1900-е. */
 function yearFromCatalogSuffix(suffix) {
   if (suffix == null || String(suffix).length !== 2) return null;
   const yy = parseInt(String(suffix), 10);
   if (Number.isNaN(yy) || yy < 0 || yy > 99) return null;
-  return 2000 + yy;
+  return yy <= 30 ? 2000 + yy : 1900 + yy;
 }
 
 /** Убирает пробу из строки металла: "серебро 925/1000" → "Серебро". Проба остаётся в metal_fineness. */

@@ -3,7 +3,7 @@ import { getConnection } from "@/lib/db";
 import { firstImageUrl } from "@/lib/coinImages";
 
 export const dynamic = "force-static";
-const PLACEHOLDER = "/image/coin-placeholder.svg";
+const PLACEHOLDER = "/image/coin-placeholder.png";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
