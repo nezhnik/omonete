@@ -98,9 +98,9 @@ export default function HomePage() {
   const ruCoins = allCoins.filter((c) => c.country === "Россия");
   const foreignCoins = allCoins.filter((c) => c.country !== "Россия");
   const coinsById = useMemo(() => new Map(allCoins.map((c) => [c.id, c])), [allCoins]);
-  /** Для анимации героя: случайные монеты из каталога (с картинкой), до 100 шт. Без fallback — только каталог. */
+  /** Для анимации героя: только российские монеты с картинкой. Иностранные пока не показываем. */
   const heroCoinImages = useMemo(() => {
-    const withImage = allCoins.filter((c) => c.imageUrl);
+    const withImage = allCoins.filter((c) => c.imageUrl && c.country === "Россия");
     if (withImage.length === 0) return [];
     const shuffled = [...withImage];
     for (let i = shuffled.length - 1; i > 0; i--) {
