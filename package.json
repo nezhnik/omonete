@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:lan": "next dev -H 0.0.0.0",
-    "build": "npm run data:rectangular && npm run mints:webp && npm run data:export && node scripts/move-api-for-export.js off && next build && node scripts/clean-metal-prices-from-out.js && node scripts/move-api-for-export.js on",
+    "build": "npm run data:rectangular && npm run mints:webp && npm run data:export && node scripts/move-api-for-export.js off && next build && node scripts/move-api-for-export.js on",
     "build:vercel": "next build",
     "mints:webp": "node scripts/convert-mints-to-webp.js",
     "data:rectangular": "node scripts/export-rectangular-from-xlsx.js",

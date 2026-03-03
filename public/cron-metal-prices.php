@@ -251,23 +251,13 @@ function buildPeriodResponse(array $rows, $period) {
         ksort($byBiweek);
         $sampled = array_values($byBiweek);
         foreach ($sampled as &$s) { $s['label'] = $fmtMonth($s['date']); }
-    } elseif ($period === '5y' || $period === '10y') {
-        $getWeekKey = function ($dateStr) {
-            $w = (int)date('w', strtotime($dateStr . ' 12:00:00'));
-            $mon = $w === 0 ? -6 : 1 - $w;
-            return date('Y-m-d', strtotime($dateStr . ' 12:00:00 + ' . $mon . ' days'));
-        };
-        $byWeek = [];
-        foreach ($range as $r) {
-            $k = $getWeekKey($r['date']);
-            $byWeek[$k] = $r;
-        }
-        ksort($byWeek);
-        $sampled = array_values($byWeek);
-        foreach ($sampled as &$s) { $s['label'] = $fmtShortY($s['date']); }
     } else {
+        // 1m, 1y, 5y, 10y — по дням, без группировки по неделям (как 1y)
+        // Иначе при малой БД на проде byWeek даёт 1 точку вместо всех доступных
         $sampled = $range;
-        foreach ($sampled as &$s) { $s['label'] = $period === '1y' ? $fmtShortY($s['date']) : $fmtShort($s['date']); }
+        foreach ($sampled as &$s) {
+            $s['label'] = in_array($period, ['1y', '5y', '10y']) ? $fmtShortY($s['date']) : $fmtShort($s['date']);
+        }
     }
     unset($s);
 

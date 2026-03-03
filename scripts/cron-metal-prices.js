@@ -331,63 +331,12 @@ function buildPeriodResponse(rows, period) {
     return resAll;
   }
 
-  // 5y, 10y — по неделям; 1y — по дням (как в PHP), чтобы график за год был детализированным
-  if (period === "5y" || period === "10y") {
-    const round = (v) => Math.round(Number(v) * 100) / 100;
-    const getWeekKey = (dateStr) => {
-      const d = new Date(dateStr + "T12:00:00");
-      const day = d.getDay();
-      const mon = new Date(d);
-      mon.setDate(d.getDate() - (day === 0 ? 6 : day - 1));
-      return mon.toISOString().slice(0, 10);
-    };
-    // Для каждого металла — своя выборка по неделям: день с макс. ценой по этому металлу в неделе, чтобы пики попадали в график
-    // В последней неделе берём последний день (актуальная цена), чтобы при переключении периода итоговая цена не прыгала
-    const weekMax = (key, filterRow) => {
-      const byWeek = new Map();
-      range.forEach((r) => {
-        if (filterRow && !filterRow(r)) return;
-        const k = getWeekKey(r.date);
-        const val = Number(r[key]);
-        if (val <= 0) return;
-        if (!byWeek.has(k) || val > Number(byWeek.get(k)[key])) byWeek.set(k, r);
-      });
-      const keys = Array.from(byWeek.keys()).sort();
-      const arr = keys.map((k) => {
-        const r = byWeek.get(k);
-        return {
-          label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short", year: "2-digit" }),
-          value: round(r[key]),
-        };
-      });
-      if (arr.length > 0 && range.length > 0) {
-        const lastRow = range[range.length - 1];
-        if (filterRow && !filterRow(lastRow)) { /* оставляем макс */ } else {
-          const v = Number(lastRow[key]);
-          if (v > 0) arr[arr.length - 1] = { ...arr[arr.length - 1], value: round(v) };
-        }
-      }
-      return arr;
-    };
-    const res5y10y = {
-      ok: true,
-      period,
-      source: "static",
-      XAU: weekMax("xau"),
-      XAG: weekMax("xag"),
-      XPT: weekMax("xpt"),
-      XPD: weekMax("xpd"),
-      XCU: weekMax("xcu", (r) => isWeekday(r.date)),
-    };
-    if (!res5y10y.XCU.length) delete res5y10y.XCU;
-    return res5y10y;
-  }
-
-  // 1m, 1y — все дни без выборки (каждый день = точка), детализированный график
+  // 1m, 1y, 5y, 10y — по дням (одинаковая логика, как в PHP)
+  // Группировка по неделям для 5y/10y давала 1 точку на проде при малой БД
   sampled = range.map((r) => {
       const d = new Date(r.date + "T12:00:00");
       const formatOptions =
-        period === "1y"
+        period === "1y" || period === "5y" || period === "10y"
           ? { day: "numeric", month: "short", year: "2-digit" }
           : { day: "numeric", month: "short" };
       return {
@@ -468,15 +417,21 @@ async function main() {
     if (usdRub != null) out.usdRub = usdRub;
     // Актуальная цена на последнюю дату — чтобы при переключении периода итоговая цена не менялась
     if (allRows.length > 0) {
-      const last = allRows[allRows.length - 1];
       const r2 = (v) => Math.round(Number(v) * 100) / 100;
-      out.lastPrice = {
-        XAU: r2(last.xau),
-        XAG: r2(last.xag),
-        XPT: r2(last.xpt),
-        XPD: r2(last.xpd),
+      const lastNonZero = (key) => {
+        for (let i = allRows.length - 1; i >= 0; i--) {
+          const v = Number(allRows[i][key] ?? 0);
+          if (v > 0) return v;
+        }
+        return null;
       };
-      if (Number(last.xcu) > 0) out.lastPrice.XCU = r2(last.xcu);
+      out.lastPrice = {};
+      for (const [k, sym] of Object.entries({ xau: "XAU", xag: "XAG", xpt: "XPT", xpd: "XPD" })) {
+        const v = lastNonZero(k);
+        if (v != null) out.lastPrice[sym] = r2(v);
+      }
+      const vCu = lastNonZero("xcu");
+      if (vCu != null) out.lastPrice.XCU = r2(vCu);
     }
     for (const p of ["1m", "1y", "5y", "10y", "all"]) {
       const resp = buildPeriodResponse(allRows, p);

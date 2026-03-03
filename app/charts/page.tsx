@@ -289,11 +289,22 @@ function MetalChart({
   const innerH = CHART_HEIGHT - PADDING.top - PADDING.bottom;
 
   const coords = hasData
-    ? data.map((d, i) => {
-        const x = PADDING.left + (i / (data.length - 1 || 1)) * innerW;
-        const y = PADDING.top + innerH - ((d.value - min) / range) * innerH;
-        return { x, y, value: d.value };
-      })
+    ? (() => {
+        const base = data.map((d, i) => {
+          const x = PADDING.left + (i / (data.length - 1 || 1)) * innerW;
+          const y = PADDING.top + innerH - ((d.value - min) / range) * innerH;
+          return { x, y, value: d.value };
+        });
+        // 1 точка — рисуем горизонтальную линию (на проде при малой БД 5y/10y могут дать 1 точку)
+        if (base.length === 1) {
+          const b = base[0];
+          return [
+            { x: PADDING.left, y: b.y, value: b.value },
+            { x: PADDING.left + innerW, y: b.y, value: b.value },
+          ];
+        }
+        return base;
+      })()
     : [];
 
   const pathCoords = useMemo(() => coords.map((c) => ({ x: c.x, y: c.y })), [coords]);
@@ -325,12 +336,18 @@ function MetalChart({
     if (pathCoords.length === 0) return;
     const start = animatedPathRef.current;
     if (start.length === 0) {
-      // Старт пустой — ставим демо и выходим, иначе морфинг перезапишет пустым
-      if (demoChart.coords.length > 0) setAnimatedPathCoords(demoChart.coords);
+      if (demoChart.coords.length > 0) {
+        setAnimatedPathCoords(demoChart.coords);
+      } else {
+        setAnimatedPathCoords(pathCoords);
+      }
       return;
     }
     const from = start.length === pathCoords.length ? start : sampleToN(start, pathCoords.length);
-    if (from.length === 0) return;
+    if (from.length === 0) {
+      setAnimatedPathCoords(pathCoords);
+      return;
+    }
     const startTime = performance.now();
     let rafId: number;
     const tick = () => {
@@ -367,12 +384,18 @@ function MetalChart({
   const displayPoint = data[displayIndex];
   const isHovering = hoveredIndex !== null;
 
-  // Текущая цена: при наведении — точка под курсором; без наведения — lastPrice (если есть), чтобы при смене периода число не прыгало
+  // Текущая цена: при наведении — точка под курсором; без наведения — lastPrice (если есть)
+  // Для меди: lastPrice иногда ошибочно низкий (1–2 руб/унц) — используем последнюю точку периода как fallback
+  const rawLastPrice = lastPrice && metal.apiSymbol ? lastPrice[metal.apiSymbol] : null;
+  const lastPriceConverted = rawLastPrice != null ? convertDisplayValue(rawLastPrice, metal.apiSymbol!, currency, unit, usdRub) : null;
+  const useLastPrice = metal.apiSymbol === "XCU" && rawLastPrice != null && rawLastPrice < 5
+    ? false
+    : lastPriceConverted != null;
   const displayedValue =
     isHovering
       ? (displayPoint?.value ?? 0)
-      : lastPrice && metal.apiSymbol && lastPrice[metal.apiSymbol] != null
-        ? convertDisplayValue(lastPrice[metal.apiSymbol], metal.apiSymbol, currency, unit, usdRub)
+      : useLastPrice
+        ? lastPriceConverted!
         : (displayPoint?.value ?? 0);
 
   // Рост/падение от начала периода до текущей (или наведённой) точки
@@ -441,20 +464,31 @@ function MetalChart({
   return (
     <div className={`rounded-2xl border border-[#E4E4EA] p-4 sm:p-5 bg-white ${showSkeleton ? "skeleton-pulse-opacity" : ""}`}>
       {showSkeleton ? (
-        <div aria-hidden>
-          <div className="mb-3">
-            <div className="flex items-center gap-2">
-              <div className="h-5 w-28 rounded-[300px] bg-[#E4E4EA]" />
-              <div className="h-4 w-12 rounded-[300px] bg-[#E4E4EA]" />
+        <div aria-hidden className="pointer-events-none">
+          {/* Скелетон пиксель-в-пиксель как реальный график: те же размеры, отступы, структура */}
+          <div className="flex gap-3 sm:gap-4 mb-4">
+            <div className="flex-1 min-w-0">
+              {/* h2: text-[18px] font-semibold leading-tight — название + XAG/XAU */}
+              <div className="h-[22px] flex items-baseline gap-1">
+                <span className="h-[22px] w-[88px] rounded-[300px] bg-[#E4E4EA] inline-block align-middle" />
+                <span className="h-[18px] w-[32px] rounded-[300px] bg-[#E4E4EA] inline-block align-middle" />
+              </div>
+              {/* p: text-[28px] sm:text-[1.75rem] font-bold mt-1 mb-0.5 — цена + ₽ */}
+              <div className="h-9 w-48 mt-1 mb-0.5 rounded-[300px] bg-[#E4E4EA]" />
+              {/* div: flex flex-wrap items-center gap-2 — сумма, бейдж %, период */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="h-5 w-[72px] rounded-[300px] bg-[#E4E4EA] inline-block" />
+                <span className="h-6 w-[56px] rounded-[300px] bg-[#E4E4EA] inline-block" />
+                <span className="h-5 w-[64px] rounded-[300px] bg-[#E4E4EA] inline-block" />
+              </div>
+            </div>
+            {/* Право: button "за грамм" — text-[16px] */}
+            <div className="shrink-0 self-start">
+              <div className="h-5 w-[90px] rounded-[300px] bg-[#E4E4EA]" />
             </div>
           </div>
-          <div className="h-9 w-48 rounded-[300px] bg-[#E4E4EA] mb-2" />
-          <div className="flex flex-wrap items-center gap-2 mb-4">
-            <div className="h-4 w-20 rounded-[300px] bg-[#E4E4EA]" />
-            <div className="h-5 w-16 rounded-[300px] bg-[#E4E4EA]" />
-            <div className="h-4 w-24 rounded-[300px] bg-[#E4E4EA]" />
-          </div>
-          <div className="rounded-xl w-full aspect-[2/1] overflow-hidden relative">
+          {/* График: svg viewBox 320×160, aspect 2:1 */}
+          <div className="w-full aspect-[2/1] relative overflow-hidden">
             <svg
               viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`}
               className="w-full h-full"
@@ -504,17 +538,18 @@ function MetalChart({
               )}
             </svg>
           </div>
+          {/* Свитчер периодов: 1:1 как реальный — flex, p-1, 5 элементов flex-1 min-w-0 px-3 py-2 text-[14px] */}
           <div className="mt-4 flex w-full max-w-full relative rounded-[300px] bg-[#F1F1F2] p-1">
-            <div className="flex w-full gap-1">
-                {PERIODS.map((p, i) => (
-                <div
-                  key={p.value}
-                  className={`flex-1 h-7 rounded-[300px] ${
-                    i === 1 ? "bg-white" : "bg-[#E4E4EA]"
-                  }`}
-                />
-              ))}
-            </div>
+            {PERIODS.map((p, i) => (
+              <div
+                key={p.value}
+                className={`flex-1 min-w-0 px-3 py-2 text-[14px] font-medium rounded-[300px] flex items-center justify-center ${
+                  i === 1 ? "bg-white" : "bg-[#E4E4EA]"
+                }`}
+              >
+                <span className="invisible select-none" aria-hidden>{p.label}</span>
+              </div>
+            ))}
           </div>
         </div>
       ) : showError ? (

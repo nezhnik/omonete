@@ -85,28 +85,12 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
         xpd: r.xpd,
       };
     });
-  } else if (period === "5y" || period === "10y") {
-    // Одна точка за неделю (последний день недели по понедельнику)
-    const getWeekKey = (dateStr: string) => {
-      const d = new Date(dateStr + "T12:00:00");
-      const day = d.getDay();
-      const mon = new Date(d);
-      mon.setDate(d.getDate() - (day === 0 ? 6 : day - 1));
-      return mon.toISOString().slice(0, 10);
-    };
-    const byWeek = new Map<string, (typeof rows)[0]>();
-    rows.forEach((r) => byWeek.set(getWeekKey(r.date), r));
-    const keys = Array.from(byWeek.keys()).sort();
-    sampled = keys.map((k) => {
-      const r = byWeek.get(k)!;
-      return { label: new Date(r.date).toLocaleDateString("ru-RU", { day: "numeric", month: "short", year: "2-digit" }), xau: r.xau, xag: r.xag, xpt: r.xpt, xpd: r.xpd };
-    });
   } else {
-    // 1m, 1y — по дням
+    // 1m, 1y, 5y, 10y — по дням
     sampled = rows.map((r) => {
       const d = new Date(r.date + "T12:00:00");
       const formatOptions =
-        period === "1y"
+        period === "1y" || period === "5y" || period === "10y"
           ? { day: "numeric", month: "short", year: "2-digit" }
           : { day: "numeric", month: "short" };
       return {

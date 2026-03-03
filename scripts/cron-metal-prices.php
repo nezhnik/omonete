@@ -122,27 +122,11 @@ function buildPeriodResponse(array $rows, string $period): ?array {
                 'xau' => (float) $r['xau'], 'xag' => (float) $r['xag'], 'xpt' => (float) $r['xpt'], 'xpd' => (float) $r['xpd'],
             ];
         }
-    } elseif ($period === '5y' || $period === '10y') {
-        $byWeek = [];
-        foreach ($range as $r) {
-            $dt = new DateTime($r['date'] . 'T12:00:00');
-            $day = (int) $dt->format('w');
-            $dt->modify($day === 0 ? '-6 days' : '-' . ($day - 1) . ' days');
-            $key = $dt->format('Y-m-d');
-            $byWeek[$key] = $r;
-        }
-        ksort($byWeek);
-        $sampled = [];
-        foreach ($byWeek as $r) {
-            $sampled[] = [
-                'label' => $fmtYear->format(new DateTime($r['date'])),
-                'xau' => (float) $r['xau'], 'xag' => (float) $r['xag'], 'xpt' => (float) $r['xpt'], 'xpd' => (float) $r['xpd'],
-            ];
-        }
     } else {
+        // 1m, 1y, 5y, 10y — по дням, без группировки по неделям
         $sampled = [];
         foreach ($range as $r) {
-            $label = $period === '1y'
+            $label = in_array($period, ['1y', '5y', '10y'])
                 ? $fmtYear->format(new DateTime($r['date']))
                 : $fmtShort->format(new DateTime($r['date']));
             $sampled[] = [
