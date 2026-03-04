@@ -55,6 +55,8 @@ const SORT_OPTIONS: { value: CatalogSort; label: string }[] = [
 const PAGE_SIZE = 30;
 
 const FILTERS_TRANSITION_MS = 300;
+/** Порог сдвига вниз (px), после которого при отпускании боттомшит закрывается */
+const SORT_BOTTOM_DRAG_CLOSE_THRESHOLD = 80;
 
 /** Склонение «монета»: 1 монета, 2–4 монеты, 0/5–20/25–30… монет */
 function coinWord(n: number): string {
@@ -234,9 +236,13 @@ function CatalogPageContent() {
   const [sortBottomOpen, setSortBottomOpen] = useState(false);
   const [sortBottomClosing, setSortBottomClosing] = useState(false);
   const [sortBottomAnimated, setSortBottomAnimated] = useState(false);
+  const [sortBottomDragY, setSortBottomDragY] = useState(0);
+  const [sortBottomDragging, setSortBottomDragging] = useState(false);
   const [filtersPanelAnimated, setFiltersPanelAnimated] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const sortDropdownRef = useRef<HTMLDivElement>(null);
+  const sortBottomTouchStartY = useRef(0);
+  const sortBottomPointerActive = useRef(false);
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const filterWrapperRef = useRef<HTMLDivElement | null>(null);
   const filterAsideRef = useRef<HTMLElement | null>(null);
@@ -353,9 +359,51 @@ function CatalogPageContent() {
     const t = setTimeout(() => {
       setSortBottomOpen(false);
       setSortBottomClosing(false);
+      setSortBottomDragY(0);
     }, FILTERS_TRANSITION_MS);
     return () => clearTimeout(t);
   }, [sortBottomClosing]);
+
+  /** Обработчики перетаскивания язычка боттомшита (следование за пальцем, закрытие по порогу) */
+  const onSortBottomHandleTouchStart = useCallback((e: React.TouchEvent) => {
+    sortBottomTouchStartY.current = e.touches[0].clientY;
+    setSortBottomDragging(true);
+  }, []);
+  const onSortBottomHandleTouchMove = useCallback((e: React.TouchEvent) => {
+    const delta = e.touches[0].clientY - sortBottomTouchStartY.current;
+    setSortBottomDragY((prev) => Math.max(0, delta));
+    e.preventDefault();
+  }, []);
+  const onSortBottomHandleTouchEnd = useCallback(() => {
+    setSortBottomDragging(false);
+    setSortBottomDragY((prev) => {
+      if (prev >= SORT_BOTTOM_DRAG_CLOSE_THRESHOLD) setSortBottomClosing(true);
+      return 0;
+    });
+  }, []);
+  const onSortBottomHandlePointerDown = useCallback((e: React.PointerEvent) => {
+    if (e.pointerType !== "mouse") return;
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+    sortBottomTouchStartY.current = e.clientY;
+    sortBottomPointerActive.current = true;
+    setSortBottomDragging(true);
+  }, []);
+  const onSortBottomHandlePointerMove = useCallback((e: React.PointerEvent) => {
+    if (e.pointerType !== "mouse" || !sortBottomPointerActive.current) return;
+    const delta = e.clientY - sortBottomTouchStartY.current;
+    setSortBottomDragY((prev) => Math.max(0, delta));
+    e.preventDefault();
+  }, []);
+  const onSortBottomHandlePointerUp = useCallback((e: React.PointerEvent) => {
+    if (!sortBottomPointerActive.current) return;
+    (e.target as HTMLElement).releasePointerCapture(e.pointerId);
+    sortBottomPointerActive.current = false;
+    setSortBottomDragging(false);
+    setSortBottomDragY((prev) => {
+      if (prev >= SORT_BOTTOM_DRAG_CLOSE_THRESHOLD) setSortBottomClosing(true);
+      return 0;
+    });
+  }, []);
 
   // Анимация появления панели фильтров
   useEffect(() => {
@@ -940,13 +988,28 @@ const mintListByCount = useMemo(() => {
               }}
             />
             <div
-              className="fixed bottom-0 left-0 right-0 z-[70] lg:hidden bg-white rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-[env(safe-area-inset-bottom)] touch-none"
+              className="fixed bottom-0 left-0 right-0 z-[70] lg:hidden bg-white rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-[env(safe-area-inset-bottom)]"
               style={{
-                transition: `transform ${FILTERS_TRANSITION_MS}ms ease-out`,
-                transform: sortBottomAnimated && !sortBottomClosing ? "translateY(0)" : "translateY(100%)",
+                transition: sortBottomDragging ? "none" : `transform ${FILTERS_TRANSITION_MS}ms ease-out`,
+                transform:
+                  sortBottomClosing
+                    ? "translateY(100%)"
+                    : sortBottomAnimated && !sortBottomClosing
+                      ? `translateY(${sortBottomDragY}px)`
+                      : "translateY(100%)",
               }}
             >
-              <div className="h-2 w-12 mx-auto mt-2 rounded-full bg-[#E4E4EA] shrink-0" aria-hidden />
+              <div
+                className="h-2 w-12 mx-auto mt-2 rounded-full bg-[#E4E4EA] shrink-0 touch-none cursor-grab active:cursor-grabbing"
+                aria-hidden
+                onTouchStart={onSortBottomHandleTouchStart}
+                onTouchMove={onSortBottomHandleTouchMove}
+                onTouchEnd={onSortBottomHandleTouchEnd}
+                onPointerDown={onSortBottomHandlePointerDown}
+                onPointerMove={onSortBottomHandlePointerMove}
+                onPointerUp={onSortBottomHandlePointerUp}
+                onPointerLeave={onSortBottomHandlePointerUp}
+              />
               <p className="text-[#666666] text-[14px] font-normal px-4 pt-2 pb-3">Сортировка</p>
               <div className="flex flex-col px-4 pb-4 gap-1">
                 {SORT_OPTIONS.map((opt) => (
