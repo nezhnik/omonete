@@ -118,23 +118,25 @@ export function CoinCard(props: CoinCardProps) {
                     else setJustAdded(true)
                     onToggleCollection?.(id)
                   }}
-                  className={`p-2 rounded-[300px] bg-transparent text-[#C0C0C0] hover:text-black cursor-pointer transition-colors duration-150 inline-flex items-center justify-center ${!inCollection ? "lg:group-hover:text-black" : ""}`}
+                  className={`p-2 lg:px-4 lg:py-2 lg:gap-2 rounded-[300px] bg-transparent text-[#C0C0C0] hover:text-black cursor-pointer transition-colors duration-150 inline-flex items-center justify-center ${!inCollection ? "lg:group-hover:text-black" : ""}`}
                   aria-label={inCollection ? "В коллекции" : "Добавить в коллекцию"}
                 >
                   {inCollection ? (
-                    <span className={`inline-flex ${justAdded ? "animate-collection-added" : ""}`}>
-                      <IconCheck size={24} stroke={2.5} />
-                    </span>
+                    <>
+                      <span className={`inline-flex ${justAdded ? "animate-collection-added" : ""}`}>
+                        <IconCheck size={24} stroke={2.5} />
+                      </span>
+                      <span className="hidden lg:inline text-[14px] font-medium">В коллекции</span>
+                    </>
                   ) : (
-                    <span className={justRemoved ? "inline-flex animate-collection-added" : "inline-flex"}>
-                      <IconPlus size={24} stroke={2} />
-                    </span>
+                    <>
+                      <span className={justRemoved ? "inline-flex animate-collection-added" : "inline-flex"}>
+                        <IconPlus size={24} stroke={2} />
+                      </span>
+                      <span className="hidden lg:inline text-[14px] font-medium">Добавить в коллекцию</span>
+                    </>
                   )}
                 </button>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none lg:group-hover/btn:opacity-100 transition-opacity duration-150 hidden lg:block">
-                  {inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                </div>
               </>
             ) : (
               <>
