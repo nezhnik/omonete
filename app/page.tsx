@@ -126,10 +126,11 @@ export default function HomePage() {
       .catch(() => {});
   }, []);
 
+  /** Как у российских: мобильный 4, планшет 9, десктоп 10 — одна сетка на всех разрешениях */
   const featuredCoins =
     region === "ru"
       ? (RUSSIAN_FEATURED_IDS.map((id) => coinsById.get(id)).filter(Boolean) as DemoCoin[])
-      : foreignCoins.slice(0, 5);
+      : foreignCoins.slice(0, 10);
   /** Мобильный 4, планшет (sm–lg) 9, десктоп (xl) 10 — видимость через классы ниже */
   const tabCounts = { ru: ruCoins.length, foreign: foreignCoins.length };
   const n = heroCoinImages.length;
