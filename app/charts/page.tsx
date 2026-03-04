@@ -161,21 +161,15 @@ function convertDisplayValue(
 
 function MetalChart({
   metal,
-  currency,
-  setCurrency,
-  unit,
-  setUnit,
   usdRub,
   lastPrice,
 }: {
   metal: (typeof METALS)[number];
-  currency: "RUB" | "USD";
-  setCurrency: (c: "RUB" | "USD") => void;
-  unit: "gr" | "oz";
-  setUnit: (u: "gr" | "oz") => void;
   usdRub: number | null;
   lastPrice: Record<string, number> | null;
 }) {
+  const [currency, setCurrency] = useState<"RUB" | "USD">("RUB");
+  const [unit, setUnit] = useState<"gr" | "oz">("gr");
   const [period, setPeriod] = useState<ChartPeriod>("1y");
   const [apiData, setApiData] = useState<DataPoint[] | null>(null);
   const [dataSource, setDataSource] = useState<"cbr" | "static" | null>(null);
@@ -744,8 +738,6 @@ function MetalChart({
 }
 
 export default function ChartsPage() {
-  const [currency, setCurrency] = useState<"RUB" | "USD">("RUB");
-  const [unit, setUnit] = useState<"gr" | "oz">("gr");
   const [usdRub, setUsdRub] = useState<number | null>(null);
   const [lastPrice, setLastPrice] = useState<Record<string, number> | null>(null);
 
@@ -789,10 +781,6 @@ export default function ChartsPage() {
               <MetalChart
                 key={metal.code}
                 metal={metal}
-                currency={currency}
-                setCurrency={setCurrency}
-                unit={unit}
-                setUnit={setUnit}
                 usdRub={usdRub}
                 lastPrice={lastPrice}
               />
