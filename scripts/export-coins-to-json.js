@@ -4,11 +4,13 @@
  * Запускается перед build (prebuild) или вручную: node scripts/export-coins-to-json.js
  */
 require("dotenv").config({ path: ".env" });
+const crypto = require("crypto");
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 
 const PLACEHOLDER = "/image/coin-placeholder.png";
+const STATE_FILE = path.join(__dirname, "..", "export-state.json");
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const COINS_DIR = path.join(DATA_DIR, "coins");
 
@@ -176,6 +178,9 @@ function isRectangularCoin(catalogNumber, rectangularBases) {
 }
 
 async function run() {
+  const incremental = process.argv.includes("--incremental");
+  if (incremental) console.log("Режим: инкрементальный (только изменённые/новые)");
+
   const firstImageSide = getFirstImageSide();
   console.log("Первая картинка:", firstImageSide === "reverse" ? "реверс (орёл)" : "аверс (уникальная)");
   const url = process.env.DATABASE_URL;
@@ -267,7 +272,8 @@ async function run() {
       throw err;
     }
   }
-  const rowsToExport = rows;
+  // Монеты без тиража не выводим в каталог (считаем, что их нет)
+  const rowsToExport = rows.filter((r) => r.mintage != null && Number(r.mintage) !== 0);
   const rectangularBases = getRectangularCatalogBases();
 
   const listCoins = rowsToExport.map((r) => {
@@ -339,6 +345,39 @@ async function run() {
     console.log("✓ public/data/mints.json");
   }
 
+  // sameSeries по сериям — из уже загруженных rows, без доп. SQL
+  const bySeries = new Map();
+  for (const r of rowsToExport) {
+    const sn = r.series && String(r.series).trim();
+    if (!sn) continue;
+    if (!bySeries.has(sn)) bySeries.set(sn, []);
+    bySeries.get(sn).push(r);
+  }
+
+  let state = { hashes: {} };
+  if (incremental && fs.existsSync(STATE_FILE)) {
+    try {
+      state = JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
+    } catch {
+      state = { hashes: {} };
+    }
+  }
+
+  const currentIds = new Set(rowsToExport.map((r) => String(r.id)));
+  for (const id of Object.keys(state.hashes || {})) {
+    if (!currentIds.has(id)) {
+      const p = path.join(COINS_DIR, id + ".json");
+      if (fs.existsSync(p)) {
+        fs.unlinkSync(p);
+        console.log("  удалён:", id);
+      }
+      delete state.hashes[id];
+    }
+  }
+
+  const total = rowsToExport.length;
+  let done = 0;
+  let written = 0;
   for (const r of rowsToExport) {
     const imageUrls = r.image_urls;
     const catalogNumber = r.catalog_number;
@@ -399,11 +438,7 @@ async function run() {
     const seriesName = r.series;
     let sameSeries = [];
     if (seriesName) {
-      const [sameRows] = await conn.execute(
-        `SELECT id, title, series, face_value, metal, weight_g, weight_oz, image_urls, catalog_number, image_obverse, image_reverse FROM coins
-         WHERE series = ? AND id != ? ORDER BY release_date DESC LIMIT 12`,
-        [seriesName, r.id]
-      );
+      const sameRows = (bySeries.get(seriesName) || []).filter((s) => s.id !== r.id).slice(0, 12);
       sameSeries = sameRows.filter(hasImage).slice(0, 6).map((s) => {
         const rev = reverseUrl(s.image_reverse);
         const obv = obverseUrl(s.image_obverse);
@@ -429,12 +464,29 @@ async function run() {
       });
     }
 
+    const out = { coin, sameSeries };
+    const json = JSON.stringify(out);
+    const hash = crypto.createHash("sha256").update(json).digest("hex");
+    state.hashes = state.hashes || {};
+    if (incremental && state.hashes[String(r.id)] === hash) {
+      done++;
+      continue;
+    }
     fs.writeFileSync(
       path.join(COINS_DIR, `${r.id}.json`),
-      JSON.stringify({ coin, sameSeries })
+      json
     );
+    state.hashes[String(r.id)] = hash;
+    written++;
+    done++;
+    if (done % 500 === 0) console.log("  coins/", done, "/", total);
   }
-  console.log("✓ public/data/coins/*.json —", rowsToExport.length, "монет");
+  fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 0));
+  if (incremental) {
+    console.log("✓ public/data/coins/*.json — записано", written, "из", total);
+  } else {
+    console.log("✓ public/data/coins/*.json —", rowsToExport.length, "монет");
+  }
 
   await conn.end();
   console.log("Готово. Дальше: npm run build → залить out на сервер.");

@@ -232,6 +232,9 @@ function CatalogPageContent() {
   const [sort, setSort] = useState<CatalogSort>(() => parseCatalogState(searchParams).sort);
   const [sortOpen, setSortOpen] = useState(false);
   const [sortBottomOpen, setSortBottomOpen] = useState(false);
+  const [sortBottomClosing, setSortBottomClosing] = useState(false);
+  const [sortBottomAnimated, setSortBottomAnimated] = useState(false);
+  const [filtersPanelAnimated, setFiltersPanelAnimated] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const sortDropdownRef = useRef<HTMLDivElement>(null);
   const sliderRef = useRef<HTMLDivElement | null>(null);
@@ -276,6 +279,33 @@ function CatalogPageContent() {
     if (q !== current) router.replace(catalogUrl, { scroll: false });
   }, [filter, filtersOpen, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery, router, searchParams]);
 
+  // Блокировка прокрутки страницы при открытом мобильном боттомшите сортировки (чтобы тяга за язычок не скроллила страницу)
+  useEffect(() => {
+    if (!sortBottomOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    const prevTouchAction = document.body.style.touchAction;
+    document.body.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.body.style.touchAction = prevTouchAction;
+    };
+  }, [sortBottomOpen]);
+
+  // Блокировка прокрутки при открытой мобильной панели фильтров (скроллится только блок с фильтрами, не страница)
+  useEffect(() => {
+    if (!filtersOpen) return;
+    if (typeof window !== "undefined" && window.innerWidth >= 1024) return;
+    const prevOverflow = document.body.style.overflow;
+    const prevTouchAction = document.body.style.touchAction;
+    document.body.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.body.style.touchAction = prevTouchAction;
+    };
+  }, [filtersOpen]);
+
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
@@ -305,6 +335,37 @@ function CatalogPageContent() {
       return () => cancelAnimationFrame(t);
     }
   }, [filtersOpening]);
+
+  // Анимация появления боттомшита сортировки: после монтирования включаем opacity/transform
+  useEffect(() => {
+    if (!sortBottomOpen && !sortBottomClosing) {
+      setSortBottomAnimated(false);
+      return;
+    }
+    if (sortBottomClosing) return;
+    const t = requestAnimationFrame(() => setSortBottomAnimated(true));
+    return () => cancelAnimationFrame(t);
+  }, [sortBottomOpen, sortBottomClosing]);
+
+  // Обратная анимация при закрытии боттомшита: после transition размонтируем
+  useEffect(() => {
+    if (!sortBottomClosing) return;
+    const t = setTimeout(() => {
+      setSortBottomOpen(false);
+      setSortBottomClosing(false);
+    }, FILTERS_TRANSITION_MS);
+    return () => clearTimeout(t);
+  }, [sortBottomClosing]);
+
+  // Анимация появления панели фильтров
+  useEffect(() => {
+    if (!filtersOpen) {
+      setFiltersPanelAnimated(false);
+      return;
+    }
+    const t = requestAnimationFrame(() => setFiltersPanelAnimated(true));
+    return () => cancelAnimationFrame(t);
+  }, [filtersOpen]);
 
   const showPanel = filtersOpen || filtersClosing;
 
@@ -613,24 +674,24 @@ const mintListByCount = useMemo(() => {
             </button>
           </div>
 
-          {/* На мобильном: поиск под свитчером */}
-          <label
-            htmlFor="catalog-search-page-input"
-            className="lg:hidden flex items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white min-w-0"
-          >
-            <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
-            <input
-              id="catalog-search-page-input"
-              type="search"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Поиск"
-              className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
-              aria-label="Поиск монет"
-            />
-          </label>
-
-          <div className="flex items-center justify-end gap-3 w-full lg:w-auto shrink-0">
+          {/* На мобильном: поиск и кнопки сортировки/фильтров в одну строку (поиск слева, кнопки справа) */}
+          <div className="flex flex-row items-center gap-2 w-full lg:contents">
+            <label
+              htmlFor="catalog-search-page-input"
+              className="lg:hidden flex flex-1 min-w-0 items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white"
+            >
+              <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
+              <input
+                id="catalog-search-page-input"
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Поиск"
+                className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
+                aria-label="Поиск монет"
+              />
+            </label>
+            <div className="flex items-center gap-3 shrink-0 lg:justify-end lg:w-auto">
               {/* Обёртка только для кнопки сортировки и дропдауна — дропдаун выровнен по правому краю кнопки */}
               <div className="relative">
                 <Button
@@ -720,6 +781,7 @@ const mintListByCount = useMemo(() => {
                 </span>
               </Button>
             </div>
+          </div>
           </>
         </div>
 
@@ -866,19 +928,22 @@ const mintListByCount = useMemo(() => {
           )}
         </div>
 
-        {/* Мобильная панель сортировки: нижний бар */}
-        {sortBottomOpen && (
+        {/* Мобильная панель сортировки: нижний бар (открыт или в процессе закрытия с анимацией) */}
+        {(sortBottomOpen || sortBottomClosing) && (
           <>
             <div
-              className="fixed inset-0 z-40 lg:hidden bg-black/20"
+              className={`fixed inset-0 z-[60] lg:hidden bg-black/20 transition-opacity duration-200 ${sortBottomAnimated && !sortBottomClosing ? "opacity-100" : "opacity-0"}`}
               aria-hidden
-              onClick={() => setSortBottomOpen(false)}
+              onClick={() => {
+                if (sortBottomClosing) return;
+                setSortBottomClosing(true);
+              }}
             />
             <div
-              className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-white rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-[env(safe-area-inset-bottom)]"
+              className="fixed bottom-0 left-0 right-0 z-[70] lg:hidden bg-white rounded-t-2xl shadow-[0_-4px_20px_rgba(0,0,0,0.08)] pb-[env(safe-area-inset-bottom)] touch-none"
               style={{
                 transition: `transform ${FILTERS_TRANSITION_MS}ms ease-out`,
-                transform: sortBottomOpen ? "translateY(0)" : "translateY(100%)",
+                transform: sortBottomAnimated && !sortBottomClosing ? "translateY(0)" : "translateY(100%)",
               }}
             >
               <div className="h-2 w-12 mx-auto mt-2 rounded-full bg-[#E4E4EA] shrink-0" aria-hidden />
@@ -903,8 +968,9 @@ const mintListByCount = useMemo(() => {
                       value={opt.value}
                       checked={sort === opt.value}
                       onChange={() => {
+                        if (sortBottomClosing) return;
                         setSort(opt.value);
-                        setSortBottomOpen(false);
+                        setSortBottomClosing(true);
                       }}
                       className="sr-only"
                     />
@@ -919,7 +985,7 @@ const mintListByCount = useMemo(() => {
         {showPanel && !isXl && (
           <>
             <div
-              className="fixed inset-0 z-40 bg-black/20 lg:hidden"
+              className={`fixed inset-0 z-[60] bg-black/20 lg:hidden transition-opacity duration-200 ${filtersPanelAnimated ? "opacity-100" : "opacity-0"}`}
               aria-hidden
               onClick={() => {
                 setFiltersOpen(false);
@@ -928,9 +994,9 @@ const mintListByCount = useMemo(() => {
               }}
             />
             <div
-              className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-[400px] bg-white shadow-xl lg:hidden flex flex-col"
+              className="fixed top-0 right-0 bottom-0 z-[70] w-full max-w-[400px] bg-white shadow-xl lg:hidden flex flex-col"
               style={{
-                transform: filtersClosing ? "translateX(100%)" : "translateX(0)",
+                transform: filtersClosing ? "translateX(100%)" : filtersPanelAnimated ? "translateX(0)" : "translateX(100%)",
                 transition: `transform ${FILTERS_TRANSITION_MS}ms ease-out`,
               }}
             >
