@@ -218,7 +218,8 @@ function CatalogPageContent() {
   const [isXl, setIsXl] = useState(false);
   const [coins, setCoins] = useState<CatalogCoin[]>([]);
   const [totalCount, setTotalCount] = useState(0);
-  const [displayedCount, setDisplayedCount] = useState(PAGE_SIZE);
+  const [pageSize, setPageSize] = useState(PAGE_SIZE);
+  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [eyesAnimationData, setEyesAnimationData] = useState<object | null>(null);
   const [starAnimationData, setStarAnimationData] = useState<object | null>(null);
@@ -593,30 +594,22 @@ const mintListByCount = useMemo(() => {
     () => (searchNorm ? byMintFilter.filter((c) => coinMatchesSearch(c, searchNorm)) : byMintFilter),
     [byMintFilter, searchNorm]
   );
-  const displayedCoins = sortedCoins.slice(0, displayedCount);
-  const hasMore = displayedCount < sortedCoins.length;
-
-  const loadMore = useCallback(() => {
-    if (!hasMore) return;
-    setDisplayedCount((prev) => Math.min(prev + PAGE_SIZE, sortedCoins.length));
-  }, [hasMore, sortedCoins.length]);
+  const totalPages = Math.max(1, Math.ceil(sortedCoins.length / pageSize));
+  const currentPage = Math.min(page, totalPages);
+  const startIndex = (currentPage - 1) * pageSize;
+  const endIndex = startIndex + pageSize;
+  const displayedCoins = sortedCoins.slice(startIndex, endIndex);
 
   useEffect(() => {
-    setDisplayedCount(PAGE_SIZE);
+    // При изменении фильтров/сортировки/поиска возвращаемся на первую страницу
+    setPage(1);
   }, [filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery]);
 
   useEffect(() => {
-    const sentinel = sentinelRef.current;
-    if (!sentinel || !hasMore) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0]?.isIntersecting) loadMore();
-      },
-      { rootMargin: "800px", threshold: 0 }
-    );
-    observer.observe(sentinel);
-    return () => observer.disconnect();
-  }, [hasMore, loadMore, showSkeletons]);
+    // Если уменьшили pageSize или сократился список монет — не выходим за границы
+    const nextTotalPages = Math.max(1, Math.ceil(sortedCoins.length / pageSize));
+    if (page > nextTotalPages) setPage(nextTotalPages);
+  }, [page, pageSize, sortedCoins.length]);
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(typeof window !== "undefined" && window.scrollY > 500);
@@ -722,24 +715,9 @@ const mintListByCount = useMemo(() => {
             </button>
           </div>
 
-          {/* На мобильном: поиск и кнопки сортировки/фильтров в одну строку (поиск слева, кнопки справа) */}
-          <div className="flex flex-row items-center gap-2 w-full lg:contents">
-            <label
-              htmlFor="catalog-search-page-input"
-              className="lg:hidden flex flex-1 min-w-0 items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white"
-            >
-              <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
-              <input
-                id="catalog-search-page-input"
-                type="search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Поиск"
-                className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
-                aria-label="Поиск монет"
-              />
-            </label>
-            <div className="flex items-center gap-3 shrink-0 lg:justify-end lg:w-auto">
+          {/* Кнопки сортировки и фильтров, затем поиск справа */}
+          <div className="flex flex-row items-center gap-2 sm:gap-3 w-full lg:w-auto">
+            <div className="flex items-center gap-3 shrink-0">
               {/* Обёртка только для кнопки сортировки и дропдауна — дропдаун выровнен по правому краю кнопки */}
               <div className="relative">
                 <Button
@@ -817,7 +795,7 @@ const mintListByCount = useMemo(() => {
                 className="rounded-full w-10 h-10 p-0 min-w-0 lg:rounded-[300px] lg:w-auto lg:px-4 lg:py-3"
               >
                 <span className="inline-flex items-center gap-1 whitespace-nowrap">
-                  <span className="hidden lg:inline">Фильтры и поиск</span>
+                  <span className="hidden lg:inline">Фильтры</span>
                   {selectedMetals.length + selectedWeights.length + selectedCountries.length + selectedSeries.length + selectedMints.length > 0 && (
                     <span
                       className="inline-flex items-center justify-center w-[22px] h-[22px] shrink-0 rounded-full bg-[#11111B] text-white text-[14px] font-medium leading-none"
@@ -829,6 +807,21 @@ const mintListByCount = useMemo(() => {
                 </span>
               </Button>
             </div>
+            <label
+              htmlFor="catalog-search-page-input"
+              className="flex flex-1 lg:flex-initial min-w-0 lg:min-w-[200px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white"
+            >
+              <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
+              <input
+                id="catalog-search-page-input"
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Поиск"
+                className="flex-1 min-w-0 bg-transparent text-[16px] leading-[18px] text-[#11111B] placeholder:text-[#666666] outline-none cursor-text"
+                aria-label="Поиск монет"
+              />
+            </label>
           </div>
           </>
         </div>
@@ -926,7 +919,7 @@ const mintListByCount = useMemo(() => {
                           key={coin.id}
                           style={{
                             animation: "catalog-card-enter 0.3s ease forwards",
-                            animationDelay: `${(index % PAGE_SIZE) * 0.05}s`,
+                            animationDelay: `${(index % pageSize) * 0.05}s`,
                             opacity: 0,
                           }}
                         >
@@ -940,7 +933,54 @@ const mintListByCount = useMemo(() => {
                         </div>
                       ))}
                 </div>
-                {!showSkeletons && hasMore && <div ref={sentinelRef} className="h-4 w-full" aria-hidden />}
+                {!showSkeletons && sortedCoins.length > 0 && (
+                  <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <div className="text-[14px] text-[#666666]">
+                      Показаны {displayedCoins.length} из{" "}
+                      {formatNumber(sortedCoins.length)} {coinWord(sortedCoins.length)}
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                      <div className="flex items-center gap-2 text-[14px] text-[#666666]">
+                        <span>На странице:</span>
+                        {[30, 60, 90].map((size) => (
+                          <button
+                            key={size}
+                            type="button"
+                            onClick={() => {
+                              setPageSize(size);
+                              setPage(1);
+                            }}
+                            className={`px-2.5 py-1 rounded-full border text-[14px] font-medium ${
+                              pageSize === size
+                                ? "bg-[#11111B] text-white border-[#11111B]"
+                                : "bg-white text-[#11111B] border-[#E4E4EA] hover:bg-[#F1F1F2]"
+                            }`}
+                          >
+                            {size}
+                          </button>
+                        ))}
+                      </div>
+                      {totalPages > 1 && (
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                            <button
+                              key={p}
+                              type="button"
+                              onClick={() => setPage(p)}
+                              className={`min-w-[32px] h-8 px-2 rounded-full text-[14px] font-medium ${
+                                p === currentPage
+                                  ? "bg-[#11111B] text-white"
+                                  : "bg-white text-[#11111B] border border-[#E4E4EA] hover:bg-[#F1F1F2]"
+                              }`}
+                            >
+                              {p}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
               </>
             )}
           </div>
@@ -970,6 +1010,7 @@ const mintListByCount = useMemo(() => {
                   onMintChange={setSelectedMints}
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
+                  hideSearch
                 />
               </aside>
             </div>
@@ -1064,7 +1105,7 @@ const mintListByCount = useMemo(() => {
               }}
             >
               <div className="h-[72px] flex items-center justify-between px-4 border-b border-[#E4E4EA] shrink-0">
-                <span className="text-[18px] font-medium">Фильтры и поиск</span>
+                <span className="text-[18px] font-medium">Фильтры</span>
                 <button
                   type="button"
                   onClick={() => {
@@ -1164,7 +1205,7 @@ function CatalogPageFallback() {
               className="rounded-full w-10 h-10 p-0 min-w-0 lg:rounded-[300px] lg:w-auto lg:px-4 lg:py-3"
               aria-hidden
             >
-              <span className="hidden lg:inline">Фильтры и поиск</span>
+              <span className="hidden lg:inline">Фильтры</span>
             </Button>
           </div>
         </div>

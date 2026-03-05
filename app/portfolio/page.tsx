@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
-import { IconSearch, IconDownload, IconShare, IconChevronDown, IconMinus, IconPlus, IconArrowUp } from "@tabler/icons-react";
+import { IconSearch, IconDownload, IconShare, IconChevronDown, IconMinus, IconPlus, IconArrowUp, IconTrash } from "@tabler/icons-react";
 import { cleanCoinTitle } from "../../lib/cleanTitle";
 import { formatNumber } from "../../lib/formatNumber";
 import { useAuth } from "../../components/AuthProvider";
@@ -164,6 +164,16 @@ function normalizeSearchPortfolio(s: string): string {
   return s.toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+/** Склонение «монета»: 1 монета, 2–4 монеты, 0/5–20/25–30… монет */
+function coinWord(n: number): string {
+  const mod10 = n % 10;
+  const mod100 = n % 100;
+  if (mod100 >= 11 && mod100 <= 19) return "монет";
+  if (mod10 === 1) return "монета";
+  if (mod10 >= 2 && mod10 <= 4) return "монеты";
+  return "монет";
+}
+
 function portfolioRowMatchesSearch(row: PortfolioRow, queryNorm: string): boolean {
   if (!queryNorm) return true;
   const words = queryNorm.split(/\s+/).filter(Boolean);
@@ -297,13 +307,18 @@ function collectionSig(ids: Set<string>): string {
 }
 
 export default function PortfolioPage() {
-  const { isAuthorized, collectionIds, loading: authLoading, portfolioCache, setPortfolioCache } = useAuth();
+  const { isAuthorized, collectionIds, loading: authLoading, portfolioCache, setPortfolioCache, removeFromCollection } = useAuth();
   const [portfolioRows, setPortfolioRows] = useState<PortfolioRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [collectionCounts, setCollectionCounts] = useState<number[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [metalPrices1m, setMetalPrices1m] = useState<MetalPrices1m | null>(null);
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [bulkRemoving, setBulkRemoving] = useState(false);
+  const [confirmDelete, setConfirmDelete] = useState(false);
+  const [selectionBarVisible, setSelectionBarVisible] = useState(false);
+  const [removingIds, setRemovingIds] = useState<string[]>([]);
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(typeof window !== "undefined" && window.scrollY > 500);
@@ -328,6 +343,70 @@ export default function PortfolioPage() {
     () => (searchNorm ? portfolioRows.filter((r) => portfolioRowMatchesSearch(r, searchNorm)) : portfolioRows),
     [portfolioRows, searchNorm]
   );
+
+  const toggleSelected = (id: string) => {
+    setSelectedIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
+  };
+
+  const clearSelection = () => {
+    setSelectedIds([]);
+    setConfirmDelete(false);
+  };
+
+  const selectedCount = selectedIds.length;
+  const selectedLabel =
+    selectedCount > 0 ? `${selectedCount} ${coinWord(selectedCount)}` : "";
+
+  const handleBulkRemove = async () => {
+    if (!selectedIds.length || bulkRemoving) return;
+    const idsToRemove = [...selectedIds];
+    setBulkRemoving(true);
+    setConfirmDelete(false);
+    setRemovingIds((prev) => Array.from(new Set([...prev, ...idsToRemove])));
+    setSelectedIds([]);
+
+    // Локально анимируем и удаляем строки
+    const rowsSnapshot = portfolioRows;
+    const countsSnapshot = collectionCounts;
+    setTimeout(() => {
+      const keepMask = rowsSnapshot.map((row) => !idsToRemove.includes(row.id));
+      const nextRows = rowsSnapshot.filter((row) => !idsToRemove.includes(row.id));
+      const nextCounts = countsSnapshot.filter((_, idx) => keepMask[idx]);
+      setPortfolioRows(nextRows);
+      setCollectionCounts(nextCounts);
+      setRemovingIds((prev) => prev.filter((id) => !idsToRemove.includes(id)));
+    }, 200);
+
+    try {
+      for (const id of idsToRemove) {
+        // removeFromCollection сама инвалидирует кэш коллекции
+        await removeFromCollection(id);
+      }
+    } finally {
+      setBulkRemoving(false);
+    }
+  };
+
+  const handleDeleteClick = () => {
+    if (!selectedIds.length || bulkRemoving) return;
+    if (!confirmDelete) {
+      setConfirmDelete(true);
+      return;
+    }
+    // Второй клик — подтверждённое удаление
+    void handleBulkRemove();
+  };
+
+  useEffect(() => {
+    // При изменении количества выбранных монет сбрасываем подтверждение и управляем анимацией панели
+    setConfirmDelete(false);
+    if (selectedCount > 0) {
+      setSelectionBarVisible(true);
+      return;
+    }
+    const t = setTimeout(() => setSelectionBarVisible(false), 200);
+    return () => clearTimeout(t);
+  }, [selectedCount]);
 
   useEffect(() => {
     if (authLoading) return;
@@ -477,8 +556,8 @@ export default function PortfolioPage() {
             </div>
           </div>
 
-          {/* Только строки таблицы — скелетон при загрузке; контент ниже */}
-          {(authLoading || loading) && (
+          {/* Только строки таблицы — скелетон при первичной загрузке; при последующих обновлениях показываем старые данные без скелетона */}
+          {(authLoading || (loading && portfolioRows.length === 0)) && (
             <PortfolioTableSkeleton />
           )}
           {!authLoading && !loading && isAuthorized && collectionIds.size === 0 && (
@@ -495,7 +574,7 @@ export default function PortfolioPage() {
           {!authLoading && !loading && (!isAuthorized || collectionIds.size > 0) && portfolioRows.length === 0 && (
             <p className="text-[#666666] text-[16px] py-8">Не удалось загрузить данные.</p>
           )}
-          {!authLoading && !loading && portfolioRows.length > 0 && (
+          {!authLoading && portfolioRows.length > 0 && (
           <div className="rounded-2xl border border-[#E4E4EA] overflow-hidden">
             {searchNorm && filteredRows.length === 0 ? (
               <p className="text-[#666666] text-[16px] py-8 px-4">По запросу ничего не найдено.</p>
@@ -550,14 +629,36 @@ export default function PortfolioPage() {
                   {filteredRows.map((row) => {
                     const origIndex = portfolioRows.findIndex((r) => r.id === row.id);
                     const i = origIndex >= 0 ? origIndex : 0;
+                    const selected = selectedIds.includes(row.id);
+                    const removing = removingIds.includes(row.id);
                     return (
-                    <tr key={row.id} className="group border-b border-[#E4E4EA] last:border-b-0">
-                      <td className="pl-[0.75rem] py-2 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                    <tr
+                      key={row.id}
+                      className="group border-b border-[#E4E4EA] last:border-b-0 cursor-pointer"
+                      onClick={() => toggleSelected(row.id)}
+                      style={{
+                        opacity: removing ? 0 : 1,
+                        transform: removing ? "scaleY(0.8)" : "scaleY(1)",
+                        transition: "opacity 200ms ease-out, transform 200ms ease-out",
+                        transformOrigin: "center",
+                      }}
+                    >
+                      <td className={`pl-[0.75rem] py-2 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="w-8 h-8 flex items-center justify-center">
-                          <span className="w-5 h-5 rounded-full border-2 border-[#11111B]" />
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleSelected(row.id);
+                            }}
+                            className="w-5 h-5 rounded-full border-2 border-[#11111B] flex items-center justify-center bg-white hover:bg-[#F1F1F2] transition-colors duration-150"
+                            aria-label={selected ? "Снять выделение" : "Выбрать монету"}
+                          >
+                            {selected && <span className="w-2.5 h-2.5 rounded-full bg-[#11111B]" />}
+                          </button>
                         </div>
                       </td>
-                      <td className="px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-center gap-3 min-w-0">
                           <div
                             className={`w-[80px] h-[80px] shrink-0 overflow-hidden flex items-center justify-center ${row.rectangular ? "rounded-2xl" : "rounded-full"}`}
@@ -576,7 +677,7 @@ export default function PortfolioPage() {
                           </div>
                         </div>
                       </td>
-                      <td className="px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-start gap-2">
                           <img
                             src={row.mintName === MINT_TWO_RUSSIA ? GOZNAK_LOGO : row.mintLogoUrl}
@@ -589,7 +690,7 @@ export default function PortfolioPage() {
                           </div>
                         </div>
                       </td>
-                      <td className="px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex flex-col gap-1">
                           <span className="text-black text-[16px] font-medium">{row.faceValue}</span>
                           <div className="flex items-center gap-1 min-h-6">
@@ -603,14 +704,17 @@ export default function PortfolioPage() {
                           </div>
                         </div>
                       </td>
-                      <td className="px-2 py-3 text-right text-[16px] font-medium text-black transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 text-right text-[16px] font-medium text-black transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         {row.mintage}
                       </td>
-                      <td className="px-2 py-3 text-right transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 text-right transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-center justify-end gap-1">
                           <button
                             type="button"
-                            onClick={() => handleMinus(i)}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleMinus(i);
+                            }}
                             disabled={collectionCounts[i] <= 1}
                             className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 enabled:group-hover:bg-white enabled:hover:bg-[#11111B] enabled:hover:text-white enabled:hover:border-[#11111B] disabled:opacity-40 disabled:cursor-not-allowed"
                             aria-label="Уменьшить"
@@ -640,12 +744,16 @@ export default function PortfolioPage() {
                             onKeyDown={(e) => {
                               if (e.key === "Enter") (e.target as HTMLInputElement).blur();
                             }}
+                            onClick={(e) => e.stopPropagation()}
                             className="w-12 text-center text-[16px] font-medium text-black border border-transparent rounded focus:outline-none focus:border-[#E4E4EA] focus:bg-[#F1F1F2] py-1"
                             aria-label="Количество в коллекции"
                           />
                           <button
                             type="button"
-                            onClick={() => handlePlus(i)}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handlePlus(i);
+                            }}
                             className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 group-hover:bg-white hover:bg-[#11111B] hover:text-white hover:border-[#11111B]"
                             aria-label="Увеличить"
                           >
@@ -653,10 +761,10 @@ export default function PortfolioPage() {
                           </button>
                         </div>
                       </td>
-                      <td className="px-2 py-3 text-right text-[16px] font-medium text-black transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 text-right text-[16px] font-medium text-black transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         {row.buyPrice}
                       </td>
-                      <td className="px-2 py-3 transition-colors duration-150 group-hover:bg-[#F1F1F2]">
+                      <td className={`px-2 py-3 transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-center justify-end gap-4">
                           <div className="flex flex-col items-end gap-0.5">
                             <span className="text-[16px] font-medium text-black">{row.coinPrice}</span>
@@ -674,8 +782,13 @@ export default function PortfolioPage() {
                           <MetalPriceChart metal={row.metal} data={getMetalChartData(metalPrices1m, row.metal)} />
                         </div>
                       </td>
-                      <td className="px-2 pr-[0.75rem] py-2 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2]">
-                        <Link href={`/coins/${row.id}/?from=portfolio`} className="w-6 h-6 flex items-center justify-center text-[#11111B] hover:opacity-70" aria-label="Перейти к монете">
+                      <td className={`px-2 pr-[0.75rem] py-2 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
+                        <Link
+                          href={`/coins/${row.id}/?from=portfolio`}
+                          className="w-6 h-6 flex items-center justify-center text-[#11111B] hover:opacity-70"
+                          aria-label="Перейти к монете"
+                          onClick={(e) => e.stopPropagation()}
+                        >
                           <IconChevronDown size={20} stroke={2} className="rotate-[-90deg]" />
                         </Link>
                       </td>
@@ -692,6 +805,40 @@ export default function PortfolioPage() {
           )}
         </div>
       </main>
+
+      <div className="fixed inset-x-0 bottom-4 sm:bottom-6 z-40 flex justify-center pointer-events-none">
+        <div
+          className="flex items-center justify-between gap-4 sm:gap-6 pl-4 sm:pl-6 pr-3 sm:pr-3 py-2 sm:py-3 rounded-[999px] bg-[#11111B] text-white shadow-lg pointer-events-auto transition-all duration-200 ease-out min-w-[640px]"
+          style={{
+            opacity: selectedCount > 0 ? 1 : 0,
+            transform: selectedCount > 0 ? "translateY(0)" : "translateY(16px)",
+            pointerEvents: selectedCount > 0 ? "auto" : "none",
+          }}
+        >
+            <span className="text-[14px] sm:text-[16px] font-medium whitespace-nowrap">
+              {selectedLabel}
+            </span>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <button
+                type="button"
+                onClick={clearSelection}
+                disabled={bulkRemoving}
+                className="px-3 sm:px-4 py-1.5 rounded-full bg-white text-[#11111B] text-[14px] sm:text-[16px] font-medium hover:bg-[#F1F1F2] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
+              >
+                Снять выделение
+              </button>
+              <button
+                type="button"
+                onClick={handleDeleteClick}
+                disabled={bulkRemoving}
+                className="px-3 sm:px-4 py-1.5 rounded-full bg-white text-[#D7263D] text-[14px] sm:text-[16px] font-medium flex items-center gap-2 hover:bg-[#FFF0F0] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
+              >
+                <IconTrash size={18} stroke={2} />
+                <span>{confirmDelete ? "Точно удалить?" : "Удалить монеты"}</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
       {showScrollTop && (
         <button
