@@ -871,9 +871,9 @@ export default function PortfolioPage() {
         </div>
       </main>
 
-      <div className="fixed inset-x-0 bottom-4 sm:bottom-6 z-40 flex justify-center pointer-events-none">
+      <div className="fixed inset-x-0 bottom-4 sm:bottom-6 z-40 pointer-events-none">
         <div
-          className="flex items-center justify-between gap-4 sm:gap-6 pl-4 sm:pl-6 pr-3 sm:pr-3 py-2 sm:py-3 rounded-[999px] bg-[#11111B] text-white shadow-lg pointer-events-auto transition-all duration-200 ease-out min-w-[640px]"
+          className="flex items-center justify-between gap-4 sm:gap-6 pl-4 sm:pl-6 pr-3 sm:pr-3 py-2 sm:py-3 rounded-[999px] bg-[#11111B] text-white shadow-lg pointer-events-auto transition-all duration-200 ease-out w-auto mx-4 sm:mx-6 lg:mx-8 2xl:mx-20 max-w-[640px]"
           style={{
             opacity: selectedCount > 0 ? 1 : 0,
             transform: selectedCount > 0 ? "translateY(0)" : "translateY(16px)",
@@ -884,23 +884,46 @@ export default function PortfolioPage() {
               {selectedLabel}
             </span>
             <div className="flex items-center gap-2 sm:gap-3">
-              <button
-                type="button"
-                onClick={clearSelection}
-                disabled={bulkRemoving}
-                className="px-3 sm:px-4 py-1.5 rounded-full bg-white text-[#11111B] text-[14px] sm:text-[16px] font-medium hover:bg-[#F1F1F2] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
-              >
-                Снять выделение
-              </button>
-              <button
-                type="button"
-                onClick={handleDeleteClick}
-                disabled={bulkRemoving}
-                className="px-3 sm:px-4 py-1.5 rounded-full bg-white text-[#D7263D] text-[14px] sm:text-[16px] font-medium flex items-center gap-2 hover:bg-[#FFF0F0] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
-              >
-                <IconTrash size={18} stroke={2} />
-                <span>{confirmDelete ? "Точно удалить?" : "Удалить монеты"}</span>
-              </button>
+              {/* Мобильный вид: короткие подписи */}
+              <div className="flex sm:hidden items-center gap-2">
+                <button
+                  type="button"
+                  onClick={clearSelection}
+                  disabled={bulkRemoving}
+                  className="px-3 py-1.5 rounded-full bg-white text-[#11111B] text-[14px] font-medium hover:bg-[#F1F1F2] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
+                >
+                  Отменить
+                </button>
+                <button
+                  type="button"
+                  onClick={handleDeleteClick}
+                  disabled={bulkRemoving}
+                  className="px-3 py-1.5 rounded-full bg-white text-[#D7263D] text-[14px] font-medium flex items-center gap-2 hover:bg-[#FFF0F0] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
+                >
+                  <IconTrash size={18} stroke={2} />
+                  <span>{confirmDelete ? "Точно удалить?" : "Удалить"}</span>
+                </button>
+              </div>
+              {/* Планшет и десктоп — как было */}
+              <div className="hidden sm:flex items-center gap-2 sm:gap-3">
+                <button
+                  type="button"
+                  onClick={clearSelection}
+                  disabled={bulkRemoving}
+                  className="px-3 sm:px-4 py-1.5 rounded-full bg-white text-[#11111B] text-[14px] sm:text-[16px] font-medium hover:bg-[#F1F1F2] disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-150"
+                >
+                  Снять выделение
+                </button>
+                <button
+                  type="button"
+                  onClick={handleDeleteClick}
+                  disabled={bulkRemoving}
+                  className="px-3 sm:px-4 py-1.5 rounded-full bg-white text-[#D7263D] text-[14px] sm:text-[16px] font-medium flex items-center gap-2 hover:bg-[#FFF0F0] disabled:opacity-60 disabled:cursor-not-allowed transition-colors	duration-150"
+                >
+                  <IconTrash size={18} stroke={2} />
+                  <span>{confirmDelete ? "Точно удалить?" : "Удалить монеты"}</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -909,7 +932,7 @@ export default function PortfolioPage() {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed right-6 z-40 w-12 h-12 rounded-full bg-[#11111B] text-white hover:bg-[#27273a] flex items-center justify-center cursor-pointer transition-colors duration-150 bottom-4 sm:bottom-6"
+          className="fixed right-4 z-40 w-12 h-12 rounded-full bg-[#11111B] text-white hover:bg-[#27273a] flex items-center justify-center cursor-pointer transition-colors duration-150 bottom-20 sm:bottom-6"
           aria-label="Наверх"
         >
           <IconArrowUp size={24} stroke={2} className="shrink-0 block" />
