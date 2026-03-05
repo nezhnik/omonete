@@ -9,7 +9,7 @@ import { useAuth } from "../../components/AuthProvider";
 
 export default function LoginPage() {
   const [moneyAnimationData, setMoneyAnimationData] = useState<object | null>(null);
-  const [mode, setMode] = useState<"in" | "up">("in");
+  const [mode, setMode] = useState<"magic" | "in" | "up">("magic");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -33,6 +33,11 @@ export default function LoginPage() {
     e.preventDefault();
     setError(null);
     setInfo(null);
+    if (mode === "magic") {
+      // Для режима magic-link отправляем ссылку и не трогаем пароль
+      await handleMagicLink();
+      return;
+    }
     setSubmitting(true);
     const { error: err } = mode === "in" ? await signIn(email, password) : await signUp(email, password);
     setSubmitting(false);
@@ -65,8 +70,9 @@ export default function LoginPage() {
           )}
         </div>
         <p className="text-black text-[18px] leading-[1.4] max-w-[360px] font-medium mb-6">
-          {mode === "in" ? "Вход в аккаунт" : "Регистрация"}
+          {mode === "magic" ? "Вход по ссылке" : mode === "in" ? "Вход в аккаунт" : "Регистрация"}
         </p>
+        {/* Email — общий для всех режимов */}
         <form onSubmit={handleSubmit} className="w-full max-w-[320px] flex flex-col gap-3 text-left">
           <input
             type="email"
@@ -76,38 +82,62 @@ export default function LoginPage() {
             required
             className="w-full px-4 py-3 rounded-2xl border border-[#E4E4EA] text-[16px] outline-none focus:border-[#11111B]"
           />
-          <input
-            type="password"
-            placeholder="Пароль"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            minLength={6}
-            className="w-full px-4 py-3 rounded-2xl border border-[#E4E4EA] text-[16px] outline-none focus:border-[#11111B]"
-          />
+          {mode !== "magic" && (
+            <input
+              type="password"
+              placeholder="Пароль"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              minLength={6}
+              className="w-full px-4 py-3 rounded-2xl border border-[#E4E4EA] text-[16px] outline-none focus:border-[#11111B]"
+            />
+          )}
           {error && <p className="text-red-600 text-[14px]">{error}</p>}
           {info && !error && <p className="text-green-600 text-[14px]">{info}</p>}
-          <button
-            type="submit"
-            disabled={submitting}
-            className="mt-2 w-full px-6 py-3 rounded-[300px] bg-[#11111B] text-white text-[16px] font-medium hover:opacity-90 transition-opacity disabled:opacity-60"
-          >
-            {submitting ? "..." : mode === "in" ? "Войти" : "Зарегистрироваться"}
-          </button>
+          {mode === "magic" ? (
+            <button
+              type="button"
+              onClick={handleMagicLink}
+              disabled={submitting}
+              className="mt-2 w-full px-6 py-3 rounded-[300px] bg-[#11111B] text-white text-[16px] font-medium hover:opacity-90 transition-opacity disabled:opacity-60"
+            >
+              {submitting ? "..." : "Получить ссылку для входа"}
+            </button>
+          ) : (
+            <button
+              type="submit"
+              disabled={submitting}
+              className="mt-2 w-full px-6 py-3 rounded-[300px] bg-[#11111B] text-white text-[16px] font-medium hover:opacity-90 transition-opacity disabled:opacity-60"
+            >
+              {submitting ? "..." : mode === "in" ? "Войти" : "Зарегистрироваться"}
+            </button>
+          )}
         </form>
+        {/* Переключатели режимов */}
+        {mode === "magic" ? (
+          <button
+            type="button"
+            onClick={() => { setMode("in"); setError(null); setInfo(null); }}
+            className="mt-3 text-[#11111B] text-[14px] underline hover:text-black"
+          >
+            Войти по паролю
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={() => { setMode("magic"); setError(null); setInfo(null); }}
+            className="mt-3 text-[#11111B] text-[14px] underline hover:text-black"
+          >
+            Войти по ссылке на e-mail
+          </button>
+        )}
         <button
           type="button"
-          onClick={handleMagicLink}
-          className="mt-3 text-[#11111B] text-[14px] underline hover:text-black"
-        >
-          Войти по ссылке на e-mail
-        </button>
-        <button
-          type="button"
-          onClick={() => { setMode(mode === "in" ? "up" : "in"); setError(null); setInfo(null); }}
+          onClick={() => { setMode(mode === "up" ? "in" : "up"); setError(null); setInfo(null); }}
           className="mt-2 text-[#666666] text-[14px] underline hover:text-[#11111B]"
         >
-          {mode === "in" ? "Нет аккаунта? Зарегистрироваться" : "Уже есть аккаунт? Войти"}
+          {mode === "up" ? "Уже есть аккаунт? Войти по паролю" : "Нет аккаунта? Зарегистрироваться"}
         </button>
       </main>
     </div>

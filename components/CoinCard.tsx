@@ -104,56 +104,54 @@ export function CoinCard(props: CoinCardProps) {
               className="w-full h-full object-contain"
             />
           </div>
-          {/* Кнопка «Добавить в коллекцию»: иконка видна только если монета в коллекции (галочка с анимацией) или при ховере карточки (плюс). На мобильных скрыта пока что */}
+          {/* Кнопка «Добавить в коллекцию»: иконка + tooltip. На мобильных скрыта пока что */}
           <div className="absolute top-1 right-0 sm:top-2 sm:right-0 lg:top-[0.75rem] lg:right-4 pointer-events-none hidden lg:block">
-          <div className={`pointer-events-auto relative group/btn ${isAuthorized && inCollection ? "opacity-100" : "opacity-0 lg:group-hover:opacity-100"} transition-opacity duration-200`}>
-            {isAuthorized ? (
-              <>
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    e.stopPropagation()
-                    if (inCollection) setJustRemoved(true)
-                    else setJustAdded(true)
-                    onToggleCollection?.(id)
-                  }}
-                  className={`p-2 lg:px-4 lg:py-2 lg:gap-2 rounded-[300px] bg-transparent text-[#C0C0C0] hover:text-black cursor-pointer transition-colors duration-150 inline-flex items-center justify-center ${!inCollection ? "lg:group-hover:text-black" : ""}`}
-                  aria-label={inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                >
-                  {inCollection ? (
-                    <>
+            <div className={`pointer-events-auto relative group/btn ${isAuthorized && inCollection ? "opacity-100" : "opacity-0 lg:group-hover:opacity-100"} transition-opacity duration-200`}>
+              {isAuthorized ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      if (inCollection) setJustRemoved(true);
+                      else setJustAdded(true);
+                      onToggleCollection?.(id);
+                    }}
+                    className={`p-2 rounded-[300px] bg-transparent text-[#C0C0C0] hover:text-black cursor-pointer transition-colors duration-150 inline-flex items-center justify-center ${!inCollection ? "lg:group-hover:text-black" : ""}`}
+                    aria-label={inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}
+                  >
+                    {inCollection ? (
                       <span className={`inline-flex ${justAdded ? "animate-collection-added" : ""}`}>
                         <IconCheck size={24} stroke={2.5} />
                       </span>
-                      <span className="hidden lg:inline text-[14px] font-medium">В коллекции</span>
-                    </>
-                  ) : (
-                    <>
+                    ) : (
                       <span className={justRemoved ? "inline-flex animate-collection-added" : "inline-flex"}>
                         <IconPlus size={24} stroke={2} />
                       </span>
-                      <span className="hidden lg:inline text-[14px] font-medium">Добавить в коллекцию</span>
-                    </>
-                  )}
-                </button>
-              </>
-            ) : (
-              <>
-                <span
-                  className="p-2 rounded-[300px] bg-transparent text-black inline-flex cursor-default"
-                  aria-label="Чтобы добавить монету в коллекцию, авторизуйтесь"
-                >
-                  <IconPlus size={24} stroke={2} />
-                </span>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none lg:group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max hidden lg:block">
-                  <span className="whitespace-nowrap">Чтобы добавить монету в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
-                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                </div>
-              </>
-            )}
+                    )}
+                  </button>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                    {inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <span
+                    className="p-2 rounded-[300px] bg-transparent text-black inline-flex cursor-default"
+                    aria-label="Чтобы добавить монету в коллекцию, авторизуйтесь"
+                  >
+                    <IconPlus size={24} stroke={2} />
+                  </span>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none lg:group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max hidden lg:block">
+                    <span className="whitespace-nowrap">Чтобы добавить монету в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </>
+              )}
+            </div>
           </div>
-        </div>
         </div>
         {/* Кружочки: количество картинок, выбранная — чёрная. Только на десктопе при 2+ картинках. Ближе к монете, подальше от текста */}
         {images.length > 1 && (
