@@ -560,58 +560,75 @@ function MetalChart({
         </>
       ) : (
         <>
-          <div className="flex gap-3 sm:gap-4 mb-4">
-            {/* Левый блок: название, цена, динамика */}
-            <div className="flex-1 min-w-0">
+          <div className="mb-4">
+            {/* Заголовок: название металла слева, «за грамм / за унцию» справа в одной строке */}
+            <div className="flex w-full items-center justify-between gap-2 sm:gap-3">
               <h2 className="text-[18px] font-semibold text-black leading-tight">
                 {metal.name}
-                {metal.apiSymbol && <span className="text-[#666666] font-normal text-[16px] ml-1">{metal.apiSymbol}</span>}
+                {metal.apiSymbol && (
+                  <span className="text-[#666666] font-normal text-[16px] ml-1">
+                    {metal.apiSymbol}
+                  </span>
+                )}
               </h2>
-              <p className="text-[28px] sm:text-[1.75rem] font-bold text-black leading-tight mt-1 mb-0.5">
-                {displayedValue.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
-                <button
-                  type="button"
-                  onClick={() => setCurrency(currency === "RUB" ? "USD" : "RUB")}
-                  className="text-[28px] sm:text-[1.75rem] text-[#666666] hover:text-black font-bold transition-colors cursor-pointer p-0 m-0 align-baseline leading-none border-0 bg-transparent"
-                  title={
-                    currency === "RUB"
-                      ? usdRub != null && usdRub > 0
-                        ? "Показать в долларах"
-                        : "Курс доллара не загружен — обновите страницу"
-                      : "Показать в рублях"
-                  }
-                  aria-pressed={currency === "USD"}
-                >
-                  {currency === "RUB" ? "₽" : "$"}
-                </button>
-              </p>
-              <div className="flex flex-wrap items-center gap-2">
-                <span className={isPositiveFromStart ? "text-[#16A34A]" : "text-[#DC2626]"} style={{ fontSize: "14px" }}>
-                  {(isPositiveFromStart ? "+" : "") + changeFromStart.toLocaleString("ru-RU", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}{" "}
-                  {currency === "RUB" ? "₽" : "$"}
-                </span>
-                <span
-                  className={`inline-flex items-center gap-0.5 rounded-[300px] px-2 py-0.5 text-[13px] font-medium ${isPositiveFromStart ? "bg-[#DCFCE7] text-[#16A34A]" : "bg-[#FEE2E2] text-[#DC2626]"}`}
-                >
-                  {isPositiveFromStart ? "↑" : "↓"}
-                  {Math.abs(changePercentFromStart).toFixed(2) + "%"}
-                </span>
-                <span className="text-[#666666] text-[14px]">
-                  {isHovering && displayPoint ? displayPoint.label : PERIOD_LABEL[period]}
-                </span>
-              </div>
-            </div>
-            {/* Правый блок: переключатель единицы веса */}
-            <div className="shrink-0 self-start">
               <button
                 type="button"
                 onClick={() => setUnit(unit === "gr" ? "oz" : "gr")}
-                className="text-[#666666] hover:text-black text-[16px] font-medium transition-colors cursor-pointer"
+                className="text-[#666666] hover:text-black text-[14px] sm:text-[16px] font-medium transition-colors cursor-pointer"
                 title={unit === "gr" ? "Показать за унцию" : "Показать за грамм"}
                 aria-pressed={unit === "oz"}
               >
                 {unit === "gr" ? "за грамм" : "за унцию"}
               </button>
+            </div>
+            {/* Цена и переключатель валюты */}
+            <p className="text-[28px] sm:text-[1.75rem] font-bold text-black leading-tight mt-1 mb-0.5">
+              {displayedValue.toLocaleString("ru-RU", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              })}{" "}
+              <button
+                type="button"
+                onClick={() => setCurrency(currency === "RUB" ? "USD" : "RUB")}
+                className="text-[28px] sm:text-[1.75rem] text-[#666666] hover:text-black font-bold transition-colors cursor-pointer p-0 m-0 align-baseline leading-none border-0 bg-transparent"
+                title={
+                  currency === "RUB"
+                    ? usdRub != null && usdRub > 0
+                      ? "Показать в долларах"
+                      : "Курс доллара не загружен — обновите страницу"
+                    : "Показать в рублях"
+                }
+                aria-pressed={currency === "USD"}
+              >
+                {currency === "RUB" ? "₽" : "$"}
+              </button>
+            </p>
+            {/* Динамика и подпись периода как единый блок */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span
+                className={isPositiveFromStart ? "text-[#16A34A]" : "text-[#DC2626]"}
+                style={{ fontSize: "14px" }}
+              >
+                {(isPositiveFromStart ? "+" : "") +
+                  changeFromStart.toLocaleString("ru-RU", {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}{" "}
+                {currency === "RUB" ? "₽" : "$"}
+              </span>
+              <span
+                className={`inline-flex items-center gap-0.5 rounded-[300px] px-2 py-0.5 text-[13px] font-medium ${
+                  isPositiveFromStart
+                    ? "bg-[#DCFCE7] text-[#16A34A]"
+                    : "bg-[#FEE2E2] text-[#DC2626]"
+                }`}
+              >
+                {isPositiveFromStart ? "↑" : "↓"}
+                {Math.abs(changePercentFromStart).toFixed(2) + "%"}
+              </span>
+              <span className="text-[#666666] text-[14px]">
+                {isHovering && displayPoint ? displayPoint.label : PERIOD_LABEL[period]}
+              </span>
             </div>
           </div>
 

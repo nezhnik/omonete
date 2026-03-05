@@ -722,9 +722,11 @@ const mintListByCount = useMemo(() => {
             </button>
           </div>
 
-          {/* Кнопки сортировки и фильтров, затем поиск справа */}
+          {/* Кнопки сортировки и фильтров + поиск.
+              Мобайл/планшет: поиск слева, справа — сортировка и фильтры.
+              Десктоп: слева сортировка и фильтры, справа поиск (как было). */}
           <div className="flex flex-row items-center gap-2 sm:gap-3 w-full lg:w-auto">
-            <div className="flex items-center gap-3 shrink-0">
+            <div className="flex items-center gap-3 shrink-0 order-2 lg:order-1">
               {/* Обёртка только для кнопки сортировки и дропдауна — дропдаун выровнен по правому краю кнопки */}
               <div className="relative">
                 <Button
@@ -816,7 +818,7 @@ const mintListByCount = useMemo(() => {
             </div>
             <label
               htmlFor="catalog-search-page-input"
-              className="flex flex-1 lg:flex-initial min-w-0 lg:min-w-[200px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white"
+              className="flex flex-1 lg:flex-initial min-w-0 lg:min-w-[200px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white order-1 lg:order-2"
             >
               <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
               <input

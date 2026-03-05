@@ -55,3 +55,9 @@ next-env.d.ts
 
 # экспорт статей для импорта в БД (генерируется из /api/mint-articles-export)
 mint-articles.json
+
+# состояние инкрементального экспорта (npm run data:export -- --incremental)
+export-state.json
+
+# статический JSON цен металлов — на проде управляется только кроном на сервере
+public/data/metal-prices.json
