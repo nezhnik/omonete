@@ -218,8 +218,7 @@ function CatalogPageContent() {
   const [isXl, setIsXl] = useState(false);
   const [coins, setCoins] = useState<CatalogCoin[]>([]);
   const [totalCount, setTotalCount] = useState(0);
-  const [pageSize, setPageSize] = useState(PAGE_SIZE);
-  const [page, setPage] = useState(1);
+  const [displayedCount, setDisplayedCount] = useState(PAGE_SIZE);
   const [loading, setLoading] = useState(true);
   const [eyesAnimationData, setEyesAnimationData] = useState<object | null>(null);
   const [starAnimationData, setStarAnimationData] = useState<object | null>(null);
@@ -594,22 +593,30 @@ const mintListByCount = useMemo(() => {
     () => (searchNorm ? byMintFilter.filter((c) => coinMatchesSearch(c, searchNorm)) : byMintFilter),
     [byMintFilter, searchNorm]
   );
-  const totalPages = Math.max(1, Math.ceil(sortedCoins.length / pageSize));
-  const currentPage = Math.min(page, totalPages);
-  const startIndex = (currentPage - 1) * pageSize;
-  const endIndex = startIndex + pageSize;
-  const displayedCoins = sortedCoins.slice(startIndex, endIndex);
+  const displayedCoins = sortedCoins.slice(0, displayedCount);
+  const hasMore = displayedCount < sortedCoins.length;
+
+  const loadMore = useCallback(() => {
+    if (!hasMore) return;
+    setDisplayedCount((prev) => Math.min(prev + PAGE_SIZE, sortedCoins.length));
+  }, [hasMore, sortedCoins.length]);
 
   useEffect(() => {
-    // При изменении фильтров/сортировки/поиска возвращаемся на первую страницу
-    setPage(1);
+    setDisplayedCount(PAGE_SIZE);
   }, [filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery]);
 
   useEffect(() => {
-    // Если уменьшили pageSize или сократился список монет — не выходим за границы
-    const nextTotalPages = Math.max(1, Math.ceil(sortedCoins.length / pageSize));
-    if (page > nextTotalPages) setPage(nextTotalPages);
-  }, [page, pageSize, sortedCoins.length]);
+    const sentinel = sentinelRef.current;
+    if (!sentinel || !hasMore) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) loadMore();
+      },
+      { rootMargin: "800px", threshold: 0 }
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [hasMore, loadMore, showSkeletons]);
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(typeof window !== "undefined" && window.scrollY > 500);
@@ -919,7 +926,7 @@ const mintListByCount = useMemo(() => {
                           key={coin.id}
                           style={{
                             animation: "catalog-card-enter 0.3s ease forwards",
-                            animationDelay: `${(index % pageSize) * 0.05}s`,
+                            animationDelay: `${(index % PAGE_SIZE) * 0.05}s`,
                             opacity: 0,
                           }}
                         >
@@ -933,54 +940,7 @@ const mintListByCount = useMemo(() => {
                         </div>
                       ))}
                 </div>
-                {!showSkeletons && sortedCoins.length > 0 && (
-                  <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                    <div className="text-[14px] text-[#666666]">
-                      Показаны {displayedCoins.length} из{" "}
-                      {formatNumber(sortedCoins.length)} {coinWord(sortedCoins.length)}
-                    </div>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
-                      <div className="flex items-center gap-2 text-[14px] text-[#666666]">
-                        <span>На странице:</span>
-                        {[30, 60, 90].map((size) => (
-                          <button
-                            key={size}
-                            type="button"
-                            onClick={() => {
-                              setPageSize(size);
-                              setPage(1);
-                            }}
-                            className={`px-2.5 py-1 rounded-full border text-[14px] font-medium ${
-                              pageSize === size
-                                ? "bg-[#11111B] text-white border-[#11111B]"
-                                : "bg-white text-[#11111B] border-[#E4E4EA] hover:bg-[#F1F1F2]"
-                            }`}
-                          >
-                            {size}
-                          </button>
-                        ))}
-                      </div>
-                      {totalPages > 1 && (
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                            <button
-                              key={p}
-                              type="button"
-                              onClick={() => setPage(p)}
-                              className={`min-w-[32px] h-8 px-2 rounded-full text-[14px] font-medium ${
-                                p === currentPage
-                                  ? "bg-[#11111B] text-white"
-                                  : "bg-white text-[#11111B] border border-[#E4E4EA] hover:bg-[#F1F1F2]"
-                              }`}
-                            >
-                              {p}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )}
+                {!showSkeletons && hasMore && <div ref={sentinelRef} className="h-4 w-full" aria-hidden />}
               </>
             )}
           </div>

@@ -319,6 +319,8 @@ export default function PortfolioPage() {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [selectionBarVisible, setSelectionBarVisible] = useState(false);
   const [removingIds, setRemovingIds] = useState<string[]>([]);
+  const [pageSize, setPageSize] = useState(30);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(typeof window !== "undefined" && window.scrollY > 500);
@@ -343,6 +345,23 @@ export default function PortfolioPage() {
     () => (searchNorm ? portfolioRows.filter((r) => portfolioRowMatchesSearch(r, searchNorm)) : portfolioRows),
     [portfolioRows, searchNorm]
   );
+
+  const totalPages = Math.max(1, Math.ceil(filteredRows.length / pageSize));
+  const currentPage = Math.min(page, totalPages);
+  const startIndex = (currentPage - 1) * pageSize;
+  const endIndex = startIndex + pageSize;
+  const pagedRows = filteredRows.slice(startIndex, endIndex);
+
+  useEffect(() => {
+    // При изменении набора строк (поиск / загрузка) возвращаемся на первую страницу
+    setPage(1);
+  }, [searchNorm, portfolioRows.length]);
+
+  useEffect(() => {
+    // Если уменьшили pageSize или стало меньше строк — не выходим за пределы
+    const nextTotal = Math.max(1, Math.ceil(filteredRows.length / pageSize));
+    if (page > nextTotal) setPage(nextTotal);
+  }, [page, pageSize, filteredRows.length]);
 
   const toggleSelected = (id: string) => {
     setSelectedIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
@@ -626,7 +645,7 @@ export default function PortfolioPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredRows.map((row) => {
+                  {pagedRows.map((row) => {
                     const origIndex = portfolioRows.findIndex((r) => r.id === row.id);
                     const i = origIndex >= 0 ? origIndex : 0;
                     const selected = selectedIds.includes(row.id);
@@ -798,6 +817,52 @@ export default function PortfolioPage() {
                 </tbody>
               </table>
             </div>
+            )}
+            {/* Пагинация по коллекции */}
+            {filteredRows.length > 0 && (
+              <div className="px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-t border-[#E4E4EA] bg-white">
+                <div className="text-[14px] text-[#666666]">
+                  Показано {pagedRows.length} из{" "}
+                  {formatNumber(filteredRows.length)} {coinWord(filteredRows.length)}
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                  <div className="flex items-center gap-2 text-[14px] text-[#666666]">
+                    <span>На странице:</span>
+                    {[30, 60, 90].map((size) => (
+                      <button
+                        key={size}
+                        type="button"
+                        onClick={() => { setPageSize(size); setPage(1); }}
+                        className={`px-2.5 py-1 rounded-full border text-[14px] font-medium ${
+                          pageSize === size
+                            ? "bg-[#11111B] text-white border-[#11111B]"
+                            : "bg-white text-[#11111B] border-[#E4E4EA] hover:bg-[#F1F1F2]"
+                        }`}
+                      >
+                        {size}
+                      </button>
+                    ))}
+                  </div>
+                  {totalPages > 1 && (
+                    <div className="flex flex-wrap items-center gap-1 sm:gap-2">
+                      {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                        <button
+                          key={p}
+                          type="button"
+                          onClick={() => setPage(p)}
+                          className={`min-w-[32px] h-8 px-2 rounded-full text-[14px] font-medium ${
+                            p === currentPage
+                              ? "bg-[#11111B] text-white"
+                              : "bg-white text-[#11111B] border border-[#E4E4EA] hover:bg-[#F1F1F2]"
+                          }`}
+                        >
+                          {p}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
             )}
           </div>
           )}

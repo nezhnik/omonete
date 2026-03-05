@@ -37,8 +37,9 @@ const weightOptionsFull = [
   "1/1000 унции · 0,031 грамм",
 ];
 
-const countries = ["Россия", "Австралия", "Соединённые Штаты Америки (США)", "Германия"];
-const COUNTRY_DISABLED = countries.filter((c) => c !== "Россия");
+const countries = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Германия"];
+/** Пока неактивны: монет в каталоге ещё нет */
+const COUNTRY_DISABLED = ["Австралия", "Германия"];
 
 /** Вес: слева унции/кг, справа граммы (для раскладки space-between) */
 const WEIGHT_LEFT: Record<string, string> = {
@@ -193,6 +194,7 @@ export function CatalogFilters({
 }: CatalogFiltersProps) {
   const [weightListExpanded, setWeightListExpanded] = useState(false);
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
+  const [mintListExpanded, setMintListExpanded] = useState(false);
 
   const seriesDefault = seriesList.slice(0, 4);
   const metalsWithCount = useMemo(() => {
@@ -237,7 +239,7 @@ export function CatalogFilters({
   return (
     <aside
       dir="ltr"
-      className="w-full min-w-0 max-w-full pt-10 pb-5 px-4 rounded-2xl flex flex-col gap-6 shrink-0 transition-[transform] duration-300 ease-out overflow-x-hidden"
+      className="w-full min-w-0 max-w-full pt-4 pb-5 px-4 rounded-2xl flex flex-col gap-6 shrink-0 transition-[transform] duration-300 ease-out overflow-x-hidden"
       style={{
         transform: slide ? "translateX(100%)" : "translateX(0)",
       }}
@@ -333,7 +335,7 @@ export function CatalogFilters({
         />
       </div>
 
-      {/* Страна: только Россия активна */}
+      {/* Страна: Россия и США активны, Австралия и Германия — пока disabled */}
       <div className="flex flex-col gap-4">
         <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
         <FilterChecklist
@@ -344,12 +346,23 @@ export function CatalogFilters({
         />
       </div>
 
-      {/* Монетный двор: из данных каталога */}
+      {/* Монетный двор: первые 5 по умолчанию, затем «Показать все» как в весе */}
       {mintList.length > 0 && (
         <div className="flex flex-col gap-4">
-          <h3 className="text-black text-[20px] font-medium leading-7">Монетный двор</h3>
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-black text-[20px] font-medium leading-7">Монетный двор</h3>
+            {mintList.length > 5 && (
+              <button
+                type="button"
+                onClick={() => setMintListExpanded((v) => !v)}
+                className="text-[16px] font-normal leading-[22.4px] text-[#656565] shrink-0"
+              >
+                {mintListExpanded ? "Свернуть" : "Показать все"}
+              </button>
+            )}
+          </div>
           <FilterChecklist
-            items={mintList}
+            items={mintListExpanded ? mintList : mintList.slice(0, 5)}
             selectedValues={selectedMints}
             onChange={onMintChange ?? (() => {})}
           />
