@@ -959,7 +959,9 @@
     "https://www.perthmint.com/shop/collector-coins/coins/year-of-the-tiger-rotating-charm-2022-1oz-silver-antiqued-coin",
     "https://www.perthmint.com/shop/collector-coins/coins/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls",
     "https://www.perthmint.com/shop/collector-coins/coins/yin-yang-rotating-charm-2016-1oz-silver-antiqued-coin",
-    "https://www.perthmint.com/shop/collector-coins/coins/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin"
+    "https://www.perthmint.com/shop/collector-coins/coins/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin",
+    "https://www.perthmint.com/shop/collector-coins/coins/adelaide-pound-2020-1.5oz-bi-metal-coin",
+    "https://www.perthmint.com/shop/collector-coins/coins/australian-wedge-tailed-eagle-2020-1.5oz-bi-metal-proof-coin"
   ],
   "coins": [
     {
@@ -6799,7 +6801,23 @@
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin.json",
       "catalog_number": "AU-PERTH-2025-25U33AAA",
       "title": "Zodiac Signs and Goddesses 2025 5oz Silver Antiqued Coloured Coin"
+    },
+    {
+      "url": "https://www.perthmint.com/shop/collector-coins/coins/adelaide-pound-2020-1.5oz-bi-metal-coin",
+      "catalog_number": "AU-PERTH-2026-26Z40AAA",
+      "title": "Adelaide Pound 2020 1.5oz Bi-Metal Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-adelaide-pound-2020-1-5oz-bi-metal-coin.json",
+      "completedAt": "2026-03-08T10:39:51.210Z",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.perthmint.com/shop/collector-coins/coins/australian-wedge-tailed-eagle-2020-1.5oz-bi-metal-proof-coin",
+      "catalog_number": "AU-PERTH-2026-26022DPAD",
+      "title": "Australian Wedge-tailed Eagle 2020 1.5oz Bi-Metal Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australian-wedge-tailed-eagle-2020-1-5oz-bi-metal-proof-coin.json",
+      "completedAt": "2026-03-08T10:40:08.994Z",
+      "status": "ok"
     }
   ],
-  "lastUpdated": "2026-03-08T09:28:32.197Z"
+  "lastUpdated": "2026-03-08T10:40:08.995Z"
 }

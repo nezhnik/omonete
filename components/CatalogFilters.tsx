@@ -39,8 +39,7 @@ const weightOptionsFull = [
   "1/1000 унции · 0,031 грамм",
 ];
 
-/** Порядок стран в фильтре; раскрытие как у весов (сначала топ, по кнопке — все) */
-const countriesDefault = ["Россия", "Соединённые Штаты Америки (США)", "Австралия"];
+/** Список стран в фильтре (всего 5 — кнопка раскрытия не нужна) */
 const countriesFull = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Тувалу", "Ниуэ"];
 
 /** Вес: слева унции/кг, справа граммы (для раскладки space-between) */
@@ -199,11 +198,10 @@ export function CatalogFilters({
   hideSearch = false,
 }: CatalogFiltersProps) {
   const [weightListExpanded, setWeightListExpanded] = useState(false);
-  const [countryListExpanded, setCountryListExpanded] = useState(false);
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
   const [mintListExpanded, setMintListExpanded] = useState(false);
 
-  const seriesDefault = seriesList.slice(0, 4);
+  const seriesDefault = seriesList.slice(0, 5);
   const metalsWithCount = useMemo(() => {
     const countByCode: Record<string, number> = {};
     METAL_OPTIONS.forEach((m) => (countByCode[m.label] = 0));
@@ -300,20 +298,22 @@ export function CatalogFilters({
         </div>
       </div>
 
-      {/* Вес */}
+      {/* Вес: до 5 элементов без кнопки, с 6-го — «Показать все»/«Свернуть» */}
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-black text-[20px] font-medium leading-7">Вес</h3>
-          <button
-            type="button"
-            onClick={() => setWeightListExpanded((v) => !v)}
-            className="text-[16px] font-normal leading-[22.4px] text-[#656565] shrink-0"
-          >
-            {weightListExpanded ? "Свернуть" : "Показать все"}
-          </button>
+          {weightOptionsFull.length > 5 && (
+            <button
+              type="button"
+              onClick={() => setWeightListExpanded((v) => !v)}
+              className="text-[16px] font-normal leading-[22.4px] text-[#656565] shrink-0"
+            >
+              {weightListExpanded ? "Свернуть" : "Показать все"}
+            </button>
+          )}
         </div>
         <FilterChecklist
-          items={weightListExpanded ? weightOptionsFull : weightOptionsDefault}
+          items={weightOptionsFull.length > 5 ? (weightListExpanded ? weightOptionsFull : weightOptionsFull.slice(0, 5)) : weightOptionsFull}
           selectedValues={selectedWeights}
           onChange={onWeightChange ?? (() => {})}
           getDisplayLabel={(item) => WEIGHT_LEFT[item] ?? item}
@@ -321,11 +321,11 @@ export function CatalogFilters({
         />
       </div>
 
-      {/* Серия: из БД, топ-4 по умолчанию, затем «Показать все» */}
+      {/* Серия: до 5 без кнопки, с 6-го — «Показать все»/«Свернуть» */}
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-black text-[20px] font-medium leading-7">Серия</h3>
-          {seriesList.length > 4 && (
+          {seriesList.length > 5 && (
             <button
               type="button"
               onClick={() => setSeriesListExpanded((v) => !v)}
@@ -336,32 +336,23 @@ export function CatalogFilters({
           )}
         </div>
         <FilterChecklist
-          items={seriesListExpanded ? seriesList : seriesDefault}
+          items={seriesList.length > 5 ? (seriesListExpanded ? seriesList : seriesDefault) : seriesList}
           selectedValues={selectedSeries}
           onChange={onSeriesChange ?? (() => {})}
         />
       </div>
 
-      {/* Страна: раскрытие как у весов (топ-3 по умолчанию, «Показать все» — все 5) */}
+      {/* Страна: до 5 без кнопки (всего 5 — список всегда полный) */}
       <div className="flex flex-col gap-4">
-        <div className="flex items-center justify-between gap-2">
-          <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
-          <button
-            type="button"
-            onClick={() => setCountryListExpanded((v) => !v)}
-            className="text-[16px] font-normal leading-[22.4px] text-[#656565] shrink-0"
-          >
-            {countryListExpanded ? "Свернуть" : "Показать все"}
-          </button>
-        </div>
+        <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
         <FilterChecklist
-          items={countryListExpanded ? countriesFull : countriesDefault}
+          items={countriesFull}
           selectedValues={selectedCountries}
           onChange={onCountryChange ?? (() => {})}
         />
       </div>
 
-      {/* Монетный двор: первые 5 по умолчанию, затем «Показать все» как в весе */}
+      {/* Монетный двор: до 5 без кнопки, с 6-го — «Показать все»/«Свернуть» */}
       {mintList.length > 0 && (
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between gap-2">
