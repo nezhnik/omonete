@@ -161,7 +161,7 @@ async function main() {
       title || titleEn || "Perth Mint",
       ...(hasTitleEn ? [titleEn || null] : []),
       c.series || null,
-      c.country || "Австралия",
+      (c.country && String(c.country).trim() !== "" ? c.country : null),
       c.face_value || null,
       c.mint || "The Perth Mint",
       c.mint_short || "Perth Mint",
@@ -198,11 +198,16 @@ async function main() {
     }
     // Если по source_url не нашли — ищем по catalog_number (чтобы не создавать дубль при повторном импорте без URL)
     if (existing.length === 0 && catalogNumber) {
-      const [byCatalog] = await conn.execute(
-        "SELECT id FROM coins WHERE catalog_number = ? AND (mint LIKE '%Perth%' OR mint_short LIKE '%Perth%') LIMIT 1",
+      const [byCatalogCount] = await conn.execute(
+        "SELECT id FROM coins WHERE catalog_number = ? AND (mint LIKE '%Perth%' OR mint_short LIKE '%Perth%')",
         [catalogNumber]
       );
-      existing = byCatalog;
+      // Не обновлять по catalog_number, если записей несколько — иначе перезапишем не ту монету.
+      if (byCatalogCount.length > 1) {
+        console.warn("  [пропуск] catalog_number " + catalogNumber + " у " + byCatalogCount.length + " записей — обновление отключено. Добавьте source_url в каноник или исправьте БД.");
+        continue;
+      }
+      if (byCatalogCount.length === 1) existing = byCatalogCount;
     }
 
     if (existing.length > 0) {

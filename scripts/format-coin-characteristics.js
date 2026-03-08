@@ -111,6 +111,7 @@ function deriveMetalAndWeightFromTitle(title) {
 function normalizeLegalTender(legalTender) {
   if (legalTender == null || String(legalTender).trim() === "") return null;
   const s = String(legalTender).trim();
+  if (/^N\/A$/i.test(s)) return null; // на сайте Perth иногда Legal Tender = N/A — считаем отсутствием, в fetcher подставится Австралия
   if (/^Tuvalu$/i.test(s)) return "Тувалу";
   if (/^Australia(n)?$/i.test(s)) return "Австралия";
   if (/^Cook\s*Islands$/i.test(s)) return "Острова Кука";

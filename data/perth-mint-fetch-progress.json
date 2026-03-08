@@ -1422,21 +1422,27 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1-4oz-gold-proof-coin",
+      "catalog_number": "AU-PERTH-2020-18C59BAA",
+      "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 1/4oz Gold Proof Coin",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1-4oz-gold-proof-coin.json",
-      "catalog_number": "AU-PERTH-2025-25X94AAA",
-      "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 1/4oz Gold Proof Coin"
+      "completedAt": "2026-03-08T11:29:16.514Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin",
+      "catalog_number": "AU-PERTH-2020-18C59AAA",
+      "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 1oz Silver Proof Coin",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin.json",
-      "catalog_number": "AU-PERTH-2026-26Z40AAA",
-      "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 1oz Silver Proof Coin"
+      "completedAt": "2026-03-08T11:30:09.573Z",
+      "status": "unchanged"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-2oz-gold-proof-coin",
+      "catalog_number": "AU-PERTH-2020-18C59CAA",
+      "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 2oz Gold Proof Coin",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-2oz-gold-proof-coin.json",
-      "catalog_number": "AU-PERTH-2025-25X94AAA",
-      "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 2oz Gold Proof Coin"
+      "completedAt": "2026-03-08T11:29:27.095Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/70th-anniversary-of-the-royal-wedding-2017-1-4oz-gold-proof-coin",
@@ -5929,10 +5935,12 @@
       "title": "Perth Money Expo ANDA Special 2020 Year of the Mouse 2oz Silver Proof Coloured Coin"
     },
     {
-      "url": "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2024-year-of-the-dragon-1oz-silver-teal-coloured-coin-in-card",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-money-expo-anda-special-2024-year-of-the-dragon-1oz-silver-teal-coloured-coin-in-card.json",
-      "catalog_number": "AU-PERTH-2024-3S2406DDTD",
-      "title": "Perth Money Expo ANDA Special Australian Lunar Series III 2024 Year of the Dragon 1oz Silver Teal Coloured Coin in Card"
+      "url": "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy",
+      "catalog_number": "AU-PERTH-2020-Y20022DPAD",
+      "title": "Perth Money Expo ANDA Special 30th Anniversary Australian Kookaburra 2020 1oz Silver Coin with Kangaroo Paw Privy",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy.json",
+      "completedAt": "2026-03-08T11:35:42.130Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy",
@@ -6819,5 +6827,5 @@
       "status": "ok"
     }
   ],
-  "lastUpdated": "2026-03-08T10:40:08.995Z"
+  "lastUpdated": "2026-03-08T11:35:42.130Z"
 }

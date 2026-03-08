@@ -6,12 +6,13 @@
 
 ## Текущий статус (чтобы не терять контекст)
 
-- **Крон на Reg.ru уже настроен.** В планировщике заданий Reg.ru добавлено задание: раз в день запуск `php .../cron-metal-prices.php`. Пользователю был прислан обновлённый код/инструкция, что именно вставить в планировщик; крон обновляет курс доллара, металлы ЦБ и медь за последние 3 дня и перезаписывает `data/metal-prices.json` на сервере.
+- **Крон на Reg.ru уже настроен.** В планировщике заданий Reg.ru добавлено задание: раз в день запуск `php .../cron-metal-prices.php`. Крон обновляет курс доллара, металлы ЦБ и медь за последние 3 дня и перезаписывает `data/metal-prices.json` на сервере.
 - **БД (MySQL на Reg.ru, доступ через phpMyAdmin):**
   - **Таблицы для металлов и курса:** `metal_prices` (дата, xau, xag, xpt, xpd, xcu — цены в руб/г), `cbr_rates` (дата, usd_rub — курс ЦБ).
   - **Данные уже занесены:** курс доллара с 1992 года (`cbr_rates`), металлы ЦБ с 2003 года, медь (xcu) с 2006 года (`metal_prices`). Бэкфилл выполнен один раз (`npm run backfill:all`); крон только подтягивает последние 3 дня.
   - Подключение: `.env` в корне проекта и в корне сайта на сервере — строка `DATABASE_URL=mysql://user:password@host:port/database`. На Reg.ru хост/порт/база берутся из панели (phpMyAdmin).
-- При ответах по проекту опираться на этот статус: крон настроен, БД заполнена, phpMyAdmin — интерфейс к той же MySQL, что использует сайт и крон.
+- **Каталог монет (Perth и защита от перезаписи):** массовая перезапись 161 Perth-монеты одним каноником исправлена скриптом `fix-perth-overwritten-coins.js`. В `update-perth-from-canonical-json.js` и `import-perth-mint-to-db.js` включена защита: по `catalog_number` обновление только если в БД ровно одна запись с этим номером; при нескольких — обновление не выполняется. Однозначная привязка «одна запись = один продукт» — по полю **source_url**.
+- При ответах по проекту опираться на этот статус: крон настроен, БД заполнена, phpMyAdmin — интерфейс к той же MySQL; каталог защищён от повторной массовой перезаписи.
 
 ---
 
@@ -139,6 +140,10 @@
 ## Данные по монетам
 
 - Источник данных: БД + скрипты в `scripts/` (экспорт в JSON).
+- **Типовой цикл после правок в каталоге (БД):**
+  1. Экспорт: `node scripts/export-coins-to-json.js` (или он выполняется внутри `npm run build` как `data:export:incremental`).
+  2. Сборка: `npm run build` → папка `out/`.
+  3. Деплой: залить содержимое `out/` на хостинг.
 - Основные файлы:
   - `public/data/coins.json` — список монет для каталога (генерируется `scripts/export-coins-to-json.js`, входит в `npm run data:export`).
   - `public/data/coin-ids.json` — список ID для `generateStaticParams`.
@@ -149,6 +154,25 @@
   - Серверная часть: `app/coins/[id]/page.tsx` — читает `public/data/coins/[id].json`.
   - Клиентская часть: `app/coins/[id]/CoinPageClient.tsx`.
   - Отрисовка: `components/CoinDetail.tsx`.
+
+### Синхронизация Perth Mint и защита от перезаписи
+
+- **Источник**: канонические JSON в `data/perth-mint-*.json` (каждый файл = одна страница товара на perthmint.com, поле `source_url`).
+- **Порядок (чтобы не перезаписывать чужие данные)**:
+  1. Fetch: `node scripts/fetch-perth-mint-coin.js` (при необходимости `--refresh`).
+  2. Импорт в БД: `node scripts/import-perth-mint-to-db.js` — совпадение по `source_url`, при отсутствии по `catalog_number`.
+  3. Обновление из каноников: `node scripts/update-perth-from-canonical-json.js` — **сопоставление сначала по `source_url`**, при отсутствии URL — по `catalog_number`.
+- **Что было сломано и как исправили**:
+  - Раньше `update-perth-from-canonical-json.js` сопоставлял все Perth-записи **только по `catalog_number`**. У многих разных монет в БД оказался один и тот же `catalog_number`, поэтому им всем подставлялись одно название и одни картинки (например Kookaburra 2026).
+  - **Исправление**: в скрипте приоритет у **source_url** — запись обновляется только каноником с тем же URL страницы Perth. По `catalog_number` обновление только если у записи нет `source_url`. Так разные монеты с разным URL не перезаписываются одним продуктом.
+- **Восстановление уже перезаписанных данных**:  
+  `node scripts/fix-perth-overwritten-coins.js` — сопоставление по `source_url`, затем по `catalog_number` (если он уникален), затем по metal + weight_g + diameter_mm + thickness_mm; подстановка правильного каноника (title, картинки, source_url, catalog_number). Каноники загружаются по одному на файл с `source_url`, а не по одному на `catalog_number`, чтобы различать разные продукты. После восстановления: экспорт и сборка.
+- **Правило, чтобы перезапись не повторилась**: всегда сначала **импорт** (`import-perth-mint-to-db.js`), чтобы у записей в БД появился правильный `source_url`; только потом **update-perth-from-canonical-json.js**.
+- **Защита в скриптах (на будущее, при росте каталога до тысяч монет)**:
+  - **update-perth-from-canonical-json.js**: по `catalog_number` обновление выполняется **только если в БД ровно одна запись** с этим номером (без source_url). Если записей несколько — обновление пропускается, в консоль выводится предупреждение.
+  - **import-perth-mint-to-db.js**: при поиске существующей записи по `catalog_number` — если найдено больше одной записи, обновление не выполняется (чтобы не перезаписать случайную монету другим продуктом).
+- Итог: однозначное сопоставление «одна запись = один продукт» даёт **source_url**; по `catalog_number` скрипты обновляют только когда он уникален.
+- Подробный цикл: `scripts/PERTH_SYNC_README.md`, кратко: `README.md` (раздел «Синхронизация Perth Mint»).
 
 ---
 
@@ -236,4 +260,6 @@
 - **Статья о монетном дворе**: `app/mints/[slug]/page.tsx`, `components/MintArticle.tsx`, данные в `lib/mint-articles.ts`
 - **API (dev)**: `app/api/metal-prices/route.ts`, `app/api/coins/route.ts`, `app/api/coins/[id]/route.ts`, `app/api/mints/route.ts`, `app/api/mints/[slug]/route.ts`
 - **Скрипты сборки и крона**: `scripts/export-coins-to-json.js`, `scripts/cron-metal-prices.js`, `scripts/cron-metal-prices.php`, `scripts/move-api-for-export.js`, `scripts/clean-metal-prices-from-out.js`
+- **Экспорт каталога**: `scripts/export-coins-to-json.js` — БД → `public/data/coins.json`, `public/data/coins/*.json`, `public/data/coin-ids.json`, `public/data/mints.json`. После изменений в БД: экспорт → `npm run build` → залить `out/`.
+- **Синхронизация Perth**: порядок — fetch → import → update-perth. `scripts/fetch-perth-mint-coin.js`, `scripts/import-perth-mint-to-db.js`, `scripts/update-perth-from-canonical-json.js` (по source_url; по catalog_number только если в БД одна запись), `scripts/fix-perth-overwritten-coins.js` (восстановление по спекам, опция `--dry`). Защита от перезаписи: по catalog_number не обновляем, если записей несколько. Подробно: README.md, `scripts/PERTH_SYNC_README.md`.
 

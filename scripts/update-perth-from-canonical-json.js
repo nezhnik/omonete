@@ -1,7 +1,8 @@
 /**
  * Обновляет записи Perth в БД из канонических JSON (с source_url с сайта Perth).
- * Для каждого catalog_number берётся один JSON — с source_url; затем все Perth-монеты в БД
- * сверяются с этим каноническим источником и при расхождении обновляются.
+ * Сопоставление: сначала по source_url (одна запись = один продукт), при отсутствии — по catalog_number.
+ * Важно: если у разных монет в БД один catalog_number, обновление только по catalog_number
+ * перезаписывало бы их все одним каноником; приоритет source_url это предотвращает.
  *
  * Запуск:
  *   node scripts/update-perth-from-canonical-json.js       — обновить БД
@@ -28,6 +29,11 @@ function trim(s) {
   return s != null && typeof s === "string" ? s.trim() || null : null;
 }
 
+function normalizeSourceUrl(url) {
+  const s = trim(url);
+  return s ? s.replace(/\/+$/, "") : null;
+}
+
 async function main() {
   const dryRun = process.argv.includes("--dry");
   if (dryRun) console.log("Режим --dry: изменения не применяются.\n");
@@ -40,8 +46,10 @@ async function main() {
     .filter((f) => f.startsWith("perth-mint-") && f.endsWith(".json"))
     .map((f) => path.join(DATA_DIR, f));
 
-  // По catalog_number выбираем канонический JSON (с source_url)
+  // По catalog_number — один каноник на номер (для записей без source_url)
   const byCatalog = {};
+  // По source_url — точное сопоставление продукта (приоритет, чтобы не перезаписывать чужие монеты)
+  const bySourceUrl = {};
   for (const filePath of allFiles) {
     let raw, c, catalogNumber;
     try {
@@ -57,22 +65,53 @@ async function main() {
     const hasSourceUrl = !!(c.source_url && String(c.source_url).trim() && c.source_url.includes("perthmint.com"));
     const prev = byCatalog[catalogNumber];
     if (!prev || (hasSourceUrl && !prev.hasSourceUrl) || (hasSourceUrl && prev.hasSourceUrl && (c.source_url || "").length > (prev.sourceUrlLen || 0))) {
-      byCatalog[catalogNumber] = { filePath, hasSourceUrl, sourceUrlLen: (c.source_url || "").length, raw, c };
+      const entry = { filePath, hasSourceUrl, sourceUrlLen: (c.source_url || "").length, raw, c };
+      byCatalog[catalogNumber] = entry;
+      if (hasSourceUrl) {
+        const norm = normalizeSourceUrl(c.source_url);
+        if (norm) bySourceUrl[norm] = entry;
+      }
     }
   }
 
   const conn = await mysql.createConnection(getConfig());
   const [rows] = await conn.execute(
-    `SELECT id, catalog_number, title, title_en, series, country, face_value,
+    `SELECT id, catalog_number, title, title_en, series, country, face_value, mint, mint_short,
             image_obverse, image_reverse, image_box, image_certificate, source_url
      FROM coins WHERE (mint LIKE '%Perth%' OR mint_short LIKE '%Perth%') ORDER BY id`
   );
 
+  // Сколько записей без source_url имеют один и тот же catalog_number (риск перезаписи разных монет одним каноником)
+  const catalogCountNoUrl = {};
+  for (const row of rows) {
+    if (normalizeSourceUrl(row.source_url)) continue;
+    const cn = trim(row.catalog_number);
+    if (cn) catalogCountNoUrl[cn] = (catalogCountNoUrl[cn] || 0) + 1;
+  }
+  const warnedCatalog = new Set();
+
   let updated = 0;
   for (const row of rows) {
     const catalogNumber = trim(row.catalog_number);
-    if (!catalogNumber) continue;
-    const canon = byCatalog[catalogNumber];
+    const rowSourceUrl = normalizeSourceUrl(row.source_url);
+    // Приоритет source_url: запись обновляем только каноником с тем же URL (чтобы не перезаписать чужие монеты)
+    let canon = null;
+    if (rowSourceUrl) {
+      canon = bySourceUrl[rowSourceUrl] || null;
+    }
+    if (!canon && catalogNumber) {
+      const count = catalogCountNoUrl[catalogNumber] || 0;
+      // Не обновлять по catalog_number, если в БД несколько записей с этим номером — иначе перезапишем разные монеты одним каноником.
+      if (count > 1) {
+        if (!warnedCatalog.has(catalogNumber)) {
+          warnedCatalog.add(catalogNumber);
+          console.warn("  [пропуск] catalog_number " + catalogNumber + " у " + count + " записей без source_url — обновление отключено. Проставьте source_url или запустите fix-perth-overwritten-coins.js.");
+        }
+        canon = null;
+      } else {
+        canon = byCatalog[catalogNumber] || null;
+      }
+    }
     if (!canon) continue;
 
     const c = canon.c;
@@ -92,6 +131,8 @@ async function main() {
     const weightGForDb = weightGNum != null ? (formatWeightG(weightGNum) ?? String(weightGNum)) : null;
 
     const canonCountry = trim(c.country) || null;
+    const canonMint = trim(c.mint) || null;
+    const canonMintShort = trim(c.mint_short) || null;
     const canonObv = trim(c.image_obverse) || null;
     const canonRev = trim(c.image_reverse) || null;
     const canonBox = trim(c.image_box) || null;
@@ -101,6 +142,8 @@ async function main() {
     const canonFaceValue = trim(c.face_value) || null;
 
     const dbCountry = trim(row.country) || null;
+    const dbMint = trim(row.mint) || null;
+    const dbMintShort = trim(row.mint_short) || null;
     const dbObv = trim(row.image_obverse) || null;
     const dbRev = trim(row.image_reverse) || null;
     const dbBox = trim(row.image_box) || null;
@@ -114,6 +157,8 @@ async function main() {
       dbTitle !== title ||
       dbSeries !== canonSeries ||
       dbCountry !== canonCountry ||
+      dbMint !== canonMint ||
+      dbMintShort !== canonMintShort ||
       dbFaceValue !== canonFaceValue ||
       dbObv !== canonObv ||
       dbRev !== canonRev ||
@@ -126,6 +171,7 @@ async function main() {
     if (dryRun) {
       console.log("Обновить id=" + row.id + " " + catalogNumber + " " + (row.title || "").slice(0, 50));
       if (dbCountry !== canonCountry) console.log("  country: " + dbCountry + " -> " + canonCountry);
+      if (dbMint !== canonMint || dbMintShort !== canonMintShort) console.log("  mint: " + dbMint + " -> " + canonMint);
       if (dbObv !== canonObv) console.log("  image_obverse: ... -> " + (canonObv ? canonObv.slice(-40) : "null"));
       if (dbRev !== canonRev) console.log("  image_reverse: ... -> " + (canonRev ? canonRev.slice(-40) : "null"));
       if (dbSourceUrl !== canonSourceUrl) console.log("  source_url: " + (dbSourceUrl ? "был" : "не было") + " -> " + (canonSourceUrl ? "есть" : "нет"));
@@ -135,7 +181,7 @@ async function main() {
 
     await conn.execute(
       `UPDATE coins SET
-        title = ?, series = ?, country = ?, face_value = ?,
+        title = ?, series = ?, country = ?, face_value = ?, mint = ?, mint_short = ?,
         image_obverse = ?, image_reverse = ?, image_box = ?, image_certificate = ?,
         source_url = ?, release_date = ?, weight_g = ?
        WHERE id = ?`,
@@ -144,6 +190,8 @@ async function main() {
         canonSeries,
         canonCountry || "Австралия",
         canonFaceValue,
+        canonMint || "The Perth Mint",
+        canonMintShort || "Perth Mint",
         canonObv,
         canonRev,
         canonBox,

@@ -371,10 +371,11 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 <div className="relative group/btn inline-flex">
                   <a
                     href="/login"
-                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors cursor-pointer"
+                    className="px-4 py-2 rounded-[300px] bg-[#F1F1F2] flex items-center justify-center gap-2 text-[#11111B] text-[14px] font-medium hover:bg-[#E4E4EA] transition-colors cursor-pointer"
                     aria-label="Добавить в коллекцию"
                   >
                     <IconPlus size={22} stroke={2} />
+                    <span>Добавить в коллекцию</span>
                   </a>
                   <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
                     <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>

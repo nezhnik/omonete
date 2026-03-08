@@ -85,6 +85,9 @@ function extractYearAndSku(imgUrl) {
   const m = str.match(/\/coins\/(20\d{2})\/([a-z0-9]+)\//i) || str.match(/\/coins\/(\d{4})\/([a-z0-9]+)\//i);
   const archive = str.match(/\/coins\/01\.-archive\/(20\d{2}|19\d{2})\/([a-z0-9]+)\//i);
   if (archive) return { year: archive[1], sku: (archive[2] || "").toLowerCase() };
+  // архив 2012-2020: путь .../01.-archive/2012-2020/y20022dpad/ — одна папка на диапазон лет
+  const archive2012 = str.match(/\/coins\/01\.-archive\/2012-2020\/([a-z0-9]+)\//i);
+  if (archive2012) return { year: "2020", sku: (archive2012[1] || "").toLowerCase() };
   if (!m) return null;
   return { year: m[1], sku: (m[2] || "").toLowerCase() };
 }

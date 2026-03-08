@@ -18,12 +18,12 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2025-25X94AAA",
+    "catalog_number": "AU-PERTH-2020-18C59CAA",
     "catalog_suffix": "17y92baa",
     "price_display": "AUD 40.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-2oz-gold-proof-coin",
-    "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-rev.webp",
+    "image_obverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-2oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-2oz-gold-proof-coin-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -83,7 +83,7 @@
     "price": "AUD 40.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-2oz-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-rev.webp",
     "box": null,
     "certificate": null
