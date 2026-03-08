@@ -26,6 +26,7 @@ async function run() {
   });
 
   const columns = [
+    { name: "price_display", def: "VARCHAR(100) DEFAULT NULL COMMENT 'Цена для отображения (напр. AUD 317.27)'" },
     { name: "quality", def: "VARCHAR(50) DEFAULT NULL COMMENT 'Качество чеканки (АЦ, Пруф)'" },
     { name: "diameter_mm", def: "VARCHAR(50) DEFAULT NULL COMMENT 'Диаметр, мм'" },
     { name: "thickness_mm", def: "VARCHAR(50) DEFAULT NULL COMMENT 'Толщина, мм'" },

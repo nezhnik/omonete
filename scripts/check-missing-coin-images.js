@@ -8,7 +8,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 const MIN_VALID_SIZE = 1000;
 
 function catalogToBase(cat) {

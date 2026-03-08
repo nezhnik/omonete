@@ -19,9 +19,9 @@ const VALID_WEIGHTS = [
   "5 кг · 5000 грамм", "3 кг · 3000 грамм", "1 кг · 1000 грамм", "10 унций · 311 г", "5 унций · 155,5 г",
   "3 унции · 93,3 г", "2 унции · 62,2 г", "1 унция · 31,1 грамм", "1/2 унции · 15,55 грамм",
   "1/4 унции · 7,78 грамм", "1/8 унции · 3,89 грамм", "1/10 унции · 3,11 грамм", "1/25 унции · 1,24 грамм",
-  "1/100 унции · 0,31 грамм", "1/200 унции · 0,156 грамм", "1/1000 унции · 0,031 грамм",
+  "1/31,1 унции · 1 грамм", "1/62,2 унции · 0,5 грамм", "1/100 унции · 0,31 грамм", "1/200 унции · 0,156 грамм", "1/1000 унции · 0,031 грамм",
 ];
-const VALID_COUNTRIES = ["Австралия", "Соединённые Штаты Америки (США)", "Россия", "Германия"];
+/** Допустимые страны для URL — строятся по данным каталога (countryListByCount) */
 
 type CatalogCoin = {
   id: string;
@@ -32,6 +32,8 @@ type CatalogCoin = {
   faceValue?: string;
   imageUrl: string;
   imageUrls?: string[];
+  /** Роли по индексу: obverse, reverse, box, certificate — для отображения коробки/сертификата без скругления в карточке */
+  imageUrlRoles?: string[];
   seriesName?: string;
   metalCode?: string;
   metalCodes?: string[];
@@ -81,7 +83,7 @@ function parseCatalogState(searchParams: URLSearchParams) {
   const sort: CatalogSort = sortParam && VALID_SORT.includes(sortParam as CatalogSort) ? (sortParam as CatalogSort) : "new";
   const selectedMetals = searchParams.getAll("metal").filter((m) => VALID_METALS.includes(m));
   const selectedWeights = searchParams.getAll("weight").filter((w) => VALID_WEIGHTS.includes(w));
-  const selectedCountries = searchParams.getAll("country").filter((c) => VALID_COUNTRIES.includes(c));
+  const selectedCountries = searchParams.getAll("country").filter(Boolean);
   const selectedSeries = searchParams.getAll("series");
   const selectedMints = searchParams.getAll("mint");
   /** Без trim: пробелы сохраняются в инпуте; при поиске normalizeSearch обрежет */
@@ -240,13 +242,69 @@ function CatalogPageContent() {
   const [sortBottomDragging, setSortBottomDragging] = useState(false);
   const [filtersPanelAnimated, setFiltersPanelAnimated] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  /** На десктопе при открытых фильтрах — отступ справа для кнопки «Наверх», чтобы она была в блоке с монетами */
+  const [scrollBtnRightPx, setScrollBtnRightPx] = useState<number | null>(null);
   const sortDropdownRef = useRef<HTMLDivElement>(null);
   const sortBottomTouchStartY = useRef(0);
   const sortBottomPointerActive = useRef(false);
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const filterWrapperRef = useRef<HTMLDivElement | null>(null);
   const filterAsideRef = useRef<HTMLElement | null>(null);
+  const scrollRestoreRef = useRef<{ y: number; count: number } | null>(null);
   const { isAuthorized, inCollection, addToCollection, removeFromCollection } = useAuth();
+
+  const showPanel = filtersOpen || filtersClosing;
+
+  // Ширина колонки фильтров для позиции кнопки «Наверх» (десктоп, открыта панель)
+  useEffect(() => {
+    if (!showPanel || !isXl) {
+      setScrollBtnRightPx(null);
+      return;
+    }
+    const wrapper = filterWrapperRef.current;
+    if (!wrapper) return;
+    const update = () => {
+      const w = filterWrapperRef.current;
+      if (w) setScrollBtnRightPx(w.getBoundingClientRect().width + 24 + 56);
+    };
+    update();
+    window.addEventListener("resize", update);
+    const observer = new ResizeObserver(update);
+    observer.observe(wrapper);
+    return () => {
+      window.removeEventListener("resize", update);
+      observer.disconnect();
+    };
+  }, [showPanel, isXl]);
+
+  // Восстановление скролла при возврате из страницы монеты (кнопка «Назад» или браузер)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const savedY = sessionStorage.getItem("catalogScrollY");
+    const savedCount = sessionStorage.getItem("catalogDisplayedCount");
+    if (savedY != null && savedCount != null) {
+      const y = parseInt(savedY, 10);
+      const count = parseInt(savedCount, 10);
+      sessionStorage.removeItem("catalogScrollY");
+      sessionStorage.removeItem("catalogDisplayedCount");
+      if (!Number.isNaN(y) && y >= 0 && !Number.isNaN(count) && count > 0) {
+        scrollRestoreRef.current = { y, count };
+        setDisplayedCount(count);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    const pending = scrollRestoreRef.current;
+    if (!pending || displayedCount < pending.count) return;
+    scrollRestoreRef.current = null;
+    requestAnimationFrame(() => {
+      window.scrollTo(0, pending.y);
+      requestAnimationFrame(() => {
+        window.dispatchEvent(new CustomEvent("catalogScrollRestored"));
+      });
+    });
+  }, [displayedCount]);
   const handleToggleCollection = useCallback((id: string) => {
     if (inCollection(id)) removeFromCollection(id);
     else addToCollection(id);
@@ -415,8 +473,6 @@ function CatalogPageContent() {
     return () => cancelAnimationFrame(t);
   }, [filtersOpen]);
 
-  const showPanel = filtersOpen || filtersClosing;
-
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1280px)");
     setIsXl(mq.matches);
@@ -467,11 +523,25 @@ function CatalogPageContent() {
     };
   }, [filter, loading]);
 
+  /** Серии зависят от вкладки: «Все» — все серии, «Российские» — только у российских монет, «Иностранные» — только у иностранных */
   const seriesListByCount = useMemo(() => {
+    const list = filter === "all" ? coins : filter === "ru" ? coins.filter((c) => c.country === "Россия") : coins.filter((c) => c.country !== "Россия");
     const m: Record<string, number> = {};
-    coins.forEach((c) => {
+    list.forEach((c) => {
       const s = c.seriesName?.trim();
       if (s) m[s] = (m[s] ?? 0) + 1;
+    });
+    return Object.entries(m)
+      .sort((a, b) => b[1] - a[1])
+      .map(([name]) => name);
+  }, [coins, filter]);
+
+  /** Страны из каталога по количеству монет (для фильтра, без задезейбленных) */
+  const countryListByCount = useMemo(() => {
+    const m: Record<string, number> = {};
+    coins.forEach((c) => {
+      const country = (c as CatalogCoin).country?.trim();
+      if (country) m[country] = (m[country] ?? 0) + 1;
     });
     return Object.entries(m)
       .sort((a, b) => b[1] - a[1])
@@ -633,40 +703,57 @@ const mintListByCount = useMemo(() => {
     if (!wrapper || !aside) return;
 
     const updatePosition = () => {
-      const rect = wrapper.getBoundingClientRect();
+      const w = filterWrapperRef.current;
+      const a = filterAsideRef.current;
+      if (!w || !a) return;
+      const rect = w.getBoundingClientRect();
       const wrapperTop = rect.top + window.scrollY;
-      const wrapperHeight = wrapper.offsetHeight;
-      const asideHeight = aside.offsetHeight;
+      const wrapperHeight = w.offsetHeight;
+      const asideHeight = a.offsetHeight;
       const vh = window.innerHeight;
       const scrollY = window.scrollY;
       const reachedBottom = scrollY + vh >= wrapperTop + asideHeight;
       const pastColumn = scrollY >= wrapperTop + wrapperHeight - vh;
 
       if (pastColumn) {
-        aside.style.position = "relative";
-        aside.style.top = `${wrapperHeight - asideHeight}px`;
-        aside.style.left = "";
-        aside.style.width = "";
-        aside.style.bottom = "";
+        a.style.position = "relative";
+        a.style.top = `${wrapperHeight - asideHeight}px`;
+        a.style.left = "";
+        a.style.width = "";
+        a.style.bottom = "";
       } else if (reachedBottom) {
-        aside.style.position = "fixed";
-        aside.style.bottom = "0";
-        aside.style.top = "auto";
-        aside.style.left = `${rect.left}px`;
-        aside.style.width = `${rect.width}px`;
+        a.style.position = "fixed";
+        a.style.bottom = "0";
+        a.style.top = "auto";
+        a.style.left = `${rect.left}px`;
+        a.style.width = `${rect.width}px`;
       } else {
-        aside.style.position = "relative";
-        aside.style.top = "0";
-        aside.style.left = "";
-        aside.style.width = "";
-        aside.style.bottom = "";
+        a.style.position = "relative";
+        a.style.top = "0";
+        a.style.left = "";
+        a.style.width = "";
+        a.style.bottom = "";
       }
     };
 
     updatePosition();
+    // После возврата «Назад» скролл восстанавливается асинхронно — пересчитываем позицию при показе страницы и после восстановления скролла
+    const scheduleUpdate = () => {
+      requestAnimationFrame(() => requestAnimationFrame(updatePosition));
+    };
+    const onPageshow = scheduleUpdate;
+    const onScrollRestored = () => scheduleUpdate();
+    window.addEventListener("pageshow", onPageshow);
+    window.addEventListener("catalogScrollRestored", onScrollRestored);
+    const rafId = requestAnimationFrame(() => {
+      requestAnimationFrame(updatePosition);
+    });
     window.addEventListener("scroll", updatePosition, { passive: true });
     window.addEventListener("resize", updatePosition);
     return () => {
+      window.removeEventListener("pageshow", onPageshow);
+      window.removeEventListener("catalogScrollRestored", onScrollRestored);
+      cancelAnimationFrame(rafId);
       window.removeEventListener("scroll", updatePosition);
       window.removeEventListener("resize", updatePosition);
     };
@@ -907,6 +994,17 @@ const mintListByCount = useMemo(() => {
                         }
                       : undefined
                   }
+                  onClick={(e) => {
+                    const a = (e.target as HTMLElement).closest('a[href^="/coins/"]');
+                    if (a) {
+                      try {
+                        sessionStorage.setItem("catalogScrollY", String(window.scrollY));
+                        sessionStorage.setItem("catalogDisplayedCount", String(displayedCount));
+                      } catch {
+                        // ignore
+                      }
+                    }
+                  }}
                 >
                   {showSkeletons
                     ? Array.from({ length: SKELETON_COUNT_DESKTOP }, (_, i) => (
@@ -1112,7 +1210,8 @@ const mintListByCount = useMemo(() => {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed right-6 z-40 w-12 h-12 rounded-full bg-[#11111B] text-white hover:bg-[#27273a] flex items-center justify-center cursor-pointer transition-colors duration-150 bottom-4 sm:bottom-6"
+          className="fixed z-40 w-12 h-12 rounded-full bg-[#11111B] text-white hover:bg-[#27273a] flex items-center justify-center cursor-pointer transition-colors duration-150 bottom-4 sm:bottom-6"
+          style={scrollBtnRightPx != null ? { right: scrollBtnRightPx } : { right: 24 }}
           aria-label="Наверх"
         >
           <IconArrowUp size={24} stroke={2} className="shrink-0 block" />

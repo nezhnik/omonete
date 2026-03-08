@@ -92,7 +92,8 @@ async function main() {
     const titleEn = c.title_en || c.title || "";
     const titleRu = toRussianTitle(titleEn) || (c.title || "");
 
-    const mintage = c.mintage ? parseInt(String(c.mintage).replace(/\s/g, ""), 10) : null;
+    const rawMintage = c.mintage ? parseInt(String(c.mintage).replace(/\s/g, ""), 10) : null;
+    const mintage = rawMintage != null ? Math.round(rawMintage / 1000) * 1000 : null;
 
     const values = [
       titleRu,
@@ -105,8 +106,8 @@ async function main() {
       c.metal || "Серебро",
       c.metal_fineness || c.metalFineness || "999/1000",
       mintage,
-      c.mintage_display || null,
-      c.weight_g || c.weightG || "31,1035",
+      null,
+      c.weight_g || c.weightG || "31,1",
       c.weight_oz || c.weightOz || "1 унция",
       c.release_date || null,
       catalogNumber,

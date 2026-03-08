@@ -75,7 +75,7 @@ $doCopperBackfill = is_file(__DIR__ . '/.do-copper-backfill') || (getenv('BACKFI
 if ($doCopperBackfill) {
     if (is_file(__DIR__ . '/.do-copper-backfill')) @unlink(__DIR__ . '/.do-copper-backfill');
     $upd = $pdo->prepare("UPDATE metal_prices SET xcu = ? WHERE date = ?");
-    $sel = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date = ?");
+    $selRate = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date <= ? ORDER BY date DESC LIMIT 1");
     $fromYear = 2006;
     $toYear = (int)date('Y');
     for ($y = $fromYear; $y <= $toYear; $y++) {
@@ -91,8 +91,8 @@ if ($doCopperBackfill) {
             $dateStr = $dates[$i] ?? null;
             $usdPerTonne = isset($ranks[$i]) ? (float)$ranks[$i] : 0;
             if (!$dateStr || !$usdPerTonne) continue;
-            $sel->execute([$dateStr]);
-            $row = $sel->fetch(PDO::FETCH_OBJ);
+            $selRate->execute([$dateStr]);
+            $row = $selRate->fetch(PDO::FETCH_OBJ);
             if (!$row || !$row->usd_rub) continue;
             $xcu = round(($usdPerTonne / 1e6) * (float)$row->usd_rub * GRAMS_PER_TROY_OZ, 2);
             $upd->execute([$xcu, $dateStr]);
@@ -168,13 +168,14 @@ if ($workingDay) {
             $dates = $rc['copper']['dates'] ?? [];
             $ranks = $rc['copper']['ranks'] ?? [];
             $upd = $pdo->prepare("UPDATE metal_prices SET xcu = ? WHERE date = ?");
-            $sel = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date = ?");
+            // fallback: если курса на дату нет (выходной/задержка архива) — берём последний известный на эту дату
+            $selRate = $pdo->prepare("SELECT usd_rub FROM cbr_rates WHERE date <= ? ORDER BY date DESC LIMIT 1");
             for ($i = 0; $i < count($dates); $i++) {
                 $dateStr = $dates[$i] ?? null;
                 $usdPerTonne = isset($ranks[$i]) ? (float)$ranks[$i] : 0;
                 if (!$dateStr || !$usdPerTonne) continue;
-                $sel->execute([$dateStr]);
-                $r = $sel->fetch(PDO::FETCH_OBJ);
+                $selRate->execute([$dateStr]);
+                $r = $selRate->fetch(PDO::FETCH_OBJ);
                 if (!$r || !$r->usd_rub) continue;
                 $xcu = round(($usdPerTonne / 1e6) * (float)$r->usd_rub * GRAMS_PER_TROY_OZ, 2);
                 $upd->execute([$xcu, $dateStr]);

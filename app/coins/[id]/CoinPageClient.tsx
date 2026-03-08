@@ -29,6 +29,9 @@ export function CoinPageClient({ id, initialData }: Props) {
   const backHref = fromPortfolio ? "/portfolio" : catalogHref;
   const backLabel = fromPortfolio ? "Назад в коллекцию" : "Назад в каталог";
   const breadcrumbLabel = fromPortfolio ? "Моя коллекция" : "Каталог";
+  const isRussian = coin?.mintCountry === "Россия";
+  const catalogTabHref = isRussian ? "/catalog?tab=ru" : "/catalog?tab=foreign";
+  const catalogTabLabel = isRussian ? "Российские" : "Иностранные";
 
   useEffect(() => {
     if (fromPortfolio) return;
@@ -94,6 +97,14 @@ export function CoinPageClient({ id, initialData }: Props) {
           <Link href={backHref} className="hover:text-black shrink-0">
             {breadcrumbLabel}
           </Link>
+          {!fromPortfolio && (
+            <>
+              <span className="shrink-0">/</span>
+              <Link href={catalogTabHref} className="hover:text-black shrink-0">
+                {catalogTabLabel}
+              </Link>
+            </>
+          )}
           <span className="shrink-0">/</span>
           <span className="text-[#666666] min-w-0 truncate" title={cleanCoinTitle(coin.title)}>
             {cleanCoinTitle(coin.title)}

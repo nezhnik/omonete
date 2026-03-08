@@ -7,7 +7,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const COINS_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const COINS_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 // Порог: пиксель считаем «белым фоном», если все каналы >= этого значения. 235 = более агрессивная обрезка.
 const WHITE_THRESHOLD = 235;
 

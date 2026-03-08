@@ -21,6 +21,8 @@ type CoinCardProps = {
   inCollection?: boolean
   /** Квадратная/прямоугольная монета — не обрезаем по кругу */
   rectangular?: boolean
+  /** Роли изображений по индексу: obverse, reverse, box, certificate — на hover без скругления для box/cert */
+  imageUrlRoles?: string[]
   onToggleCollection?: (id: string) => void
   /** Если false, показываем тултип «авторизуйтесь» и ведём на страницу входа */
   isAuthorized?: boolean
@@ -44,7 +46,11 @@ export function CoinCard(props: CoinCardProps) {
     onToggleCollection,
     isAuthorized = false,
     rectangular = false,
+    imageUrlRoles,
   } = props
+
+  const isPackagingRole = (role: string | undefined) => role === "box" || role === "certificate"
+  const isPackaging = (i: number) => isPackagingRole(imageUrlRoles?.[i])
 
   const images = imageUrls?.length ? imageUrls : [imageUrl]
   const [hoverImageIndex, setHoverImageIndex] = useState(0)
@@ -97,7 +103,7 @@ export function CoinCard(props: CoinCardProps) {
           onMouseMove={handleImageMouseMove}
           onMouseLeave={handleImageMouseLeave}
         >
-          <div className={`w-full h-full flex items-center justify-center max-w-[17rem] max-h-[17rem] transition-transform duration-500 lg:group-hover:-translate-y-2 ${rectangular ? "rounded-2xl" : "rounded-full overflow-hidden"}`}>
+          <div className={`w-full h-full flex items-center justify-center max-w-[17rem] max-h-[17rem] transition-transform duration-500 lg:group-hover:-translate-y-2 ${rectangular || isPackaging(hoverImageIndex) ? "rounded-2xl overflow-hidden" : "rounded-full overflow-hidden"}`}>
             <img
               src={images[hoverImageIndex] ?? imageUrl}
               alt={cleanCoinTitle(title)}

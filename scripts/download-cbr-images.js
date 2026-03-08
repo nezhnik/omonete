@@ -13,7 +13,7 @@ const fs = require("fs");
 const path = require("path");
 
 const CBR_BASE = "https://www.cbr.ru/legacy/PhotoStore/img";
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 const LIMIT = process.argv.includes("--all") ? 10000 : 5;
 
 async function download(url) {
@@ -86,8 +86,8 @@ async function run() {
     }
 
     if (bufFromCbrR?.length > 0 && bufFromCbrJpg?.length > 0) {
-      const obversePathUrl = "/image/coins/" + cat + ".jpg";
-      const reversePathUrl = "/image/coins/" + cat + "r.jpg";
+      const obversePathUrl = "/image/coins/ru/" + cat + ".jpg";
+      const reversePathUrl = "/image/coins/ru/" + cat + "r.jpg";
       await conn.execute(
         "UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?",
         [obversePathUrl, reversePathUrl, cat]

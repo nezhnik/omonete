@@ -14,6 +14,8 @@ export type CoinDetailData = {
   seriesName?: string;
   imageUrl: string;
   imageUrls?: string[];
+  /** Роли по индексу: obverse | reverse | box | certificate — для квадратного превью коробки/сертификата */
+  imageUrlRoles?: string[];
   inCollection?: boolean;
   /** Монетный двор (полное наименование) */
   mintName: string;
@@ -35,6 +37,8 @@ export type CoinDetailData = {
   weightG?: string;
   /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — из БД weight_oz */
   weightOz?: string;
+  /** Форматированный вес для отображения (1/31,1 унции · 1 грамм и т.д.) */
+  weightLabel?: string;
   purity?: string;
   diameterMm?: string;
   thicknessMm?: string;
@@ -98,9 +102,13 @@ function SpecRow({
 const SWIPE_MIN_DISTANCE = 50;
 const SHOW_MONETIZATION_BLOCK = false;
 
+const isPackagingRole = (role: string | undefined) => role === "box" || role === "certificate";
+
 export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backLabel = "Назад", isAuthorized = false, onToggleCollection }: CoinDetailProps) {
   const images = coin.imageUrls?.length ? coin.imageUrls : [coin.imageUrl];
   const rectangular = !!coin.rectangular;
+  const roles = coin.imageUrlRoles;
+  const isPackaging = (i: number) => isPackagingRole(roles?.[i]);
   const [selectedImage, setSelectedImage] = useState(0);
   const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
@@ -209,7 +217,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
 
           <div className="flex flex-col gap-6">
             <div
-              className={`group/coin relative w-full aspect-square max-h-[540px] lg:max-h-[736px] flex items-center justify-center bg-white overflow-hidden ${rectangular ? "rounded-2xl" : "rounded-full"}`}
+              className={`group/coin relative w-full aspect-square max-h-[540px] lg:max-h-[736px] flex items-center justify-center bg-white overflow-hidden ${rectangular || isPackaging(selectedImage) ? "rounded-2xl" : "rounded-full"}`}
               onKeyDown={(e) => {
                 if (images.length <= 1) return;
                 if (e.key === "ArrowLeft") {
@@ -227,11 +235,21 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               role={images.length > 1 ? "region" : undefined}
               aria-label={images.length > 1 ? "Галерея изображений монеты" : undefined}
             >
-              <img
-                src={images[selectedImage] ?? coin.imageUrl}
-                alt={cleanCoinTitle(coin.title)}
-                className="w-full h-full max-h-[540px] lg:max-h-[736px] object-contain pointer-events-none select-none"
-              />
+              {isPackaging(selectedImage) ? (
+                <div className="w-full h-full p-4 sm:p-6 lg:p-8 flex items-center justify-center">
+                  <img
+                    src={images[selectedImage] ?? coin.imageUrl}
+                    alt={cleanCoinTitle(coin.title)}
+                    className="w-full h-full max-h-[540px] lg:max-h-[736px] pointer-events-none select-none object-contain"
+                  />
+                </div>
+              ) : (
+                <img
+                  src={images[selectedImage] ?? coin.imageUrl}
+                  alt={cleanCoinTitle(coin.title)}
+                  className="w-full h-full max-h-[540px] lg:max-h-[736px] pointer-events-none select-none object-contain"
+                />
+              )}
               {images.length > 1 && (
                 <>
                   <button
@@ -272,11 +290,11 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                     key={i}
                     type="button"
                     onClick={() => setSelectedImage(i)}
-                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center shrink-0 cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular ? "rounded-[0.5rem]" : "rounded-full"} ${
+                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center shrink-0 cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular || isPackaging(i) ? "rounded-[0.5rem]" : "rounded-full"} ${
                       i === selectedImage ? "outline outline-2 outline-[#11111B] outline-offset-[-1px]" : "outline outline-1 outline-[#E4E4EA] outline-offset-[-1px]"
                     }`}
                   >
-                    <img src={url} alt="" className="w-[72px] h-[72px] object-contain lg:w-[128px] lg:h-[128px]" />
+                    <img src={url} alt="" className={`w-[72px] h-[72px] lg:w-[128px] lg:h-[128px] ${isPackaging(i) ? "object-contain w-full h-full" : "object-contain"}`} />
                   </button>
                 ))}
               </div>
@@ -443,8 +461,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 {coin.weightG && (
                   <SpecRow label="Чистого металла не менее, гр." value={formatNumbersInString(coin.weightG)} />
                 )}
-                {coin.weightOz && (
-                  <SpecRow label="Вес в унциях" value={coin.weightOz} />
+                {(coin.weightLabel ?? coin.weightOz) && (
+                  <SpecRow label="Вес в унциях" value={coin.weightLabel ?? coin.weightOz} />
                 )}
                 {coin.purity && <SpecRow label="Проба" value={coin.purity} />}
                 {coin.rectangular && (coin.lengthMm || coin.widthMm) ? (

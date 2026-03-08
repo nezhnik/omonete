@@ -1,0 +1,6 @@
+Страницы каталога Perth Mint, где собрано ссылок меньше, чем карточек (36). Проверьте вручную.
+Формат: страница N — откройте каталог с page=N в URL.
+
+Страница 14 — карточек: 36, ссылок: 35 — URL: https://www.perthmint.com/shop/collector-coins?p_metal=Gold&p_metal=Pink+Gold&p_metal=Platinum&p_metal=Rose+Gold&p_metal=Silver&page=14&pageSize=36&query=&sortValue=4
+Страница 16 — карточек: 36, ссылок: 35 — URL: https://www.perthmint.com/shop/collector-coins?p_metal=Gold&p_metal=Pink+Gold&p_metal=Platinum&p_metal=Rose+Gold&p_metal=Silver&page=16&pageSize=36&query=&sortValue=4
+Страница 26 — карточек: 36, ссылок: 29 — URL: https://www.perthmint.com/shop/collector-coins?p_metal=Gold&p_metal=Pink+Gold&p_metal=Platinum&p_metal=Rose+Gold&p_metal=Silver&page=26&pageSize=36&query=&sortValue=4

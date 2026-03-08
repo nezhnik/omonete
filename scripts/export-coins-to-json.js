@@ -8,6 +8,7 @@ const crypto = require("crypto");
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
+const { roundSpec, formatWeightG, stripCountryFromFaceValue } = require("./format-coin-characteristics.js");
 
 const PLACEHOLDER = "/image/coin-placeholder.png";
 const STATE_FILE = path.join(__dirname, "..", "export-state.json");
@@ -46,6 +47,21 @@ function yearFromCatalogSuffix(suffix) {
   const yy = parseInt(String(suffix), 10);
   if (Number.isNaN(yy) || yy < 0 || yy > 99) return null;
   return yy <= 30 ? 2000 + yy : 1900 + yy;
+}
+
+/** Год из названия монеты (например "Giant Centipede 2026" → 2026), если в БД год не задан. */
+function yearFromTitle(title) {
+  const s = title != null ? String(title).trim() : "";
+  if (!s) return null;
+  const m = s.match(/(20\d{2}|19\d{2})/);
+  return m ? parseInt(m[1], 10) : null;
+}
+
+/** Числовые характеристики — до 1 знака: 31.107 → "31.1". */
+function formatSpecNum(v) {
+  if (v == null || v === "") return undefined;
+  const r = roundSpec(v);
+  return r != null ? String(r) : String(v).trim();
 }
 
 /** Убирает пробу из строки металла: "серебро 925/1000" → "Серебро". Проба остаётся в metal_fineness. */
@@ -95,9 +111,12 @@ const WEIGHT_LABELS = [
   { g: 31.1, label: "1 унция · 31,1 грамм", tol: 0.2 },
   { g: 15.55, label: "1/2 унции · 15,55 грамм", tol: 0.2 },
   { g: 7.78, label: "1/4 унции · 7,78 грамм", tol: 0.2 },
+  { g: 6.22, label: "1/5 унции · 6,22 грамм", tol: 0.2 },
   { g: 3.89, label: "1/8 унции · 3,89 грамм", tol: 0.2 },
   { g: 3.11, label: "1/10 унции · 3,11 грамм", tol: 0.2 },
   { g: 1.24, label: "1/25 унции · 1,24 грамм", tol: 0.05 },
+  { g: 1, label: "1/31,1 унции · 1 грамм", tol: 0.05 },
+  { g: 0.5, label: "1/62,2 унции · 0,5 грамм", tol: 0.05 },
   { g: 0.31, label: "1/100 унции · 0,31 грамм", tol: 0.02 },
   { g: 0.156, label: "1/200 унции · 0,156 грамм", tol: 0.01 },
   { g: 0.031, label: "1/1000 унции · 0,031 грамм", tol: 0.005 },
@@ -123,12 +142,24 @@ const WEIGHT_OZ_TO_LABEL = {
   "1 унция": "1 унция · 31,1 грамм",
   "1/2 унции": "1/2 унции · 15,55 грамм",
   "1/4 унции": "1/4 унции · 7,78 грамм",
+  "1/5 унции": "1/5 унции · 6,22 грамм",
+  "1/5": "1/5 унции · 6,22 грамм",
   "1/8 унции": "1/8 унции · 3,89 грамм",
   "1/10 унции": "1/10 унции · 3,11 грамм",
   "1/25 унции": "1/25 унции · 1,24 грамм",
   "1/100 унции": "1/100 унции · 0,31 грамм",
+  "1/100": "1/100 унции · 0,31 грамм",
   "1/200 унции": "1/200 унции · 0,156 грамм",
   "1/1000 унции": "1/1000 унции · 0,031 грамм",
+  "1/1000": "1/1000 унции · 0,031 грамм",
+  "1/31,1 унции": "1/31,1 унции · 1 грамм",
+  "1/31.1": "1/31,1 унции · 1 грамм",
+  "1/31,1": "1/31,1 унции · 1 грамм",
+  "1 г": "1/31,1 унции · 1 грамм",
+  "1/62,2 унции": "1/62,2 унции · 0,5 грамм",
+  "1/62.2": "1/62,2 унции · 0,5 грамм",
+  "1/62,2": "1/62,2 унции · 0,5 грамм",
+  "0,5 г": "1/62,2 унции · 0,5 грамм",
 };
 function getWeightLabel(weightG, weightOz) {
   const oz = weightOz && String(weightOz).trim();
@@ -149,11 +180,14 @@ function hasImage(r) {
 
 /** Экспортируем все монеты. Без картинок — placeholder. Иностранные монеты добавляются сначала без изображений. */
 
-/** Какую сторону показывать первой: "obverse" (уникальный аверс) или "reverse" (орёл). Читаем из coin-display-config.json */
-function getFirstImageSide() {
+/** Какую сторону показывать первой. По умолчанию — firstImage; для дворов из firstImageReverseMints — "reverse" (напр. Perth). */
+function getFirstImageSide(mint) {
   try {
     const p = path.join(__dirname, "..", "coin-display-config.json");
     const data = JSON.parse(fs.readFileSync(p, "utf8"));
+    const reverseMints = Array.isArray(data.firstImageReverseMints) ? data.firstImageReverseMints.map((x) => String(x).trim()) : [];
+    const mintStr = mint != null && String(mint).trim() ? String(mint).trim() : "";
+    if (mintStr && reverseMints.some((m) => m === mintStr)) return "reverse";
     return data.firstImage === "reverse" ? "reverse" : "obverse";
   } catch {
     return "obverse";
@@ -171,7 +205,22 @@ function getRectangularCatalogBases() {
   }
 }
 
-function isRectangularCoin(catalogNumber, rectangularBases) {
+/** Прямоугольные по id (иностранные, напр. Stranger Things Season 1–4). */
+function getRectangularCoinIds() {
+  try {
+    const p = path.join(__dirname, "..", "rectangular-coin-ids.json");
+    const arr = JSON.parse(fs.readFileSync(p, "utf8"));
+    return Array.isArray(arr) ? arr.map((x) => String(x).trim()).filter(Boolean) : [];
+  } catch {
+    return [];
+  }
+}
+
+function isRectangularCoin(catalogNumber, rectangularBases, rectangularIds, id, lengthMm, widthMm) {
+  if (id && rectangularIds.length > 0 && rectangularIds.includes(String(id))) return true;
+  const hasLen = lengthMm != null && String(lengthMm).trim() !== "";
+  const hasWid = widthMm != null && String(widthMm).trim() !== "";
+  if (hasLen && hasWid) return true;
   if (!catalogNumber || rectangularBases.length === 0) return false;
   const cat = String(catalogNumber).trim();
   return rectangularBases.some((base) => cat === base || cat.startsWith(base + "-"));
@@ -181,8 +230,7 @@ async function run() {
   const incremental = process.argv.includes("--incremental");
   if (incremental) console.log("Режим: инкрементальный (только изменённые/новые)");
 
-  const firstImageSide = getFirstImageSide();
-  console.log("Первая картинка:", firstImageSide === "reverse" ? "реверс (орёл)" : "аверс (уникальная)");
+  console.log("Первая картинка: по конфигу (obverse по умолчанию, reverse для firstImageReverseMints)");
   const url = process.env.DATABASE_URL;
   if (!url) {
     console.error("DATABASE_URL не задан в .env");
@@ -218,12 +266,18 @@ async function run() {
   let rows;
   try {
     [rows] = await conn.execute(
-      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm, price_display
        FROM coins ORDER BY release_date DESC, id DESC`
     );
   } catch (err) {
     if (err.code === "ER_BAD_FIELD_ERROR") {
-      if (/weight_oz/.test(err.message)) {
+      if (/price_display/.test(err.message)) {
+        [rows] = await conn.execute(
+          `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+           FROM coins ORDER BY release_date DESC, id DESC`
+        );
+        rows.forEach((r) => { r.price_display = null; });
+      } else if (/weight_oz/.test(err.message)) {
         [rows] = await conn.execute(
           `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, weight_g
            FROM coins ORDER BY release_date DESC, id DESC`
@@ -275,28 +329,35 @@ async function run() {
   // Монеты без тиража не выводим в каталог (считаем, что их нет)
   const rowsToExport = rows.filter((r) => r.mintage != null && Number(r.mintage) !== 0);
   const rectangularBases = getRectangularCatalogBases();
+  const rectangularIds = getRectangularCoinIds();
 
   const listCoins = rowsToExport.map((r) => {
+    const firstImageSide = getFirstImageSide(r.mint);
     const imageObverse = r.image_obverse;
     const imageReverse = r.image_reverse;
     const imageUrls = r.image_urls;
     const imageBox = r.image_box;
     const imageCertificate = r.image_certificate;
     const releaseDate = r.release_date;
-    const year = yearFromCatalogSuffix(r.catalog_suffix) ?? (releaseDate ? new Date(releaseDate).getFullYear() : 0);
+    const year =
+      yearFromCatalogSuffix(r.catalog_suffix) ??
+      (releaseDate ? new Date(releaseDate).getFullYear() : null) ??
+      yearFromTitle(r.title) ??
+      0;
     const reverse = reverseUrl(imageReverse);
     const obverse = obverseUrl(imageObverse);
     const imageUrl = firstImageSide === "reverse" ? (reverse ?? obverse ?? PLACEHOLDER) : (obverse ?? reverse ?? PLACEHOLDER);
     const imageUrlsOut = [];
+    const imageUrlRoles = [];
     if (firstImageSide === "reverse") {
-      if (reverse) imageUrlsOut.push(reverse);
-      if (obverse) imageUrlsOut.push(obverse);
+      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
+      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
     } else {
-      if (obverse) imageUrlsOut.push(obverse);
-      if (reverse) imageUrlsOut.push(reverse);
+      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
+      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
     }
-    if (imageBox?.trim()) imageUrlsOut.push(imageBox.trim());
-    if (imageCertificate?.trim()) imageUrlsOut.push(imageCertificate.trim());
+    if (imageBox?.trim()) { imageUrlsOut.push(imageBox.trim()); imageUrlRoles.push("box"); }
+    if (imageCertificate?.trim()) { imageUrlsOut.push(imageCertificate.trim()); imageUrlRoles.push("certificate"); }
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...imageUrls);
     const { code: metalCode } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
@@ -309,9 +370,10 @@ async function run() {
       titleEn: r.title_en && String(r.title_en).trim() ? String(r.title_en).trim() : undefined,
       country: r.country ?? "Россия",
       year: year ?? 0,
-      faceValue: r.face_value ?? undefined,
+      faceValue: (stripCountryFromFaceValue(r.face_value) || r.face_value) ?? undefined,
       imageUrl,
       imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
+      imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
       seriesName: r.series ?? undefined,
       metalCode: metalCode ?? undefined,
       metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
@@ -321,7 +383,7 @@ async function run() {
       mintLogoUrl: r.mint && mintLogoMap.get(String(r.mint).trim()) ? mintLogoMap.get(String(r.mint).trim()) : undefined,
       weightLabel: weightLabel ?? undefined,
       weightG: weightG ?? undefined,
-      rectangular: isRectangularCoin(r.catalog_number, rectangularBases),
+      rectangular: isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
     };
   });
 
@@ -379,6 +441,7 @@ async function run() {
   let done = 0;
   let written = 0;
   for (const r of rowsToExport) {
+    const firstImageSide = getFirstImageSide(r.mint);
     const imageUrls = r.image_urls;
     const catalogNumber = r.catalog_number;
     const imageObverse = r.image_obverse;
@@ -389,18 +452,32 @@ async function run() {
     const reverse = reverseUrl(imageReverse);
     const firstImage = firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? "");
     const imageUrlsOut = [];
+    const imageUrlRoles = [];
     if (firstImageSide === "reverse") {
-      if (reverse) imageUrlsOut.push(reverse);
-      if (obverse) imageUrlsOut.push(obverse);
+      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
+      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
     } else {
-      if (obverse) imageUrlsOut.push(obverse);
-      if (reverse) imageUrlsOut.push(reverse);
+      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
+      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
     }
-    if (imageBox?.trim()) imageUrlsOut.push(imageBox.trim());
-    if (imageCertificate?.trim()) imageUrlsOut.push(imageCertificate.trim());
+    if (imageBox?.trim()) { imageUrlsOut.push(imageBox.trim()); imageUrlRoles.push("box"); }
+    if (imageCertificate?.trim()) { imageUrlsOut.push(imageCertificate.trim()); imageUrlRoles.push("certificate"); }
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...imageUrls);
     const releaseDate = r.release_date;
-    const year = yearFromCatalogSuffix(r.catalog_suffix) ?? (releaseDate ? new Date(releaseDate).getFullYear() : 0);
+    const titleStr = [r.title, r.title_en].filter(Boolean).join(" ");
+    const releaseYear = releaseDate ? (() => {
+      const y = new Date(releaseDate).getFullYear();
+      return typeof y === "number" && !Number.isNaN(y) && y >= 1900 && y <= 2100 ? y : null;
+    })() : null;
+    let yearRaw =
+      yearFromCatalogSuffix(r.catalog_suffix) ??
+      releaseYear ??
+      yearFromTitle(titleStr || r.title || r.title_en) ??
+      yearFromTitle(r.title) ??
+      yearFromTitle(r.title_en) ??
+      0;
+    let year = Number(yearRaw) || 0;
+    if (year === 0) year = yearFromTitle(r.title) ?? yearFromTitle(r.title_en) ?? 0;
 
     const { code: metalCode, color: metalColor } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
@@ -410,29 +487,31 @@ async function run() {
       seriesName: r.series ?? undefined,
       imageUrl: firstImage || PLACEHOLDER,
       imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
+      imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
       inCollection: false,
       mintName: r.mint ?? "—",
       mintShort: r.mint_short ?? undefined,
       mintCountry: r.country ?? "Россия",
       year,
-      faceValue: r.face_value ?? "—",
+      faceValue: (stripCountryFromFaceValue(r.face_value) || r.face_value) ?? "—",
       metal: metalOnly(r.metal),
       metalCode: metalCode ?? undefined,
       metalColor: metalColor ?? undefined,
       metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
       mintage: r.mintage ?? undefined,
       mintageDisplay: r.mintage_display ?? undefined,
-      weightG: r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined,
+      weightG: formatWeightG(r.weight_g) ?? (r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined),
       weightOz: r.weight_oz != null && r.weight_oz !== "" ? String(r.weight_oz).trim() : undefined,
       purity: r.metal_fineness ?? undefined,
       quality: r.quality ?? undefined,
-      diameterMm: r.diameter_mm ?? undefined,
-      thicknessMm: r.thickness_mm ?? undefined,
-      lengthMm: r.length_mm ?? undefined,
-      widthMm: r.width_mm ?? undefined,
+      diameterMm: formatSpecNum(r.diameter_mm) ?? r.diameter_mm ?? undefined,
+      thicknessMm: formatSpecNum(r.thickness_mm) ?? r.thickness_mm ?? undefined,
+      lengthMm: formatSpecNum(r.length_mm) ?? r.length_mm ?? undefined,
+      widthMm: formatSpecNum(r.width_mm) ?? r.width_mm ?? undefined,
       catalogSuffix: r.catalog_suffix ?? undefined,
-      rectangular: isRectangularCoin(r.catalog_number, rectangularBases),
+      rectangular: isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
       mintLogoUrl: r.mint && mintLogoMap.get(String(r.mint).trim()) ? mintLogoMap.get(String(r.mint).trim()) : undefined,
+      priceDisplay: (r.price_display && String(r.price_display).trim()) || undefined,
     };
 
     const seriesName = r.series;
@@ -447,19 +526,19 @@ async function run() {
         const { code: metalCode, color: metalColor } = getMetalCodeAndColor(s.metal);
         const metalCodes = getMetalCodes(s.metal);
         const metalName = metalOnly(s.metal);
-        const weightG = s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined;
+        const weightG = formatWeightG(s.weight_g) ?? (s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined);
         return {
           id: String(s.id),
           title: s.title,
           seriesName: s.series ?? undefined,
-          faceValue: s.face_value ?? "—",
+          faceValue: (stripCountryFromFaceValue(s.face_value) || s.face_value) ?? "—",
           imageUrl: si2 || PLACEHOLDER,
           metalCode: metalCode ?? undefined,
           metalColor: metalColor ?? undefined,
           metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
           metalName: metalName && metalName !== "—" ? metalName : undefined,
           weightG,
-          rectangular: isRectangularCoin(s.catalog_number, rectangularBases),
+          rectangular: isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm),
         };
       });
     }

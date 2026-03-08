@@ -12,7 +12,7 @@ const path = require("path");
 const fs = require("fs");
 const mysql = require("mysql2/promise");
 
-const COINS_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const COINS_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 const MAX_SIDE = 1200; // как в download-and-optimize-coins.js
 const WEBP_QUALITY = 85; // 85 — визуально без потери, размер меньше чем при 90
 
@@ -32,7 +32,7 @@ async function run() {
   const files = fs.readdirSync(COINS_DIR);
   const pngs = files.filter((f) => /^Червонец \d{4}r?\.png$/i.test(f));
   if (pngs.length === 0) {
-    console.log("В папке public/image/coins не найдено файлов вида «Червонец YYYY.png» / «Червонец YYYYr.png»");
+    console.log("В папке public/image/coins/ru не найдено файлов вида «Червонец YYYY.png» / «Червонец YYYYr.png»");
     process.exit(0);
   }
 
@@ -90,8 +90,8 @@ async function run() {
     const year = parseInt(yearStr, 10);
     const cat = YEAR_TO_CATALOG[year];
     if (!cat || !paths.obverse || !paths.r) continue;
-    const obversePath = `/image/coins/${cat}.webp`;
-    const reversePath = `/image/coins/${cat}r.webp`;
+    const obversePath = `/image/coins/ru/${cat}.webp`;
+    const reversePath = `/image/coins/ru/${cat}r.webp`;
     const [res] = await conn.execute(
       `UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?`,
       [obversePath, reversePath, cat]

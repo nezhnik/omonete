@@ -14,7 +14,7 @@ const path = require("path");
 const sharp = require("sharp");
 
 const CBR_BASE = "https://www.cbr.ru/legacy/PhotoStore/img";
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 const LIMIT = process.argv.includes("--all") ? 10000 : 5;
 
 // Оптимизация: макс. 1200px по длинной стороне, WebP quality 88 (почти без потери качества, размер меньше)
@@ -110,8 +110,8 @@ async function run() {
     }
 
     if (bufFromCbrR?.length > 0 && bufFromCbrJpg?.length > 0) {
-      const obversePathUrl = "/image/coins/" + obverseWebp;
-      const reversePathUrl = "/image/coins/" + reverseWebp;
+      const obversePathUrl = "/image/coins/ru/" + obverseWebp;
+      const reversePathUrl = "/image/coins/ru/" + reverseWebp;
       await conn.execute(
         "UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?",
         [obversePathUrl, reversePathUrl, cat]

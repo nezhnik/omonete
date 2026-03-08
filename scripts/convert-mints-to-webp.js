@@ -52,6 +52,10 @@ Promise.all(
     const outBase = baseToSlug[base] ?? base;
     const src = path.join(DIR, f);
     const dest = path.join(DIR, outBase + ".webp");
+    const srcMtime = fs.statSync(src).mtimeMs;
+    if (fs.existsSync(dest) && fs.statSync(dest).mtimeMs >= srcMtime) {
+      return Promise.resolve(); // WebP новее PNG — пропуск
+    }
     return sharp(src)
       .webp({ quality: 90 })
       .toFile(dest)

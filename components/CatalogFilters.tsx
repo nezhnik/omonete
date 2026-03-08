@@ -32,14 +32,16 @@ const weightOptionsFull = [
   "2 унции · 62,2 г",
   ...weightOptionsDefault,
   "1/25 унции · 1,24 грамм",
+  "1/31,1 унции · 1 грамм",
+  "1/62,2 унции · 0,5 грамм",
   "1/100 унции · 0,31 грамм",
   "1/200 унции · 0,156 грамм",
   "1/1000 унции · 0,031 грамм",
 ];
 
-const countries = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Германия"];
-/** Пока неактивны: монет в каталоге ещё нет */
-const COUNTRY_DISABLED = ["Австралия", "Германия"];
+/** Порядок стран в фильтре; раскрытие как у весов (сначала топ, по кнопке — все) */
+const countriesDefault = ["Россия", "Соединённые Штаты Америки (США)", "Австралия"];
+const countriesFull = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Тувалу", "Ниуэ"];
 
 /** Вес: слева унции/кг, справа граммы (для раскладки space-between) */
 const WEIGHT_LEFT: Record<string, string> = {
@@ -56,6 +58,8 @@ const WEIGHT_LEFT: Record<string, string> = {
   "1/8 унции · 3,89 грамм": "1/8 oz",
   "1/10 унции · 3,11 грамм": "1/10 oz",
   "1/25 унции · 1,24 грамм": "1/25 oz",
+  "1/31,1 унции · 1 грамм": "1/31.1 oz",
+  "1/62,2 унции · 0,5 грамм": "1/62.2 oz",
   "1/100 унции · 0,31 грамм": "1/100 oz",
   "1/200 унции · 0,156 грамм": "1/200 oz",
   "1/1000 унции · 0,031 грамм": "1/1000 oz",
@@ -74,6 +78,8 @@ const WEIGHT_RIGHT: Record<string, string> = {
   "1/8 унции · 3,89 грамм": "3,89 гр.",
   "1/10 унции · 3,11 грамм": "3,11 гр.",
   "1/25 унции · 1,24 грамм": "1,24 гр.",
+  "1/31,1 унции · 1 грамм": "1 гр.",
+  "1/62,2 унции · 0,5 грамм": "0,5 гр.",
   "1/100 унции · 0,31 грамм": "0,31 гр.",
   "1/200 унции · 0,156 грамм": "0,156 гр.",
   "1/1000 унции · 0,031 грамм": "0,031 гр.",
@@ -193,6 +199,7 @@ export function CatalogFilters({
   hideSearch = false,
 }: CatalogFiltersProps) {
   const [weightListExpanded, setWeightListExpanded] = useState(false);
+  const [countryListExpanded, setCountryListExpanded] = useState(false);
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
   const [mintListExpanded, setMintListExpanded] = useState(false);
 
@@ -335,14 +342,22 @@ export function CatalogFilters({
         />
       </div>
 
-      {/* Страна: Россия и США активны, Австралия и Германия — пока disabled */}
+      {/* Страна: раскрытие как у весов (топ-3 по умолчанию, «Показать все» — все 5) */}
       <div className="flex flex-col gap-4">
-        <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
+          <button
+            type="button"
+            onClick={() => setCountryListExpanded((v) => !v)}
+            className="text-[16px] font-normal leading-[22.4px] text-[#656565] shrink-0"
+          >
+            {countryListExpanded ? "Свернуть" : "Показать все"}
+          </button>
+        </div>
         <FilterChecklist
-          items={countries}
+          items={countryListExpanded ? countriesFull : countriesDefault}
           selectedValues={selectedCountries}
           onChange={onCountryChange ?? (() => {})}
-          disabledItems={COUNTRY_DISABLED}
         />
       </div>
 

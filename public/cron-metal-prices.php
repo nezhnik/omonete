@@ -12,6 +12,7 @@ $CBR_DAILY_JSON = 'https://www.cbr-xml-daily.ru/daily_json.js';
 $CBR_ARCHIVE = 'https://www.cbr-xml-daily.ru/archive';
 $RUSCABLE_URL = 'https://www.ruscable.ru/quotation/assets/ajax/lme.php';
 $CBR_COD = [1 => 'xau', 2 => 'xag', 3 => 'xpt', 4 => 'xpd'];
+const GRAMS_PER_TROY_OZ = 31.1035;
 
 // Загрузка .env
 $envPath = __DIR__ . '/.env';
@@ -103,7 +104,7 @@ if ($doCopperBackfill) {
             if (!$dateStr || !$usdPerTonne) continue;
             $usdRub = getUsdRubForDateCopper($pdo, $dateStr);
             if ($usdRub === null || $usdRub <= 0) continue;
-            $xcu = ($usdPerTonne / 1e6) * $usdRub;
+            $xcu = ($usdPerTonne / 1e6) * $usdRub * GRAMS_PER_TROY_OZ;
             $ins->execute([$dateStr, round($xcu, 4)]);
             $n++;
         }
@@ -183,7 +184,7 @@ if ($workingDay) {
                 if (!$dateStr || !$usdPerTonne) continue;
                 $usdRub = getUsdRubForDateCopper($pdo, $dateStr);
                 if ($usdRub === null || $usdRub <= 0) continue;
-                $xcu = ($usdPerTonne / 1e6) * $usdRub;
+                $xcu = ($usdPerTonne / 1e6) * $usdRub * GRAMS_PER_TROY_OZ;
                 $ins->execute([$dateStr, round($xcu, 4)]);
             }
         }

@@ -44,8 +44,8 @@ async function run() {
 
   for (const cat of CATALOGS) {
     const base = cat === "3213-0004-ЛМД" ? "3213-0004" : cat;
-    const obverse = `/image/coins/${base}.webp`;
-    const reverse = `/image/coins/${base}r.webp`;
+    const obverse = `/image/coins/ru/${base}.webp`;
+    const reverse = `/image/coins/ru/${base}r.webp`;
     const [res] = await conn.execute(
       `UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?`,
       [obverse, reverse, cat]

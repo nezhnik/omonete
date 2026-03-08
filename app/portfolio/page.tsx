@@ -157,6 +157,8 @@ type ApiCoin = {
   mintageDisplay?: string;
   weightG?: string;
   rectangular?: boolean;
+  /** Цена для отображения (напр. AUD 317.27), с Perth Mint и др. */
+  priceDisplay?: string;
 };
 
 /** Нормализует строку для поиска: нижний регистр, лишние пробелы убраны */
@@ -205,6 +207,7 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
     coinPrice = 1200 + index * 150;
     metalPrice = 900 + index * 80;
   }
+  const hasStoredPrice = coin.priceDisplay && String(coin.priceDisplay).trim();
   return {
     id: coin.id,
     imageUrl: coin.imageUrl || "/image/coin-placeholder.png",
@@ -220,7 +223,7 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
     metalLabel,
     mintage: mintageStr,
     buyPrice: formatNumber(buyPrice),
-    coinPrice: `~ ${formatNumber(coinPrice)}`,
+    coinPrice: hasStoredPrice ? coin.priceDisplay!.trim() : `~ ${formatNumber(coinPrice)}`,
     metalPrice: formatNumber(metalPrice),
     weightG: coin.weightG,
     rectangular: coin.rectangular ?? false,

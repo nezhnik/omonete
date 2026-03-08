@@ -19,7 +19,7 @@ const sharp = require("sharp");
 const DZI_PAGE = "https://www.cbr.ru/dzi/";
 const BASE = "https://www.cbr.ru";
 const LEGACY_IMG_BASE = BASE + "/legacy/PhotoStore/img";
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 const PROGRESS_FILE = path.join(__dirname, ".download-dzi-by-base-progress.json");
 const MIN_VALID_SIZE = 1000;
 const limitArg = process.argv.find((a) => /^\d+$/.test(a));
@@ -264,7 +264,7 @@ async function run() {
       if (!ONLY_BASES && obverseExists && reverseExists) {
         await dbExecute(
           `UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?`,
-          ["/image/coins/" + obverseWebp, "/image/coins/" + reverseWebp, cat]
+          ["/image/coins/ru/" + obverseWebp, "/image/coins/ru/" + reverseWebp, cat]
         );
         await new Promise((r) => setTimeout(r, 50));
         continue;
@@ -304,8 +304,8 @@ async function run() {
         await new Promise((r) => setTimeout(r, 15000));
       }
 
-      const obversePathDb = obverseOk ? "/image/coins/" + obverseWebp : null;
-      const reversePathDb = reverseOk ? "/image/coins/" + reverseWebp : null;
+      const obversePathDb = obverseOk ? "/image/coins/ru/" + obverseWebp : null;
+      const reversePathDb = reverseOk ? "/image/coins/ru/" + reverseWebp : null;
       await dbExecute(
         `UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?`,
         [obversePathDb, reversePathDb, cat]

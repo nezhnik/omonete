@@ -44,7 +44,9 @@
     "ucoin:preview": "node scripts/ucoin-parse-preview.js",
     "db:ensure-title-en": "node scripts/ensure-title-en-column.js",
     "coins:migrate-images-to-folders": "node scripts/migrate-coins-images-to-folders.js",
-    "perth:fetch": "node scripts/fetch-perth-mint-coin.js"
+    "perth:listing": "node scripts/fetch-perth-mint-listing.js",
+    "perth:fetch": "node scripts/fetch-perth-mint-coin.js",
+    "perth:import": "node scripts/import-perth-mint-to-db.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

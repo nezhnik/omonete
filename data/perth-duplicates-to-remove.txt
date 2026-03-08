@@ -1,0 +1,12 @@
+Дубликаты Perth: правильная монета (оставляем) vs дубликат (удалить). Ссылки относительные: /coins/{id}/
+Сгенерировано: 2026-03-08T08:44:50.398Z
+
+--- Группа 1 ---
+Правильная (оставляем): /coins/4438/ — «Diwali 1oz Silver Gilded Medallion» [Австралия]
+Дубликат (удалить):     /coins/4819/ — «Diwali 1oz Silver Gilded Medallion» [Тувалу]
+
+--- Группа 2 ---
+Правильная (оставляем): /coins/4208/ — «Wedding 2026 1oz Silver Proof Coin» [Австралия]
+Дубликат (удалить):     /coins/5180/ — «Wedding 2026 1oz Silver Proof Coin» [Тувалу]
+
+Для удаления дубликатов: node scripts/remove-perth-country-duplicates.js --do

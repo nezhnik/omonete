@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-03-08T08:42:22.844Z",
+  "note": "Дубликаты по названию: одна и та же монета с Тувалу и Австралия (без фильтра по source_url).",
+  "total_groups": 2,
+  "total_duplicate_records": 5,
+  "groups": [
+    {
+      "title_normalized": "diwali 1oz silver gilded medallion",
+      "title_display": "Diwali 1oz Silver Gilded Medallion",
+      "count": 3,
+      "records": [
+        {
+          "id": 4438,
+          "title": "Diwali 1oz Silver Gilded Medallion",
+          "country": "Австралия",
+          "source_url": "https://www.perthmint.com/shop/collector-coins/coins/diwali-2023-1oz-silver-gilded-medallion",
+          "catalog_number": "AU-PERTH-2022-22N31AAA",
+          "mint": "The Perth Mint",
+          "face_value": null,
+          "metal": "Серебро",
+          "release_date": "Thu Jan 01 2026 00:00:00 GMT+0300 (Moscow Standard Time)",
+          "link": "/coins/4438/"
+        },
+        {
+          "id": 5104,
+          "title": "Diwali 1oz Silver Gilded Medallion",
+          "country": "Австралия",
+          "source_url": "https://www.perthmint.com/shop/collector-coins/coins/diwali-2022-1oz-silver-gilded-medallion-en.aspx",
+          "catalog_number": "AU-PERTH-2022-22N31AAA",
+          "mint": "The Perth Mint",
+          "face_value": null,
+          "metal": "Серебро",
+          "release_date": "Sat Jan 01 2022 00:00:00 GMT+0300 (Moscow Standard Time)",
+          "link": "/coins/5104/"
+        },
+        {
+          "id": 4819,
+          "title": "Diwali 1oz Silver Gilded Medallion",
+          "country": "Тувалу",
+          "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2024-diwali-1oz-silver-gilded-medallion",
+          "catalog_number": "AU-PERTH-2024-24S17AAA",
+          "mint": "The Perth Mint",
+          "face_value": "1 доллар (Тувалу)",
+          "metal": "Серебро",
+          "release_date": "Mon Jan 01 2024 00:00:00 GMT+0300 (Moscow Standard Time)",
+          "link": "/coins/4819/"
+        }
+      ]
+    },
+    {
+      "title_normalized": "wedding 2026 1oz silver proof coin",
+      "title_display": "Wedding 2026 1oz Silver Proof Coin",
+      "count": 2,
+      "records": [
+        {
+          "id": 4208,
+          "title": "Wedding 2026 1oz Silver Proof Coin",
+          "country": "Австралия",
+          "source_url": "https://www.perthmint.com/shop/collector-coins/coins/wedding-2026-1oz-silver-proof-coin",
+          "catalog_number": "AU-PERTH-2026-26X34AAA",
+          "mint": "The Perth Mint",
+          "face_value": "1 доллар (Австралия)",
+          "metal": "Серебро",
+          "release_date": "Thu Jan 01 2026 00:00:00 GMT+0300 (Moscow Standard Time)",
+          "link": "/coins/4208/"
+        },
+        {
+          "id": 5180,
+          "title": "Wedding 2026 1oz Silver Proof Coin",
+          "country": "Тувалу",
+          "source_url": null,
+          "catalog_number": "AU-PERTH-2026-26X34AAA",
+          "mint": "The Perth Mint",
+          "face_value": "1 доллар (Тувалу)",
+          "metal": "Серебро",
+          "release_date": "Thu Jan 01 2026 00:00:00 GMT+0300 (Moscow Standard Time)",
+          "link": "/coins/5180/"
+        }
+      ]
+    }
+  ]
+}

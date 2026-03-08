@@ -17,7 +17,7 @@ const sharp = require("sharp");
 const DZI_PAGE = "https://www.cbr.ru/dzi/";
 const BASE = "https://www.cbr.ru";
 const LEGACY_IMG_BASE = BASE + "/legacy/PhotoStore/img";
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "ru");
 const limitArg = process.argv.find((a) => /^\d+$/.test(a));
 const LIMIT = process.argv.includes("--all") ? 10000 : (limitArg ? parseInt(limitArg, 10) : 50);
 
@@ -250,8 +250,8 @@ async function run() {
       fail++;
     }
 
-    const obversePathDb = obverseOk ? "/image/coins/" + obverseWebp : null;
-    const reversePathDb = reverseOk ? "/image/coins/" + reverseWebp : null;
+    const obversePathDb = obverseOk ? "/image/coins/ru/" + obverseWebp : null;
+    const reversePathDb = reverseOk ? "/image/coins/ru/" + reverseWebp : null;
     await conn.execute(
       "UPDATE coins SET image_obverse = ?, image_reverse = ? WHERE catalog_number = ?",
       [obversePathDb, reversePathDb, cat]

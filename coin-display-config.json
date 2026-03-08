@@ -1,3 +1,4 @@
 {
-  "firstImage": "obverse"
+  "firstImage": "obverse",
+  "firstImageReverseMints": ["The Perth Mint", "Perth Mint"]
 }

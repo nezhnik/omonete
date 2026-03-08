@@ -172,6 +172,7 @@ async function updateCopperLastDays(conn, days = 3) {
   const ranks = data?.copper?.ranks || [];
   if (!dates.length) return;
   let updated = 0;
+  const XCU_MIN = 5;
   for (let i = 0; i < dates.length; i++) {
     const dateStr = dates[i];
     if (!isWeekday(dateStr)) continue;
@@ -181,6 +182,10 @@ async function updateCopperLastDays(conn, days = 3) {
     if (usdRub == null || usdRub <= 0) continue;
     const rubPerGram = (usdPerTonne / 1_000_000) * usdRub;
     const xcu = Math.round(rubPerGram * GRAMS_PER_TROY_OZ * 100) / 100;
+    if (xcu < XCU_MIN) {
+      console.warn("⊘ Медь", dateStr, "аномалия: xcu =", xcu, "₽/унц (пропуск, ждём нормальных данных RusCable)");
+      continue;
+    }
     const [result] = await conn.execute("UPDATE metal_prices SET xcu = ? WHERE date = ?", [xcu, dateStr]);
     if (result.affectedRows) updated++;
   }

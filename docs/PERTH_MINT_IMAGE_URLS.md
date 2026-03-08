@@ -47,12 +47,17 @@ https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/{
    - Тиражы по сериям иногда в PDF: [Declared mintages](https://www.perthmint.com/collector-coins/information-for-coin-collectors/declared-mintages/).
 
 2. **Colnect**  
-   [Каталог Perth Mint на Colnect](https://colnect.com/en/coins/series/mint/5-Perth_Mint_Perth_Australia) — сторонний каталог по сериям/годам. Можно парсить для списка названий и годов; SKU и точные URL картинок всё равно брать с сайта Perth Mint.
+   [Каталог Perth Mint на Colnect](https://colnect.com/en/coins/series/mint/5-Perth_Mint_Perth_Australia) — сторонний каталог по сериям/годам (319+ нумизматических продуктов, 20 буллонных). Можно использовать экспорт CSV (до 100 записей бесплатно) или Colnect API для списка названий и метаданных; SKU и точные URL картинок всё равно брать с сайта Perth Mint. Подробнее: `docs/COLNECT_PERTH_MINT_CATALOG.md`.
 
 3. **Итог**  
    Удобной единой страницы «все монеты в таблице» или Excel, как у ЦБ, у Perth Mint нет. Реалистичный вариант: парсить страницы магазина (список товаров с пагинацией), собирать URL товаров, затем для каждого URL вызывать текущий скрипт за данными и картинками.
 
 ## Скрипты в проекте
 
-- **`scripts/fetch-perth-mint-coin.js`** — открывает одну страницу товара, вытаскивает данные и URL картинок, подставляет `width=2000` для максимального разрешения, сохраняет в `public/image/coins/foreign/` и данные в `data/perth-mint-*.json`.
+- **`scripts/fetch-perth-mint-coin.js`** — открывает одну страницу товара (любой URL из магазина Perth Mint), вытаскивает данные и URL картинок. SKU и год извлекаются из пути картинок (`.../coins/YEAR/SKU/...`). Тип картинки (аверс, реверс, коробка, сертификат) определяется по имени файла:
+  - **obverse** — в имени есть obverse, obv
+  - **reverse** — rev, rev-left, reverse
+  - **box** — box, packaging, pack
+  - **certificate** — certificate, cert
+  Сохранённые пути записываются в объект монеты: `image_obverse`, `image_reverse`, `image_box`, `image_certificate` (в БД и экспорте эти поля уже есть; галерея на сайте показывает все четыре). Файлы сохраняются в `public/image/coins/foreign/` как `{slug}-obv.webp`, `{slug}-rev.webp`, `{slug}-box.webp`, `{slug}-cert.webp`, данные — в `data/perth-mint-*.json`. Запуск: `node scripts/fetch-perth-mint-coin.js [url]`.
 - Для массового сбора: скрипт, который открывает `shop/collector-coins/?page=1&pageSize=24`, собирает ссылки на товары со страницы (и при необходимости обходит страницы по `page=2,3,...`), затем для каждого URL вызывает `fetch-perth-mint-coin.js` с паузой между запросами.

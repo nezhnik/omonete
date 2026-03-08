@@ -1,0 +1,71 @@
+{
+  "coin": {
+    "title": "2020 Year of the Mouse 1oz Gold Proof High Relief Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Lunar Coin Series",
+    "face_value": "100 долларов (Австралия)",
+    "release_date": "2020-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 2500,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 27.3,
+    "thickness_mm": 5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020",
+    "catalog_suffix": null,
+    "price_display": null,
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1oz-gold-proof-high-relief-coin",
+    "image_obverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1oz-gold-proof-high-relief-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1oz-gold-proof-high-relief-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "2020 Year of the Mouse 1oz Gold Proof High Relief Coin",
+    "specs": {
+      "Year": "2020",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "100.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "27.30",
+      "Maximum Thickness (mm)": "5.00",
+      "Finish": "Proof, High Relief",
+      "Legal Tender": "Australian",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II"
+    },
+    "imageUrls": [
+      "/globalassets/assets/campaigns/bridgerton/launch/bridgerton-new-coins-menu-banner-500-x-500.jpg",
+      "/globalassets/assets/campaigns/australian-lunar-series-iii/2026---year-of-the-horse/launch/year-of-the-horse-lunar-coin---the-perth-mint-2026-600x600.jpg",
+      "/globalassets/assets/campaigns/stranger-things/stranger-things-coins-launch---the-perth-mint-600-x-600.jpg",
+      "/globalassets/assets/campaigns/jewellery-campaigns/wedding-jewellery/other-banners/wedding-jewellery-2024-menu-highlight-banner.jpg",
+      "/contentassets/82329a5acfb341139e01ec5d9a412c3c/luxury-jewellery-2025-menu-banner.jpg",
+      "/globalassets/assets/images/bullion/2026/kangaroo/640x480-australian-kangaroo-2026-menu-banner2.jpg",
+      "/contentassets/f549756790d04414b6db433f90c5da5c/yot_horse_menu_banner.jpg",
+      "/contentassets/bdba11511e184e71814a85f6359c60b1/store-your-gold-in-the-depository.jpg",
+      "/globalassets/assets/campaigns/gold-buy-back/sell-your-old-gold-jewellery-the-perth-mint.jpg",
+      "/globalassets/assets/images/corporate-events/corporate-events---venue-hire-at-the-perth-mint.jpg",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/3s2035daaa/04-australian-lunar-coin-series-iii-2020-year-of-the-mouse-2019-1oz-gold-proof-high-relief_incase.jpg?width=1248&height=0&mode=max&hash=637703814660000000",
+      "https://www.perthmint.com/static/assets/images/delivery.svg",
+      "https://www.perthmint.com/static/assets/images/shopping.svg",
+      "https://www.perthmint.com/static/assets/images/secure.svg",
+      "https://www.perthmint.com/static/assets/images/privacy.svg",
+      "https://www.perthmint.com/static/assets/images/govofwa.png"
+    ],
+    "price": null
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1oz-gold-proof-high-relief-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1oz-gold-proof-high-relief-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

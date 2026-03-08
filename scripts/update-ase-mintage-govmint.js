@@ -107,6 +107,10 @@ const GOVMINT_MINTAGE = {
   "US-ASE-2023-W-P": 163902,
   "US-ASE-2024-BU": 24862000,
   "US-ASE-2024-W-P": 113787,
+  "US-ASE-2025-BU": 0,
+  "US-ASE-2025-W-P": 207940,
+  "US-ASE-2026-BU": 0,
+  "US-ASE-2026-W-P": 209027,
 };
 
 function getConfig() {
