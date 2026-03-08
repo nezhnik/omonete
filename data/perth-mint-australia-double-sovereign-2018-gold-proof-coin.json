@@ -18,11 +18,11 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2025-25V33AAA",
+    "catalog_number": "AU-PERTH-2020-18D14AAA",
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 11,545.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-double-sovereign-2018-gold-proof-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/australia-double-sovereign-2018-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
     "image_box": null,
     "image_certificate": null
@@ -88,7 +88,7 @@
     "price": "AUD 11,545.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/australia-double-sovereign-2018-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
     "box": null,
     "certificate": null

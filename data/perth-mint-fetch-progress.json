@@ -982,9 +982,11 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1910-king-edward-vii-sovereign-mintmark-trio",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1910-king-edward-vii-sovereign-mintmark--2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1910 King Edward VII Sovereign Mintmark Trio"
+      "catalog_number": "AU-PERTH-2020-19G99BAA",
+      "title": "1910 King Edward VII Sovereign Mintmark Trio",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1910-king-edward-vii-sovereign-mintmark-trio.json",
+      "completedAt": "2026-03-08T13:15:56.872Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1911-1931-king-george-v-sovereign-typeset-collection",
@@ -996,99 +998,131 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1911-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1911-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1911 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-18F43AAA",
+      "title": "1911 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1911-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:16:06.550Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1912-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1912-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1912 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-19F79AAA",
+      "title": "1912 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1912-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:16:16.624Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1913-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1913-king-george-v-perth-mint-gold-sover-2026.json",
-      "catalog_number": "AU-PERTH-2026-26Z40AAA",
-      "title": "1913 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-19F78AAA",
+      "title": "1913 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1913-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:16:26.678Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1914-gold-sovereign-mintmark-trio",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1914-gold-sovereign-mintmark-trio-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1914 Gold Sovereign Mintmark Trio"
+      "catalog_number": "AU-PERTH-2020-14W18AAA",
+      "title": "1914 Gold Sovereign Mintmark Trio",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1914-gold-sovereign-mintmark-trio.json",
+      "completedAt": "2026-03-08T13:16:37.661Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1914-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1914-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1914 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-14W96AAA",
+      "title": "1914 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1914-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:16:47.799Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1915-gold-sovereign-mintmark-trio",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1915-gold-sovereign-mintmark-trio-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1915 Gold Sovereign Mintmark Trio"
+      "catalog_number": "AU-PERTH-2020-15X69BAA",
+      "title": "1915 Gold Sovereign Mintmark Trio",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1915-gold-sovereign-mintmark-trio.json",
+      "completedAt": "2026-03-08T13:16:58.373Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1915-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1915-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1915 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-15X69AAA",
+      "title": "1915 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1915-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:17:07.372Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1916-king-george-v-gold-sovereign-mintmark-trio",
+      "catalog_number": "AU-PERTH-2020-16A21AAA",
+      "title": "1916 King George V Gold Sovereign Mintmark Trio",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1916-king-george-v-gold-sovereign-mintmark-trio.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1916 King George V Gold Sovereign Mintmark Trio"
+      "completedAt": "2026-03-08T13:17:16.705Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1916-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1916-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1916 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-16Y89DAA",
+      "title": "1916 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1916-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:17:25.510Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1917-gold-sovereign-mintmark-trio",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1917-gold-sovereign-mintmark-trio-2026.json",
-      "catalog_number": "AU-PERTH-2026-26Z40AAA",
-      "title": "1917 Gold Sovereign Mintmark Trio"
+      "catalog_number": "AU-PERTH-2020-18D75AAA",
+      "title": "1917 Gold Sovereign Mintmark Trio",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1917-gold-sovereign-mintmark-trio.json",
+      "completedAt": "2026-03-08T13:17:37.176Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1917-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1917-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1917 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-17B71AAA",
+      "title": "1917 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1917-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:17:46.788Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1918-gold-sovereign-mintmark-trio",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1918-gold-sovereign-mintmark-trio-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1918 Gold Sovereign Mintmark Trio"
+      "catalog_number": "AU-PERTH-2020-18D76AAA",
+      "title": "1918 Gold Sovereign Mintmark Trio",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1918-gold-sovereign-mintmark-trio.json",
+      "completedAt": "2026-03-08T13:17:57.046Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1918-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1918-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1918 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-17D34AAA",
+      "title": "1918 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1918-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:18:07.488Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1919-gold-sovereign-mintmark-trio",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1919-gold-sovereign-mintmark-trio-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1919 Gold Sovereign Mintmark Trio"
+      "catalog_number": "AU-PERTH-2020-18F42AAA",
+      "title": "1919 Gold Sovereign Mintmark Trio",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1919-gold-sovereign-mintmark-trio.json",
+      "completedAt": "2026-03-08T13:18:18.455Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1919-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1919-king-george-v-perth-mint-gold-sover-2026.json",
-      "catalog_number": "AU-PERTH-2026-26Z40AAA",
-      "title": "1919 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-18F41AAA",
+      "title": "1919 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1919-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:18:28.536Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1920-king-george-v-perth-mint-gold-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1920-king-george-v-perth-mint-gold-sover-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1920 King George V Perth Mint Gold Sovereign"
+      "catalog_number": "AU-PERTH-2020-19G16AAA",
+      "title": "1920 King George V Perth Mint Gold Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1920-king-george-v-perth-mint-gold-sovereign.json",
+      "completedAt": "2026-03-08T13:18:40.837Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1925--2025-perth-mint-gold-sovereign-centenary-pair",
@@ -1100,9 +1134,11 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1925-king-george-v-london-mint-sovereign",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1925-king-george-v-london-mint-sovereign-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "1925 King George V London Mint Sovereign"
+      "catalog_number": "AU-PERTH-2020-18F19AAA",
+      "title": "1925 King George V London Mint Sovereign",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-1925-king-george-v-london-mint-sovereign.json",
+      "completedAt": "2026-03-08T13:18:49.903Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/1926-king-george-v-south-african-mint-gold-sovereign",
@@ -1220,9 +1256,11 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/2019-australian-double-sovereign-91.70-gold-proof-coin",
+      "catalog_number": "AU-PERTH-2020-19C84BAA",
+      "title": "Australia Double Sovereign 2019 Gold Proof Coin",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-2019-australian-double-sovereign-91-70-gold-proof-coin.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Double Sovereign 2019 Gold Proof Coin"
+      "completedAt": "2026-03-08T13:19:00.348Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/2019-australian-kangaroo-1-4-oz-99.99-gold-pr-coin",
@@ -1552,9 +1590,11 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-double-sovereign-2018-gold-proof-coin",
+      "catalog_number": "AU-PERTH-2020-18D14AAA",
+      "title": "Australia Double Sovereign 2018 Gold Proof Coin",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-double-sovereign-2018-gold-proof-coin.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Double Sovereign 2018 Gold Proof Coin"
+      "completedAt": "2026-03-08T13:19:09.385Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/australia-five-sovereign-2025-gold-proof-reverse-gilded-coin",
@@ -1564,51 +1604,67 @@
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-half-sovereign-2016-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-half-sovereign-2016-gold-proof-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Half Sovereign 2016 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-16Y03BAA",
+      "title": "Australia Half Sovereign 2016 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-half-sovereign-2016-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:19:19.538Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-half-sovereign-2017-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-half-sovereign-2017-gold-proof-2026.json",
-      "catalog_number": "AU-PERTH-2026-26022DPAD",
-      "title": "Australia Half Sovereign 2017 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-17A37BAA",
+      "title": "Australia Half Sovereign 2017 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-half-sovereign-2017-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:19:30.736Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2014-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2014-gold-proof-coin-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Sovereign 2014 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-14V29AAA",
+      "title": "Australia Sovereign 2014 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2014-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:19:41.104Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2015-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2015-gold-proof-coin-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Sovereign 2015 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-15V30AAA",
+      "title": "Australia Sovereign 2015 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2015-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:19:51.573Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2016-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2016-gold-proof-coin-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Sovereign 2016 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-16Y03AAA",
+      "title": "Australia Sovereign 2016 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2016-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:20:04.570Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2017-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2017-gold-proof-coin-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Sovereign 2017 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-17A37AAA",
+      "title": "Australia Sovereign 2017 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2017-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:20:14.858Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2018-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2018-gold-proof-coin-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Sovereign 2018 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-18B45AAA",
+      "title": "Australia Sovereign 2018 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2018-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:20:24.761Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2020-gold-proof-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2020-gold-proof-coin-2025.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Australia Sovereign 2020 Gold Proof Coin"
+      "catalog_number": "AU-PERTH-2020-20G11AAA",
+      "title": "Australia Sovereign 2020 Gold Proof Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australia-sovereign-2020-gold-proof-coin.json",
+      "completedAt": "2026-03-08T13:20:37.599Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2021-gold-proof-coin",
@@ -3969,10 +4025,12 @@
       "title": "Australian Quokka 2024 1oz Silver Proof Coloured Coin"
     },
     {
-      "url": "https://www.perthmint.com/shop/collector-coins/coins/australian-quokka-2025-1oz-silver-coloured-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australian-quokka-2025-1oz-silver-coloured-coin.json",
-      "catalog_number": "AU-PERTH-2025-25V52AAA",
-      "title": "Australian Quokka 2025 1oz Silver Coloured Coin"
+      "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin",
+      "catalog_number": "AU-PERTH-2020-20G26AAA",
+      "title": "Australian Sovereign 2020 Gold Proof High Relief Piedfort Coin",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australian-sovereign-2020-gold-proof-high-relief-piedfort-coin.json",
+      "completedAt": "2026-03-08T13:20:47.843Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin",
@@ -5905,16 +5963,20 @@
       "title": "Ouroboros 2022 2oz Silver Antiqued Coloured Coin"
     },
     {
-      "url": "https://www.perthmint.com/shop/collector-coins/coins/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card.json",
-      "catalog_number": "AU-PERTH-2023-23027DDAD",
-      "title": "Perth 2023 National Stamp and Coin Exhibition Koala 2023 1oz Silver Coloured Coin in Card"
+      "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-2021-gold-sovereign-anniversary-pair",
+      "catalog_number": "AU-PERTH-2025-25V33AAA",
+      "title": "Perth Mint 2021 Gold Sovereign Anniversary Two-Coin Set",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-mint-2021-gold-sovereign-anniversary-pair.json",
+      "completedAt": "2026-03-08T13:20:55.775Z",
+      "status": "unchanged"
     },
     {
-      "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-2021-gold-sovereign-anniversary-pair",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-mint-2021-gold-sovereign-anniversary-pair.json",
-      "catalog_number": "AU-PERTH-2025-25V33AAA",
-      "title": "Perth Mint 2021 Gold Sovereign Anniversary Two-Coin Set"
+      "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-great-war-gold-sovereign-collection-1914-1918",
+      "catalog_number": "AU-PERTH-2020-14W26AAA",
+      "title": "Perth Mint Great War Gold Sovereign Collection 1914–1918",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-mint-great-war-gold-sovereign-collection-1914-1918.json",
+      "completedAt": "2026-03-08T13:21:06.747Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-great-war-gold-sovereign-collection-1914-1918",
@@ -6369,10 +6431,12 @@
       "title": "The Muppets - Kermit The Frog 2025 1oz Silver Proof Coloured Coin"
     },
     {
-      "url": "https://www.perthmint.com/shop/collector-coins/coins/the-night-before-christmas-2023-2oz-silver-antiqued-coloured-coin",
-      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-the-night-before-christmas-2023-2oz-silver-antiqued-coloured-coin.json",
-      "catalog_number": "AU-PERTH-2023-23N41AAA",
-      "title": "The Night Before Christmas 2023 2oz Silver Antiqued Coloured Coin"
+      "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/the-perth-mint-gold-sovereigns-1899-and-1931",
+      "catalog_number": "AU-PERTH-2020-10Q39AAA",
+      "title": "The Perth Mint Gold Sovereigns 1899 and 1931",
+      "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-the-perth-mint-gold-sovereigns-1899-and-1931.json",
+      "completedAt": "2026-03-08T13:15:46.110Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/the-perth-mint-gold-sovereigns-1899-and-1931",
@@ -6827,5 +6891,5 @@
       "status": "ok"
     }
   ],
-  "lastUpdated": "2026-03-08T11:35:42.130Z"
+  "lastUpdated": "2026-03-08T13:21:06.747Z"
 }

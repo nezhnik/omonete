@@ -40,7 +40,8 @@ function normalizeSourceUrl(url) {
 async function main() {
   let files = [];
   const replacePerth = process.argv.includes("--replace-perth");
-  const arg = process.argv.filter((a) => a !== "--replace-perth")[2];
+  const allBySourceUrl = process.argv.includes("--all-by-source-url");
+  const arg = process.argv.filter((a) => a !== "--replace-perth" && a !== "--all-by-source-url")[2];
   if (arg) {
     const p = path.isAbsolute(arg) ? arg : path.join(process.cwd(), arg);
     if (!fs.existsSync(p)) {
@@ -63,9 +64,26 @@ async function main() {
     process.exit(1);
   }
 
+  // Режим --all-by-source-url: один файл на каждый source_url (импорт всех продуктов из каноников, не по одному на catalog_number).
+  if (files.length > 1 && !arg && allBySourceUrl) {
+    const bySourceUrl = new Map();
+    for (const filePath of files) {
+      let raw, c;
+      try {
+        raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        c = raw?.coin;
+        if (!c?.source_url || !String(c.source_url).includes("perthmint.com")) continue;
+      } catch {
+        continue;
+      }
+      const url = normalizeSourceUrl(c.source_url);
+      if (url && !bySourceUrl.has(url)) bySourceUrl.set(url, filePath);
+    }
+    files = [...bySourceUrl.values()];
+    console.log("Режим --all-by-source-url: файлов к импорту:", files.length);
+  } else if (files.length > 1 && !arg) {
   // Приоритет канонического JSON с сайта: для одного catalog_number берём файл, где есть source_url (страница товара Perth).
   // Так не перезаписываем правильные данные (страна, картинки, название) данными из «короткого» JSON без URL.
-  if (files.length > 1 && !arg) {
     const byCatalog = {};
     for (const filePath of files) {
       let raw, c, catalogNumber;
@@ -196,15 +214,14 @@ async function main() {
       );
       existing = bySource;
     }
-    // Если по source_url не нашли — ищем по catalog_number (чтобы не создавать дубль при повторном импорте без URL)
-    if (existing.length === 0 && catalogNumber) {
+    // Если по source_url не нашли — в режиме --all-by-source-url сразу INSERT; иначе ищем по catalog_number.
+    if (existing.length === 0 && !allBySourceUrl && catalogNumber) {
       const [byCatalogCount] = await conn.execute(
         "SELECT id FROM coins WHERE catalog_number = ? AND (mint LIKE '%Perth%' OR mint_short LIKE '%Perth%')",
         [catalogNumber]
       );
-      // Не обновлять по catalog_number, если записей несколько — иначе перезапишем не ту монету.
       if (byCatalogCount.length > 1) {
-        console.warn("  [пропуск] catalog_number " + catalogNumber + " у " + byCatalogCount.length + " записей — обновление отключено. Добавьте source_url в каноник или исправьте БД.");
+        console.warn("  [пропуск] catalog_number " + catalogNumber + " у " + byCatalogCount.length + " записей — обновление отключено.");
         continue;
       }
       if (byCatalogCount.length === 1) existing = byCatalogCount;

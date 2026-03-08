@@ -4,8 +4,8 @@
 
 **Правило, чтобы перезапись не повторилась**:  
 1) Сначала **импорт** (шаг 4), чтобы у записей в БД был правильный `source_url`.  
-2) Потом **update-perth** (шаг 4b). Скрипт `update-perth-from-canonical-json.js` сопоставляет записи **сначала по source_url**, при отсутствии URL — по catalog_number; так разные монеты не перезаписываются одним продуктом.  
-Если перезапись уже произошла (у многих монет одно название и одни картинки) — сначала запустите `node scripts/fix-perth-overwritten-coins.js`, затем цикл ниже. Подробнее: README.md, docs/PROJECT_OVERVIEW.md.
+2) Потом **update-perth** (шаг 4b). Скрипт `update-perth-from-canonical-json.js` сопоставляет записи **только по source_url** — один URL = один продукт, повторений не будет. Записи без source_url этим скриптом не обновляются.  
+Если перезапись уже произошла — сначала `node scripts/fix-perth-overwritten-coins.js`, затем цикл ниже. Подробнее: README.md, docs/PROJECT_OVERVIEW.md.
 
 ## Порядок действий (один раз или при очередной синхронизации)
 

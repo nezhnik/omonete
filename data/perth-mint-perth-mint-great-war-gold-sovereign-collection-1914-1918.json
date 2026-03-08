@@ -18,14 +18,14 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2025-25V33AAA",
+    "catalog_number": "AU-PERTH-2020-14W26AAA",
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 10,499.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-great-war-gold-sovereign-collection-1914-1918",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-obv.webp",
     "image_reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-box.webp",
+    "image_certificate": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-cert.webp"
   },
   "raw": {
     "title": "Perth Mint Great War Gold Sovereign Collection 1914–1918",
@@ -81,9 +81,9 @@
     "price": "AUD 10,499.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-obv.webp",
     "reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-box.webp",
+    "certificate": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-cert.webp"
   }
 }

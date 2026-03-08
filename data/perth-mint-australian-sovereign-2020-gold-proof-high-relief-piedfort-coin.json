@@ -18,11 +18,11 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2026-26Z40AAA",
+    "catalog_number": "AU-PERTH-2020-20G26AAA",
     "catalog_suffix": "25r77aaa",
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
     "image_box": null,
     "image_certificate": null
@@ -100,7 +100,7 @@
     "price": "AUD 359.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-obv.webp",
     "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
     "box": null,
     "certificate": null

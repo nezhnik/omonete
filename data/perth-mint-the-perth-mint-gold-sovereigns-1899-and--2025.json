@@ -20,8 +20,8 @@
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 4,950.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/the-perth-mint-gold-sovereigns-1899-and-1931",
-    "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark--2025-rev.webp",
+    "image_obverse": "/image/coins/foreign/1899-queen-victoria-veiled-head-perth-mint-gold-sovereign-obv.webp",
+    "image_reverse": "/image/coins/foreign/1899-queen-victoria-veiled-head-perth-mint-gold-sovereign-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -83,8 +83,8 @@
     "price": "AUD 4,950.00"
   },
   "saved": {
-    "obverse": null,
-    "reverse": "/image/coins/foreign/the-perth-mint-gold-sovereigns-1899-and--2025-rev.webp",
+    "obverse": "/image/coins/foreign/1899-queen-victoria-veiled-head-perth-mint-gold-sovereign-obv.webp",
+    "reverse": "/image/coins/foreign/1899-queen-victoria-veiled-head-perth-mint-gold-sovereign-rev.webp",
     "box": null,
     "certificate": null
   }
