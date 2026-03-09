@@ -11,7 +11,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "apmex-kookaburra");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "kookaburra");
 const MAX_SIDE = 1200;
 
 function parseFromFilename(name) {
@@ -61,10 +61,10 @@ async function main() {
     let webpName;
     if (year && (side === "obv" || side === "rev")) {
       const w = String(weight).replace(/[^a-z0-9.\/]/g, "").replace("1/10oz", "1-10oz");
-      webpName = `apmex-kookaburra-${w}-${year}-${side}.webp`;
+      webpName = `kookaburra-${w}-${year}-${side}.webp`;
     } else if (year && (side === "box" || side === "cert" || side === "slab")) {
       const w = String(weight).replace(/[^a-z0-9.\/]/g, "").replace("1/10oz", "1-10oz");
-      webpName = `apmex-kookaburra-${w}-${year}-${side}.webp`;
+      webpName = `kookaburra-${w}-${year}-${side}.webp`;
     } else {
       webpName = base.replace(/[^a-z0-9-]/gi, "-").replace(/-+/g, "-") + ".webp";
     }

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "1992 2 oz Australian Silver Kookaburra Bullion Coin",
+    "year": 1992,
+    "weight": "2oz",
+    "productUrl": "https://www.bullionstar.com/buy/product/silver-coin-kookaburra-2oz-1992",
+    "thumbUrl": "https://static.bullionstar.com/files/silver-coins/australian-kookaburra/1200_1200_coin-silver-1992-2oz-aust-kookaburra-obverse-bullionstar-b.webp",
+    "obverse": "/image/coins/bullionstar-kookaburra/bullionstar-kookaburra-2oz-1992-obv.webp",
+    "reverse": "/image/coins/bullionstar-kookaburra/bullionstar-kookaburra-2oz-1992-rev.webp",
+    "downloaded": true
+  },
+  {
+    "name": "2004 1 oz Australian Silver Kookaburra Bullion Coin",
+    "year": 2004,
+    "weight": "1oz",
+    "productUrl": "https://www.bullionstar.com/buy/product/silver-kookaburra-2004-1oz",
+    "thumbUrl": "https://static.bullionstar.com/files/silver-coins/australian-kookaburra/1200_1200_coin-silver-australian-silver-kookaburra-2004---1-oz-obverse-bullionstar-b.webp",
+    "obverse": "/image/coins/bullionstar-kookaburra/bullionstar-kookaburra-1oz-2004-obv.webp",
+    "reverse": "/image/coins/bullionstar-kookaburra/bullionstar-kookaburra-1oz-2004-rev.webp",
+    "downloaded": true
+  }
+]
