@@ -1,0 +1,63 @@
+{
+  "coin": {
+    "title": "Dragon 2023 5oz Silver Antiqued Coloured Coin",
+    "title_ru": null,
+    "country": "Тувалу",
+    "series": "Dragon",
+    "face_value": "5 долларов (Тувалу)",
+    "release_date": "2023-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 388,
+    "weight_g": 155.53,
+    "weight_oz": 1,
+    "diameter_mm": 55.9,
+    "thickness_mm": 8.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof, Coloured",
+    "catalog_number": "AU-PERTH-2023-24P78AAA",
+    "catalog_suffix": "24p78aaa",
+    "price_display": "AUD 480.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-5oz-silver-antiqued-coloured-coin",
+    "image_obverse": "/image/coins/foreign/dragon-2023-5oz-silver-antiqued-coloured-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/dragon-2023-5oz-silver-antiqued-coloured-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Dragon 2023 5oz Silver Antiqued Coloured Coin",
+    "specs": {
+      "Mintage": "2,888",
+      "SKU": "24P78AAA",
+      "Year": "2023",
+      "Metal": "Silver",
+      "Monetary Denomination (TVD)": "5.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "155.533",
+      "Maximum Diameter (mm)": "55.90",
+      "Maximum Thickness (mm)": "8.50",
+      "Maximum Mintage": "388",
+      "Finish": "Antique, Coloured",
+      "Legal Tender": "Tuvalu",
+      "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
+      "Designer": "Tom Vaughan"
+    },
+    "series": "Dragon",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23r98aaa/02-dragon-2023-5oz-silver-antiqued-coloured-coin-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23r98aaa/03-dragon-2023-5oz-silver-antiqued-coloured-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23r98aaa/04-dragon-2023-5oz-silver-antiqued-coloured-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23r98aaa/05-dragon-2023-5oz-silver-antiqued-coloured-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 480.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/dragon-2023-5oz-silver-antiqued-coloured-coin-obv.webp",
+    "reverse": "/image/coins/foreign/dragon-2023-5oz-silver-antiqued-coloured-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

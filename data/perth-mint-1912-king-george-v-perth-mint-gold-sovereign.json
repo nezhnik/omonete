@@ -3,7 +3,7 @@
     "title": "1912 King George V Perth Mint Gold Sovereign",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Deadly and Dangerous",
+    "series": "Gold Sovereign",
     "face_value": null,
     "release_date": "1912-01-01",
     "mint": "The Perth Mint",
@@ -18,11 +18,11 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2020-19F79AAA",
+    "catalog_number": "AU-PERTH-2020-15X69BAA",
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 3,949.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1912-king-george-v-perth-mint-gold-sovereign",
-    "image_obverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-rev.webp",
+    "image_obverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "image_reverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "image_box": null,
     "image_certificate": null
@@ -76,7 +76,7 @@
     "price": "AUD 3,949.99"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-rev.webp",
+    "obverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "reverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "box": null,
     "certificate": null

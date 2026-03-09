@@ -1,0 +1,64 @@
+{
+  "coin": {
+    "title": "Happy Birthday 2022 1oz Silver Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Happy Birthday",
+    "face_value": "1 доллар (Австралия)",
+    "release_date": "2022-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": null,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 40.9,
+    "thickness_mm": 3.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2022-23M49AAA",
+    "catalog_suffix": "23m49aaa",
+    "price_display": "AUD 259.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2022-1oz-silver-proof-coin",
+    "image_obverse": "/image/coins/foreign/happy-birthday-2022-1oz-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Happy Birthday 2022 1oz Silver Proof Coin",
+    "specs": {
+      "Mintage": "Unlimited",
+      "SKU": "23M49AAA",
+      "Year": "2022",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "1.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "40.90",
+      "Maximum Thickness (mm)": "3.50",
+      "Maximum Mintage": "Unlimited",
+      "Finish": "Proof",
+      "Legal Tender": "Australia",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Jennifer McKenna"
+    },
+    "series": "Happy Birthday",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j77aad/02-2022-happybirthday-1oz-silver-proof-coloured-coin-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j77aad/03-one-love-2022-1oz-silver-proof-coloured-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j77aad/04-2022-happybirthday-1oz-silver-proof-coloured-coin-incardopen-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j77aad/05-2022-happybirthday-1oz-silver-proof-coloured-coin-frontofcard-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 259.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/happy-birthday-2022-1oz-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

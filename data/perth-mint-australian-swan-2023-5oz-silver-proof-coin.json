@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australian Swan 2023 5oz Silver Proof High Relief Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Swan",
+    "face_value": "8 долларов (Австралия)",
+    "release_date": "2023-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 500,
+    "weight_g": 155.53,
+    "weight_oz": 1,
+    "diameter_mm": 50.9,
+    "thickness_mm": 11.9,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2023-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-swan-2023-5oz-silver-proof-coin",
+    "image_obverse": "/image/coins/foreign/australian-swan-2023-5oz-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-swan-2023-5oz-silver-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Swan 2023 5oz Silver Proof High Relief Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2023",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "5.000",
+      "Monetary Denomination (AUD)": "8.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "155.533",
+      "Maximum Diameter (mm)": "50.90",
+      "Maximum Thickness (mm)": "11.85",
+      "Maximum Mintage": "500",
+      "Finish": "Proof, High Relief",
+      "Legal Tender": "Australia",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Aleysha Howarth"
+    },
+    "series": "Australian Swan",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23328kaaa/02-2023-australianswan-5oz--silver-proof-hr-coin-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23328kaaa/03-2023-australianswan-5oz--silver-proof-hr-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23328kaaa/04-2023-australianswan-5oz--silver-proof-hr-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23328kaaa/05-2023-australianswan-5oz--silver-proof-hr-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-swan-2023-5oz-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-swan-2023-5oz-silver-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

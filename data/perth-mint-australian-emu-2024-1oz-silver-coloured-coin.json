@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australian Emu 2024 1oz Silver Coloured Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Emu",
+    "face_value": "1 доллар (Австралия)",
+    "release_date": "2024-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 2500,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 40.9,
+    "thickness_mm": 3.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof, Coloured",
+    "catalog_number": "AU-PERTH-2024-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-emu-2024-1oz-silver-coloured-coin",
+    "image_obverse": "/image/coins/foreign/australian-emu-2024-1oz-silver-coloured-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-emu-2024-1oz-silver-coloured-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": "/image/coins/foreign/australian-emu-2024-1oz-silver-coloured-coin-cert.webp"
+  },
+  "raw": {
+    "title": "Australian Emu 2024 1oz Silver Coloured Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2024",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "1.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "40.90",
+      "Maximum Thickness (mm)": "3.50",
+      "Maximum Mintage": "2,500",
+      "Finish": "Coloured",
+      "Legal Tender": "Australia",
+      "Effigy": "Dan Thorne design of H.M. King Charles III",
+      "Designer": "Sean Rogers"
+    },
+    "series": "Australian Emu",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2024/24s20aaa/02-2024-australian-emu-1oz-silver-bullion-coloured-coin-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2024/24s20aaa/03-2024-aus-silver-1oz-bullion-obverse-highres00.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2024/24s20aaa/04-2024-australian-emu-1oz-silver-bullion-coloured-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2024/24s20aaa/05-2024-australian-emu-1oz-silver-bullion-coloured-coin-shipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-emu-2024-1oz-silver-coloured-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-emu-2024-1oz-silver-coloured-coin-rev.webp",
+    "box": null,
+    "certificate": "/image/coins/foreign/australian-emu-2024-1oz-silver-coloured-coin-cert.webp"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "coin": {
+    "title": "Surfboard 2020 2oz Silver Coloured Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Surfboard",
+    "face_value": "2 доллара (Австралия)",
+    "release_date": "2020-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 2500,
+    "weight_g": 62.21,
+    "weight_oz": 2,
+    "diameter_mm": null,
+    "thickness_mm": 5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof, Coloured",
+    "catalog_number": "AU-PERTH-2020-25V91BAD",
+    "catalog_suffix": "25v91bad",
+    "price_display": "AUD 220.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/surfboard-2020-2oz-silver-coloured-coin",
+    "image_obverse": null,
+    "image_reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Surfboard 2020 2oz Silver Coloured Coin",
+    "specs": {
+      "Mintage": "6,500",
+      "SKU": "25V91BAD",
+      "Issue Limit": "6,000",
+      "Year": "2020",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "2.000",
+      "Monetary Denomination (AUD)": "2.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "62.213",
+      "Maximum Thickness (mm)": "5.00",
+      "Maximum Mintage": "2,500",
+      "Finish": "Coloured",
+      "Legal Tender": "Australian",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II"
+    },
+    "series": "Surfboard",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h24aaa/01-surfboard-2020-2oz-silver-coloured_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h24aaa/02-surfboard-2020-2oz-silver-coloured_obverse.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h24aaa/03-surfboard-2020-2oz-silver-coloured_incase.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h24aaa/04-surfboard-2020-2oz-silver-coloured_inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 220.00"
+  },
+  "saved": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

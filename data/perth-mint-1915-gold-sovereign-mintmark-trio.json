@@ -3,7 +3,7 @@
     "title": "1915 Gold Sovereign Mintmark Trio",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Deadly and Dangerous",
+    "series": "Gold Sovereign",
     "face_value": null,
     "release_date": "1915-01-01",
     "mint": "The Perth Mint",
@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1915-gold-sovereign-mintmark-trio",
     "image_obverse": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-obv.webp",
     "image_reverse": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -85,7 +85,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-obv.webp",
     "reverse": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-box.webp",
     "certificate": null
   }
 }

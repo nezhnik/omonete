@@ -1,0 +1,61 @@
+{
+  "coin": {
+    "title": "Diwali 1oz Silver Gilded Medallion",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": null,
+    "face_value": null,
+    "release_date": "2026-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": null,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 40.9,
+    "thickness_mm": 3.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2023-23M49AAA",
+    "catalog_suffix": "23m49aaa",
+    "price_display": "AUD 240.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/diwali-2023-1oz-silver-gilded-medallion",
+    "image_obverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-obv.webp",
+    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Diwali 1oz Silver Gilded Medallion",
+    "specs": {
+      "Mintage": "Unlimited",
+      "SKU": "23M49AAA",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "1.000",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "40.90",
+      "Maximum Thickness (mm)": "3.50",
+      "Maximum Mintage": "Unlimited",
+      "Finish": "Gilded",
+      "Designer": "Sean Rogers"
+    },
+    "series": null,
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m53aaa/02-2023-diwali-1oz-silver-gilded-medallion-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m53aaa/03-2023-diwali-1oz-silver-gilded-medallion-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m53aaa/04-2023-diwali-1oz-silver-gilded-medallion-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m53aaa/05-2023-diwali-1oz-silver-gilded-medallion-inshipper-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m53aaa/09-2023-diwali-1oz-silver-gilded-medallion-mood4-highres-edited.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 240.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-obv.webp",
+    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

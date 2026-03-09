@@ -1,0 +1,61 @@
+{
+  "coin": {
+    "title": "Christmas 2020 1oz Star-Shaped Silver Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Christmas",
+    "face_value": "1 доллар (Австралия)",
+    "release_date": "2020-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": null,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 39,
+    "thickness_mm": 4.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-23M49AAA",
+    "catalog_suffix": "23m49aaa",
+    "price_display": "AUD 149.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/christmas-2020-1oz-star-shaped-silver-coin",
+    "image_obverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Christmas 2020 1oz Star-Shaped Silver Coin",
+    "specs": {
+      "SKU": "23M49AAA",
+      "Mintage": "Unlimited",
+      "Year": "2020",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "1.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "39.00",
+      "Maximum Thickness (mm)": "4.50",
+      "Legal Tender": "Australian",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Aleysha Howarth"
+    },
+    "series": "Christmas",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h04aaa/01-2020-christmas-star-shaped-1oz-silver-proof-coloured-coin-in-card-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h04aaa/02-2020-christmas-star-shaped-1oz-silver-proof-coloured-coin-straight-on-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20h04aaa/03-2020-christmas-star-shaped-1oz-silver-proof-coloured-coin-obverse-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 149.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-obv.webp",
+    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

@@ -3,7 +3,7 @@
     "title": "1914 King George V Perth Mint Gold Sovereign",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Deadly and Dangerous",
+    "series": "Gold Sovereign",
     "face_value": null,
     "release_date": "1914-01-01",
     "mint": "The Perth Mint",
@@ -18,14 +18,14 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2020-14W96AAA",
+    "catalog_number": "AU-PERTH-2020-15X69BAA",
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 1,795.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1914-king-george-v-perth-mint-gold-sovereign",
-    "image_obverse": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-rev.webp",
+    "image_obverse": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "image_reverse": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-box.webp",
+    "image_certificate": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-cert.webp"
   },
   "raw": {
     "title": "1914 King George V Perth Mint Gold Sovereign",
@@ -42,6 +42,7 @@
       "Grade": "Extremely Fine - about Uncirulated",
       "Effigy": "Sir Edgar Bertram Mackennal design of H.M. King George V"
     },
+    "series": "Gold Sovereign",
     "imageUrls": [
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/14w96aaa/01-1914-king-george-v-perth-mint-gold-sovereign-2014-gold_straighton.jpg?contextmode=Default?width=500",
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/14w96aaa/02-1914-king-george-v-perth-mint-gold-sovereign-2014-gold_obverse.jpg?contextmode=Default?width=500",
@@ -81,9 +82,9 @@
     "price": "AUD 1,795.00"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-rev.webp",
+    "obverse": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "reverse": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-box.webp",
+    "certificate": "/image/coins/foreign/1914-king-george-v-perth-mint-gold-sovereign-cert.webp"
   }
 }

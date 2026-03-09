@@ -1,0 +1,38 @@
+URL для проверки series: 957
+Источник: perth-mint-urls.txt
+
+  [30/957] обновлено 0, без JSON 0  [60/957] обновлено 0, без JSON 0  [90/957] обновлено 0, без JSON 0  [120/957] обновлено 0, без JSON 0  [150/957] обновлено 0, без JSON 0  [180/957] обновлено 0, без JSON 0  [210/957] обновлено 0, без JSON 0  [240/957] обновлено 0, без JSON 0  ✓ australian-lunar-series-ii-2014-year-of-the-horse-: "Australian Lunar Series II" → "null"
+  [270/957] обновлено 1, без JSON 0  [300/957] обновлено 1, без JSON 0  [330/957] обновлено 1, без JSON 0  [360/957] обновлено 1, без JSON 0  [390/957] обновлено 1, без JSON 0  [420/957] обновлено 1, без JSON 0  [450/957] обновлено 1, без JSON 0  ✓ australian-wedge-tailed-eagle-2021-2oz-silver-reve: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2021-5oz-gold-revers: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2021-5oz-silver-enha: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2022-1oz-gold-proof-: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2022-1oz-silver-proo: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2022-5oz-silver-proo: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-1-kilo-gold-rev: "Australian Wedge-tailed Eagle" → "null"
+  [480/957] обновлено 8, без JSON 0  ✓ australian-wedge-tailed-eagle-2023-1-kilo-silver-r: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-1-5oz-bi-metal-: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-10oz-silver-inc: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-1oz-gold-incuse: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-1oz-silver-incu: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-2oz-silver-proo: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-5oz-gold-proof-: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2023-5oz-silver-proo: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2024-1-kilo-gold-rev: "Australian Wedge-tailed Eagle 10th Anniversary" → "null"
+  ✓ australian-wedge-tailed-eagle-2024-1-kilo-silver-r: "Australian Wedge-tailed Eagle 10th Anniversary" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1-kilo-gold-pro: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1-kilo-silver-p: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-10oz-silver-pro: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1oz-bi-metal-pr: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1oz-gold-revers: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1oz-rose-gold-r: "Australian Wedge-Tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1oz-silver-colo: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-1oz-silver-reve: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-2oz-silver-proo: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-5oz-gold-proof-: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wedge-tailed-eagle-2025-5oz-silver-reve: "Australian Wedge-tailed Eagle" → "null"
+  ✓ australian-wombat-2022-1oz-silver-coloured-coin-in: "Australian Wombat" → "null"
+  ✓ australian-wombat-2023-1oz-silver-coloured-coin-in: "Australian Wombat" → "null"
+  ✓ australian-wombat-2024-1oz-silver-coloured-coin-in: "Australian Wombat" → "null"
+  ✓ baby-dragon-2024-1-2oz-silver-proof-coloured-coin: "Baby Dragon" → "null"
+  ✓ baby-horse-2026-1-2oz-silver-proof-coloured-coin: "Baby Horse" → "null"
+  ✓ baby-mouse-2020-1-2oz-silver-proof-coin: "Baby Mouse" → "null"

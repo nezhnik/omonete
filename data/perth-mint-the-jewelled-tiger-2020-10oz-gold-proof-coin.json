@@ -1,0 +1,73 @@
+{
+  "coin": {
+    "title": "The Jewelled Tiger 2020 10oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "The Jewelled Tiger",
+    "face_value": "2 доллара (Австралия)",
+    "release_date": "2020-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "75.42",
+    "mintage": 8,
+    "weight_g": 323.57,
+    "weight_oz": 1,
+    "diameter_mm": 61,
+    "thickness_mm": 17.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-21I53AAA",
+    "catalog_suffix": "21i53aaa",
+    "price_display": null,
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/the-jewelled-tiger-2020-10oz-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/the-jewelled-tiger-2020-10oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/the-jewelled-tiger-2020-10oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "The Jewelled Tiger 2020 10oz Gold Proof Coin",
+    "specs": {
+      "Mintage": "Extremely Limited - 8",
+      "SKU": "21I53AAA",
+      "Year": "2020",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "10",
+      "Fineness (% purity)": "75.42",
+      "Rose Gold Content - Tiger (Troy oz)": "0.418*",
+      "Argyle Pink Diamonds™ (Carat)": "2.98**",
+      "Quality": "Fancy Vivid / Intense Pink / Purplish Pink",
+      "Columbian Muzo Emeralds (Carat)": "0.01**",
+      "Colour": "Green",
+      "Monetary Denomination (AUD)": "2,000",
+      "Minimum Gross Weight (g)": "323.566",
+      "Maximum Diameter (mm)": "61.00",
+      "Maximum Thickness Including the Tiger (mm)": "17.50",
+      "Maximum Mintage": "8",
+      "Finish": "Proof",
+      "Legal Tender": "Australia",
+      "Effigy": "Jody Clark design of H. M. Queen Elizabeth II",
+      "Designer": "Natasha Muhl"
+    },
+    "series": "The Jewelled Tiger",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/02-jewelled-tiger-2019-10oz-gold_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/03-jewelled-tiger-2019-10oz-gold_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/04-jewelled-tiger-2019-10oz-gold_obverse.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/05-jewelled-tiger-2019-10oz-gold_onangle.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/06-jewelled-tiger-2019-10oz-gold_incase.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/07-jewelled-tiger-2019-10oz-gold_incaseclosed.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/08-jewelled-tiger-2019-10oz-gold_incasewithshipper.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20f25aaa/09-jewelled-tiger-2019-10oz-gold_incasewithshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": null
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/the-jewelled-tiger-2020-10oz-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/the-jewelled-tiger-2020-10oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

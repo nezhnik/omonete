@@ -1,0 +1,836 @@
+https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2014-1oz-silver-high-relief-coin	page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2014-1oz-silver-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2015-1oz-gold-proof-high-relief-coin	page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2015-1oz-gold-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/australian-kookaburra-35th-anniversary-2025-5oz-silver-incused-coin	page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/australian-kookaburra-35th-anniversary-2025-5oz-silver-incused-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/australian-lunar--series-ii-2016-year-of-the-monkey-1oz-silver-gilded-edition	page.goto: Timeout 25000ms exceeded.
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar--series-ii-2016-year-of-the-monkey-1oz-silver-gilded-edition/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2025-year-of-the-snake-1-5oz-gold-proof-three-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2025-year-of-the-snake-1-5oz-gold-proof-three-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2025-year-of-the-snake-1-5oz-gold-proof-three-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-double-phoenix-2025-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-double-phoenix-2025-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-double-phoenix-2025-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-2021-2oz-gold-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-2021-2oz-gold-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-2021-2oz-gold-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-2021-2oz-silver-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-2021-2oz-silver-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-2021-2oz-silver-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-and-koi-2024-1oz-platinum-reverse-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-and-koi-2024-1oz-platinum-reverse-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-dragon-and-koi-2024-1oz-platinum-reverse-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-green-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-green-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-green-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-phoenix-1oz-platinum-reverse-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-phoenix-1oz-platinum-reverse-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-phoenix-1oz-platinum-reverse-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-red-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-red-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-and-legends-red-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-double-phoenix-2025-1oz-silver-fire-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-double-phoenix-2025-1oz-silver-fire-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-double-phoenix-2025-1oz-silver-fire-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-1oz-gold-proof-ultra-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-1oz-gold-proof-ultra-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-1oz-gold-proof-ultra-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-1oz-silver-antiqued-coin-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-1oz-silver-antiqued-coin-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-1oz-silver-antiqued-coin-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-2oz-silver-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-2oz-silver-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-dragon-koi-2023-2oz-silver-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-2024-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-2024-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-2024-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-hong-2024-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-hong-2024-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-hong-2024-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-lan-2024-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-lan-2024-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-four-guardians-lan-2024-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-phoenix-2023-1oz-silver-antiqued-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-phoenix-2023-1oz-silver-antiqued-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-phoenix-2023-1oz-silver-antiqued-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-new-year-2018-1oz-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-new-year-2018-1oz-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-new-year-2018-1oz-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/chinese-wedding-2018-1oz-silver-proof-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/chinese-wedding-2018-1oz-silver-proof-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/chinese-wedding-2018-1oz-silver-proof-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/christmas-2019-1oz-star-shaped-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/christmas-2019-1oz-star-shaped-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/christmas-2019-1oz-star-shaped-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/christmas-2020-1oz-star-shaped-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/christmas-2020-1oz-star-shaped-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/christmas-2020-1oz-star-shaped-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/compass-2017-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/compass-2017-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/compass-2017-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/corporate-personalised-medallions	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/corporate-personalised-medallions/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/corporate-personalised-medallions/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-giant-centipede-2026-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-giant-centipede-2026-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-giant-centipede-2026-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-tiger-snake-2025-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-tiger-snake-2025-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-tiger-snake-2025-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/discover-australia-2013-1oz-silver-proof-five-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/discover-australia-2013-1oz-silver-proof-five-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/discover-australia-2013-1oz-silver-proof-five-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/discover-australia-goanna-2012-1-2oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/discover-australia-goanna-2012-1-2oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/discover-australia-goanna-2012-1-2oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/discover-australia-kookaburra-2012-1-2oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/discover-australia-kookaburra-2012-1-2oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/discover-australia-kookaburra-2012-1-2oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/disney-stitch-surfs-up-2025-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/disney-stitch-surfs-up-2025-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/disney-stitch-surfs-up-2025-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/diwali-2022-1oz-silver-gilded-medallion-en.aspx	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/diwali-2022-1oz-silver-gilded-medallion-en.aspx/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/diwali-2022-1oz-silver-gilded-medallion-en.aspx/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/diwali-2023-1oz-silver-gilded-medallion	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/diwali-2023-1oz-silver-gilded-medallion/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/diwali-2023-1oz-silver-gilded-medallion/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/double-dragon-2019-2oz-gold-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/double-dragon-2019-2oz-gold-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/double-dragon-2019-2oz-gold-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/double-dragon-2020-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/double-dragon-2020-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/double-dragon-2020-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/double-dragon-and-pearl-2024-2oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/double-dragon-and-pearl-2024-2oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/double-dragon-and-pearl-2024-2oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/double-dragon-and-pearl-2024-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/double-dragon-and-pearl-2024-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/double-dragon-and-pearl-2024-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/double-pixiu-2020-2oz-gold-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/double-pixiu-2020-2oz-gold-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/double-pixiu-2020-2oz-gold-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/double-pixiu-2020-2oz-silver-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/double-pixiu-2020-2oz-silver-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/double-pixiu-2020-2oz-silver-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2020-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2020-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2020-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2020-1oz-silver-proof-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2020-1oz-silver-proof-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2020-1oz-silver-proof-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-silver-proof-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-silver-proof-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2021-1oz-silver-proof-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-5oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-5oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2023-5oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-gold-proof-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-gold-proof-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-gold-proof-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-silver-proof-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-silver-proof-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-2025-1oz-silver-proof-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-and-phoenix-2017-2oz-high-relief-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-and-phoenix-2017-2oz-high-relief-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-and-phoenix-2017-2oz-high-relief-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-and-phoenix-2024-5oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-and-phoenix-2024-5oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-and-phoenix-2024-5oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-dingo-2021-1-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-dingo-2021-1-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-dingo-2021-1-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-kangaroo-2021-1-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-kangaroo-2021-1-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-kangaroo-2021-1-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-tasmanian-devil-2021-1-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-tasmanian-devil-2021-1-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-tasmanian-devil-2021-1-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-wombat-2021-1-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-wombat-2021-1-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/dreaming-down-under-wombat-2021-1-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/electric-sky-2024-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/electric-sky-2024-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/electric-sky-2024-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/emu-utingat-2025-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/emu-utingat-2025-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/emu-utingat-2025-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1-4oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1-4oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1-4oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwii-75th-anniversary-2020-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/ferris-wheel-2025-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/ferris-wheel-2025-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/ferris-wheel-2025-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/fifa-world-cup-2026-1-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/fifa-world-cup-2026-1-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/fifa-world-cup-2026-1-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/figure-eight-koi-fish-2019-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/figure-eight-koi-fish-2019-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/figure-eight-koi-fish-2019-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replica-golden-eagle-2024-1-4oz-gold-proof-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replica-golden-eagle-2024-1-4oz-gold-proof-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replica-golden-eagle-2024-1-4oz-gold-proof-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replica-little-hero-2024-1-10oz-gold-proof-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replica-little-hero-2024-1-10oz-gold-proof-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replica-little-hero-2024-1-10oz-gold-proof-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replicas-2024-gold-proof-gilded-four-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replicas-2024-gold-proof-gilded-four-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/first-australian-nugget-replicas-2024-gold-proof-gilded-four-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/five-auspicious-creatures-2024-5oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/five-auspicious-creatures-2024-5oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/five-auspicious-creatures-2024-5oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/frida-kahlo-2024-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/frida-kahlo-2024-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/frida-kahlo-2024-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/golden-treasures-of-ancient-egypt-2019-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/golden-treasures-of-ancient-egypt-2019-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/golden-treasures-of-ancient-egypt-2019-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-barrier-reef-2021-2-kilo-silver-antiqued-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-barrier-reef-2021-2-kilo-silver-antiqued-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-barrier-reef-2021-2-kilo-silver-antiqued-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2020-1oz-silver-proof-opal-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2020-1oz-silver-proof-opal-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2020-1oz-silver-proof-opal-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2024-1oz-silver-proof-chrysoprase-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2024-1oz-silver-proof-chrysoprase-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2024-1oz-silver-proof-chrysoprase-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2024-2oz-gold-proof-mother-of-pearl-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2024-2oz-gold-proof-mother-of-pearl-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2024-2oz-gold-proof-mother-of-pearl-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2025-2oz-gold-proof-blue-lepidolite-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2025-2oz-gold-proof-blue-lepidolite-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2025-2oz-gold-proof-blue-lepidolite-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2018-1oz-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2018-1oz-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2018-1oz-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2019-1oz-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2019-1oz-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2019-1oz-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2020-1oz-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2020-1oz-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2020-1oz-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2021-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2021-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2021-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2022-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2022-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2022-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2023-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2023-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2023-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2024-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2024-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2024-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2025-1-2oz-silver-proof-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2025-1-2oz-silver-proof-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2025-1-2oz-silver-proof-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-deathly-hallows-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-deathly-hallows-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-deathly-hallows-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-half-blood-prince-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-half-blood-prince-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-half-blood-prince-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-order-of-the-phoenix-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-order-of-the-phoenix-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-order-of-the-phoenix-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-sorcerers-stone-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-sorcerers-stone-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-and-the-sorcerers-stone-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-chamber-of-secrets-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-chamber-of-secrets-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-chamber-of-secrets-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-jack-russel-terrier-patronus-2024-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-jack-russel-terrier-patronus-2024-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-jack-russel-terrier-patronus-2024-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/harry-potter-prisoner-of-azkaban-2025-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/harry-potter-prisoner-of-azkaban-2025-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-prisoner-of-azkaban-2025-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-2021-1-4oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-2021-1-4oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-2021-1-4oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-2021-2oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-2021-2oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/her-majesty-queen-elizabeth-ii-95th-birthday-2021-2oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/hobart-money-expo-anda-special-year-of-the-horse-2026-1-4oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/hobart-money-expo-anda-special-year-of-the-horse-2026-1-4oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/hobart-money-expo-anda-special-year-of-the-horse-2026-1-4oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/honey-bee-2024-2-kilo-silver-antiqued-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/honey-bee-2024-2-kilo-silver-antiqued-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/honey-bee-2024-2-kilo-silver-antiqued-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/honey-bee-2025-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/honey-bee-2025-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/honey-bee-2025-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/hourglass-2021-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/hourglass-2021-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/hourglass-2021-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/hrh-prince-george-2013-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/hrh-prince-george-2013-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/hrh-prince-george-2013-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/hrh-princess-charlotte-2015-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/hrh-princess-charlotte-2015-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/hrh-princess-charlotte-2015-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/imperial-golden-dragon-2025-3oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/imperial-golden-dragon-2025-3oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/imperial-golden-dragon-2025-3oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/jingle-bell-2022-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/jingle-bell-2022-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/jingle-bell-2022-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/kangaroo-2023-2oz-silver-reverse-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/kangaroo-2023-2oz-silver-reverse-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/kangaroo-2023-2oz-silver-reverse-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/kangaroo-yongka-2023-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/kangaroo-yongka-2023-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/kangaroo-yongka-2023-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/kimberley-sunset-2021-5oz-rose-gold-proof-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/kimberley-sunset-2021-5oz-rose-gold-proof-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/kimberley-sunset-2021-5oz-rose-gold-proof-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/kookaburra-kaa-kaa-2024-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/kookaburra-kaa-kaa-2024-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/kookaburra-kaa-kaa-2024-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/laughing-buddha-2021-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/laughing-buddha-2021-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/laughing-buddha-2021-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/ludwig-leichhardt-2013-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/ludwig-leichhardt-2013-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/ludwig-leichhardt-2013-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/lunar-baby-tiger-2022-1-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/lunar-baby-tiger-2022-1-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/lunar-baby-tiger-2022-1-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2018-year-of-the-dog-1oz-silver-proof-four-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2018-year-of-the-dog-1oz-silver-proof-four-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2018-year-of-the-dog-1oz-silver-proof-four-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2019-year-of-the-pig-1oz-silver-proof-four-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2019-year-of-the-pig-1oz-silver-proof-four-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2019-year-of-the-pig-1oz-silver-proof-four-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-2025-year-of-the-snake-1oz-silver-green-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-2025-year-of-the-snake-1oz-silver-green-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-2025-year-of-the-snake-1oz-silver-green-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-2026-year-of-the-horse-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-2026-year-of-the-horse-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-2026-year-of-the-horse-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-special-2024-year-of-the-dragon-1-4oz-silver-coloured-coin-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-special-2024-year-of-the-dragon-1-4oz-silver-coloured-coin-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-special-2024-year-of-the-dragon-1-4oz-silver-coloured-coin-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-special-2024-yeilver-yellow-coloured-coin-car-of-the-dragon-1oz-sard	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-special-2024-yeilver-yellow-coloured-coin-car-of-the-dragon-1oz-sard/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/melbourne-money-expo-special-2024-yeilver-yellow-coloured-coin-car-of-the-dragon-1oz-sard/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2022-0-5g-gold-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2022-0-5g-gold-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2022-0-5g-gold-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2023-0-5g-gold-proof-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2023-0-5g-gold-proof-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2023-0-5g-gold-proof-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2024-0-5g-gold-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2024-0-5g-gold-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2024-0-5g-gold-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2025-0-5g-gold-proof-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2025-0-5g-gold-proof-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2025-0-5g-gold-proof-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/muppets-70th-anniversary-miss-piggy-2025-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/muppets-70th-anniversary-miss-piggy-2025-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/muppets-70th-anniversary-miss-piggy-2025-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-5oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-5oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-basilisk-2023-5oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-chimera-2025-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-chimera-2025-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-chimera-2025-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-griffin-2022-1oz-platinum-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-griffin-2022-1oz-platinum-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-griffin-2022-1oz-platinum-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/newborn-2024-1-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/newborn-2024-1-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/newborn-2024-1-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/newborn-2025-1-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/newborn-2025-1-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/newborn-2025-1-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/newborn-baby-2026-1-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/newborn-baby-2026-1-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/newborn-baby-2026-1-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2020-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2020-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2020-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2021-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2021-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2021-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2022-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2022-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2022-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2023-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2023-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2023-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2024-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2024-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2024-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2025-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2025-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2025-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/one-love-2026-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/one-love-2026-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/one-love-2026-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/ouroboros-2022-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/ouroboros-2022-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/ouroboros-2022-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2020-year-of-the-mouse-2oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2020-year-of-the-mouse-2oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2020-year-of-the-mouse-2oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2024-year-of-the-dragon-1oz-silver-teal-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2024-year-of-the-dragon-1oz-silver-teal-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-2024-year-of-the-dragon-1oz-silver-teal-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-and-coin-show-special-year-of-the-snake-double-happiness-2025-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-and-coin-show-special-year-of-the-snake-double-happiness-2025-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-and-coin-show-special-year-of-the-snake-double-happiness-2025-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-coin-show-special-2024-year-of-the-dragon-1oz-silver-blue-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-coin-show-special-2024-year-of-the-dragon-1oz-silver-blue-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/perth-stamp-coin-show-special-2024-year-of-the-dragon-1oz-silver-blue-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/phoenix-2022-1oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/phoenix-2022-1oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/phoenix-2022-1oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/pink-flamingo-2025-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/pink-flamingo-2025-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/pink-flamingo-2025-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-175th-anniversary-of-coronation-2013-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-175th-anniversary-of-coronation-2013-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-175th-anniversary-of-coronation-2013-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/quokka-2021-1oz-silver-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/quokka-2021-1oz-silver-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/quokka-2021-1oz-silver-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/royal-wedding-2018-1-4oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/royal-wedding-2018-1-4oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/royal-wedding-2018-1-4oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/rsl-centenary-2016-1-4oz-gold-proof-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/rsl-centenary-2016-1-4oz-gold-proof-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/rsl-centenary-2016-1-4oz-gold-proof-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/santas-workshop-2025-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/santas-workshop-2025-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/santas-workshop-2025-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-2024-2oz-silver-proof-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-2024-2oz-silver-proof-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-2024-2oz-silver-proof-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-patrick-star-2025-2oz-silver-proof-gilded-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-patrick-star-2025-2oz-silver-proof-gilded-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-patrick-star-2025-2oz-silver-proof-gilded-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-spongebob-and-gary-2024-1oz-silver-proof-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-spongebob-and-gary-2024-1oz-silver-proof-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/spongebob-squarepants-spongebob-and-gary-2024-1oz-silver-proof-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-1-2026-1oz-silver-coloured-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-1-2026-1oz-silver-coloured-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-1-2026-1oz-silver-coloured-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-2-2026-1oz-silver-coloured-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-2-2026-1oz-silver-coloured-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-2-2026-1oz-silver-coloured-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-3-2026-1oz-silver-coloured-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-3-2026-1oz-silver-coloured-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-3-2026-1oz-silver-coloured-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-4-2026-1oz-silver-coloured-rectangular-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-4-2026-1oz-silver-coloured-rectangular-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/stranger-things-season-4-2026-1oz-silver-coloured-rectangular-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/stranger-things-villains-2026-2oz-silver-antiqued-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/stranger-things-villains-2026-2oz-silver-antiqued-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/stranger-things-villains-2026-2oz-silver-antiqued-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/surfboard-2020-2oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/surfboard-2020-2oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/surfboard-2020-2oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2025-year-of-the-snake-1-4oz-silver-coloured-coin-in-card	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2025-year-of-the-snake-1-4oz-silver-coloured-coin-in-card/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-2025-year-of-the-snake-1-4oz-silver-coloured-coin-in-card/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-special-kookaburra-35th-anniversary-2025-1oz-silver-gold-plated-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-special-kookaburra-35th-anniversary-2025-1oz-silver-gold-plated-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-anda-special-kookaburra-35th-anniversary-2025-1oz-silver-gold-plated-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2019-year-of-the-pig-1-4oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2019-year-of-the-pig-1-4oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2019-year-of-the-pig-1-4oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2021-year-of-the-ox-1-4oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2021-year-of-the-ox-1-4oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2021-year-of-the-ox-1-4oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2023-year-of-the-rabbit-1-4oz-silver-coloured-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2023-year-of-the-rabbit-1-4oz-silver-coloured-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/sydney-money-expo-special-2023-year-of-the-rabbit-1-4oz-silver-coloured-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/tears-of-the-moon-2021-2oz-silver-antiqued-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/tears-of-the-moon-2021-2oz-silver-antiqued-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/tears-of-the-moon-2021-2oz-silver-antiqued-coin/", waiting until "domcontentloaded"
+
+https://www.perthmint.com/shop/collector-coins/coins/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin	page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin/
+Call log:
+  - navigating to "https://www.perthmint.com/shop/collector-coins/coins/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin/", waiting until "domcontentloaded"
+

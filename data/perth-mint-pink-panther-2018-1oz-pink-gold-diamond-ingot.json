@@ -1,0 +1,62 @@
+{
+  "coin": {
+    "title": "Pink Panther™ 2018 1oz Pink Gold Diamond Ingot",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": null,
+    "face_value": null,
+    "release_date": "2018-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "91.67",
+    "mintage": 300,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": null,
+    "thickness_mm": 4,
+    "length_mm": 41.6,
+    "width_mm": 24.6,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-25Y52BAA",
+    "catalog_suffix": "25y52baa",
+    "price_display": "AUD 524.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/ingots-and-bars/pink-panther-2018-1oz-pink-gold-diamond-ingot",
+    "image_obverse": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-obv.webp",
+    "image_reverse": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-rev.webp",
+    "image_box": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-box.webp",
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Pink Panther™ 2018 1oz Pink Gold Diamond Ingot",
+    "specs": {
+      "Mintage": "6,500",
+      "SKU": "25Y52BAA",
+      "Issue Limit": "4,500",
+      "Fineness (% purity)": "91.67",
+      "Maximum Thickness (mm)": "4.00",
+      "Argyle Pink Diamonds (Carat)": "0.08**",
+      "Quality": "Fancy Pink / Fancy Purplish Pink",
+      "Diamond Clarity": "SIAV",
+      "Maximum Dimensions": "41.60 x 24.60",
+      "Minimum Gross Weight (g)": "31.104",
+      "Maximum Mintage": "300"
+    },
+    "series": null,
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18b11aaa/02-pink-panther-1oz-pink-gold-pink-diamond-ingot-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18b11aaa/03-pink-panther-1oz-pink-gold-pink-diamond-ingot-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18b11aaa/04-pink-panther-2018-1oz-pink-gold-pink-diamond-ingot-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18b11aaa/05-pink-panther-2018-1oz-pink-gold-pink-diamond-ingot-inbox1-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18b11aaa/06-pink-panther-2018-1oz-pink-gold-pink-diamond-ingot-inbox2-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18b11aaa/07-pink-panther-2018-1oz-pink-gold-pink-diamond-ingot-shipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 524.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-obv.webp",
+    "reverse": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-rev.webp",
+    "box": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-box.webp",
+    "certificate": null
+  }
+}

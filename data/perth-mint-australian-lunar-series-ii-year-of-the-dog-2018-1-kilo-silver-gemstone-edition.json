@@ -3,7 +3,7 @@
     "title": "Australian Lunar Series II Year of the Dog 2018 1 Kilo Silver Gemstone Edition",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Australian Lunar Series Ii",
+    "series": "Australian Lunar Series II",
     "face_value": "30 долларов (Австралия)",
     "release_date": "2018-01-01",
     "mint": "The Perth Mint",
@@ -18,12 +18,12 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof, Coloured",
-    "catalog_number": "AU-PERTH-2026-3S2611510AAD",
+    "catalog_number": "AU-PERTH-2020-3S2536DAAA",
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 205.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-ii-year-of-the-dog-2018-1-kilo-silver-gemstone-edition",
     "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set-rev.webp",
+    "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-year-of-the-dog-2018-1-kilo-silver-gemstone-edition-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -47,6 +47,7 @@
       "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
       "Designer": "Ing Ing Jong"
     },
+    "series": null,
     "imageUrls": [
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1806abaa/01-2018-yearofthedog-silver-1kilo-gemeye-onedge-highres.jpg?contextmode=Default?width=500",
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1806abaa/02-2018-yearofthedog-silver-1kilo-gemeye-straighton-highres.jpg?contextmode=Default?width=500",
@@ -103,7 +104,7 @@
   },
   "saved": {
     "obverse": null,
-    "reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set-rev.webp",
+    "reverse": "/image/coins/foreign/australian-lunar-series-ii-year-of-the-dog-2018-1-kilo-silver-gemstone-edition-rev.webp",
     "box": null,
     "certificate": null
   }

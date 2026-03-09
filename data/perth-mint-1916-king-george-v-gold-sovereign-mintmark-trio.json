@@ -3,7 +3,7 @@
     "title": "1916 King George V Gold Sovereign Mintmark Trio",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Deadly and Dangerous",
+    "series": "Gold Sovereign",
     "face_value": null,
     "release_date": "1916-01-01",
     "mint": "The Perth Mint",
@@ -18,12 +18,12 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2020-16A21AAA",
+    "catalog_number": "AU-PERTH-2020-15X69BAA",
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 5,195.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1916-king-george-v-gold-sovereign-mintmark-trio",
     "image_obverse": "/image/coins/foreign/1916-king-george-v-gold-sovereign-mintmark-trio-obv.webp",
-    "image_reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
+    "image_reverse": "/image/coins/foreign/1916-king-george-v-gold-sovereign-mintmark-trio-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -84,7 +84,7 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/1916-king-george-v-gold-sovereign-mintmark-trio-obv.webp",
-    "reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
+    "reverse": "/image/coins/foreign/1916-king-george-v-gold-sovereign-mintmark-trio-rev.webp",
     "box": null,
     "certificate": null
   }

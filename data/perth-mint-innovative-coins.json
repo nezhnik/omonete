@@ -1,0 +1,47 @@
+{
+  "coin": {
+    "title": "Innovative Coins",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Innovative Coins",
+    "face_value": null,
+    "release_date": "2026-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 6000,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": null,
+    "thickness_mm": null,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2026-26W20AAA",
+    "catalog_suffix": "26w20aaa",
+    "price_display": "AUD 335.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/innovative-coins",
+    "image_obverse": null,
+    "image_reverse": "/image/coins/foreign/innovative-coins-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Innovative Coins",
+    "specs": {
+      "SKU": "26W20AAA",
+      "Mintage": "6,000",
+      "Limits": "1"
+    },
+    "series": "Innovative Coins",
+    "imageUrls": [],
+    "price": "AUD 335.00"
+  },
+  "saved": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/innovative-coins-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

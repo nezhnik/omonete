@@ -1,0 +1,47 @@
+{
+  "coin": {
+    "title": "Sovereigns",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Sovereigns",
+    "face_value": null,
+    "release_date": "2026-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 150,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": null,
+    "thickness_mm": null,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2026-12T97AAA",
+    "catalog_suffix": "12t97aaa",
+    "price_display": "AUD 11,544.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns",
+    "image_obverse": "/image/coins/foreign/sovereigns-obv.webp",
+    "image_reverse": "/image/coins/foreign/sovereigns-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Sovereigns",
+    "specs": {
+      "SKU": "12T97AAA",
+      "Mintage": "150",
+      "Issue Limit": "250"
+    },
+    "series": "Sovereigns",
+    "imageUrls": [],
+    "price": "AUD 11,544.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/sovereigns-obv.webp",
+    "reverse": "/image/coins/foreign/sovereigns-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

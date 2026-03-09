@@ -3,7 +3,9 @@
  * Прогресс сохраняется в data/perth-mint-listing-progress.json: при следующем запуске
  * продолжает с последней страницы и не дублирует уже собранные ссылки.
  * Запуск: node scripts/fetch-perth-mint-listing.js [url_каталога]
- * По умолчанию: pageSize=36.
+ *   --full — начать с страницы 1, игнорировать прогресс.
+ *   --write-full — после сбора перезаписать perth-mint-urls.txt полным списком (ровно столько URL, сколько собрано).
+ * По умолчанию: pageSize=36, каталог collector-coins (Gold, Silver, Bi Metal, Platinum, Pink/Rose Gold).
  */
 const fs = require("fs");
 const path = require("path");
@@ -12,7 +14,7 @@ const URL_LIST_FILE = path.join(__dirname, "perth-mint-urls.txt");
 const DATA_DIR = path.join(__dirname, "..", "data");
 const PROGRESS_FILE = path.join(DATA_DIR, "perth-mint-listing-progress.json");
 const DEFAULT_LISTING =
-  "https://www.perthmint.com/shop/collector-coins?p_metal=Gold&p_metal=Pink%20Gold&p_metal=Platinum&p_metal=Rose%20Gold&p_metal=Silver&page=1&pageSize=36&query&sortValue=4";
+  "https://www.perthmint.com/shop/collector-coins?p_metal=Bi%20Metal&p_metal=Gold&p_metal=Pink%20Gold&p_metal=Platinum&p_metal=Rose%20Gold&p_metal=Silver&page=1&pageSize=36&query&sortValue=4";
 
 function setPage(url, page) {
   const u = new URL(url);
@@ -288,8 +290,15 @@ async function main() {
     console.log("\nОтчёт записан в", reportPath);
   }
 
+  const writeFull = process.argv.includes("--write-full");
   if (list.length === 0) {
     console.log("Нечего дописывать в файл.");
+    return;
+  }
+
+  if (writeFull) {
+    fs.writeFileSync(URL_LIST_FILE, list.join("\n") + "\n", "utf8");
+    console.log("Перезаписан", URL_LIST_FILE, "— всего URL:", list.length);
     return;
   }
 

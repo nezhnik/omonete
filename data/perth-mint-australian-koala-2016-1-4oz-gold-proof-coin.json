@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australian Koala 2016 1/4oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Koala",
+    "face_value": "25 долларов (Австралия)",
+    "release_date": "2016-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 1000,
+    "weight_g": 7.78,
+    "weight_oz": "1/4",
+    "diameter_mm": 20.6,
+    "thickness_mm": 2,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-25117EAAA",
+    "catalog_suffix": "25117eaaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-koala-2016--1-4oz-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/australian-koala-2016-1-4oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-koala-2016-1-4oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Koala 2016 1/4oz Gold Proof Coin",
+    "specs": {
+      "Mintage": "250",
+      "SKU": "25117EAAA",
+      "Issue Limit": "6,000",
+      "Year": "2016",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "0.250",
+      "Monetary Denomination (AUD)": "25.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "7.770",
+      "Maximum Diameter (mm)": "20.60",
+      "Maximum Thickness (mm)": "2.00",
+      "Maximum Mintage": "1,000",
+      "Finish": "Proof",
+      "Legal Tender": "Australian",
+      "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
+      "Designer": "Ing Ing Jong"
+    },
+    "series": "Australian Koala",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/16117faaa/02-australian-koala-2016-1-4oz-gold-proof_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/16117faaa/03-australian-koala-2016-1-4oz-gold-proof_obverse.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/16117faaa/04-australian-koala-2016-1-4oz-gold-proof_incase.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/16117faaa/05-australian-koala-2016-1-4oz-gold-proof_inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-koala-2016-1-4oz-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-koala-2016-1-4oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

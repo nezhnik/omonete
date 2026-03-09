@@ -1,0 +1,62 @@
+{
+  "coin": {
+    "title": "Pink Flamingo 2025 1oz Silver Proof Gold-Plated Coin",
+    "title_ru": null,
+    "country": "Ниуэ",
+    "series": "Pink Flamingo",
+    "face_value": "1 доллар (Ниуэ)",
+    "release_date": "2025-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "999/1000",
+    "mintage": 600,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 38.6,
+    "thickness_mm": null,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2025-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 249.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/pink-flamingo-2025-1oz-silver-proof-coin",
+    "image_obverse": "/image/coins/foreign/pink-flamingo-2025-1oz-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-kangaroo-2023-5oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Pink Flamingo 2025 1oz Silver Proof Gold-Plated Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2025",
+      "Metal": "Silver",
+      "Monetary Denomination (NZD)": "1.00",
+      "Fineness (% purity)": "99.90",
+      "Maximum Diameter (mm)": "38.60",
+      "Maximum Mintage": "600",
+      "Finish": "Proof, Gold-plated",
+      "Legal Tender": "Niue",
+      "Effigy": "Jody Clark design of H.M. King Charles III"
+    },
+    "series": "Pink Flamingo",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25y49aaa/2-25y49aaa-pink-flamingo-2025-1oz-silver-proof-gold-plated-coin-revstraighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25y49aaa/3-25y49aaa-pink-flamingo-2025-1oz-silver-proof-gold-plated-coin-obvstraighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25y49aaa/4-25y49aaa-pink-flamingo-2025-1oz-silver-proof-gold-plated-coin-incaseopen.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25y49aaa/5-25y49aaa-pink-flamingo-2025-1oz-silver-proof-gold-plated-coin-incaseclosed.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25y49aaa/6-25y49aaa-pink-flamingo-2025-1oz-silver-proof-gold-plated-coin-inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 249.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/pink-flamingo-2025-1oz-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-kangaroo-2023-5oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

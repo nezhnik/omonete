@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australian Brumby 2023 2oz Silver Proof High Relief Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Brumby",
+    "face_value": "2 доллара (Австралия)",
+    "release_date": "2023-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 1000,
+    "weight_g": 62.21,
+    "weight_oz": 2,
+    "diameter_mm": 40.9,
+    "thickness_mm": 7.3,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2023-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/brumby-2023-2oz-silver-proof-high-relief-coin",
+    "image_obverse": null,
+    "image_reverse": null,
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Brumby 2023 2oz Silver Proof High Relief Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2023",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "2.000",
+      "Monetary Denomination (AUD)": "2.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "62.213",
+      "Maximum Diameter (mm)": "40.90",
+      "Maximum Thickness (mm)": "7.28",
+      "Maximum Mintage": "1,000",
+      "Finish": "Proof, High Relief",
+      "Legal Tender": "Australia",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Lucas Bowers"
+    },
+    "series": "Australian Brumby",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23n30aaa/02-2023-australianbrumby-2oz-silver-proof-highrelief-coin-strighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23n30aaa/03-2023-australianbrumby-2oz-silver-proof-highrelief-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23n30aaa/04-2023-australianbrumby-2oz-silver-proof-highrelief-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23n30aaa/05-2023-australianbrumby-2oz-silver-proof-highrelief-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": null,
+    "reverse": null,
+    "box": null,
+    "certificate": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australian Koala 2018 5oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Koala",
+    "face_value": "500 долларов (Австралия)",
+    "release_date": "2018-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 50,
+    "weight_g": 155.53,
+    "weight_oz": 1,
+    "diameter_mm": 50.5,
+    "thickness_mm": 5.6,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-koala-2018-5oz-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/australian-koala-2018-5oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-koala-2018-5oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Koala 2018 5oz Gold Proof Coin",
+    "specs": {
+      "Issue Limit": "6,000",
+      "SKU": "25X41AAA",
+      "Mintage": "2,500",
+      "Year": "2018",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "5.000",
+      "Monetary Denomination (AUD)": "500.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "155.533",
+      "Maximum Diameter (mm)": "50.50",
+      "Maximum Thickness (mm)": "5.64",
+      "Maximum Mintage": "50",
+      "Finish": "Proof",
+      "Legal Tender": "Australian",
+      "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
+      "Designer": "Natasha Muhl"
+    },
+    "series": "Australian Koala",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18117kaaa/02-2018-australian-koala-5oz-gold-proof-coin-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18117kaaa/03-2018-australian-koala-5oz-gold-proof-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18117kaaa/03-2018-australian-koala-5oz-gold-proof-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18117kaaa/04-2018-australian-koala-5oz-gold-proof-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-koala-2018-5oz-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-koala-2018-5oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

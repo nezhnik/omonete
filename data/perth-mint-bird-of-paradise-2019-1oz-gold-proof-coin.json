@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Bird of Paradise 2019 1oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Bird of Paradise",
+    "face_value": "100 долларов (Австралия)",
+    "release_date": "2019-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 500,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 32.6,
+    "thickness_mm": 2.8,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/bird-of-paradise-2019-1oz-gold-proof-coin",
+    "image_obverse": null,
+    "image_reverse": null,
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Bird of Paradise 2019 1oz Gold Proof Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2019",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "100.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "32.60",
+      "Maximum Thickness (mm)": "2.80",
+      "Maximum Mintage": "500",
+      "Finish": "Proof",
+      "Legal Tender": "Australian",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Jennifer McKenna"
+    },
+    "series": "Bird of Paradise",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/19e11baa/02-bird-of-paradise-2019-1oz-gold-proof_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/19e11baa/03-bird-of-paradise-2019-1oz-gold-proof_obverse.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/19e11baa/04-bird-of-paradise-2019-1oz-gold-proof_incase.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/19e11baa/05-bird-of-paradise-2019-1oz-gold-proof_inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": null,
+    "reverse": null,
+    "box": null,
+    "certificate": null
+  }
+}

@@ -59,5 +59,8 @@ mint-articles.json
 # состояние инкрементального экспорта (npm run data:export -- --incremental)
 export-state.json
 
+# манифест для инкрементальной выгрузки (out/regre)
+deploy-manifest.json
+
 # статический JSON цен металлов — на проде управляется только кроном на сервере
 public/data/metal-prices.json

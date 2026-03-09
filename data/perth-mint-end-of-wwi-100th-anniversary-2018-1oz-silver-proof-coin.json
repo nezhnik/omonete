@@ -3,7 +3,7 @@
     "title": "End of WWI 100th Anniversary 2018 1oz Silver Proof Coin",
     "title_ru": null,
     "country": "Австралия",
-    "series": "End Of Wwi 100th",
+    "series": "End of WWI 100th Anniversary",
     "face_value": "1 доллар (Австралия)",
     "release_date": "2018-01-01",
     "mint": "The Perth Mint",
@@ -18,12 +18,12 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2026-26Z40AAA",
+    "catalog_number": "AU-PERTH-2020-25R77AAA",
     "catalog_suffix": "25r77aaa",
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/end-of-wwi-100th-anniversary-2018-1oz-silver-proof-coin",
     "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
+    "image_reverse": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-1oz-silver-proof-coin-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -47,6 +47,7 @@
       "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
       "Designer": "Aleysha Howarth"
     },
+    "series": null,
     "imageUrls": [
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18c58baa/01-end-of-wwi-100th-anniversary-2018-1oz-silver-proof_onedge.jpg?contextmode=Default?width=500",
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18c58baa/02-end-of-wwi-100th-anniversary-2018-1oz-silver-proof_straighton.jpg?contextmode=Default?width=500",
@@ -103,7 +104,7 @@
   },
   "saved": {
     "obverse": null,
-    "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
+    "reverse": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-1oz-silver-proof-coin-rev.webp",
     "box": null,
     "certificate": null
   }

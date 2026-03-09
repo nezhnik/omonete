@@ -1,0 +1,60 @@
+{
+  "coin": {
+    "title": "The Sovereign 2026 Silver Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Gold Sovereign",
+    "face_value": null,
+    "release_date": "2026-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "999/1000",
+    "mintage": 20010,
+    "weight_g": 7.99,
+    "weight_oz": 1,
+    "diameter_mm": 22.1,
+    "thickness_mm": null,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2026-15X69BAA",
+    "catalog_suffix": "15x69baa",
+    "price_display": "AUD 11,544.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/the-sovereign-2026-silver-proof-coin",
+    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "The Sovereign 2026 Silver Proof Coin",
+    "specs": {
+      "Issue Limit": "250",
+      "SKU": "15X69BAA",
+      "Mintage": "150",
+      "Year": "2026",
+      "Metal": "Silver",
+      "Fineness (% purity)": "99.90",
+      "Minimum Gross Weight (g)": "7.990",
+      "Maximum Diameter (mm)": "22.05",
+      "Maximum Mintage": "20,010",
+      "Finish": "Proof",
+      "Effigy": "Martin Jennings design of H.M. King Charles III"
+    },
+    "series": "Gold Sovereign",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/2026/26y92aaa/2-26y92aaa-the-sovereign-2026-silver-proof-coin-revstraighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/2026/26y92aaa/3-26y92aaa-the-sovereign-2026-silver-proof-coin-obvstraighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/2026/26y92aaa/4-26y92aaa-the-sovereign-2026-silver-proof-coin-incase.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/2026/26y92aaa/5-26y92aaa-the-sovereign-2026-silver-proof-coin-inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 11,544.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

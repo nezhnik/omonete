@@ -3,7 +3,7 @@
     "title": "1917 King George V Perth Mint Gold Sovereign",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Deadly and Dangerous",
+    "series": "Gold Sovereign",
     "face_value": null,
     "release_date": "1917-01-01",
     "mint": "The Perth Mint",
@@ -18,11 +18,11 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2020-17B71AAA",
+    "catalog_number": "AU-PERTH-2020-15X69BAA",
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 1,795.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1917-king-george-v-perth-mint-gold-sovereign",
-    "image_obverse": "/image/coins/foreign/1917-king-george-v-perth-mint-gold-sovereign-rev.webp",
+    "image_obverse": "/image/coins/foreign/1917-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "image_reverse": "/image/coins/foreign/1917-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "image_box": null,
     "image_certificate": null
@@ -77,7 +77,7 @@
     "price": "AUD 1,795.00"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/1917-king-george-v-perth-mint-gold-sovereign-rev.webp",
+    "obverse": "/image/coins/foreign/1917-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "reverse": "/image/coins/foreign/1917-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "box": null,
     "certificate": null

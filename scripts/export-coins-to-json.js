@@ -11,6 +11,8 @@ const path = require("path");
 const { roundSpec, formatWeightG, stripCountryFromFaceValue } = require("./format-coin-characteristics.js");
 
 const PLACEHOLDER = "/image/coin-placeholder.png";
+// Чужая картинка набора 2013 — не подставлять в другие монеты (см. fix-wrong-3-coin-set-image.js)
+const WRONG_3_COIN_SET_PATH = "2013-australian-kookaburra-kangaroo-koala-high-relief-silver-pr-99-9-1-oz-3-coin-set";
 const STATE_FILE = path.join(__dirname, "..", "export-state.json");
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const COINS_DIR = path.join(DATA_DIR, "coins");
@@ -344,21 +346,31 @@ async function run() {
       (releaseDate ? new Date(releaseDate).getFullYear() : null) ??
       yearFromTitle(r.title) ??
       0;
-    const reverse = reverseUrl(imageReverse);
-    const obverse = obverseUrl(imageObverse);
+    const isThreeCoinSet = (r.title || "").includes("Three Coin Set") || (r.title || "").includes("3 Coin Set");
+    const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
+    const reverse = dropWrong(reverseUrl(imageReverse));
+    const obverse = dropWrong(obverseUrl(imageObverse));
     const imageUrl = firstImageSide === "reverse" ? (reverse ?? obverse ?? PLACEHOLDER) : (obverse ?? reverse ?? PLACEHOLDER);
     const imageUrlsOut = [];
     const imageUrlRoles = [];
+    const pushIfNew = (url, role) => {
+      if (!url || imageUrlsOut.includes(url)) return;
+      imageUrlsOut.push(url);
+      imageUrlRoles.push(role);
+    };
     if (firstImageSide === "reverse") {
-      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
-      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
+      if (reverse) pushIfNew(reverse, "reverse");
+      if (obverse) pushIfNew(obverse, "obverse");
     } else {
-      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
-      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
+      if (obverse) pushIfNew(obverse, "obverse");
+      if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (imageBox?.trim()) { imageUrlsOut.push(imageBox.trim()); imageUrlRoles.push("box"); }
-    if (imageCertificate?.trim()) { imageUrlsOut.push(imageCertificate.trim()); imageUrlRoles.push("certificate"); }
-    if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...imageUrls);
+    if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
+    if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
+    if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
+      const filtered = isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH));
+      if (filtered.length > 0) imageUrlsOut.push(...filtered);
+    }
     const { code: metalCode } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
     const weightLabel = getWeightLabel(r.weight_g, r.weight_oz);
@@ -448,21 +460,31 @@ async function run() {
     const imageReverse = r.image_reverse;
     const imageBox = r.image_box;
     const imageCertificate = r.image_certificate;
-    const obverse = obverseUrl(imageObverse);
-    const reverse = reverseUrl(imageReverse);
+    const isThreeCoinSet = (r.title || "").includes("Three Coin Set") || (r.title || "").includes("3 Coin Set");
+    const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
+    const obverse = dropWrong(obverseUrl(imageObverse));
+    const reverse = dropWrong(reverseUrl(imageReverse));
     const firstImage = firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? "");
     const imageUrlsOut = [];
     const imageUrlRoles = [];
+    const pushIfNew = (url, role) => {
+      if (!url || imageUrlsOut.includes(url)) return;
+      imageUrlsOut.push(url);
+      imageUrlRoles.push(role);
+    };
     if (firstImageSide === "reverse") {
-      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
-      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
+      if (reverse) pushIfNew(reverse, "reverse");
+      if (obverse) pushIfNew(obverse, "obverse");
     } else {
-      if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
-      if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
+      if (obverse) pushIfNew(obverse, "obverse");
+      if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (imageBox?.trim()) { imageUrlsOut.push(imageBox.trim()); imageUrlRoles.push("box"); }
-    if (imageCertificate?.trim()) { imageUrlsOut.push(imageCertificate.trim()); imageUrlRoles.push("certificate"); }
-    if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...imageUrls);
+    if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
+    if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
+    if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
+      const filtered = isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH));
+      if (filtered.length > 0) imageUrlsOut.push(...filtered);
+    }
     const releaseDate = r.release_date;
     const titleStr = [r.title, r.title_en].filter(Boolean).join(" ");
     const releaseYear = releaseDate ? (() => {

@@ -1,16 +1,23 @@
 /**
- * Загружает страницу монеты Perth Mint, извлекает данные и картинки.
+ * Загружает страницу монеты Perth Mint по URL, извлекает данные и картинки.
+ * URL страницы → только изображения ЭТОЙ монеты (не "you may also like").
+ *
+ * Логика: 1) картинки в порядке DOM; 2) папка продукта = самая частая в первых 20;
+ * 3) оставляем только URL с этой папкой; 4) серия — только из breadcrumb (без fallback).
+ *
  * Сохраняет изображения в public/image/coins/foreign/, данные — в data/perth-mint-*.json.
- * Поддерживает любую страницу товара: SKU и год извлекаются из URL картинок на странице.
  * Типы картинок: аверс (obverse), реверс (reverse), коробка (box), сертификат (certificate) —
- * определяются по имени файла и записываются в image_obverse, image_reverse, image_box, image_certificate
- * (в БД и экспорте эти поля уже есть; галерея на сайте показывает все четыре).
+ * по имени файла; записываются в image_obverse, image_reverse, image_box, image_certificate.
  *
  * Запуск:
  *   node scripts/fetch-perth-mint-coin.js              — берёт ссылки из scripts/perth-mint-urls.txt, пропускает уже обработанные
  *   node scripts/fetch-perth-mint-coin.js <url>       — одна ссылка из аргумента
+ *   node scripts/fetch-perth-mint-coin.js --from-canonicals — URL из data/perth-mint-*.json: для каждой страницы Perth сравнение с нашими данными, при расхождениях обновление; докачка недостающих изображений. 1 URL = 1 монета, дублей нет.
+ *   node scripts/fetch-perth-mint-coin.js --missing       — URL из perth-mint-missing-in-db.txt (нет в БД, см. check-perth-urls-vs-db.js --write)
  *   node scripts/fetch-perth-mint-coin.js --refetch-lost --refresh — переспарсить «потерянные» URL из perth-mint-refetch-urls.txt (см. list-perth-mint-refetch-urls.js)
- *   node scripts/fetch-perth-mint-coin.js --refresh --no-image-cache — полный перезабор: все страницы и все изображения заново (без кэша картинок).
+ *   node scripts/fetch-perth-mint-coin.js --refresh — полный перезабор: данные и картинки заново.
+ *   node scripts/fetch-perth-mint-coin.js --from-start — начать с начала (игнорировать прогресс).
+ *   Прогресс: data/perth-mint-fetch-progress.json. Ошибки: scripts/perth-mint-fetch-errors.txt. При повторе — продолжение с последнего успеха.
  * Имя JSON и картинок: по slug из URL (последний сегмент пути), чтобы 1 URL = 1 запись, без перезаписи разных монет.
  * Режим проверки: если уже есть JSON для этого URL, сравниваются характеристики и наличие картинок. Если ничего не изменилось — пропуск (быстро). Если изменились только часть данных — обновляются только они (докачиваются только недостающие изображения, перезаписываются только изменившиеся поля).
  * Прогресс сохраняется в data/perth-mint-fetch-progress.json: список completedUrls и coins (catalog_number, title, jsonPath).
@@ -154,22 +161,6 @@ function metalFromSpecs(specs) {
   return null;
 }
 
-/** Серия из URL товара: .../coins/<slug>/ → часть слага до года (20xx), в читаемый вид. */
-function seriesFromUrl(url) {
-  if (!url || typeof url !== "string") return null;
-  const pathname = url.replace(/^https?:\/\/[^/]+/, "").replace(/\?.*$/, "").replace(/\/$/, "");
-  const segments = pathname.split("/").filter(Boolean);
-  const slug = segments[segments.length - 1];
-  if (!slug || slug === "coins") return null;
-  const parts = slug.split("-");
-  const yearIdx = parts.findIndex((p) => /^20\d{2}$|^19\d{2}$/.test(p));
-  const beforeYear = yearIdx >= 0 ? parts.slice(0, yearIdx) : parts;
-  const take = beforeYear.length > 4 ? beforeYear.slice(0, 4) : beforeYear;
-  if (take.length === 0) return null;
-  const titleCase = (s) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
-  return take.map(titleCase).join(" ");
-}
-
 /** Slug для файлов: только буквы, цифры, дефисы */
 function slugify(s) {
   return String(s)
@@ -194,20 +185,9 @@ function slugFromUrl(pageUrl) {
 
 const URL_LIST_FILE = path.join(__dirname, "perth-mint-urls.txt");
 const REFETCH_URL_LIST_FILE = path.join(__dirname, "perth-mint-refetch-urls.txt");
+const MISSING_IN_DB_FILE = path.join(__dirname, "perth-mint-missing-in-db.txt");
 const PROGRESS_FILE = path.join(DATA_DIR, "perth-mint-fetch-progress.json");
-const IMAGE_URL_CACHE_FILE = path.join(DATA_DIR, "perth-mint-image-url-cache.json");
-
-function loadImageUrlCache() {
-  try {
-    return JSON.parse(fs.readFileSync(IMAGE_URL_CACHE_FILE, "utf8"));
-  } catch {
-    return {};
-  }
-}
-
-function saveImageUrlCache(cache) {
-  fs.writeFileSync(IMAGE_URL_CACHE_FILE, JSON.stringify(cache, null, 2), "utf8");
-}
+const ERRORS_FILE = path.join(__dirname, "perth-mint-fetch-errors.txt");
 
 /** Нормализуем URL для сравнения (без хвостового слэша). */
 function normalizeUrl(u) {
@@ -216,15 +196,26 @@ function normalizeUrl(u) {
 
 /** Загружает прогресс: какие URL уже обработаны и список забранных монет. */
 function loadProgress() {
-  if (!fs.existsSync(PROGRESS_FILE)) return { completedUrls: [], coins: [] };
+  if (!fs.existsSync(PROGRESS_FILE)) return { completedUrls: [], coins: [], errorUrls: [] };
   try {
     const raw = JSON.parse(fs.readFileSync(PROGRESS_FILE, "utf8"));
     return {
       completedUrls: Array.isArray(raw.completedUrls) ? raw.completedUrls : [],
       coins: Array.isArray(raw.coins) ? raw.coins : [],
+      errorUrls: Array.isArray(raw.errorUrls) ? raw.errorUrls : [],
     };
   } catch {
-    return { completedUrls: [], coins: [] };
+    return { completedUrls: [], coins: [], errorUrls: [] };
+  }
+}
+
+function appendErrorUrl(progress, url, errorMsg) {
+  progress.errorUrls = progress.errorUrls || [];
+  const norm = normalizeUrl(url);
+  if (!progress.errorUrls.some((e) => normalizeUrl(e.url || e) === norm)) {
+    progress.errorUrls.push({ url: norm, error: String(errorMsg || "").slice(0, 200), at: new Date().toISOString() });
+    saveProgress(progress);
+    fs.appendFileSync(ERRORS_FILE, norm + "\t" + (errorMsg || "") + "\n", "utf8");
   }
 }
 
@@ -235,13 +226,38 @@ function saveProgress(progress) {
   fs.writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2), "utf8");
 }
 
-/** Читает список URL: из аргумента (один), из perth-mint-refetch-urls.txt (если --refetch-lost), иначе из perth-mint-urls.txt. */
+/** Собирает все source_url из каноников data/perth-mint-*.json. 1 URL = 1 монета, без дублей. */
+function getUrlListFromCanonicals() {
+  if (!fs.existsSync(DATA_DIR)) return [];
+  const files = fs.readdirSync(DATA_DIR)
+    .filter((f) => f.startsWith("perth-mint-") && f.endsWith(".json"));
+  const seen = new Set();
+  const urls = [];
+  for (const f of files) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), "utf8"));
+      const url = raw?.coin?.source_url;
+      if (!url || !String(url).includes("perthmint.com")) continue;
+      const norm = normalizeUrl(url);
+      if (seen.has(norm)) continue;
+      seen.add(norm);
+      urls.push(url.trim());
+    } catch (e) {}
+  }
+  return urls;
+}
+
+/** Читает список URL: из аргумента (один), из каноников (--from-canonicals), из perth-mint-missing-in-db.txt (--missing), из perth-mint-refetch-urls.txt (--refetch-lost), иначе из perth-mint-urls.txt. */
 function getUrlList() {
   const arg = process.argv[2];
   if (arg && arg.startsWith("http")) return [arg];
+  if (process.argv.includes("--from-canonicals")) return getUrlListFromCanonicals();
+  const useMissing = process.argv.includes("--missing");
   const useRefetch = process.argv.includes("--refetch-lost");
-  const file = useRefetch && fs.existsSync(REFETCH_URL_LIST_FILE) ? REFETCH_URL_LIST_FILE : URL_LIST_FILE;
-  if (!fs.existsSync(file)) return useRefetch ? [] : [DEFAULT_URL];
+  let file = URL_LIST_FILE;
+  if (useMissing && fs.existsSync(MISSING_IN_DB_FILE)) file = MISSING_IN_DB_FILE;
+  else if (useRefetch && fs.existsSync(REFETCH_URL_LIST_FILE)) file = REFETCH_URL_LIST_FILE;
+  if (!fs.existsSync(file)) return (useMissing || useRefetch) ? [] : [DEFAULT_URL];
   const text = fs.readFileSync(file, "utf8");
   return text
     .split(/\r?\n/)
@@ -250,20 +266,44 @@ function getUrlList() {
 }
 
 /** Обрабатывает одну страницу товара: загрузка, извлечение данных, сохранение JSON и картинок. */
-async function fetchOneCoin(page, url, imageUrlCache = {}) {
-  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
-  await page.waitForTimeout(3000);
-  // Ждём галерею товара (rev, obverse, box), чтобы подтянулись data-src
-  await page.waitForSelector(".product-gallery img, [class*='product-gallery'] img, [class*='slick'] img", { timeout: 8000 }).catch(() => {});
-  await page.waitForTimeout(2000);
+/** forceRefresh: при true не пропускать «без изменений», всегда качать картинки и перезаписывать JSON. */
+async function fetchOneCoin(page, url, forceRefresh = false) {
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: 25000 });
+  await page.waitForSelector(".product-gallery img", { timeout: 5000 }).catch(() => {});
+  await page.waitForTimeout(1200);
 
-    // Извлекаем данные со страницы (блок Specifications: таблица или role="table")
+    // Извлекаем данные со страницы (блок Specifications, pageMetadata breadcrumb)
     const data = await page.evaluate(() => {
       const getText = (sel) => {
         const el = document.querySelector(sel);
         return el ? el.textContent.trim() : "";
       };
       const title = getText("h1") || getText("[data-product-name]") || document.title;
+      let series = null;
+      const metaEl = document.getElementById("pageMetadataObject");
+      if (metaEl) {
+        try {
+          const meta = JSON.parse(metaEl.textContent);
+          const bc = meta.breadcrumb;
+          if (Array.isArray(bc) && bc.length >= 3) {
+            const last = bc[bc.length - 1];
+            if (bc.length === 4 && (bc[2] === "Sovereigns" || bc[2] === "Coin Sets")) {
+              series = bc[2] === "Sovereigns" ? "Gold Sovereign" : "Coin Sets";
+            } else if (bc.length === 4 && last.includes(" - ")) {
+              series = last.split(" - ")[0].trim();
+            } else if (bc.length === 4 && bc[2] === "Coins" && /\b(20|19)\d{2}\b/.test(last)) {
+              const m = last.match(/^(.+?)\s+(?:20|19)\d{2}/);
+              series = m ? m[1].trim() : null;
+            } else if (bc.length === 3 && /\b(20|19)\d{2}\b/.test(last)) {
+              const m = last.match(/^(.+?)\s+(?:20|19)\d{2}/);
+              series = m ? m[1].trim() : null;
+            } else if (bc.length === 3 && !/^(Home|Collector coins|Coins)$/i.test(last)) {
+              const m = last.match(/^(.+?)\s+(?:20|19)\d{2}/);
+              series = m ? m[1].trim() : last;
+            }
+          }
+        } catch (e) {}
+      }
       const specs = {};
       function addRow(key, val) {
         const k = key.replace(/\s+/g, " ").trim();
@@ -284,31 +324,44 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
       const priceFromSpec = specs["Price"] || specs["Product Price"];
       if (!price && priceFromSpec) price = priceFromSpec;
       if (price) price = price.replace(/\s+/g, " ").trim();
-      // Картинки: приоритет — галерея товара (rev, obverse, box и т.д.), затем остальные
-      const gallerySelectors = ".product-gallery img, [class*='product-gallery'] img, [class*='slick-slide'] img, .product-gallery_thumbnail img";
-      const galleryImgs = Array.from(document.querySelectorAll(gallerySelectors))
-        .map((img) => img.getAttribute("data-src") || img.src || (img.getAttribute("data-srcset") || "").split(/[\s,]+/).find((s) => s.startsWith("http") || s.startsWith("/")))
-        .filter(Boolean);
-      const fromAll = Array.from(document.querySelectorAll("img"))
-        .map((img) => img.getAttribute("data-src") || img.src)
-        .filter(Boolean);
-      const allImgUrls = Array.from(new Set([...galleryImgs, ...fromAll])).filter(
-        (u) => !u.includes("logo") && !u.includes("icon") && (u.includes("product") || u.includes("coin") || u.includes("perthmint") || u.match(/\/coins\/\d{4}\//) || u.match(/\.(jpg|jpeg|png|webp)/i))
-      );
-      return { title, specs, imageUrls: allImgUrls.length ? allImgUrls : [], price: price || null };
+      // Картинки: только из блока .product-gallery (есть на каждой странице монеты; без "you may also like")
+      const gallery = document.querySelector(".product-gallery");
+      const galleryImgs = gallery ? Array.from(gallery.querySelectorAll("img")) : [];
+      const isCoinImg = (u) => u && !u.includes("logo") && !u.includes("icon") && (u.includes("/coins/") || u.includes("product-images"));
+      const urlsInOrder = [];
+      for (const img of galleryImgs) {
+        const u = img.getAttribute("data-src") || img.src || (img.getAttribute("data-srcset") || "").split(/[\s,]+/).find((s) => s && (s.startsWith("http") || s.startsWith("/")));
+        if (u && isCoinImg(u)) urlsInOrder.push(u);
+      }
+      const allImgUrls = Array.from(new Set(urlsInOrder));
+      return { title, specs, series, imageUrls: allImgUrls.length ? allImgUrls : [], price: price || null };
     });
 
+    // Доп. фильтр по папке (все из .product-gallery — уже этого продукта; на всякий случай)
+    const urlsOrdered = data.imageUrls || [];
+    const GALLERY_HEAD = 20;
+    const headForFolder = urlsOrdered.slice(0, GALLERY_HEAD);
+    const folderCounts = {};
+    headForFolder.forEach((u) => {
+      const m = String(u).match(/\/coins\/(?:01\.-archive\/)?(?:20\d{2}|19\d{2}|2012-2020)\/([a-z0-9]+)\//i);
+      if (m) {
+        const f = m[1].toLowerCase();
+        folderCounts[f] = (folderCounts[f] || 0) + 1;
+      }
+    });
+    const productFolder = (() => {
+      const entries = Object.entries(folderCounts).sort((a, b) => b[1] - a[1]);
+      return entries[0] ? entries[0][0] : null;
+    })();
+    if (productFolder) {
+      data.imageUrls = urlsOrdered.filter((u) => String(u).toLowerCase().includes("/" + productFolder + "/"));
+    }
     if (!data.imageUrls || data.imageUrls.length === 0) {
-      // Fallback: любые img в main
-      const more = await page.evaluate(() => {
-        return Array.from(document.querySelectorAll("main img, [role='main'] img, img[src]"))
-          .map((i) => i.src)
-          .filter((s) => s && !s.includes("logo") && !s.includes("icon") && (s.endsWith(".jpg") || s.endsWith(".png") || s.endsWith(".webp") || s.includes("image") || s.includes("media")));
-      });
-      data.imageUrls = [...(data.imageUrls || []), ...more].filter((u, i, a) => a.indexOf(u) === i);
+      data.imageUrls = [];
     }
 
     console.log("Заголовок:", data.title || "(не найден)");
+    console.log("Серия (из breadcrumb):", data.series != null ? data.series : "(не найдена на странице)");
     console.log("Спеки:", JSON.stringify(data.specs, null, 2));
     console.log("Найдено изображений:", data.imageUrls.length);
 
@@ -352,7 +405,6 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
     const finishSpec = (getSpec("Finish", "Quality") || "").toLowerCase();
     const quality = finishSpec ? (finishSpec.includes("colour") || finishSpec.includes("colored") ? "Proof, Coloured" : "Proof") : (fromTitle.quality || "Proof, Coloured");
 
-    const seriesFromPage = seriesFromUrl(url);
     const legalTender = getSpec("Legal Tender");
     let country = normalizeLegalTender(legalTender) || "Австралия";
     // Australian Kookaburra — всегда Австралия (на сайте Perth иногда Legal Tender = Tuvalu, но для каталога показываем страну серии)
@@ -364,10 +416,10 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
     const denomValue = country === "Великобритания" ? denomGbp : (country === "Тувалу" ? (denomTvd ?? denomAud) : (country === "Ниуэ" ? (denomNzd ?? denomAud) : (denomAud ?? denomTvd ?? denomNzd ?? denomGbp)));
     const faceValue = formatDenominationForFaceValue(denomValue, country) || null;
     const coin = {
-      title: data.title || "Deadly and Dangerous - Australia's Giant Centipede 2026 1oz Silver Proof Coloured Coin",
+      title: data.title || null,
       title_ru: null,
       country,
-      series: seriesFromPage || "Deadly and Dangerous",
+      series: data.series || null,
       face_value: faceValue || null,
       release_date: yearFromSpec,
       mint: "The Perth Mint",
@@ -395,7 +447,7 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
       .map((u) => (String(u).startsWith("http") ? u : BASE_URL + u))
       .map((u) => u.replace(/width=\d+/gi, "width=2000"))
       .filter((u, i, a) => a.indexOf(u) === i);
-    // Выбираем SKU/год по большинству: считаем вхождения (year, sku) из путей, в т.ч. 01.-archive/
+    // SKU продукта: в приоритете из спеок страницы (таблица Specifications), иначе по большинству путей картинок
     const skuCounts = {};
     allUrls.forEach((u) => {
       const x = extractYearAndSku(u);
@@ -406,13 +458,29 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
     });
     const best = Object.entries(skuCounts).sort((a, b) => b[1] - a[1])[0];
     const productYear = best ? best[0].split("/")[0] : yearStr;
-    const productSku = best ? best[0].split("/")[1] : null;
-
-    // Только картинки этого продукта: путь содержит тот же SKU (в т.ч. в 01.-archive)
-    const productUrls = productSku
-      ? allUrls.filter((u) => String(u).toLowerCase().includes("/" + productSku + "/"))
+    const productSkuFromImages = best ? best[0].split("/")[1] : null;
+    const productSku = skuFromSpec || productSkuFromImages;
+    // Фильтр картинок: сначала по SKU из спеок; если по нему пусто (на сайте папка картинок иногда с другим кодом) — по SKU из путей
+    let productUrls = productSku
+      ? allUrls.filter((u) => String(u).toLowerCase().includes("/" + productSku.toLowerCase() + "/"))
       : allUrls.filter((u) => /\/coins\/(\d{4}\/[a-z0-9]+|01\.-archive\/\d{4}\/[a-z0-9]+)\//i.test(u));
+    if (productUrls.length === 0 && productSkuFromImages && productSkuFromImages !== productSku) {
+      productUrls = allUrls.filter((u) => String(u).toLowerCase().includes("/" + productSkuFromImages + "/"));
+    }
     let fallbackUrls = productUrls.length > 0 ? productUrls : allUrls.filter((u) => u.includes("product") || u.includes("coin") || u.includes("perthmint"));
+    // Без fallback на «все»: если по SKU пусто — пробуем папку из путей (галерея в начале страницы)
+    if (fallbackUrls.length === 0 && allUrls.length > 0) {
+      const folderCounts = {};
+      (allUrls.slice(0, 15) || []).forEach((u) => {
+        const m = u.match(/\/coins\/(?:01\.-archive\/)?(?:20\d{2}|19\d{2}|2012-2020)\/([a-z0-9]+)\//i);
+        if (m) {
+          const f = m[1].toLowerCase();
+          folderCounts[f] = (folderCounts[f] || 0) + 1;
+        }
+      });
+      const best = Object.entries(folderCounts).sort((a, b) => b[1] - a[1])[0];
+      if (best) fallbackUrls = allUrls.filter((u) => String(u).toLowerCase().includes("/" + best[0] + "/"));
+    }
     // Исключаем повёрнутые/на ребре: в имени "on edge" или "left"
     fallbackUrls = fallbackUrls.filter((u) => !isExcludedImage(u));
 
@@ -429,6 +497,8 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
     // Если по имени не определилось — реверс и аверс из оставшихся (реверс приоритетнее)
     if (!byType.reverse && fallbackUrls.length > 0) byType.reverse = fallbackUrls.find((u) => /rev|reverse|02-/.test(String(u).toLowerCase())) || fallbackUrls[0];
     if (!byType.obverse && fallbackUrls.length > 0) byType.obverse = fallbackUrls.find((u) => /obv|obverse|01-|03-|obverse-highres/.test(String(u).toLowerCase()) && u !== byType.reverse) || fallbackUrls.find((u) => u !== byType.reverse) || fallbackUrls[1];
+    // Один и тот же URL не должен быть и аверсом и реверсом (на сайте иногда одна картинка в галерее)
+    if (byType.obverse && byType.obverse === byType.reverse) byType.obverse = null;
 
     if (!coin.catalog_number) coin.catalog_number = "AU-PERTH-" + productYear + (productSku ? "-" + productSku.toUpperCase() : "");
     coin.source_url = normalizeUrl(url);
@@ -443,7 +513,7 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
       } catch (e) {}
     }
 
-    if (existing) {
+    if (existing && !forceRefresh) {
       if (compareCoinSpecs(existing.coin, coin)) {
         const missing = getMissingImageSuffixes(existing.coin, byType, fileSlug);
         if (missing.length === 0) {
@@ -455,6 +525,7 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
         console.log("Обновляем данные (характеристики/название изменились).");
       }
     }
+    if (forceRefresh) console.log("Режим --refresh: забираем данные и картинки заново.");
 
     console.log("SKU/год из картинок:", productSku || "(не найден)", productYear);
     console.log("Типы картинок: аверс=" + (byType.obverse ? "да" : "нет") + ", реверс=" + (byType.reverse ? "да" : "нет") + ", коробка=" + (byType.box ? "да" : "нет") + ", сертификат=" + (byType.certificate ? "да" : "нет"));
@@ -465,64 +536,58 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
       { url: byType.box, suffix: "box" },
       { url: byType.certificate, suffix: "cert" },
     ].filter((x) => x.url);
-    const missingSuffixes = existing ? getMissingImageSuffixes(existing.coin, byType, fileSlug) : allToDownload.map((x) => x.suffix);
+    const missingSuffixes = forceRefresh ? allToDownload.map((x) => x.suffix) : (existing ? getMissingImageSuffixes(existing.coin, byType, fileSlug) : allToDownload.map((x) => x.suffix));
     const toDownload = allToDownload.filter((x) => missingSuffixes.includes(x.suffix));
 
     const sharp = require("sharp");
     const MAX_SIDE = 1200;
     const saved = { obverse: null, reverse: null, box: null, certificate: null };
-    if (existing && existing.coin) {
+    if (existing && existing.coin && !forceRefresh) {
       if (!missingSuffixes.includes("rev")) saved.reverse = existing.coin.image_reverse || null;
       if (!missingSuffixes.includes("obv")) saved.obverse = existing.coin.image_obverse || null;
       if (!missingSuffixes.includes("box")) saved.box = existing.coin.image_box || null;
       if (!missingSuffixes.includes("cert")) saved.certificate = existing.coin.image_certificate || null;
     }
 
-    for (const { url: imgUrl, suffix } of toDownload) {
-      if (!imgUrl) continue;
-      const cachedPath = imageUrlCache[imgUrl];
-      if (cachedPath) {
-        if (suffix === "obv") saved.obverse = cachedPath;
-        else if (suffix === "rev") saved.reverse = cachedPath;
-        else if (suffix === "box") saved.box = cachedPath;
-        else if (suffix === "cert") saved.certificate = cachedPath;
-        console.log("  (reuse)", path.basename(cachedPath));
-        continue;
-      }
+    const downloadOne = async ({ url: imgUrl, suffix }) => {
+      if (!imgUrl) return null;
       try {
         const res = await fetch(imgUrl, {
           headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36" },
           redirect: "follow",
         });
-        if (!res.ok) {
-          console.warn("  — HTTP", res.status, imgUrl.slice(0, 70) + "...");
-          continue;
-        }
+        if (!res.ok) return null;
         const buf = Buffer.from(await res.arrayBuffer());
-        if (buf.length < 1000) continue;
+        if (buf.length < 1000) return null;
         const baseName = `${fileSlug}-${suffix}`;
         const webpPath = path.join(FOREIGN_DIR, `${baseName}.webp`);
         await sharp(buf)
           .resize(MAX_SIDE, MAX_SIDE, { fit: "inside", withoutEnlargement: true })
           .webp({ quality: 82, effort: 6, smartSubsample: true })
           .toFile(webpPath);
-        const relPath = "/image/coins/foreign/" + baseName + ".webp";
-        imageUrlCache[imgUrl] = relPath;
-        if (suffix === "obv") saved.obverse = relPath;
-        else if (suffix === "rev") saved.reverse = relPath;
-        else if (suffix === "box") saved.box = relPath;
-        else if (suffix === "cert") saved.certificate = relPath;
-        console.log("  ✓", baseName + ".webp");
+        return { suffix, baseName };
       } catch (e) {
-        console.warn("  —", imgUrl.slice(0, 60) + "...", e.message);
+        return null;
       }
+    };
+    const results = await Promise.all(toDownload.map(downloadOne));
+    for (const r of results) {
+      if (!r) continue;
+      const relPath = "/image/coins/foreign/" + r.baseName + ".webp";
+      if (r.suffix === "obv") saved.obverse = relPath;
+      else if (r.suffix === "rev") saved.reverse = relPath;
+      else if (r.suffix === "box") saved.box = relPath;
+      else if (r.suffix === "cert") saved.certificate = relPath;
+      console.log("  ✓", r.baseName + ".webp");
     }
 
     coin.image_obverse = saved.obverse || null;
-    coin.image_reverse = saved.reverse || saved.obverse || null;
+    coin.image_reverse = saved.reverse || null;
     coin.image_box = saved.box || null;
     coin.image_certificate = saved.certificate || null;
-    fs.writeFileSync(jsonPath, JSON.stringify({ coin, raw: data, saved }, null, 2), "utf8");
+    // В raw — только картинки этой монеты (уже отфильтрованы по папке продукта)
+    const rawToSave = { ...data, imageUrls: fallbackUrls };
+    fs.writeFileSync(jsonPath, JSON.stringify({ coin, raw: rawToSave, saved }, null, 2), "utf8");
 
   console.log("\nГотово. Данные:", jsonPath);
   console.log("Изображения в", FOREIGN_DIR);
@@ -533,17 +598,29 @@ async function fetchOneCoin(page, url, imageUrlCache = {}) {
 async function main() {
   const allUrls = getUrlList();
   if (allUrls.length === 0) {
-    console.log("Нет ссылок. Добавь URL в", URL_LIST_FILE, "или передай: node scripts/fetch-perth-mint-coin.js <url>");
+    if (process.argv.includes("--from-canonicals")) {
+      console.log("В data/ нет каноников Perth с source_url (perthmint.com).");
+    } else {
+      console.log("Нет ссылок. Добавь URL в", URL_LIST_FILE, "или передай: node scripts/fetch-perth-mint-coin.js <url>");
+    }
     process.exit(1);
   }
 
   const refresh = process.argv.includes("--refresh");
+  const fromCanonicals = process.argv.includes("--from-canonicals");
+  const fromStart = process.argv.includes("--from-start");
   const progress = loadProgress();
   const completedSet = new Set(progress.completedUrls.map(normalizeUrl));
-  const urls = refresh ? allUrls : allUrls.filter((u) => !completedSet.has(normalizeUrl(u)));
+  // Всегда возобновляем с последней удачной (кроме --from-start). Ошибки в perth-mint-fetch-errors.txt
+  const urls = fromStart ? allUrls : allUrls.filter((u) => !completedSet.has(normalizeUrl(u)));
 
-  if (refresh) console.log("Режим --refresh: обрабатываем все URL из списка (в т.ч. уже в прогрессе).");
-  console.log("Монет в списке:", allUrls.length, "| уже в прогрессе:", progress.completedUrls.length, "| к обработке:", urls.length);
+  if (fromStart) {
+    console.log("Режим --from-start: игнорируем прогресс, начинаем с начала.");
+    if (fs.existsSync(ERRORS_FILE)) fs.writeFileSync(ERRORS_FILE, "", "utf8");
+  }
+  if (refresh) console.log("Режим --refresh: перезаписываем данные и картинки.");
+  console.log("Монет в списке:", allUrls.length, "| готово:", progress.completedUrls.length, "| к обработке:", urls.length);
+  if (progress.errorUrls?.length) console.log("Ошибок в прошлых запусках:", progress.errorUrls.length, "→ scripts/perth-mint-fetch-errors.txt");
   if (urls.length === 0) {
     console.log("Все URL уже обработаны. Прогресс в", PROGRESS_FILE);
     return;
@@ -571,9 +648,6 @@ async function main() {
     viewport: { width: 1280, height: 800 },
   });
 
-  const noImageCache = process.argv.includes("--no-image-cache");
-  const imageUrlCache = noImageCache ? {} : loadImageUrlCache();
-  if (noImageCache) console.log("Режим --no-image-cache: все изображения загружаются заново.");
   let doneThisRun = 0;
   try {
     for (let i = 0; i < urls.length; i++) {
@@ -582,9 +656,8 @@ async function main() {
       console.log("Загрузка:", url);
       const page = await context.newPage();
       try {
-        const result = await fetchOneCoin(page, url, imageUrlCache);
+        const result = await fetchOneCoin(page, url, refresh);
         if (result) {
-          if (!noImageCache) saveImageUrlCache(imageUrlCache);
           const norm = normalizeUrl(url);
           const idx = progress.completedUrls.indexOf(norm);
           const entry = { url: norm, catalog_number: result.catalog_number, title: result.title, jsonPath: result.jsonPath, completedAt: new Date().toISOString(), status: result.status || "ok" };
@@ -599,16 +672,20 @@ async function main() {
         }
       } catch (e) {
         console.error("Ошибка для", url, e.message);
+        appendErrorUrl(progress, url, e.message);
       } finally {
         await page.close();
       }
-      if (i < urls.length - 1) await new Promise((r) => setTimeout(r, 2000));
+      if (i < urls.length - 1) await new Promise((r) => setTimeout(r, 800));
     }
   } finally {
     await browser.close();
   }
   console.log("\nОбработано в этом запуске:", doneThisRun);
   console.log("Всего в прогрессе:", progress.completedUrls.length, "монет. Файл:", PROGRESS_FILE);
+  if (process.argv.includes("--from-canonicals") && doneThisRun > 0) {
+    console.log("Дальше: node scripts/update-perth-from-canonical-json.js → node scripts/export-coins-to-json.js → npm run build");
+  }
 }
 
 main().catch((e) => {

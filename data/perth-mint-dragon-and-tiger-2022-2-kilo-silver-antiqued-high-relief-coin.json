@@ -3,7 +3,7 @@
     "title": "Dragon and Tiger 2022 2 Kilo Silver Antiqued High Relief Coin",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Dragon And Tiger",
+    "series": "Dragon and Tiger",
     "face_value": "60 долларов (Австралия)",
     "release_date": "2022-01-01",
     "mint": "The Perth Mint",
@@ -18,13 +18,13 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2022-22K90AAA",
+    "catalog_number": "AU-PERTH-2022-25U68ZAA",
     "catalog_suffix": "25u68zaa",
     "price_display": "AUD 11,974.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin",
     "image_obverse": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -130,7 +130,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
     "reverse": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
     "certificate": null
   }
 }

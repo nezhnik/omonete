@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Baby Rabbit 2023 1/2oz Silver Proof Coin",
+    "title_ru": null,
+    "country": "Тувалу",
+    "series": "Baby",
+    "face_value": "0,5 долларов (Тувалу)",
+    "release_date": "2023-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 7500,
+    "weight_g": 15.55,
+    "weight_oz": "1/2",
+    "diameter_mm": 32.6,
+    "thickness_mm": 2.9,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof, Coloured",
+    "catalog_number": "AU-PERTH-2023-3S2536DAAA",
+    "catalog_suffix": "3s2536daaa",
+    "price_display": "AUD 149.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/baby-rabbit-2023-1-2oz-silver-proof-coin",
+    "image_obverse": null,
+    "image_reverse": null,
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Baby Rabbit 2023 1/2oz Silver Proof Coin",
+    "specs": {
+      "Issue Limit": "2,000",
+      "SKU": "3S2536DAAA",
+      "Mintage": "3,888",
+      "Year": "2023",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "0.500",
+      "Monetary Denomination (TVD)": "0.50",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "15.553",
+      "Maximum Diameter (mm)": "32.60",
+      "Maximum Thickness (mm)": "2.90",
+      "Maximum Mintage": "7,500",
+      "Finish": "Proof, Coloured",
+      "Legal Tender": "Tuvalu",
+      "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
+      "Designer": "Jennifer McKenna"
+    },
+    "series": "Baby Rabbit",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m46aaa/02-baby-rabbit-2023-1_2oz-silver-proof-coloured-coin--straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m46aaa/03-baby-rabbit-2023-1_2oz-silver-proof-coloured-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m46aaa/04-baby-rabbit-2023-1_2oz-silver-proof-coloured-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2023/23m46aaa/05-baby-rabbit-2023-1_2oz-silver-proof-coloured-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 149.99"
+  },
+  "saved": {
+    "obverse": null,
+    "reverse": null,
+    "box": null,
+    "certificate": null
+  }
+}

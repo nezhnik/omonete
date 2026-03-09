@@ -3,7 +3,7 @@
     "title": "Evolution of Industry 2018 1oz Silver Gear-Shaped Two-Coin Set",
     "title_ru": null,
     "country": "Тувалу",
-    "series": "Evolution Of Industry",
+    "series": "Evolution of Industry",
     "face_value": "1 доллар (Тувалу)",
     "release_date": "2018-01-01",
     "mint": "The Perth Mint",
@@ -18,12 +18,12 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2026-26022DPAD",
+    "catalog_number": "AU-PERTH-2020-25V91BAD",
     "catalog_suffix": "25v91bad",
     "price_display": "AUD 349.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/evolution-of-industry-2018-1oz-silver-gear-shaped-two-coin-set",
     "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/2013-australian-kookaburra-kangaroo-koala-high-relief-silver-pr-99-9-1-oz-3-coin-set-rev.webp",
+    "image_reverse": "/image/coins/foreign/evolution-of-industry-2018-1oz-silver-gear-shaped-two-coin-set-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -47,6 +47,7 @@
       "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
       "Designer": "Tom Vaughan"
     },
+    "series": null,
     "imageUrls": [
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18c03zaa/01-2018-evolution-of-industry-1oz-silver-cog-shaped-two-coin-set-incase-highres.jpg?contextmode=Default?width=500",
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18c03zaa/01-steam-1oz-silver-cog-shaped-coin-onedge-highres.jpg?contextmode=Default?width=500",
@@ -119,7 +120,7 @@
   },
   "saved": {
     "obverse": null,
-    "reverse": "/image/coins/foreign/2013-australian-kookaburra-kangaroo-koala-high-relief-silver-pr-99-9-1-oz-3-coin-set-rev.webp",
+    "reverse": "/image/coins/foreign/evolution-of-industry-2018-1oz-silver-gear-shaped-two-coin-set-rev.webp",
     "box": null,
     "certificate": null
   }

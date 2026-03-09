@@ -1,0 +1,61 @@
+{
+  "coin": {
+    "title": "Aurora Australis 2022 1oz Silver Proof Coin",
+    "title_ru": null,
+    "country": "Тувалу",
+    "series": "Aurora Australis",
+    "face_value": "1 доллар (Тувалу)",
+    "release_date": "2022-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 2000,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 40.9,
+    "thickness_mm": 3.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2022-25117EAAA",
+    "catalog_suffix": "25117eaaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/aurora-australis-2022-1oz-silver-proof-coin",
+    "image_obverse": "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Aurora Australis 2022 1oz Silver Proof Coin",
+    "specs": {
+      "Mintage": "250",
+      "SKU": "25117EAAA",
+      "Issue Limit": "6,000",
+      "Year": "2022",
+      "Metal": "Silver",
+      "Monetary Denomination (TVD)": "1.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "40.90",
+      "Maximum Thickness (mm)": "3.50",
+      "Maximum Mintage": "2,000",
+      "Finish": "Proof",
+      "Legal Tender": "Tuvalu",
+      "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II"
+    },
+    "series": "Aurora Australis",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22p50aaa/31219-tv-2022-$1-aurora-australis-1oz-silpf-rev.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22p50aaa/31219-tv-2022-$1-aurora-australis-1oz-silpf-obv.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

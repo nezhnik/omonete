@@ -1,0 +1,67 @@
+{
+  "coin": {
+    "title": "Australian Lunar Series II 2013 Year of the Snake Three-Coin Set",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Lunar Series II",
+    "face_value": "2 доллара (Австралия)",
+    "release_date": "2013-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "999/1000",
+    "mintage": 2000,
+    "weight_g": 62.27,
+    "weight_oz": 1,
+    "diameter_mm": 55.6,
+    "thickness_mm": 3.6,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-3S2536DAAA",
+    "catalog_suffix": "3s2536daaa",
+    "price_display": "AUD 205.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-ii-2013-year-of-the-snake-three-coin-set",
+    "image_obverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-three-coin-set-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-three-coin-set-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Lunar Series II 2013 Year of the Snake Three-Coin Set",
+    "specs": {
+      "Issue Limit": "2,000",
+      "SKU": "3S2536DAAA",
+      "Mintage": "3,888",
+      "Year": "2013",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "2.00",
+      "Monetary Denomination (AUD)": "2.00",
+      "Fineness (% purity)": "99.9",
+      "Minimum Gross Weight (g)": "62.270",
+      "Maximum Diameter (mm)": "55.60",
+      "Maximum Thickness (mm)": "3.60",
+      "Maximum Mintage": "2,000",
+      "Finish": "Proof",
+      "Legal Tender": "Australia",
+      "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
+      "Designer": "Ing Ing Jong"
+    },
+    "series": "Australian Lunar Series II",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1316zbaa/02-2013-lunar-yearofthesnake-silver-1oz-proof-straighton-hig.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1316zbaa/03-2013-lunar-yearofthesnake-silver-1oz-proof-obverse-highre.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1316zbaa/15-2013-lunar-yearofthesnake-silver-2oz-proof-obverse-highre.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1316zbaa/19-2013-lunar-yearofthesnake-silver-1_2oz-proof-obverse-high.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1316zbaa/20-2013-lunar-yearofthesnake-silver-3coinset-proof-incase-hi.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/2s1316zbaa/21-2013-lunar-yearofthesnake-silver-3coinset-proof-inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 205.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-three-coin-set-obv.webp",
+    "reverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-three-coin-set-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "coin": {
+    "title": "Australia Sovereign 2021 Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Gold Sovereign",
+    "face_value": "25 долларов (Австралия)",
+    "release_date": "2021-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "91.67",
+    "mintage": 1000,
+    "weight_g": 7.99,
+    "weight_oz": 1,
+    "diameter_mm": 22.6,
+    "thickness_mm": 1.9,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2021-15X69BAA",
+    "catalog_suffix": "15x69baa",
+    "price_display": "AUD 11,544.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2021-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australia Sovereign 2021 Gold Proof Coin",
+    "specs": {
+      "Issue Limit": "250",
+      "SKU": "15X69BAA",
+      "Mintage": "150",
+      "Year": "2021",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "0.235",
+      "Monetary Denomination (AUD)": "25.00",
+      "Fineness (% purity)": "91.67",
+      "Minimum Gross Weight (g)": "7.988",
+      "Maximum Diameter (mm)": "22.55",
+      "Maximum Thickness (mm)": "1.90",
+      "Maximum Mintage": "1,000",
+      "Finish": "Proof",
+      "Legal Tender": "Australia",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II"
+    },
+    "series": "Gold Sovereign",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21i24aaa/02-australia-sovereign-2021-gold-proof_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21i24aaa/03-australia-sovereign-2021-gold-proof_obverse.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21i24aaa/04-australia-sovereign-2021-gold-proof_inshipper.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21i24aaa/05-australia-sovereign-2021-gold-proof_inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 11,544.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

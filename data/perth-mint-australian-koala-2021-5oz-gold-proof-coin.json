@@ -1,0 +1,64 @@
+{
+  "coin": {
+    "title": "Australian Koala 2021 5oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Koala",
+    "face_value": "500 долларов (Австралия)",
+    "release_date": "2021-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 50,
+    "weight_g": 155.53,
+    "weight_oz": 1,
+    "diameter_mm": 50.8,
+    "thickness_mm": 5.9,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2021-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 220.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-koala-2021-5oz-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/australian-koala-2021-5oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-koala-2021-5oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Koala 2021 5oz Gold Proof Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2021",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "5.000",
+      "Monetary Denomination (AUD)": "500.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "155.533",
+      "Maximum Diameter (mm)": "50.80",
+      "Maximum Thickness (mm)": "5.90",
+      "Maximum Mintage": "50",
+      "Finish": "Proof",
+      "Legal Tender": "Australian",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II"
+    },
+    "series": "Australian Koala",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21117kaaa/02-2021-australiankoala-5oz-gold-proof-coin-striaghton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21117kaaa/05-2021-australiankoala-5oz-gold-proof-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21117kaaa/03-2021-australiankoala-5oz-gold-proof-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2021/21117kaaa/04-2021-australiankoala-5oz-gold-proof-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 220.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-koala-2021-5oz-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-koala-2021-5oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

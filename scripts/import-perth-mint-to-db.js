@@ -140,7 +140,10 @@ async function main() {
     console.log("Удалено старых Perth (без source_url):", res.affectedRows);
   }
 
-  for (const filePath of files) {
+  const total = files.length;
+  for (let i = 0; i < files.length; i++) {
+    const filePath = files[i];
+    if (i > 0 && i % 50 === 0) process.stdout.write(`  [${i}/${total}] …\n`);
     const raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
     const c = raw.coin;
     if (!c) {

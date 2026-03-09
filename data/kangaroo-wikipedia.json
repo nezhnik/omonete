@@ -1,0 +1,99 @@
+{
+  "source": "https://en.wikipedia.org/wiki/Australian_Silver_Kangaroo_(bullion)",
+  "description": "Australian Silver Kangaroo (1 oz bullion) из Wikipedia. Только текст и цифры, картинки не используются.",
+  "specs": {
+    "weight_g": "31,1",
+    "weight_oz": "1 унция",
+    "diameter_mm": "40,6",
+    "thickness_mm": "3,2",
+    "face_value": "1 доллар",
+    "metal": "Серебро",
+    "metal_fineness": "9999/1000"
+  },
+  "coins": [
+    {
+      "catalog_number": "AU-KANGAROO-2015-B",
+      "title": "Австралийский серебряный кенгуру 2015 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2015 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 300000,
+      "release_date": "2015-01-01",
+      "quality": "АЦ"
+    },
+    {
+      "catalog_number": "AU-KANGAROO-2016-B",
+      "title": "Австралийский серебряный кенгуру 2016 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2016 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 11245615,
+      "release_date": "2016-01-01",
+      "quality": "АЦ"
+    },
+    {
+      "catalog_number": "AU-KANGAROO-2017-B",
+      "title": "Австралийский серебряный кенгуру 2017 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2017 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 5178016,
+      "release_date": "2017-01-01",
+      "quality": "АЦ"
+    },
+    {
+      "catalog_number": "AU-KANGAROO-2018-B",
+      "title": "Австралийский серебряный кенгуру 2018 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2018 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 4395517,
+      "release_date": "2018-01-01",
+      "quality": "АЦ"
+    },
+    {
+      "catalog_number": "AU-KANGAROO-2019-B",
+      "title": "Австралийский серебряный кенгуру 2019 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2019 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 5650501,
+      "release_date": "2019-01-01",
+      "quality": "АЦ"
+    },
+    {
+      "catalog_number": "AU-KANGAROO-2020-B",
+      "title": "Австралийский серебряный кенгуру 2020 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2020 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 13169939,
+      "release_date": "2020-01-01",
+      "quality": "АЦ"
+    },
+    {
+      "catalog_number": "AU-KANGAROO-2021-B",
+      "title": "Австралийский серебряный кенгуру 2021 (1 унция, bullion)",
+      "title_en": "Australian Silver Kangaroo 2021 1oz Bullion",
+      "series": "Australian Silver Kangaroo",
+      "country": "Австралия",
+      "mint": "The Perth Mint",
+      "mint_short": "Perth Mint",
+      "mintage": 11735394,
+      "release_date": "2021-01-01",
+      "quality": "АЦ"
+    }
+  ]
+}

@@ -18,13 +18,13 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2026-3S2611510AAD",
+    "catalog_number": "AU-PERTH-2020-25U68ZAA",
     "catalog_suffix": "25u68zaa",
     "price_display": "AUD 205.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/good-luck-rotating-charm-2018-1oz-silver-antiqued-coin",
     "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set-rev.webp",
-    "image_box": null,
+    "image_reverse": "/image/coins/foreign/good-luck-rotating-charm-2018-1oz-silver-antiqued-coin-rev.webp",
+    "image_box": "/image/coins/foreign/good-luck-rotating-charm-2018-1oz-silver-antiqued-coin-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -47,6 +47,7 @@
       "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
       "Designer": "Natasha Muhl"
     },
+    "series": null,
     "imageUrls": [
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18c29aaa/01-good-luck-rotating-charm-2018-1oz-silver-antiqued_onedge.jpg?contextmode=Default?width=500",
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18c29aaa/02-good-luck-rotating-charm-2018-1oz-silver-antiqued_straighton.jpg?contextmode=Default?width=500",
@@ -107,8 +108,8 @@
   },
   "saved": {
     "obverse": null,
-    "reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set-rev.webp",
-    "box": null,
+    "reverse": "/image/coins/foreign/good-luck-rotating-charm-2018-1oz-silver-antiqued-coin-rev.webp",
+    "box": "/image/coins/foreign/good-luck-rotating-charm-2018-1oz-silver-antiqued-coin-box.webp",
     "certificate": null
   }
 }

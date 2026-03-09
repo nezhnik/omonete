@@ -1,0 +1,63 @@
+{
+  "coin": {
+    "title": "One Love 2020 1oz Silver Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "One Love",
+    "face_value": "1 доллар (Австралия)",
+    "release_date": "2020-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Серебро",
+    "metal_fineness": "9999/10000",
+    "mintage": 5000,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 40.9,
+    "thickness_mm": 3.5,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2020-23M49AAA",
+    "catalog_suffix": "23m49aaa",
+    "price_display": "AUD 149.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/one-love-2020-1oz-silver-proof-coin",
+    "image_obverse": "/image/coins/foreign/one-love-2020-1oz-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "One Love 2020 1oz Silver Proof Coin",
+    "specs": {
+      "Mintage": "Unlimited",
+      "SKU": "23M49AAA",
+      "Year": "2020",
+      "Metal": "Silver",
+      "Silver Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "1.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "40.90",
+      "Maximum Thickness (mm)": "3.50",
+      "Maximum Mintage": "5,000",
+      "Finish": "Proof",
+      "Legal Tender": "Australian",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II"
+    },
+    "series": "One Love",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20e93aaa/02-one-love-2019-1oz-silver-proof_straighton.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20e93aaa/03-one-love-2019-1oz-silver-proof_obverse.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20e93aaa/04-one-love-2019-1oz-silver-proof_incase.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/20e93aaa/05-one-love-2019-1oz-silver-proof_inshipper.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 149.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/one-love-2020-1oz-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

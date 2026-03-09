@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australian Brumby 2022 1oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Australian Brumby",
+    "face_value": "100 долларов (Австралия)",
+    "release_date": "2022-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 250,
+    "weight_g": 31.1,
+    "weight_oz": 1,
+    "diameter_mm": 32.6,
+    "thickness_mm": 3,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2022-25X41AAA",
+    "catalog_suffix": "25x41aaa",
+    "price_display": "AUD 349.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-brumby-2022-1oz-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/australian-brumby-2022-1oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-brumby-2022-1oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Australian Brumby 2022 1oz Gold Proof Coin",
+    "specs": {
+      "Mintage": "2,500",
+      "SKU": "25X41AAA",
+      "Issue Limit": "6,000",
+      "Year": "2022",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "1.000",
+      "Monetary Denomination (AUD)": "100.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "31.107",
+      "Maximum Diameter (mm)": "32.60",
+      "Maximum Thickness (mm)": "2.95",
+      "Maximum Mintage": "250",
+      "Finish": "Proof",
+      "Legal Tender": "Australia",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Jennifer McKenna"
+    },
+    "series": "Australian Brumby",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22m28aaa/02-2022-australianbrumby-1oz-gold-proof-coin-strighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22m28aaa/03-2022-australianbrumby-1oz-gold-proof-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22m28aaa/04-2022-australianbrumby-1oz-gold-proof-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22m28aaa/05-2022-australianbrumby-1oz-gold-proof-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 349.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australian-brumby-2022-1oz-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-brumby-2022-1oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

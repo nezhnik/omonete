@@ -1,0 +1,64 @@
+{
+  "coin": {
+    "title": "Chinese Astrological Series 2022 Year of the Tiger 1/5oz Gold Proof Coin",
+    "title_ru": null,
+    "country": "Тувалу",
+    "series": "Chinese Astrological Series",
+    "face_value": "30 долларов (Тувалу)",
+    "release_date": "2022-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "9999/10000",
+    "mintage": 3888,
+    "weight_g": 6.22,
+    "weight_oz": "1/5",
+    "diameter_mm": 22.6,
+    "thickness_mm": 1.9,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2022-3S2536DAAA",
+    "catalog_suffix": "3s2536daaa",
+    "price_display": "AUD 204.99",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/coins/year-of-the-tiger-2022-1-5oz-gold-coin",
+    "image_obverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-rev.webp",
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "Chinese Astrological Series 2022 Year of the Tiger 1/5oz Gold Proof Coin",
+    "specs": {
+      "Issue Limit": "2,000",
+      "SKU": "3S2536DAAA",
+      "Mintage": "3,888",
+      "Year": "2022",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "0.200",
+      "Monetary Denomination (TVD)": "30.00",
+      "Fineness (% purity)": "99.99",
+      "Minimum Gross Weight (g)": "6.221",
+      "Maximum Diameter (mm)": "22.60",
+      "Maximum Thickness (mm)": "1.90",
+      "Finish": "Proof",
+      "Legal Tender": "Tuvalu",
+      "Effigy": "Jody Clark design of H.M. Queen Elizabeth II",
+      "Designer": "Sean Rogers"
+    },
+    "series": "Chinese Astrological Series",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j78aaa/02-fu-2022-yearofthetiger-1_5oz-gold-coin-straighton-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j78aaa/03-2022-yearofthetiger-1_5oz-gold-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j78aaa/04-fu-2022-yearofthetiger-1_5oz-gold-coin-incase-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2022/22j78aaa/05-fu-2022-yearofthetiger-1_5oz-gold-coin-inshipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 204.99"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-obv.webp",
+    "reverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-rev.webp",
+    "box": null,
+    "certificate": null
+  }
+}

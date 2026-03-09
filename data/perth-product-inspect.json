@@ -1,0 +1,37 @@
+{
+  "pageMetadata": {
+    "title": "1914 King George V Perth Mint Gold Sovereign Retail",
+    "pageUrl": "/shop/collector-coins/sovereigns/1914-king-george-v-perth-mint-gold-sovereign/",
+    "pageType": "PDP",
+    "cmsType": "Web product",
+    "pageId": 12822,
+    "erpId": "P_5637163591_00000141",
+    "breadcrumb": [
+      "Home",
+      "Collector coins",
+      "Sovereigns",
+      "1914 King George V Perth Mint Gold Sovereign"
+    ]
+  },
+  "breadcrumbEl": "<li class=\"breadcrumbs__item\"><a href=\"/\" class=\"breadcrumbs__link\">Home</a></li> <li class=\"breadcrumbs__item\"><a href=\"/shop/collector-coins/\" class=\"breadcrumbs__link\">Collector coins</a></li> <li class=\"breadcrumbs__item\"><a href=\"/shop/collector-coins/sovereigns/\" class=\"breadcrumbs__link\">Sovereigns</a></li> <li class=\"breadcrumbs__item\"><span class=\"show-for-sr\">Current: </span> 1914 King George V Perth Mint Gold Sovereign</li>",
+  "breadcrumbLinks": [
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Collector coins",
+      "href": "/shop/collector-coins/"
+    },
+    {
+      "text": "Sovereigns",
+      "href": "/shop/collector-coins/sovereigns/"
+    }
+  ],
+  "specs": {
+    "SKU": "15X69BAA",
+    "Mintage": "150",
+    "Issue Limit": "250"
+  },
+  "title": "1914 King George V Perth Mint Gold Sovereign"
+}

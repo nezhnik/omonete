@@ -1,0 +1,65 @@
+{
+  "coin": {
+    "title": "Australia Sovereign 2025 Gold Proof Coin",
+    "title_ru": null,
+    "country": "Австралия",
+    "series": "Gold Sovereign",
+    "face_value": "25 долларов (Австралия)",
+    "release_date": "2025-01-01",
+    "mint": "The Perth Mint",
+    "mint_short": "Perth Mint",
+    "metal": "Золото",
+    "metal_fineness": "91.67",
+    "mintage": 1500,
+    "weight_g": 7.99,
+    "weight_oz": 1,
+    "diameter_mm": 22.6,
+    "thickness_mm": 1.9,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "AU-PERTH-2025-15X69BAA",
+    "catalog_suffix": "15x69baa",
+    "price_display": "AUD 2,430.00",
+    "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2025-gold-proof-coin",
+    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-cert.webp"
+  },
+  "raw": {
+    "title": "Australia Sovereign 2025 Gold Proof Coin",
+    "specs": {
+      "Issue Limit": "250",
+      "SKU": "15X69BAA",
+      "Mintage": "150",
+      "Year": "2025",
+      "Metal": "Gold",
+      "Gold Content (Troy oz)": "0.235",
+      "Monetary Denomination (AUD)": "25.00",
+      "Fineness (% purity)": "91.67",
+      "Minimum Gross Weight (g)": "7.988",
+      "Maximum Diameter (mm)": "22.55",
+      "Maximum Thickness (mm)": "1.90",
+      "Maximum Mintage": "1,500",
+      "Finish": "Proof",
+      "Legal Tender": "Australia",
+      "Effigy": "Dan Thorne design of H.M. King Charles III",
+      "Designer": "Jennifer McKenna"
+    },
+    "series": "Gold Sovereign",
+    "imageUrls": [
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25r77aaa/02-australian-sovereign-2025-gold-proof-coin-straight-on-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25r77aaa/03-australian-sovereign-2025-gold-proof-coin-obverse-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25r77aaa/04-australian-sovereign-2025-gold-proof-coin-in-case-highres.jpg?contextmode=Default?width=2000",
+      "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25r77aaa/05-australian-sovereign-2025-gold-proof-coin-in-shipper-highres.jpg?contextmode=Default?width=2000"
+    ],
+    "price": "AUD 2,430.00"
+  },
+  "saved": {
+    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-cert.webp"
+  }
+}

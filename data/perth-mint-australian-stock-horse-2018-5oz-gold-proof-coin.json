@@ -18,12 +18,12 @@
     "length_mm": null,
     "width_mm": null,
     "quality": "Proof",
-    "catalog_number": "AU-PERTH-2026-26022DPAD",
+    "catalog_number": "AU-PERTH-2020-25117EAAA",
     "catalog_suffix": "25117eaaa",
     "price_display": "AUD 349.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-stock-horse-2018-5oz-gold-proof-coin",
     "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/2013-australian-kookaburra-kangaroo-koala-high-relief-silver-pr-99-9-1-oz-3-coin-set-rev.webp",
+    "image_reverse": "/image/coins/foreign/australian-stock-horse-2018-5oz-gold-proof-coin-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -47,6 +47,7 @@
       "Effigy": "Ian Rank-Broadley design of H.M. Queen Elizabeth II",
       "Designer": "Jennifer McKenna"
     },
+    "series": null,
     "imageUrls": [
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18a34aaa/01-stock-horse-2018-5oz-gold-proof_onedge.jpg?contextmode=Default?width=500",
       "/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2012-2020/18a34aaa/02-stock-horse-2018-5oz-gold-proof_straighton.jpg?contextmode=Default?width=500",
@@ -103,7 +104,7 @@
   },
   "saved": {
     "obverse": null,
-    "reverse": "/image/coins/foreign/2013-australian-kookaburra-kangaroo-koala-high-relief-silver-pr-99-9-1-oz-3-coin-set-rev.webp",
+    "reverse": "/image/coins/foreign/australian-stock-horse-2018-5oz-gold-proof-coin-rev.webp",
     "box": null,
     "certificate": null
   }
