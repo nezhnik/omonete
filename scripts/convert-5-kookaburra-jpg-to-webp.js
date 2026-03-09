@@ -10,7 +10,7 @@ const fs = require("fs");
 const path = require("path");
 const mysql = require("mysql2/promise");
 
-const KOOKABURRA_DIR = path.join(__dirname, "..", "public", "image", "coins", "kookaburra");
+const FOREIGN_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
 
 const MAP = [
   { id: 5850, obv: "1995-australia-1-oz-silver-kookaburra-bu_10160_Obv.jpg", rev: "1995-australia-1-oz-silver-kookaburra-bu_10160_Rev.jpg", webpObv: "kookaburra-1oz-1995-obv.webp", webpRev: "kookaburra-1oz-1995-rev.webp" },
@@ -30,10 +30,10 @@ async function convertWithSharp(srcPath, destPath) {
 async function main() {
   const converted = new Map();
   for (const m of MAP) {
-    const obvSrc = path.join(KOOKABURRA_DIR, m.obv);
-    const revSrc = path.join(KOOKABURRA_DIR, m.rev);
-    const obvDest = path.join(KOOKABURRA_DIR, m.webpObv);
-    const revDest = path.join(KOOKABURRA_DIR, m.webpRev);
+    const obvSrc = path.join(FOREIGN_DIR, m.obv);
+    const revSrc = path.join(FOREIGN_DIR, m.rev);
+    const obvDest = path.join(FOREIGN_DIR, m.webpObv);
+    const revDest = path.join(FOREIGN_DIR, m.webpRev);
 
     if (!fs.existsSync(obvSrc) || !fs.existsSync(revSrc)) {
       console.log("  Пропуск id=" + m.id + ": нет " + m.obv + " или " + m.rev);
@@ -63,8 +63,8 @@ async function main() {
   const pathsByEntry = new Map();
   for (const e of MAP) {
     pathsByEntry.set(e.id, {
-      obv: `/image/coins/kookaburra/${e.webpObv}`,
-      rev: `/image/coins/kookaburra/${e.webpRev}`,
+      obv: `/image/coins/foreign/${e.webpObv}`,
+      rev: `/image/coins/foreign/${e.webpRev}`,
     });
   }
 

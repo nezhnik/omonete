@@ -57,13 +57,13 @@ async function main() {
     database,
   });
 
-  const toKookaburraPath = (p) => (p || "").replace("/apmex-kookaburra/apmex-kookaburra-", "/kookaburra/kookaburra-").replace("/apmex-kookaburra/", "/kookaburra/");
+  const toForeignPath = (p) => (p || "").replace("/apmex-kookaburra/apmex-kookaburra-", "/foreign/kookaburra-").replace("/apmex-kookaburra/", "/foreign/");
   const verbose = process.argv.includes("--verbose");
   let updated = 0;
   const seen = new Set();
   for (const entry of withImages) {
-    const obverse = toKookaburraPath(entry.obverse);
-    const reverse = toKookaburraPath(entry.reverse);
+    const obverse = toForeignPath(entry.obverse);
+    const reverse = toForeignPath(entry.reverse);
     const { year, weight } = entry;
     const weightG = weightToG(weight);
     if (!weightG) continue;

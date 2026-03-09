@@ -15,7 +15,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 
-const KOOKABURRA_DIR = path.join(__dirname, "..", "public", "image", "coins", "kookaburra");
+const FOREIGN_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
 
 // weight_g → ключ apmex
 function weightGToKey(w) {
@@ -37,15 +37,15 @@ function parseKookaburraFile(name) {
 }
 
 function buildKookaburraMap() {
-  if (!fs.existsSync(KOOKABURRA_DIR)) return new Map();
-  const files = fs.readdirSync(KOOKABURRA_DIR);
+  if (!fs.existsSync(FOREIGN_DIR)) return new Map();
+  const files = fs.readdirSync(FOREIGN_DIR).filter((f) => f.startsWith("kookaburra-"));
   const byKey = new Map();
   for (const f of files) {
     const p = parseKookaburraFile(f);
     if (!p) continue;
     const key = `${p.year}-${p.weight}`;
     if (!byKey.has(key)) byKey.set(key, {});
-    const rel = `/image/coins/kookaburra/${f}`;
+    const rel = `/image/coins/foreign/${f}`;
     byKey.get(key)[p.side] = rel;
   }
   return byKey;

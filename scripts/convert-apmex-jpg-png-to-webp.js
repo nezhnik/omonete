@@ -11,7 +11,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "kookaburra");
+const OUT_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
 const MAX_SIDE = 1200;
 
 function parseFromFilename(name) {

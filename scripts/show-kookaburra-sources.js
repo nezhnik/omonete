@@ -12,7 +12,7 @@ const mysql = require("mysql2/promise");
 
 function imageSource(path) {
   if (!path) return "";
-  if (path.includes("/kookaburra/")) return "kookaburra";
+  if (path.includes("/foreign/") && path.includes("kookaburra")) return "foreign (kookaburra)";
   if (path.includes("/chards-kookaburra/")) return "chards";
   if (path.includes("/foreign/")) return "foreign";
   return "other";

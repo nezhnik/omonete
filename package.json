@@ -48,7 +48,6 @@
     "perth:listing": "node scripts/fetch-perth-mint-listing.js",
     "perth:fetch": "node scripts/fetch-perth-mint-coin.js",
     "perth:import": "node scripts/import-perth-mint-to-db.js",
-    "kookaburra:import": "node scripts/import-kookaburra-wikipedia-to-db.js",
     "kookaburra:apply-plan": "node scripts/apply-kookaburra-plan-to-db.js",
     "kangaroo:import": "node scripts/import-kangaroo-wikipedia-to-db.js",
     "kookaburra:pixelur-download": "node scripts/download-pixelur-kookaburra-images.js"

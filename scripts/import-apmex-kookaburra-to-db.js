@@ -40,9 +40,9 @@ function toTitle(entry) {
   return `Australian Kookaburra ${y} ${wLabel} Silver BU`;
 }
 
-function toKookaburraPath(p) {
+function toForeignPath(p) {
   if (!p || typeof p !== "string") return p;
-  return p.replace("/apmex-kookaburra/apmex-kookaburra-", "/kookaburra/kookaburra-").replace("/apmex-kookaburra/", "/kookaburra/");
+  return p.replace("/apmex-kookaburra/apmex-kookaburra-", "/foreign/kookaburra-").replace("/apmex-kookaburra/", "/foreign/");
 }
 
 async function main() {
@@ -125,8 +125,8 @@ async function main() {
       `${e.year}-01-01`,
       catalogNumber,
       "АЦ",
-      toKookaburraPath(e.obverse),
-      toKookaburraPath(e.reverse)
+      toForeignPath(e.obverse),
+      toForeignPath(e.reverse)
     ];
 
     const placeholders = cols.map(() => "?").join(", ");

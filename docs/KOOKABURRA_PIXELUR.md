@@ -1,13 +1,5 @@
 # Kookaburra: источники данных и импорт в БД
 
-## Wikipedia — основной источник для Regular 1 oz
-
-[Australian Silver Kookaburra (Wikipedia)](https://en.wikipedia.org/wiki/Australian_Silver_Kookaburra) — тиражи bullion и proof по годам (1990–2021), спеки (31.135 г, 40.6 мм, 4 мм). **Только текст и цифры, картинки с Wikipedia не берём.**
-
-- **Файл:** `data/kookaburra-wikipedia.json`
-- **Импорт:** `node scripts/import-kookaburra-wikipedia-to-db.js`
-- **npm:** `npm run kookaburra:import`
-
 ## Pixelur — дополнительный источник (privy, подсерии)
 
 Источник: [Guide to the Australian Kookaburra by Perth Mint](https://www.pixelur.com/Kookaburra.html) — человек собрал все серии Kookaburra с разбивкой по подсериям.
@@ -43,8 +35,6 @@
 
 | Файл | Назначение |
 |------|------------|
-| `data/kookaburra-wikipedia.json` | Regular 1 oz bullion и proof (1990–2021) из Wikipedia. Готов к импорту. |
-| `scripts/import-kookaburra-wikipedia-to-db.js` | Импорт из Wikipedia JSON в `coins`. |
 | `data/kookaburra-pixelur.json` | Privy, подсерии — заполнять вручную из картинок или OCR. |
 | `scripts/import-kookaburra-pixelur-to-db.js` | Импорт из Pixelur JSON в `coins`. |
 | `scripts/download-pixelur-kookaburra-images.js` | Скачивает все изображения с pixelur.com/Kookaburra.html в `public/image/coins/kookaburra-pixelur/`. Запуск: `npm run kookaburra:pixelur-download`. |

@@ -27,7 +27,7 @@ const PLAN_PATH = path.join(
 const FACE = { "1oz": "1 доллар", "2oz": "2 доллара", "10oz": "10 долларов", "1kg": "30 долларов", "5oz": "8 долларов" };
 const WEIGHT_G = { "1oz": "31.1", "2oz": "62.2", "10oz": "311", "1kg": "1000", "5oz": "155.5" };
 const WEIGHT_OZ = { "1oz": "1", "2oz": "2", "10oz": "10", "1kg": "32.15", "5oz": "5" };
-// Стандарты Perth Mint: diameter_mm, thickness_mm по весу (1oz: import-kookaburra-wikipedia; 2oz: bullion; 10oz,1kg,5oz: Perth Mint)
+// Стандарты Perth Mint: diameter_mm, thickness_mm по весу (1oz: 40.6/4; 2oz: bullion; 10oz,1kg,5oz: Perth Mint)
 const DIAMETER_MM = { "1oz": "40.6", "2oz": "50.3", "10oz": "75.9", "1kg": "100.9", "5oz": "50.6" };
 const THICKNESS_MM = { "1oz": "4", "2oz": "4.5", "10oz": "8.66", "1kg": "14.5", "5oz": "12.5" };
 

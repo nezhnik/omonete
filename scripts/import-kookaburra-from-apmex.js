@@ -13,7 +13,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 
-const KOOKABURRA_DIR = path.join(__dirname, "..", "public", "image", "coins", "kookaburra");
+const FOREIGN_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
 const PLAN_PATH = path.join(
   "/Users/mihail/Desktop/Нумизматика сайт",
   "Файлы и документы по монетам",
@@ -32,15 +32,15 @@ function parseFilename(name) {
 }
 
 function scanKookaburra() {
-  if (!fs.existsSync(KOOKABURRA_DIR)) return [];
-  const files = fs.readdirSync(KOOKABURRA_DIR);
+  if (!fs.existsSync(FOREIGN_DIR)) return [];
+  const files = fs.readdirSync(FOREIGN_DIR).filter((f) => f.startsWith("kookaburra-"));
   const byKey = new Map();
   for (const f of files) {
     const p = parseFilename(f);
     if (!p) continue;
     const key = `${p.year}-${p.weight}`;
     if (!byKey.has(key)) byKey.set(key, {});
-    const rel = `/image/coins/kookaburra/${f}`;
+    const rel = `/image/coins/foreign/${f}`;
     if (p.side === "rev" && (p.isProof || p.isPrivy)) {
       if (p.isProof) byKey.get(key).proofRev = rel;
       else byKey.get(key).privyRev = rel;
@@ -124,7 +124,7 @@ async function main() {
   const dryRun = process.argv.includes("--dry");
 
   const entries = scanKookaburra();
-  console.log("Монет с obv+rev из kookaburra:", entries.length);
+  console.log("Монет с obv+rev из foreign (kookaburra-*):", entries.length);
 
   let planData = new Map();
   if (fs.existsSync(PLAN_PATH)) {
