@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2022-2oz-gold-proof-opal-coin",
     "image_obverse": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-cert.webp"
   },
   "raw": {
     "title": "Great Southern Land 2022 2oz Gold Proof Opal Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-obv.webp",
     "reverse": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-box.webp",
+    "certificate": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-cert.webp"
   }
 }

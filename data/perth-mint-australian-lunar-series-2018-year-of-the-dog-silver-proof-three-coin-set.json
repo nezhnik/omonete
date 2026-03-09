@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 2000,
     "weight_g": 62.21,
-    "weight_oz": 1,
+    "weight_oz": 2,
     "diameter_mm": 55.6,
     "thickness_mm": 3.4,
     "length_mm": null,
@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -61,7 +61,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set-box.webp",
     "certificate": null
   }
 }

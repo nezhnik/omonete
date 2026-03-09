@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2024-diwali-1oz-silver-gilded-medallion",
     "image_obverse": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-obv.webp",
     "image_reverse": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-box.webp",
+    "image_certificate": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-cert.webp"
   },
   "raw": {
     "title": "Diwali 1oz Silver Gilded Medallion",
@@ -56,7 +56,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-obv.webp",
     "reverse": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-box.webp",
+    "certificate": "/image/coins/foreign/2024-diwali-1oz-silver-gilded-medallion-cert.webp"
   }
 }

@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin",
     "image_obverse": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "Twelve Lunar Animals 2022 5oz Silver Antiqued Coloured Coin",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/twelve-lunar-animal-2022-5oz-silver-antiqued-coloured-coin-cert.webp"
   }
 }

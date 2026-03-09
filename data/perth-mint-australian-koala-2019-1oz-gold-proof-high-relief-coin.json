@@ -22,10 +22,10 @@
     "catalog_suffix": "25117eaaa",
     "price_display": "AUD 349.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-koala-2019-1oz-gold-proof-high-relief-coin",
-    "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_obverse": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-rev.webp",
+    "image_box": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Koala 2019 1oz Gold Proof High Relief Coin",
@@ -100,9 +100,9 @@
     "price": "AUD 349.00"
   },
   "saved": {
-    "obverse": null,
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "obverse": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-rev.webp",
+    "box": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-koala-2019-1oz-gold-proof-high-relief-coin-cert.webp"
   }
 }

@@ -23,9 +23,9 @@
     "price_display": "AUD 240.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/diwali-2023-1oz-silver-gilded-medallion",
     "image_obverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-obv.webp",
-    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-rev.webp",
+    "image_box": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-box.webp",
+    "image_certificate": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-cert.webp"
   },
   "raw": {
     "title": "Diwali 1oz Silver Gilded Medallion",
@@ -54,8 +54,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-obv.webp",
-    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-rev.webp",
+    "box": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-box.webp",
+    "certificate": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-cert.webp"
   }
 }

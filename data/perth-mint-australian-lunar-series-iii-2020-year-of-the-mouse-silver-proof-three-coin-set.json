@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 2000,
     "weight_g": 62.21,
-    "weight_oz": 1,
+    "weight_oz": 2,
     "diameter_mm": 50.6,
     "thickness_mm": 4.1,
     "length_mm": null,
@@ -22,10 +22,10 @@
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 205.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series III 2020 Year of the Mouse Silver Proof Three Coin Set",
@@ -59,9 +59,9 @@
     "price": "AUD 205.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set-cert.webp"
   }
 }

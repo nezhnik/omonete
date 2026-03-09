@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 4000,
     "weight_g": 6.22,
-    "weight_oz": "1/5",
+    "weight_oz": 0.2,
     "diameter_mm": 22.6,
     "thickness_mm": 1.9,
     "length_mm": null,
@@ -22,10 +22,10 @@
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 204.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin",
-    "image_obverse": null,
-    "image_reverse": null,
-    "image_box": null,
-    "image_certificate": null
+    "image_obverse": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Chinese Astrological Series 2023 Year of the Rabbit 1/5oz Gold Proof Coin",
@@ -56,9 +56,9 @@
     "price": "AUD 204.99"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
-    "box": null,
-    "certificate": null
+    "obverse": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin-cert.webp"
   }
 }

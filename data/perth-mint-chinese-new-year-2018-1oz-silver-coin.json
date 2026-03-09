@@ -23,9 +23,9 @@
     "price_display": "AUD 204.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/chinese-new-year-2018-1oz-silver-coin",
     "image_obverse": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "image_box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-rev.webp",
+    "image_box": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-cert.webp"
   },
   "raw": {
     "title": "Chinese New Year 2018 1oz Silver Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-obv.webp",
-    "reverse": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "certificate": null
+    "reverse": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-rev.webp",
+    "box": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-box.webp",
+    "certificate": "/image/coins/foreign/chinese-new-year-2018-1oz-silver-coin-cert.webp"
   }
 }

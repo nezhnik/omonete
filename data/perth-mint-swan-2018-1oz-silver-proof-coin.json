@@ -22,10 +22,10 @@
     "catalog_suffix": "25117eaaa",
     "price_display": "AUD 349.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/swan-2018-1oz-silver-proof-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Swan 2018 1oz Silver Proof Coin",
@@ -103,9 +103,9 @@
     "price": "AUD 349.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/swan-2018-1oz-silver-proof-coin-cert.webp"
   }
 }

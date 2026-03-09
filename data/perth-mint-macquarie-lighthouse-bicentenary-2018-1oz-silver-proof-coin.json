@@ -23,9 +23,9 @@
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Macquarie Lighthouse Bicentenary 2018 1oz Silver Proof Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/macquarie-lighthouse-bicentenary-2018-1oz-silver-proof-coin-cert.webp"
   }
 }

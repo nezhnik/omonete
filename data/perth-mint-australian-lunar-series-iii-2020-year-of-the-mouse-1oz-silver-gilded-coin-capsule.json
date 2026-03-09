@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/australian-lunar-series-iii-2020-year-of-the-mouse-1oz-silver-gilded-coin-capsule-box.webp",
     "certificate": null
   }
 }

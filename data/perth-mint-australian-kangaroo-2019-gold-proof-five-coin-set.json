@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2019-gold-proof-five-coin-set",
     "image_obverse": null,
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-cert.webp"
   },
   "raw": {
     "title": "Australian Kangaroo 2019 Gold Proof Five-Coin Set",
@@ -54,7 +54,7 @@
   "saved": {
     "obverse": null,
     "reverse": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-cert.webp"
   }
 }

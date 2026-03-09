@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 250,
     "weight_g": 155.53,
-    "weight_oz": 1,
+    "weight_oz": 5,
     "diameter_mm": 60.6,
     "thickness_mm": 7.9,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Henry Lawson 150th Anniversary 2017 5oz Silver Proof Coloured Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin-cert.webp"
   }
 }

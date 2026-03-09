@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 200,
     "weight_g": 2,
-    "weight_oz": 1,
+    "weight_oz": 64.3,
     "diameter_mm": 101,
     "thickness_mm": 36,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin",
     "image_obverse": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Kookaburra 2020 2 Kilo Silver Antiqued High Relief Coin",
@@ -61,7 +61,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin-cert.webp"
   }
 }

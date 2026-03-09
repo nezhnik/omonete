@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 500,
     "weight_g": 1,
-    "weight_oz": "1 кг",
+    "weight_oz": 32.151,
     "diameter_mm": 100.3,
     "thickness_mm": 16.8,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Silver Coin Series II 2019 Year of the Pig 1 Kilo Silver Proof Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin-cert.webp"
   }
 }

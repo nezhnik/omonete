@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 7500,
     "weight_g": 15.55,
-    "weight_oz": "1/2",
+    "weight_oz": 0.5,
     "diameter_mm": 32.6,
     "thickness_mm": 2.6,
     "length_mm": null,
@@ -22,10 +22,10 @@
     "catalog_suffix": "25u68zaa",
     "price_display": "AUD 149.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/baby-mouse-2020-1-2oz-silver-proof-coin",
-    "image_obverse": null,
-    "image_reverse": null,
-    "image_box": null,
-    "image_certificate": null
+    "image_obverse": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Baby Mouse 2020 1/2oz Silver Proof Coin",
@@ -57,9 +57,9 @@
     "price": "AUD 149.99"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
-    "box": null,
-    "certificate": null
+    "obverse": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/baby-mouse-2020-1-2oz-silver-proof-coin-cert.webp"
   }
 }

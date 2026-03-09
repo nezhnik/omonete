@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 2500,
     "weight_g": 93.32,
-    "weight_oz": 1,
+    "weight_oz": 3,
     "diameter_mm": 50,
     "thickness_mm": 6,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2022-australian-koala-15th-anniv-3oz-99.99-ag-gilded-coin",
     "image_obverse": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Koala 15th Anniversary 2022 3oz Silver Proof Gilded Coin",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-obv.webp",
     "reverse": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-box.webp",
+    "certificate": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-cert.webp"
   }
 }

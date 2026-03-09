@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-emu-2023-1oz-silver-coloured-coin",
     "image_obverse": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-box.webp",
     "image_certificate": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-cert.webp"
   },
   "raw": {
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-box.webp",
     "certificate": "/image/coins/foreign/australian-emu-2023-1oz-silver-coloured-coin-cert.webp"
   }
 }

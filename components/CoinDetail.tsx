@@ -105,9 +105,13 @@ const SHOW_MONETIZATION_BLOCK = false;
 const isPackagingRole = (role: string | undefined) => role === "box" || role === "certificate";
 
 export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backLabel = "Назад", isAuthorized = false, onToggleCollection }: CoinDetailProps) {
-  const images = coin.imageUrls?.length ? coin.imageUrls : [coin.imageUrl];
+  // Всегда начинаем галерею с основной картинки imageUrl,
+  // а затем показываем остальные уникальные изображения из imageUrls.
+  const extraImages = coin.imageUrls?.length ? coin.imageUrls : [];
+  const images = [coin.imageUrl, ...extraImages.filter((u) => u && u !== coin.imageUrl)];
   const rectangular = !!coin.rectangular;
-  const roles = coin.imageUrlRoles;
+  // Для основной картинки роли нет (undefined), далее — как в imageUrlRoles.
+  const roles = coin.imageUrlRoles ? [undefined, ...coin.imageUrlRoles] : undefined;
   const isPackaging = (i: number) => isPackagingRole(roles?.[i]);
   const [selectedImage, setSelectedImage] = useState(0);
   const [copyToast, setCopyToast] = useState(false);

@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 750,
     "weight_g": 7.78,
-    "weight_oz": "1/4",
+    "weight_oz": 0.25,
     "diameter_mm": 20.6,
     "thickness_mm": 2,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2019-200th-birthday-of-queen-victoria-1-4-oz-99.99-auprcoin",
     "image_obverse": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-obv.webp",
     "image_reverse": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-box.webp",
+    "image_certificate": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-cert.webp"
   },
   "raw": {
     "title": "Queen Victoria 200th Anniversary 2019 1/4oz Gold Proof Coin",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-obv.webp",
     "reverse": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-box.webp",
+    "certificate": "/image/coins/foreign/2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin-cert.webp"
   }
 }

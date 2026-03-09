@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/ingots-and-bars/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot",
     "image_obverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-rev.webp",
+    "image_box": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-box.webp",
+    "image_certificate": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-cert.webp"
   },
   "raw": {
     "title": "Lake Argyle Pink Diamond 2018 1oz Pink Gold Ingot",
@@ -55,8 +55,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-rev.webp",
+    "box": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-box.webp",
+    "certificate": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-cert.webp"
   }
 }

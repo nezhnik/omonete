@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 200,
     "weight_g": 2,
-    "weight_oz": 1,
+    "weight_oz": 64.301,
     "diameter_mm": 101.3,
     "thickness_mm": 36.3,
     "length_mm": null,
@@ -22,10 +22,10 @@
     "catalog_suffix": "25x41aaa",
     "price_display": "AUD 11,974.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin",
-    "image_obverse": null,
-    "image_reverse": null,
-    "image_box": null,
-    "image_certificate": null
+    "image_obverse": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
+    "image_box": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-cert.webp"
   },
   "raw": {
     "title": "Butterfly 2025 2 Kilo Silver High Relief Antiqued Coin",
@@ -60,9 +60,9 @@
     "price": "AUD 11,974.99"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
-    "box": null,
-    "certificate": null
+    "obverse": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
+    "reverse": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
+    "box": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-box.webp",
+    "certificate": "/image/coins/foreign/butterfly-2025-2-kilo-silver-antiqued-high-relief-coin-cert.webp"
   }
 }

@@ -25,7 +25,7 @@
     "image_obverse": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Wedding 2026 1oz Silver Proof Coin",
@@ -59,6 +59,6 @@
     "obverse": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-rev.webp",
     "box": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/wedding-2026-1oz-silver-proof-coin-cert.webp"
   }
 }

@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": null,
     "weight_g": 0.5,
-    "weight_oz": "1/62,2",
+    "weight_oz": 0.016,
     "diameter_mm": 11.6,
     "thickness_mm": 1,
     "length_mm": null,
@@ -23,7 +23,7 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2023-0-5g-gold-proof-coin-in-card",
     "image_obverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
+    "image_reverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -57,7 +57,7 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
+    "reverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-rev.webp",
     "box": null,
     "certificate": null
   }

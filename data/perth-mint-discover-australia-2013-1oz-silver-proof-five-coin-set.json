@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/discover-australia-2013-1oz-silver-proof-five-coin-set",
     "image_obverse": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-rev.webp",
+    "image_box": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-cert.webp"
   },
   "raw": {
     "title": "Discover Australia 2013 1oz Silver Proof Five-Coin Set",
@@ -64,8 +64,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-rev.webp",
+    "box": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-cert.webp"
   }
 }

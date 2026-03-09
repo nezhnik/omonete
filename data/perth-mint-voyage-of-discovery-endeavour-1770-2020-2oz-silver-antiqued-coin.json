@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin",
     "image_obverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-rev.webp",
+    "image_box": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-cert.webp"
   },
   "raw": {
     "title": "Voyage of Discovery Endeavour 1770-2020 2oz Silver Antiqued Coin",
@@ -57,8 +57,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-rev.webp",
+    "box": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-box.webp",
+    "certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-cert.webp"
   }
 }

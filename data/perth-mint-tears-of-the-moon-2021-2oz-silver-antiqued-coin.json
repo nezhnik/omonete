@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/tears-of-the-moon-2021-2oz-silver-antiqued-coin",
     "image_obverse": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-cert.webp"
   },
   "raw": {
     "title": "Tears of the Moon 2021 2oz Silver Antiqued Coin",
@@ -61,7 +61,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-obv.webp",
     "reverse": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-box.webp",
+    "certificate": "/image/coins/foreign/tears-of-the-moon-2021-2oz-silver-antiqued-coin-cert.webp"
   }
 }

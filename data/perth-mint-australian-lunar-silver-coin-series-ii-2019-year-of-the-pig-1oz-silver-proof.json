@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof",
     "image_obverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Silver Coin Series II 2019 Year of the Pig 1oz Silver Proof",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-proof-cert.webp"
   }
 }

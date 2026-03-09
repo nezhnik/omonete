@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 2500,
     "weight_g": 15.98,
-    "weight_oz": 1,
+    "weight_oz": 0.471,
     "diameter_mm": 22.6,
     "thickness_mm": 3.8,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin",
     "image_obverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-rev.webp",
+    "image_box": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Sovereign 2020 Gold Proof High Relief Piedfort Coin",
@@ -101,8 +101,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-obv.webp",
-    "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-rev.webp",
+    "box": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-cert.webp"
   }
 }

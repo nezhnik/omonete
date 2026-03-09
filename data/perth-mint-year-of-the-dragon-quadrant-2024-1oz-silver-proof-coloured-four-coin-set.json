@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set",
     "image_obverse": "/image/coins/foreign/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -61,7 +61,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set-obv.webp",
     "reverse": "/image/coins/foreign/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/year-of-the-dragon-quadrant-2024-1oz-silver-proof-coloured-four-coin-set-box.webp",
     "certificate": null
   }
 }

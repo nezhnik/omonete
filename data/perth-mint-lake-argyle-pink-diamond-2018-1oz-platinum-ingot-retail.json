@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/ingots-and-bars/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail",
     "image_obverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-obv.webp",
     "image_reverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-box.webp",
+    "image_certificate": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-cert.webp"
   },
   "raw": {
     "title": "Lake Argyle Pink Diamond 2018 1oz Platinum Ingot",
@@ -53,7 +53,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-obv.webp",
     "reverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-box.webp",
+    "certificate": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-platinum-ingot-retail-cert.webp"
   }
 }

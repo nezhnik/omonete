@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 8,
     "weight_g": 311.07,
-    "weight_oz": 1,
+    "weight_oz": 9.167,
     "diameter_mm": null,
     "thickness_mm": 10.2,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": null,
     "source_url": "https://www.perthmint.com/shop/collector-coins/ingots-and-bars/pink-panther-2018-10oz-pink-gold-diamond-ingot",
     "image_obverse": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-obv.webp",
-    "image_reverse": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-rev.webp",
+    "image_reverse": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-rev.webp",
     "image_box": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-cert.webp"
   },
   "raw": {
     "title": "Pink Panther 2018 10oz Pink Gold Diamond Ingot",
@@ -54,8 +54,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-obv.webp",
-    "reverse": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-rev.webp",
+    "reverse": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-rev.webp",
     "box": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-cert.webp"
   }
 }

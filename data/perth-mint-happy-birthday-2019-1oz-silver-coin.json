@@ -23,9 +23,9 @@
     "price_display": "AUD 149.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/happy-birthday-2019-1oz-silver-coin",
     "image_obverse": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-rev.webp",
+    "image_box": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-cert.webp"
   },
   "raw": {
     "title": "Happy Birthday 2019 1oz Silver Coin",
@@ -56,8 +56,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-obv.webp",
-    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-rev.webp",
+    "box": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-box.webp",
+    "certificate": "/image/coins/foreign/happy-birthday-2019-1oz-silver-coin-cert.webp"
   }
 }

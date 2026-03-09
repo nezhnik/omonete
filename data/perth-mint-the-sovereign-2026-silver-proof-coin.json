@@ -22,10 +22,10 @@
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 11,544.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/the-sovereign-2026-silver-proof-coin",
-    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_obverse": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "The Sovereign 2026 Silver Proof Coin",
@@ -52,9 +52,9 @@
     "price": "AUD 11,544.99"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "obverse": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-cert.webp"
   }
 }

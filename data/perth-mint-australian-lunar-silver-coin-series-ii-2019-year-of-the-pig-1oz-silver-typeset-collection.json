@@ -22,10 +22,10 @@
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 205.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series II 2019 Year of the Pig 1oz Silver Typeset Collection",
@@ -117,9 +117,9 @@
     "price": "AUD 205.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1oz-silver-typeset-collection-cert.webp"
   }
 }

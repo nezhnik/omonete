@@ -23,9 +23,9 @@
     "price_display": "AUD 280.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/wedding-2024-1oz-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_reverse": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Wedding 2024 1oz Silver Proof Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "reverse": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-rev.webp",
     "box": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-cert.webp"
   }
 }

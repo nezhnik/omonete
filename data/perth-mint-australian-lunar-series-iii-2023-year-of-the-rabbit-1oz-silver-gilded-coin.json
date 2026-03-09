@@ -25,7 +25,7 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series III 2023 Year of the Rabbit 1oz Silver Gilded Coin",
@@ -61,6 +61,6 @@
     "obverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-rev.webp",
     "box": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-gilded-coin-cert.webp"
   }
 }

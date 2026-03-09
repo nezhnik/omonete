@@ -469,6 +469,10 @@ async function run() {
     const imageUrlRoles = [];
     const pushIfNew = (url, role) => {
       if (!url || imageUrlsOut.includes(url)) return;
+      // Не дублируем главную картинку в массиве imageUrls:
+      // фронт показывает imageUrl отдельно, поэтому первый элемент imageUrls
+      // должен быть "следующей" картинкой (обычно аверс), а не тем же самым URL.
+      if (imageUrlsOut.length === 0 && firstImage && url === firstImage) return;
       imageUrlsOut.push(url);
       imageUrlRoles.push(role);
     };

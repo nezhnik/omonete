@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio",
     "image_obverse": null,
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series III 2021 Year of the Ox 1oz Silver Trio",
@@ -106,7 +106,7 @@
   "saved": {
     "obverse": null,
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-silver-trio-cert.webp"
   }
 }

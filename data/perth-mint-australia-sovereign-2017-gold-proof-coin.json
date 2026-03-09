@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 1000,
     "weight_g": 7.99,
-    "weight_oz": 1,
+    "weight_oz": 0.235,
     "diameter_mm": 22.6,
     "thickness_mm": 1.9,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2017-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australia Sovereign 2017 Gold Proof Coin",
@@ -60,7 +60,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australia-sovereign-2017-gold-proof-coin-cert.webp"
   }
 }

@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/hourglass-2021-2oz-silver-antiqued-coin",
     "image_obverse": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-rev.webp",
+    "image_box": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-cert.webp"
   },
   "raw": {
     "title": "Hourglass 2021 2oz Silver Antiqued Coin",
@@ -62,8 +62,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-obv.webp",
-    "reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-rev.webp",
+    "box": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-box.webp",
+    "certificate": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-cert.webp"
   }
 }

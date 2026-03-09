@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2019-50-year-ann-of-moon-landing-1-oz-99.99-silver-pr-coin",
     "image_obverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-cert.webp"
   },
   "raw": {
     "title": "50th Anniversary Of The Moon Landing 2019 1oz Silver Proof",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-obv.webp",
     "reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-box.webp",
+    "certificate": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-cert.webp"
   }
 }

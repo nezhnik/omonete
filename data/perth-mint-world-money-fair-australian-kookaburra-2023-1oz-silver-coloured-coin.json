@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin",
     "image_obverse": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "World Money Fair - Coin Show Special Australian Kookaburra 2023 1oz Silver Coloured Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/world-money-fair-australian-kookaburra-2023-1oz-silver-coloured-coin-cert.webp"
   }
 }

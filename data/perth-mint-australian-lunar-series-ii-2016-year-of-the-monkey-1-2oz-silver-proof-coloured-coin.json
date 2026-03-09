@@ -12,7 +12,7 @@
     "metal_fineness": "999/1000",
     "mintage": 10000,
     "weight_g": 15.55,
-    "weight_oz": "1/2",
+    "weight_oz": 0.5,
     "diameter_mm": 36.6,
     "thickness_mm": 2.3,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series II 2016 Year of the Monkey 1/2oz Silver Proof Coloured Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin-cert.webp"
   }
 }

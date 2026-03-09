@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin",
     "image_obverse": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "Harry Potter™ and the Goblet of Fire 2025 2oz Silver Proof Coloured Coin",
@@ -55,7 +55,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-cert.webp"
   }
 }

@@ -1,0 +1,1769 @@
+{
+  "changed": [
+    {
+      "file": "perth-mint-1857-1931-australian-sovereign-prestige-collection.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1899-queen-victoria-veiled-head-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1910-king-edward-vii-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1911-1931-king-george-v-sovereign-typeset-collection.json",
+      "from": 1,
+      "to": 22
+    },
+    {
+      "file": "perth-mint-1911-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1912-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1913-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1914-gold-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1914-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1915-gold-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1915-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1916-king-george-v-gold-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1916-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1917-gold-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1917-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1918-gold-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1918-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1919-gold-sovereign-mintmark-trio.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1919-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1920-king-george-v-perth-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-1925-2025-perth-mint-gold-sovereign-centenary-pair.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-1925-king-george-v-london-mint-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1926-king-george-v-south-african-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-1927-king-george-v-south-african-mint-gold-sovereign.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-200th-anniversary-of-the-shield-back-sovereign-two-coin-set.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-2018-aust-wedge-tailed-eagle-5-oz-99-99-silver-pr-hr-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-2019-200th-birthday-of-queen-victoria-1-4-oz-99-99-auprcoin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-2019-50-year-anniversary-of-moon-landing-5-oz-99-99-silver-pr-hr-coi.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-2019-aust-wedge-tailed-eagle-5-oz-99-99-gold-pr-hr-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-2019-australian-double-sovereign-91-70-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.471
+    },
+    {
+      "file": "perth-mint-2019-australian-kangaroo-1-4-oz-99-99-gold-pr-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-2019-swan-5-oz-silver-proof-hr.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-2021-australian-kangaroo-1-10-oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-2021-australian-lunar-series-iii-year-of-the-ox-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 3.5
+    },
+    {
+      "file": "perth-mint-2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin.json",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "file": "perth-mint-2022-sydney-show-special-tiger-1-4oz-99-99-ag-col-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-2023-newborn-baby-12oz-99-99-silver-proof-col-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-225th-anniversary-australian-proclamation-coins-pillar-dollar-2025-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-25th-anniversary-australian-kookaburra-2015-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-30th-anniversary-australian-kookaburra-2020-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-35th-anniversary-of-the-australian-kangaroo-nugget-2021-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-35th-anniversary-of-the-australian-kangaroo-nugget-2021-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-40th-anniversary-of-the-australian-gold-coin-program-2026-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-70th-anniversary-of-the-royal-wedding-2017-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-80th-anniversary-end-of-wwii-winged-victory-2025-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-80th-anniversary-of-the-battle-of-britain-2020-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-adelaide-pound-2020-1-5oz-bi-metal-coin.json",
+      "from": 1,
+      "to": 0.75
+    },
+    {
+      "file": "perth-mint-always-together-otter-2020-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australia-double-sovereign-2018-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.471
+    },
+    {
+      "file": "perth-mint-australia-five-sovereign-2025-gold-proof-reverse-gilded-coin.json",
+      "from": 1,
+      "to": 1.177
+    },
+    {
+      "file": "perth-mint-australia-half-sovereign-2016-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.118
+    },
+    {
+      "file": "perth-mint-australia-half-sovereign-2017-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.118
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2014-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2015-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2016-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2017-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2018-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2020-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2021-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2021-gold-proof-high-relief-piedfort-coin.json",
+      "from": 1,
+      "to": 0.471
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2022-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 0.471
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2025-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australia-sovereign-2025-gold-proof-three-coin-set.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2016-1-4oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2016-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2017-1-4oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2017-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2018-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2018-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2019-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.3
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2020-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2020-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2021-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2022-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2022-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2023-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2023-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2023-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2024-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2024-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2024-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2025-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2025-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-2025-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kangaroo-25th-anniversary-2014-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-koala-2012-1-25oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.04
+    },
+    {
+      "file": "perth-mint-australian-koala-2013-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2014-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-koala-2014-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2016-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-koala-2016-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-koala-2016-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2017-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-koala-2017-1-kilo-silver-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-koala-2017-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2017-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2018-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2018-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2019-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2020-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2021-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2021-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2022-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2022-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2023-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2023-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2024-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2024-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2025-1-2oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-koala-2025-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-koala-2025-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2016-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2017-1kg-silver-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2018-1-kilo-silver-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2018-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2019-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2020-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.3
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2021-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2021-5oz-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2021-5oz-silver-incused-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2022-5oz-silver-incused-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2023-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2023-5oz-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2023-5oz-silver-incused-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2024-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2024-5oz-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-2024-5oz-silver-proof-high-relief-incused-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-35th-anniversary-2025-0-5g-gold-proof-coin.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-35th-anniversary-2025-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-35th-anniversary-2025-5oz-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-kookaburra-35th-anniversary-2025-5oz-silver-incused-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-coin-series-iii-2020-year-of-the-mouse-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-gold-coin-series-2018-year-of-the-dog-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-gold-coin-series-2018-year-of-the-dog-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set.json",
+      "from": 1,
+      "to": 1.35
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-2018-year-of-the-dog-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2013-year-of-the-snake-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2013-year-of-the-snake-1-2oz-silver-proof-coloured-edition.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2013-year-of-the-snake-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2013-year-of-the-snake-5oz-silver-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2013-year-of-the-snake-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coloured-edition.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2014-year-of-the-horse-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2014-year-of-the-horse-1-2oz-silver-proof-coloured-edition.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2014-year-of-the-horse-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2014-year-of-the-horse-silver-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2015-year-of-the-goat-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2015-year-of-the-goat-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2015-year-of-the-goat-1-2oz-silver-proof-coloured-edition.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2015-year-of-the-goat-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2015-year-of-the-goat-5oz-silver-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2015-year-of-the-goat-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2016-year-of-the-monkey-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2017-year-of-the-rooster-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2017-year-of-the-rooster-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2017-year-of-the-rooster-1-kilo-silver-gemstone-edition.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2017-year-of-the-rooster-gold-proof-three-coin-set.json",
+      "from": 1,
+      "to": 1.35
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-2017-year-of-the-rooster-silver-proof-three-coin-set-2oz1oz-1-2oz.json",
+      "from": null,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-ii-year-of-the-dog-2018-1-kilo-silver-gemstone-edition.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2020-year-of-the-mouse-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2020-year-of-the-mouse-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2020-year-of-the-mouse-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2020-year-of-the-mouse-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2021-year-of-the-ox-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2021-year-of-the-ox-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2021-year-of-the-ox-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2021-year-of-the-ox-1-kilo-silver-coin-with-gold-privy-mark.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2022-year-of-the-tiger-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2022-year-of-the-tiger-5oz-silver-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2023-year-of-the-rabbit-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2023-year-of-the-rabbit-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2023-year-of-the-rabbit-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2023-year-of-the-rabbit-1-kilo-silver-with-gold-privy-mark.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2023-year-of-the-rabbit-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-1-10oz-gold-proof-coin-en-aspx.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-1-2oz-silver-10-coin-set.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-1-kilo-silver-coloured-coin-gold-privy.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2024-year-of-the-dragon-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2025-year-of-the-snake-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2025-year-of-the-snake-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2025-year-of-the-snake-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2025-year-of-the-snake-1-kilo-silver-coloured-coin-with-gold-privy-mark.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2025-year-of-the-snake-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2025-year-of-the-snake-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-0-5g-gold-proof-coin-in-card.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-1-kilo-silver-coloured-coin-with-gold-privy-mark.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-2026-year-of-the-horse-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-year-of-the-tiger-2022-1-10oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-australian-lunar-series-iii-year-of-the-tiger-2022-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-australian-lunar-silver-coin-series-2018-year-of-the-dog-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-silver-coin-series-2018-year-of-the-dog-1-kilo-silver-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-1-kilo-silver-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-sovereign-2020-gold-proof-high-relief-piedfort-coin.json",
+      "from": 1,
+      "to": 0.471
+    },
+    {
+      "file": "perth-mint-australian-stock-horse-2017-5oz-silver-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-stock-horse-2018-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-swan-2018-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-swan-2021-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-swan-2022-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-swan-2023-5oz-silver-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-swan-2024-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-swan-2025-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-10th-anniversary-2024-1-5oz-bi-metal-proof-coin.json",
+      "from": 1,
+      "to": 0.75
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-10th-anniversary-2024-10oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-10th-anniversary-2024-10oz-silver-proof-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-10th-anniversary-2024-3oz-silver-proof-coin.json",
+      "from": 1,
+      "to": 3
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-10th-anniversary-2024-5oz-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-10th-anniversary-2024-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2015-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2017-5oz-gold-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2017-5oz-silver-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2018-10oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2018-5oz-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2019-10oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2019-1kg-gold-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2019-5oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2020-1-5oz-bi-metal-proof-coin.json",
+      "from": 1,
+      "to": 0.75
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2020-10oz-silver-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2020-5oz-gold-proof-incused-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2020-5oz-silver-proof-incused-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2021-1-kilo-gold-incused-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2021-10oz-silver-reverse-proof-ultra-high-relief-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2021-5oz-gold-reverse-proof-ultra-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2021-5oz-silver-enhanced-reverse-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2022-10oz-silver-enhanced-reverse-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2022-1kg-gold-enhanced-reverse-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2022-1kg-silver-enhanced-reverse-proof-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2022-5oz-gold-enhanced-reverse-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2022-5oz-silver-proof-ultra-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2023-1-5oz-bi-metal-proof-gilded-coin.json",
+      "from": 1,
+      "to": 0.75
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2023-1-kilo-gold-reverse-proof-ultra-high-relief-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2023-1-kilo-silver-reverse-proof-ultra-high-relief-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2023-10oz-silver-incused-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2023-5oz-gold-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2023-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2024-1-kilo-gold-reverse-proof-ultra-high-relief-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2024-1-kilo-silver-reverse-proof-ultra-high-relief-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2025-1-kilo-gold-proof-ultra-high-relief-gilded-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2025-1-kilo-silver-proof-ultra-high-relief-gilded-coin.json",
+      "from": null,
+      "to": 32.151
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2025-10oz-silver-proof-ultra-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2025-1oz-bi-metal-proof-coin.json",
+      "from": 1,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2025-5oz-gold-proof-ultra-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-australian-wedge-tailed-eagle-2025-5oz-silver-reverse-proof-ultra-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-baby-dragon-2024-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-baby-horse-2026-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-baby-mouse-2020-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-baby-ox-2021-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-baby-pig-2019-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-baby-rabbit-2023-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-baby-snake-2024-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-bridgerton-queen-charlotte-2026-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-brisbane-money-expo-anda-special-kangaroo-2018-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-butterfly-2025-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.301
+    },
+    {
+      "file": "perth-mint-chinese-astrological-series-2022-year-of-the-tiger-1-5oz-gold-3-coin-set.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-chinese-astrological-series-2025-year-of-the-snake-1-5oz-gold-proof-three-coin-set.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-discover-australia-goanna-2012-1-2oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-discover-australia-kookaburra-2012-1-2oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.3
+    },
+    {
+      "file": "perth-mint-dreaming-down-under-dingo-2021-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-dreaming-down-under-kangaroo-2021-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-dreaming-down-under-tasmanian-devil-2021-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-dreaming-down-under-wombat-2021-1-2oz-silver-proof-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-end-of-wwi-100th-anniversary-2018-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-end-of-wwii-75th-anniversary-2020-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-fifa-world-cup-2026-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-first-australian-nugget-replica-golden-eagle-2024-1-4oz-gold-proof-gilded-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-first-australian-nugget-replica-little-hero-2024-1-10oz-gold-proof-gilded-coin.json",
+      "from": null,
+      "to": 0.1
+    },
+    {
+      "file": "perth-mint-friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-great-barrier-reef-2021-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.3
+    },
+    {
+      "file": "perth-mint-happy-birthday-2025-1-2oz-silver-proof-coloured-coin-in-card.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-henry-lawson-150th-anniversary-2017-5oz-silver-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-her-majesty-queen-elizabeth-ii-95th-birthday-2021-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-hobart-money-expo-anda-special-year-of-the-horse-2026-1-4oz-silver-coloured-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-honey-bee-2024-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.301
+    },
+    {
+      "file": "perth-mint-industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-kimberley-sunset-2021-5oz-rose-gold-proof-high-relief-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin.json",
+      "from": 1,
+      "to": 64.301
+    },
+    {
+      "file": "perth-mint-lunar-baby-tiger-2022-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set.json",
+      "from": 1,
+      "to": 4
+    },
+    {
+      "file": "perth-mint-lunar-calendar-coin-series-2018-year-of-the-dog-1oz-silver-proof-four-coin-set.json",
+      "from": 1,
+      "to": 4
+    },
+    {
+      "file": "perth-mint-melbourne-money-expo-special-2024-year-of-the-dragon-1-4oz-silver-coloured-coin-card.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-mini-roo-2021-0-5g-gold-coin-in-card.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-mini-roo-2022-0-5g-gold-coin-in-card.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-mini-roo-2023-0-5g-gold-proof-coin-in-card.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-mini-roo-2024-0-5g-gold-in-card.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-mini-roo-2025-0-5g-gold-proof-coin-in-card.json",
+      "from": null,
+      "to": 0.016
+    },
+    {
+      "file": "perth-mint-mythical-creatures-basilisk-2023-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-mythical-creatures-griffin-2022-5oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-newborn-2024-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-newborn-2025-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-newborn-baby-2026-1-2oz-silver-proof-coloured-coin.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-perth-mint-2021-gold-sovereign-anniversary-pair.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-perth-mint-great-war-gold-sovereign-collection-1914-1918.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-pink-panther-2018-10oz-pink-gold-diamond-ingot.json",
+      "from": 1,
+      "to": 9.167
+    },
+    {
+      "file": "perth-mint-pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-rare-earth-2018-5oz-silver-high-relief-patina-coin.json",
+      "from": 1,
+      "to": 5
+    },
+    {
+      "file": "perth-mint-reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set.json",
+      "from": 1,
+      "to": 2
+    },
+    {
+      "file": "perth-mint-royal-wedding-2018-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-rsl-centenary-2016-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-spongebob-squarepants-1g-gold-minted-bar.json",
+      "from": 1,
+      "to": 0.032
+    },
+    {
+      "file": "perth-mint-spongebob-squarepants-2025-1g-gold-coloured-minted-bar.json",
+      "from": 1,
+      "to": 0.032
+    },
+    {
+      "file": "perth-mint-sydney-money-expo-anda-2025-year-of-the-snake-1-4oz-silver-coloured-coin-in-card.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-sydney-money-expo-special-2019-year-of-the-pig-1-4oz-silver-coloured-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-sydney-money-expo-special-2021-year-of-the-ox-1-4oz-silver-coloured-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-sydney-money-expo-special-2023-year-of-the-rabbit-1-4oz-silver-coloured-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-teenage-mutant-ninja-turtles-domed-shell-2025-1-5oz-silver-antiqued-coloured-coin.json",
+      "from": 1,
+      "to": 1.5
+    },
+    {
+      "file": "perth-mint-the-jewelled-horse-2021-10oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-the-jewelled-tiger-2020-10oz-gold-proof-coin.json",
+      "from": 1,
+      "to": 10
+    },
+    {
+      "file": "perth-mint-the-perth-mint-gold-sovereigns-1899-and-1931.json",
+      "from": 1,
+      "to": 0.2354
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-anniversary-australia-double-sovereign-2024-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.471
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-anniversary-australia-quarter-sovereign-2024-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.059
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-anniversary-australia-sovereign-2024-gold-proof-coin.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-anniversary-australia-sovereign-2024-gold-proof-five-coin-set.json",
+      "from": 1,
+      "to": 1.177
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-anniversary-australia-sovereign-2024-gold-proof-three-coin-set.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-anniversary-australia-sovereign-2024-gold-two-coin-set.json",
+      "from": 1,
+      "to": 0.235
+    },
+    {
+      "file": "perth-mint-the-perth-mints-125th-australia-five-sovereign-2024-gold-proof-gilded-coin.json",
+      "from": 1,
+      "to": 1.177
+    },
+    {
+      "file": "perth-mint-the-queens-platinum-jubilee-2022-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-welcome-stranger-2019-1-4oz-gold-proof-coin.json",
+      "from": null,
+      "to": 0.25
+    },
+    {
+      "file": "perth-mint-year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set.json",
+      "from": 1,
+      "to": 4
+    },
+    {
+      "file": "perth-mint-year-of-the-rabbit-quadrant-2023-1oz-silver-proof-four-coin-set.json",
+      "from": 1,
+      "to": 4
+    },
+    {
+      "file": "perth-mint-year-of-the-snake-fu-prosperity-2025-1-2oz-silver-coloured-coin-in-card.json",
+      "from": null,
+      "to": 0.5
+    },
+    {
+      "file": "perth-mint-year-of-the-tiger-2022-1-5oz-gold-coin.json",
+      "from": null,
+      "to": 0.2
+    },
+    {
+      "file": "perth-mint-year-of-the-tiger-quadrant-2022-1oz-silver-proof-four-coin-set.json",
+      "from": 1,
+      "to": 4
+    },
+    {
+      "file": "perth-mint-yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls.json",
+      "from": 1,
+      "to": 5
+    }
+  ]
+}

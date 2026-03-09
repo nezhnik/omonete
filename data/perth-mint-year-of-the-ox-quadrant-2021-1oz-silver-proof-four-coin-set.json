@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 1500,
     "weight_g": 31.1,
-    "weight_oz": 1,
+    "weight_oz": 4,
     "diameter_mm": null,
     "thickness_mm": 4,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set",
     "image_obverse": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-cert.webp"
   },
   "raw": {
     "title": "Year of the Ox Quadrant 2021 1oz Silver Proof Four-Coin Set",
@@ -114,7 +114,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-obv.webp",
     "reverse": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/year-of-the-ox-quadrant-2021-1oz-silver-proof-four-coin-set-cert.webp"
   }
 }

@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 750,
     "weight_g": 7.78,
-    "weight_oz": "1/4",
+    "weight_oz": 0.25,
     "diameter_mm": 20.6,
     "thickness_mm": 2,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/welcome-stranger-2019-1-4oz-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Welcome Stranger 2019 1/4oz Gold Proof Coin",
@@ -57,8 +57,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-cert.webp"
   }
 }

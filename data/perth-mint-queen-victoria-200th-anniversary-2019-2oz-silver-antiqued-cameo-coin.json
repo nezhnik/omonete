@@ -23,9 +23,9 @@
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin",
     "image_obverse": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-rev.webp",
+    "image_box": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-cert.webp"
   },
   "raw": {
     "title": "Queen Victoria 200th Anniversary 2019 2oz Silver Antiqued Cameo Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-obv.webp",
-    "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-rev.webp",
+    "box": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-box.webp",
+    "certificate": "/image/coins/foreign/queen-victoria-200th-anniversary-2019-2oz-silver-antiqued-cameo-coin-cert.webp"
   }
 }

@@ -22,7 +22,7 @@
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 205.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/sydney-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/sydney-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-obv.webp",
     "image_reverse": "/image/coins/foreign/sydney-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-rev.webp",
     "image_box": null,
     "image_certificate": null
@@ -102,7 +102,7 @@
     "price": "AUD 205.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/sydney-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-obv.webp",
     "reverse": "/image/coins/foreign/sydney-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-rev.webp",
     "box": null,
     "certificate": null

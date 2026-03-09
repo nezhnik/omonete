@@ -23,7 +23,7 @@
     "price_display": "AUD 39.95",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/wedding-lucky-silver-sixpence",
     "image_obverse": "/image/coins/foreign/wedding-lucky-silver-sixpence-obv.webp",
-    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_reverse": "/image/coins/foreign/wedding-lucky-silver-sixpence-rev.webp",
     "image_box": null,
     "image_certificate": "/image/coins/foreign/wedding-lucky-silver-sixpence-cert.webp"
   },
@@ -46,7 +46,7 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/wedding-lucky-silver-sixpence-obv.webp",
-    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "reverse": "/image/coins/foreign/wedding-lucky-silver-sixpence-rev.webp",
     "box": null,
     "certificate": "/image/coins/foreign/wedding-lucky-silver-sixpence-cert.webp"
   }

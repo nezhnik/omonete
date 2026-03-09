@@ -23,9 +23,9 @@
     "price_display": "AUD 204.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/dragon-2024-1oz-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/dragon-2024-1oz-gold-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "image_box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/dragon-2024-1oz-gold-proof-coin-rev.webp",
+    "image_box": null,
+    "image_certificate": "/image/coins/foreign/dragon-2024-1oz-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Dragon 2024 1oz Gold Proof Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/dragon-2024-1oz-gold-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "certificate": null
+    "reverse": "/image/coins/foreign/dragon-2024-1oz-gold-proof-coin-rev.webp",
+    "box": null,
+    "certificate": "/image/coins/foreign/dragon-2024-1oz-gold-proof-coin-cert.webp"
   }
 }

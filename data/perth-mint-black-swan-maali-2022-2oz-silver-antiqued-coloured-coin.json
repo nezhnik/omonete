@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin",
     "image_obverse": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "Black Swan Maali 2022 2oz Silver Antiqued Coloured Coin",
@@ -60,7 +60,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/black-swan-maali-2022-2oz-silver-antiqued-coloured-coin-cert.webp"
   }
 }

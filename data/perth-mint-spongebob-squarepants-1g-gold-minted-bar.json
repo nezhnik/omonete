@@ -3,7 +3,7 @@
     "title": "SpongeBob SquarePants 1g Gold Minted Bar",
     "title_ru": null,
     "country": "Австралия",
-    "series": null,
+    "series": "SpongeBob SquarePants",
     "face_value": null,
     "release_date": "2025-01-01",
     "mint": "The Perth Mint",
@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 5000,
     "weight_g": 1,
-    "weight_oz": 1,
+    "weight_oz": 0.032,
     "diameter_mm": null,
     "thickness_mm": 1.3,
     "length_mm": 15.6,
@@ -23,9 +23,9 @@
     "price_display": "AUD 524.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/ingots-and-bars/spongebob-squarepants-1g-gold-minted-bar",
     "image_obverse": "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-obv.webp",
-    "image_reverse": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-rev.webp",
+    "image_reverse": "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-cert.webp"
   },
   "raw": {
     "title": "SpongeBob SquarePants 1g Gold Minted Bar",
@@ -44,7 +44,7 @@
       "Maximum Mintage": "5,000",
       "Designer": "Jennifer McKenna"
     },
-    "series": null,
+    "series": "SpongeBob SquarePants",
     "imageUrls": [
       "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25x50aax/04-2025-spongebob-squarepants-1g-gold-minted-bar-incard-front-highres.jpg?contextmode=Default?width=2000",
       "https://www.perthmint.com/globalassets/assets/product-images-e-com-pages/coins/01.-archive/2025/25x50aax/02-2025-spongebob-squarepants-1g-gold-minted-bar-straighton-highres.jpg?contextmode=Default?width=2000",
@@ -57,8 +57,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-obv.webp",
-    "reverse": "/image/coins/foreign/pink-panther-2018-1oz-pink-gold-diamond-ingot-rev.webp",
+    "reverse": "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-rev.webp",
     "box": null,
-    "certificate": null
+    "certificate": "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-cert.webp"
   }
 }

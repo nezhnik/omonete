@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin",
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Wedge-Tailed Eagle 2020 1oz Gold High Relief Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1oz-gold-high-relief-coin-cert.webp"
   }
 }

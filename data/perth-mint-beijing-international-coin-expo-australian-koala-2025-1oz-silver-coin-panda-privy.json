@@ -22,8 +22,8 @@
     "catalog_suffix": "25x41aaa",
     "price_display": "AUD 215.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy",
-    "image_obverse": null,
-    "image_reverse": null,
+    "image_obverse": "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-obv.webp",
+    "image_reverse": "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -57,8 +57,8 @@
     "price": "AUD 215.00"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
+    "obverse": "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-obv.webp",
+    "reverse": "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-rev.webp",
     "box": null,
     "certificate": null
   }

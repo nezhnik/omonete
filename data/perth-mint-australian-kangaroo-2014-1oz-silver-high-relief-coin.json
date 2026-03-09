@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2014-1oz-silver-high-relief-coin",
     "image_obverse": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-rev.webp",
+    "image_box": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Kangaroo 2014 1oz Silver High Relief Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-rev.webp",
+    "box": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-kangaroo-2014-1oz-silver-high-relief-coin-cert.webp"
   }
 }

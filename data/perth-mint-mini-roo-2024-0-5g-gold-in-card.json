@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": null,
     "weight_g": 0.5,
-    "weight_oz": "1/62,2",
+    "weight_oz": 0.016,
     "diameter_mm": 11.6,
     "thickness_mm": 1,
     "length_mm": null,
@@ -23,7 +23,7 @@
     "price_display": "AUD 205.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/mini-roo-2024-0-5g-gold-in-card",
     "image_obverse": "/image/coins/foreign/mini-roo-2024-0-5g-gold-in-card-obv.webp",
-    "image_reverse": "/image/coins/foreign/australian-kangaroo-2023-5oz-gold-proof-coin-rev.webp",
+    "image_reverse": "/image/coins/foreign/mini-roo-2024-0-5g-gold-in-card-rev.webp",
     "image_box": null,
     "image_certificate": null
   },
@@ -57,7 +57,7 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/mini-roo-2024-0-5g-gold-in-card-obv.webp",
-    "reverse": "/image/coins/foreign/australian-kangaroo-2023-5oz-gold-proof-coin-rev.webp",
+    "reverse": "/image/coins/foreign/mini-roo-2024-0-5g-gold-in-card-rev.webp",
     "box": null,
     "certificate": null
   }

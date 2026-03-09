@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 3888,
     "weight_g": 6.22,
-    "weight_oz": "1/5",
+    "weight_oz": 0.2,
     "diameter_mm": 22.6,
     "thickness_mm": 1.9,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": "AUD 204.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/year-of-the-tiger-2022-1-5oz-gold-coin",
     "image_obverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-rev.webp",
+    "image_box": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-cert.webp"
   },
   "raw": {
     "title": "Chinese Astrological Series 2022 Year of the Tiger 1/5oz Gold Proof Coin",
@@ -57,8 +57,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-obv.webp",
-    "reverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-rev.webp",
+    "box": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-box.webp",
+    "certificate": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-cert.webp"
   }
 }

@@ -22,7 +22,7 @@
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 250.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin--cert",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-obv.webp",
     "image_reverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-rev.webp",
     "image_box": null,
     "image_certificate": null
@@ -120,7 +120,7 @@
     "price": "AUD 250.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-obv.webp",
     "reverse": "/image/coins/foreign/2023-lunar-series-iii-year-rabbit-1oz-ag-gilded-coin-cert-rev.webp",
     "box": null,
     "certificate": null

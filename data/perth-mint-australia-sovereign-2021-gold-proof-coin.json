@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 1000,
     "weight_g": 7.99,
-    "weight_oz": 1,
+    "weight_oz": 0.235,
     "diameter_mm": 22.6,
     "thickness_mm": 1.9,
     "length_mm": null,
@@ -25,7 +25,7 @@
     "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australia Sovereign 2021 Gold Proof Coin",
@@ -59,6 +59,6 @@
     "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
     "box": null,
-    "certificate": null
+    "certificate": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-cert.webp"
   }
 }

@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-high-relief-2019-1oz-silver-proof-three-coin-collection",
     "image_obverse": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-cert.webp"
   },
   "raw": {
     "title": "Australian High Relief 2019 1oz Silver Proof Three Coin Collection",
@@ -62,7 +62,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-obv.webp",
     "reverse": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-box.webp",
+    "certificate": "/image/coins/foreign/australian-high-relief-2019-1oz-silver-proof-three-coin-collection-cert.webp"
   }
 }

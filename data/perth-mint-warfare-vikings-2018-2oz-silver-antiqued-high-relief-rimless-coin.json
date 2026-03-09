@@ -23,9 +23,9 @@
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin",
     "image_obverse": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-rev.webp",
+    "image_box": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-cert.webp"
   },
   "raw": {
     "title": "Warfare - Vikings 2018 2oz Silver Antiqued High Relief Rimless Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-obv.webp",
-    "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-rev.webp",
+    "box": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-box.webp",
+    "certificate": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-cert.webp"
   }
 }

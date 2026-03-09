@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin",
     "image_obverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-box.webp",
     "image_certificate": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-cert.webp"
   },
   "raw": {
@@ -68,7 +68,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-obv.webp",
     "reverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-box.webp",
     "certificate": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-cert.webp"
   }
 }

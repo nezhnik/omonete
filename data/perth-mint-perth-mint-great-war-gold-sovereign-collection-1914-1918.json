@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 150,
     "weight_g": 7.99,
-    "weight_oz": 1,
+    "weight_oz": 0.2354,
     "diameter_mm": 22.1,
     "thickness_mm": null,
     "length_mm": null,
@@ -23,7 +23,7 @@
     "price_display": "AUD 10,499.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-great-war-gold-sovereign-collection-1914-1918",
     "image_obverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-obv.webp",
-    "image_reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
+    "image_reverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-rev.webp",
     "image_box": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-box.webp",
     "image_certificate": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-cert.webp"
   },
@@ -82,7 +82,7 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-obv.webp",
-    "reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
+    "reverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-rev.webp",
     "box": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-box.webp",
     "certificate": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-cert.webp"
   }

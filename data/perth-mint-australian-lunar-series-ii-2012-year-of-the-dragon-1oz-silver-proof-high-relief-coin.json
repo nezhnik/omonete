@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-proof-high-relief-coin-box.webp",
     "certificate": null
   }
 }

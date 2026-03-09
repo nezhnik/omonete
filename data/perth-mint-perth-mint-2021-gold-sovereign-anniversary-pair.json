@@ -12,7 +12,7 @@
     "metal_fineness": "91.70",
     "mintage": 150,
     "weight_g": 7.99,
-    "weight_oz": 1,
+    "weight_oz": 0.2354,
     "diameter_mm": null,
     "thickness_mm": null,
     "length_mm": null,
@@ -22,10 +22,10 @@
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 2,995.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-2021-gold-sovereign-anniversary-pair",
-    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
+    "image_obverse": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-obv.webp",
+    "image_reverse": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-rev.webp",
     "image_box": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-cert.webp"
   },
   "raw": {
     "title": "Perth Mint 2021 Gold Sovereign Anniversary Two-Coin Set",
@@ -52,9 +52,9 @@
     "price": "AUD 2,995.00"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/1910-king-edward-vii-sovereign-mintmark-trio-rev.webp",
+    "obverse": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-obv.webp",
+    "reverse": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-rev.webp",
     "box": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-cert.webp"
   }
 }

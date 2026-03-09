@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-swan-2021-1oz-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Swan 2021 1oz Silver Proof Coin",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-swan-2021-1oz-silver-proof-coin-cert.webp"
   }
 }

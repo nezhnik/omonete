@@ -22,10 +22,10 @@
     "catalog_suffix": "3s2536daaa",
     "price_display": "AUD 2,645.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series III 2024 Year of the Dragon 1oz Gold Proof Coloured Coin",
@@ -59,9 +59,9 @@
     "price": "AUD 2,645.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-iii-2024-year-of-the-dragon-1oz-gold-proof-coloured-coin-cert.webp"
   }
 }

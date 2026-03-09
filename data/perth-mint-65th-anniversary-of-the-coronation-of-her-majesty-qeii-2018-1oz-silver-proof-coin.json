@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "65th Anniversary of the Coronation of Her Majesty QEII 2018 1oz Silver Proof Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/65th-anniversary-of-the-coronation-of-her-majesty-qeii-2018-1oz-silver-proof-coin-cert.webp"
   }
 }

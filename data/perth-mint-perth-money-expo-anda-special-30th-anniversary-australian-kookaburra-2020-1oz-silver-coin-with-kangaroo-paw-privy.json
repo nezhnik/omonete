@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy",
     "image_obverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-obv.webp",
-    "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-rev.webp",
+    "image_box": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-box.webp",
+    "image_certificate": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-cert.webp"
   },
   "raw": {
     "title": "Perth Money Expo ANDA Special 30th Anniversary Australian Kookaburra 2020 1oz Silver Coin with Kangaroo Paw Privy",
@@ -56,8 +56,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-obv.webp",
-    "reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-rev.webp",
+    "box": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-box.webp",
+    "certificate": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-cert.webp"
   }
 }

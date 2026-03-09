@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/games-through-the-ages-2022-2oz-antiqued-coin",
     "image_obverse": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-cert.webp"
   },
   "raw": {
     "title": "Games Through the Ages 2022 2oz Silver Antiqued Coin",
@@ -60,7 +60,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-obv.webp",
     "reverse": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-box.webp",
+    "certificate": "/image/coins/foreign/games-through-the-ages-2022-2oz-antiqued-coin-cert.webp"
   }
 }

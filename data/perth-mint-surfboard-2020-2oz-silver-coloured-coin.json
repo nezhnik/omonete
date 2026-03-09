@@ -22,10 +22,10 @@
     "catalog_suffix": "25v91bad",
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/surfboard-2020-2oz-silver-coloured-coin",
-    "image_obverse": null,
-    "image_reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_obverse": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-rev.webp",
+    "image_box": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "Surfboard 2020 2oz Silver Coloured Coin",
@@ -55,9 +55,9 @@
     "price": "AUD 220.00"
   },
   "saved": {
-    "obverse": null,
-    "reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "obverse": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-obv.webp",
+    "reverse": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-rev.webp",
+    "box": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-box.webp",
+    "certificate": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-cert.webp"
   }
 }

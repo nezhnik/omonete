@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "The Queen's Platinum Jubilee 2022 2oz Gold Proof Coin",
@@ -85,7 +85,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-cert.webp"
   }
 }

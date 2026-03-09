@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-silver-proof-coloured-coin-box.webp",
     "certificate": null
   }
 }

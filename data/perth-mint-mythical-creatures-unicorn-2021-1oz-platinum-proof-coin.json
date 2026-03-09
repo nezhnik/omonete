@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin",
     "image_obverse": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Mythical Creatures Unicorn 2021 1oz Platinum Proof Coin",
@@ -57,7 +57,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/mythical-creatures-unicorn-2021-1oz-platinum-proof-coin-cert.webp"
   }
 }

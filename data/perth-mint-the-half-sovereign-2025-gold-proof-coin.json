@@ -22,8 +22,8 @@
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 1,025.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/the-half-sovereign-2025-gold-proof-coin",
-    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "image_obverse": "/image/coins/foreign/the-half-sovereign-2025-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/the-half-sovereign-2025-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/the-half-sovereign-2025-gold-proof-coin-box.webp",
     "image_certificate": null
   },
@@ -54,8 +54,8 @@
     "price": "AUD 1,025.00"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "obverse": "/image/coins/foreign/the-half-sovereign-2025-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/the-half-sovereign-2025-gold-proof-coin-rev.webp",
     "box": "/image/coins/foreign/the-half-sovereign-2025-gold-proof-coin-box.webp",
     "certificate": null
   }

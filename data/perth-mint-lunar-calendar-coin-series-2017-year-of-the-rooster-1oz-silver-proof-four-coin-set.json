@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 3000,
     "weight_g": 31.1,
-    "weight_oz": 1,
+    "weight_oz": 4,
     "diameter_mm": null,
     "thickness_mm": 4,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": "AUD 204.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set",
     "image_obverse": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-obv.webp",
-    "image_reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-rev.webp",
+    "image_box": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-cert.webp"
   },
   "raw": {
     "title": "Lunar Calendar Coin Series 2017 Year of the Rooster 1oz Silver Proof Four-Coin Set",
@@ -60,8 +60,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-obv.webp",
-    "reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2019-year-of-the-pig-gold-proof-three-coin-set-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-rev.webp",
+    "box": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-cert.webp"
   }
 }

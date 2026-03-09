@@ -23,9 +23,9 @@
     "price_display": "AUD 259.99",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/one-love-2025-1oz-silver-proof-coloured-coin",
     "image_obverse": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "image_reverse": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-cert.webp"
   },
   "raw": {
     "title": "One Love 2025 1oz Silver Proof Coloured Coin",
@@ -57,8 +57,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-obv.webp",
-    "reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
+    "reverse": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-rev.webp",
     "box": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/one-love-2025-1oz-silver-proof-coloured-coin-cert.webp"
   }
 }

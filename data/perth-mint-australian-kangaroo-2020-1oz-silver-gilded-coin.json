@@ -24,7 +24,7 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2020-1oz-silver-gilded-coin",
     "image_obverse": "/image/coins/foreign/australian-kangaroo-2020-1oz-silver-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2020-1oz-silver-gilded-coin-rev.webp",
-    "image_box": null,
+    "image_box": "/image/coins/foreign/australian-kangaroo-2020-1oz-silver-gilded-coin-box.webp",
     "image_certificate": null
   },
   "raw": {
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-kangaroo-2020-1oz-silver-gilded-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-kangaroo-2020-1oz-silver-gilded-coin-rev.webp",
-    "box": null,
+    "box": "/image/coins/foreign/australian-kangaroo-2020-1oz-silver-gilded-coin-box.webp",
     "certificate": null
   }
 }

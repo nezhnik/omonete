@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin",
     "image_obverse": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-cert.webp"
   },
   "raw": {
     "title": "Great Southern Land 2021 1oz Silver Proof Mother of Pearl Coin",
@@ -61,7 +61,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-obv.webp",
     "reverse": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-box.webp",
+    "certificate": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-cert.webp"
   }
 }

@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 1500,
     "weight_g": 3.99,
-    "weight_oz": 1,
+    "weight_oz": 0.118,
     "diameter_mm": 20,
     "thickness_mm": 1.6,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-half-sovereign-2016-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australia Half Sovereign 2016 Gold Proof Coin",
@@ -60,7 +60,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australia-half-sovereign-2016-gold-proof-coin-cert.webp"
   }
 }

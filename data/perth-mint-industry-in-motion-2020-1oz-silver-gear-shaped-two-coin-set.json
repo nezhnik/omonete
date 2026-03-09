@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 1500,
     "weight_g": 31.1,
-    "weight_oz": 1,
+    "weight_oz": 2,
     "diameter_mm": 38.5,
     "thickness_mm": 4.1,
     "length_mm": null,
@@ -23,9 +23,9 @@
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set",
     "image_obverse": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-obv.webp",
-    "image_reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-rev.webp",
+    "image_box": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-cert.webp"
   },
   "raw": {
     "title": "Industry in Motion 2020 1oz Silver Gear-Shaped Two-Coin Set",
@@ -57,8 +57,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-obv.webp",
-    "reverse": "/image/coins/foreign/2019-50-year-ann-of-moon-landing-1-oz-99-99-silver-pr-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-rev.webp",
+    "box": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-cert.webp"
   }
 }

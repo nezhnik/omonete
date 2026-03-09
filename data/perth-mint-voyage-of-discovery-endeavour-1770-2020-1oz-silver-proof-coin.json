@@ -23,9 +23,9 @@
     "price_display": "AUD 359.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_reverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-rev.webp",
+    "image_box": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Voyage of Discovery Endeavour 1770-2020 1oz Silver Proof Coin",
@@ -58,8 +58,8 @@
   },
   "saved": {
     "obverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-2oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "reverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-rev.webp",
+    "box": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1oz-silver-proof-coin-cert.webp"
   }
 }

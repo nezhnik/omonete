@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 250,
     "weight_g": 155.53,
-    "weight_oz": 1,
+    "weight_oz": 5,
     "diameter_mm": 50.5,
     "thickness_mm": 5.5,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-koala-2017-5oz-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Koala 2017 5oz Gold Proof Coin",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-cert.webp"
   }
 }

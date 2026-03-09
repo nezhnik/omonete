@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 3888,
     "weight_g": 155.53,
-    "weight_oz": 1,
+    "weight_oz": 5,
     "diameter_mm": 50.9,
     "thickness_mm": 11.9,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series III 2021 Year of the Ox 5oz Silver Proof High Relief Coin",
@@ -57,7 +57,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-5oz-silver-proof-high-relief-coin-cert.webp"
   }
 }

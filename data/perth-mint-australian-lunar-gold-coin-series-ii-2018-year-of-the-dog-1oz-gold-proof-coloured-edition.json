@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition",
     "image_obverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Gold Coin Series II 2018 Year of the Dog 1oz Gold Proof Coloured Edition",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-gold-coin-series-ii-2018-year-of-the-dog-1oz-gold-proof-coloured-edition-cert.webp"
   }
 }

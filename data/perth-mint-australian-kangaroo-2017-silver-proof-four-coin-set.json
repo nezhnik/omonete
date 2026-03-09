@@ -22,10 +22,10 @@
     "catalog_suffix": "25117eaaa",
     "price_display": "AUD 349.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kangaroo-2017-silver-proof-four-coin-set",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-cert.webp"
   },
   "raw": {
     "title": "Australian Kangaroo 2017 Silver Proof Four-Coin Set",
@@ -62,9 +62,9 @@
     "price": "AUD 349.00"
   },
   "saved": {
-    "obverse": null,
+    "obverse": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-obv.webp",
     "reverse": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-box.webp",
+    "certificate": "/image/coins/foreign/australian-kangaroo-2017-silver-proof-four-coin-set-cert.webp"
   }
 }

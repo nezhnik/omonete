@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin",
     "image_obverse": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-cert.webp"
   },
   "raw": {
     "title": "World Money Fair - Coin Show Special Australian Kookaburra 2021 1oz Silver Coin",
@@ -54,7 +54,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-obv.webp",
     "reverse": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-box.webp",
+    "certificate": "/image/coins/foreign/world-money-fair-coin-show-special-australian-kookaburra-2021-1oz-silver-coin-cert.webp"
   }
 }

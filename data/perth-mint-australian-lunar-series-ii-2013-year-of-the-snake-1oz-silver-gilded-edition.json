@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series II 2013 Year of the Snake 1oz Silver Gilded Edition",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-ii-2013-year-of-the-snake-1oz-silver-gilded-edition-cert.webp"
   }
 }

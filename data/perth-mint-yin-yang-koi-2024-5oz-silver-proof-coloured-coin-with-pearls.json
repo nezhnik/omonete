@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 750,
     "weight_g": 155.53,
-    "weight_oz": 1,
+    "weight_oz": 5,
     "diameter_mm": 61,
     "thickness_mm": 7.2,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls",
     "image_obverse": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-obv.webp",
     "image_reverse": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-rev.webp",
-    "image_box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-box.webp",
+    "image_certificate": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-cert.webp"
   },
   "raw": {
     "title": "Yin Yang Koi 2024 5oz Silver Proof Coloured Coin with Pearls",
@@ -61,7 +61,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-obv.webp",
     "reverse": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-rev.webp",
-    "box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "certificate": null
+    "box": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-box.webp",
+    "certificate": "/image/coins/foreign/yin-yang-koi-2024-5oz-silver-proof-coloured-coin-with-pearls-cert.webp"
   }
 }

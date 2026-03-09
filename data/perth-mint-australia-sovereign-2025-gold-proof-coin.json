@@ -12,7 +12,7 @@
     "metal_fineness": "91.67",
     "mintage": 1500,
     "weight_g": 7.99,
-    "weight_oz": 1,
+    "weight_oz": 0.235,
     "diameter_mm": 22.6,
     "thickness_mm": 1.9,
     "length_mm": null,
@@ -22,8 +22,8 @@
     "catalog_suffix": "15x69baa",
     "price_display": "AUD 2,430.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/sovereigns/australia-sovereign-2025-gold-proof-coin",
-    "image_obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "image_reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "image_obverse": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-box.webp",
     "image_certificate": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-cert.webp"
   },
@@ -57,8 +57,8 @@
     "price": "AUD 2,430.00"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-obv.webp",
-    "reverse": "/image/coins/foreign/australia-sovereign-2021-gold-proof-coin-rev.webp",
+    "obverse": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-rev.webp",
     "box": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-box.webp",
     "certificate": "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-cert.webp"
   }

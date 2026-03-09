@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 250,
     "weight_g": 1,
-    "weight_oz": "1 кг",
+    "weight_oz": 32.151,
     "diameter_mm": 75.6,
     "thickness_mm": 16.2,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2018 1kg Gold Proof Coin",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-cert.webp"
   }
 }

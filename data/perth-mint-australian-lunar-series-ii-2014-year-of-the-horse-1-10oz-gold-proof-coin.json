@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 8000,
     "weight_g": 3.11,
-    "weight_oz": "1/10",
+    "weight_oz": 0.1,
     "diameter_mm": 18.6,
     "thickness_mm": 2,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin",
     "image_obverse": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Series II 2014 Year of the Horse 1/10oz Gold Proof Coin",
@@ -59,7 +59,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-series-ii-2014-year-of-the-horse-1-10oz-gold-proof-coin-cert.webp"
   }
 }

@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/2019-aust-wedge-tailed-eagle-2-oz-99.99-gold-pr-hr-coin",
     "image_obverse": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-cert.webp"
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2019 2oz Gold Proof High Relief Coin",
@@ -53,7 +53,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-obv.webp",
     "reverse": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-box.webp",
+    "certificate": "/image/coins/foreign/2019-aust-wedge-tailed-eagle-2-oz-99-99-gold-pr-hr-coin-cert.webp"
   }
 }

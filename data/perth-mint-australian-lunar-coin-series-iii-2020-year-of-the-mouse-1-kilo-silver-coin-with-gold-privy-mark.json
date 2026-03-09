@@ -12,7 +12,7 @@
     "metal_fineness": "9999/10000",
     "mintage": 3888,
     "weight_g": 1,
-    "weight_oz": "1 кг",
+    "weight_oz": 32.151,
     "diameter_mm": 100.9,
     "thickness_mm": 14.5,
     "length_mm": null,
@@ -24,8 +24,8 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark",
     "image_obverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-rev.webp",
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-box.webp",
+    "image_certificate": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-cert.webp"
   },
   "raw": {
     "title": "Australian Lunar Coin Series III 2020 Year of the Mouse 1 Kilo Silver Coin with Gold Privy Mark",
@@ -58,7 +58,7 @@
   "saved": {
     "obverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-obv.webp",
     "reverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-rev.webp",
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-box.webp",
+    "certificate": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-cert.webp"
   }
 }
