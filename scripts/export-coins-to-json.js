@@ -328,8 +328,15 @@ async function run() {
       throw err;
     }
   }
-  // Монеты без тиража не выводим в каталог (считаем, что их нет)
-  const rowsToExport = rows.filter((r) => r.mintage != null && Number(r.mintage) !== 0);
+  // Монеты без числового тиража обычно не выводим в каталог.
+  // Исключение: иностранные монеты с текстовым тиражом (например, "Неограниченный тираж").
+  const rowsToExport = rows.filter((r) => {
+    const hasNumericMintage = r.mintage != null && Number(r.mintage) !== 0;
+    const country = (r.country || "").trim();
+    const hasDisplay = r.mintage_display != null && String(r.mintage_display).trim() !== "";
+    const isForeignUnlimited = country && !/^Россия/i.test(country) && hasDisplay;
+    return hasNumericMintage || isForeignUnlimited;
+  });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();
 
