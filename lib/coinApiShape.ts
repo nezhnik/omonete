@@ -115,12 +115,16 @@ function getMetalCodes(metalStr: unknown): string[] {
 const WEIGHT_OZ_TO_LABEL: Record<string, string> = {
   "5 кг": "5 кг · 5000 грамм",
   "3 кг": "3 кг · 3000 грамм",
+  "2 кг": "2 кг · 2000 грамм",
   "1 кг": "1 кг · 1000 грамм",
+  "10 кг": "10 кг · 10000 грамм",
   "10 унций": "10 унций · 311 г",
   "5 унций": "5 унций · 155,5 г",
   "3 унции": "3 унции · 93,3 г",
   "2 унции": "2 унции · 62,2 г",
   "1 унция": "1 унция · 31,1 грамм",
+  "1.5 унции": "1.5 унции · 46,65 г",
+  "2.5 унции": "2.5 унции · 77,76 г",
   "1/2 унции": "1/2 унции · 15,55 грамм",
   "1/4 унции": "1/4 унции · 7,78 грамм",
   "1/5 унции": "1/5 унции · 6,22 грамм",
@@ -142,6 +146,23 @@ const WEIGHT_OZ_TO_LABEL: Record<string, string> = {
   "1/62,2": "1/62,2 унции · 0,5 грамм",
   "0,5 г": "1/62,2 унции · 0,5 грамм",
 };
+
+/** Унции для килограммовых монет по WEIGHT_GUIDE (граммы → строка для блока «Вес в унциях»). */
+const KG_OZ_DISPLAY: Record<number, string> = {
+  1000: "32,15 унции",
+  2000: "64,30 унции",
+  3000: "96,45 унции",
+  5000: "160,75 унции",
+  10000: "321,51 унции",
+};
+
+/** Для страницы монеты: что показать в строке «Вес в унциях». Для кг — считаем по граммам, иначе — weight_oz из БД. */
+function getWeightOzDisplay(weightG: unknown, weightOz: unknown): string | null {
+  const g = parseWeightG(weightG);
+  if (g != null && g >= 999 && KG_OZ_DISPLAY[Math.round(g)]) return KG_OZ_DISPLAY[Math.round(g)];
+  const oz = weightOz != null && String(weightOz).trim() !== "" ? String(weightOz).trim() : null;
+  return oz;
+}
 
 function parseWeightG(weightG: unknown): number | null {
   if (weightG == null || weightG === "") return null;
@@ -170,6 +191,8 @@ const WEIGHT_LABELS = [
   { g: 5000, label: "5 кг · 5000 грамм", tol: 20 },
   { g: 3000, label: "3 кг · 3000 грамм", tol: 15 },
   { g: 1000, label: "1 кг · 1000 грамм", tol: 5 },
+  { g: 2000, label: "2 кг · 2000 грамм", tol: 10 },
+  { g: 10000, label: "10 кг · 10000 грамм", tol: 50 },
   { g: 311.03, label: "10 унций · 311 г", tol: 2 },
   { g: 155.52, label: "5 унций · 155,5 г", tol: 1.5 },
   { g: 93.31, label: "3 унции · 93,3 г", tol: 1 },
@@ -300,6 +323,8 @@ export type DetailCoin = {
   mintageDisplay?: string;
   weightG?: string;
   weightOz?: string;
+  /** Для блока «Вес в унциях»: у кг — считанные унции (32,15 унции), у остальных — weight_oz из БД */
+  weightOzDisplay?: string;
   /** Форматированный вес (1/31,1 унции · 1 грамм и т.д.) для отображения на странице монеты */
   weightLabel?: string;
   purity?: string;
@@ -438,6 +463,7 @@ function rowToDetailCoin(
     mintageDisplay: r.mintage_display as string | undefined,
     weightG: formatWeightG(r.weight_g) ?? (r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined),
     weightOz: r.weight_oz != null && r.weight_oz !== "" ? String(r.weight_oz).trim() : undefined,
+    weightOzDisplay: getWeightOzDisplay(r.weight_g, r.weight_oz) ?? undefined,
     weightLabel: getWeightLabel(r.weight_g, r.weight_oz) ?? undefined,
     purity: r.metal_fineness as string | undefined,
     quality: r.quality as string | undefined,

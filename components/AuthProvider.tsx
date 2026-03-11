@@ -23,6 +23,8 @@ type AuthContextValue = {
   setPortfolioCache: (entry: PortfolioCacheEntry | null) => void;
   signIn: (email: string, password: string) => Promise<{ error: string | null }>;
   signUp: (email: string, password: string) => Promise<{ error: string | null }>;
+  /** Смена пароля в профиле: текущий + новый */
+  changePassword: (currentPassword: string, newPassword: string) => Promise<{ error: string | null }>;
   /** Отправка magic-link на email */
   sendMagicLink: (email: string, redirectTo?: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
@@ -158,6 +160,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     [supabase]
   );
 
+  const changePassword = useCallback(
+    async (currentPassword: string, newPassword: string) => {
+      if (!supabase) return { error: "Supabase не настроен" };
+      if (!user?.email) return { error: "Пользователь не найден" };
+      // Проверяем текущий пароль
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email: user.email,
+        password: currentPassword,
+      });
+      if (signInError) return { error: "INVALID_CURRENT_PASSWORD" };
+      // Если текущий пароль верный — обновляем на новый
+      const { error } = await supabase.auth.updateUser({ password: newPassword });
+      return { error: error?.message ?? null };
+    },
+    [supabase, user]
+  );
+
   const sendMagicLink = useCallback(
     async (email: string, redirectTo?: string) => {
       if (!supabase) return { error: "Supabase не настроен" };
@@ -185,6 +204,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setPortfolioCache,
     signIn,
     signUp,
+    changePassword,
     sendMagicLink,
     signOut,
     loading,
@@ -207,6 +227,7 @@ export function useAuth(): AuthContextValue {
       setPortfolioCache: () => {},
       signIn: async () => ({ error: "AuthProvider не подключён" }),
       signUp: async () => ({ error: "AuthProvider не подключён" }),
+      changePassword: async () => ({ error: "AuthProvider не подключён" }),
       sendMagicLink: async () => ({ error: "AuthProvider не подключён" }),
       signOut: async () => {},
       loading: false,

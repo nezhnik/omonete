@@ -61,7 +61,7 @@ async function compressImage(file: File, maxBytes = MAX_AVATAR_BYTES): Promise<s
 }
 
 export default function ProfilePage() {
-  const { user } = useAuth();
+  const { user, changePassword } = useAuth();
   const [profile, setProfile] = useState<ProfileData>({
     fullName: "",
     city: "",
@@ -74,6 +74,12 @@ export default function ProfilePage() {
   const [savedVisible, setSavedVisible] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [newPasswordRepeat, setNewPasswordRepeat] = useState("");
+  const [passwordError, setPasswordError] = useState<string | null>(null);
+  const [passwordSuccess, setPasswordSuccess] = useState<string | null>(null);
+  const [passwordSaving, setPasswordSaving] = useState(false);
 
   useEffect(() => {
     const key = getStorageKey(user?.id ?? null);
@@ -138,6 +144,36 @@ export default function ProfilePage() {
       setError(err instanceof Error ? err.message : "Не удалось обработать изображение");
     } finally {
       setSaving(false);
+    }
+  };
+
+  const handleChangePassword = async () => {
+    setPasswordError(null);
+    setPasswordSuccess(null);
+    if (!currentPassword || !newPassword || !newPasswordRepeat) {
+      setPasswordError("Заполните все поля для смены пароля");
+      return;
+    }
+    if (newPassword !== newPasswordRepeat) {
+      setPasswordError("Новые пароли не совпадают");
+      return;
+    }
+    if (newPassword.length < 6) {
+      setPasswordError("Пароль должен содержать минимум 6 символов");
+      return;
+    }
+    setPasswordSaving(true);
+    const { error: err } = await changePassword(currentPassword, newPassword);
+    setPasswordSaving(false);
+    if (err === "INVALID_CURRENT_PASSWORD") {
+      setPasswordError("Текущий пароль указан неверно");
+    } else if (err) {
+      setPasswordError("Не удалось изменить пароль. Попробуйте ещё раз");
+    } else {
+      setPasswordSuccess("Пароль успешно изменён");
+      setCurrentPassword("");
+      setNewPassword("");
+      setNewPasswordRepeat("");
     }
   };
 
@@ -228,29 +264,15 @@ export default function ProfilePage() {
 
             <div className="flex flex-col gap-2">
               <label className="text-[14px] font-medium text-[#11111B]" htmlFor="fullName">
-                Имя и фамилия
+                Имя
               </label>
               <input
                 id="fullName"
                 type="text"
                 value={profile.fullName}
                 onChange={handleChange("fullName")}
-                placeholder="Например, Георгий Иванов"
+                placeholder="Например, Георгий"
                 className="w-full rounded-[300px] border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none focus:bg-white focus:border-[#11111B]"
-              />
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <label className="text-[14px] font-medium text-[#11111B]" htmlFor="contacts">
-                Контакты
-              </label>
-              <textarea
-                id="contacts"
-                value={profile.contacts}
-                onChange={handleChange("contacts")}
-                placeholder="Телеграм, сайт или соцсети, если хотите ими поделиться."
-                rows={3}
-                className="w-full rounded-2xl border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none resize-vertical focus:bg-white focus:border-[#11111B]"
               />
             </div>
 
@@ -263,6 +285,58 @@ export default function ProfilePage() {
                 onClick={handleSaveClick}
               >
                 {saving ? "Сохраняем…" : "Сохранить"}
+              </Button>
+            </div>
+          </section>
+
+          <section className="flex flex-col gap-4 border border-[#E4E4EA] rounded-2xl p-5 sm:p-6">
+            <h2 className="text-black text-[20px] font-medium leading-7 mt-0 mb-0">Смена пароля</h2>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#11111B]" htmlFor="currentPassword">
+                  Текущий пароль
+                </label>
+                <input
+                  id="currentPassword"
+                  type="password"
+                  value={currentPassword}
+                  onChange={(e) => setCurrentPassword(e.target.value)}
+                  className="w-full rounded-[300px] border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none focus:bg-white focus:border-[#11111B]"
+                />
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex-1 flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#11111B]" htmlFor="newPassword">
+                    Новый пароль
+                  </label>
+                  <input
+                    id="newPassword"
+                    type="password"
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                    className="w-full rounded-[300px] border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none focus:bg-white focus:border-[#11111B]"
+                  />
+                  <p className="text-[12px] text-[#666666]">Минимальная длина пароля 6 символов.</p>
+                </div>
+                <div className="flex-1 flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#11111B]" htmlFor="newPasswordRepeat">
+                    Повторите новый пароль
+                  </label>
+                  <input
+                    id="newPasswordRepeat"
+                    type="password"
+                    value={newPasswordRepeat}
+                    onChange={(e) => setNewPasswordRepeat(e.target.value)}
+                    className="w-full rounded-[300px] border border-[#E4E4EA] bg-[#F1F1F2] px-4 py-3 text-[16px] text-[#11111B] outline-none focus:bg-white focus:border-[#11111B]"
+                  />
+                </div>
+              </div>
+            </div>
+            {passwordError && <p className="text-[13px] text-[#CC0000]">{passwordError}</p>}
+            {passwordSuccess && !passwordError && <p className="text-[13px] text-[#00875A]">{passwordSuccess}</p>}
+            <div>
+              <Button type="button" variant="primary" disabled={passwordSaving} className="shrink-0" onClick={handleChangePassword}>
+                {passwordSaving ? "Меняем пароль…" : "Изменить пароль"}
               </Button>
             </div>
           </section>

@@ -35,8 +35,10 @@ export type CoinDetailData = {
   mintageDisplay?: string;
   /** Чистого металла не менее, гр. — из БД weight_g */
   weightG?: string;
-  /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — из БД weight_oz */
+  /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — для строки «Вес в унциях» лучше weightOzDisplay */
   weightOz?: string;
+  /** Для строки «Вес в унциях»: у кг — унции по расчёту (32,15 унции), иначе — weight_oz из БД */
+  weightOzDisplay?: string;
   /** Форматированный вес для отображения (1/31,1 унции · 1 грамм и т.д.) */
   weightLabel?: string;
   purity?: string;
@@ -466,8 +468,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 {coin.weightG && (
                   <SpecRow label="Чистого металла не менее, гр." value={formatNumbersInString(coin.weightG)} />
                 )}
-                {(coin.weightLabel ?? coin.weightOz) && (
-                  <SpecRow label="Вес в унциях" value={coin.weightLabel ?? coin.weightOz} />
+                {(coin.weightLabel ?? coin.weightOz ?? coin.weightOzDisplay) && (
+                  <SpecRow label="Вес в унциях" value={coin.weightOzDisplay ?? coin.weightOz ?? undefined} />
                 )}
                 {coin.purity && <SpecRow label="Проба" value={coin.purity} />}
                 {coin.rectangular && (coin.lengthMm || coin.widthMm) ? (

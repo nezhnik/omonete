@@ -9,7 +9,7 @@ import { useAuth } from "../../components/AuthProvider";
 
 export default function LoginPage() {
   const [moneyAnimationData, setMoneyAnimationData] = useState<object | null>(null);
-  const [mode, setMode] = useState<"magic" | "in" | "up">("magic");
+  const [mode, setMode] = useState<"magic" | "in" | "up">("in");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -17,6 +17,21 @@ export default function LoginPage() {
   const [submitting, setSubmitting] = useState(false);
   const { signIn, signUp, sendMagicLink, isAuthorized } = useAuth();
   const router = useRouter();
+
+  const mapAuthError = (modeValue: "magic" | "in" | "up", raw: string | null): string | null => {
+    if (!raw) return null;
+    const lower = raw.toLowerCase();
+    if (modeValue === "in" && lower.includes("invalid login credentials")) {
+      return "Неверный email или пароль";
+    }
+    if (modeValue === "up" && (lower.includes("password") || lower.includes("6 characters"))) {
+      return "Пароль должен содержать минимум 6 символов";
+    }
+    if (lower.includes("already registered") || lower.includes("user already registered")) {
+      return "Пользователь с таким email уже зарегистрирован";
+    }
+    return "Произошла ошибка. Попробуйте ещё раз";
+  };
 
   useEffect(() => {
     fetch("/animations/Money_fly.json")
@@ -41,21 +56,25 @@ export default function LoginPage() {
     setSubmitting(true);
     const { error: err } = mode === "in" ? await signIn(email, password) : await signUp(email, password);
     setSubmitting(false);
-    if (err) setError(err);
-    else router.replace("/portfolio");
+    const friendly = mapAuthError(mode, err);
+    if (friendly) {
+      setError(friendly);
+    } else {
+      router.replace("/portfolio");
+    }
   };
 
   const handleMagicLink = async () => {
     setError(null);
     setInfo(null);
     if (!email) {
-      setError("Введите email, чтобы получить ссылку для входа.");
+      setError("Введите email, чтобы получить ссылку для входа");
       return;
     }
     const redirectTo = typeof window !== "undefined" ? `${window.location.origin}/login` : undefined;
     const { error: err } = await sendMagicLink(email, redirectTo);
     if (err) setError(err);
-    else setInfo("Мы отправили ссылку для входа на указанный email. Проверьте почту.");
+    else setInfo("Мы отправили ссылку для входа на указанный email. Проверьте почту");
   };
 
   return (
@@ -72,8 +91,8 @@ export default function LoginPage() {
         <p className="text-black text-[18px] leading-[1.4] max-w-[360px] font-medium mb-6">
           {mode === "magic" ? "Вход по ссылке" : mode === "in" ? "Вход в аккаунт" : "Регистрация"}
         </p>
-        {/* Email — общий для всех режимов */}
-        <form onSubmit={handleSubmit} className="w-full max-w-[320px] flex flex-col gap-3 text-left">
+        {/* Email — общий для всех режимов; отключаем встроенную HTML-валидацию, чтобы не показывать системные тултипы */}
+        <form onSubmit={handleSubmit} noValidate className="w-full max-w-[320px] flex flex-col gap-3 text-left">
           <input
             type="email"
             placeholder="Email"
@@ -83,15 +102,22 @@ export default function LoginPage() {
             className="w-full px-4 py-3 rounded-2xl border border-[#E4E4EA] text-[16px] outline-none focus:border-[#11111B]"
           />
           {mode !== "magic" && (
-            <input
-              type="password"
-              placeholder="Пароль"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              minLength={6}
-              className="w-full px-4 py-3 rounded-2xl border border-[#E4E4EA] text-[16px] outline-none focus:border-[#11111B]"
-            />
+            <>
+              <input
+                type="password"
+                placeholder="Пароль"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                minLength={6}
+                className="w-full px-4 py-3 rounded-2xl border border-[#E4E4EA] text-[16px] outline-none focus:border-[#11111B]"
+              />
+              {mode === "up" && (
+                <p className="text-[12px] text-[#666666]">
+                  Минимальная длина пароля — 6 символов.
+                </p>
+              )}
+            </>
           )}
           {error && <p className="text-red-600 text-[14px]">{error}</p>}
           {info && !error && <p className="text-green-600 text-[14px]">{info}</p>}
@@ -115,23 +141,7 @@ export default function LoginPage() {
           )}
         </form>
         {/* Переключатели режимов */}
-        {mode === "magic" ? (
-          <button
-            type="button"
-            onClick={() => { setMode("in"); setError(null); setInfo(null); }}
-            className="mt-3 text-[#11111B] text-[14px] underline hover:text-black"
-          >
-            Войти по паролю
-          </button>
-        ) : (
-          <button
-            type="button"
-            onClick={() => { setMode("magic"); setError(null); setInfo(null); }}
-            className="mt-3 text-[#11111B] text-[14px] underline hover:text-black"
-          >
-            Войти по ссылке на e-mail
-          </button>
-        )}
+        {/* Кнопку входа по ссылке временно скрываем, оставляем только переключение вход/регистрация */}
         <button
           type="button"
           onClick={() => { setMode(mode === "up" ? "in" : "up"); setError(null); setInfo(null); }}
