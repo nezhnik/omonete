@@ -230,32 +230,44 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
             <div className="px-4 py-4 flex flex-col">
               {/* Вверху — профиль (если вошли) */}
               {!loading && isAuthorized && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    router.push("/profile");
-                  }}
-                  className="w-full flex items-center gap-3 px-3 py-3 mb-3 rounded-2xl bg-[#F5F5F7] hover:bg-[#E4E4EA] text-left cursor-pointer"
-                >
-                  {avatarUrl ? (
-                    <img
-                      src={avatarUrl}
-                      alt=""
-                      className="w-10 h-10 rounded-full object-cover shrink-0"
-                    />
-                  ) : (
-                    <span className="w-10 h-10 rounded-full bg-[#E4E4EA] shrink-0" aria-hidden />
-                  )}
-                  <div className="flex-1 min-w-0 flex flex-col">
-                    <span className="text-[16px] font-medium text-[#11111B] truncate">
-                      {profileName ?? "Личный кабинет"}
-                    </span>
-                    <span className="text-[14px] text-[#666666] truncate">
-                      {user?.email ?? "Профиль и настройки"}
-                    </span>
-                  </div>
-                </button>
+                <>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMenuOpen(false);
+                      router.push("/profile");
+                    }}
+                    className="w-full flex items-center gap-3 px-3 py-3 mb-2 rounded-2xl bg-[#F5F5F7] hover:bg-[#E4E4EA] text-left cursor-pointer"
+                  >
+                    {avatarUrl ? (
+                      <img
+                        src={avatarUrl}
+                        alt=""
+                        className="w-10 h-10 rounded-full object-cover shrink-0"
+                      />
+                    ) : (
+                      <span className="w-10 h-10 rounded-full bg-[#E4E4EA] shrink-0" aria-hidden />
+                    )}
+                    <div className="flex-1 min-w-0 flex flex-col">
+                      <span className="text-[16px] font-medium text-[#11111B] truncate">
+                        {profileName ?? "Личный кабинет"}
+                      </span>
+                      <span className="text-[14px] text-[#666666] truncate">
+                        {user?.email ?? "Профиль и настройки"}
+                      </span>
+                    </div>
+                  </button>
+                  <Link
+                    href="/portfolio"
+                    onClick={() => setMenuOpen(false)}
+                    className={`mb-3 py-3 px-3 rounded-lg text-[16px] font-medium ${
+                      activePath === "/portfolio" ? "bg-[#F1F1F2] text-[#11111B]" : "text-[#11111B] hover:bg-[#F1F1F2]"
+                    }`}
+                  >
+                    Моя коллекция
+                  </Link>
+                  <div className="h-px bg-[#E4E4EA] my-2" aria-hidden />
+                </>
               )}
 
               {/* Список разделов сайта */}
@@ -276,19 +288,22 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
                   );
                 })}
 
-                {/* Выход как пункт меню, если вошли */}
+                {/* Выход — только для авторизованных, отделён дивайдером */}
                 {!loading && isAuthorized && (
-                  <button
-                    type="button"
-                    onClick={async () => {
-                      await signOut();
-                      setMenuOpen(false);
-                      router.push("/");
-                    }}
-                    className="py-3 px-3 rounded-lg text-[16px] font-medium text-[#CC0000] hover:bg-[#F1F1F2] text-left cursor-pointer"
-                  >
-                    Выйти
-                  </button>
+                  <>
+                    <div className="h-px bg-[#E4E4EA] my-2" aria-hidden />
+                    <button
+                      type="button"
+                      onClick={async () => {
+                        await signOut();
+                        setMenuOpen(false);
+                        router.push("/");
+                      }}
+                      className="py-3 px-3 rounded-lg text-[16px] font-medium text-[#CC0000] hover:bg-[#F1F1F2] text-left cursor-pointer"
+                    >
+                      Выйти
+                    </button>
+                  </>
                 )}
               </div>
 
