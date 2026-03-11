@@ -23,13 +23,17 @@ const weightOptionsDefault = [
   "1/10 унции · 3,11 грамм",
 ];
 const weightOptionsFull = [
+  "10 кг · 10000 грамм",
   "5 кг · 5000 грамм",
   "3 кг · 3000 грамм",
+  "2 кг · 2000 грамм",
   "1 кг · 1000 грамм",
   "10 унций · 311 г",
   "5 унций · 155,5 г",
   "3 унции · 93,3 г",
   "2 унции · 62,2 г",
+  "2.5 унции · 77,76 г",
+  "1.5 унции · 46,65 г",
   ...weightOptionsDefault,
   "1/25 унции · 1,24 грамм",
   "1/31,1 унции · 1 грамм",
@@ -42,35 +46,43 @@ const weightOptionsFull = [
 /** Список стран в фильтре (всего 5 — кнопка раскрытия не нужна) */
 const countriesFull = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Тувалу", "Ниуэ"];
 
-/** Вес: слева унции/кг, справа граммы (для раскладки space-between) */
+/** Вес: слева унции/кг по-русски, справа граммы (для раскладки space-between) */
 const WEIGHT_LEFT: Record<string, string> = {
+  "10 кг · 10000 грамм": "10 кг",
   "5 кг · 5000 грамм": "5 кг",
   "3 кг · 3000 грамм": "3 кг",
+  "2 кг · 2000 грамм": "2 кг",
   "1 кг · 1000 грамм": "1 кг",
-  "10 унций · 311 г": "10 oz",
-  "5 унций · 155,5 г": "5 oz",
-  "3 унции · 93,3 г": "3 oz",
-  "2 унции · 62,2 г": "2 oz",
-  "1 унция · 31,1 грамм": "1 oz",
-  "1/2 унции · 15,55 грамм": "1/2 oz",
-  "1/4 унции · 7,78 грамм": "1/4 oz",
-  "1/8 унции · 3,89 грамм": "1/8 oz",
-  "1/10 унции · 3,11 грамм": "1/10 oz",
-  "1/25 унции · 1,24 грамм": "1/25 oz",
-  "1/31,1 унции · 1 грамм": "1/31.1 oz",
-  "1/62,2 унции · 0,5 грамм": "1/62.2 oz",
-  "1/100 унции · 0,31 грамм": "1/100 oz",
-  "1/200 унции · 0,156 грамм": "1/200 oz",
-  "1/1000 унции · 0,031 грамм": "1/1000 oz",
+  "10 унций · 311 г": "10 унций",
+  "5 унций · 155,5 г": "5 унций",
+  "3 унции · 93,3 г": "3 унции",
+  "2 унции · 62,2 г": "2 унции",
+  "2.5 унции · 77,76 г": "2.5 унции",
+  "1.5 унции · 46,65 г": "1.5 унции",
+  "1 унция · 31,1 грамм": "1 унция",
+  "1/2 унции · 15,55 грамм": "1/2 унции",
+  "1/4 унции · 7,78 грамм": "1/4 унции",
+  "1/8 унции · 3,89 грамм": "1/8 унции",
+  "1/10 унции · 3,11 грамм": "1/10 унции",
+  "1/25 унции · 1,24 грамм": "1/25 унции",
+  "1/31,1 унции · 1 грамм": "1/31,1 унции",
+  "1/62,2 унции · 0,5 грамм": "1/62,2 унции",
+  "1/100 унции · 0,31 грамм": "1/100 унции",
+  "1/200 унции · 0,156 грамм": "1/200 унции",
+  "1/1000 унции · 0,031 грамм": "1/1000 унции",
 };
 const WEIGHT_RIGHT: Record<string, string> = {
+  "10 кг · 10000 грамм": "10000 гр.",
   "5 кг · 5000 грамм": "5000 гр.",
   "3 кг · 3000 грамм": "3000 гр.",
+  "2 кг · 2000 грамм": "2000 гр.",
   "1 кг · 1000 грамм": "1000 гр.",
   "10 унций · 311 г": "311 гр.",
   "5 унций · 155,5 г": "155,5 гр.",
   "3 унции · 93,3 г": "93,3 гр.",
   "2 унции · 62,2 г": "62,2 гр.",
+  "2.5 унции · 77,76 г": "77,76 гр.",
+  "1.5 унции · 46,65 г": "46,65 гр.",
   "1 унция · 31,1 грамм": "31,1 гр.",
   "1/2 унции · 15,55 грамм": "15,55 гр.",
   "1/4 унции · 7,78 грамм": "7,78 гр.",
@@ -159,6 +171,8 @@ type CatalogFiltersProps = {
   slide?: boolean;
   onFiltersActiveChange?: (active: boolean) => void;
   coins?: CatalogCoinForFilter[];
+  /** Веса, встречающиеся в каталоге — в фильтре показываются только они (если не задано — полный список) */
+  availableWeights?: string[];
   selectedMetals?: string[];
   onMetalChange?: (codes: string[]) => void;
   selectedWeights?: string[];
@@ -181,6 +195,7 @@ export function CatalogFilters({
   slide = false,
   onFiltersActiveChange,
   coins = [],
+  availableWeights,
   selectedMetals = [],
   onMetalChange,
   selectedWeights = [],
@@ -200,6 +215,14 @@ export function CatalogFilters({
   const [weightListExpanded, setWeightListExpanded] = useState(false);
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
   const [mintListExpanded, setMintListExpanded] = useState(false);
+
+  /** Список весов для фильтра: только встречающиеся в каталоге (если передан availableWeights) или полный */
+  const weightListForFilter = useMemo(() => {
+    if (availableWeights?.length) {
+      return weightOptionsFull.filter((w) => availableWeights.includes(w));
+    }
+    return weightOptionsFull;
+  }, [availableWeights]);
 
   const seriesDefault = seriesList.slice(0, 5);
   const metalsWithCount = useMemo(() => {
@@ -302,7 +325,7 @@ export function CatalogFilters({
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-black text-[20px] font-medium leading-7">Вес</h3>
-          {weightOptionsFull.length > 5 && (
+          {weightListForFilter.length > 5 && (
             <button
               type="button"
               onClick={() => setWeightListExpanded((v) => !v)}
@@ -313,7 +336,7 @@ export function CatalogFilters({
           )}
         </div>
         <FilterChecklist
-          items={weightOptionsFull.length > 5 ? (weightListExpanded ? weightOptionsFull : weightOptionsFull.slice(0, 5)) : weightOptionsFull}
+          items={weightListForFilter.length > 5 ? (weightListExpanded ? weightListForFilter : weightListForFilter.slice(0, 5)) : weightListForFilter}
           selectedValues={selectedWeights}
           onChange={onWeightChange ?? (() => {})}
           getDisplayLabel={(item) => WEIGHT_LEFT[item] ?? item}

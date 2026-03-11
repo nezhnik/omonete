@@ -16,10 +16,10 @@ type CatalogFilter = "all" | "ru" | "foreign";
 
 const VALID_METALS = ["Au", "Pt", "Pd", "Ag", "Cu"];
 const VALID_WEIGHTS = [
-  "5 кг · 5000 грамм", "3 кг · 3000 грамм", "1 кг · 1000 грамм", "10 унций · 311 г", "5 унций · 155,5 г",
-  "3 унции · 93,3 г", "2 унции · 62,2 г", "1 унция · 31,1 грамм", "1/2 унции · 15,55 грамм",
-  "1/4 унции · 7,78 грамм", "1/8 унции · 3,89 грамм", "1/10 унции · 3,11 грамм", "1/25 унции · 1,24 грамм",
-  "1/31,1 унции · 1 грамм", "1/62,2 унции · 0,5 грамм", "1/100 унции · 0,31 грамм", "1/200 унции · 0,156 грамм", "1/1000 унции · 0,031 грамм",
+  "10 кг · 10000 грамм", "5 кг · 5000 грамм", "3 кг · 3000 грамм", "2 кг · 2000 грамм", "1 кг · 1000 грамм",
+  "10 унций · 311 г", "5 унций · 155,5 г", "3 унции · 93,3 г", "2 унции · 62,2 г", "2.5 унции · 77,76 г", "1.5 унции · 46,65 г",
+  "1 унция · 31,1 грамм", "1/2 унции · 15,55 грамм", "1/4 унции · 7,78 грамм", "1/8 унции · 3,89 грамм", "1/10 унции · 3,11 грамм",
+  "1/25 унции · 1,24 грамм", "1/31,1 унции · 1 грамм", "1/62,2 унции · 0,5 грамм", "1/100 унции · 0,31 грамм", "1/200 унции · 0,156 грамм", "1/1000 унции · 0,031 грамм",
 ];
 /** Допустимые страны для URL — строятся по данным каталога (countryListByCount) */
 
@@ -569,7 +569,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
 }
 
 /** Список только одиночных дворов (без «X и Y монетные дворы»), счётчик включает монеты с двумя дворами */
-const mintListByCount = useMemo(() => {
+  const mintListByCount = useMemo(() => {
     const m: Record<string, number> = {};
     coins.forEach((c) => {
       const name = c.mintName?.trim();
@@ -586,6 +586,20 @@ const mintListByCount = useMemo(() => {
     return Object.entries(m)
       .sort((a, b) => b[1] - a[1])
       .map(([name]) => name);
+  }, [coins]);
+
+  /** Веса, реально встречающиеся в каталоге (для фильтра — показывать только их), порядок по убыванию веса */
+  const availableWeights = useMemo(() => {
+    const seen = new Set<string>();
+    const withG: { label: string; g: number }[] = [];
+    coins.forEach((c) => {
+      const w = c.weightLabel?.trim();
+      if (w && !seen.has(w)) {
+        seen.add(w);
+        withG.push({ label: w, g: c.weightG ?? 0 });
+      }
+    });
+    return withG.sort((a, b) => b.g - a.g).map((x) => x.label);
   }, [coins]);
 
   const byTab =
@@ -1056,6 +1070,7 @@ const mintListByCount = useMemo(() => {
                   slide={filtersOpening || (filtersClosing && !filtersOpen)}
                   onFiltersActiveChange={setSidebarFiltersActive}
                   coins={coinsForFilterCounts}
+                  availableWeights={availableWeights}
                   selectedMetals={selectedMetals}
                   onMetalChange={setSelectedMetals}
                   selectedWeights={selectedWeights}
@@ -1185,6 +1200,7 @@ const mintListByCount = useMemo(() => {
                   slide={filtersOpening || (filtersClosing && !filtersOpen)}
                   onFiltersActiveChange={setSidebarFiltersActive}
                   coins={coinsForFilterCounts}
+                  availableWeights={availableWeights}
                   selectedMetals={selectedMetals}
                   onMetalChange={setSelectedMetals}
                   selectedWeights={selectedWeights}
