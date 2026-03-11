@@ -120,6 +120,8 @@ function PortfolioTableSkeleton() {
 type PortfolioRow = {
   id: string;
   imageUrl: string;
+  imageUrls?: string[];
+  imageUrlRoles?: string[];
   title: string;
   titleEn?: string;
   series: string;
@@ -146,6 +148,8 @@ type ApiCoin = {
   titleEn?: string;
   seriesName?: string;
   imageUrl: string;
+  imageUrls?: string[];
+  imageUrlRoles?: string[];
   mintName?: string;
   mintCountry?: string;
   mintLogoUrl?: string;
@@ -211,6 +215,8 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
   return {
     id: coin.id,
     imageUrl: coin.imageUrl || "/image/coin-placeholder.png",
+    imageUrls: Array.isArray(coin.imageUrls) ? coin.imageUrls : undefined,
+    imageUrlRoles: Array.isArray(coin.imageUrlRoles) ? coin.imageUrlRoles : undefined,
     title: coin.title ?? "—",
     titleEn: coin.titleEn,
     series: coin.seriesName ?? "—",
@@ -874,9 +880,9 @@ export default function PortfolioPage() {
         </div>
       </main>
 
-      <div className="fixed inset-x-0 bottom-4 sm:bottom-6 z-40 pointer-events-none">
+      <div className="fixed inset-x-0 bottom-4 sm:bottom-6 z-40 pointer-events-none flex justify-center px-4 sm:px-6 lg:px-8 2xl:px-20">
         <div
-          className="flex items-center justify-between gap-4 sm:gap-6 pl-4 sm:pl-6 pr-3 sm:pr-3 py-2 sm:py-3 rounded-[999px] bg-[#11111B] text-white shadow-lg pointer-events-auto transition-all duration-200 ease-out w-auto mx-4 sm:mx-6 lg:mx-8 2xl:mx-20 max-w-[640px]"
+          className="flex items-center justify-between gap-4 sm:gap-6 pl-4 sm:pl-6 pr-3 sm:pr-3 py-2 sm:py-3 rounded-[999px] bg-[#11111B] text-white shadow-lg pointer-events-auto transition-all duration-200 ease-out w-full max-w-[640px]"
           style={{
             opacity: selectedCount > 0 ? 1 : 0,
             transform: selectedCount > 0 ? "translateY(0)" : "translateY(16px)",
