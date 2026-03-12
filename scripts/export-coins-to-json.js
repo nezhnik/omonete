@@ -101,11 +101,13 @@ function getMetalCodes(metalStr) {
   return code ? [code] : [];
 }
 
-// Стандартные веса: килограммы пишем как 1 кг, 3 кг, 5 кг (в унции не переводим); остальное в унциях.
+// Стандартные веса: килограммы 1, 2, 3, 5, 10 кг; остальное в унциях.
 const WEIGHT_LABELS = [
   { g: 5000, label: "5 кг · 5000 грамм", tol: 20 },
   { g: 3000, label: "3 кг · 3000 грамм", tol: 15 },
   { g: 1000, label: "1 кг · 1000 грамм", tol: 5 },
+  { g: 2000, label: "2 кг · 2000 грамм", tol: 10 },
+  { g: 10000, label: "10 кг · 10000 грамм", tol: 50 },
   { g: 311.03, label: "10 унций · 311 г", tol: 2 },
   { g: 155.52, label: "5 унций · 155,5 г", tol: 1.5 },
   { g: 93.31, label: "3 унции · 93,3 г", tol: 1 },
@@ -136,12 +138,16 @@ function parseWeightG(weightG) {
 const WEIGHT_OZ_TO_LABEL = {
   "5 кг": "5 кг · 5000 грамм",
   "3 кг": "3 кг · 3000 грамм",
+  "2 кг": "2 кг · 2000 грамм",
   "1 кг": "1 кг · 1000 грамм",
+  "10 кг": "10 кг · 10000 грамм",
   "10 унций": "10 унций · 311 г",
   "5 унций": "5 унций · 155,5 г",
   "3 унции": "3 унции · 93,3 г",
   "2 унции": "2 унции · 62,2 г",
   "1 унция": "1 унция · 31,1 грамм",
+  "1.5 унции": "1.5 унции · 46,65 г",
+  "2.5 унции": "2.5 унции · 77,76 г",
   "1/2 унции": "1/2 унции · 15,55 грамм",
   "1/4 унции": "1/4 унции · 7,78 грамм",
   "1/5 унции": "1/5 унции · 6,22 грамм",
@@ -163,6 +169,13 @@ const WEIGHT_OZ_TO_LABEL = {
   "1/62,2": "1/62,2 унции · 0,5 грамм",
   "0,5 г": "1/62,2 унции · 0,5 грамм",
 };
+/** Унции для килограммовых монет по WEIGHT_GUIDE (для блока «Вес в унциях»). */
+const KG_OZ_DISPLAY = { 1000: "32,15 унции", 2000: "64,30 унции", 3000: "96,45 унции", 5000: "160,75 унции", 10000: "321,51 унции" };
+function getWeightOzDisplay(weightG, weightOz) {
+  const g = parseWeightG(weightG);
+  if (g != null && g >= 999 && KG_OZ_DISPLAY[Math.round(g)]) return KG_OZ_DISPLAY[Math.round(g)];
+  return weightOz != null && String(weightOz).trim() !== "" ? String(weightOz).trim() : null;
+}
 function getWeightLabel(weightG, weightOz) {
   const oz = weightOz && String(weightOz).trim();
   if (oz && WEIGHT_OZ_TO_LABEL[oz]) return WEIGHT_OZ_TO_LABEL[oz];
@@ -402,7 +415,9 @@ async function run() {
       mintLogoUrl: r.mint && mintLogoMap.get(String(r.mint).trim()) ? mintLogoMap.get(String(r.mint).trim()) : undefined,
       weightLabel: weightLabel ?? undefined,
       weightG: weightG ?? undefined,
-      rectangular: isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
+      rectangular:
+        (r.is_rectangular === 1 || r.is_rectangular === true) ||
+        isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
     };
   });
 
@@ -535,6 +550,8 @@ async function run() {
       mintageDisplay: r.mintage_display ?? undefined,
       weightG: formatWeightG(r.weight_g) ?? (r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined),
       weightOz: r.weight_oz != null && r.weight_oz !== "" ? String(r.weight_oz).trim() : undefined,
+      weightOzDisplay: getWeightOzDisplay(r.weight_g, r.weight_oz) ?? undefined,
+      weightLabel: getWeightLabel(r.weight_g, r.weight_oz) ?? undefined,
       purity: r.metal_fineness ?? undefined,
       quality: r.quality ?? undefined,
       diameterMm: formatSpecNum(r.diameter_mm) ?? r.diameter_mm ?? undefined,
@@ -542,7 +559,9 @@ async function run() {
       lengthMm: formatSpecNum(r.length_mm) ?? r.length_mm ?? undefined,
       widthMm: formatSpecNum(r.width_mm) ?? r.width_mm ?? undefined,
       catalogSuffix: r.catalog_suffix ?? undefined,
-      rectangular: isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
+      rectangular:
+        (r.is_rectangular === 1 || r.is_rectangular === true) ||
+        isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
       mintLogoUrl: r.mint && mintLogoMap.get(String(r.mint).trim()) ? mintLogoMap.get(String(r.mint).trim()) : undefined,
       priceDisplay: (r.price_display && String(r.price_display).trim()) || undefined,
     };
@@ -571,7 +590,9 @@ async function run() {
           metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
           metalName: metalName && metalName !== "—" ? metalName : undefined,
           weightG,
-          rectangular: isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm),
+          rectangular:
+            (s.is_rectangular === 1 || s.is_rectangular === true) ||
+            isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm),
         };
       });
     }
