@@ -14,13 +14,13 @@ const METAL_OPTIONS = [
   { label: "Cu", color: "#97564A" },
 ];
 
-// По умолчанию — самые распространённые; остальные по кнопке «Показать все»
-const weightOptionsDefault = [
-  "1 унция · 31,1 грамм",
+/** По умолчанию (до раскрытия) показываем эти 5 популярных весов сверху вниз; при раскрытии — полный список по иерархии */
+const weightOptionsPopular = [
   "1/2 унции · 15,55 грамм",
-  "1/4 унции · 7,78 грамм",
-  "1/8 унции · 3,89 грамм",
-  "1/10 унции · 3,11 грамм",
+  "1 унция · 31,1 грамм",
+  "2 унции · 62,2 г",
+  "5 унций · 155,5 г",
+  "10 унций · 311 г",
 ];
 const weightOptionsFull = [
   "10 кг · 10000 грамм",
@@ -34,7 +34,11 @@ const weightOptionsFull = [
   "2 унции · 62,2 г",
   "2.5 унции · 77,76 г",
   "1.5 унции · 46,65 г",
-  ...weightOptionsDefault,
+  "1 унция · 31,1 грамм",
+  "1/2 унции · 15,55 грамм",
+  "1/4 унции · 7,78 грамм",
+  "1/8 унции · 3,89 грамм",
+  "1/10 унции · 3,11 грамм",
   "1/25 унции · 1,24 грамм",
   "1/31,1 унции · 1 грамм",
   "1/62,2 унции · 0,5 грамм",
@@ -43,8 +47,8 @@ const weightOptionsFull = [
   "1/1000 унции · 0,031 грамм",
 ];
 
-/** Список стран в фильтре (всего 5 — кнопка раскрытия не нужна) */
-const countriesFull = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Тувалу", "Ниуэ"];
+/** Список стран в фильтре */
+const countriesFull = ["Россия", "Соединённые Штаты Америки (США)", "Австралия", "Великобритания", "Тувалу", "Ниуэ"];
 
 /** Вес: слева унции/кг по-русски, справа граммы (для раскладки space-between) */
 const WEIGHT_LEFT: Record<string, string> = {
@@ -216,7 +220,7 @@ export function CatalogFilters({
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
   const [mintListExpanded, setMintListExpanded] = useState(false);
 
-  /** Список весов для фильтра: только встречающиеся в каталоге (если передан availableWeights) или полный */
+  /** Список весов для фильтра: только встречающиеся в каталоге (если передан availableWeights) или полный; при раскрытии — полная иерархия */
   const weightListForFilter = useMemo(() => {
     if (availableWeights?.length) {
       return weightOptionsFull.filter((w) => availableWeights.includes(w));
@@ -224,7 +228,15 @@ export function CatalogFilters({
     return weightOptionsFull;
   }, [availableWeights]);
 
+  /** До раскрытия: 5 популярных весов (1/2, 1, 2, 5, 10 oz) из тех, что есть в каталоге */
+  const weightDefaultDisplay = useMemo(
+    () => weightOptionsPopular.filter((w) => weightListForFilter.includes(w)),
+    [weightListForFilter]
+  );
+
+  /** Серия: до раскрытия — 5 с наибольшим числом монет; при раскрытии — макс. 15 по тому же порядку */
   const seriesDefault = seriesList.slice(0, 5);
+  const seriesExpanded = seriesList.slice(0, 15);
   const metalsWithCount = useMemo(() => {
     const countByCode: Record<string, number> = {};
     METAL_OPTIONS.forEach((m) => (countByCode[m.label] = 0));
@@ -321,7 +333,7 @@ export function CatalogFilters({
         </div>
       </div>
 
-      {/* Вес: до 5 элементов без кнопки, с 6-го — «Показать все»/«Свернуть» */}
+      {/* Вес: по умолчанию 5 популярных (1/2, 1, 2, 5, 10 oz); при раскрытии — все по иерархии */}
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-black text-[20px] font-medium leading-7">Вес</h3>
@@ -336,7 +348,7 @@ export function CatalogFilters({
           )}
         </div>
         <FilterChecklist
-          items={weightListForFilter.length > 5 ? (weightListExpanded ? weightListForFilter : weightListForFilter.slice(0, 5)) : weightListForFilter}
+          items={weightListForFilter.length > 5 ? (weightListExpanded ? weightListForFilter : weightDefaultDisplay) : weightListForFilter}
           selectedValues={selectedWeights}
           onChange={onWeightChange ?? (() => {})}
           getDisplayLabel={(item) => WEIGHT_LEFT[item] ?? item}
@@ -344,7 +356,7 @@ export function CatalogFilters({
         />
       </div>
 
-      {/* Серия: до 5 без кнопки, с 6-го — «Показать все»/«Свернуть» */}
+      {/* Серия: до раскрытия — 5 с наибольшим числом монет; при раскрытии — макс. 15 по количеству */}
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-black text-[20px] font-medium leading-7">Серия</h3>
@@ -359,13 +371,13 @@ export function CatalogFilters({
           )}
         </div>
         <FilterChecklist
-          items={seriesList.length > 5 ? (seriesListExpanded ? seriesList : seriesDefault) : seriesList}
+          items={seriesList.length > 5 ? (seriesListExpanded ? seriesExpanded : seriesDefault) : seriesList}
           selectedValues={selectedSeries}
           onChange={onSeriesChange ?? (() => {})}
         />
       </div>
 
-      {/* Страна: до 5 без кнопки (всего 5 — список всегда полный) */}
+      {/* Страна */}
       <div className="flex flex-col gap-4">
         <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
         <FilterChecklist
