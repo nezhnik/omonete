@@ -7,7 +7,7 @@ import { Button } from "../../components/Button";
 import { IconSearch, IconDownload, IconShare, IconChevronDown, IconMinus, IconPlus, IconArrowUp, IconTrash } from "@tabler/icons-react";
 import { cleanCoinTitle } from "../../lib/cleanTitle";
 import { formatNumber } from "../../lib/formatNumber";
-import { useAuth } from "../../components/AuthProvider";
+import { useAuth, MAX_COLLECTION_QUANTITY } from "../../components/AuthProvider";
 
 /** Первая — прямоугольная «Зайка» для проверки отображения; остальные — как в блоке «Российские» на главной */
 const MINT_TWO_RUSSIA = "Московский и Санкт-Петербургский монетные дворы";
@@ -24,14 +24,14 @@ function PortfolioTableSkeleton() {
           <colgroup>
             <col className="w-8" />
             <col className="w-[360px]" />
-            <col className="w-[264px]" />
+            <col className="w-[304px]" />
             <col className="w-[196px]" />
             {/* Тираж */}
             <col className="w-[104px]" />
             {/* Количество */}
             <col className="w-[180px]" />
             <col className="w-[184px]" />
-            <col className="w-[272px]" />
+            <col className="w-[232px]" />
             <col className="w-10" />
           </colgroup>
           <thead>
@@ -47,7 +47,7 @@ function PortfolioTableSkeleton() {
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Тираж</th>
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Количество</th>
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Цена покупки, ₽</th>
-              <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Цена монеты / металла, ₽</th>
+              <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Цена металла, ₽</th>
               <th className="pr-[0.75rem]" />
             </tr>
           </thead>
@@ -100,7 +100,6 @@ function PortfolioTableSkeleton() {
                   <div className="flex items-center justify-end gap-4">
                     <div className="flex flex-col gap-1 items-end">
                       <div className="h-4 w-16 rounded-[300px] bg-[#E4E4EA]" />
-                      <div className="h-3 w-12 rounded-[300px] bg-[#E4E4EA]" />
                     </div>
                     <div className="w-[5rem] h-6 bg-[#E4E4EA] rounded shrink-0" />
                   </div>
@@ -134,8 +133,6 @@ type PortfolioRow = {
   metalLabel: string;
   mintage: string;
   buyPrice: string;
-  coinPrice: string;
-  metalPrice: string;
   /** Вес чистого металла, гр. (для расчёта стоимости по цене ЦБ РФ) */
   weightG?: string;
   rectangular?: boolean;
@@ -161,8 +158,6 @@ type ApiCoin = {
   mintageDisplay?: string;
   weightG?: string;
   rectangular?: boolean;
-  /** Цена для отображения (напр. AUD 317.27), с Perth Mint и др. */
-  priceDisplay?: string;
 };
 
 /** Нормализует строку для поиска: нижний регистр, лишние пробелы убраны */
@@ -196,22 +191,13 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
   const isSilver = coin.metalCode === "Ag";
   const base = index % 3;
   let buyPrice: number;
-  let coinPrice: number;
-  let metalPrice: number;
   if (isGold) {
     buyPrice = 42000 + base * 2000 + index * 500;
-    coinPrice = 50000 + base * 1500 + index * 400;
-    metalPrice = 46000 + base * 1500 + index * 300;
   } else if (isSilver) {
     buyPrice = 4800 + base * 400 + index * 100;
-    coinPrice = 7200 + base * 500 + index * 150;
-    metalPrice = 6500 + base * 300 + index * 80;
   } else {
     buyPrice = 800 + index * 100;
-    coinPrice = 1200 + index * 150;
-    metalPrice = 900 + index * 80;
   }
-  const hasStoredPrice = coin.priceDisplay && String(coin.priceDisplay).trim();
   return {
     id: coin.id,
     imageUrl: coin.imageUrl || "/image/coin-placeholder.png",
@@ -229,8 +215,6 @@ function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
     metalLabel,
     mintage: mintageStr,
     buyPrice: formatNumber(buyPrice),
-    coinPrice: hasStoredPrice ? coin.priceDisplay!.trim() : `~ ${formatNumber(coinPrice)}`,
-    metalPrice: formatNumber(metalPrice),
     weightG: coin.weightG,
     rectangular: coin.rectangular ?? false,
   };
@@ -316,10 +300,20 @@ function collectionSig(ids: Set<string>): string {
 }
 
 export default function PortfolioPage() {
-  const { isAuthorized, collectionIds, loading: authLoading, portfolioCache, setPortfolioCache, removeFromCollection } = useAuth();
+  const {
+    isAuthorized,
+    collectionIds,
+    collectionQuantities,
+    loading: authLoading,
+    portfolioCache,
+    setPortfolioCache,
+    removeFromCollection,
+    updateCollectionQuantity,
+  } = useAuth();
   const [portfolioRows, setPortfolioRows] = useState<PortfolioRow[]>([]);
   const [loading, setLoading] = useState(true);
-  const [collectionCounts, setCollectionCounts] = useState<number[]>([]);
+  /** Черновик строки количества в инпуте (по id монеты), пока пользователь печатает */
+  const [quantityDraftByCoinId, setQuantityDraftByCoinId] = useState<Record<string, string>>({});
   const [searchQuery, setSearchQuery] = useState("");
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [metalPrices1m, setMetalPrices1m] = useState<MetalPrices1m | null>(null);
@@ -376,6 +370,22 @@ export default function PortfolioPage() {
     setSelectedIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
   };
 
+  /** Выделить / снять выделение только с монет текущей страницы (пагинация), остальные страницы не трогаем */
+  const toggleSelectCurrentPage = () => {
+    const pageIds = pagedRows.map((r) => r.id);
+    if (pageIds.length === 0) return;
+    setSelectedIds((prev) => {
+      const allOnPageSelected = pageIds.every((id) => prev.includes(id));
+      if (allOnPageSelected) return prev.filter((id) => !pageIds.includes(id));
+      return Array.from(new Set([...prev, ...pageIds]));
+    });
+  };
+
+  const pageIds = useMemo(() => pagedRows.map((r) => r.id), [pagedRows]);
+  const allOnPageSelected =
+    pageIds.length > 0 && pageIds.every((id) => selectedIds.includes(id));
+  const someOnPageSelected = pageIds.some((id) => selectedIds.includes(id));
+
   const clearSelection = () => {
     setSelectedIds([]);
     setConfirmDelete(false);
@@ -395,13 +405,14 @@ export default function PortfolioPage() {
 
     // Локально анимируем и удаляем строки
     const rowsSnapshot = portfolioRows;
-    const countsSnapshot = collectionCounts;
     setTimeout(() => {
-      const keepMask = rowsSnapshot.map((row) => !idsToRemove.includes(row.id));
       const nextRows = rowsSnapshot.filter((row) => !idsToRemove.includes(row.id));
-      const nextCounts = countsSnapshot.filter((_, idx) => keepMask[idx]);
       setPortfolioRows(nextRows);
-      setCollectionCounts(nextCounts);
+      setQuantityDraftByCoinId((prev) => {
+        const next = { ...prev };
+        for (const id of idsToRemove) delete next[id];
+        return next;
+      });
       setRemovingIds((prev) => prev.filter((id) => !idsToRemove.includes(id)));
     }, 200);
 
@@ -443,7 +454,7 @@ export default function PortfolioPage() {
     if (isAuthorized) {
       if (collectionIds.size === 0) {
         setPortfolioRows([]);
-        setCollectionCounts([]);
+        setQuantityDraftByCoinId({});
         setLoading(false);
         return;
       }
@@ -452,7 +463,6 @@ export default function PortfolioPage() {
       if (portfolioCache?.sig === sig && Array.isArray(portfolioCache.rows) && portfolioCache.rows.length > 0) {
         const rows = portfolioCache.rows as PortfolioRow[];
         setPortfolioRows(rows);
-        setCollectionCounts(rows.map((_, i) => (i % 2 === 0 ? 1 : 2)));
         setLoading(false);
         return;
       }
@@ -468,7 +478,6 @@ export default function PortfolioPage() {
           }
         });
         setPortfolioRows(rows);
-        setCollectionCounts(rows.map((_, i) => (i % 2 === 0 ? 1 : 2)));
         setPortfolioCache({ sig, rows });
       }).finally(() => setLoading(false));
       return;
@@ -476,25 +485,9 @@ export default function PortfolioPage() {
 
     // Гость: не показываем демо-данные, только эмпти-стейт с призывом войти
     setPortfolioRows([]);
-    setCollectionCounts([]);
+    setQuantityDraftByCoinId({});
     setLoading(false);
   }, [isAuthorized, collectionIds, authLoading, portfolioCache, setPortfolioCache]);
-
-  const handleMinus = (index: number) => {
-    setCollectionCounts((prev) => {
-      const next = [...prev];
-      if (next[index] > 1) next[index] -= 1;
-      return next;
-    });
-  };
-
-  const handlePlus = (index: number) => {
-    setCollectionCounts((prev) => {
-      const next = [...prev];
-      next[index] += 1;
-      return next;
-    });
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -612,21 +605,39 @@ export default function PortfolioPage() {
                 <colgroup>
                   <col className="w-8" />
                   <col className="w-[360px]" />
-                  <col className="w-[264px]" />
+                  <col className="w-[304px]" />
                   <col className="w-[196px]" />
                   {/* Тираж */}
                   <col className="w-[104px]" />
                   {/* Количество */}
                   <col className="w-[180px]" />
                   <col className="w-[184px]" />
-                  <col className="w-[272px]" />
+                  <col className="w-[232px]" />
                   <col className="w-10" />
                 </colgroup>
                 <thead>
                   <tr className="border-b border-[#E4E4EA]">
                     <th className="h-12 pl-[0.75rem] pr-0 py-0 align-middle">
                       <div className="w-8 h-8 flex items-center justify-center">
-                        <span className="w-5 h-5 rounded-full border-2 border-[#11111B]" />
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleSelectCurrentPage();
+                          }}
+                          className="w-5 h-5 rounded-full border-2 border-[#11111B] flex items-center justify-center bg-white hover:bg-[#F1F1F2] transition-colors duration-150"
+                          aria-label={
+                            allOnPageSelected
+                              ? "Снять выделение со всех монет на этой странице"
+                              : "Выбрать все монеты на этой странице"
+                          }
+                        >
+                          {allOnPageSelected ? (
+                            <span className="w-2.5 h-2.5 rounded-full bg-[#11111B]" />
+                          ) : someOnPageSelected ? (
+                            <span className="w-2.5 h-2.5 rounded-full bg-[#11111B] opacity-50" aria-hidden />
+                          ) : null}
+                        </button>
                       </div>
                     </th>
                     <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">
@@ -648,17 +659,20 @@ export default function PortfolioPage() {
                       Цена покупки, ₽
                     </th>
                     <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">
-                      Цена монеты / металла, ₽
+                      Цена металла, ₽
                     </th>
                     <th className="pr-[0.75rem]" />
                   </tr>
                 </thead>
                 <tbody>
                   {pagedRows.map((row) => {
-                    const origIndex = portfolioRows.findIndex((r) => r.id === row.id);
-                    const i = origIndex >= 0 ? origIndex : 0;
                     const selected = selectedIds.includes(row.id);
                     const removing = removingIds.includes(row.id);
+                    const qtySaved = collectionQuantities[row.id] ?? 1;
+                    const qtyDisplay =
+                      quantityDraftByCoinId[row.id] !== undefined
+                        ? quantityDraftByCoinId[row.id]!
+                        : String(qtySaved);
                     return (
                     <tr
                       key={row.id}
@@ -741,9 +755,14 @@ export default function PortfolioPage() {
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
-                              handleMinus(i);
+                              setQuantityDraftByCoinId((d) => {
+                                const next = { ...d };
+                                delete next[row.id];
+                                return next;
+                              });
+                              if (qtySaved > 1) void updateCollectionQuantity(row.id, qtySaved - 1);
                             }}
-                            disabled={collectionCounts[i] <= 1}
+                            disabled={qtySaved <= 1}
                             className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 enabled:group-hover:bg-white enabled:hover:bg-[#11111B] enabled:hover:text-white enabled:hover:border-[#11111B] disabled:opacity-40 disabled:cursor-not-allowed"
                             aria-label="Уменьшить"
                           >
@@ -752,22 +771,29 @@ export default function PortfolioPage() {
                           <input
                             type="text"
                             inputMode="numeric"
-                            value={collectionCounts[i]}
+                            value={qtyDisplay}
                             onChange={(e) => {
                               const v = e.target.value.replace(/\D/g, "");
-                              if (v === "") {
-                                setCollectionCounts((prev) => { const next = [...prev]; next[i] = 0; return next; });
-                                return;
-                              }
-                              const n = parseInt(v, 10);
-                              if (!Number.isNaN(n)) setCollectionCounts((prev) => { const next = [...prev]; next[i] = n; return next; });
+                              setQuantityDraftByCoinId((prev) => ({ ...prev, [row.id]: v }));
                             }}
                             onBlur={() => {
-                              setCollectionCounts((prev) => {
-                                const next = [...prev];
-                                if (next[i] < 1) next[i] = 1;
+                              const raw = quantityDraftByCoinId[row.id];
+                              setQuantityDraftByCoinId((prev) => {
+                                const next = { ...prev };
+                                delete next[row.id];
                                 return next;
                               });
+                              if (raw === undefined) return;
+                              if (raw === "") {
+                                void updateCollectionQuantity(row.id, 1);
+                                return;
+                              }
+                              const n = parseInt(raw, 10);
+                              if (Number.isNaN(n) || n < 1) {
+                                void updateCollectionQuantity(row.id, 1);
+                                return;
+                              }
+                              void updateCollectionQuantity(row.id, Math.min(MAX_COLLECTION_QUANTITY, n));
                             }}
                             onKeyDown={(e) => {
                               if (e.key === "Enter") (e.target as HTMLInputElement).blur();
@@ -780,9 +806,17 @@ export default function PortfolioPage() {
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
-                              handlePlus(i);
+                              setQuantityDraftByCoinId((d) => {
+                                const next = { ...d };
+                                delete next[row.id];
+                                return next;
+                              });
+                              if (qtySaved < MAX_COLLECTION_QUANTITY) {
+                                void updateCollectionQuantity(row.id, qtySaved + 1);
+                              }
                             }}
-                            className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 group-hover:bg-white hover:bg-[#11111B] hover:text-white hover:border-[#11111B]"
+                            disabled={qtySaved >= MAX_COLLECTION_QUANTITY}
+                            className="w-8 h-8 rounded flex items-center justify-center border border-[#E4E4EA] text-[#11111B] transition-colors duration-150 group-hover:bg-white hover:bg-[#11111B] hover:text-white hover:border-[#11111B] disabled:opacity-40 disabled:cursor-not-allowed"
                             aria-label="Увеличить"
                           >
                             <IconPlus size={16} stroke={2} />
@@ -795,8 +829,7 @@ export default function PortfolioPage() {
                       <td className={`px-2 py-3 transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-center justify-end gap-4">
                           <div className="flex flex-col items-end gap-0.5">
-                            <span className="text-[16px] font-medium text-black">{row.coinPrice}</span>
-                            <span className="text-[14px] text-[#666666]">
+                            <span className="text-[16px] font-medium text-black">
                               {(() => {
                                 const pricePerGram = getCurrentPricePerGram(metalPrices1m, row.metal);
                                 const weight = parseWeightG(row.weightG);

@@ -1,6 +1,15 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import {
+  Suspense,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Lottie from "lottie-react";
 import { Header } from "../../components/Header";
@@ -57,6 +66,31 @@ const SORT_OPTIONS: { value: CatalogSort; label: string }[] = [
 const PAGE_SIZE = 30;
 /** На lg+ ширина поля поиска не уже этого значения; при ширине колонки карточки ≥ этого — тянем поиск до ширины колонки */
 const CATALOG_SEARCH_MIN_WIDTH_LG = 260;
+/** sessionStorage: последняя ширина ячейки сетки — меньше скачка при следующей загрузке */
+const CATALOG_SEARCH_CELL_W_SESSION_KEY = "omonete_catalog_coin_cell_w";
+
+/** Первая видимая ячейка сетки (не display:none), иначе ширина 0 */
+function firstVisibleGridChild(grid: HTMLElement): HTMLElement | null {
+  for (let el = grid.firstElementChild; el; el = el.nextElementSibling) {
+    const h = el as HTMLElement;
+    const rect = h.getBoundingClientRect();
+    if (rect.width >= 1 && rect.height >= 1) return h;
+  }
+  return null;
+}
+
+/** min-width 1024px (как Tailwind lg). На сервере false — без инлайн-ширины поиска. */
+function useMediaMin1024() {
+  return useSyncExternalStore(
+    (onStoreChange) => {
+      const mq = window.matchMedia("(min-width: 1024px)");
+      mq.addEventListener("change", onStoreChange);
+      return () => mq.removeEventListener("change", onStoreChange);
+    },
+    () => window.matchMedia("(min-width: 1024px)").matches,
+    () => false
+  );
+}
 
 const FILTERS_TRANSITION_MS = 300;
 /** Порог сдвига вниз (px), после которого при отпускании боттомшит закрывается */
@@ -80,7 +114,6 @@ const VALID_SORT: CatalogSort[] = ["new", "old", "weight_desc", "weight_asc"];
 function parseCatalogState(searchParams: URLSearchParams) {
   const tab = searchParams.get("tab");
   const filter: CatalogFilter = tab === "ru" || tab === "foreign" ? tab : "all";
-  const filtersOpen = searchParams.get("open") === "1";
   const sortParam = searchParams.get("sort");
   const sort: CatalogSort = sortParam && VALID_SORT.includes(sortParam as CatalogSort) ? (sortParam as CatalogSort) : "new";
   const selectedMetals = searchParams.getAll("metal").filter((m) => VALID_METALS.includes(m));
@@ -90,7 +123,7 @@ function parseCatalogState(searchParams: URLSearchParams) {
   const selectedMints = searchParams.getAll("mint");
   /** Без trim: пробелы сохраняются в инпуте; при поиске normalizeSearch обрежет */
   const searchQuery = searchParams.get("q") ?? "";
-  return { filter, filtersOpen, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery };
+  return { filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery };
 }
 
 /** Нормализует строку для поиска: нижний регистр, лишние пробелы убраны */
@@ -216,7 +249,8 @@ function CatalogPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [filter, setFilter] = useState<CatalogFilter>(() => parseCatalogState(searchParams).filter);
-  const [filtersOpen, setFiltersOpen] = useState(() => parseCatalogState(searchParams).filtersOpen);
+  /** Не храним в URL: после перезагрузки панель закрыта, фильтры (metal, weight, …) в query остаются */
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [filtersOpening, setFiltersOpening] = useState(false);
   const [filtersClosing, setFiltersClosing] = useState(false);
   const [isXl, setIsXl] = useState(false);
@@ -246,8 +280,9 @@ function CatalogPageContent() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   /** На десктопе при открытых фильтрах — отступ справа для кнопки «Наверх», чтобы она была в блоке с монетами */
   const [scrollBtnRightPx, setScrollBtnRightPx] = useState<number | null>(null);
-  /** null — только Tailwind; число — width в px на lg+ (max от минимума и ширины колонки) */
-  const [catalogSearchWidthPx, setCatalogSearchWidthPx] = useState<number | null>(null);
+  /** На lg+ ширина поиска задаётся через CSS-переменную на <main> (без скачка из-за setState). */
+  const catalogSearchLg = useMediaMin1024();
+  const catalogMainRef = useRef<HTMLElement | null>(null);
   const sortDropdownRef = useRef<HTMLDivElement>(null);
   const sortBottomTouchStartY = useRef(0);
   const sortBottomPointerActive = useRef(false);
@@ -316,11 +351,10 @@ function CatalogPageContent() {
     else addToCollection(id);
   }, [inCollection, addToCollection, removeFromCollection]);
 
-  // При «Назад» URL меняется — подтягиваем состояние из URL
+  // При «Назад» URL меняется — подтягиваем состояние из URL (панель фильтров из URL не восстанавливаем)
   useEffect(() => {
     const parsed = parseCatalogState(searchParams);
     setFilter(parsed.filter);
-    setFiltersOpen(parsed.filtersOpen);
     setSort(parsed.sort);
     setSelectedMetals(parsed.selectedMetals);
     setSelectedWeights(parsed.selectedWeights);
@@ -330,11 +364,10 @@ function CatalogPageContent() {
     setSearchQuery(parsed.searchQuery);
   }, [searchParams]);
 
-  // Сохранение фильтров, сортировки и панели в URL (только при изменении)
+  // Сохранение фильтров и сортировки в URL (панель «Фильтры» в URL не пишем — после F5 остаётся закрытой)
   useEffect(() => {
     const params = new URLSearchParams();
     if (filter !== "all") params.set("tab", filter);
-    if (filtersOpen) params.set("open", "1");
     if (sort !== "new") params.set("sort", sort);
     selectedMetals.forEach((m) => params.append("metal", m));
     selectedWeights.forEach((w) => params.append("weight", w));
@@ -347,7 +380,7 @@ function CatalogPageContent() {
     const catalogUrl = `/catalog${q ? `?${q}` : ""}`;
     if (typeof window !== "undefined") sessionStorage.setItem("catalogReturnUrl", catalogUrl);
     if (q !== current) router.replace(catalogUrl, { scroll: false });
-  }, [filter, filtersOpen, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery, router, searchParams]);
+  }, [filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery, router, searchParams]);
 
   // Блокировка прокрутки страницы при открытом мобильном боттомшите сортировки (чтобы тяга за язычок не скроллила страницу)
   useEffect(() => {
@@ -708,34 +741,55 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     return () => observer.disconnect();
   }, [hasMore, loadMore, showSkeletons]);
 
-  // Ширина поиска на lg+ = max(260px, фактическая ширина колонки карточки)
+  // Ширина поиска на lg+ = ширина колонки карточки: пишем в --catalog-coin-cell-width на <main> (до paint, без ре-рендера)
   useLayoutEffect(() => {
     const mq = typeof window !== "undefined" ? window.matchMedia("(min-width: 1024px)") : null;
     if (!mq) return;
 
+    const main = catalogMainRef.current;
+    if (!main) return;
+
+    const applyWidthPx = (wPx: number) => {
+      const v = Math.max(CATALOG_SEARCH_MIN_WIDTH_LG, wPx);
+      main.style.setProperty("--catalog-coin-cell-width", `${v}px`);
+      try {
+        sessionStorage.setItem(CATALOG_SEARCH_CELL_W_SESSION_KEY, String(v));
+      } catch {
+        // ignore
+      }
+    };
+
+    if (mq.matches) {
+      try {
+        const raw = sessionStorage.getItem(CATALOG_SEARCH_CELL_W_SESSION_KEY);
+        if (raw) {
+          const n = parseFloat(raw);
+          if (Number.isFinite(n) && n >= CATALOG_SEARCH_MIN_WIDTH_LG) {
+            main.style.setProperty("--catalog-coin-cell-width", `${n}px`);
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
+
     const update = () => {
+      if (!mq.matches) {
+        main.style.removeProperty("--catalog-coin-cell-width");
+        return;
+      }
       const g = catalogCoinGridRef.current;
-      if (!mq.matches || !g) {
-        setCatalogSearchWidthPx(null);
-        return;
-      }
-      const first = g.firstElementChild as HTMLElement | null;
-      if (!first) {
-        setCatalogSearchWidthPx(null);
-        return;
-      }
+      if (!g) return;
+      const first = firstVisibleGridChild(g);
+      if (!first) return;
       const w = first.getBoundingClientRect().width;
-      if (!w || w < 1) {
-        setCatalogSearchWidthPx(null);
-        return;
-      }
+      if (!w || w < 1) return;
       const rounded = Math.round(w * 100) / 100;
-      setCatalogSearchWidthPx(Math.max(CATALOG_SEARCH_MIN_WIDTH_LG, rounded));
+      applyWidthPx(rounded);
     };
 
     const schedule = () => requestAnimationFrame(update);
     update();
-    schedule();
     const g0 = catalogCoinGridRef.current;
     const ro = g0 ? new ResizeObserver(schedule) : null;
     if (g0 && ro) ro.observe(g0);
@@ -764,6 +818,17 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     const aside = filterAsideRef.current;
     if (!wrapper || !aside) return;
 
+    /** Пока aside ещё не сверстан (h≈0), reachedBottom даёт true и включается fixed bottom — блок «растёт вверх» и наезжает на тулбар/поиск после перезагрузки */
+    const MIN_ASIDE_HEIGHT_FOR_STICKY = 48;
+
+    const resetAsideToRelativeTop = (a: HTMLElement) => {
+      a.style.position = "relative";
+      a.style.top = "0";
+      a.style.left = "";
+      a.style.width = "";
+      a.style.bottom = "";
+    };
+
     const updatePosition = () => {
       const w = filterWrapperRef.current;
       const a = filterAsideRef.current;
@@ -774,6 +839,12 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
       const asideHeight = a.offsetHeight;
       const vh = window.innerHeight;
       const scrollY = window.scrollY;
+
+      if (asideHeight < MIN_ASIDE_HEIGHT_FOR_STICKY) {
+        resetAsideToRelativeTop(a);
+        return;
+      }
+
       const reachedBottom = scrollY + vh >= wrapperTop + asideHeight;
       const pastColumn = scrollY >= wrapperTop + wrapperHeight - vh;
 
@@ -790,11 +861,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
         a.style.left = `${rect.left}px`;
         a.style.width = `${rect.width}px`;
       } else {
-        a.style.position = "relative";
-        a.style.top = "0";
-        a.style.left = "";
-        a.style.width = "";
-        a.style.bottom = "";
+        resetAsideToRelativeTop(a);
       }
     };
 
@@ -807,6 +874,9 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     const onScrollRestored = () => scheduleUpdate();
     window.addEventListener("pageshow", onPageshow);
     window.addEventListener("catalogScrollRestored", onScrollRestored);
+    const ro = new ResizeObserver(() => updatePosition());
+    ro.observe(aside);
+    ro.observe(wrapper);
     const rafId = requestAnimationFrame(() => {
       requestAnimationFrame(updatePosition);
     });
@@ -815,6 +885,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     return () => {
       window.removeEventListener("pageshow", onPageshow);
       window.removeEventListener("catalogScrollRestored", onScrollRestored);
+      ro.disconnect();
       cancelAnimationFrame(rafId);
       window.removeEventListener("scroll", updatePosition);
       window.removeEventListener("resize", updatePosition);
@@ -825,7 +896,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     <div className="min-h-screen bg-white">
       <Header activePath="/catalog" />
 
-      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-2">
+      <main ref={catalogMainRef} className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-2">
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Каталог монет
         </h1>
@@ -967,10 +1038,13 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
             </div>
             <label
               htmlFor="catalog-search-page-input"
-              className={`flex flex-1 lg:flex-initial min-w-0 lg:min-w-[260px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white order-1 lg:order-2${catalogSearchWidthPx != null ? " lg:shrink-0" : ""}`}
+              className="flex flex-1 lg:flex-initial lg:shrink-0 min-w-0 lg:min-w-[260px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white order-1 lg:order-2"
               style={
-                catalogSearchWidthPx != null
-                  ? { width: catalogSearchWidthPx, minWidth: CATALOG_SEARCH_MIN_WIDTH_LG }
+                catalogSearchLg
+                  ? {
+                      width: `var(--catalog-coin-cell-width, ${CATALOG_SEARCH_MIN_WIDTH_LG}px)`,
+                      minWidth: CATALOG_SEARCH_MIN_WIDTH_LG,
+                    }
                   : undefined
               }
             >
@@ -1304,7 +1378,7 @@ function CatalogPageFallback() {
             "Российские и иностранные монеты из драгоценных металлов"
           )}
         </p>
-        {/* Та же панель, что и в контенте — без мигания и серого блока при перезагрузке */}
+        {/* Та же панель, что и в контенте (включая строку поиска) — без исчезновения поля при Suspense */}
         <div className="mt-0 sm:mt-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex lg:inline-flex w-full lg:w-auto relative rounded-[300px] bg-[#F1F1F2] p-1 flex-nowrap pointer-events-none">
             <div className="absolute top-1 bottom-1 left-1 rounded-[300px] bg-white w-1/3 lg:w-[140px]" aria-hidden />
@@ -1321,23 +1395,32 @@ function CatalogPageFallback() {
               <span className="text-[#666666] text-[13px] leading-[16px] lg:text-[14px]">{formatNumber(0)}</span>
             </div>
           </div>
-          <div className="flex items-center justify-end gap-3 w-full lg:w-auto shrink-0 pointer-events-none">
-            <Button
-              variant="ghost"
-              leftIcon={<IconArrowsSort size={24} stroke={2} />}
-              className="rounded-full w-10 h-10 p-0 min-w-0 lg:rounded-[300px] lg:w-auto lg:px-4 lg:py-3"
+          <div className="flex flex-row items-center gap-2 sm:gap-3 w-full lg:w-auto pointer-events-none">
+            <div className="flex items-center gap-3 shrink-0 order-2 lg:order-1">
+              <Button
+                variant="ghost"
+                leftIcon={<IconArrowsSort size={24} stroke={2} />}
+                className="rounded-full w-10 h-10 p-0 min-w-0 lg:rounded-[300px] lg:w-auto lg:px-4 lg:py-3"
+                aria-hidden
+              >
+                <span className="hidden lg:inline">Сортировка</span>
+              </Button>
+              <Button
+                variant="ghost"
+                leftIcon={<IconAdjustmentsHorizontal size={24} stroke={2} />}
+                className="rounded-full w-10 h-10 p-0 min-w-0 lg:rounded-[300px] lg:w-auto lg:px-4 lg:py-3"
+                aria-hidden
+              >
+                <span className="hidden lg:inline">Фильтры</span>
+              </Button>
+            </div>
+            <div
+              className="flex flex-1 lg:flex-initial lg:shrink-0 min-w-0 lg:min-w-[260px] lg:w-[260px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent order-1 lg:order-2"
               aria-hidden
             >
-              <span className="hidden lg:inline">Сортировка</span>
-            </Button>
-            <Button
-              variant="ghost"
-              leftIcon={<IconAdjustmentsHorizontal size={24} stroke={2} />}
-              className="rounded-full w-10 h-10 p-0 min-w-0 lg:rounded-[300px] lg:w-auto lg:px-4 lg:py-3"
-              aria-hidden
-            >
-              <span className="hidden lg:inline">Фильтры</span>
-            </Button>
+              <IconSearch size={24} stroke={2} className="shrink-0 text-[#666666]" />
+              <span className="flex-1 min-w-0 text-[16px] leading-[18px] text-[#666666]">Поиск</span>
+            </div>
           </div>
         </div>
         <div className="mt-3 sm:mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6">

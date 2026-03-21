@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, ChangeEvent, useRef } from "react";
-import { IconCamera } from "@tabler/icons-react";
+import { IconCamera, IconUser } from "@tabler/icons-react";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { useAuth } from "../../components/AuthProvider";
@@ -221,9 +221,7 @@ export default function ProfilePage() {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <span className="text-[14px] text-[#666666] text-center px-2">
-                    Фото профиля
-                  </span>
+                  <IconUser size={40} stroke={1.75} className="text-[#999999]" aria-hidden />
                 )}
                 <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
                   <IconCamera size={22} stroke={2} className="text-white" />

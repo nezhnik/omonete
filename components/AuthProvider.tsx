@@ -11,12 +11,19 @@ type AuthUser = {
   email?: string | null;
 };
 
+/** Максимум экземпляров одной монеты в коллекции (совпадает с check в БД) */
+export const MAX_COLLECTION_QUANTITY = 99999;
+
 type AuthContextValue = {
   user: AuthUser | null;
   collectionIds: Set<string>;
+  /** Количество по coin_id (только для монет в коллекции) */
+  collectionQuantities: Record<string, number>;
   isAuthorized: boolean;
   addToCollection: (coinId: string) => Promise<void>;
   removeFromCollection: (coinId: string) => Promise<void>;
+  /** Сохранить количество в Supabase (кламп 1…MAX_COLLECTION_QUANTITY) */
+  updateCollectionQuantity: (coinId: string, quantity: number) => Promise<void>;
   inCollection: (coinId: string) => boolean;
   /** Кэш портфолио (sig = отсортированный join collectionIds); null после add/remove */
   portfolioCache: PortfolioCacheEntry | null;
@@ -77,17 +84,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return id ? { id } : null;
   });
   const [collectionIds, setCollectionIds] = useState<Set<string>>(new Set());
+  const [collectionQuantities, setCollectionQuantities] = useState<Record<string, number>>({});
   const [portfolioCache, setPortfolioCache] = useState<PortfolioCacheEntry | null>(null);
   const [loading, setLoading] = useState(true);
 
   const fetchCollection = useCallback(async (userId: string) => {
     if (!supabase) return;
-    const { data, error } = await supabase
+    // Сначала с quantity (новая схема). Если колонки ещё нет в БД — fallback на coin_id, все qty = 1.
+    let rows: { coin_id: string | number; quantity?: number | null }[] | null = null;
+    const withQty = await supabase
       .from("user_collection")
-      .select("coin_id")
+      .select("coin_id, quantity")
       .eq("user_id", userId);
-    if (error) return;
-    setCollectionIds(new Set((data ?? []).map((r) => r.coin_id)));
+    if (!withQty.error && withQty.data) {
+      rows = withQty.data as { coin_id: string | number; quantity?: number | null }[];
+    } else {
+      const onlyId = await supabase.from("user_collection").select("coin_id").eq("user_id", userId);
+      if (onlyId.error) return;
+      rows = (onlyId.data ?? []) as { coin_id: string | number }[];
+    }
+    const ids = new Set<string>();
+    const quantities: Record<string, number> = {};
+    for (const r of rows ?? []) {
+      const id = String(r.coin_id);
+      ids.add(id);
+      const raw = "quantity" in r ? r.quantity : undefined;
+      const n = typeof raw === "number" && Number.isFinite(raw) ? Math.floor(raw) : 1;
+      quantities[id] = Math.min(MAX_COLLECTION_QUANTITY, Math.max(1, n));
+    }
+    setCollectionIds(ids);
+    setCollectionQuantities(quantities);
   }, [supabase]);
 
   useEffect(() => {
@@ -111,6 +137,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       } else {
         setUser(null);
         setCollectionIds(new Set());
+        setCollectionQuantities({});
       }
     });
     return () => subscription.unsubscribe();
@@ -119,8 +146,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const addToCollection = useCallback(
     async (coinId: string) => {
       if (!supabase || !user) return;
-      await supabase.from("user_collection").insert({ user_id: user.id, coin_id: coinId });
+      let ins = await supabase
+        .from("user_collection")
+        .insert({ user_id: user.id, coin_id: coinId, quantity: 1 });
+      if (ins.error) {
+        ins = await supabase.from("user_collection").insert({ user_id: user.id, coin_id: coinId });
+      }
+      if (ins.error) return;
       setCollectionIds((prev) => new Set(prev).add(coinId));
+      setCollectionQuantities((prev) => ({ ...prev, [coinId]: 1 }));
       setPortfolioCache(null); // инвалидируем кэш: коллекция изменилась
     },
     [supabase, user]
@@ -135,7 +169,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         next.delete(coinId);
         return next;
       });
+      setCollectionQuantities((prev) => {
+        const next = { ...prev };
+        delete next[coinId];
+        return next;
+      });
       setPortfolioCache(null); // инвалидируем кэш: коллекция изменилась
+    },
+    [supabase, user]
+  );
+
+  const updateCollectionQuantity = useCallback(
+    async (coinId: string, quantity: number) => {
+      if (!supabase || !user) return;
+      const q = Math.min(
+        MAX_COLLECTION_QUANTITY,
+        Math.max(1, Math.floor(Number(quantity)) || 1)
+      );
+      let previous = 1;
+      setCollectionQuantities((prev) => {
+        previous = prev[coinId] ?? 1;
+        return { ...prev, [coinId]: q };
+      });
+      const { error } = await supabase
+        .from("user_collection")
+        .update({ quantity: q })
+        .eq("user_id", user.id)
+        .eq("coin_id", coinId);
+      if (error) {
+        setCollectionQuantities((prev) => ({ ...prev, [coinId]: previous }));
+      }
     },
     [supabase, user]
   );
@@ -196,9 +259,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const value: AuthContextValue = {
     user,
     collectionIds,
+    collectionQuantities,
     isAuthorized: !!user,
     addToCollection,
     removeFromCollection,
+    updateCollectionQuantity,
     inCollection,
     portfolioCache,
     setPortfolioCache,
@@ -219,9 +284,11 @@ export function useAuth(): AuthContextValue {
     return {
       user: null,
       collectionIds: new Set(),
+      collectionQuantities: {},
       isAuthorized: false,
       addToCollection: async () => {},
       removeFromCollection: async () => {},
+      updateCollectionQuantity: async () => {},
       inCollection: () => false,
       portfolioCache: null,
       setPortfolioCache: () => {},

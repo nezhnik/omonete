@@ -6,6 +6,8 @@ create table if not exists public.user_collection (
   id bigint generated always as identity primary key,
   user_id uuid not null references auth.users(id) on delete cascade,
   coin_id text not null,
+  -- Сколько экземпляров монеты в коллекции (минимум 1)
+  quantity integer not null default 1 check (quantity >= 1 and quantity <= 99999),
   added_at timestamptz default now(),
   unique(user_id, coin_id)
 );
@@ -29,3 +31,9 @@ drop policy if exists "Users can delete own collection" on public.user_collectio
 create policy "Users can delete own collection"
   on public.user_collection for delete
   using (auth.uid() = user_id);
+
+drop policy if exists "Users can update own collection" on public.user_collection;
+create policy "Users can update own collection"
+  on public.user_collection for update
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);

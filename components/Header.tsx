@@ -164,7 +164,7 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
                         className="w-10 h-10 rounded-full object-cover"
                       />
                     ) : (
-                      <span className="w-8 h-8 rounded-full bg-[#F1F1F2]" aria-hidden />
+                      <IconUser size={24} stroke={2} className="text-[#666666]" aria-hidden />
                     )}
                   </button>
                   <div
@@ -246,7 +246,12 @@ export function Header({ activePath = "/", navItems = defaultNav }: HeaderProps)
                         className="w-10 h-10 rounded-full object-cover shrink-0"
                       />
                     ) : (
-                      <span className="w-10 h-10 rounded-full bg-[#E4E4EA] shrink-0" aria-hidden />
+                      <span
+                        className="w-10 h-10 rounded-full shrink-0 flex items-center justify-center border border-[#E4E4EA] bg-white"
+                        aria-hidden
+                      >
+                        <IconUser size={22} stroke={2} className="text-[#666666]" />
+                      </span>
                     )}
                     <div className="flex-1 min-w-0 flex flex-col">
                       <span className="text-[16px] font-medium text-[#11111B] truncate">

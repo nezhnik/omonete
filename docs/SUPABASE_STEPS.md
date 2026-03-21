@@ -25,7 +25,9 @@
 4. Нажми **Run** (или Ctrl+Enter).
 5. Внизу должно быть сообщение об успешном выполнении. Таблица `user_collection` и политики RLS созданы.
 
-Проверка: в меню **Table Editor** должна появиться таблица **user_collection** с колонками `id`, `user_id`, `coin_id`, `added_at`.
+Проверка: в меню **Table Editor** должна появиться таблица **user_collection** с колонками `id`, `user_id`, `coin_id`, `quantity`, `added_at`.
+
+**Уже была старая таблица без `quantity`?** Выполни в SQL Editor скрипт **`supabase/migrations/20260217120000_user_collection_quantity.sql`** (колонка, check и политика `UPDATE`).
 
 ---
 
