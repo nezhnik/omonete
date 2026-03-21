@@ -906,6 +906,16 @@ KOMSCO печатает банкноты, чеканит монеты, прои�
   },
 };
 
+/** Пары «подпись монетного двора → логотип» из статей (name и shortName ведут на тот же logoUrl, что на странице статьи). */
+export function getMintArticleLogoPairs(): { name: string; logoUrl: string }[] {
+  const out: { name: string; logoUrl: string }[] = [];
+  for (const a of Object.values(MINT_ARTICLES)) {
+    if (a.name) out.push({ name: a.name, logoUrl: a.logoUrl });
+    if (a.shortName) out.push({ name: a.shortName, logoUrl: a.logoUrl });
+  }
+  return out;
+}
+
 /** Зарубежные дворы без отдельных статей (пусто — все дворы со статьями в MINT_ARTICLES). */
 const FOREIGN_MINTS: MintForBlock[] = [];
 

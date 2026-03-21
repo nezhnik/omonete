@@ -195,6 +195,17 @@ function hasImage(r) {
 
 /** Экспортируем все монеты. Без картинок — placeholder. Иностранные монеты добавляются сначала без изображений. */
 
+/** В каталоге для UK — эмитент The Royal Mint (карточки с Perth Mint часто ошибочны по полю mint в БД). Порядок картинки по-прежнему от сырого mint в БД — см. getFirstImageSide(r.mint). */
+function mintDisplayFromRow(row) {
+  const country = (row.country || "").trim();
+  if (country === "Великобритания" || country === "United Kingdom") {
+    return { mintName: "The Royal Mint", mintShort: "Royal Mint" };
+  }
+  const mintName = row.mint && String(row.mint).trim() ? String(row.mint).trim() : undefined;
+  const mintShort = row.mint_short && String(row.mint_short).trim() ? String(row.mint_short).trim() : undefined;
+  return { mintName, mintShort };
+}
+
 /** Какую сторону показывать первой. По умолчанию — firstImage; для дворов из firstImageReverseMints — "reverse" (напр. Perth). */
 function getFirstImageSide(mint) {
   try {
@@ -396,6 +407,7 @@ async function run() {
     const weightLabel = getWeightLabel(r.weight_g, r.weight_oz);
     const weightG = parseWeightG(r.weight_g);
     const metalLabelStr = metalOnly(r.metal);
+    const { mintName, mintShort } = mintDisplayFromRow(r);
     return {
       id: String(r.id),
       title: cleanTitle(r.title),
@@ -410,9 +422,9 @@ async function run() {
       metalCode: metalCode ?? undefined,
       metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
       metalLabel: metalLabelStr && metalLabelStr !== "—" ? metalLabelStr : undefined,
-      mintName: r.mint && String(r.mint).trim() ? String(r.mint).trim() : undefined,
-      mintShort: r.mint_short && String(r.mint_short).trim() ? String(r.mint_short).trim() : undefined,
-      mintLogoUrl: r.mint && mintLogoMap.get(String(r.mint).trim()) ? mintLogoMap.get(String(r.mint).trim()) : undefined,
+      mintName,
+      mintShort,
+      mintLogoUrl: mintName && mintLogoMap.get(mintName) ? mintLogoMap.get(mintName) : undefined,
       weightLabel: weightLabel ?? undefined,
       weightG: weightG ?? undefined,
       rectangular:
@@ -529,6 +541,7 @@ async function run() {
 
     const { code: metalCode, color: metalColor } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
+    const { mintName: mintNameOut, mintShort: mintShortOut } = mintDisplayFromRow(r);
     const coin = {
       id: String(r.id),
       title: r.title,
@@ -537,8 +550,8 @@ async function run() {
       imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
       imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
       inCollection: false,
-      mintName: r.mint ?? "—",
-      mintShort: r.mint_short ?? undefined,
+      mintName: mintNameOut ?? "—",
+      mintShort: mintShortOut ?? undefined,
       mintCountry: r.country ?? "Россия",
       year,
       faceValue: (stripCountryFromFaceValue(r.face_value) || r.face_value) ?? "—",
@@ -562,7 +575,7 @@ async function run() {
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
         isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
-      mintLogoUrl: r.mint && mintLogoMap.get(String(r.mint).trim()) ? mintLogoMap.get(String(r.mint).trim()) : undefined,
+      mintLogoUrl: mintNameOut && mintLogoMap.get(mintNameOut) ? mintLogoMap.get(mintNameOut) : undefined,
       priceDisplay: (r.price_display && String(r.price_display).trim()) || undefined,
     };
 

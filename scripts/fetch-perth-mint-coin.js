@@ -415,6 +415,10 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
     const denomGbp = getSpecNum("Monetary Denomination (GBP)");
     const denomValue = country === "Великобритания" ? denomGbp : (country === "Тувалу" ? (denomTvd ?? denomAud) : (country === "Ниуэ" ? (denomNzd ?? denomAud) : (denomAud ?? denomTvd ?? denomNzd ?? denomGbp)));
     const faceValue = formatDenominationForFaceValue(denomValue, country) || null;
+    const isUk = country === "Великобритания" || country === "United Kingdom";
+    const mintResolved = isUk
+      ? { mint: "The Royal Mint", mint_short: "Royal Mint" }
+      : { mint: "The Perth Mint", mint_short: "Perth Mint" };
     const coin = {
       title: data.title || null,
       title_ru: null,
@@ -422,8 +426,8 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
       series: data.series || null,
       face_value: faceValue || null,
       release_date: yearFromSpec,
-      mint: "The Perth Mint",
-      mint_short: "Perth Mint",
+      mint: mintResolved.mint,
+      mint_short: mintResolved.mint_short,
       metal,
       metal_fineness: fineness,
       mintage: mintageMatch ? parseInt(mintageMatch.replace(/\D/g, ""), 10) : 2500,

@@ -7,6 +7,7 @@ import { Button } from "../../components/Button";
 import { IconSearch, IconDownload, IconShare, IconChevronDown, IconMinus, IconPlus, IconArrowUp, IconTrash } from "@tabler/icons-react";
 import { cleanCoinTitle } from "../../lib/cleanTitle";
 import { formatNumber } from "../../lib/formatNumber";
+import { buildMintLogoLookupMap, resolveMintLogoUrl } from "../../lib/mintLogoLookup";
 import { useAuth, MAX_COLLECTION_QUANTITY } from "../../components/AuthProvider";
 
 /** Первая — прямоугольная «Зайка» для проверки отображения; остальные — как в блоке «Российские» на главной */
@@ -325,8 +326,19 @@ export default function PortfolioPage() {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [selectionBarVisible, setSelectionBarVisible] = useState(false);
   const [removingIds, setRemovingIds] = useState<string[]>([]);
-  const [pageSize, setPageSize] = useState(30);
+  const [pageSize, setPageSize] = useState(25);
   const [page, setPage] = useState(1);
+  /** Логотипы дворов: mints.json + те же пары, что в статьях и на главной (см. lib/mintLogoLookup). */
+  const [mintLogoLookup, setMintLogoLookup] = useState(() => buildMintLogoLookupMap([]));
+
+  useEffect(() => {
+    fetch("/data/mints.json")
+      .then((r) => (r.ok ? r.json() : { mints: [] }))
+      .then((data: { mints?: { name?: string; logo_url?: string | null }[] }) => {
+        setMintLogoLookup(buildMintLogoLookupMap(data.mints ?? []));
+      })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(typeof window !== "undefined" && window.scrollY > 500);
@@ -725,7 +737,11 @@ export default function PortfolioPage() {
                       <td className={`px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-start gap-2">
                           <img
-                            src={row.mintName === MINT_TWO_RUSSIA ? GOZNAK_LOGO : row.mintLogoUrl}
+                            src={
+                              row.mintName === MINT_TWO_RUSSIA
+                                ? GOZNAK_LOGO
+                                : resolveMintLogoUrl(row.mintName, mintLogoLookup, row.mintLogoUrl)
+                            }
                             alt=""
                             className="w-10 h-10 rounded-[6.86px] bg-white shrink-0"
                           />
@@ -866,46 +882,42 @@ export default function PortfolioPage() {
             {/* Пагинация по коллекции */}
             {filteredRows.length > 0 && (
               <div className="px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-t border-[#E4E4EA] bg-white">
-                <div className="text-[14px] text-[#666666]">
-                  Показано {pagedRows.length} из{" "}
-                  {formatNumber(filteredRows.length)} {coinWord(filteredRows.length)}
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
-                  <div className="flex items-center gap-2 text-[14px] text-[#666666]">
-                    <span>На странице:</span>
-                    {[30, 60, 90].map((size) => (
+                <div className="flex flex-wrap items-center gap-1 sm:gap-2">
+                  {totalPages > 1 &&
+                    Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
                       <button
-                        key={size}
+                        key={p}
                         type="button"
-                        onClick={() => { setPageSize(size); setPage(1); }}
-                        className={`px-2.5 py-1 rounded-full border text-[14px] font-medium ${
-                          pageSize === size
-                            ? "bg-[#11111B] text-white border-[#11111B]"
-                            : "bg-white text-[#11111B] border-[#E4E4EA] hover:bg-[#F1F1F2]"
+                        onClick={() => setPage(p)}
+                        className={`min-w-[32px] h-8 px-2 rounded-full text-[14px] font-medium ${
+                          p === currentPage
+                            ? "bg-[#11111B] text-white"
+                            : "bg-white text-[#11111B] border border-[#E4E4EA] hover:bg-[#F1F1F2]"
                         }`}
                       >
-                        {size}
+                        {p}
                       </button>
                     ))}
-                  </div>
-                  {totalPages > 1 && (
-                    <div className="flex flex-wrap items-center gap-1 sm:gap-2">
-                      {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                        <button
-                          key={p}
-                          type="button"
-                          onClick={() => setPage(p)}
-                          className={`min-w-[32px] h-8 px-2 rounded-full text-[14px] font-medium ${
-                            p === currentPage
-                              ? "bg-[#11111B] text-white"
-                              : "bg-white text-[#11111B] border border-[#E4E4EA] hover:bg-[#F1F1F2]"
-                          }`}
-                        >
-                          {p}
-                        </button>
-                      ))}
-                    </div>
-                  )}
+                </div>
+                <div className="flex items-center gap-2 text-[14px] text-[#666666] sm:shrink-0">
+                  <span>Показывать монет на странице:</span>
+                  {[25, 50, 100, 250, 500].map((size) => (
+                    <button
+                      key={size}
+                      type="button"
+                      onClick={() => {
+                        setPageSize(size);
+                        setPage(1);
+                      }}
+                      className={`px-2.5 py-1 rounded-full border text-[14px] font-medium ${
+                        pageSize === size
+                          ? "bg-[#11111B] text-white border-[#11111B]"
+                          : "bg-white text-[#11111B] border-[#E4E4EA] hover:bg-[#F1F1F2]"
+                      }`}
+                    >
+                      {size}
+                    </button>
+                  ))}
                 </div>
               </div>
             )}
