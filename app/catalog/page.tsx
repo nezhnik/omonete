@@ -996,7 +996,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
           <div
             className={
               showPanel && isXl
-                ? "lg:col-span-4 min-w-0 flex flex-col"
+                ? "lg:col-span-4 min-w-0 flex flex-col lg:relative lg:z-10"
                 : "min-w-0 flex flex-col"
             }
             style={!loading && filteredCoins.length === 0 ? { minHeight: "100vh" } : undefined}
@@ -1116,7 +1116,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
           {showPanel && isXl && (
             <div
               ref={filterWrapperRef}
-              className="lg:col-span-1 lg:col-start-5 min-w-0 overflow-hidden lg:row-span-full"
+              className="lg:col-span-1 lg:col-start-5 min-w-0 overflow-hidden lg:row-span-full lg:relative lg:z-0"
             >
               <aside ref={filterAsideRef} className="w-full lg:relative">
                 <CatalogFilters
