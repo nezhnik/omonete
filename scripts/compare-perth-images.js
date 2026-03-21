@@ -23,8 +23,8 @@ const PERTH_COMPARE_DIR = path.join(DATA_DIR, "perth-compare");
 const BASE_URL = "https://www.perthmint.com";
 const GALLERY_HEAD_COUNT = 15; // как в redownload: галерея товара в начале, "you may also like" — дальше
 
-// Набор монет, которые сейчас хотим проверить
-const IDS = ["4429", "4432", "4542", "4541", "5762", "4424", "4757"];
+// Набор монет, которые сейчас хотим проверить (раньше: 4429, 4432, 4542, 4541, 5762, 4424, 4757)
+const IDS = ["4611", "5335", "5065", "5837"];
 
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
