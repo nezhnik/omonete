@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Lottie from "lottie-react";
 import { Header } from "../../components/Header";
@@ -55,6 +55,8 @@ const SORT_OPTIONS: { value: CatalogSort; label: string }[] = [
 ];
 
 const PAGE_SIZE = 30;
+/** На lg+ ширина поля поиска не уже этого значения; при ширине колонки карточки ≥ этого — тянем поиск до ширины колонки */
+const CATALOG_SEARCH_MIN_WIDTH_LG = 260;
 
 const FILTERS_TRANSITION_MS = 300;
 /** Порог сдвига вниз (px), после которого при отпускании боттомшит закрывается */
@@ -244,10 +246,14 @@ function CatalogPageContent() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   /** На десктопе при открытых фильтрах — отступ справа для кнопки «Наверх», чтобы она была в блоке с монетами */
   const [scrollBtnRightPx, setScrollBtnRightPx] = useState<number | null>(null);
+  /** null — только Tailwind; число — width в px на lg+ (max от минимума и ширины колонки) */
+  const [catalogSearchWidthPx, setCatalogSearchWidthPx] = useState<number | null>(null);
   const sortDropdownRef = useRef<HTMLDivElement>(null);
   const sortBottomTouchStartY = useRef(0);
   const sortBottomPointerActive = useRef(false);
   const sliderRef = useRef<HTMLDivElement | null>(null);
+  /** Сетка карточек — для синхронизации ширины поиска с колонкой на десктопе */
+  const catalogCoinGridRef = useRef<HTMLDivElement | null>(null);
   const filterWrapperRef = useRef<HTMLDivElement | null>(null);
   const filterAsideRef = useRef<HTMLElement | null>(null);
   const scrollRestoreRef = useRef<{ y: number; count: number } | null>(null);
@@ -702,6 +708,48 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     return () => observer.disconnect();
   }, [hasMore, loadMore, showSkeletons]);
 
+  // Ширина поиска на lg+ = max(260px, фактическая ширина колонки карточки)
+  useLayoutEffect(() => {
+    const mq = typeof window !== "undefined" ? window.matchMedia("(min-width: 1024px)") : null;
+    if (!mq) return;
+
+    const update = () => {
+      const g = catalogCoinGridRef.current;
+      if (!mq.matches || !g) {
+        setCatalogSearchWidthPx(null);
+        return;
+      }
+      const first = g.firstElementChild as HTMLElement | null;
+      if (!first) {
+        setCatalogSearchWidthPx(null);
+        return;
+      }
+      const w = first.getBoundingClientRect().width;
+      if (!w || w < 1) {
+        setCatalogSearchWidthPx(null);
+        return;
+      }
+      const rounded = Math.round(w * 100) / 100;
+      setCatalogSearchWidthPx(Math.max(CATALOG_SEARCH_MIN_WIDTH_LG, rounded));
+    };
+
+    const schedule = () => requestAnimationFrame(update);
+    update();
+    schedule();
+    const g0 = catalogCoinGridRef.current;
+    const ro = g0 ? new ResizeObserver(schedule) : null;
+    if (g0 && ro) ro.observe(g0);
+    mq.addEventListener("change", schedule);
+    window.addEventListener("resize", schedule);
+    const t = window.setTimeout(schedule, FILTERS_TRANSITION_MS + 20);
+    return () => {
+      window.clearTimeout(t);
+      ro?.disconnect();
+      mq.removeEventListener("change", schedule);
+      window.removeEventListener("resize", schedule);
+    };
+  }, [showPanel, isXl, loading, showSkeletons, filteredCoins.length]);
+
   useEffect(() => {
     const onScroll = () => setShowScrollTop(typeof window !== "undefined" && window.scrollY > 500);
     onScroll();
@@ -777,7 +825,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     <div className="min-h-screen bg-white">
       <Header activePath="/catalog" />
 
-      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-20">
+      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-2">
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Каталог монет
         </h1>
@@ -919,7 +967,12 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
             </div>
             <label
               htmlFor="catalog-search-page-input"
-              className="flex flex-1 lg:flex-initial min-w-0 lg:min-w-[200px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white order-1 lg:order-2"
+              className={`flex flex-1 lg:flex-initial min-w-0 lg:min-w-[260px] items-center gap-2 px-4 py-2 bg-[#F1F1F2] rounded-[32px] border-2 border-transparent transition-colors cursor-pointer hover:bg-[#E4E4EA] focus-within:bg-white focus-within:border-[#11111B] focus-within:hover:bg-white order-1 lg:order-2${catalogSearchWidthPx != null ? " lg:shrink-0" : ""}`}
+              style={
+                catalogSearchWidthPx != null
+                  ? { width: catalogSearchWidthPx, minWidth: CATALOG_SEARCH_MIN_WIDTH_LG }
+                  : undefined
+              }
             >
               <IconSearch size={24} stroke={2} className="shrink-0 pointer-events-none text-[#666666]" />
               <input
@@ -999,6 +1052,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
             ) : (
               <>
                 <div
+                  ref={catalogCoinGridRef}
                   className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-x-6 md:gap-y-3 lg:gap-x-6 lg:gap-y-3 xl:gap-6"
                   style={
                     isXl
@@ -1241,7 +1295,7 @@ function CatalogPageFallback() {
   return (
     <div className="min-h-screen bg-white">
       <Header activePath="/catalog" />
-      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-20">
+      <main className="w-full px-4 sm:px-6 lg:px-8 2xl:px-20 pt-6 pb-2">
         <h1 className="text-black text-[28px] sm:text-[36px] font-semibold leading-tight mb-2">
           Каталог монет
         </h1>
