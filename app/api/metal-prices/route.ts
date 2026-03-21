@@ -91,8 +91,8 @@ async function fetchCbrMetals(period: string): Promise<{ ok: true; period: strin
       const d = new Date(r.date + "T12:00:00");
       const formatOptions =
         period === "1y" || period === "5y" || period === "10y"
-          ? { day: "numeric", month: "short", year: "2-digit" }
-          : { day: "numeric", month: "short" };
+          ? ({ day: "numeric", month: "short", year: "2-digit" } as const)
+          : ({ day: "numeric", month: "short" } as const);
       return {
         label: d.toLocaleDateString("ru-RU", formatOptions),
         xau: r.xau,

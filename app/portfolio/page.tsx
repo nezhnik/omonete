@@ -20,28 +20,31 @@ function PortfolioTableSkeleton() {
   return (
     <div className="rounded-2xl border border-[#E4E4EA] overflow-hidden skeleton-pulse-opacity" aria-hidden>
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[1200px] border-collapse table-fixed">
+        {/* min-w = сумма col: 52+360+304+196+104+180+184+184+40 = 1604; иначе table-fixed сжимает колонки и «плывёт» тираж */}
+        <table className="w-full min-w-[1604px] border-collapse table-fixed">
           <colgroup>
-            <col className="w-8" />
+            {/* 52px = pl-[0.75rem] + w-8 чекбокс + pr-2; фиксируем width на col, чтобы не раздувалось при перерасчёте */}
+            <col className="w-[52px]" style={{ width: 52, minWidth: 52, maxWidth: 52 }} />
             <col className="w-[360px]" />
             <col className="w-[304px]" />
             <col className="w-[196px]" />
-            {/* Тираж */}
+            {/* Тираж — номинал 104px (как в макете колонок) */}
             <col className="w-[104px]" />
             {/* Количество */}
             <col className="w-[180px]" />
             <col className="w-[184px]" />
-            <col className="w-[232px]" />
+            {/* Цена металла — уже, чем было w-[232px], чтобы не забирать место у соседних колонок */}
+            <col className="w-[184px]" />
             <col className="w-10" />
           </colgroup>
           <thead>
             <tr className="border-b border-[#E4E4EA]">
-              <th className="h-12 pl-[0.75rem] pr-0 py-0 align-middle">
+              <th className="h-12 pl-[0.75rem] pr-2 py-0 align-middle">
                 <div className="w-8 h-8 flex items-center justify-center">
                   <span className="w-5 h-5 rounded-full bg-[#E4E4EA]" />
                 </div>
               </th>
-              <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">Название / серия</th>
+              <th className="pl-2 pr-2 py-3 text-left text-[18px] font-semibold text-black">Название / серия</th>
               <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">Монетный двор / страна</th>
               <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">Номинал / металл</th>
               <th className="px-2 py-3 text-right text-[18px] font-semibold text-black">Тираж</th>
@@ -54,12 +57,12 @@ function PortfolioTableSkeleton() {
           <tbody>
             {Array.from({ length: PORTFOLIO_SKELETON_ROWS }).map((_, i) => (
               <tr key={i} className="border-b border-[#E4E4EA] last:border-b-0">
-                <td className="pl-[0.75rem] py-2 align-middle">
+                <td className="pl-[0.75rem] pr-2 py-2 align-middle">
                   <div className="w-8 h-8 flex items-center justify-center">
                     <span className="w-5 h-5 rounded-full bg-[#E4E4EA]" />
                   </div>
                 </td>
-                <td className="px-2 py-3 align-middle">
+                <td className="pl-2 pr-2 py-3 align-middle">
                   <div className="flex items-center gap-3 min-w-0">
                     <div className="w-[80px] h-[80px] shrink-0 rounded-full bg-[#E4E4EA]" />
                     <div className="flex flex-col gap-1 min-w-0 flex-1 overflow-hidden">
@@ -601,9 +604,9 @@ export default function PortfolioPage() {
               <p className="text-[#666666] text-[16px] py-8 px-4">По запросу ничего не найдено.</p>
             ) : (
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[1200px] border-collapse table-fixed">
+              <table className="w-full min-w-[1604px] border-collapse table-fixed">
                 <colgroup>
-                  <col className="w-8" />
+                  <col className="w-[52px]" style={{ width: 52, minWidth: 52, maxWidth: 52 }} />
                   <col className="w-[360px]" />
                   <col className="w-[304px]" />
                   <col className="w-[196px]" />
@@ -612,12 +615,12 @@ export default function PortfolioPage() {
                   {/* Количество */}
                   <col className="w-[180px]" />
                   <col className="w-[184px]" />
-                  <col className="w-[232px]" />
+                  <col className="w-[184px]" />
                   <col className="w-10" />
                 </colgroup>
                 <thead>
                   <tr className="border-b border-[#E4E4EA]">
-                    <th className="h-12 pl-[0.75rem] pr-0 py-0 align-middle">
+                    <th className="h-12 pl-[0.75rem] pr-2 py-0 align-middle">
                       <div className="w-8 h-8 flex items-center justify-center">
                         <button
                           type="button"
@@ -640,7 +643,7 @@ export default function PortfolioPage() {
                         </button>
                       </div>
                     </th>
-                    <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">
+                    <th className="pl-2 pr-2 py-3 text-left text-[18px] font-semibold text-black">
                       Название / серия
                     </th>
                     <th className="px-2 py-3 text-left text-[18px] font-semibold text-black">
@@ -685,7 +688,7 @@ export default function PortfolioPage() {
                         transformOrigin: "center",
                       }}
                     >
-                      <td className={`pl-[0.75rem] py-2 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
+                      <td className={`pl-[0.75rem] pr-2 py-2 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="w-8 h-8 flex items-center justify-center">
                           <button
                             type="button"
@@ -700,7 +703,7 @@ export default function PortfolioPage() {
                           </button>
                         </div>
                       </td>
-                      <td className={`px-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
+                      <td className={`pl-2 pr-2 py-3 align-middle transition-colors duration-150 group-hover:bg-[#F1F1F2] ${selected ? "bg-[#F6F6F7]" : ""}`}>
                         <div className="flex items-center gap-3 min-w-0">
                           <div
                             className={`w-[80px] h-[80px] shrink-0 overflow-hidden flex items-center justify-center ${row.rectangular ? "rounded-2xl" : "rounded-full"}`}

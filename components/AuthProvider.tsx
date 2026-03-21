@@ -14,7 +14,7 @@ type AuthUser = {
 /** Максимум экземпляров одной монеты в коллекции (совпадает с check в БД) */
 export const MAX_COLLECTION_QUANTITY = 99999;
 
-type AuthContextValue = {
+export type AuthContextValue = {
   user: AuthUser | null;
   collectionIds: Set<string>;
   /** Количество по coin_id (только для монет в коллекции) */
