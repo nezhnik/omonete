@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/christmas-2020-1oz-star-shaped-silver-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": "Тираж неограничен"
   },
   "raw": {
     "title": "Christmas 2020 1oz Star-Shaped Silver Coin",

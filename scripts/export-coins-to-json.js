@@ -292,56 +292,65 @@ async function run() {
   let rows;
   try {
     [rows] = await conn.execute(
-      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm, price_display
+      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm, price_display
        FROM coins ORDER BY release_date DESC, id DESC`
     );
   } catch (err) {
     if (err.code === "ER_BAD_FIELD_ERROR") {
-      if (/price_display/.test(err.message)) {
+      if (/image_blister/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+          `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm, price_display
+           FROM coins ORDER BY release_date DESC, id DESC`
+        );
+        rows.forEach((r) => {
+          r.image_blister_reverse = null;
+          r.image_blister_obverse = null;
+        });
+      } else if (/price_display/.test(err.message)) {
+        [rows] = await conn.execute(
+          `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.price_display = null; });
       } else if (/weight_oz/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, weight_g
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, weight_g
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.weight_oz = null; r.quality = null; r.diameter_mm = null; r.thickness_mm = null; r.length_mm = null; r.width_mm = null; r.mintage_display = null; r.catalog_suffix = null; });
       } else if (/quality|diameter_mm|thickness_mm/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, weight_g, weight_oz
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, weight_g, weight_oz
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.quality = null; r.diameter_mm = null; r.thickness_mm = null; r.length_mm = null; r.width_mm = null; r.mintage_display = null; r.catalog_suffix = null; });
       } else if (/mintage_display/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.mintage_display = null; });
       } else if (/catalog_suffix/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.catalog_suffix = null; });
       } else if (/length_mm|width_mm/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.length_mm = null; r.width_mm = null; });
       } else if (/mint_short/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.mint_short = null; });
       } else if (/title_en/.test(err.message)) {
         [rows] = await conn.execute(
-          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+          `SELECT id, title, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
            FROM coins ORDER BY release_date DESC, id DESC`
         );
         rows.forEach((r) => { r.title_en = null; });
@@ -359,7 +368,9 @@ async function run() {
     const country = (r.country || "").trim();
     const hasDisplay = r.mintage_display != null && String(r.mintage_display).trim() !== "";
     const isForeignUnlimited = country && !/^Россия/i.test(country) && hasDisplay;
-    return hasNumericMintage || isForeignUnlimited;
+    /** Bullion RM и др. без числового тиража — импорт import-royal-mint-to-db.js (GB-ROYAL-*). */
+    const isRoyalMintCatalog = /^GB-ROYAL-/i.test(String(r.catalog_number || "").trim());
+    return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog;
   });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();
@@ -369,6 +380,8 @@ async function run() {
     const imageObverse = r.image_obverse;
     const imageReverse = r.image_reverse;
     const imageUrls = r.image_urls;
+    const imageBlisterRev = r.image_blister_reverse;
+    const imageBlisterObv = r.image_blister_obverse;
     const imageBox = r.image_box;
     const imageCertificate = r.image_certificate;
     const releaseDate = r.release_date;
@@ -396,6 +409,8 @@ async function run() {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
+    if (imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
+    if (imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
     if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
     if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
@@ -492,6 +507,8 @@ async function run() {
     const catalogNumber = r.catalog_number;
     const imageObverse = r.image_obverse;
     const imageReverse = r.image_reverse;
+    const imageBlisterRev = r.image_blister_reverse;
+    const imageBlisterObv = r.image_blister_obverse;
     const imageBox = r.image_box;
     const imageCertificate = r.image_certificate;
     const isThreeCoinSet = (r.title || "").includes("Three Coin Set") || (r.title || "").includes("3 Coin Set");
@@ -517,6 +534,8 @@ async function run() {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
+    if (imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
+    if (imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
     if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
     if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {

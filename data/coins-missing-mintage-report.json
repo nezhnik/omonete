@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-03-22T15:56:33.449Z",
+  "criteria": "(mintage IS NULL OR mintage = 0) AND (mintage_display пустой) — в БД нет ни числа, ни текстового тиража",
+  "total": 1,
+  "withSourceUrl": 1,
+  "probedHttp": 0,
+  "foundHintOnPage": 0,
+  "rows": [
+    {
+      "id": 4235,
+      "title": "90 Years of Monopoly 2025 UK 50p Brilliant Uncirculated Coin",
+      "title_en": "90 Years of Monopoly 2025 UK 50p Brilliant Uncirculated Coin",
+      "country": "Великобритания",
+      "catalog_number": "AU-PERTH-2025-25Y52AAA",
+      "catalog_suffix": "25y52baa",
+      "mintage": null,
+      "mintage_display": null,
+      "mint": "The Royal Mint",
+      "mint_short": "Royal Mint",
+      "source_url": "https://www.perthmint.com/shop/collector-coins/coins/90-years-of-monopoly-2025-uk-50p-brilliant-uncirculated-coin",
+      "release_date": "2024-12-31T21:00:00.000Z"
+    }
+  ]
+}

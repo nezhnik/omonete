@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/wedding-2024-1oz-silver-proof-coin-cert.webp",
+    "mintage_display": "Тираж неограничен"
   },
   "raw": {
     "title": "Wedding 2024 1oz Silver Proof Coin",

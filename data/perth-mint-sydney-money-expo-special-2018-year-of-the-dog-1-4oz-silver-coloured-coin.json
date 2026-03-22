@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": null,
+    "mintage": 2000,
     "weight_g": 7.78,
     "weight_oz": 0.25,
     "diameter_mm": 25.5,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/sydney-money-expo-special-2018-year-of-the-dog-1-4oz-silver-coloured-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Sydney Money Expo Special 2018 Year of the Dog 1/4oz Silver Coloured Coin",

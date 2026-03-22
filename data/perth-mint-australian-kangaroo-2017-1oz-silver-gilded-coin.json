@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "999/1000",
-    "mintage": 250,
+    "mintage": 6000,
     "weight_g": 31.14,
     "weight_oz": 1,
     "diameter_mm": 40.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Australian Kangaroo 2017 1oz Silver Gilded Coin",

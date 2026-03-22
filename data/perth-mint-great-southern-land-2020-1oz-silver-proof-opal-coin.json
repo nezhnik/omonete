@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 250,
+    "mintage": 6000,
     "weight_g": 31.1,
     "weight_oz": 1,
     "diameter_mm": 36.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/great-southern-land-2020-1oz-silver-proof-opal-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/great-southern-land-2020-1oz-silver-proof-opal-coin-rev.webp",
     "image_box": "/image/coins/foreign/great-southern-land-2020-1oz-silver-proof-opal-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/great-southern-land-2020-1oz-silver-proof-opal-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/great-southern-land-2020-1oz-silver-proof-opal-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Great Southern Land 2020 1oz Silver Proof Opal Coin",

@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Платина",
     "metal_fineness": "999/1000",
-    "mintage": 250,
+    "mintage": 6000,
     "weight_g": 31.12,
     "weight_oz": 1,
     "diameter_mm": 32.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2016-1oz-platinum-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2016-1oz-platinum-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-wedge-tailed-eagle-2016-1oz-platinum-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2016-1oz-platinum-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2016-1oz-platinum-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2016 1oz Platinum Coin",

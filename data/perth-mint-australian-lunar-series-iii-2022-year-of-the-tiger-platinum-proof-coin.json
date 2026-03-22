@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Платина",
     "metal_fineness": "999/1000",
-    "mintage": 3888,
+    "mintage": 2000,
     "weight_g": 31.12,
     "weight_oz": 1,
     "diameter_mm": 32.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-platinum-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-platinum-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-platinum-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-platinum-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-platinum-proof-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Australian Lunar Series III 2022 Year of the Tiger 1oz Platinum Proof Coin",

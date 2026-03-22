@@ -359,6 +359,8 @@ function buildImageUrls(
   const obverse = obverseUrl(r.image_obverse);
   const reverse = reverseUrl(r.image_reverse);
   const imageUrls = r.image_urls as string[] | undefined;
+  const blisterRev = r.image_blister_reverse && String(r.image_blister_reverse).trim();
+  const blisterObv = r.image_blister_obverse && String(r.image_blister_obverse).trim();
   const imageBox = r.image_box && String(r.image_box).trim();
   const imageCertificate = r.image_certificate && String(r.image_certificate).trim();
   const firstImage = firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? "");
@@ -371,6 +373,8 @@ function buildImageUrls(
     if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
     if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
   }
+  if (blisterRev) { imageUrlsOut.push(String(blisterRev)); imageUrlRoles.push("blister_reverse"); }
+  if (blisterObv) { imageUrlsOut.push(String(blisterObv)); imageUrlRoles.push("blister_obverse"); }
   if (imageBox) { imageUrlsOut.push(String(imageBox)); imageUrlRoles.push("box"); }
   if (imageCertificate) { imageUrlsOut.push(String(imageCertificate)); imageUrlRoles.push("certificate"); }
   if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...(imageUrls as string[]));
@@ -508,7 +512,7 @@ function rowToSameSeriesItem(
 }
 
 const COINS_SELECT =
-  `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+  `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
    FROM coins ORDER BY release_date DESC, id DESC`;
 
 export async function getCoinsList(): Promise<{ coins: ListCoin[]; total: number }> {
@@ -548,7 +552,7 @@ export async function getCoinWithSameSeries(id: string): Promise<{ coin: DetailC
       // ignore
     }
     const [rows] = await conn.execute(
-      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
+      `SELECT id, title, title_en, series, country, face_value, release_date, image_urls, catalog_number, catalog_suffix, image_obverse, image_reverse, image_blister_reverse, image_blister_obverse, image_box, image_certificate, mint, mint_short, metal, metal_fineness, mintage, mintage_display, weight_g, weight_oz, quality, diameter_mm, thickness_mm, length_mm, width_mm
        FROM coins WHERE id = ?`,
       [id]
     );

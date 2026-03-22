@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 250,
+    "mintage": 6000,
     "weight_g": 62.21,
     "weight_oz": 2,
     "diameter_mm": 45.5,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-rev.webp",
     "image_box": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-2oz-silver-antiqued-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Voyage of Discovery Endeavour 1770-2020 2oz Silver Antiqued Coin",

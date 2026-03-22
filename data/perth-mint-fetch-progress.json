@@ -9661,7 +9661,12 @@
       "url": "https://www.perthmint.com/shop/collector-coins/coins/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin",
       "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://www.perthmint.com/shop/collector-coins/coins/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin/\nCall log:\n  - navigating to \"https://www",
       "at": "2026-03-08T23:06:48.986Z"
+    },
+    {
+      "url": "https://www.perthmint.com/shop/collector-coins/sovereigns/1925--2025-perth-mint-gold-sovereign-centenary-pair",
+      "error": "page.waitForTimeout: Target page, context or browser has been closed",
+      "at": "2026-03-22T15:26:27.675Z"
     }
   ],
-  "lastUpdated": "2026-03-09T07:00:36.199Z"
+  "lastUpdated": "2026-03-22T15:26:27.676Z"
 }

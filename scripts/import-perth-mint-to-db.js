@@ -8,6 +8,7 @@
  *   node scripts/import-perth-mint-to-db.js              — все data/perth-mint-*.json (по source_url: обновить или вставить)
  *   node scripts/import-perth-mint-to-db.js --replace-perth — удалить старые Perth без source_url, затем импорт (чтобы не было дублей после смены логики)
  *   node scripts/import-perth-mint-to-db.js путь/к/file.json — один файл
+ *   node scripts/import-perth-mint-to-db.js --from-missing-mintage-tsv [путь.tsv] — только монеты из отчёта без тиража (~30 URL, быстро; без «зависания» как у --all-by-source-url).
  */
 require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
@@ -37,11 +38,43 @@ function normalizeSourceUrl(url) {
   return url.trim().replace(/\/+$/, "") || null;
 }
 
+const IMPORT_FLAGS = new Set(["--replace-perth", "--all-by-source-url", "--from-missing-mintage-tsv"]);
+
+/** Нормализованные URL из TSV отчёта report-coins-missing-mintage.js */
+function readTargetUrlsFromMintageTsv(tsvPath) {
+  const abs = fs.existsSync(tsvPath) ? tsvPath : path.join(__dirname, "..", tsvPath);
+  if (!fs.existsSync(abs)) {
+    console.error("TSV не найден:", abs);
+    return new Set();
+  }
+  const set = new Set();
+  const lines = fs.readFileSync(abs, "utf8").split(/\r?\n/).filter((l) => l.trim());
+  for (let i = 0; i < lines.length; i++) {
+    if (i === 0 && /source_url/i.test(lines[i])) continue;
+    const m = lines[i].match(/(https:\/\/www\.perthmint\.com[^\s\t]*)/i);
+    if (!m) continue;
+    const u = normalizeSourceUrl(m[1]);
+    if (u) set.add(u);
+  }
+  return set;
+}
+
 async function main() {
   let files = [];
-  const replacePerth = process.argv.includes("--replace-perth");
-  const allBySourceUrl = process.argv.includes("--all-by-source-url");
-  const arg = process.argv.filter((a) => a !== "--replace-perth" && a !== "--all-by-source-url")[2];
+  const argv = process.argv.slice(2);
+  const replacePerth = argv.includes("--replace-perth");
+  const allBySourceUrl = argv.includes("--all-by-source-url");
+  const fromMissingMintageTsv = argv.includes("--from-missing-mintage-tsv");
+  let tsvPathForImport = path.join(DATA_DIR, "coins-missing-mintage-report.tsv");
+  if (fromMissingMintageTsv) {
+    const i = argv.indexOf("--from-missing-mintage-tsv");
+    const next = argv[i + 1];
+    if (next && !next.startsWith("-") && !next.endsWith(".json")) {
+      tsvPathForImport = path.isAbsolute(next) ? next : path.join(process.cwd(), next);
+    }
+  }
+  const arg = argv.find((a) => !IMPORT_FLAGS.has(a) && !a.endsWith(".tsv") && a.endsWith(".json"));
+
   if (arg) {
     const p = path.isAbsolute(arg) ? arg : path.join(process.cwd(), arg);
     if (!fs.existsSync(p)) {
@@ -49,6 +82,39 @@ async function main() {
       process.exit(1);
     }
     files = [p];
+  } else if (fromMissingMintageTsv) {
+    const urlSet = readTargetUrlsFromMintageTsv(tsvPathForImport);
+    if (urlSet.size === 0) {
+      console.error("В TSV нет URL perthmint.com");
+      process.exit(1);
+    }
+    if (!fs.existsSync(DATA_DIR)) {
+      console.error("Папка data не найдена");
+      process.exit(1);
+    }
+    const byUrl = new Map();
+    const allJson = fs
+      .readdirSync(DATA_DIR)
+      .filter((f) => f.startsWith("perth-mint-") && f.endsWith(".json"))
+      .map((f) => path.join(DATA_DIR, f));
+    for (const filePath of allJson) {
+      let raw;
+      try {
+        raw = JSON.parse(fs.readFileSync(filePath, "utf8"));
+      } catch {
+        continue;
+      }
+      const u = normalizeSourceUrl(raw?.coin?.source_url);
+      if (u && urlSet.has(u) && !byUrl.has(u)) byUrl.set(u, filePath);
+    }
+    files = [...byUrl.values()];
+    console.log(
+      "Режим --from-missing-mintage-tsv: в отчёте URL:",
+      urlSet.size,
+      "| найдено JSON:",
+      files.length,
+      "(остальные URL без файла в data/ — нужен fetch)"
+    );
   } else {
     if (!fs.existsSync(DATA_DIR)) {
       console.error("Папка data не найдена");
@@ -65,7 +131,7 @@ async function main() {
   }
 
   // Режим --all-by-source-url: один файл на каждый source_url (импорт всех продуктов из каноников, не по одному на catalog_number).
-  if (files.length > 1 && !arg && allBySourceUrl) {
+  if (files.length > 1 && !arg && allBySourceUrl && !fromMissingMintageTsv) {
     const bySourceUrl = new Map();
     for (const filePath of files) {
       let raw, c;
@@ -81,7 +147,7 @@ async function main() {
     }
     files = [...bySourceUrl.values()];
     console.log("Режим --all-by-source-url: файлов к импорту:", files.length);
-  } else if (files.length > 1 && !arg) {
+  } else if (files.length > 1 && !arg && !fromMissingMintageTsv) {
   // Приоритет канонического JSON с сайта: для одного catalog_number берём файл, где есть source_url (страница товара Perth).
   // Так не перезаписываем правильные данные (страна, картинки, название) данными из «короткого» JSON без URL.
     const byCatalog = {};
@@ -122,7 +188,7 @@ async function main() {
     "title", "title_en", "series", "country", "face_value", "mint", "mint_short",
     "metal", "metal_fineness", "mintage", "mintage_display", "weight_g", "weight_oz",
     "release_date", "catalog_number", "catalog_suffix", "quality",
-    "diameter_mm", "thickness_mm", "length_mm", "width_mm", "image_obverse", "image_reverse", "image_box", "image_certificate",
+    "diameter_mm", "thickness_mm", "length_mm", "width_mm", "image_obverse", "image_reverse", "image_blister_reverse", "image_blister_obverse", "image_box", "image_certificate",
     "price_display", "source_url"
   ];
   const cols = hasTitleEn ? colsBase : colsBase.filter((k) => k !== "title_en");
@@ -202,6 +268,8 @@ async function main() {
       c.width_mm != null ? (roundSpec(c.width_mm) ?? c.width_mm) : null,
       (c.image_obverse || "").trim() || null,
       (c.image_reverse || "").trim() || null,
+      (c.image_blister_reverse || "").trim() || null,
+      (c.image_blister_obverse || "").trim() || null,
       (c.image_box || "").trim() || null,
       (c.image_certificate || "").trim() || null,
       (c.price_display && String(c.price_display).trim()) || null,

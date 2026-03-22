@@ -5,7 +5,8 @@ import Link from "next/link";
 import { IconChevronLeft, IconChevronRight, IconCheck, IconPlus, IconShare3 } from "@tabler/icons-react";
 import { cleanCoinTitle } from "../lib/cleanTitle";
 import { formatQualityDisplay } from "../lib/qualityDisplay";
-import { formatNumber, formatNumbersInString } from "../lib/formatNumber";
+import { formatNumbersInString } from "../lib/formatNumber";
+import { formatMintageSpecValue } from "../lib/mintageSpecDisplay";
 
 /** Данные монеты для страницы деталей (переиспользуемый тип) */
 export type CoinDetailData = {
@@ -14,7 +15,7 @@ export type CoinDetailData = {
   seriesName?: string;
   imageUrl: string;
   imageUrls?: string[];
-  /** Роли по индексу: obverse | reverse | box | certificate — для квадратного превью коробки/сертификата */
+  /** Роли картинок в imageUrls (obverse, reverse, …) — как в экспорте JSON */
   imageUrlRoles?: string[];
   inCollection?: boolean;
   /** Монетный двор (полное наименование) */
@@ -29,18 +30,16 @@ export type CoinDetailData = {
   metal: string;
   metalCode?: string;
   metalColor?: string;
+  /** Несколько кодов металла (биметалл и т.п.) — как в экспорте JSON */
+  metalCodes?: string[];
   quality?: string;
   mintage?: number;
   /** Тиражи с ЦБ «до X» — показываем как есть */
   mintageDisplay?: string;
   /** Чистого металла не менее, гр. — из БД weight_g */
   weightG?: string;
-  /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — для строки «Вес в унциях» лучше weightOzDisplay */
+  /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — из БД weight_oz */
   weightOz?: string;
-  /** Для строки «Вес в унциях»: у кг — унции по расчёту (32,15 унции), иначе — weight_oz из БД */
-  weightOzDisplay?: string;
-  /** Форматированный вес для отображения (1/31,1 унции · 1 грамм и т.д.) */
-  weightLabel?: string;
   purity?: string;
   diameterMm?: string;
   thicknessMm?: string;
@@ -104,75 +103,33 @@ function SpecRow({
 const SWIPE_MIN_DISTANCE = 50;
 const SHOW_MONETIZATION_BLOCK = false;
 
-const isPackagingRole = (role: string | undefined) => role === "box" || role === "certificate";
-
 export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backLabel = "Назад", isAuthorized = false, onToggleCollection }: CoinDetailProps) {
-  // Всегда начинаем галерею с основной картинки imageUrl,
-  // а затем показываем остальные уникальные изображения из imageUrls.
-  const extraImages = coin.imageUrls?.length ? coin.imageUrls : [];
-  const images = [coin.imageUrl, ...extraImages.filter((u) => u && u !== coin.imageUrl)];
+  const images = coin.imageUrls?.length ? coin.imageUrls : [coin.imageUrl];
   const rectangular = !!coin.rectangular;
-  // Для основной картинки роли нет (undefined), далее — как в imageUrlRoles.
-  const roles = coin.imageUrlRoles ? [undefined, ...coin.imageUrlRoles] : undefined;
-  const isPackaging = (i: number) => isPackagingRole(roles?.[i]);
   const [selectedImage, setSelectedImage] = useState(0);
-  const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
 
-  const handleShare = async (e: React.MouseEvent | React.TouchEvent) => {
+  const handleShare = async (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     const url = typeof window !== "undefined" ? window.location.href : "";
     const title = coin.title ? `${cleanCoinTitle(coin.title)} — О монете` : document.title;
-    const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1280;
-    if (isDesktop) {
-      doCopyFallback(url);
-      return;
-    }
-    // На мобильных и планшетах — Web Share API (системное окно iOS/Android как на скрине)
-    const shareData: ShareData = { title, url };
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
-        await navigator.share(shareData);
+        await navigator.share({ title, url });
       } catch (err) {
-        if ((err as Error).name !== "AbortError") doCopyFallback(url);
+        if ((err as Error).name !== "AbortError") copyFallback(url);
       }
     } else {
-      doCopyFallback(url);
+      copyFallback(url);
     }
   };
-  function doCopyFallback(url: string) {
-    if (typeof navigator === "undefined") return;
-    const showToast = () => {
-      setCopyToast(true);
-      window.setTimeout(() => setCopyToast(false), 2500);
-    };
-    if (navigator.clipboard?.writeText) {
-      navigator.clipboard.writeText(url).then(showToast).catch(() => {
-        legacyCopy(url) && showToast();
-      });
-    } else {
-      legacyCopy(url) && showToast();
-    }
-  }
-  function legacyCopy(url: string): boolean {
-    if (typeof document === "undefined") return false;
-    try {
-      const ta = document.createElement("textarea");
-      ta.value = url;
-      ta.style.position = "fixed";
-      ta.style.opacity = "0";
-      document.body.appendChild(ta);
-      ta.select();
-      const ok = document.execCommand("copy");
-      document.body.removeChild(ta);
-      return ok;
-    } catch {
-      return false;
-    }
+  function copyFallback(url: string) {
+    if (typeof navigator === "undefined" || !navigator.clipboard) return;
+    navigator.clipboard.writeText(url).catch(() => {});
   }
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -223,7 +180,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
 
           <div className="flex flex-col gap-6">
             <div
-              className={`group/coin relative w-full aspect-square max-h-[540px] lg:max-h-[736px] flex items-center justify-center bg-white overflow-hidden ${rectangular || isPackaging(selectedImage) ? "rounded-2xl" : "rounded-full"}`}
+              className={`group/coin relative w-full aspect-square max-h-[540px] lg:max-h-[736px] flex items-center justify-center bg-white overflow-hidden ${rectangular ? "rounded-2xl" : "rounded-full"}`}
               onKeyDown={(e) => {
                 if (images.length <= 1) return;
                 if (e.key === "ArrowLeft") {
@@ -241,21 +198,11 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               role={images.length > 1 ? "region" : undefined}
               aria-label={images.length > 1 ? "Галерея изображений монеты" : undefined}
             >
-              {isPackaging(selectedImage) ? (
-                <div className="w-full h-full p-4 sm:p-6 lg:p-8 flex items-center justify-center">
-                  <img
-                    src={images[selectedImage] ?? coin.imageUrl}
-                    alt={cleanCoinTitle(coin.title)}
-                    className="w-full h-full max-h-[540px] lg:max-h-[736px] pointer-events-none select-none object-contain"
-                  />
-                </div>
-              ) : (
-                <img
-                  src={images[selectedImage] ?? coin.imageUrl}
-                  alt={cleanCoinTitle(coin.title)}
-                  className="w-full h-full max-h-[540px] lg:max-h-[736px] pointer-events-none select-none object-contain"
-                />
-              )}
+              <img
+                src={images[selectedImage] ?? coin.imageUrl}
+                alt={cleanCoinTitle(coin.title)}
+                className="w-full h-full max-h-[540px] lg:max-h-[736px] object-contain pointer-events-none select-none"
+              />
               {images.length > 1 && (
                 <>
                   <button
@@ -296,54 +243,61 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                     key={i}
                     type="button"
                     onClick={() => setSelectedImage(i)}
-                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center shrink-0 cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular || isPackaging(i) ? "rounded-[0.5rem]" : "rounded-full"} ${
+                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center shrink-0 cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular ? "rounded-[0.5rem]" : "rounded-full"} ${
                       i === selectedImage ? "outline outline-2 outline-[#11111B] outline-offset-[-1px]" : "outline outline-1 outline-[#E4E4EA] outline-offset-[-1px]"
                     }`}
                   >
-                    <img src={url} alt="" className={`w-[72px] h-[72px] lg:w-[128px] lg:h-[128px] ${isPackaging(i) ? "object-contain w-full h-full" : "object-contain"}`} />
+                    <img src={url} alt="" className="w-[72px] h-[72px] object-contain lg:w-[128px] lg:h-[128px]" />
                   </button>
                 ))}
               </div>
             )}
             <p className="text-center text-[#666666] text-[16px] font-normal">
-              {coin.mintCountry === "Россия"
-                ? "Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России"
-                : "Информация предоставлена в ознакомительных целях из открытых источников"}
+              Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России
             </p>
 
-            {/* Кнопки «В коллекцию» и «Поделиться». В коллекцию — с текстом в кнопке. На мобильном — Web Share API или копирование */}
+            {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа */}
             <div className="lg:hidden flex items-center justify-end gap-3">
               {isAuthorized ? (
-                <button
-                  type="button"
-                  onClick={() => onToggleCollection?.(coin.id)}
-                  className="px-4 py-2 rounded-[300px] bg-[#F1F1F2] flex items-center justify-center gap-2 text-[#11111B] text-[14px] font-medium hover:bg-[#E4E4EA] transition-colors"
-                  aria-label={coin.inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}
-                >
-                  {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
-                  <span>{coin.inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}</span>
-                </button>
+                <div className="relative group/btn inline-flex">
+                  <button
+                    type="button"
+                    onClick={() => onToggleCollection?.(coin.id)}
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                  >
+                    {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
+                  </button>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
               ) : (
-                <a
-                  href="/login"
-                  className="px-4 py-2 rounded-[300px] bg-[#F1F1F2] flex items-center justify-center gap-2 text-[#11111B] text-[14px] font-medium hover:bg-[#E4E4EA] transition-colors"
-                  aria-label="Добавить в коллекцию"
-                >
-                  <IconPlus size={22} stroke={2} />
-                  <span>Добавить в коллекцию</span>
-                </a>
+                <div className="relative group/btn inline-flex">
+                  <a
+                    href="/login"
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label="Добавить в коллекцию"
+                  >
+                    <IconPlus size={22} stroke={2} />
+                  </a>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
+                    <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
               )}
               <div className="relative group/btn inline-flex">
                 <button
                   type="button"
                   onClick={handleShare}
-                  onTouchEnd={(e) => { e.preventDefault(); handleShare(e as unknown as React.MouseEvent); }}
-                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors touch-manipulation"
+                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
                   aria-label="Поделиться"
                 >
                   <IconShare3 size={22} stroke={2} />
                 </button>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 hidden lg:block">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
                   Поделиться монетой
                   <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
                 </div>
@@ -364,24 +318,28 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             {/* Кнопки отдельно, справа */}
             <div className="flex justify-end gap-3">
               {isAuthorized ? (
-                <button
-                  type="button"
-                  onClick={() => onToggleCollection?.(coin.id)}
-                  className="px-4 py-2 rounded-[300px] bg-[#F1F1F2] flex items-center justify-center gap-2 text-[#11111B] text-[14px] font-medium hover:bg-[#E4E4EA] transition-colors cursor-pointer"
-                  aria-label={coin.inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}
-                >
-                  {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
-                  <span>{coin.inCollection ? "Убрать из коллекции" : "Добавить в коллекцию"}</span>
-                </button>
+                <div className="relative group/btn inline-flex">
+                  <button
+                    type="button"
+                    onClick={() => onToggleCollection?.(coin.id)}
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                    aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                  >
+                    {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
+                  </button>
+                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
+                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
+                  </div>
+                </div>
               ) : (
                 <div className="relative group/btn inline-flex">
                   <a
                     href="/login"
-                    className="px-4 py-2 rounded-[300px] bg-[#F1F1F2] flex items-center justify-center gap-2 text-[#11111B] text-[14px] font-medium hover:bg-[#E4E4EA] transition-colors cursor-pointer"
+                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
                     aria-label="Добавить в коллекцию"
                   >
                     <IconPlus size={22} stroke={2} />
-                    <span>Добавить в коллекцию</span>
                   </a>
                   <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
                     <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
@@ -393,7 +351,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 <button
                   type="button"
                   onClick={handleShare}
-                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors cursor-pointer"
+                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
                   aria-label="Поделиться"
                 >
                   <IconShare3 size={22} stroke={2} />
@@ -421,11 +379,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 <SpecRow label="Год выпуска" value={String(coin.year)} />
                 <SpecRow label="Номинал" value={formatNumbersInString(coin.faceValue)} />
                 {coin.quality && <SpecRow label="Качество чеканки" value={formatQualityDisplay(coin.quality) || coin.quality} />}
-                {(coin.mintageDisplay ?? coin.mintage != null) && (
-                  <SpecRow
-                    label="Тираж, шт."
-                    value={coin.mintageDisplay ?? (coin.mintage != null ? formatNumber(coin.mintage) : "")}
-                  />
+                {(coin.mintageDisplay?.trim() || coin.mintage != null) && (
+                  <SpecRow label="Тираж, шт." value={formatMintageSpecValue(coin.mintageDisplay, coin.mintage)} />
                 )}
               </div>
               <div className="flex flex-col gap-4">
@@ -468,8 +423,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 {coin.weightG && (
                   <SpecRow label="Чистого металла не менее, гр." value={formatNumbersInString(coin.weightG)} />
                 )}
-                {(coin.weightLabel ?? coin.weightOz ?? coin.weightOzDisplay) && (
-                  <SpecRow label="Вес в унциях" value={coin.weightOzDisplay ?? coin.weightOz ?? undefined} />
+                {coin.weightOz && (
+                  <SpecRow label="Вес в унциях" value={coin.weightOz} />
                 )}
                 {coin.purity && <SpecRow label="Проба" value={coin.purity} />}
                 {coin.rectangular && (coin.lengthMm || coin.widthMm) ? (
@@ -506,12 +461,12 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                     if (el.src.endsWith("sales.gif")) {
                       el.onerror = () => {
                         el.onerror = null;
-                        el.src = "/image/coin-placeholder.png";
+                        el.src = "/image/coin-placeholder.svg";
                       };
                       el.src = "/image/sales.webp";
                     } else {
                       el.onerror = null;
-                      el.src = "/image/coin-placeholder.png";
+                      el.src = "/image/coin-placeholder.svg";
                     }
                   }}
                 />
@@ -606,16 +561,6 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
           )}
         </div>
       </div>
-
-      {copyToast && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap shadow-lg"
-        >
-          Ссылка скопирована
-        </div>
-      )}
     </div>
   );
 }

@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-03-21T18:43:11.747Z",
+  "total": 5,
+  "failed": 1,
+  "report": [
+    {
+      "url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/2oz-silver-bullion-coins/rqp252s--the-royal-tudor-beasts-2025-queens-panther-2oz-silver-bullion-coin",
+      "ok": true,
+      "found": true,
+      "specRows": 11,
+      "fetchPath": "/invest/bullion/bullion-coins/silver-coins/2oz-silver-bullion-coins/rqp252s--the-royal-tudor-beasts-2025-queens-panther-2oz-silver-bullion-coin"
+    },
+    {
+      "url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/britannia-2022-1-oz-silver-bullion-coin",
+      "ok": true,
+      "found": true,
+      "specRows": 12,
+      "fetchPath": "/invest/bullion/bullion-coins/silver-coins/britannia-2022-1-oz-silver-bullion-coin"
+    },
+    {
+      "url": "https://www.royalmint.com/britannia/commemorative/2025-britannia-2oz-silver-proof-coin",
+      "ok": true,
+      "found": true,
+      "specRows": 11,
+      "fetchPath": "/britannia/commemorative/2025-britannia-2oz-silver-proof-coin"
+    },
+    {
+      "url": "https://www.royalmint.com/shop/limited-editions/harry-potter/the-patronus/harry-potter-the-patronus-2025-fifty-pence-silver-proof-colour-coin",
+      "ok": false,
+      "found": false,
+      "specRows": 0,
+      "fetchPath": ""
+    },
+    {
+      "url": "https://www.royalmint.com/invest/bullion/uk-coin-ranges/world-coins/krugerrand-2024-1oz-silver-bullion-coin",
+      "ok": true,
+      "found": true,
+      "specRows": 10,
+      "fetchPath": "/invest/bullion/uk-coin-ranges/world-coins/krugerrand-2024-1oz-silver-bullion-coin"
+    }
+  ]
+}

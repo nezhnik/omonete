@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "999/1000",
-    "mintage": 3888,
+    "mintage": 2000,
     "weight_g": 31.14,
     "weight_oz": 1,
     "diameter_mm": 45.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/brisbane-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/brisbane-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": null
   },
   "raw": {
     "title": "Brisbane ANDA Coin Show Special - Australian Lunar Series II - 2012 Year of the Dragon 1oz Silver Coin",

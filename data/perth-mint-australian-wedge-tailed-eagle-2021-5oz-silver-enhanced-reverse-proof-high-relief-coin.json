@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 2500,
+    "mintage": 6000,
     "weight_g": 155.53,
     "weight_oz": 5,
     "diameter_mm": 50.9,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2021-5oz-silver-enhanced-reverse-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2021-5oz-silver-enhanced-reverse-proof-high-relief-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": null
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2021 5oz Silver Enhanced Reverse Proof High Relief Coin",

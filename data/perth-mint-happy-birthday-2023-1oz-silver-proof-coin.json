@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/happy-birthday-2023-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/happy-birthday-2023-1oz-silver-proof-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": "Тираж неограничен"
   },
   "raw": {
     "title": "Happy Birthday 2023 1oz Silver Proof Coloured Coin",

@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 2500,
+    "mintage": 1250,
     "weight_g": 31.1,
     "weight_oz": 1,
     "diameter_mm": 40.9,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1oz-silver-proof-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "End of WWII 75th Anniversary 2020 1oz Silver Proof Coin",

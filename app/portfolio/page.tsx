@@ -7,6 +7,7 @@ import { Button } from "../../components/Button";
 import { IconSearch, IconDownload, IconShare, IconChevronDown, IconMinus, IconPlus, IconArrowUp, IconTrash } from "@tabler/icons-react";
 import { cleanCoinTitle } from "../../lib/cleanTitle";
 import { formatNumber } from "../../lib/formatNumber";
+import { formatMintageSpecValue } from "../../lib/mintageSpecDisplay";
 import { buildMintLogoLookupMap, resolveMintLogoUrl } from "../../lib/mintLogoLookup";
 import { useAuth, MAX_COLLECTION_QUANTITY } from "../../components/AuthProvider";
 
@@ -189,8 +190,8 @@ function portfolioRowMatchesSearch(row: PortfolioRow, queryNorm: string): boolea
 
 function coinToPortfolioRow(coin: ApiCoin, index: number): PortfolioRow {
   const metalLabel = [coin.metal, coin.weightG && `${coin.weightG} гр.`].filter(Boolean).join(" · ") || "—";
-  const mintageStr =
-    coin.mintageDisplay ?? (coin.mintage != null ? formatNumber(coin.mintage) : "—");
+  const mintageRaw = formatMintageSpecValue(coin.mintageDisplay, coin.mintage);
+  const mintageStr = mintageRaw !== "" ? mintageRaw : "—";
   const isGold = coin.metalCode === "Au";
   const isSilver = coin.metalCode === "Ag";
   const base = index % 3;

@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Золото",
     "metal_fineness": "91.67",
-    "mintage": 150,
+    "mintage": 250,
     "weight_g": 7.98,
     "weight_oz": 0.235,
     "diameter_mm": 22.1,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/200th-anniversary-of-the-shield-back-sovereign-two-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/200th-anniversary-of-the-shield-back-sovereign-two-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/200th-anniversary-of-the-shield-back-sovereign-two-coin-set-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": null
   },
   "raw": {
     "title": "The 200th Anniversary of the Shield Back Sovereign Two-Coin Set",

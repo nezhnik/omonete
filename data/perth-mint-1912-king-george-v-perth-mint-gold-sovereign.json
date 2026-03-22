@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Золото",
     "metal_fineness": "91.67",
-    "mintage": 150,
+    "mintage": 250,
     "weight_g": 7.99,
     "weight_oz": 0.2354,
     "diameter_mm": 22.1,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-obv.webp",
     "image_reverse": "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": null
   },
   "raw": {
     "title": "1912 King George V Perth Mint Gold Sovereign",

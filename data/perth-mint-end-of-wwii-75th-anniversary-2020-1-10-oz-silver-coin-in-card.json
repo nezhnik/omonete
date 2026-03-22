@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 2500,
+    "mintage": 1250,
     "weight_g": 3.11,
     "weight_oz": 0.1,
     "diameter_mm": 20.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-rev.webp",
     "image_box": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-box.webp",
-    "image_certificate": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-cert.webp"
+    "image_certificate": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "End of WWII 75th Anniversary 2020 1/10 oz Silver Coin in Card",

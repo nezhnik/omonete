@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 3888,
+    "mintage": 2000,
     "weight_g": 1,
     "weight_oz": 32.151,
     "diameter_mm": 100.9,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-coin-series-iii-2020-year-of-the-mouse-1-kilo-silver-coin-with-gold-privy-mark-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Australian Lunar Coin Series III 2020 Year of the Mouse 1 Kilo Silver Coin with Gold Privy Mark",

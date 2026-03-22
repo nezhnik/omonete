@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
-    "mintage": 3888,
+    "mintage": 2000,
     "weight_g": 62.21,
     "weight_oz": 2,
     "diameter_mm": 55.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/perth-money-expo-anda-2021-year-of-the-ox-2oz-silver-proof-coloured-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Perth Money Expo ANDA Special Australian Lunar Series II 2021 Year of the Ox 2oz Silver Proof Coloured Coin",

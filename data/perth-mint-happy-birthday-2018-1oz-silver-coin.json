@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/happy-birthday-2018-1oz-silver-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/happy-birthday-2018-1oz-silver-coin-rev.webp",
     "image_box": "/image/coins/foreign/happy-birthday-2018-1oz-silver-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/happy-birthday-2018-1oz-silver-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/happy-birthday-2018-1oz-silver-coin-cert.webp",
+    "mintage_display": "Тираж неограничен"
   },
   "raw": {
     "title": "Happy Birthday 2018 1oz Silver Coin",

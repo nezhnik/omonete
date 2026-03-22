@@ -17,6 +17,7 @@
  *   node scripts/fetch-perth-mint-coin.js --refetch-lost --refresh — переспарсить «потерянные» URL из perth-mint-refetch-urls.txt (см. list-perth-mint-refetch-urls.js)
  *   node scripts/fetch-perth-mint-coin.js --refresh — полный перезабор: данные и картинки заново.
  *   node scripts/fetch-perth-mint-coin.js --from-start — начать с начала (игнорировать прогресс).
+ *   node scripts/fetch-perth-mint-coin.js --from-missing-mintage-tsv [путь.tsv] --refresh --from-start — URL из отчёта без тиража (по умолчанию data/coins-missing-mintage-report.tsv).
  *   Прогресс: data/perth-mint-fetch-progress.json. Ошибки: scripts/perth-mint-fetch-errors.txt. При повторе — продолжение с последнего успеха.
  * Имя JSON и картинок: по slug из URL (последний сегмент пути), чтобы 1 URL = 1 запись, без перезаписи разных монет.
  * Режим проверки: если уже есть JSON для этого URL, сравниваются характеристики и наличие картинок. Если ничего не изменилось — пропуск (быстро). Если изменились только часть данных — обновляются только они (докачиваются только недостающие изображения, перезаписываются только изменившиеся поля).
@@ -26,6 +27,8 @@
 const fs = require("fs");
 const path = require("path");
 const { roundSpec, normalizeWeightG, deriveMetalAndWeightFromTitle, normalizeLegalTender, formatDenominationForFaceValue } = require("./format-coin-characteristics.js");
+/** Тираж: Maximum Mintage (+ много колонок), при Unlimited — Issue Limit; иначе mintage_display «Неограничен» (без префикса «Тираж»). */
+const { resolvePerthMintage } = require("./perth-mintage-resolve.js");
 
 const DEFAULT_URL =
   "https://www.perthmint.com/shop/collector-coins/coins/deadly-and-dangerous-australias-giant-centipede-2026-1oz-silver-proof-coloured-coin/";
@@ -37,7 +40,7 @@ const PUBLIC_DIR = path.join(__dirname, "..", "public");
 const BASE_URL = "https://www.perthmint.com";
 
 /** Поля монеты для сравнения (характеристики + название). */
-const COIN_SPEC_FIELDS = ["title", "country", "face_value", "weight_g", "diameter_mm", "thickness_mm", "length_mm", "width_mm", "metal", "metal_fineness", "quality", "mintage", "release_date", "catalog_number", "catalog_suffix", "price_display", "series"];
+const COIN_SPEC_FIELDS = ["title", "country", "face_value", "weight_g", "diameter_mm", "thickness_mm", "length_mm", "width_mm", "metal", "metal_fineness", "quality", "mintage", "mintage_display", "release_date", "catalog_number", "catalog_suffix", "price_display", "series"];
 
 /** Сравнение двух объектов монеты по характеристикам (вес нормализуем через normalizeWeightG). */
 function compareCoinSpecs(existingCoin, newCoin) {
@@ -124,6 +127,16 @@ function yearFromTitle(title) {
   if (!title || typeof title !== "string") return null;
   const m = String(title).match(/\b(20\d{2}|19\d{2})\b/);
   return m ? parseInt(m[1], 10) : null;
+}
+
+/** Сегменты «A | B» на Perth: последнее значение без одних дефисов (напр. Legal Tender "- | Australia" → Australia). */
+function lastNonDashSpecSegment(s) {
+  if (!s || !String(s).trim()) return "";
+  const parts = String(s)
+    .split("|")
+    .map((x) => x.trim())
+    .filter((x) => x && !/^[\-–—]+$/u.test(x));
+  return parts.length ? parts[parts.length - 1] : "";
 }
 
 /** Проба: из спеок "Fineness (% purity)" / "Purity" или из текста. */
@@ -247,10 +260,38 @@ function getUrlListFromCanonicals() {
   return urls;
 }
 
+/** URL из TSV отчёта report-coins-missing-mintage.js (колонка source_url = perthmint.com). */
+function getUrlsFromMissingMintageTsv(tsvPath) {
+  const abs = path.isAbsolute(tsvPath) ? tsvPath : path.join(__dirname, "..", tsvPath);
+  if (!fs.existsSync(abs)) {
+    console.error("TSV не найден:", abs);
+    return [];
+  }
+  const lines = fs.readFileSync(abs, "utf8").split(/\r?\n/).filter((l) => l.trim());
+  const seen = new Set();
+  const urls = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (i === 0 && /source_url/i.test(lines[i])) continue;
+    const m = lines[i].match(/(https:\/\/www\.perthmint\.com[^\s\t]*)/i);
+    if (!m) continue;
+    const u = m[1].trim().replace(/\/+$/, "");
+    if (seen.has(u)) continue;
+    seen.add(u);
+    urls.push(u);
+  }
+  return urls;
+}
+
 /** Читает список URL: из аргумента (один), из каноников (--from-canonicals), из perth-mint-missing-in-db.txt (--missing), из perth-mint-refetch-urls.txt (--refetch-lost), иначе из perth-mint-urls.txt. */
 function getUrlList() {
   const arg = process.argv[2];
   if (arg && arg.startsWith("http")) return [arg];
+  const tsvIdx = process.argv.indexOf("--from-missing-mintage-tsv");
+  if (tsvIdx !== -1) {
+    const p = process.argv[tsvIdx + 1];
+    const rel = p && !p.startsWith("-") ? p : path.join("data", "coins-missing-mintage-report.tsv");
+    return getUrlsFromMissingMintageTsv(rel);
+  }
   if (process.argv.includes("--from-canonicals")) return getUrlListFromCanonicals();
   const useMissing = process.argv.includes("--missing");
   const useRefetch = process.argv.includes("--refetch-lost");
@@ -310,14 +351,26 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
         const v = val.replace(/\s+/g, " ").trim();
         if (k && v) specs[k] = v;
       }
+      // Несколько колонок (напр. пара 1925 + 2025): первая ячейка — подпись, остальные — значения; склеиваем « | ».
       document.querySelectorAll("table tr").forEach((tr) => {
-        const th = tr.querySelector("th, td:first-child");
-        const td = tr.querySelector("td:last-child, td:nth-child(2)");
-        if (th && td) addRow(th.textContent, td.textContent);
+        const cells = Array.from(tr.querySelectorAll("th, td"));
+        if (cells.length < 2) return;
+        const key = cells[0].textContent.replace(/\s+/g, " ").trim();
+        const parts = cells
+          .slice(1)
+          .map((c) => c.textContent.replace(/\s+/g, " ").trim())
+          .filter((v) => v !== "");
+        if (key && parts.length) addRow(key, parts.join(" | "));
       });
       document.querySelectorAll("[role='table'] [role='row']").forEach((row) => {
         const cells = row.querySelectorAll("[role='cell'], td, th");
-        if (cells.length >= 2) addRow(cells[0].textContent, cells[1].textContent);
+        if (cells.length < 2) return;
+        const key = cells[0].textContent.replace(/\s+/g, " ").trim();
+        const parts = Array.from(cells)
+          .slice(1)
+          .map((c) => c.textContent.replace(/\s+/g, " ").trim())
+          .filter((v) => v !== "");
+        if (key && parts.length) addRow(key, parts.join(" | "));
       });
       // Цена: из спеок (Price) или из блоков .price, [data-product-price]
       let price = getText("[data-product-price]") || getText(".product-price") || getText(".price") || getText("[data-price]");
@@ -378,9 +431,13 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
       const s = getSpec(...keys).replace(",", ".").trim();
       return s ? s : null;
     };
-    const mintageMatch = getSpec("Maximum Mintage", "Mintage", "Maximum mintage").replace(/\s/g, "");
+    const { mintage: mintageNum, mintage_display: mintageDisplayFromSpec } = resolvePerthMintage(specs);
     const yearFromSpecsRaw = (getSpec("Year", "Year Date") || Object.entries(specs).find(([k]) => /^year$/i.test(String(k).trim()))?.[1] || "").trim();
-    const yearMatch = /^(20\d{2}|19\d{2})$/.test(yearFromSpecsRaw) ? yearFromSpecsRaw : "";
+    let yearMatch = /^(20\d{2}|19\d{2})$/.test(yearFromSpecsRaw) ? yearFromSpecsRaw : "";
+    if (!yearMatch) {
+      const yrs = yearFromSpecsRaw.match(/\b(20\d{2}|19\d{2})\b/g);
+      if (yrs && yrs.length) yearMatch = yrs[yrs.length - 1];
+    }
     const weightMatch = getSpecNum("Minimum Gross Weight (g)", "Maximum Gross Weight (g)", "Minimum gross weight (g)");
     const diameterMatch = getSpecNum("Maximum Diameter (mm)", "Diameter (mm)", "Maximum diameter (mm)");
     const thicknessMatch = getSpecNum("Maximum Thickness (mm)", "Maximum thickness (mm)", "Maximum Thickness Including the Tiger (mm)");
@@ -405,7 +462,8 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
     const finishSpec = (getSpec("Finish", "Quality") || "").toLowerCase();
     const quality = finishSpec ? (finishSpec.includes("colour") || finishSpec.includes("colored") ? "Proof, Coloured" : "Proof") : (fromTitle.quality || "Proof, Coloured");
 
-    const legalTender = getSpec("Legal Tender");
+    const legalTenderRaw = getSpec("Legal Tender");
+    const legalTender = lastNonDashSpecSegment(legalTenderRaw) || legalTenderRaw;
     let country = normalizeLegalTender(legalTender) || "Австралия";
     // Australian Kookaburra — всегда Австралия (на сайте Perth иногда Legal Tender = Tuvalu, но для каталога показываем страну серии)
     if (/Kookaburra/i.test(data.title || "")) country = "Австралия";
@@ -430,7 +488,8 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
       mint_short: mintResolved.mint_short,
       metal,
       metal_fineness: fineness,
-      mintage: mintageMatch ? parseInt(mintageMatch.replace(/\D/g, ""), 10) : 2500,
+      mintage: mintageNum != null ? mintageNum : null,
+      mintage_display: mintageDisplayFromSpec,
       weight_g: normalizeWeightG(weightMatch ? parseFloat(weightMatch) : (fromTitle.weight_g != null ? fromTitle.weight_g : 31.107)) ?? 31.1,
       weight_oz: fromTitle.weight_oz != null ? fromTitle.weight_oz : null,
       diameter_mm: diameterMatch ? (roundSpec(parseFloat(diameterMatch)) ?? null) : null,

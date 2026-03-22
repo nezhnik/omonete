@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Золото",
     "metal_fineness": "9999/10000",
-    "mintage": 3888,
+    "mintage": 2000,
     "weight_g": 6.22,
     "weight_oz": 0.2,
     "diameter_mm": 22.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-rev.webp",
     "image_box": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/year-of-the-tiger-2022-1-5oz-gold-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Chinese Astrological Series 2022 Year of the Tiger 1/5oz Gold Proof Coin",

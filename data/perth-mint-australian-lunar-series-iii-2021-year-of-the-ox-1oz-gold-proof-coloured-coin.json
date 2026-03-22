@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Золото",
     "metal_fineness": "9999/10000",
-    "mintage": 3888,
+    "mintage": 2000,
     "weight_g": 31.1,
     "weight_oz": 1,
     "diameter_mm": 32.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-gold-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-gold-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-gold-proof-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-gold-proof-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2021-year-of-the-ox-1oz-gold-proof-coloured-coin-cert.webp",
+    "mintage_display": null
   },
   "raw": {
     "title": "Australian Lunar Series III 2021 Year of the Ox 1oz Gold Proof Coloured Coin",

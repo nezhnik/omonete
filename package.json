@@ -50,7 +50,20 @@
     "perth:import": "node scripts/import-perth-mint-to-db.js",
     "kookaburra:apply-plan": "node scripts/apply-kookaburra-plan-to-db.js",
     "kangaroo:import": "node scripts/import-kangaroo-wikipedia-to-db.js",
-    "kookaburra:pixelur-download": "node scripts/download-pixelur-kookaburra-images.js"
+    "kookaburra:pixelur-download": "node scripts/download-pixelur-kookaburra-images.js",
+    "royal-mint:listing": "node scripts/fetch-royal-mint-listing.js",
+    "royal-mint:listing:silver": "node scripts/fetch-royal-mint-listing.js --silver",
+    "royal-mint:listing:seed": "node scripts/fetch-royal-mint-from-seed-file.js",
+    "royal-mint:verify-specs": "node scripts/royal-mint-verify-specification-block.js",
+    "royal-mint:ss360-one": "node scripts/royal-mint-ss360-fetch-one-test.js",
+    "royal-mint:probe": "node scripts/royal-mint-gold-bullion-probe.js",
+    "royal-mint:fetch-test": "node scripts/fetch-royal-mint-coin-test.js",
+    "royal-mint:local-catalog": "npx tsx scripts/royal-mint-to-public-catalog.ts",
+    "royal-mint:view": "npx tsx scripts/royal-mint-to-public-catalog.ts",
+    "royal-mint:import": "node scripts/import-royal-mint-to-db.js",
+    "coins:report-missing-mintage": "node scripts/report-coins-missing-mintage.js",
+    "royal-mint:probe:one": "node scripts/royal-mint-gold-bullion-probe.js --one",
+    "db:add-blister-images": "node scripts/run-add-coins-blister-images.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

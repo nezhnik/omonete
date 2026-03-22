@@ -10,7 +10,7 @@
     "mint_short": "Perth Mint",
     "metal": "Золото",
     "metal_fineness": "9999/10000",
-    "mintage": null,
+    "mintage": 6000,
     "weight_g": 0.5,
     "weight_oz": 0.016,
     "diameter_mm": 11.6,
@@ -25,7 +25,8 @@
     "image_obverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "mintage_display": null
   },
   "raw": {
     "title": "Mini Roo 2023 0.5g Gold Proof Coin in Card",
