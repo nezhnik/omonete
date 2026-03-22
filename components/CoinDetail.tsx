@@ -104,7 +104,13 @@ const SWIPE_MIN_DISTANCE = 50;
 const SHOW_MONETIZATION_BLOCK = false;
 
 export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backLabel = "Назад", isAuthorized = false, onToggleCollection }: CoinDetailProps) {
-  const images = coin.imageUrls?.length ? coin.imageUrls : [coin.imageUrl];
+  /** Детальный JSON раньше мог содержать только «доп.» кадры в imageUrls без главного imageUrl — склеиваем как в каталоге. */
+  const images = (() => {
+    const urls = (coin.imageUrls ?? []).filter(Boolean);
+    if (urls.length === 0) return [coin.imageUrl];
+    if (coin.imageUrl && !urls.includes(coin.imageUrl)) return [coin.imageUrl, ...urls];
+    return urls;
+  })();
   const rectangular = !!coin.rectangular;
   const [selectedImage, setSelectedImage] = useState(0);
   const touchStartX = useRef<number | null>(null);

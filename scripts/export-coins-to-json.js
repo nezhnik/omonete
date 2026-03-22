@@ -17,6 +17,9 @@ const STATE_FILE = path.join(__dirname, "..", "export-state.json");
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const COINS_DIR = path.join(DATA_DIR, "coins");
 
+/** Не выгружать в JSON (удалены из каталога); см. scripts/sql/delete-coins-5998-6000.sql */
+const EXCLUDED_EXPORT_COIN_IDS = new Set(["5998", "6000"]);
+
 // Только свои пути из БД. URL ЦБ не используем — на сайте только монеты с картинками в БД.
 function obverseUrl(imageObverse) {
   if (imageObverse && String(imageObverse).trim()) return imageObverse.trim();
@@ -364,6 +367,7 @@ async function run() {
   // Монеты без числового тиража обычно не выводим в каталог.
   // Исключение: иностранные монеты с текстовым тиражом (например, "Неограниченный тираж").
   const rowsToExport = rows.filter((r) => {
+    if (EXCLUDED_EXPORT_COIN_IDS.has(String(r.id))) return false;
     const hasNumericMintage = r.mintage != null && Number(r.mintage) !== 0;
     const country = (r.country || "").trim();
     const hasDisplay = r.mintage_display != null && String(r.mintage_display).trim() !== "";
@@ -520,10 +524,6 @@ async function run() {
     const imageUrlRoles = [];
     const pushIfNew = (url, role) => {
       if (!url || imageUrlsOut.includes(url)) return;
-      // Не дублируем главную картинку в массиве imageUrls:
-      // фронт показывает imageUrl отдельно, поэтому первый элемент imageUrls
-      // должен быть "следующей" картинкой (обычно аверс), а не тем же самым URL.
-      if (imageUrlsOut.length === 0 && firstImage && url === firstImage) return;
       imageUrlsOut.push(url);
       imageUrlRoles.push(role);
     };
