@@ -401,6 +401,27 @@ function rewriteShopPdpToInvestBullion(absUrl, opts = {}) {
   const preferSilver = opts.preferSilver === true;
   const lower = String(absUrl).toLowerCase();
   if (!/\/shop\//.test(lower)) return absUrl;
+  /**
+   * Limited / commemorative / trial-of-the-pyx / наборы / monarch / world в /shop/... — не bullion:
+   * тот же slug на invest/bullion/bullion-coins даёт 404.
+   * Оставляем канонический shop URL (query убираем); страница обычно отдаётся нормально.
+   */
+  if (
+    /\/commemorative\//i.test(lower) ||
+    /\/limited-editions\//i.test(lower) ||
+    /\/trial-of-the-pyx\//i.test(lower) ||
+    /\/coin-sets\//i.test(lower) ||
+    /\/shop\/monarch\//i.test(lower) ||
+    /\/shop\/world\//i.test(lower)
+  ) {
+    try {
+      const u = new URL(absUrl);
+      u.search = "";
+      return u.toString().replace(/\/+$/, "");
+    } catch {
+      return String(absUrl).split("?")[0].replace(/\/+$/, "");
+    }
+  }
   const goldish = /\bgold\b|1oz-gold|-gold-|\bsovereign\b/i.test(lower);
   const silverish = /\bsilver\b|1oz-silver|-silver-|britannia.*silver|maple.*silver/i.test(lower);
   if (goldish && !silverish) return rewriteShopPdpToInvestGoldCoins(absUrl);

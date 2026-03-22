@@ -11,13 +11,16 @@
 # Можно вставлять и HTML с карточек поиска (с тегами <li … href="//www.royalmint.com/...">) —
 # npm run royal-mint:listing:seed сам вытащит URL монет из текста.
 #
-# После сохранения файла запуск (из корня omonete-app):
-#   npm run royal-mint:listing:seed
-# или с видимым браузером, если SS360 пустой в headless:
-#   HEADLESS=0 npm run royal-mint:listing:seed
+# После сохранения файла (из корня omonete-app):
+#   1) Список PDP из HTML/URL:
+#      npm run royal-mint:listing:seed
+#      Полный пересбор списка: npm run royal-mint:listing:seed -- --full --write-full
+#   2) Парсинг каждой страницы товара (Playwright, долго):
+#      npm run royal-mint:fetch-list -- --limit 5
+#      всё: npm run royal-mint:fetch-list
+#   3) БД и сайт: npm run royal-mint:import → npm run data:export → npm run build
 #
-# Результат: дописываются scripts/royal-mint-urls.txt и data/royal-mint-listing-*.json
-# (прогресс с ключом seed-file, см. скрипт).
+# Если в файле только HTML-карточки ss360 — браузер для шага 1 не нужен, URL берутся из href.
 
 # Пример (раскомментируй или замени своей ссылкой):
 # https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins

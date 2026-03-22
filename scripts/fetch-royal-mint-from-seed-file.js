@@ -13,6 +13,9 @@
  *
  * Файл со списком стартов по умолчанию: scripts/royal-mint-seed-urls.txt
  * Другой файл: node scripts/fetch-royal-mint-from-seed-file.js --file path/to/urls.txt
+ *
+ * Вставленный HTML (карточки ss360 с href на товар): из строки извлекаются URL PDP —
+ * они не открываются как «листинг», а сразу попадают в список товаров (без скролла PLP).
  */
 const fs = require("fs");
 const path = require("path");
@@ -33,6 +36,32 @@ const PRODUCTS_JSON = path.join(DATA_DIR, "royal-mint-listing-products.json");
 
 /** Ключ прогресса для режима «из файла» (отдельно от одного URL в fetch-royal-mint-listing.js). */
 const SEED_PROGRESS_BASE = "__royal_mint_seed_urls_file__";
+
+/** Страница каталога (скролл + карточки). Остальные URL считаем прямыми ссылками на товар (PDP). */
+function needsListingScrape(url) {
+  if (isSs360SearchUrl(url)) return true;
+  try {
+    const pathname = new URL(url).pathname.replace(/\/$/, "");
+    const last = pathname.split("/").filter(Boolean).pop() || "";
+    if (/^(gold|silver|platinum)-coins$/i.test(last)) return true;
+    if (/^\d+oz-[a-z0-9-]+-coins$/i.test(last)) return true;
+    if (/^(uk-coin-ranges|world-coins)$/i.test(last)) return true;
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+function normalizeProductUrl(u) {
+  try {
+    const x = new URL(u);
+    x.hash = "";
+    x.search = "";
+    return x.toString().replace(/\/$/, "");
+  } catch {
+    return String(u).trim();
+  }
+}
 
 function loadSeedProgress() {
   if (!fs.existsSync(PROGRESS_FILE)) return null;
@@ -85,52 +114,67 @@ async function main() {
   }
 
   console.log("Файл стартовых URL:", resolvedSeed);
-  console.log("Строк-URL:", seeds.length);
+  console.log("Извлечено уникальных URL из файла:", seeds.length);
 
-  const { chromium } = require("playwright");
-  const browser = await chromium.launch(getRoyalMintChromiumLaunchOptions());
-  const context = await browser.newContext(getRoyalMintBrowserContextOptions());
-  const page = await context.newPage();
-  await applyRoyalMintPageHardening(page);
+  const listingSeeds = seeds.filter(needsListingScrape);
+  const directPdp = seeds.filter((u) => !needsListingScrape(u));
+  console.log("Листингов (скролл PLP/SS360):", listingSeeds.length);
+  console.log("Прямых PDP (из HTML и т.п.):", directPdp.length);
 
   const byUrl = new Map();
   const runMeta = [];
 
-  try {
-    for (let i = 0; i < seeds.length; i++) {
-      const listUrl = seeds[i];
-      const ss360 = isSs360SearchUrl(listUrl);
-      console.log(`\n[${i + 1}/${seeds.length}] Листинг:`, listUrl);
+  for (const u of directPdp) {
+    const norm = normalizeProductUrl(u);
+    byUrl.set(norm, { url: norm, name: null, fromSeedDirect: true });
+  }
 
-      const result = await collectRoyalMintListing(page, listUrl, {
-        maxRounds: ss360 ? 130 : 90,
-        stableNeeded: ss360 ? 8 : 6,
-        pauseMs: ss360 ? 800 : undefined,
-        skipTube: !keepTube,
-        skipBestValue: !keepBestValue,
-        skipGradedSlab: !keepGradedSlab,
-        skipCoinBox: !keepCoinBox,
-      });
+  if (listingSeeds.length > 0) {
+    const { chromium } = require("playwright");
+    const browser = await chromium.launch(getRoyalMintChromiumLaunchOptions());
+    const context = await browser.newContext(getRoyalMintBrowserContextOptions());
+    const page = await context.newPage();
+    await applyRoyalMintPageHardening(page);
 
-      runMeta.push({
-        listUrl,
-        listingSource: result.listingSource || (ss360 ? "ss360" : "plp"),
-        cardsInDom: result.cardsInDom,
-        count: result.products.length,
-      });
+    try {
+      for (let i = 0; i < listingSeeds.length; i++) {
+        const listUrl = listingSeeds[i];
+        const ss360 = isSs360SearchUrl(listUrl);
+        console.log(`\n[${i + 1}/${listingSeeds.length}] Листинг:`, listUrl);
 
-      for (const p of result.products) {
-        if (p && p.url) byUrl.set(p.url, p);
+        const result = await collectRoyalMintListing(page, listUrl, {
+          maxRounds: ss360 ? 130 : 90,
+          stableNeeded: ss360 ? 8 : 6,
+          pauseMs: ss360 ? 800 : undefined,
+          skipTube: !keepTube,
+          skipBestValue: !keepBestValue,
+          skipGradedSlab: !keepGradedSlab,
+          skipCoinBox: !keepCoinBox,
+        });
+
+        runMeta.push({
+          listUrl,
+          listingSource: result.listingSource || (ss360 ? "ss360" : "plp"),
+          cardsInDom: result.cardsInDom,
+          count: result.products.length,
+        });
+
+        for (const p of result.products) {
+          if (p && p.url) {
+            const norm = normalizeProductUrl(p.url);
+            byUrl.set(norm, { ...p, url: norm });
+          }
+        }
+
+        if (ss360 && result.cardsInDom === 0 && result.products.length === 0) {
+          console.warn(
+            "SS360: 0 карточек для этого URL. Попробуй HEADLESS=0 или другую страницу (например PLP gold-coins)."
+          );
+        }
       }
-
-      if (ss360 && result.cardsInDom === 0 && result.products.length === 0) {
-        console.warn(
-          "SS360: 0 карточек для этого URL. Попробуй HEADLESS=0 или другую страницу (например PLP gold-coins)."
-        );
-      }
+    } finally {
+      await browser.close();
     }
-  } finally {
-    await browser.close();
   }
 
   let products = [...byUrl.values()];
@@ -159,6 +203,8 @@ async function main() {
         source: "fetch-royal-mint-from-seed-file",
         seedFile: resolvedSeed,
         seeds,
+        listingSeeds,
+        directPdpFromSeed: directPdp,
         runs: runMeta,
         totalProducts: products.length,
         products,

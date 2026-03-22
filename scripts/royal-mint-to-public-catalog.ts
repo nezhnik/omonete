@@ -13,7 +13,12 @@ import fs from "fs";
 import path from "path";
 import { mapRoyalMintJsonToCoinDetail } from "../lib/mapRoyalMintJsonToCoinDetail";
 
-const DEFAULT_JSON = path.join(process.cwd(), "data", "royal-mint-rqp252s-the-royal-tudor-beasts-2025-queens-panther-2oz-silver-bullion-coin.json");
+/** Как дефолтный URL в fetch-royal-mint-coin-test.js (Lion and Eagle 2026 1oz gold). */
+const DEFAULT_JSON = path.join(
+  process.cwd(),
+  "data",
+  "royal-mint-the-lion-and-the-eagle-2026-1oz-gold-bullion-coin.json"
+);
 
 function main() {
   const arg = process.argv[2];

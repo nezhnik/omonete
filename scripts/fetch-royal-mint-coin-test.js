@@ -13,11 +13,12 @@
  * Ссылки /shop/... переписываются на invest (gold или silver по эвристике URL).
  * Результат: data/royal-mint-<slug>.json; картинки — только БЕЗ флага --no-images → public/image/coins/foreign/*.webp
  *
- * Посмотреть монету на localhost (без БД):
- *   npm run royal-mint:local-catalog
- *   npm run dev
- *   открыть http://localhost:3000/coins/991001/
- * Если slug другой: npx tsx scripts/royal-mint-to-public-catalog.ts data/royal-mint-<slug>.json
+ * Посмотреть монету на localhost (без БД) — одной командой:
+ *   npm run royal-mint:preview
+ *   npm run royal-mint:preview -- "https://www.royalmint.com/..."
+ *   npm run dev → URL в консоли (по умолчанию /coins/991001/)
+ * Вручную (два шага): npm run royal-mint:fetch-test → npm run royal-mint:local-catalog
+ * Если slug другой без preview: npx tsx scripts/royal-mint-to-public-catalog.ts data/royal-mint-<slug>.json
  *
  * В БД: npm run royal-mint:import → npm run data:export — как у Perth (см. import-royal-mint-to-db.js).
  * Без БД для быстрого просмотра: npm run royal-mint:local-catalog → /coins/991001/
@@ -65,54 +66,281 @@ function classifyRoyalMintImage(url) {
   if (/logo|icon|feefo|payment|badge|ukas|placeholder|1x1|spacer|\.svg(\?|$)/i.test(lower)) return null;
   if (!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(lower)) return null;
   if (/160x160|100x100|\/banners\//i.test(lower)) return null;
-  if (/reverse-edge|on-edge|edge\.jpg/i.test(lower)) return null;
+  /** RM часто даёт только reverse-edge / obverse-edge — это всё же реверс/аверс, не отбрасываем. */
+  if (/reverse-with-edge|reverse-edge/i.test(lower)) return "reverse";
+  if (/obverse-with-edge|obverse-edge/i.test(lower)) return "obverse";
+  /** shadow-edge — тот же ракурс, но «издалека» с тенью; классифицируем как obverse/reverse, но ниже отфильтруем если есть with-edge */
+  if (/reverse-shadow-edge/i.test(lower)) return "reverse";
+  if (/obverse-shadow-edge/i.test(lower)) return "obverse";
+  if (/on-edge/i.test(lower) && !/obverse|reverse/i.test(lower)) return null;
   if (/reverse.*blister|reverse-blister/i.test(lower)) return "blister_reverse";
   if (/obverse.*blister|obverse-blister/i.test(lower)) return "blister_obverse";
   if (/reverse.*capsule|capsule.*reverse/i.test(lower)) return "blister_reverse";
   if (/obverse.*capsule|capsule.*obverse/i.test(lower)) return "blister_obverse";
+  /** Trial of the Pyx и др.: *-blister-back.jpg / *-blister-front.jpg */
+  if (/blister-back/i.test(lower)) return "blister_reverse";
+  if (/blister-front/i.test(lower)) return "blister_obverse";
   if (/obverse.*latent|obverse-latent/i.test(lower)) return "obverse";
+  /** Trial packshots: *-obv-tp25px80.jpg / *-rev-tp25px80.jpg */
+  if (/-obv-|_obv-tp|\.obv\./i.test(lower) && !/-rev-|_rev-tp/i.test(lower)) return "obverse";
+  if (/-rev-|_rev-tp|\.rev\./i.test(lower) && !/-obv-/i.test(lower)) return "reverse";
   if ((/\breverse\b|coin-reverse|-reverse\./i.test(lower) || /-reverse\.jpg/i.test(lower)) && !/obverse/i.test(lower)) return "reverse";
   if (/\bobverse\b|coin-obverse|-obverse\./i.test(lower) || /-obverse\.jpg/i.test(lower)) return "obverse";
+  if (/case-left|case-right|acrylic-block|in-shipper|in-case-pack/i.test(lower)) return "box";
   if (/box|case|shipper|outer-pack|presentation/i.test(lower)) return "certificate";
   if (/blister|secure-pack|in-pack/i.test(lower)) return "box";
   return null;
 }
 
 /**
- * Оставляем только картинки «этого» SKU: префикс файла вида ukb26svc--- из invest/.../products/.
- * Иначе на странице сотни баннеров с чужими reverse/obverse.
+ * Только «товарные» картинки из витрины RM: _ecommerce/.../launches/... + product-images, .../products/...
+ * или .../prods/... (часть invest bullion, напр. Tudor Beasts — иначе остаются только картинки «You might also like», Britannia).
+ * (раньше требовали /invest/launches/ — у commemorative путь .../commemorative/.../launches/, из‑за этого
+ * кандидатов не оставалось и брались все img со страницы, в т.ч. одинаковые bullion tube 2026).
+ *
+ * Отбор картинок — как у Perth (redownload-perth-images-from-raw.js): не по SKU в имени файла,
+ * а по «папке продукта» в URL ассета. Считаем самый частый путь после /launches/ среди первых URL
+ * галереи (как у Perth — первые 15), затем оставляем только URL с этой папкой.
+ *
+ * @param {{ year?: number|null, title?: string, quality?: string, pdpUrl?: string|null }} ctx
  */
-function filterUrlsByPrimarySku(urls) {
-  const candidates = urls.filter((u) => {
+const RM_GALLERY_HEAD_COUNT = 15;
+
+/** Путь каталога товара на CDN: всё после /launches/ до имени файла (вкл. product-images/2oz-silver и products/gold-1-oz). */
+function extractRoyalMintGalleryFolder(imgUrl) {
+  const u = String(imgUrl).split("?")[0].toLowerCase();
+  const marker = "/launches/";
+  const idx = u.indexOf(marker);
+  if (idx === -1) return null;
+  const rest = u.slice(idx + marker.length);
+  const segments = rest.split("/").filter(Boolean);
+  if (segments.length < 2) return null;
+  const last = segments[segments.length - 1];
+  if (/\.(jpg|jpeg|png|webp)$/i.test(last)) segments.pop();
+  if (segments.length === 0) return null;
+  return segments.join("/");
+}
+
+function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
+  const title = String(ctx.title || "");
+  const quality = String(ctx.quality || "");
+  const year = ctx.year != null && Number.isFinite(ctx.year) ? ctx.year : null;
+  const isProofLike =
+    /\bproof\b/i.test(title) ||
+    /\bcolou?red\b/i.test(title) ||
+    /\bproof\b/i.test(quality);
+
+  /**
+   * Shop PDP (trial-of-the-pyx, monarch и т.д.): картинки в __rebrand/.../_historic-coins/...
+   * без /launches/ — старый фильтр их отбрасывал и цеплял чужие карточки с главной.
+   */
+  function isRebrandHistoricShopProductImage(u) {
+    const p = String(u).toLowerCase().split("?")[0];
+    if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
+    if (!/\/globalassets\/__rebrand\/_structure\/shop\/editions\/_historic-coins\//i.test(p)) return false;
+    if (/160x160|100x100|\/banners\/|\/_common\//i.test(p)) return false;
+    if (/trm-logo|feefo/i.test(p)) return false;
+    return true;
+  }
+
+  /** Trial PDP: packshots в collect/.../trial-of-the-pyx/images/ (не __rebrand/_historic-coins). */
+  function isEcommerceTrialOfPyxPackshot(u) {
+    const p = String(u).toLowerCase().split("?")[0];
+    if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
+    if (!/\/trial-of-the-pyx\/images\//i.test(p)) return false;
+    if (/example-packaging|160x160|100x100|\/banners\//i.test(p)) return false;
+    return true;
+  }
+
+  const rebrandHistoric = urls.filter(isRebrandHistoricShopProductImage);
+  const trialPackshots = urls.filter(isEcommerceTrialOfPyxPackshot);
+  if (rebrandHistoric.length > 0 || trialPackshots.length > 0) {
+    const seen = new Set();
+    const merged = [];
+    for (const u of [...rebrandHistoric, ...trialPackshots]) {
+      const k = String(u).split("?")[0];
+      if (seen.has(k)) continue;
+      seen.add(k);
+      merged.push(u);
+    }
+    return merged;
+  }
+
+  /**
+   * Invest bullion (особенно world coins): настоящие фото в bullion/images/products/...
+   * Если полагаться только на _ecommerce/.../launches/, по частоте папок часто выигрывает
+   * чужой Britannia с блока «You might also be interested in».
+   */
+  function isBullionImagesProductAsset(u) {
+    const p = String(u).toLowerCase().split("?")[0];
+    if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
+    if (!/\/globalassets\/bullion\/images\/products\//i.test(p)) return false;
+    if (/160x160|100x100|banner/i.test(p)) return false;
+    return true;
+  }
+
+  function slugTokensForImageMatch(slug) {
+    const stop = new Set([
+      "coin",
+      "coins",
+      "silver",
+      "gold",
+      "platinum",
+      "bullion",
+      "proof",
+      "piedfort",
+      "brilliant",
+      "uncirculated",
+      "the",
+      "and",
+      "uk",
+      "gbp",
+      "pound",
+    ]);
+    return String(slug || "")
+      .toLowerCase()
+      .split("-")
+      .filter((w) => w.length >= 3 && !stop.has(w) && !/^\d{4}$/.test(w) && !/^\d*oz$/i.test(w));
+  }
+
+  function bullionAssetMatchesSlug(u, slug) {
+    const low = String(u).toLowerCase();
+    const tokens = slugTokensForImageMatch(slug);
+    if (tokens.length === 0) return false;
+    let hits = 0;
+    for (const t of tokens) {
+      if (low.includes(t)) hits += 1;
+    }
+    const need = Math.min(2, tokens.length);
+    return hits >= need;
+  }
+
+  const pdpForGallery = String(ctx.pdpUrl || "");
+  const slugForGallery = pdpForGallery ? slugFromUrl(pdpForGallery) : "";
+  if (/\/invest\/bullion\//i.test(pdpForGallery) && slugForGallery) {
+    const bullionProducts = urls.filter(isBullionImagesProductAsset);
+    const matchedBullion = bullionProducts.filter((u) => bullionAssetMatchesSlug(u, slugForGallery));
+    if (matchedBullion.length > 0) {
+      return matchedBullion;
+    }
+  }
+
+  /**
+   * Lunar / часть commemorative: фото в .../launches/2025-launches/theme---slug/*.jpg без product-images/.
+   * Старый фильтр оставлял только product-images|products|prods → в candidates попадали чужие карусельные product-images.
+   */
+  function launchDirectProductShots(u) {
+    const p = String(u).toLowerCase().split("?")[0];
+    if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
+    if (!/\/globalassets\/_ecommerce\/.*\/launches\//i.test(p)) return false;
+    if (/160x160|100x100|\/banners\//i.test(p)) return false;
+    /** 2026 lunar и др.: только product-images с *-shadow-edge-f3a2c67.jpg (без 1500x1500 в имени). */
+    if (
+      !/1500x1500/i.test(p) &&
+      !/-reverse-edge|-obverse-edge|-reverse-with-edge|-obverse-with-edge/i.test(p) &&
+      !/-reverse-shadow-edge|-obverse-shadow-edge/i.test(p)
+    ) {
+      return false;
+    }
+    if (!slugForGallery || slugForGallery.length < 6) return false;
+    return bullionAssetMatchesSlug(u, slugForGallery);
+  }
+  const directLaunchMatches = urls.filter(launchDirectProductShots);
+
+  function isEcommerceLaunchProductAsset(u) {
     const p = String(u).toLowerCase();
+    if (!/\.(jpg|jpeg|webp)(\?|$)/i.test(p)) return false;
+    if (/160x160|100x100|\/banners\//i.test(p)) return false;
+    if (!/\/globalassets\/_ecommerce\//i.test(p)) return false;
+    if (!/\/launches\//i.test(p)) return false;
     return (
-      /\/invest\/launches\//.test(p) &&
-      /\/(?:products|product-images)\//.test(p) &&
-      !/160x160|100x100|\/banners\//i.test(p) &&
-      /\.(jpg|jpeg|webp)(\?|$)/i.test(p)
+      p.includes("product-images") ||
+      p.includes("/products/") ||
+      /** Bullion PDP (desktop-product-pictures): .../launches/2025/tudor-beasts/prods/... */
+      /\/prods\//i.test(p)
     );
+  }
+
+  let candidates = urls.filter(isEcommerceLaunchProductAsset);
+  if (directLaunchMatches.length > 0) {
+    candidates = directLaunchMatches;
+  }
+
+  /** Упаковка «tube» — для proof/coloured не подходит; часто это чужой bullion кадр. */
+  if (isProofLike) {
+    const noTube = candidates.filter((u) => !/-tube\.(jpg|jpeg|webp)/i.test(u) && !/-tube-/i.test(u));
+    if (noTube.length) candidates = noTube;
+    const noBullionFile = candidates.filter((u) => !/bullion/i.test(u.split("/").pop() || ""));
+    if (noBullionFile.length) candidates = noBullionFile;
+  }
+
+  /** Год из спецификаций — отрезать чужие лаунчи (напр. 2026 bullion на странице 2025 proof). */
+  if (year != null) {
+    const y = String(year);
+    const yy = y.slice(-2);
+    const byYear = candidates.filter((u) => {
+      const low = u.toLowerCase();
+      const file = low.split("/").pop() || "";
+      if (low.includes(`/${y}/`) || low.includes(`-${y}-`) || low.includes(`_${y}_`)) return true;
+      if (file.includes(y)) return true;
+      if (new RegExp(`${yy}[a-z]{1,3}---`, "i").test(file)) return true;
+      if (new RegExp(`-${yy}-`, "i").test(file)) return true;
+      return false;
+    });
+    if (byYear.length) candidates = byYear;
+  }
+
+  function bestFolderFromUrlList(list) {
+    const counts = new Map();
+    for (const u of list) {
+      const f = extractRoyalMintGalleryFolder(u);
+      if (f) counts.set(f, (counts.get(f) || 0) + 1);
+    }
+    let best = null;
+    let nBest = 0;
+    for (const [folder, n] of counts) {
+      if (n > nBest) {
+        nBest = n;
+        best = folder;
+      }
+    }
+    return best;
+  }
+
+  let bestFolder = bestFolderFromUrlList(candidates.slice(0, RM_GALLERY_HEAD_COUNT));
+  /** Если в начале списка только логотипы/баннеры — считаем папки по всем кандидатам (как Perth, но над полным списком товарных URL). */
+  if (!bestFolder) bestFolder = bestFolderFromUrlList(candidates);
+
+  if (bestFolder) {
+    const filtered = candidates.filter((u) => extractRoyalMintGalleryFolder(u) === bestFolder);
+    if (filtered.length > 0) return filtered;
+  }
+
+  /** Fallback: slug PDP (как catalog_suffix) — только если он реально встречается в URL ассета. */
+  const pdpUrl = ctx.pdpUrl || "";
+  const slug = pdpUrl ? slugFromUrl(pdpUrl) : "";
+  if (slug && slug.length >= 6) {
+    const low = slug.toLowerCase();
+    const bySlug = candidates.filter((u) => String(u).toLowerCase().includes(low));
+    if (bySlug.length > 0) return bySlug;
+  }
+
+  return candidates.length > 0 ? candidates : urls;
+}
+
+/**
+ * У RM часто две версии: *-shadow-edge.jpg (далеко, тень) и *-with-edge.jpg (крупнее, без лишней тени).
+ * Если with-edge есть в списке — убираем парный shadow-edge (та же строка с заменой фрагмента).
+ */
+function preferWithEdgeOverShadowEdge(urls) {
+  const norm = (u) => String(u).split("?")[0].toLowerCase();
+  const set = new Set(urls.map(norm));
+  return urls.filter((u) => {
+    const n = norm(u);
+    if (!/shadow-edge/i.test(n)) return true;
+    const alt = n.replace(/shadow-edge/gi, "with-edge");
+    return !set.has(alt);
   });
-  const skuCounts = new Map();
-  for (const u of candidates) {
-    const file = u.split("/").pop().split("?")[0];
-    const m = file.match(/^([a-z]{2,}\d{2}[a-z0-9]*)---/i);
-    if (m) {
-      const sku = m[1].toLowerCase();
-      skuCounts.set(sku, (skuCounts.get(sku) || 0) + 1);
-    }
-  }
-  let bestSku = null;
-  let bestN = 0;
-  for (const [sku, n] of skuCounts) {
-    if (n > bestN) {
-      bestN = n;
-      bestSku = sku;
-    }
-  }
-  if (!bestSku) return urls;
-  const prefix = `${bestSku}---`;
-  const filtered = urls.filter((u) => u.toLowerCase().includes(prefix));
-  return filtered.length > 0 ? filtered : urls;
 }
 
 function pickBestByType(urls) {
@@ -128,7 +356,13 @@ function pickBestByType(urls) {
     const t = classifyRoyalMintImage(u);
     if (t && by[t]) by[t].push(u);
   }
-  const take = (arr) => (arr.length ? arr.sort((a, b) => b.length - a.length)[0] : null);
+  /** Раньше брали самый длинный URL — shadow-edge длиннее with-edge и выигрывал. Сначала без shadow-edge. */
+  const take = (arr) => {
+    if (!arr.length) return null;
+    const noShadow = arr.filter((x) => !/shadow-edge/i.test(String(x)));
+    const pool = noShadow.length ? noShadow : arr;
+    return pool.sort((a, b) => String(b).length - String(a).length)[0];
+  };
   return {
     obverse: take(by.obverse),
     reverse: take(by.reverse),
@@ -238,16 +472,18 @@ async function extractPage(page) {
       price = String(price).replace(/\s+/g, " ").trim();
     }
 
-    const imgSet = new Set();
-    const pushImg = (u) => {
+    /** Порядок важен для голосования по папке CDN: сначала главная галерея (как .desktop-product-pictures в DevTools). */
+    const orderedImgs = [];
+    const seenImg = new Set();
+    function pushImg(u) {
       const a = absUrl(u);
-      if (a && /globalassets|royalmint\.com/i.test(a) && !/data:/i.test(a)) imgSet.add(a);
-    };
+      if (!a || !/globalassets|royalmint\.com/i.test(a) || /data:/i.test(a)) return;
+      if (seenImg.has(a)) return;
+      seenImg.add(a);
+      orderedImgs.push(a);
+    }
 
-    const og = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
-    if (og) pushImg(og);
-
-    document.querySelectorAll('img[src], img[data-src], picture source[srcset]').forEach((el) => {
+    function pushFromImgEl(el) {
       let s = el.getAttribute("src") || el.getAttribute("data-src") || "";
       const srcset = el.getAttribute("srcset");
       if (srcset) {
@@ -255,14 +491,25 @@ async function extractPage(page) {
         if (first) s = first;
       }
       if (s) pushImg(s);
-    });
+    }
+
+    document
+      .querySelectorAll(
+        ".desktop-product-pictures img, .desktop-product-pictures picture source, .mobile-product-pictures img, .mobile-product-pictures picture source"
+      )
+      .forEach(pushFromImgEl);
+
+    const og = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
+    if (og) pushImg(og);
+
+    document.querySelectorAll('img[src], img[data-src], picture source[srcset]').forEach(pushFromImgEl);
 
     return {
       title,
       specs,
       specificationBlockFound,
       price,
-      imageUrls: [...imgSet],
+      imageUrls: orderedImgs,
       pdpPlainText: descriptionChunks.join("\n"),
     };
   }, ORIGIN);
@@ -396,8 +643,18 @@ async function main() {
     image_certificate: null,
   };
 
-  const productUrls = filterUrlsByPrimarySku(scraped.imageUrls || []);
+  const releaseYearNum = yearMatch ? parseInt(yearMatch[1], 10) : null;
+  let productUrls = filterUrlsByProductGalleryFolder(scraped.imageUrls || [], {
+    year: releaseYearNum,
+    title: scraped.title || "",
+    quality: specs.Quality ? String(specs.Quality).trim() : "",
+    pdpUrl: fetchUrl,
+  });
+  productUrls = preferWithEdgeOverShadowEdge(productUrls);
   const byType = pickBestByType(productUrls);
+  /** Часть bullion PDP: в имени файла только reverse — дублируем, чтобы не было пустого аверса в каталоге. */
+  if (!byType.obverse && byType.reverse) byType.obverse = byType.reverse;
+  if (!byType.reverse && byType.obverse) byType.reverse = byType.obverse;
   const raw = {
     title: scraped.title,
     specs,
@@ -450,19 +707,18 @@ async function main() {
   fs.mkdirSync(DATA_DIR, { recursive: true });
   fs.writeFileSync(jsonPath, JSON.stringify({ coin, raw, saved }, null, 2), "utf8");
 
+  // Для royal-mint-preview.js — одна строка для автозапуска local-catalog
+  console.log("__RM_JSON__", jsonPath);
+
   console.log("\nГотово:", jsonPath);
   if (fetchUrl !== url) console.log("Исходная ссылка (listing):", url);
   console.log("Загрузка PDP:", fetchUrl);
   console.log("Классификация картинок:", JSON.stringify(byType, null, 2));
 
   console.log("\n────────── Как увидеть монету на сайте (localhost) ──────────");
-  console.log("Парсинг только сохранил JSON в data/ — страница /coins/... читает public/data/coins/.");
-  console.log("1) npm run royal-mint:local-catalog");
-  if (fileSlug !== "the-lion-and-the-eagle-2026-1oz-gold-bullion-coin") {
-    console.log("   (для этого slug точнее: npx tsx scripts/royal-mint-to-public-catalog.ts \"" + jsonPath + "\")");
-  }
-  console.log("2) npm run dev");
-  console.log("3) http://localhost:3000/coins/991001/");
+  console.log("Быстро (парсинг + public/data в один заход): npm run royal-mint:preview");
+  console.log("  (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts \"" + jsonPath + "\")");
+  console.log("Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)");
   if (noImages) {
     console.log("Был --no-images: превью возьмёт картинки с CDN Royal Mint из JSON; локальных webp нет.");
   } else {

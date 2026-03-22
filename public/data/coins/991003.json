@@ -1,0 +1,29 @@
+{
+  "coin": {
+    "id": "991003",
+    "title": "2025 Britannia UK 5oz Silver Proof Coin",
+    "imageUrl": "/image/coins/foreign/2025-britannia-5oz-silver-proof-coin-rev.webp",
+    "imageUrls": [
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg"
+    ],
+    "imageUrlRoles": [
+      "blister_reverse"
+    ],
+    "inCollection": false,
+    "mintName": "The Royal Mint",
+    "mintShort": "Royal Mint",
+    "mintCountry": "Великобритания",
+    "year": 2025,
+    "faceValue": "£10",
+    "metal": "Серебро",
+    "metalCode": "Ag",
+    "metalColor": "#C0C0C0",
+    "metalCodes": [
+      "Ag"
+    ],
+    "quality": "Proof",
+    "diameterMm": "65",
+    "rectangular": false
+  },
+  "sameSeries": []
+}

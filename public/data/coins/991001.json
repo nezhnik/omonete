@@ -1,16 +1,12 @@
 {
   "coin": {
     "id": "991001",
-    "title": "The Royal Tudor Beasts 2025 Queen's Panther 2oz Silver Bullion Coin",
-    "imageUrl": "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/rtb-panther/products/silver/rqp252s---2025-bullion-royal-tudor-beasts-queens-panther-silver-2oz-coin-obverse-edge-1500x1500-f3a2c67.jpg",
+    "title": "2025 Britannia UK 1oz Silver Proof Coin",
+    "imageUrl": "/image/coins/foreign/2025-britannia-1oz-silver-proof-coin-rev.webp",
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/rtb-panther/products/silver/rqp252s---2025-bullion-royal-tudor-beasts-queens-panther-silver-2oz-coin-reverse-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/rtb-panther/products/silver/rqp252s---2025-bullion-royal-tudor-beasts-queens-panther-silver-2oz-coin-obverse-capsule-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/rtb-panther/products/silver/rqp252s---2025-bullion-royal-tudor-beasts-queens-panther-silver-2oz-coin-reverse-capsule-1500x1500-f3a2c67.jpg"
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg"
     ],
     "imageUrlRoles": [
-      "reverse",
-      "blister_obverse",
       "blister_reverse"
     ],
     "inCollection": false,
@@ -18,16 +14,14 @@
     "mintShort": "Royal Mint",
     "mintCountry": "Великобритания",
     "year": 2025,
-    "faceValue": "£5",
+    "faceValue": "£2",
     "metal": "Серебро",
     "metalCode": "Ag",
     "metalColor": "#C0C0C0",
     "metalCodes": [
       "Ag"
     ],
-    "quality": "Bullion",
-    "weightG": "62.207",
-    "purity": "999.9",
+    "quality": "Proof",
     "diameterMm": "38.61",
     "rectangular": false
   },

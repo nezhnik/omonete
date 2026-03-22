@@ -1,0 +1,716 @@
+
+> omonete-app@0.1.0 royal-mint:refresh-seed-images
+> node scripts/fetch-royal-mint-seed-queue.js --refresh-images
+
+Файл seed: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/royal-mint-seed-urls.txt
+URL в seed: 192
+Уже ок (есть JSON, не 404): 162
+Нужно обработать: 30 (в т.ч. --refresh-images: без image_obverse)
+  по причинам: { missing_both_sides: 30 }
+К запуску fetch сейчас: 30  (параллельность 2)
+
+——— старт 1/30#w1 ———
+https://www.royalmint.com/lunar/year-of-the-snake/lunar-year-of-the-snake-2025-5oz-silver-proof-coin
+
+——— старт 2/30#w2 ———
+https://www.royalmint.com/shop/limited-editions/hms-belfast/hms-belfast-2025-uk-2-pound-silver-proof-coin
+[2/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 12
+[1/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[2/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-hms-belfast-2025-uk-2-pound-silver-proof-coin.json
+[2/30#w2] 
+[2/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-hms-belfast-2025-uk-2-pound-silver-proof-coin.json
+[2/30#w2] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/hms-belfast/hms-belfast-2025-uk-2-pound-silver-proof-coin
+[2/30#w2] Классификация картинок: {
+[2/30#w2]   "obverse": null,
+[2/30#w2]   "reverse": null,
+[2/30#w2]   "blister_obverse": null,
+[2/30#w2]   "blister_reverse": null,
+[2/30#w2]   "box": null,
+[2/30#w2]   "certificate": null
+[2/30#w2] }
+[2/30#w2] 
+[2/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[2/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[2/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-hms-belfast-2025-uk-2-pound-silver-proof-coin.json")
+[2/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[2/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[2/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 3/30#w2 ———
+https://www.royalmint.com/shop/limited-editions/winnie-the-pooh/collection/100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection
+[1/30#w1]   ✓ lunar-year-of-the-snake-2025-5oz-silver-proof-coin-obv.webp
+[1/30#w1]   ✓ lunar-year-of-the-snake-2025-5oz-silver-proof-coin-rev.webp
+[1/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-lunar-year-of-the-snake-2025-5oz-silver-proof-coin.json
+[1/30#w1] 
+[1/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-lunar-year-of-the-snake-2025-5oz-silver-proof-coin.json
+[1/30#w1] Загрузка PDP: https://www.royalmint.com/lunar/year-of-the-snake/lunar-year-of-the-snake-2025-5oz-silver-proof-coin
+[1/30#w1] Классификация картинок: {
+[1/30#w1]   "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/lunar---year-of-the-snake/uk25lss5-tlunar-year-of-the-snake-2025-uk-5oz-silver-proof-coin-obverse-edge--1500x1500-f3a2c67.jpg",
+[1/30#w1]   "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/lunar---year-of-the-snake/uk25lss5---lunar-year-of-the-snake-2025-uk-5oz-silver-proof-coin-reverse-in-case-left-1500x1500-f3a2c67.jpg",
+[1/30#w1]   "blister_obverse": null,
+[1/30#w1]   "blister_reverse": null,
+[1/30#w1]   "box": null,
+[1/30#w1]   "certificate": null
+[1/30#w1] }
+[1/30#w1] 
+[1/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[1/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[1/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-lunar-year-of-the-snake-2025-5oz-silver-proof-coin.json")
+[1/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[1/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[1/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 4/30#w1 ———
+https://www.royalmint.com/lunar/year-of-the-horse/lunar-year-of-the-horse-1oz-silver-proof-coin
+[3/30#w2] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[3/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection.json
+[3/30#w2] 
+[3/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection.json
+[3/30#w2] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/winnie-the-pooh/collection/100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection
+[3/30#w2] Классификация картинок: {
+[3/30#w2]   "obverse": null,
+[3/30#w2]   "reverse": null,
+[3/30#w2]   "blister_obverse": null,
+[3/30#w2]   "blister_reverse": null,
+[3/30#w2]   "box": null,
+[3/30#w2]   "certificate": null
+[3/30#w2] }
+[3/30#w2] 
+[3/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[3/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[3/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection.json")
+[3/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[3/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[3/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 5/30#w2 ———
+https://www.royalmint.com/shop/limited-editions/the-great-british-treasure-hunt/the-penny-drops-2026-silver-proof-coin
+[4/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[4/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-lunar-year-of-the-horse-1oz-silver-proof-coin.json
+[4/30#w1] 
+[4/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-lunar-year-of-the-horse-1oz-silver-proof-coin.json
+[4/30#w1] Загрузка PDP: https://www.royalmint.com/lunar/year-of-the-horse/lunar-year-of-the-horse-1oz-silver-proof-coin
+[4/30#w1] Классификация картинок: {
+[4/30#w1]   "obverse": null,
+[4/30#w1]   "reverse": null,
+[4/30#w1]   "blister_obverse": null,
+[4/30#w1]   "blister_reverse": null,
+[4/30#w1]   "box": null,
+[4/30#w1]   "certificate": null
+[4/30#w1] }
+[4/30#w1] 
+[4/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[4/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[4/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-lunar-year-of-the-horse-1oz-silver-proof-coin.json")
+[4/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[4/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[4/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 6/30#w1 ———
+https://www.royalmint.com/the-royal-tudor-beasts/the-queens-panther/the-queens-panther-2025-5oz-silver-proof-coin
+[5/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 12
+[5/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-penny-drops-2026-silver-proof-coin.json
+[5/30#w2] 
+[5/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-penny-drops-2026-silver-proof-coin.json
+[5/30#w2] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/the-great-british-treasure-hunt/the-penny-drops-2026-silver-proof-coin
+[5/30#w2] Классификация картинок: {
+[5/30#w2]   "obverse": null,
+[5/30#w2]   "reverse": null,
+[5/30#w2]   "blister_obverse": null,
+[5/30#w2]   "blister_reverse": null,
+[5/30#w2]   "box": null,
+[5/30#w2]   "certificate": null
+[5/30#w2] }
+[5/30#w2] 
+[5/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[5/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[5/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-penny-drops-2026-silver-proof-coin.json")
+[5/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[5/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[5/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 7/30#w2 ———
+https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1990s/bond-films-of-the-1990s-2024-1oz-silver-proof-coin
+[6/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[6/30#w1]   ✓ the-queens-panther-2025-5oz-silver-proof-coin-obv.webp
+[6/30#w1]   ✓ the-queens-panther-2025-5oz-silver-proof-coin-rev.webp
+[6/30#w1]   ✓ the-queens-panther-2025-5oz-silver-proof-coin-box.webp
+[6/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-queens-panther-2025-5oz-silver-proof-coin.json
+[6/30#w1] 
+[6/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-queens-panther-2025-5oz-silver-proof-coin.json
+[6/30#w1] Загрузка PDP: https://www.royalmint.com/the-royal-tudor-beasts/the-queens-panther/the-queens-panther-2025-5oz-silver-proof-coin
+[6/30#w1] Классификация картинок: {
+[6/30#w1]   "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2024-launches/queens-panther/uk25qps5-tthe-royal-tudor-beasts-the-queens-panther-2025-uk-5oz-silver-proof-coin-obverse-edge-1500x1500-f3a2c67.jpg",
+[6/30#w1]   "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2024-launches/queens-panther/uk25qps5-tthe-royal-tudor-beasts-the-queens-panther-2025-uk-5oz-silver-proof-coin-reverse-edge-1500x1500-f3a2c67.jpg",
+[6/30#w1]   "blister_obverse": null,
+[6/30#w1]   "blister_reverse": null,
+[6/30#w1]   "box": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2024-launches/queens-panther/uk25qps5-tthe-royal-tudor-beasts-the-queens-panther-2025-uk-5oz-silver-proof-coin-in-case-left-1500x1500-f3a2c67.jpg",
+[6/30#w1]   "certificate": null
+[6/30#w1] }
+[6/30#w1] 
+[6/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[6/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[6/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-queens-panther-2025-5oz-silver-proof-coin.json")
+[6/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[6/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[6/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 8/30#w1 ———
+https://www.royalmint.com/the-royal-tudor-beasts/seymour-unicorn/the-royal-tudor-beasts-the-seymour-unicorn-2024-10oz-silver-proof-coin
+[7/30#w2] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[7/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1990s-2024-1oz-silver-proof-coin.json
+[7/30#w2] 
+[7/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1990s-2024-1oz-silver-proof-coin.json
+[7/30#w2] Загрузка PDP: https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1990s/bond-films-of-the-1990s-2024-1oz-silver-proof-coin
+[7/30#w2] Классификация картинок: {
+[7/30#w2]   "obverse": null,
+[7/30#w2]   "reverse": null,
+[7/30#w2]   "blister_obverse": null,
+[7/30#w2]   "blister_reverse": null,
+[7/30#w2]   "box": null,
+[7/30#w2]   "certificate": null
+[7/30#w2] }
+[7/30#w2] 
+[7/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[7/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[7/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1990s-2024-1oz-silver-proof-coin.json")
+[7/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[7/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[7/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 9/30#w2 ———
+https://www.royalmint.com/the-royal-tudor-beasts/seymour-unicorn/the-royal-tudor-beasts-the-seymour-unicorn-2024-5oz-silver-proof-coin
+[8/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[8/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-10oz-silver-proof-coin.json
+[8/30#w1] 
+[8/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-10oz-silver-proof-coin.json
+[8/30#w1] Загрузка PDP: https://www.royalmint.com/the-royal-tudor-beasts/seymour-unicorn/the-royal-tudor-beasts-the-seymour-unicorn-2024-10oz-silver-proof-coin
+[8/30#w1] Классификация картинок: {
+[8/30#w1]   "obverse": null,
+[8/30#w1]   "reverse": null,
+[8/30#w1]   "blister_obverse": null,
+[8/30#w1]   "blister_reverse": null,
+[8/30#w1]   "box": null,
+[8/30#w1]   "certificate": null
+[8/30#w1] }
+[8/30#w1] 
+[8/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[8/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[8/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-10oz-silver-proof-coin.json")
+[8/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[8/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[8/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 10/30#w1 ———
+https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/archive/King-Charles-III-Definitives-2024-UK-50p-Silver-Proof-Coin
+[9/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[9/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-5oz-silver-proof-coin.json
+[9/30#w2] 
+[9/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-5oz-silver-proof-coin.json
+[9/30#w2] Загрузка PDP: https://www.royalmint.com/the-royal-tudor-beasts/seymour-unicorn/the-royal-tudor-beasts-the-seymour-unicorn-2024-5oz-silver-proof-coin
+[9/30#w2] Классификация картинок: {
+[9/30#w2]   "obverse": null,
+[9/30#w2]   "reverse": null,
+[9/30#w2]   "blister_obverse": null,
+[9/30#w2]   "blister_reverse": null,
+[9/30#w2]   "box": null,
+[9/30#w2]   "certificate": null
+[9/30#w2] }
+[9/30#w2] 
+[9/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[9/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[9/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-5oz-silver-proof-coin.json")
+[9/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[9/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[9/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 11/30#w2 ———
+https://www.royalmint.com/the-royal-tudor-beasts/seymour-unicorn/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set
+[10/30#w1] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[10/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-king-charles-iii-definitives-2024-uk-50p-silver-proof-coin.json
+[10/30#w1] 
+[10/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-king-charles-iii-definitives-2024-uk-50p-silver-proof-coin.json
+[10/30#w1] Загрузка PDP: https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/archive/King-Charles-III-Definitives-2024-UK-50p-Silver-Proof-Coin
+[10/30#w1] Классификация картинок: {
+[10/30#w1]   "obverse": null,
+[10/30#w1]   "reverse": null,
+[10/30#w1]   "blister_obverse": null,
+[10/30#w1]   "blister_reverse": null,
+[10/30#w1]   "box": null,
+[10/30#w1]   "certificate": null
+[10/30#w1] }
+[10/30#w1] 
+[10/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[10/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[10/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-king-charles-iii-definitives-2024-uk-50p-silver-proof-coin.json")
+[10/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[10/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[10/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 12/30#w1 ———
+https://www.royalmint.com/shop/limited-editions/dinosaurs-iconic-specimens/stegosaurus/stegosaurus-2024-50p-silver-proof-colour-coin
+[11/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[11/30#w2]   ✓ the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set-blister-rev.webp
+[11/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set.json
+[11/30#w2] 
+[11/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set.json
+[11/30#w2] Загрузка PDP: https://www.royalmint.com/the-royal-tudor-beasts/seymour-unicorn/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set
+[11/30#w2] Классификация картинок: {
+[11/30#w2]   "obverse": null,
+[11/30#w2]   "reverse": null,
+[11/30#w2]   "blister_obverse": null,
+[11/30#w2]   "blister_reverse": "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
+[11/30#w2]   "box": null,
+[11/30#w2]   "certificate": null
+[11/30#w2] }
+[11/30#w2] 
+[11/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[11/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[11/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set.json")
+[11/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[11/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[11/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 13/30#w2 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2023-Lunar-Year-of-the-Rabbit-1kg-Silver-Proof-Trial-Piece
+[12/30#w1] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[12/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-stegosaurus-2024-50p-silver-proof-colour-coin.json
+[12/30#w1] 
+[12/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-stegosaurus-2024-50p-silver-proof-colour-coin.json
+[12/30#w1] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/dinosaurs-iconic-specimens/stegosaurus/stegosaurus-2024-50p-silver-proof-colour-coin
+[12/30#w1] Классификация картинок: {
+[12/30#w1]   "obverse": null,
+[12/30#w1]   "reverse": null,
+[12/30#w1]   "blister_obverse": null,
+[12/30#w1]   "blister_reverse": null,
+[12/30#w1]   "box": null,
+[12/30#w1]   "certificate": null
+[12/30#w1] }
+[12/30#w1] 
+[12/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[12/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[12/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-stegosaurus-2024-50p-silver-proof-colour-coin.json")
+[12/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[12/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[12/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 14/30#w1 ———
+https://www.royalmint.com/shop/limited-editions/the-life-of-queen-victoria/the-life-of-queen-victoria-2026-5-pound-silver-proof-coin
+[13/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[13/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2023-lunar-year-of-the-rabbit-1kg-silver-proof-trial-piece.json
+[13/30#w2] 
+[13/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2023-lunar-year-of-the-rabbit-1kg-silver-proof-trial-piece.json
+[13/30#w2] Загрузка PDP: https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2023-Lunar-Year-of-the-Rabbit-1kg-Silver-Proof-Trial-Piece
+[13/30#w2] Классификация картинок: {
+[13/30#w2]   "obverse": null,
+[13/30#w2]   "reverse": null,
+[13/30#w2]   "blister_obverse": null,
+[13/30#w2]   "blister_reverse": null,
+[13/30#w2]   "box": null,
+[13/30#w2]   "certificate": null
+[13/30#w2] }
+[13/30#w2] 
+[13/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[13/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[13/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2023-lunar-year-of-the-rabbit-1kg-silver-proof-trial-piece.json")
+[13/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[13/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[13/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 15/30#w2 ———
+https://www.royalmint.com/shop/commemorative/childhood-characters/the-snowman/the-snowman-2025-50p-silver-proof-colour-coin
+[14/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[14/30#w1]   ✓ the-life-of-queen-victoria-2026-5-pound-silver-proof-coin-obv.webp
+[14/30#w1]   ✓ the-life-of-queen-victoria-2026-5-pound-silver-proof-coin-rev.webp
+[14/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-2026-5-pound-silver-proof-coin.json
+[14/30#w1] 
+[14/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-2026-5-pound-silver-proof-coin.json
+[14/30#w1] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/the-life-of-queen-victoria/the-life-of-queen-victoria-2026-5-pound-silver-proof-coin
+[14/30#w1] Классификация картинок: {
+[14/30#w1]   "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/life-of-queen-victoria/comm-products/uk26qvs---the-life-of-queen-victoria-uk-2026-5-silver-proof-coin-obverse-edge.jpg",
+[14/30#w1]   "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/life-of-queen-victoria/comm-products/uk26qvs---the-life-of-queen-victoria-uk-2026-5-silver-proof-coin-reverse-edge.jpg",
+[14/30#w1]   "blister_obverse": null,
+[14/30#w1]   "blister_reverse": null,
+[14/30#w1]   "box": null,
+[14/30#w1]   "certificate": null
+[14/30#w1] }
+[14/30#w1] 
+[14/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[14/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[14/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-2026-5-pound-silver-proof-coin.json")
+[14/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[14/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[14/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 16/30#w1 ———
+https://www.royalmint.com/shop/limited-editions/dinosaurs-iconic-specimens/diplodocus/diplodocus-2024-50p-silver-proof-colour-coin
+[15/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 10
+[15/30#w2]   ✓ the-snowman-2025-50p-silver-proof-colour-coin-box.webp
+[15/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-snowman-2025-50p-silver-proof-colour-coin.json
+[15/30#w2] 
+[15/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-snowman-2025-50p-silver-proof-colour-coin.json
+[15/30#w2] Загрузка PDP: https://www.royalmint.com/shop/commemorative/childhood-characters/the-snowman/the-snowman-2025-50p-silver-proof-colour-coin
+[15/30#w2] Классификация картинок: {
+[15/30#w2]   "obverse": null,
+[15/30#w2]   "reverse": null,
+[15/30#w2]   "blister_obverse": null,
+[15/30#w2]   "blister_reverse": null,
+[15/30#w2]   "box": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/snowman/product-images/uk25smspthe-snowman-2025-uk-50p-silver-proof-colour-coin-in-acrylic-block-straight-on.jpg",
+[15/30#w2]   "certificate": null
+[15/30#w2] }
+[15/30#w2] 
+[15/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[15/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[15/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-snowman-2025-50p-silver-proof-colour-coin.json")
+[15/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[15/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[15/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 17/30#w2 ———
+https://www.royalmint.com/shop/limited-editions/the-life-of-queen-victoria/the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin
+[16/30#w1] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[16/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-diplodocus-2024-50p-silver-proof-colour-coin.json
+[16/30#w1] 
+[16/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-diplodocus-2024-50p-silver-proof-colour-coin.json
+[16/30#w1] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/dinosaurs-iconic-specimens/diplodocus/diplodocus-2024-50p-silver-proof-colour-coin
+[16/30#w1] Классификация картинок: {
+[16/30#w1]   "obverse": null,
+[16/30#w1]   "reverse": null,
+[16/30#w1]   "blister_obverse": null,
+[16/30#w1]   "blister_reverse": null,
+[16/30#w1]   "box": null,
+[16/30#w1]   "certificate": null
+[16/30#w1] }
+[16/30#w1] 
+[16/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[16/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[16/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-diplodocus-2024-50p-silver-proof-colour-coin.json")
+[16/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[16/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[16/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 18/30#w1 ———
+https://www.royalmint.com/shop/limited-editions/national-gallery/national-gallery-2024-2-pound-silver-proof-piedfort-coin
+[17/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[17/30#w2]   ✓ the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin-obv.webp
+[17/30#w2]   ✓ the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin-rev.webp
+[17/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin.json
+[17/30#w2] 
+[17/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin.json
+[17/30#w2] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/the-life-of-queen-victoria/the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin
+[17/30#w2] Классификация картинок: {
+[17/30#w2]   "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/life-of-queen-victoria/comm-products/uk26qvspthe-life-of-queen-victoria-uk-2026-5-silver-piedfort-proof-coin-obverse-with-edge.jpg",
+[17/30#w2]   "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/life-of-queen-victoria/comm-products/uk26qvspthe-life-of-queen-victoria-uk-2026-5-silver-piedfort-proof-coin--reverse-with-edge.jpg",
+[17/30#w2]   "blister_obverse": null,
+[17/30#w2]   "blister_reverse": null,
+[17/30#w2]   "box": null,
+[17/30#w2]   "certificate": null
+[17/30#w2] }
+[17/30#w2] 
+[17/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[17/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[17/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-2026-5-pound-silver-piedfort-proof-coin.json")
+[17/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[17/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[17/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 19/30#w2 ———
+https://www.royalmint.com/shop/coin-sets/dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof
+[18/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 12
+[18/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-national-gallery-2024-2-pound-silver-proof-piedfort-coin.json
+[18/30#w1] 
+[18/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-national-gallery-2024-2-pound-silver-proof-piedfort-coin.json
+[18/30#w1] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/national-gallery/national-gallery-2024-2-pound-silver-proof-piedfort-coin
+[18/30#w1] Классификация картинок: {
+[18/30#w1]   "obverse": null,
+[18/30#w1]   "reverse": null,
+[18/30#w1]   "blister_obverse": null,
+[18/30#w1]   "blister_reverse": null,
+[18/30#w1]   "box": null,
+[18/30#w1]   "certificate": null
+[18/30#w1] }
+[18/30#w1] 
+[18/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[18/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[18/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-national-gallery-2024-2-pound-silver-proof-piedfort-coin.json")
+[18/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[18/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[18/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 20/30#w1 ———
+https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1980s/bond-films-of-the-1980s-2024-2oz-silver-proof-coin
+[19/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[19/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof.json
+[19/30#w2] 
+[19/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof.json
+[19/30#w2] Загрузка PDP: https://www.royalmint.com/shop/coin-sets/dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof
+[19/30#w2] Классификация картинок: {
+[19/30#w2]   "obverse": null,
+[19/30#w2]   "reverse": null,
+[19/30#w2]   "blister_obverse": null,
+[19/30#w2]   "blister_reverse": null,
+[19/30#w2]   "box": null,
+[19/30#w2]   "certificate": null
+[19/30#w2] }
+[19/30#w2] 
+[19/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[19/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[19/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof.json")
+[19/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[19/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[19/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 21/30#w2 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Queen-Victoria-UK-Silver-Proof-5-Piedfort-Coin
+[20/30#w1] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[20/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1980s-2024-2oz-silver-proof-coin.json
+[20/30#w1] 
+[20/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1980s-2024-2oz-silver-proof-coin.json
+[20/30#w1] Загрузка PDP: https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1980s/bond-films-of-the-1980s-2024-2oz-silver-proof-coin
+[20/30#w1] Классификация картинок: {
+[20/30#w1]   "obverse": null,
+[20/30#w1]   "reverse": null,
+[20/30#w1]   "blister_obverse": null,
+[20/30#w1]   "blister_reverse": null,
+[20/30#w1]   "box": null,
+[20/30#w1]   "certificate": null
+[20/30#w1] }
+[20/30#w1] 
+[20/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[20/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[20/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1980s-2024-2oz-silver-proof-coin.json")
+[20/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[20/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[20/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 22/30#w1 ———
+https://www.royalmint.com/shop/limited-editions/the-life-of-queen-victoria/The-Life-of-Queen-Victoria-Silver-Set
+[21/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 10
+[21/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-queen-victoria-uk-silver-proof-5-piedfort-coin.json
+[21/30#w2] 
+[21/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-queen-victoria-uk-silver-proof-5-piedfort-coin.json
+[21/30#w2] Загрузка PDP: https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Queen-Victoria-UK-Silver-Proof-5-Piedfort-Coin
+[21/30#w2] Классификация картинок: {
+[21/30#w2]   "obverse": null,
+[21/30#w2]   "reverse": null,
+[21/30#w2]   "blister_obverse": null,
+[21/30#w2]   "blister_reverse": null,
+[21/30#w2]   "box": null,
+[21/30#w2]   "certificate": null
+[21/30#w2] }
+[21/30#w2] 
+[21/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[21/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[21/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-queen-victoria-uk-silver-proof-5-piedfort-coin.json")
+[21/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[21/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[21/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 23/30#w2 ———
+https://www.royalmint.com/shop/coin-sets/Britannia-Silver-Set
+[22/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[22/30#w1]   ✓ the-life-of-queen-victoria-silver-set-cert.webp
+[22/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-silver-set.json
+[22/30#w1] 
+[22/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-silver-set.json
+[22/30#w1] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/the-life-of-queen-victoria/The-Life-of-Queen-Victoria-Silver-Set
+[22/30#w1] Классификация картинок: {
+[22/30#w1]   "obverse": null,
+[22/30#w1]   "reverse": null,
+[22/30#w1]   "blister_obverse": null,
+[22/30#w1]   "blister_reverse": null,
+[22/30#w1]   "box": null,
+[22/30#w1]   "certificate": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/life-of-queen-victoria/historic-products/his26qv2-the-life-of-queen-victoria-silver-set-case.jpg"
+[22/30#w1] }
+[22/30#w1] 
+[22/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[22/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[22/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-life-of-queen-victoria-silver-set.json")
+[22/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[22/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[22/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 24/30#w1 ———
+https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1980s/bond-films-of-the-1980s-2024-5oz-silver-proof-coin
+[23/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 6
+[23/30#w2]   ✓ britannia-silver-set-blister-rev.webp
+[23/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-britannia-silver-set.json
+[23/30#w2] 
+[23/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-britannia-silver-set.json
+[23/30#w2] Загрузка PDP: https://www.royalmint.com/shop/coin-sets/Britannia-Silver-Set
+[23/30#w2] Классификация картинок: {
+[23/30#w2]   "obverse": null,
+[23/30#w2]   "reverse": null,
+[23/30#w2]   "blister_obverse": null,
+[23/30#w2]   "blister_reverse": "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
+[23/30#w2]   "box": null,
+[23/30#w2]   "certificate": null
+[23/30#w2] }
+[23/30#w2] 
+[23/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[23/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[23/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-britannia-silver-set.json")
+[23/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[23/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[23/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 25/30#w2 ———
+https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1990s/bond-films-of-the-1990s-2024-5oz-silver-proof-coin
+[24/30#w1] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[24/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1980s-2024-5oz-silver-proof-coin.json
+[24/30#w1] 
+[24/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1980s-2024-5oz-silver-proof-coin.json
+[24/30#w1] Загрузка PDP: https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1980s/bond-films-of-the-1980s-2024-5oz-silver-proof-coin
+[24/30#w1] Классификация картинок: {
+[24/30#w1]   "obverse": null,
+[24/30#w1]   "reverse": null,
+[24/30#w1]   "blister_obverse": null,
+[24/30#w1]   "blister_reverse": null,
+[24/30#w1]   "box": null,
+[24/30#w1]   "certificate": null
+[24/30#w1] }
+[24/30#w1] 
+[24/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[24/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[24/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1980s-2024-5oz-silver-proof-coin.json")
+[24/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[24/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[24/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 26/30#w1 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Celebrating-British-Diversity-50p-Silver-Proof
+[25/30#w2] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[25/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1990s-2024-5oz-silver-proof-coin.json
+[25/30#w2] 
+[25/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1990s-2024-5oz-silver-proof-coin.json
+[25/30#w2] Загрузка PDP: https://www.royalmint.com/six-decades-of-007/bond-films-of-the-1990s/bond-films-of-the-1990s-2024-5oz-silver-proof-coin
+[25/30#w2] Классификация картинок: {
+[25/30#w2]   "obverse": null,
+[25/30#w2]   "reverse": null,
+[25/30#w2]   "blister_obverse": null,
+[25/30#w2]   "blister_reverse": null,
+[25/30#w2]   "box": null,
+[25/30#w2]   "certificate": null
+[25/30#w2] }
+[25/30#w2] 
+[25/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[25/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[25/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-bond-films-of-the-1990s-2024-5oz-silver-proof-coin.json")
+[25/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[25/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[25/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 27/30#w2 ———
+https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/archive/The-Lion-and-The-Eagle-2024-UK-1-2oz-Silver-Proof-Coin
+[26/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[26/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-celebrating-british-diversity-50p-silver-proof.json
+[26/30#w1] 
+[26/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-celebrating-british-diversity-50p-silver-proof.json
+[26/30#w1] Загрузка PDP: https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Celebrating-British-Diversity-50p-Silver-Proof
+[26/30#w1] Классификация картинок: {
+[26/30#w1]   "obverse": null,
+[26/30#w1]   "reverse": null,
+[26/30#w1]   "blister_obverse": null,
+[26/30#w1]   "blister_reverse": null,
+[26/30#w1]   "box": null,
+[26/30#w1]   "certificate": null
+[26/30#w1] }
+[26/30#w1] 
+[26/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[26/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[26/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-celebrating-british-diversity-50p-silver-proof.json")
+[26/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[26/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[26/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 28/30#w1 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Remembrance-Day-UK-5-Silver-Proof-Piedfort
+[27/30#w2] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[27/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-lion-and-the-eagle-2024-uk-1-2oz-silver-proof-coin.json
+[27/30#w2] 
+[27/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-lion-and-the-eagle-2024-uk-1-2oz-silver-proof-coin.json
+[27/30#w2] Загрузка PDP: https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/archive/The-Lion-and-The-Eagle-2024-UK-1-2oz-Silver-Proof-Coin
+[27/30#w2] Классификация картинок: {
+[27/30#w2]   "obverse": null,
+[27/30#w2]   "reverse": null,
+[27/30#w2]   "blister_obverse": null,
+[27/30#w2]   "blister_reverse": null,
+[27/30#w2]   "box": null,
+[27/30#w2]   "certificate": null
+[27/30#w2] }
+[27/30#w2] 
+[27/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[27/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[27/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-the-lion-and-the-eagle-2024-uk-1-2oz-silver-proof-coin.json")
+[27/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[27/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[27/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 29/30#w2 ———
+https://www.royalmint.com/shop/limited-editions/dennis-the-menace/75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin
+[28/30#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[28/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-remembrance-day-uk-5-silver-proof-piedfort.json
+[28/30#w1] 
+[28/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-remembrance-day-uk-5-silver-proof-piedfort.json
+[28/30#w1] Загрузка PDP: https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Remembrance-Day-UK-5-Silver-Proof-Piedfort
+[28/30#w1] Классификация картинок: {
+[28/30#w1]   "obverse": null,
+[28/30#w1]   "reverse": null,
+[28/30#w1]   "blister_obverse": null,
+[28/30#w1]   "blister_reverse": null,
+[28/30#w1]   "box": null,
+[28/30#w1]   "certificate": null
+[28/30#w1] }
+[28/30#w1] 
+[28/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[28/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[28/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-remembrance-day-uk-5-silver-proof-piedfort.json")
+[28/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[28/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[28/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 30/30#w1 ———
+https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/archive/Charles-III-Definitives-2024-UK-2-Pound-Silver-Proof-Coin
+[29/30#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 11
+[29/30#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin.json
+[29/30#w2] 
+[29/30#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin.json
+[29/30#w2] Загрузка PDP: https://www.royalmint.com/shop/limited-editions/dennis-the-menace/75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin
+[29/30#w2] Классификация картинок: {
+[29/30#w2]   "obverse": null,
+[29/30#w2]   "reverse": null,
+[29/30#w2]   "blister_obverse": null,
+[29/30#w2]   "blister_reverse": null,
+[29/30#w2]   "box": null,
+[29/30#w2]   "certificate": null
+[29/30#w2] }
+[29/30#w2] 
+[29/30#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[29/30#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[29/30#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin.json")
+[29/30#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[29/30#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[29/30#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+[30/30#w1] Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть).
+[30/30#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-charles-iii-definitives-2024-uk-2-pound-silver-proof-coin.json
+[30/30#w1] 
+[30/30#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-charles-iii-definitives-2024-uk-2-pound-silver-proof-coin.json
+[30/30#w1] Загрузка PDP: https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/archive/Charles-III-Definitives-2024-UK-2-Pound-Silver-Proof-Coin
+[30/30#w1] Классификация картинок: {
+[30/30#w1]   "obverse": null,
+[30/30#w1]   "reverse": null,
+[30/30#w1]   "blister_obverse": null,
+[30/30#w1]   "blister_reverse": null,
+[30/30#w1]   "box": null,
+[30/30#w1]   "certificate": null
+[30/30#w1] }
+[30/30#w1] 
+[30/30#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[30/30#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[30/30#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-charles-iii-definitives-2024-uk-2-pound-silver-proof-coin.json")
+[30/30#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[30/30#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[30/30#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+Готово. Успех: 30 ошибок: 0
+Дальше: npm run royal-mint:import && npm run data:export

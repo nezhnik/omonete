@@ -1,13 +1,18 @@
 /**
- * Импорт монет The Royal Mint из data/royal-mint-*.json в таблицу coins (как Perth).
- * Поиск строки: сначала source_url (royalmint.com), иначе catalog_number + префикс GB-ROYAL- / двор Royal Mint.
- * catalog_number в БД не длиннее 64 символов (как в схеме); длинный код из JSON заменяется на GB-ROYAL-<код из имени файла>.
+ * Импорт монет The Royal Mint из data/royal-mint-*.json в таблицу coins.
+ *
+ * Как у Perth: ключ — страница товара (source_url). В БД пишем канонический URL без ?query и #hash,
+ * поиск существующей строки — по каноническому URL и по «старому» виду (с query), чтобы обновить зомби.
+ *
+ * Fallback по catalog_number только с флагом --match-catalog (миграции).
  *
  * Запуск:
  *   node scripts/import-royal-mint-to-db.js
+ *   node scripts/import-royal-mint-to-db.js --purge-404     — удалить строки Royal Mint с title 404 (перед импортом)
+ *   node scripts/import-royal-mint-to-db.js --match-catalog — дополнительно искать по catalog_number
  *   node scripts/import-royal-mint-to-db.js data/royal-mint-slug.json
  *
- * Дальше: npm run data:export (или data:export:incremental) — монета попадёт в public/data/coins/.
+ * Дальше: npm run data:export
  */
 require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
@@ -37,7 +42,27 @@ function normalizeSourceUrl(url) {
   return url.trim().replace(/\/+$/, "") || null;
 }
 
-/** Укладываемся в VARCHAR(64); уникальность — по slug (первый сегмент = SKU в URL RM). */
+/**
+ * Канонический PDP Royal Mint: без query/hash, без завершающего слэша — одна монета = один URL.
+ */
+function canonicalRoyalMintProductUrl(url) {
+  if (url == null || typeof url !== "string") return null;
+  const s = url.trim();
+  if (!s) return null;
+  try {
+    const u = new URL(s);
+    if (!/royalmint\.com/i.test(u.hostname)) return null;
+    u.hash = "";
+    u.search = "";
+    const p = u.pathname.replace(/\/+$/, "") || "";
+    return `${u.origin}${p}`.replace(/\/+$/, "");
+  } catch {
+    const noQuery = s.split("#")[0].split("?")[0].replace(/\/+$/, "");
+    return /royalmint\.com/i.test(noQuery) ? noQuery : null;
+  }
+}
+
+/** Укладываемся в VARCHAR(64); длинный код из JSON если ≤64. */
 function catalogNumberForDb(c, filePath) {
   const slugFromFile = path.basename(filePath, ".json").replace(/^royal-mint-/, "");
   const shortCode = (slugFromFile.split("-")[0] || slugFromFile).replace(/[^a-z0-9]/gi, "").toUpperCase();
@@ -50,9 +75,18 @@ function catalogNumberForDb(c, filePath) {
 const ROYAL_CATALOG_MATCH =
   "(mint LIKE '%Royal Mint%' OR mint_short LIKE '%Royal Mint%' OR catalog_number LIKE 'GB-ROYAL-%')";
 
+function parseFlags(argv) {
+  const purge404 = argv.includes("--purge-404");
+  const matchCatalog = argv.includes("--match-catalog");
+  const arg = argv.find((a) => !a.startsWith("--") && a.endsWith(".json"));
+  return { purge404, matchCatalog, arg };
+}
+
 async function main() {
+  const argv = process.argv.slice(2);
+  const { purge404, matchCatalog, arg } = parseFlags(argv);
+
   let files = [];
-  const arg = process.argv[2];
   if (arg) {
     const p = path.isAbsolute(arg) ? arg : path.join(process.cwd(), arg);
     if (!fs.existsSync(p)) {
@@ -65,7 +99,7 @@ async function main() {
       console.error("Папка data не найдена");
       process.exit(1);
     }
-    files = fs
+    const all = fs
       .readdirSync(DATA_DIR)
       .filter(
         (f) =>
@@ -73,9 +107,30 @@ async function main() {
           f.endsWith(".json") &&
           !f.includes("skipped") &&
           !f.includes("verify") &&
-          !f.includes("progress")
+          !f.includes("progress") &&
+          !f.includes("listing-products") &&
+          !f.includes("probe")
       )
-      .map((f) => path.join(DATA_DIR, f));
+      .sort();
+
+    /** Одна запись на канонический source_url (приоритет первого файла по имени). */
+    const byCanon = new Map();
+    for (const f of all) {
+      const fp = path.join(DATA_DIR, f);
+      let raw;
+      try {
+        raw = JSON.parse(fs.readFileSync(fp, "utf8"));
+      } catch {
+        continue;
+      }
+      const c = raw.coin;
+      if (!c?.source_url || !/royalmint\.com/i.test(String(c.source_url))) continue;
+      const k = canonicalRoyalMintProductUrl(c.source_url);
+      if (!k) continue;
+      if (!byCanon.has(k)) byCanon.set(k, fp);
+    }
+    files = [...byCanon.values()];
+    console.log("Файлов royal-mint-*.json (уникальных по каноническому source_url):", files.length);
   }
 
   if (files.length === 0) {
@@ -85,6 +140,7 @@ async function main() {
 
   let hasTitleEn = false;
   const conn = await mysql.createConnection(getConfig());
+
   try {
     const [cols] = await conn.execute(
       "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'coins' AND COLUMN_NAME = 'title_en'"
@@ -92,6 +148,15 @@ async function main() {
     hasTitleEn = cols.length > 0;
   } catch {
     /* ignore */
+  }
+
+  if (purge404) {
+    const cond404 = hasTitleEn
+      ? `(title LIKE '%404 PAGE NOT FOUND%' OR title LIKE '%404 page not found%'
+        OR title_en LIKE '%404 PAGE NOT FOUND%' OR title_en LIKE '%404 page not found%')`
+      : `(title LIKE '%404 PAGE NOT FOUND%' OR title LIKE '%404 page not found%')`;
+    const [res] = await conn.execute(`DELETE FROM coins WHERE (${ROYAL_CATALOG_MATCH}) AND ${cond404}`);
+    console.log("Удалено строк Royal Mint с 404 в title:", res.affectedRows);
   }
 
   const colsBase = [
@@ -157,11 +222,12 @@ async function main() {
       continue;
     }
 
-    const sourceUrlNorm = normalizeSourceUrl(c.source_url);
-    if (!sourceUrlNorm || !/royalmint\.com/i.test(sourceUrlNorm)) {
+    const canon = canonicalRoyalMintProductUrl(c.source_url);
+    if (!canon) {
       console.warn("  Пропуск (нет source_url royalmint.com):", filePath);
       continue;
     }
+    const legacyTrim = normalizeSourceUrl(c.source_url);
 
     const title = (c.title_ru && c.title_ru.trim()) ? c.title_ru.trim() : (c.title || "").trim();
     const titleEn = (c.title || "").trim();
@@ -207,14 +273,25 @@ async function main() {
       (c.image_box || "").trim() || null,
       (c.image_certificate || "").trim() || null,
       (c.price_display && String(c.price_display).trim()) || null,
-      sourceUrlNorm,
+      canon,
     ];
 
     let existing = [];
-    const [bySource] = await conn.execute("SELECT id FROM coins WHERE source_url = ? LIMIT 1", [sourceUrlNorm]);
+    const [bySource] = await conn.execute(
+      `SELECT id FROM coins WHERE (${ROYAL_CATALOG_MATCH}) AND (
+        source_url = ? OR source_url = ? OR
+        TRIM(TRAILING '/' FROM SUBSTRING_INDEX(IFNULL(source_url,''), '?', 1)) = ?
+      ) LIMIT 2`,
+      [canon, legacyTrim || canon, canon]
+    );
     existing = bySource;
 
-    if (existing.length === 0 && catalogNumber) {
+    if (existing.length > 1) {
+      console.warn("  [пропуск] несколько строк на один PDP:", canon, "—", existing.length);
+      continue;
+    }
+
+    if (existing.length === 0 && matchCatalog && catalogNumber) {
       const [byCatalog] = await conn.execute(
         `SELECT id FROM coins WHERE catalog_number = ? AND ${ROYAL_CATALOG_MATCH}`,
         [catalogNumber]
@@ -245,8 +322,9 @@ async function main() {
 
   await conn.end();
   console.log("\n✓ Royal Mint: добавлено", inserted, ", обновлено", updated);
-  if (inserted > 0 || updated > 0) {
-    console.log("Дальше: npm run data:export (или npm run data:export:incremental), затем при необходимости npm run build.");
+  console.log("Импорт по каноническому source_url (без ?query). Fallback catalog:", matchCatalog ? "да" : "нет (флаг --match-catalog).");
+  if (inserted > 0 || updated > 0 || purge404) {
+    console.log("Дальше: npm run data:export (или data:export:incremental).");
   }
 }
 
