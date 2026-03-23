@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2026-germania-1-2-oz-copper-bullion",
+  "title": "2026 Germania",
+  "subtitle": "1/2 oz Copper Bullion",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2026",
+    "Grade": "BU",
+    "Weight": "1/2 oz",
+    "Purity": "999 Cu",
+    "Diameter": "30.30 mm",
+    "Mintage": "Unlimited",
+    "Package": "In bulk packs of 500 coins in a mint foil bag"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Awers-900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Rewers-900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Awers-900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Rewers-900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/coming.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:02.818Z"
+}

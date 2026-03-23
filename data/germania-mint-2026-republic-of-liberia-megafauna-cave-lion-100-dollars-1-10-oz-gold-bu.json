@@ -1,0 +1,30 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/megafauna/2026-republic-of-liberia-megafauna-cave-lion-100-dollars-1-10-oz-gold-bu",
+  "title": "2026 Republic of Liberia Megafauna: Cave Lion",
+  "subtitle": "100 Dollars 1/10 oz Gold BU",
+  "specs": {
+    "Series": "Megafauna",
+    "Year": "2026",
+    "Grade": "BU",
+    "Country": "Republic of Liberia",
+    "Denomination": "100 dollars",
+    "Mint mark": "Germania Mint",
+    "Weight": "1/10 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "16.00 mm",
+    "Mintage": "2500",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-10-oz-silver-bu_a_900px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-10-oz-silver-bu_r_900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-10-oz-silver-bu_a_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-10-oz-silver-bu_r_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/cl-1_10-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/cl-1_10-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/cl-1_10-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:43:18.639Z"
+}

@@ -1,0 +1,22 @@
+import type { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
+
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") ||
+  process.env.SITE_URL?.replace(/\/+$/, "") ||
+  "https://omonete.ru";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/login", "/profile", "/portfolio"],
+      },
+    ],
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
+  };
+}

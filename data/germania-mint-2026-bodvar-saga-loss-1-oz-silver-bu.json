@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/bodvar-saga/2026-bodvar-saga-loss-1-oz-silver-bu",
+  "title": "2026 Bödvar Saga: Loss",
+  "subtitle": "1 oz Silver BU",
+  "specs": {
+    "Series": "Bödvar Saga",
+    "Year": "2026",
+    "Grade": "BU",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Mintage": "10 000 pcs"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Avers_900px-kopia-1.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Revers_900-kopia-1.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Avers_900px-kopia-1.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Revers_900-kopia-1.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-1-1818x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-2-1818x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-3-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-4-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-5-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-6-1920x1080.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:39:40.021Z"
+}

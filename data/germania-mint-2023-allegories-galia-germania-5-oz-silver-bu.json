@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2023-allegories-galia-germania-5-oz-silver-bu",
+  "title": "2023 Allegories:",
+  "subtitle": "Galia & Germania 5 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2023",
+    "Grade": "BU",
+    "Denomination": "25 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "5 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-5-oz-silver-bu-a-900.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-5-oz-silver-bu-r-900.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-5-oz-silver-bu-a-900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-5-oz-silver-bu-r-900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/5-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/5-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/5-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:39:16.521Z"
+}

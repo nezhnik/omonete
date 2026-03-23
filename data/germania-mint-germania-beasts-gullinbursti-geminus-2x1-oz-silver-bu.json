@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania-beasts/germania-beasts-gullinbursti-geminus-2x1-oz-silver-bu",
+  "title": "Germania Beasts: Gullinbursti Geminus",
+  "subtitle": "2x1 oz Silver BU",
+  "specs": {
+    "Series": "Germania Beasts",
+    "Year": "2025",
+    "Grade": "BU",
+    "Denomination": "2 x 5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 x 1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Finishing": "Yellow Gold, Ruthenium, Silver, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a_900px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a2_900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a2_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-4.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-5.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:40:39.302Z"
+}

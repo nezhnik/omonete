@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2019-allegories-britannia-germania-1-oz-silver-bu",
+  "title": "2019 Allegories:",
+  "subtitle": "Britannia & Germania 1 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2019",
+    "Grade": "BU",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "25000",
+    "Package": "Capsule, Certificate of Authenticity"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_A_pop2.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_R_pop2.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_A_pop2.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_R_pop2.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/a19-b-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/a19-b-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/a19-b-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:38:43.931Z"
+}

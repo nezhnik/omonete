@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2019-allegories-columbia-germania-10-oz-silver-bu",
+  "title": "2019 Allegories:",
+  "subtitle": "Columbia & Germania 10 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2019",
+    "Grade": "BU",
+    "Denomination": "50 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "10 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "250",
+    "Package": "Capsule, Certificate of Authenticityle, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/10oz_Columbia_Germania_2019-A.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/10oz_Columbia_Germania_2019-R.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/10oz_Columbia_Germania_2019-A.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/10oz_Columbia_Germania_2019-R.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/a19-10-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/a19-10-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/a19-10-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:38:52.023Z"
+}

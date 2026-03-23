@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2023-germania-1-oz-silver-bu-1-oz-silver-bu",
+  "title": "2023 Germania 1 oz Silver BU",
+  "subtitle": "1 oz Silver BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2023",
+    "Grade": "BU",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "25000"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-1-oz-silver-bu_a_900.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-1-oz-silver-bu_b_900.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-1-oz-silver-bu_a_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-1-oz-silver-bu_b_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-23-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-23-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-23-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:40:51.319Z"
+}

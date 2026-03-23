@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/mythical-forest/2023-mythical-forest-beech-leaf-1-oz-silver-proof",
+  "title": "2023 Mythical Forest:",
+  "subtitle": "Beech Leaf 1 oz Silver Proof",
+  "specs": {
+    "Series": "Mythical Forest",
+    "Year": "2023",
+    "Grade": "Proof",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38,61",
+    "Mintage": "500",
+    "Finishing": "numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_mint_beech_leaf_1oz_silver_proof_a_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_mint_beech_leaf_1oz_silver_proof_r_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_mint_beech_leaf_1oz_silver_proof_a_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_mint_beech_leaf_1oz_silver_proof_r_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/beech-1-proof-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/beech-1-proof-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/beech-1-proof-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:43:54.475Z"
+}

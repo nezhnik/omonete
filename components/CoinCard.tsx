@@ -57,10 +57,11 @@ export function CoinCard(props: CoinCardProps) {
   const [hoverImageIndex, setHoverImageIndex] = useState(0)
   const [justAdded, setJustAdded] = useState(false)
   const [justRemoved, setJustRemoved] = useState(false)
+  const [canDesktopHoverSwitch, setCanDesktopHoverSwitch] = useState(false)
   const imageContainerRef = useRef<HTMLDivElement>(null)
 
   const handleImageMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (images.length <= 1) return
+    if (!canDesktopHoverSwitch || images.length <= 1) return
     const el = imageContainerRef.current
     if (!el) return
     const rect = el.getBoundingClientRect()
@@ -71,6 +72,7 @@ export function CoinCard(props: CoinCardProps) {
   }
 
   const handleImageMouseLeave = () => {
+    if (!canDesktopHoverSwitch) return
     setHoverImageIndex(0)
   }
 
@@ -85,6 +87,18 @@ export function CoinCard(props: CoinCardProps) {
     const t = setTimeout(() => setJustRemoved(false), 500)
     return () => clearTimeout(t)
   }, [justRemoved])
+
+  useEffect(() => {
+    const updateHoverCapability = () => {
+      if (typeof window === "undefined") return
+      const isDesktop = window.innerWidth >= 1024
+      const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches
+      setCanDesktopHoverSwitch(isDesktop && canHover)
+    }
+    updateHoverCapability()
+    window.addEventListener("resize", updateHoverCapability)
+    return () => window.removeEventListener("resize", updateHoverCapability)
+  }, [])
 
   // Страна · МД · Серия (для российских — короткое название монетного двора: ММД, ЛМД и т.д.)
   const subtitleParts = [
@@ -101,8 +115,8 @@ export function CoinCard(props: CoinCardProps) {
         <div
           ref={imageContainerRef}
           className="w-full h-[14rem] sm:h-[16rem] lg:h-[18.5rem] relative flex items-center justify-center overflow-visible"
-          onMouseMove={handleImageMouseMove}
-          onMouseLeave={handleImageMouseLeave}
+          onMouseMove={canDesktopHoverSwitch ? handleImageMouseMove : undefined}
+          onMouseLeave={canDesktopHoverSwitch ? handleImageMouseLeave : undefined}
         >
           <div className={`w-full h-full flex items-center justify-center max-w-[17rem] max-h-[17rem] transition-transform duration-500 lg:group-hover:-translate-y-2 ${rectangular || isPackaging(hoverImageIndex) ? "rounded-2xl overflow-hidden" : "rounded-full overflow-hidden"}`}>
             <img

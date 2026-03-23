@@ -1,0 +1,33 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/norns/2026-norns-urd-1-oz-silver-bu",
+  "title": "2026 Norns: Urd",
+  "subtitle": "1 oz Silver BU",
+  "specs": {
+    "Series": "Norns",
+    "Year": "2026",
+    "Grade": "BU",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Dimensions": "5 Mark",
+    "Mintage": "5 000 pcs",
+    "Package": "Capsule, Certificate of Authenticity"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-8948-Etap-fizyczny_awers_900px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/rewers-900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-8948-Etap-fizyczny_awers_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/rewers-900px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-497.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-494.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-495.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/norns-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/norns-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-504.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-509.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:45:04.729Z"
+}

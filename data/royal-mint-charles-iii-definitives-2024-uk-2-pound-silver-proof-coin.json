@@ -34,8 +34,12 @@
     "title": "Welcome to The Royal Mint",
     "specs": {},
     "specificationBlockFound": false,
-    "imageUrls": [],
-    "imageUrlsProduct": [],
+    "imageUrls": [
+      "https://www.royalmint.com/globalassets/__rebrand/_common/TRM_Logo_LA_K_RGB.png"
+    ],
+    "imageUrlsProduct": [
+      "https://www.royalmint.com/globalassets/__rebrand/_common/TRM_Logo_LA_K_RGB.png"
+    ],
     "classified": {
       "obverse": null,
       "reverse": null,

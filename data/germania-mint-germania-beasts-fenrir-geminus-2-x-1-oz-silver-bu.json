@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania-beasts/germania-beasts-fenrir-geminus-2-x-1-oz-silver-bu",
+  "title": "Germania Beasts: Fenrir Geminus",
+  "subtitle": "2 x 1 oz Silver BU",
+  "specs": {
+    "Series": "Germania Beasts",
+    "Year": "2022",
+    "Grade": "BU",
+    "Denomination": "2 x 5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 x 1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Package": "Capsule, Certificate of Authenticity, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_AA.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_BA.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_AA.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_BA.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-4.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-5.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:40:27.504Z"
+}

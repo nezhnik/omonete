@@ -47,6 +47,8 @@
     "db:ensure-title-en": "node scripts/ensure-title-en-column.js",
     "coins:migrate-images-to-folders": "node scripts/migrate-coins-images-to-folders.js",
     "perth:listing": "node scripts/fetch-perth-mint-listing.js",
+    "germania:listing": "node scripts/fetch-germania-mint-listing.js",
+    "germania:fetch": "node scripts/fetch-germania-mint-coin.js",
     "perth:fetch": "node scripts/fetch-perth-mint-coin.js",
     "perth:import": "node scripts/import-perth-mint-to-db.js",
     "kookaburra:apply-plan": "node scripts/apply-kookaburra-plan-to-db.js",
@@ -78,7 +80,17 @@
     "royal-mint:reparse-shadow-edge": "node scripts/royal-mint-reparse-data-urls.js --pattern shadow-edge --run",
     "coins:report-missing-mintage": "node scripts/report-coins-missing-mintage.js",
     "royal-mint:probe:one": "node scripts/royal-mint-gold-bullion-probe.js --one",
-    "db:add-blister-images": "node scripts/run-add-coins-blister-images.js"
+    "db:add-blister-images": "node scripts/run-add-coins-blister-images.js",
+    "royal-mint:image-audit-report": "node scripts/royal-mint-image-audit-report.js",
+    "royal-mint:image-manifest-build": "node scripts/royal-mint-image-manifest-build.js",
+    "royal-mint:image-mirror-sync": "node scripts/royal-mint-image-mirror-sync.js",
+    "royal-mint:cleanup-extra-images": "node scripts/royal-mint-cleanup-extra-images.js",
+    "royal-mint:cleanup-extra-images:dry": "node scripts/royal-mint-cleanup-extra-images.js --dry-run",
+    "coins:remove-dark-bg:foreign": "node scripts/remove-dark-background-foreign.js",
+    "coins:remove-dark-bg:foreign:dry": "node scripts/remove-dark-background-foreign.js --dry-run",
+    "coins:remove-dark-bg:royal-mint": "node scripts/remove-dark-background-foreign.js --royal-mint-only",
+    "coins:remove-dark-bg:royal-mint:dry": "node scripts/remove-dark-background-foreign.js --dry-run --royal-mint-only",
+    "germania:import": "node scripts/import-germania-mint-to-db.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",

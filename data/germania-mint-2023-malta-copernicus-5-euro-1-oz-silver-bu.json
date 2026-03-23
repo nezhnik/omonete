@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/partner-issues/2023-malta-copernicus-5-euro-1-oz-silver-bu",
+  "title": "2023 Malta Copernicus",
+  "subtitle": "5 Euro 1 oz Silver BU",
+  "specs": {
+    "Series": "Partner Issues",
+    "Year": "2023",
+    "Grade": "BU",
+    "Denomination": "5 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38,61",
+    "Mintage": "15000",
+    "Finishing": "Colouring"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_a.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_a.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_r.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_30_18.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_35_02.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_46_00.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:45:21.387Z"
+}

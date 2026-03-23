@@ -1,0 +1,30 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/golden-eagle/2025-malta-golden-eagle-10-euro-1-10-oz-gold-bu-limited-edition",
+  "title": "2025 Malta Golden Eagle",
+  "subtitle": "10 Euro 1/10 oz Gold BU – Limited Edition",
+  "specs": {
+    "Series": "Golden Eagle",
+    "Year": "2025",
+    "Grade": "BU",
+    "Country": "Malta",
+    "Denomination": "10 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "1/10 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "16.00 mm",
+    "Mintage": "2 500 pcs",
+    "Package": "Capsule, Coincard"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_a_900px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_r_900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_a_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_r_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-1-10-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-1-10-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-1-10-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:38.369Z"
+}

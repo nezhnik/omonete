@@ -1,0 +1,30 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/warriors/2019-warriors-berserk-2-oz-silver-bu",
+  "title": "2019 Warriors:",
+  "subtitle": "Berserk 2 oz Silver BU",
+  "specs": {
+    "Series": "Warriors",
+    "Year": "2019",
+    "Grade": "High Relief",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "499",
+    "Finishing": "Antique Finish, Selective Gold Plating, Numbering",
+    "Package": "Capsule, Certificate of Authenticity, Beautybox, Wooden box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/4dd8954cb35a2a6a33fba2ac5fdeedd54dc78dfd.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/The_Warriors_Berserk_reverse_600px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/4dd8954cb35a2a6a33fba2ac5fdeedd54dc78dfd.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/The_Warriors_Berserk_reverse_600px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-1-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-1-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-1-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:46:24.057Z"
+}

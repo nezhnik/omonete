@@ -28,7 +28,7 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/star-wars-x-wing-2024-5oz-silver-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/star-wars-x-wing-2024-5oz-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Star Wars X-Wing 2024 UK 5oz Silver Proof Coin",
@@ -145,12 +145,12 @@
       "blister_obverse": null,
       "blister_reverse": null,
       "box": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2024-launches/star-wars/x-wing/product-images/uk24xws5---star-wars-x-wing-2024-uk-5oz-silver-proof-coin-case-left-1500x1500-f3a2c67.jpg",
-      "certificate": null
+      "certificate": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2024-launches/star-wars/x-wing/product-images/uk24xws5---star-wars-x-wing-2024-uk-5oz-silver-proof-coin-carton-upright-1500x1500-f3a2c67.jpg"
     },
     "price": "£837.50",
     "requestedUrl": "https://www.royalmint.com/star-wars/vehicles/x-wing/star-wars-x-wing-2024-5oz-silver-proof-coin",
     "pdpUrl": "https://www.royalmint.com/star-wars/vehicles/x-wing/star-wars-x-wing-2024-5oz-silver-proof-coin",
-    "pdpPlainTextPreview": "Features a film-accurate depiction of the X-Wing as it appears in the original trilogy. The reverse design also includes a lenticular feature displaying the crest of the Rebel Alliance and the distinctive outline of the X-Wing.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Star Wars Vehicles X-Wing Star Wars X-Wing 2024 UK 5oz Silver Proof Coin Silver Proof LIMITED EDITION 200 Star Wars X-Wing 2024 UK 5oz Silver Proof Coin £837.50 £837.50 PRODUCT CODE: UK24XWS5 Overview Delivery and returns Coin Specifications Silver Proof YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £61.64 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £60.44 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,589.66 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,461.00 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock"
+    "pdpPlainTextPreview": "Features a film-accurate depiction of the X-Wing as it appears in the original trilogy. The reverse design also includes a lenticular feature displaying the crest of the Rebel Alliance and the distinctive outline of the X-Wing.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Star Wars Vehicles X-Wing Star Wars X-Wing 2024 UK 5oz Silver Proof Coin Silver Proof LIMITED EDITION 200 Star Wars X-Wing 2024 UK 5oz Silver Proof Coin £837.50 £837.50 PRODUCT CODE: UK24XWS5 Overview Delivery and returns Coin Specifications Silver Proof YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.39 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.19 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,490.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,479.75 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock"
   },
   "saved": {
     "obverse": "/image/coins/foreign/star-wars-x-wing-2024-5oz-silver-proof-coin-obv.webp",
@@ -158,6 +158,6 @@
     "blister_obverse": null,
     "blister_reverse": null,
     "box": "/image/coins/foreign/star-wars-x-wing-2024-5oz-silver-proof-coin-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/star-wars-x-wing-2024-5oz-silver-proof-coin-cert.webp"
   }
 }

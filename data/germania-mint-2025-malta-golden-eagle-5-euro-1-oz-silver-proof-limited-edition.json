@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/golden-eagle/2025-malta-golden-eagle-5-euro-1-oz-silver-proof-limited-edition",
+  "title": "2025 Malta Golden Eagle",
+  "subtitle": "5 Euro 1 oz Silver Proof – Limited Edition",
+  "specs": {
+    "Series": "Golden Eagle",
+    "Year": "2025",
+    "Grade": "Proof",
+    "Country": "Malta",
+    "Denomination": "5 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Mintage": "1 000 pcs",
+    "Finishing": "Capsule, COA, Laminated box",
+    "Package": "Capsule, Certificate of Authenticity, Laminated box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1oz-silver-proof_a_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1oz-silver-proof_r_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1oz-silver-proof_a_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1oz-silver-proof_r_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-proof-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-proof-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-proof-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:54.563Z"
+}

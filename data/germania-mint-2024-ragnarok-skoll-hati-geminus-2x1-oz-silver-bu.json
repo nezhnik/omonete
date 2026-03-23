@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/ragnarok/2024-ragnarok-skoll-hati-geminus-2x1-oz-silver-bu",
+  "title": "2024 Ragnarök: Sköll & Hati Geminus",
+  "subtitle": "2x1 oz Silver BU",
+  "specs": {
+    "Series": "Ragnarök",
+    "Year": "2024",
+    "Grade": "BU",
+    "Denomination": "2 x 5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 x 1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Finishing": "Yellow Gold, Silver, Ruthenium, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_a_900px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_r_250px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_a_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_r_250px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/24-2x2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/24-2x2-4.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/24-2x2-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:45:37.547Z"
+}

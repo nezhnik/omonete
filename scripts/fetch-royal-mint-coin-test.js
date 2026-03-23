@@ -63,29 +63,45 @@ function normalizeUrl(u) {
 /** Классификация по имени файла Royal Mint (обратить внимание на порядок: сначала blister, edge отбрасываем). */
 function classifyRoyalMintImage(url) {
   const lower = String(url).toLowerCase().split("?")[0];
-  if (/logo|icon|feefo|payment|badge|ukas|placeholder|1x1|spacer|\.svg(\?|$)/i.test(lower)) return null;
+  // В product filename бывает "...ticonic-..." (HMS Belfast), это не "icon" ассет.
+  if (/(^|[\/._-])(logo|icon|feefo|payment|badge|ukas|placeholder|spacer)([\/._-]|$)|1x1|\.svg(\?|$)/i.test(lower)) return null;
   if (!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(lower)) return null;
   if (/160x160|100x100|\/banners\//i.test(lower)) return null;
   /** RM часто даёт только reverse-edge / obverse-edge — это всё же реверс/аверс, не отбрасываем. */
   if (/reverse-with-edge|reverse-edge/i.test(lower)) return "reverse";
   if (/obverse-with-edge|obverse-edge/i.test(lower)) return "obverse";
+  // BU/pack-shot кадры не являются сторонами монеты.
+  if (/pack-front|pack-back/i.test(lower)) return null;
   /** shadow-edge — тот же ракурс, но «издалека» с тенью; классифицируем как obverse/reverse, но ниже отфильтруем если есть with-edge */
   if (/reverse-shadow-edge/i.test(lower)) return "reverse";
   if (/obverse-shadow-edge/i.test(lower)) return "obverse";
   if (/on-edge/i.test(lower) && !/obverse|reverse/i.test(lower)) return null;
+  // На RM иногда встречаются опечатки в имени файла (например, "caosule"), тоже считаем капсулой.
+  if (/capsule|caosule|casule|capsul/i.test(lower)) return null;
   if (/reverse.*blister|reverse-blister/i.test(lower)) return "blister_reverse";
   if (/obverse.*blister|obverse-blister/i.test(lower)) return "blister_obverse";
-  if (/reverse.*capsule|capsule.*reverse/i.test(lower)) return "blister_reverse";
-  if (/obverse.*capsule|capsule.*obverse/i.test(lower)) return "blister_obverse";
   /** Trial of the Pyx и др.: *-blister-back.jpg / *-blister-front.jpg */
   if (/blister-back/i.test(lower)) return "blister_reverse";
   if (/blister-front/i.test(lower)) return "blister_obverse";
   if (/obverse.*latent|obverse-latent/i.test(lower)) return "obverse";
+  /** Коробка/упаковка для RM: если есть carton-кадры, складываем в certificate (как доп. инфо в конце галереи). */
+  if (/carton|carton-upright|carton-flat/i.test(lower)) return "certificate";
   /** Trial packshots: *-obv-tp25px80.jpg / *-rev-tp25px80.jpg */
   if (/-obv-|_obv-tp|\.obv\./i.test(lower) && !/-rev-|_rev-tp/i.test(lower)) return "obverse";
   if (/-rev-|_rev-tp|\.rev\./i.test(lower) && !/-obv-/i.test(lower)) return "reverse";
-  if ((/\breverse\b|coin-reverse|-reverse\./i.test(lower) || /-reverse\.jpg/i.test(lower)) && !/obverse/i.test(lower)) return "reverse";
+  /** Historic/Trial naming: ...-obv.jpg / ...-rev.jpg / ..._obv.jpg */
+  if (/(^|[-_.])obv(\.|-|_)/i.test(lower) && !/(^|[-_.])rev(\.|-|_)/i.test(lower)) return "obverse";
+  if (/(^|[-_.])rev(\.|-|_)/i.test(lower) && !/(^|[-_.])obv(\.|-|_)/i.test(lower)) return "reverse";
+  if ((/\breverse\b|coin-reverse|-reverse\./i.test(lower) || /-reverse\.jpg|reevsre|revsre/i.test(lower)) && !/obverse/i.test(lower)) return "reverse";
   if (/\bobverse\b|coin-obverse|-obverse\./i.test(lower) || /-obverse\.jpg/i.test(lower)) return "obverse";
+  // Старые bullion-галереи RM: rtyb2310sc-1.png / -2.png без явных obverse/reverse в имени.
+  if (/\/globalassets\/bullion\/images\/products\//i.test(lower)) {
+    // Базовый кадр без суффикса -N обычно лицевая сторона (используем как obverse).
+    if (!/-\d+\.(png|jpg|jpeg|webp)$/i.test(lower)) return "obverse";
+    const n = lower.match(/-(\d+)\.(png|jpg|jpeg|webp)$/i)?.[1];
+    if (n === "1") return "reverse";
+    if (n === "2") return "obverse";
+  }
   if (/case-left|case-right|acrylic-block|in-shipper|in-case-pack/i.test(lower)) return "box";
   if (/box|case|shipper|outer-pack|presentation/i.test(lower)) return "certificate";
   if (/blister|secure-pack|in-pack/i.test(lower)) return "box";
@@ -173,7 +189,7 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
    */
   function isBullionImagesProductAsset(u) {
     const p = String(u).toLowerCase().split("?")[0];
-    if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
+    if (!/\.(jpg|jpeg|png|webp)$/i.test(p)) return false;
     if (!/\/globalassets\/bullion\/images\/products\//i.test(p)) return false;
     if (/160x160|100x100|banner/i.test(p)) return false;
     return true;
@@ -200,23 +216,73 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
     return String(slug || "")
       .toLowerCase()
       .split("-")
-      .filter((w) => w.length >= 3 && !stop.has(w) && !/^\d{4}$/.test(w) && !/^\d*oz$/i.test(w));
+      .filter((w) => w.length >= 3 && !stop.has(w) && !/^\d{4}$/.test(w));
   }
 
   function bullionAssetMatchesSlug(u, slug) {
-    const low = String(u).toLowerCase();
+    const low = String(u).toLowerCase().split("?")[0];
+    const tail = low.includes("/globalassets/") ? low.split("/globalassets/")[1] : low;
     const tokens = slugTokensForImageMatch(slug);
     if (tokens.length === 0) return false;
+    const esc = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     let hits = 0;
     for (const t of tokens) {
-      if (low.includes(t)) hits += 1;
+      const re = new RegExp(`(^|[^a-z0-9])${esc(t)}([^a-z0-9]|$)`, "i");
+      if (re.test(tail)) hits += 1;
     }
-    const need = Math.min(2, tokens.length);
+    const need = tokens.length <= 2 ? 1 : 2;
     return hits >= need;
   }
 
   const pdpForGallery = String(ctx.pdpUrl || "");
   const slugForGallery = pdpForGallery ? slugFromUrl(pdpForGallery) : "";
+  const desiredMetal = /\bsilver\b/i.test(`${title} ${pdpForGallery}`)
+    ? "silver"
+    : /\bgold\b/i.test(`${title} ${pdpForGallery}`)
+      ? "gold"
+      : null;
+  const contextTokens = (() => {
+    const stop = new Set([
+      "shop",
+      "invest",
+      "collect",
+      "discover",
+      "limited",
+      "editions",
+      "edition",
+      "collection",
+      "commemorative",
+      "bullion",
+      "coins",
+      "coin",
+      "silver",
+      "gold",
+      "proof",
+      "piedfort",
+      "years",
+      "the",
+      "and",
+      "uk",
+      "of",
+    ]);
+    return String(pdpForGallery)
+      .toLowerCase()
+      .replace(/^https?:\/\/[^/]+/i, "")
+      .replace(/\?.*$/, "")
+      .split("/")
+      .flatMap((s) => s.split("-"))
+      .map((s) => s.trim())
+      .filter((s) => s.length >= 4 && !stop.has(s) && !/^\d{4}$/.test(s));
+  })();
+  const hasContextToken = (u) => {
+    const low = String(u).toLowerCase();
+    let hits = 0;
+    for (const t of contextTokens) {
+      if (low.includes(t)) hits += 1;
+    }
+    const need = contextTokens.length <= 2 ? 1 : 2;
+    return hits >= need;
+  };
   if (/\/invest\/bullion\//i.test(pdpForGallery) && slugForGallery) {
     const bullionProducts = urls.filter(isBullionImagesProductAsset);
     const matchedBullion = bullionProducts.filter((u) => bullionAssetMatchesSlug(u, slugForGallery));
@@ -232,13 +298,14 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
   function launchDirectProductShots(u) {
     const p = String(u).toLowerCase().split("?")[0];
     if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
-    if (!/\/globalassets\/_ecommerce\/.*\/launches\//i.test(p)) return false;
+    if (!/\/globalassets\/(_ecommerce\/.*\/launches\/|consumer\/_campaigns\/)/i.test(p)) return false;
     if (/160x160|100x100|\/banners\//i.test(p)) return false;
     /** 2026 lunar и др.: только product-images с *-shadow-edge-f3a2c67.jpg (без 1500x1500 в имени). */
     if (
       !/1500x1500/i.test(p) &&
       !/-reverse-edge|-obverse-edge|-reverse-with-edge|-obverse-with-edge/i.test(p) &&
-      !/-reverse-shadow-edge|-obverse-shadow-edge/i.test(p)
+      !/-reverse-shadow-edge|-obverse-shadow-edge/i.test(p) &&
+      !/-reverse(\.|-)|-obverse(\.|-)/i.test(p)
     ) {
       return false;
     }
@@ -251,19 +318,51 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
     const p = String(u).toLowerCase();
     if (!/\.(jpg|jpeg|webp)(\?|$)/i.test(p)) return false;
     if (/160x160|100x100|\/banners\//i.test(p)) return false;
-    if (!/\/globalassets\/_ecommerce\//i.test(p)) return false;
-    if (!/\/launches\//i.test(p)) return false;
-    return (
+    const isEcommerceLaunch = /\/globalassets\/_ecommerce\//i.test(p) && /\/launches\//i.test(p);
+    const isConsumerCampaign = /\/globalassets\/consumer\/_campaigns\//i.test(p);
+    if (!isEcommerceLaunch && !isConsumerCampaign) return false;
+    const looksLikeProductAsset = (
       p.includes("product-images") ||
+      p.includes("/images/") ||
       p.includes("/products/") ||
       /** Bullion PDP (desktop-product-pictures): .../launches/2025/tudor-beasts/prods/... */
       /\/prods\//i.test(p)
     );
+    if (!looksLikeProductAsset) return false;
+    // /images/ слишком широкая ветка; оставляем только "монетные" файлы, чтобы не подмешивать карусель/рекламу.
+    if (
+      p.includes("/images/") &&
+      !/(obverse|reverse|with-edge|shadow-edge|case-|acrylic|carton|certificate|capsule|blister|pack-front|pack-back)/i.test(p)
+    ) {
+      return false;
+    }
+    return true;
   }
 
   let candidates = urls.filter(isEcommerceLaunchProductAsset);
   if (directLaunchMatches.length > 0) {
     candidates = directLaunchMatches;
+  }
+  if (desiredMetal) {
+    const byMetal = candidates.filter((u) =>
+      desiredMetal === "silver" ? !/\bgold\b/i.test(String(u)) : !/\bsilver\b/i.test(String(u))
+    );
+    if (byMetal.length > 0) candidates = byMetal;
+  }
+  // Для commemorative/shop PDP отсекаем чужие "You might also like" ассеты по токенам slug.
+  if (slugForGallery && candidates.length > 0) {
+    const byPdpTokens = candidates.filter((u) => bullionAssetMatchesSlug(u, slugForGallery));
+    if (byPdpTokens.length > 0) candidates = byPdpTokens;
+  }
+  if (contextTokens.length > 0 && candidates.length > 0) {
+    const byContext = candidates.filter((u) => hasContextToken(u));
+    if (byContext.length > 0) {
+      candidates = byContext;
+    } else if (candidates.length <= 6) {
+      // Небольшой пул без единого токена PDP — вероятно "You might also like".
+      // Обнуляем, чтобы ниже сработал fallback из общего списка по контексту.
+      candidates = [];
+    }
   }
 
   /** Упаковка «tube» — для proof/coloured не подходит; часто это чужой bullion кадр. */
@@ -272,6 +371,9 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
     if (noTube.length) candidates = noTube;
     const noBullionFile = candidates.filter((u) => !/bullion/i.test(u.split("/").pop() || ""));
     if (noBullionFile.length) candidates = noBullionFile;
+    // Для proof-страниц отсекаем BU/pack-shot кадры (часто подмешиваются из соседних карточек).
+    const noBuPack = candidates.filter((u) => !/pack-front|pack-back|bu-pack/i.test(String(u)));
+    if (noBuPack.length) candidates = noBuPack;
   }
 
   /** Год из спецификаций — отрезать чужие лаунчи (напр. 2026 bullion на странице 2025 proof). */
@@ -325,6 +427,19 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
     if (bySlug.length > 0) return bySlug;
   }
 
+  // Fallback для collection/legacy PDP: если товарные кандидаты пустые или слишком узкие,
+  // добираем из полного списка по контекстным токенам URL страницы.
+  if (contextTokens.length > 0 && candidates.length <= 1) {
+    const fromAll = urls.filter((u) => {
+      const low = String(u).toLowerCase();
+      if (!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(low)) return false;
+      if (/160x160|100x100|\/banners\//i.test(low)) return false;
+      if (!/\/globalassets\//i.test(low)) return false;
+      return hasContextToken(u);
+    });
+    if (fromAll.length > 0) return uniqueUrlsStable(fromAll);
+  }
+
   return candidates.length > 0 ? candidates : urls;
 }
 
@@ -357,19 +472,34 @@ function pickBestByType(urls) {
     if (t && by[t]) by[t].push(u);
   }
   /** Раньше брали самый длинный URL — shadow-edge длиннее with-edge и выигрывал. Сначала без shadow-edge. */
-  const take = (arr) => {
+  const take = (arr, role) => {
     if (!arr.length) return null;
     const noShadow = arr.filter((x) => !/shadow-edge/i.test(String(x)));
-    const pool = noShadow.length ? noShadow : arr;
+    let pool = noShadow.length ? noShadow : arr;
+    if (role === "obverse" || role === "reverse") {
+      const noEdge = pool.filter((x) => !/(^|[^a-z])edge([^a-z]|$)/i.test(String(x)));
+      if (noEdge.length) pool = noEdge;
+      // Старые bullion-сеты вида rtyb2310sc.png + rtyb2310sc-1..5.png:
+      // для obverse приоритет у "базового" файла без -N, для reverse — у -1.
+      const isBullion = (x) => /\/globalassets\/bullion\/images\/products\//i.test(String(x));
+      const isIndexed = (x) => /-\d+\.(png|jpg|jpeg|webp)(\?|$)/i.test(String(x));
+      if (role === "obverse") {
+        const baseBullion = pool.filter((x) => isBullion(x) && !isIndexed(x));
+        if (baseBullion.length) pool = baseBullion;
+      } else if (role === "reverse") {
+        const rev1Bullion = pool.filter((x) => isBullion(x) && /-1\.(png|jpg|jpeg|webp)(\?|$)/i.test(String(x)));
+        if (rev1Bullion.length) pool = rev1Bullion;
+      }
+    }
     return pool.sort((a, b) => String(b).length - String(a).length)[0];
   };
   return {
-    obverse: take(by.obverse),
-    reverse: take(by.reverse),
-    blister_obverse: take(by.blister_obverse),
-    blister_reverse: take(by.blister_reverse),
-    box: take(by.box),
-    certificate: take(by.certificate),
+    obverse: take(by.obverse, "obverse"),
+    reverse: take(by.reverse, "reverse"),
+    blister_obverse: take(by.blister_obverse, "blister_obverse"),
+    blister_reverse: take(by.blister_reverse, "blister_reverse"),
+    box: take(by.box, "box"),
+    certificate: take(by.certificate, "certificate"),
   };
 }
 
@@ -492,17 +622,45 @@ async function extractPage(page) {
       }
       if (s) pushImg(s);
     }
+    function pushFromBackgroundLikeEl(el) {
+      const attrs = [
+        "data-src",
+        "data-original",
+        "data-image",
+        "data-bg",
+        "data-background-image",
+        "data-lazy",
+      ];
+      for (const a of attrs) {
+        const v = el.getAttribute(a);
+        if (v) pushImg(v);
+      }
+      const style = el.getAttribute("style") || "";
+      const re = /url\((['"]?)([^'")]+)\1\)/gi;
+      let m;
+      while ((m = re.exec(style)) !== null) {
+        if (m[2]) pushImg(m[2]);
+      }
+    }
 
     document
       .querySelectorAll(
         ".desktop-product-pictures img, .desktop-product-pictures picture source, .mobile-product-pictures img, .mobile-product-pictures picture source"
       )
       .forEach(pushFromImgEl);
+    document
+      .querySelectorAll(
+        ".image-gallery .fluid-image, .image-gallery [style*='background-image'], .product-gallery .fluid-image, .product-gallery [style*='background-image']"
+      )
+      .forEach(pushFromBackgroundLikeEl);
 
     const og = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
     if (og) pushImg(og);
 
     document.querySelectorAll('img[src], img[data-src], picture source[srcset]').forEach(pushFromImgEl);
+    document
+      .querySelectorAll("[style*='background-image'], [data-background-image], [data-bg], [data-image], [data-original]")
+      .forEach(pushFromBackgroundLikeEl);
 
     return {
       title,
@@ -531,6 +689,28 @@ async function downloadWebp(imgUrl, outPath) {
     .toFile(outPath);
 }
 
+function extractRoyalMintImageUrlsFromHtml(html) {
+  const out = [];
+  const seen = new Set();
+  const push = (u) => {
+    const n = String(u || "").replace(/\\u002f/gi, "/").replace(/\\\//g, "/").trim();
+    if (!/^https?:\/\/www\.royalmint\.com\/globalassets\//i.test(n)) return;
+    if (!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(n)) return;
+    const key = n.split("?")[0];
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push(key);
+  };
+
+  const direct = html.match(/https?:\/\/www\.royalmint\.com\/globalassets\/[^"'\\\s<>()]+\.(?:jpg|jpeg|png|webp)(?:\?[^"'\\\s<>()]*)?/gi) || [];
+  direct.forEach(push);
+
+  const escaped = html.match(/https?:\\\/\\\/www\.royalmint\.com\\\/globalassets\\\/[^"'\\\s<>()]+\.(?:jpg|jpeg|png|webp)(?:\\\?[^"'\\\s<>()]*)?/gi) || [];
+  escaped.forEach(push);
+
+  return out;
+}
+
 async function main() {
   const noImages = process.argv.includes("--no-images");
   const allowGradedSlab = process.argv.includes("--allow-graded-slab");
@@ -552,6 +732,19 @@ async function main() {
     await page.goto(fetchUrl, { waitUntil: "domcontentloaded", timeout: 120000 });
     await new Promise((r) => setTimeout(r, 2000));
     scraped = await extractPage(page);
+    const pageHtml = await page.content();
+    const htmlImageUrls = extractRoyalMintImageUrlsFromHtml(pageHtml);
+    if (htmlImageUrls.length > 0) {
+      const merged = [];
+      const seen = new Set();
+      for (const u of [...(scraped.imageUrls || []), ...htmlImageUrls]) {
+        const key = String(u).split("?")[0];
+        if (!key || seen.has(key)) continue;
+        seen.add(key);
+        merged.push(key);
+      }
+      scraped.imageUrls = merged;
+    }
     if (!scraped.specificationBlockFound) {
       console.warn(
         "Внимание: на странице не найден блок div.mod-section.specification — спеки взяты из остальных table (если есть)."
@@ -652,9 +845,102 @@ async function main() {
   });
   productUrls = preferWithEdgeOverShadowEdge(productUrls);
   const byType = pickBestByType(productUrls);
-  /** Часть bullion PDP: в имени файла только reverse — дублируем, чтобы не было пустого аверса в каталоге. */
-  if (!byType.obverse && byType.reverse) byType.obverse = byType.reverse;
-  if (!byType.reverse && byType.obverse) byType.reverse = byType.obverse;
+  const pdpContextTokens = (() => {
+    const stop = new Set([
+      "shop",
+      "invest",
+      "collect",
+      "discover",
+      "limited",
+      "editions",
+      "edition",
+      "collection",
+      "commemorative",
+      "bullion",
+      "coins",
+      "coin",
+      "silver",
+      "gold",
+      "proof",
+      "piedfort",
+      "years",
+      "the",
+      "and",
+      "uk",
+      "of",
+    ]);
+    return String(fetchUrl || "")
+      .toLowerCase()
+      .replace(/^https?:\/\/[^/]+/i, "")
+      .replace(/\?.*$/, "")
+      .split("/")
+      .flatMap((s) => s.split("-"))
+      .map((s) => s.trim())
+      .filter((s) => s.length >= 4 && !stop.has(s) && !/^\d{4}$/.test(s));
+  })();
+  const matchesPdpContext = (u) => {
+    const low = String(u || "").toLowerCase();
+    if (!low) return false;
+    let hits = 0;
+    for (const t of pdpContextTokens) {
+      if (low.includes(t)) hits += 1;
+    }
+    const need = pdpContextTokens.length <= 2 ? 1 : 2;
+    return hits >= need;
+  };
+  // Если первичный выбор не связан с текущим PDP (часто подмешивается "You might also like"),
+  // пересобираем стороны из полного списка URL по контексту страницы.
+  if (pdpContextTokens.length > 0) {
+    const chosen = [byType.obverse, byType.reverse].filter(Boolean);
+    const hasContextInChosen = chosen.some((u) => matchesPdpContext(u));
+    if (!hasContextInChosen || !byType.obverse || !byType.reverse) {
+      const contextUrls = (scraped.imageUrls || []).filter((u) => matchesPdpContext(u));
+      if (contextUrls.length > 0) {
+        const byContextType = pickBestByType(contextUrls);
+        if (byContextType.obverse) byType.obverse = byContextType.obverse;
+        if (byContextType.reverse) byType.reverse = byContextType.reverse;
+        if (!byType.box && byContextType.box) byType.box = byContextType.box;
+        if (!byType.certificate && byContextType.certificate) byType.certificate = byContextType.certificate;
+      }
+    }
+  }
+  // Если product subset узкий (иногда только 1 сторона), добираем недостающее только из той же папки ассетов.
+  const familySeed = byType.obverse || byType.reverse || byType.box || byType.certificate || null;
+  if (familySeed && (!byType.obverse || !byType.reverse || !byType.box || !byType.certificate)) {
+    const familyFolder = String(familySeed).split("?")[0].split("/").slice(0, -1).join("/");
+    const familyUrls = (scraped.imageUrls || []).filter((u) => String(u).startsWith(familyFolder + "/"));
+    const familyByType = pickBestByType(familyUrls);
+    if (!byType.obverse && familyByType.obverse) byType.obverse = familyByType.obverse;
+    if (!byType.reverse && familyByType.reverse) byType.reverse = familyByType.reverse;
+    if (!byType.box && familyByType.box) byType.box = familyByType.box;
+    if (!byType.certificate && familyByType.certificate) byType.certificate = familyByType.certificate;
+  }
+  /**
+   * На части commemorative RM отдаёт только "in-acrylic-block"/"case-left" без явных obv/rev.
+   * Чтобы не оставлять плейсхолдер, используем box как fallback для сторон.
+   */
+  if (!byType.obverse && !byType.reverse && byType.box) {
+    byType.obverse = byType.box;
+    byType.reverse = byType.box;
+  }
+  // Не сохраняем один и тот же CDN-URL в нескольких ролях: это даёт визуальные дубли в галерее.
+  const normImg = (u) => String(u || "").split("?")[0].trim().toLowerCase();
+  if (byType.obverse && byType.reverse && normImg(byType.obverse) === normImg(byType.reverse)) {
+    byType.obverse = null;
+  }
+  if (byType.box && byType.reverse && normImg(byType.box) === normImg(byType.reverse)) {
+    byType.box = null;
+  }
+  if (byType.certificate && byType.reverse && normImg(byType.certificate) === normImg(byType.reverse)) {
+    byType.certificate = null;
+  }
+  if (byType.box && byType.obverse && normImg(byType.box) === normImg(byType.obverse)) {
+    byType.box = null;
+  }
+  if (byType.certificate && byType.obverse && normImg(byType.certificate) === normImg(byType.obverse)) {
+    byType.certificate = null;
+  }
+  /** Не дублируем одну сторону в другую: лучше null, чем одинаковые obv/rev. */
   const raw = {
     title: scraped.title,
     specs,

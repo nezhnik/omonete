@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/partner-issues/2023-malta-copernicus-100-euro-1-oz-gold-bu",
+  "title": "2023 Malta Copernicus",
+  "subtitle": "100 Euro 1 oz Gold BU",
+  "specs": {
+    "Series": "Partner Issues",
+    "Year": "2023",
+    "Grade": "BU",
+    "Denomination": "100 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32,00",
+    "Mintage": "200",
+    "Finishing": "Rose Gold, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-gold-bu-900px_a.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-gold-bu-900px_r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-gold-bu-900px_a.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-gold-bu-900px_r.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_11_22.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_24_09.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_34_04.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:45:17.065Z"
+}

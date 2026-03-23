@@ -18,7 +18,7 @@ const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const COINS_DIR = path.join(DATA_DIR, "coins");
 
 /** Не выгружать в JSON (удалены из каталога); см. scripts/sql/delete-coins-5998-6000.sql */
-const EXCLUDED_EXPORT_COIN_IDS = new Set(["5998", "6000"]);
+const EXCLUDED_EXPORT_COIN_IDS = new Set(["5998", "6000", "6012"]);
 
 // Только свои пути из БД. URL ЦБ не используем — на сайте только монеты с картинками в БД.
 function obverseUrl(imageObverse) {
@@ -380,7 +380,8 @@ async function run() {
   const rectangularIds = getRectangularCoinIds();
 
   const listCoins = rowsToExport.map((r) => {
-    const firstImageSide = getFirstImageSide(r.mint);
+    const { mintName, mintShort } = mintDisplayFromRow(r);
+    const firstImageSide = getFirstImageSide(mintName || mintShort || r.mint);
     const imageObverse = r.image_obverse;
     const imageReverse = r.image_reverse;
     const imageUrls = r.image_urls;
@@ -388,6 +389,7 @@ async function run() {
     const imageBlisterObv = r.image_blister_obverse;
     const imageBox = r.image_box;
     const imageCertificate = r.image_certificate;
+    const isRoyalMint = /(^|\s)royal\s+mint(\s|$)/i.test(String(mintName || mintShort || r.mint || ""));
     const releaseDate = r.release_date;
     const year =
       yearFromCatalogSuffix(r.catalog_suffix) ??
@@ -413,8 +415,8 @@ async function run() {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
-    if (imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
+    if (!isRoyalMint && imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
+    if (!isRoyalMint && imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
     if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
     if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
@@ -426,7 +428,6 @@ async function run() {
     const weightLabel = getWeightLabel(r.weight_g, r.weight_oz);
     const weightG = parseWeightG(r.weight_g);
     const metalLabelStr = metalOnly(r.metal);
-    const { mintName, mintShort } = mintDisplayFromRow(r);
     return {
       id: String(r.id),
       title: cleanTitle(r.title),
@@ -506,7 +507,8 @@ async function run() {
   let done = 0;
   let written = 0;
   for (const r of rowsToExport) {
-    const firstImageSide = getFirstImageSide(r.mint);
+    const { mintName: mintNameOut, mintShort: mintShortOut } = mintDisplayFromRow(r);
+    const firstImageSide = getFirstImageSide(mintNameOut || mintShortOut || r.mint);
     const imageUrls = r.image_urls;
     const catalogNumber = r.catalog_number;
     const imageObverse = r.image_obverse;
@@ -515,6 +517,7 @@ async function run() {
     const imageBlisterObv = r.image_blister_obverse;
     const imageBox = r.image_box;
     const imageCertificate = r.image_certificate;
+    const isRoyalMint = /(^|\s)royal\s+mint(\s|$)/i.test(String(mintNameOut || mintShortOut || r.mint || ""));
     const isThreeCoinSet = (r.title || "").includes("Three Coin Set") || (r.title || "").includes("3 Coin Set");
     const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
     const obverse = dropWrong(obverseUrl(imageObverse));
@@ -534,8 +537,8 @@ async function run() {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
-    if (imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
+    if (!isRoyalMint && imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
+    if (!isRoyalMint && imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
     if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
     if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
@@ -560,7 +563,6 @@ async function run() {
 
     const { code: metalCode, color: metalColor } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
-    const { mintName: mintNameOut, mintShort: mintShortOut } = mintDisplayFromRow(r);
     const coin = {
       id: String(r.id),
       title: r.title,

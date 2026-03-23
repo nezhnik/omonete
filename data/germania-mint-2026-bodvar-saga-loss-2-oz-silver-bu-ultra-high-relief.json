@@ -1,0 +1,32 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/bodvar-saga/2026-bodvar-saga-loss-2-oz-silver-bu-ultra-high-relief",
+  "title": "2026 Bödvar Saga: Loss",
+  "subtitle": "2 oz Silver BU Ultra High Relief",
+  "specs": {
+    "Series": "Bödvar Saga",
+    "Year": "2026",
+    "Grade": "BU",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00 mm",
+    "Mintage": "500",
+    "Finishing": "Antique Finish, Black Light Colours, Numbering",
+    "Package": "Capsule, COA, Pouch, Qureco"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-a.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-a.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-r.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_32_19.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_37_16.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_47_11.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_01_00_17.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_01_05_23.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:39:44.067Z"
+}

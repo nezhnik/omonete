@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania-beasts/germania-beasts-fafnir-geminus-2-x-1-oz-silver-bu",
+  "title": "Germania Beasts: Fafnir Geminus",
+  "subtitle": "2 x 1 oz Silver BU",
+  "specs": {
+    "Series": "Germania Beasts",
+    "Year": "2020",
+    "Grade": "BU",
+    "Denomination": "2 x 5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 x 1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Package": "Capsule, Certificate of Authenticity, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/Fafnir-1oz-Bu-Avers_a.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/Fafnir-1oz-Bu-Revers_a.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/Fafnir-1oz-Bu-Avers_a.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/Fafnir-1oz-Bu-Revers_a.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/fafnir-g-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/fafnir-g-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/fafnir-g-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/fafnir-g-4.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/fafnir-g-5.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:40:15.859Z"
+}

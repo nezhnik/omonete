@@ -28,7 +28,7 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "John Lennon 2025 UK 1KG Silver Proof Coin",
@@ -145,12 +145,12 @@
       "blister_obverse": null,
       "blister_reverse": null,
       "box": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/john-lennon/product-images/uk25jlks-john-lennon-2025-uk-1kg-silver-proof-coin-case-left-1500x1500-f3a2c67.jpg",
-      "certificate": null
+      "certificate": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/john-lennon/product-images/uk25jlks-tjohn-lennon-2025-uk-1kg-silver-proof-coin-carton-upright-1500x1500-f3a2c67.jpg"
     },
     "price": "Price: £4,717.50",
     "requestedUrl": "https://www.royalmint.com/shop/limited-editions/music-legends/john-lennon/john-lennon-2025-1kg-silver-proof-coin",
     "pdpUrl": "https://www.royalmint.com/shop/limited-editions/music-legends/john-lennon/john-lennon-2025-1kg-silver-proof-coin",
-    "pdpPlainTextPreview": "Struck in 999 fine silver and finished to Proof standard. Celebrates John Lennon’s iconic contributions to the world of music and activism.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Limited Editions Music Legends John Lennon John Lennon 2025 UK 1KG Silver Proof Coin Share via ONLY 64 AVAILABLE Silver Proof John Lennon 2025 UK 1KG Silver Proof Coin Limited Edition 64 Price: £4,717.50 Limited Edition 64 Only 64 coins are available in this Limited Edition Presentation Struck in 999 fine silver and finished to Proof standard Celebrates John Lennon’s iconic contributions to the world of music and activism Features the legendary photography of respected music industry photographer Bob Gruen Housed in decorative packaging with a booklet detailing John Lennon’s incredible career An official release produced in partnership with Yoko Ono Lennon & Bag One Arts, Inc. Silver Proof YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £61.69 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £60.49 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,592.41 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,462.25 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock SPECIFICATION Specification Value Denomination £500 Maximum Coin Mintage 66 Alloy 999 Fine Silver Weight 1005.00 g Diameter 100.00mm Specification Value Reverse Designer Henry Gray Obverse Designer Martin Jennings Quality Proof Year 2025 Pure Metal Type Silver Edge Milled"
+    "pdpPlainTextPreview": "Struck in 999 fine silver and finished to Proof standard. Celebrates John Lennon’s iconic contributions to the world of music and activism.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Limited Editions Music Legends John Lennon John Lennon 2025 UK 1KG Silver Proof Coin Share via ONLY 64 AVAILABLE Silver Proof John Lennon 2025 UK 1KG Silver Proof Coin Limited Edition 64 Price: £4,717.50 Limited Edition 64 Only 64 coins are available in this Limited Edition Presentation Struck in 999 fine silver and finished to Proof standard Celebrates John Lennon’s iconic contributions to the world of music and activism Features the legendary photography of respected music industry photographer Bob Gruen Housed in decorative packaging with a booklet detailing John Lennon’s incredible career An official release produced in partnership with Yoko Ono Lennon & Bag One Arts, Inc. Silver Proof YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.24 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.04 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,485.70 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,476.00 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock SPECIFICATION Specification Value Denomination £500 Maximum Coin Mintage 66 Alloy 999 Fine Silver Weight 1005.00 g Diameter 100.00mm Specification Value Reverse Designer Henry Gray Obverse Designer Martin Jennings Quality Proof Year 2025 Pure Metal Type Silver Edge Milled"
   },
   "saved": {
     "obverse": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-obv.webp",
@@ -158,6 +158,6 @@
     "blister_obverse": null,
     "blister_reverse": null,
     "box": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-box.webp",
-    "certificate": null
+    "certificate": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-cert.webp"
   }
 }

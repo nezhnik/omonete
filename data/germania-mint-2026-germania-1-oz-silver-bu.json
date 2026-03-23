@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2026-germania-1-oz-silver-bu",
+  "title": "2026 Germania",
+  "subtitle": "1 oz Silver BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2026",
+    "Grade": "BU",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint / Sunshine Minting",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Mintage": "35 000 (10 000 GM, 25 000 SM)",
+    "Package": "Capsule, Certificate of Authenticity"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11829_etap-fizyczny_900px-kopia.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/germania-1-26.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11829_etap-fizyczny_900px-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/germania-1-26.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_26_11.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_37_07.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_15_03.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_21_00.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_01_00_10.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:10.761Z"
+}

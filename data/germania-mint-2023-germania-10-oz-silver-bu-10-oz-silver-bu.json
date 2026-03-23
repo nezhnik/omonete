@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2023-germania-10-oz-silver-bu-10-oz-silver-bu",
+  "title": "2023 Germania 10 oz Silver BU",
+  "subtitle": "10 oz Silver BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2023",
+    "Grade": "BU",
+    "Denomination": "50 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "10 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "70.00",
+    "Mintage": "1000"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-10-oz-silver-bu_a_900.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-10-oz-silver-bu_b_900.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-10-oz-silver-bu_a_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-10-oz-silver-bu_b_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/23-1oz-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/23-10oz-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/23-10oz-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:40:59.687Z"
+}

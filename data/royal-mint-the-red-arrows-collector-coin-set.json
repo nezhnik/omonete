@@ -21,13 +21,13 @@
     "quality": "Circulating",
     "catalog_number": "GB-ROYAL-THE-RED-ARROWS-COLLECTOR-COIN-SET",
     "catalog_suffix": "the-red-arrows-collector-coin-set",
-    "price_display": "Price: £85.00",
+    "price_display": null,
     "source_url": "https://www.royalmint.com/shop/limited-editions/red-arrows/The-Red-Arrows-Collector-Coin-Set",
-    "image_obverse": "/image/coins/foreign/the-red-arrows-collector-coin-set-obv.webp",
+    "image_obverse": null,
     "image_reverse": "/image/coins/foreign/the-red-arrows-collector-coin-set-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
-    "image_box": "/image/coins/foreign/the-red-arrows-collector-coin-set-box.webp",
+    "image_box": null,
     "image_certificate": null
   },
   "raw": {
@@ -45,12 +45,7 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/red-arrows/product-images/uk25raspc-the-red-arrows-2025-uk-50p-silver-proof-colour-coin-obverse-edge-1500x1500-f3a2c67.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/red-arrows/product-images/uk25raspc-the-red-arrows-2025-uk-50p-silver-proof-colour-coin-reverse-edge-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/queen-elizabeth-ii-1965-two-shillings-obverse-hise2965f.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/queen-elizabeth-ii-1965-two-shillings-reverse-hise2965f.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-carton-flat.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-carton-upright.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
@@ -114,9 +109,12 @@
       "https://www.royalmint.com/globalassets/bullion/_structure/britannia/2024-britannia/britannia-hub/t3-4-lp-carousel-160x160-bullion-britannia-2024.png",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2024/sovereign/banners/t2_shop_sov2024_160x160.png",
       "https://www.royalmint.com/globalassets/_beta_v3/_bar_images/discover_icon.png",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-case-right.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
+      "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
-      "https://www.royalmint.com/globalassets/icn_success.svg",
       "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
@@ -125,39 +123,30 @@
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/denis-the-menace/product-images/uk26dmbu-75-years-of-dennis-the-menace-2026-uk-50p-brilliant-uncirculated-coin-reverse-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
-      "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/denis-the-menace/product-images/uk26dmbu-75-years-of-dennis-the-menace-2026-uk-50p-brilliant-uncirculated-coin-reverse-pack-front.jpg"
     ],
     "imageUrlsProduct": [
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/queen-elizabeth-ii-1965-two-shillings-obverse-hise2965f.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/queen-elizabeth-ii-1965-two-shillings-reverse-hise2965f.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-carton-flat.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-carton-upright.jpg",
-      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-case-right.jpg"
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/red-arrows/product-images/uk25raspc-the-red-arrows-2025-uk-50p-silver-proof-colour-coin-reverse-edge-1500x1500-f3a2c67.jpg"
     ],
     "classified": {
-      "obverse": "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/queen-elizabeth-ii-1965-two-shillings-obverse-hise2965f.jpg",
-      "reverse": "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/queen-elizabeth-ii-1965-two-shillings-reverse-hise2965f.jpg",
+      "obverse": null,
+      "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/red-arrows/product-images/uk25raspc-the-red-arrows-2025-uk-50p-silver-proof-colour-coin-reverse-edge-1500x1500-f3a2c67.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
-      "box": "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/hisracs-the-red-arrows-collector-coin-set-case-right.jpg",
+      "box": null,
       "certificate": null
     },
-    "price": "Price: £85.00",
+    "price": "",
     "requestedUrl": "https://www.royalmint.com/shop/limited-editions/red-arrows/The-Red-Arrows-Collector-Coin-Set",
     "pdpUrl": "https://www.royalmint.com/shop/limited-editions/red-arrows/The-Red-Arrows-Collector-Coin-Set",
-    "pdpPlainTextPreview": "This collector set brings together a 2025 commemorative coin with a 1965-dated florin\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Limited Editions Red Arrows The Red Arrows Collector Coin Set Share via Silver Proof The Red Arrows Collector Coin Set Limited Edition 600 Price: £85.00 Read Reviews No Longer Available PRODUCT CODE: HISRACS Pay homage to the legacy of the Red Arrows This collector set brings together a 2025 commemorative coin with a 1965-dated florin Features a colour-printed silver Proof edition of our Red Arrows 2025 commemorative coin The reverse of the florin features the first definitive coinage portrait of Queen Elizabeth II, designed by Mary Gillick Includes packaging detailing the history of the Red Arrows and ‘The Blues’, their dedicated engineering team Silver Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £61.60 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £60.40 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,585.97 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,460.00 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock Celebrate the legacy of the Red Arrows with The Red Arrows Collector Coin Set, which brings together a colour-printed silver Proof commemorative coin and a historic florin. The historic coin in this set was struck in the year of the Red Arrows’ inaugural public performance, whilst the commemorative coin brings the Red Arrows design to life in beautiful colour, displaying the red, white and blue trails used in their displays. The Red Arrows’ inaugural public performance took place in 1965 and since then, they have performed nearly 5,000 displays across 57 countries, representing the excellence and capabilities of the Royal Air Force. SPECIFICATION The Red Arrows 2025 UK 50p Silver Proof Colour Coin Specification Value Denomination 50p Alloy .925 Sterling Silver Weight 8.00 g Diameter 27.30mm Reverse Designer Tuch Design Specification Value Obverse Designer Martin Jennings Quality Proof Year 2025 Pure Metal Type Silver 1965 Florin Specification Value Alloy Cupro-Nickel Weight 11.310g Diameter 28.50mm Reverse Designer Edgar Fuller, Cecil Thomas Obverse Designer Mary Gillick Specification Value Quality Circulating Year 1965 CUSTOMER REVIEWS"
+    "pdpPlainTextPreview": "This collector set brings together a 2025 commemorative coin with a 1965-dated florin\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE"
   },
   "saved": {
-    "obverse": "/image/coins/foreign/the-red-arrows-collector-coin-set-obv.webp",
+    "obverse": null,
     "reverse": "/image/coins/foreign/the-red-arrows-collector-coin-set-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
-    "box": "/image/coins/foreign/the-red-arrows-collector-coin-set-box.webp",
+    "box": null,
     "certificate": null
   }
 }

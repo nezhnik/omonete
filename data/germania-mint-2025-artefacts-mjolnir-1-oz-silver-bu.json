@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/artefacts/2025-artefacts-mjolnir-1-oz-silver-bu",
+  "title": "2025 Artefacts:",
+  "subtitle": "Mjölnir 1 oz Silver BU",
+  "specs": {
+    "Series": "Artefacts",
+    "Year": "2025",
+    "Grade": "BU",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Mintage": "5 000 pcs",
+    "Package": "Capsule, Certificate of Authenticity"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-artefacts-mjolnir-1-oz_a_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-artefacts-mjolnir-1-oz_r_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/2025-artefacts-mjolnir-1-oz_a_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/12/2025-artefacts-mjolnir-1-oz_r_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2580-2025-Artefacts-Mjolnir-1-oz-Silver-BU_1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2580-2025-Artefacts-Mjolnir-1-oz-Silver-BU_3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2580-2025-Artefacts-Mjolnir-1-oz-Silver-BU_2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2580-2025-Artefacts-Mjolnir-1-oz-Silver-BU_6.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2580-2025-Artefacts-Mjolnir-1-oz-Silver-BU_8.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:39:28.216Z"
+}

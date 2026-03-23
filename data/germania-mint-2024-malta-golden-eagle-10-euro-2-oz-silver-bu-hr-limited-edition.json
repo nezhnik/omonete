@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/golden-eagle/2024-malta-golden-eagle-10-euro-2-oz-silver-bu-hr-limited-edition",
+  "title": "2024 Malta Golden Eagle:",
+  "subtitle": "10 Euro 2 oz Silver BU HR - Limited Edition",
+  "specs": {
+    "Series": "Golden Eagle",
+    "Year": "2024",
+    "Grade": "BU",
+    "Denomination": "10 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "500",
+    "Finishing": "Antique Finish, Colouring, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/2024-golden-eagle-2oz-le_a_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2024-golden-eagle-2oz-le_r_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/2024-golden-eagle-2oz-le_a_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2024-golden-eagle-2oz-le_r_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/ge-24-e-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/ge-24-e-2-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/ge-24-e-2-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:26.609Z"
+}

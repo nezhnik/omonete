@@ -1,0 +1,33 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/norns/2026-norns-werdanda-1-oz-silver-bu-3",
+  "title": "2026 Norns: Werdanda",
+  "subtitle": "1 oz Silver BU",
+  "specs": {
+    "Series": "Norns",
+    "Year": "2026",
+    "Grade": "BU",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Dimensions": "5 Mark",
+    "Mintage": "5 000 pcs",
+    "Package": "Capsule, Certificate of Authenticity"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11244_Etap-fizyczny_awers_900px-1.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/rewers-900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11244_Etap-fizyczny_awers_900px-1.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/rewers-900px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-505.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-508.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-507.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/norns-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/norns-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-504.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-509.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:45:08.796Z"
+}

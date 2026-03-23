@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania-beasts/germania-beasts-fafnir-ultra-double-high-relief-2-oz-silver-bu",
+  "title": "Germania Beasts: Fafnir",
+  "subtitle": "Ultra Double High Relief 2 oz Silver BU",
+  "specs": {
+    "Series": "Germania Beasts",
+    "Year": "2020",
+    "Grade": "BU",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "999"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Av.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Rev.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Av.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Rev.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fafnir-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fafnir-2-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/fafnir-2-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:40:19.780Z"
+}

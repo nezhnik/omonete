@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2026-germania-1-oz-silver-proof",
+  "title": "2026 Germania",
+  "subtitle": "1 oz Silver Proof",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2026",
+    "Grade": "Proof",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Mintage": "500 pcs",
+    "Package": "Capsule, Certificate of Authenticity, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11158_Germania-1-oz-Silver-proof_900px-kopia.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11158_Germania-1-oz-Silver-proof_Revers_900px-kopia.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11158_Germania-1-oz-Silver-proof_900px-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11158_Germania-1-oz-Silver-proof_Revers_900px-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324-Germania-1-oz-Silver-Proof_2_1200.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324-Germania-1-oz-Silver-Proof_7_1200.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324-Germania-1-oz-Silver-Proof_5_1200.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324-Germania-1-oz-Silver-Proof_1_1200.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324-Germania-1-oz-Silver-Proof_3_1200.png"
+  ],
+  "parsedAt": "2026-03-23T18:42:18.519Z"
+}

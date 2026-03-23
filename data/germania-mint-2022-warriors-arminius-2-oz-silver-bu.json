@@ -1,0 +1,30 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/warriors/2022-warriors-arminius-2-oz-silver-bu",
+  "title": "2022 Warriors:",
+  "subtitle": "Arminius 2 oz Silver BU",
+  "specs": {
+    "Series": "Warriors",
+    "Year": "2022",
+    "Grade": "High Relief",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "499",
+    "Finishing": "Antique Finish, Selective Gold Plating, Numbering",
+    "Package": "Capsule, Certificate of Authenticity, Beautybox, Wooden box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/skoll-1-oz-black-silver-bu_a_900px-1-2.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/warrior-arminius-2-oz-ag-9999_rev900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/skoll-1-oz-black-silver-bu_a_900px-1-2.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warrior-arminius-2-oz-ag-9999_rev900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-3-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-3-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-3-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:46:31.902Z"
+}

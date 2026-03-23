@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/mythical-forest/2022-mythical-forest-linden-leaf-1-oz-silver-proof",
+  "title": "2022 Mythical Forest:",
+  "subtitle": "Linden Leaf 1 oz Silver Proof",
+  "specs": {
+    "Series": "Mythical Forest",
+    "Year": "2022",
+    "Grade": "Proof",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Finishing": "numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-2022-1-oz-silver-proof_awers_900.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/linden_leaf_2022_silver_proof_1oz_B.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-2022-1-oz-silver-proof_awers_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden_leaf_2022_silver_proof_1oz_B.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-1-proof.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-2-proof.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:43:42.793Z"
+}

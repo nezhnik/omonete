@@ -1,0 +1,30 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2026-germania-1-oz-silver-bu-wmf-edition",
+  "title": "2026 Germania",
+  "subtitle": "1 oz Silver BU WMF Edition",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2026",
+    "Grade": "BU",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61 mm",
+    "Mintage": "500",
+    "Finishing": "Yellow Gold, Privy Mark, Numbering",
+    "Package": "Capsule, COA, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-germania-1-oz-wmf-edition_a_900.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-germania-1-oz-wmf-edition_r_900.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/2026-germania-1-oz-wmf-edition_a_900.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/2026-germania-1-oz-wmf-edition_r_900.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_38_03.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_13_14.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_08_15.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:14.579Z"
+}

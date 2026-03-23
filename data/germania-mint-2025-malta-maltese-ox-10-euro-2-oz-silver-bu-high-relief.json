@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/maltese/2025-malta-maltese-ox-10-euro-2-oz-silver-bu-high-relief",
+  "title": "2025 Malta Maltese Ox",
+  "subtitle": "10 Euro 2 oz Silver BU High Relief",
+  "specs": {
+    "Series": "Maltese",
+    "Year": "2025",
+    "Grade": "BU",
+    "Country": "Malta",
+    "Denomination": "10 euro",
+    "Mint mark": "-",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00 mm",
+    "Mintage": "500 pcs",
+    "Finishing": "Ruthenium Plating, Colouring, Yellow Gold, Numbering",
+    "Package": "Capsule, Certificate of Authenticity, Wooden display"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/2025-malta-maltese-ox-10-euro-2-oz-a_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2025-malta-maltese-ox-10-euro-2-oz-r_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/2025-malta-maltese-ox-10-euro-2-oz-a_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/2025-malta-maltese-ox-10-euro-2-oz-r_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/ox-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/ox-2-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/ox-2-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:43:10.778Z"
+}

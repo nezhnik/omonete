@@ -21,14 +21,14 @@
     "quality": "Proof",
     "catalog_number": "GB-ROYAL-STORIES-OF-THE-SECOND-WORLD-WAR-2025-50P-SILVER-PROOF-COIN",
     "catalog_suffix": "stories-of-the-second-world-war-2025-50p-silver-proof-coin",
-    "price_display": null,
+    "price_display": "Original price: £87.50Price: £65.63",
     "source_url": "https://www.royalmint.com/shop/limited-editions/stories-of-the-second-world-war/stories-of-the-second-world-war-2025-50p-silver-proof-coin",
     "image_obverse": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
-    "image_box": null,
-    "image_certificate": null
+    "image_box": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-box.webp",
+    "image_certificate": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-cert.webp"
   },
   "raw": {
     "title": "Stories of the Second World War 2025 UK 50p Silver Proof Coin",
@@ -46,6 +46,10 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/uk25sws-stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-case-left-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-obverse-edge-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-carton-upright---uk25sws-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-carton-flat---uk25sws-1500x1500-f3a2c67.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-reverse-edge-1500x1500-f3a2c67.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
@@ -110,6 +114,17 @@
       "https://www.royalmint.com/globalassets/bullion/_structure/britannia/2024-britannia/britannia-hub/t3-4-lp-carousel-160x160-bullion-britannia-2024.png",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2024/sovereign/banners/t2_shop_sov2024_160x160.png",
       "https://www.royalmint.com/globalassets/_beta_v3/_bar_images/discover_icon.png",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/icn_success.svg",
+      "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/denis-the-menace/product-images/uk26dmbu-75-years-of-dennis-the-menace-2026-uk-50p-brilliant-uncirculated-coin-reverse-pack-front.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
@@ -117,27 +132,31 @@
       "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
     "imageUrlsProduct": [
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/uk25sws-stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-case-left-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-obverse-edge-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-carton-upright---uk25sws-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-carton-flat---uk25sws-1500x1500-f3a2c67.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-reverse-edge-1500x1500-f3a2c67.jpg"
     ],
     "classified": {
-      "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-reverse-edge-1500x1500-f3a2c67.jpg",
+      "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-obverse-edge-1500x1500-f3a2c67.jpg",
       "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/d25sp---the-2025-united-kingdom-silver-proof-coin-set---stories-of-the-second-world-war-2025-uk-50p-coin-reverse-edge-1500x1500-f3a2c67.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
-      "box": null,
-      "certificate": null
+      "box": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/uk25sws-stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-case-left-1500x1500-f3a2c67.jpg",
+      "certificate": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/stories-of-ww2/product-images/stories-of-the-second-world-war-2025-uk-50p-silver-proof-coin-carton-upright---uk25sws-1500x1500-f3a2c67.jpg"
     },
-    "price": "",
+    "price": "Original price: £87.50Price: £65.63",
     "requestedUrl": "https://www.royalmint.com/shop/limited-editions/stories-of-the-second-world-war/stories-of-the-second-world-war-2025-50p-silver-proof-coin",
     "pdpUrl": "https://www.royalmint.com/shop/limited-editions/stories-of-the-second-world-war/stories-of-the-second-world-war-2025-50p-silver-proof-coin",
-    "pdpPlainTextPreview": "Commemorates the extraordinary acts of the people who served Britain and the Commonwealth during one of history’s most devastating conflicts. Struck in 925 fine silver and finished to Proof standard.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE"
+    "pdpPlainTextPreview": "Commemorates the extraordinary acts of the people who served Britain and the Commonwealth during one of history’s most devastating conflicts. Struck in 925 fine silver and finished to Proof standard.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Limited Editions Stories of the Second World War Stories of the Second World War 2025 UK 50p Silver Proof Coin Share via Silver Proof Stories of the Second World War 2025 UK 50p Silver Proof Coin Limited Edition 3500 Original price: £87.50 Price: £65.63 Add to basket Quantity ADD TO BASKET In Stock | 1 - 10 working days for orders to the UK PRODUCT CODE: UK25SWS Limited Edition 3500 Commemorates the extraordinary acts of the people who served Britain and the Commonwealth during one of history’s most devastating conflicts Struck in 925 fine silver and finished to Proof standard Dated 2025, the coin coincides with the 80th anniversary of the end of this historic conflict Features bespoke artwork by Timothy Noad depicting three of the General Service medals awarded to those who served during the Second World War The perfect keepsake for military enthusiasts and history buffs alike Developed with the assistance of Imperial War Museums (IWM) Silver Proof YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.24 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.04 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,485.70 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,476.00 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock SPECIFICATION Specification Value Denomination 50p Maximum Coin Mintage 5060 Alloy .925 Sterling Silver Weight 8.00 g Diameter 27.30mm Specification Value Reverse Designer Timothy Noad Obverse Designer Martin Jennings Quality Proof Year 2025 Pure Metal Type Silver CUSTOMER REVIEWS"
   },
   "saved": {
     "obverse": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-obv.webp",
     "reverse": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
-    "box": null,
-    "certificate": null
+    "box": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-box.webp",
+    "certificate": "/image/coins/foreign/stories-of-the-second-world-war-2025-50p-silver-proof-coin-cert.webp"
   }
 }

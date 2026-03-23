@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2024-germania-2-oz-silver-bu-2-oz-silver-bu",
+  "title": "2024 Germania 2 oz Silver BU",
+  "subtitle": "2 oz Silver BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2024",
+    "Grade": "BU",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "50.00",
+    "Mintage": "2000"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2oz-silver-bu_a_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2oz-silver-bu_r_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2oz-silver-bu_a_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2oz-silver-bu_r_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/1oz-3-1.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:41:26.915Z"
+}

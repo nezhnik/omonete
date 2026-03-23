@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2022-allegories-polonia-germania-10-oz-silver-bu",
+  "title": "2022 Allegories:",
+  "subtitle": "Polonia & Germania 10 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2022",
+    "Grade": "BU",
+    "Denomination": "50 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "10 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "250",
+    "Package": "Capsule"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-10-oz-silver-bu_ave_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-10-oz-silver-bu_rev_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-10-oz-silver-bu_ave_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-10-oz-silver-bu_rev_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/pol-10-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/pol-10-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/pol-10-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:39:00.247Z"
+}

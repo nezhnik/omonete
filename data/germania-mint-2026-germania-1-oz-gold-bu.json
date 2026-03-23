@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2026-germania-1-oz-gold-bu",
+  "title": "2026 Germania",
+  "subtitle": "1 oz Gold BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2026",
+    "Grade": "BU",
+    "Denomination": "100 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32 mm",
+    "Mintage": "100",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/etap-fizyczny_gold-bu_900px-kopia.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/Germania-1-oz-gold-BU_Revers_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/etap-fizyczny_gold-bu_900px-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Germania-1-oz-gold-BU_Revers_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_9_1200.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_1_1200.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_3_1200.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_7_1200.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_4_1200.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:06.873Z"
+}

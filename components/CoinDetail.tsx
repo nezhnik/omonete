@@ -113,19 +113,21 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
   })();
   const rectangular = !!coin.rectangular;
   const [selectedImage, setSelectedImage] = useState(0);
+  const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
 
-  const handleShare = async (e: React.MouseEvent) => {
+  const handleShare = async (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
     e.stopPropagation();
     const url = typeof window !== "undefined" ? window.location.href : "";
     const title = coin.title ? `${cleanCoinTitle(coin.title)} — О монете` : document.title;
+    const shareData: ShareData = { title, text: cleanCoinTitle(coin.title), url };
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
-        await navigator.share({ title, url });
+        await navigator.share(shareData);
       } catch (err) {
         if ((err as Error).name !== "AbortError") copyFallback(url);
       }
@@ -134,8 +136,33 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
     }
   };
   function copyFallback(url: string) {
-    if (typeof navigator === "undefined" || !navigator.clipboard) return;
-    navigator.clipboard.writeText(url).catch(() => {});
+    const showToast = () => {
+      setCopyToast(true);
+      window.setTimeout(() => setCopyToast(false), 2200);
+    };
+    if (typeof navigator !== "undefined" && navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(url).then(showToast).catch(() => {
+        if (legacyCopy(url)) showToast();
+      });
+      return;
+    }
+    if (legacyCopy(url)) showToast();
+  }
+  function legacyCopy(url: string): boolean {
+    if (typeof document === "undefined") return false;
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = url;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+      return ok;
+    } catch {
+      return false;
+    }
   }
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -153,6 +180,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
   };
 
   return (
+    <>
     <div className="w-full px-4 sm:px-6 lg:px-20 pb-20 box-border">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-10">
         {/* Левая половина (2 колонки): назад, галерея, дисклеймер. На десктопе фиксируем при скролле. */}
@@ -265,51 +293,38 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             </p>
 
             {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа */}
-            <div className="lg:hidden flex items-center justify-end gap-3">
+            <div className="lg:hidden flex items-center w-full gap-3">
               {isAuthorized ? (
-                <div className="relative group/btn inline-flex">
-                  <button
-                    type="button"
-                    onClick={() => onToggleCollection?.(coin.id)}
-                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
-                    aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                  >
-                    {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
-                  </button>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
-                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                  </div>
-                </div>
-              ) : (
-                <div className="relative group/btn inline-flex">
-                  <a
-                    href="/login"
-                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
-                    aria-label="Добавить в коллекцию"
-                  >
-                    <IconPlus size={22} stroke={2} />
-                  </a>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
-                    <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
-                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                  </div>
-                </div>
-              )}
-              <div className="relative group/btn inline-flex">
                 <button
                   type="button"
-                  onClick={handleShare}
-                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
-                  aria-label="Поделиться"
+                  onClick={() => onToggleCollection?.(coin.id)}
+                  className="h-10 flex-1 rounded-[300px] bg-[#F1F1F2] inline-flex items-center justify-center gap-2 px-4 text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
                 >
-                  <IconShare3 size={22} stroke={2} />
+                  {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
+                  <span className="text-[16px] font-medium">
+                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                  </span>
                 </button>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
-                  Поделиться монетой
-                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                </div>
-              </div>
+              ) : (
+                <a
+                  href="/login"
+                  className="h-10 flex-1 rounded-[300px] bg-[#F1F1F2] inline-flex items-center justify-center gap-2 px-4 text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  aria-label="Добавить в коллекцию"
+                >
+                  <IconPlus size={22} stroke={2} />
+                  <span className="text-[16px] font-medium">Добавить в коллекцию</span>
+                </a>
+              )}
+              <button
+                type="button"
+                onClick={handleShare}
+                onTouchEnd={(e) => { e.preventDefault(); handleShare(e as unknown as React.MouseEvent); }}
+                className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                aria-label="Поделиться"
+              >
+                <IconShare3 size={22} stroke={2} />
+              </button>
             </div>
           </div>
         </div>
@@ -326,49 +341,36 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             {/* Кнопки отдельно, справа */}
             <div className="flex justify-end gap-3">
               {isAuthorized ? (
-                <div className="relative group/btn inline-flex">
-                  <button
-                    type="button"
-                    onClick={() => onToggleCollection?.(coin.id)}
-                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
-                    aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                  >
-                    {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
-                  </button>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
-                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
-                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                  </div>
-                </div>
-              ) : (
-                <div className="relative group/btn inline-flex">
-                  <a
-                    href="/login"
-                    className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
-                    aria-label="Добавить в коллекцию"
-                  >
-                    <IconPlus size={22} stroke={2} />
-                  </a>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150 text-center w-max">
-                    <span className="whitespace-nowrap">Чтобы добавить в коллекцию,</span><br /><span className="underline">авторизуйтесь</span>
-                    <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                  </div>
-                </div>
-              )}
-              <div className="relative group/btn inline-flex">
                 <button
                   type="button"
-                  onClick={handleShare}
-                  className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
-                  aria-label="Поделиться"
+                  onClick={() => onToggleCollection?.(coin.id)}
+                  className="h-10 rounded-[300px] bg-[#F1F1F2] inline-flex items-center gap-2 px-5 text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  aria-label={coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
                 >
-                  <IconShare3 size={22} stroke={2} />
+                  {coin.inCollection ? <IconCheck size={22} stroke={2} /> : <IconPlus size={22} stroke={2} />}
+                  <span className="text-[16px] font-medium">
+                    {coin.inCollection ? "В коллекции" : "Добавить в коллекцию"}
+                  </span>
                 </button>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap opacity-0 pointer-events-none group-hover/btn:opacity-100 transition-opacity duration-150">
-                  Поделиться монетой
-                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#11111B]" aria-hidden />
-                </div>
-              </div>
+              ) : (
+                <a
+                  href="/login"
+                  className="h-10 rounded-[300px] bg-[#F1F1F2] inline-flex items-center gap-2 px-5 text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                  aria-label="Добавить в коллекцию"
+                >
+                  <IconPlus size={22} stroke={2} />
+                  <span className="text-[16px] font-medium">Добавить в коллекцию</span>
+                </a>
+              )}
+              <button
+                type="button"
+                onClick={handleShare}
+                onTouchEnd={(e) => { e.preventDefault(); handleShare(e as unknown as React.MouseEvent); }}
+                className="w-10 h-10 rounded-full bg-[#F1F1F2] flex items-center justify-center text-[#11111B] hover:bg-[#E4E4EA] transition-colors"
+                aria-label="Поделиться"
+              >
+                <IconShare3 size={22} stroke={2} />
+              </button>
             </div>
           </div>
 
@@ -570,5 +572,15 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
         </div>
       </div>
     </div>
+    {copyToast && (
+      <div
+        role="status"
+        aria-live="polite"
+        className="fixed left-1/2 -translate-x-1/2 top-6 z-50 px-4 py-3 bg-[#11111B] text-white text-[14px] font-medium rounded-[300px] whitespace-nowrap shadow-lg"
+      >
+        Ссылка на монету скопирована
+      </div>
+    )}
+    </>
   );
 }

@@ -1,0 +1,31 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/golden-eagle/2025-malta-golden-eagle-30-euro-1-kilo-silver-bu-limited-edition",
+  "title": "2025 Malta Golden Eagle:",
+  "subtitle": "30 Euro 1 Kilo Silver BU – Limited Edition",
+  "specs": {
+    "Series": "Golden Eagle",
+    "Year": "2025",
+    "Grade": "BU",
+    "Country": "Malta",
+    "Denomination": "30 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 kg",
+    "Purity": "999.9 Ag",
+    "Diameter": "100.00 mm",
+    "Mintage": "1000 pcs",
+    "Finishing": "Finishing Ruthenium, Yellow gold, Numbering",
+    "Package": "Capsule, Certificate of Authenticity, Beautybox, Laminated box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-golden-eagle-1kg-a-900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-golden-eagle-1kg-r-900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/12/2025-golden-eagle-1kg-a-900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/12/2025-golden-eagle-1kg-r-900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-kilo-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-kilo-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/12/25-kilo-3.jpg"
+  ],
+  "parsedAt": "2026-03-23T18:42:46.458Z"
+}
