@@ -1205,6 +1205,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
                   onWeightChange={setSelectedWeights}
                   selectedCountries={selectedCountries}
                   onCountryChange={setSelectedCountries}
+                  countryList={countryListByCount}
                   seriesList={seriesListByCount}
                   selectedSeries={selectedSeries}
                   onSeriesChange={setSelectedSeries}
@@ -1335,6 +1336,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
                   onWeightChange={setSelectedWeights}
                   selectedCountries={selectedCountries}
                   onCountryChange={setSelectedCountries}
+                  countryList={countryListByCount}
                   seriesList={seriesListByCount}
                   selectedSeries={selectedSeries}
                   onSeriesChange={setSelectedSeries}

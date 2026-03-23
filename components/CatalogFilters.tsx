@@ -183,6 +183,7 @@ type CatalogFiltersProps = {
   onWeightChange?: (values: string[]) => void;
   selectedCountries?: string[];
   onCountryChange?: (values: string[]) => void;
+  countryList?: string[];
   seriesList?: string[];
   selectedSeries?: string[];
   onSeriesChange?: (values: string[]) => void;
@@ -206,6 +207,7 @@ export function CatalogFilters({
   onWeightChange,
   selectedCountries = [],
   onCountryChange,
+  countryList = [],
   seriesList = [],
   selectedSeries = [],
   onSeriesChange,
@@ -216,6 +218,8 @@ export function CatalogFilters({
   onSearchChange,
   hideSearch = false,
 }: CatalogFiltersProps) {
+  const countriesForFilter = countryList.length > 0 ? countryList : countriesFull;
+
   const [weightListExpanded, setWeightListExpanded] = useState(false);
   const [seriesListExpanded, setSeriesListExpanded] = useState(false);
   const [mintListExpanded, setMintListExpanded] = useState(false);
@@ -381,7 +385,7 @@ export function CatalogFilters({
       <div className="flex flex-col gap-4">
         <h3 className="text-black text-[20px] font-medium leading-7">Страна</h3>
         <FilterChecklist
-          items={countriesFull}
+          items={countriesForFilter}
           selectedValues={selectedCountries}
           onChange={onCountryChange ?? (() => {})}
         />

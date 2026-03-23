@@ -101,6 +101,50 @@ function parseMintage(mintageStr) {
   };
 }
 
+function parseNumberLike(raw) {
+  if (raw == null) return null;
+  const s = String(raw).replace(",", ".").trim();
+  const m = s.match(/(\d+(?:\.\d+)?)/);
+  if (!m) return null;
+  const n = Number(m[1]);
+  return Number.isFinite(n) ? n : null;
+}
+
+function roundTo(value, digits) {
+  const p = 10 ** digits;
+  return Math.round(value * p) / p;
+}
+
+function formatOz(ozValue) {
+  if (!Number.isFinite(ozValue) || ozValue <= 0) return null;
+  return `${roundTo(ozValue, 4)} oz`;
+}
+
+function deriveWeight(weightRaw, titleRaw) {
+  const source = `${String(weightRaw || "").trim()} ${String(titleRaw || "").trim()}`.trim();
+  if (!source) return { weightG: null, weightOz: null };
+
+  const lower = source.toLowerCase();
+  const n = parseNumberLike(source);
+  if (!Number.isFinite(n) || n <= 0) return { weightG: null, weightOz: null };
+
+  if (/\boz\b|ounce|ounces|унц/i.test(lower)) {
+    const weightG = roundTo(n * 31.1034768, 2);
+    return { weightG, weightOz: formatOz(n) };
+  }
+  if (/\bkg\b|kilo|кил/i.test(lower)) {
+    const weightG = roundTo(n * 1000, 2);
+    const weightOz = formatOz(n * 32.1507466);
+    return { weightG, weightOz };
+  }
+  if (/\bg\b|gram|grams|гр|грам/i.test(lower)) {
+    const weightG = roundTo(n, 2);
+    const weightOz = formatOz(n / 31.1034768);
+    return { weightG, weightOz };
+  }
+  return { weightG: null, weightOz: null };
+}
+
 async function main() {
   const arg = process.argv[2];
   let files = [];
@@ -183,7 +227,7 @@ async function main() {
     const series = specs.Series ? String(specs.Series).trim() : null;
     const imageObverse = raw.classified?.obverse || null;
     const imageReverse = raw.classified?.reverse || null;
-    const weightOz = specs.Weight ? String(specs.Weight).trim() : null;
+    const { weightG, weightOz } = deriveWeight(specs.Weight, title);
     const catalogNumber = `PL-GERMANIA-${slug}`.toUpperCase().slice(0, 64);
 
     const values = [
@@ -198,7 +242,7 @@ async function main() {
       metalFineness,
       mintage,
       mintageDisplay,
-      null,
+      weightG,
       weightOz,
       releaseDate,
       catalogNumber,
