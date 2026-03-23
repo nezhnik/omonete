@@ -28,15 +28,23 @@ async function parseGermaniaCoin(page, sourceUrl) {
   return page.evaluate((sourceUrlInPage) => {
     const text = (el) => (el && el.textContent ? el.textContent.trim() : "");
 
-    const title =
-      text(document.querySelector("h1")) ||
-      text(document.querySelector(".single-product h1")) ||
-      text(document.querySelector("title"));
-
-    const subtitle =
+    const h1 =
+      text(document.querySelector("h1")) || text(document.querySelector(".single-product h1")) || "";
+    const h2 =
+      text(document.querySelector("h2")) ||
+      text(document.querySelector(".single-product h2")) ||
       text(document.querySelector("h1 + p")) ||
       text(document.querySelector(".single-product p")) ||
-      null;
+      "";
+
+    const title = h1 || text(document.querySelector("title"));
+    const subtitle = h2 || null;
+    const fullTitle =
+      h1 && h2
+        ? h1.toLowerCase().includes(h2.toLowerCase())
+          ? h1
+          : `${h1} ${h2}`.replace(/\s+/g, " ").trim()
+        : title || null;
 
     const specs = {};
     const table = document.querySelector(".table.items-start");
@@ -106,7 +114,7 @@ async function parseGermaniaCoin(page, sourceUrl) {
 
     return {
       source_url: sourceUrlInPage,
-      title: title || null,
+      title: fullTitle || null,
       subtitle: subtitle || null,
       specs,
       classified: {
