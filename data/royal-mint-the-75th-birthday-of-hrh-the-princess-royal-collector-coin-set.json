@@ -12,7 +12,7 @@
     "metal_fineness": null,
     "mintage": null,
     "mintage_display": null,
-    "weight_g": null,
+    "weight_g": 11.31,
     "weight_oz": null,
     "diameter_mm": 28.5,
     "thickness_mm": null,
@@ -21,14 +21,14 @@
     "quality": "Circulating",
     "catalog_number": "GB-ROYAL-THE-75TH-BIRTHDAY-OF-HRH-THE-PRINCESS-ROYAL-COLLECTOR-COIN-SET",
     "catalog_suffix": "the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set",
-    "price_display": null,
+    "price_display": "Price: £150.00",
     "source_url": "https://www.royalmint.com/shop/limited-editions/the-princess-royal/the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set",
-    "image_obverse": null,
-    "image_reverse": null,
+    "image_obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-obverse-1500x1500-f3a2c67.jpg",
+    "image_reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-reverse-1500x1500-f3a2c67.jpg",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set-cert.webp"
+    "image_certificate": null
   },
   "raw": {
     "title": "The 75th Birthday of HRH The Princess Royal Collector Coin Set",
@@ -46,6 +46,10 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
+      "https://www.royalmint.com/globalassets/_ecommerce/collect/launches/2025/princess-anne/product-images/hisprsset---the-75th-birthday-of-hrh-the-princess-royal-2025-uk-gbp5-silver-proof-coin-reverse-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/collect/launches/2025/princess-anne/product-images/hisprsset---the-75th-birthday-of-hrh-the-princess-royal-2025-uk-gbp5-silver-proof-coin-obverse-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-reverse-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-obverse-1500x1500-f3a2c67.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/collect/launches/2025/princess-anne/product-images/hisprsset---the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set-case-1500x1500-f3a2c67.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
@@ -110,44 +114,46 @@
       "https://www.royalmint.com/globalassets/bullion/_structure/britannia/2024-britannia/britannia-hub/t3-4-lp-carousel-160x160-bullion-britannia-2024.png",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2024/sovereign/banners/t2_shop_sov2024_160x160.png",
       "https://www.royalmint.com/globalassets/_beta_v3/_bar_images/discover_icon.png",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/icn_success.svg",
+      "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
-      "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
-      "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/denis-the-menace/product-images/uk26dmbu-75-years-of-dennis-the-menace-2026-uk-50p-brilliant-uncirculated-coin-reverse-pack-front.jpg"
+      "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
     "imageUrlsProduct": [
-      "https://www.royalmint.com/globalassets/_ecommerce/collect/launches/2025/princess-anne/product-images/hisprsset---the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set-case-1500x1500-f3a2c67.jpg"
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-reverse-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-obverse-1500x1500-f3a2c67.jpg"
     ],
     "classified": {
-      "obverse": null,
-      "reverse": null,
+      "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-obverse-1500x1500-f3a2c67.jpg",
+      "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-reverse-1500x1500-f3a2c67.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
       "box": null,
-      "certificate": "https://www.royalmint.com/globalassets/_ecommerce/collect/launches/2025/princess-anne/product-images/hisprsset---the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set-case-1500x1500-f3a2c67.jpg"
+      "certificate": null
     },
-    "price": "",
+    "price": "Price: £150.00",
     "requestedUrl": "https://www.royalmint.com/shop/limited-editions/the-princess-royal/the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set",
     "pdpUrl": "https://www.royalmint.com/shop/limited-editions/the-princess-royal/the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set",
-    "pdpPlainTextPreview": "This collector set brings together a 2025 commemorative coin with a 1950-dated florin\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE"
+    "pdpPlainTextPreview": "This collector set brings together a 2025 commemorative coin with a 1950-dated florin\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Limited Editions The Princess Royal The 75th Birthday of HRH The Princess Royal Collector Coin Set Share via Silver Proof The 75th Birthday of HRH The Princess Royal Collector Coin Set Limited Edition 750 Price: £150.00 Read Reviews Add to basket Quantity ADD TO BASKET In Stock | 1 - 10 working days for orders to the UK PRODUCT CODE: HISPRSSET Limited Edition 750 Celebrates the legacy of one of the longest-serving members of the British Royal Family The first commemorative coin from The Royal Mint dedicated to Her Royal Highness The Princess Royal The 2025-dated coin has been struck in 925 sterling silver and finished to Proof standard Features a design that has been personally approved by The Princess Royal The reverse of the coin features a faithful recreation of an official photographic portrait of Her Royal Highness alongside The Princess Royal’s Coat of Arms This Collector Set also includes a genuine florin dated 1950, the year Her Royal Highness was born A must-have for regal coin collectors and followers of the Royal Family Silver Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.47 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.27 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,484.37 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,481.75 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £140.68 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock Managing a busy schedule of royal engagements alongside her passion for sport and horses, Her Royal Highness The Princess Royal has been an industrious member of the Royal Family since she was 18 years old. Over the years, her active lifestyle and tireless dedication to charitable organisations has seen her become one of most popular members of the Royal Family. As she continues to serve the Crown, this year, The Princess Royal celebrates her milestone 75th birthday, which we proudly commemorate with a UK coin. SPECIFICATION The 75th Birthday of HRH The Princess Royal 2025 UK £5 Silver Proof Coin Specification Value Denomination £5 Alloy .925 Sterling Silver Weight 28.28 g Diameter 38.61mm Reverse Designer Thomas T. Docherty Specification Value Obverse Designer Martin Jennings Quality Proof Year 2025 Pure Metal Type Silver Edge Milled 1950 George VI Florin Specification Value Denomination Florin Alloy Cupro-Nickel Weight 11.310g Diameter 28.50mm Reverse Designer George Kruger Gray Specification Value Obverse Designer Humphrey Paget Quality Circulating Year 1950 CUSTOMER REVIEWS"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
+    "obverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-obverse-1500x1500-f3a2c67.jpg",
+    "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/princess-anne/product-images/hisprpset-tthe-75th-birthday-of-hrh-the-princess-royal-premium-coin-set-1950-two-shillings-reverse-1500x1500-f3a2c67.jpg",
     "blister_obverse": null,
     "blister_reverse": null,
     "box": null,
-    "certificate": "/image/coins/foreign/the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set-cert.webp"
+    "certificate": null
   }
 }

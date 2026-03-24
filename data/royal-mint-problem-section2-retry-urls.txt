@@ -1,0 +1,22 @@
+# Повторный парсинг: ранее не было obv/rev (после фикса image-gallery + ecommerce/pdp-image)
+https://www.royalmint.com/shop/coin-sets/Britannia-Silver-Set
+https://www.royalmint.com/shop/limited-editions/national-gallery/national-gallery-2024-2-pound-silver-proof-piedfort-coin
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Remembrance-Day-UK-5-Silver-Proof-Piedfort
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Celebrating-British-Diversity-50p-Silver-Proof
+https://www.royalmint.com/shop/limited-editions/portraits-of-a-queen/the-fourth-effigy/portraits-of-a-queen-elizabeth-ii-the-fourth-effigy-2026-silver-proof-piedfort-coin
+https://www.royalmint.com/shop/limited-editions/the-princess-royal/the-75th-birthday-of-hrh-the-princess-royal-collector-coin-set
+https://www.royalmint.com/sovereign/all/2004-UK-Proof-Half-Sovereign
+https://www.royalmint.com/shop/coin-sets/2012-London-Olympic-Paralympic-Gold-Proof-5-two-coin-set
+https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark
+https://www.royalmint.com/sovereign/all/2014-sovereign-I-mint-mark
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2017-Elizabeth-II-Queens-Beasts-Unicorn-of-Scotland-Gold-Proof-Quarter-Ounce-Coin
+https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Queen-Elizabeth-II-Remembrance-Day-UK-5-Gold-Proof-Coin
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Elizabeth-II-Captain-Cook-2-Gold-Proof-Coin
+https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/golden-wedding-gold-5-pound
+https://www.royalmint.com/sovereign/all/hishso06
+https://www.royalmint.com/lunar/year-of-the-horse/lunar-year-of-the-horse-1-oz-gold-proof-coin
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/queens-80th-birthday-gold-5-pound-coin
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/The-Royal-Tudor-Beasts-The-Seymore-Panther-Two-Ounce-Gold-Proof-Coin

@@ -1,0 +1,255 @@
+Файл seed: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-pasted-retry-urls.txt
+URL в seed: 10
+Уже ок (есть JSON, не 404): 0
+Нужно обработать: 10 (новые / 404 / битый JSON)
+Режим --all: к парсингу все 10 URL из seed
+К запуску fetch сейчас: 10  (параллельность 2)
+
+——— старт 1/10#w1 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin
+
+——— старт 2/10#w2 ———
+https://www.royalmint.com/sovereign/all/2004-UK-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[1/10#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[2/10#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[2/10#w2] [dotenv@17.3.1] injecting env (1) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[1/10#w1] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+[2/10#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2004-uk-proof-half-sovereign.json
+[2/10#w2] 
+[2/10#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2004-uk-proof-half-sovereign.json
+[2/10#w2] Загрузка PDP: https://www.royalmint.com/sovereign/all/2004-UK-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[2/10#w2] Классификация картинок: {
+[2/10#w2]   "obverse": null,
+[2/10#w2]   "reverse": null,
+[2/10#w2]   "blister_obverse": null,
+[2/10#w2]   "blister_reverse": null,
+[2/10#w2]   "box": null,
+[2/10#w2]   "certificate": null
+[2/10#w2] }
+[2/10#w2] 
+[2/10#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[2/10#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[1/10#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin.json
+[1/10#w1] 
+[1/10#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin.json
+[1/10#w1] Загрузка PDP: https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin
+[1/10#w1] Классификация картинок: {
+[1/10#w1]   "obverse": null,
+[1/10#w1]   "reverse": null,
+[1/10#w1]   "blister_obverse": null,
+[1/10#w1]   "blister_reverse": null,
+[1/10#w1]   "box": null,
+[1/10#w1]   "certificate": null
+[1/10#w1] }
+[1/10#w1] 
+[1/10#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[1/10#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[1/10#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin.json")
+[1/10#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[2/10#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2004-uk-proof-half-sovereign.json")
+[2/10#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[2/10#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[2/10#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+[1/10#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[1/10#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 3/10#w1 ———
+https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+
+——— старт 4/10#w2 ———
+https://www.royalmint.com/sovereign/all/2014-sovereign-I-mint-mark/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[3/10#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[3/10#w1] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[4/10#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[3/10#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2013-sovereign-i-mint-mark.json
+[3/10#w1] 
+[3/10#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2013-sovereign-i-mint-mark.json
+[3/10#w1] Загрузка PDP: https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[3/10#w1] Классификация картинок: {
+[3/10#w1]   "obverse": null,
+[3/10#w1]   "reverse": null,
+[3/10#w1]   "blister_obverse": null,
+[3/10#w1]   "blister_reverse": null,
+[3/10#w1]   "box": null,
+[3/10#w1]   "certificate": null
+[3/10#w1] }
+[3/10#w1] 
+[3/10#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[3/10#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[3/10#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2013-sovereign-i-mint-mark.json")
+[3/10#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[3/10#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[3/10#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 5/10#w1 ———
+https://www.royalmint.com/sovereign/all/2018-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[4/10#w2] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[4/10#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2014-sovereign-i-mint-mark.json
+[4/10#w2] 
+[4/10#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2014-sovereign-i-mint-mark.json
+[4/10#w2] Загрузка PDP: https://www.royalmint.com/sovereign/all/2014-sovereign-I-mint-mark/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[4/10#w2] Классификация картинок: {
+[4/10#w2]   "obverse": null,
+[4/10#w2]   "reverse": null,
+[4/10#w2]   "blister_obverse": null,
+[4/10#w2]   "blister_reverse": null,
+[4/10#w2]   "box": null,
+[4/10#w2]   "certificate": null
+[4/10#w2] }
+[4/10#w2] 
+[4/10#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[4/10#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[4/10#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2014-sovereign-i-mint-mark.json")
+[4/10#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[4/10#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[4/10#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 6/10#w2 ———
+https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Gold-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[5/10#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 10
+[6/10#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[5/10#w1]   ✓ 2018-elizabeth-ii-piedfort-sovereign-proof-gold-coin-obv.webp
+[6/10#w2]   ✓ 2019-elizabeth-ii-gold-proof-half-sovereign-obv.webp
+[5/10#w1]   ✓ 2018-elizabeth-ii-piedfort-sovereign-proof-gold-coin-rev.webp
+[5/10#w1] [dotenv@17.3.1] injecting env (1) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[5/10#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2018-elizabeth-ii-piedfort-sovereign-proof-gold-coin.json
+[5/10#w1] 
+[5/10#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2018-elizabeth-ii-piedfort-sovereign-proof-gold-coin.json
+[5/10#w1] Загрузка PDP: https://www.royalmint.com/sovereign/all/2018-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[5/10#w1] Классификация картинок: {
+[5/10#w1]   "obverse": "https://www.royalmint.com/globalassets/the-royal-mint/images/pages/shop/ranges/sovereign-2018/the-piedfort-sovereign-2018-obv-tone---ukp05825.jpg",
+[5/10#w1]   "reverse": "https://www.royalmint.com/globalassets/the-royal-mint/images/pages/shop/ranges/sovereign-2018/the-piedfort-sovereign-2018-rev-tone---ukp05825.jpg",
+[5/10#w1]   "blister_obverse": null,
+[5/10#w1]   "blister_reverse": null,
+[5/10#w1]   "box": null,
+[5/10#w1]   "certificate": null
+[5/10#w1] }
+[5/10#w1] 
+[5/10#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[5/10#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[5/10#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2018-elizabeth-ii-piedfort-sovereign-proof-gold-coin.json")
+[5/10#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[5/10#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[5/10#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 7/10#w1 ———
+https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[6/10#w2]   ✓ 2019-elizabeth-ii-gold-proof-half-sovereign-rev.webp
+[6/10#w2] [dotenv@17.3.1] injecting env (1) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[6/10#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-elizabeth-ii-gold-proof-half-sovereign.json
+[6/10#w2] 
+[6/10#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-elizabeth-ii-gold-proof-half-sovereign.json
+[6/10#w2] Загрузка PDP: https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Gold-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[6/10#w2] Классификация картинок: {
+[6/10#w2]   "obverse": "https://www.royalmint.com/globalassets/the-royal-mint/images/pages/shop/ranges/sovereign-2019/the_half-sovereign_2019_obv_angled_right.jpg",
+[6/10#w2]   "reverse": "https://www.royalmint.com/globalassets/the-royal-mint/images/pages/shop/ranges/sovereign-2019/the_half-sovereign_2019_rev_angled_right.jpg",
+[6/10#w2]   "blister_obverse": null,
+[6/10#w2]   "blister_reverse": null,
+[6/10#w2]   "box": null,
+[6/10#w2]   "certificate": null
+[6/10#w2] }
+[6/10#w2] 
+[6/10#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[6/10#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[6/10#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-elizabeth-ii-gold-proof-half-sovereign.json")
+[6/10#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[6/10#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[6/10#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 8/10#w2 ———
+https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[8/10#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[8/10#w2] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+[8/10#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-elizabeth-ii-gold-proof-sovereign.json
+[8/10#w2] 
+[8/10#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-elizabeth-ii-gold-proof-sovereign.json
+[8/10#w2] Загрузка PDP: https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[8/10#w2] Классификация картинок: {
+[8/10#w2]   "obverse": null,
+[8/10#w2]   "reverse": null,
+[8/10#w2]   "blister_obverse": null,
+[8/10#w2]   "blister_reverse": null,
+[8/10#w2]   "box": null,
+[8/10#w2]   "certificate": null
+[8/10#w2] }
+[8/10#w2] 
+[8/10#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[8/10#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[8/10#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2020-elizabeth-ii-gold-proof-sovereign.json")
+[8/10#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[8/10#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[8/10#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 9/10#w2 ———
+https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Piedfort-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[9/10#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[9/10#w2]   ✓ 2022-elizabeth-ii-piedfort-proof-sovereign-obv.webp
+[7/10#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[7/10#w1] [dotenv@17.3.1] injecting env (1) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[7/10#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin.json
+[7/10#w1] 
+[7/10#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin.json
+[7/10#w1] Загрузка PDP: https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[7/10#w1] Классификация картинок: {
+[7/10#w1]   "obverse": null,
+[7/10#w1]   "reverse": null,
+[7/10#w1]   "blister_obverse": null,
+[7/10#w1]   "blister_reverse": null,
+[7/10#w1]   "box": null,
+[7/10#w1]   "certificate": null
+[7/10#w1] }
+[7/10#w1] 
+[7/10#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[7/10#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[7/10#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin.json")
+[7/10#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[7/10#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[7/10#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 10/10#w1 ———
+https://www.royalmint.com/sovereign/all/hishso06/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[9/10#w2]   ✓ 2022-elizabeth-ii-piedfort-proof-sovereign-rev.webp
+[9/10#w2] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[9/10#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2022-elizabeth-ii-piedfort-proof-sovereign.json
+[9/10#w2] 
+[9/10#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2022-elizabeth-ii-piedfort-proof-sovereign.json
+[9/10#w2] Загрузка PDP: https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Piedfort-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[9/10#w2] Классификация картинок: {
+[9/10#w2]   "obverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/sovereign-2022/five-sovereign-piece/product-photography/the-piedfort-sovereign-2022-gold-proof-coin-obverse-edge---sv22pf-1500x1500-ea404be.png",
+[9/10#w2]   "reverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/sovereign-2022/five-sovereign-piece/product-photography/the-piedfort-sovereign-2022-gold-proof-coin-reverse-in-case-left---sv22pf-1500x1500-ea404be.png",
+[9/10#w2]   "blister_obverse": null,
+[9/10#w2]   "blister_reverse": null,
+[9/10#w2]   "box": null,
+[9/10#w2]   "certificate": null
+[9/10#w2] }
+[9/10#w2] 
+[9/10#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[9/10#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[9/10#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2022-elizabeth-ii-piedfort-proof-sovereign.json")
+[9/10#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[9/10#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[9/10#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+[10/10#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[10/10#w1] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[10/10#w1] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-hishso06.json
+[10/10#w1] 
+[10/10#w1] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-hishso06.json
+[10/10#w1] Загрузка PDP: https://www.royalmint.com/sovereign/all/hishso06/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[10/10#w1] Классификация картинок: {
+[10/10#w1]   "obverse": null,
+[10/10#w1]   "reverse": null,
+[10/10#w1]   "blister_obverse": null,
+[10/10#w1]   "blister_reverse": null,
+[10/10#w1]   "box": null,
+[10/10#w1]   "certificate": null
+[10/10#w1] }
+[10/10#w1] 
+[10/10#w1] ────────── Как увидеть монету на сайте (localhost) ──────────
+[10/10#w1] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[10/10#w1]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-hishso06.json")
+[10/10#w1] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[10/10#w1] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[10/10#w1] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+Готово. Успех: 10 ошибок: 0
+Дальше: npm run royal-mint:import && npm run data:export

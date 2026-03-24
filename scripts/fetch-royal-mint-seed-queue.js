@@ -11,13 +11,15 @@
  *   node scripts/fetch-royal-mint-seed-queue.js --refresh-images  — перепарсить seed-URL с битыми картинками: нет obv/rev, плейсхолдер, или в raw.classified есть URL, а в coin не сохранилось
  *   node scripts/fetch-royal-mint-seed-queue.js --concurrency 4    — параллельно N процессов (или ROYAL_MINT_FETCH_CONCURRENCY=2)
  *
+ * URL с /trial-of-the-pyx/ из seed исключаются (архив Pyx не парсим).
+ *
  * Дальше: npm run royal-mint:import → npm run data:export
  */
 const fs = require("fs");
 const path = require("path");
 const { readSeedUrlsFromFile } = require("./royal-mint-seed-url-io.js");
 const { runRoyalMintFetchPool } = require("./royal-mint-fetch-pool.js");
-const { rewriteShopPdpToInvestBullion } = require("./royal-mint-listing-collect.js");
+const { rewriteShopPdpToInvestBullion, isRoyalMintTrialOfPyxUrl } = require("./royal-mint-listing-collect.js");
 
 const DEFAULT_SEED = path.join(__dirname, "royal-mint-seed-urls.txt");
 const DATA_DIR = path.join(__dirname, "..", "data");
@@ -118,7 +120,12 @@ function classifySeedUrl(seedUrl, refreshImages) {
 
 async function main() {
   const { dryRun, parseAll, noImages, refreshImages, seedFile, limit, concurrency } = parseArgs();
-  const seeds = readSeedUrlsFromFile(seedFile);
+  const seedsAll = readSeedUrlsFromFile(seedFile);
+  const seedsSkippedTrial = seedsAll.filter(isRoyalMintTrialOfPyxUrl);
+  const seeds = seedsAll.filter((u) => !isRoyalMintTrialOfPyxUrl(u));
+  if (seedsSkippedTrial.length > 0) {
+    console.log("Пропуск Trial of the Pyx (не парсим):", seedsSkippedTrial.length, "URL");
+  }
   if (seeds.length === 0) {
     console.error("Нет URL в файле:", seedFile);
     process.exit(1);

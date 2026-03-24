@@ -34,6 +34,15 @@ async function parseGermaniaCoin(page, sourceUrl) {
         .replace(/\s+/g, " ")
         .trim();
     };
+    /** Только для названия карточки: убрать хвост Obverse/Awers… (часто склеивается из подзаголовка). */
+    const stripTitleNoise = (v) => {
+      if (!v) return "";
+      return String(v)
+        .replace(/\bWe value your privacy\b/gi, "")
+        .replace(/\s+(?:Obverse|Awers):\s*.+$/i, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    };
     const bodyText = cleanPrivacy(text(document.body));
     const setIfMissing = (key, value) => {
       if (!key || !value) return;
@@ -146,8 +155,8 @@ async function parseGermaniaCoin(page, sourceUrl) {
 
     return {
       source_url: sourceUrlInPage,
-      title: cleanPrivacy(fullTitle) || null,
-      subtitle: cleanPrivacy(subtitle) || null,
+      title: stripTitleNoise(cleanPrivacy(fullTitle)) || null,
+      subtitle: stripTitleNoise(cleanPrivacy(subtitle)) || null,
       specs,
       classified: {
         obverse,

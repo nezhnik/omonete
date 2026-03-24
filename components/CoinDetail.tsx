@@ -3,10 +3,13 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { IconChevronLeft, IconChevronRight, IconCheck, IconPlus, IconShare3 } from "@tabler/icons-react";
+import { buildCoinVisibleIntro } from "../lib/coin-visible-intro";
 import { cleanCoinTitle } from "../lib/cleanTitle";
+import { catalogHrefForMint, catalogHrefForSeries } from "../lib/catalog-deeplinks";
 import { formatQualityDisplay } from "../lib/qualityDisplay";
 import { formatNumbersInString } from "../lib/formatNumber";
 import { formatMintageSpecValue } from "../lib/mintageSpecDisplay";
+import { COIN_DETAIL_MAIN_IMAGE_SCALE } from "../lib/coinCatalogImageScale";
 
 /** Данные монеты для страницы деталей (переиспользуемый тип) */
 export type CoinDetailData = {
@@ -112,6 +115,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
     return urls;
   })();
   const rectangular = !!coin.rectangular;
+  const detailMainImageScale = COIN_DETAIL_MAIN_IMAGE_SCALE[coin.id] ?? 1;
   const [selectedImage, setSelectedImage] = useState(0);
   const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
@@ -207,7 +211,14 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             <div className="flex-1 min-w-0">
               <h1 className="text-black text-[28px] sm:text-[40px] font-semibold leading-tight">{cleanCoinTitle(coin.title)}</h1>
               {coin.seriesName && (
-                <p className="text-[#656565] text-[16px] font-normal mt-0.5">{coin.seriesName}</p>
+                <p className="text-[#656565] text-[16px] font-normal mt-0.5">
+                  <Link
+                    href={catalogHrefForSeries(coin.seriesName, coin.mintCountry)}
+                    className="hover:text-black hover:underline underline-offset-2"
+                  >
+                    {coin.seriesName}
+                  </Link>
+                </p>
               )}
             </div>
           </div>
@@ -235,7 +246,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               <img
                 src={images[selectedImage] ?? coin.imageUrl}
                 alt={cleanCoinTitle(coin.title)}
-                className="w-full h-full max-h-[540px] lg:max-h-[736px] object-contain pointer-events-none select-none"
+                className="w-full h-full max-h-[540px] lg:max-h-[736px] object-contain origin-center pointer-events-none select-none"
+                style={detailMainImageScale !== 1 ? { transform: `scale(${detailMainImageScale})` } : undefined}
               />
               {images.length > 1 && (
                 <>
@@ -291,6 +303,9 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 ? "Информация предоставлена в ознакомительных целях из открытых источников и сайта Банка России"
                 : "Информация предоставлена в ознакомительных целях из открытых источников"}
             </p>
+            <p className="text-[#666666] text-[14px] sm:text-[15px] leading-relaxed mt-4">
+              {buildCoinVisibleIntro(coin)}
+            </p>
 
             {/* Кнопки «В коллекцию» и «Поделиться» — отдельно, справа */}
             <div className="lg:hidden flex items-center w-full gap-3">
@@ -336,7 +351,14 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               <h1 className="text-black text-[28px] sm:text-[40px] font-semibold leading-tight">{cleanCoinTitle(coin.title)}</h1>
             </div>
             {coin.seriesName && (
-              <p className="text-[#656565] text-[16px] font-normal">{coin.seriesName}</p>
+              <p className="text-[#656565] text-[16px] font-normal">
+                <Link
+                  href={catalogHrefForSeries(coin.seriesName, coin.mintCountry)}
+                  className="hover:text-black hover:underline underline-offset-2"
+                >
+                  {coin.seriesName}
+                </Link>
+              </p>
             )}
             {/* Кнопки отдельно, справа */}
             <div className="flex justify-end gap-3">
@@ -380,11 +402,16 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               <div className="flex flex-col gap-4">
                 {coin.mintCountry && <SpecRow label="Страна" value={coin.mintCountry} />}
                 {(coin.mintName || coin.mintShort) && (
-                  <SpecRow
-                    label="Монетный двор"
-                    value={(coin.mintShort ?? coin.mintName ?? "").replace(/, /g, " и ")}
-                    title={coin.mintShort && coin.mintName ? coin.mintName : undefined}
-                  />
+                  <SpecRow label="Монетный двор">
+                    <Link
+                      href={catalogHrefForMint(coin.mintName || coin.mintShort, coin.mintCountry)}
+                      className="text-[#0098E8] text-[16px] font-normal hover:underline shrink-0 text-right"
+                      title="Посмотреть в каталоге"
+                      aria-label={`Монеты монетного двора ${coin.mintName || coin.mintShort} в каталоге`}
+                    >
+                      {(coin.mintShort ?? coin.mintName ?? "").replace(/, /g, " и ")}
+                    </Link>
+                  </SpecRow>
                 )}
                 <SpecRow label="Год выпуска" value={String(coin.year)} />
                 <SpecRow label="Номинал" value={formatNumbersInString(coin.faceValue)} />

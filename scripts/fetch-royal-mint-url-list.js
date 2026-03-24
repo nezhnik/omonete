@@ -18,6 +18,7 @@
 const fs = require("fs");
 const path = require("path");
 const { runRoyalMintFetchPool } = require("./royal-mint-fetch-pool.js");
+const { isRoyalMintTrialOfPyxUrl } = require("./royal-mint-listing-collect.js");
 
 const URL_LIST_FILE = path.join(__dirname, "royal-mint-urls.txt");
 const FETCH_SCRIPT = path.join(__dirname, "fetch-royal-mint-coin-test.js");
@@ -67,7 +68,7 @@ function readUrls() {
 
 async function main() {
   const { limit, start, noImages, concurrency } = parseArgs();
-  let urls = readUrls();
+  let urls = readUrls().filter((u) => !isRoyalMintTrialOfPyxUrl(u));
   if (start > 0) urls = urls.slice(start);
   if (limit > 0) urls = urls.slice(0, limit);
 

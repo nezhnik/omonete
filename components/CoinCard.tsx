@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { IconPlus, IconCheck } from '@tabler/icons-react'
 import { cleanCoinTitle } from '../lib/cleanTitle'
+import { COIN_CATALOG_CARD_IMAGE_SCALE } from '../lib/coinCatalogImageScale'
 
 type CoinCardProps = {
   id: string
@@ -107,6 +108,7 @@ export function CoinCard(props: CoinCardProps) {
     seriesName,
   ].filter(Boolean) as string[]
   const subtitle = subtitleParts.join(" · ")
+  const catalogImageScale = COIN_CATALOG_CARD_IMAGE_SCALE[id] ?? 1
 
   const inner = (
     <div className="group w-full min-w-0 flex flex-col items-stretch">
@@ -118,12 +120,17 @@ export function CoinCard(props: CoinCardProps) {
           onMouseMove={canDesktopHoverSwitch ? handleImageMouseMove : undefined}
           onMouseLeave={canDesktopHoverSwitch ? handleImageMouseLeave : undefined}
         >
-          <div className={`w-full h-full flex items-center justify-center max-w-[17rem] max-h-[17rem] transition-transform duration-500 lg:group-hover:-translate-y-2 ${rectangular || isPackaging(hoverImageIndex) ? "rounded-2xl overflow-hidden" : "rounded-full overflow-hidden"}`}>
-            <img
-              src={images[hoverImageIndex] ?? imageUrl}
-              alt={cleanCoinTitle(title)}
-              className="w-full h-full object-contain"
-            />
+          <div className="w-full h-full flex items-center justify-center max-w-[17rem] max-h-[17rem] transition-transform duration-500 lg:group-hover:-translate-y-2">
+            <div
+              className={`w-full h-full flex items-center justify-center overflow-hidden ${rectangular || isPackaging(hoverImageIndex) ? "rounded-2xl" : "rounded-full"}`}
+            >
+              <img
+                src={images[hoverImageIndex] ?? imageUrl}
+                alt={cleanCoinTitle(title)}
+                className="w-full h-full object-contain origin-center"
+                style={catalogImageScale !== 1 ? { transform: `scale(${catalogImageScale})` } : undefined}
+              />
+            </div>
           </div>
           {/* Кнопка «Добавить в коллекцию»: иконка + tooltip. На мобильных скрыта пока что */}
           <div className="absolute top-1 right-0 sm:top-2 sm:right-0 lg:top-[0.75rem] lg:right-4 pointer-events-none hidden lg:block">

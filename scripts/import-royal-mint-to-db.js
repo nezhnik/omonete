@@ -4,12 +4,19 @@
  * Как у Perth: ключ — страница товара (source_url). В БД пишем канонический URL без ?query и #hash,
  * поиск существующей строки — по каноническому URL и по «старому» виду (с query), чтобы обновить зомби.
  *
+ * JSON с source_url в разделе Trial of the Pyx (/trial-of-the-pyx/) не импортируются.
+ *
  * Fallback по catalog_number только с флагом --match-catalog (миграции).
  *
  * Запуск:
  *   node scripts/import-royal-mint-to-db.js
  *   node scripts/import-royal-mint-to-db.js --purge-404     — удалить строки Royal Mint с title 404 (перед импортом)
  *   node scripts/import-royal-mint-to-db.js --match-catalog — дополнительно искать по catalog_number
+ *   node scripts/import-royal-mint-to-db.js --no-db-spec-collision-check — не писать предупреждения о совпадении спек с БД
+ *   node scripts/import-royal-mint-to-db.js --allow-trial-of-pyx — импортировать JSON с PDP Trial of the Pyx (после fetch с тем же флагом)
+ *
+ * Перед INSERT новой строки: сверка с БД по год+вес+металл+тираж (все заданы с обеих сторон). Совпадение
+ * не отменяет вставку; строка в data/royal-mint-spec-collision-review.jsonl и предупреждение в консоль.
  *   node scripts/import-royal-mint-to-db.js data/royal-mint-slug.json
  *
  * Дальше: npm run data:export
@@ -19,6 +26,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 const { roundSpec, normalizeWeightG, formatWeightG } = require("./format-coin-characteristics.js");
+const { isRoyalMintTrialOfPyxUrl } = require("./royal-mint-listing-collect.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
@@ -78,13 +86,15 @@ const ROYAL_CATALOG_MATCH =
 function parseFlags(argv) {
   const purge404 = argv.includes("--purge-404");
   const matchCatalog = argv.includes("--match-catalog");
+  const noDbSpecCollision = argv.includes("--no-db-spec-collision-check");
+  const allowTrialOfPyx = argv.includes("--allow-trial-of-pyx");
   const arg = argv.find((a) => !a.startsWith("--") && a.endsWith(".json"));
-  return { purge404, matchCatalog, arg };
+  return { purge404, matchCatalog, noDbSpecCollision, allowTrialOfPyx, arg };
 }
 
 async function main() {
   const argv = process.argv.slice(2);
-  const { purge404, matchCatalog, arg } = parseFlags(argv);
+  const { purge404, matchCatalog, noDbSpecCollision, arg } = parseFlags(argv);
 
   let files = [];
   if (arg) {
@@ -227,6 +237,13 @@ async function main() {
       console.warn("  Пропуск (нет source_url royalmint.com):", filePath);
       continue;
     }
+    if (
+      !allowTrialOfPyx &&
+      (isRoyalMintTrialOfPyxUrl(canon) || isRoyalMintTrialOfPyxUrl(c.source_url))
+    ) {
+      console.warn("  Пропуск (Trial of the Pyx, не импортируем):", filePath);
+      continue;
+    }
     const legacyTrim = normalizeSourceUrl(c.source_url);
 
     const title = (c.title_ru && c.title_ru.trim()) ? c.title_ru.trim() : (c.title || "").trim();
@@ -312,6 +329,24 @@ async function main() {
       updated++;
       console.log("  ~", catalogNumber, title || titleEn);
       continue;
+    }
+
+    const skipCollision =
+      noDbSpecCollision || process.env.RM_SKIP_DB_SPEC_DUPLICATE_CHECK === "1";
+    if (!skipCollision) {
+      try {
+        const { checkRoyalMintSpecCollisions } = require("./royal-mint-spec-duplicate-lib.js");
+        const coinForCheck = { ...c, title_en: c.title_en != null ? c.title_en : c.title };
+        const { duplicate_review } = await checkRoyalMintSpecCollisions(conn, coinForCheck, raw.specs || {}, {
+          stage: "import",
+        });
+        if (duplicate_review) {
+          console.warn("  [!] INSERT: в БД уже есть монета с теми же год/вес/металл/тираж —", (title || titleEn).slice(0, 52));
+          console.warn("      См. data/royal-mint-spec-collision-review.jsonl (вставка не отменена).");
+        }
+      } catch (e) {
+        console.warn("  [!] Проверка spec-collision:", e.message);
+      }
     }
 
     const placeholders = cols.map(() => "?").join(", ");

@@ -318,6 +318,88 @@ function CatalogPageContent() {
     };
   }, [showPanel, isXl]);
 
+  // Ozon-style: relative пока не дошли до низа блока, затем fixed bottom 0
+  useEffect(() => {
+    if (!isXl) return;
+    const wrapper = filterWrapperRef.current;
+    const aside = filterAsideRef.current;
+    if (!wrapper || !aside) return;
+
+    /** Пока aside ещё не сверстан (h≈0), reachedBottom даёт true и включается fixed bottom — блок «растёт вверх» и наезжает на тулбар/поиск после перезагрузки */
+    const MIN_ASIDE_HEIGHT_FOR_STICKY = 48;
+
+    const resetAsideToRelativeTop = (a: HTMLElement) => {
+      a.style.position = "relative";
+      a.style.top = "0";
+      a.style.left = "";
+      a.style.width = "";
+      a.style.bottom = "";
+    };
+
+    const updatePosition = () => {
+      const w = filterWrapperRef.current;
+      const a = filterAsideRef.current;
+      if (!w || !a) return;
+      const rect = w.getBoundingClientRect();
+      const wrapperTop = rect.top + window.scrollY;
+      const wrapperHeight = w.offsetHeight;
+      const asideHeight = a.offsetHeight;
+      const vh = window.innerHeight;
+      const scrollY = window.scrollY;
+
+      if (asideHeight < MIN_ASIDE_HEIGHT_FOR_STICKY) {
+        resetAsideToRelativeTop(a);
+        return;
+      }
+
+      const reachedBottom = scrollY + vh >= wrapperTop + asideHeight;
+      const pastColumn = scrollY >= wrapperTop + wrapperHeight - vh;
+
+      if (pastColumn) {
+        a.style.position = "relative";
+        a.style.top = `${wrapperHeight - asideHeight}px`;
+        a.style.left = "";
+        a.style.width = "";
+        a.style.bottom = "";
+      } else if (reachedBottom) {
+        a.style.position = "fixed";
+        a.style.bottom = "0";
+        a.style.top = "auto";
+        a.style.left = `${rect.left}px`;
+        a.style.width = `${rect.width}px`;
+      } else {
+        resetAsideToRelativeTop(a);
+      }
+    };
+
+    updatePosition();
+    // После возврата «Назад» скролл восстанавливается асинхронно — пересчитываем позицию при показе страницы и после восстановления скролла
+    const scheduleUpdate = () => {
+      requestAnimationFrame(() => requestAnimationFrame(updatePosition));
+    };
+    const onPageshow = scheduleUpdate;
+    const onScrollRestored = () => scheduleUpdate();
+    window.addEventListener("pageshow", onPageshow);
+    window.addEventListener("catalogScrollRestored", onScrollRestored);
+    const ro = new ResizeObserver(() => updatePosition());
+    ro.observe(aside);
+    ro.observe(wrapper);
+    const rafId = requestAnimationFrame(() => {
+      requestAnimationFrame(updatePosition);
+    });
+    window.addEventListener("scroll", updatePosition, { passive: true });
+    window.addEventListener("resize", updatePosition);
+    return () => {
+      resetAsideToRelativeTop(aside);
+      window.removeEventListener("pageshow", onPageshow);
+      window.removeEventListener("catalogScrollRestored", onScrollRestored);
+      ro.disconnect();
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", updatePosition);
+      window.removeEventListener("resize", updatePosition);
+    };
+  }, [isXl, showPanel]);
+
   // Восстановление скролла при возврате из страницы монеты (кнопка «Назад» или браузер)
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -810,87 +892,6 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // Ozon-style: relative пока не дошли до низа блока, затем fixed bottom 0
-  useEffect(() => {
-    if (!isXl) return;
-    const wrapper = filterWrapperRef.current;
-    const aside = filterAsideRef.current;
-    if (!wrapper || !aside) return;
-
-    /** Пока aside ещё не сверстан (h≈0), reachedBottom даёт true и включается fixed bottom — блок «растёт вверх» и наезжает на тулбар/поиск после перезагрузки */
-    const MIN_ASIDE_HEIGHT_FOR_STICKY = 48;
-
-    const resetAsideToRelativeTop = (a: HTMLElement) => {
-      a.style.position = "relative";
-      a.style.top = "0";
-      a.style.left = "";
-      a.style.width = "";
-      a.style.bottom = "";
-    };
-
-    const updatePosition = () => {
-      const w = filterWrapperRef.current;
-      const a = filterAsideRef.current;
-      if (!w || !a) return;
-      const rect = w.getBoundingClientRect();
-      const wrapperTop = rect.top + window.scrollY;
-      const wrapperHeight = w.offsetHeight;
-      const asideHeight = a.offsetHeight;
-      const vh = window.innerHeight;
-      const scrollY = window.scrollY;
-
-      if (asideHeight < MIN_ASIDE_HEIGHT_FOR_STICKY) {
-        resetAsideToRelativeTop(a);
-        return;
-      }
-
-      const reachedBottom = scrollY + vh >= wrapperTop + asideHeight;
-      const pastColumn = scrollY >= wrapperTop + wrapperHeight - vh;
-
-      if (pastColumn) {
-        a.style.position = "relative";
-        a.style.top = `${wrapperHeight - asideHeight}px`;
-        a.style.left = "";
-        a.style.width = "";
-        a.style.bottom = "";
-      } else if (reachedBottom) {
-        a.style.position = "fixed";
-        a.style.bottom = "0";
-        a.style.top = "auto";
-        a.style.left = `${rect.left}px`;
-        a.style.width = `${rect.width}px`;
-      } else {
-        resetAsideToRelativeTop(a);
-      }
-    };
-
-    updatePosition();
-    // После возврата «Назад» скролл восстанавливается асинхронно — пересчитываем позицию при показе страницы и после восстановления скролла
-    const scheduleUpdate = () => {
-      requestAnimationFrame(() => requestAnimationFrame(updatePosition));
-    };
-    const onPageshow = scheduleUpdate;
-    const onScrollRestored = () => scheduleUpdate();
-    window.addEventListener("pageshow", onPageshow);
-    window.addEventListener("catalogScrollRestored", onScrollRestored);
-    const ro = new ResizeObserver(() => updatePosition());
-    ro.observe(aside);
-    ro.observe(wrapper);
-    const rafId = requestAnimationFrame(() => {
-      requestAnimationFrame(updatePosition);
-    });
-    window.addEventListener("scroll", updatePosition, { passive: true });
-    window.addEventListener("resize", updatePosition);
-    return () => {
-      window.removeEventListener("pageshow", onPageshow);
-      window.removeEventListener("catalogScrollRestored", onScrollRestored);
-      ro.disconnect();
-      cancelAnimationFrame(rafId);
-      window.removeEventListener("scroll", updatePosition);
-      window.removeEventListener("resize", updatePosition);
-    };
-  }, [isXl, showPanel]);
 
   return (
     <div className="min-h-screen bg-white">

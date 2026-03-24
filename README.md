@@ -79,6 +79,7 @@ npm run dev
 | **scripts/PERTH_SYNC_README.md** | Полный цикл синхронизации Perth (дедуплы, fetch, импорт, проверка) |
 | **docs/ЧТО_СДЕЛАТЬ_ПЕРЕД_ЗАПУСКОМ.md** | .env, Supabase, первый запуск |
 | **docs/IMAGES_STRATEGY.md** | Изображения монет и дворов |
+| **docs/COIN_IMAGES_STRUCTURE.md** | Папки файлов, trim полей, **масштаб карточки по id** (когда монета мельче соседей) |
 | **docs/DB_CONNECTION.md** | Подключение к БД |
 
 ---

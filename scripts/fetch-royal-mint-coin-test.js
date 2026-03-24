@@ -8,6 +8,14 @@
  *   node scripts/fetch-royal-mint-coin-test.js --no-images   — только JSON, без скачивания webp
  *   node scripts/fetch-royal-mint-coin-test.js --allow-graded-slab — не пропускать, если на PDP в тексте есть NGC/PCGS graded
  *   node scripts/fetch-royal-mint-coin-test.js --allow-coin-box     — не пропускать «Coin Box» в названии/описании PDP
+ *   node scripts/fetch-royal-mint-coin-test.js --no-db-spec-collision-check — не сверять с БД (или RM_SKIP_DB_SPEC_DUPLICATE_CHECK=1)
+ *   node scripts/fetch-royal-mint-coin-test.js --allow-trial-of-pyx — парсить PDP Trial of the Pyx (нужно для URL без /archive/)
+ *
+ * По умолчанию URL с /trial-of-the-pyx/ пропускаются. Путь …/trial-of-the-pyx/archive/… часто отдаёт заглушку «Welcome» — в БД используйте …/trial-of-the-pyx/<slug> (без сегмента archive).
+ *
+ * Если задан DATABASE_URL: после парсинга сверка с монетами Royal Mint в БД по год+вес+металл+тираж (все поля
+ * должны быть известны с обеих сторон). При совпадении — coin.duplicate_review и запись в
+ * data/royal-mint-spec-collision-review.jsonl (монета не отбрасывается; сравни названия вручную).
  *
  * По умолчанию URL — первая монета на листинге gold bullion (Lion and Eagle 2026 1oz).
  * Ссылки /shop/... переписываются на invest (gold или silver по эвристике URL).
@@ -33,10 +41,12 @@ const {
   rewriteShopPdpToInvestBullion,
   textLooksLikeGradedSlab,
   textLooksLikeCoinBox,
+  isRoyalMintTrialOfPyxUrl,
   getRoyalMintChromiumLaunchOptions,
   getRoyalMintBrowserContextOptions,
   applyRoyalMintPageHardening,
 } = require("./royal-mint-listing-collect.js");
+const { parseMintageFromSpecs, parseWeightGFromSpecs, checkRoyalMintSpecCollisions } = require("./royal-mint-spec-duplicate-lib.js");
 
 /**
  * Первая монета на листинге gold bullion (Lion and Eagle 2026 1oz).
@@ -135,6 +145,19 @@ function extractRoyalMintGalleryFolder(imgUrl) {
   if (/\.(jpg|jpeg|png|webp)$/i.test(last)) segments.pop();
   if (segments.length === 0) return null;
   return segments.join("/");
+}
+
+/** Уникальные URL с сохранением порядка (ключ — путь без query). */
+function uniqueUrlsStable(urls) {
+  const seen = new Set();
+  const out = [];
+  for (const u of urls) {
+    const k = String(u).split("?")[0].toLowerCase();
+    if (seen.has(k)) continue;
+    seen.add(k);
+    out.push(u);
+  }
+  return out;
 }
 
 function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
@@ -298,7 +321,7 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
   function launchDirectProductShots(u) {
     const p = String(u).toLowerCase().split("?")[0];
     if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
-    if (!/\/globalassets\/(_ecommerce\/.*\/launches\/|consumer\/_campaigns\/)/i.test(p)) return false;
+    if (!/\/globalassets\/(_?ecommerce\/.*\/launches\/|consumer\/_campaigns\/)/i.test(p)) return false;
     if (/160x160|100x100|\/banners\//i.test(p)) return false;
     /** 2026 lunar и др.: только product-images с *-shadow-edge-f3a2c67.jpg (без 1500x1500 в имени). */
     if (
@@ -318,13 +341,15 @@ function filterUrlsByProductGalleryFolder(urls, ctx = {}) {
     const p = String(u).toLowerCase();
     if (!/\.(jpg|jpeg|webp)(\?|$)/i.test(p)) return false;
     if (/160x160|100x100|\/banners\//i.test(p)) return false;
-    const isEcommerceLaunch = /\/globalassets\/_ecommerce\//i.test(p) && /\/launches\//i.test(p);
+    const isEcommerceLaunch = /\/globalassets\/_?ecommerce\//i.test(p) && /\/launches\//i.test(p);
     const isConsumerCampaign = /\/globalassets\/consumer\/_campaigns\//i.test(p);
     if (!isEcommerceLaunch && !isConsumerCampaign) return false;
     const looksLikeProductAsset = (
       p.includes("product-images") ||
       p.includes("/images/") ||
       p.includes("/products/") ||
+      /** Commemorative shop: .../launches/.../theme/pdp-image/*.jpg */
+      p.includes("/pdp-image/") ||
       /** Bullion PDP (desktop-product-pictures): .../launches/2025/tudor-beasts/prods/... */
       /\/prods\//i.test(p)
     );
@@ -648,9 +673,15 @@ async function extractPage(page) {
         ".desktop-product-pictures img, .desktop-product-pictures picture source, .mobile-product-pictures img, .mobile-product-pictures picture source"
       )
       .forEach(pushFromImgEl);
+    /** Один контейнер с двумя классами: div.image-gallery.fluid-image (Shop / limited editions) */
     document
       .querySelectorAll(
-        ".image-gallery .fluid-image, .image-gallery [style*='background-image'], .product-gallery .fluid-image, .product-gallery [style*='background-image']"
+        ".image-gallery.fluid-image img, .image-gallery.fluid-image picture source, .fluid-image.image-gallery img, .fluid-image.image-gallery picture source"
+      )
+      .forEach(pushFromImgEl);
+    document
+      .querySelectorAll(
+        ".image-gallery .fluid-image, .image-gallery.fluid-image, .fluid-image.image-gallery, .image-gallery [style*='background-image'], .product-gallery .fluid-image, .product-gallery [style*='background-image']"
       )
       .forEach(pushFromBackgroundLikeEl);
 
@@ -715,11 +746,38 @@ async function main() {
   const noImages = process.argv.includes("--no-images");
   const allowGradedSlab = process.argv.includes("--allow-graded-slab");
   const allowCoinBox = process.argv.includes("--allow-coin-box");
+  const allowTrialOfPyx = process.argv.includes("--allow-trial-of-pyx");
   const urlArg = process.argv.find((a) => a.startsWith("http"));
   const url = urlArg || DEFAULT_URL;
   const preferSilver = /\bsilver\b|ss360query=silver/i.test(url);
   const fetchUrl = rewriteShopPdpToInvestBullion(url, { preferSilver });
   const fileSlug = slugFromUrl(fetchUrl);
+
+  if (
+    !allowTrialOfPyx &&
+    (isRoyalMintTrialOfPyxUrl(url) || isRoyalMintTrialOfPyxUrl(fetchUrl))
+  ) {
+    const jsonPath = path.join(DATA_DIR, `royal-mint-${fileSlug}-skipped-trial-of-pyx.json`);
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(
+      jsonPath,
+      JSON.stringify(
+        {
+          skipped: true,
+          reason: "trial_of_the_pyx_url",
+          note: "Раздел Trial of the Pyx на royalmint.com не парсим (часто заглушка Welcome).",
+          requestedUrl: url,
+          pdpUrl: fetchUrl,
+        },
+        null,
+        2
+      ),
+      "utf8"
+    );
+    console.warn("Пропуск: URL относится к Trial of the Pyx (не парсим).");
+    console.warn("Файл:", jsonPath);
+    process.exit(0);
+  }
 
   const { chromium } = require("playwright");
   const browser = await chromium.launch(getRoyalMintChromiumLaunchOptions());
@@ -801,8 +859,10 @@ async function main() {
   const yearMatch = String(yearStr).match(/\b(20\d{2}|19\d{2})\b/);
   const releaseDate = yearMatch ? `${yearMatch[1]}-01-01` : null;
 
-  const weightG = troyOzToG(specs["Pure Metal Content"] || specs["Silver Content (Troy oz)"] || specs["Gold Content (Troy oz)"]);
+  let weightG = troyOzToG(specs["Pure Metal Content"] || specs["Silver Content (Troy oz)"] || specs["Gold Content (Troy oz)"]);
+  if (weightG == null) weightG = parseWeightGFromSpecs(specs);
   const diameterMm = parseDiameter(specs);
+  const mintParsed = parseMintageFromSpecs(specs);
 
   const coin = {
     title: scraped.title || null,
@@ -815,8 +875,8 @@ async function main() {
     mint_short: "Royal Mint",
     metal: metalRu(specs["Pure Metal Type"] || specs.Alloy),
     metal_fineness: specs.Fineness ? String(specs.Fineness).trim() : null,
-    mintage: null,
-    mintage_display: null,
+    mintage: mintParsed.mintage,
+    mintage_display: mintParsed.mintage_display,
     weight_g: weightG,
     weight_oz: null,
     diameter_mm: diameterMm,
@@ -987,6 +1047,51 @@ async function main() {
         console.warn("  ✗", j.file, j.url.slice(0, 80), e.message);
       }
     }
+  } else {
+    /** Без скачивания webp — в coin пишем прямые URL CDN (import-royal-mint-to-db и превью). */
+    if (byType.obverse) coin.image_obverse = byType.obverse;
+    if (byType.reverse) coin.image_reverse = byType.reverse;
+    if (byType.blister_obverse) coin.image_blister_obverse = byType.blister_obverse;
+    if (byType.blister_reverse) coin.image_blister_reverse = byType.blister_reverse;
+    if (byType.box) coin.image_box = byType.box;
+    if (byType.certificate) coin.image_certificate = byType.certificate;
+    saved.obverse = byType.obverse || null;
+    saved.reverse = byType.reverse || null;
+    saved.blister_obverse = byType.blister_obverse || null;
+    saved.blister_reverse = byType.blister_reverse || null;
+    saved.box = byType.box || null;
+    saved.certificate = byType.certificate || null;
+  }
+
+  const skipDbCollision =
+    process.argv.includes("--no-db-spec-collision-check") || process.env.RM_SKIP_DB_SPEC_DUPLICATE_CHECK === "1";
+  if (!skipDbCollision) {
+    try {
+      require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
+    } catch {
+      /* ignore */
+    }
+  }
+  if (!skipDbCollision && process.env.DATABASE_URL) {
+    try {
+      const mysql = require("mysql2/promise");
+      const url = process.env.DATABASE_URL;
+      const m = url.match(/mysql:\/\/([^:]+):([^@]+)@([^:]+):(\d+)\/(.+)/);
+      if (m) {
+        const [, user, password, host, port, database] = m;
+        const conn = await mysql.createConnection({ host, port: parseInt(port, 10), user, password, database });
+        const { duplicate_review } = await checkRoyalMintSpecCollisions(conn, coin, specs, { stage: "fetch" });
+        await conn.end();
+        if (duplicate_review) {
+          coin.duplicate_review = duplicate_review;
+          console.warn(
+            "\n[!] В БД уже есть монета(ы) с теми же год/вес/металл/тираж — см. coin.duplicate_review и data/royal-mint-spec-collision-review.jsonl"
+          );
+        }
+      }
+    } catch (e) {
+      console.warn("[!] Проверка совпадений с БД не выполнена:", e.message);
+    }
   }
 
   const jsonPath = path.join(DATA_DIR, `royal-mint-${fileSlug}.json`);
@@ -1006,7 +1111,9 @@ async function main() {
   console.log("  (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts \"" + jsonPath + "\")");
   console.log("Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)");
   if (noImages) {
-    console.log("Был --no-images: превью возьмёт картинки с CDN Royal Mint из JSON; локальных webp нет.");
+    console.log(
+      "Был --no-images: локальных webp нет; в coin.* прописаны URL CDN Royal Mint (для import в БД и превью)."
+    );
   } else {
     console.log("Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.");
   }

@@ -11,6 +11,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
+const { sanitizeGermaniaMintTitle } = require("./germania-mint-title-sanitize.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const FOREIGN_IMG_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
@@ -273,7 +274,7 @@ async function main() {
 
     const slug = slugFromUrl(sourceUrl);
     const specs = raw.specs || {};
-    const title = String(raw.title || "").trim();
+    const title = sanitizeGermaniaMintTitle(String(raw.title || "").trim());
     const { mintage, mintageDisplay } = parseMintage(specs.Mintage);
     const faceValue = specs.Denomination ? String(specs.Denomination).trim() : null;
     const quality = normalizeQuality(specs.Grade);

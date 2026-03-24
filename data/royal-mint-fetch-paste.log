@@ -1,0 +1,230 @@
+Файл seed: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-pasted-urls.txt
+URL в seed: 178
+Уже ок (есть JSON, не 404): 149
+Нужно обработать: 29 (новые / 404 / битый JSON)
+  по причинам: { missing_json: 29 }
+К запуску fetch сейчас: 29  (параллельность 2)
+
+——— старт 1/29#w1 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2005-Elizabeth-II-Nelson-Five-Pounds
+
+——— старт 2/29#w2 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2005-Elizabeth-II-Trafalgar-Five-Pounds
+[2/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[2/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[2/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2005-elizabeth-ii-trafalgar-five-pounds-skipped-graded-slab.json
+[2/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 3/29#w2 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2015-Elizabeth-II-Churchill-Five-Pounds
+[1/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[1/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[1/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2005-elizabeth-ii-nelson-five-pounds-skipped-graded-slab.json
+[1/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 4/29#w1 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2015-Elizabeth-II-Waterloo-Five-Pounds
+[4/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 10
+[4/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[4/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2015-elizabeth-ii-waterloo-five-pounds-skipped-graded-slab.json
+[4/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 5/29#w1 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin
+[3/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 10
+[3/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[3/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2015-elizabeth-ii-churchill-five-pounds-skipped-graded-slab.json
+[3/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 6/29#w2 ———
+https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2021-Elizabeth-II-Gold-5oz-Britannia
+[6/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[6/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[6/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2021-elizabeth-ii-gold-5oz-britannia-skipped-graded-slab.json
+[6/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 7/29#w2 ———
+https://www.royalmint.com/sovereign/all/2002-Queen-Elizabeth-II-2-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[5/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[5/29#w1] ReferenceError: uniqueUrlsStable is not defined
+[5/29#w1]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[5/29#w1]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 8/29#w1 ———
+https://www.royalmint.com/sovereign/all/2002-queen-elizabeth-ii-proof-sovereign-pf70/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[8/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[8/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[8/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2002-queen-elizabeth-ii-proof-sovereign-pf70-skipped-graded-slab.json
+[8/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 9/29#w1 ———
+https://www.royalmint.com/sovereign/all/2003-Elizabeth-II-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[7/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[7/29#w2]   ✓ 2002-queen-elizabeth-ii-2-proof-sovereign-rev.webp
+[7/29#w2] [dotenv@17.3.1] injecting env (1) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[7/29#w2] __RM_JSON__ /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2002-queen-elizabeth-ii-2-proof-sovereign.json
+[7/29#w2] 
+[7/29#w2] Готово: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2002-queen-elizabeth-ii-2-proof-sovereign.json
+[7/29#w2] Загрузка PDP: https://www.royalmint.com/sovereign/all/2002-Queen-Elizabeth-II-2-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[7/29#w2] Классификация картинок: {
+[7/29#w2]   "obverse": null,
+[7/29#w2]   "reverse": "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/his02dspf7-queen-elizabeth-ii-2002-2-proof-sovereign-ngc-pf70-reverse.jpg",
+[7/29#w2]   "blister_obverse": null,
+[7/29#w2]   "blister_reverse": null,
+[7/29#w2]   "box": null,
+[7/29#w2]   "certificate": null
+[7/29#w2] }
+[7/29#w2] 
+[7/29#w2] ────────── Как увидеть монету на сайте (localhost) ──────────
+[7/29#w2] Быстро (парсинг + public/data в один заход): npm run royal-mint:preview
+[7/29#w2]   (или уже есть JSON: npx tsx scripts/royal-mint-to-public-catalog.ts "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2002-queen-elizabeth-ii-2-proof-sovereign.json")
+[7/29#w2] Потом: npm run dev → http://localhost:3000/coins/991001/ (или ROYAL_MINT_LOCAL_ID)
+[7/29#w2] Картинки (если скачались): public/image/coins/foreign/ — пути уже в JSON монеты.
+[7/29#w2] В БД: npm run royal-mint:import → npm run data:export (или data:export:incremental).
+
+——— старт 10/29#w2 ———
+https://www.royalmint.com/sovereign/all/2004-Elizabeth-II-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[9/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[9/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[9/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2003-elizabeth-ii-sovereign-skipped-graded-slab.json
+[9/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 11/29#w1 ———
+https://www.royalmint.com/sovereign/all/2004-UK-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[10/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[10/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[10/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2004-elizabeth-ii-proof-half-sovereign-skipped-graded-slab.json
+[10/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 12/29#w2 ———
+https://www.royalmint.com/sovereign/all/2005-Elizabeth-II-Gold-Proof-Sovereign-PF70/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[12/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[12/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[12/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2005-elizabeth-ii-gold-proof-sovereign-pf70-skipped-graded-slab.json
+[12/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 13/29#w2 ———
+https://www.royalmint.com/sovereign/all/2005-Elizabeth-II-Proof-Sovereign-PF70/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[11/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[11/29#w1] ReferenceError: uniqueUrlsStable is not defined
+[11/29#w1]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[11/29#w1]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 14/29#w1 ———
+https://www.royalmint.com/sovereign/all/2005-Elizabeth-II-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[13/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[13/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[13/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2005-elizabeth-ii-proof-sovereign-pf70-skipped-graded-slab.json
+[13/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 15/29#w2 ———
+https://www.royalmint.com/sovereign/all/2008-Elizabeth-II-Proof-Five-Pound-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[14/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[14/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[14/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2005-elizabeth-ii-proof-sovereign-skipped-graded-slab.json
+[14/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 16/29#w1 ———
+https://www.royalmint.com/sovereign/all/2011-Elizabeth-II-Proof-Five-Pound-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[15/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[15/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[15/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2008-elizabeth-ii-proof-five-pound-sovereign-skipped-graded-slab.json
+[15/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 17/29#w2 ———
+https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[16/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[16/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[16/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2011-elizabeth-ii-proof-five-pound-sovereign-skipped-graded-slab.json
+[16/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 18/29#w1 ———
+https://www.royalmint.com/sovereign/all/2014-Elizabeth-II-Proof-Five-Pound-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[17/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[17/29#w2] ReferenceError: uniqueUrlsStable is not defined
+[17/29#w2]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[17/29#w2]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 19/29#w2 ———
+https://www.royalmint.com/sovereign/all/2014-sovereign-I-mint-mark/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[18/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[18/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[18/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2014-elizabeth-ii-proof-five-pound-sovereign-skipped-graded-slab.json
+[18/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 20/29#w1 ———
+https://www.royalmint.com/sovereign/all/2015-Elizabeth-II-Proof-Five-Pound-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[19/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[19/29#w2] ReferenceError: uniqueUrlsStable is not defined
+[19/29#w2]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[19/29#w2]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 21/29#w2 ———
+https://www.royalmint.com/sovereign/all/2017-Elizabeth-II-Piedfort-Proof-Sovereign-PR68-DCAM/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[20/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[20/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[20/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2015-elizabeth-ii-proof-five-pound-sovereign-skipped-graded-slab.json
+[20/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 22/29#w1 ———
+https://www.royalmint.com/sovereign/all/2017-Elizabeth-II-Proof-Gold-Sovereign-PF70/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[21/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[21/29#w2] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[21/29#w2] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2017-elizabeth-ii-piedfort-proof-sovereign-pr68-dcam-skipped-graded-slab.json
+[21/29#w2] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 23/29#w2 ———
+https://www.royalmint.com/sovereign/all/2018-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[22/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[22/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[22/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2017-elizabeth-ii-proof-gold-sovereign-pf70-skipped-graded-slab.json
+[22/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+
+——— старт 24/29#w1 ———
+https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Gold-Proof-Half-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[23/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 10
+[23/29#w2] ReferenceError: uniqueUrlsStable is not defined
+[23/29#w2]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[23/29#w2]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 25/29#w2 ———
+https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[24/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[24/29#w1] ReferenceError: uniqueUrlsStable is not defined
+[24/29#w1]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[24/29#w1]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 26/29#w1 ———
+https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[25/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[25/29#w2] ReferenceError: uniqueUrlsStable is not defined
+[25/29#w2]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[25/29#w2]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 27/29#w2 ———
+https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Piedfort-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[26/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[26/29#w1] ReferenceError: uniqueUrlsStable is not defined
+[26/29#w1]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[26/29#w1]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 28/29#w1 ———
+https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[27/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[27/29#w2] ReferenceError: uniqueUrlsStable is not defined
+[27/29#w2]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[27/29#w2]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+——— старт 29/29#w2 ———
+https://www.royalmint.com/sovereign/all/hishso06/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins
+[28/29#w1] Блок характеристик: div.mod-section.specification — найден, полей в specs: 9
+[28/29#w1] Пропуск: на странице товара в названии/описании/таблице спецификаций найден грейдинг NGC/PCGS.
+[28/29#w1] Файл: /Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/royal-mint-2022-elizabeth-ii-proof-sovereign-skipped-graded-slab.json
+[28/29#w1] Чтобы всё равно парсить: добавьте флаг --allow-graded-slab
+[29/29#w2] Блок характеристик: div.mod-section.specification — найден, полей в specs: 8
+[29/29#w2] ReferenceError: uniqueUrlsStable is not defined
+[29/29#w2]     at filterUrlsByProductGalleryFolder (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:446:29)
+[29/29#w2]     at main (/Users/mihail/Desktop/Нумизматика сайт/omonete-app/scripts/fetch-royal-mint-coin-test.js:848:21)
+
+Готово. Успех: 19 ошибок: 10
+Дальше: npm run royal-mint:import && npm run data:export

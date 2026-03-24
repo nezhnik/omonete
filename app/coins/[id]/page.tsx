@@ -1,7 +1,16 @@
 import fs from "fs";
 import path from "path";
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import type { CoinDetailData, CoinSeriesItem } from "../../../components/CoinDetail";
+import {
+  coinCanonicalPath,
+  coinJsonLdGraph,
+  coinOpenGraphImageUrls,
+  coinSeoDescription,
+  coinSeoTitle,
+} from "../../../lib/coin-page-seo";
+import { absolutePageUrl } from "../../../lib/site-url";
 import { CoinPageClient } from "./CoinPageClient";
 
 export function generateStaticParams() {
@@ -14,21 +23,74 @@ export function generateStaticParams() {
   }
 }
 
-type Props = { params: Promise<{ id: string }> };
+type CoinPagePayload = { coin: CoinDetailData; sameSeries: CoinSeriesItem[] } | null;
 
-export default async function CoinPage({ params }: Props) {
-  const { id } = await params;
-  let initialData: { coin: CoinDetailData; sameSeries: CoinSeriesItem[] } | null = null;
+function loadCoinPayload(id: string): CoinPagePayload {
   try {
     const jsonPath = path.join(process.cwd(), "public", "data", "coins", `${id}.json`);
     const raw = fs.readFileSync(jsonPath, "utf8");
-    initialData = JSON.parse(raw) as { coin: CoinDetailData; sameSeries: CoinSeriesItem[] };
+    return JSON.parse(raw) as CoinPagePayload;
   } catch {
-    // JSON нет — клиент покажет «Монета не найдена»
+    return null;
   }
+}
+
+type Props = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const initialData = loadCoinPayload(id);
+  if (!initialData?.coin) {
+    return {
+      title: "Монета не найдена — Omonete",
+      description: "Такой монеты нет в каталоге Omonete.",
+      robots: { index: false, follow: true },
+    };
+  }
+  const coin = initialData.coin;
+  const title = coinSeoTitle(coin);
+  const description = coinSeoDescription(coin);
+  const canonical = absolutePageUrl(coinCanonicalPath(id));
+  const ogImages = coinOpenGraphImageUrls(coin).map((url) => ({ url }));
+
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: "Omonete",
+      locale: "ru_RU",
+      type: "website",
+      images: ogImages,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ogImages.map((i) => i.url.toString()),
+    },
+  };
+}
+
+function CoinJsonLdScript({ coin, coinId }: { coin: CoinDetailData; coinId: string }) {
+  const graph = coinJsonLdGraph(coin, coinId);
   return (
-    <Suspense fallback={<div className="min-h-screen bg-white" />}>
-      <CoinPageClient id={id} initialData={initialData} />
-    </Suspense>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
+  );
+}
+
+export default async function CoinPage({ params }: Props) {
+  const { id } = await params;
+  const initialData = loadCoinPayload(id);
+  return (
+    <>
+      {initialData?.coin ? <CoinJsonLdScript coin={initialData.coin} coinId={id} /> : null}
+      <Suspense fallback={<div className="min-h-screen bg-white" />}>
+        <CoinPageClient id={id} initialData={initialData} />
+      </Suspense>
+    </>
   );
 }

@@ -1,0 +1,91 @@
+{
+  "coin": {
+    "title": "2002 Queen Elizabeth II £2 Proof Sovereign",
+    "title_ru": null,
+    "country": "Великобритания",
+    "series": null,
+    "face_value": null,
+    "release_date": "2002-01-01",
+    "mint": "The Royal Mint",
+    "mint_short": "Royal Mint",
+    "metal": "Золото",
+    "metal_fineness": null,
+    "mintage": null,
+    "mintage_display": null,
+    "weight_g": 15.98,
+    "weight_oz": null,
+    "diameter_mm": 28.4,
+    "thickness_mm": null,
+    "length_mm": null,
+    "width_mm": null,
+    "quality": "Proof",
+    "catalog_number": "GB-ROYAL-2002-QUEEN-ELIZABETH-II-2-PROOF-SOVEREIGN",
+    "catalog_suffix": "2002-queen-elizabeth-ii-2-proof-sovereign",
+    "price_display": null,
+    "source_url": "https://www.royalmint.com/sovereign/all/2002-Queen-Elizabeth-II-2-Proof-Sovereign/",
+    "image_obverse": null,
+    "image_reverse": "/image/coins/foreign/2002-queen-elizabeth-ii-2-proof-sovereign-rev.webp",
+    "image_blister_reverse": null,
+    "image_blister_obverse": null,
+    "image_box": null,
+    "image_certificate": null
+  },
+  "raw": {
+    "title": "2002 Queen Elizabeth II £2 Proof Sovereign",
+    "specs": {
+      "Alloy": "22 Carat Gold",
+      "Weight": "15.98 g",
+      "Diameter": "28.40mm",
+      "Reverse Designer": "Timothy Noad",
+      "Obverse Designer": "Ian Rank-Broadley",
+      "Quality": "Proof",
+      "Year": "2002",
+      "Pure Metal Type": "Gold"
+    },
+    "specificationBlockFound": true,
+    "imageUrls": [
+      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/his02dspf7-queen-elizabeth-ii-2002-2-proof-sovereign-ngc-pf70-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
+      "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg",
+      "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
+      "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
+      "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg"
+    ],
+    "imageUrlsProduct": [
+      "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/his02dspf7-queen-elizabeth-ii-2002-2-proof-sovereign-ngc-pf70-reverse.jpg"
+    ],
+    "classified": {
+      "obverse": null,
+      "reverse": "https://www.royalmint.com/globalassets/__rebrand/_structure/shop/editions/_historic-coins/_product-image/his02dspf7-queen-elizabeth-ii-2002-2-proof-sovereign-ngc-pf70-reverse.jpg",
+      "blister_obverse": null,
+      "blister_reverse": null,
+      "box": null,
+      "certificate": null
+    },
+    "price": "",
+    "requestedUrl": "https://www.royalmint.com/sovereign/all/2002-Queen-Elizabeth-II-2-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins",
+    "pdpUrl": "https://www.royalmint.com/sovereign/all/2002-Queen-Elizabeth-II-2-Proof-Sovereign/?listId=All_Sovereign_Coins&listName=All%20Sovereign%20Coins",
+    "pdpPlainTextPreview": "Struck for the Golden Jubilee of Queen Elizabeth II\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE"
+  },
+  "saved": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/2002-queen-elizabeth-ii-2-proof-sovereign-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "box": null,
+    "certificate": null
+  }
+}

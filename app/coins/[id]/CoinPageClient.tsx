@@ -30,7 +30,7 @@ export function CoinPageClient({ id, initialData }: Props) {
   const backLabel = fromPortfolio ? "Назад в коллекцию" : "Назад в каталог";
   const breadcrumbLabel = fromPortfolio ? "Моя коллекция" : "Каталог";
   const isRussian = coin?.mintCountry === "Россия";
-  const catalogTabHref = isRussian ? "/catalog?tab=ru" : "/catalog?tab=foreign";
+  const catalogTabHref = isRussian ? "/catalog/?tab=ru" : "/catalog/?tab=foreign";
   const catalogTabLabel = isRussian ? "Российские" : "Иностранные";
 
   useEffect(() => {

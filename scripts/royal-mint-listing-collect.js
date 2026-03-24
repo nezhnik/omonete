@@ -9,6 +9,17 @@
  */
 const ORIGIN = "https://www.royalmint.com";
 
+/**
+ * Раздел Trial of the Pyx (часто /shop/ancient-historic/trial-of-the-pyx/archive/...) — не обычные PDP:
+ * в headless часто отдаёт заглушку «Welcome to The Royal Mint». Такие URL не собираем и не парсим.
+ */
+function isRoyalMintTrialOfPyxUrl(url) {
+  if (url == null || typeof url !== "string") return false;
+  const s = String(url).trim();
+  if (!/royalmint\.com/i.test(s)) return false;
+  return /\/trial-of-the-pyx(?:\/|$)/i.test(s);
+}
+
 const DEFAULT_GOLD_BULLION_LIST_URL =
   "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins";
 
@@ -645,4 +656,5 @@ module.exports = {
   nameLooksLikeGradedSlab,
   textLooksLikeGradedSlab,
   textLooksLikeCoinBox,
+  isRoyalMintTrialOfPyxUrl,
 };

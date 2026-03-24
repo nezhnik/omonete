@@ -13,6 +13,7 @@ const { spawnSync } = require("child_process");
 const DATA_DIR = path.join(__dirname, "..", "data");
 const OUT_FILE = path.join(__dirname, "royal-mint-reparse-queue.txt");
 const FETCH_SCRIPT = path.join(__dirname, "fetch-royal-mint-coin-test.js");
+const { isRoyalMintTrialOfPyxUrl } = require("./royal-mint-listing-collect.js");
 const root = path.join(__dirname, "..");
 
 const pi = process.argv.indexOf("--pattern");
@@ -43,7 +44,7 @@ for (const f of fs.readdirSync(DATA_DIR)) {
       .trim()
       .replace(/\?.*$/, "")
       .replace(/\/+$/, "");
-    urls.add(clean);
+    if (!isRoyalMintTrialOfPyxUrl(clean)) urls.add(clean);
   }
 }
 

@@ -9,6 +9,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 const { roundSpec, formatWeightG, stripCountryFromFaceValue } = require("./format-coin-characteristics.js");
+const { sanitizeGermaniaMintTitle } = require("./germania-mint-title-sanitize.js");
 
 const PLACEHOLDER = "/image/coin-placeholder.png";
 // Чужая картинка набора 2013 — не подставлять в другие монеты (см. fix-wrong-3-coin-set-image.js)
@@ -45,15 +46,16 @@ function firstImageUrl(imageUrls, _catalogNumber, imageObverse) {
   return null;
 }
 
-/** Убирает из названия HTML-теги и сущности ЦБ: <nobr>, &nbsp; */
+/**
+ * HTML/ЦБ в title + общая нормализация Germania (см. germania-mint-title-sanitize.js).
+ */
 function cleanTitle(s) {
   if (s == null || typeof s !== "string") return "";
-  return s
+  const t = s
     .replace(/<nobr>/gi, "")
     .replace(/<\/nobr>/gi, "")
-    .replace(/&nbsp;/gi, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+    .replace(/&nbsp;/gi, " ");
+  return sanitizeGermaniaMintTitle(t);
 }
 
 /** Год из суффикса каталога: "26" → 2026, "98" → 1998. 00–30 → 2000-е, 31–99 → 1900-е. */
@@ -263,6 +265,11 @@ function isRectangularCoin(catalogNumber, rectangularBases, rectangularIds, id, 
   if (!catalogNumber || rectangularBases.length === 0) return false;
   const cat = String(catalogNumber).trim();
   return rectangularBases.some((base) => cat === base || cat.startsWith(base + "-"));
+}
+
+/** Снимки в блистере — в каталоге без круглой маски (как прямоугольные). */
+function isRectangularFromBlisterImages(blisterObverse, blisterReverse) {
+  return !!(blisterObverse || blisterReverse);
 }
 
 async function run() {
@@ -476,7 +483,8 @@ async function run() {
       weightG: weightG ?? undefined,
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
-        isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
+        isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
+        isRectangularFromBlisterImages(blisterObverse, blisterReverse),
     };
   });
 
@@ -609,7 +617,7 @@ async function run() {
     const metalCodes = getMetalCodes(r.metal);
     const coin = {
       id: String(r.id),
-      title: r.title,
+      title: cleanTitle(r.title),
       seriesName: r.series ?? undefined,
       imageUrl: firstImage || PLACEHOLDER,
       imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
@@ -639,7 +647,8 @@ async function run() {
       catalogSuffix: r.catalog_suffix ?? undefined,
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
-        isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
+        isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
+        isRectangularFromBlisterImages(blisterObverse, blisterReverse),
       mintLogoUrl: mintNameOut && mintLogoMap.get(mintNameOut) ? mintLogoMap.get(mintNameOut) : undefined,
       priceDisplay: (r.price_display && String(r.price_display).trim()) || undefined,
     };
@@ -657,6 +666,8 @@ async function run() {
         const metalCodes = getMetalCodes(s.metal);
         const metalName = metalOnly(s.metal);
         const weightG = formatWeightG(s.weight_g) ?? (s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined);
+        const sBlisterRev = normalizeAssetUrl(s.image_blister_reverse ? String(s.image_blister_reverse).trim() : null);
+        const sBlisterObv = normalizeAssetUrl(s.image_blister_obverse ? String(s.image_blister_obverse).trim() : null);
         return {
           id: String(s.id),
           title: s.title,
@@ -670,7 +681,8 @@ async function run() {
           weightG,
           rectangular:
             (s.is_rectangular === 1 || s.is_rectangular === true) ||
-            isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm),
+            isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm) ||
+            isRectangularFromBlisterImages(sBlisterObv, sBlisterRev),
         };
       });
     }

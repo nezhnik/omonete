@@ -279,6 +279,13 @@ function isRectangular(
   return bases.some((base) => cat === base || cat.startsWith(base + "-"));
 }
 
+/** Снимки в блистере — в UI без круглой маски (как прямоугольные монеты). */
+function rowHasBlisterImages(r: Row): boolean {
+  const br = r.image_blister_reverse && String(r.image_blister_reverse).trim();
+  const bo = r.image_blister_obverse && String(r.image_blister_obverse).trim();
+  return !!(br || bo);
+}
+
 export type ListCoin = {
   id: string;
   title: string;
@@ -422,7 +429,9 @@ function rowToListCoin(
     mintLogoUrl,
     weightLabel: weightLabel ?? undefined,
     weightG: weightG ?? undefined,
-    rectangular: isRectangular(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
+    rectangular:
+      isRectangular(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
+      rowHasBlisterImages(r),
   };
 }
 
@@ -476,7 +485,9 @@ function rowToDetailCoin(
     lengthMm: r.length_mm as string | number | undefined,
     widthMm: r.width_mm as string | number | undefined,
     catalogSuffix: r.catalog_suffix as string | undefined,
-    rectangular: isRectangular(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm),
+    rectangular:
+      isRectangular(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
+      rowHasBlisterImages(r),
     mintLogoUrl,
   };
 }
@@ -507,7 +518,9 @@ function rowToSameSeriesItem(
     metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
     metalName: metalName !== "—" ? metalName : undefined,
     weightG,
-    rectangular: isRectangular(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm),
+    rectangular:
+      isRectangular(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm) ||
+      rowHasBlisterImages(s),
   };
 }
 

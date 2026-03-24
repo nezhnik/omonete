@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "../components/Providers";
+import { getSiteUrl } from "../lib/site-url";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: "Omonete — каталог монет",
   description: "Каталог монет со всего мира, коллекции и монетные дворы",
   icons: {

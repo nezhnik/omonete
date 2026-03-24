@@ -9,7 +9,7 @@ function extractRoyalMintUrlsFromText(text) {
   const seen = new Set();
   const add = (u) => {
     if (!u || !/^https?:\/\/(www\.)?royalmint\.com\//i.test(u)) return;
-    const norm = u.split("#")[0].replace(/\/+$/, "") || u;
+    let norm = u.split("#")[0].replace(/\/+$/, "").replace(/&amp;/gi, "&") || u;
     // Из HTML часто цепляются src картинок, а не страницы монет
     if (/\/globalassets\//i.test(norm)) return;
     if (/\.(jpg|jpeg|png|webp|gif|svg)(\?|$)/i.test(norm)) return;
@@ -22,6 +22,48 @@ function extractRoyalMintUrlsFromText(text) {
   const reProto = /\/\/(?:www\.)?royalmint\.com[^"'>\s)\]]+/gi;
   while ((m = reProto.exec(s)) !== null) add("https:" + m[0]);
   return [...seen];
+}
+
+/**
+ * Карточки PLP Royal Mint часто дают href="/shop/..." без домена — полный URL в тексте не встречается.
+ */
+function extractRoyalMintRelativeProductUrls(text) {
+  const seen = new Set();
+  const addAbs = (pathAndQuery) => {
+    if (!pathAndQuery || typeof pathAndQuery !== "string") return;
+    let p = pathAndQuery.trim().split("#")[0].replace(/&amp;/gi, "&");
+    if (!p.startsWith("/")) return;
+    if (/^\/globalassets\//i.test(p)) return;
+    if (/\.(jpg|jpeg|png|webp|gif|svg|ico|css|js|woff2?)(\?|$)/i.test(p)) return;
+    if (/^\/(cart|checkout|basket|my-account|login|register|sitecore|api|search)\b/i.test(p)) return;
+    const parts = p.split("/").filter(Boolean);
+    if (parts.length < 2) return;
+    try {
+      const u = new URL("https://www.royalmint.com" + p);
+      u.hash = "";
+      const norm = u.toString().replace(/\/$/, "");
+      if (!seen.has(norm)) seen.add(norm);
+    } catch {
+      /* ignore */
+    }
+  };
+  const s = String(text);
+  const reDq = /\bhref\s*=\s*"(\/[^"]*)"/gi;
+  const reSq = /\bhref\s*=\s*'(\/[^']*)'/gi;
+  let m;
+  while ((m = reDq.exec(s)) !== null) addAbs(m[1]);
+  while ((m = reSq.exec(s)) !== null) addAbs(m[1]);
+  return [...seen];
+}
+
+/** Абсолютные + относительные ссылки из сохранённого HTML (PLP / фрагмент карточек). */
+function extractRoyalMintUrlsFromHtmlFile(filePath) {
+  if (!fs.existsSync(filePath)) return [];
+  const raw = fs.readFileSync(filePath, "utf8");
+  const abs = extractRoyalMintUrlsFromText(raw);
+  const rel = extractRoyalMintRelativeProductUrls(raw);
+  const merged = new Set([...abs, ...rel]);
+  return [...merged];
 }
 
 function readSeedUrlsFromFile(filePath) {
@@ -47,4 +89,9 @@ function readSeedUrlsFromFile(filePath) {
   return out;
 }
 
-module.exports = { extractRoyalMintUrlsFromText, readSeedUrlsFromFile };
+module.exports = {
+  extractRoyalMintUrlsFromText,
+  extractRoyalMintRelativeProductUrls,
+  extractRoyalMintUrlsFromHtmlFile,
+  readSeedUrlsFromFile,
+};
