@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/partner-issues/2021-niue-island-impact-moments-meteorite-2-oz-silver-hr",
+  "title": "2021 Niue Island - Impact Moments: Meteorite 2 oz Silver HR",
+  "subtitle": "2 oz Silver HR",
+  "specs": {
+    "Series": "Partner Issues",
+    "Year": "2021",
+    "Grade": "BU",
+    "Denomination": "2 dollars",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "50",
+    "Mintage": "777",
+    "Finishing": "Meteorite, Antique Finish, Colouring, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/HIM-2754_2021-Impact-Moments-Meteorite-2-oz-Silver-High-Relief_awers.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/Him-2754_2021-Impact-Moments-Meteorite-2-oz-Silver-High-Relief_rewers-1.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-2754_2021-Impact-Moments-Meteorite-2-oz-Silver-High-Relief_awers.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Him-2754_2021-Impact-Moments-Meteorite-2-oz-Silver-High-Relief_rewers-1.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_30_06.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_35_21.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_39_22.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:08:44.600Z"
+}

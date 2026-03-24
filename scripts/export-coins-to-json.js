@@ -29,6 +29,16 @@ function reverseUrl(imageReverse) {
   if (imageReverse && String(imageReverse).trim()) return imageReverse.trim();
   return null;
 }
+function isCapsuleLikeUrl(url) {
+  if (!url) return false;
+  return /(capsule|caosule|casule|capsul)/i.test(String(url));
+}
+function normalizeAssetUrl(url) {
+  if (!url) return null;
+  const v = String(url).trim();
+  if (!v || isCapsuleLikeUrl(v)) return null;
+  return v;
+}
 function firstImageUrl(imageUrls, _catalogNumber, imageObverse) {
   if (imageObverse && String(imageObverse).trim()) return imageObverse.trim();
   if (Array.isArray(imageUrls) && imageUrls[0]) return imageUrls[0];
@@ -398,9 +408,14 @@ async function run() {
       0;
     const isThreeCoinSet = (r.title || "").includes("Three Coin Set") || (r.title || "").includes("3 Coin Set");
     const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
-    const reverse = dropWrong(reverseUrl(imageReverse));
-    const obverse = dropWrong(obverseUrl(imageObverse));
-    const imageUrl = firstImageSide === "reverse" ? (reverse ?? obverse ?? PLACEHOLDER) : (obverse ?? reverse ?? PLACEHOLDER);
+    const reverse = normalizeAssetUrl(dropWrong(reverseUrl(imageReverse)));
+    const obverse = normalizeAssetUrl(dropWrong(obverseUrl(imageObverse)));
+    const blisterReverse = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
+    const blisterObverse = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
+    const hasBlisterPair = !!(blisterReverse && blisterObverse);
+    const imageUrl = hasBlisterPair
+      ? (firstImageSide === "reverse" ? (blisterReverse ?? blisterObverse ?? PLACEHOLDER) : (blisterObverse ?? blisterReverse ?? PLACEHOLDER))
+      : (firstImageSide === "reverse" ? (reverse ?? obverse ?? PLACEHOLDER) : (obverse ?? reverse ?? PLACEHOLDER));
     const imageUrlsOut = [];
     const imageUrlRoles = [];
     const pushIfNew = (url, role) => {
@@ -408,19 +423,31 @@ async function run() {
       imageUrlsOut.push(url);
       imageUrlRoles.push(role);
     };
-    if (firstImageSide === "reverse") {
+    if (hasBlisterPair) {
+      if (firstImageSide === "reverse") {
+        pushIfNew(blisterReverse, "blister_reverse");
+        pushIfNew(blisterObverse, "blister_obverse");
+      } else {
+        pushIfNew(blisterObverse, "blister_obverse");
+        pushIfNew(blisterReverse, "blister_reverse");
+      }
+    } else if (firstImageSide === "reverse") {
       if (reverse) pushIfNew(reverse, "reverse");
       if (obverse) pushIfNew(obverse, "obverse");
     } else {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (!isRoyalMint && imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
-    if (!isRoyalMint && imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
-    if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
-    if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
+    if (!hasBlisterPair) {
+      if (blisterReverse) pushIfNew(blisterReverse, "blister_reverse");
+      if (blisterObverse) pushIfNew(blisterObverse, "blister_obverse");
+    }
+    if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
+    if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
-      const filtered = isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH));
+      const filtered = (isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
+        .map((u) => normalizeAssetUrl(u))
+        .filter(Boolean);
       if (filtered.length > 0) imageUrlsOut.push(...filtered);
     }
     const { code: metalCode } = getMetalCodeAndColor(r.metal);
@@ -520,9 +547,14 @@ async function run() {
     const isRoyalMint = /(^|\s)royal\s+mint(\s|$)/i.test(String(mintNameOut || mintShortOut || r.mint || ""));
     const isThreeCoinSet = (r.title || "").includes("Three Coin Set") || (r.title || "").includes("3 Coin Set");
     const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
-    const obverse = dropWrong(obverseUrl(imageObverse));
-    const reverse = dropWrong(reverseUrl(imageReverse));
-    const firstImage = firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? "");
+    const obverse = normalizeAssetUrl(dropWrong(obverseUrl(imageObverse)));
+    const reverse = normalizeAssetUrl(dropWrong(reverseUrl(imageReverse)));
+    const blisterReverse = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
+    const blisterObverse = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
+    const hasBlisterPair = !!(blisterReverse && blisterObverse);
+    const firstImage = hasBlisterPair
+      ? (firstImageSide === "reverse" ? (blisterReverse ?? blisterObverse ?? "") : (blisterObverse ?? blisterReverse ?? ""))
+      : (firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? ""));
     const imageUrlsOut = [];
     const imageUrlRoles = [];
     const pushIfNew = (url, role) => {
@@ -530,19 +562,31 @@ async function run() {
       imageUrlsOut.push(url);
       imageUrlRoles.push(role);
     };
-    if (firstImageSide === "reverse") {
+    if (hasBlisterPair) {
+      if (firstImageSide === "reverse") {
+        pushIfNew(blisterReverse, "blister_reverse");
+        pushIfNew(blisterObverse, "blister_obverse");
+      } else {
+        pushIfNew(blisterObverse, "blister_obverse");
+        pushIfNew(blisterReverse, "blister_reverse");
+      }
+    } else if (firstImageSide === "reverse") {
       if (reverse) pushIfNew(reverse, "reverse");
       if (obverse) pushIfNew(obverse, "obverse");
     } else {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (!isRoyalMint && imageBlisterRev && String(imageBlisterRev).trim()) pushIfNew(String(imageBlisterRev).trim(), "blister_reverse");
-    if (!isRoyalMint && imageBlisterObv && String(imageBlisterObv).trim()) pushIfNew(String(imageBlisterObv).trim(), "blister_obverse");
-    if (imageBox?.trim()) pushIfNew(imageBox.trim(), "box");
-    if (imageCertificate?.trim()) pushIfNew(imageCertificate.trim(), "certificate");
+    if (!hasBlisterPair) {
+      if (blisterReverse) pushIfNew(blisterReverse, "blister_reverse");
+      if (blisterObverse) pushIfNew(blisterObverse, "blister_obverse");
+    }
+    if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
+    if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
     if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
-      const filtered = isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH));
+      const filtered = (isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
+        .map((u) => normalizeAssetUrl(u))
+        .filter(Boolean);
       if (filtered.length > 0) imageUrlsOut.push(...filtered);
     }
     const releaseDate = r.release_date;

@@ -27,17 +27,32 @@ function slugFromUrl(url) {
 async function parseGermaniaCoin(page, sourceUrl) {
   return page.evaluate((sourceUrlInPage) => {
     const text = (el) => (el && el.textContent ? el.textContent.trim() : "");
+    const cleanPrivacy = (v) => {
+      if (!v) return "";
+      return String(v)
+        .replace(/\bWe value your privacy\b/gi, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    };
+    const bodyText = cleanPrivacy(text(document.body));
+    const setIfMissing = (key, value) => {
+      if (!key || !value) return;
+      if (!specs[key]) specs[key] = String(value).trim();
+    };
 
     const h1 =
-      text(document.querySelector("h1")) || text(document.querySelector(".single-product h1")) || "";
+      cleanPrivacy(text(document.querySelector("h1")) || text(document.querySelector(".single-product h1")) || "");
     const h2 =
-      text(document.querySelector("h2")) ||
-      text(document.querySelector(".single-product h2")) ||
-      text(document.querySelector("h1 + p")) ||
-      text(document.querySelector(".single-product p")) ||
+      cleanPrivacy(
+        text(document.querySelector("h2")) ||
+          text(document.querySelector(".single-product h2")) ||
+          text(document.querySelector("h1 + p")) ||
+          text(document.querySelector(".single-product p")) ||
+          ""
+      ) ||
       "";
 
-    const title = h1 || text(document.querySelector("title"));
+    const title = h1 || cleanPrivacy(text(document.querySelector("title")));
     const subtitle = h2 || null;
     const fullTitle =
       h1 && h2
@@ -57,6 +72,23 @@ async function parseGermaniaCoin(page, sourceUrl) {
         if (key) specs[key] = value || null;
       });
     }
+
+    // Fallback для карточек без таблицы спецификаций (fair/no-series и т.п.).
+    const mWeight = bodyText.match(/\b(\d+(?:[.,]\d+)?)\s*oz\b/i);
+    const mPurity = bodyText.match(/\b(\d{3}(?:[.,]\d+)?)\s*(Ag|Au|Cu)\b/i);
+    const mMintage =
+      bodyText.match(/\bup to\s*([\d\s.,]+)\s*(pieces|pcs)\b/i) ||
+      bodyText.match(/\b([\d\s.,]+)\s*(pieces|pcs)\b/i);
+    const mDenomination = bodyText.match(/\b(\d+)\s*(Mark|Dollars?|Euro)\b/i);
+    const mDiameter = bodyText.match(/\b(\d+(?:[.,]\d+)?)\s*mm\b/i);
+    const mQuality = bodyText.match(/\b(Prooflike|UHR|Ultra High Relief|High Relief|BU|Proof)\b/i);
+
+    if (mWeight) setIfMissing("Weight", `${mWeight[1].replace(",", ".")} oz`);
+    if (mPurity) setIfMissing("Purity", `${mPurity[1].replace(",", ".")} ${mPurity[2]}`);
+    if (mMintage) setIfMissing("Mintage", mMintage[1].trim().replace(/\s{2,}/g, " "));
+    if (mDenomination) setIfMissing("Denomination", `${mDenomination[1]} ${mDenomination[2]}`);
+    if (mDiameter) setIfMissing("Diameter", `${mDiameter[1].replace(",", ".")} mm`);
+    if (mQuality) setIfMissing("Grade", mQuality[1]);
 
     const getImgUrl = (img) =>
       (img &&
@@ -114,8 +146,8 @@ async function parseGermaniaCoin(page, sourceUrl) {
 
     return {
       source_url: sourceUrlInPage,
-      title: fullTitle || null,
-      subtitle: subtitle || null,
+      title: cleanPrivacy(fullTitle) || null,
+      subtitle: cleanPrivacy(subtitle) || null,
       specs,
       classified: {
         obverse,

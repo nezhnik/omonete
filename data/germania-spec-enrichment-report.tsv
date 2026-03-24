@@ -1,0 +1,21 @@
+id	reason	fields
+6427	clone Germania 2019 Space Blue (from 6430)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6428	clone Germania 2019 WMF (from 6430)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6429	clone Germania 2019 WMF no-series (from 6430)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6436	clone Oak Leaf WMF (from 6434)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6490	clone Oak Leaf fair-duplicate (from 6434)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61; mintage=50000; mintage_display=50000
+6485	clone Allegories Britannia fair (from 6301)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6486	clone Allegories Columbia fair WMF (from 6302)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6487	clone Allegories Columbia fair (from 6302)	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6418	clone Chameleon no-series duplicate (from 6417)	face_value=5 dollars; metal=Серебро; metal_fineness=999.9 Ag; mintage=500; mintage_display=500 pcs; quality=BU; diameter_mm=50
+6323	external confirmation: 2023 Germania 2oz BU	face_value=10 mark; metal=Серебро; metal_fineness=999.9 Ag; quality=BU; diameter_mm=50.00; mintage=2500; mintage_display=2500
+6324	external confirmation: 2023 Germania 2oz ANA diameter	diameter_mm=50.00
+6316	external confirmation: Fast & Furious	face_value=2 dollars; metal=Серебро; metal_fineness=999.9 Ag; quality=Prooflike; mintage=1000; mintage_display=1000
+6488	external confirmation: Interkosmos Gagarin	face_value=10 victories; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6489	external confirmation: Interkosmos Gagarin Orbital	face_value=10 victories; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61; mintage=607; mintage_display=607
+6474	external confirmation: Valkyries Hildegard	metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61; mintage=25000; mintage_display=25000
+6482	series-consistent fill: Valkyries 1oz BU	face_value=5 mark; metal=Серебро; metal_fineness=999.9 Ag; diameter_mm=38.61
+6491	title-based fill: cast bar	quality=Cast Bar
+6405	external + title-based fill: Americana Uncle Sam	metal=Серебро; metal_fineness=999.9 Ag; quality=Cast Bar; mintage=999; mintage_display=999
+6406	external + title-based fill: Americana Uncle Sam	metal=Серебро; metal_fineness=999.9 Ag; quality=Cast Bar; mintage=999; mintage_display=999
+6416	title-based fill: Pink October cast bar	metal=Серебро; metal_fineness=999.9 Ag; quality=Cast Bar

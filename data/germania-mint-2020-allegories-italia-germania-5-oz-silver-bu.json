@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2020-allegories-italia-germania-5-oz-silver-bu",
+  "title": "2020 Allegories: Italia & Germania 5 oz Silver BU",
+  "subtitle": "Italia & Germania 5 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2020",
+    "Grade": "BU",
+    "Denomination": "25 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "5 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Package": "Capsule, Certificate of Authenticity, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_ave.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_rev.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_ave.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_rev.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/ita-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/ita-2-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/ita-2-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:03:35.062Z"
+}

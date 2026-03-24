@@ -1,0 +1,30 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/valkyries/2022-valkyries-hildegard-2-oz-silver-ultra-high-relief",
+  "title": "2022 Valkyries: Hildegard 2 oz Silver Ultra High Relief",
+  "subtitle": "Hildegard 2 oz Silver Ultra High Relief",
+  "specs": {
+    "Series": "Valkyries",
+    "Year": "2022",
+    "Grade": "High Relief",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "999",
+    "Finishing": "Antique Finish, Colouring",
+    "Package": "Capsule, Certificate of Authenticity, Wooden Display"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_av_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_rev_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_av_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_rev_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/hilde-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/hilde-2-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/hilde-2-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:08:53.880Z"
+}

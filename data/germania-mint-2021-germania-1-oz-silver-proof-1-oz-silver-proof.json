@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2021-germania-1-oz-silver-proof-1-oz-silver-proof",
+  "title": "2021 Germania 1 oz Silver Proof",
+  "subtitle": "1 oz Silver Proof",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2021",
+    "Grade": "Proof",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "1000"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_av.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_rev.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_av.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_rev.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2021proof-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2021proof-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2021proof-1.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:06:16.503Z"
+}

@@ -1,0 +1,33 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/knights-of-the-past/2023-knights-of-the-past-10-euro-2-oz-silver-bu",
+  "title": "2023 Knights of the Past Packaging",
+  "subtitle": "Packaging",
+  "specs": {
+    "Series": "Knights of The Past",
+    "Year": "2023",
+    "Grade": "BU",
+    "Country": "Malta",
+    "Denomination": "10 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "999",
+    "Finishing": "Numbering, Selective Gold Plating",
+    "New": "2 oz"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-2-oz-silver-bu_a_900.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-2-oz-silver-bu_r_900.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-2-oz-silver-bu_a_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-2-oz-silver-bu_r_900.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gallery0-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gallery1-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gallery2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gallery3-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/gallery4-1.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:07:31.973Z"
+}

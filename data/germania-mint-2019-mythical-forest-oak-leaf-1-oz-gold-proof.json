@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/mythical-forest/2019-mythical-forest-oak-leaf-1-oz-gold-proof",
+  "title": "2019 Mythical Forest: Oak Leaf 1 oz Gold Proof",
+  "subtitle": "Oak Leaf 1 oz Gold Proof",
+  "specs": {
+    "Series": "Mythical Forest",
+    "Year": "2019",
+    "Grade": "PROOF",
+    "Denomination": "100 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32.00",
+    "Mintage": "100",
+    "Finishing": "Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Bu__AU_2019-A-1.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Bu_AU_2019-R-1.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Bu__AU_2019-A-1.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Bu_AU_2019-R-1.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/oak-proof-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/oak-proof-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/oak-proof-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:07:49.584Z"
+}

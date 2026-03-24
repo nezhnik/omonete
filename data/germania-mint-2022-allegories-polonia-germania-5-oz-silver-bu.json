@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2022-allegories-polonia-germania-5-oz-silver-bu",
+  "title": "2022 Allegories: Polonia & Germania 5 oz Silver BU",
+  "subtitle": "Polonia & Germania 5 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2022",
+    "Grade": "BU",
+    "Denomination": "25 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "5 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Package": "Capsule, Certificate of Authenticity, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-5-oz-silver-bu_ave_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-5-oz-silver-bu_rev_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-5-oz-silver-bu_ave_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/allegories_polonia-germania-5-oz-silver-bu_rev_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/pol-5-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/pol-5-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/pol-5-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:04:32.503Z"
+}

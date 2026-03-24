@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2019-allegories-columbia-germania-5-oz-silver-bu",
+  "title": "2019 Allegories: Columbia & Germania 5 oz Silver BU",
+  "subtitle": "Columbia & Germania 5 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2019",
+    "Grade": "BU",
+    "Denomination": "25 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "5 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "500",
+    "Package": "Capsule, Certificate of Authenticityle, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/5oz_Columbia__Germania_2019-A.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/5oz_Columbia__Germania_2019-R.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/5oz_Columbia__Germania_2019-A.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/5oz_Columbia__Germania_2019-R.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/a19-5-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/a19-2-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/a19-5-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:03:10.720Z"
+}

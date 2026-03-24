@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2019-germania-1-oz-silver-proof",
+  "title": "2019 Germania: 1 oz Silver Proof",
+  "subtitle": "1 oz Silver Proof",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2019",
+    "Grade": "PROOF",
+    "Denomination": "5 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "1000"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_proof_averse.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_proof_reverse.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_proof_averse.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_proof_reverse.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/g-proof-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/g-proof-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/g-proof-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:05:32.253Z"
+}

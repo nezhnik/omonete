@@ -10,8 +10,10 @@ require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
+const sharp = require("sharp");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
+const FOREIGN_IMG_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
 
 function getConfig() {
   const url = process.env.DATABASE_URL;
@@ -145,6 +147,62 @@ function deriveWeight(weightRaw, titleRaw) {
   return { weightG: null, weightOz: null };
 }
 
+function ensureDir(p) {
+  if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true });
+}
+
+function sanitizeFilePart(v) {
+  return String(v || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 120);
+}
+
+async function fetchBuffer(url, timeoutMs = 30000) {
+  const ac = new AbortController();
+  const t = setTimeout(() => ac.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, {
+      redirect: "follow",
+      signal: ac.signal,
+      headers: { "user-agent": "Mozilla/5.0 (compatible; omonete-bot/1.0)" },
+    });
+    if (!res.ok) return null;
+    return Buffer.from(await res.arrayBuffer());
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(t);
+  }
+}
+
+async function localizeForeignImage(url, fileBase) {
+  if (!url || typeof url !== "string") return null;
+  const raw = String(url).trim();
+  if (!raw) return null;
+  if (raw.startsWith("/image/coins/foreign/")) return raw;
+  if (!/^https?:\/\//i.test(raw)) return null;
+
+  ensureDir(FOREIGN_IMG_DIR);
+  const safe = sanitizeFilePart(fileBase) || `germania-${Date.now()}`;
+  const fileName = `${safe}.webp`;
+  const absOut = path.join(FOREIGN_IMG_DIR, fileName);
+  const relOut = `/image/coins/foreign/${fileName}`;
+
+  if (fs.existsSync(absOut) && fs.statSync(absOut).size > 0) return relOut;
+
+  const buf = await fetchBuffer(raw);
+  if (!buf || buf.length === 0) return null;
+  try {
+    await sharp(buf).webp({ quality: 90 }).toFile(absOut);
+    return relOut;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   const arg = process.argv[2];
   let files = [];
@@ -225,8 +283,10 @@ async function main() {
     const releaseDate = parseYearToDate(specs.Year);
     const country = countryFromData(sourceUrl, title);
     const series = specs.Series ? String(specs.Series).trim() : null;
-    const imageObverse = raw.classified?.obverse || null;
-    const imageReverse = raw.classified?.reverse || null;
+    const imageObverseSrc = raw.classified?.obverse || null;
+    const imageReverseSrc = raw.classified?.reverse || null;
+    const imageObverse = await localizeForeignImage(imageObverseSrc, `${slug}-obv`);
+    const imageReverse = await localizeForeignImage(imageReverseSrc, `${slug}-rev`);
     const { weightG, weightOz } = deriveWeight(specs.Weight, title);
     const catalogNumber = `PL-GERMANIA-${slug}`.toUpperCase().slice(0, 64);
 

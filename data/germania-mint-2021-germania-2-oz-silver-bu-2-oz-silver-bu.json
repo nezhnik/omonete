@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2021-germania-2-oz-silver-bu-2-oz-silver-bu",
+  "title": "2021 Germania 2 oz Silver BU",
+  "subtitle": "2 oz Silver BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2021",
+    "Grade": "BU",
+    "Denomination": "10 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "50.00",
+    "Mintage": "2500"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/2_Germania_2021_2oz_BU-obverse_big.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/4_Germania-2021-2-oz-Ag-9999_rev_big.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/2_Germania_2021_2oz_BU-obverse_big.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/4_Germania-2021-2-oz-Ag-9999_rev_big.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-21-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-21-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-21-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:06:28.464Z"
+}

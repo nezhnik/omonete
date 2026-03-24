@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/allegories/2019-allegories-britannia-germania-10-oz-silver-bu",
+  "title": "2019 Allegories: Britannia & Germania 10 oz Silver BU",
+  "subtitle": "Britannia & Germania 10 oz Silver BU",
+  "specs": {
+    "Series": "Allegories",
+    "Year": "2019",
+    "Grade": "BU",
+    "Denomination": "50 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "10 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "38.61",
+    "Mintage": "250",
+    "Package": "Capsule, Certificate of Authenticity, Blisterpack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/10_oz_Britannia__Germania_2019-A.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/10_oz_Germania__Britannia_2019-R.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/10_oz_Britannia__Germania_2019-A.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/10_oz_Germania__Britannia_2019-R.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/a19-b-10-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/a19-b-10-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/a19-b-10-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:02:52.917Z"
+}

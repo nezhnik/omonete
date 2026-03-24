@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2020-germania-kilo-silver-bu-kilo-silver-bu",
+  "title": "2020 Germania Kilo Silver BU",
+  "subtitle": "Kilo Silver BU",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2020",
+    "Grade": "BU",
+    "Denomination": "80 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 kg",
+    "Purity": "999.9 Ag",
+    "Diameter": "100.00",
+    "Mintage": "100"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_av.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_rev.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_av.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_rev.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2020silverkg-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2020silverkg-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2020silverkg-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:06:02.191Z"
+}

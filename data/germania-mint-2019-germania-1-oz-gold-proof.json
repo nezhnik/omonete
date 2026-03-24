@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2019-germania-1-oz-gold-proof",
+  "title": "2019 Germania: 1 oz Gold Proof",
+  "subtitle": "1 oz Gold Proof",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2019",
+    "Grade": "PROOF",
+    "Denomination": "100 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32.00",
+    "Mintage": "100"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_gold_proof_averse.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_gold_proof_r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_gold_proof_averse.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_2019_1oz_gold_proof_r.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/g2019gold-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/g2019gold-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/g2019gold-4.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:05:21.607Z"
+}

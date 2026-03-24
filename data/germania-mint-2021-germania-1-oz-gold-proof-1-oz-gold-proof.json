@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/germania/2021-germania-1-oz-gold-proof-1-oz-gold-proof",
+  "title": "2021 Germania 1 oz Gold Proof",
+  "subtitle": "1 oz Gold Proof",
+  "specs": {
+    "Series": "Germania",
+    "Year": "2021",
+    "Grade": "Proof",
+    "Denomination": "100 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32.00",
+    "Mintage": "100"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2021-1-oz-Gold-Proof_a.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania_2021_gold_proof_1oz_R_900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2021-1-oz-Gold-Proof_a.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania_2021_gold_proof_1oz_R_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/1oz-gold-21-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/1oz-gold-21-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/1oz-gold-21-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:06:06.617Z"
+}

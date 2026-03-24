@@ -1,0 +1,28 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/mythical-forest/2021-mythical-forest-chestnut-leaf-1-oz-gold-proof",
+  "title": "2021 Mythical Forest: Chestnut Leaf 1 oz Gold Proof",
+  "subtitle": "Chestnut Leaf 1 oz Gold Proof",
+  "specs": {
+    "Series": "Mythical Forest",
+    "Year": "2021",
+    "Grade": "BU",
+    "Denomination": "100 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32.00",
+    "Mintage": "100"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/HIM-1437_2021-Chestnut-Leaf-1-oz-GOLD-PROOF_av.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/HIM-1437_2021-Chestnut-Leaf-1-oz-GOLD-PROOF_rev.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-1437_2021-Chestnut-Leaf-1-oz-GOLD-PROOF_av.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-1437_2021-Chestnut-Leaf-1-oz-GOLD-PROOF_rev.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/chest-gold-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/chest-gold-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/chest-gold-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:08:04.585Z"
+}

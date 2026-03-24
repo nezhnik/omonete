@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/mythical-forest/2022-mythical-forest-linden-leaf-1-oz-gold-proof",
+  "title": "2022 Mythical Forest: Linden Leaf 1 oz Gold Proof",
+  "subtitle": "Linden Leaf 1 oz Gold Proof",
+  "specs": {
+    "Series": "Mythical Forest",
+    "Year": "2022",
+    "Grade": "Proof",
+    "Denomination": "100 mark",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Diameter": "32.00",
+    "Mintage": "100",
+    "Finishing": "numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-1-oz-gold-proof_awers_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-1-oz-gold-proof_rewers_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-1-oz-gold-proof_awers_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-1-oz-gold-proof_rewers_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-g-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-g-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/linden-g-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:08:18.673Z"
+}

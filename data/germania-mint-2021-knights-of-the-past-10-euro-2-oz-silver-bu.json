@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/knights-of-the-past/2021-knights-of-the-past-10-euro-2-oz-silver-bu",
+  "title": "2021 Knights of the Past 10 Euro 2 oz Silver BU",
+  "subtitle": "10 Euro 2 oz Silver BU",
+  "specs": {
+    "Series": "Knights of The Past",
+    "Year": "2021",
+    "Grade": "High Relief",
+    "Denomination": "10 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "999",
+    "Finishing": "Antique Finish, Selective Gold Plating, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/HIM-3187_KOTP_2oz_Silver_Bu_av_900px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/HIM-3187_KOTP_2oz-Silver-Bu_rev_900px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-3187_KOTP_2oz_Silver_Bu_av_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-3187_KOTP_2oz-Silver-Bu_rev_900px.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/kotp-21-2-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/kotp-21-2-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/kotp-21-2-3.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:07:13.340Z"
+}

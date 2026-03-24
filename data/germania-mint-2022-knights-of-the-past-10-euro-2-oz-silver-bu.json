@@ -1,0 +1,29 @@
+{
+  "source_url": "https://germaniamint.com/all-coins/knights-of-the-past/2022-knights-of-the-past-10-euro-2-oz-silver-bu",
+  "title": "2022 Knights of the Past 10 Euro 2 oz Silver BU",
+  "subtitle": "10 Euro 2 oz Silver BU",
+  "specs": {
+    "Series": "Knights of The Past",
+    "Year": "2022",
+    "Grade": "BU",
+    "Denomination": "10 euro",
+    "Mint mark": "Germania Mint",
+    "Weight": "2 oz",
+    "Purity": "999.9 Ag",
+    "Diameter": "45.00",
+    "Mintage": "999",
+    "Finishing": "Antique Finish, Selective Gold Plating, Numbering"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-avers_900px.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-revers_900px.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-avers_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-revers_900px.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_22_06.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_42_12.jpg",
+    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_54_12.jpg"
+  ],
+  "parsedAt": "2026-03-24T10:07:22.898Z"
+}
