@@ -283,7 +283,12 @@ function isRectangular(
 function rowHasBlisterImages(r: Row): boolean {
   const br = r.image_blister_reverse && String(r.image_blister_reverse).trim();
   const bo = r.image_blister_obverse && String(r.image_blister_obverse).trim();
-  return !!(br || bo);
+  if (br || bo) return true;
+  const titleHaystack = [r.title, r.title_en].filter(Boolean).join(" ");
+  if (!/\bin\s+blister\b/i.test(titleHaystack)) return false;
+  const o = r.image_obverse ? String(r.image_obverse) : "";
+  const rev = r.image_reverse ? String(r.image_reverse) : "";
+  return /in-blister/i.test(o + rev);
 }
 
 export type ListCoin = {

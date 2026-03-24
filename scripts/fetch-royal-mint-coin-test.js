@@ -483,7 +483,8 @@ function preferWithEdgeOverShadowEdge(urls) {
   });
 }
 
-function pickBestByType(urls) {
+function pickBestByType(urls, ctx = {}) {
+  const pdpMetal = ctx.pdpMetal || null;
   const by = {
     obverse: [],
     reverse: [],
@@ -501,6 +502,22 @@ function pickBestByType(urls) {
     if (!arr.length) return null;
     const noShadow = arr.filter((x) => !/shadow-edge/i.test(String(x)));
     let pool = noShadow.length ? noShadow : arr;
+    if (
+      pdpMetal === "gold" &&
+      (role === "certificate" || role === "box")
+    ) {
+      const f = pool.filter(
+        (x) => !/silver-proof|silver-bullion|silver-piedfort|silver-proof-piedfort/i.test(String(x))
+      );
+      if (f.length) pool = f;
+    }
+    if (
+      pdpMetal === "silver" &&
+      (role === "certificate" || role === "box")
+    ) {
+      const f = pool.filter((x) => !/gold-proof|gold-bullion/i.test(String(x)));
+      if (f.length) pool = f;
+    }
     if (role === "obverse" || role === "reverse") {
       const noEdge = pool.filter((x) => !/(^|[^a-z])edge([^a-z]|$)/i.test(String(x)));
       if (noEdge.length) pool = noEdge;
@@ -542,6 +559,34 @@ function parseDiameter(specs) {
   const v = specs.Diameter || specs["Maximum Diameter (mm)"] || "";
   const m = String(v).match(/([\d.]+)\s*mm/i);
   return m ? parseFloat(m[1]) : null;
+}
+
+/**
+ * Металл товара по URL PDP, заголовку и спекам — чтобы в certificate/box не попадали чужие silver/gold ассеты с той же страницы.
+ */
+function pdpMetalHint(fetchUrl, title, specs) {
+  const u = String(fetchUrl || "")
+    .toLowerCase()
+    .split("?")[0];
+  const t = String(title || "").toLowerCase();
+  const alloy = String((specs && (specs.Alloy || specs["Pure Metal Type"])) || "").toLowerCase();
+  const silUrl =
+    /silver-proof|silver-bullion|silver-piedfort|silver-proof-piedfort/.test(u) ||
+    (/-silver-|\/silver-/i.test(u) && /proof|bullion|piedfort|coin/.test(u));
+  const golUrl =
+    /gold-proof|gold-bullion/.test(u) ||
+    (/\/sovereign\//i.test(u) && !/silver/i.test(u)) ||
+    (/sovereign/i.test(u) &&
+      /gold|half-sovereign|double-sovereign|quintuple|five-sovereign/i.test(u) &&
+      !/silver/i.test(u));
+  if (silUrl && golUrl) return null;
+  if (silUrl) return "silver";
+  if (golUrl) return "gold";
+  if (/916\.67\s*gold|999\.9|fine gold|^gold\b|\bgold\s/i.test(alloy)) return "gold";
+  if (/\bsilver\b/i.test(alloy)) return "silver";
+  if (/\bgold proof\b|\bgold bullion\b/.test(t)) return "gold";
+  if (/\bsilver proof\b|\bsilver bullion\b|silver proof piedfort|silver-proof/i.test(t)) return "silver";
+  return null;
 }
 
 function metalRu(metalEn) {
@@ -904,7 +949,8 @@ async function main() {
     pdpUrl: fetchUrl,
   });
   productUrls = preferWithEdgeOverShadowEdge(productUrls);
-  const byType = pickBestByType(productUrls);
+  const pdpMetal = pdpMetalHint(fetchUrl, scraped.title, specs);
+  const byType = pickBestByType(productUrls, { pdpMetal });
   const pdpContextTokens = (() => {
     const stop = new Set([
       "shop",
@@ -956,7 +1002,7 @@ async function main() {
     if (!hasContextInChosen || !byType.obverse || !byType.reverse) {
       const contextUrls = (scraped.imageUrls || []).filter((u) => matchesPdpContext(u));
       if (contextUrls.length > 0) {
-        const byContextType = pickBestByType(contextUrls);
+        const byContextType = pickBestByType(contextUrls, { pdpMetal });
         if (byContextType.obverse) byType.obverse = byContextType.obverse;
         if (byContextType.reverse) byType.reverse = byContextType.reverse;
         if (!byType.box && byContextType.box) byType.box = byContextType.box;
@@ -969,7 +1015,7 @@ async function main() {
   if (familySeed && (!byType.obverse || !byType.reverse || !byType.box || !byType.certificate)) {
     const familyFolder = String(familySeed).split("?")[0].split("/").slice(0, -1).join("/");
     const familyUrls = (scraped.imageUrls || []).filter((u) => String(u).startsWith(familyFolder + "/"));
-    const familyByType = pickBestByType(familyUrls);
+    const familyByType = pickBestByType(familyUrls, { pdpMetal });
     if (!byType.obverse && familyByType.obverse) byType.obverse = familyByType.obverse;
     if (!byType.reverse && familyByType.reverse) byType.reverse = familyByType.reverse;
     if (!byType.box && familyByType.box) byType.box = familyByType.box;

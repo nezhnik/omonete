@@ -272,6 +272,18 @@ function isRectangularFromBlisterImages(blisterObverse, blisterReverse) {
   return !!(blisterObverse || blisterReverse);
 }
 
+/**
+ * Импорт иногда кладёт блистерные кадры в image_obverse/reverse, не заполняя image_blister_*.
+ * Тогда в названии есть «in Blister», а в путях — сегмент in-blister.
+ */
+function isRectangularFromInBlisterMainImagePaths(title, titleEn, obverseUrl, reverseUrl) {
+  const t = [title, titleEn].filter(Boolean).join(" ");
+  if (!/\bin\s+blister\b/i.test(t)) return false;
+  const o = obverseUrl != null ? String(obverseUrl) : "";
+  const rev = reverseUrl != null ? String(reverseUrl) : "";
+  return /in-blister/i.test(o + rev);
+}
+
 async function run() {
   const incremental = process.argv.includes("--incremental");
   if (incremental) console.log("Режим: инкрементальный (только изменённые/новые)");
@@ -484,7 +496,8 @@ async function run() {
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
         isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
-        isRectangularFromBlisterImages(blisterObverse, blisterReverse),
+        isRectangularFromBlisterImages(blisterObverse, blisterReverse) ||
+        isRectangularFromInBlisterMainImagePaths(r.title, r.title_en, obverse, reverse),
     };
   });
 
@@ -648,7 +661,8 @@ async function run() {
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
         isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
-        isRectangularFromBlisterImages(blisterObverse, blisterReverse),
+        isRectangularFromBlisterImages(blisterObverse, blisterReverse) ||
+        isRectangularFromInBlisterMainImagePaths(r.title, r.title_en, obverse, reverse),
       mintLogoUrl: mintNameOut && mintLogoMap.get(mintNameOut) ? mintLogoMap.get(mintNameOut) : undefined,
       priceDisplay: (r.price_display && String(r.price_display).trim()) || undefined,
     };
@@ -668,6 +682,10 @@ async function run() {
         const weightG = formatWeightG(s.weight_g) ?? (s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined);
         const sBlisterRev = normalizeAssetUrl(s.image_blister_reverse ? String(s.image_blister_reverse).trim() : null);
         const sBlisterObv = normalizeAssetUrl(s.image_blister_obverse ? String(s.image_blister_obverse).trim() : null);
+        const sIsThreeCoin = (s.title || "").includes("Three Coin Set") || (s.title || "").includes("3 Coin Set");
+        const sDropWrong = (u) => u && !sIsThreeCoin && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
+        const sObv = normalizeAssetUrl(sDropWrong(obverseUrl(s.image_obverse)));
+        const sRev = normalizeAssetUrl(sDropWrong(reverseUrl(s.image_reverse)));
         return {
           id: String(s.id),
           title: s.title,
@@ -682,7 +700,8 @@ async function run() {
           rectangular:
             (s.is_rectangular === 1 || s.is_rectangular === true) ||
             isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm) ||
-            isRectangularFromBlisterImages(sBlisterObv, sBlisterRev),
+            isRectangularFromBlisterImages(sBlisterObv, sBlisterRev) ||
+            isRectangularFromInBlisterMainImagePaths(s.title, s.title_en, sObv, sRev),
         };
       });
     }

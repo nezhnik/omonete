@@ -84,6 +84,8 @@
     "coins:report-missing-mintage": "node scripts/report-coins-missing-mintage.js",
     "royal-mint:probe:one": "node scripts/royal-mint-gold-bullion-probe.js --one",
     "db:add-blister-images": "node scripts/run-add-coins-blister-images.js",
+    "royal-mint:audit-obvrev-metal": "node scripts/audit-royal-mint-obvrev-metal-mismatch.js",
+    "royal-mint:audit-obvrev-metal:json": "node scripts/audit-royal-mint-obvrev-metal-mismatch.js --json",
     "royal-mint:image-audit-report": "node scripts/royal-mint-image-audit-report.js",
     "royal-mint:image-manifest-build": "node scripts/royal-mint-image-manifest-build.js",
     "royal-mint:image-mirror-sync": "node scripts/royal-mint-image-mirror-sync.js",

@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-03-24T21:06:46.552Z",
+  "counts": {
+    "files": 357,
+    "withClassified": 353,
+    "skippedNoClassified": 4,
+    "skippedAmbiguousPdp": 30,
+    "obvRevIssues": 0,
+    "certBoxSilverOnGoldPdp": 0
+  },
+  "obvRevIssues": [],
+  "certBoxSilverOnGoldPdp": []
+}

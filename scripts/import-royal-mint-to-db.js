@@ -94,7 +94,7 @@ function parseFlags(argv) {
 
 async function main() {
   const argv = process.argv.slice(2);
-  const { purge404, matchCatalog, noDbSpecCollision, arg } = parseFlags(argv);
+  const { purge404, matchCatalog, noDbSpecCollision, allowTrialOfPyx, arg } = parseFlags(argv);
 
   let files = [];
   if (arg) {
