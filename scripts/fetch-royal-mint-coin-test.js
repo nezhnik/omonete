@@ -85,6 +85,18 @@ function classifyRoyalMintImage(url) {
   /** shadow-edge — тот же ракурс, но «издалека» с тенью; классифицируем как obverse/reverse, но ниже отфильтруем если есть with-edge */
   if (/reverse-shadow-edge/i.test(lower)) return "reverse";
   if (/obverse-shadow-edge/i.test(lower)) return "obverse";
+  /**
+   * RM Portraits third effigy: в *-gold-proof-coin-reverse-case.jpg* на CDN фактически буклет BU/серебра — не реверс и не COA золотой proof.
+   * Отдельного *-gold-proof-coin-case.jpg* у линии может не быть (404) — ассет исключаем из галереи.
+   */
+  if (/gold-proof.*reverse-case|reverse-case.*gold-proof/i.test(lower)) return null;
+  /** Золотая монета в кейсе (без «reverse-» в имени) — как у Fourth effigy *-gold-proof-coin-case.jpg */
+  if (/gold-proof.*-coin-case\.|coin-case.*gold-proof/i.test(lower) && !/reverse-case|obverse-case/i.test(lower))
+    return "certificate";
+  if (/gold-proof.*obverse-case|obverse-case.*gold-proof/i.test(lower)) return "certificate";
+  if (/silver-proof.*reverse-case|reverse-case.*silver-proof|silver-piedfort.*reverse-case/i.test(lower))
+    return "certificate";
+  if (/reverse-case|obverse-case/i.test(lower)) return "box";
   if (/on-edge/i.test(lower) && !/obverse|reverse/i.test(lower)) return null;
   // На RM иногда встречаются опечатки в имени файла (например, "caosule"), тоже считаем капсулой.
   if (/capsule|caosule|casule|capsul/i.test(lower)) return null;
@@ -511,12 +523,23 @@ function pickBestByType(urls, ctx = {}) {
       );
       if (f.length) pool = f;
     }
+    /** Золотой proof: не подставлять BU-упаковку (uk…bu---, brilliant-uncirculated); иначе пустой слот. */
+    if (pdpMetal === "gold" && role === "box") {
+      pool = pool.filter(
+        (x) =>
+          !/brilliant-uncirculated|\/uk\d{2}[a-z0-9]*bu---|-bu-pack|bu-coin-pack/i.test(String(x))
+      );
+    }
     if (
       pdpMetal === "silver" &&
       (role === "certificate" || role === "box")
     ) {
       const f = pool.filter((x) => !/gold-proof|gold-bullion/i.test(String(x)));
       if (f.length) pool = f;
+    }
+    /** Золотой PDP: не использовать piedfort-картон (uk…pf---…), даже если других cert в пуле нет. */
+    if (pdpMetal === "gold" && role === "certificate") {
+      pool = pool.filter((x) => !/\/uk\d{2}[a-z0-9]*pf---/i.test(String(x)));
     }
     if (role === "obverse" || role === "reverse") {
       const noEdge = pool.filter((x) => !/(^|[^a-z])edge([^a-z]|$)/i.test(String(x)));
@@ -672,7 +695,67 @@ async function extractPage(page) {
       price = String(price).replace(/\s+/g, " ").trim();
     }
 
-    /** Порядок важен для голосования по папке CDN: сначала главная галерея (как .desktop-product-pictures в DevTools). */
+    /** Порядок важен для голосования по папке CDN: сначала витрина Shop — div.image-gallery.fluid-image (как на PDP). */
+    const fluidGalleryImgs = [];
+    const seenFluid = new Set();
+    function pushFluid(u) {
+      const a = absUrl(u);
+      if (!a || !/globalassets|royalmint\.com/i.test(a) || /data:/i.test(a)) return;
+      if (seenFluid.has(a)) return;
+      seenFluid.add(a);
+      fluidGalleryImgs.push(a);
+    }
+
+    /** Берём самый крупный URL из srcset (1x, 2x, …w), иначе первый кандидат. */
+    function urlFromSrcset(srcset) {
+      if (!srcset || !String(srcset).trim()) return "";
+      const parts = String(srcset)
+        .split(",")
+        .map((x) => x.trim())
+        .filter(Boolean);
+      let bestW = -1;
+      let bestU = "";
+      for (const part of parts) {
+        const segs = part.split(/\s+/);
+        const u = segs[0];
+        if (!u) continue;
+        let w = 0;
+        const desc = segs[1];
+        if (desc && /^(\d+)w$/i.test(desc)) w = parseInt(RegExp.$1, 10);
+        else if (desc && /^(\d+(?:\.\d+)?)x$/i.test(desc)) w = Math.round(parseFloat(RegExp.$1) * 1000);
+        if (w >= bestW) {
+          bestW = w;
+          bestU = u;
+        }
+      }
+      if (bestU) return bestU;
+      const first = parts[0].split(/\s+/)[0];
+      return first || "";
+    }
+
+    function pushFromImgElFluid(el) {
+      let s =
+        el.getAttribute("data-src") ||
+        el.getAttribute("data-lazy-src") ||
+        el.getAttribute("src") ||
+        "";
+      const srcset = el.getAttribute("srcset") || el.getAttribute("data-srcset");
+      const fromSet = urlFromSrcset(srcset);
+      if (fromSet) s = fromSet;
+      if (s) pushFluid(s);
+    }
+
+    const fluidRoots = document.querySelectorAll(".image-gallery.fluid-image, .fluid-image.image-gallery");
+    fluidRoots.forEach((root) => {
+      root.querySelectorAll("img, picture source").forEach(pushFromImgElFluid);
+      root.querySelectorAll("[data-src],[data-lazy-src]").forEach((el) => {
+        if (el.tagName === "IMG" || el.tagName === "SOURCE") return;
+        const v =
+          el.getAttribute("data-src") || el.getAttribute("data-lazy-src") || el.getAttribute("data-bg") || "";
+        if (v) pushFluid(v);
+      });
+    });
+
     const orderedImgs = [];
     const seenImg = new Set();
     function pushImg(u) {
@@ -684,12 +767,14 @@ async function extractPage(page) {
     }
 
     function pushFromImgEl(el) {
-      let s = el.getAttribute("src") || el.getAttribute("data-src") || "";
-      const srcset = el.getAttribute("srcset");
-      if (srcset) {
-        const first = srcset.split(",")[0].trim().split(/\s+/)[0];
-        if (first) s = first;
-      }
+      let s =
+        el.getAttribute("data-src") ||
+        el.getAttribute("data-lazy-src") ||
+        el.getAttribute("src") ||
+        "";
+      const srcset = el.getAttribute("srcset") || el.getAttribute("data-srcset");
+      const fromSet = urlFromSrcset(srcset);
+      if (fromSet) s = fromSet;
       if (s) pushImg(s);
     }
     function pushFromBackgroundLikeEl(el) {
@@ -733,17 +818,33 @@ async function extractPage(page) {
     const og = document.querySelector('meta[property="og:image"]')?.getAttribute("content");
     if (og) pushImg(og);
 
-    document.querySelectorAll('img[src], img[data-src], picture source[srcset]').forEach(pushFromImgEl);
+    document
+      .querySelectorAll("img[src], img[data-src], img[data-lazy-src], picture source[srcset], picture source[data-srcset]")
+      .forEach(pushFromImgEl);
     document
       .querySelectorAll("[style*='background-image'], [data-background-image], [data-bg], [data-image], [data-original]")
       .forEach(pushFromBackgroundLikeEl);
+
+    const seenMerge = new Set();
+    const imageUrlsMerged = [];
+    for (const u of fluidGalleryImgs) {
+      if (seenMerge.has(u)) continue;
+      seenMerge.add(u);
+      imageUrlsMerged.push(u);
+    }
+    for (const u of orderedImgs) {
+      if (seenMerge.has(u)) continue;
+      seenMerge.add(u);
+      imageUrlsMerged.push(u);
+    }
 
     return {
       title,
       specs,
       specificationBlockFound,
       price,
-      imageUrls: orderedImgs,
+      imageUrls: imageUrlsMerged,
+      imageUrlsFluidGallery: fluidGalleryImgs,
       pdpPlainText: descriptionChunks.join("\n"),
     };
   }, ORIGIN);
@@ -833,7 +934,21 @@ async function main() {
   let scraped;
   try {
     await page.goto(fetchUrl, { waitUntil: "domcontentloaded", timeout: 120000 });
-    await new Promise((r) => setTimeout(r, 2000));
+    await page
+      .waitForSelector(".image-gallery.fluid-image img, .fluid-image.image-gallery img, .desktop-product-pictures img", {
+        timeout: 25000,
+      })
+      .catch(() => {});
+    await page.evaluate(() => {
+      document.querySelectorAll(".image-gallery.fluid-image img, .fluid-image.image-gallery img").forEach((img) => {
+        try {
+          img.scrollIntoView({ block: "center", inline: "nearest" });
+        } catch {
+          /* ignore */
+        }
+      });
+    });
+    await new Promise((r) => setTimeout(r, 1500));
     scraped = await extractPage(page);
     const pageHtml = await page.content();
     const htmlImageUrls = extractRoyalMintImageUrlsFromHtml(pageHtml);
@@ -942,7 +1057,19 @@ async function main() {
   };
 
   const releaseYearNum = yearMatch ? parseInt(yearMatch[1], 10) : null;
-  let productUrls = filterUrlsByProductGalleryFolder(scraped.imageUrls || [], {
+  /** Сначала URL из div.image-gallery.fluid-image (порядок как на сайте), затем полный список — для выбора папки CDN и productUrls. */
+  const fluidGalleryForFilter = (scraped.imageUrlsFluidGallery || []).filter((u) => {
+    const p = String(u).toLowerCase().split("?")[0];
+    if (!/\/globalassets\/_?ecommerce\/.*\/launches\//i.test(p)) return false;
+    if (!/\.(jpg|jpeg|webp)$/i.test(p)) return false;
+    if (/160x160|100x100|\/banners\//i.test(p)) return false;
+    return true;
+  });
+  const urlsForProductFilter =
+    fluidGalleryForFilter.length >= 2
+      ? uniqueUrlsStable([...fluidGalleryForFilter, ...(scraped.imageUrls || [])])
+      : scraped.imageUrls || [];
+  let productUrls = filterUrlsByProductGalleryFolder(urlsForProductFilter, {
     year: releaseYearNum,
     title: scraped.title || "",
     quality: specs.Quality ? String(specs.Quality).trim() : "",
@@ -1052,6 +1179,7 @@ async function main() {
     specs,
     specificationBlockFound: scraped.specificationBlockFound === true,
     imageUrls: scraped.imageUrls,
+    imageUrlsFluidGallery: scraped.imageUrlsFluidGallery || [],
     imageUrlsProduct: productUrls,
     classified: byType,
     price: scraped.price,
@@ -1091,6 +1219,19 @@ async function main() {
         console.log("  ✓", j.file);
       } catch (e) {
         console.warn("  ✗", j.file, j.url.slice(0, 80), e.message);
+      }
+    }
+    for (const j of jobs) {
+      if (j.url) continue;
+      coin[j.coinKey] = null;
+      const outAbs = path.join(FOREIGN_DIR, j.file);
+      if (fs.existsSync(outAbs)) {
+        try {
+          fs.unlinkSync(outAbs);
+          console.log("  ⊗ удалён (нет актуального URL):", j.file);
+        } catch (e) {
+          console.warn("  ⊗", j.file, e.message);
+        }
       }
     }
   } else {
