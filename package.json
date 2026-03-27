@@ -59,6 +59,7 @@
     "pamp:repair-blister-pairs": "node scripts/pamp-repair-blister-pairs-from-imageurls.js",
     "pamp:repair-export": "node scripts/pamp-repair-export-fields-from-json.js",
     "pamp:backfill-face-tuvalu-2": "node scripts/pamp-backfill-face-tuvalu-2usd-coin-ids.js",
+    "pamp:swap-obv-rev-files": "node scripts/pamp-swap-obv-rev-webp-files.js",
     "pamp:export-site": "npm run pamp:repair-export && npm run data:export",
     "pamp:fix-weights": "node scripts/fix-pamp-weights-from-title.js",
     "pamp:sync": "npm run pamp:listing && npm run pamp:fetch:all && npm run pamp:import && npm run data:export:incremental",
