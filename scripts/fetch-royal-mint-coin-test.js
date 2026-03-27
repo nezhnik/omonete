@@ -78,13 +78,13 @@ function classifyRoyalMintImage(url) {
   if (!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(lower)) return null;
   if (/160x160|100x100|\/banners\//i.test(lower)) return null;
   /** RM часто даёт только reverse-edge / obverse-edge — это всё же реверс/аверс, не отбрасываем. */
-  if (/reverse-with-edge|reverse-edge/i.test(lower)) return "reverse";
-  if (/obverse-with-edge|obverse-edge/i.test(lower)) return "obverse";
+  if (/reverse(?:-|_)with(?:-|_)edge|reverse-edge/i.test(lower)) return "reverse";
+  if (/obverse(?:-|_)with(?:-|_)edge|obverse-edge/i.test(lower)) return "obverse";
   // BU/pack-shot кадры не являются сторонами монеты.
   if (/pack-front|pack-back/i.test(lower)) return null;
   /** shadow-edge — тот же ракурс, но «издалека» с тенью; классифицируем как obverse/reverse, но ниже отфильтруем если есть with-edge */
-  if (/reverse-shadow-edge/i.test(lower)) return "reverse";
-  if (/obverse-shadow-edge/i.test(lower)) return "obverse";
+  if (/reverse(?:-|_)shadow(?:-|_)edge/i.test(lower)) return "reverse";
+  if (/obverse(?:-|_)shadow(?:-|_)edge/i.test(lower)) return "obverse";
   /**
    * RM Portraits third effigy: в *-gold-proof-coin-reverse-case.jpg* на CDN фактически буклет BU/серебра — не реверс и не COA золотой proof.
    * Отдельного *-gold-proof-coin-case.jpg* у линии может не быть (404) — ассет исключаем из галереи.
@@ -114,6 +114,8 @@ function classifyRoyalMintImage(url) {
   /** Historic/Trial naming: ...-obv.jpg / ...-rev.jpg / ..._obv.jpg */
   if (/(^|[-_.])obv(\.|-|_)/i.test(lower) && !/(^|[-_.])rev(\.|-|_)/i.test(lower)) return "obverse";
   if (/(^|[-_.])rev(\.|-|_)/i.test(lower) && !/(^|[-_.])obv(\.|-|_)/i.test(lower)) return "reverse";
+  if (/(^|[-_.])reverse([-_.]|$)/i.test(lower) && !/(^|[-_.])obverse([-_.]|$)/i.test(lower)) return "reverse";
+  if (/(^|[-_.])obverse([-_.]|$)/i.test(lower) && !/(^|[-_.])reverse([-_.]|$)/i.test(lower)) return "obverse";
   if ((/\breverse\b|coin-reverse|-reverse\./i.test(lower) || /-reverse\.jpg|reevsre|revsre/i.test(lower)) && !/obverse/i.test(lower)) return "reverse";
   if (/\bobverse\b|coin-obverse|-obverse\./i.test(lower) || /-obverse\.jpg/i.test(lower)) return "obverse";
   // Старые bullion-галереи RM: rtyb2310sc-1.png / -2.png без явных obverse/reverse в имени.
@@ -1147,6 +1149,45 @@ async function main() {
     if (!byType.reverse && familyByType.reverse) byType.reverse = familyByType.reverse;
     if (!byType.box && familyByType.box) byType.box = familyByType.box;
     if (!byType.certificate && familyByType.certificate) byType.certificate = familyByType.certificate;
+  }
+  /**
+   * Legacy RM campaigns (consumer/_campaigns, __rebrand/_campaigns):
+   * стороны часто помечены как "_reverse_" / "_obverse_" в имени файла и
+   * не всегда попадают в product folder filter. Подбираем только крупные asset URL.
+   */
+  if (!byType.obverse || !byType.reverse) {
+    const legacyCampaignSides = (scraped.imageUrls || []).filter((u) => {
+      const p = String(u || "").toLowerCase().split("?")[0];
+      if (!/\/globalassets\/(?:consumer|__rebrand)\/_campaigns\//i.test(p)) return false;
+      if (!/\.(jpg|jpeg|png|webp)$/i.test(p)) return false;
+      if (/160x160|100x100|\/banners\//i.test(p)) return false;
+      return (
+        /(^|[_\-.\/])obverse([_\-.\/]|$)|(^|[_\-.\/])reverse([_\-.\/]|$)|coin[_-]obverse|coin[_-]reverse/i.test(p)
+      );
+    });
+    if (legacyCampaignSides.length > 0) {
+      const legacyByType = pickBestByType(legacyCampaignSides, { pdpMetal });
+      if (!byType.obverse && legacyByType.obverse) byType.obverse = legacyByType.obverse;
+      if (!byType.reverse && legacyByType.reverse) byType.reverse = legacyByType.reverse;
+    }
+  }
+  /**
+   * Historic Coins PDP: иногда только "_historic-coins/_product-image" кадры без явных ролей.
+   * Берём только URL, которые совпадают с токенами текущего PDP, чтобы не тянуть чужие картинки.
+   */
+  if (!byType.obverse && !byType.reverse) {
+    const historicProductImgs = (scraped.imageUrls || []).filter((u) => {
+      const p = String(u || "").toLowerCase().split("?")[0];
+      if (!/\/globalassets\/__rebrand\/_structure\/shop\/editions\/_historic-coins\/_product-image\//i.test(p)) return false;
+      if (!/\.(jpg|jpeg|png|webp)$/i.test(p)) return false;
+      if (/160x160|100x100|\/banners\//i.test(p)) return false;
+      return true;
+    });
+    const contextHistoric = historicProductImgs.filter((u) => matchesPdpContext(u));
+    if (contextHistoric.length >= 1) {
+      byType.reverse = contextHistoric[0] || null;
+      byType.obverse = contextHistoric[1] || contextHistoric[0] || null;
+    }
   }
   /**
    * На части commemorative RM отдаёт только "in-acrylic-block"/"case-left" без явных obv/rev.

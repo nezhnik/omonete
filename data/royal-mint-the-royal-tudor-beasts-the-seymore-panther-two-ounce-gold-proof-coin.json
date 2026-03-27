@@ -23,8 +23,8 @@
     "catalog_suffix": "the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin",
     "price_display": "Price: £5,700.00",
     "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/The-Royal-Tudor-Beasts-The-Seymore-Panther-Two-Ounce-Gold-Proof-Coin",
-    "image_obverse": null,
-    "image_reverse": null,
+    "image_obverse": "/image/coins/foreign/the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
@@ -45,8 +45,8 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_obverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_reverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_obverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
@@ -113,27 +113,31 @@
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
       "https://www.royalmint.com/globalassets/icn_success.svg",
       "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/loch-ness/products/lc1251sc---2026-legendary-creatures---coin-1-1oz-silver-bullion-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/freddie-mercury/product-images/uk25fmbu---freddie-mercury-2025-uk-5-brilliant-uncirculated-coin-pack.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
       "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
+    "imageUrlsFluidGallery": [
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_reverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_obverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg"
+    ],
     "imageUrlsProduct": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_obverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_reverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg"
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_reverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_obverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg"
     ],
     "classified": {
-      "obverse": null,
-      "reverse": null,
+      "obverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_obverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
+      "reverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2022/royal-tudor-beasts/product-images/the_royal_tudor_beasts_the_seymour_panther_2022_uk_2oz_gold_proof_coin_reverse_with_edge_-_uk22tsp2g-1500x1500-f3a2c671.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
       "box": null,
@@ -142,11 +146,11 @@
     "price": "Price: £5,700.00",
     "requestedUrl": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/The-Royal-Tudor-Beasts-The-Seymore-Panther-Two-Ounce-Gold-Proof-Coin",
     "pdpUrl": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/The-Royal-Tudor-Beasts-The-Seymore-Panther-Two-Ounce-Gold-Proof-Coin",
-    "pdpPlainTextPreview": "WE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Monarch Elizabeth II The Royal Tudor Beasts The Seymore Panther Two-Ounce Gold Proof Coin Share via GOLD PROOF The Royal Tudor Beasts The Seymore Panther Two-Ounce Gold Proof Coin Limited Edition 350 Price: £5,700.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISTRTB The first coin in the ten-coin collection honouring the Royal Tudor Beasts Finished to Proof standard Features a reverse design by the illustrator David Lawrence The obverse has the fifth effigy of Elizabeth II designed by Jody Clark Struck in two ounces of 999.9 fine gold Certified authenticity by The Royal Mint Image is representative of the coin you will receive Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.47 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.27 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,484.37 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,481.75 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £140.68 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock The Seymour Panther was given to Jane Seymour, Henry VIII’s third wife, by the king from the royal treasury of beasts. Although the stone beast is depicted as a ferocious animal, with flames coming from its mouth and ears, the Seymour Panther symbolised a peaceful and loving union between the king and consort who bore him the male heir he so desperately yearned for. SPECIFICATION Specification Value Denomination £200 Alloy 999.9 Fine Gold Weight 62.42 g Diameter 40.00mm Reverse Designer David Lawrence Specification Value Obverse Designer Jody Clark Quality Proof Year 2022 Pure Metal Type Gold"
+    "pdpPlainTextPreview": "FREE UK DELIVERY ON ALL ORDERS OVER £35 WITH CODE EASTER26^ SHOP NOW Home Shop Monarch Elizabeth II The Royal Tudor Beasts The Seymore Panther Two-Ounce Gold Proof Coin Share via Gold Proof The Royal Tudor Beasts The Seymore Panther Two-Ounce Gold Proof Coin Limited Edition 350 Price: £5,700.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISTRTB The first coin in the ten-coin collection honouring the Royal Tudor Beasts Finished to Proof standard Features a reverse design by the illustrator David Lawrence The obverse has the fifth effigy of Elizabeth II designed by Jody Clark Struck in two ounces of 999.9 fine gold Certified authenticity by The Royal Mint Image is representative of the coin you will receive Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.41 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.21 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,530.46 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £142.54 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,480.25 In Stock ADD TO BASKET The Sovereign 2026 Gold Bullion Coin £828.87 In Stock ADD TO BASKET Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin £65.15 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Freddie Mercury 2025 UK £5 Brilliant Uncirculated Coin £18.50 In Stock The Seymour Panther was given to Jane Seymour, Henry VIII’s third wife, by the king from the royal treasury of beasts. Although the stone beast is depicted as a ferocious animal, with flames coming from its mouth and ears, the Seymour Panther symbolised a peaceful and loving union between the king and consort who bore him the male heir he so desperately yearned for. SPECIFICATION Specification Value Denomination £200 Alloy 999.9 Fine Gold Weight 62.42 g Diameter 40.00mm Reverse Designer David Lawrence Specification Value Obverse Designer Jody Clark Quality Proof Year 2022 Pure Metal Type Gold"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
+    "obverse": "/image/coins/foreign/the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin-obv.webp",
+    "reverse": "/image/coins/foreign/the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "box": null,

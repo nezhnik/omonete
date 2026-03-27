@@ -23,8 +23,8 @@
     "catalog_suffix": "2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin",
     "price_display": "Price: £895.00",
     "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin",
-    "image_obverse": null,
-    "image_reverse": null,
+    "image_obverse": "/image/coins/foreign/2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
@@ -45,8 +45,8 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the_snowman_2020_uk_50p_gold_proof_coin_obverse_edge_-_uk20smgp.jpg",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the-snowman-2020-uk-50p-gold-proof-coin-reverse---uk20smgp.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the_snowman_2020_uk_50p_gold_proof_coin_obverse_edge_-_uk20smgp.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
@@ -113,28 +113,31 @@
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
       "https://www.royalmint.com/globalassets/icn_success.svg",
       "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/loch-ness/products/lc1251sc---2026-legendary-creatures---coin-1-1oz-silver-bullion-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/freddie-mercury/product-images/uk25fmbu---freddie-mercury-2025-uk-5-brilliant-uncirculated-coin-pack.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
       "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
+    "imageUrlsFluidGallery": [
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the-snowman-2020-uk-50p-gold-proof-coin-reverse---uk20smgp.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the_snowman_2020_uk_50p_gold_proof_coin_obverse_edge_-_uk20smgp.jpg"
+    ],
     "imageUrlsProduct": [
       "https://www.royalmint.com/globalassets/_beta_v3/_bar_images/beta-shop-monarch-queen-elizabeth-ii.png",
-      "https://www.royalmint.com/globalassets/_beta_v3/_bar_images/beta-shop-monarch-queen-victoria.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg"
+      "https://www.royalmint.com/globalassets/_beta_v3/_bar_images/beta-shop-monarch-queen-victoria.png"
     ],
     "classified": {
-      "obverse": null,
-      "reverse": null,
+      "obverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the_snowman_2020_uk_50p_gold_proof_coin_obverse_edge_-_uk20smgp.jpg",
+      "reverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/snowman-2020/product-photography/the-snowman-2020-uk-50p-gold-proof-coin-reverse---uk20smgp.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
       "box": null,
@@ -143,11 +146,11 @@
     "price": "Price: £895.00",
     "requestedUrl": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin",
     "pdpUrl": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin",
-    "pdpPlainTextPreview": "The obverse features the fifth effigy of Elizabeth II by Jody Clark\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Shop Monarch Elizabeth II 2020 Queen Elizabeth II Gold Proof Snowman 50p Coin Share via Gold Proof 2020 Queen Elizabeth II Gold Proof Snowman 50p Coin Limited Edition Price: £895.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HIS20SMGP Struck in 22 carat gold Low LEP of just 275 The reverse is designed by the renowned illustrator Robin Shaw The obverse features the fifth effigy of Elizabeth II by Jody Clark Certified authenticity from The Royal Mint Please note: This coin does not come with its original certificate Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.47 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.27 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,484.37 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,481.75 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £140.68 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock The Magic of Christmas It’s not officially the festive season until the whole family sit down together to watch The Snowman. Raymond Briggs’s wordless picture book was beautifully brought to life in an animated film that has become essential Christmas viewing. The story of the little boy whose snowman magically comes to life continues to enchant each new generation. The magic returns to The Royal Mint with our second ever Snowman coin. Struck in gold, it features an original design that captures the bond between the little boy and his new best friend. SPECIFICATION Specification Value Denomination £5 Alloy 22 Carat Gold Weight 15.50 g Diameter 27.30mm Reverse Designer Robin Shaw Specification Value Obverse Designer Jody Clark Quality Proof Year 2020 Pure Metal Type Gold"
+    "pdpPlainTextPreview": "The obverse features the fifth effigy of Elizabeth II by Jody Clark\nFREE UK DELIVERY ON ALL ORDERS OVER £35 WITH CODE EASTER26^ SHOP NOW Home Shop Monarch Elizabeth II 2020 Queen Elizabeth II Gold Proof Snowman 50p Coin Share via Gold Proof 2020 Queen Elizabeth II Gold Proof Snowman 50p Coin Limited Edition Price: £895.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HIS20SMGP Struck in 22 carat gold Low LEP of just 275 The reverse is designed by the renowned illustrator Robin Shaw The obverse features the fifth effigy of Elizabeth II by Jody Clark Certified authenticity from The Royal Mint Please note: This coin does not come with its original certificate Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.26 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.06 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,529.73 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £142.51 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,476.50 In Stock ADD TO BASKET The Sovereign 2026 Gold Bullion Coin £828.70 In Stock ADD TO BASKET Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin £64.96 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Freddie Mercury 2025 UK £5 Brilliant Uncirculated Coin £18.50 In Stock The Magic of Christmas It’s not officially the festive season until the whole family sit down together to watch The Snowman. Raymond Briggs’s wordless picture book was beautifully brought to life in an animated film that has become essential Christmas viewing. The story of the little boy whose snowman magically comes to life continues to enchant each new generation. The magic returns to The Royal Mint with our second ever Snowman coin. Struck in gold, it features an original design that captures the bond between the little boy and his new best friend. SPECIFICATION Specification Value Denomination £5 Alloy 22 Carat Gold Weight 15.50 g Diameter 27.30mm Reverse Designer Robin Shaw Specification Value Obverse Designer Jody Clark Quality Proof Year 2020 Pure Metal Type Gold"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
+    "obverse": "/image/coins/foreign/2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin-obv.webp",
+    "reverse": "/image/coins/foreign/2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "box": null,

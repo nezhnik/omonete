@@ -23,8 +23,8 @@
     "catalog_suffix": "2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin",
     "price_display": "Price: £1,465.00",
     "source_url": "https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin",
-    "image_obverse": null,
-    "image_reverse": null,
+    "image_obverse": "/image/coins/foreign/2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
@@ -45,8 +45,8 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_reverse_tone_-_sv19pf.jpg",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_obverse_tone_-_sv19pf.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_reverse_tone_-_sv19pf.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
@@ -113,27 +113,30 @@
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
       "https://www.royalmint.com/globalassets/icn_success.svg",
       "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/loch-ness/products/lc1251sc---2026-legendary-creatures---coin-1-1oz-silver-bullion-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/freddie-mercury/product-images/uk25fmbu---freddie-mercury-2025-uk-5-brilliant-uncirculated-coin-pack.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
       "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
+    "imageUrlsFluidGallery": [
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_obverse_tone_-_sv19pf.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_reverse_tone_-_sv19pf.jpg"
+    ],
     "imageUrlsProduct": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_reverse_tone_-_sv19pf.jpg",
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_obverse_tone_-_sv19pf.jpg"
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg"
     ],
     "classified": {
-      "obverse": null,
-      "reverse": null,
+      "obverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_obverse_tone_-_sv19pf.jpg",
+      "reverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/sovereign/photography/the_piedfort_sovereign_2019_gold_proof_coin_reverse_tone_-_sv19pf.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
       "box": null,
@@ -142,11 +145,11 @@
     "price": "Price: £1,465.00",
     "requestedUrl": "https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin",
     "pdpUrl": "https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin",
-    "pdpPlainTextPreview": "Features Benedetto Pistrucci's iconic St George and the dragon design\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Sovereign All Sovereign Coins 2019 Elizabeth II Piedfort Sovereign Proof Gold Coin Share via Gold Proof 2019 Elizabeth II Piedfort Sovereign Proof Gold Coin Limited Mintage of Just 1800 Price: £1,465.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISE2019P A Piedfort coin – double the weight at 15.96 grams of 22 carat gold, struck to Proof standard Double the thickness of a standard Sovereign A limited mintage of just 1,800 coins The obverse features the 5th effigy of Elizabeth II by Jody Clark The reverse features Pistrucci’s classic St George and the dragon design Certified authenticity from The Royal Mint Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.47 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.27 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,484.37 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,481.75 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £140.68 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock Piedfort coins are imbued with their own fascinating history, tracing back to the twelfth century and including a time, between the sixteenth and seventeenth centuries, in which they were given by European royalty as 'prestige pieces' to members of their courts. For more than half a millennium – since being introduced in 1489 during the reign of Henry VII – The Sovereign has been used to impress and convey importance. The coin returned in 1817, but was nearly consigned to the history books by the economist David Ricardo who planned to replace circulating gold coins with 60oz ingots. The plan was abandoned, and 200 years later The Sovereign survives as the world’s oldest coin still in production. The modern coin has served as stage for the work of Benedetto Pistrucci and is considered one of the all-time greats of numismatic art. His St George and the dragon design stands out in incredible detail, struck with the precision and accuracy for which The Royal Mint is known and respected for around the world. SPECIFICATION Specification Value Denomination Sovereign Alloy 22 Carat Gold Weight 15.97 g Diameter 22.05mm Reverse Designer Benedetto Pistrucci Specification Value Obverse Designer Jody Clark Quality Proof Year 2019 Pure Metal Type Gold"
+    "pdpPlainTextPreview": "Features Benedetto Pistrucci's iconic St George and the dragon design\nFREE UK DELIVERY ON ALL ORDERS OVER £35 WITH CODE EASTER26^ SHOP NOW Home Sovereign All Sovereign Coins 2019 Elizabeth II Piedfort Sovereign Proof Gold Coin Share via Gold Proof 2019 Elizabeth II Piedfort Sovereign Proof Gold Coin Limited Mintage of Just 1800 Price: £1,465.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISE2019P A Piedfort coin – double the weight at 15.96 grams of 22 carat gold, struck to Proof standard Double the thickness of a standard Sovereign A limited mintage of just 1,800 coins The obverse features the 5th effigy of Elizabeth II by Jody Clark The reverse features Pistrucci’s classic St George and the dragon design Certified authenticity from The Royal Mint Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.26 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.06 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,529.73 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £142.51 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,476.50 In Stock ADD TO BASKET The Sovereign 2026 Gold Bullion Coin £828.70 In Stock ADD TO BASKET Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin £64.96 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Freddie Mercury 2025 UK £5 Brilliant Uncirculated Coin £18.50 In Stock Piedfort coins are imbued with their own fascinating history, tracing back to the twelfth century and including a time, between the sixteenth and seventeenth centuries, in which they were given by European royalty as 'prestige pieces' to members of their courts. For more than half a millennium – since being introduced in 1489 during the reign of Henry VII – The Sovereign has been used to impress and convey importance. The coin returned in 1817, but was nearly consigned to the history books by the economist David Ricardo who planned to replace circulating gold coins with 60oz ingots. The plan was abandoned, and 200 years later The Sovereign survives as the world’s oldest coin still in production. The modern coin has served as stage for the work of Benedetto Pistrucci and is considered one of the all-time greats of numismatic art. His St George and the dragon design stands out in incredible detail, struck with the precision and accuracy for which The Royal Mint is known and respected for around the world. SPECIFICATION Specification Value Denomination Sovereign Alloy 22 Carat Gold Weight 15.97 g Diameter 22.05mm Reverse Designer Benedetto Pistrucci Specification Value Obverse Designer Jody Clark Quality Proof Year 2019 Pure Metal Type Gold"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
+    "obverse": "/image/coins/foreign/2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin-obv.webp",
+    "reverse": "/image/coins/foreign/2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "box": null,

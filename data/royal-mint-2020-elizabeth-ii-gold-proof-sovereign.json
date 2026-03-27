@@ -23,8 +23,8 @@
     "catalog_suffix": "2020-elizabeth-ii-gold-proof-sovereign",
     "price_display": "Price: £1,125.00",
     "source_url": "https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign",
-    "image_obverse": null,
-    "image_reverse": null,
+    "image_obverse": "/image/coins/foreign/2020-elizabeth-ii-gold-proof-sovereign-obv.webp",
+    "image_reverse": "/image/coins/foreign/2020-elizabeth-ii-gold-proof-sovereign-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
@@ -45,8 +45,8 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_coin_reverse_tone_-_sv20.jpg",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_obverse_tone_-_sv20.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_coin_reverse_tone_-_sv20.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
@@ -113,27 +113,30 @@
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
       "https://www.royalmint.com/globalassets/icn_success.svg",
       "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/loch-ness/products/lc1251sc---2026-legendary-creatures---coin-1-1oz-silver-bullion-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/freddie-mercury/product-images/uk25fmbu---freddie-mercury-2025-uk-5-brilliant-uncirculated-coin-pack.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
       "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
+    "imageUrlsFluidGallery": [
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_obverse_tone_-_sv20.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_coin_reverse_tone_-_sv20.jpg"
+    ],
     "imageUrlsProduct": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_coin_reverse_tone_-_sv20.jpg",
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_obverse_tone_-_sv20.jpg"
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg"
     ],
     "classified": {
-      "obverse": null,
-      "reverse": null,
+      "obverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_obverse_tone_-_sv20.jpg",
+      "reverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2020/sovereign/product-photography/the_sovereign_2020_coin_reverse_tone_-_sv20.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
       "box": null,
@@ -142,11 +145,11 @@
     "price": "Price: £1,125.00",
     "requestedUrl": "https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign",
     "pdpUrl": "https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign",
-    "pdpPlainTextPreview": "Struck in 22 carat gold to the finest Proof standard\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Sovereign All Sovereign Coins 2020 Elizabeth II Gold Proof Sovereign Share via Gold Proof 2020 Elizabeth II Gold Proof Sovereign Price: £1,125.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISS2020 Struck in 2020 in 22 carat gold to The Royal Mint’s exceptional proof standard Features Jody Clark’s fifth definitive coinage portrait of Queen Elizabeth II Showcases Benedetto Pistrucci’s celebrated St George and the dragon design, a hallmark of the sovereign since 1817 Combines mirror‑like fields with delicate frosting to highlight the intricate detail of both obverse and reverse Represents one of the final sovereign issues from Queen Elizabeth II’s reign, marking a significant period in Royal Mint history Produced to the classic sovereign specifications, maintaining The Royal Mint’s 200‑year tradition of quality and accuracy Features a special George III cypher privy mark beside the date on the reverse, added exclusively for 2020 to commemorate 200 years since the end of his reign Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.47 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.27 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,484.37 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,481.75 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £140.68 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock The 2020 Elizabeth II Gold Proof Sovereign continues the proud heritage of Britain’s most recognisable coin, uniting over two centuries of craftsmanship, artistry, and royal tradition. Struck in 22 carat gold to the finest proof standard, the coin embodies The Royal Mint’s dedication to precision and excellence, with each piece meticulously hand‑finished to achieve the perfect blend of frosted relief and mirror‑like fields. The obverse features Jody Clark’s definitive fifth portrait of Her Late Majesty Queen Elizabeth II, introduced in 2015. This portrait captures her enduring dignity and grace late in her reign, marking the sovereign’s role as both a national emblem and a timeless work of art. The reverse bears Benedetto Pistrucci’s legendary design of St George slaying the dragon, a powerful symbol of courage and victory that has adorned the sovereign since 1817 and remains one of the most enduring images in British numismatics. The 2020 Gold Proof Sovereign carries a special privy-style mint mark on the reverse: a George III royal cypher placed to the left of the date. This cypher, formed from the letters G and R, was added for 2020 only to mark 200 years since the end of the reign of George III. Rich in detail and gleaming with the unmistakable warmth of gold, the 2020 Proof Sovereign reflects both the continuity and advancement of Royal Mint craftsmanship. For collectors of modern proofs or the long line of sovereign issues under Queen Elizabeth II, this edition holds special significance as part of her final decade of coinage, representing technical achievement, regal artistry, and the unbroken legacy of the original \"chief coin of the world.\" SPECIFICATION Specification Value Denomination Sovereign Alloy 22 Carat Gold Weight 7.98 g Diameter 22.05mm Reverse Designer Benedetto Pistrucci Specification Value Obverse Designer Jody Clark Quality Proof Year 2020 Pure Metal Type Gold"
+    "pdpPlainTextPreview": "Struck in 22 carat gold to the finest Proof standard\nFREE UK DELIVERY ON ALL ORDERS OVER £35 WITH CODE EASTER26^ SHOP NOW Home Sovereign All Sovereign Coins 2020 Elizabeth II Gold Proof Sovereign Share via Gold Proof 2020 Elizabeth II Gold Proof Sovereign Price: £1,125.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISS2020 Struck in 2020 in 22 carat gold to The Royal Mint’s exceptional proof standard Features Jody Clark’s fifth definitive coinage portrait of Queen Elizabeth II Showcases Benedetto Pistrucci’s celebrated St George and the dragon design, a hallmark of the sovereign since 1817 Combines mirror‑like fields with delicate frosting to highlight the intricate detail of both obverse and reverse Represents one of the final sovereign issues from Queen Elizabeth II’s reign, marking a significant period in Royal Mint history Produced to the classic sovereign specifications, maintaining The Royal Mint’s 200‑year tradition of quality and accuracy Features a special George III cypher privy mark beside the date on the reverse, added exclusively for 2020 to commemorate 200 years since the end of his reign Gold Proof Read the full description YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.26 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.06 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,529.73 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £142.51 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,476.50 In Stock ADD TO BASKET The Sovereign 2026 Gold Bullion Coin £828.70 In Stock ADD TO BASKET Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin £64.96 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Freddie Mercury 2025 UK £5 Brilliant Uncirculated Coin £18.50 In Stock The 2020 Elizabeth II Gold Proof Sovereign continues the proud heritage of Britain’s most recognisable coin, uniting over two centuries of craftsmanship, artistry, and royal tradition. Struck in 22 carat gold to the finest proof standard, the coin embodies The Royal Mint’s dedication to precision and excellence, with each piece meticulously hand‑finished to achieve the perfect blend of frosted relief and mirror‑like fields. The obverse features Jody Clark’s definitive fifth portrait of Her Late Majesty Queen Elizabeth II, introduced in 2015. This portrait captures her enduring dignity and grace late in her reign, marking the sovereign’s role as both a national emblem and a timeless work of art. The reverse bears Benedetto Pistrucci’s legendary design of St George slaying the dragon, a powerful symbol of courage and victory that has adorned the sovereign since 1817 and remains one of the most enduring images in British numismatics. The 2020 Gold Proof Sovereign carries a special privy-style mint mark on the reverse: a George III royal cypher placed to the left of the date. This cypher, formed from the letters G and R, was added for 2020 only to mark 200 years since the end of the reign of George III. Rich in detail and gleaming with the unmistakable warmth of gold, the 2020 Proof Sovereign reflects both the continuity and advancement of Royal Mint craftsmanship. For collectors of modern proofs or the long line of sovereign issues under Queen Elizabeth II, this edition holds special significance as part of her final decade of coinage, representing technical achievement, regal artistry, and the unbroken legacy of the original \"chief coin of the world.\" SPECIFICATION Specification Value Denomination Sovereign Alloy 22 Carat Gold Weight 7.98 g Diameter 22.05mm Reverse Designer Benedetto Pistrucci Specification Value Obverse Designer Jody Clark Quality Proof Year 2020 Pure Metal Type Gold"
   },
   "saved": {
-    "obverse": null,
-    "reverse": null,
+    "obverse": "/image/coins/foreign/2020-elizabeth-ii-gold-proof-sovereign-obv.webp",
+    "reverse": "/image/coins/foreign/2020-elizabeth-ii-gold-proof-sovereign-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "box": null,
