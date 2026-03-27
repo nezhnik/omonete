@@ -3,7 +3,7 @@
     "title": "Perth Money Expo ANDA Special 30th Anniversary Australian Kookaburra 2020 1oz Silver Coin with Kangaroo Paw Privy",
     "title_ru": null,
     "country": "Австралия",
-    "series": "Perth Money Expo ANDA Special",
+    "series": "Perth Money Expo ANDA Special 30th Anniversary Australian Kookaburra",
     "face_value": "1 доллар (Австралия)",
     "release_date": "2020-01-01",
     "mint": "The Perth Mint",
@@ -11,6 +11,7 @@
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
     "mintage": 2000,
+    "mintage_display": null,
     "weight_g": 31.1,
     "weight_oz": 1,
     "diameter_mm": 40.9,
@@ -25,7 +26,7 @@
     "image_obverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-obv.webp",
     "image_reverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-rev.webp",
     "image_box": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-box.webp",
-    "image_certificate": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-cert.webp"
+    "image_certificate": null
   },
   "raw": {
     "title": "Perth Money Expo ANDA Special 30th Anniversary Australian Kookaburra 2020 1oz Silver Coin with Kangaroo Paw Privy",
@@ -58,6 +59,6 @@
     "obverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-obv.webp",
     "reverse": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-rev.webp",
     "box": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-box.webp",
-    "certificate": "/image/coins/foreign/perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy-cert.webp"
+    "certificate": null
   }
 }

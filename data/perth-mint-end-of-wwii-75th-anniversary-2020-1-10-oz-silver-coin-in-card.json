@@ -11,8 +11,9 @@
     "metal": "Серебро",
     "metal_fineness": "9999/10000",
     "mintage": 1250,
+    "mintage_display": null,
     "weight_g": 3.11,
-    "weight_oz": 0.1,
+    "weight_oz": "1/10",
     "diameter_mm": 20.6,
     "thickness_mm": 1.5,
     "length_mm": null,
@@ -25,8 +26,7 @@
     "image_obverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-rev.webp",
     "image_box": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-box.webp",
-    "image_certificate": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-cert.webp",
-    "mintage_display": null
+    "image_certificate": null
   },
   "raw": {
     "title": "End of WWII 75th Anniversary 2020 1/10 oz Silver Coin in Card",
@@ -58,6 +58,6 @@
     "obverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-obv.webp",
     "reverse": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-rev.webp",
     "box": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-box.webp",
-    "certificate": "/image/coins/foreign/end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card-cert.webp"
+    "certificate": null
   }
 }

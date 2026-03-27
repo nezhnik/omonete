@@ -174,12 +174,17 @@ async function main() {
   }
 
   let hasTitleEn = false;
+  let hasImagePackaging = false;
   const conn = await mysql.createConnection(getConfig());
   try {
     const [cols] = await conn.execute(
       "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'coins' AND COLUMN_NAME = 'title_en'"
     );
     hasTitleEn = cols.length > 0;
+    const [pkgCols] = await conn.execute(
+      "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'coins' AND COLUMN_NAME = 'image_packaging'"
+    );
+    hasImagePackaging = pkgCols.length > 0;
   } catch {
     // ignore
   }
@@ -188,10 +193,12 @@ async function main() {
     "title", "title_en", "series", "country", "face_value", "mint", "mint_short",
     "metal", "metal_fineness", "mintage", "mintage_display", "weight_g", "weight_oz",
     "release_date", "catalog_number", "catalog_suffix", "quality",
-    "diameter_mm", "thickness_mm", "length_mm", "width_mm", "image_obverse", "image_reverse", "image_blister_reverse", "image_blister_obverse", "image_box", "image_certificate",
+    "diameter_mm", "thickness_mm", "length_mm", "width_mm", "image_obverse", "image_reverse", "image_blister_reverse", "image_blister_obverse", "image_packaging", "image_box", "image_certificate",
     "price_display", "source_url"
   ];
-  const cols = hasTitleEn ? colsBase : colsBase.filter((k) => k !== "title_en");
+  const cols = colsBase
+    .filter((k) => (hasTitleEn || k !== "title_en"))
+    .filter((k) => (hasImagePackaging || k !== "image_packaging"));
 
   let inserted = 0;
   let updated = 0;
@@ -270,6 +277,7 @@ async function main() {
       (c.image_reverse || "").trim() || null,
       (c.image_blister_reverse || "").trim() || null,
       (c.image_blister_obverse || "").trim() || null,
+      ...(hasImagePackaging ? [(c.image_packaging || "").trim() || null] : []),
       (c.image_box || "").trim() || null,
       (c.image_certificate || "").trim() || null,
       (c.price_display && String(c.price_display).trim()) || null,

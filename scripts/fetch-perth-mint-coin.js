@@ -6,8 +6,9 @@
  * 3) оставляем только URL с этой папкой; 4) серия — только из breadcrumb (без fallback).
  *
  * Сохраняет изображения в public/image/coins/foreign/, данные — в data/perth-mint-*.json.
- * Типы картинок: аверс (obverse), реверс (reverse), коробка (box), сертификат (certificate) —
- * по имени файла; записываются в image_obverse, image_reverse, image_box, image_certificate.
+ * Типы картинок: аверс (obverse), реверс (reverse), упаковка (packaging),
+ * коробка (box), сертификат (certificate) — по имени файла;
+ * записываются в image_obverse, image_reverse, image_packaging, image_box, image_certificate.
  *
  * Запуск:
  *   node scripts/fetch-perth-mint-coin.js              — берёт ссылки из scripts/perth-mint-urls.txt, пропускает уже обработанные
@@ -72,10 +73,17 @@ function getMissingImageSuffixes(existingCoin, byType, fileSlug) {
   const suffixToCoinKey = [
     { suffix: "rev", key: "image_reverse" },
     { suffix: "obv", key: "image_obverse" },
+    { suffix: "pkg", key: "image_packaging" },
     { suffix: "box", key: "image_box" },
     { suffix: "cert", key: "image_certificate" },
   ];
-  const typeToUrl = { rev: byType.reverse, obv: byType.obverse, box: byType.box, cert: byType.certificate };
+  const typeToUrl = {
+    rev: byType.reverse,
+    obv: byType.obverse,
+    pkg: byType.packaging,
+    box: byType.box,
+    cert: byType.certificate,
+  };
   const missing = [];
   for (const { suffix, key } of suffixToCoinKey) {
     if (!typeToUrl[suffix]) continue;
@@ -102,7 +110,7 @@ function extractYearAndSku(imgUrl) {
   return { year: m[1], sku: (m[2] || "").toLowerCase() };
 }
 
-/** Классификация по имени файла: obverse, reverse, box (деревянная), certificate (полноценная упаковка/outer). */
+/** Классификация по имени файла: obverse, reverse, packaging (card/blister), box (деревянная), certificate (outer/shipper). */
 /** Исключаем повёрнутые/на ребре: в имени файла есть "on edge" или "left". */
 function isExcludedImage(url) {
   const pathPart = String(url).split("?")[0].toLowerCase();
@@ -117,7 +125,8 @@ function imageType(url) {
   // реверс: rev, reverse, 02-, а также straight-on/straight (обозначение реверса на части монет Perth)
   if (/rev\.|\-rev\.|reverse|straight\-on|straight\.|\-01\-|\-02\-/.test(pathPart) && !/obverse/.test(pathPart)) return "reverse";
   if (/\-outer\-|outer-left|packaging|danger|pack\./.test(pathPart)) return "certificate";
-  if (/box|box-front|\-04\-|in-case|in-capsule/.test(pathPart)) return "box";
+  if (/in-card|incard|in-blister|blister-pack|secure-pack/.test(pathPart)) return "packaging";
+  if (/box|box-front|\-04\-|in-case|incase|in-capsule/.test(pathPart)) return "box";
   if (/certificate|cert\.|\-cert\.|in-shipper/.test(pathPart)) return "certificate";
   return null;
 }
@@ -548,8 +557,8 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
     fallbackUrls = fallbackUrls.filter((u) => !isExcludedImage(u));
 
     // Порядок: сначала реверс (красивое изображение), потом аверс (год/орёл), потом коробка, сертификат
-    const byType = { obverse: null, reverse: null, box: null, certificate: null };
-    for (const typ of ["reverse", "obverse", "box", "certificate"]) {
+    const byType = { obverse: null, reverse: null, packaging: null, box: null, certificate: null };
+    for (const typ of ["reverse", "obverse", "packaging", "box", "certificate"]) {
       for (const u of fallbackUrls) {
         if (imageType(u) === typ) {
           byType[typ] = u;
@@ -591,11 +600,18 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
     if (forceRefresh) console.log("Режим --refresh: забираем данные и картинки заново.");
 
     console.log("SKU/год из картинок:", productSku || "(не найден)", productYear);
-    console.log("Типы картинок: аверс=" + (byType.obverse ? "да" : "нет") + ", реверс=" + (byType.reverse ? "да" : "нет") + ", коробка=" + (byType.box ? "да" : "нет") + ", сертификат=" + (byType.certificate ? "да" : "нет"));
+    console.log(
+      "Типы картинок: аверс=" + (byType.obverse ? "да" : "нет") +
+      ", реверс=" + (byType.reverse ? "да" : "нет") +
+      ", упаковка=" + (byType.packaging ? "да" : "нет") +
+      ", коробка=" + (byType.box ? "да" : "нет") +
+      ", сертификат=" + (byType.certificate ? "да" : "нет")
+    );
 
     const allToDownload = [
       { url: byType.reverse, suffix: "rev" },
       { url: byType.obverse, suffix: "obv" },
+      { url: byType.packaging, suffix: "pkg" },
       { url: byType.box, suffix: "box" },
       { url: byType.certificate, suffix: "cert" },
     ].filter((x) => x.url);
@@ -604,10 +620,11 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
 
     const sharp = require("sharp");
     const MAX_SIDE = 1200;
-    const saved = { obverse: null, reverse: null, box: null, certificate: null };
+    const saved = { obverse: null, reverse: null, packaging: null, box: null, certificate: null };
     if (existing && existing.coin && !forceRefresh) {
       if (!missingSuffixes.includes("rev")) saved.reverse = existing.coin.image_reverse || null;
       if (!missingSuffixes.includes("obv")) saved.obverse = existing.coin.image_obverse || null;
+      if (!missingSuffixes.includes("pkg")) saved.packaging = existing.coin.image_packaging || null;
       if (!missingSuffixes.includes("box")) saved.box = existing.coin.image_box || null;
       if (!missingSuffixes.includes("cert")) saved.certificate = existing.coin.image_certificate || null;
     }
@@ -639,6 +656,7 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
       const relPath = "/image/coins/foreign/" + r.baseName + ".webp";
       if (r.suffix === "obv") saved.obverse = relPath;
       else if (r.suffix === "rev") saved.reverse = relPath;
+      else if (r.suffix === "pkg") saved.packaging = relPath;
       else if (r.suffix === "box") saved.box = relPath;
       else if (r.suffix === "cert") saved.certificate = relPath;
       console.log("  ✓", r.baseName + ".webp");
@@ -646,6 +664,7 @@ async function fetchOneCoin(page, url, forceRefresh = false) {
 
     coin.image_obverse = saved.obverse || null;
     coin.image_reverse = saved.reverse || null;
+    coin.image_packaging = saved.packaging || null;
     coin.image_box = saved.box || null;
     coin.image_certificate = saved.certificate || null;
     // В raw — только картинки этой монеты (уже отфильтрованы по папке продукта)
