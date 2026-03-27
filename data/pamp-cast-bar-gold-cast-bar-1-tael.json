@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-1-tael",
+  "title": "Gold Cast Bar - 1 Tael",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "5 mm",
+    "SKU": "AU00RI092Q999",
+    "Size (mm).": "15.5 x 27.5",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/gold-cast-bar-1-tael-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-03/1-tael-fine-gold-cast-xweb.png"
+  ],
+  "parsedAt": "2026-03-27T23:23:20.538Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-03/1-tael-fine-gold-cast-xweb.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:23:21.640Z"
+  }
+}

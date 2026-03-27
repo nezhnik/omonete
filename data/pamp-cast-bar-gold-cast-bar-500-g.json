@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-500-g",
+  "title": "Gold Cast Bar - 500 g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "500 g",
+    "Thickness": "8 mm",
+    "SKU": "AU00RI012Q999",
+    "Size (mm).": "40 x 90",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/gold-cast-bar-500-g-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-12/500g_cast_bar.png"
+  ],
+  "parsedAt": "2026-03-27T23:23:49.625Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-12/500g_cast_bar.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:23:50.663Z"
+  }
+}

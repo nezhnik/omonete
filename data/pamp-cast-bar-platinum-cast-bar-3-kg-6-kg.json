@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/platinum-cast-bar-3-kg-6-kg",
+  "title": "Platinum Cast Bar - 3 kg to 6 kg",
+  "specs": {
+    "Metal": "Platinum 999.5",
+    "Weight": "3000 g",
+    "Thickness": "NA",
+    "SKU": "ZPTLB00001",
+    "Size (mm).": "0 x 0",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/platinum-cast-bar-3-kg-6-kg-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-01/5kg_platinum_lb2022-xweb.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/5kg_platinum_lb2022-xweb02.png"
+  ],
+  "parsedAt": "2026-03-27T23:24:40.428Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-01/5kg_platinum_lb2022-xweb.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:24:42.458Z"
+  }
+}

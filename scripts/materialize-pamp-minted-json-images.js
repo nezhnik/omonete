@@ -1,9 +1,9 @@
 /**
- * Догружает картинки для уже сохранённых data/pamp-minted-bar-*.json.
- * Ссылки в classified/classified_source_urls уже есть; GET с «голого» HTTP к pamp CDN даёт 403 —
- * поэтому один Chromium: на каждый товар page.goto(source_url), затем context.request.get(картинка, Referer).
+ * Догружает картинки для уже сохранённых data/pamp-minted-bar-*.json или pamp-cast-bar-*.json (--cast-bars).
+ * Ссылки в classified уже есть; скачивание через fetch на странице после goto (как у основного fetch).
  *
- * Далее: npm run pamp:import:minted-bars && npm run data:export:incremental
+ * Minted: npm run pamp:minted-bars:materialize-json → import minted → export
+ * Cast:   npm run pamp:cast-bars:materialize-json → import cast-bars → export
  */
 const fs = require("fs");
 const path = require("path");
@@ -21,10 +21,18 @@ const {
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
-function listMintedJsonFiles() {
+function resolvePrefixAndLabel() {
+  const cast = process.argv.includes("--cast-bars");
+  return {
+    filePrefix: cast ? "pamp-cast-bar-" : "pamp-minted-bar-",
+    label: cast ? "cast bars" : "minted bars",
+  };
+}
+
+function listBarJsonFiles(filePrefix) {
   return fs
     .readdirSync(DATA_DIR)
-    .filter((f) => f.startsWith("pamp-minted-bar-") && f.endsWith(".json"))
+    .filter((f) => f.startsWith(filePrefix) && f.endsWith(".json"))
     .sort();
 }
 
@@ -33,18 +41,19 @@ function needsMaterialize(classified) {
   return Object.values(classified).some((v) => typeof v === "string" && /^https?:\/\//i.test(v.trim()));
 }
 
-function slugFromMintedFilename(filename) {
-  return filename.replace(/^pamp-minted-bar-/, "").replace(/\.json$/i, "");
+function slugFromBarFilename(filename, filePrefix) {
+  return filename.slice(filePrefix.length, -5);
 }
 
 async function main() {
+  const { filePrefix, label } = resolvePrefixAndLabel();
   if (!fs.existsSync(DATA_DIR)) {
     console.error("Нет папки data");
     process.exit(1);
   }
-  const files = listMintedJsonFiles();
+  const files = listBarJsonFiles(filePrefix);
   if (!files.length) {
-    console.error("Нет pamp-minted-bar-*.json в data/");
+    console.error(`Нет ${filePrefix}*.json в data/`);
     process.exit(1);
   }
 
@@ -54,7 +63,7 @@ async function main() {
     return needsMaterialize(j.classified);
   });
 
-  console.log("Всего minted JSON:", files.length, "| нужны картинки:", todo.length);
+  console.log(`Всего ${label} JSON:`, files.length, "| нужны картинки:", todo.length);
   if (!todo.length) {
     console.log("Все classified уже локальные пути — выход.");
     return;
@@ -79,7 +88,7 @@ async function main() {
         continue;
       }
 
-      const slug = slugFromUrl(sourceUrl) || slugFromMintedFilename(f);
+      const slug = slugFromUrl(sourceUrl) || slugFromBarFilename(f, filePrefix);
       console.log(`[${i + 1}/${todo.length}] ${slug}`);
 
       try {

@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/silver-cast-bar-10-oz",
+  "title": "Silver Cast Bar - 10 oz",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "9.2 mm",
+    "SKU": "ZAGCB00009",
+    "Size (mm).": "39 x 88",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "/image/coins/foreign/silver-cast-bar-10-oz-box.webp",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/silver_10oz_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/10oz_monster-box.png"
+  ],
+  "parsedAt": "2026-03-27T23:24:54.447Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/silver_10oz_4.png",
+    "box": "https://www.pamp.com/sites/pamp/files/2022-02/10oz_monster-box.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:24:55.684Z"
+  }
+}

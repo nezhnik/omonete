@@ -1,6 +1,6 @@
 /**
- * Парсинг одной карточки с pamp.com (collectibles или minted bar).
- * Запись: data/pamp-collectible-<slug>.json; с флагом --minted-bar — data/pamp-minted-bar-<slug>.json.
+ * Парсинг одной карточки с pamp.com (collectibles, minted bar или cast bar).
+ * Запись: pamp-collectible-*.json | --minted-bar → pamp-minted-bar-*.json | --cast-bar → pamp-cast-bar-*.json.
  * Массово: npm run pamp:fetch:all | npm run pamp:fetch:minted-bars:all (один Chromium на весь список);
  * полный цикл: npm run pamp:sync / pamp:sync:minted-bars.
  * Картинки качаются через Playwright request в той же сессии, что и страница (CDN иначе даёт 403).
@@ -252,7 +252,20 @@ async function pampImageBufferFromPage(page, imageUrl) {
  * @param {import('playwright').Page} page
  * @param {{ gen: number, product: object | null }} gqlCapture
  */
-async function fetchPampProductOnce(context, page, gqlCapture, rawSourceUrl, isMintedBarOut) {
+/** @param {"collectible" | "minted" | "cast"} outputKind */
+function resolvePampOutputKind(argv) {
+  if (argv.includes("--minted-bar")) return "minted";
+  if (argv.includes("--cast-bar")) return "cast";
+  return "collectible";
+}
+
+function pampProductFilePrefix(outputKind) {
+  if (outputKind === "minted") return "pamp-minted-bar-";
+  if (outputKind === "cast") return "pamp-cast-bar-";
+  return "pamp-collectible-";
+}
+
+async function fetchPampProductOnce(context, page, gqlCapture, rawSourceUrl, outputKind) {
   beginPampNavigation(gqlCapture);
   const sourceUrl = normalizeUrl(rawSourceUrl);
   const slug = slugFromUrl(sourceUrl);
@@ -272,19 +285,16 @@ async function fetchPampProductOnce(context, page, gqlCapture, rawSourceUrl, isM
       strictImageFail = true;
     }
   }
-  return { parsed, strictImageFail, slug, sourceUrl, isMintedBarOut };
+  return { parsed, strictImageFail, slug, sourceUrl, outputKind };
 }
 
-function pampProductOutPath(slug, isMintedBarOut) {
-  return path.join(
-    DATA_DIR,
-    isMintedBarOut ? `pamp-minted-bar-${slug}.json` : `pamp-collectible-${slug}.json`
-  );
+function pampProductOutPath(slug, outputKind) {
+  return path.join(DATA_DIR, `${pampProductFilePrefix(outputKind)}${slug}.json`);
 }
 
 function writePampProductJson(result) {
-  const { parsed, slug, isMintedBarOut } = result;
-  const outFile = pampProductOutPath(slug, isMintedBarOut);
+  const { parsed, slug, outputKind } = result;
+  const outFile = pampProductOutPath(slug, outputKind);
   fs.writeFileSync(outFile, JSON.stringify(parsed, null, 2), "utf8");
   return outFile;
 }
@@ -307,11 +317,11 @@ async function main() {
   const rawUrl = process.argv.find((a) => /^https?:\/\//i.test(a));
   if (!rawUrl) {
     console.error(
-      "Передайте URL: node scripts/fetch-pamp-product.js \"https://www.pamp.com/product/...\" [--minted-bar]"
+      "Передайте URL: node scripts/fetch-pamp-product.js \"https://www.pamp.com/product/...\" [--minted-bar|--cast-bar]"
     );
     process.exit(1);
   }
-  const isMintedBarOut = process.argv.includes("--minted-bar");
+  const outputKind = resolvePampOutputKind(process.argv);
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
   let browser;
@@ -320,7 +330,7 @@ async function main() {
   try {
     const launched = await launchPampBrowser();
     browser = launched.browser;
-    result = await fetchPampProductOnce(launched.context, launched.page, launched.gqlCapture, rawUrl, isMintedBarOut);
+    result = await fetchPampProductOnce(launched.context, launched.page, launched.gqlCapture, rawUrl, outputKind);
     strictImageFail = result.strictImageFail;
   } finally {
     if (browser) await browser.close();
@@ -352,6 +362,8 @@ module.exports = {
   attachGqlProductCapture,
   beginPampNavigation,
   pampImageBufferFromPage,
+  resolvePampOutputKind,
+  pampProductFilePrefix,
   fetchPampProductOnce,
   pampProductOutPath,
   writePampProductJson,

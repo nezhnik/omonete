@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-10-tolas",
+  "title": "Gold Cast Bar  - 10 Tolas",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "10 g",
+    "Thickness": "6.5 mm",
+    "SKU": "ZAUCB00025",
+    "Size (mm).": "27 x 44",
+    "Year": "2021"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/gold-cast-bar-10-tolas-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-12/10-tolas_cast_bar.png"
+  ],
+  "parsedAt": "2026-03-27T23:23:26.606Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-12/10-tolas_cast_bar.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:23:27.235Z"
+  }
+}

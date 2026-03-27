@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-250-g",
+  "title": "Gold Cast Bar - 250 g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "250 g",
+    "Thickness": "7 mm",
+    "SKU": "ZAUCB00008",
+    "Size (mm).": "35 x 59",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/gold-cast-bar-250-g-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-12/250g_cast_bar.png"
+  ],
+  "parsedAt": "2026-03-27T23:23:38.502Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-12/250g_cast_bar.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:23:39.306Z"
+  }
+}

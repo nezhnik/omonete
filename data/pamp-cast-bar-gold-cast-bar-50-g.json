@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-50-g",
+  "title": "Gold Cast Bar - 50 g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "50 g",
+    "Thickness": "5 mm",
+    "SKU": "ZAUCB00001",
+    "Size (mm).": "19 x 33",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/gold-cast-bar-50-g-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-12/50g_cast_bar_0.png"
+  ],
+  "parsedAt": "2026-03-27T23:23:44.217Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-12/50g_cast_bar_0.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:23:44.717Z"
+  }
+}

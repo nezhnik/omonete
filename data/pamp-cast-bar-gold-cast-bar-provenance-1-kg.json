@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-provenance-1-kg",
+  "title": "Gold Cast Bar Provenance - 1 Kg",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1000 g",
+    "Thickness": "9.2 mm",
+    "SKU": "ZAUCB00209 ZAUCB00051 ZAUCB00212 ZAUCB00048 ZAUCB00047",
+    "Size (mm).": "52.5 x 115.5",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/gold-cast-bar-provenance-1-kg-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "/image/coins/foreign/gold-cast-bar-provenance-1-kg-box.webp",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-12/provenance_1kg_cast_bar.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/au_1kg_monster-box.png"
+  ],
+  "parsedAt": "2026-03-27T23:24:02.105Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-12/provenance_1kg_cast_bar.png",
+    "box": "https://www.pamp.com/sites/pamp/files/2022-03/au_1kg_monster-box.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:24:05.470Z"
+  }
+}

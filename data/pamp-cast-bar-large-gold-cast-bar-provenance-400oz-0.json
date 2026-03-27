@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/large-gold-cast-bar-provenance-400oz-0",
+  "title": "Large Gold Cast Bar Provenance - 400oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "400 g",
+    "Thickness": "40 mm",
+    "SKU": "ZAULB00008",
+    "Size (mm).": "84.5 x 245",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/large-gold-cast-bar-provenance-400oz-0-obv.webp",
+    "reverse": "/image/coins/foreign/large-gold-cast-bar-provenance-400oz-0-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-01/400oz_au_carbon-provenanceprospective.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/400oz_au_provenance_front.png"
+  ],
+  "parsedAt": "2026-03-27T23:24:19.407Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-01/400oz_au_provenance_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-01/400oz_au_carbon-provenanceprospective.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:24:22.579Z"
+  }
+}

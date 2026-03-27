@@ -1,0 +1,34 @@
+{
+  "source_url": "https://www.pamp.com/product/cast-bars/silver-cast-bar-1-kg",
+  "title": "Silver Cast Bar - 1 Kg",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1000 g",
+    "Thickness": "17.5 mm",
+    "SKU": "ZAGCB00005",
+    "Size (mm).": "53 x 116",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": null,
+    "reverse": "/image/coins/foreign/silver-cast-bar-1-kg-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/silver_1kg_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/ag_1kg_monsterbox.png"
+  ],
+  "parsedAt": "2026-03-27T23:24:47.374Z",
+  "classified_source_urls": {
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/silver_1kg_0.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:24:49.464Z"
+  }
+}
