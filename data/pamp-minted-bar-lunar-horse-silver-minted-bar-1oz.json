@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-horse-silver-minted-bar-1oz",
+  "title": "Lunar Horse Silver Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45 mm",
+    "SKU": "AG00RI022SE08",
+    "Size (mm).": "27 x 47",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-horse-silver-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-horse-silver-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-horse-silver-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-horse-silver-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-horse-silver-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseag_1oz_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseag_1oz_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/ag.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/ag_1oz_lunar_horse.png"
+  ],
+  "parsedAt": "2026-03-27T22:24:46.793Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/ag_1oz_lunar_horse.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/ag.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseag_1oz_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseag_1oz_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseag_1oz_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:59:09.812Z"
+  }
+}

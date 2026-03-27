@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-silver-minted-bar-1-kg",
+  "title": "Lady Fortuna™ Silver Minted Bar- 1 Kg",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1000 g",
+    "Thickness": "15.70 mm",
+    "SKU": "ZAGFS00041",
+    "Size (mm).": "52.5 x 118",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-silver-minted-bar-1-kg-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-silver-minted-bar-1-kg-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/silver_ingot_1kg_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/silver_ingot_1kg.png"
+  ],
+  "parsedAt": "2026-03-27T22:22:26.771Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/silver_ingot_1kg.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/silver_ingot_1kg_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:54:01.929Z"
+  }
+}

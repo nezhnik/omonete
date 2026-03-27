@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-12oz",
+  "title": "Rosa Gold Minted Bar - 1/2oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "0,5 g",
+    "Thickness": "1.61mm",
+    "SKU": "ZAUFS00111",
+    "Size (mm).": "17.1 x 29.5",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/rosa-gold-minted-bar-12oz-obv.webp",
+    "reverse": "/image/coins/foreign/rosa-gold-minted-bar-12oz-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-12/1_2oz_au_rosa_certi_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-12/1_2oz_au_rosa_certi_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-12/1_2oz_au_rosa_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-12/1_2oz_au_rosa_obv.png"
+  ],
+  "parsedAt": "2026-03-27T22:29:35.026Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-12/1_2oz_au_rosa_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-12/1_2oz_au_rosa_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:08:45.844Z"
+  }
+}

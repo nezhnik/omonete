@@ -1,12 +1,18 @@
 /**
  * Массовый парсинг всех продуктов PAMP из scripts/pamp-collectibles-urls.txt
+ *
+ * Один Chromium на весь список: страница за страницей, картинки в той же сессии.
  */
 const fs = require("fs");
 const path = require("path");
-const { spawnSync } = require("child_process");
+const {
+  launchPampBrowser,
+  fetchPampProductOnce,
+  writePampProductJson,
+  DATA_DIR,
+} = require("./fetch-pamp-product.js");
 
 const URL_LIST_FILE = path.join(__dirname, "pamp-collectibles-urls.txt");
-const FETCH_ONE_SCRIPT = path.join(__dirname, "fetch-pamp-product.js");
 
 function readUrls() {
   if (!fs.existsSync(URL_LIST_FILE)) {
@@ -20,23 +26,40 @@ function readUrls() {
     .filter((x) => /^https?:\/\//i.test(x));
 }
 
-function main() {
+async function main() {
   const urls = Array.from(new Set(readUrls()));
   if (!urls.length) {
     console.error("Список URL пуст");
     process.exit(1);
   }
+  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
+  let browser;
   let ok = 0;
   let fail = 0;
-  for (let i = 0; i < urls.length; i++) {
-    const url = urls[i];
-    console.log(`[${i + 1}/${urls.length}] ${url}`);
-    const res = spawnSync(process.execPath, [FETCH_ONE_SCRIPT, url], {
-      stdio: "inherit",
-      env: process.env,
-    });
-    if (res.status === 0) ok++;
-    else fail++;
+  try {
+    const launched = await launchPampBrowser();
+    browser = launched.browser;
+    const { context, page, gqlCapture } = launched;
+    for (let i = 0; i < urls.length; i++) {
+      const url = urls[i];
+      console.log(`[${i + 1}/${urls.length}] ${url}`);
+      try {
+        const result = await fetchPampProductOnce(context, page, gqlCapture, url, false);
+        if (result.strictImageFail && process.env.PAMP_STRICT_IMAGES === "1") {
+          fail++;
+          continue;
+        }
+        const outFile = writePampProductJson(result);
+        console.log("  →", outFile, result.parsed?.title || "—");
+        ok++;
+      } catch (e) {
+        console.error(e);
+        fail++;
+      }
+    }
+  } finally {
+    if (browser) await browser.close();
   }
   console.log("Готово.");
   console.log("Успешно:", ok);
@@ -44,5 +67,9 @@ function main() {
   if (fail > 0) process.exitCode = 1;
 }
 
-main();
-
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}

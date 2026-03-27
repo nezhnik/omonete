@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-10g-silver-bar",
+  "title": "2024 Year of the Dragon - Legend of the Azure Dragon 10g Silver Bar",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "1.81mm",
+    "SKU": "ZAGFS00131",
+    "Size (mm).": "18 x 31",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-10g-silver-bar-obv.webp",
+    "reverse": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-10g-silver-bar-rev.webp",
+    "blister_obverse": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-10g-silver-bar-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-10g-silver-bar-blister-rev.webp",
+    "packaging": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-10g-silver-bar-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_certipamp-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_certipamp-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_front-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag-envelope-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag-envelope-back.png"
+  ],
+  "parsedAt": "2026-03-27T22:16:59.820Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_front-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_certipamp-obv.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_certipamp-rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2023-10/lunar-10g-ag_certipamp-rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:42:44.347Z"
+  }
+}

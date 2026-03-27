@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card",
+  "title": "PAMP Lady of Liberty Gold Minted Bar - 1oz  (Teal assay card)",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFCO1234",
+    "Size (mm).": "24 x 41",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-obv.webp",
+    "reverse": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-rev.webp",
+    "blister_obverse": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-blister-rev.webp",
+    "packaging": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_ingot_front_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_ingot_front_obv.png"
+  ],
+  "parsedAt": "2026-03-27T22:28:53.828Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_ingot_front_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_ingot_front_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_front.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_front.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:07:08.248Z"
+  }
+}

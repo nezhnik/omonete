@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/reflections-america-yellowstone-cowboy-1oz-gold-bar",
+  "title": "Reflections of America Yellowstone Cowboy 1oz Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFC01580",
+    "Size (mm).": "24 x 41",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-obv.webp",
+    "reverse": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-rev.webp",
+    "blister_obverse": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-blister-rev.webp",
+    "packaging": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-reverse.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-obverse.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_reverse-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_obverse-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T22:29:22.435Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_obverse-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_reverse-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-obverse.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-reverse.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-reverse.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:08:26.437Z"
+  }
+}

@@ -9,6 +9,7 @@
  * Упаковка (box, certificate, packaging) не затрагивается.
  *
  *   node scripts/pamp-swap-obv-rev-webp-files.js
+ *   node scripts/pamp-swap-obv-rev-webp-files.js --minted-bars-only  — только слитки /product/minted-ingots/
  */
 require("dotenv").config({ path: ".env" });
 const fs = require("fs");
@@ -62,12 +63,17 @@ async function main() {
     process.exit(1);
   }
 
+  const mintedBarsOnly = process.argv.includes("--minted-bars-only");
+
   const conn = await mysql.createConnection(getConfig());
   try {
+    const mintedSql = mintedBarsOnly
+      ? ` AND source_url LIKE '%/product/minted-ingots/%'`
+      : "";
     const [rows] = await conn.execute(
       `SELECT id, image_obverse, image_reverse, image_blister_obverse, image_blister_reverse
        FROM coins
-       WHERE source_url IS NOT NULL AND source_url LIKE '%pamp.com%'`
+       WHERE source_url IS NOT NULL AND source_url LIKE '%pamp.com%'${mintedSql}`
     );
 
     let blisterSwaps = 0;
@@ -120,6 +126,7 @@ async function main() {
     }
 
     console.log("—");
+    if (mintedBarsOnly) console.log("Режим: только minted bars (/product/minted-ingots/).");
     console.log("Строк PAMP в выборке:", rows.length);
     console.log("Обменено пар (блистер):", blisterSwaps);
     console.log("Обменено пар (obv/rev):", mainSwaps);

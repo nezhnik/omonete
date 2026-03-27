@@ -1,13 +1,22 @@
 /**
- * Парсинг одной карточки PAMP collectibles.
+ * Парсинг одной карточки с pamp.com (collectibles или minted bar).
+ * Запись: data/pamp-collectible-<slug>.json; с флагом --minted-bar — data/pamp-minted-bar-<slug>.json.
+ * Массово: npm run pamp:fetch:all | npm run pamp:fetch:minted-bars:all (один Chromium на весь список);
+ * полный цикл: npm run pamp:sync / pamp:sync:minted-bars.
+ * Картинки качаются через Playwright request в той же сессии, что и страница (CDN иначе даёт 403).
  *
- * Правила ролей:
+ * Правила ролей (collectibles / блистер):
  * - front-certi -> blister_reverse
  * - back-certi  -> blister_obverse
  */
 const fs = require("fs");
 const path = require("path");
 const { formatDenominationForFaceValue } = require("./format-coin-characteristics.js");
+const {
+  materializePampClassified,
+  snapshotClassifiedSourceUrls,
+  verifyClassifiedFiles,
+} = require("../lib/pampMaterializeImages.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
@@ -146,7 +155,8 @@ async function parseViaDom(page, sourceUrl) {
     const titleRaw = text(document.querySelector("h1")) || text(document.querySelector("title")) || null;
     const title = titleRaw ? String(titleRaw).replace(/\s*\|\s*PAMP\s*$/i, "").trim() : null;
     const specs = {};
-    const rawTxt = text(document.querySelector(".product-description__product-properties"));
+    const propsEl = document.querySelector(".product-description__product-properties");
+    const rawTxt = propsEl ? String(propsEl.innerText || propsEl.textContent || "").trim() : "";
     const lines = rawTxt.split("\n").map((x) => x.trim()).filter(Boolean);
     for (let i = 0; i + 1 < lines.length; i += 2) {
       const k = lines[i].replace(/:$/, "");
@@ -190,15 +200,96 @@ async function parsePampProduct(page, sourceUrl, gqlProduct) {
   return parseViaDom(page, sourceUrl);
 }
 
-async function main() {
-  const rawUrl = process.argv.find((a) => /^https?:\/\//i.test(a));
-  if (!rawUrl) {
-    console.error("Передайте URL: node scripts/fetch-pamp-product.js \"https://www.pamp.com/product/collectible/...\"");
-    process.exit(1);
-  }
-  const sourceUrl = normalizeUrl(rawUrl);
-  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+/** Состояние для серии goto: отбрасываем graphql-ответы не от текущей страницы. */
+function attachGqlProductCapture(page) {
+  const gqlCapture = { gen: 0, product: null };
+  page.on("response", async (res) => {
+    if (!/\/graphql$/i.test(res.url())) return;
+    try {
+      const genAtReceive = gqlCapture.gen;
+      const bodyRaw = res.request().postData() || "";
+      if (!bodyRaw.includes("pageByUrl")) return;
+      const json = await res.json();
+      if (genAtReceive !== gqlCapture.gen) return;
+      if (json?.data?.pageByUrl && typeof json.data.pageByUrl === "object") gqlCapture.product = json.data.pageByUrl;
+    } catch {
+      // ignore
+    }
+  });
+  return gqlCapture;
+}
 
+function beginPampNavigation(gqlCapture) {
+  gqlCapture.gen += 1;
+  gqlCapture.product = null;
+}
+
+/**
+ * Картинки с pamp CDN: APIRequestContext (context.request) часто получает 403;
+ * fetch() внутри страницы после goto использует cookie сессии.
+ * @param {import('playwright').Page} page
+ * @param {string} imageUrl
+ */
+async function pampImageBufferFromPage(page, imageUrl) {
+  const packed = await page.evaluate(async (url) => {
+    try {
+      const r = await fetch(url, { credentials: "include", mode: "cors" });
+      if (!r.ok) return null;
+      const ab = await r.arrayBuffer();
+      const u = new Uint8Array(ab);
+      return u.length ? Array.from(u) : null;
+    } catch {
+      return null;
+    }
+  }, imageUrl);
+  if (!packed || !packed.length) return null;
+  return Buffer.from(packed);
+}
+
+/**
+ * Один товар: goto → parse → materialize картинок в том же context.
+ * @param {import('playwright').BrowserContext} context
+ * @param {import('playwright').Page} page
+ * @param {{ gen: number, product: object | null }} gqlCapture
+ */
+async function fetchPampProductOnce(context, page, gqlCapture, rawSourceUrl, isMintedBarOut) {
+  beginPampNavigation(gqlCapture);
+  const sourceUrl = normalizeUrl(rawSourceUrl);
+  const slug = slugFromUrl(sourceUrl);
+  await page.goto(sourceUrl, { waitUntil: "networkidle", timeout: 90000 });
+  await page.waitForTimeout(2500);
+  const parsed = await parsePampProduct(page, sourceUrl, gqlCapture.product);
+  let strictImageFail = false;
+  if (parsed && parsed.classified) {
+    const classifiedSourceUrls = snapshotClassifiedSourceUrls(parsed.classified);
+    await materializePampClassified(parsed.classified, slug, sourceUrl, (imageUrl) =>
+      pampImageBufferFromPage(page, imageUrl)
+    );
+    parsed.classified_source_urls = classifiedSourceUrls;
+    parsed.image_materialize = verifyClassifiedFiles(parsed.classified);
+    if (process.env.PAMP_STRICT_IMAGES === "1" && !parsed.image_materialize.ok) {
+      console.error("PAMP_STRICT_IMAGES: проверка картинок не прошла:", JSON.stringify(parsed.image_materialize.issues, null, 2));
+      strictImageFail = true;
+    }
+  }
+  return { parsed, strictImageFail, slug, sourceUrl, isMintedBarOut };
+}
+
+function pampProductOutPath(slug, isMintedBarOut) {
+  return path.join(
+    DATA_DIR,
+    isMintedBarOut ? `pamp-minted-bar-${slug}.json` : `pamp-collectible-${slug}.json`
+  );
+}
+
+function writePampProductJson(result) {
+  const { parsed, slug, isMintedBarOut } = result;
+  const outFile = pampProductOutPath(slug, isMintedBarOut);
+  fs.writeFileSync(outFile, JSON.stringify(parsed, null, 2), "utf8");
+  return outFile;
+}
+
+async function launchPampBrowser() {
   const { chromium } = require("playwright-extra");
   const StealthPlugin = require("puppeteer-extra-plugin-stealth");
   chromium.use(StealthPlugin());
@@ -208,38 +299,62 @@ async function main() {
     viewport: { width: 1366, height: 900 },
   });
   const page = await context.newPage();
-  let gqlProduct = null;
-  page.on("response", async (res) => {
-    if (gqlProduct || !/\/graphql$/i.test(res.url())) return;
-    try {
-      const bodyRaw = res.request().postData() || "";
-      if (!bodyRaw.includes("pageByUrl")) return;
-      const json = await res.json();
-      if (json?.data?.pageByUrl && typeof json.data.pageByUrl === "object") gqlProduct = json.data.pageByUrl;
-    } catch {
-      // ignore
-    }
-  });
-  let parsed;
-  try {
-    await page.goto(sourceUrl, { waitUntil: "networkidle", timeout: 90000 });
-    await page.waitForTimeout(2500);
-    parsed = await parsePampProduct(page, sourceUrl, gqlProduct);
-  } finally {
-    await browser.close();
-  }
-
-  const slug = slugFromUrl(sourceUrl);
-  const outFile = path.join(DATA_DIR, `pamp-collectible-${slug}.json`);
-  fs.writeFileSync(outFile, JSON.stringify(parsed, null, 2), "utf8");
-  console.log("Сохранено:", outFile);
-  console.log("Title:", parsed.title || "—");
-  console.log("Specs keys:", Object.keys(parsed.specs || {}).length);
-  console.log("Images:", (parsed.imageUrls || []).length);
+  const gqlCapture = attachGqlProductCapture(page);
+  return { browser, context, page, gqlCapture };
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+async function main() {
+  const rawUrl = process.argv.find((a) => /^https?:\/\//i.test(a));
+  if (!rawUrl) {
+    console.error(
+      "Передайте URL: node scripts/fetch-pamp-product.js \"https://www.pamp.com/product/...\" [--minted-bar]"
+    );
+    process.exit(1);
+  }
+  const isMintedBarOut = process.argv.includes("--minted-bar");
+  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
+  let browser;
+  let strictImageFail = false;
+  let result;
+  try {
+    const launched = await launchPampBrowser();
+    browser = launched.browser;
+    result = await fetchPampProductOnce(launched.context, launched.page, launched.gqlCapture, rawUrl, isMintedBarOut);
+    strictImageFail = result.strictImageFail;
+  } finally {
+    if (browser) await browser.close();
+  }
+
+  if (strictImageFail) process.exit(1);
+
+  const outFile = writePampProductJson(result);
+  console.log("Сохранено:", outFile);
+  console.log("Title:", result.parsed.title || "—");
+  console.log("Specs keys:", Object.keys(result.parsed.specs || {}).length);
+  console.log("Images:", (result.parsed.imageUrls || []).length);
+  if (result.parsed.image_materialize) {
+    console.log("image_materialize:", result.parsed.image_materialize.ok ? "ok" : "FAIL", "issues:", result.parsed.image_materialize.issues.length);
+  }
+}
+
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
+
+module.exports = {
+  DATA_DIR,
+  normalizeUrl,
+  slugFromUrl,
+  attachGqlProductCapture,
+  beginPampNavigation,
+  pampImageBufferFromPage,
+  fetchPampProductOnce,
+  pampProductOutPath,
+  writePampProductJson,
+  launchPampBrowser,
+};
 

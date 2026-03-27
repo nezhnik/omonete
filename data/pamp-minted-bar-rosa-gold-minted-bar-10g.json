@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-10g",
+  "title": "Rosa Gold Minted Bar - 10g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "10 g",
+    "Thickness": "1.25mm",
+    "SKU": "ZAUFS00085",
+    "Size (mm).": "15.5 x 25.5",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/rosa-gold-minted-bar-10g-obv.webp",
+    "reverse": "/image/coins/foreign/rosa-gold-minted-bar-10g-rev.webp",
+    "blister_obverse": "/image/coins/foreign/rosa-gold-minted-bar-10g-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/rosa-gold-minted-bar-10g-blister-rev.webp",
+    "packaging": "/image/coins/foreign/rosa-gold-minted-bar-10g-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-05/rosa_10g_certipamp_reverse.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/rosa_10g_certipamp_obverse.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/rosa_gold_reverse_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/rosa_au10g_obverse.png"
+  ],
+  "parsedAt": "2026-03-27T22:29:29.056Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/rosa_au10g_obverse.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/rosa_gold_reverse_1.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-07/rosa_10g_certipamp_obverse.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-05/rosa_10g_certipamp_reverse.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-05/rosa_10g_certipamp_reverse.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:08:37.540Z"
+  }
+}

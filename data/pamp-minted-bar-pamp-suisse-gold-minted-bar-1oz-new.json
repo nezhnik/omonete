@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/pamp-suisse-gold-minted-bar-1oz-new",
+  "title": "PAMP Suisse Gold Minted Bar - 1oz (new)",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFS00587",
+    "Size (mm).": "24 x 41",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-obv.webp",
+    "reverse": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-rev.webp",
+    "blister_obverse": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-blister-rev.webp",
+    "packaging": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-03/obv_certipamp2.png",
+    "https://www.pamp.com/sites/pamp/files/2023-03/rev_certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2023-03/rev-2.png",
+    "https://www.pamp.com/sites/pamp/files/2023-03/obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-03/micro-engraving-1.jpg",
+    "https://www.pamp.com/sites/pamp/files/2023-03/obv_p.jpg"
+  ],
+  "parsedAt": "2026-03-27T22:29:16.900Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-03/obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-03/rev-2.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-03/rev_certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-03/obv_certipamp2.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2023-03/obv_certipamp2.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:07:57.814Z"
+  }
+}

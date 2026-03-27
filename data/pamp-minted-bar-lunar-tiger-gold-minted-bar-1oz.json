@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-tiger-gold-minted-bar-1oz",
+  "title": "Lunar Tiger Gold Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFS0058",
+    "Size (mm).": "24 x 41",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-tiger-gold-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-tiger-gold-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-tiger-gold-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-tiger-gold-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-tiger-gold-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_au_1oz_certipamp_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger-au-1oz_certipamp_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_rev_au_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_1oz_au.png"
+  ],
+  "parsedAt": "2026-03-27T22:28:26.298Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_1oz_au.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_rev_au_0.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger-au-1oz_certipamp_obv.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_au_1oz_certipamp_rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_au_1oz_certipamp_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:06:10.251Z"
+  }
+}

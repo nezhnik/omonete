@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rabbit-gold-minted-bar-5g",
+  "title": "Lunar Rabbit Gold Minted Bar - 5g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": ".83",
+    "SKU": "ZAUFS00590",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_rev3x.png",
+    "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_obv3x.png",
+    "https://www.pamp.com/sites/pamp/files/2022-09/275400_pamp_lunar_rabbit_reverse_au_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-09/275400_pamp_lunar_rabbit_obverse_au_5g.png"
+  ],
+  "parsedAt": "2026-03-27T22:26:53.105Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-09/275400_pamp_lunar_rabbit_obverse_au_5g.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-09/275400_pamp_lunar_rabbit_reverse_au_0.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_obv3x.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_rev3x.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_rev3x.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:03:29.630Z"
+  }
+}

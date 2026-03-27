@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-tiger-silver-minted-bar-10g-0",
+  "title": "Lunar Tiger Silver Minted Bar - 10g",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "1.81 mm",
+    "SKU": "ZAGFS00128",
+    "Size (mm).": "18 x 31",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_ag_10g_certipamp_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger-ag-10g_certipamp_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_rev_ag_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_10g_ag.png"
+  ],
+  "parsedAt": "2026-03-27T22:28:38.440Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_10g_ag.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_rev_ag_1.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger-ag-10g_certipamp_obv.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_ag_10g_certipamp_rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_ag_10g_certipamp_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:06:33.600Z"
+  }
+}

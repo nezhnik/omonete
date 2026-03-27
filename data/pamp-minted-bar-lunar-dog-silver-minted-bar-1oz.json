@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dog-silver-minted-bar-1oz",
+  "title": "Lunar Dog Silver Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45 mm",
+    "SKU": "ZAGFS00108",
+    "Size (mm).": "27 x 47",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-dog-silver-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-dog-silver-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-dog-silver-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-dog-silver-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-dog-silver-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-04/ag_1oz_lunardog_certipamp_rev100_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/ag_1oz_lunardog_certipamp_obv100_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_silver.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_silver_obv_1oz.png"
+  ],
+  "parsedAt": "2026-03-27T22:23:34.102Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_silver_obv_1oz.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_silver.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-04/ag_1oz_lunardog_certipamp_obv100_0.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-04/ag_1oz_lunardog_certipamp_rev100_0.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-04/ag_1oz_lunardog_certipamp_rev100_0.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:57:05.377Z"
+  }
+}

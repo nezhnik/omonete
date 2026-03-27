@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-calendar-series-set-twelve-5g-gold-bars",
+  "title": "The Lunar Calendar Series - Set of Twelve 5g Gold Bars",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.83mm",
+    "SKU": "ZAUFC01070, ZAUFC01071, ZAUFC01072, ZAUFC01073, ZAUFC01074, ZAUFC01075, ZAUFC01076, ZAUFC01077, ZAUFC01078, ZAUFC01079, ZAUFC01080, ZAUFC01081",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-calendar-series-set-twelve-5g-gold-bars-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-calendar-series-set-twelve-5g-gold-bars-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-02/12-lunar_composition_01.png",
+    "https://www.pamp.com/sites/pamp/files/2023-02/12-lunar_composition_05.png"
+  ],
+  "parsedAt": "2026-03-27T22:23:09.752Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-02/12-lunar_composition_05.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-02/12-lunar_composition_01.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:56:23.068Z"
+  }
+}

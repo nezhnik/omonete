@@ -1,0 +1,39 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/diwali-rangoli-art-pure-gold-multigram25",
+  "title": "Diwali with Rangoli Art Pure Gold MULTIGRAM+25",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.1mm",
+    "SKU": "ZAUFC01202",
+    "Size (mm).": "6 x 9.5",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/diwali-rangoli-art-pure-gold-multigram25-obv.webp",
+    "reverse": "/image/coins/foreign/diwali-rangoli-art-pure-gold-multigram25-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-10/front-multigram_diwali-2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/back-multigram_diwali-2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/multigram_rev-front_diwali-2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/multigram_obv-front_diwali-2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/sleeve_diwali-2025_front-multigram.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/sleeve_diwali-2025_back-multigram.png"
+  ],
+  "parsedAt": "2026-03-27T22:18:56.939Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-10/back-multigram_diwali-2025.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-10/front-multigram_diwali-2025.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:46:37.727Z"
+  }
+}

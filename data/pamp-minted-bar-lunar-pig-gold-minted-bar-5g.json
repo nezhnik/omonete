@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-pig-gold-minted-bar-5g",
+  "title": "Lunar Pig Gold Minted Bar - 5g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.83 mm",
+    "SKU": "ZAUFS00547",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-pig-gold-minted-bar-5g-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-pig-gold-minted-bar-5g-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-pig-gold-minted-bar-5g-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-pig-gold-minted-bar-5g-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-pig-gold-minted-bar-5g-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigau_5g_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigau_5g_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/234100_pamp_lunar_pig_rev_au.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/234100_pamp_lunar_pig_obv_au_5g.png"
+  ],
+  "parsedAt": "2026-03-27T22:26:28.601Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/234100_pamp_lunar_pig_obv_au_5g.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/234100_pamp_lunar_pig_rev_au.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigau_5g_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigau_5g_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigau_5g_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:02:51.359Z"
+  }
+}

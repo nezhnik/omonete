@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-monkey-silver-minted-bar-10g",
+  "title": "Lunar Monkey Silver Minted Bar - 10g",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "1.81 mm",
+    "SKU": "ZAGFS00100",
+    "Size (mm).": "18 x 31",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-monkey-silver-minted-bar-10g-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-monkey-silver-minted-bar-10g-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-monkey-silver-minted-bar-10g-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-monkey-silver-minted-bar-10g-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-monkey-silver-minted-bar-10g-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-04/lunarmonkeyag_10g_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/lunarmonkeyag_10g_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/204400_lunar_calendar_monkey_reverse_silver_100g.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/204400_lunar_calendar_monkey_oberse_silver_10gtif.png"
+  ],
+  "parsedAt": "2026-03-27T22:25:41.926Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/204400_lunar_calendar_monkey_oberse_silver_10gtif.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/204400_lunar_calendar_monkey_reverse_silver_100g.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-04/lunarmonkeyag_10g_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-04/lunarmonkeyag_10g_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-04/lunarmonkeyag_10g_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:01:32.960Z"
+  }
+}

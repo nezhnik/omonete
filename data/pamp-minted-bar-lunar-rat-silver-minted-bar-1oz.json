@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rat-silver-minted-bar-1oz",
+  "title": "Lunar Rat Silver Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45 mm",
+    "SKU": "ZAGFS00120",
+    "Size (mm).": "27 x 47",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-rat-silver-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-rat-silver-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-rat-silver-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-rat-silver-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-rat-silver-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-04/lunarratag_1oz_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/lunarratag_1oz_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/244000_pamp_the_lunar_calendar_series_rat_rev_silver.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/244000_pamp_the_lunar_calendar_series_rat_obv_silver_1oz.png"
+  ],
+  "parsedAt": "2026-03-27T22:27:30.650Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/244000_pamp_the_lunar_calendar_series_rat_obv_silver_1oz.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/244000_pamp_the_lunar_calendar_series_rat_rev_silver.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-04/lunarratag_1oz_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-04/lunarratag_1oz_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-04/lunarratag_1oz_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:04:30.555Z"
+  }
+}

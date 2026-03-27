@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-5oz",
+  "title": "Lady Fortuna™ Gold Minted Bar - 5oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "3.86 mm",
+    "SKU": "ZAUFS00120",
+    "Size (mm).": "35 x 60",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-5oz-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-5oz-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/5oz_1.png"
+  ],
+  "parsedAt": "2026-03-27T22:21:44.658Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/5oz_1.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:52:51.085Z"
+  }
+}

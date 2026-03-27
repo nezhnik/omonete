@@ -1,0 +1,39 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-platinum-minted-bar-multigram25",
+  "title": "Lady Fortuna™ Platinum Minted Bar - MULTIGRAM+25",
+  "specs": {
+    "Metal": "Platinum 999.5",
+    "Weight": "1 g",
+    "Thickness": "0.83 mm",
+    "SKU": "ZPTFS00027",
+    "Size (mm).": "6 x 9.5",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-multigram25-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-multigram25-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/platinum_multigram_25_rev_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/platinum_multigram_25_obv_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_multigram_platinum.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/1g_multigram_platinum.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv_multigram25_platinum_1staccato.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/multigram25_obv_one_peace.png"
+  ],
+  "parsedAt": "2026-03-27T22:22:20.673Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/platinum_multigram_25_obv_0.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/platinum_multigram_25_rev_0.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:53:55.946Z"
+  }
+}

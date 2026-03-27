@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/america-free-bald-eagle-gold-minted-bar-1oz",
+  "title": "America the Free; Bald Eagle Gold Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFC01239 & ZAUFC01197",
+    "Size (mm).": "41 x 24",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/america-free-bald-eagle-gold-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/america-free-bald-eagle-gold-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/america-free-bald-eagle-gold-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/america-free-bald-eagle-gold-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/america-free-bald-eagle-gold-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_certipamp-rev2.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_certipamp-obv2.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_front-obv.png"
+  ],
+  "parsedAt": "2026-03-27T22:18:29.086Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_front-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_certipamp-obv2.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_certipamp-rev2.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-07/bald-eagle_certipamp-rev2.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:45:37.253Z"
+  }
+}

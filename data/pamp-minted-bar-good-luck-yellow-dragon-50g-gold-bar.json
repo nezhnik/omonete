@@ -1,0 +1,41 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-yellow-dragon-50g-gold-bar",
+  "title": "Good Luck Yellow Dragon 50g Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "50 g",
+    "Thickness": "2.06mm",
+    "SKU": "ZAUFC01583",
+    "Size (mm).": "27 x 47",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-obv.webp",
+    "reverse": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-rev.webp",
+    "blister_obverse": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-blister-rev.webp",
+    "packaging": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_front-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_back-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_reverse-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_obverse-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/yellow_dragon_sleeve_.png"
+  ],
+  "parsedAt": "2026-03-27T22:19:18.472Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_obverse-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_reverse-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_back-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_front-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-11/yellow_dragon_sleeve_.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:47:34.636Z"
+  }
+}

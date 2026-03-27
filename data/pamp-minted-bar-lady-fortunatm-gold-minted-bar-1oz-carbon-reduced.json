@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced",
+  "title": "Lady Fortuna™ Gold Minted Bar - 1oz (Carbon Reduced)",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFS00610 & ZAUFS00606",
+    "Size (mm).": "24 x 41",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-04/certipamp_carbon-neutralingot_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-06/au_1oz_obvcertipamp_carbon_neutral_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/pamp-gold-fortuna-1oz-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/pamp-gold-fortuna-1oz-obv.png"
+  ],
+  "parsedAt": "2026-03-27T22:20:43.583Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-04/pamp-gold-fortuna-1oz-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-04/pamp-gold-fortuna-1oz-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-06/au_1oz_obvcertipamp_carbon_neutral_2025.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-04/certipamp_carbon-neutralingot_rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-04/certipamp_carbon-neutralingot_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:50:38.283Z"
+  }
+}

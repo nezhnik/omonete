@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-koi-fish-gold-minted-bar-1oz",
+  "title": "Good Luck Koi Fish Gold Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFC01176",
+    "Size (mm).": "24 x 41",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/good-luck-koi-fish-gold-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/good-luck-koi-fish-gold-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/good-luck-koi-fish-gold-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/good-luck-koi-fish-gold-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/good-luck-koi-fish-gold-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_front-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_back-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_reverse-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_obverse-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_sleeve-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T22:19:03.445Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_obverse-front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_reverse-front.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_back-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_front-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-07/koi-fish_sleeve-front.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:46:58.270Z"
+  }
+}

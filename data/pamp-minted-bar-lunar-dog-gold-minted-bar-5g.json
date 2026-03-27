@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dog-gold-minted-bar-5g",
+  "title": "Lunar Dog Gold Minted Bar- 5g",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.83 mm",
+    "SKU": "ZAUFS00534",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-dog-gold-minted-bar-5g-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-dog-gold-minted-bar-5g-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-dog-gold-minted-bar-5g-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-dog-gold-minted-bar-5g-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-dog-gold-minted-bar-5g-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-04/au_5g_lunardog_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/au_5g_lunardog_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_obv_5g.png"
+  ],
+  "parsedAt": "2026-03-27T22:23:21.750Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_obv_5g.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/224000_pamp_lunar_dog_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-04/au_5g_lunardog_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-04/au_5g_lunardog_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-04/au_5g_lunardog_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:56:47.016Z"
+  }
+}

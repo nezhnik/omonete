@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-snake-silver-minted-bar-10g",
+  "title": "Lunar Snake Silver Minted Bar - 10g",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "1.81 mm",
+    "SKU": "AG00RI005SD23",
+    "Size (mm).": "18 x 31",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-snake-silver-minted-bar-10g-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-snake-silver-minted-bar-10g-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-snake-silver-minted-bar-10g-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-snake-silver-minted-bar-10g-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-snake-silver-minted-bar-10g-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_10g_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_10g_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/ag_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/ag_10g.png"
+  ],
+  "parsedAt": "2026-03-27T22:28:14.660Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/ag_10g.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/ag_1.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_10g_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_10g_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_10g_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:05:47.301Z"
+  }
+}

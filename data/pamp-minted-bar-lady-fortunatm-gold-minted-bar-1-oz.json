@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1-oz",
+  "title": "Lady Fortuna™ Gold Minted Bar - 1 oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFS00115",
+    "Size (mm).": "24 x 41",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-oz-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/au_1oz_revcertipamp_3.png",
+    "https://www.pamp.com/sites/pamp/files/2023-03/au_1oz_obvcertipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/1oz.png"
+  ],
+  "parsedAt": "2026-03-27T22:19:52.100Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/1oz.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-03/au_1oz_obvcertipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-02/au_1oz_revcertipamp_3.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-02/au_1oz_revcertipamp_3.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:48:34.770Z"
+  }
+}

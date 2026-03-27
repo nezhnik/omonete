@@ -1,0 +1,38 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/american-buffalo-silver-minted-round-1oz",
+  "title": "American Buffalo Silver Minted Round - 1oz",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.78mm",
+    "SKU": "SMTB1BUFFALORND",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/american-buffalo-silver-minted-round-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/american-buffalo-silver-minted-round-1oz-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-comp-2.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-closeup-1.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-closeup-2.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-comp-1.png"
+  ],
+  "parsedAt": "2026-03-27T22:18:49.879Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-06/pamp-1oz-silver-round-buffalo-webimage-1000x1000px-rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:46:23.540Z"
+  }
+}

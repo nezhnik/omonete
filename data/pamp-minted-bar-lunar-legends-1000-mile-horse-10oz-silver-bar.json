@@ -1,0 +1,38 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-1000-mile-horse-10oz-silver-bar",
+  "title": "Lunar Legends - 1,000 Mile Horse 10oz Silver Bar",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "7.39mm",
+    "SKU": "317392",
+    "Size (mm).": "52 x 91",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-legends-1000-mile-horse-10oz-silver-bar-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-legends-1000-mile-horse-10oz-silver-bar-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "/image/coins/foreign/lunar-legends-1000-mile-horse-10oz-silver-bar-box.webp",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-box-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-box-back.png"
+  ],
+  "parsedAt": "2026-03-27T22:24:59.179Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-rev.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-obv.png",
+    "box": "https://www.pamp.com/sites/pamp/files/2025-11/pamp-10oz-silver-bar-lunar-year-horse-box-front.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:59:53.356Z"
+  }
+}

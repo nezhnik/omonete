@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-3-tolas",
+  "title": "Lady Fortuna™ Gold Minted Bar - 3 Tolas",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "3 g",
+    "Thickness": "1.74 mm",
+    "SKU": "ZAUFS00130",
+    "Size (mm).": "24.7 x 42.7",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-3-tolas-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-3-tolas-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-3-tolas-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-3-tolas-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-3-tolas-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/au_3tolas_revcertipamp_0.png",
+    "https://www.pamp.com/sites/pamp/files/2023-03/au_3tola_obvcertipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/3tolas_0.png"
+  ],
+  "parsedAt": "2026-03-27T22:21:14.158Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/3tolas_0.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-03/au_3tola_obvcertipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-02/au_3tolas_revcertipamp_0.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-02/au_3tolas_revcertipamp_0.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:51:46.150Z"
+  }
+}

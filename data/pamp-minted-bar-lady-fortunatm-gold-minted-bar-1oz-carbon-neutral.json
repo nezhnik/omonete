@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral",
+  "title": "Lady Fortuna™ Gold Minted Bar - 1oz (Carbon Neutral)",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73mm",
+    "SKU": "ZAUFS00591",
+    "Size (mm).": "24 x 41",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-04/au_1oz_revcertipamp_3.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/au_1oz_obvcertipamp_carbon_neutral.tif_.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/pamp_gold_fortuna_1oz_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/pamp-gold-fortuna-1oz-obv.png"
+  ],
+  "parsedAt": "2026-03-27T22:20:37.272Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-04/pamp-gold-fortuna-1oz-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-04/pamp_gold_fortuna_1oz_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-05/au_1oz_obvcertipamp_carbon_neutral.tif_.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-04/au_1oz_revcertipamp_3.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2023-04/au_1oz_revcertipamp_3.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:50:21.571Z"
+  }
+}

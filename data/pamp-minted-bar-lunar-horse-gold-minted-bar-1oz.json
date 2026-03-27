@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-horse-gold-minted-bar-1oz",
+  "title": "Lunar Horse Gold Minted Bar - 1oz",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "1.73 mm",
+    "SKU": "ZAUFS00404",
+    "Size (mm).": "24 x 41",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-horse-gold-minted-bar-1oz-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-horse-gold-minted-bar-1oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-horse-gold-minted-bar-1oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-horse-gold-minted-bar-1oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-horse-gold-minted-bar-1oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseau_1oz_certipamp_rev100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseau_1oz_certipamp_obv100.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/au.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/au_1oz_lunar_horse.png"
+  ],
+  "parsedAt": "2026-03-27T22:24:29.390Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/au_1oz_lunar_horse.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/au.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseau_1oz_certipamp_obv100.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseau_1oz_certipamp_rev100.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-05/lunarhorseau_1oz_certipamp_rev100.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:58:39.371Z"
+  }
+}

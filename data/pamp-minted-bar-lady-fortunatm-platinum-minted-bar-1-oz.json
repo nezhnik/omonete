@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-platinum-minted-bar-1-oz",
+  "title": "Lady Fortuna™ Platinum Minted Bar - 1 oz",
+  "specs": {
+    "Metal": "Platinum 999.5",
+    "Weight": "1 g",
+    "Thickness": "1.50 mm",
+    "SKU": "ZPTFS00019",
+    "Size (mm).": "24 x 41",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1-oz-obv.webp",
+    "reverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1-oz-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1-oz-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1-oz-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1-oz-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/1oz_platinum_reverse_vecchio_certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2022-04/1oz_obverse_vecchio_certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_platinum_reverse_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/1oz_platinum_sfondo_lucido_obv.png"
+  ],
+  "parsedAt": "2026-03-27T22:22:01.981Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/1oz_platinum_sfondo_lucido_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_platinum_reverse_0.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2022-04/1oz_obverse_vecchio_certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2022-02/1oz_platinum_reverse_vecchio_certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2022-02/1oz_platinum_reverse_vecchio_certipamp.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:53:24.581Z"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-2026-year-horse-10g-silver-bar",
+  "title": "Lunar Legends 2026 Year of the Horse 10g Silver Bar",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "10 g",
+    "Thickness": "1.81mm",
+    "SKU": "ZAGFS00137",
+    "Size (mm).": "18 x 31",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "/image/coins/foreign/lunar-legends-2026-year-horse-10g-silver-bar-obv.webp",
+    "reverse": "/image/coins/foreign/lunar-legends-2026-year-horse-10g-silver-bar-rev.webp",
+    "blister_obverse": "/image/coins/foreign/lunar-legends-2026-year-horse-10g-silver-bar-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/lunar-legends-2026-year-horse-10g-silver-bar-blister-rev.webp",
+    "packaging": "/image/coins/foreign/lunar-legends-2026-year-horse-10g-silver-bar-packaging.webp",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_perspective-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_perspective-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_sleeve-front_1.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_sleeve-back_1.png"
+  ],
+  "parsedAt": "2026-03-27T22:25:04.905Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_perspective-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_perspective-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_10g-ag_certipamp-front.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-11/lunar-horse_sleeve-front_1.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T23:00:10.703Z"
+  }
+}
