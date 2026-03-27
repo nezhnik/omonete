@@ -43,6 +43,8 @@ export type CoinDetailData = {
   weightG?: string;
   /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — из БД weight_oz */
   weightOz?: string;
+  /** Нормализованный вес для каталога/фильтров (например "10 унций · 311 г") */
+  weightLabel?: string;
   purity?: string;
   diameterMm?: string;
   thicknessMm?: string;
@@ -119,6 +121,16 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
   const [selectedImage, setSelectedImage] = useState(0);
   const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
+
+  const weightGNum = (() => {
+    if (!coin.weightG) return null;
+    const n = Number(String(coin.weightG).replace(",", "."));
+    return Number.isFinite(n) ? n : null;
+  })();
+  const hideOzForKg =
+    weightGNum != null && [10000, 5000, 3000, 1000, 500].some((kgWeightG) => Math.abs(weightGNum - kgWeightG) <= 1);
+  const fallbackWeightOz = coin.weightLabel?.split("·")[0]?.trim() || undefined;
+  const weightOzValue = coin.weightOz || fallbackWeightOz;
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
@@ -460,8 +472,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 {coin.weightG && (
                   <SpecRow label="Чистого металла не менее, гр." value={formatNumbersInString(coin.weightG)} />
                 )}
-                {coin.weightOz && (
-                  <SpecRow label="Вес в унциях" value={coin.weightOz} />
+                {weightOzValue && !hideOzForKg && (
+                  <SpecRow label="Вес в унциях" value={weightOzValue} />
                 )}
                 {coin.purity && <SpecRow label="Проба" value={coin.purity} />}
                 {coin.rectangular && (coin.lengthMm || coin.widthMm) ? (

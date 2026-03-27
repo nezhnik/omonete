@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/hot-wheelstm-1oz-silver-coin-rodger-dodgertm",
+  "title": "Hot Wheels™ 1oz Silver  Coin - Rodger Dodger™",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.54mm",
+    "SKU": "ZAGFP00419",
+    "Size (mm).": "62 x 32.1",
+    "Year": "2024",
+    "Mintage": "3,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_front-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:09:40.349Z"
+}

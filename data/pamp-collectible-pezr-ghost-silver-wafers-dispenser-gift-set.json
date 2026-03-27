@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/pezr-ghost-silver-wafers-dispenser-gift-set",
+  "title": "PEZ® Ghost Silver Wafers & Dispenser Gift Set",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "5 g",
+    "Thickness": "5mm",
+    "SKU": "ZAGFP00447",
+    "Size (mm).": "15 x 8",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_rev.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_obv.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_box-closed-front.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_box-closed-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_capsule.png"
+  ],
+  "parsedAt": "2026-03-27T16:14:05.418Z"
+}

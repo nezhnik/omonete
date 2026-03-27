@@ -1,0 +1,32 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g-first-holy-communion-3",
+  "title": "Gold Minted Bar 1 g First Holy Communion",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2026",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Bars type": "1 g",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "Unlimited",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_a.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_a.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_r.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-1-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-2-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-3-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-4-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-5-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-6-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-7-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-8-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/first-9-1920x1080.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:35.440Z"
+}

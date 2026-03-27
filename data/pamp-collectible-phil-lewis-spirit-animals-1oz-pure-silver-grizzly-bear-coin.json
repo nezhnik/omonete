@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/phil-lewis-spirit-animals-1oz-pure-silver-grizzly-bear-coin",
+  "title": "Phil Lewis Spirit Animals - 1oz Pure Silver Grizzly Bear Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFC00883",
+    "Size (mm).": "36.7 x 46.6",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv_17.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_11.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev_11.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv_17.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_11.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv-p_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-back_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-open_4.png"
+  ],
+  "parsedAt": "2026-03-27T16:16:05.448Z"
+}

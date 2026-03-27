@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-coin-snowman-little-red-truck",
+  "title": "1oz Silver Coin - Snowman & Little Red Truck",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.68mm",
+    "SKU": "ZAGFP00420",
+    "Size (mm).": "54.5 x 35.2",
+    "Year": "2024",
+    "Mintage": "3,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_open-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_capsule-rev.png"
+  ],
+  "parsedAt": "2026-03-27T16:01:12.194Z"
+}

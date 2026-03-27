@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-bar-cross-christianity",
+  "title": "1oz Silver Bar Cross of Christianity",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45mm",
+    "SKU": "ZAGFP00457",
+    "Size (mm).": "27 x 47",
+    "Year": "2025",
+    "Mintage": "5,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-bar_presp.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-bar_presp.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-certipamp.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-bar_presp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-bar_presp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_front-sleeve.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_back-sleeve.png"
+  ],
+  "parsedAt": "2026-03-27T16:00:12.767Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/nutcracker-sugar-plum-fairy-1oz-silver-coin",
+  "title": "The Nutcracker Sugar Plum Fairy -1oz Silver Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.25mm",
+    "SKU": "ZAGFP00425",
+    "Size (mm).": "40 x 65.6",
+    "Year": "2024",
+    "Mintage": "2,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_obv_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_rev_front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_rev_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_obv_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_packaging-semi-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:13:04.971Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/pezr-chick-gift-set",
+  "title": "PEZ® Chick Gift Set",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "5 g",
+    "Thickness": "5 mm",
+    "SKU": "ZAGFC00877",
+    "Size (mm).": "15 x 8",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_3.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_4.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_3.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_7_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_8_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_1_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_5_0.png"
+  ],
+  "parsedAt": "2026-03-27T16:13:39.827Z"
+}

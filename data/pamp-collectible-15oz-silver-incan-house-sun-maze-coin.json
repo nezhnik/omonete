@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/15oz-silver-incan-house-sun-maze-coin",
+  "title": "1.5oz Silver Incan House of the Sun Maze Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1,5 g",
+    "Thickness": "2.9mm",
+    "SKU": "ZAGFP00375",
+    "Size (mm).": "44 x 44",
+    "Year": "2022",
+    "Mintage": "3,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_obv_capsule.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_rev_capsule.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_rev_capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_obv_capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_rev-p.png"
+  ],
+  "parsedAt": "2026-03-27T15:58:25.863Z"
+}

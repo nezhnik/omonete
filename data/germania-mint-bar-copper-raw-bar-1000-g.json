@@ -1,0 +1,26 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/copper-raw-bars/copper-raw-bar-1000-g",
+  "title": "Copper Raw Bar Packaging",
+  "specs": {
+    "Series": "Copper Raw Bars",
+    "Year": "2026",
+    "Weight": "1000 g",
+    "Purity": "999 Cu",
+    "Bars type": "1000 g",
+    "Dimensions": "50 x 20 x 113 mm",
+    "Mintage": "Unlimited"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-a.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-a.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-r.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_4-1-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_1-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_2-1920x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_5-1920x1080.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:05:57.198Z"
+}

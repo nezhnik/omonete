@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/burton-morris-american-icons-gorilla-1oz-silver-coin",
+  "title": "Burton Morris American  Icons - Gorilla 1oz Silver Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00396",
+    "Size (mm).": "39.9 x 46.4",
+    "Year": "2023",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_obv-front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_rev-front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_rev-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_obv-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:23.407Z"
+}

@@ -281,8 +281,8 @@ function isRectangular(
 
 /** Снимки в блистере — в UI без круглой маски (как прямоугольные монеты). */
 function rowHasBlisterImages(r: Row): boolean {
-  const br = r.image_blister_reverse && String(r.image_blister_reverse).trim();
-  const bo = r.image_blister_obverse && String(r.image_blister_obverse).trim();
+  const br = obverseUrl(r.image_blister_reverse);
+  const bo = obverseUrl(r.image_blister_obverse);
   if (br || bo) return true;
   const titleHaystack = [r.title, r.title_en].filter(Boolean).join(" ");
   if (!/\bin\s+blister\b/i.test(titleHaystack)) return false;
@@ -371,27 +371,72 @@ function buildImageUrls(
   const obverse = obverseUrl(r.image_obverse);
   const reverse = reverseUrl(r.image_reverse);
   const imageUrls = r.image_urls as string[] | undefined;
-  const blisterRev = r.image_blister_reverse && String(r.image_blister_reverse).trim();
-  const blisterObv = r.image_blister_obverse && String(r.image_blister_obverse).trim();
+  const blisterRev = obverseUrl(r.image_blister_reverse);
+  const blisterObv = obverseUrl(r.image_blister_obverse);
+  const hasAnyBlister = !!(blisterRev || blisterObv);
   const imagePackaging = r.image_packaging && String(r.image_packaging).trim();
   const imageBox = r.image_box && String(r.image_box).trim();
   const imageCertificate = r.image_certificate && String(r.image_certificate).trim();
-  const firstImage = firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? "");
+
   const imageUrlsOut: string[] = [];
   const imageUrlRoles: string[] = [];
-  if (firstImageSide === "reverse") {
-    if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
-    if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
-  } else {
-    if (obverse) { imageUrlsOut.push(obverse); imageUrlRoles.push("obverse"); }
-    if (reverse) { imageUrlsOut.push(reverse); imageUrlRoles.push("reverse"); }
+  const pushIfNew = (url: string | null | undefined, role: string) => {
+    if (!url || imageUrlsOut.includes(url)) return;
+    imageUrlsOut.push(url);
+    imageUrlRoles.push(role);
+  };
+
+  /** Как в export-coins-to-json.js: есть хотя бы один кадр blister_* — только блистер(ы), без голой монеты/слитка. */
+  if (hasAnyBlister) {
+    if (firstImageSide === "reverse") {
+      pushIfNew(blisterRev, "blister_reverse");
+      pushIfNew(blisterObv, "blister_obverse");
+    } else {
+      pushIfNew(blisterObv, "blister_obverse");
+      pushIfNew(blisterRev, "blister_reverse");
+    }
+    const imageUrl =
+      firstImageSide === "reverse"
+        ? (blisterRev ?? blisterObv ?? PLACEHOLDER)
+        : (blisterObv ?? blisterRev ?? PLACEHOLDER);
+    return { imageUrl, imageUrls: imageUrlsOut, imageUrlRoles };
   }
-  if (blisterRev) { imageUrlsOut.push(String(blisterRev)); imageUrlRoles.push("blister_reverse"); }
-  if (blisterObv) { imageUrlsOut.push(String(blisterObv)); imageUrlRoles.push("blister_obverse"); }
-  if (imagePackaging) { imageUrlsOut.push(String(imagePackaging)); imageUrlRoles.push("packaging"); }
-  if (imageBox) { imageUrlsOut.push(String(imageBox)); imageUrlRoles.push("box"); }
-  if (imageCertificate) { imageUrlsOut.push(String(imageCertificate)); imageUrlRoles.push("certificate"); }
-  if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) imageUrlsOut.push(...(imageUrls as string[]));
+
+  const firstImage = firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? "");
+  if (firstImageSide === "reverse") {
+    if (reverse) {
+      imageUrlsOut.push(reverse);
+      imageUrlRoles.push("reverse");
+    }
+    if (obverse) {
+      imageUrlsOut.push(obverse);
+      imageUrlRoles.push("obverse");
+    }
+  } else {
+    if (obverse) {
+      imageUrlsOut.push(obverse);
+      imageUrlRoles.push("obverse");
+    }
+    if (reverse) {
+      imageUrlsOut.push(reverse);
+      imageUrlRoles.push("reverse");
+    }
+  }
+  if (imagePackaging) {
+    imageUrlsOut.push(String(imagePackaging));
+    imageUrlRoles.push("packaging");
+  }
+  if (imageBox) {
+    imageUrlsOut.push(String(imageBox));
+    imageUrlRoles.push("box");
+  }
+  if (imageCertificate) {
+    imageUrlsOut.push(String(imageCertificate));
+    imageUrlRoles.push("certificate");
+  }
+  if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
+    imageUrlsOut.push(...(imageUrls as string[]));
+  }
   const imageUrl = firstImage || PLACEHOLDER;
   return { imageUrl, imageUrls: imageUrlsOut, imageUrlRoles };
 }
@@ -507,7 +552,16 @@ function rowToSameSeriesItem(
 ): SameSeriesItem {
   const rev = reverseUrl(s.image_reverse);
   const obv = obverseUrl(s.image_obverse);
-  const si = firstImageSide === "reverse" ? (rev ?? obv) : (obv ?? rev);
+  const br = obverseUrl(s.image_blister_reverse);
+  const bo = obverseUrl(s.image_blister_obverse);
+  const si =
+    br || bo
+      ? firstImageSide === "reverse"
+        ? (br || bo)
+        : (bo || br)
+      : firstImageSide === "reverse"
+        ? (rev ?? obv)
+        : (obv ?? rev);
   const si2 = si ?? firstImageUrl(s.image_urls, null, s.image_obverse) ?? "";
   const metalCode = getMetalCodeAndColor(s.metal).code;
   const metalColor = getMetalCodeAndColor(s.metal).color;

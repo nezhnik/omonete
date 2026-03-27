@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-bar-star-david",
+  "title": "1oz Pure Silver Bar - Star of David",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45mm",
+    "SKU": "ZAGFP00448",
+    "Size (mm).": "27 x 47",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_obv-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_rev-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_obv-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_rev-certipamp.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_rev-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_obv-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_rev-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_obv-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_sleeve-front_0.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz-ag_star-of-david_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T15:59:37.749Z"
+}

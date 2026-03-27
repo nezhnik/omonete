@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/arabian-horse-5g-pure-gold-bar-pendant-frame",
+  "title": "Arabian Horse 5g Pure Gold Bar with Pendant Frame",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.83mm",
+    "SKU": "ZAUFP00404",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_obvframe_0.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_revframe_0.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-obv.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-rev.png",
+    "box": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-closed_front.png",
+    "certificate": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-open_no-certi.png"
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-closed_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-open_no-certi.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_revframe_0.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_obvframe_0.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_perspective-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_perspective-obv.png"
+  ],
+  "parsedAt": "2026-03-27T16:05:43.626Z"
+}

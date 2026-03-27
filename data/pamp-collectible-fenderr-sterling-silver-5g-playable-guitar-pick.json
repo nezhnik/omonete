@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/fenderr-sterling-silver-5g-playable-guitar-pick",
+  "title": "Fender® Sterling Silver 5g Playable Guitar Pick",
+  "specs": {
+    "Metal": "Silver 925",
+    "Weight": "5 g",
+    "Thickness": "1.5 mm",
+    "SKU": "ZAGFC00867",
+    "Size (mm).": "19.4 x 23",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_2.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_5.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_5.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_2.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_3.png",
+    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00867_a_13_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00867_a_14_0.png"
+  ],
+  "parsedAt": "2026-03-27T16:08:35.121Z"
+}

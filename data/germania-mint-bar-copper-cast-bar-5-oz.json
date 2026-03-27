@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/copper-cast-bars/copper-cast-bar-5-oz",
+  "title": "Copper Cast Bar 5 oz",
+  "specs": {
+    "Series": "Copper Cast Bars",
+    "Year": "2023",
+    "Weight": "5 oz",
+    "Purity": "999.9 Cu",
+    "Dimensions": "53.30 x 34.20 x 11.55 mm",
+    "Mintage": "Unlimited",
+    "Package": "Numbering, hologram"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_5oz_a-kopia.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_5oz_r-kopia.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_5oz_a-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_5oz_r-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_27_20.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_37_14.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_13_08.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:05:52.935Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-coin-hot-wheelstm-burning-tire",
+  "title": "1oz Silver Coin Hot Wheels™ Burning Tire",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.035mm",
+    "SKU": "ZAGFP00454",
+    "Size (mm).": "58 x 35.4",
+    "Year": "2026",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-02/obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-02/rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://www.pamp.com/sites/pamp/files/2026-02/box.png",
+    "certificate": "https://www.pamp.com/sites/pamp/files/2026-02/outer_box_opened.png"
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2026-02/rev.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/obv.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/box.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/outer_box_opened.png"
+  ],
+  "parsedAt": "2026-03-27T16:00:52.650Z"
+}

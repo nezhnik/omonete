@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-diwali-lakshmi-rangoli-art",
+  "title": "5g Pure Gold Bar - Diwali Lakshmi & Rangoli art",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00426",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2025",
+    "Mintage": "5,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_obv_perspective_diwali_2025.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_rev_perspective_diwali_2025.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_back_certipamp_diwali_2025.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_front_certipamp_diwali_2025.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_front_certipamp_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_back_certipamp_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_rev_perspective_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g_au_obv_perspective_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/sleeve_diwali_2025_front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/sleeve_diwali_2025_back.png"
+  ],
+  "parsedAt": "2026-03-27T16:03:22.570Z"
+}

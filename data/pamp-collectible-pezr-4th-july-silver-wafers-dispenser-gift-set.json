@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/pezr-4th-july-silver-wafers-dispenser-gift-set",
+  "title": "PEZ® 4th of July Silver Wafers & Dispenser Gift Set",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "5 g",
+    "Thickness": "5mm",
+    "SKU": "ZAGFP00416",
+    "Size (mm).": "15 x 8",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_perspective-packaging.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_front-packaging.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_front-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_perspective-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_dispenser.png"
+  ],
+  "parsedAt": "2026-03-27T16:13:31.692Z"
+}

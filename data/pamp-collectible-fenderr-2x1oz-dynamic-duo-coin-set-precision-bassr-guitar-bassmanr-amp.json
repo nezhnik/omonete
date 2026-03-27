@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/fenderr-2x1oz-dynamic-duo-coin-set-precision-bassr-guitar-bassmanr-amp",
+  "title": "Fender® 2x1oz Dynamic Duo Coin Set - Precision Bass® Guitar & Bassman® Amp",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.5mm",
+    "SKU": "ZAGFP00398",
+    "Size (mm).": "28.6 x 86.5",
+    "Year": "2023",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-06/bass_obv_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-06/bass_rev_front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-06/bass_rev_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/bass_obv_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/amp_rev_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/amp_obv_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/dynamic-duos-packaging_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/dynamic-duos-packaging_perspective_1.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/bassamp_rev-capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2023-06/bassamp_obv-capsule.png"
+  ],
+  "parsedAt": "2026-03-27T16:07:42.205Z"
+}

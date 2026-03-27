@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-bar-buddha",
+  "title": "1oz Pure Silver Bar - The Buddha",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.45mm",
+    "SKU": "ZAGFP00442",
+    "Size (mm).": "27 x 47",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_ingot-perspective-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_ingot-perspective-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_ingot-perspective-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_ingot-perspective-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_sleeve-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_1oz-ag_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T15:59:21.006Z"
+}

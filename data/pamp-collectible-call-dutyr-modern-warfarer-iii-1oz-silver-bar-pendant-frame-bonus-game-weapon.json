@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/call-dutyr-modern-warfarer-iii-1oz-silver-bar-pendant-frame-bonus-game-weapon",
+  "title": "Call of Duty®: Modern Warfare® III 1oz silver bar with pendant frame & bonus in-game weapon charm",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45mm",
+    "SKU": "ZAGFP00415",
+    "Size (mm).": "27 x 47",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-agframe.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-02/packaging-closed-cod-ag.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-back-ag.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-front-ag.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-02/packaging-closed-cod-ag.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-front-ag.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-back-ag.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-agframe.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/cod-obv-agframe.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-ag-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:30.380Z"
+}

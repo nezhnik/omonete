@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/call-dutyr-modern-warfarer-iii-5g-gold-bar-pendant-frame-bonus-game-weapon",
+  "title": "Call of Duty®: Modern Warfare® III 5g gold bar with pendant frame & bonus in-game weapon charm",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.90",
+    "SKU": "ZAUFP00410",
+    "Size (mm).": "13.1 x 22.1",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-auframe.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-02/packaging-closed-cod-au.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-back-au.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-front-au.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-02/packaging-closed-cod-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-front-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-back-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-auframe.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/cod-obv-auframe.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-au-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:38.595Z"
+}

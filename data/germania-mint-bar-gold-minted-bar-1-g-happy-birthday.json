@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g-happy-birthday",
+  "title": "Gold Minted Bar 1 g Happy Birthday",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2025",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "Unlimited",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-2-kopia.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-4-kopia.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-2-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-4-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_13_13.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_19_14.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_31_01.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:39.321Z"
+}

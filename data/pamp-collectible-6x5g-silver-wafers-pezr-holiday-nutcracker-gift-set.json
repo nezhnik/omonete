@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/6x5g-silver-wafers-pezr-holiday-nutcracker-gift-set",
+  "title": "6x5g Silver Wafers PEZ® Holiday Nutcracker Gift Set",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "5 g",
+    "Thickness": "5mm",
+    "SKU": "ZAGFP00456",
+    "Size (mm).": "15 x 8",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_rev.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_packaging-front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_packaging-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-11/pez-nutcracker_dispenser.png"
+  ],
+  "parsedAt": "2026-03-27T16:04:00.835Z"
+}

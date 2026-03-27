@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/phil-lewis-seven-chakras-2oz-pure-silver-eagle-6th-chakra-coin",
+  "title": "Phil Lewis Seven Chakras - 2oz Pure Silver Eagle of the 6th Chakra Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "2 g",
+    "Thickness": "3.77mm",
+    "SKU": "ZAGFP00395",
+    "Size (mm).": "38.8 x 56.8",
+    "Year": "2023",
+    "Mintage": "1,500"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-05/chakra-eagle_obv-front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-05/chakra-eagle_rev-front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-05/chakra-eagle_rev-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-05/chakra-eagle_obv-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-05/chakra-eagle_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-05/chakra-eagle_packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:15:18.092Z"
+}

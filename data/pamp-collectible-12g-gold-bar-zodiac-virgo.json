@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/12g-gold-bar-zodiac-virgo",
+  "title": "1/2g Gold Bar Zodiac Virgo",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "0,5 g",
+    "Thickness": "0.27mm",
+    "SKU": "ZAUFP00448",
+    "Size (mm).": "8 x 12",
+    "Year": "2026",
+    "Mintage": "3,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_1.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_virgo.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_1.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_virgo-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_1.png",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_virgo-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_1.png",
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_virgo.png",
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_1.png"
+  ],
+  "parsedAt": "2026-03-27T15:58:16.004Z"
+}

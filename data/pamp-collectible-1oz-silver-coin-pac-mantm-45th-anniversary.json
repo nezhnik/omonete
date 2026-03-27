@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-coin-pac-mantm-45th-anniversary",
+  "title": "1oz Silver Coin PAC-MAN™ 45th Anniversary",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.55mm",
+    "SKU": "ZAGFP00444",
+    "Size (mm).": "44 x 38.8",
+    "Year": "2025",
+    "Mintage": "2,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_packaging-perspective-left.png"
+  ],
+  "parsedAt": "2026-03-27T16:01:02.107Z"
+}

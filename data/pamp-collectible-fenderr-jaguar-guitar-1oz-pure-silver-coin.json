@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/fenderr-jaguar-guitar-1oz-pure-silver-coin",
+  "title": "Fender® Jaguar Guitar 1oz Pure Silver Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.68mm",
+    "SKU": "ZAGFB00417",
+    "Size (mm).": "28.6 x 84.3",
+    "Year": "2024",
+    "Mintage": "4,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-03/jaguar_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-03/jaguar_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-03/jaguar_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/jaguar_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/jaguar_pack-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/jaguar_pack-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:08:21.031Z"
+}

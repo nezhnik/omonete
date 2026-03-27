@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/natures-grip-sunbeam-snake-1oz-silver-legal-tender-bar",
+  "title": "Nature’s Grip - Sunbeam Snake 1oz Silver Legal Tender Bar",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00402",
+    "Size (mm).": "27 x 47",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_perspective_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_perspective_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_back_certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_front_certipamp.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_front_certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_back_certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_perspective_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/sunbeam_snake_perspective_obv.png"
+  ],
+  "parsedAt": "2026-03-27T16:12:36.046Z"
+}

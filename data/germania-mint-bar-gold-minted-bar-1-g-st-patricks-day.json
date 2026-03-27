@@ -1,0 +1,24 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g-st-patricks-day",
+  "title": "Gold Minted Bar 1 g St. Patrick's Day",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2026",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "1000 pcs",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_A_1.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_R.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_A_1.png",
+    "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_R.png",
+    "https://germaniamint.com/wp-content/uploads/2026/02/st.-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/st.-2.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:50.971Z"
+}

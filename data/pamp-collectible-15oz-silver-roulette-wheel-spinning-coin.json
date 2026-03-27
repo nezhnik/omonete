@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/15oz-silver-roulette-wheel-spinning-coin",
+  "title": "1.5oz Silver Roulette Wheel  Spinning Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1,5 g",
+    "Thickness": "3.53mm",
+    "SKU": "ZAGFP00383",
+    "Size (mm).": "40 x 40",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-02/roulette_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-02/roulette_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_packaging-closed_01.png",
+    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T15:58:35.695Z"
+}

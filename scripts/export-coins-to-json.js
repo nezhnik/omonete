@@ -120,11 +120,12 @@ function getMetalCodes(metalStr) {
   return code ? [code] : [];
 }
 
-// Стандартные веса: килограммы 1, 2, 3, 5, 10 кг; остальное в унциях.
+// Стандартные веса: килограммы 0,5, 1, 2, 3, 5, 10 кг; остальное в унциях.
 const WEIGHT_LABELS = [
   { g: 5000, label: "5 кг · 5000 грамм", tol: 20 },
   { g: 3000, label: "3 кг · 3000 грамм", tol: 15 },
   { g: 1000, label: "1 кг · 1000 грамм", tol: 5 },
+  { g: 500, label: "0,5 кг · 500 грамм", tol: 3 },
   { g: 2000, label: "2 кг · 2000 грамм", tol: 10 },
   { g: 10000, label: "10 кг · 10000 грамм", tol: 50 },
   { g: 311.03, label: "10 унций · 311 г", tol: 2 },
@@ -159,6 +160,9 @@ const WEIGHT_OZ_TO_LABEL = {
   "3 кг": "3 кг · 3000 грамм",
   "2 кг": "2 кг · 2000 грамм",
   "1 кг": "1 кг · 1000 грамм",
+  "0,5 кг": "0,5 кг · 500 грамм",
+  "0.5 кг": "0,5 кг · 500 грамм",
+  "500 г": "0,5 кг · 500 грамм",
   "10 кг": "10 кг · 10000 грамм",
   "10 унций": "10 унций · 311 г",
   "5 унций": "5 унций · 155,5 г",
@@ -195,6 +199,40 @@ function getWeightOzDisplay(weightG, weightOz) {
   if (g != null && g >= 999 && KG_OZ_DISPLAY[Math.round(g)]) return KG_OZ_DISPLAY[Math.round(g)];
   return weightOz != null && String(weightOz).trim() !== "" ? String(weightOz).trim() : null;
 }
+
+function normalizeWeightOz(weightOz) {
+  if (weightOz == null) return null;
+  const raw = String(weightOz).trim();
+  if (!raw) return null;
+  if (/^\d+\s*\/\s*\d+(?:[.,]\d+)?\s*oz$/i.test(raw)) {
+    return raw.replace(/\s+/g, " ").replace(/\s*\/\s*/g, "/");
+  }
+  const m = raw.replace(",", ".").match(/^(\d+(?:\.\d+)?)\s*oz$/i);
+  if (!m) return raw;
+  const n = Number(m[1]);
+  if (!Number.isFinite(n) || n <= 0) return raw;
+  const roundedInt = Math.round(n);
+  if (Math.abs(n - roundedInt) < 0.0001) return `${roundedInt} oz`;
+  if (n >= 1) return `${n} oz`;
+  const known = [
+    { value: 1 / 2, label: "1/2 oz" },
+    { value: 1 / 4, label: "1/4 oz" },
+    { value: 1 / 5, label: "1/5 oz" },
+    { value: 1 / 8, label: "1/8 oz" },
+    { value: 1 / 10, label: "1/10 oz" },
+    { value: 1 / 25, label: "1/25 oz" },
+    { value: 1 / 31.1, label: "1/31.1 oz" },
+    { value: 1 / 62.2, label: "1/62.2 oz" },
+    { value: 1 / 100, label: "1/100 oz" },
+    { value: 1 / 200, label: "1/200 oz" },
+    { value: 1 / 1000, label: "1/1000 oz" },
+  ];
+  for (const k of known) {
+    if (Math.abs(n - k.value) < 0.0005) return k.label;
+  }
+  return `${n} oz`;
+}
+
 function getWeightLabel(weightG, weightOz) {
   const oz = weightOz && String(weightOz).trim();
   if (oz && WEIGHT_OZ_TO_LABEL[oz]) return WEIGHT_OZ_TO_LABEL[oz];
@@ -415,7 +453,9 @@ async function run() {
     const isForeignUnlimited = country && !/^Россия/i.test(country) && hasDisplay;
     /** Bullion RM и др. без числового тиража — импорт import-royal-mint-to-db.js (GB-ROYAL-*). */
     const isRoyalMintCatalog = /^GB-ROYAL-/i.test(String(r.catalog_number || "").trim());
-    return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog;
+    /** PAMP collectibles из import-pamp-to-db.js — всегда в каталоге (148 позиций), даже без числового тиража. */
+    const isPampCollectible = /^CH-PAMP-/i.test(String(r.catalog_number || "").trim());
+    return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible;
   });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();
@@ -444,8 +484,9 @@ async function run() {
     const obverse = normalizeAssetUrl(dropWrong(obverseUrl(imageObverse)));
     const blisterReverse = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
     const blisterObverse = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
-    const hasBlisterPair = !!(blisterReverse && blisterObverse);
-    const imageUrl = hasBlisterPair
+    /** Хотя бы один кадр Assay/blister в БД — показываем только блистер(ы), без «голого» слитка/монеты. */
+    const hasAnyBlister = !!(blisterReverse || blisterObverse);
+    const imageUrl = hasAnyBlister
       ? (firstImageSide === "reverse" ? (blisterReverse ?? blisterObverse ?? PLACEHOLDER) : (blisterObverse ?? blisterReverse ?? PLACEHOLDER))
       : (firstImageSide === "reverse" ? (reverse ?? obverse ?? PLACEHOLDER) : (obverse ?? reverse ?? PLACEHOLDER));
     const imageUrlsOut = [];
@@ -455,7 +496,7 @@ async function run() {
       imageUrlsOut.push(url);
       imageUrlRoles.push(role);
     };
-    if (hasBlisterPair) {
+    if (hasAnyBlister) {
       if (firstImageSide === "reverse") {
         pushIfNew(blisterReverse, "blister_reverse");
         pushIfNew(blisterObverse, "blister_obverse");
@@ -470,14 +511,13 @@ async function run() {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (!hasBlisterPair) {
-      if (blisterReverse) pushIfNew(blisterReverse, "blister_reverse");
-      if (blisterObverse) pushIfNew(blisterObverse, "blister_obverse");
+    if (!hasAnyBlister) {
+      if (normalizeAssetUrl(imagePackaging?.trim())) pushIfNew(normalizeAssetUrl(imagePackaging.trim()), "packaging");
+      if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
+      if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
     }
-    if (normalizeAssetUrl(imagePackaging?.trim())) pushIfNew(normalizeAssetUrl(imagePackaging.trim()), "packaging");
-    if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
-    if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
-    if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
+    // При любом блистер-кадре не подмешиваем image_urls (там перспектива слитка и дубли certi).
+    if (!hasAnyBlister && imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
       const filtered = (isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
         .map((u) => normalizeAssetUrl(u))
         .filter(Boolean);
@@ -587,8 +627,8 @@ async function run() {
     const reverse = normalizeAssetUrl(dropWrong(reverseUrl(imageReverse)));
     const blisterReverse = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
     const blisterObverse = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
-    const hasBlisterPair = !!(blisterReverse && blisterObverse);
-    const firstImage = hasBlisterPair
+    const hasAnyBlister = !!(blisterReverse || blisterObverse);
+    const firstImage = hasAnyBlister
       ? (firstImageSide === "reverse" ? (blisterReverse ?? blisterObverse ?? "") : (blisterObverse ?? blisterReverse ?? ""))
       : (firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? ""));
     const imageUrlsOut = [];
@@ -598,7 +638,7 @@ async function run() {
       imageUrlsOut.push(url);
       imageUrlRoles.push(role);
     };
-    if (hasBlisterPair) {
+    if (hasAnyBlister) {
       if (firstImageSide === "reverse") {
         pushIfNew(blisterReverse, "blister_reverse");
         pushIfNew(blisterObverse, "blister_obverse");
@@ -613,14 +653,12 @@ async function run() {
       if (obverse) pushIfNew(obverse, "obverse");
       if (reverse) pushIfNew(reverse, "reverse");
     }
-    if (!hasBlisterPair) {
-      if (blisterReverse) pushIfNew(blisterReverse, "blister_reverse");
-      if (blisterObverse) pushIfNew(blisterObverse, "blister_obverse");
+    if (!hasAnyBlister) {
+      if (normalizeAssetUrl(imagePackaging?.trim())) pushIfNew(normalizeAssetUrl(imagePackaging.trim()), "packaging");
+      if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
+      if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
     }
-    if (normalizeAssetUrl(imagePackaging?.trim())) pushIfNew(normalizeAssetUrl(imagePackaging.trim()), "packaging");
-    if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
-    if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
-    if (imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
+    if (!hasAnyBlister && imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
       const filtered = (isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
         .map((u) => normalizeAssetUrl(u))
         .filter(Boolean);
@@ -644,6 +682,7 @@ async function run() {
 
     const { code: metalCode, color: metalColor } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
+    const normalizedWeightOz = normalizeWeightOz(r.weight_oz);
     const coin = {
       id: String(r.id),
       title: cleanTitle(r.title),
@@ -664,8 +703,8 @@ async function run() {
       mintage: r.mintage ?? undefined,
       mintageDisplay: r.mintage_display ?? undefined,
       weightG: formatWeightG(r.weight_g) ?? (r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined),
-      weightOz: r.weight_oz != null && r.weight_oz !== "" ? String(r.weight_oz).trim() : undefined,
-      weightOzDisplay: getWeightOzDisplay(r.weight_g, r.weight_oz) ?? undefined,
+      weightOz: normalizedWeightOz ?? undefined,
+      weightOzDisplay: normalizedWeightOz ?? getWeightOzDisplay(r.weight_g, r.weight_oz) ?? undefined,
       weightLabel: getWeightLabel(r.weight_g, r.weight_oz) ?? undefined,
       purity: r.metal_fineness ?? undefined,
       quality: r.quality ?? undefined,
@@ -690,14 +729,17 @@ async function run() {
       sameSeries = sameRows.filter(hasImage).slice(0, 6).map((s) => {
         const rev = reverseUrl(s.image_reverse);
         const obv = obverseUrl(s.image_obverse);
-        const si = firstImageSide === "reverse" ? (rev ?? obv) : (obv ?? rev);
+        const sBlisterRev = normalizeAssetUrl(s.image_blister_reverse ? String(s.image_blister_reverse).trim() : null);
+        const sBlisterObv = normalizeAssetUrl(s.image_blister_obverse ? String(s.image_blister_obverse).trim() : null);
+        const sHasAnyBlister = !!(sBlisterRev || sBlisterObv);
+        const si = sHasAnyBlister
+          ? (firstImageSide === "reverse" ? (sBlisterRev ?? sBlisterObv) : (sBlisterObv ?? sBlisterRev))
+          : (firstImageSide === "reverse" ? (rev ?? obv) : (obv ?? rev));
         const si2 = si ?? firstImageUrl(s.image_urls, null, s.image_obverse) ?? "";
         const { code: metalCode, color: metalColor } = getMetalCodeAndColor(s.metal);
         const metalCodes = getMetalCodes(s.metal);
         const metalName = metalOnly(s.metal);
         const weightG = formatWeightG(s.weight_g) ?? (s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined);
-        const sBlisterRev = normalizeAssetUrl(s.image_blister_reverse ? String(s.image_blister_reverse).trim() : null);
-        const sBlisterObv = normalizeAssetUrl(s.image_blister_obverse ? String(s.image_blister_obverse).trim() : null);
         const sIsThreeCoin = (s.title || "").includes("Three Coin Set") || (s.title || "").includes("3 Coin Set");
         const sDropWrong = (u) => u && !sIsThreeCoin && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
         const sObv = normalizeAssetUrl(sDropWrong(obverseUrl(s.image_obverse)));

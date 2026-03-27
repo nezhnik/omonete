@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/phil-lewis-spirit-animals-1oz-pure-silver-electric-fox-coin",
+  "title": "Phil Lewis Spirit Animals - 1oz Pure Silver Electric Fox Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFC00907",
+    "Size (mm).": "45 x 36",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/fox-obv_0.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/fox-rev_4.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/fox-rev_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fox-obv_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fox-packaging-front-open_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/fox-rev-p_0.png"
+  ],
+  "parsedAt": "2026-03-27T16:15:57.967Z"
+}

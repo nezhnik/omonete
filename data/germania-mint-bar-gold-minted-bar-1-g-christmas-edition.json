@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g-christmas-edition",
+  "title": "Gold Minted Bar 1 g Christmas Edition",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2025",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "2500",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-a-1g.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-r-1g.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-a-1g.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-r-1g.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_14_11.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_19_12.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_22_08.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:23.613Z"
+}

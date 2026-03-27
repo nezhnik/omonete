@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box",
+  "title": "1oz Silver Coin - Fender®  Stratocaster® 70th Anniversary  Mystery Box",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.5mm",
+    "SKU": "ZAGFP00432",
+    "Size (mm).": "29.5 x 86.5",
+    "Year": "2024",
+    "Mintage": "5,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_obverse_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-sunburst_front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-sunburst_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_obverse_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_closed-packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_sunburst_open-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_closed-packaging-back.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-amethyst_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-antigua_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-comet-burst_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-nebula-noir_front.png"
+  ],
+  "parsedAt": "2026-03-27T16:00:36.737Z"
+}

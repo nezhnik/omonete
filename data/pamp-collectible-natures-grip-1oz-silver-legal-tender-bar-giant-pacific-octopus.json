@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/natures-grip-1oz-silver-legal-tender-bar-giant-pacific-octopus",
+  "title": "Nature’s Grip 1oz Silver Legal Tender Bar - Giant Pacific Octopus",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.65mm",
+    "SKU": "ZAGFP00440",
+    "Size (mm).": "27 x 47",
+    "Year": "2025",
+    "Mintage": "3,500"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-02/octopus_perspective_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-02/octopus_perspective_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-02/octopus_certi_back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-02/octopus_certi_front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-02/octopus_certi_front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-02/octopus_certi_back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-02/octopus_perspective_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-02/octopus_perspective_obv.png"
+  ],
+  "parsedAt": "2026-03-27T16:12:17.292Z"
+}

@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/cherry-coke-40th-anniversary-can-1oz-silver-coin",
+  "title": "Cherry Coke 40th Anniversary Can 1oz Silver Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.5mm",
+    "SKU": "ZAGFP00445",
+    "Size (mm).": "26.6 x 49",
+    "Year": "2025",
+    "Mintage": "4,500"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-obv-front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-rev-front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_box-perspective.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-rev-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-obv-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_can-open.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_can-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-rev-capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_box-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:45.549Z"
+}

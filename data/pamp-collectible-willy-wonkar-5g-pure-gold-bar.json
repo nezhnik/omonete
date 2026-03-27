@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/willy-wonkar-5g-pure-gold-bar",
+  "title": "Willy Wonka® - 5g Pure Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00407",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2023",
+    "Mintage": "3,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-11/ingot_willy-wonka_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-11/ingot_willy-wonka_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-11/certipamp_willy-wonka_obv.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-11/certipamp_willy-wonka_rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2023-11/certipamp_willy-wonka_rev.png",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-11/certipamp_willy-wonka_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-11/certipamp_willy-wonka_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-11/ingot_willy-wonka_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-11/ingot_willy-wonka_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-11/envelope_willy-wonka_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-11/envelope_willy-wonka_back.png"
+  ],
+  "parsedAt": "2026-03-27T16:16:32.736Z"
+}

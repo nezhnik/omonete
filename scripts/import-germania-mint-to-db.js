@@ -1,10 +1,11 @@
 /**
- * Импорт монет Germania Mint из data/germania-mint-*.json в таблицу coins.
+ * Импорт продуктов Germania Mint (coins + bars) из data/germania-mint-*.json в таблицу coins.
  * Ключ обновления: source_url (канонический URL карточки товара).
  *
  * Запуск:
  *   node scripts/import-germania-mint-to-db.js
  *   node scripts/import-germania-mint-to-db.js data/germania-mint-foo.json
+ *   node scripts/import-germania-mint-to-db.js data/germania-mint-bar-foo.json
  */
 require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
@@ -113,6 +114,17 @@ function parseNumberLike(raw) {
   return Number.isFinite(n) ? n : null;
 }
 
+function parseFractionLike(raw) {
+  if (raw == null) return null;
+  const s = String(raw).replace(",", ".").trim();
+  const m = s.match(/(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)/);
+  if (!m) return null;
+  const a = Number(m[1]);
+  const b = Number(m[2]);
+  if (!Number.isFinite(a) || !Number.isFinite(b) || b === 0) return null;
+  return a / b;
+}
+
 function roundTo(value, digits) {
   const p = 10 ** digits;
   return Math.round(value * p) / p;
@@ -128,7 +140,7 @@ function deriveWeight(weightRaw, titleRaw) {
   if (!source) return { weightG: null, weightOz: null };
 
   const lower = source.toLowerCase();
-  const n = parseNumberLike(source);
+  const n = parseFractionLike(source) ?? parseNumberLike(source);
   if (!Number.isFinite(n) || n <= 0) return { weightG: null, weightOz: null };
 
   if (/\boz\b|ounce|ounces|унц/i.test(lower)) {
@@ -218,7 +230,13 @@ async function main() {
   } else {
     files = fs
       .readdirSync(DATA_DIR)
-      .filter((f) => f.startsWith("germania-mint-") && f.endsWith(".json") && !f.includes("listing-products"))
+      .filter(
+        (f) =>
+          f.startsWith("germania-mint-") &&
+          f.endsWith(".json") &&
+          !f.includes("listing-products") &&
+          !f.includes("bars-listing-products")
+      )
       .map((f) => path.join(DATA_DIR, f))
       .sort();
   }

@@ -1,0 +1,26 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/runes/raido-1-oz-ag-999-9-cast-rune",
+  "title": "Raido Packaging",
+  "specs": {
+    "Series": "Runes",
+    "Year": "2024",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Dimensions": "26,4 x 21,0 x 7,2 mm",
+    "Mintage": "2500 pcs",
+    "Finishing": "Antique Finish, UV Effect, Numbering",
+    "Package": "cotton pouch, paper box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_a_uv.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_r.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_a_uv.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_r.png",
+    "https://germaniamint.com/wp-content/uploads/2024/01/raido-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2024/02/green-runes-1-1092x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2024/01/raido-1.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:09:36.099Z"
+}

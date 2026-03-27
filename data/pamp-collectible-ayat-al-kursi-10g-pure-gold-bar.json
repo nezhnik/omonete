@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/ayat-al-kursi-10g-pure-gold-bar",
+  "title": "Ayat Al Kursi  10g Pure Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "10 g",
+    "Thickness": "1.25",
+    "SKU": "ZAUFP00411",
+    "Size (mm).": "15.8 x 26.5",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_ingot-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_ingot-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_ingot-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_ingot-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_sleeve-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:05:54.239Z"
+}

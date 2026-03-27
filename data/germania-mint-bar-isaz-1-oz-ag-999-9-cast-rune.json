@@ -1,0 +1,27 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/runes/isaz-1-oz-ag-999-9-cast-rune",
+  "title": "Isaz Packaging",
+  "specs": {
+    "Series": "Runes",
+    "Year": "2025",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Dimensions": "21.54 x 30.55 x 7.55 mm",
+    "Mintage": "2500 pcs",
+    "Finishing": "Antique Finish, UV Effect, Numbering",
+    "Package": "cotton pouch, paper box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_uv_a_900-px.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_r_900-px.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_uv_a_900-px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_r_900-px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Isaz-1-960x1080.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Isaz-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_a_900-px.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Isaz-4-960x1080.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:09:16.789Z"
+}

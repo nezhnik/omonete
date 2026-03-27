@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/laughing-buddha-good-luck-5g-pure-gold-bar",
+  "title": "Laughing Buddha Good Luck  5g Pure Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00405",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2023",
+    "Mintage": "5,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-09/obv_buddha.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-09/rev_buddha.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-09/back-buddha-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-09/front-buddha-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2023-09/front-buddha-certipamp.png",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-09/front-buddha-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2023-09/back-buddha-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2023-09/rev_buddha.png",
+    "https://www.pamp.com/sites/pamp/files/2023-09/obv_buddha.png",
+    "https://www.pamp.com/sites/pamp/files/2023-09/front-buddha-sleeve.png",
+    "https://www.pamp.com/sites/pamp/files/2023-09/back-buddha-sleeve.png"
+  ],
+  "parsedAt": "2026-03-27T16:11:38.713Z"
+}

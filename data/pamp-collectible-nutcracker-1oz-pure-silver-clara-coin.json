@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/nutcracker-1oz-pure-silver-clara-coin",
+  "title": "Nutcracker - 1oz Pure Silver Clara Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.36mm",
+    "SKU": "ZAGFP00386",
+    "Size (mm).": "40 x 70",
+    "Year": "2022",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-10/obv_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-10/rev_front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-10/rev_front.png",
+    "https://www.pamp.com/sites/pamp/files/2022-10/obv_front.png",
+    "https://www.pamp.com/sites/pamp/files/2022-10/packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2022-10/packaging-half-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:12:43.597Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/gentle-giants-1oz-silver-giant-panda-coin",
+  "title": "Gentle Giants - 1oz Silver Giant Panda Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00371",
+    "Size (mm).": "37.5 x 39.5",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-12/front_giant-panda_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-12/front_matt_giant-panda_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-12/front_matt_giant-panda_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-12/front_giant-panda_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2022-12/packaging_closed_front.png",
+    "https://www.pamp.com/sites/pamp/files/2022-12/packaging_semi-open_giant-panda.png"
+  ],
+  "parsedAt": "2026-03-27T16:08:49.203Z"
+}

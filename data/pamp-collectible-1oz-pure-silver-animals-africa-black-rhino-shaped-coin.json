@@ -1,0 +1,27 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-animals-africa-black-rhino-shaped-coin",
+  "title": "1oz Pure Silver Animals of Africa - Black Rhino Shaped Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFC00663",
+    "Size (mm).": "61.7 x 28.3",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-05/rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/obv.png",
+    "https://www.pamp.com/sites/pamp/files/2022-05/packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T15:59:11.597Z"
+}

@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/2x1oz-silver-2-coin-set-phoenix-v-dragon",
+  "title": "2x1oz Silver 2-Coin Set Phoenix V Dragon",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.76mm",
+    "SKU": "ZAGFP00397",
+    "Size (mm).": "28.4 x 61.3",
+    "Year": "2023",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-packaging-open.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/phoenix-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/dragon-rev.png"
+  ],
+  "parsedAt": "2026-03-27T16:02:12.304Z"
+}

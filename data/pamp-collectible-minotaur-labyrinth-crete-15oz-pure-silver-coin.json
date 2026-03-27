@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/minotaur-labyrinth-crete-15oz-pure-silver-coin",
+  "title": "Minotaur: The Labyrinth of Crete 1.5oz Pure Silver Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1,5 g",
+    "Thickness": "3.7 mm",
+    "SKU": "ZAGFC00882",
+    "Size (mm).": "40 x 38.65",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_rev-p.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_packaging-close.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_packaging-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:12:10.260Z"
+}

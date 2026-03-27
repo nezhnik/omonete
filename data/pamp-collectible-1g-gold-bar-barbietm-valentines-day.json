@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1g-gold-bar-barbietm-valentines-day",
+  "title": "1g Gold Bar Barbie™ Valentine’s Day",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "0.40mm",
+    "SKU": "ZAUFP00455",
+    "Size (mm).": "8.9 x 14.7",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-02/obv_prosp.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-02/rev_persp.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-02/obv_certi_0.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-02/rev_certi_0.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2026-02/rev_certi_0.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/obv_certi_0.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/rev_persp.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/obv_prosp.png"
+  ],
+  "parsedAt": "2026-03-27T15:58:42.746Z"
+}

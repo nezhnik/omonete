@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/copper-cast-bars/copper-cast-bar-1000-g",
+  "title": "Copper Cast Bar 1000 g",
+  "specs": {
+    "Series": "Copper Cast Bars",
+    "Year": "2022",
+    "Weight": "1000 g",
+    "Purity": "999.9 Cu",
+    "Dimensions": "112 x 52 x 17 mm",
+    "Mintage": "Unlimited",
+    "Package": "Numbering, hologram"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_1000g_A-kopia.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_1000g_B-kopia.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_1000g_A-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_1000g_B-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_33_01.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_23_17.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_45_17.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:05:49.050Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/ufo-1oz-pure-silver-shaped-coin",
+  "title": "U.F.O. 1oz Pure Silver Shaped Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.5 mm",
+    "SKU": "ZAGFC00639",
+    "Size (mm).": "80 x 24.6",
+    "Year": "2022",
+    "Mintage": "3,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_3.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_2.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_2.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_3.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_1.png"
+  ],
+  "parsedAt": "2026-03-27T16:16:19.425Z"
+}

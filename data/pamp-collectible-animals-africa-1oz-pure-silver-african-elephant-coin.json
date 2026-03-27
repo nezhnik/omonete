@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/animals-africa-1oz-pure-silver-african-elephant-coin",
+  "title": "Animals of Africa - 1oz Pure Silver African Elephant Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFP00355",
+    "Size (mm).": "42 x 38.7",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv_20.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_14.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev_14.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv_20.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/aa_elephant_packaging-open_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_15.png"
+  ],
+  "parsedAt": "2026-03-27T16:04:59.608Z"
+}

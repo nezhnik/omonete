@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/america-free-5g-pure-bar-gold-statue-liberty",
+  "title": "America the Free 5g Pure Bar Gold - Statue of Liberty",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.90mm",
+    "SKU": "ZAUFP00412",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2024",
+    "Mintage": "4,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_obv_perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_rev_perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_obv-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_rev-certipamp.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_rev-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_obv-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_rev_perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2024-08/liberty-5g-au_obv_perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:04:44.769Z"
+}

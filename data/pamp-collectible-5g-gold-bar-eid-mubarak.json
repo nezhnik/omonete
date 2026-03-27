@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/5g-gold-bar-eid-mubarak",
+  "title": "5g Gold Bar Eid Mubarak",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00461",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2026"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_obv-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_rev-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_rev-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_obv-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_sleeve-front.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_5g-au_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:02:40.417Z"
+}

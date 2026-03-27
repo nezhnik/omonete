@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/coca-colar-holiday-polar-bears-5g-gold-bar",
+  "title": "Coca-Cola® Holiday Polar Bears 5g Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": ".80mm",
+    "SKU": "ZAUFP00435",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2025",
+    "Mintage": "10,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-10/coca-cola_polar-bears_5g-au_sleeve-front.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:59.590Z"
+}

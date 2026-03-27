@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/phil-lewis-spirit-animals-1oz-pure-silver-bison-coin",
+  "title": "Phil Lewis Spirit Animals - 1oz Pure Silver Bison Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFP00359",
+    "Size (mm).": "45.8 x 36.7",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-open.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv-p.png"
+  ],
+  "parsedAt": "2026-03-27T16:15:50.257Z"
+}

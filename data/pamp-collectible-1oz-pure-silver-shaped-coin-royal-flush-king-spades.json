@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-shaped-coin-royal-flush-king-spades",
+  "title": "1oz Pure Silver Shaped Coin - Royal Flush King of Spades",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "0.93mm",
+    "SKU": "ZAGFP00430",
+    "Size (mm).": "40.5 x 47.7",
+    "Year": "2025",
+    "Mintage": "2,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_obv-front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_rev-front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_rev-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_obv-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_front-pack.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_back-pack.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_open-pack_perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_front-pack-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_rev-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_obv-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:00:01.934Z"
+}

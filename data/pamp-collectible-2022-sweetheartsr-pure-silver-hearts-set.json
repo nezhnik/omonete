@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/2022-sweetheartsr-pure-silver-hearts-set",
+  "title": "2022 Sweethearts® Pure Silver Hearts Set",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "10 g",
+    "Thickness": "6.20 mm",
+    "SKU": "ZAGFP00372",
+    "Size (mm).": "14.4 x 15",
+    "Year": "2022"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart-s-mks-sweethrt30g22-9.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_s-mks-sweethrt30g22_2.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_s-mks-sweethrt30g22_2.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart-s-mks-sweethrt30g22-9.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart-s-mks-sweethrt30g22-8.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart-s-mks-sweethrt30g22-3.png"
+  ],
+  "parsedAt": "2026-03-27T16:01:33.519Z"
+}

@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g-4th-of-july",
+  "title": "Gold Minted Bar 1 g 4th of July",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2025",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "Unlimited",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-1_a_900px-kopia.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-2_a_900px-kopia.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-1_a_900px-kopia.png",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-2_a_900px-kopia.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_09_22.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_20_00.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_28_17.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:11.887Z"
+}

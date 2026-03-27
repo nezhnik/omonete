@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/diwali-2023-lakshmi-5g-pure-gold-bar",
+  "title": "Diwali 2023 - Lakshmi 5g Pure Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00403",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2023",
+    "Mintage": "5,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_obverse.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_reverse.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_reverse.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_obverse.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_envelope-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-08/diwali_2023_envelope-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:07:06.606Z"
+}

@@ -23,5 +23,11 @@ function normalizeMintageDisplayCell(raw: string): string {
   if (/^неограничен$/iu.test(t)) return "Неограничен";
   if (/неограниченный\s+тираж/iu.test(t)) return "Неограничен";
   if (/неограничен/i.test(t) && !/\d/.test(t)) return "Неограничен";
+  // Для каталога/деталей показываем тираж только цифрами с разделением тысяч.
+  const digits = t.replace(/[^\d]/g, "");
+  if (digits) {
+    const n = Number(digits);
+    if (Number.isFinite(n) && n > 0) return formatNumber(n);
+  }
   return t;
 }

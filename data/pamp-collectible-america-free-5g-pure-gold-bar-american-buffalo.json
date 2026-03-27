@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/america-free-5g-pure-gold-bar-american-buffalo",
+  "title": "America the Free 5g Pure Gold Bar - American Buffalo",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": ".90mm",
+    "SKU": "ZAUFP00417",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2025",
+    "Mintage": "4,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_perspective-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_perspective-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-obv.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-rev.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-rev.png",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_perspective-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_perspective-obv.png"
+  ],
+  "parsedAt": "2026-03-27T16:04:51.941Z"
+}

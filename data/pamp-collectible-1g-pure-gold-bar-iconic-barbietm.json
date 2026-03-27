@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1g-pure-gold-bar-iconic-barbietm",
+  "title": "1g Pure Gold Bar - Iconic Barbie™",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "0.40mm",
+    "SKU": "ZAUFP00427",
+    "Size (mm).": "8.9 x 14.7",
+    "Year": "2025",
+    "Mintage": "5,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_obverse-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_reverse-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_reverse-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_obverse-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_sleeve-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T15:59:04.476Z"
+}

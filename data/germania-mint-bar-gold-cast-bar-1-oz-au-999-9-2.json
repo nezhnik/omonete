@@ -1,0 +1,27 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-cast-bars/gold-cast-bar-1-oz-au-999-9-2",
+  "title": "Gold Cast bar Germania Mint Safepack",
+  "specs": {
+    "Series": "Gold Cast Bars",
+    "Year": "2023",
+    "Mint mark": "Germania Mint",
+    "Weight": "1 oz",
+    "Purity": "999.9 Au",
+    "Dimensions": "13,44 × 25,03 × 5,85 mm",
+    "Mintage": "Unlimited",
+    "Finishing": "Numbering, hologram",
+    "Availability": "Available"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2025/10/gods-freyr-2oz-cast-bar-1200_a-1.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_r-1.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2025/10/gods-freyr-2oz-cast-bar-1200_a-1.png",
+    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_r-1.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/10/cast-bar-01.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/10/safepacks-02.webp",
+    "https://germaniamint.com/wp-content/uploads/2025/10/cast-bar.webp"
+  ],
+  "parsedAt": "2026-03-27T11:06:47.797Z"
+}

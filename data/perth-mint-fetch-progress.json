@@ -2556,7 +2556,7 @@
       "catalog_number": "AU-PERTH-2020-25X41AAA",
       "title": "Australian Koala 2020 5oz Silver Proof High Relief Coin",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-australian-koala-2020-5oz-silver-proof-high-relief-coin.json",
-      "completedAt": "2026-03-08T22:23:27.208Z",
+      "completedAt": "2026-03-27T08:12:12.357Z",
       "status": "ok"
     },
     {
@@ -5412,7 +5412,7 @@
       "catalog_number": "AU-PERTH-2023-25U68ZAA",
       "title": "Chinese Myths and Legends Red Dragon and Koi 2023 1oz Silver Coloured Coin in Card",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-chinese-myths-and-legends-red-dragon-and-koi-2023-1oz-silver-coloured-coin-in-card.json",
-      "completedAt": "2026-03-09T06:25:06.810Z",
+      "completedAt": "2026-03-27T08:25:26.838Z",
       "status": "ok"
     },
     {
@@ -5476,8 +5476,8 @@
       "catalog_number": "AU-PERTH-2024-25U68ZAA",
       "title": "Chinese Myths and Legends Four Guardians Lan 2024 1oz Silver Coloured Coin in Card",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-chinese-myths-legends-four-guardians-lan-2024-1oz-silver-coloured-coin-in-card.json",
-      "completedAt": "2026-03-09T06:25:42.070Z",
-      "status": "unchanged"
+      "completedAt": "2026-03-27T08:11:34.732Z",
+      "status": "ok"
     },
     {
       "url": "https://www.perthmint.com/shop/collector-coins/coins/chinese-myths-legends-phoenix-2023-1oz-silver-antiqued-coin-in-card",
@@ -5828,7 +5828,7 @@
       "catalog_number": "AU-PERTH-2020-25R77AAA",
       "title": "End of WWII 75th Anniversary 2020 1/10 oz Silver Coin in Card",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-end-of-wwii-75th-anniversary-2020-1-10-oz-silver-coin-in-card.json",
-      "completedAt": "2026-03-09T06:29:35.355Z",
+      "completedAt": "2026-03-27T08:26:18.505Z",
       "status": "ok"
     },
     {
@@ -6644,7 +6644,7 @@
       "catalog_number": "AU-PERTH-2020-25117EAAA",
       "title": "Perth Money Expo ANDA Special 30th Anniversary Australian Kookaburra 2020 1oz Silver Coin with Kangaroo Paw Privy",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-perth-money-expo-anda-special-30th-anniversary-australian-kookaburra-2020-1oz-silver-coin-with-kangaroo-paw-privy.json",
-      "completedAt": "2026-03-09T06:38:34.787Z",
+      "completedAt": "2026-03-27T08:26:10.341Z",
       "status": "ok"
     },
     {
@@ -6684,7 +6684,7 @@
       "catalog_number": "AU-PERTH-2022-25U68ZAA",
       "title": "Phoenix 2022 1oz Silver Coloured Coin in Card",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-phoenix-2022-1oz-silver-coloured-coin-in-card.json",
-      "completedAt": "2026-03-09T06:38:58.388Z",
+      "completedAt": "2026-03-27T08:25:50.963Z",
       "status": "ok"
     },
     {
@@ -6692,7 +6692,7 @@
       "catalog_number": "AU-PERTH-2022-25U68ZAA",
       "title": "Phoenix 2022 1oz Silver Vivid Coloured Coin in Card",
       "jsonPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/data/perth-mint-phoenix-2022-1oz-silver-vivid-coloured-coin-in-card.json",
-      "completedAt": "2026-03-09T06:39:03.669Z",
+      "completedAt": "2026-03-27T08:26:00.548Z",
       "status": "ok"
     },
     {
@@ -9668,5 +9668,5 @@
       "at": "2026-03-22T15:26:27.675Z"
     }
   ],
-  "lastUpdated": "2026-03-22T15:26:27.676Z"
+  "lastUpdated": "2026-03-27T08:26:18.506Z"
 }

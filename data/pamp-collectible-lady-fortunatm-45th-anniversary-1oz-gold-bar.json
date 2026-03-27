@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/lady-fortunatm-45th-anniversary-1oz-gold-bar",
+  "title": "Lady Fortuna™ 45th Anniversary 1oz Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 oz",
+    "Thickness": "1.66mm",
+    "SKU": "ZAUFP00408",
+    "Size (mm).": "21 x 41",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au-front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au-front-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au-front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-au-front-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_envelope-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_envelope-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:11:08.207Z"
+}

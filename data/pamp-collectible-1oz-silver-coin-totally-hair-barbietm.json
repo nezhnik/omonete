@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-coin-totally-hair-barbietm",
+  "title": "1oz Silver Coin - Totally Hair Barbie™",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00427",
+    "Size (mm).": "23 x 65.2",
+    "Year": "2024",
+    "Mintage": "3,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_obverse.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_reverse.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_reverse.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_obverse.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_front-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_capsulepedistal.png",
+    "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_packaging-parts.png"
+  ],
+  "parsedAt": "2026-03-27T16:01:19.222Z"
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/animals-africa-1oz-pure-silver-nile-crocodile-coin",
+  "title": "Animals of Africa - 1oz Pure Silver Nile Crocodile Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.9 mm",
+    "SKU": "ZAGFC00880",
+    "Size (mm).": "75 x 21.1",
+    "Year": "2022",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_1.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_3.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_3.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_2.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_4.png",
+    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00880_c_15_1.png"
+  ],
+  "parsedAt": "2026-03-27T16:05:14.272Z"
+}

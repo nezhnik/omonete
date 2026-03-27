@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/hot-wheelstm-holiday-mystery-box-night-shifter-1oz-silver-coin",
+  "title": "Hot Wheels™ Holiday Mystery Box - Night Shifter 1oz silver coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00429",
+    "Size (mm).": "57 x 29",
+    "Year": "2024",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_pack-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_pack-open.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_pins1.png"
+  ],
+  "parsedAt": "2026-03-27T16:10:06.312Z"
+}

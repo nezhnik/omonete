@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/lady-fortunatm-45th-anniversary-1oz-silver-bar",
+  "title": "Lady Fortuna™ 45th Anniversary 1oz Silver Bar",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45mm",
+    "SKU": "ZAGFP00413",
+    "Size (mm).": "27 x 47",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag-front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag-front-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag-front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag-front-obv.png"
+  ],
+  "parsedAt": "2026-03-27T16:11:19.411Z"
+}

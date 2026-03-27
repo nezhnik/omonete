@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-silver-coin-barbie-and-rockerstm",
+  "title": "1oz Silver Coin - Barbie And The Rockers™",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.88",
+    "SKU": "ZAGFP00418",
+    "Size (mm).": "23.6 x 70",
+    "Year": "2024",
+    "Mintage": "3,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_capsulebase.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_packaging_front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_packaging_exploded.png",
+    "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_packaging_perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:00:29.817Z"
+}

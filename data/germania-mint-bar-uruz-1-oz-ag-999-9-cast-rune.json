@@ -1,0 +1,27 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/runes/uruz-1-oz-ag-999-9-cast-rune",
+  "title": "Uruz Packaging",
+  "specs": {
+    "Series": "Runes",
+    "Year": "2023",
+    "Weight": "1 oz",
+    "Purity": "999.9 Ag",
+    "Dimensions": "23,2 x 28 x 7,3 mm",
+    "Mintage": "2500 pcs",
+    "Finishing": "Antique Finish, UV Effect, Numbering",
+    "Package": "cotton pouch, paper box"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2023/09/germania-mint-uruz-1-oz-cast-rune_900px_a_uv.png",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2023/09/germania-mint-uruz-1-oz-cast-rune_900px_r.png"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2023/09/germania-mint-uruz-1-oz-cast-rune_900px_a_uv.png",
+    "https://germaniamint.com/wp-content/uploads/2023/09/germania-mint-uruz-1-oz-cast-rune_900px_r.png",
+    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-3.jpg",
+    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-1.jpg",
+    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-5.jpg",
+    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-2.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:09:43.950Z"
+}

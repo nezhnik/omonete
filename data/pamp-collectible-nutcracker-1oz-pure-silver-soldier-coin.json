@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/nutcracker-1oz-pure-silver-soldier-coin",
+  "title": "Nutcracker - 1oz Pure Silver Soldier Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFP00366",
+    "Size (mm).": "24 x 70",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv_16.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_10.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://www.pamp.com/sites/pamp/files/2022-02/nutcracker_box_0.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev_10.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv_16.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/nutcracker_box_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/nutcracker_tree.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_10.png"
+  ],
+  "parsedAt": "2026-03-27T16:12:51.253Z"
+}

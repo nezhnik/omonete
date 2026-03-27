@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/animals-africa-1oz-pure-silver-african-lion-coin",
+  "title": "Animals of Africa - 1oz Pure Silver African Lion Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFC00902",
+    "Size (mm).": "61.2 x 34.9",
+    "Year": "2022",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv_21.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_15.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://www.pamp.com/sites/pamp/files/2022-02/box-open.png",
+    "certificate": "https://www.pamp.com/sites/pamp/files/2022-02/box-open.png"
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev_15.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv_21.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/box-open.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_17.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev-capsule.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/obv-capsule.png"
+  ],
+  "parsedAt": "2026-03-27T16:05:07.169Z"
+}

@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-america-free-liberty-bell",
+  "title": "5g Pure Gold Bar - America the Free; Liberty Bell",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00423",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_obverse-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_reverse-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_obverse-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_reverse-certipamp.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_reverse-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_obverse-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_reverse-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_obverse-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:02:55.681Z"
+}

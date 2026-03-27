@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/germania-mint-1-100-oz-au-proof-999-9-minted-bar",
+  "title": "Germania Mint 1/100 oz Au Proof 999.9 Minted Bar",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2026",
+    "Weight": "1/100 oz",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.63 x 15.14 x 0.18 mm",
+    "Mintage": "Unlimited",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/Germania-Mint-1100-oz-Au-Proof-Minted-Bar_a_250px_pack-1.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/Germania-Mint-1100-oz-Au-Proof-Minted-Bar_a_250px_pack-2.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/Germania-Mint-1100-oz-Au-Proof-Minted-Bar_a_250px_pack-1.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Germania-Mint-1100-oz-Au-Proof-Minted-Bar_a_250px_pack-2.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_13_12.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_18_09.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_09_08.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:06:55.894Z"
+}

@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/fenderr-75th-anniversary-1oz-silver-guitar-pick-coin",
+  "title": "Fender® 75th Anniversary 1oz Silver Guitar Pick Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2 mm",
+    "SKU": "ZAGFC00866",
+    "Size (mm).": "42.3 x 50",
+    "Year": "2022",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_2.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_5.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_5.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_2.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_4_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_3.png",
+    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00866_a_13.png",
+    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00866_a_14.png"
+  ],
+  "parsedAt": "2026-03-27T16:07:58.205Z"
+}

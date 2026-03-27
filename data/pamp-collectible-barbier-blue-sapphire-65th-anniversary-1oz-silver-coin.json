@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/barbier-blue-sapphire-65th-anniversary-1oz-silver-coin",
+  "title": "Barbie® Blue Sapphire 65th  Anniversary - 1oz Silver coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.30mm",
+    "SKU": "ZAGFP00438",
+    "Size (mm).": "34.6 x 60",
+    "Year": "2024",
+    "Mintage": "3,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_front-rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_front-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_packaging-booklet3.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:01.597Z"
+}

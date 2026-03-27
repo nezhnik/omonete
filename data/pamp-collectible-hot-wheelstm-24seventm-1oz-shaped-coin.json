@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/hot-wheelstm-24seventm-1oz-shaped-coin",
+  "title": "Hot Wheels™ 24/Seven™ - 1oz Shaped Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.28mm",
+    "SKU": "ZAGFP00441",
+    "Size (mm).": "58 x 33.9",
+    "Year": "2025",
+    "Mintage": "2,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_rev_perspective.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_rev_perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_pack_closed_front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_pack_closed_back.png"
+  ],
+  "parsedAt": "2026-03-27T16:09:59.258Z"
+}

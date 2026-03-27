@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/ocean-predators-2oz-pure-silver-polar-bear-coin",
+  "title": "Ocean Predators - 2oz Pure Silver Polar Bear Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "2 g",
+    "Thickness": "3.2 mm",
+    "SKU": "ZAGFC00876",
+    "Size (mm).": "48.5 x 46.7",
+    "Year": "2022",
+    "Denomination": "5 долларов (Соломоновы Острова)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_1.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_7.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_7.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_6.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_9.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_3.png"
+  ],
+  "parsedAt": "2026-03-27T16:13:23.596Z"
+}

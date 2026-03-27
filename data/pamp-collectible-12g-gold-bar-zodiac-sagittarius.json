@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/12g-gold-bar-zodiac-sagittarius",
+  "title": "1/2g Gold Bar Zodiac Sagittarius",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "0,5 g",
+    "Thickness": "0.27mm",
+    "SKU": "ZAUFP00451",
+    "Size (mm).": "8 x 12",
+    "Year": "2026",
+    "Mintage": "3,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_6.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_sagittarius.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_6.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_sagittarius-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_6.png",
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_sagittarius-certipamp.png",
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_6.png",
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_sagittarius.png",
+    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_6.png"
+  ],
+  "parsedAt": "2026-03-27T15:57:49.861Z"
+}

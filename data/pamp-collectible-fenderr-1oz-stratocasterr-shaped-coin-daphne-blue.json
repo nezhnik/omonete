@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/fenderr-1oz-stratocasterr-shaped-coin-daphne-blue",
+  "title": "Fender® 1oz Stratocaster® Shaped Coin in Daphne Blue",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00391",
+    "Size (mm).": "29.5 x 86.5",
+    "Year": "2023",
+    "Mintage": "6,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:07:35.152Z"
+}

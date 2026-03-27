@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/hot-wheelstm-1oz-silver-coin-twin-milltm",
+  "title": "Hot Wheels™ 1oz Silver  Coin - Twin Mill™",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.65mm",
+    "SKU": "ZAGFP00406",
+    "Size (mm).": "64.6 x 29.6",
+    "Year": "2023",
+    "Mintage": "3,000"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-12/hotwheels_packaging-closed-back_card-only.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-12/hotwheels_packaging-closed-front.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-12/hotwheels_packaging-closed-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-12/hotwheels_packaging-closed-back_card-only.png",
+    "https://www.pamp.com/sites/pamp/files/2023-12/hotwheels_rev_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-12/hotwheels_obv_front.png"
+  ],
+  "parsedAt": "2026-03-27T16:09:52.266Z"
+}

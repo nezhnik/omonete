@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g",
+  "title": "Gold Minted Bar Packaging",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2025",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "Unlimited",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-pack-1.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-pack-4.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-pack-1.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-pack-4.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-2.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-5.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:07.849Z"
+}

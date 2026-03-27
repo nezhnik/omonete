@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-buddha",
+  "title": "5g Pure Gold Bar - The Buddha",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00424",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_obv_perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_rev_perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_certipamp-front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_certipamp-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_certipamp-back.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_rev_perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_obv_perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_sleeve-front.png",
+    "https://www.pamp.com/sites/pamp/files/2025-04/buddha_5g-au_sleeve-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:03:05.259Z"
+}

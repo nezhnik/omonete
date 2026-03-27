@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/burton-morris-american-icons-1oz-silver-coin-pop",
+  "title": "Burton Morris American  Icons 1oz Silver Coin - Pop!",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50mm",
+    "SKU": "ZAGFP00389",
+    "Size (mm).": "34.3 x 48",
+    "Year": "2023",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-01/burton_morris_series_pop_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-01/burton_morris_series_pop_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_packaging_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_packaging_back.png"
+  ],
+  "parsedAt": "2026-03-27T16:06:16.475Z"
+}

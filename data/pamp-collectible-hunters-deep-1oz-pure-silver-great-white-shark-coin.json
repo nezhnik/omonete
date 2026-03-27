@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/hunters-deep-1oz-pure-silver-great-white-shark-coin",
+  "title": "Hunters of the Deep - 1oz Pure Silver Great White Shark Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.5mm",
+    "SKU": "ZAGFC00619",
+    "Size (mm).": "77.7 x 33.1",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_2_0.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_3_0.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_3_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_2_0.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_4.png"
+  ],
+  "parsedAt": "2026-03-27T16:10:13.205Z"
+}

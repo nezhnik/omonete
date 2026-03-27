@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/america-free-2oz-silver-coin-liberty-bell",
+  "title": "America the Free 2oz Silver Coin - Liberty Bell",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "2 g",
+    "Thickness": "4.15mm",
+    "SKU": "ZAGFP00393",
+    "Size (mm).": "40 x 50.1",
+    "Year": "2023",
+    "Mintage": "3,500"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_rev.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_obv.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_packaging-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_packaging-perspective.png"
+  ],
+  "parsedAt": "2026-03-27T16:04:28.156Z"
+}

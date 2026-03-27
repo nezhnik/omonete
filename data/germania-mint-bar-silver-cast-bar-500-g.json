@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/silver-cast-bars/silver-cast-bar-500-g",
+  "title": "Silver Cast Bar 500 g",
+  "specs": {
+    "Series": "Silver Cast Bars",
+    "Year": "2021",
+    "Weight": "500 g",
+    "Purity": "999.9 Ag",
+    "Dimensions": "85,6 x 43,8 x 14 mm",
+    "Mintage": "Unlimited",
+    "Package": "Numbering, hologram"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-front.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-back.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-front.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-back.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_11_20.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_23_14.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_31_22.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:10:25.966Z"
+}

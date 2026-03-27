@@ -1,0 +1,25 @@
+{
+  "source_url": "https://germaniamint.com/all-bars/gold-minted-bars/gold-minted-bar-1-g-new-born-girl",
+  "title": "Gold Minted Bar 1 g New Born – Girl",
+  "specs": {
+    "Series": "Gold Minted Bars",
+    "Year": "2025",
+    "Weight": "1 g",
+    "Purity": "999.9 Au",
+    "Dimensions": "8.71 x 15.00 x 0.45 mm",
+    "Mintage": "Unlimited",
+    "Package": "Safepack"
+  },
+  "classified": {
+    "obverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-new-born-girl_a.webp",
+    "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-new-born-girl_r.webp"
+  },
+  "imageUrls": [
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-new-born-girl_a.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-new-born-girl_r.webp",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_09_20.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_12_23.jpg",
+    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_23_24.jpg"
+  ],
+  "parsedAt": "2026-03-27T11:07:47.107Z"
+}

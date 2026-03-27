@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/hunters-sky-1oz-pure-silver-bald-eagle-coin",
+  "title": "Hunters of the Sky - 1oz Pure Silver Bald Eagle Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.5mm",
+    "SKU": "ZAGFC00635",
+    "Size (mm).": "79 x 38",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/0001.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_transp.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/rev_transp.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/0001.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/perspective_complete.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/layer_1_0.png"
+  ],
+  "parsedAt": "2026-03-27T16:10:34.017Z"
+}

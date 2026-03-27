@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/2023-sweetheartsr-pure-silver-hearts-set",
+  "title": "2023 Sweethearts® Pure Silver Hearts Set",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "10 g",
+    "Thickness": "6.20mm",
+    "SKU": "ZAGFP00390",
+    "Size (mm).": "15 x 14.4",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-01/sweethearts-candies_2023_packaging-closed.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-01/sweethearts-candies_2023_packaging-open.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-01/sweethearts-candies_2023_packaging-open.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/sweethearts-candies_2023_packaging-closed.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/sweethearts-candies_2023_capsule-front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/sweethearts-candies_2023_capsule-back.png"
+  ],
+  "parsedAt": "2026-03-27T16:01:40.760Z"
+}

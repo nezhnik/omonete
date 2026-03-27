@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1g-gold-bar-coca-colar-love",
+  "title": "1g Gold Bar Coca-Cola® Love",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "1 g",
+    "Thickness": "0.40mm",
+    "SKU": "ZAUFP00442",
+    "Size (mm).": "8.9 x 14.7",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_obv-perspective.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_rev-perspective.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_back_certi.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_front_certi.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_front_certi.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_back_certi.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_rev-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_obv-perspective.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_front_sleeve.png",
+    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_back_sleeve.png"
+  ],
+  "parsedAt": "2026-03-27T15:58:49.622Z"
+}

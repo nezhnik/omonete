@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/fenderr-jazzmastertm-guitar-1oz-pure-silver-coin",
+  "title": "Fender® Jazzmaster™ Guitar  1oz Pure Silver Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.68mm",
+    "SKU": "ZAGFP00425",
+    "Size (mm).": "28.6 x 84.4",
+    "Year": "2024",
+    "Mintage": "4,000",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-rev.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-rev.png",
+    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-obv.png",
+    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-packaging.png",
+    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_perspective-packaging-open.png"
+  ],
+  "parsedAt": "2026-03-27T16:08:27.953Z"
+}

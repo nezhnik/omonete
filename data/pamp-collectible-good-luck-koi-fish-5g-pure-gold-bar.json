@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/good-luck-koi-fish-5g-pure-gold-bar",
+  "title": "Good Luck - Koi Fish 5g Pure Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.80mm",
+    "SKU": "ZAUFP00415",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2024"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_obverse-perspective-5g-au.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_reverse-perspective-5g-au.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_back-certipamp-5g-au_0.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_front-certipamp-5g-au.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_front-certipamp-5g-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_back-certipamp-5g-au_0.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_sleeve-front-5g-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_sleeve-back-5g-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_reverse-perspective-5g-au.png",
+    "https://www.pamp.com/sites/pamp/files/2024-11/koi-fish_obverse-perspective-5g-au.png"
+  ],
+  "parsedAt": "2026-03-27T16:09:26.332Z"
+}

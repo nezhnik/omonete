@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art",
+  "title": "1oz Pure Silver Bar - Diwali Lakshmi & Rangoli art",
+  "specs": {
+    "Metal": "Silver 999.0",
+    "Weight": "1 g",
+    "Thickness": "2.45mm",
+    "SKU": "ZAGFP00443",
+    "Size (mm).": "27 x 47",
+    "Year": "2025"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_obv_perspective_diwali_2025.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_rev_perspective_diwali_2025.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_back_certipamp_diwali_2025.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_front_certipamp_diwali_2025.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_front_certipamp_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_back_certipamp_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_rev_perspective_diwali_2025.png",
+    "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_obv_perspective_diwali_2025.png"
+  ],
+  "parsedAt": "2026-03-27T15:59:28.014Z"
+}

@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/giants-galapagos-islands-1oz-pure-silver-galapagos-tortoise-coin",
+  "title": "Giants of the Galápagos Islands - 1oz Pure Silver Galápagos Tortoise Coin",
+  "specs": {
+    "Metal": "Silver 999.9",
+    "Weight": "1 g",
+    "Thickness": "2.50 mm",
+    "SKU": "ZAGFC00879",
+    "Size (mm).": "37.4 x 42.3",
+    "Year": "2022",
+    "Mintage": "2,500",
+    "Denomination": "2 доллара (Тувалу)"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_1.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_7.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_7.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_1.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_10.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_5.png",
+    "https://www.pamp.com/sites/pamp/files/2022-02/tortoise_s-mks-1galapatortoise_9.png"
+  ],
+  "parsedAt": "2026-03-27T16:08:56.310Z"
+}

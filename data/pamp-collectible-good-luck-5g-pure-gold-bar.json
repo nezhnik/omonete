@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.pamp.com/product/collectible/good-luck-5g-pure-gold-bar",
+  "title": "Good Luck 5g Pure Gold Bar",
+  "specs": {
+    "Metal": "Gold 999.9",
+    "Weight": "5 g",
+    "Thickness": "0.83mm",
+    "SKU": "ZAUFP00402",
+    "Size (mm).": "14 x 23.3",
+    "Year": "2023"
+  },
+  "classified": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_obv_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_rev_front.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_certipamp_back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_certipamp_front.png",
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_certipamp_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_certipamp_back.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_rev_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_obv_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_blister_front.png",
+    "https://www.pamp.com/sites/pamp/files/2023-01/good-luck-5gau_blister_back.png"
+  ],
+  "parsedAt": "2026-03-27T16:09:19.171Z"
+}
