@@ -7,6 +7,7 @@ require("dotenv").config({ path: ".env" });
 const crypto = require("crypto");
 const mysql = require("mysql2/promise");
 const fs = require("fs");
+const { coinNeedsMintageResearch } = require("./parsing-mintage-constants.js");
 const path = require("path");
 const { roundSpec, formatWeightG, stripCountryFromFaceValue } = require("./format-coin-characteristics.js");
 const { sanitizeGermaniaMintTitle } = require("./germania-mint-title-sanitize.js");
@@ -466,7 +467,13 @@ async function run() {
     const isPampCollectible = /^CH-PAMP-/i.test(String(r.catalog_number || "").trim());
     /** Золотые слитки Mennica (листинг gold-bars) — без лимитированного тиража в specs. */
     const isMennicaGoldBar = isMennicaGoldBarCatalogNumber(r.catalog_number);
-    return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible || isMennicaGoldBar;
+    return (
+      hasNumericMintage ||
+      isForeignUnlimited ||
+      isRoyalMintCatalog ||
+      isPampCollectible ||
+      isMennicaGoldBar
+    );
   });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();
@@ -539,6 +546,7 @@ async function run() {
     const weightLabel = getWeightLabel(r.weight_g, r.weight_oz);
     const weightG = parseWeightG(r.weight_g);
     const metalLabelStr = metalOnly(r.metal);
+    const mintageDisp = r.mintage_display != null && String(r.mintage_display).trim() ? String(r.mintage_display).trim() : undefined;
     return {
       id: String(r.id),
       title: cleanTitle(r.title),
@@ -546,6 +554,8 @@ async function run() {
       country: r.country ?? "Россия",
       year: year ?? 0,
       faceValue: (stripCountryFromFaceValue(r.face_value) || r.face_value) ?? undefined,
+      mintageDisplay: mintageDisp,
+      mintageNeedsResearch: coinNeedsMintageResearch(r),
       imageUrl,
       imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
       imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
@@ -575,6 +585,10 @@ async function run() {
     JSON.stringify({ coins: listCoins, total: listCoins.length })
   );
   console.log("✓ public/data/coins.json");
+  const mintageGap = listCoins.filter((c) => c.mintageNeedsResearch).length;
+  console.log(
+    `[тираж] экспорт каталога: без числового тиража / «Тираж не указан» — ${mintageGap} из ${listCoins.length}`
+  );
 
   fs.writeFileSync(
     path.join(DATA_DIR, "coin-ids.json"),

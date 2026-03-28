@@ -27,6 +27,7 @@ const fs = require("fs");
 const path = require("path");
 const { roundSpec, normalizeWeightG, formatWeightG } = require("./format-coin-characteristics.js");
 const { isRoyalMintTrialOfPyxUrl } = require("./royal-mint-listing-collect.js");
+const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
@@ -212,6 +213,7 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const mintageStats = [];
 
   const updateCols = cols.filter((k) => k !== "catalog_number");
   const setClause = updateCols.map((k) => `${k} = ?`).join(", ");
@@ -269,6 +271,11 @@ async function main() {
     const weightGNum = normalizeWeightG(c.weight_g) ?? c.weight_g;
     const weightGForDb = weightGNum != null ? formatWeightG(weightGNum) ?? String(weightGNum) : null;
 
+    let mintageVal = c.mintage != null ? c.mintage : null;
+    let mintageDisp = c.mintage_display != null ? String(c.mintage_display).trim() || null : null;
+    const countryRow = c.country && String(c.country).trim() !== "" ? String(c.country).trim() : null;
+    ({ mintage: mintageVal, mintageDisplay: mintageDisp } = finalizeMintageForDb(mintageVal, mintageDisp, countryRow));
+
     const values = [
       title || titleEn || "The Royal Mint",
       ...(hasTitleEn ? [titleEn || null] : []),
@@ -279,8 +286,8 @@ async function main() {
       c.mint_short || "Royal Mint",
       c.metal || "Серебро",
       c.metal_fineness != null ? String(c.metal_fineness).trim() : null,
-      c.mintage != null ? c.mintage : null,
-      c.mintage_display != null ? c.mintage_display : null,
+      mintageVal,
+      mintageDisp,
       weightGForDb,
       c.weight_oz != null ? c.weight_oz : null,
       releaseDateVal,
@@ -336,6 +343,7 @@ async function main() {
       const updateValues = [...values.slice(0, catalogIdx), ...values.slice(catalogIdx + 1), existing[0].id];
       await conn.execute(`UPDATE coins SET ${setClause} WHERE id = ?`, updateValues);
       updated++;
+      mintageStats.push({ mintage: mintageVal, mintage_display: mintageDisp });
       console.log("  ~", catalogNumber, title || titleEn);
       continue;
     }
@@ -361,10 +369,12 @@ async function main() {
     const placeholders = cols.map(() => "?").join(", ");
     await conn.execute(`INSERT INTO coins (${cols.join(", ")}) VALUES (${placeholders})`, values);
     inserted++;
+    mintageStats.push({ mintage: mintageVal, mintage_display: mintageDisp });
     console.log("  +", catalogNumber, title || titleEn);
   }
 
   await conn.end();
+  logImportMintageSummary("Royal Mint", mintageStats);
   console.log("\n✓ Royal Mint: добавлено", inserted, ", обновлено", updated);
   console.log("Импорт по каноническому source_url (без ?query). Fallback catalog:", matchCatalog ? "да" : "нет (флаг --match-catalog).");
   if (inserted > 0 || updated > 0 || purge404) {

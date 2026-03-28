@@ -53,6 +53,8 @@ type CatalogCoin = {
   /** Грамы для сортировки (первое число из weight_g). */
   weightG?: number;
   rectangular?: boolean;
+  mintageDisplay?: string;
+  mintageNeedsResearch?: boolean;
 };
 
 export type CatalogSort = "new" | "old" | "weight_desc" | "weight_asc";
@@ -123,7 +125,19 @@ function parseCatalogState(searchParams: URLSearchParams) {
   const selectedMints = searchParams.getAll("mint");
   /** Без trim: пробелы сохраняются в инпуте; при поиске normalizeSearch обрежет */
   const searchQuery = searchParams.get("q") ?? "";
-  return { filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery };
+  const noMintageParam = searchParams.get("noMintage");
+  const noMintageOnly = noMintageParam === "1" || noMintageParam === "true";
+  return {
+    filter,
+    sort,
+    selectedMetals,
+    selectedWeights,
+    selectedCountries,
+    selectedSeries,
+    selectedMints,
+    searchQuery,
+    noMintageOnly,
+  };
 }
 
 /** Нормализует строку для поиска: нижний регистр, лишние пробелы убраны */
@@ -268,6 +282,7 @@ function CatalogPageContent() {
   const [selectedCountries, setSelectedCountries] = useState<string[]>(() => parseCatalogState(searchParams).selectedCountries);
   const [selectedSeries, setSelectedSeries] = useState<string[]>(() => parseCatalogState(searchParams).selectedSeries);
   const [selectedMints, setSelectedMints] = useState<string[]>(() => parseCatalogState(searchParams).selectedMints);
+  const [noMintageOnly, setNoMintageOnly] = useState<boolean>(() => parseCatalogState(searchParams).noMintageOnly);
   const [searchQuery, setSearchQuery] = useState<string>(() => parseCatalogState(searchParams).searchQuery);
   const [sort, setSort] = useState<CatalogSort>(() => parseCatalogState(searchParams).sort);
   const [sortOpen, setSortOpen] = useState(false);
@@ -443,6 +458,7 @@ function CatalogPageContent() {
     setSelectedCountries(parsed.selectedCountries);
     setSelectedSeries(parsed.selectedSeries);
     setSelectedMints(parsed.selectedMints);
+    setNoMintageOnly(parsed.noMintageOnly);
     setSearchQuery(parsed.searchQuery);
   }, [searchParams]);
 
@@ -456,13 +472,26 @@ function CatalogPageContent() {
     selectedCountries.forEach((c) => params.append("country", c));
     selectedSeries.forEach((s) => params.append("series", s));
     selectedMints.forEach((m) => params.append("mint", m));
+    if (noMintageOnly) params.set("noMintage", "1");
     if (searchQuery) params.set("q", searchQuery);
     const q = params.toString();
     const current = searchParams.toString();
     const catalogUrl = `/catalog${q ? `?${q}` : ""}`;
     if (typeof window !== "undefined") sessionStorage.setItem("catalogReturnUrl", catalogUrl);
     if (q !== current) router.replace(catalogUrl, { scroll: false });
-  }, [filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery, router, searchParams]);
+  }, [
+    filter,
+    sort,
+    selectedMetals,
+    selectedWeights,
+    selectedCountries,
+    selectedSeries,
+    selectedMints,
+    noMintageOnly,
+    searchQuery,
+    router,
+    searchParams,
+  ]);
 
   // Блокировка прокрутки страницы при открытом мобильном боттомшите сортировки (чтобы тяга за язычок не скроллила страницу)
   useEffect(() => {
@@ -743,10 +772,19 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
             : !!(c.metalCode && selectedMetals.includes(c.metalCode))
         );
       }
+      if (noMintageOnly) out = out.filter((c) => c.mintageNeedsResearch);
       if (searchNorm) out = out.filter((c) => coinMatchesSearch(c, searchNorm));
       return out;
     },
-    [selectedWeights, selectedCountries, selectedSeries, selectedMints, selectedMetals, searchNorm]
+    [
+      selectedWeights,
+      selectedCountries,
+      selectedSeries,
+      selectedMints,
+      selectedMetals,
+      noMintageOnly,
+      searchNorm,
+    ]
   );
 
   /** Счётчики по вкладкам с учётом фильтров — как в чипсах металлов */
@@ -782,9 +820,10 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
             ? selectedMetals.some((m) => c.metalCodes!.includes(m))
             : !!(c.metalCode && selectedMetals.includes(c.metalCode))
         );
+  const afterNoMintage = noMintageOnly ? afterMetal.filter((c) => c.mintageNeedsResearch) : afterMetal;
   const filteredCoins = searchNorm
-    ? afterMetal.filter((c) => coinMatchesSearch(c, searchNorm))
-    : afterMetal;
+    ? afterNoMintage.filter((c) => coinMatchesSearch(c, searchNorm))
+    : afterNoMintage;
   const sortedCoins = useMemo(() => {
     const list = [...filteredCoins];
     if (sort === "new") list.sort((a, b) => b.year - a.year);
@@ -793,10 +832,14 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     else if (sort === "weight_asc") list.sort((a, b) => (a.weightG ?? 0) - (b.weightG ?? 0));
     return list;
   }, [filteredCoins, sort]);
-  /** Для подсчёта в чипсах: монеты с учётом веса, страны, серии, монетного двора и поиска (без металла). */
+  /** Для подсчёта в чипсах: монеты с учётом веса, страны, серии, монетного двора и поиска (без металла и без фильтра «тираж»). */
   const coinsForFilterCounts = useMemo(
     () => (searchNorm ? byMintFilter.filter((c) => coinMatchesSearch(c, searchNorm)) : byMintFilter),
     [byMintFilter, searchNorm]
+  );
+  const noMintageFilterCount = useMemo(
+    () => coinsForFilterCounts.filter((c) => c.mintageNeedsResearch).length,
+    [coinsForFilterCounts]
   );
   const displayedCoins = sortedCoins.slice(0, displayedCount);
   const hasMore = displayedCount < sortedCoins.length;
@@ -808,7 +851,17 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
 
   useEffect(() => {
     setDisplayedCount(PAGE_SIZE);
-  }, [filter, sort, selectedMetals, selectedWeights, selectedCountries, selectedSeries, selectedMints, searchQuery]);
+  }, [
+    filter,
+    sort,
+    selectedMetals,
+    selectedWeights,
+    selectedCountries,
+    selectedSeries,
+    selectedMints,
+    noMintageOnly,
+    searchQuery,
+  ]);
 
   useEffect(() => {
     const sentinel = sentinelRef.current;
@@ -1026,12 +1079,23 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
               >
                 <span className="inline-flex items-center gap-1 whitespace-nowrap">
                   <span className="hidden lg:inline">Фильтры</span>
-                  {selectedMetals.length + selectedWeights.length + selectedCountries.length + selectedSeries.length + selectedMints.length > 0 && (
+                  {selectedMetals.length +
+                    selectedWeights.length +
+                    selectedCountries.length +
+                    selectedSeries.length +
+                    selectedMints.length +
+                    (noMintageOnly ? 1 : 0) >
+                    0 && (
                     <span
                       className="inline-flex items-center justify-center w-[22px] h-[22px] shrink-0 rounded-full bg-[#11111B] text-white text-[14px] font-medium leading-none"
                       aria-label="Выбрано фильтров"
                     >
-                      {selectedMetals.length + selectedWeights.length + selectedCountries.length + selectedSeries.length + selectedMints.length}
+                      {selectedMetals.length +
+                        selectedWeights.length +
+                        selectedCountries.length +
+                        selectedSeries.length +
+                        selectedMints.length +
+                        (noMintageOnly ? 1 : 0)}
                     </span>
                   )}
                 </span>
@@ -1112,6 +1176,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
                       setSelectedCountries([]);
                       setSelectedSeries([]);
                       setSelectedMints([]);
+                      setNoMintageOnly(false);
                       setSearchQuery("");
                       setSidebarFiltersActive(false);
                       setSidebarResetKey((k) => k + 1);
@@ -1216,6 +1281,9 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
                   hideSearch
+                  noMintageOnly={noMintageOnly}
+                  onNoMintageOnlyChange={setNoMintageOnly}
+                  noMintageCount={noMintageFilterCount}
                 />
               </aside>
             </div>
@@ -1347,6 +1415,9 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
                   hideSearch
+                  noMintageOnly={noMintageOnly}
+                  onNoMintageOnlyChange={setNoMintageOnly}
+                  noMintageCount={noMintageFilterCount}
                 />
               </div>
             </div>

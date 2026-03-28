@@ -170,7 +170,14 @@ function FilterChecklist({
   );
 }
 
-type CatalogCoinForFilter = { id: string; metalCode?: string; metalCodes?: string[]; seriesName?: string; mintName?: string };
+type CatalogCoinForFilter = {
+  id: string;
+  metalCode?: string;
+  metalCodes?: string[];
+  seriesName?: string;
+  mintName?: string;
+  mintageNeedsResearch?: boolean;
+};
 type CatalogFiltersProps = {
   slide?: boolean;
   onFiltersActiveChange?: (active: boolean) => void;
@@ -194,6 +201,11 @@ type CatalogFiltersProps = {
   onSearchChange?: (query: string) => void;
   /** Скрыть поиск (когда он вынесен на страницу, напр. на мобильном) */
   hideSearch?: boolean;
+  /** Только монеты без числового тиража в БД (нужен ручной поиск) */
+  noMintageOnly?: boolean;
+  onNoMintageOnlyChange?: (value: boolean) => void;
+  /** Сколько монет в выборке с mintageNeedsResearch (для подписи) */
+  noMintageCount?: number;
 };
 
 export function CatalogFilters({
@@ -217,6 +229,9 @@ export function CatalogFilters({
   searchQuery = "",
   onSearchChange,
   hideSearch = false,
+  noMintageOnly = false,
+  onNoMintageOnlyChange,
+  noMintageCount = 0,
 }: CatalogFiltersProps) {
   const countriesForFilter = countryList.length > 0 ? countryList : countriesFull;
 
@@ -257,7 +272,8 @@ export function CatalogFilters({
     selectedWeights.length > 0 ||
     selectedCountries.length > 0 ||
     selectedSeries.length > 0 ||
-    selectedMints.length > 0;
+    selectedMints.length > 0 ||
+    noMintageOnly;
 
   useEffect(() => {
     onFiltersActiveChange?.(hasActiveFilters);
@@ -276,6 +292,7 @@ export function CatalogFilters({
     onCountryChange?.([]);
     onSeriesChange?.([]);
     onMintChange?.([]);
+    onNoMintageOnlyChange?.(false);
     onSearchChange?.("");
     onFiltersActiveChange?.(false);
   };
@@ -390,6 +407,34 @@ export function CatalogFilters({
           onChange={onCountryChange ?? (() => {})}
         />
       </div>
+
+      {/* Тираж: только позиции без числа в БД (см. docs/PARSING-MINTAGE.md) */}
+      {noMintageCount > 0 && (
+        <div className="flex flex-col gap-4">
+          <h3 className="text-black text-[20px] font-medium leading-7">Тираж</h3>
+          <label className="group flex items-center gap-3 cursor-pointer">
+            <span
+              className={`w-5 h-5 rounded-[4px] border-2 shrink-0 flex items-center justify-center bg-transparent ${noMintageOnly ? "border-[#11111B]" : "border-[#E4E4EA] group-hover:border-[#11111B]"}`}
+            >
+              {noMintageOnly && (
+                <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="#11111B" strokeWidth={2}>
+                  <path d="M2 6l3 3 5-6" />
+                </svg>
+              )}
+            </span>
+            <input
+              type="checkbox"
+              checked={noMintageOnly}
+              onChange={() => onNoMintageOnlyChange?.(!noMintageOnly)}
+              className="sr-only"
+            />
+            <span className="text-[16px] font-normal leading-[22.4px] flex-1 min-w-0">
+              Нет в базе (искать тираж)
+              <span className="text-[#666666]"> {formatNumber(noMintageCount)}</span>
+            </span>
+          </label>
+        </div>
+      )}
 
       {/* Монетный двор: до 5 без кнопки, с 6-го — «Показать все»/«Свернуть» */}
       {mintList.length > 0 && (

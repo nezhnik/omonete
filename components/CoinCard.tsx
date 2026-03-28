@@ -27,6 +27,8 @@ type CoinCardProps = {
   onToggleCollection?: (id: string) => void
   /** Если false, показываем тултип «авторизуйтесь» и ведём на страницу входа */
   isAuthorized?: boolean
+  /** Нет числового тиража в БД — подпись для ручного поиска (см. каталог, фильтр «тираж») */
+  mintageNeedsResearch?: boolean
 }
 
 export function CoinCard(props: CoinCardProps) {
@@ -48,6 +50,7 @@ export function CoinCard(props: CoinCardProps) {
     isAuthorized = false,
     rectangular = false,
     imageUrlRoles,
+    mintageNeedsResearch = false,
   } = props
 
   const isPackagingRole = (role: string | undefined) =>
@@ -205,6 +208,11 @@ export function CoinCard(props: CoinCardProps) {
           <p className="text-[#656565] text-[14px] font-normal break-words overflow-hidden line-clamp-3 sm:line-clamp-none">
             {subtitle}
           </p>
+          {mintageNeedsResearch && (
+            <p className="text-[#656565] text-[14px] font-normal break-words overflow-hidden line-clamp-2 sm:line-clamp-none">
+              Тираж не указан
+            </p>
+          )}
           {/* Цену временно скрываем, оставляем поле в типе для будущего использования */}
         </div>
       </div>

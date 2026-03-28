@@ -14,6 +14,7 @@ const path = require("path");
 const sharp = require("sharp");
 const { sanitizeGermaniaMintTitle } = require("./germania-mint-title-sanitize.js");
 const { finenessNumericOnly } = require("./format-coin-characteristics.js");
+const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const FOREIGN_IMG_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
@@ -280,6 +281,7 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const mintageStats = [];
 
   for (const filePath of files) {
     let raw;
@@ -294,7 +296,9 @@ async function main() {
     const slug = slugFromUrl(sourceUrl);
     const specs = raw.specs || {};
     const title = sanitizeGermaniaMintTitle(String(raw.title || "").trim());
-    const { mintage, mintageDisplay } = parseMintage(specs.Mintage);
+    const country = countryFromData(sourceUrl, title);
+    let { mintage, mintageDisplay } = parseMintage(specs.Mintage);
+    ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, country));
     const faceValue = specs.Denomination ? String(specs.Denomination).trim() : null;
     const quality = normalizeQuality(specs.Grade);
     const purityStr = specs.Purity ? String(specs.Purity).trim() : "";
@@ -302,7 +306,6 @@ async function main() {
     const metalFineness = finenessNumericOnly(purityStr) || null;
     const diameterMm = parseDiameterMm(specs.Diameter);
     const releaseDate = parseYearToDate(specs.Year);
-    const country = countryFromData(sourceUrl, title);
     const series = specs.Series ? String(specs.Series).trim() : null;
     const imageObverseSrc = raw.classified?.obverse || null;
     const imageReverseSrc = raw.classified?.reverse || null;
@@ -352,9 +355,11 @@ async function main() {
       await conn.execute(`INSERT INTO coins (${cols.join(", ")}) VALUES (${placeholders})`, values);
       inserted++;
     }
+    mintageStats.push({ mintage, mintage_display: mintageDisplay });
   }
 
   await conn.end();
+  logImportMintageSummary("Germania Mint", mintageStats);
   console.log(`✓ Germania Mint: добавлено ${inserted}, обновлено ${updated}`);
   console.log("Дальше: npm run data:export");
 }

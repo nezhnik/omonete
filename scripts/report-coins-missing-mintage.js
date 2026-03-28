@@ -1,23 +1,25 @@
 /**
- * Отчёт по монетам в БД без числового тиража и без текстового mintage_display
- * (тираж «пустой» с точки зрения полей в таблице coins).
+ * Отчёт: сколько и каких монет «нет тиража» в смысле coinNeedsMintageResearch
+ * (см. scripts/parsing-mintage-constants.js, docs/PARSING-MINTAGE.md):
+ *   нет числового mintage и (пустой mintage_display или текст «Тираж не указан»).
  *
- * Опционально — запрос страницы source_url (Royal Mint / Perth) и поиск строки Mintage в HTML
- * (эвристика, не замена полноценного парсера).
+ * Опционально — запрос страницы source_url (Royal Mint / Perth) и поиск Mintage в HTML.
  *
  * Запуск (из корня omonete-app, нужен DATABASE_URL в .env):
- *   node scripts/report-coins-missing-mintage.js
- *   node scripts/report-coins-missing-mintage.js --probe        — подтянуть подсказки с сайта (медленно)
+ *   npm run coins:report-missing-mintage
+ *   node scripts/report-coins-missing-mintage.js --no-list     — только сводка и JSON, без списка в консоль
+ *   node scripts/report-coins-missing-mintage.js --probe
  *   node scripts/report-coins-missing-mintage.js --probe --limit 15
  *
  * Выход:
  *   data/coins-missing-mintage-report.json
- *   консоль: краткая сводка
+ *   консоль: сводка, по странам, построчный список
  */
 require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
+const { coinNeedsMintageResearch, MINTAGE_UNKNOWN_DISPLAY } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const OUT_JSON = path.join(DATA_DIR, "coins-missing-mintage-report.json");
@@ -83,31 +85,82 @@ async function probeUrl(url) {
   }
 }
 
+function rowMatches(row) {
+  return coinNeedsMintageResearch({
+    mintage: row.mintage,
+    mintage_display: row.mintage_display,
+  });
+}
+
 async function main() {
   const doProbe = process.argv.includes("--probe");
+  const noList = process.argv.includes("--no-list");
   const limitIdx = process.argv.indexOf("--limit");
   const probeLimit = limitIdx !== -1 && process.argv[limitIdx + 1] ? parseInt(process.argv[limitIdx + 1], 10) : 80;
 
   const conn = await mysql.createConnection(getConfig());
-  let rows;
+  let candidates;
   try {
     const [r] = await conn.execute(
       `SELECT id, title, title_en, country, catalog_number, catalog_suffix,
               mintage, mintage_display, mint, mint_short, source_url, release_date
        FROM coins
        WHERE (mintage IS NULL OR mintage = 0)
-         AND (mintage_display IS NULL OR TRIM(mintage_display) = '')
        ORDER BY country, mint, id`
     );
-    rows = r;
+    candidates = r;
   } finally {
     await conn.end();
   }
 
-  console.log("Монет без числового тиража и без mintage_display:", rows.length);
+  const rows = candidates.filter(rowMatches);
+
+  const emptyDisplay = rows.filter(
+    (x) => !x.mintage_display || String(x.mintage_display).trim() === ""
+  ).length;
+  const unknownLabel = rows.length - emptyDisplay;
+
+  console.log("=== Монеты без тиража (нужен поиск числа / уточнение) ===");
+  console.log("Всего:", rows.length);
+  console.log("  — полностью пустой mintage_display:", emptyDisplay);
+  console.log("  — в БД стоит «" + MINTAGE_UNKNOWN_DISPLAY + "»:", unknownLabel);
+
+  const byCountry = {};
+  const byMint = {};
+  for (const row of rows) {
+    const c = (row.country && String(row.country).trim()) || "—";
+    byCountry[c] = (byCountry[c] || 0) + 1;
+    const m = (row.mint && String(row.mint).trim()) || "—";
+    byMint[m] = (byMint[m] || 0) + 1;
+  }
+
+  const countryLines = Object.entries(byCountry).sort((a, b) => b[1] - a[1]);
+  console.log("\nПо странам:");
+  for (const [c, n] of countryLines) {
+    console.log(`  ${n}\t${c}`);
+  }
+
+  const mintLines = Object.entries(byMint).sort((a, b) => b[1] - a[1]);
+  console.log("\nПо монетному двору (топ 25):");
+  mintLines.slice(0, 25).forEach(([m, n]) => console.log(`  ${n}\t${m}`));
+  if (mintLines.length > 25) console.log(`  … всего дворов в отчёте: ${mintLines.length}`);
+
+  if (!noList && rows.length > 0) {
+    console.log("\nСписок (id | каталог | страна | название):");
+    for (const row of rows) {
+      const id = String(row.id);
+      const cat = (row.catalog_number && String(row.catalog_number).trim()) || "—";
+      const c = (row.country && String(row.country).trim()) || "—";
+      const t = (row.title && String(row.title).trim()) || (row.title_en && String(row.title_en).trim()) || "—";
+      const short = t.length > 90 ? t.slice(0, 87) + "…" : t;
+      console.log(`${id}\t${cat}\t${c}\t${short}`);
+    }
+  } else if (noList) {
+    console.log("\n(построчный список отключён флагом --no-list; см. JSON)");
+  }
 
   const withUrl = rows.filter((x) => x.source_url && String(x.source_url).trim().startsWith("http"));
-  console.log("Из них с заполненным source_url:", withUrl.length);
+  console.log("\nС заполненным source_url:", withUrl.length);
 
   let probed = 0;
   const enriched = [];
@@ -150,8 +203,12 @@ async function main() {
   const summary = {
     generatedAt: new Date().toISOString(),
     criteria:
-      "(mintage IS NULL OR mintage = 0) AND (mintage_display пустой) — в БД нет ни числа, ни текстового тиража",
+      "coinNeedsMintageResearch: нет числового mintage и (пустой mintage_display или «Тираж не указан»). См. parsing-mintage-constants.js",
     total: enriched.length,
+    emptyMintageDisplay: emptyDisplay,
+    unknownDisplayLabel: unknownLabel,
+    byCountry: Object.fromEntries(countryLines),
+    byMint: Object.fromEntries(mintLines),
     withSourceUrl: withUrl.length,
     probedHttp: doProbe ? probed : 0,
     foundHintOnPage: enriched.filter((x) => x.pageProbe && x.pageProbe.pageMintageHint).length,

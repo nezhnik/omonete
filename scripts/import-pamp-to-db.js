@@ -11,6 +11,7 @@ require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
+const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const PUBLIC_ROOT = path.join(__dirname, "..", "public");
@@ -230,6 +231,7 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const mintageStats = [];
   for (const filePath of files) {
     let raw;
     try {
@@ -248,7 +250,8 @@ async function main() {
       normalizePampFineness(specs.Metal != null ? String(specs.Metal) : "") ||
       null;
     const metal = parseMetal(purityRaw, title, specs);
-    const { mintage, mintageDisplay } = parseMintage(specs, title);
+    let { mintage, mintageDisplay } = parseMintage(specs, title);
+    ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, "Швейцария"));
     const { weightG, weightOz } = derivePampWeight(specs, title);
     const releaseDate = parseYearToDate(specs, title);
     const faceValue = specs.Denomination ? String(specs.Denomination).trim() : "—";
@@ -311,9 +314,11 @@ async function main() {
       await conn.execute(`INSERT INTO coins (${cols.join(", ")}) VALUES (${placeholders})`, values);
       inserted++;
     }
+    mintageStats.push({ mintage, mintage_display: mintageDisplay });
   }
 
   await conn.end();
+  logImportMintageSummary("PAMP", mintageStats);
   const suffix = mintedBarsOnly ? " (minted bars)" : castBarsOnly ? " (cast bars)" : "";
   console.log(`✓ PAMP: добавлено ${inserted}, обновлено ${updated}${suffix}`);
   console.log("Дальше: npm run data:export (или npm run build)");

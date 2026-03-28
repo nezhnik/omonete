@@ -13,6 +13,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const { finenessNumericOnly } = require("./format-coin-characteristics.js");
+const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
 const { isExcludedMennicaProductUrl } = require("./mennica-excluded-product-urls.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
@@ -267,6 +268,7 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const mintageStats = [];
 
   for (const filePath of files) {
     let raw;
@@ -294,9 +296,10 @@ async function main() {
       finenessNumericOnly(metalLine || "") ||
       null;
 
-    const { mintage, mintageDisplay } = parseMintage(
+    let { mintage, mintageDisplay } = parseMintage(
       specGet(specs, "Mintage", "Nakład", "Limit", "Edition limit")
     );
+    ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, "Польша"));
     const quality = normalizeQuality(specGet(specs, "Grade", "Quality", "Stan", "Condition"));
     const diameterMm = parseDiameterMm(
       specGet(specs, "Diameter", "Dimension", "Średnica")
@@ -371,9 +374,11 @@ async function main() {
       await conn.execute(`INSERT INTO coins (${cols.join(", ")}) VALUES (${placeholders})`, values);
       inserted++;
     }
+    mintageStats.push({ mintage, mintage_display: mintageDisplay });
   }
 
   await conn.end();
+  logImportMintageSummary("Mennica Polska", mintageStats);
   console.log(`✓ Mennica Polska: добавлено ${inserted}, обновлено ${updated}`);
   if (forceImages) console.log("  (режим --force-images: картинки пересобраны по URL из JSON, при сбое сохранён прежний файл на диске)");
   console.log("Дальше: npm run data:export (или npm run build)");

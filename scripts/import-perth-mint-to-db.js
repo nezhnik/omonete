@@ -15,6 +15,7 @@ const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
 const { roundSpec, normalizeWeightG, formatWeightG } = require("./format-coin-characteristics.js");
+const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
@@ -202,6 +203,7 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const mintageStats = [];
 
   const updateCols = cols.filter((k) => k !== "catalog_number");
   const setClause = updateCols.map((k) => `${k} = ?`).join(", ");
@@ -251,6 +253,11 @@ async function main() {
     const weightGNum = normalizeWeightG(specWeight ? parseFloat(String(specWeight).replace(",", ".")) : c.weight_g) ?? c.weight_g;
     const weightGForDb = weightGNum != null ? (formatWeightG(weightGNum) ?? String(weightGNum)) : null;
 
+    let mintageVal = c.mintage != null ? c.mintage : null;
+    let mintageDisp = c.mintage_display != null ? String(c.mintage_display).trim() || null : null;
+    const countryRow = c.country && String(c.country).trim() !== "" ? String(c.country).trim() : null;
+    ({ mintage: mintageVal, mintageDisplay: mintageDisp } = finalizeMintageForDb(mintageVal, mintageDisp, countryRow));
+
     const values = [
       title || titleEn || "Perth Mint",
       ...(hasTitleEn ? [titleEn || null] : []),
@@ -261,8 +268,8 @@ async function main() {
       c.mint_short || "Perth Mint",
       c.metal || "Серебро",
       c.metal_fineness || null,
-      c.mintage != null ? c.mintage : null,
-      c.mintage_display != null ? c.mintage_display : null,
+      mintageVal,
+      mintageDisp,
       weightGForDb,
       c.weight_oz != null ? c.weight_oz : null,
       releaseDateVal,
@@ -314,6 +321,7 @@ async function main() {
         updateValues
       );
       updated++;
+      mintageStats.push({ mintage: mintageVal, mintage_display: mintageDisp });
       console.log("  ~", catalogNumber, c.series || "(серия)", title || titleEn);
       continue;
     }
@@ -324,10 +332,12 @@ async function main() {
       values
     );
     inserted++;
+    mintageStats.push({ mintage: mintageVal, mintage_display: mintageDisp });
     console.log("  +", catalogNumber, title || titleEn);
   }
 
   await conn.end();
+  logImportMintageSummary("Perth Mint", mintageStats);
   console.log("\n✓ Perth Mint: добавлено", inserted, ", обновлено", updated);
   if (inserted > 0 || updated > 0) {
     console.log("Дальше: npm run data:export (или data:export:incremental) && npm run build — тогда монета появится в каталоге.");

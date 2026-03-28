@@ -3,6 +3,7 @@
  * Используется в /api/coins и /api/coins/[id]. Логика совпадает с scripts/export-coins-to-json.js.
  */
 import { getConnection } from "./db";
+import { coinNeedsMintageResearch } from "./mintageResearch";
 import fs from "fs";
 import path from "path";
 
@@ -316,6 +317,8 @@ export type ListCoin = {
   weightLabel?: string;
   weightG?: number;
   rectangular?: boolean;
+  mintageDisplay?: string;
+  mintageNeedsResearch?: boolean;
 };
 
 export type DetailCoin = {
@@ -467,6 +470,8 @@ function rowToListCoin(
   const metalLabelStr = metalOnly(r.metal);
   const mintName = r.mint && String(r.mint).trim() ? String(r.mint).trim() : undefined;
   const mintLogoUrl = mintName && mintLogoMap.get(mintName) ? mintLogoMap.get(mintName) : undefined;
+  const mintageDisp =
+    r.mintage_display != null && String(r.mintage_display).trim() ? String(r.mintage_display).trim() : undefined;
   return {
     id: String(r.id),
     title: cleanTitle(r.title),
@@ -474,6 +479,8 @@ function rowToListCoin(
     country: (r.country as string) ?? "Россия",
     year: year ?? 0,
     faceValue: (stripCountryFromFaceValue(r.face_value) || r.face_value) as string | undefined,
+    mintageDisplay: mintageDisp,
+    mintageNeedsResearch: coinNeedsMintageResearch(r),
     imageUrl,
     imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
     imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,

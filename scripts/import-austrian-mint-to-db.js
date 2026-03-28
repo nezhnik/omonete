@@ -12,6 +12,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const { finenessNumericOnly } = require("./format-coin-characteristics.js");
+const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const FOREIGN_IMG_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
@@ -324,6 +325,7 @@ async function main() {
 
   let inserted = 0;
   let updated = 0;
+  const mintageStats = [];
 
   for (const filePath of files) {
     let raw;
@@ -349,7 +351,8 @@ async function main() {
     const mintageSU = specGet(specs, "Mintage (Special Uncirculated)");
     const mintageUnc = specGet(specs, "Mintage (Uncirculated)");
     const mintageRaw = mintageProof || mintageSU || mintageUnc || specGet(specs, "Mintage");
-    const { mintage, mintageDisplay } = parseMintage(mintageRaw);
+    let { mintage, mintageDisplay } = parseMintage(mintageRaw);
+    ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, "Австрия"));
 
     const quality = normalizeQuality(specGet(specs, "Quality"));
     const diameterMm = parseDiameterMm(specGet(specs, "Diameter"));
@@ -429,9 +432,11 @@ async function main() {
       await conn.execute(`INSERT INTO coins (${cols.join(", ")}) VALUES (${placeholders})`, values);
       inserted++;
     }
+    mintageStats.push({ mintage, mintage_display: mintageDisplay });
   }
 
   await conn.end();
+  logImportMintageSummary("Münze Österreich", mintageStats);
   console.log(`✓ Münze Österreich: добавлено ${inserted}, обновлено ${updated}`);
   if (forceImages) console.log("  (--force-images)");
   console.log("Дальше: npm run data:export:incremental (или npm run build)");
