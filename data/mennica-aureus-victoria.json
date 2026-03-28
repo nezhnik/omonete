@@ -1,0 +1,37 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/aureus-victoria",
+  "title": "Aureus Victoria",
+  "specs": {
+    "Issuer": "Niue",
+    "Metal": "Ag 999",
+    "Dimension": "38,61 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "digital printing, laser frosting",
+    "Weight": "17,50 g",
+    "Face value": "1 dollar",
+    "Quality": "proof",
+    "Year of issue": "2023",
+    "Mintage": "500 pcs"
+  },
+  "descriptionPlain": "Description The numismatic symbol of triumph Top-quality digital print Finest silver Original numismatic design Perfect idea for a gift The motif depicting the goddess of victory pays homage to the ancient Roman monetary tradition, where aureus was one of the most valuable coins. It is a valuable collectible item that allows you to feel the spirit of ancient Rome and discover its rich history. Don’t miss the opportunity to add this beautiful coin to your collection and enjoy its unique character and craftsmanship.",
+  "tabsPlain": {
+    "description": "Description The numismatic symbol of triumph Top-quality digital print Finest silver Original numismatic design Perfect idea for a gift The motif depicting the goddess of victory pays homage to the ancient Roman monetary tradition, where aureus was one of the most valuable coins. It is a valuable collectible item that allows you to feel the spirit of ancient Rome and discover its rich history. Don’t miss the opportunity to add this beautiful coin to your collection and enjoy its unique character and craftsmanship."
+  },
+  "price_display": "zł 299,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/03/aureus_victoria_rewers.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/03/aureus_victoria_awers.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/03/aureus_victoria_rewers.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/03/aureus_victoria_awers.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:05:29.177Z"
+}

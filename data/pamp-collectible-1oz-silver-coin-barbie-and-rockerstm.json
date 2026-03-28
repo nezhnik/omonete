@@ -8,12 +8,11 @@
     "SKU": "ZAGFP00418",
     "Size (mm).": "23.6 x 70",
     "Year": "2024",
-    "Mintage": "3,000",
-    "Denomination": "2 доллара (Тувалу)"
+    "Mintage": "3,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_obv.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_rev.png",
+    "obverse": "/image/coins/foreign/1oz-silver-coin-barbie-and-rockerstm-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-silver-coin-barbie-and-rockerstm-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -28,5 +27,14 @@
     "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_packaging_exploded.png",
     "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_packaging_perspective.png"
   ],
-  "parsedAt": "2026-03-27T16:00:29.817Z"
+  "parsedAt": "2026-03-27T22:11:52.485Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-05/barbie-and-the-rockers_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:52.487Z"
+  }
 }

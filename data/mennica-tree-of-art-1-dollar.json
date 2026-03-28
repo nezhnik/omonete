@@ -1,0 +1,38 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/tree-of-art-1-dollar",
+  "title": "Tree of Art, 1 dollar",
+  "specs": {
+    "Issuer": "Niue",
+    "Metal": "Ag 999",
+    "Dimension": "38,61 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "digital printing, microprinting, crystal insert",
+    "Weight": "17,50 g",
+    "Face value": "1 dollar",
+    "Quality": "proof",
+    "Year of issue": "2026",
+    "Mintage": "500 pcs"
+  },
+  "descriptionPlain": "Description Coin that brings together symbols of different art forms into one cohesive composition. Each branch leads in a different direction: music, painting, theatre, and film. Together, they form a single tree that continues to grow. Tree of Art presents creativity as something alive. The interplay of forms and colours reflects the diversity of artistic expression. It is a piece for those who see art not as decoration, but as a part of who they are.",
+  "tabsPlain": {
+    "description": "Description Coin that brings together symbols of different art forms into one cohesive composition. Each branch leads in a different direction: music, painting, theatre, and film. Together, they form a single tree that continues to grow. Tree of Art presents creativity as something alive. The interplay of forms and colours reflects the diversity of artistic expression. It is a piece for those who see art not as decoration, but as a part of who they are."
+  },
+  "price_display": "zł 515,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Tree-of-Art_obverse.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Tree-of-Art_reverse.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Tree-of-Art_box.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Tree-of-Art_reverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Tree-of-Art_obverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Tree-of-Art_box.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:05:22.042Z"
+}

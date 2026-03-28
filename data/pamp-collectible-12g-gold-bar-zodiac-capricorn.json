@@ -11,11 +11,11 @@
     "Mintage": "3,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_8.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn.png",
-    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_8.png",
-    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn-certipamp.png",
-    "packaging": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_8.png",
+    "obverse": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-obv.webp",
+    "reverse": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-rev.webp",
+    "blister_obverse": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-blister-rev.webp",
+    "packaging": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-packaging.webp",
     "box": null,
     "certificate": null
   },
@@ -25,5 +25,17 @@
     "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn.png",
     "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_8.png"
   ],
-  "parsedAt": "2026-03-27T15:57:10.446Z"
+  "parsedAt": "2026-03-27T22:09:23.183Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_8.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_8.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn-certipamp.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:09:23.185Z"
+  }
 }

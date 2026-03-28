@@ -48,7 +48,7 @@ async function main() {
       const url = urls[i];
       console.log(`[${i + 1}/${urls.length}] ${url}`);
       try {
-        const result = await fetchPampProductOnce(context, page, gqlCapture, url, true);
+        const result = await fetchPampProductOnce(context, page, gqlCapture, url, "minted");
         if (result.strictImageFail && process.env.PAMP_STRICT_IMAGES === "1") {
           fail++;
           continue;

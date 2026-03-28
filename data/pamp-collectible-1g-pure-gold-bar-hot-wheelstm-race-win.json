@@ -10,11 +10,11 @@
     "Year": "2025"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_perspective-obv.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_perspective-rev.png",
-    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_certipamp-back.png",
-    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_certipamp-front.png",
-    "packaging": null,
+    "obverse": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-obv.webp",
+    "reverse": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-rev.webp",
+    "blister_obverse": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-blister-rev.webp",
+    "packaging": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-packaging.webp",
     "box": null,
     "certificate": null
   },
@@ -26,5 +26,17 @@
     "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_sleeve-front.png",
     "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_sleeve-back.png"
   ],
-  "parsedAt": "2026-03-27T15:58:57.121Z"
+  "parsedAt": "2026-03-27T22:10:41.772Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_perspective-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_perspective-rev.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_certipamp-back.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_certipamp-front.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_sleeve-front.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:10:41.774Z"
+  }
 }

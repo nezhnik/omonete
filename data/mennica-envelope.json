@@ -1,0 +1,28 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/envelope",
+  "title": "Envelope",
+  "specs": {
+    "Manufacturer": "Mennica Polska",
+    "Dimension": "90 × 130 mm"
+  },
+  "descriptionPlain": "Description Decorative envelope measuring: 9 x 13 cm.",
+  "tabsPlain": {
+    "description": "Description Decorative envelope measuring: 9 x 13 cm."
+  },
+  "price_display": "zł 5,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2022/12/koperta_opakowanie_MPSA.png",
+    "reverse": null,
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2022/12/koperta_opakowanie_MPSA.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:04:28.380Z"
+}

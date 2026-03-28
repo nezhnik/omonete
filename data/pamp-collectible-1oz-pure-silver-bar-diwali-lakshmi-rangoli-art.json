@@ -10,11 +10,11 @@
     "Year": "2025"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_obv_perspective_diwali_2025.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_rev_perspective_diwali_2025.png",
-    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_back_certipamp_diwali_2025.png",
-    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_front_certipamp_diwali_2025.png",
-    "packaging": null,
+    "obverse": "/image/coins/foreign/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art-rev.webp",
+    "blister_obverse": "/image/coins/foreign/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art-blister-rev.webp",
+    "packaging": "/image/coins/foreign/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art-packaging.webp",
     "box": null,
     "certificate": null
   },
@@ -24,5 +24,17 @@
     "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_rev_perspective_diwali_2025.png",
     "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_obv_perspective_diwali_2025.png"
   ],
-  "parsedAt": "2026-03-27T15:59:28.014Z"
+  "parsedAt": "2026-03-27T22:11:09.991Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_obv_perspective_diwali_2025.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_rev_perspective_diwali_2025.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_back_certipamp_diwali_2025.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_front_certipamp_diwali_2025.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-08/1oz_ag_front_certipamp_diwali_2025.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:09.994Z"
+  }
 }

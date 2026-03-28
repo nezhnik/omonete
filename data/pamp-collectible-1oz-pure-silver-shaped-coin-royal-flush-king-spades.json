@@ -11,8 +11,8 @@
     "Mintage": "2,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_obv-front.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_rev-front.png",
+    "obverse": "/image/coins/foreign/1oz-pure-silver-shaped-coin-royal-flush-king-spades-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-pure-silver-shaped-coin-royal-flush-king-spades-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -29,5 +29,14 @@
     "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_rev-perspective.png",
     "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_obv-perspective.png"
   ],
-  "parsedAt": "2026-03-27T16:00:01.934Z"
+  "parsedAt": "2026-03-27T22:11:34.525Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_obv-front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-05/king-of-spades_rev-front.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:34.527Z"
+  }
 }

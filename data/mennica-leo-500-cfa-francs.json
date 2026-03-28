@@ -1,0 +1,37 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/leo-500-cfa-francs",
+  "title": "Leo, 500 CFA francs",
+  "specs": {
+    "Issuer": "Republika Kamerunu",
+    "Metal": "Ag 999",
+    "Dimension": "50 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "druk cyfrowy, matowienie laserowe, selektywne złocenie, soczewka powiększająca",
+    "Weight": "17,50 g",
+    "Face value": "500 franków CFA",
+    "Quality": "black proof",
+    "Year of issue": "2023",
+    "Mintage": "500 szt."
+  },
+  "descriptionPlain": "Description Symbol of good wishes Wonderful idea for an elegant gift Sterling silver of the finest quality Photo-quality digital printing Sometimes a well-chosen gift can express more than a thousand words. Did you know that silver is a symbol of longevity and purity of intentions? Give your loved one this silver coin and your good wishes stamped in silver will remind them of their special birthday for years to come.",
+  "tabsPlain": {
+    "description": "Description Symbol of good wishes Wonderful idea for an elegant gift Sterling silver of the finest quality Photo-quality digital printing Sometimes a well-chosen gift can express more than a thousand words. Did you know that silver is a symbol of longevity and purity of intentions? Give your loved one this silver coin and your good wishes stamped in silver will remind them of their special birthday for years to come."
+  },
+  "price_display": "zł 350,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/LEW_REWERS.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/LEW_RAMK.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/LEW_REWERS.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/LEW_RAMK.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:09:53.889Z"
+}

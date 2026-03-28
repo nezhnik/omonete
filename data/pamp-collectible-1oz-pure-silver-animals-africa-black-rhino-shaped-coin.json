@@ -10,8 +10,8 @@
     "Year": "2022"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/obv.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/rev.png",
+    "obverse": "/image/coins/foreign/1oz-pure-silver-animals-africa-black-rhino-shaped-coin-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-pure-silver-animals-africa-black-rhino-shaped-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -23,5 +23,14 @@
     "https://www.pamp.com/sites/pamp/files/2022-05/obv.png",
     "https://www.pamp.com/sites/pamp/files/2022-05/packaging-open.png"
   ],
-  "parsedAt": "2026-03-27T15:59:11.597Z"
+  "parsedAt": "2026-03-27T22:10:52.739Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-05/obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-05/rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:10:52.740Z"
+  }
 }

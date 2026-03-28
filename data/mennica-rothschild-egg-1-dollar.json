@@ -1,0 +1,38 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/rothschild-egg-1-dollar",
+  "title": "Rothschild Egg, 1 dollar",
+  "specs": {
+    "Issuer": "Niue",
+    "Metal": "Ag 999",
+    "Dimension": "29,20 x 39,00 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "digital printing, cristal insert",
+    "Weight": "16,81 g",
+    "Face value": "1 dollar",
+    "Quality": "proof",
+    "Year of issue": "2025",
+    "Mintage": "999 pcs"
+  },
+  "descriptionPlain": "Description One of the most famous works of the Fabergé workshop, created in 1902 as an engagement gift for the Rothschild family. The original became renowned for its rich decoration and a hidden mechanism with a small rooster that appears every hour like a jeweler’s surprise. The coin reflects the character of this design in a collector’s form, referring to its decorative aesthetics and theatrical detail.",
+  "tabsPlain": {
+    "description": "Description One of the most famous works of the Fabergé workshop, created in 1902 as an engagement gift for the Rothschild family. The original became renowned for its rich decoration and a hidden mechanism with a small rooster that appears every hour like a jeweler’s surprise. The coin reflects the character of this design in a collector’s form, referring to its decorative aesthetics and theatrical detail."
+  },
+  "price_display": "zł 459,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Rothschild_Egg_obverse.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Rothschild_Egg_reverse.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Rothschild_Egg_box.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Rothschild_Egg_reverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Rothschild_Egg_obverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Rothschild_Egg_box.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:06:41.553Z"
+}

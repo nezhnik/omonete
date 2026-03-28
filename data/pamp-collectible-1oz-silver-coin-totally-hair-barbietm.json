@@ -8,12 +8,11 @@
     "SKU": "ZAGFP00427",
     "Size (mm).": "23 x 65.2",
     "Year": "2024",
-    "Mintage": "3,000",
-    "Denomination": "2 доллара (Тувалу)"
+    "Mintage": "3,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_obverse.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_reverse.png",
+    "obverse": "/image/coins/foreign/1oz-silver-coin-totally-hair-barbietm-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-silver-coin-totally-hair-barbietm-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -27,5 +26,14 @@
     "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_capsulepedistal.png",
     "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_packaging-parts.png"
   ],
-  "parsedAt": "2026-03-27T16:01:19.222Z"
+  "parsedAt": "2026-03-27T22:12:30.812Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_obverse.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-10/barbie_totally-hair_reverse.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:12:30.813Z"
+  }
 }

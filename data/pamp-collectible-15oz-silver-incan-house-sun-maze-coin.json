@@ -11,8 +11,8 @@
     "Mintage": "3,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_obv_capsule.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_rev_capsule.png",
+    "obverse": "/image/coins/foreign/15oz-silver-incan-house-sun-maze-coin-obv.webp",
+    "reverse": "/image/coins/foreign/15oz-silver-incan-house-sun-maze-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -25,5 +25,14 @@
     "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_packaging-front.png",
     "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_rev-p.png"
   ],
-  "parsedAt": "2026-03-27T15:58:25.863Z"
+  "parsedAt": "2026-03-27T22:10:16.801Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_obv_capsule.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-11/incan_house_rev_capsule.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:10:16.803Z"
+  }
 }

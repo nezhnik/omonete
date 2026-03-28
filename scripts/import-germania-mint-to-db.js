@@ -13,6 +13,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const { sanitizeGermaniaMintTitle } = require("./germania-mint-title-sanitize.js");
+const { finenessNumericOnly } = require("./format-coin-characteristics.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const FOREIGN_IMG_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
@@ -296,8 +297,9 @@ async function main() {
     const { mintage, mintageDisplay } = parseMintage(specs.Mintage);
     const faceValue = specs.Denomination ? String(specs.Denomination).trim() : null;
     const quality = normalizeQuality(specs.Grade);
-    const metalFineness = specs.Purity ? String(specs.Purity).trim() : null;
-    const metal = metalFromPurity(metalFineness);
+    const purityStr = specs.Purity ? String(specs.Purity).trim() : "";
+    const metal = metalFromPurity(purityStr);
+    const metalFineness = finenessNumericOnly(purityStr) || null;
     const diameterMm = parseDiameterMm(specs.Diameter);
     const releaseDate = parseYearToDate(specs.Year);
     const country = countryFromData(sourceUrl, title);

@@ -10,8 +10,8 @@
     "Year": "2023"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2023-02/roulette_obv.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2023-02/roulette_rev.png",
+    "obverse": "/image/coins/foreign/15oz-silver-roulette-wheel-spinning-coin-obv.webp",
+    "reverse": "/image/coins/foreign/15oz-silver-roulette-wheel-spinning-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -24,5 +24,14 @@
     "https://www.pamp.com/sites/pamp/files/2023-02/roulette_packaging-closed_01.png",
     "https://www.pamp.com/sites/pamp/files/2023-02/roulette_packaging-open.png"
   ],
-  "parsedAt": "2026-03-27T15:58:35.695Z"
+  "parsedAt": "2026-03-27T22:10:22.608Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2023-02/roulette_obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2023-02/roulette_rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:10:22.610Z"
+  }
 }

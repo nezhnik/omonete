@@ -1,0 +1,38 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/clover-pendant-1-dollar",
+  "title": "Clover Pendant, 1 dollar",
+  "specs": {
+    "Issuer": "Niue",
+    "Metal": "Ag 999",
+    "Dimension": "32,00 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "platerowanie 24-karatowym złotem, żywica, zawieszka",
+    "Weight": "10,00 g",
+    "Face value": "1 dolar",
+    "Quality": "lustrzany",
+    "Year of issue": "2026",
+    "Mintage": "500 szt."
+  },
+  "descriptionPlain": "Description A vivid green four-leaf clover set within a gold frame creates a clear symbol of luck and positivity. The clean contrast keeps the design light and elegant. Designed as a pendant, it can also be worn as a necklace, making it both meaningful and versatile.",
+  "tabsPlain": {
+    "description": "Description A vivid green four-leaf clover set within a gold frame creates a clear symbol of luck and positivity. The clean contrast keeps the design light and elegant. Designed as a pendant, it can also be worn as a necklace, making it both meaningful and versatile."
+  },
+  "price_display": "zł 399,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_rewers.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_awers.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_box.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_rewers.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_awers.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_box.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:06:26.124Z"
+}

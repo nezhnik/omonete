@@ -10,8 +10,8 @@
     "Year": "2022"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_4.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_5.png",
+    "obverse": "/image/coins/foreign/2021-sweetheartsr-gift-set-pure-silver-wafers-obv.webp",
+    "reverse": "/image/coins/foreign/2021-sweetheartsr-gift-set-pure-silver-wafers-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -28,5 +28,14 @@
     "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_1.png",
     "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_14.png"
   ],
-  "parsedAt": "2026-03-27T16:01:26.806Z"
+  "parsedAt": "2026-03-27T22:12:37.220Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_4.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_5.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:12:37.225Z"
+  }
 }

@@ -10,8 +10,8 @@
     "Year": "2022"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/obv_0.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/rev_0.png",
+    "obverse": "/image/coins/foreign/1oz-pure-silver-fenderr-stratocasterr-surf-green-shaped-coin-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-pure-silver-fenderr-stratocasterr-surf-green-shaped-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -23,5 +23,14 @@
     "https://www.pamp.com/sites/pamp/files/2022-04/obv_0.png",
     "https://www.pamp.com/sites/pamp/files/2022-04/packaging-open_0.png"
   ],
-  "parsedAt": "2026-03-27T15:59:45.779Z"
+  "parsedAt": "2026-03-27T22:11:21.310Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-04/obv_0.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-04/rev_0.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:21.312Z"
+  }
 }

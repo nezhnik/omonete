@@ -8,12 +8,11 @@
     "SKU": "ZAGFP00444",
     "Size (mm).": "44 x 38.8",
     "Year": "2025",
-    "Mintage": "2,000",
-    "Denomination": "2 доллара (Тувалу)"
+    "Mintage": "2,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-obv.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-rev.png",
+    "obverse": "/image/coins/foreign/1oz-silver-coin-pac-mantm-45th-anniversary-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-silver-coin-pac-mantm-45th-anniversary-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -26,5 +25,14 @@
     "https://www.pamp.com/sites/pamp/files/2025-12/pacman_packaging-front.png",
     "https://www.pamp.com/sites/pamp/files/2025-12/pacman_packaging-perspective-left.png"
   ],
-  "parsedAt": "2026-03-27T16:01:02.107Z"
+  "parsedAt": "2026-03-27T22:12:19.160Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:12:19.162Z"
+  }
 }

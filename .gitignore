@@ -56,6 +56,9 @@ next-env.d.ts
 # экспорт статей для импорта в БД (генерируется из /api/mint-articles-export)
 mint-articles.json
 
+# логи парсеров в data/ (fetch Mennica и т.п.)
+data/*.log
+
 # состояние инкрементального экспорта (npm run data:export -- --incremental)
 export-state.json
 

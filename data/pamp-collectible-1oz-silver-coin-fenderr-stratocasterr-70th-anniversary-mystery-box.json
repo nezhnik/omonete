@@ -8,12 +8,11 @@
     "SKU": "ZAGFP00432",
     "Size (mm).": "29.5 x 86.5",
     "Year": "2024",
-    "Mintage": "5,000",
-    "Denomination": "2 доллара (Тувалу)"
+    "Mintage": "5,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_obverse_front.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-sunburst_front.png",
+    "obverse": "/image/coins/foreign/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -31,5 +30,14 @@
     "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-comet-burst_front.png",
     "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-nebula-noir_front.png"
   ],
-  "parsedAt": "2026-03-27T16:00:36.737Z"
+  "parsedAt": "2026-03-27T22:11:58.116Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_obverse_front.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-sunburst_front.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:58.117Z"
+  }
 }

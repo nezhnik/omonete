@@ -8,12 +8,11 @@
     "SKU": "ZAGFP00420",
     "Size (mm).": "54.5 x 35.2",
     "Year": "2024",
-    "Mintage": "3,000",
-    "Denomination": "2 доллара (Тувалу)"
+    "Mintage": "3,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-obv.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-rev.png",
+    "obverse": "/image/coins/foreign/1oz-silver-coin-snowman-little-red-truck-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-silver-coin-snowman-little-red-truck-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -26,5 +25,14 @@
     "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_open-packaging.png",
     "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_capsule-rev.png"
   ],
-  "parsedAt": "2026-03-27T16:01:12.194Z"
+  "parsedAt": "2026-03-27T22:12:24.630Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-obv.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2024-08/holiday-snowman-and-a-little-red-truck_front-rev.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:12:24.632Z"
+  }
 }

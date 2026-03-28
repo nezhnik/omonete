@@ -1,0 +1,37 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/hanami-1-dollar",
+  "title": "Hanami, 1 dollar",
+  "specs": {
+    "Issuer": "Niue",
+    "Metal": "Ag 999",
+    "Dimension": "38,61 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "digital printing, laser frosting",
+    "Weight": "17,50 g",
+    "Face value": "1 dollar",
+    "Quality": "proof",
+    "Year of issue": "2025",
+    "Mintage": "500 pcs."
+  },
+  "descriptionPlain": "Description Inspired by the Japanese tradition of Hanami Delicate design featuring cherry blossoms and tranquil scenery Timeless keepsake celebrating renewal and harmony Perfect for those who long for spring Inspired by the centuries-old Japanese tradition of Hanami, this exquisite piece captures the fleeting beauty of cherry blossoms in full bloom. The serene design reflects a tranquil landscape adorned with delicate flowers, inviting you to embrace the harmony of nature and the elegance of Japanese culture. A perfect addition for collectors and admirers of cultural artistry.",
+  "tabsPlain": {
+    "description": "Description Inspired by the Japanese tradition of Hanami Delicate design featuring cherry blossoms and tranquil scenery Timeless keepsake celebrating renewal and harmony Perfect for those who long for spring Inspired by the centuries-old Japanese tradition of Hanami, this exquisite piece captures the fleeting beauty of cherry blossoms in full bloom. The serene design reflects a tranquil landscape adorned with delicate flowers, inviting you to embrace the harmony of nature and the elegance of Japanese culture. A perfect addition for collectors and admirers of cultural artistry."
+  },
+  "price_display": "zł 390,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Hanami_obverse.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Hanami_reverse.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Hanami_obverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Hanami_reverse.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:04:31.677Z"
+}

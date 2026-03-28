@@ -63,6 +63,27 @@ npm run dev
 
 ---
 
+## Синхронизация PAMP — одна схема для всех потоков
+
+И **collectibles**, и **minted bars** проходят один и тот же конвейер: **листинг → сырые JSON по каждому товару → импорт в MySQL (`coins`, ключ `source_url`) → экспорт в `public/data` → сборка `out/`**.
+
+| Этап | Collectibles | Minted bars |
+|------|----------------|-------------|
+| 1. Листинг (URL + снимок карточек) | `npm run pamp:listing` | `npm run pamp:listing:minted-bars` |
+| 2. Карточки с сайта в `data/*.json` | `npm run pamp:fetch:all` | `npm run pamp:fetch:minted-bars:all` |
+| 3. Импорт в БД | `npm run pamp:import` | `npm run pamp:import:minted-bars` |
+| 4. JSON для сайта | `npm run data:export` или `npm run data:export:incremental` | то же |
+| **Всё подряд** | `npm run pamp:sync` | `npm run pamp:sync:minted-bars` |
+| **Уже есть JSON, нужен только каталог** | `npm run pamp:to-site` | `npm run pamp:to-site` (подхватит и collectibles, и minted, если файлы есть) |
+
+После шагов 1–3 обязательно **экспорт** и **`npm run build`**, затем заливка **`out/`** на хостинг — как в разделе «Сборка и деплой». Нужны `.env` с `DATABASE_URL` и установленный Playwright (`npx playwright install chromium` при первом запуске парсеров).
+
+Чтобы **новые спарсенные** позиции попали в файлы сайта: `npm run pamp:to-site` (импорт в MySQL + `data:export:incremental`). Сайт на хостинге обновится после `npm run build` и выкладки `out/`.
+
+Файлы: `data/pamp-collectible-*.json` и `data/pamp-minted-bar-*.json`; одиночная карточка: `npm run pamp:fetch -- <url>` или с флагом `--minted-bar` для имени файла minted (см. `scripts/fetch-pamp-product.js`).
+
+---
+
 ## Логика картинок и rollback
 
 Подробные правила ролей изображений, приоритетов в каталоге и быстрый откат:

@@ -11,11 +11,11 @@
     "Mintage": "5,000"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-bar_presp.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-bar_presp.png",
-    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-certipamp.png",
-    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-certipamp.png",
-    "packaging": null,
+    "obverse": "/image/coins/foreign/1oz-silver-bar-cross-christianity-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-silver-bar-cross-christianity-rev.webp",
+    "blister_obverse": "/image/coins/foreign/1oz-silver-bar-cross-christianity-blister-obv.webp",
+    "blister_reverse": "/image/coins/foreign/1oz-silver-bar-cross-christianity-blister-rev.webp",
+    "packaging": "/image/coins/foreign/1oz-silver-bar-cross-christianity-packaging.webp",
     "box": null,
     "certificate": null
   },
@@ -27,5 +27,17 @@
     "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_front-sleeve.png",
     "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_back-sleeve.png"
   ],
-  "parsedAt": "2026-03-27T16:00:12.767Z"
+  "parsedAt": "2026-03-27T22:11:40.796Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-bar_presp.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-bar_presp.png",
+    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_obv-certipamp.png",
+    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-certipamp.png",
+    "packaging": "https://www.pamp.com/sites/pamp/files/2025-11/1oz-ag_christian-cross_rev-certipamp.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:40.798Z"
+  }
 }

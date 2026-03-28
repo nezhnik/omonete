@@ -9,6 +9,41 @@ function formatPurity(s) {
   return s.replace(/\s*\/\s*/g, " / ").trim();
 }
 
+/**
+ * Только проба для поля metal_fineness (металл — отдельное поле «Металл»).
+ * Дробь пробы: 925/1000, 9999/1000 → через formatPurity «925 / 1000» (не путать с весом 1/2 oz).
+ * Миллезималь: «Silver 999.9» → «999.9»; слова silver/gold/ag/au и т.п. убираются.
+ */
+function finenessNumericOnly(s) {
+  if (s == null || typeof s !== "string") return null;
+  let t = String(s).trim().replace(/,/g, ".").replace(/‰/g, "");
+  if (!t) return null;
+  const frac = t.match(/(\d{2,5})\s*\/\s*(\d{3,5})/);
+  if (frac) {
+    const out = `${frac[1]}/${frac[2]}`;
+    return formatPurity(out) || out;
+  }
+  t = t.replace(
+    /\b(silver|gold|platinum|palladium|copper|nickel|ag|au|pt|pd|fine|pure|проба|металл|серебро|золото)\b/gi,
+    " "
+  );
+  t = t.replace(/[^0-9./\s]/g, " ").replace(/\s+/g, " ").trim();
+  if (!t) return null;
+  const mDec = t.match(/\b(\d+\.\d{1,4})\b/);
+  if (mDec) return mDec[1];
+  const ints = t.match(/\b\d{3,5}\b/g);
+  if (ints && ints.length) {
+    const nums = ints.map((x) => parseInt(x, 10)).filter((n) => n >= 100 && n <= 10000);
+    if (nums.length) return String(Math.max(...nums));
+  }
+  const m2 = t.match(/\b(\d{2,3})\b/);
+  if (m2) {
+    const n = parseInt(m2[1], 10);
+    if (n >= 90 && n <= 999) return m2[1];
+  }
+  return null;
+}
+
 /** Перед скобкой пробел: 22,60(±0,15) → 22,60 (±0,15) */
 function formatSpaceBeforeParen(s) {
   if (s == null || typeof s !== "string") return "";
@@ -175,4 +210,18 @@ function yearFromTitle(title) {
   return m ? parseInt(m[1], 10) : null;
 }
 
-module.exports = { formatPurity, formatSpaceBeforeParen, formatMass, roundSpec, normalizeWeightG, formatWeightG, deriveMetalAndWeightFromTitle, normalizeLegalTender, formatDenominationForFaceValue, countryFromFaceValue, stripCountryFromFaceValue, yearFromTitle };
+module.exports = {
+  formatPurity,
+  finenessNumericOnly,
+  formatSpaceBeforeParen,
+  formatMass,
+  roundSpec,
+  normalizeWeightG,
+  formatWeightG,
+  deriveMetalAndWeightFromTitle,
+  normalizeLegalTender,
+  formatDenominationForFaceValue,
+  countryFromFaceValue,
+  stripCountryFromFaceValue,
+  yearFromTitle,
+};

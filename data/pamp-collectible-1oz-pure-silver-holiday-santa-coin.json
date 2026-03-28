@@ -7,12 +7,11 @@
     "Thickness": "2.50 mm",
     "SKU": "ZAGFC00865",
     "Size (mm).": "43.1 x 35.4",
-    "Year": "2022",
-    "Denomination": "2 доллара (Тувалу)"
+    "Year": "2022"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv_15.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_9.png",
+    "obverse": "/image/coins/foreign/1oz-pure-silver-holiday-santa-coin-obv.webp",
+    "reverse": "/image/coins/foreign/1oz-pure-silver-holiday-santa-coin-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "packaging": null,
@@ -26,5 +25,14 @@
     "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_p.png",
     "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_9.png"
   ],
-  "parsedAt": "2026-03-27T15:59:52.398Z"
+  "parsedAt": "2026-03-27T22:11:27.040Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2022-02/obv_15.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2022-02/rev_9.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:11:27.044Z"
+  }
 }

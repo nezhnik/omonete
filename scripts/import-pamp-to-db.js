@@ -15,7 +15,7 @@ const path = require("path");
 const DATA_DIR = path.join(__dirname, "..", "data");
 const PUBLIC_ROOT = path.join(__dirname, "..", "public");
 const { derivePampWeight } = require("../lib/pampWeightDerive");
-const { formatPurity } = require("./format-coin-characteristics.js");
+const { finenessNumericOnly } = require("./format-coin-characteristics.js");
 
 function getConfig() {
   const url = process.env.DATABASE_URL;
@@ -92,25 +92,9 @@ function parsePurity(specs) {
   return specs.Purity ? String(specs.Purity).trim() : null;
 }
 
-/**
- * Проба в БД/UI: только цифры или дробь NNN/NNNN (металл — отдельное поле).
- * "Silver 999.0" → "999.0"; "Gold 999.9" → "999.9"; "925 / 1000" → "925 / 1000" (через formatPurity).
- */
+/** Проба: дробь 925/1000 или число 999.9 — см. finenessNumericOnly */
 function normalizePampFineness(raw) {
-  if (raw == null || raw === "") return null;
-  let s = String(raw).trim().replace(/,/g, ".").replace(/‰/g, "");
-  if (!s) return null;
-  const frac = s.match(/(\d{2,5})\s*\/\s*(\d{3,5})/);
-  if (frac) {
-    const out = `${frac[1]}/${frac[2]}`;
-    return formatPurity(out) || out;
-  }
-  s = s.replace(/[^\d.]+/g, " ").trim();
-  if (!s) return null;
-  const parts = s.split(/\s+/).filter(Boolean);
-  if (!parts.length) return null;
-  const last = parts[parts.length - 1];
-  return /^\d+(?:\.\d+)?$/.test(last) ? last : null;
+  return finenessNumericOnly(raw == null ? "" : String(raw));
 }
 
 function parseMetal(purity, title, specs) {

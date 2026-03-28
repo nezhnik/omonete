@@ -10,10 +10,10 @@
     "Year": "2025"
   },
   "classified": {
-    "obverse": "https://www.pamp.com/sites/pamp/files/2026-02/obv_prosp.png",
-    "reverse": "https://www.pamp.com/sites/pamp/files/2026-02/rev_persp.png",
-    "blister_obverse": "https://www.pamp.com/sites/pamp/files/2026-02/obv_certi_0.png",
-    "blister_reverse": "https://www.pamp.com/sites/pamp/files/2026-02/rev_certi_0.png",
+    "obverse": "/image/coins/foreign/1g-gold-bar-barbietm-valentines-day-obv.webp",
+    "reverse": "/image/coins/foreign/1g-gold-bar-barbietm-valentines-day-rev.webp",
+    "blister_obverse": null,
+    "blister_reverse": null,
     "packaging": null,
     "box": null,
     "certificate": null
@@ -24,5 +24,14 @@
     "https://www.pamp.com/sites/pamp/files/2026-02/rev_persp.png",
     "https://www.pamp.com/sites/pamp/files/2026-02/obv_prosp.png"
   ],
-  "parsedAt": "2026-03-27T15:58:42.746Z"
+  "parsedAt": "2026-03-27T22:10:29.461Z",
+  "classified_source_urls": {
+    "obverse": "https://www.pamp.com/sites/pamp/files/2026-02/obv_prosp.png",
+    "reverse": "https://www.pamp.com/sites/pamp/files/2026-02/rev_persp.png"
+  },
+  "image_materialize": {
+    "ok": true,
+    "issues": [],
+    "checkedAt": "2026-03-27T22:10:29.462Z"
+  }
 }

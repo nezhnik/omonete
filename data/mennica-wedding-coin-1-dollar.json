@@ -1,0 +1,38 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/wedding-coin-1-dollar",
+  "title": "Wedding Coin, 1 dollar",
+  "specs": {
+    "Issuer": "Niue",
+    "Metal": "Ag 999",
+    "Dimension": "38,61 mm",
+    "Manufacturer": "Mennica Polska",
+    "Decoration": "digital printing, laser frosting",
+    "Weight": "17,50 g",
+    "Face value": "1 dollar",
+    "Quality": "proof",
+    "Year of issue": "2026",
+    "Mintage": "500 pcs"
+  },
+  "descriptionPlain": "Description The Wedding Coin is an elegant keepsake created for a wedding occasion. The bride and groom motif highlights the meaning of a shared beginning, while floral details add lightness and a refined tone. It is a gift that fits the day of the ceremony and stays with the couple for years, as a symbol of an important date and lasting memories.",
+  "tabsPlain": {
+    "description": "Description The Wedding Coin is an elegant keepsake created for a wedding occasion. The bride and groom motif highlights the meaning of a shared beginning, while floral details add lightness and a refined tone. It is a gift that fits the day of the ceremony and stays with the couple for years, as a symbol of an important date and lasting memories."
+  },
+  "price_display": "zł 459,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Wedding-Coic_obverse.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Wedding-Coins_reverse.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Wedding-Coin_box.png",
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Wedding-Coins_reverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Wedding-Coic_obverse.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Wedding-Coin_box.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
+  "listing_label": "Collectible products",
+  "parsedAt": "2026-03-28T17:06:11.972Z"
+}
