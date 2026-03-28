@@ -546,12 +546,6 @@
     "listing_label": "Collectible products"
   },
   {
-    "url": "https://inwestycje.mennica.com.pl/box-for-gold-bar",
-    "title": "Box for gold bar",
-    "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
-    "listing_label": "Collectible products"
-  },
-  {
     "url": "https://inwestycje.mennica.com.pl/aries-500-cfa-francs-zodiac-signs",
     "title": "Aries, 500 CFA francs, Zodiac signs",
     "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
@@ -608,12 +602,6 @@
   {
     "url": "https://inwestycje.mennica.com.pl/arnold-bocklin-self-portrait-with-death-playing-the-fiddle-1000-cfa-francs",
     "title": "Arnold Böcklin, Self-portrait with Death playing the fiddle, 1000 CFA francs",
-    "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
-    "listing_label": "Collectible products"
-  },
-  {
-    "url": "https://inwestycje.mennica.com.pl/envelope",
-    "title": "Envelope",
     "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
     "listing_label": "Collectible products"
   },
@@ -1138,5 +1126,65 @@
     "title": "Gustav Klimt, Portrait of Fräulein Lieser, 500 CFA francs",
     "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
     "listing_label": "Collectible products"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-20-g",
+    "title": "Gold Bar – Mennica Polska – 20 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-10-g",
+    "title": "Gold Bar – Mennica Polska – 10 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-5-g",
+    "title": "Gold Bar – Mennica Polska – 5 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-2-g",
+    "title": "Gold Bar – Mennica Polska – 2 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-1-g",
+    "title": "Gold Bar – Mennica Polska – 1 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-0-25-g",
+    "title": "Gold Bar – Mennica Polska – 0.25 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-50-g",
+    "title": "Gold Bar – Mennica Polska – 50 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-0-5-g",
+    "title": "Gold Bar – Mennica Polska – 0.5 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-31-1-g",
+    "title": "Gold Bar – Mennica Polska – 31.1 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
+  },
+  {
+    "url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-100-g",
+    "title": "Gold Bar – Mennica Polska – 100 g",
+    "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+    "listing_label": "Gold bars (available, default price range)"
   }
 ]

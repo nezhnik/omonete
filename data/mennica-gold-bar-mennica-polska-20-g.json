@@ -1,0 +1,34 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-20-g",
+  "title": "Gold Bar – Mennica Polska – 20 g",
+  "specs": {
+    "Manufacturer": "Mennica Polska",
+    "Metal": "Au 999,9",
+    "Dimension": "16 × 26,7 × 2,9 mm",
+    "Packaging": "CertiCard® 54,00 × 85,60 mm",
+    "Weight": "20 g"
+  },
+  "descriptionPlain": "Description A 20g gold bar is sold in special packaging that guarantees its authenticity – CertiCard. The packaging includes the bar’s specifications – weight, gold content, and the unique serial number of the offered bar. The design of the bar features the modern logo of Mennica Polska [Mint of Poland], as well as the bar’s weight and gold fineness.",
+  "tabsPlain": {
+    "description": "Description A 20g gold bar is sold in special packaging that guarantees its authenticity – CertiCard. The packaging includes the bar’s specifications – weight, gold content, and the unique serial number of the offered bar. The design of the bar features the modern logo of Mennica Polska [Mint of Poland], as well as the bar’s weight and gold fineness."
+  },
+  "price_display": "zł 11 620,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/20g_rewers_certicard.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/20g_awers_certicard.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/20g_rewers_certicard.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/20g_awers_certicard.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2022/11/szt_20g.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2022/11/szt_tyl_2.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+  "listing_label": "Gold bars (available, default price range)",
+  "parsedAt": "2026-03-28T18:26:40.089Z"
+}

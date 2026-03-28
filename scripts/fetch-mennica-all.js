@@ -13,6 +13,7 @@
 const fs = require("fs");
 const path = require("path");
 const { parseMennicaProduct, normalizeUrl, slugFromUrl, mergeSpecsFromPlain } = require("./fetch-mennica-product.js");
+const { isExcludedMennicaProductUrl } = require("./mennica-excluded-product-urls.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const LISTING_JSON = path.join(DATA_DIR, "mennica-listing-products.json");
@@ -65,7 +66,7 @@ async function main() {
     if (!u) continue;
     if (!byUrl.has(u)) byUrl.set(u, row);
   }
-  let list = Array.from(byUrl.values());
+  let list = Array.from(byUrl.values()).filter((row) => !isExcludedMennicaProductUrl(row.url));
 
   if (onlyMissing) {
     const before = list.length;

@@ -89,7 +89,6 @@ https://inwestycje.mennica.com.pl/danish-palaces-egg-1-dollar
 https://inwestycje.mennica.com.pl/inverted-jenny-500-cfa-francs
 https://inwestycje.mennica.com.pl/easter-egg-1-dollar-2
 https://inwestycje.mennica.com.pl/coral-reef-2-dollars
-https://inwestycje.mennica.com.pl/box-for-gold-bar
 https://inwestycje.mennica.com.pl/aries-500-cfa-francs-zodiac-signs
 https://inwestycje.mennica.com.pl/taurus-500-cfa-francs-zodiac-signs
 https://inwestycje.mennica.com.pl/fried-egg-500-cfa-francs
@@ -100,7 +99,6 @@ https://inwestycje.mennica.com.pl/capricorn-500-cfa-francs-zodiac-signs
 https://inwestycje.mennica.com.pl/pisces-500-cfa-francs-zodiac-signs
 https://inwestycje.mennica.com.pl/ufo-mp-1766-blue-galaxy-1766-cfa-francs
 https://inwestycje.mennica.com.pl/arnold-bocklin-self-portrait-with-death-playing-the-fiddle-1000-cfa-francs
-https://inwestycje.mennica.com.pl/envelope
 https://inwestycje.mennica.com.pl/hanami-1-dollar
 https://inwestycje.mennica.com.pl/eye-of-horus-ii-1-dollar
 https://inwestycje.mennica.com.pl/happy-birthday-500-cfa-francs-2
@@ -188,3 +186,13 @@ https://inwestycje.mennica.com.pl/cancer-500-cfa-francs
 https://inwestycje.mennica.com.pl/leo-500-cfa-francs
 https://inwestycje.mennica.com.pl/moon-500-cfa-francs
 https://inwestycje.mennica.com.pl/gustav-klimt-portrait-of-fraulein-lieser-500-cfa-francs
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-20-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-10-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-5-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-2-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-1-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-0-25-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-50-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-0-5-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-31-1-g
+https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-100-g

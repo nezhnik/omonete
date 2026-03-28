@@ -455,7 +455,9 @@ async function run() {
     const isRoyalMintCatalog = /^GB-ROYAL-/i.test(String(r.catalog_number || "").trim());
     /** PAMP collectibles из import-pamp-to-db.js — всегда в каталоге (148 позиций), даже без числового тиража. */
     const isPampCollectible = /^CH-PAMP-/i.test(String(r.catalog_number || "").trim());
-    return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible;
+    /** Золотые слитки Mennica (листинг gold-bars) — без лимитированного тиража в specs. */
+    const isMennicaGoldBar = /^PL-MENNICA-GOLD-BAR-/i.test(String(r.catalog_number || "").trim());
+    return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible || isMennicaGoldBar;
   });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();

@@ -4,6 +4,8 @@
  *
  *   node scripts/import-mennica-to-db.js
  *   node scripts/import-mennica-to-db.js data/mennica-foo.json
+ *   node scripts/import-mennica-to-db.js --force-images
+ *     — снова скачать и пересобрать webp по URL из JSON даже если файл уже есть (без ручного rm; при ошибке скачивания/sharp старый файл сохраняется).
  */
 require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
@@ -11,6 +13,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const { finenessNumericOnly } = require("./format-coin-characteristics.js");
+const { isExcludedMennicaProductUrl } = require("./mennica-excluded-product-urls.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const FOREIGN_IMG_DIR = path.join(__dirname, "..", "public", "image", "coins", "foreign");
@@ -163,7 +166,8 @@ async function fetchBuffer(url, timeoutMs = 30000) {
   }
 }
 
-async function localizeForeignImage(url, fileBase) {
+async function localizeForeignImage(url, fileBase, options = {}) {
+  const force = options.force === true;
   if (!url || typeof url !== "string") return null;
   const raw = String(url).trim();
   if (!raw) return null;
@@ -176,23 +180,41 @@ async function localizeForeignImage(url, fileBase) {
   const absOut = path.join(FOREIGN_IMG_DIR, fileName);
   const relOut = `/image/coins/foreign/${fileName}`;
 
-  if (fs.existsSync(absOut) && fs.statSync(absOut).size > 0) return relOut;
+  const hadExisting = fs.existsSync(absOut) && fs.statSync(absOut).size > 0;
+  if (!force && hadExisting) return relOut;
 
   const buf = await fetchBuffer(raw);
-  if (!buf || buf.length === 0) return null;
+  if (!buf || buf.length === 0) {
+    if (hadExisting) return relOut;
+    return null;
+  }
+
+  const tmp = `${absOut}.tmp.${process.pid}.${Date.now()}`;
   try {
-    await sharp(buf).webp({ quality: 90 }).toFile(absOut);
+    await sharp(buf).webp({ quality: 90 }).toFile(tmp);
+    fs.renameSync(tmp, absOut);
     return relOut;
-  } catch {
+  } catch (e) {
+    try {
+      if (fs.existsSync(tmp)) fs.unlinkSync(tmp);
+    } catch {
+      /* ignore */
+    }
+    if (hadExisting) {
+      console.warn("  [mennica import] sharp/запись, оставлен старый файл:", fileName, String(e && e.message ? e.message : e));
+      return relOut;
+    }
     return null;
   }
 }
 
 async function main() {
-  const arg = process.argv[2];
+  const argv = process.argv.slice(2);
+  const forceImages = argv.includes("--force-images");
+  const jsonArg = argv.find((a) => a.endsWith(".json"));
   let files = [];
-  if (arg && arg.endsWith(".json")) {
-    const p = path.isAbsolute(arg) ? arg : path.join(process.cwd(), arg);
+  if (jsonArg) {
+    const p = path.isAbsolute(jsonArg) ? jsonArg : path.join(process.cwd(), jsonArg);
     if (!fs.existsSync(p)) throw new Error(`Файл не найден: ${p}`);
     files = [p];
   } else {
@@ -255,6 +277,7 @@ async function main() {
     }
     const sourceUrl = normalizeUrl(raw.source_url);
     if (!sourceUrl || !/mennica\.com\.pl/i.test(sourceUrl)) continue;
+    if (isExcludedMennicaProductUrl(sourceUrl)) continue;
 
     const slug = slugFromUrl(sourceUrl);
     const specs = raw.specs || {};
@@ -285,20 +308,23 @@ async function main() {
     const listingLabel = String(raw.listing_label || "").trim();
     const series = listingLabel ? `Mennica Polska · ${listingLabel}` : "Mennica Polska";
 
+    const imgOpts = { force: forceImages };
     const classified = raw.classified || {};
-    const imageObverse = await localizeForeignImage(classified.obverse, `mennica-${slug}-obv`);
-    const imageReverse = await localizeForeignImage(classified.reverse, `mennica-${slug}-rev`);
+    const imageObverse = await localizeForeignImage(classified.obverse, `mennica-${slug}-obv`, imgOpts);
+    const imageReverse = await localizeForeignImage(classified.reverse, `mennica-${slug}-rev`, imgOpts);
     const imageBlisterObv = await localizeForeignImage(
       classified.blister_obverse,
-      `mennica-${slug}-blister-obv`
+      `mennica-${slug}-blister-obv`,
+      imgOpts
     );
     const imageBlisterRev = await localizeForeignImage(
       classified.blister_reverse,
-      `mennica-${slug}-blister-rev`
+      `mennica-${slug}-blister-rev`,
+      imgOpts
     );
-    const imagePackaging = await localizeForeignImage(classified.packaging, `mennica-${slug}-pack`);
-    const imageBox = await localizeForeignImage(classified.box, `mennica-${slug}-box`);
-    const imageCertificate = await localizeForeignImage(classified.certificate, `mennica-${slug}-cert`);
+    const imagePackaging = await localizeForeignImage(classified.packaging, `mennica-${slug}-pack`, imgOpts);
+    const imageBox = await localizeForeignImage(classified.box, `mennica-${slug}-box`, imgOpts);
+    const imageCertificate = await localizeForeignImage(classified.certificate, `mennica-${slug}-cert`, imgOpts);
 
     const catalogNumber = `PL-MENNICA-${slug}`.toUpperCase().slice(0, 64);
 
@@ -349,6 +375,7 @@ async function main() {
 
   await conn.end();
   console.log(`✓ Mennica Polska: добавлено ${inserted}, обновлено ${updated}`);
+  if (forceImages) console.log("  (режим --force-images: картинки пересобраны по URL из JSON, при сбое сохранён прежний файл на диске)");
   console.log("Дальше: npm run data:export (или npm run build)");
 }
 

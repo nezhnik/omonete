@@ -90,8 +90,10 @@
 | Mennica: только без JSON | `npm run mennica:fetch:missing` |
 | Mennica: перепарсить дубли obv/rev в JSON | `npm run mennica:fetch:fix-duplicate-images` |
 | Mennica: в БД | `npm run mennica:import` |
+| Mennica: перекачать все картинки по URL из JSON (без rm; при сбое старый файл на диске сохраняется) | `npm run mennica:import:force-images` |
 | Mennica: отчёт JSON vs БД по картинкам | `npm run mennica:report-images` |
-| Mennica: сброс локальных obv/rev webp (чтобы импорт перекачал с сайта) | `npm run mennica:refresh:webp -- --same-hash` или `… -- 7073 7059` |
+| Mennica: план удаления obv/rev webp (dry-run) / удаление | `npm run mennica:refresh:webp -- --same-hash` / то же с `--apply` и опционально `--backup` |
+| Mennica: выровнять `classified` по токенам в имени файла (obv/rev swap, добор box из `imageUrls`) | `npm run mennica:fix:classified` (dry-run), затем `npm run mennica:fix:classified:apply` |
 | Полный цикл Mennica (после листинга) | `npm run mennica:sync` |
 
 Остальные источники — см. `package.json` (`pamp:*`, `germania:*`, скрипты Royal/Perth по имени).
@@ -114,4 +116,45 @@
 - Разные дилеры реализованы в разное время: **PAMP** и **Mennica** тянут расширенный `classified` в JSON и импорт; **Germania** пока только аверс/реверс монеты.
 - Дальнейшая цель: выровнять **Germania** под тот же контракт §1–§2, **не ломая** уже сохранённые пути в БД без необходимости.
 
-Последнее обновление контракта: по состоянию репозитория на момент добавления файла (сверка с `fetch-mennica-product.js`, `import-mennica-to-db.js`, `fetch-pamp-product.js`, `import-pamp-to-db.js`, `fetch-germania-mint-coin.js`, `import-germania-mint-to-db.js`, `import-royal-mint-to-db.js`, `import-perth-mint-to-db.js`).
+---
+
+## 8. Дубли и перепутанные картинки (Mennica): типы проблем и что уже работало
+
+Ниже — **как отличить ситуацию** и **какой инструмент применить**, без угадывания. Парсер **не смотрит** на `alt`/`title` у `<img>` на сайте Mennica — только на **URL** (`data-large_image` / `src`).
+
+### 8.1. Типы проблем
+
+| Симптом | Вероятная причина |
+|---------|-------------------|
+| В каталоге **два разных пути** (`…-obv.webp` и `…-rev.webp`), а **картинка одна и та же** | Раньше в БД был **один URL** на обе стороны; импорт записал **одинаковые байты** в два файла. Потом JSON исправили, но **`import-mennica-to-db.js` не перекачивает**, если файл уже есть. |
+| В JSON **один канонический URL** на `obverse` и `reverse` (часто разные размеры WooCommerce → один PNG) | Старый парсер брал `imgs[0]`/`imgs[1]` из галереи. **Исправлено** в `fetch-mennica-product.js` (уникальные URL + токены в имени файла). Точечный перезапуск: `mennica:fetch:fix-duplicate-images`. |
+| В `classified.obverse` лежит файл с **`reverse` в имени** и наоборот (например `Reverse_The_Scream…` в слоте obverse) | Именование файлов на стороне дилера или старый fallback по порядку галереи. |
+| Оба файла в галерее содержат в имени только **`reverse`** (редко) | Ошибка контента Mennica; **автоматически не различить** аверс/реверс по имени — оставляем **порядок кадров** как на сайте. |
+| Нет **коробки** / сертификата в данных | В URL нет токенов `box`, `cert`, … или кадр не попал в `classified`. После правки парсера — добор из `imageUrls`: `fix-mennica-classified-labels.js`. |
+
+### 8.2. Варианты решения (по возрастанию «жёсткости»)
+
+1. **`npm run mennica:fix:classified`** → при необходимости **`mennica:fix:classified:apply`** — поправить **только JSON** под токены в пути (`swap` obv/rev, заполнить `box` из `imageUrls`). Скрипт: `scripts/fix-mennica-classified-labels.js`, утилиты: `scripts/mennica-image-url-utils.js`.
+2. **`npm run mennica:import:force-images`** — **перекачать webp** по актуальным URL из JSON **без `rm`**: запись через временный файл; при сбое сети/sharp **старый файл на диске сохраняется**. Основной безопасный способ обновить пиксели после правки JSON или БД.
+3. **`npm run mennica:refresh:webp -- --same-hash`** (по умолчанию **dry-run**) → с **`--apply`** [и опционально **`--backup`**] — удалить пары obv/rev, у которых **разные URL в JSON**, но **одинаковый SHA256** на диске; затем обычный `mennica:import`. Нужен редко, если принципиально сначала стереть файлы.
+4. **`npm run mennica:fetch:fix-duplicate-images`** или **`mennica:fetch:all`** — заново снять PDP, если в JSON **дубль URL** или нет нужных картинок на странице.
+
+После импорта: **`npm run data:export:incremental`** (или полный `data:export`, если нужно обновить все детальные JSON).
+
+### 8.3. Что уже сделали и сработало (фиксация опыта)
+
+- **WooCommerce / размеры:** уникальный порядок URL + нормализация канона (`-600x600` и т.д.), выбор obv/rev по **`obverse` / `reverse` в пути** — убрало массовый дубль «два реверса».
+- **Имена вида `COIN_obverse_.png`:** токен с учётом **`_` после слова** (`urlHasFaceToken` в `fetch-mennica-product.js`) — иначе `\b` в RegExp не срабатывал и стороны брались **по порядку галереи** (ошибка на Easter Egg и др.).
+- **`classified` для упаковки:** `box`, `cert`, блистер и т.д. + импорт в колонки БД.
+- **Перепутанные слоты по имени файла:** пример **Edvard Munch Scream** — в JSON obverse/reverse **поменяны местами** относительно токенов `Obverse_…` / `Reverse_…`; исправление через **`fix-mennica-classified-labels.js --apply`** (swap).
+- **Одинаковые webp при разных путях:** диагностика **SHA256** пары `mennica-*-obv.webp` / `rev.webp`; массовое удаление только с **`--apply`** в `refresh-mennica-foreign-webp.js`; затем **`mennica:import:force-images`** — успешно обновило **190** позиций без ручного удаления.
+- **Прямоугольная монета в UI:** id в **`rectangular-coin-ids.json`** (например Atlas Maior **7030**) — флаг `rectangular` при экспорте.
+
+### 8.4. Что автоматом не решаем
+
+- **Визуально две одинаковые картинки при разных URL** на стороне дилера — без ручного списка или отдельного детекта по хэшу пикселей.
+- **Семантика «где аверс»**, если в именах файлов **нет** ни `obverse`, ни `reverse` — только эвристики сайта или ручная правка.
+
+---
+
+Последнее обновление контракта: §8 — дубли Mennica и рабочий пайплайн исправлений; сверка с `fetch-mennica-product.js`, `import-mennica-to-db.js`, `fix-mennica-classified-labels.js`, `refresh-mennica-foreign-webp.js`, `fetch-mennica-all.js` (`--refetch-duplicate-images`).

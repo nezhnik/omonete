@@ -4,7 +4,7 @@
  *
  * По умолчанию два листинга (как у PAMP — несколько тем):
  *   - collectible-products
- *   - investment gold bars
+ *   - gold bars: базовый URL категории (см. ниже про query)
  *
  * Сохраняет:
  *   - data/mennica-listing-products.json  [{ url, title, listing_url, listing_label }]
@@ -14,11 +14,16 @@
  *   npm run mennica:listing
  *   node scripts/fetch-mennica-listing.js "https://inwestycje.mennica.com.pl/..." "Моя метка"
  *
- * По умолчанию снимается чекбокс «Only Available» (dostepne), иначе в выдаче ~126 вместо ~190
- * при том же URL. Чтобы оставить только доступные: --only-available
+ * По умолчанию снимается чекбокс «Only Available» (dostepne) для collectible (иначе меньше карточек).
+ * Для gold bars фильтр не трогаем: на сайте по умолчанию dostepne + слайдер цены (как в UI при
+ * `?_filter=dostepne&priceMin=220&priceMax=56475`), но тот же query на сервере часто отдаёт 404 —
+ * поэтому открываем категорию без query.
+ * Если в URL листинга есть _filter=dostepne — чекбокс тоже не снимаем.
+ * Явно оставить «только доступные» для всех листингов: --only-available
  */
 const fs = require("fs");
 const path = require("path");
+const { isExcludedMennicaProductUrl } = require("./mennica-excluded-product-urls.js");
 
 const SCRIPT_DIR = __dirname;
 const DATA_DIR = path.join(SCRIPT_DIR, "..", "data");
@@ -31,9 +36,10 @@ const DEFAULT_LISTINGS = [
     label: "Collectible products",
   },
   {
-    // Полный query с priceMax/Min на сайте отдаёт 404; каталог открывается по базовому пути.
     url: "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
-    label: "Gold bars",
+    label: "Gold bars (available, default price range)",
+    /** Не снимать dostepne; эквивалент страницы с ?_filter=dostepne&priceMin=220&priceMax=56475 (query даёт 404) */
+    keepOnlyAvailableFilter: true,
   },
 ];
 
@@ -92,6 +98,17 @@ function parseCliOptions() {
   };
 }
 
+/** URL уже задаёт фильтр «доступные» — не снимать чекбокс, иначе расширится выдача. */
+function listingUrlKeepsOnlyAvailableFilter(listingUrl) {
+  try {
+    const u = new URL(listingUrl);
+    const f = u.searchParams.get("_filter");
+    return f != null && /dostepne/i.test(String(f));
+  } catch {
+    return false;
+  }
+}
+
 function parseListingsFromArgv() {
   const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
   if (args.length === 0) return DEFAULT_LISTINGS.slice();
@@ -101,10 +118,14 @@ function parseListingsFromArgv() {
       const url = args[i];
       const label =
         args[i + 1] && !/^https?:\/\//i.test(args[i + 1]) ? args[++i] : "Custom listing";
-      out.push({ url, label });
+      out.push({
+        url,
+        label,
+        keepOnlyAvailableFilter: listingUrlKeepsOnlyAvailableFilter(url),
+      });
     }
   }
-  return out.length ? out : DEFAULT_LISTINGS.slice();
+  return out.length ? out : DEFAULT_LISTINGS.map((x) => ({ ...x }));
 }
 
 /**
@@ -233,14 +254,20 @@ async function clickNextPage(page) {
   return true;
 }
 
-async function scrapeOneListing(page, listingUrl, listingLabel, cli) {
+async function scrapeOneListing(page, listing, cli) {
+  const listingUrl = listing.url;
+  const listingLabel = listing.label;
   const all = [];
   const seenPages = new Set();
   let guard = 0;
   await page.goto(listingUrl, { waitUntil: "networkidle", timeout: 120000 });
   await acceptCookies(page);
   await waitForListingGridReady(page, null);
-  if (!cli.onlyAvailable) {
+  const keepAvailableFilter =
+    cli.onlyAvailable ||
+    listingUrlKeepsOnlyAvailableFilter(listingUrl) ||
+    listing.keepOnlyAvailableFilter === true;
+  if (!keepAvailableFilter) {
     await turnOffOnlyAvailableFilter(page);
     const hint = await page.evaluate(
       () => document.querySelector(".woocommerce-result-count")?.innerText?.replace(/\s+/g, " ").trim() || ""
@@ -286,9 +313,9 @@ async function main() {
 
   const merged = [];
   try {
-    for (const { url, label } of listings) {
-      console.log("Листинг:", label, url);
-      const rows = await scrapeOneListing(page, url, label, cli);
+    for (const listing of listings) {
+      console.log("Листинг:", listing.label, listing.url);
+      const rows = await scrapeOneListing(page, listing, cli);
       merged.push(...rows);
     }
   } finally {
@@ -299,7 +326,7 @@ async function main() {
   for (const r of merged) {
     if (!byUrl.has(r.url)) byUrl.set(r.url, r);
   }
-  const unique = Array.from(byUrl.values());
+  const unique = Array.from(byUrl.values()).filter((r) => !isExcludedMennicaProductUrl(r.url));
 
   fs.writeFileSync(PRODUCTS_JSON, JSON.stringify(unique, null, 2), "utf8");
   fs.writeFileSync(

@@ -1,0 +1,34 @@
+{
+  "source_url": "https://inwestycje.mennica.com.pl/gold-bar-mennica-polska-0-5-g",
+  "title": "Gold Bar – Mennica Polska – 0.5 g",
+  "specs": {
+    "Manufacturer": "Mennica Polska",
+    "Metal": "Au 999,9",
+    "Dimension": "5,1 × 8,4 × 0,85 mm",
+    "Packaging": "CertiCard® 54,00 × 85,60 mm",
+    "Weight": "0,5 g"
+  },
+  "descriptionPlain": "Description A 0.5g gold bar is sold in special packaging that guarantees its authenticity – CertiCard. The packaging includes the bar’s specifications – weight, gold content, and a unique serial number. The design of the bar features the modern logo of Mennica Polska [Mint of Poland], as well as the bar’s weight and gold fineness.",
+  "tabsPlain": {
+    "description": "Description A 0.5g gold bar is sold in special packaging that guarantees its authenticity – CertiCard. The packaging includes the bar’s specifications – weight, gold content, and a unique serial number. The design of the bar features the modern logo of Mennica Polska [Mint of Poland], as well as the bar’s weight and gold fineness."
+  },
+  "price_display": "zł 350,00",
+  "classified": {
+    "obverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/05g_rewers_certicard-1.png",
+    "reverse": "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/05g_awers_certicard.png",
+    "blister_obverse": null,
+    "blister_reverse": null,
+    "packaging": null,
+    "box": null,
+    "certificate": null
+  },
+  "imageUrls": [
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/05g_rewers_certicard-1.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/05g_awers_certicard.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/08/Sztabka_zlota_MPSA_0_50_back.png",
+    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/08/Sztabka_zlota_MPSA_0_50_front.png"
+  ],
+  "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
+  "listing_label": "Gold bars (available, default price range)",
+  "parsedAt": "2026-03-28T18:27:04.211Z"
+}

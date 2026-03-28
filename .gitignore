@@ -59,6 +59,9 @@ mint-articles.json
 # логи парсеров в data/ (fetch Mennica и т.п.)
 data/*.log
 
+# локальные бэкапы webp перед refresh-mennica-foreign-webp.js --backup
+public/image/coins/mennica-webp-backup-*/
+
 # состояние инкрементального экспорта (npm run data:export -- --incremental)
 export-state.json
 
