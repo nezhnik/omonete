@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/7/2/2/9532277-3-eng-US/379a240fd3e2-2024_100E_Packshot-Etui_China.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

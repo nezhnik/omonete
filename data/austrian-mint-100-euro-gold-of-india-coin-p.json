@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/0/5/8/9478505-1-ger-DE/90f43b807d2a-2023_100E_Das_goldene_Indien_Packshot_Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

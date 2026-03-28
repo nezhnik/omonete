@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "secondary-mintage-research-queue",
+  "title": "Очередь и результаты поиска тиража во вторичных источниках",
+  "description": "Заполняется скриптом generate-secondary-mintage-research-queue.js (поля searchUrls, summary). proposals / verified* — после ручной или полуавтоматической верификации. Два согласованных источника — перед UPDATE в БД.",
+  "type": "object",
+  "required": ["generatedAt", "cohort", "items"],
+  "properties": {
+    "generatedAt": {
+      "type": "string",
+      "description": "ISO-8601"
+    },
+    "cohort": {
+      "type": "string",
+      "description": "Краткое описание SQL-фильтра"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "total": { "type": "integer" },
+        "byCatalogPrefix": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["coinId", "title", "searchUrls", "proposals", "status"],
+        "properties": {
+          "coinId": { "type": "integer" },
+          "catalog_number": { "type": ["string", "null"] },
+          "title": { "type": "string" },
+          "title_en": { "type": ["string", "null"] },
+          "country": { "type": ["string", "null"] },
+          "mint": { "type": ["string", "null"] },
+          "source_url": { "type": ["string", "null"] },
+          "searchUrls": {
+            "type": "object",
+            "description": "Готовые URL для браузера (без автоматического скрапа)",
+            "properties": {
+              "numista": { "type": "string", "format": "uri" },
+              "googleNumista": { "type": "string", "format": "uri" },
+              "googleColnect": { "type": "string", "format": "uri" },
+              "googleGeneral": { "type": "string", "format": "uri" }
+            }
+          },
+          "proposals": {
+            "type": "array",
+            "description": "Каждый найденный тираж с привязкой к странице",
+            "items": {
+              "type": "object",
+              "required": ["mintage", "sourceName", "sourceUrl"],
+              "properties": {
+                "mintage": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Числовой тираж; null не допускается в proposal — тогда не добавлять элемент"
+                },
+                "sourceName": {
+                  "type": "string",
+                  "examples": ["Numista", "Colnect", "Dealer X"]
+                },
+                "sourceUrl": { "type": "string", "format": "uri" },
+                "quotedText": {
+                  "type": "string",
+                  "description": "Фрагмент с сайта (опционально)"
+                }
+              }
+            }
+          },
+          "verifiedMintage": {
+            "type": ["integer", "null"],
+            "description": "Итог после сверки ≥2 источников"
+          },
+          "verifiedMintageDisplay": {
+            "type": ["string", "null"],
+            "description": "Текст для БД, например «3 600 (Numista + дилер)»"
+          },
+          "verificationNotes": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "needs_second_source",
+              "ready_for_db",
+              "rejected_inconsistent"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

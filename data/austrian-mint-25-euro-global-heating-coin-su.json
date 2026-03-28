@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/9/7/1/9411795-1-ger-DE/13f1ff5f2f83-2023_Etui_25E-Erderwaermung.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 65000,
+    "mintage_display": "65,000"
   }
 }

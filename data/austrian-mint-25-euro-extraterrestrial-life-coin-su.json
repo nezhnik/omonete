@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/0/7/5/7845708-1-ger-DE/25E_2022_Leben_im_All_Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 65000,
+    "mintage_display": "65,000"
   }
 }

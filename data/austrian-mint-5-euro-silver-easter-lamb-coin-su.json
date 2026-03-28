@@ -25,5 +25,9 @@
     "packaging": null,
     "box": null,
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 50000925,
+    "mintage_display": "50,000 (Silver Ag 925)"
   }
 }

@@ -27,5 +27,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/4/8/3/8123842-1-ger-DE/Packshot_Schwarzes Loch_Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000"
   }
 }

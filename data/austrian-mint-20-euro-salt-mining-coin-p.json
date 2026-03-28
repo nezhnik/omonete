@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/9/2/5/9/9499529-1-ger-DE/21235fba47a5-2024_20E_Bergbau_Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000"
   }
 }

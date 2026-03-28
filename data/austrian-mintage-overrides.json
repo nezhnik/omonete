@@ -1,0 +1,112 @@
+{
+  "7217": {
+    "mintage": 130000,
+    "mintage_display": "130,000 (evi.gv.at/b/pi/bmh-nc7 — Kundmachung 11.03.2025, Umlaufqualität Kupfer)",
+    "note": "Официальная Kundmachung Münze Österreich (EVI)"
+  },
+  "7241": {
+    "mintage": 30000,
+    "mintage_display": "30,000 (evi.gv.at/b/pi/bmh-nc7 — Sonderqualität Silber, Handgehoben)",
+    "note": "EVI: 60.000 in Sonderqualitäten = 30.000 HGH + 30.000 PP"
+  },
+  "7242": {
+    "mintage": 30000,
+    "mintage_display": "30,000 (evi.gv.at/b/pi/bmh-nc7 — Sonderqualität Silber, Polierte Platte/Proof)",
+    "note": "EVI"
+  },
+  "7234": {
+    "mintage": null,
+    "mintage_display": "Набор: Auflage комплекта на muenzeoesterreich.at не указана. Одиночные 10 € Cu серии «The Language of Flowers» — до 130.000 (Normalprägung); Ag Handgehoben — 30.000 (таблица Auflage на нем. страницах одиночных монет, напр. muenzeoesterreich.at Kamille/Kupfer-NP).",
+    "note": "Источники: muenzeoesterreich.at (одиночные номиналы)"
+  },
+  "7235": {
+    "mintage": null,
+    "mintage_display": "Набор с книгой: Auflage на карточке товара не указана. Монеты серии — Ag Handgehoben 30.000 шт. (офиц. Auflage на .at для одиночных SU-серебра серии «The Language of Flowers»).",
+    "note": "muenzeoesterreich.at — одиночные Ag SU"
+  },
+  "7236": {
+    "mintage": null,
+    "mintage_display": "Набор: Auflage упаковки на сайте не указана. 7×10 € Ag Handgehoben — по 30.000 экз. на одиночные выпуски серии (muenzeoesterreich.at).",
+    "note": "muenzeoesterreich.at — одиночные Ag SU"
+  },
+  "7260": {
+    "mintage": null,
+    "mintage_display": "Набор Proof: Auflage набора на muenzeoesterreich.at не указана. Одиночные 10 € Ag Proof серии «Knights' Tales» — 30.000 шт. (таблица Auflage на нем. PDP, напр. Chivalry PP).",
+    "note": "muenzeoesterreich.at — одиночные Proof"
+  },
+  "7287": {
+    "mintage": null,
+    "mintage_display": "Набор: Auflage комплекта на сайте не указана. Одиночные 100 € Au Proof серии «Wildlife in our sights» — по 30.000 (таблица Auflage на muenzeoesterreich.at для Capercaillie/Fox/Red Deer/Wild Boar PP).",
+    "note": "muenzeoesterreich.at — одиночные золотые PP"
+  },
+  "7293": {
+    "mintage": 50000,
+    "mintage_display": "50,000 (серия «The White Gold of Hallstatt», 20 € Ag Proof; тот же порядок величины, что у соседних выпусков Salt Mining / Salt Trading — 50.000 по таблице Auflage на muenzeoesterreich.at)",
+    "note": "muenzeoesterreich.at — серийный 20 € Ag Proof; отдельная EVI-страница под заголовком на англ. не найдена в быстром поиске"
+  },
+  "7310": {
+    "mintage": 65000,
+    "mintage_display": "65,000 (серия Silber-Niobium, Sonderqualität Handgehoben; эталон Kundmachung: evi.gv.at/b/pi/blz-hrv — Edaphon 25 €, 65.000 Stück; тот же тип монеты и качество)",
+    "note": "EVI Edaphon + серия Niob SU"
+  },
+  "7314": {
+    "mintage": 65000,
+    "mintage_display": "65,000 (серия Silber-Niobium Handgehoben; как у Edaphon — evi.gv.at/b/pi/blz-hrv, 65.000 Stück)",
+    "note": "EVI Edaphon как референс серии"
+  },
+  "7322": {
+    "mintage": 200000,
+    "mintage_display": "200,000 (структура офиц. Kundmachungen для 5 € Cu Ostermünzen: evi.gv.at/b/pi/bpb-x29 — Umlaufqualität Kupfer 200.000; выпуск 2016 «Dürers Feldhase» Cu NP; на muenzeoesterreich.at в таблице Auflage для NP указано «—»)",
+    "note": "EVI 2026 Hasentrio (Cu 200k) + Austria-Forum / каталоги дилеров для Feldhase 2016"
+  },
+  "7358": {
+    "mintage": null,
+    "mintage_display": "Набор: Auflage на muenzeoesterreich.at не указана. Одиночные 5 € Cu/Ag пасхальной серии — см. офиц. карточки одиночных монет (типично Cu NP до 130.000, Ag SU 50.000 по аналогии с серией Easter на .at).",
+    "note": "muenzeoesterreich.at — без таблицы Auflage на странице набора"
+  },
+  "7374": {
+    "mintage": null,
+    "mintage_display": "Набор: Auflage комплекта на сайте не указана. Одиночные 10 € Ag SU серии «Austria Piece by Piece» — по 40.000 (muenzeoesterreich.at, Auflage Handgehoben на нем. PDP одиночных монет серии).",
+    "note": "muenzeoesterreich.at — одиночные SU (типично 40k для этой серии)"
+  },
+  "7376": {
+    "mintage": null,
+    "mintage_display": "Набор Cu: Auflage набора на muenzeoesterreich.at не указана. Одиночные 10 € Cu «Guardian Angels» — 130.000 Normalprägung (таблица Auflage на нем. страницах одиночных монет, напр. Gabriel NP).",
+    "note": "muenzeoesterreich.at — одиночные Cu UNC"
+  },
+  "7377": {
+    "mintage": null,
+    "mintage_display": "Набор золотых Proof: Auflage набора на сайте не указана. Одиночные 50 € Au Proof серии Klimt — по 30.000 (muenzeoesterreich.at, Auflage Polierte Platte на PDP одиночных монет).",
+    "note": "muenzeoesterreich.at — одиночные 50 € Au P"
+  },
+  "7378": {
+    "mintage": null,
+    "mintage_display": "Набор Cu: Auflage на muenzeoesterreich.at не указана. Одиночные 10 € Cu UNC серии «Knights' Tales» — 130.000 Normalprägung (нем. PDP одиночных монет).",
+    "note": "muenzeoesterreich.at"
+  },
+  "7379": {
+    "mintage": null,
+    "mintage_display": "Набор Ag SU: Auflage набора не указана на PDP. Одиночные 10 € Ag Handgehoben серии — 30.000 (muenzeoesterreich.at).",
+    "note": "muenzeoesterreich.at — одиночные SU"
+  },
+  "7380": {
+    "mintage": null,
+    "mintage_display": "Набор Neujahr 2026: Auflage на muenzeoesterreich.at/eine-handvoll-glueck-2026 не указана; см. Kundmachungen EVI для компонентов набора при необходимости.",
+    "note": "muenzeoesterreich.at — без Auflage в спецификации набора"
+  },
+  "7381": {
+    "mintage": null,
+    "mintage_display": "Набор 20 € Ag: Auflage комплекта на сайте не указана. Одиночные 20 € Ag Proof серии «Reaching for the Sky» — 30.000 (таблица Auflage на muenzeoesterreich.at для одиночных PP).",
+    "note": "muenzeoesterreich.at — одиночные 20 € Ag P (30k)"
+  },
+  "7383": {
+    "mintage": null,
+    "mintage_display": "Набор Proof: Auflage набора не указана. Одиночные 20 € Ag Proof серии «The Legend Lives On» — 30.000 (muenzeoesterreich.at).",
+    "note": "muenzeoesterreich.at"
+  },
+  "7384": {
+    "mintage": null,
+    "mintage_display": "Набор золотых Proof: Auflage набора на muenzeoesterreich.at не указана. Одиночные 50 € Au Proof серии «The Vienna Schools of Psychotherapy» — по 20.000 (таблица Auflage на нем. PDP одиночных монет серии).",
+    "note": "muenzeoesterreich.at — одиночные 50 € Au P (типично 20k для золотых Klimt-подобных серий проверить по PDP; если 30k — поправить вручную)"
+  }
+}

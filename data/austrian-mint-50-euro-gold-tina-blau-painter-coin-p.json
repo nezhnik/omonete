@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/3/3/9/9099332-1-ger-DE/Packshot Etui_Tina Blau_716x716.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

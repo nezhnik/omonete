@@ -25,5 +25,9 @@
     "packaging": null,
     "box": null,
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000"
   }
 }

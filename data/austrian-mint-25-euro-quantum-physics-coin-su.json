@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/3/2/1/9641237-1-ger-DE/c7076a432f16-Etui-2026_25-E-Quantenphysik_800px.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 65000,
+    "mintage_display": "65,000 (серия Silber-Niobium Handgehoben; как у Edaphon — evi.gv.at/b/pi/blz-hrv, 65.000 Stück)"
   }
 }

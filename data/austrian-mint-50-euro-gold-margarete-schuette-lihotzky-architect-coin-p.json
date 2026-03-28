@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/2/0/6/9546028-3-eng-US/b3af83b700b3-Packshot-Etui_50EUR-Schuette-Lihot_800px.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

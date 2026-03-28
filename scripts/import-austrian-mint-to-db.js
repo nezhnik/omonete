@@ -347,12 +347,31 @@ async function main() {
     const metalFineness =
       finenessNumericOnly(alloy || "") || finenessNumericOnly(specGet(specs, "Purity", "Fineness") || "") || null;
 
-    const mintageProof = specGet(specs, "Mintage (Proof)");
-    const mintageSU = specGet(specs, "Mintage (Special Uncirculated)");
-    const mintageUnc = specGet(specs, "Mintage (Uncirculated)");
-    const mintageRaw = mintageProof || mintageSU || mintageUnc || specGet(specs, "Mintage");
-    let { mintage, mintageDisplay } = parseMintage(mintageRaw);
-    ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, "Австрия"));
+    let mintage;
+    let mintageDisplay;
+    if (raw.mintage_sync && typeof raw.mintage_sync === "object") {
+      const ms = raw.mintage_sync;
+      const rawNum = ms.mintage;
+      mintage =
+        rawNum != null &&
+        rawNum !== "" &&
+        Number.isFinite(Number(rawNum)) &&
+        Number(rawNum) > 0
+          ? Number(rawNum)
+          : null;
+      mintageDisplay =
+        ms.mintage_display != null && String(ms.mintage_display).trim()
+          ? String(ms.mintage_display).trim()
+          : null;
+      ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, "Австрия"));
+    } else {
+      const mintageProof = specGet(specs, "Mintage (Proof)");
+      const mintageSU = specGet(specs, "Mintage (Special Uncirculated)");
+      const mintageUnc = specGet(specs, "Mintage (Uncirculated)");
+      const mintageRaw = mintageProof || mintageSU || mintageUnc || specGet(specs, "Mintage");
+      ({ mintage, mintageDisplay } = parseMintage(mintageRaw));
+      ({ mintage, mintageDisplay } = finalizeMintageForDb(mintage, mintageDisplay, "Австрия"));
+    }
 
     const quality = normalizeQuality(specGet(specs, "Quality"));
     const diameterMm = parseDiameterMm(specGet(specs, "Diameter"));

@@ -24,5 +24,9 @@
     "packaging": null,
     "box": null,
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 200000,
+    "mintage_display": "200,000 (структура офиц. Kundmachungen для 5 € Cu Ostermünzen: evi.gv.at/b/pi/bpb-x29 — Umlaufqualit"
   }
 }

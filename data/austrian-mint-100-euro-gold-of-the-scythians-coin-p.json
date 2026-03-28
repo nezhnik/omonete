@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/1/9/1/8661917-1-ger-DE/2022_Packshot Etui_Skyten.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

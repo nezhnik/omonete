@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/magie-des-goldes/2020_100e_pharaonen_etui/6294174-4-ger-DE/2020_100e_pharaonen_etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

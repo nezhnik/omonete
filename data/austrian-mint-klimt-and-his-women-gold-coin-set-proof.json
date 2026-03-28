@@ -24,5 +24,9 @@
     "packaging": null,
     "box": null,
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": null,
+    "mintage_display": "Набор золотых Proof: Auflage набора на сайте не указана. Одиночные 50 € Au Proof серии Klimt — по 30"
   }
 }

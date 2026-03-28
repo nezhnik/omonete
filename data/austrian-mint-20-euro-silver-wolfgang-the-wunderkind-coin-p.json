@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.4.20_euro/mozart/20e_2015_mozart-etui/10992-3-ger-DE/20e_2015_mozart-etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 50000,
+    "mintage_display": "50,000 (Münze Österreich: Auflage Polierte Platte — 50.000)"
   }
 }

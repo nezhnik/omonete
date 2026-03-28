@@ -67,17 +67,54 @@ function thumbFileKey(u) {
 function isPackagingFilename(u) {
   const s = String(u).toLowerCase();
   return (
-    /etui|titel-3d_blister|_blister.*\.png|innenseite|rueckseite-3d_blister|linke_innenseite|rechte_innenseite/i.test(
+    /etui|titel-3d_blister|blister|_blister|innenseite|rueckseite-3d_blister|linke_innenseite|rechte_innenseite/i.test(
       s
     ) && !/_vs_|_rs_/i.test(s)
   );
 }
 
+/** Токен серии из имени файла реверса, напр. 2023_5E_Bienentanz_Ag_HGH_RS → "bienentanz" (для отсечения чужих _VS_ из карусели). */
+function coinTokenFromRsUrl(rsUrl) {
+  if (!rsUrl) return null;
+  const seg = decodeURIComponent(thumbFileKey(rsUrl));
+  const m = seg.match(/\d{4}_5E_([^_]+)/i);
+  return m ? m[1].toLowerCase() : null;
+}
+
 function classifyGalleryUrls(orderedUniqueFull) {
-  const list = orderedUniqueFull.filter(Boolean);
-  let obverse = list.find((u) => /_VS_/i.test(u)) || null;
+  const list = orderedUniqueFull.map((u) => upgradeProductImgUrl(String(u || "").trim())).filter(Boolean);
   let reverse = list.find((u) => /_RS_/i.test(u)) || null;
-  let box = list.find((u) => /etui|[-_]box[-_]/i.test(u) && !/blister/i.test(u)) || null;
+  const token = coinTokenFromRsUrl(reverse);
+
+  let obverse = null;
+  if (token) {
+    obverse =
+      list.find(
+        (u) => /_VS_/i.test(u) && thumbFileKey(u).toLowerCase().includes(token)
+      ) || null;
+  } else {
+    obverse = list.find((u) => /_VS_/i.test(u)) || null;
+  }
+
+  if (obverse && reverse && obverse === reverse) obverse = null;
+
+  if (!obverse && token) {
+    obverse =
+      list.find(
+        (u) =>
+          /blister/i.test(u) &&
+          thumbFileKey(u).toLowerCase().includes(token) &&
+          !/_vs_|_rs_/i.test(u)
+      ) || null;
+  }
+
+  let box =
+    list.find((u) => {
+      const k = thumbFileKey(u).toLowerCase();
+      if (/_vs_/i.test(u) && (!token || !k.includes(token))) return false;
+      return /etui|[-_]box[-_]/i.test(u) && !/blister/i.test(u);
+    }) || null;
+
   let packaging = list.find((u) => /titel-3d_blister|titel.*blister/i.test(u)) || null;
 
   const blisterHits = list.filter(
@@ -88,14 +125,26 @@ function classifyGalleryUrls(orderedUniqueFull) {
   let blister_reverse = blisterHits[0] || null;
   let blister_obverse = blisterHits[1] || null;
 
-  if (!obverse || !reverse) {
+  if (!reverse || !obverse) {
     const coinLike = list.filter((u) => !isPackagingFilename(u) && /_vs_|_rs_/i.test(u));
     const rest = list.filter((u) => !isPackagingFilename(u));
     const pool = coinLike.length >= 2 ? coinLike : rest;
     if (!reverse && pool[0]) reverse = pool[0];
-    if (!obverse && pool[1]) obverse = pool[1];
-    if (!box && pool[2]) box = pool[2];
+    if (!obverse && pool[1]) {
+      const cand = pool[1];
+      const t = coinTokenFromRsUrl(reverse);
+      const k = thumbFileKey(cand).toLowerCase();
+      if (!t || !/_VS_/i.test(cand) || k.includes(t)) obverse = cand;
+    }
+    if (!box && pool[2]) {
+      const b = pool[2];
+      const t = coinTokenFromRsUrl(reverse);
+      const k = thumbFileKey(b).toLowerCase();
+      if (!t || k.includes(t)) box = b;
+    }
   }
+
+  if (obverse && reverse && obverse === reverse) obverse = null;
 
   if (!packaging && blister_reverse) packaging = blister_reverse;
 

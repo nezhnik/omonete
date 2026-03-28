@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/engel/2018_10e_uriel_ag_pp_etui/4269883-1-ger-DE/2018_10e_uriel_ag_pp_etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000"
   }
 }

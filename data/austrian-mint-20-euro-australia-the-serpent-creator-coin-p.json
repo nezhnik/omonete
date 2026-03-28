@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.4.20_euro/augen-der-kontinente/2021_20e_schlange_etui/6304239-1-ger-DE/2021_20e_schlange_etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000"
   }
 }

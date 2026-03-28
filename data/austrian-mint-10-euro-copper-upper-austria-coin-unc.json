@@ -24,5 +24,9 @@
     "packaging": null,
     "box": null,
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 130000,
+    "mintage_display": "130,000 (Münze Österreich: Auflage Normalprägung — 130.000 Kupfer)"
   }
 }

@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2019_50e_frankl_etui/4641207-1-ger-DE/2019_50e_frankl_etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }

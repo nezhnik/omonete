@@ -30,5 +30,9 @@
     "packaging": null,
     "box": null,
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": null,
+    "mintage_display": "Набор: Auflage упаковки на сайте не указана. 7×10 € Ag Handgehoben — по 30.000 экз. на одиночные вып"
   }
 }

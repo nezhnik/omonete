@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/klimt/50e_2015_etui_medizin/11462-10-ger-DE/50e_2015_etui_medizin.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
   }
 }

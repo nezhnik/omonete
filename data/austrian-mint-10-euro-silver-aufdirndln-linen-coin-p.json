@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/8/7/4/9554785-5-eng-US/eb612a5e6cfc-2025_10E_Leinen_PP_Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000 (evi.gv.at/b/pi/bmh-nc7 — Sonderqualität Silber, Polierte Platte/Proof)"
   }
 }

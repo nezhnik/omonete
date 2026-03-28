@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2016_fuchs-etui/61629-1-ger-DE/100E_2016_Fuchs-Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
   }
 }

@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/5/0/6/9546052-3-eng-US/3ddf22d63ab7-2025_20E_Ritus_Ag_Etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 50000,
+    "mintage_display": "50,000 (серия «The White Gold of Hallstatt», 20 € Ag Proof; тот же порядок величины, что у соседних"
   }
 }

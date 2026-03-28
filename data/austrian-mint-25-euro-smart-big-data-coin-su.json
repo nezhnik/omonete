@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.5.25_euro/25e_2020_glaeserner_mensch_etui/5296200-1-ger-DE/25e_2020_glaeserner_mensch_etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 65000,
+    "mintage_display": "65,000"
   }
 }

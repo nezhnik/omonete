@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2014_wildschwein-etui/11613-6-ger-DE/100e_2014_wildschwein-etui.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 30000,
+    "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
   }
 }

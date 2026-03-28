@@ -25,5 +25,9 @@
     "packaging": null,
     "box": "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/9/5/8/9638590-1-ger-DE/b4d50ea6aa0c-Etui-2026_50E_Hilde_Loewe_Flatter_Au_800px.png.webp",
     "certificate": null
+  },
+  "mintage_sync": {
+    "mintage": 20000,
+    "mintage_display": "20,000"
   }
 }
