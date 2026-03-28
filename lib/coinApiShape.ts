@@ -262,6 +262,11 @@ function getRectangularIds(): string[] {
   }
 }
 
+/** Слитки Mennica — съёмка в CertiCard (блистер); в UI как прямоугольные. Префикс каталога — если в БД нет отдельных blister-полей. */
+function isMennicaGoldBarCatalogNumber(catalogNumber: unknown): boolean {
+  return /^PL-MENNICA-GOLD-BAR-/i.test(String(catalogNumber ?? "").trim());
+}
+
 function isRectangular(
   catalogNumber: unknown,
   bases: string[],
@@ -482,6 +487,7 @@ function rowToListCoin(
     weightLabel: weightLabel ?? undefined,
     weightG: weightG ?? undefined,
     rectangular:
+      isMennicaGoldBarCatalogNumber(r.catalog_number) ||
       isRectangular(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
       rowHasBlisterImages(r),
   };
@@ -538,6 +544,7 @@ function rowToDetailCoin(
     widthMm: r.width_mm as string | number | undefined,
     catalogSuffix: r.catalog_suffix as string | undefined,
     rectangular:
+      isMennicaGoldBarCatalogNumber(r.catalog_number) ||
       isRectangular(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
       rowHasBlisterImages(r),
     mintLogoUrl,
@@ -580,6 +587,7 @@ function rowToSameSeriesItem(
     metalName: metalName !== "—" ? metalName : undefined,
     weightG,
     rectangular:
+      isMennicaGoldBarCatalogNumber(s.catalog_number) ||
       isRectangular(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm) ||
       rowHasBlisterImages(s),
   };

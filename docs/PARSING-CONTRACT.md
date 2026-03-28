@@ -94,6 +94,7 @@
 | Mennica: отчёт JSON vs БД по картинкам | `npm run mennica:report-images` |
 | Mennica: план удаления obv/rev webp (dry-run) / удаление | `npm run mennica:refresh:webp -- --same-hash` / то же с `--apply` и опционально `--backup` |
 | Mennica: выровнять `classified` по токенам в имени файла (obv/rev swap, добор box из `imageUrls`) | `npm run mennica:fix:classified` (dry-run), затем `npm run mennica:fix:classified:apply` |
+| Mennica: **поменять местами пиксели** в парах `*-obv.webp` ↔ `*-rev.webp` на диске (БД/JSON не менять) | `npm run mennica:swap:obv-rev-files` (план), затем то же с `-- --apply` |
 | Полный цикл Mennica (после листинга) | `npm run mennica:sync` |
 
 Остальные источники — см. `package.json` (`pamp:*`, `germania:*`, скрипты Royal/Perth по имени).
@@ -149,12 +150,46 @@
 - **Перепутанные слоты по имени файла:** пример **Edvard Munch Scream** — в JSON obverse/reverse **поменяны местами** относительно токенов `Obverse_…` / `Reverse_…`; исправление через **`fix-mennica-classified-labels.js --apply`** (swap).
 - **Одинаковые webp при разных путях:** диагностика **SHA256** пары `mennica-*-obv.webp` / `rev.webp`; массовое удаление только с **`--apply`** в `refresh-mennica-foreign-webp.js`; затем **`mennica:import:force-images`** — успешно обновило **190** позиций без ручного удаления.
 - **Прямоугольная монета в UI:** id в **`rectangular-coin-ids.json`** (например Atlas Maior **7030**) — флаг `rectangular` при экспорте.
+- **Слитки Mennica Polska (`PL-MENNICA-GOLD-BAR-*`):** на PDP это **блистер CertiCard** — в каталоге без круглой маски. В экспорте и **`lib/coinApiShape.ts`** задаём **`rectangular: true`** по префиксу каталожного номера (если в БД нет пары `image_blister_*`, иначе сработал бы общий признак блистера).
 
 ### 8.4. Что автоматом не решаем
 
 - **Визуально две одинаковые картинки при разных URL** на стороне дилера — без ручного списка или отдельного детекта по хэшу пикселей.
 - **Семантика «где аверс»**, если в именах файлов **нет** ни `obverse`, ни `reverse` — только эвристики сайта или ручная правка.
 
+### 8.5. Обмен сторон на диске: «в названии» obv/rev без правки JSON и БД
+
+Иногда после импорта **пути** в БД уже соответствуют канону имён (`…/mennica-{slug}-obv.webp` и `…-rev.webp`), но **визуально** в каталоге аверс и реверс показываются наоборот: байты в файле `*-obv.webp` на самом деле от «другой» стороны. Тогда править `classified` в JSON **не обязательно** — достаточно **поменять местами содержимое двух файлов** на диске.
+
+| | **JSON / `classified` (`fix-mennica-classified`)** | **Файлы на диске (`swap-mennica-obv-rev-webp-files`)** |
+|---|------------------------------------------------------|--------------------------------------------------------|
+| Что меняется | URL в `data/mennica-*.json` (слоты obverse/reverse) | Только байты в `public/image/coins/foreign/mennica-*-obv.webp` ↔ `*-rev.webp` |
+| БД после шага | Нужен повторный **`mennica:import`** (и часто **`force-images`**) | **Не трогаем** — пути в колонках те же |
+| **`data:export:incremental`** | Обычно нужен после импорта | **Не нужен** — в экспорте те же URL |
+
+**Механика (как у PAMP):** тройной `rename` — временное имя → обмен двух файлов. Имена файлов (`-obv` / `-rev` в basename) **не переименовываются по отдельности**; меняется **содержимое**, привязанное к этим именам.
+
+**Скрипт:** `scripts/swap-mennica-obv-rev-webp-files.js`.
+
+**Команды:**
+
+```bash
+npm run mennica:swap:obv-rev-files          # dry-run: список пар без записи на диск
+npm run mennica:swap:obv-rev-files -- --apply
+# только перечисленные id (SKIP_COIN_IDS для них не действует):
+node scripts/swap-mennica-obv-rev-webp-files.js --only-ids=7100,7101 --apply
+```
+
+**Охват по БД:** строки `coins` с `source_url` на `inwestycje.mennica.com.pl`, для которых `image_obverse` / `image_reverse` указывают на пару **одного slug**: `mennica-{slug}-obv.webp` и `mennica-{slug}-rev.webp` (регистр имени файла не важен). **Не обрабатываются:**
+
+- каталожные номера **`PL-MENNICA-GOLD-BAR-*`** (слитки);
+- пары, в basename которых есть **`blister`** (блистер отдельно от основной пары монеты);
+- id из **`SKIP_COIN_IDS`** внутри скрипта — монеты, где стороны **уже совпадают** с задумкой редактора и менять файлы нельзя.
+
+**Повторный `--apply`** по тем же монетам **снова поменяет местами** (откат визуально).
+
+**Когда выбирать другой инструмент:** если ошибка в **URL в JSON** (токены `obverse`/`reverse` в пути перепутаны) — §8.2 п.1 **`mennica:fix:classified`** и импорт; если один URL на обе стороны — refetch или `force-images` по §8.2.
+
 ---
 
-Последнее обновление контракта: §8 — дубли Mennica и рабочий пайплайн исправлений; сверка с `fetch-mennica-product.js`, `import-mennica-to-db.js`, `fix-mennica-classified-labels.js`, `refresh-mennica-foreign-webp.js`, `fetch-mennica-all.js` (`--refetch-duplicate-images`).
+Последнее обновление контракта: §8.5 — обмен obv/rev **только файлами** (`swap-mennica-obv-rev-webp-files.js`); §5 — npm `mennica:swap:obv-rev-files`. Сверка также с `pamp-swap-obv-rev-webp-files.js` (тот же принцип для PAMP).

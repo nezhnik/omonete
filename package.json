@@ -63,6 +63,7 @@
     "mennica:fix:classified": "node scripts/fix-mennica-classified-labels.js",
     "mennica:fix:classified:apply": "node scripts/fix-mennica-classified-labels.js --apply",
     "mennica:db:delete-excluded-packaging": "node scripts/delete-mennica-rows-by-source-url.js",
+    "mennica:swap:obv-rev-files": "node scripts/swap-mennica-obv-rev-webp-files.js",
     "mennica:sync": "npm run mennica:listing && npm run mennica:fetch:all && npm run mennica:import && npm run data:export:incremental",
     "pamp:listing": "node scripts/fetch-pamp-listing.js",
     "pamp:listing:minted-bars": "node scripts/fetch-pamp-listing.js https://www.pamp.com/collections/minted-bars",

@@ -299,6 +299,15 @@ function getRectangularCoinIds() {
   }
 }
 
+/**
+ * Слитки Mennica Polska на сайте — в блистере CertiCard (вертикальная карта), в каталоге должны быть
+ * без круглой маски. В БД кадр часто лежит в obv/rev, без заполненных image_blister_* — поэтому в экспорте
+ * опираемся на стабильный префикс каталожного номера PL-MENNICA-GOLD-BAR-* (смысл тот же, что у «блистер = прямоугольный»).
+ */
+function isMennicaGoldBarCatalogNumber(catalogNumber) {
+  return /^PL-MENNICA-GOLD-BAR-/i.test(String(catalogNumber || "").trim());
+}
+
 function isRectangularCoin(catalogNumber, rectangularBases, rectangularIds, id, lengthMm, widthMm) {
   if (id && rectangularIds.length > 0 && rectangularIds.includes(String(id))) return true;
   const hasLen = lengthMm != null && String(lengthMm).trim() !== "";
@@ -456,7 +465,7 @@ async function run() {
     /** PAMP collectibles из import-pamp-to-db.js — всегда в каталоге (148 позиций), даже без числового тиража. */
     const isPampCollectible = /^CH-PAMP-/i.test(String(r.catalog_number || "").trim());
     /** Золотые слитки Mennica (листинг gold-bars) — без лимитированного тиража в specs. */
-    const isMennicaGoldBar = /^PL-MENNICA-GOLD-BAR-/i.test(String(r.catalog_number || "").trim());
+    const isMennicaGoldBar = isMennicaGoldBarCatalogNumber(r.catalog_number);
     return hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible || isMennicaGoldBar;
   });
   const rectangularBases = getRectangularCatalogBases();
@@ -551,6 +560,7 @@ async function run() {
       weightG: weightG ?? undefined,
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
+        isMennicaGoldBarCatalogNumber(r.catalog_number) ||
         isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
         isRectangularFromBlisterImages(blisterObverse, blisterReverse) ||
         isRectangularFromInBlisterMainImagePaths(r.title, r.title_en, obverse, reverse),
@@ -717,6 +727,7 @@ async function run() {
       catalogSuffix: r.catalog_suffix ?? undefined,
       rectangular:
         (r.is_rectangular === 1 || r.is_rectangular === true) ||
+        isMennicaGoldBarCatalogNumber(r.catalog_number) ||
         isRectangularCoin(r.catalog_number, rectangularBases, rectangularIds, r.id, r.length_mm, r.width_mm) ||
         isRectangularFromBlisterImages(blisterObverse, blisterReverse) ||
         isRectangularFromInBlisterMainImagePaths(r.title, r.title_en, obverse, reverse),
@@ -759,6 +770,7 @@ async function run() {
           weightG,
           rectangular:
             (s.is_rectangular === 1 || s.is_rectangular === true) ||
+            isMennicaGoldBarCatalogNumber(s.catalog_number) ||
             isRectangularCoin(s.catalog_number, rectangularBases, rectangularIds, s.id, s.length_mm, s.width_mm) ||
             isRectangularFromBlisterImages(sBlisterObv, sBlisterRev) ||
             isRectangularFromInBlisterMainImagePaths(s.title, s.title_en, sObv, sRev),
