@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "secondary-mintage-research-queue",
   "title": "Очередь и результаты поиска тиража во вторичных источниках",
-  "description": "Заполняется скриптом generate-secondary-mintage-research-queue.js (поля searchUrls, summary). proposals / verified* — после ручной или полуавтоматической верификации. Два согласованных источника — перед UPDATE в БД.",
+  "description": "Очередь: generate-secondary-mintage-research-queue.js. Запись в БД: apply-secondary-mintage-from-queue.js для status=ready_for_db. Расхождения между сайтами — все в proposals; verified* заполняется после выбора.",
   "type": "object",
   "required": ["generatedAt", "cohort", "items"],
   "properties": {
