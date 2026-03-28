@@ -58,6 +58,7 @@
 | **Germania (монеты)** | `fetch-germania-mint-coin.js` | `data/germania-mint-*.json` | `import-germania-mint-to-db.js` | да | **нет** | **нет** | **нет** | **нет** |
 | **Royal Mint** | `fetch-royal-mint-coin-test.js` и вспомогательные | `data/royal-mint-*.json` | `import-royal-mint-to-db.js` | да (в `coin`) | по данным `coin` | по данным `coin` | по данным `coin` | по данным `coin` |
 | **Perth Mint** | отдельные fetch-скрипты Perth | `data/perth-mint-*.json` | `import-perth-mint-to-db.js` | да (в `coin`) | по данным `coin` | по данным `coin` | по данным `coin` | по данным `coin` |
+| **Münze Österreich** | `fetch-austrian-mint-product.js`, `fetch-austrian-mint-all.js` | `data/austrian-mint-*.json` | `import-austrian-mint-to-db.js` | да* | да* | да* | да* | нет |
 
 ### Заметки по реализации
 
@@ -65,6 +66,7 @@
 - **PAMP:** эталон по полноте `classified` и эвристикам имён файлов (блистер, коробка, сертификат).
 - **Germania:** в JSON только `classified.obverse` / `reverse`; `image_box` / `image_certificate` в импорте всегда `null`, хотя `imageUrls` может содержать больше ссылок из галереи.
 - **Royal Mint / Perth:** ориентир — объект **`coin`** в JSON; имена полей совпадают с колонками БД (`image_obverse`, …).
+- **Münze Österreich:** листинг `.article-list` → `austrian-mint:listing` → `data/austrian-mint-listing-products.json`. PDP: аккордеон Description / Specifications; галерея `.gallery-wrapper .thumbs` — уникальные `img` по имени файла, URL с `product_preview` нормализуются в `product_full`. Стороны монеты: токены `_VS_` / `_RS_` в пути файла → `obverse` / `reverse`; `Etui` → `box`; обложка блистера `TITEL-3D_Blister` → `packaging`; кадры `Innenseite` / `Rueckseite-3D_Blister` → `blister_reverse` / `blister_obverse` (первые два). Если `_VS_`/`_RS_` нет — fallback: первые три уникальных кадра без «упаковочных» имён → reverse, obverse, box. Звёздочка (*): как у Mennica — только если сработали шаблоны / fallback.
 
 ---
 
@@ -96,6 +98,13 @@
 | Mennica: выровнять `classified` по токенам в имени файла (obv/rev swap, добор box из `imageUrls`) | `npm run mennica:fix:classified` (dry-run), затем `npm run mennica:fix:classified:apply` |
 | Mennica: **поменять местами пиксели** в парах `*-obv.webp` ↔ `*-rev.webp` на диске (БД/JSON не менять) | `npm run mennica:swap:obv-rev-files` (план), затем то же с `-- --apply` |
 | Полный цикл Mennica (после листинга) | `npm run mennica:sync` |
+| Münze Österreich: листинг (4 категории collector coins) | `npm run austrian-mint:listing` |
+| Münze Österreich: один PDP | `npm run austrian-mint:fetch -- "https://www.muenzeoesterreich.com/en/products/..."` |
+| Münze Österreich: все PDP из листинга | `npm run austrian-mint:fetch:all` |
+| Münze Österreich: только без JSON | `npm run austrian-mint:fetch:missing` |
+| Münze Österreich: импорт в БД | `npm run austrian-mint:import` |
+| Münze Österreich: импорт с перекачкой картинок | `npm run austrian-mint:import:force-images` |
+| Münze Österreich: листинг + fetch + import + export | `npm run austrian-mint:sync` |
 
 Остальные источники — см. `package.json` (`pamp:*`, `germania:*`, скрипты Royal/Perth по имени).
 
