@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getConnection } from "../../../../lib/db";
-import { getMintArticle } from "../../../../lib/mint-articles";
+import { getMintArticle, getMintArticleSlugs } from "../../../../lib/mint-articles";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+
+export async function generateStaticParams() {
+  return getMintArticleSlugs().map((slug) => ({ slug }));
+}
 
 function parseJson<T>(val: unknown): T | null {
   if (val == null) return null;

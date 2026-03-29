@@ -57,7 +57,7 @@ git push -u origin main
 4. **Import**:
    - **Framework Preset**: Next.js (определится сам).
    - **Root Directory**: оставь пустым (корень репо = корень проекта).
-   - **Build Command**: укажи **`npm run build:vercel`** (или просто `next build`). Не используй `npm run build` — он запускает `data:export` и подключение к MySQL во время сборки, на Vercel это падает. Данные каталога подгружаются в рантайме через API (нужен `DATABASE_URL` в переменных).
+   - **Build Command**: укажи **`npm run build:out-only`** (не сырой `next build` без `move-api-for-export`). Не используй `npm run build` — он запускает `data:export` и подключение к MySQL во время сборки, на Vercel это падает. Данные каталога подгружаются в рантайме через API (нужен `DATABASE_URL` в переменных).
    - **Output Directory**: не трогай.
 5. **Environment Variables** — добавь (можно сразу при импорте или в Settings → Environment Variables после создания проекта):
 

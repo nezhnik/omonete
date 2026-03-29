@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getConnection } from "../../../lib/db";
 import { getMintArticleSlugs } from "../../../lib/mint-articles";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 /** Список slug статей: из БД или из кода (fallback). */
 export async function GET() {

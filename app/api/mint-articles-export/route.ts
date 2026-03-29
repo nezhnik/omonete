@@ -5,7 +5,7 @@
 import { NextResponse } from "next/server";
 import { MINT_ARTICLES } from "../../../lib/mint-articles";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 export async function GET() {
   return NextResponse.json(MINT_ARTICLES, {
