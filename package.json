@@ -13,6 +13,7 @@
     "data:export": "node scripts/export-coins-to-json.js",
     "data:export:incremental": "node scripts/export-coins-to-json.js --incremental",
     "coins:audit-weights": "node scripts/audit-coin-weights-report.js",
+    "data:sync-weights-json-to-db": "node scripts/sync-coin-weights-from-json-to-db.js",
     "data:backfill:mintage-unknown-display": "node scripts/backfill-foreign-mintage-unknown-display.js",
     "data:sync-detail-images": "node scripts/sync-detail-images-from-catalog.js",
     "start": "next start",
