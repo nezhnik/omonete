@@ -64,3 +64,38 @@
   - для унций использовать строки из столбца «Значение `weight_оз` в БД»;
   - для килограммов — `1 кг`, `3 кг`, `5 кг` (или оставлять `NULL`, если в интерфейсе достаточно `weight_g` и `weightLabel`).
 
+## 5. JSON, база данных и сборка (чтобы не потерять правки веса)
+
+**Источник правды после синхронизации:** в MySQL в таблице `coins` поля **`weight_g`** и **`weight_oz`** должны совпадать по смыслу с тем, что уходит на сайт в `public/data/coins/<id>.json` (поля `weightG`, `weightOz` и т.д.). Статический экспорт при сборке **перезаписывает JSON из БД**.
+
+### 5.1. Полный `npm run build` и инкрементальный экспорт
+
+В **`package.json`** скрипт **`build`** вызывает в том числе **`data:export:incremental`** (`scripts/export-coins-to-json.js --incremental`). Он **читает монеты из БД и записывает** в `public/data/coins.json` и `public/data/coins/*.json`.
+
+- Если правили **только JSON на диске**, а **БД не обновляли**, следующий полный билд (или отдельный запуск экспорта) **может затереть правки** старыми значениями из базы.
+- Скрипт **`npm run build:out-only`** делает только **`next build`** (без экспорта из БД) — JSON на диске сам не меняет. Удобно для проверки сборки, если не хотите трогать экспорт.
+
+### 5.2. Как внести правки веса и не рассинхрониться
+
+1. Либо меняете **`weight_g` / `weight_oz` прямо в MySQL** (как удобно), либо правите **`public/data/coins/<id>.json`** локально.
+2. Если правили **JSON**, нужно **протащить то же в БД**:
+   - скрипт **`scripts/sync-coin-weights-from-json-to-db.js`** — список id задаётся массивом **`COIN_IDS`** в начале файла (добавьте новые id при следующих правках);
+   - **`npm run data:sync-weights-json-to-db`** — запись в БД;
+   - для проверки без записи: **`node scripts/sync-coin-weights-from-json-to-db.js --dry-run`**.
+3. После изменений в БД имеет смысл обновить статику: **`npm run data:export:incremental`** (или полный `build`), чтобы JSON в репозитории совпадал с базой.
+
+### 5.3. Отчёт по расхождениям веса
+
+- **`npm run coins:audit-weights`** → `reports/coin-weight-audit.csv` (UTF-8 с BOM, группы дворов строками `SECTION`). Только отчёт, **БД и JSON не меняет**.
+
+### 5.4. Краткая шпаргалка
+
+| Действие | Команда / файл |
+|----------|----------------|
+| Правка веса «как на сайте» и в БД по JSON | Добавить `id` в **`COIN_IDS`**, затем `npm run data:sync-weights-json-to-db` |
+| Проверка, что запишется в БД | `node scripts/sync-coin-weights-from-json-to-db.js --dry-run` |
+| Обновить `public/data/coins/*.json` из БД | `npm run data:export:incremental` |
+| Сборка Next без экспорта из БД | `npm run build:out-only` |
+| Полная сборка как на деплое (с экспортом) | `npm run build` |
+| Найти подозрительные веса | `npm run coins:audit-weights` |
+
