@@ -1,0 +1,46 @@
+{
+  "source_url": "https://www.monnaiedeparis.fr/en/my-first-coin-monetary-miniset-fdc-quality-yeardate-2026",
+  "sku": "10041399000000",
+  "series_title": "My first coin",
+  "subtitle_nombis": "Monetary miniset",
+  "subtitle_caracteristiques": "FDC Quality Yeardate 2026",
+  "title_display": "My first coin Monetary miniset - FDC Quality Yeardate 2026",
+  "specs": {
+    "Metal": "COMMON METAL",
+    "Qualité": "Corner Flower",
+    "Mintage": "15000",
+    "Millésime": "2026",
+    "Valeur faciale": "3.88€"
+  },
+  "description_short": "The gift of a coin to a child is a lasting and timeless gift. Each coin is engraved with the year, making it a unique and personalised gift. The coin can be kept for life, marking the start of a precious collection that could grow over the years. ...",
+  "description_detailed": "The gift of a coin to a child is a lasting and timeless gift. Each coin is engraved with the year, making it a unique and personalised gift. The coin can be kept for life, marking the start of a precious collection that could grow over the years. It's a symbolic gift that crosses generations. Whether for a birth, christening or any other special occasion, this collection is perfect for celebrating life's precious moments.",
+  "price_display": "€19.00",
+  "gallery": [
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068962_BD_689b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068962_BD_689b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "My first coin miniset FDC obverse",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068961_BD_c2b4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068961_BD_c2b4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "My first coin miniset FDC reverse",
+      "position": null
+    }
+  ],
+  "classified": {
+    "obverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068962_BD_689b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "reverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068961_BD_c2b4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "packaging": null
+  },
+  "imageUrls": [
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068962_BD_689b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068961_BD_c2b4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+  ],
+  "listing_url": "https://www.monnaiedeparis.fr/en/coins",
+  "listing_label": "Coins (en)",
+  "parsedAt": "2026-03-29T15:52:29.716Z"
+}

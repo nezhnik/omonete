@@ -1,0 +1,61 @@
+{
+  "source_url": "https://www.monnaiedeparis.fr/en/lord-of-the-rings-10eur-silver-coin-theoden-the-battle-of-helm-s-deep-circulating-quality-yeardate",
+  "sku": "10041404740005",
+  "series_title": "Lord of the Rings",
+  "subtitle_nombis": "10€ Silver Coin Theoden & the battle of Helm's Deep",
+  "subtitle_caracteristiques": "Circulating Quality Yeardate 2026",
+  "title_display": "Lord of the Rings 10€ Silver Coin Theoden & the battle of Helm's Deep - Circulating Quality Yeardate 2026",
+  "specs": {
+    "Diameter": "31 mm",
+    "Metal": "SILVER 333‰",
+    "Weight": "13 g",
+    "Qualité": "Uncirculated",
+    "Mintage": "50000",
+    "Millésime": "2026",
+    "Valeur faciale": "10€"
+  },
+  "description_short": "To celebrate the 25th anniversary of the cinema release of the first chapter of Peter Jackson's trilogy, Monnaie de Paris will unveil a collection of precious coins dedicated to the legendary Lord of the Rings series in 2026. From the Shire t...",
+  "description_detailed": "To celebrate the 25th anniversary of the cinema release of the first chapter of Peter Jackson's trilogy, Monnaie de Paris will unveil a collection of precious coins dedicated to the legendary Lord of the Rings series in 2026. From the Shire to Mordor, the perilous journey of the Fellowship of the Ring is now engraved in metal, celebrating a mythical saga that has become a true pillar of the fantasy genre.Faced with the relentless advance of Saruman's armies, King Théoden leads his people to Helm's Deep, the last refuge against the storm. Entrenched behind the ancient walls of Rohan's last stronghold, Théoden's men prepare for a final battle against the forces of Isengard.As the walls of the stronghold fall, Théoden summons his courage for one last heroic charge. The arrival at dawn of the Riders of Rohan, led by Gandalf the White, turns the tide of battle, giving the peoples of Middle-earth a second wind.",
+  "price_display": "€15.00",
+  "gallery": [
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068951_BD_78ad.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068951_BD_78ad.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "Obverse 10€ Silver Theoden",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068952_BD_faca.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068952_BD_faca.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "Reverse 10€ Silver Theoden",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00070271_BD_ff91.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00070271_BD_ff91.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "Cardlet Theoden",
+      "position": null
+    }
+  ],
+  "classified": {
+    "obverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068951_BD_78ad.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "reverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068952_BD_faca.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "packaging": [
+      {
+        "url": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00070271_BD_ff91.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+        "caption": "Cardlet Theoden"
+      }
+    ]
+  },
+  "imageUrls": [
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068951_BD_78ad.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068952_BD_faca.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00070271_BD_ff91.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+  ],
+  "listing_url": "https://www.monnaiedeparis.fr/en/coins",
+  "listing_label": "Coins (en)",
+  "parsedAt": "2026-03-29T14:09:55.000Z"
+}

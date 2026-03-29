@@ -1,0 +1,73 @@
+{
+  "source_url": "https://www.monnaiedeparis.fr/en/my-first-coin-5eur-common-metal-coin-circulating-quality-yeardate-2026",
+  "sku": "10041399040005",
+  "series_title": "My first coin",
+  "subtitle_nombis": "5€ common metal coin",
+  "subtitle_caracteristiques": "Circulating quality yeardate 2026",
+  "title_display": "My first coin 5€ common metal coin - Circulating quality yeardate 2026",
+  "specs": {
+    "Diameter": "29 mm",
+    "Metal": "CUPRONICKEL + ZINC",
+    "Weight": "11.7 g",
+    "Qualité": "Uncirculated",
+    "Mintage": "25000",
+    "Millésime": "2026",
+    "Valeur faciale": "5€"
+  },
+  "description_short": "The gift of a coin to a child is a lasting and timeless gift. Each coin is engraved with the year, making it a unique and personalised gift. The coin can be kept for life, marking the start of a precious collection that could grow over the years. ...",
+  "description_detailed": "The gift of a coin to a child is a lasting and timeless gift. Each coin is engraved with the year, making it a unique and personalised gift. The coin can be kept for life, marking the start of a precious collection that could grow over the years. It's a symbolic gift that crosses generations. Whether for a birth, christening or any other special occasion, this collection is perfect for celebrating life's precious moments.The obverse shows a fox on a walk in the forest. His gait is light and cheerful as he is on his way to celebrate the arrival of a new-born in the forest. He is holding in his paw the gift he will give to this new baby. The golden crown of this coin further enhances the happy fox on the silver insert.The cardlet in which this coin is sold makes it an ideal little gift to mark an event in a child's life.",
+  "price_display": "€8.90",
+  "gallery": [
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066699_BD_58de.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066699_BD_58de.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "5€ new-born coin - cardlet",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066487_BD_09aa.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066487_BD_09aa.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "5€ new-born coin - cardlet",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068964_BD_6369.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068964_BD_6369.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "My first coin 5€ common metal 2026 obverse",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399040005_26_NAISSANCE_5_revers_BD_3a92.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399040005_26_NAISSANCE_5_revers_BD_3a92.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
+      "caption": "5€ common metal reverse 2026",
+      "position": null
+    }
+  ],
+  "classified": {
+    "obverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068964_BD_6369.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "reverse": "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399040005_26_NAISSANCE_5_revers_BD_3a92.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
+    "packaging": [
+      {
+        "url": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066699_BD_58de.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+        "caption": "5€ new-born coin - cardlet"
+      },
+      {
+        "url": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066487_BD_09aa.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+        "caption": "5€ new-born coin - cardlet"
+      }
+    ]
+  },
+  "imageUrls": [
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066699_BD_58de.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066487_BD_09aa.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068964_BD_6369.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399040005_26_NAISSANCE_5_revers_BD_3a92.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+  ],
+  "listing_url": "https://www.monnaiedeparis.fr/en/coins",
+  "listing_label": "Coins (en)",
+  "parsedAt": "2026-03-29T15:16:16.245Z"
+}

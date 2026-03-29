@@ -1,0 +1,61 @@
+{
+  "source_url": "https://www.monnaiedeparis.fr/en/the-french-genius-genius-of-liberty-100eur-silver-coin",
+  "sku": "10041403070005",
+  "series_title": "The French Genius - Genius of Liberty",
+  "subtitle_nombis": "100€ silver coin",
+  "subtitle_caracteristiques": null,
+  "title_display": "The French Genius - Genius of Liberty 100€ silver coin",
+  "specs": {
+    "Diameter": "47 mm",
+    "Metal": "SILVER 900‰",
+    "Weight": "45 g",
+    "Qualité": "Uncirculated",
+    "Mintage": "10000",
+    "Millésime": "2026",
+    "Valeur faciale": "100€"
+  },
+  "description_short": "Monnaie de Paris unveils the first coin in the French Genius trilogy, inspired by one of the Republic's iconic figures: the Genius of Liberty, commonly known as the Genius of the Bastille. The Genius is depicted naked with angel wings. In his righ...",
+  "description_detailed": "Monnaie de Paris unveils the first coin in the French Genius trilogy, inspired by one of the Republic's iconic figures: the Genius of Liberty, commonly known as the Genius of the Bastille. The Genius is depicted naked with angel wings. In his right hand, he proudly brandishes a torch, symbolising the light that will guide the people, while his left hand grasps a broken chain, an allegory of liberation. The design of this engraving is based on the work sculpted by Auguste Dumont in 1836 to crown the July Column in Place de la Bastille in Paris. Inspired by the 100-franc “Fraternité” coins (1988), the reverse side, common to the trilogy, highlights the French national motto. The original trunk is replaced here by a bundle, a powerful symbol of the Republic, topped with a Phrygian cap, emblem of order and freedom. These coins, with their sumptuous aesthetics, are exceptional gifts that may increase in value over time and will always be worth at least their face value.",
+  "price_display": "€129.00",
+  "gallery": [
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069202_BD_dc07.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069202_BD_dc07.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "Genius of the liberty obverse silver 100€",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069337_BD_0491.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069337_BD_0491.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "cardlet Genius of the liberty 100€ silver",
+      "position": null
+    },
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069203_BD_09c9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069203_BD_09c9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "Genius of the liberty reverse 100€ silver",
+      "position": null
+    }
+  ],
+  "classified": {
+    "obverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069202_BD_dc07.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "reverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069203_BD_09c9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "packaging": [
+      {
+        "url": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069337_BD_0491.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+        "caption": "cardlet Genius of the liberty 100€ silver"
+      }
+    ]
+  },
+  "imageUrls": [
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069202_BD_dc07.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069337_BD_0491.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069203_BD_09c9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+  ],
+  "listing_url": "https://www.monnaiedeparis.fr/en/coins",
+  "listing_label": "Coins (en)",
+  "parsedAt": "2026-03-29T15:08:28.314Z"
+}

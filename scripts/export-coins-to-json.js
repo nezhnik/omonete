@@ -214,6 +214,8 @@ function normalizeWeightOz(weightOz) {
   if (!Number.isFinite(n) || n <= 0) return raw;
   const roundedInt = Math.round(n);
   if (Math.abs(n - roundedInt) < 0.0001) return `${roundedInt} oz`;
+  // Каталожные целые унции после пересчёта из граммов (напр. 155,5 г → 4,999 oz вместо 5 oz)
+  if (n >= 1 && Math.abs(n - roundedInt) < 0.02) return `${roundedInt} oz`;
   if (n >= 1) return `${n} oz`;
   const known = [
     { value: 1 / 2, label: "1/2 oz" },

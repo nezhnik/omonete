@@ -1,0 +1,11 @@
+{
+  "run_started_at": "2026-03-29T18:19:02.602Z",
+  "updated_at": "2026-03-29T18:19:06.302Z",
+  "mode": "only-missing",
+  "last_index": 1,
+  "total": 1,
+  "last_url": "https://www.monnaiedeparis.fr/en/harry-potter-10eu-silver-coins-wave-2-yeardate-2021",
+  "ok": 1,
+  "fail": 0,
+  "listing_json": "monnaie-de-paris-listing-products.json"
+}

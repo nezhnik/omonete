@@ -2,7 +2,7 @@
  * Mennica: меняет местами содержимое пар *-obv.webp ↔ *-rev.webp на диске (тройной rename).
  * Пути в БД не меняются — как pamp-swap-obv-rev-webp-files.js.
  *
- * Контракт и отличие от правки JSON: docs/PARSING-CONTRACT.md §8.5.
+ * Контракт и отличие от правки JSON: docs/PARSING-CONTRACT.md §9.5.
  *
  * Охват: монеты с source_url inwestycje.mennica.com.pl, не слитки PL-MENNICA-GOLD-BAR-*,
  * не id из SKIP_COIN_IDS. Блистерные пары не трогаем.

@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.monnaiedeparis.fr/en/asterix-10eur-silver-coins-wave-2-circulating-quality-yeardate-2022",
+  "sku": "10041369210000",
+  "series_title": "Asterix",
+  "subtitle_nombis": "10€ silver coins - Wave 2",
+  "subtitle_caracteristiques": "Circulating Quality yeardate 2022",
+  "title_display": "Asterix 10€ silver coins - Wave 2 - Circulating Quality yeardate 2022",
+  "specs": {
+    "Qualité": "Uncirculated",
+    "Mintage": "4000",
+    "Millésime": "2022",
+    "Valeur faciale": "10€"
+  },
+  "description_short": null,
+  "description_detailed": "",
+  "price_display": "€127.00",
+  "gallery": [
+    {
+      "thumb": null,
+      "img": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062231_BD_62c1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "full": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062231_BD_62c1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+      "caption": "Asterix",
+      "position": null
+    }
+  ],
+  "classified": {
+    "obverse": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062231_BD_62c1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+    "reverse": null,
+    "packaging": [
+      {
+        "url": "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062231_BD_62c1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
+        "caption": "Asterix"
+      }
+    ]
+  },
+  "imageUrls": [
+    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062231_BD_62c1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+  ],
+  "listing_url": "https://www.monnaiedeparis.fr/en/coins",
+  "listing_label": "Coins (en)",
+  "parsedAt": "2026-03-29T17:43:41.651Z"
+}
