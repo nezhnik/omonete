@@ -1,0 +1,27 @@
+{
+  "idx": 9,
+  "sku": "253449",
+  "site_url": "https://www.mint.ca/en/shop/coins/2026/100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026",
+  "site_title": "100th Anniversary of The  Royal Canadian Legion – Pure Gold Coin (2026)",
+  "our_id": "6492",
+  "folder": "reports/rcm-downloaded-images/09-253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_rev_1200.png?hash=639052896330000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_obv_1200.png?hash=639032184580000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_revright_1200.png?hash=639032185750000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_pack_1200.png?hash=639032185340000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

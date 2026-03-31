@@ -1,0 +1,27 @@
+{
+  "idx": 4,
+  "sku": "250395",
+  "site_url": "https://www.mint.ca/en/shop/coins/2025/great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin",
+  "site_title": "Great Hunters: Grey Wolf – 1 oz. Pure Gold Ultra High Relief Coin",
+  "our_id": "4395",
+  "folder": "reports/rcm-downloaded-images/04-250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_rev_1200.png?hash=638815121130000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_obv_1200.png?hash=638804140440000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_revright_1200.png?hash=638804140440000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_revleft_1200.png?hash=638804140440000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,17 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/silver-ducat-south-holland-2016",
+    "title": "Silver Ducat South Holland 2016",
+    "price_display": "€49.95",
+    "description": "Direct beschikbaar! Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/01.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/02.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:45:17.269Z",
+    "slug": "silver-ducat-south-holland-2016",
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/02.jpeg"
+  }
+}

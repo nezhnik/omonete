@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/5-francs-1849-1865-leopold-ier-ttb",
+    "title": "5 Francs 1849-1865 Leopold Ier TTB",
+    "price_display": "39,00 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/01.jpeg",
+      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/02.jpeg",
+      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/03.jpeg",
+      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:08:15.384Z",
+    "slug": "5-francs-1849-1865-leopold-ier-ttb",
+    "image_obverse": "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/02.jpeg"
+  }
+}

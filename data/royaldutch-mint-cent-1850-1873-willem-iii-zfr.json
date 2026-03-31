@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/cent-1850-1873-willem-iii-zfr",
+    "title": "DR ½ Cent Willem III Zf (zwaard)",
+    "price_display": "€35.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/cent-1850-1873-willem-iii-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/cent-1850-1873-willem-iii-zfr/02.jpeg",
+      "/image/coins/foreign/royaldutch/cent-1850-1873-willem-iii-zfr/03.jpeg",
+      "/image/coins/foreign/royaldutch/cent-1850-1873-willem-iii-zfr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:12:25.597Z",
+    "slug": "cent-1850-1873-willem-iii-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/cent-1850-1873-willem-iii-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/cent-1850-1873-willem-iii-zfr/02.jpeg"
+  }
+}

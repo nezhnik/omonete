@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/schokland-10-euro-coin-2018-gold-proof",
+    "title": "Schokland 10 euro coin 2018 Gold Proof",
+    "price_display": "€389.95",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/01.jpeg",
+      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/02.jpeg",
+      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/03.jpeg",
+      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/04.jpeg",
+      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/05.jpeg",
+      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:41:06.712Z",
+    "slug": "schokland-10-euro-coin-2018-gold-proof",
+    "image_obverse": "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/02.jpeg"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/munt-20-euro-esro-2b-satelliet-pb-cs",
+    "title": "Pièce de 20 euros Belgique 2018 « ESRO-2B » en argent",
+    "price_display": "64,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/01.jpeg",
+      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/02.jpeg",
+      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/03.jpeg",
+      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/04.jpeg",
+      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/05.jpeg",
+      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:10:25.712Z",
+    "slug": "munt-20-euro-esro-2b-satelliet-pb-cs",
+    "image_obverse": "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/02.jpeg"
+  }
+}

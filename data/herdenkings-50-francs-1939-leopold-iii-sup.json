@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/50-francs-1939-leopold-iii-sup",
+    "title": "50 Francs 1939 - Léopold III Sup-",
+    "price_display": "123,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/01.jpg",
+      "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/02.jpg",
+      "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/03.jpg",
+      "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/04.jpg"
+    ],
+    "parsedAt": "2026-03-31T19:08:31.605Z",
+    "slug": "50-francs-1939-leopold-iii-sup",
+    "image_obverse": "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/01.jpg",
+    "image_reverse": "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/02.jpg"
+  }
+}

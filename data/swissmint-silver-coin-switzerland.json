@@ -1,0 +1,28 @@
+{
+  "coin": {
+    "source_url": "https://www.sondermuenze.ch/en/silver-coin-switzerland",
+    "title": "Silver coin Switzerland",
+    "description": "The “Switzerland” silver coin offers a fascinating representation of our country in all its facets. The design is characterised by an eye for detail, with numerous symbols representing Switzerland’s diversity and unity.",
+    "specs": {
+      "Legal face value": "CHF 20",
+      "Alloy": "Silver 999",
+      "Diameter": "33 mm",
+      "Weight": "20 g",
+      "Date of issue": "12.09.2024",
+      "Mintage Proof in presentation case": "4,800 units Proof with certificate from the artist: 200 units",
+      "Uncirculated": "7,500 units"
+    },
+    "specsText": "Silver coin Switzerland The “Switzerland” silver coin offers a fascinating representation of our country in all its facets. The design is characterised by an eye for detail, with numerous symbols representing Switzerland’s diversity and unity. On 12 September 1848, modern Switzerland came into being with the Federal Constitution, as a federal state created by the union of the cantons. This date is honoured by the issue of this coin, which pays tribute to our federal structure. This structure is crucial to Switzerland’s innovative strength, dialogue and national cohesion. This special coin symbolises Switzerland and all its cantons. The obverse of the coin depicts mountains evoking the Swiss Alps, a railway in reference to the dense rail network, the edelweiss being an emblematic Alpine flower, a quartz crystal echoing the mineral wealth of the Alps, and a bridge symbolising technical infrastructure. Cogwheels refer to watchmaking, and a cheese symbolises the famous Swiss cheese-making tradition. The flags of the 26 cantons are shown on the reverse. Legal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 12.09.2024 Mintage Proof in presentation case: 4,800 units Proof with certificate from the artist: 200 units Uncirculated: 7,500 units Prices Proof in presentation case: CHF 75.- Proof with certificate from the artist: CHF 90.- Uncirculated: CHF 25.- <img fetchpriority=\"high\" decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/swissmint-soldat-schweiz-20fr-bs-620x620px.png\" alt=\"Silver coin Switzerland\" width=\"620\" height=\"620\" /><img decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/swissmint-soldat-schweiz-20fr-ws-620x620px.png\" alt=\"Silver coin Switzerland\" width=\"620\" height=\"620\" />",
+    "imageUrls": [
+      "/image/coins/foreign/swissmint/silver-coin-switzerland/01.jpg",
+      "/image/coins/foreign/swissmint/silver-coin-switzerland/02.jpg",
+      "/image/coins/foreign/swissmint/silver-coin-switzerland/03.jpg",
+      "/image/coins/foreign/swissmint/silver-coin-switzerland/04.jpg",
+      "/image/coins/foreign/swissmint/silver-coin-switzerland/05.jpg"
+    ],
+    "parsedAt": "2026-03-31T18:23:16.128Z",
+    "slug": "silver-coin-switzerland",
+    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-switzerland/01.jpg",
+    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-switzerland/02.jpg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-euro-2013-koningsmunt-unc-coincard",
+    "title": "HM 10 Euro 2013 Kroning UNC Coincard",
+    "price_display": "€19.50",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:58:20.663Z",
+    "slug": "10-euro-2013-koningsmunt-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/02.jpeg"
+  }
+}

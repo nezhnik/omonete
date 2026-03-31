@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787",
+    "title": "250 Francs 1976 FR - 25 ans de règne du roi Baudouin",
+    "price_display": "149,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/01.jpeg",
+      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/02.jpeg",
+      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/03.jpeg",
+      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:08:05.335Z",
+    "slug": "250-frank-1976-fr-25-jaar-koning-boudewijn-0111787",
+    "image_obverse": "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/02.jpeg"
+  }
+}

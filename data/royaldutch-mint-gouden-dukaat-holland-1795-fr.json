@@ -1,0 +1,18 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/gouden-dukaat-holland-1795-fr",
+    "title": "DR Gouden Dukaat Holland 1795 Fr",
+    "price_display": "€670.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/01.jpeg",
+      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/02.jpeg",
+      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/03.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:16:50.895Z",
+    "slug": "gouden-dukaat-holland-1795-fr",
+    "image_obverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/02.jpeg"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/piece-de-100-euros-belgique-2018-roi-baudouin",
+    "title": "Pièce de 100 euros Belgique 2018 « Roi Baudouin »",
+    "price_display": "899,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/01.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/02.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/03.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/04.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/05.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:12:28.811Z",
+    "slug": "piece-de-100-euros-belgique-2018-roi-baudouin",
+    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-100-euros-belgique-2018-roi-baudouin/02.jpeg"
+  }
+}

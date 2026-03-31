@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-cent-1887-willem-iii-zfr",
+    "title": "DR 10 Cent Willem III Zfr bijl met ster",
+    "price_display": "€65.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1887-willem-iii-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1887-willem-iii-zfr/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1887-willem-iii-zfr/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1887-willem-iii-zfr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:57:20.100Z",
+    "slug": "10-cent-1887-willem-iii-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1887-willem-iii-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1887-willem-iii-zfr/02.jpeg"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-euro-2005-regeringsjubileum-beatrix-unc-coincard",
+    "title": "HM 10 Euro 2005 Jubileummunt UNC CC",
+    "price_display": "€63.95",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-euro-2005-regeringsjubileum-beatrix-unc-coincard/01.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:58:14.811Z",
+    "slug": "10-euro-2005-regeringsjubileum-beatrix-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2005-regeringsjubileum-beatrix-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2005-regeringsjubileum-beatrix-unc-coincard/01.jpeg"
+  }
+}

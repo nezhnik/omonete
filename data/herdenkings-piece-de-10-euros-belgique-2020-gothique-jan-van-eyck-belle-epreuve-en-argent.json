@@ -1,0 +1,23 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent",
+    "title": "Pièce de 10 euros Belgique 2020 « Gothique – Jan van Eyck » Belle-épreuve en Argent",
+    "price_display": "54,95 €",
+    "description": "L’oeuvre de Jan van Eyck étant du gothique tardif, cette pièce s’inscrit parfaitement dans le thème du programme « Étoile d’Europe » 2020 placé sous le signe de l’art gothique. Notre designer Luc Luycx s’est inspiré du célèbre portrait des époux Giovanni et Constanza Arnolfini. Ces riches drapiers italiens vivaient à Bruges en 1434. Le fond de l’avers a été réalisé grâce au principe du Minted Photo Image (MPI) : il s’agit d’une technique révolutionnaire qui permet de frapper des pièces en qualité photo et qui leur confère ainsi un effet semblable à celui d’une gravure. Sur le revers on retrouve la carte de l’Europe dans une grande étoile à cinq branches, le millésime, la valeur nominale et l’indication du pays en trois langues. Il s'agit de la dernière émission de pièces dans le cadre du programme Europe Star Euro.",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/01.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/02.png",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/03.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/04.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/05.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/06.jpeg",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/07.png",
+      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/08.png"
+    ],
+    "parsedAt": "2026-03-31T19:11:39.710Z",
+    "slug": "piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent",
+    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2020-gothique-jan-van-eyck-belle-epreuve-en-argent/02.png"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/250-francs-1997-paola-60-ans-unc",
+    "title": "250 Francs 1997 - Paola 60 Ans UNC",
+    "price_display": "123,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/250-francs-1997-paola-60-ans-unc/01.jpeg",
+      "/image/coins/foreign/herdenkings/250-francs-1997-paola-60-ans-unc/02.jpeg",
+      "/image/coins/foreign/herdenkings/250-francs-1997-paola-60-ans-unc/03.jpeg",
+      "/image/coins/foreign/herdenkings/250-francs-1997-paola-60-ans-unc/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:07:54.046Z",
+    "slug": "250-francs-1997-paola-60-ans-unc",
+    "image_obverse": "/image/coins/foreign/herdenkings/250-francs-1997-paola-60-ans-unc/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/250-francs-1997-paola-60-ans-unc/02.jpeg"
+  }
+}

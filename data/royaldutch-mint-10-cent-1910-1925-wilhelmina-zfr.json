@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-cent-1910-1925-wilhelmina-zfr",
+    "title": "DR 10 Cent Wilhelmina Zfr+ (zeepaard-1)",
+    "price_display": "€20.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1910-1925-wilhelmina-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1910-1925-wilhelmina-zfr/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1910-1925-wilhelmina-zfr/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1910-1925-wilhelmina-zfr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:57:40.490Z",
+    "slug": "10-cent-1910-1925-wilhelmina-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1910-1925-wilhelmina-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1910-1925-wilhelmina-zfr/02.jpeg"
+  }
+}

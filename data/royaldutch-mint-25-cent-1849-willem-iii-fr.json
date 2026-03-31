@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/25-cent-1849-willem-iii-fr",
+    "title": "DR 25 Cent Willem III Fr+ (zwaard)",
+    "price_display": "€325.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/01.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/02.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/03.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:00:15.493Z",
+    "slug": "25-cent-1849-willem-iii-fr",
+    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/02.jpeg"
+  }
+}

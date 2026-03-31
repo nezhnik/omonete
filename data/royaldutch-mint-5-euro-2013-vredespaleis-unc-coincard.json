@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2013-vredespaleis-unc-coincard",
+    "title": "HM 5 Euro 2013 Vredespaleis UNC Coincard",
+    "price_display": "€12.50",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-unc-coincard/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:04:31.455Z",
+    "slug": "5-euro-2013-vredespaleis-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-unc-coincard/02.jpeg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2011-muntgebouw-unc-coincard",
+    "title": "HM 5 Euro 2011 Muntgebouw UNC Coincard",
+    "price_display": "€19.50",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:03:53.228Z",
+    "slug": "5-euro-2011-muntgebouw-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/02.jpeg"
+  }
+}

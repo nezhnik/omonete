@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/25-cent-1892-1897-wilhelmina-zfr",
+    "title": "DR 25 Cent Wilhelmina Zfr (hellebaard-1)",
+    "price_display": "€150.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/25-cent-1892-1897-wilhelmina-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1892-1897-wilhelmina-zfr/02.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1892-1897-wilhelmina-zfr/03.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1892-1897-wilhelmina-zfr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:00:38.624Z",
+    "slug": "25-cent-1892-1897-wilhelmina-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1892-1897-wilhelmina-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1892-1897-wilhelmina-zfr/02.jpeg"
+  }
+}

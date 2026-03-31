@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-gulden-1997-marshall-plan-proof",
+    "title": "10 Gulden 1997 Marshall Plan Proof",
+    "price_display": "€21.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-gulden-1997-marshall-plan-proof/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-gulden-1997-marshall-plan-proof/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-gulden-1997-marshall-plan-proof/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-gulden-1997-marshall-plan-proof/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:58:34.530Z",
+    "slug": "10-gulden-1997-marshall-plan-proof",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-gulden-1997-marshall-plan-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-gulden-1997-marshall-plan-proof/02.jpeg"
+  }
+}

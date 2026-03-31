@@ -1,0 +1,455 @@
+{
+  "generatedAt": "2026-03-31T16:02:07.471Z",
+  "total": 15,
+  "report": [
+    {
+      "idx": 1,
+      "sku": "247778",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/1kg-pure-gold-coin-lunar-year-of-the-snake",
+      "site_title": "Lunar Year of the Snake - 1 kg Pure Gold Coin",
+      "our_id": "6580",
+      "folder": "reports/rcm-downloaded-images/01-247778-1kg-pure-gold-coin-lunar-year-of-the-snake",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_rev-1200.png?hash=638579326730000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_obv-1200.png?hash=638563824850000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_reva-1200.png?hash=638563824850000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_pack-1200.png?hash=638563824850000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 2,
+      "sku": "247678",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/fine-silver-coin-lunar-year-of-the-snake",
+      "site_title": "Lunar Year of the Snake - 1 oz. Fine Silver Coin",
+      "our_id": "6105",
+      "folder": "reports/rcm-downloaded-images/02-247678-fine-silver-coin-lunar-year-of-the-snake",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_rev-1200.png?hash=638579288330000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_obv-1200.png?hash=638574108840000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_reva-1200.png?hash=638574108840000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_pack-1200.png?hash=638574108840000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_box1-1200.png?hash=638574108840000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 3,
+      "sku": "250386",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/great-hunters-grey-wolf-1-oz-fine-silver-ultra-high-relief-coin",
+      "site_title": "Great Hunters: Grey Wolf – 1 oz. Fine Silver Ultra High Relief Coin",
+      "our_id": "4410",
+      "folder": "reports/rcm-downloaded-images/03-250386-great-hunters-grey-wolf-1-oz-fine-silver-ultra-high-relief-coin",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250386-great-hunters-grey-wolf-1-oz-fine-silver-ultra-high-relief-coin/250386_rev_1200.png?hash=638815093510000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250386-great-hunters-grey-wolf-1-oz-fine-silver-ultra-high-relief-coin/250386_obv_1200.png?hash=638804092350000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250386-great-hunters-grey-wolf-1-oz-fine-silver-ultra-high-relief-coin/250386_revright_1200.png?hash=638804092350000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250386-great-hunters-grey-wolf-1-oz-fine-silver-ultra-high-relief-coin/250386_revleft_1200.png?hash=638804092350000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 4,
+      "sku": "250395",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin",
+      "site_title": "Great Hunters: Grey Wolf – 1 oz. Pure Gold Ultra High Relief Coin",
+      "our_id": "4395",
+      "folder": "reports/rcm-downloaded-images/04-250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_rev_1200.png?hash=638815121130000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_obv_1200.png?hash=638804140440000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_revright_1200.png?hash=638804140440000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l5/250395-great-hunters-grey-wolf-1-oz-pure-gold-ultra-high-relief-coin/250395_revleft_1200.png?hash=638804140440000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 5,
+      "sku": "247789",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/pure-gold-coin-lunar-year-of-the-snake",
+      "site_title": "Lunar Year of the Snake - Pure Gold Coin (2025)",
+      "our_id": "6580",
+      "folder": "reports/rcm-downloaded-images/05-247789-pure-gold-coin-lunar-year-of-the-snake",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247789-pure-gold-coin-lunar-year-of-the-snake/247789_rev-1200.png?hash=638579277760000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247789-pure-gold-coin-lunar-year-of-the-snake/247789_obv-1200.png?hash=638563779010000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247789-pure-gold-coin-lunar-year-of-the-snake/247789_reva-1200.png?hash=638563779010000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2024/l8/247789-pure-gold-coin-lunar-year-of-the-snake/247789_pack-1200.png?hash=638563779010000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 6,
+      "sku": "250661",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025",
+      "site_title": "Silver Maple Leaf – 1 oz. Fine Silver Ultra-High Relief Coin (2025)",
+      "our_id": "4392",
+      "folder": "reports/rcm-downloaded-images/06-250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_rev_1200.png?hash=638893760390000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_obv_1200.png?hash=638882918340000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_revleft_1200.png?hash=638882918340000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_revright_1200.png?hash=638882918340000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_pack_1200.png?hash=638882918340000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 7,
+      "sku": "250674",
+      "site_url": "https://www.mint.ca/en/shop/coins/2025/silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025",
+      "site_title": "Silver Maple Leaf – 5 oz. Fine Silver Coin Ultra-High Relief Coin (2025)",
+      "our_id": "4392",
+      "folder": "reports/rcm-downloaded-images/07-250674-silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250674-silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025/250674_rev_1200.png?hash=638893781510000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250674-silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025/250674_obv_1200.png?hash=638882976240000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250674-silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025/250674_revleft_1200.png?hash=638882976240000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250674-silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025/250674_revright_1200.png?hash=638882976240000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250674-silver-maple-leaf-5-oz-fine-silver-coin-ultra-high-relief-coin-2025/250674_pack_1200.png?hash=638882976240000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 8,
+      "sku": "251870",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/100th-anniversary-of-the-royal-canadian-legion-fine-silver-proof-dollar-2026",
+      "site_title": "100th Anniversary of The Royal Canadian Legion – Fine Silver Proof Dollar (2026)",
+      "our_id": "6019",
+      "folder": "reports/rcm-downloaded-images/08-251870-100th-anniversary-of-the-royal-canadian-legion-fine-silver-proof-dollar-2026",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/251870-100th-anniversary-of-the-royal-canadian-legion-fine-silver-proof-dollar-2026/251870_rev_1200.png?hash=639052895370000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/251870-100th-anniversary-of-the-royal-canadian-legion-fine-silver-proof-dollar-2026/251870_obv_1200.png?hash=639032004340000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/251870-100th-anniversary-of-the-royal-canadian-legion-fine-silver-proof-dollar-2026/251870_revleft_1200.png?hash=639032004800000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/251870-100th-anniversary-of-the-royal-canadian-legion-fine-silver-proof-dollar-2026/251870_revright_1200.png?hash=638999291870000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 9,
+      "sku": "253449",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026",
+      "site_title": "100th Anniversary of The  Royal Canadian Legion – Pure Gold Coin (2026)",
+      "our_id": "6492",
+      "folder": "reports/rcm-downloaded-images/09-253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_rev_1200.png?hash=639052896330000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_obv_1200.png?hash=639032184580000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_revright_1200.png?hash=639032185750000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/253449-100th-anniversary-of-the-royal-canadian-legion-pure-gold-coin-2026/253449_pack_1200.png?hash=639032185340000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 10,
+      "sku": "253195",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin",
+      "site_title": "FIFA World Cup 2026ᵀᴹ: The Winning Goal – 1 oz. Fine Silver Coin",
+      "our_id": "4463",
+      "folder": "reports/rcm-downloaded-images/10-253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin/253195_rev_1200.png?hash=639077049100000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin/253195_obv_1200.png?hash=639074410840000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin/253195_packflat_1200.png?hash=639080432140000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin/253195_packopen_1200.png?hash=639062431980000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin/253195_packfront_1200.png?hash=639062431980000000&width=500&quality=80"
+        },
+        {
+          "file": "06.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/253195-fifa-world-cup-2026-the-winning-goal-1-oz-fine-silver-coin/253195_revright_1200.png?hash=639074410840000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 11,
+      "sku": "252236",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin",
+      "site_title": "FIFA World Cup 2026ᵀᴹ: The Trophy – 5 oz. Fine Silver Coin",
+      "our_id": "4463",
+      "folder": "reports/rcm-downloaded-images/11-252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_rev_1200.png?hash=639075210940000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_obv_1200.png?hash=639074391140000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_revright_1200.png?hash=639074391140000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_revleft_1200.png?hash=639074391140000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_packflat_1200.png?hash=639080435270000000&width=500&quality=80"
+        },
+        {
+          "file": "06.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_packright_1200.png?hash=639074391140000000&width=500&quality=80"
+        },
+        {
+          "file": "07.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252236-fifa-world-cup-2026tm-mc-the-trophy-5-oz-fine-silver-coin/252236_packleft_1200.png?hash=639074391140000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 12,
+      "sku": "252804",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin",
+      "site_title": "FIFA World Cup 2026ᵀᴹ : We Are 26ᵀᴹ  – 1 oz. Fine Silver Coin",
+      "our_id": "4463",
+      "folder": "reports/rcm-downloaded-images/12-252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin/252804_rev_1200.png?hash=639077048690000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin/252804_obv_1200.png?hash=639074400630000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin/252804_revright_1200.png?hash=639074400630000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin/252804_packflat_1200.png?hash=639080434010000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin/252804_packopen_1200.png?hash=639074400630000000&width=500&quality=80"
+        },
+        {
+          "file": "06.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l3/fifa/252804-fifa-world-cup-2026tm-mc-we-are-26tm-mc-1-oz-fine-silver-coin/252804_packfront_1200.png?hash=639074400630000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 13,
+      "sku": "250303",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/lunar-year-of-the-horse-1-kg-pure-gold-coin",
+      "site_title": "Lunar Year of the Horse – 1 kg Pure Gold Coin (2026)",
+      "our_id": "6577",
+      "folder": "reports/rcm-downloaded-images/13-250303-lunar-year-of-the-horse-1-kg-pure-gold-coin",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_rev-1200.png?hash=638856758070000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_obv-1200.png?hash=638851627670000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_revright-1200.png?hash=638851627670000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_obvright-1200.png?hash=638851627670000000&width=500&quality=80"
+        },
+        {
+          "file": "05.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_pack-1200.png?hash=638851627670000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 14,
+      "sku": "254126",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/lunar-year-of-the-horse-25-francs-fine-silver-coin-2026",
+      "site_title": "Lunar Year of the Horse - 25 Francs Fine Silver Coin (2026)",
+      "our_id": "6104",
+      "folder": "reports/rcm-downloaded-images/14-254126-lunar-year-of-the-horse-25-francs-fine-silver-coin-2026",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_rev_1200.png?hash=639038887680000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_obv_1200.png?hash=639033895820000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_revangled_1200.png?hash=639033895820000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_obvangled_1200.png?hash=639033895820000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "idx": 15,
+      "sku": "250293",
+      "site_url": "https://www.mint.ca/en/shop/coins/2026/lunar-year-of-the-horse-pure-gold-coin-2026",
+      "site_title": "Lunar Year of the Horse – Pure Gold Coin (2026)",
+      "our_id": "6577",
+      "folder": "reports/rcm-downloaded-images/15-250293-lunar-year-of-the-horse-pure-gold-coin-2026",
+      "images": [
+        {
+          "file": "01.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250293-lunar-year-of-the-horse-pure-gold-coin-2026/250293_rev_1200.png?hash=638893771160000000&width=500&quality=80"
+        },
+        {
+          "file": "02.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250293-lunar-year-of-the-horse-pure-gold-coin-2026/250293_obv_1200.png?hash=638880766760000000&width=500&quality=80"
+        },
+        {
+          "file": "03.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250293-lunar-year-of-the-horse-pure-gold-coin-2026/250293_revright_1200.png?hash=638880766760000000&width=500&quality=80"
+        },
+        {
+          "file": "04.png",
+          "url": "https://www.mint.ca/globalassets/products/2025/l8/250293-lunar-year-of-the-horse-pure-gold-coin-2026/250293_pack_1200.png?hash=638880766760000000&width=500&quality=80"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

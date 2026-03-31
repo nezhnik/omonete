@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/silver-ducat-2019-flevoland",
+    "title": "Silver Ducat 2019 Flevoland",
+    "price_display": "€49.95",
+    "description": "Every province in the Netherlands has its own Ducat. The province of Flevoland, however, received its own Silver Ducat only once before in 2014, because of its short existence. The second Silver Ducat of Flevoland in 2019 is also unique because of a royal Knight who poses on the front: King Willem III. In 1859 he gave the order to evacuate the former island of Schokland, part of the Noordoostpolder on Flevoland. Schokland was continually plagued by the Zuiderzee which smashed away pieces of the island; the ultimate symbol for the struggle of the Netherlands and this province against the water. However, Schokland was not lost after being evacuated, but due to the construction of the Noordoostpolder it became an island on dry land that nowadays proudly rises above the polder landscape.",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/01.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/02.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/03.png",
+      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/04.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/05.png",
+      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:41:49.059Z",
+    "slug": "silver-ducat-2019-flevoland",
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/02.jpeg"
+  }
+}

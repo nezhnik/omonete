@@ -1,0 +1,31 @@
+{
+  "idx": 6,
+  "sku": "250661",
+  "site_url": "https://www.mint.ca/en/shop/coins/2025/silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025",
+  "site_title": "Silver Maple Leaf – 1 oz. Fine Silver Ultra-High Relief Coin (2025)",
+  "our_id": "4392",
+  "folder": "reports/rcm-downloaded-images/06-250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_rev_1200.png?hash=638893760390000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_obv_1200.png?hash=638882918340000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_revleft_1200.png?hash=638882918340000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_revright_1200.png?hash=638882918340000000&width=500&quality=80"
+    },
+    {
+      "file": "05.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l8/250661-silver-maple-leaf-1-oz-fine-silver-ultra-high-relief-coin-2025/250661_pack_1200.png?hash=638882918340000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

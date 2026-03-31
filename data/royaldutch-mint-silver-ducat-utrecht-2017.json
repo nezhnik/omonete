@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/silver-ducat-utrecht-2017",
+    "title": "Silver Ducat Utrecht 2017",
+    "price_display": "€49.95",
+    "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/01.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/02.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/03.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/04.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/05.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:45:35.401Z",
+    "slug": "silver-ducat-utrecht-2017",
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-utrecht-2017/02.jpeg"
+  }
+}

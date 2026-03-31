@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-cent-1944s-wilhelmina-zfr",
+    "title": "DR 10 Cent Wilhelmina Zfr (eikel/s)",
+    "price_display": "€15.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:57:54.338Z",
+    "slug": "10-cent-1944s-wilhelmina-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/02.jpeg"
+  }
+}

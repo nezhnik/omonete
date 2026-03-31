@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/gulden-1848-willem-ii-zfr",
+    "title": "DR ½ Gulden Willem II Zf+ (zwaard)",
+    "price_display": "€55.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/gulden-1848-willem-ii-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/gulden-1848-willem-ii-zfr/02.jpeg",
+      "/image/coins/foreign/royaldutch/gulden-1848-willem-ii-zfr/03.jpeg",
+      "/image/coins/foreign/royaldutch/gulden-1848-willem-ii-zfr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:16:58.288Z",
+    "slug": "gulden-1848-willem-ii-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/gulden-1848-willem-ii-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/gulden-1848-willem-ii-zfr/02.jpeg"
+  }
+}

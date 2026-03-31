@@ -1,0 +1,16 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2012-beeldhouwkunst-unc-coincard",
+    "title": "HM 5 Euro 2012 Beeldhouwkunst UNC CC",
+    "price_display": "€10.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2012-beeldhouwkunst-unc-coincard/01.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:04:05.111Z",
+    "slug": "5-euro-2012-beeldhouwkunst-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2012-beeldhouwkunst-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2012-beeldhouwkunst-unc-coincard/01.jpeg"
+  }
+}

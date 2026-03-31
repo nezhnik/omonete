@@ -1,0 +1,16 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2018-schokland-unc-coincard",
+    "title": "HM 5 Euro 2018 Schokland UNC CC",
+    "price_display": "€10.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2018-schokland-unc-coincard/01.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:05:21.144Z",
+    "slug": "5-euro-2018-schokland-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2018-schokland-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2018-schokland-unc-coincard/01.jpeg"
+  }
+}

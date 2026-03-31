@@ -1,0 +1,22 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/hj-250-frank-1996-boudewijn-st-proof",
+    "title": "250 Francs 1996 - Fondation Roi Baudouin BE",
+    "price_display": "134,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/01.jpeg",
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/02.jpeg",
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/03.jpeg",
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/04.jpeg",
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/05.jpeg",
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/06.jpeg",
+      "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/07.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:08:50.843Z",
+    "slug": "hj-250-frank-1996-boudewijn-st-proof",
+    "image_obverse": "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/02.jpeg"
+  }
+}

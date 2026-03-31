@@ -1,0 +1,23 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/knm-5-euro-2011-wnf-2011-proof",
+    "title": "HM 5 Euro 2011 WNF Proof",
+    "price_display": "€57.95",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/01.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/02.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/03.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/04.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/05.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/06.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/07.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/08.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:18:42.389Z",
+    "slug": "knm-5-euro-2011-wnf-2011-proof",
+    "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/02.jpeg"
+  }
+}

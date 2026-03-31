@@ -1,0 +1,552 @@
+{
+  "updatedAt": "2026-03-31T18:55:58.456Z",
+  "baseUrl": "https://www.scottsdalemint.com/shop/?scottsdale_prod_posts_product%5Bquery%5D=scottsdale&scottsdale_prod_posts_product%5BhitsPerPage%5D=36&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B0%5D=Copper%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B1%5D=Copper%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B2%5D=Gold%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B3%5D=Gold%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B4%5D=Gold%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B5%5D=Silver%20Antiqued%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B6%5D=Silver%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B7%5D=Silver%20Bar%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B8%5D=Silver%20Cast%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B9%5D=Silver%20Coin&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B10%5D=Silver%20Coin%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B11%5D=Silver%20Colorized%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B12%5D=Silver%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B13%5D=Silver%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B14%5D=Silver%20Stacker%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B15%5D=Silver%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B16%5D=Stacker&scottsdale_prod_posts_product%5BrefinementList%5D%5Bpost_status%5D%5B0%5D=publish&scottsdale_prod_posts_product%5BrefinementList%5D%5B_exclude_from_search%5D%5B0%5D=no&scottsdale_prod_posts_product%5Bpage%5D=3&scottsdale_prod_posts_product%5Btoggle%5D%5Bvisible%5D=true",
+  "total": 105,
+  "pages": [
+    {
+      "click": 1,
+      "url": "https://www.scottsdalemint.com/shop/?scottsdale_prod_posts_product%5Bquery%5D=scottsdale&scottsdale_prod_posts_product%5BhitsPerPage%5D=36&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B0%5D=Copper%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B1%5D=Copper%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B2%5D=Gold%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B3%5D=Gold%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B4%5D=Gold%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B5%5D=Silver%20Antiqued%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B6%5D=Silver%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B7%5D=Silver%20Bar%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B8%5D=Silver%20Cast%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B9%5D=Silver%20Coin&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B10%5D=Silver%20Coin%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B11%5D=Silver%20Colorized%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B12%5D=Silver%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B13%5D=Silver%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B14%5D=Silver%20Stacker%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B15%5D=Silver%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B16%5D=Stacker&scottsdale_prod_posts_product%5BrefinementList%5D%5Bpost_status%5D%5B0%5D=publish&scottsdale_prod_posts_product%5BrefinementList%5D%5B_exclude_from_search%5D%5B0%5D=no&scottsdale_prod_posts_product%5Bpage%5D=3&scottsdale_prod_posts_product%5Btoggle%5D%5Bvisible%5D=true",
+      "found": 33,
+      "keptCumulative": 33
+    },
+    {
+      "click": 2,
+      "url": "https://www.scottsdalemint.com/shop/?scottsdale_prod_posts_product%5Bquery%5D=scottsdale&scottsdale_prod_posts_product%5BhitsPerPage%5D=36&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B0%5D=Copper%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B1%5D=Copper%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B2%5D=Gold%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B3%5D=Gold%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B4%5D=Gold%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B5%5D=Silver%20Antiqued%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B6%5D=Silver%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B7%5D=Silver%20Bar%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B8%5D=Silver%20Cast%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B9%5D=Silver%20Coin&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B10%5D=Silver%20Coin%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B11%5D=Silver%20Colorized%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B12%5D=Silver%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B13%5D=Silver%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B14%5D=Silver%20Stacker%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B15%5D=Silver%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B16%5D=Stacker&scottsdale_prod_posts_product%5BrefinementList%5D%5Bpost_status%5D%5B0%5D=publish&scottsdale_prod_posts_product%5BrefinementList%5D%5B_exclude_from_search%5D%5B0%5D=no&scottsdale_prod_posts_product%5Bpage%5D=3&scottsdale_prod_posts_product%5Btoggle%5D%5Bvisible%5D=true",
+      "found": 69,
+      "keptCumulative": 69
+    },
+    {
+      "click": 3,
+      "url": "https://www.scottsdalemint.com/shop/?scottsdale_prod_posts_product%5Bquery%5D=scottsdale&scottsdale_prod_posts_product%5BhitsPerPage%5D=36&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B0%5D=Copper%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B1%5D=Copper%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B2%5D=Gold%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B3%5D=Gold%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B4%5D=Gold%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B5%5D=Silver%20Antiqued%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B6%5D=Silver%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B7%5D=Silver%20Bar%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B8%5D=Silver%20Cast%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B9%5D=Silver%20Coin&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B10%5D=Silver%20Coin%20Color&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B11%5D=Silver%20Colorized%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B12%5D=Silver%20Colorized%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B13%5D=Silver%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B14%5D=Silver%20Stacker%20Bar&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B15%5D=Silver%20Stacker%20Round&scottsdale_prod_posts_product%5BrefinementList%5D%5Bmetal.en_US%5D%5B16%5D=Stacker&scottsdale_prod_posts_product%5BrefinementList%5D%5Bpost_status%5D%5B0%5D=publish&scottsdale_prod_posts_product%5BrefinementList%5D%5B_exclude_from_search%5D%5B0%5D=no&scottsdale_prod_posts_product%5Bpage%5D=3&scottsdale_prod_posts_product%5Btoggle%5D%5Bvisible%5D=true",
+      "found": 105,
+      "keptCumulative": 105
+    }
+  ],
+  "items": [
+    {
+      "url": "https://www.scottsdalemint.com/product/5-gram-scottsdale-gold-bar-certi-lock-9999-gold-by-scottsdale-mint",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-2g-gold-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-1-g-gold-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/1-oz-scottsdale-the-one-silver-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/5-oz-scottsdale-prey-silver-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/10-oz-reserve-silver-bar-by-scottsdale-silver",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/10-oz-reserve-cast-silver-bar-by-scottsdale",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-random-10-oz-silver-bar-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/100-oz-long-cast-silver-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-1-100th-oz-bar-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-cl20-20-oz-silver-bar-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/random-secondary-scottsdale-mint-1-troy-oz-silver-round-circulated",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2023-scottsdale-lion-one-tenth-oz-silver-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-1-kilo-gold-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-reserve-button-5-oz-silver-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-reserve-1-oz-silver-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-1-oz-silver-round-alpha-strike",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-5-oz-silver-round-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-100g-silver-round-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-2-oz-silver-round-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-king-stacker-100-oz-silver-bar-secondary-market",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-arthur-the-lion-1-advp-ounce-999-fine-copper-color-proof-like-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-osa-the-gorilla-1-advp-ounce-999-fine-copper-color-proof-like-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-advp-ounce-999-fine-copper-color-proof-like-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-hamilton-the-fox-1-avdp-ounce-999-fine-cooper-color-proof-like-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-avdp-ounce-999-fine-copper-color-proof-like-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-gemma-the-unicorn-1-avdp-ounce-999-fine-copper-color-proof-like-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/1-oz-scottsdale-omnia-silver-round",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/5-gram-scottsdale-series-2-silver-bar",
+      "title": null,
+      "page": 1
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-100-g-gold-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2020-scottsdale-reserve-1-oz-silver-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-omnia-type-2-1-oz-silver-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-1-100th-oz-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/1oz-scottsdale-gold-bar-certi-lock",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-1-oz-9999-fine-gold-cast-bar-doge",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-reserve-cast-kilo-silver-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/10-oz-scottsdale-stacker-silver-bar-secondary-market",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-arthur-the-lion-1-troy-ounce-999-fine-silver-color-proof-like-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-osa-the-gorilla-1-troy-ounce-999-fine-silver-color-proof-like-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-hamilton-the-fox-1-troy-ounce-999-fine-silver-color-proof-like-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-gemma-the-unicorn1-troy-ounce-999-fine-silver-color-proof-like-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/100-gram-cast-silver-bar-by-scottsdale",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/5-oz-scottsdale-mint-999-silver-cast-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-1-2-oz-silver-proof-like-coin",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-i-have-not-yet-begun-to-fight-1-troy-oz-999-silver-color-bar-limited-edition",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-washington-deal-with-it-1-troy-oz-999-silver-color-bar-limited-edition",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-buffalo-girl-1-oz-silver-round-alpha-strike",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-copper-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-silver-antique-round",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/random-secondary-scottsdale-mint-1-troy-oz-silver-coin-circulated",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/5-oz-scottsdale-silver-button",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-gold-lion-1-oz-9999-gold-cast-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-silver-lion-1-oz-999-silver-cast-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-cast-100-oz-silver-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-lion-engraved-one-kilo-cast-silver-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-lion-engraved-one-kilo-cast-silver-black-antique-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-white-maned-lion-100-oz-silver-cast-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-marquee-1-oz-gold-bar",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/10-gram-scottsdale-gold-bar-certi-lock",
+      "title": null,
+      "page": 2
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-vortex-10-oz-silver-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-the-vortex-1-troy-oz-9999-silver-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-buffalo-girl-1-oz-silver-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-patriotic-bald-eagle-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-america-crossing-the-delaware-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/__trashed",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-1776-washington-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-liberty-flag-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-fly-fight-win-airforce-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-1-oz-silver-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/2-oz-scottsdale-silver-stacker-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/100-gram-scottsdale-silver-stacker-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-5-oz-silver-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-stacker-1-oz-gold-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-gold-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-silver-round-trio-1-oz-2-oz-and-5-oz",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-silver-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-2-oz-silver-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-5-oz-silver-round",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/100-oz-scottsdale-king-stacker-silver-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/1-kg-scottsdale-kilo-stacker-silver-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/10-oz-stacker-silver-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-100-troy-oz-9999-fine-gold-cast-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-cast-20-troy-ounce-9999-fine-gold-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-cast-10-troy-ounce-9999-fine-gold-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-prepper-silver-1-gram-999-silver-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar",
+      "title": null,
+      "page": 3
+    },
+    {
+      "url": "https://www.scottsdalemint.com/product/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar",
+      "title": null,
+      "page": 3
+    }
+  ]
+}

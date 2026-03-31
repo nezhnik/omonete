@@ -1,0 +1,25 @@
+{
+  "coin": {
+    "source_url": "https://www.scottsdalemint.com/product/1-oz-scottsdale-omnia-silver-round",
+    "title": "Scottsdale Omnia",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/01.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/02.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/03.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/04.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/05.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/06.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/07.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/08.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/09.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/10.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/11.jpg",
+      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/12.jpg"
+    ],
+    "parsedAt": "2026-03-31T16:51:11.182Z",
+    "slug": "1-oz-scottsdale-omnia-silver-round",
+    "image_obverse": "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/01.jpg",
+    "image_reverse": "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/02.jpg"
+  }
+}

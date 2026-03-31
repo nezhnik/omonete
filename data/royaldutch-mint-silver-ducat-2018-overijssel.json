@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/silver-ducat-2018-overijssel",
+    "title": "Silver Ducat 2018 Overijssel",
+    "price_display": "€49.95",
+    "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/01.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/02.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/03.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:41:43.054Z",
+    "slug": "silver-ducat-2018-overijssel",
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/02.jpeg"
+  }
+}

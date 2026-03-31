@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/knm-5-euro-2011-muntgebouw-proof",
+    "title": "KNM 5 Euro 2011 Muntgebouw Proof",
+    "price_display": "€35.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-muntgebouw-proof/01.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-muntgebouw-proof/02.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-muntgebouw-proof/03.jpeg",
+      "/image/coins/foreign/royaldutch/knm-5-euro-2011-muntgebouw-proof/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:18:27.697Z",
+    "slug": "knm-5-euro-2011-muntgebouw-proof",
+    "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-muntgebouw-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-muntgebouw-proof/02.jpeg"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2016-jeroen-bosch-unc-coincard",
+    "title": "HM 5 Euro 2016 Jeroen Bosch UNC Coincard",
+    "price_display": "€10.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/04.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/05.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:05:09.342Z",
+    "slug": "5-euro-2016-jeroen-bosch-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/02.jpeg"
+  }
+}

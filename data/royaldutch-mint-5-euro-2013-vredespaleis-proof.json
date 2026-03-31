@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2013-vredespaleis-proof",
+    "title": "HM 5 Euro 2013 Vredespaleis Proof",
+    "price_display": "€69.95",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/01.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/02.png",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/03.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/04.png"
+    ],
+    "parsedAt": "2026-03-31T18:04:25.445Z",
+    "slug": "5-euro-2013-vredespaleis-proof",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/02.png"
+  }
+}

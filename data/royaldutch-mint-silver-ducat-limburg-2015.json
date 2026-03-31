@@ -1,0 +1,22 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/silver-ducat-limburg-2015",
+    "title": "Silver Ducat Limburg 2015",
+    "price_display": "€44.95",
+    "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/01.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/02.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/03.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/04.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/05.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/06.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/07.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:44:36.526Z",
+    "slug": "silver-ducat-limburg-2015",
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-limburg-2015/02.jpeg"
+  }
+}

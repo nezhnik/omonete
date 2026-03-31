@@ -1,0 +1,27 @@
+{
+  "idx": 14,
+  "sku": "254126",
+  "site_url": "https://www.mint.ca/en/shop/coins/2026/lunar-year-of-the-horse-25-francs-fine-silver-coin-2026",
+  "site_title": "Lunar Year of the Horse - 25 Francs Fine Silver Coin (2026)",
+  "our_id": "6104",
+  "folder": "reports/rcm-downloaded-images/14-254126-lunar-year-of-the-horse-25-francs-fine-silver-coin-2026",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_rev_1200.png?hash=639038887680000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_obv_1200.png?hash=639033895820000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_revangled_1200.png?hash=639033895820000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2026/l1/intl/254126-lunar-year-jade/254126_obvangled_1200.png?hash=639033895820000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

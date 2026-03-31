@@ -1,0 +1,27 @@
+{
+  "idx": 1,
+  "sku": "247778",
+  "site_url": "https://www.mint.ca/en/shop/coins/2025/1kg-pure-gold-coin-lunar-year-of-the-snake",
+  "site_title": "Lunar Year of the Snake - 1 kg Pure Gold Coin",
+  "our_id": "6580",
+  "folder": "reports/rcm-downloaded-images/01-247778-1kg-pure-gold-coin-lunar-year-of-the-snake",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_rev-1200.png?hash=638579326730000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_obv-1200.png?hash=638563824850000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_reva-1200.png?hash=638563824850000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247778-2500-pure-gold-coin-lunar-year-of-the-snake/247778_pack-1200.png?hash=638563824850000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

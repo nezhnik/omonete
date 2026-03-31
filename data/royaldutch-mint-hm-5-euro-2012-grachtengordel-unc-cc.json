@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/hm-5-euro-2012-grachtengordel-unc-cc",
+    "title": "HM 5 Euro 2012 Grachtengordel UNC CC",
+    "price_display": "€10.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/01.jpeg",
+      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/02.jpeg",
+      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/03.jpeg",
+      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/04.jpeg",
+      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/05.jpeg",
+      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:17:21.704Z",
+    "slug": "hm-5-euro-2012-grachtengordel-unc-cc",
+    "image_obverse": "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/02.jpeg"
+  }
+}

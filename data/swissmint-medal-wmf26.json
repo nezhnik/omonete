@@ -1,0 +1,22 @@
+{
+  "coin": {
+    "source_url": "https://www.sondermuenze.ch/en/medal-wmf26",
+    "title": "Silver Medal World Money Fair 2026",
+    "description": "At the World Money Fair 2026, which took place in Berlin from January 29 to 31, 2026, all 600 pieces of the medal were successfully sold. On each day of the fair, 200 medals were offered for sale.",
+    "specs": {
+      "Alloy": "Silver 999",
+      "Diameter": "33 mm",
+      "Weight": "20 g Relief: 0.75 mm on the obverse Edge: + SUISSE + + SCHWEIZ + + SVIZZERA +"
+    },
+    "specsText": "Silver Medal World Money Fair 2026 At the World Money Fair 2026, which took place in Berlin from January 29 to 31, 2026, all 600 pieces of the medal were successfully sold. On each day of the fair, 200 medals were offered for sale. <img fetchpriority=\"high\" decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/fabia-2-new-960x850.jpg\" alt=\"A remarkable medal\" width=\"960\" height=\"850\"/>Learn more about the World Money FairA remarkable medalThis remarkable medal was minted in 999 silver, weighs 20 grams and has a high relief of 0.75 mm, three times higher than the usual standard of 0.25 mm. This exceptional minting quality gives the motif impressive depth. In addition, the medal bears an inscription on the edge in three national languages – + SUISSE + + SCHWEIZ + + SVIZZERA + – separated by Swiss crosses that emphasise its official and Swiss character. Each piece is also marked directly on the medal with an individual lasered number. Learn more about the World Money FairLearn more about the World Money Fair<img decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/swissmint-wmf-ib1-final-scaled.jpg\" alt=\"Medal World Money fair 2026\" width=\"2560\" height=\"2560\"/>Information on the medal Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Relief: 0.75 mm on the obverse Edge: + SUISSE + + SCHWEIZ + + SVIZZERA + Mintage: 600 numbered units proof Price: 110 EUR",
+    "imageUrls": [
+      "/image/coins/foreign/swissmint/medal-wmf26/01.jpg",
+      "/image/coins/foreign/swissmint/medal-wmf26/02.jpg",
+      "/image/coins/foreign/swissmint/medal-wmf26/03.jpg"
+    ],
+    "parsedAt": "2026-03-31T18:22:20.090Z",
+    "slug": "medal-wmf26",
+    "image_obverse": "/image/coins/foreign/swissmint/medal-wmf26/01.jpg",
+    "image_reverse": "/image/coins/foreign/swissmint/medal-wmf26/02.jpg"
+  }
+}

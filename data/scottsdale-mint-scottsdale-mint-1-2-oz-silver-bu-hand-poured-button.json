@@ -1,0 +1,23 @@
+{
+  "coin": {
+    "source_url": "https://www.scottsdalemint.com/product/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button",
+    "title": "Scottsdale Mint Lion",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/01.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/02.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/03.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/04.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/05.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/06.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/07.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/08.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/09.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/10.jpg"
+    ],
+    "parsedAt": "2026-03-31T17:31:00.762Z",
+    "slug": "scottsdale-mint-1-2-oz-silver-bu-hand-poured-button",
+    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/01.jpg",
+    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-bu-hand-poured-button/02.jpg"
+  }
+}

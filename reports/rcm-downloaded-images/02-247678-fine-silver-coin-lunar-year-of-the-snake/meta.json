@@ -1,0 +1,31 @@
+{
+  "idx": 2,
+  "sku": "247678",
+  "site_url": "https://www.mint.ca/en/shop/coins/2025/fine-silver-coin-lunar-year-of-the-snake",
+  "site_title": "Lunar Year of the Snake - 1 oz. Fine Silver Coin",
+  "our_id": "6105",
+  "folder": "reports/rcm-downloaded-images/02-247678-fine-silver-coin-lunar-year-of-the-snake",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_rev-1200.png?hash=638579288330000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_obv-1200.png?hash=638574108840000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_reva-1200.png?hash=638574108840000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_pack-1200.png?hash=638574108840000000&width=500&quality=80"
+    },
+    {
+      "file": "05.png",
+      "url": "https://www.mint.ca/globalassets/products/2024/l8/247678-fine-silver-coin-lunar-year-of-the-snake/247678_box1-1200.png?hash=638574108840000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

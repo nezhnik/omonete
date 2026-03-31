@@ -1,0 +1,17 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-cent-1848-1849-willem-ii-zfr",
+    "title": "DR 10 Cent Willem II Zfr (zwaard)",
+    "price_display": "€85.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1848-1849-willem-ii-zfr/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1848-1849-willem-ii-zfr/02.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:57:02.615Z",
+    "slug": "10-cent-1848-1849-willem-ii-zfr",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1848-1849-willem-ii-zfr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1848-1849-willem-ii-zfr/02.jpeg"
+  }
+}

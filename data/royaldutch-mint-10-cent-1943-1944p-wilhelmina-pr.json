@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-cent-1943-1944p-wilhelmina-pr",
+    "title": "DR 10 Cent Wilhelmina Pr (eikel/p)",
+    "price_display": "€8.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1943-1944p-wilhelmina-pr/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1943-1944p-wilhelmina-pr/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1943-1944p-wilhelmina-pr/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1943-1944p-wilhelmina-pr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:57:47.451Z",
+    "slug": "10-cent-1943-1944p-wilhelmina-pr",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1943-1944p-wilhelmina-pr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1943-1944p-wilhelmina-pr/02.jpeg"
+  }
+}

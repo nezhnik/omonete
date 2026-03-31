@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2014-dnb-unc-coincard",
+    "title": "HM 5 Euro 2014 DNB UNC Coincard",
+    "price_display": "€10.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/04.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/05.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:04:35.643Z",
+    "slug": "5-euro-2014-dnb-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/02.jpeg"
+  }
+}

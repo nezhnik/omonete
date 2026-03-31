@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/25-cent-1941-1943p-wilhelmina-pr",
+    "title": "DR 25 Cent Wilhelmina Pr (palm/p)",
+    "price_display": "€18.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/25-cent-1941-1943p-wilhelmina-pr/01.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1941-1943p-wilhelmina-pr/02.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1941-1943p-wilhelmina-pr/03.jpeg",
+      "/image/coins/foreign/royaldutch/25-cent-1941-1943p-wilhelmina-pr/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:01:08.506Z",
+    "slug": "25-cent-1941-1943p-wilhelmina-pr",
+    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1941-1943p-wilhelmina-pr/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1941-1943p-wilhelmina-pr/02.jpeg"
+  }
+}

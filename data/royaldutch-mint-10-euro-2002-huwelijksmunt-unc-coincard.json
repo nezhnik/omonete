@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/10-euro-2002-huwelijksmunt-unc-coincard",
+    "title": "HM 10 Euro 2002 Huwelijk UNC Coincard",
+    "price_display": "€360.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T17:58:01.218Z",
+    "slug": "10-euro-2002-huwelijksmunt-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/02.jpeg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/100-francs-1948-1951-nl-quatre-rois",
+    "title": "100 Francs 1948-1951 NL - Quatre Rois",
+    "price_display": "104,95 €",
+    "description": "Cette pièce historique originale en argent de 100 francs Belgique montre une photo des quatre rois : Léopold Ier, Léopold II, Albert Ier et Léopold III. La pièce a été émise en 1948, 1949, 1950, dans une édition flamande et française, en 1951 seulement en flamand et en 1954 seulement en français. La pièce a été émise à l'époque de la Question royale, un conflit politique sur le retour de Léopold III comme roi. Entre-temps, le prince Charles, frère de Léopold III et dernier comte de Flandre, prend la régence de la Belgique de 1944 à 1950. En 1950, les responsabilités royales sont transférées à Baudouin en tant que Prince Royal. Un an plus tard, Léopold III a abdiqué et Baudouin est devenu le cinquième roi des Belges.",
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/100-francs-1948-1951-nl-quatre-rois/01.jpeg",
+      "/image/coins/foreign/herdenkings/100-francs-1948-1951-nl-quatre-rois/02.jpeg",
+      "/image/coins/foreign/herdenkings/100-francs-1948-1951-nl-quatre-rois/03.jpeg",
+      "/image/coins/foreign/herdenkings/100-francs-1948-1951-nl-quatre-rois/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:06:31.502Z",
+    "slug": "100-francs-1948-1951-nl-quatre-rois",
+    "image_obverse": "/image/coins/foreign/herdenkings/100-francs-1948-1951-nl-quatre-rois/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/100-francs-1948-1951-nl-quatre-rois/02.jpeg"
+  }
+}

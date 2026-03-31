@@ -1,0 +1,21 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/aviation-5-euro-coin-2019-silver-proof",
+    "title": "Aviation 5 euro coin 2019 Silver Proof",
+    "price_display": "€49.95",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/01.jpeg",
+      "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/02.jpeg",
+      "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/03.jpeg",
+      "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/04.jpeg",
+      "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/05.jpeg",
+      "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/06.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:11:45.281Z",
+    "slug": "aviation-5-euro-coin-2019-silver-proof",
+    "image_obverse": "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/aviation-5-euro-coin-2019-silver-proof/02.jpeg"
+  }
+}

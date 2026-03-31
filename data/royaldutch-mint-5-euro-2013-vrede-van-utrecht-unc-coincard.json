@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.royaldutchmint.com/5-euro-2013-vrede-van-utrecht-unc-coincard",
+    "title": "HM 5 Euro 2013 Vrede van Utrecht UNC CC",
+    "price_display": "€10.00",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/01.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/02.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/03.jpeg",
+      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T18:04:19.461Z",
+    "slug": "5-euro-2013-vrede-van-utrecht-unc-coincard",
+    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/02.jpeg"
+  }
+}

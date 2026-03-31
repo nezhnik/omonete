@@ -1,0 +1,31 @@
+{
+  "idx": 13,
+  "sku": "250303",
+  "site_url": "https://www.mint.ca/en/shop/coins/2026/lunar-year-of-the-horse-1-kg-pure-gold-coin",
+  "site_title": "Lunar Year of the Horse – 1 kg Pure Gold Coin (2026)",
+  "our_id": "6577",
+  "folder": "reports/rcm-downloaded-images/13-250303-lunar-year-of-the-horse-1-kg-pure-gold-coin",
+  "images": [
+    {
+      "file": "01.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_rev-1200.png?hash=638856758070000000&width=500&quality=80"
+    },
+    {
+      "file": "02.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_obv-1200.png?hash=638851627670000000&width=500&quality=80"
+    },
+    {
+      "file": "03.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_revright-1200.png?hash=638851627670000000&width=500&quality=80"
+    },
+    {
+      "file": "04.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_obvright-1200.png?hash=638851627670000000&width=500&quality=80"
+    },
+    {
+      "file": "05.png",
+      "url": "https://www.mint.ca/globalassets/products/2025/l7/lunar-year-of-the-horse-1-kg-pure-gold-coin/250303_pack-1200.png?hash=638851627670000000&width=500&quality=80"
+    }
+  ],
+  "errors": []
+}

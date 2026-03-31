@@ -1,0 +1,19 @@
+{
+  "coin": {
+    "source_url": "https://www.herdenkingsmunten.be/fr/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin",
+    "title": "250 Francs 1976 NL - 25 ans de règne du roi Baudouin",
+    "price_display": "149,95 €",
+    "description": null,
+    "specs": {},
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin/01.jpeg",
+      "/image/coins/foreign/herdenkings/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin/02.jpeg",
+      "/image/coins/foreign/herdenkings/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin/03.jpeg",
+      "/image/coins/foreign/herdenkings/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T19:07:18.900Z",
+    "slug": "250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin",
+    "image_obverse": "/image/coins/foreign/herdenkings/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/250-francs-1976-nl-25-ans-de-regne-du-roi-baudouin/02.jpeg"
+  }
+}
