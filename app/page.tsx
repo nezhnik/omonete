@@ -9,6 +9,7 @@ import { Button } from "../components/Button";
 import { RegionSlider } from "../components/RegionSlider";
 import { useAuth } from "../components/AuthProvider";
 import { FOREIGN_MINT_CARD_LIST } from "../lib/mintLogoLookup";
+import { pickCoinCardProps, type CoinFieldsForCard } from "../lib/pickCoinCardProps";
 
 const HERO_COIN_INTERVAL_MS = 2500;
 
@@ -290,12 +291,12 @@ export default function HomePage() {
                       }
                     >
                       <CoinCard
-                      {...coin}
-                      href={`/coins/${coin.id}/`}
-                      isAuthorized={isAuthorized}
-                      inCollection={inCollection(coin.id)}
-                      onToggleCollection={handleToggleCollection}
-                    />
+                        {...pickCoinCardProps(coin as CoinFieldsForCard)}
+                        href={`/coins/${coin.id}/`}
+                        isAuthorized={isAuthorized}
+                        inCollection={inCollection(coin.id)}
+                        onToggleCollection={handleToggleCollection}
+                      />
                     </div>
                   ))}
                 </div>

@@ -341,6 +341,7 @@ export type DetailCoin = {
   metalCodes?: string[];
   mintage?: string | number;
   mintageDisplay?: string;
+  mintageNeedsResearch?: boolean;
   weightG?: string;
   weightOz?: string;
   /** Для блока «Вес в унциях»: у кг — считанные унции (32,15 унции), у остальных — weight_oz из БД */
@@ -539,6 +540,7 @@ function rowToDetailCoin(
     metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
     mintage: r.mintage as string | number | undefined,
     mintageDisplay: r.mintage_display as string | undefined,
+    mintageNeedsResearch: coinNeedsMintageResearch(r),
     weightG: formatWeightG(r.weight_g) ?? (r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined),
     weightOz: r.weight_oz != null && r.weight_oz !== "" ? String(r.weight_oz).trim() : undefined,
     weightOzDisplay: getWeightOzDisplay(r.weight_g, r.weight_oz) ?? undefined,

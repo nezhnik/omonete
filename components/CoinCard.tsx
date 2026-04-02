@@ -4,6 +4,21 @@ import { useState, useRef, useEffect } from 'react'
 import { IconPlus, IconCheck } from '@tabler/icons-react'
 import { cleanCoinTitle } from '../lib/cleanTitle'
 import { COIN_CATALOG_CARD_IMAGE_SCALE } from '../lib/coinCatalogImageScale'
+import { MINTAGE_UNKNOWN_DISPLAY } from '../lib/mintageResearch'
+
+/** Убирает из строки подзаголовка карточки сегменты «Тираж не указан» (иногда попадают в series из БД при dev через /api/coins). */
+function stripMintagePlaceholderFromLine(s: string | undefined | null): string | undefined {
+  if (s == null || typeof s !== 'string') return undefined
+  const t = s.trim()
+  if (!t) return undefined
+  if (t === MINTAGE_UNKNOWN_DISPLAY) return undefined
+  const parts = t
+    .split(/\s*·\s*/)
+    .map((p) => p.trim())
+    .filter((p) => p.length > 0 && p !== MINTAGE_UNKNOWN_DISPLAY)
+  if (parts.length === 0) return undefined
+  return parts.join(' · ')
+}
 
 type CoinCardProps = {
   id: string
@@ -27,8 +42,6 @@ type CoinCardProps = {
   onToggleCollection?: (id: string) => void
   /** Если false, показываем тултип «авторизуйтесь» и ведём на страницу входа */
   isAuthorized?: boolean
-  /** Нет числового тиража в БД — подпись для ручного поиска (см. каталог, фильтр «тираж») */
-  mintageNeedsResearch?: boolean
 }
 
 export function CoinCard(props: CoinCardProps) {
@@ -50,7 +63,6 @@ export function CoinCard(props: CoinCardProps) {
     isAuthorized = false,
     rectangular = false,
     imageUrlRoles,
-    mintageNeedsResearch = false,
   } = props
 
   const isPackagingRole = (role: string | undefined) =>
@@ -106,15 +118,18 @@ export function CoinCard(props: CoinCardProps) {
 
   // Страна · МД · Серия (для российских — короткое название монетного двора: ММД, ЛМД и т.д.)
   const subtitleParts = [
-    country,
-    country === "Россия" && mintShort ? mintShort.replace(/, /g, " и ") : null,
-    seriesName,
+    stripMintagePlaceholderFromLine(country),
+    country === "Россия" && mintShort
+      ? stripMintagePlaceholderFromLine(mintShort.replace(/, /g, " и "))
+      : null,
+    stripMintagePlaceholderFromLine(seriesName),
   ].filter(Boolean) as string[]
   const subtitle = subtitleParts.join(" · ")
   const catalogImageScale = COIN_CATALOG_CARD_IMAGE_SCALE[id] ?? 1
 
+  // v3: один серый <p> (line-clamp-3). data-omonete-coin-card на корне — маркер актуального бандла.
   const inner = (
-    <div className="group w-full min-w-0 flex flex-col items-stretch">
+    <div className="group w-full min-w-0 flex flex-col items-stretch" data-omonete-coin-card="v3-one-subtitle">
       {/* Паддинги блока с монетой (px-12 pt-6 pb-8) — отключены, можно вернуть при необходимости */}
       <div className="w-full flex flex-col items-center">
         <div
@@ -208,11 +223,6 @@ export function CoinCard(props: CoinCardProps) {
           <p className="text-[#656565] text-[14px] font-normal break-words overflow-hidden line-clamp-3 sm:line-clamp-none">
             {subtitle}
           </p>
-          {mintageNeedsResearch && (
-            <p className="text-[#656565] text-[14px] font-normal break-words overflow-hidden line-clamp-2 sm:line-clamp-none">
-              Тираж не указан
-            </p>
-          )}
           {/* Цену временно скрываем, оставляем поле в типе для будущего использования */}
         </div>
       </div>

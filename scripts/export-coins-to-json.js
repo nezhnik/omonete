@@ -18,6 +18,8 @@ const WRONG_3_COIN_SET_PATH = "2013-australian-kookaburra-kangaroo-koala-high-re
 const STATE_FILE = path.join(__dirname, "..", "export-state.json");
 const DATA_DIR = path.join(__dirname, "..", "public", "data");
 const COINS_DIR = path.join(DATA_DIR, "coins");
+const REPORTS_DIR = path.join(__dirname, "..", "reports");
+const EXPORT_SNAPSHOTS_DIR = path.join(REPORTS_DIR, "export-snapshots");
 
 /** Не выгружать в JSON (удалены из каталога); см. scripts/sql/delete-coins-5998-6000.sql */
 const EXCLUDED_EXPORT_COIN_IDS = new Set(["5998", "6000", "6012"]);
@@ -311,6 +313,91 @@ function isMennicaGoldBarCatalogNumber(catalogNumber) {
   return /^PL-MENNICA-GOLD-BAR-/i.test(String(catalogNumber || "").trim());
 }
 
+function tsForFile(d = new Date()) {
+  const pad = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}_${pad(d.getHours())}-${pad(d.getMinutes())}-${pad(d.getSeconds())}`;
+}
+
+function readLatestSnapshot() {
+  try {
+    if (!fs.existsSync(EXPORT_SNAPSHOTS_DIR)) return null;
+    const files = fs
+      .readdirSync(EXPORT_SNAPSHOTS_DIR)
+      .filter((f) => /^export-snapshot-.*\.json$/i.test(f))
+      .sort();
+    if (!files.length) return null;
+    const last = files[files.length - 1];
+    const abs = path.join(EXPORT_SNAPSHOTS_DIR, last);
+    const data = JSON.parse(fs.readFileSync(abs, "utf8"));
+    return { file: abs, data };
+  } catch {
+    return null;
+  }
+}
+
+function writeExportDiffReport(prevSnap, currSnap, outFile) {
+  const prevItems = new Map((prevSnap?.items || []).map((x) => [String(x.id), x]));
+  const currItems = new Map((currSnap.items || []).map((x) => [String(x.id), x]));
+  const ids = new Set([...prevItems.keys(), ...currItems.keys()]);
+  const added = [];
+  const removed = [];
+  const changed = [];
+  for (const id of ids) {
+    const p = prevItems.get(id);
+    const c = currItems.get(id);
+    if (!p && c) {
+      if (c.is_exported) added.push(c);
+      continue;
+    }
+    if (p && !c) continue;
+    if (!p || !c) continue;
+    if (!!p.is_exported !== !!c.is_exported) {
+      if (c.is_exported) added.push(c);
+      else removed.push(c);
+      continue;
+    }
+    if ((p.exclude_reason || "") !== (c.exclude_reason || "")) {
+      changed.push({ id, before: p.exclude_reason || "OK", after: c.exclude_reason || "OK", title: c.title || p.title || "—" });
+    }
+  }
+  const lines = [];
+  lines.push("# Export Diff (latest)");
+  lines.push("");
+  lines.push(`- Previous snapshot: ${prevSnap?.created_at || "n/a"}`);
+  lines.push(`- Current snapshot: ${currSnap.created_at}`);
+  lines.push(`- Exported before: ${prevSnap?.summary?.exported ?? "n/a"}`);
+  lines.push(`- Exported now: ${currSnap.summary.exported}`);
+  lines.push(`- Added to export: ${added.length}`);
+  lines.push(`- Removed from export: ${removed.length}`);
+  lines.push(`- Reason changed: ${changed.length}`);
+  lines.push("");
+  if (removed.length) {
+    lines.push("## Removed From Export");
+    lines.push("");
+    for (const r of removed.slice(0, 300)) {
+      lines.push(`- [${r.id}] ${r.title || "—"} — reason: ${r.exclude_reason || "UNKNOWN"}`);
+    }
+    lines.push("");
+  }
+  if (added.length) {
+    lines.push("## Added To Export");
+    lines.push("");
+    for (const a of added.slice(0, 300)) {
+      lines.push(`- [${a.id}] ${a.title || "—"} — reason: ${a.exclude_reason || "OK"}`);
+    }
+    lines.push("");
+  }
+  if (changed.length) {
+    lines.push("## Changed Reason");
+    lines.push("");
+    for (const ch of changed.slice(0, 300)) {
+      lines.push(`- [${ch.id}] ${ch.title} — ${ch.before} -> ${ch.after}`);
+    }
+    lines.push("");
+  }
+  fs.writeFileSync(outFile, lines.join("\n") + "\n", "utf8");
+}
+
 function isRectangularCoin(catalogNumber, rectangularBases, rectangularIds, id, lengthMm, widthMm) {
   if (id && rectangularIds.length > 0 && rectangularIds.includes(String(id))) return true;
   const hasLen = lengthMm != null && String(lengthMm).trim() !== "";
@@ -457,8 +544,12 @@ async function run() {
   }
   // Монеты без числового тиража обычно не выводим в каталог.
   // Исключение: иностранные монеты с текстовым тиражом (например, "Неограниченный тираж").
+  const excludeReasonById = new Map();
   const rowsToExport = rows.filter((r) => {
-    if (EXCLUDED_EXPORT_COIN_IDS.has(String(r.id))) return false;
+    if (EXCLUDED_EXPORT_COIN_IDS.has(String(r.id))) {
+      excludeReasonById.set(String(r.id), "EXCLUDED_ID");
+      return false;
+    }
     const hasNumericMintage = r.mintage != null && Number(r.mintage) !== 0;
     const country = (r.country || "").trim();
     const hasDisplay = r.mintage_display != null && String(r.mintage_display).trim() !== "";
@@ -469,13 +560,13 @@ async function run() {
     const isPampCollectible = /^CH-PAMP-/i.test(String(r.catalog_number || "").trim());
     /** Золотые слитки Mennica (листинг gold-bars) — без лимитированного тиража в specs. */
     const isMennicaGoldBar = isMennicaGoldBarCatalogNumber(r.catalog_number);
-    return (
-      hasNumericMintage ||
-      isForeignUnlimited ||
-      isRoyalMintCatalog ||
-      isPampCollectible ||
-      isMennicaGoldBar
-    );
+    const keep = hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible || isMennicaGoldBar;
+    if (!keep) {
+      excludeReasonById.set(String(r.id), "NO_MINTAGE");
+    } else {
+      excludeReasonById.set(String(r.id), "OK");
+    }
+    return keep;
   });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();
@@ -597,6 +688,47 @@ async function run() {
     JSON.stringify(listCoins.map((c) => c.id))
   );
   console.log("✓ public/data/coin-ids.json");
+
+  if (!fs.existsSync(REPORTS_DIR)) fs.mkdirSync(REPORTS_DIR, { recursive: true });
+  if (!fs.existsSync(EXPORT_SNAPSHOTS_DIR)) fs.mkdirSync(EXPORT_SNAPSHOTS_DIR, { recursive: true });
+  const prev = readLatestSnapshot();
+  const exportedIds = new Set(listCoins.map((c) => String(c.id)));
+  const snapshotItems = rows.map((r) => {
+    const id = String(r.id);
+    const reason = excludeReasonById.get(id) || "NO_MINTAGE";
+    return {
+      id,
+      title: cleanTitle(r.title),
+      country: r.country ?? "Россия",
+      mint: r.mint ?? null,
+      source_url: r.source_url ?? null,
+      mintage: r.mintage ?? null,
+      mintage_display: r.mintage_display ?? null,
+      is_exported: exportedIds.has(id),
+      exclude_reason: exportedIds.has(id) ? "OK" : reason,
+    };
+  });
+  const byReason = snapshotItems.reduce((acc, it) => {
+    const key = it.exclude_reason || "UNKNOWN";
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+  const currentSnapshot = {
+    created_at: new Date().toISOString(),
+    summary: {
+      total_db_rows: rows.length,
+      exported: listCoins.length,
+      excluded: rows.length - listCoins.length,
+      by_reason: byReason,
+    },
+    items: snapshotItems,
+  };
+  const snapshotFile = path.join(EXPORT_SNAPSHOTS_DIR, `export-snapshot-${tsForFile()}.json`);
+  fs.writeFileSync(snapshotFile, JSON.stringify(currentSnapshot, null, 2), "utf8");
+  console.log("✓", snapshotFile);
+  const diffFile = path.join(REPORTS_DIR, "export-diff-latest.md");
+  writeExportDiffReport(prev && prev.data ? prev.data : null, currentSnapshot, diffFile);
+  console.log("✓", diffFile);
 
   if (mintsList.length > 0) {
     fs.writeFileSync(path.join(DATA_DIR, "mints.json"), JSON.stringify({ mints: mintsList }));
@@ -730,6 +862,7 @@ async function run() {
       metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
       mintage: r.mintage ?? undefined,
       mintageDisplay: r.mintage_display ?? undefined,
+      mintageNeedsResearch: coinNeedsMintageResearch(r),
       weightG: formatWeightG(r.weight_g) ?? (r.weight_g != null && r.weight_g !== "" ? String(r.weight_g).trim() : undefined),
       weightOz: normalizedWeightOz ?? undefined,
       weightOzDisplay: normalizedWeightOz ?? getWeightOzDisplay(r.weight_g, r.weight_oz) ?? undefined,

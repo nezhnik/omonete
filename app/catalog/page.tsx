@@ -20,6 +20,7 @@ import { IconAdjustmentsHorizontal, IconArrowUp, IconArrowsSort, IconSearch, Ico
 import { formatNumber } from "../../lib/formatNumber";
 import { nbspAfterPrepositions } from "../../lib/nbspPrepositions";
 import { useAuth } from "../../components/AuthProvider";
+import { pickCoinCardProps } from "../../lib/pickCoinCardProps";
 
 type CatalogFilter = "all" | "ru" | "foreign";
 
@@ -259,6 +260,62 @@ function coinMatchesSearch(coin: CatalogCoin, queryNorm: string): boolean {
   return fieldsMatchWords(fields, words);
 }
 
+/** «Два двора» → одиночные дворы; монета показывается при фильтре по любому из них */
+const MINT_COMBINED_TO_SINGLES: Record<string, string[]> = {
+  "Московский и Санкт-Петербургский монетные дворы": [
+    "Московский монетный двор",
+    "Санкт-Петербургский монетный двор",
+  ],
+  "Московский и Ленинградский монетные дворы": [
+    "Московский монетный двор",
+    "Ленинградский монетный двор",
+  ],
+};
+
+function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
+  const name = coin.mintName?.trim();
+  if (!name) return false;
+  if (name === selectedMint) return true;
+  const singles = MINT_COMBINED_TO_SINGLES[name];
+  return singles?.includes(selectedMint) ?? false;
+}
+
+type CatalogFilterCtx = {
+  selectedWeights: string[];
+  selectedCountries: string[];
+  selectedSeries: string[];
+  selectedMints: string[];
+  selectedMetals: string[];
+  noMintageOnly: boolean;
+  searchNorm: string;
+};
+
+function coinPassesCatalogFilters(c: CatalogCoin, ctx: CatalogFilterCtx): boolean {
+  if (ctx.selectedWeights.length > 0 && !(c.weightLabel && ctx.selectedWeights.includes(c.weightLabel))) return false;
+  if (ctx.selectedCountries.length > 0 && !ctx.selectedCountries.includes(c.country)) return false;
+  if (ctx.selectedSeries.length > 0 && !(c.seriesName && ctx.selectedSeries.includes(c.seriesName))) return false;
+  if (ctx.selectedMints.length > 0 && !ctx.selectedMints.some((m) => coinMatchesMint(c, m))) return false;
+  if (ctx.selectedMetals.length > 0) {
+    const ok = c.metalCodes?.length
+      ? ctx.selectedMetals.some((m) => c.metalCodes!.includes(m))
+      : !!(c.metalCode && ctx.selectedMetals.includes(c.metalCode));
+    if (!ok) return false;
+  }
+  if (ctx.noMintageOnly && !c.mintageNeedsResearch) return false;
+  if (ctx.searchNorm && !coinMatchesSearch(c, ctx.searchNorm)) return false;
+  return true;
+}
+
+/** Debounce для записи `q` в URL — меньше вызовов router.replace при наборе текста */
+function useDebouncedValue<T>(value: T, ms: number): T {
+  const [d, setD] = useState(value);
+  useEffect(() => {
+    const t = setTimeout(() => setD(value), ms);
+    return () => clearTimeout(t);
+  }, [value, ms]);
+  return d;
+}
+
 function CatalogPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -284,6 +341,7 @@ function CatalogPageContent() {
   const [selectedMints, setSelectedMints] = useState<string[]>(() => parseCatalogState(searchParams).selectedMints);
   const [noMintageOnly, setNoMintageOnly] = useState<boolean>(() => parseCatalogState(searchParams).noMintageOnly);
   const [searchQuery, setSearchQuery] = useState<string>(() => parseCatalogState(searchParams).searchQuery);
+  const debouncedSearchForUrl = useDebouncedValue(searchQuery, 320);
   const [sort, setSort] = useState<CatalogSort>(() => parseCatalogState(searchParams).sort);
   const [sortOpen, setSortOpen] = useState(false);
   const [sortBottomOpen, setSortBottomOpen] = useState(false);
@@ -473,7 +531,7 @@ function CatalogPageContent() {
     selectedSeries.forEach((s) => params.append("series", s));
     selectedMints.forEach((m) => params.append("mint", m));
     if (noMintageOnly) params.set("noMintage", "1");
-    if (searchQuery) params.set("q", searchQuery);
+    if (debouncedSearchForUrl) params.set("q", debouncedSearchForUrl);
     const q = params.toString();
     const current = searchParams.toString();
     const catalogUrl = `/catalog${q ? `?${q}` : ""}`;
@@ -488,7 +546,7 @@ function CatalogPageContent() {
     selectedSeries,
     selectedMints,
     noMintageOnly,
-    searchQuery,
+    debouncedSearchForUrl,
     router,
     searchParams,
   ]);
@@ -698,27 +756,7 @@ function CatalogPageContent() {
       .map(([name]) => name);
   }, [coins]);
 
-  /** «Два двора» → одиночные дворы; монета показывается при фильтре по любому из них */
-const MINT_COMBINED_TO_SINGLES: Record<string, string[]> = {
-  "Московский и Санкт-Петербургский монетные дворы": [
-    "Московский монетный двор",
-    "Санкт-Петербургский монетный двор",
-  ],
-  "Московский и Ленинградский монетные дворы": [
-    "Московский монетный двор",
-    "Ленинградский монетный двор",
-  ],
-};
-
-function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
-  const name = coin.mintName?.trim();
-  if (!name) return false;
-  if (name === selectedMint) return true;
-  const singles = MINT_COMBINED_TO_SINGLES[name];
-  return singles?.includes(selectedMint) ?? false;
-}
-
-/** Список только одиночных дворов (без «X и Y монетные дворы»), счётчик включает монеты с двумя дворами */
+  /** Список только одиночных дворов (без «X и Y монетные дворы»), счётчик включает монеты с двумя дворами */
   const mintListByCount = useMemo(() => {
     const m: Record<string, number> = {};
     coins.forEach((c) => {
@@ -752,30 +790,18 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     return withG.sort((a, b) => b.g - a.g).map((x) => x.label);
   }, [coins]);
 
-  const byTab =
-    filter === "all" ? coins : filter === "ru" ? coins.filter((c) => c.country === "Россия") : coins.filter((c) => c.country !== "Россия");
-
   const searchNorm = useMemo(() => normalizeSearch(searchQuery), [searchQuery]);
 
-  /** Применяет фильтры (вес, страна, серия, металл, поиск) к списку монет — как для чипсов в фильтрах */
-  const applyFiltersTo = useCallback(
-    (list: CatalogCoin[]) => {
-      let out = list;
-      if (selectedWeights.length > 0) out = out.filter((c) => c.weightLabel && selectedWeights.includes(c.weightLabel));
-      if (selectedCountries.length > 0) out = out.filter((c) => selectedCountries.includes(c.country));
-      if (selectedSeries.length > 0) out = out.filter((c) => c.seriesName && selectedSeries.includes(c.seriesName));
-      if (selectedMints.length > 0) out = out.filter((c) => selectedMints.some((m) => coinMatchesMint(c, m)));
-      if (selectedMetals.length > 0) {
-        out = out.filter((c) =>
-          c.metalCodes?.length
-            ? selectedMetals.some((m) => c.metalCodes!.includes(m))
-            : !!(c.metalCode && selectedMetals.includes(c.metalCode))
-        );
-      }
-      if (noMintageOnly) out = out.filter((c) => c.mintageNeedsResearch);
-      if (searchNorm) out = out.filter((c) => coinMatchesSearch(c, searchNorm));
-      return out;
-    },
+  const filterCtx: CatalogFilterCtx = useMemo(
+    () => ({
+      selectedWeights,
+      selectedCountries,
+      selectedSeries,
+      selectedMints,
+      selectedMetals,
+      noMintageOnly,
+      searchNorm,
+    }),
     [
       selectedWeights,
       selectedCountries,
@@ -787,43 +813,114 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     ]
   );
 
-  /** Счётчики по вкладкам с учётом фильтров — как в чипсах металлов */
-  const tabCounts = useMemo(
-    () => ({
-      all: applyFiltersTo(coins).length,
-      ru: applyFiltersTo(coins.filter((c) => c.country === "Россия")).length,
-      foreign: applyFiltersTo(coins.filter((c) => c.country !== "Россия")).length,
-    }),
-    [coins, applyFiltersTo]
+  /** Применяет фильтры (вес, страна, серия, металл, поиск) к списку монет — как для чипсов в фильтрах */
+  const applyFiltersTo = useCallback(
+    (list: CatalogCoin[]) => list.filter((c) => coinPassesCatalogFilters(c, filterCtx)),
+    [filterCtx]
   );
-  const byWeight =
-    selectedWeights.length === 0
-      ? byTab
-      : byTab.filter((c) => c.weightLabel && selectedWeights.includes(c.weightLabel));
-  const byCountryFilter =
-    selectedCountries.length === 0
-      ? byWeight
-      : byWeight.filter((c) => selectedCountries.includes(c.country));
-  const bySeriesFilter =
-    selectedSeries.length === 0
-      ? byCountryFilter
-      : byCountryFilter.filter((c) => c.seriesName && selectedSeries.includes(c.seriesName));
-  const byMintFilter =
-    selectedMints.length === 0
-      ? bySeriesFilter
-      : bySeriesFilter.filter((c) => selectedMints.some((m) => coinMatchesMint(c, m)));
-  const afterMetal =
-    selectedMetals.length === 0
-      ? byMintFilter
-      : byMintFilter.filter((c) =>
-          c.metalCodes?.length
-            ? selectedMetals.some((m) => c.metalCodes!.includes(m))
-            : !!(c.metalCode && selectedMetals.includes(c.metalCode))
-        );
-  const afterNoMintage = noMintageOnly ? afterMetal.filter((c) => c.mintageNeedsResearch) : afterMetal;
-  const filteredCoins = searchNorm
-    ? afterNoMintage.filter((c) => coinMatchesSearch(c, searchNorm))
-    : afterNoMintage;
+
+  /** Счётчики по вкладкам с учётом фильтров — один проход по каталогу */
+  const tabCounts = useMemo(() => {
+    let all = 0;
+    let ru = 0;
+    let foreign = 0;
+    for (const c of coins) {
+      if (!coinPassesCatalogFilters(c, filterCtx)) continue;
+      all += 1;
+      if (c.country === "Россия") ru += 1;
+      else foreign += 1;
+    }
+    return { all, ru, foreign };
+  }, [coins, filterCtx]);
+
+  const catalogPipeline = useMemo(() => {
+    const byTab =
+      filter === "all" ? coins : filter === "ru" ? coins.filter((c) => c.country === "Россия") : coins.filter((c) => c.country !== "Россия");
+    const byWeight =
+      selectedWeights.length === 0
+        ? byTab
+        : byTab.filter((c) => c.weightLabel && selectedWeights.includes(c.weightLabel));
+    const byCountryFilter =
+      selectedCountries.length === 0
+        ? byWeight
+        : byWeight.filter((c) => selectedCountries.includes(c.country));
+    const bySeriesFilter =
+      selectedSeries.length === 0
+        ? byCountryFilter
+        : byCountryFilter.filter((c) => c.seriesName && selectedSeries.includes(c.seriesName));
+    const byMintFilter =
+      selectedMints.length === 0
+        ? bySeriesFilter
+        : bySeriesFilter.filter((c) => selectedMints.some((m) => coinMatchesMint(c, m)));
+    const afterMetal =
+      selectedMetals.length === 0
+        ? byMintFilter
+        : byMintFilter.filter((c) =>
+            c.metalCodes?.length
+              ? selectedMetals.some((m) => c.metalCodes!.includes(m))
+              : !!(c.metalCode && selectedMetals.includes(c.metalCode))
+          );
+    const afterNoMintage = noMintageOnly ? afterMetal.filter((c) => c.mintageNeedsResearch) : afterMetal;
+    return { byMintFilter, afterNoMintage };
+  }, [
+    coins,
+    filter,
+    selectedWeights,
+    selectedCountries,
+    selectedSeries,
+    selectedMints,
+    selectedMetals,
+    noMintageOnly,
+  ]);
+
+  const { byMintFilter, afterNoMintage } = catalogPipeline;
+
+  const searchIncRef = useRef<{ base: CatalogCoin[]; norm: string; matches: CatalogCoin[] } | null>(null);
+  const countSearchIncRef = useRef<{ base: CatalogCoin[]; norm: string; matches: CatalogCoin[] } | null>(null);
+
+  /** При наборе префикса нормализованного запроса — фильтруем только предыдущий кандидатский список */
+  const filteredCoins = useMemo(() => {
+    const base = afterNoMintage;
+    if (!searchNorm) {
+      const out = base;
+      searchIncRef.current = { base, norm: "", matches: out };
+      return out;
+    }
+    const prev = searchIncRef.current;
+    const canNarrow =
+      prev !== null &&
+      prev.base === base &&
+      prev.norm.length >= 2 &&
+      searchNorm.length > prev.norm.length &&
+      searchNorm.startsWith(prev.norm);
+    const out = canNarrow
+      ? prev.matches.filter((c) => coinMatchesSearch(c, searchNorm))
+      : base.filter((c) => coinMatchesSearch(c, searchNorm));
+    searchIncRef.current = { base, norm: searchNorm, matches: out };
+    return out;
+  }, [afterNoMintage, searchNorm]);
+
+  /** Для подсчёта в чипсах: монеты с учётом веса, страны, серии, монетного двора и поиска (без металла и без фильтра «тираж»). */
+  const coinsForFilterCounts = useMemo(() => {
+    const base = byMintFilter;
+    if (!searchNorm) {
+      countSearchIncRef.current = { base, norm: "", matches: base };
+      return base;
+    }
+    const prev = countSearchIncRef.current;
+    const canNarrow =
+      prev !== null &&
+      prev.base === base &&
+      prev.norm.length >= 2 &&
+      searchNorm.length > prev.norm.length &&
+      searchNorm.startsWith(prev.norm);
+    const out = canNarrow
+      ? prev.matches.filter((c) => coinMatchesSearch(c, searchNorm))
+      : base.filter((c) => coinMatchesSearch(c, searchNorm));
+    countSearchIncRef.current = { base, norm: searchNorm, matches: out };
+    return out;
+  }, [byMintFilter, searchNorm]);
+
   const sortedCoins = useMemo(() => {
     const list = [...filteredCoins];
     if (sort === "new") list.sort((a, b) => b.year - a.year);
@@ -832,11 +929,6 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
     else if (sort === "weight_asc") list.sort((a, b) => (a.weightG ?? 0) - (b.weightG ?? 0));
     return list;
   }, [filteredCoins, sort]);
-  /** Для подсчёта в чипсах: монеты с учётом веса, страны, серии, монетного двора и поиска (без металла и без фильтра «тираж»). */
-  const coinsForFilterCounts = useMemo(
-    () => (searchNorm ? byMintFilter.filter((c) => coinMatchesSearch(c, searchNorm)) : byMintFilter),
-    [byMintFilter, searchNorm]
-  );
   const noMintageFilterCount = useMemo(
     () => coinsForFilterCounts.filter((c) => c.mintageNeedsResearch).length,
     [coinsForFilterCounts]
@@ -1239,7 +1331,7 @@ function coinMatchesMint(coin: CatalogCoin, selectedMint: string): boolean {
                           }}
                         >
                           <CoinCard
-                            {...coin}
+                            {...pickCoinCardProps(coin)}
                             href={`/coins/${coin.id}/`}
                             isAuthorized={isAuthorized}
                             inCollection={inCollection(coin.id)}

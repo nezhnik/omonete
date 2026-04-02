@@ -9,6 +9,8 @@ import { catalogHrefForMint, catalogHrefForSeries } from "../lib/catalog-deeplin
 import { formatQualityDisplay } from "../lib/qualityDisplay";
 import { formatNumbersInString } from "../lib/formatNumber";
 import { formatMintageSpecValue } from "../lib/mintageSpecDisplay";
+import { formatPurityDisplay } from "../lib/purityDisplay";
+import { MINTAGE_UNKNOWN_DISPLAY } from "../lib/mintageResearch";
 import { COIN_DETAIL_MAIN_IMAGE_SCALE } from "../lib/coinCatalogImageScale";
 
 /** Данные монеты для страницы деталей (переиспользуемый тип) */
@@ -39,6 +41,8 @@ export type CoinDetailData = {
   mintage?: number;
   /** Тиражи с ЦБ «до X» — показываем как есть */
   mintageDisplay?: string;
+  /** Нет числового тиража в БД — в блоке характеристик показываем «Тираж не указан» */
+  mintageNeedsResearch?: boolean;
   /** Чистого металла не менее, гр. — из БД weight_g */
   weightG?: string;
   /** Вес в унциях/кг (1 унция, 1/2 унции, 1 кг …) — из БД weight_oz */
@@ -131,6 +135,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
     weightGNum != null && [10000, 5000, 3000, 1000, 500].some((kgWeightG) => Math.abs(weightGNum - kgWeightG) <= 1);
   const fallbackWeightOz = coin.weightLabel?.split("·")[0]?.trim() || undefined;
   const weightOzValue = coin.weightOz || fallbackWeightOz;
+  const purityDisplay = formatPurityDisplay(coin.purity);
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
@@ -428,9 +433,23 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 <SpecRow label="Год выпуска" value={String(coin.year)} />
                 <SpecRow label="Номинал" value={formatNumbersInString(coin.faceValue)} />
                 {coin.quality && <SpecRow label="Качество чеканки" value={formatQualityDisplay(coin.quality) || coin.quality} />}
-                {(coin.mintageDisplay?.trim() || coin.mintage != null) && (
-                  <SpecRow label="Тираж, шт." value={formatMintageSpecValue(coin.mintageDisplay, coin.mintage)} />
-                )}
+                {(() => {
+                  const hasMintageValue =
+                    Boolean(coin.mintageDisplay?.trim()) ||
+                    (coin.mintage != null && Number(coin.mintage) !== 0);
+                  const showUnknown = Boolean(coin.mintageNeedsResearch) && !hasMintageValue;
+                  if (!hasMintageValue && !showUnknown) return null;
+                  return (
+                    <SpecRow
+                      label="Тираж, шт."
+                      value={
+                        hasMintageValue
+                          ? formatMintageSpecValue(coin.mintageDisplay, coin.mintage)
+                          : MINTAGE_UNKNOWN_DISPLAY
+                      }
+                    />
+                  );
+                })()}
               </div>
               <div className="flex flex-col gap-4">
                 <SpecRow label="Металл">
@@ -475,7 +494,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 {weightOzValue && !hideOzForKg && (
                   <SpecRow label="Вес в унциях" value={weightOzValue} />
                 )}
-                {coin.purity && <SpecRow label="Проба" value={coin.purity} />}
+                {purityDisplay && <SpecRow label="Проба" value={purityDisplay} />}
                 {coin.rectangular && (coin.lengthMm || coin.widthMm) ? (
                   <>
                     {coin.lengthMm && (
