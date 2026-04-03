@@ -10,7 +10,12 @@ import { formatQualityDisplay } from "../lib/qualityDisplay";
 import { formatNumbersInString } from "../lib/formatNumber";
 import { formatMintageSpecValue } from "../lib/mintageSpecDisplay";
 import { formatPurityDisplay } from "../lib/purityDisplay";
-import { MINTAGE_UNKNOWN_DISPLAY } from "../lib/mintageResearch";
+import {
+  coinHasVisibleMintageForSpecRow,
+  hasMeaningfulSpecYear,
+  isMeaningfulDimensionOrWeight,
+  isMeaningfulSpecString,
+} from "../lib/specValueVisibility";
 import { COIN_DETAIL_MAIN_IMAGE_SCALE } from "../lib/coinCatalogImageScale";
 
 /** Данные монеты для страницы деталей (переиспользуемый тип) */
@@ -41,7 +46,7 @@ export type CoinDetailData = {
   mintage?: number;
   /** Тиражи с ЦБ «до X» — показываем как есть */
   mintageDisplay?: string;
-  /** Нет числового тиража в БД — в блоке характеристик показываем «Тираж не указан» */
+  /** Нет числового тиража в БД (фильтры/данные); в характеристиках строку «Тираж» не показываем, если нет значения */
   mintageNeedsResearch?: boolean;
   /** Чистого металла не менее, гр. — из БД weight_g */
   weightG?: string;
@@ -136,6 +141,14 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
   const fallbackWeightOz = coin.weightLabel?.split("·")[0]?.trim() || undefined;
   const weightOzValue = coin.weightOz || fallbackWeightOz;
   const purityDisplay = formatPurityDisplay(coin.purity);
+  const showMetalSpec =
+    Boolean(
+      coin.metal?.trim() &&
+        /золото|серебро/i.test(coin.metal) &&
+        /серебро.*золото|золото.*серебро/i.test(coin.metal),
+    ) ||
+    Boolean(coin.metalCode) ||
+    isMeaningfulSpecString(coin.metal);
 
   const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
   const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
@@ -417,8 +430,8 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             <h2 className="text-black text-[24px] font-semibold pb-5">Характеристики</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
               <div className="flex flex-col gap-4">
-                {coin.mintCountry && <SpecRow label="Страна" value={coin.mintCountry} />}
-                {(coin.mintName || coin.mintShort) && (
+                {isMeaningfulSpecString(coin.mintCountry) && <SpecRow label="Страна" value={coin.mintCountry} />}
+                {(isMeaningfulSpecString(coin.mintName) || isMeaningfulSpecString(coin.mintShort)) && (
                   <SpecRow label="Монетный двор">
                     <Link
                       href={catalogHrefForMint(coin.mintName || coin.mintShort, coin.mintCountry)}
@@ -430,87 +443,84 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                     </Link>
                   </SpecRow>
                 )}
-                <SpecRow label="Год выпуска" value={String(coin.year)} />
-                <SpecRow label="Номинал" value={formatNumbersInString(coin.faceValue)} />
-                {coin.quality && <SpecRow label="Качество чеканки" value={formatQualityDisplay(coin.quality) || coin.quality} />}
-                {(() => {
-                  const hasMintageValue =
-                    Boolean(coin.mintageDisplay?.trim()) ||
-                    (coin.mintage != null && Number(coin.mintage) !== 0);
-                  const showUnknown = Boolean(coin.mintageNeedsResearch) && !hasMintageValue;
-                  if (!hasMintageValue && !showUnknown) return null;
-                  return (
-                    <SpecRow
-                      label="Тираж, шт."
-                      value={
-                        hasMintageValue
-                          ? formatMintageSpecValue(coin.mintageDisplay, coin.mintage)
-                          : MINTAGE_UNKNOWN_DISPLAY
-                      }
-                    />
-                  );
-                })()}
+                {hasMeaningfulSpecYear(coin.year) && <SpecRow label="Год выпуска" value={String(coin.year)} />}
+                {isMeaningfulSpecString(coin.faceValue) && (
+                  <SpecRow label="Номинал" value={formatNumbersInString(coin.faceValue)} />
+                )}
+                {isMeaningfulSpecString(coin.quality) && (
+                  <SpecRow label="Качество чеканки" value={formatQualityDisplay(coin.quality) || coin.quality} />
+                )}
+                {coinHasVisibleMintageForSpecRow(coin) && (
+                  <SpecRow
+                    label="Тираж, шт."
+                    value={formatMintageSpecValue(coin.mintageDisplay, coin.mintage)}
+                  />
+                )}
               </div>
               <div className="flex flex-col gap-4">
-                <SpecRow label="Металл">
-                  <span className="inline-flex items-center gap-2">
-                    {coin.metal && /золото|серебро/i.test(coin.metal) && /серебро.*золото|золото.*серебро/i.test(coin.metal) ? (
-                      <>
-                        <span
-                          className="w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-medium text-[#11111B] shrink-0"
-                          style={{ background: "#FFD700" }}
-                          title="Золото"
-                        >
-                          Au
-                        </span>
-                        <span
-                          className="w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-medium text-[#11111B] shrink-0"
-                          style={{ background: "#C0C0C0" }}
-                          title="Серебро"
-                        >
-                          Ag
-                        </span>
-                      </>
-                    ) : (
-                      coin.metalCode && (
-                        <span
-                          className="w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-medium text-[#11111B] shrink-0"
-                          style={{ background: coin.metalColor ?? "#D9D9D9" }}
-                        >
-                          {coin.metalCode}
-                        </span>
-                      )
-                    )}
-                    <span className="text-[#666666] text-[16px] font-normal">
-                      {coin.metal && /золото|серебро/i.test(coin.metal) && /серебро.*золото|золото.*серебро/i.test(coin.metal)
-                        ? "Золото / Серебро"
-                        : coin.metal}
+                {showMetalSpec && (
+                  <SpecRow label="Металл">
+                    <span className="inline-flex items-center gap-2">
+                      {coin.metal && /золото|серебро/i.test(coin.metal) && /серебро.*золото|золото.*серебро/i.test(coin.metal) ? (
+                        <>
+                          <span
+                            className="w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-medium text-[#11111B] shrink-0"
+                            style={{ background: "#FFD700" }}
+                            title="Золото"
+                          >
+                            Au
+                          </span>
+                          <span
+                            className="w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-medium text-[#11111B] shrink-0"
+                            style={{ background: "#C0C0C0" }}
+                            title="Серебро"
+                          >
+                            Ag
+                          </span>
+                        </>
+                      ) : (
+                        coin.metalCode && (
+                          <span
+                            className="w-6 h-6 rounded-full flex items-center justify-center text-[12px] font-medium text-[#11111B] shrink-0"
+                            style={{ background: coin.metalColor ?? "#D9D9D9" }}
+                          >
+                            {coin.metalCode}
+                          </span>
+                        )
+                      )}
+                      <span className="text-[#666666] text-[16px] font-normal">
+                        {coin.metal && /золото|серебро/i.test(coin.metal) && /серебро.*золото|золото.*серебро/i.test(coin.metal)
+                          ? "Золото / Серебро"
+                          : coin.metal}
+                      </span>
                     </span>
-                  </span>
-                </SpecRow>
-                {coin.weightG && (
-                  <SpecRow label="Чистого металла не менее, гр." value={formatNumbersInString(coin.weightG)} />
+                  </SpecRow>
                 )}
-                {weightOzValue && !hideOzForKg && (
-                  <SpecRow label="Вес в унциях" value={weightOzValue} />
+                {isMeaningfulDimensionOrWeight(coin.weightG) && (
+                  <SpecRow label="Чистого металла не менее, гр." value={formatNumbersInString(coin.weightG!)} />
                 )}
-                {purityDisplay && <SpecRow label="Проба" value={purityDisplay} />}
-                {coin.rectangular && (coin.lengthMm || coin.widthMm) ? (
+                {isMeaningfulDimensionOrWeight(weightOzValue) && !hideOzForKg && (
+                  <SpecRow label="Вес в унциях" value={weightOzValue!} />
+                )}
+                {purityDisplay && isMeaningfulSpecString(purityDisplay) && (
+                  <SpecRow label="Проба" value={purityDisplay} />
+                )}
+                {coin.rectangular && (isMeaningfulDimensionOrWeight(coin.lengthMm) || isMeaningfulDimensionOrWeight(coin.widthMm)) ? (
                   <>
-                    {coin.lengthMm && (
-                      <SpecRow label="Длина, мм" value={formatNumbersInString(coin.lengthMm)} />
+                    {isMeaningfulDimensionOrWeight(coin.lengthMm) && (
+                      <SpecRow label="Длина, мм" value={formatNumbersInString(coin.lengthMm!)} />
                     )}
-                    {coin.widthMm && (
-                      <SpecRow label="Ширина, мм" value={formatNumbersInString(coin.widthMm)} />
+                    {isMeaningfulDimensionOrWeight(coin.widthMm) && (
+                      <SpecRow label="Ширина, мм" value={formatNumbersInString(coin.widthMm!)} />
                     )}
                   </>
                 ) : (
-                  coin.diameterMm && (
-                    <SpecRow label="Диаметр, мм" value={formatNumbersInString(coin.diameterMm)} />
+                  isMeaningfulDimensionOrWeight(coin.diameterMm) && (
+                    <SpecRow label="Диаметр, мм" value={formatNumbersInString(coin.diameterMm!)} />
                   )
                 )}
-                {coin.thicknessMm && (
-                  <SpecRow label="Толщина, мм" value={formatNumbersInString(coin.thicknessMm)} />
+                {isMeaningfulDimensionOrWeight(coin.thicknessMm) && (
+                  <SpecRow label="Толщина, мм" value={formatNumbersInString(coin.thicknessMm!)} />
                 )}
               </div>
             </div>
@@ -575,7 +585,11 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                       </div>
                     </div>
                     <div className="hidden md:flex flex-col items-start gap-1 shrink-0 min-w-[260px]">
-                      <span className="text-black text-[18px] font-medium leading-tight min-h-[1.5em]">{item.faceValue}</span>
+                      {isMeaningfulSpecString(item.faceValue) && (
+                        <span className="text-black text-[18px] font-medium leading-tight min-h-[1.5em]">
+                          {item.faceValue}
+                        </span>
+                      )}
                       <div className="flex items-center gap-1.5 flex-wrap justify-start min-h-[1.5em]">
                         {item.metalCodes?.length === 2 ? (
                           <>

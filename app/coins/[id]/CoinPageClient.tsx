@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Header } from "../../../components/Header";
+import { CoinMissingView } from "../../../components/CoinMissingView";
 import { CoinDetail, type CoinDetailData, type CoinSeriesItem } from "../../../components/CoinDetail";
 import { cleanCoinTitle } from "../../../lib/cleanTitle";
 import { useAuth } from "../../../components/AuthProvider";
@@ -76,15 +77,10 @@ export function CoinPageClient({ id, initialData }: Props) {
 
   if (error || !coin) {
     return (
-      <div className="min-h-screen bg-white">
-        <Header activePath="/catalog" />
-        <main className="w-full px-4 sm:px-6 lg:px-20 py-12">
-          <p className="text-[#666666]">Монета не найдена.</p>
-          <Link href={backHref} className="text-[#0098E8] font-medium pt-4 inline-block">
-            {fromPortfolio ? "Вернуться в коллекцию" : "Вернуться в каталог"}
-          </Link>
-        </main>
-      </div>
+      <CoinMissingView
+        catalogHref={fromPortfolio ? "/catalog" : catalogHref}
+        hint="Не удалось загрузить монету или её нет в каталоге."
+      />
     );
   }
 

@@ -542,31 +542,16 @@ async function run() {
       throw err;
     }
   }
-  // Монеты без числового тиража обычно не выводим в каталог.
-  // Исключение: иностранные монеты с текстовым тиражом (например, "Неограниченный тираж").
+  // В каталог и per-coin JSON выводим все строки БД, кроме явного списка EXCLUDED_EXPORT_COIN_IDS.
+  // Наличие числового тиража больше не скрывает монету на сайте (флаг mintageNeedsResearch остаётся в данных).
   const excludeReasonById = new Map();
   const rowsToExport = rows.filter((r) => {
     if (EXCLUDED_EXPORT_COIN_IDS.has(String(r.id))) {
       excludeReasonById.set(String(r.id), "EXCLUDED_ID");
       return false;
     }
-    const hasNumericMintage = r.mintage != null && Number(r.mintage) !== 0;
-    const country = (r.country || "").trim();
-    const hasDisplay = r.mintage_display != null && String(r.mintage_display).trim() !== "";
-    const isForeignUnlimited = country && !/^Россия/i.test(country) && hasDisplay;
-    /** Bullion RM и др. без числового тиража — импорт import-royal-mint-to-db.js (GB-ROYAL-*). */
-    const isRoyalMintCatalog = /^GB-ROYAL-/i.test(String(r.catalog_number || "").trim());
-    /** PAMP collectibles из import-pamp-to-db.js — всегда в каталоге (148 позиций), даже без числового тиража. */
-    const isPampCollectible = /^CH-PAMP-/i.test(String(r.catalog_number || "").trim());
-    /** Золотые слитки Mennica (листинг gold-bars) — без лимитированного тиража в specs. */
-    const isMennicaGoldBar = isMennicaGoldBarCatalogNumber(r.catalog_number);
-    const keep = hasNumericMintage || isForeignUnlimited || isRoyalMintCatalog || isPampCollectible || isMennicaGoldBar;
-    if (!keep) {
-      excludeReasonById.set(String(r.id), "NO_MINTAGE");
-    } else {
-      excludeReasonById.set(String(r.id), "OK");
-    }
-    return keep;
+    excludeReasonById.set(String(r.id), "OK");
+    return true;
   });
   const rectangularBases = getRectangularCatalogBases();
   const rectangularIds = getRectangularCoinIds();
@@ -695,7 +680,7 @@ async function run() {
   const exportedIds = new Set(listCoins.map((c) => String(c.id)));
   const snapshotItems = rows.map((r) => {
     const id = String(r.id);
-    const reason = excludeReasonById.get(id) || "NO_MINTAGE";
+    const reason = excludeReasonById.get(id) || "UNKNOWN";
     return {
       id,
       title: cleanTitle(r.title),

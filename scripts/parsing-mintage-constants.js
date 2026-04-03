@@ -10,8 +10,7 @@ function isRussiaCountry(country) {
 
 /**
  * Для страны ≠ Россия: если нет числового тиража и нет осмысленного текста в mintage_display —
- * записываем MINTAGE_UNKNOWN_DISPLAY, чтобы монета не отфильтровывалась в export-coins-to-json.js
- * и было видно, что данные нужно добрать вручную.
+ * записываем MINTAGE_UNKNOWN_DISPLAY (каталог на сайте всё равно выводит монету; маркер для отчётов и coinNeedsMintageResearch).
  */
 function finalizeMintageForDb(mintage, mintageDisplay, country) {
   if (isRussiaCountry(country)) {
@@ -40,9 +39,31 @@ function logImportMintageSummary(sourceLabel, rows) {
   console.log(`[тираж] ${sourceLabel}: без числового тиража (проверить в интернете / в данных) — ${gap} из ${total}`);
 }
 
+/**
+ * Тираж из текста блока .product-description__text (и аналогов) на pamp.com.
+ * Пример: «this coin has a mintage of 3,600.» — без слова «coins» после числа.
+ */
+function extractPampMintagePhraseFromPlainText(plain) {
+  const descPlain = String(plain || "").replace(/\s+/g, " ").trim();
+  if (!descPlain) return null;
+  const norm = (chunk) => chunk.replace(/\s+/g, " ").replace(/[.,;]+$/, "").trim();
+  const mintageCoins = descPlain.match(/\bmintage of (?:only\s+)?([\d,.\s]+)\s*coins?\b/i);
+  if (mintageCoins) return norm(mintageCoins[1]);
+  const mintagePieces = descPlain.match(/\bmintage of (?:only\s+)?([\d,.\s]+)\s*pieces?\b/i);
+  if (mintagePieces) return norm(mintagePieces[1]);
+  const mintageBars = descPlain.match(/\blimited mintage of\s*(?:only\s+)?([\d,.\s]+)\s*bars?\b/i);
+  if (mintageBars) return norm(mintageBars[1]);
+  const limitedPlain = descPlain.match(/\blimited mintage of\s*(?:only\s+)?([\d,.\s]+)\b/i);
+  if (limitedPlain) return norm(limitedPlain[1]);
+  const mintagePlain = descPlain.match(/\bmintage of (?:only\s+)?([\d,.\s]+)\b/i);
+  if (mintagePlain) return norm(mintagePlain[1]);
+  return null;
+}
+
 module.exports = {
   MINTAGE_UNKNOWN_DISPLAY,
   finalizeMintageForDb,
   coinNeedsMintageResearch,
   logImportMintageSummary,
+  extractPampMintagePhraseFromPlainText,
 };

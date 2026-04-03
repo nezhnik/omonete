@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import type { CoinDetailData, CoinSeriesItem } from "../../../components/CoinDetail";
 import {
@@ -85,9 +86,10 @@ function CoinJsonLdScript({ coin, coinId }: { coin: CoinDetailData; coinId: stri
 export default async function CoinPage({ params }: Props) {
   const { id } = await params;
   const initialData = loadCoinPayload(id);
+  if (!initialData?.coin) notFound();
   return (
     <>
-      {initialData?.coin ? <CoinJsonLdScript coin={initialData.coin} coinId={id} /> : null}
+      <CoinJsonLdScript coin={initialData.coin} coinId={id} />
       <Suspense fallback={<div className="min-h-screen bg-white" />}>
         <CoinPageClient id={id} initialData={initialData} />
       </Suspense>
