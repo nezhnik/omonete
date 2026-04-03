@@ -4,16 +4,18 @@
     "title": "250 Francs 1999 - 40 Ans Albert et Paola UNC",
     "price_display": "123,95 €",
     "description": null,
-    "specs": {},
-    "imageUrls": [
-      "/image/coins/foreign/herdenkings/hj-250-frank-1999-albert-paola-unc/01.jpeg",
-      "/image/coins/foreign/herdenkings/hj-250-frank-1999-albert-paola-unc/02.jpeg",
-      "/image/coins/foreign/herdenkings/hj-250-frank-1999-albert-paola-unc/03.jpeg",
-      "/image/coins/foreign/herdenkings/hj-250-frank-1999-albert-paola-unc/04.jpeg"
-    ],
-    "parsedAt": "2026-03-31T19:09:07.740Z",
+    "specs": {
+      "Numéro d'article": "0113428",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "18,75 g",
+      "Diamètre": "33,0 mm",
+      "Qualité": "Uncirculated"
+    },
+    "imageUrls": [],
+    "parsedAt": "2026-03-31T20:47:59.714Z",
     "slug": "hj-250-frank-1999-albert-paola-unc",
-    "image_obverse": "/image/coins/foreign/herdenkings/hj-250-frank-1999-albert-paola-unc/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/hj-250-frank-1999-albert-paola-unc/02.jpeg"
+    "image_obverse": null,
+    "image_reverse": null
   }
 }

@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round",
     "title": "Scottsdale Crew | Blizz the Yeti",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "1 Troy oz",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/01.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/02.jpg",
@@ -21,6 +26,7 @@
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/15.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/16.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/17.jpg",
+      "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/18.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/19.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/20.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/21.jpg",
@@ -44,7 +50,7 @@
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/39.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/40.jpg"
     ],
-    "parsedAt": "2026-03-31T16:59:23.587Z",
+    "parsedAt": "2026-03-31T21:00:56.473Z",
     "slug": "2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round",
     "image_obverse": "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-blizz-the-yeti-1-troy-ounce-999-fine-silver-color-proof-like-round/02.jpg"

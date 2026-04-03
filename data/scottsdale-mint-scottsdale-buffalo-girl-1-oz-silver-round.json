@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-buffalo-girl-1-oz-silver-round",
     "title": "Scottsdale Buffalo Girl",
-    "specs": {},
+    "specs": {
+      "Purity": ".9999 Silver",
+      "Weight": "1 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-buffalo-girl-1-oz-silver-round/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-buffalo-girl-1-oz-silver-round/02.jpg",
@@ -45,7 +50,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-buffalo-girl-1-oz-silver-round/39.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-buffalo-girl-1-oz-silver-round/40.jpg"
     ],
-    "parsedAt": "2026-03-31T17:09:39.862Z",
+    "parsedAt": "2026-03-31T21:06:42.280Z",
     "slug": "scottsdale-buffalo-girl-1-oz-silver-round",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-buffalo-girl-1-oz-silver-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-buffalo-girl-1-oz-silver-round/02.jpg"

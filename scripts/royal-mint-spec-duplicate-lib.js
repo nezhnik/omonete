@@ -82,6 +82,34 @@ function parseMintageFromSpecs(specs) {
   return { mintage: null, mintage_display: null };
 }
 
+const MAX_MINTAGE_OVERVIEW = 50_000_000;
+
+/**
+ * PDP Royal Mint: в div.product-overview (часто p.sub-title или h2.h3) строка вида «Limited / LIMITED EDITION 200».
+ * Используется, если в таблице спецификации тиража нет.
+ */
+function parseMintageFromProductOverview(overviewText) {
+  if (!overviewText || typeof overviewText !== "string") return { mintage: null, mintage_display: null };
+  const t = overviewText.replace(/\s+/g, " ").trim();
+  if (!t) return { mintage: null, mintage_display: null };
+  const re = /\bLimited\s+Edition\s+([\d,.\s\u00A0]+)(?=\s|$)/i;
+  const m = t.match(re);
+  if (!m) return { mintage: null, mintage_display: null };
+  const raw = m[0].trim();
+  const digits = m[1].replace(/[^\d]/g, "");
+  if (digits.length < 1) return { mintage: null, mintage_display: null };
+  const n = parseInt(digits.slice(0, 12), 10);
+  if (!Number.isFinite(n) || n < 1 || n > MAX_MINTAGE_OVERVIEW) return { mintage: null, mintage_display: null };
+  return { mintage: n, mintage_display: raw };
+}
+
+/** Сначала «Limited Edition» в PDP (product-overview), иначе таблица спецификаций — на RM в колонках иногда попадают посторонние числа. */
+function parseMintageFromSpecsOrOverview(specs, productOverviewText) {
+  const fromOverview = parseMintageFromProductOverview(productOverviewText);
+  if (fromOverview.mintage != null) return fromOverview;
+  return parseMintageFromSpecs(specs);
+}
+
 function normMetal(m) {
   const s = String(m || "")
     .trim()
@@ -264,6 +292,8 @@ module.exports = {
   findSpecCollisions,
   loadRoyalMintRows,
   parseMintageFromSpecs,
+  parseMintageFromProductOverview,
+  parseMintageFromSpecsOrOverview,
   parseWeightGFromSpecs,
   appendReviewLog,
   checkRoyalMintSpecCollisions,

@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-gold-1-g-gold-bar",
     "title": "Scottsdale Gold in Certi-Lock®",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Gram",
+      "Purity": ".9999 Gold",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/02.jpg",
@@ -33,6 +38,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/27.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/28.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/29.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/30.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/31.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/32.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/33.jpg",
@@ -75,7 +81,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/70.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/71.jpg"
     ],
-    "parsedAt": "2026-03-31T17:18:26.891Z",
+    "parsedAt": "2026-03-31T21:11:21.679Z",
     "slug": "scottsdale-gold-1-g-gold-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-gold-1-g-gold-bar/02.jpg"

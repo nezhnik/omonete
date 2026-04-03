@@ -4,7 +4,17 @@
     "title": "Maastricht Treaty 10 Euro Coin 2022 Gold Proof",
     "price_display": "€469.00",
     "description": "On 7 February 2022 it was exactly thirty years since the Maastricht Treaty was signed. The treaty is one of the most important in the founding of the European Union. In honour of the anniversary, the Royal Dutch Mint mints a commemorative coin on behalf of the Ministry of Finance. For collectors, the coin is also available in Gold Proof: the Maastricht Treaty 10 Euro Coin. The Maastricht Treaty The Maastricht Treaty significantly changed the institutions and decision-making processes of the European Economic Community. Existing EC treaties were expanded to include other areas than only economic affairs and nuclear energy as part of the common European policy. The treaty consisted of three pillars: the European Communities; a common foreign and security policy; and cooperation between EU governments in the field of justice and home affairs. In addition, an Economic and Monetary Union paragraph was included in the treaty, which led to the introduction of the single euro currency in 2002. The treaty was signed by twelve countries: Belgium, Denmark, Germany, France, Greece, Ireland, Italy, Luxembourg, the Netherlands, Portugal, Spain and the United Kingdom. Inspiration of the Designer The Maastricht Treaty 5 Euro Coin was designed by artist Rinus van Hall. Van Hall was inspired by the three pillars that form the basis of the treaty and by the location where the treaty was signed, the Government Building in Maastricht. On the front, King Willem-Alexander stands in the middle of the ceiling structure of the iconic hall of the building. The twelve stars symbolise the twelve original member states. On the reverse are twelve fountain pens that draw a temple front, with three supporting pillars as a symbol for the three pillars of the treaty. Spread across the reverse side are 27 stars: the EU now has 27 member states.",
-    "specs": {},
+    "specs": {
+      "Article number": "0113020",
+      "Metal": "Gold",
+      "Content": "900/1000",
+      "Weight": "6.72 g",
+      "Diameter": "22.5 mm",
+      "Quality": "Proof",
+      "Nominal value": "10 euros",
+      "Mintage": "800",
+      "Edge": "serrated"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/maastricht-treaty-10-euro-coin-2022-gold-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/maastricht-treaty-10-euro-coin-2022-gold-proof/02.jpeg",
@@ -14,7 +24,7 @@
       "/image/coins/foreign/royaldutch/maastricht-treaty-10-euro-coin-2022-gold-proof/06.jpeg",
       "/image/coins/foreign/royaldutch/maastricht-treaty-10-euro-coin-2022-gold-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:21:17.099Z",
+    "parsedAt": "2026-03-31T20:16:01.935Z",
     "slug": "maastricht-treaty-10-euro-coin-2022-gold-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/maastricht-treaty-10-euro-coin-2022-gold-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/maastricht-treaty-10-euro-coin-2022-gold-proof/02.jpeg"

@@ -1,18 +1,29 @@
 {
   "coin": {
     "source_url": "https://www.swissmintshop.admin.ch/en/product/000000000510000803/San%20Nicola,%20fondo%20specchio",
-    "title": "Suggested Keywords",
-    "description": null,
+    "title": "St. Nicholas, proof",
+    "description": "Silver, proof",
     "specs": {
-      "Skip to Header Skip to Main content Skip to Footer Language": "Deutsch Français Italiano English ContactOnline shop of the Federal Mint SwissmintSearch Close search Suggested Keywords Angesagte Suche Recent searches Close search If search suggestions are available, use the up and down arrows to review the results and press enter to select. Users of touch devices can explore the results by touch or with swipe gestures. Sign in/Register 0 About us The Federal Mint Swissmint is the official issuer of Swiss circulation and commemorative coins Stay informed Further information Contact Cookie Settings/Privacy Please enable JavaScript to continue using this application."
+      "Legal face value": "20 Swiss francs - Date of issue: 27 November 2024 - Selling period: up to 30 November 2027 or while stocks last - Design: Swissmint - Alloy: silver 999 - Weight: 20g - Diameter: 33mm - Proof: 5,800 coins in colour Reviews",
+      "Alloy": "silver 999 -",
+      "Diameter": "33mm - Proof: 5,800 coins in colour Reviews",
+      "Weight": "20g - Diameter: 33mm - Proof: 5,800 coins in colour Reviews",
+      "Date of issue": "27 November 2024 - Selling period: up to 30 November 2027 or while stocks last - Design: Swissmint - Alloy: silver 999 - Weight: 20g - Diameter: 33mm - Proof: 5,800 coins in colour Reviews"
     },
-    "specsText": "Skip to Header Skip to Main content Skip to Footer Language: Deutsch Français Italiano English ContactOnline shop of the Federal Mint SwissmintSearch Close search Suggested Keywords Angesagte Suche Recent searches Close search If search suggestions are available, use the up and down arrows to review the results and press enter to select. Users of touch devices can explore the results by touch or with swipe gestures. Sign in/Register 0 About us The Federal Mint Swissmint is the official issuer of Swiss circulation and commemorative coins Stay informed Further information Contact Cookie Settings/Privacy Please enable JavaScript to continue using this application.",
+    "specsText": "Product details St. Nicholas The traditional festival of St. Nicholas is fast approaching, and in Switzerland, particularly in Fribourg and Central Switzerland, as well as in many towns and villages, this celebration takes on a very special magic. This year, Swissmint is honoured to present a special coin to mark this time-honoured tradition. - Coin image: St. Nicholas - Legal face value: 20 Swiss francs - Date of issue: 27 November 2024 - Selling period: up to 30 November 2027 or while stocks last - Design: Swissmint - Alloy: silver 999 - Weight: 20g - Diameter: 33mm - Proof: 5,800 coins in colour Reviews Reviews (0) Overall rating Write review No reviews yet\n\nSkip to Header Skip to Main content Skip to Footer Language: Deutsch Français Italiano English ContactOnline shop of the Federal Mint SwissmintSearch Close search Suggested Keywords Angesagte Suche Recent searches Close search If search suggestions are available, use the up and down arrows to review the results and press enter to select. Users of touch devices can explore the results by touch or with swipe gestures. Special coins Magazine Company Purchase coins Special coins Magazine Company Purchase coins Sign in/Register 0 HomeSilver coins St. Nicholas, proof Enlarge image DetailsArticle number510000803Article number510000803 110,00 CHF Silver, proofQuantity - + In stock Add to cart Sign in to add to wishlist Product details St. Nicholas The traditional festival of St. Nicholas is fast approaching, and in Switzerland, particularly in Fribourg and Central Switzerland, as well as in many towns and villages, this celebration takes on a very special magic. This year, Swissmint is honoured to present a special coin to mark this time-honoured tradition. - Coin image: St. Nicholas - Legal face value: 20 Swiss francs - Date of issue: 27 November 2024 - Selling period: up to 30 November 2027 or while stocks last - Design: Swissmint - Alloy: silver 999 - Weight: 20g - Diameter: 33mm - Proof: 5,800 coins in colour Reviews Reviews (0) Overall rating Write review No reviews yet About us The Federal Mint Swissmint is the official issuer of Swiss circulation and commemorative coins Stay informed Further information Contact GTC Frequently asked questions Privacy Notice Cookie Settings/Privacy We use technical cookies that are necessary for the operation of the shop (e.g. for restoring the shopping cart when revisiting the shop). Show details Allow all Please enable JavaScript to continue using this application.",
     "imageUrls": [
-      "/image/coins/foreign/swissmint/san-20nicola-20fondo-20specchio/01.jpg"
+      "/image/coins/foreign/st-nicholas-proof-obv.webp",
+      "/image/coins/foreign/st-nicholas-proof-rev.webp",
+      "/image/coins/foreign/st-nicholas-proof-box.webp"
     ],
-    "parsedAt": "2026-03-31T18:24:52.614Z",
+    "parsedAt": "2026-04-03T17:32:47.163Z",
     "slug": "san-20nicola-20fondo-20specchio",
-    "image_obverse": "/image/coins/foreign/swissmint/san-20nicola-20fondo-20specchio/01.jpg",
-    "image_reverse": "/image/coins/foreign/swissmint/san-20nicola-20fondo-20specchio/01.jpg"
+    "image_obverse": "/image/coins/foreign/st-nicholas-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/st-nicholas-proof-rev.webp",
+    "imageUrlRoles": [
+      "obverse",
+      "reverse",
+      "box"
+    ]
   }
 }

@@ -1,0 +1,1394 @@
+{
+  "generatedAt": "2026-04-02T19:47:00.705Z",
+  "apply": true,
+  "mintFilter": [
+    "PAMP"
+  ],
+  "reportPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/mintage-export-gap-fetch-mint-filter.json",
+  "totalQueued": 197,
+  "found": 49,
+  "notFound": 148,
+  "updated": 49,
+  "errors": [],
+  "items": [
+    {
+      "id": 6745,
+      "source_url": "https://www.pamp.com/product/collectible/15oz-silver-roulette-wheel-spinning-coin",
+      "method": "pamp",
+      "mintage": 3600,
+      "mintage_display_out": "3,600 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6746,
+      "source_url": "https://www.pamp.com/product/collectible/1g-gold-bar-barbietm-valentines-day",
+      "method": "pamp",
+      "mintage": 7500,
+      "mintage_display_out": "7,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6747,
+      "source_url": "https://www.pamp.com/product/collectible/1g-gold-bar-coca-colar-love",
+      "method": "pamp",
+      "mintage": 10000,
+      "mintage_display_out": "10,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6748,
+      "source_url": "https://www.pamp.com/product/collectible/1g-pure-gold-bar-hot-wheelstm-race-win",
+      "method": "pamp",
+      "mintage": 5000,
+      "mintage_display_out": "5,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6750,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-animals-africa-black-rhino-shaped-coin",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6751,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-bar-buddha",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6752,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-bar-diwali-lakshmi-rangoli-art",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6753,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-bar-star-david",
+      "method": "pamp",
+      "mintage": 3000,
+      "mintage_display_out": "3,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6754,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-fenderr-stratocasterr-surf-green-shaped-coin",
+      "method": "pamp",
+      "mintage": 6000,
+      "mintage_display_out": "6,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6755,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-pure-silver-holiday-santa-coin",
+      "method": "pamp",
+      "mintage": 2020,
+      "mintage_display_out": "2,020 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6758,
+      "source_url": "https://www.pamp.com/product/collectible/1oz-silver-bar-eid-mubarak",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6766,
+      "source_url": "https://www.pamp.com/product/collectible/2021-sweetheartsr-gift-set-pure-silver-wafers",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6767,
+      "source_url": "https://www.pamp.com/product/collectible/2022-sweetheartsr-pure-silver-hearts-set",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6768,
+      "source_url": "https://www.pamp.com/product/collectible/2023-sweetheartsr-pure-silver-hearts-set",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6769,
+      "source_url": "https://www.pamp.com/product/collectible/2024-diwali-lakshmi-peacocks-1oz-pure-silver-bar",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6770,
+      "source_url": "https://www.pamp.com/product/collectible/2024-diwali-lakshmi-peacocks-5g-pure-gold-bar",
+      "method": "pamp",
+      "mintage": 4500,
+      "mintage_display_out": "4,500, (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6772,
+      "source_url": "https://www.pamp.com/product/collectible/2x1oz-silver-2-coin-set-phoenix-v-dragon",
+      "method": "pamp",
+      "mintage": 1500,
+      "mintage_display_out": "1,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6777,
+      "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-america-free-liberty-bell",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6778,
+      "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-buddha",
+      "method": "pamp",
+      "mintage": 7000,
+      "mintage_display_out": "7,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6781,
+      "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-good-luck-yellow-dragon",
+      "method": "pamp",
+      "mintage": 10000,
+      "mintage_display_out": "10,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6782,
+      "source_url": "https://www.pamp.com/product/collectible/5g-pure-gold-bar-star-david",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6784,
+      "source_url": "https://www.pamp.com/product/collectible/6x5g-silver-wafers-pezr-holiday-nutcracker-gift-set",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500. (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6785,
+      "source_url": "https://www.pamp.com/product/collectible/75th-anniversary-bazooka-joer-replica-silver-wafer",
+      "method": "pamp",
+      "mintage": 3000,
+      "mintage_display_out": "3,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6792,
+      "source_url": "https://www.pamp.com/product/collectible/animals-africa-1oz-pure-silver-african-lion-coin",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6793,
+      "source_url": "https://www.pamp.com/product/collectible/animals-africa-1oz-pure-silver-nile-crocodile-coin",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6795,
+      "source_url": "https://www.pamp.com/product/collectible/arabian-falcon-5g-pure-gold-bar-pendant-frame",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6796,
+      "source_url": "https://www.pamp.com/product/collectible/arabian-horse-5g-pure-gold-bar-pendant-frame",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6797,
+      "source_url": "https://www.pamp.com/product/collectible/ayat-al-kursi-10g-pure-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6799,
+      "source_url": "https://www.pamp.com/product/collectible/bull-v-bear-2-x-1oz-pure-silver-coin-set",
+      "method": "pamp",
+      "mintage": 2000,
+      "mintage_display_out": "2,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6805,
+      "source_url": "https://www.pamp.com/product/collectible/coca-colar-holiday-bottle-1oz-silver-coin",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6808,
+      "source_url": "https://www.pamp.com/product/collectible/diwali-lakshmi-5g-pure-gold-bar",
+      "method": "pamp",
+      "mintage": 5000,
+      "mintage_display_out": "5,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6810,
+      "source_url": "https://www.pamp.com/product/collectible/fenderr-10g-925-silver-guitar-pick-70th-anniversary-stratocasterr",
+      "method": "pamp",
+      "mintage": 5000,
+      "mintage_display_out": "5,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6812,
+      "source_url": "https://www.pamp.com/product/collectible/fenderr-2x1oz-dynamic-duo-coin-set-precision-bassr-guitar-bassmanr-amp",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6813,
+      "source_url": "https://www.pamp.com/product/collectible/fenderr-351-heavy-sterling-silver-10g-playable-guitar-pick",
+      "method": "pamp",
+      "mintage": 5000,
+      "mintage_display_out": "5,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6814,
+      "source_url": "https://www.pamp.com/product/collectible/fenderr-75th-anniversary-1oz-silver-guitar-pick-coin",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6816,
+      "source_url": "https://www.pamp.com/product/collectible/fenderr-75th-anniversary-telecasterr-1oz-pure-silver-shaped-coin",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6819,
+      "source_url": "https://www.pamp.com/product/collectible/fenderr-sterling-silver-5g-playable-guitar-pick",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6825,
+      "source_url": "https://www.pamp.com/product/collectible/good-luck-5g-pure-gold-bar",
+      "method": "pamp",
+      "mintage": 5000,
+      "mintage_display_out": "5,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6826,
+      "source_url": "https://www.pamp.com/product/collectible/good-luck-koi-fish-5g-pure-gold-bar",
+      "method": "pamp",
+      "mintage": 7000,
+      "mintage_display_out": "7,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6831,
+      "source_url": "https://www.pamp.com/product/collectible/hot-wheelstm-holiday-mystery-box-night-shifter-1oz-silver-coin",
+      "method": "pamp",
+      "mintage": 3500,
+      "mintage_display_out": "3,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6838,
+      "source_url": "https://www.pamp.com/product/collectible/lady-fortunatm-10g-fine-gold-bar-pendant-frame",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6839,
+      "source_url": "https://www.pamp.com/product/collectible/lady-fortunatm-45th-anniversary-1oz-gold-bar",
+      "method": "pamp",
+      "mintage": 4500,
+      "mintage_display_out": "4,500, (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6840,
+      "source_url": "https://www.pamp.com/product/collectible/lady-fortunatm-45th-anniversary-1oz-silver-bar",
+      "method": "pamp",
+      "mintage": 14500,
+      "mintage_display_out": "14,500, (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6841,
+      "source_url": "https://www.pamp.com/product/collectible/lady-fortunatm-45th-anniversary-5g-gold-bar",
+      "method": "pamp",
+      "mintage": 4500,
+      "mintage_display_out": "4,500, (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6846,
+      "source_url": "https://www.pamp.com/product/collectible/minotaur-labyrinth-crete-15oz-pure-silver-coin",
+      "method": "pamp",
+      "mintage": 2000,
+      "mintage_display_out": "2,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6849,
+      "source_url": "https://www.pamp.com/product/collectible/natures-grip-sunbeam-snake-1oz-silver-legal-tender-bar",
+      "method": "pamp",
+      "mintage": 3000,
+      "mintage_display_out": "3,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6850,
+      "source_url": "https://www.pamp.com/product/collectible/nutcracker-1oz-pure-silver-clara-coin",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6855,
+      "source_url": "https://www.pamp.com/product/collectible/ocean-predators-2oz-pure-silver-killer-whale-coin",
+      "method": "pamp",
+      "mintage": 1500,
+      "mintage_display_out": "1,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6856,
+      "source_url": "https://www.pamp.com/product/collectible/ocean-predators-2oz-pure-silver-polar-bear-coin",
+      "method": "pamp",
+      "mintage": 1500,
+      "mintage_display_out": "1,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6857,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-4th-july-silver-wafers-dispenser-gift-set",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6858,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-chick-gift-set",
+      "method": "pamp",
+      "mintage": 3500,
+      "mintage_display_out": "3,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6859,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-chillin-emoji-sunglasses-gift-set",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6860,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-elf-gift-set",
+      "method": "pamp",
+      "mintage": 5000,
+      "mintage_display_out": "5,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6862,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-gingerbread-man-silver-wafer-gift-set",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6863,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-polar-bear-silver-wafers-dispenser-gift-set",
+      "method": "pamp",
+      "mintage": 3500,
+      "mintage_display_out": "3,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6864,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-refills-pure-silver-wafers",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6866,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-rubber-duck-silver-wafer-gift-set",
+      "method": "pamp",
+      "mintage": 3000,
+      "mintage_display_out": "3,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6867,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-santa-gift-set",
+      "method": "pamp",
+      "mintage": 4000,
+      "mintage_display_out": "4,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6868,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-snowman-silver-wafer-gift-set",
+      "method": "pamp",
+      "mintage": 3000,
+      "mintage_display_out": "3,000 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6869,
+      "source_url": "https://www.pamp.com/product/collectible/pezr-spring-bunny-silver-wafers-dispenser-gift-set",
+      "method": "pamp",
+      "mintage": 2500,
+      "mintage_display_out": "2,500 (официальный сайт, автосбор export-gap)"
+    },
+    {
+      "id": 6872,
+      "source_url": "https://www.pamp.com/product/collectible/phil-lewis-seven-chakras-2oz-pure-silver-fish-2nd-chakra-coin",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6873,
+      "source_url": "https://www.pamp.com/product/collectible/phil-lewis-seven-chakras-2oz-pure-silver-ram-3rd-chakra-coin",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6880,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2024-diwali-lakshmi-peacocks-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6881,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-10g-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6882,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-1oz-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6883,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-1oz-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6884,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-5g-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6885,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2025-diwali-lakshmi-rangoli-art-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6886,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2025-lunar-year-snake-legend-white-snake-10g-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6887,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2025-lunar-year-snake-legend-white-snake-1oz-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6888,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2025-lunar-year-snake-legend-white-snake-1oz-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6889,
+      "source_url": "https://www.pamp.com/product/minted-ingots/2025-lunar-year-snake-legend-white-snake-5g-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6890,
+      "source_url": "https://www.pamp.com/product/minted-ingots/america-free-american-buffalo-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6891,
+      "source_url": "https://www.pamp.com/product/minted-ingots/america-free-bald-eagle-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6892,
+      "source_url": "https://www.pamp.com/product/minted-ingots/america-free-liberty-bell-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6893,
+      "source_url": "https://www.pamp.com/product/minted-ingots/america-free-statue-liberty-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6894,
+      "source_url": "https://www.pamp.com/product/minted-ingots/american-buffalo-silver-minted-round-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6895,
+      "source_url": "https://www.pamp.com/product/minted-ingots/diwali-rangoli-art-pure-gold-multigram25",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6896,
+      "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-koi-fish-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6897,
+      "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-yellow-dragon-10oz-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6898,
+      "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-yellow-dragon-50g-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6899,
+      "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-yellow-dragon-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6900,
+      "source_url": "https://www.pamp.com/product/minted-ingots/good-luck-yellow-dragon-multigram25-gold-ingots",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6901,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6902,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1-oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6903,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1-tola",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6904,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-100g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6905,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6906,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-10oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6907,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-12-oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6908,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6909,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6910,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-1oz-carbon-reduced",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6911,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-2-tolas",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6912,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-20g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6913,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-250g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6914,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-25g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6915,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-3-tolas",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6916,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-5-tolas",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6917,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-500g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6918,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-50g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6919,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6920,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-5oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6921,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-gold-minted-bar-multigram25",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6922,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-palladium-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6923,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-platinum-minted-bar-1-oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6924,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-platinum-minted-bar-1g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6925,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-platinum-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6926,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-platinum-minted-bar-multigram25",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6927,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-silver-minted-bar-1-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6928,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-fortunatm-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6929,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-justice-1oz-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6930,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-liberty-silver-minted-bar-10z",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6931,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-liberty-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6932,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lady-liberty-silver-minted-round-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6933,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-calendar-series-set-twelve-5g-gold-bars",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6934,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dog-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6935,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dog-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6936,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dog-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6937,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dog-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6938,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dragon-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6939,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dragon-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6940,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dragon-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6941,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-dragon-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6942,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-goat-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6943,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-goat-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6944,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-goat-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6945,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-goat-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6946,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-horse-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6947,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-horse-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6948,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-horse-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6949,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-horse-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6950,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legend-series-1000-mile-horse-multigram25-pure-gold-ingots",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6951,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-1000-mile-horse-10oz-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6952,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-2026-year-horse-10g-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6953,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-2026-year-horse-1oz-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6954,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-2026-year-horse-1oz-silver-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6955,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-legends-2026-year-horse-5g-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6956,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-monkey-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6957,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-monkey-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6958,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-monkey-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6959,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-monkey-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6960,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-ox-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6961,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-ox-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6962,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-ox-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6963,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-ox-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6964,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-pig-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6965,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-pig-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6966,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-pig-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6967,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-pig-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6968,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rabbit-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6969,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rabbit-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6970,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rabbit-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6971,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rabbit-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6972,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rat-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6973,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rat-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6974,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rat-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6975,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rat-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6976,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rooster-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6977,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rooster-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6978,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rooster-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6979,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-rooster-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6980,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-snake-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6981,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-snake-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6982,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-snake-silver-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6983,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-snake-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6984,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-tiger-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6985,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-tiger-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6986,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-tiger-silver-minted-bar-10g-0",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6987,
+      "source_url": "https://www.pamp.com/product/minted-ingots/lunar-tiger-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6988,
+      "source_url": "https://www.pamp.com/product/minted-ingots/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6989,
+      "source_url": "https://www.pamp.com/product/minted-ingots/pamp-silver-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6990,
+      "source_url": "https://www.pamp.com/product/minted-ingots/pamp-silver-minted-round-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6991,
+      "source_url": "https://www.pamp.com/product/minted-ingots/pamp-suisse-gold-minted-bar-1oz-new",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6992,
+      "source_url": "https://www.pamp.com/product/minted-ingots/pamp-suisse-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6993,
+      "source_url": "https://www.pamp.com/product/minted-ingots/reflections-america-yellowstone-cowboy-1oz-gold-bar",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6994,
+      "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-10g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6995,
+      "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-12oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6996,
+      "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-1oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6997,
+      "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-20g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6998,
+      "source_url": "https://www.pamp.com/product/minted-ingots/rosa-gold-minted-bar-5g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 6999,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-1-tael",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7000,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-10-tolas",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7001,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-100-g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7002,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-250-g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7003,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-50-g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7004,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-500-g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7005,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-carbon-neutral-andor-carbon-measured-1-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7006,
+      "source_url": "https://www.pamp.com/product/cast-bars/gold-cast-bar-provenance-1-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7007,
+      "source_url": "https://www.pamp.com/product/cast-bars/large-gold-cast-bar-400-oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7008,
+      "source_url": "https://www.pamp.com/product/cast-bars/large-gold-cast-bar-provenance-400oz-0",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7009,
+      "source_url": "https://www.pamp.com/product/cast-bars/large-silver-cast-bar-1000-oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7010,
+      "source_url": "https://www.pamp.com/product/cast-bars/palladium-cast-bar-3-kg-6-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7011,
+      "source_url": "https://www.pamp.com/product/cast-bars/platinum-cast-bar-3-kg-6-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7012,
+      "source_url": "https://www.pamp.com/product/cast-bars/silver-cast-bar-1-kg",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7013,
+      "source_url": "https://www.pamp.com/product/cast-bars/silver-cast-bar-10-oz",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    },
+    {
+      "id": 7014,
+      "source_url": "https://www.pamp.com/product/cast-bars/silver-cast-bar-500-g",
+      "method": "pamp",
+      "mintage": null,
+      "note": "not_found_on_page"
+    }
+  ]
+}

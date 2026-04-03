@@ -4,7 +4,14 @@
     "title": "250 Francs 1996 - Fondation Roi Baudouin BE",
     "price_display": "134,95 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0113423",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "18,75 g",
+      "Diamètre": "33,0 mm",
+      "Qualité": "Belle Épreuve"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/01.jpeg",
       "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/02.jpeg",
@@ -14,7 +21,7 @@
       "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/06.jpeg",
       "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T19:08:50.843Z",
+    "parsedAt": "2026-03-31T20:47:45.596Z",
     "slug": "hj-250-frank-1996-boudewijn-st-proof",
     "image_obverse": "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/herdenkings/hj-250-frank-1996-boudewijn-st-proof/02.jpeg"

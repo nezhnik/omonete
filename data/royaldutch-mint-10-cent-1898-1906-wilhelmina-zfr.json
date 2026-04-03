@@ -4,11 +4,23 @@
     "title": "DR 10 Cent Wilhelmina Zfr (hellebaard-2)",
     "price_display": "€45.00",
     "description": null,
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T17:57:36.147Z",
+    "specs": {
+      "Article number": "0109349",
+      "Metal": "Silver",
+      "Weight": "1.40 g",
+      "Diameter": "15 mm"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/obv.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/rev.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/pack.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/box.jpeg"
+    ],
+    "parsedAt": "2026-03-31T23:02:29.447Z",
     "slug": "10-cent-1898-1906-wilhelmina-zfr",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/box.jpeg"
   }
 }

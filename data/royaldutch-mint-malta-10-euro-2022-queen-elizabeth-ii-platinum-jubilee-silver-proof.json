@@ -4,7 +4,17 @@
     "title": "Malta 10 Euro 2022 “Queen Elizabeth II Platinum Jubilee” Silver Proof",
     "price_display": "€79.00",
     "description": "Seventy years ago, on 6 February 1952, Queen Elizabeth II ascended the throne of the United Kingdom and the Commonwealth of Nations. To celebrate the platinum anniversary, the Royal Dutch Mint mints two official commemorative coins on behalf of the Central Bank of Malta: a 2.5 euro in coincard and a 10 euro in Silver Prooflike. Did you know that… Malta was a British colony from 1800 to 1964? After this, the country still belonged to the Commonwealth of Nations, until it became a republic in 1974. Queen Elizabeth lived in Malta from 1949 to 1951? She had just married Prince Philip, who was stationed in Malta as a naval officer. Malta is one of Queen Elizabeth's favourite countries? Queen Elizabeth is the longest-reigning monarch of the United Kingdom and Commonwealth ever? A total of fourteen prime ministers ruled under her? Queen Elizabeth has sent 50,000 Christmas cards during her reign? The issue in Silver is entirely dedicated to the anniversary and comes in a purple case with the official emblem of the anniversary. The obverse of the coin also shows the anniversary emblem, coloured in purple, surrounded by the inscription “Queen's Platinum Jubilee” and the denomination. On the reverse is the logo of the Central Bank of Malta, the mint mark and the year of issue.",
-    "specs": {},
+    "specs": {
+      "Article number": "0113639",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "28.28 g",
+      "Diameter": "38.61 mm",
+      "Quality": "Prooflike",
+      "Nominal value": "€10,-",
+      "Mintage": "2,000",
+      "Edge": "serrated"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/02.jpeg",
@@ -15,7 +25,7 @@
       "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/07.jpeg",
       "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/08.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:21:45.385Z",
+    "parsedAt": "2026-03-31T20:16:30.231Z",
     "slug": "malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/02.jpeg"

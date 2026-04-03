@@ -4,7 +4,18 @@
     "title": "Leeuwarden 5 euro coin 2018 Silver Proof",
     "price_display": "€49.95",
     "description": "Prachtig bijzonder ontwerp Op de keerzijde van de Herdenkingsmunt ziet u typisch Friese kenmerken, zoals de juwelen van Mata Hari, het water, de iconische Friese zeilboten en paarden en de hoorn der cultuur en festiviteiten. Zij symboliseren waar Friesland al sinds jaar en dag voor staat en waar ze trots op is. Het gevoel van eeuwenoude Friese handwerktechnieken van houtsnijwerk en het muntambacht komen aan de voorzijde van de munt tot leven door het gebruik van moderne digitale en 3D printtechnieken. Het ontwerp geeft daardoor enerzijds het gevoel van een doorleefde zegel en maakt het anderzijds tot een karakteristiek en eigentijds object.",
-    "specs": {},
+    "specs": {
+      "Article number": "0102653",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "5,000",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS",
+      "Designer": "Navid Nuur"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/leeuwarden-5-euro-coin-2018-silver-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/leeuwarden-5-euro-coin-2018-silver-proof/02.jpeg",
@@ -13,7 +24,7 @@
       "/image/coins/foreign/royaldutch/leeuwarden-5-euro-coin-2018-silver-proof/05.jpeg",
       "/image/coins/foreign/royaldutch/leeuwarden-5-euro-coin-2018-silver-proof/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:20:14.791Z",
+    "parsedAt": "2026-03-31T20:15:18.401Z",
     "slug": "leeuwarden-5-euro-coin-2018-silver-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/leeuwarden-5-euro-coin-2018-silver-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/leeuwarden-5-euro-coin-2018-silver-proof/02.jpeg"

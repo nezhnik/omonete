@@ -9,6 +9,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { extractPampMintagePhraseFromPlainText } = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 
@@ -18,17 +19,6 @@ function listPampCollectibleJsonFiles() {
     .readdirSync(DATA_DIR)
     .filter((name) => name.startsWith("pamp-collectible-") && name.endsWith(".json"))
     .map((name) => path.join(DATA_DIR, name));
-}
-
-function extractMintageFromPlain(plain) {
-  if (!plain) return null;
-  const descPlain = String(plain).replace(/\s+/g, " ").trim();
-  if (!descPlain) return null;
-  const mintageCoins = descPlain.match(/\bmintage of (?:only\s+)?([\d,.\s]+)\s*coins?\b/i);
-  const mintageBars = descPlain.match(/\blimited mintage of\s*([\d,.\s]+)\s*bars?\b/i);
-  if (mintageCoins) return mintageCoins[1].replace(/\s+/g, " ").trim();
-  if (mintageBars) return mintageBars[1].replace(/\s+/g, " ").trim();
-  return null;
 }
 
 async function main() {
@@ -88,7 +78,7 @@ async function main() {
         const narrow = text(document.querySelector(".product-description__text"));
         return [wide, narrow].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
       });
-      mintage = extractMintageFromPlain(plain);
+      mintage = extractPampMintagePhraseFromPlainText(plain);
     } catch (e) {
       console.log("ошибка:", e.message);
       errors++;

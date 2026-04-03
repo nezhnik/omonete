@@ -4,14 +4,19 @@
     "title": "DR 25 Cent Wilhelmina Zfr (hellebaard-3)",
     "price_display": "€60.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0109368",
+      "Metal": "Silver",
+      "Weight": "3.575 g",
+      "Diameter": "19 mm"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/25-cent-1901-1906-wilhelmina-zfr/01.jpeg",
       "/image/coins/foreign/royaldutch/25-cent-1901-1906-wilhelmina-zfr/02.jpeg",
       "/image/coins/foreign/royaldutch/25-cent-1901-1906-wilhelmina-zfr/03.jpeg",
       "/image/coins/foreign/royaldutch/25-cent-1901-1906-wilhelmina-zfr/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:00:52.455Z",
+    "parsedAt": "2026-03-31T20:01:20.664Z",
     "slug": "25-cent-1901-1906-wilhelmina-zfr",
     "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1901-1906-wilhelmina-zfr/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1901-1906-wilhelmina-zfr/02.jpeg"

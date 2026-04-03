@@ -4,14 +4,20 @@
     "title": "50 Francs 1939 - Léopold III Sup-",
     "price_display": "123,95 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0119809",
+      "Métal": "Argent",
+      "Teneur": "835/1000",
+      "Poids": "20,0 g",
+      "Diamètre": "33,0 mm"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/01.jpg",
       "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/02.jpg",
       "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/03.jpg",
       "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/04.jpg"
     ],
-    "parsedAt": "2026-03-31T19:08:31.605Z",
+    "parsedAt": "2026-03-31T20:47:31.504Z",
     "slug": "50-francs-1939-leopold-iii-sup",
     "image_obverse": "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/01.jpg",
     "image_reverse": "/image/coins/foreign/herdenkings/50-francs-1939-leopold-iii-sup/02.jpg"

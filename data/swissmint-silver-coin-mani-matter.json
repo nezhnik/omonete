@@ -1,10 +1,10 @@
 {
   "coin": {
     "source_url": "https://www.sondermuenze.ch/en/silver-coin-mani-matter",
-    "title": "Silver coin “Mani Matter”",
-    "description": "The «Mani Matter» silver coin is the first silver coin from Swissmint which will have a fineness of 999 and will go on sale under the new «Swiss special coins» brand. Hans Peter «Mani» Matter (*4 August 1936 in Herzogenbuchsee; †24 November 1972 in Kilchberg ZH) was a Swiss singer-songwriter and lawyer. Inspired by Georges Brassens, he began writing, composing and interpreting Bernese dialect chansons at the age of 13. Even now, fifty years after his accidental death, the popularity of Mani Matter and his songs remains undimmed.",
+    "title": "Silver coin “Mani Matter” - Swissmint",
+    "description": "Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.-",
     "specs": {
-      "Legal face value": "CHF 20",
+      "Legal face value": "CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 24.11.2022 Mintage Proof in presentation case: 3,050 units Proof in presentation case with certificate from the artist: 250 units Uncirculated: 11,000 units Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.-",
       "Alloy": "Silver 999",
       "Diameter": "33 mm",
       "Weight": "20 g",
@@ -12,17 +12,14 @@
       "Mintage Proof in presentation case": "3,050 units Proof in presentation case with certificate from the artist: 250 units",
       "Uncirculated": "11,000 units"
     },
-    "specsText": "Silver coin “Mani Matter” The «Mani Matter» silver coin is the first silver coin from Swissmint which will have a fineness of 999 and will go on sale under the new «Swiss special coins» brand. Hans Peter «Mani» Matter (*4 August 1936 in Herzogenbuchsee; †24 November 1972 in Kilchberg ZH) was a Swiss singer-songwriter and lawyer. Inspired by Georges Brassens, he began writing, composing and interpreting Bernese dialect chansons at the age of 13. Even now, fifty years after his accidental death, the popularity of Mani Matter and his songs remains undimmed. Legal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 24.11.2022 Mintage Proof in presentation case: 3,050 units Proof in presentation case with certificate from the artist: 250 units Uncirculated: 11,000 units Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.- <img fetchpriority=\"high\" decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/20er-mani-matter-silbermuenze-frontal-digital-bs-620x620px.png\" alt=\"Silver coin “Mani Matter”\" width=\"620\" height=\"620\" /><img decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/20er-mani-matter-silbermuenze-frontal-digital-ws-620x620px.png\" alt=\"Silver coin “Mani Matter”\" width=\"620\" height=\"620\" />",
+    "specsText": "Silver coin “Mani Matter” The «Mani Matter» silver coin is the first silver coin from Swissmint which will have a fineness of 999 and will go on sale under the new «Swiss special coins» brand. Hans Peter «Mani» Matter (*4 August 1936 in Herzogenbuchsee; †24 November 1972 in Kilchberg ZH) was a Swiss singer-songwriter and lawyer. Inspired by Georges Brassens, he began writing, composing and interpreting Bernese dialect chansons at the age of 13. Even now, fifty years after his accidental death, the popularity of Mani Matter and his songs remains undimmed.\n\nSilver coin “Mani Matter” The «Mani Matter» silver coin is the first silver coin from Swissmint which will have a fineness of 999 and will go on sale under the new «Swiss special coins» brand. Hans Peter «Mani» Matter (*4 August 1936 in Herzogenbuchsee; †24 November 1972 in Kilchberg ZH) was a Swiss singer-songwriter and lawyer. Inspired by Georges Brassens, he began writing, composing and interpreting Bernese dialect chansons at the age of 13. Even now, fifty years after his accidental death, the popularity of Mani Matter and his songs remains undimmed.\n\nHans Peter \"Mani\" Matter (*4 August 1936 in Herzogenbuchsee; †24 November 1972 in Kilchberg ZH) was a Swiss singer-songwriter and lawyer.\n\nLegal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 24.11.2022 Mintage Proof in presentation case: 3,050 units Proof in presentation case with certificate from the artist: 250 units Uncirculated: 11,000 units Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.-",
     "imageUrls": [
-      "/image/coins/foreign/swissmint/silver-coin-mani-matter/01.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-mani-matter/02.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-mani-matter/03.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-mani-matter/04.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-mani-matter/05.jpg"
+      "/image/coins/foreign/swissmint/silver-coin-mani-matter/01.png",
+      "/image/coins/foreign/swissmint/silver-coin-mani-matter/02.png"
     ],
-    "parsedAt": "2026-03-31T18:22:56.629Z",
+    "parsedAt": "2026-04-03T15:59:26.863Z",
     "slug": "silver-coin-mani-matter",
-    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-mani-matter/01.jpg",
-    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-mani-matter/02.jpg"
+    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-mani-matter/01.png",
+    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-mani-matter/02.png"
   }
 }

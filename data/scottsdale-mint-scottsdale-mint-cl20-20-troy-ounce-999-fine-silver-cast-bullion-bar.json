@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar",
     "title": "Scottsdale CL20",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "20 Troy oz",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/02.jpg",
@@ -59,6 +64,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/53.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/54.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/55.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/56.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/57.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/58.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/59.jpg",
@@ -71,7 +77,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/66.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/67.jpg"
     ],
-    "parsedAt": "2026-03-31T17:34:08.197Z",
+    "parsedAt": "2026-03-31T21:17:45.739Z",
     "slug": "scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-cl20-20-troy-ounce-999-fine-silver-cast-bullion-bar/02.jpg"

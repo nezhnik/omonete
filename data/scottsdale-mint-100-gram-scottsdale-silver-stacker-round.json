@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/100-gram-scottsdale-silver-stacker-round",
     "title": "Scottsdale Stacker®",
-    "specs": {},
+    "specs": {
+      "Weight": "100 Gram",
+      "Purity": ".999 Silver",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/100-gram-scottsdale-silver-stacker-round/01.jpg",
       "/image/coins/foreign/scottsdale/100-gram-scottsdale-silver-stacker-round/02.jpg",
@@ -53,7 +58,7 @@
       "/image/coins/foreign/scottsdale/100-gram-scottsdale-silver-stacker-round/47.jpg",
       "/image/coins/foreign/scottsdale/100-gram-scottsdale-silver-stacker-round/48.jpg"
     ],
-    "parsedAt": "2026-03-31T16:54:56.818Z",
+    "parsedAt": "2026-03-31T20:57:55.868Z",
     "slug": "100-gram-scottsdale-silver-stacker-round",
     "image_obverse": "/image/coins/foreign/scottsdale/100-gram-scottsdale-silver-stacker-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/100-gram-scottsdale-silver-stacker-round/02.jpg"

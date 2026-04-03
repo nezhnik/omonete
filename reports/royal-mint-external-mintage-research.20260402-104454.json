@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-04-02T10:44:54.878Z",
+  "schemaVersion": 1,
+  "definition": "Royal Mint: внешний поиск тиражей в неофициальных источниках. proposals: до 3 источников/доменов. verifiedMintage: если одно число встречается на >=2 доменах. В БД не пишет.",
+  "input": {
+    "exportGapJson": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/mintage-export-gap-research.json",
+    "rmNoMintageCache": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/mintage-export-gap-no-mintage-cache-rm.json",
+    "totalRoyalMintInExportGap": 217,
+    "totalInRun": 3,
+    "concurrency": 1,
+    "maxLinks": 8,
+    "headful": false,
+    "checkpointEvery": 1,
+    "outPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/royal-mint-external-mintage-research.20260402-104454.json",
+    "directSites": true
+  },
+  "summary": {
+    "withAnyProposals": 0,
+    "withVerifiedMintage": 0,
+    "failed": 0
+  },
+  "items": [
+    {
+      "coinId": 6023,
+      "title": "200 Years of the RNLI 2024 UK 50p Silver Proof Piedfort Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/200-Years-of-the-RNLI-2024-UK-50p-Silver-Proof-Piedfort-Coin",
+      "query": "RNLI 50p piedfort 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6032,
+      "title": "2023 Lunar Year of the Rabbit 1kg Silver Proof Trial Piece",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2023-Lunar-Year-of-the-Rabbit-1kg-Silver-Proof-Trial-Piece",
+      "query": "Lunar Year of the Rabbit 1kg 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6033,
+      "title": "2024 Baby Silver Penny",
+      "source_url": "https://www.royalmint.com/gifts/2024-baby-silver-penny",
+      "query": "Baby Silver Penny 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    }
+  ]
+}

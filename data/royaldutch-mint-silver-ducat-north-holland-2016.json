@@ -4,11 +4,28 @@
     "title": "Silver Ducat North Holland 2016",
     "price_display": "€49.95",
     "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T18:44:39.880Z",
+    "specs": {
+      "Article number": "094376",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40.0 mm",
+      "Quality": "Proof",
+      "Mintage": "max. 4,000",
+      "Edge": "Cable"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/01.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/02.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/03.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/04.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/05.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/06.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/07.jpeg"
+    ],
+    "parsedAt": "2026-03-31T20:34:20.290Z",
     "slug": "silver-ducat-north-holland-2016",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/01.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/02.jpeg"
   }
 }

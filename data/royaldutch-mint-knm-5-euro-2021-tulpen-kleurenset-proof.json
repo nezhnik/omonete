@@ -4,7 +4,15 @@
     "title": "KNM 5 Euro 2012 Tulpen Kleurenset Proof",
     "price_display": "€695.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "120071.2012.02",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15,5 g per coin",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Mintage": "750 sets"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/02.jpeg",
@@ -14,7 +22,7 @@
       "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/06.jpeg",
       "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:18:51.196Z",
+    "parsedAt": "2026-03-31T20:14:43.783Z",
     "slug": "knm-5-euro-2021-tulpen-kleurenset-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/02.jpeg"

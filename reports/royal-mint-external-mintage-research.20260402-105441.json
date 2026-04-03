@@ -1,0 +1,4009 @@
+{
+  "generatedAt": "2026-04-02T10:54:41.798Z",
+  "schemaVersion": 1,
+  "definition": "Royal Mint: внешний поиск тиражей в неофициальных источниках. proposals: до 3 источников/доменов. verifiedMintage: если одно число встречается на >=2 доменах. В БД не пишет.",
+  "input": {
+    "exportGapJson": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/mintage-export-gap-research.json",
+    "rmNoMintageCache": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/mintage-export-gap-no-mintage-cache-rm.json",
+    "totalRoyalMintInExportGap": 217,
+    "totalInRun": 217,
+    "concurrency": 1,
+    "maxLinks": 8,
+    "headful": false,
+    "checkpointEvery": 5,
+    "outPath": "/Users/mihail/Desktop/Нумизматика сайт/omonete-app/reports/royal-mint-external-mintage-research.20260402-105441.json",
+    "directSites": true
+  },
+  "summary": {
+    "withAnyProposals": 128,
+    "withVerifiedMintage": 0,
+    "failed": 0
+  },
+  "items": [
+    {
+      "coinId": 6023,
+      "title": "200 Years of the RNLI 2024 UK 50p Silver Proof Piedfort Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/200-Years-of-the-RNLI-2024-UK-50p-Silver-Proof-Piedfort-Coin",
+      "query": "RNLI 50p piedfort 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 150,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/50p-coins/2024-200-years-of-the-rnli-50p/",
+          "quotedText": "Limited Edition 150"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6032,
+      "title": "2023 Lunar Year of the Rabbit 1kg Silver Proof Trial Piece",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2023-Lunar-Year-of-the-Rabbit-1kg-Silver-Proof-Trial-Piece",
+      "query": "Lunar Year of the Rabbit 1kg 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2888,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2023-lunar-year-of-the-rabbit-5/",
+          "quotedText": "Limited Edition 2888"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6033,
+      "title": "2024 Baby Silver Penny",
+      "source_url": "https://www.royalmint.com/gifts/2024-baby-silver-penny",
+      "query": "Baby Silver Penny 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        },
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6034,
+      "title": "2024 Sixpence Silver Brilliant Uncirculated Coin",
+      "source_url": "https://www.royalmint.com/gifts/sixpence/2024-silver-sixpence",
+      "query": "Sixpence Silver Brilliant Uncirculated Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6035,
+      "title": "2024 Wedding Silver Sixpence",
+      "source_url": "https://www.royalmint.com/gifts/sixpence/2024-wedding-silver-sixpence",
+      "query": "Wedding Silver Sixpence 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6036,
+      "title": "2025 Baby Silver Penny",
+      "source_url": "https://www.royalmint.com/gifts/2025-baby-silver-penny",
+      "query": "Baby Silver Penny 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        },
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6041,
+      "title": "The 2025 Silver Sixpence",
+      "source_url": "https://www.royalmint.com/gifts/sixpence/2025-silver-sixpence",
+      "query": "The Silver Sixpence 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6042,
+      "title": "2026 Baby Silver Penny",
+      "source_url": "https://www.royalmint.com/gifts/2026-baby-silver-penny",
+      "query": "Baby Silver Penny 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        },
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6045,
+      "title": "2026 Silver Sixpence",
+      "source_url": "https://www.royalmint.com/gifts/sixpence/2026-silver-sixpence",
+      "query": "Silver Sixpence 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        },
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6049,
+      "title": "Australian Kangaroo 2024 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/uk-coin-ranges/world-coins/australian-kangaroo-2024-1oz-silver-bullion-coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6050,
+      "title": "Britannia 2026 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/bb26s1c-britannia-2026-1oz-silver-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6055,
+      "title": "Britannia 2022 1 oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/britannia-2022-1-oz-silver-bullion-coin",
+      "query": "Britannia oz Silver Bullion Coin 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6074,
+      "title": "1997 Britannia Silver Set",
+      "source_url": "https://www.royalmint.com/shop/coin-sets/Britannia-Silver-Set",
+      "query": "Britannia Silver Set 1997 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 80,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2008-platinum-proof-britannia-set/",
+          "quotedText": "mintage/\" rel=\"prev\"><img width=\"80"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6077,
+      "title": "Canadian Maple Leaf 2024 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/uk-coin-ranges/world-coins/canadian-maple-leaf-2024-1oz-silver-bullion-coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6083,
+      "title": "Count Dracula 2025 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/count-dracula-2025-1oz-silver-bullion-coin",
+      "query": "1oz 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 4500,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-britannia-1oz-silver-proof/",
+          "quotedText": "limited edition of 4,500"
+        },
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2025-freddie-mercury-5/",
+          "quotedText": "Limited Edition 12,500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6101,
+      "title": "South African Krugerrand 2024 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/uk-coin-ranges/world-coins/krugerrand-2024-1oz-silver-bullion-coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6102,
+      "title": "Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/legendary-creatures-loch-ness-monster-2026-uk-1oz-silver-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6108,
+      "title": "Merlin 2025 10oz Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/merlin-2025-10oz-bullion-coin",
+      "query": "Merlin 10oz Bullion Coin 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 10000,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/Spain/Gold_Ounce_2025_Brown_Bear/",
+          "quotedText": "Mintage\", \"value\": \"10,000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6109,
+      "title": "Myths and Legends Morgan le Fay 2023 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Myths-and-Legends-Morgan-le-Fay-2023-UK-1oz-Silver-Proof-Coin",
+      "query": "1oz 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 200,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2023-1oz-gold-proof-morgan-le-fay/",
+          "quotedText": "Limited Edition is 200."
+        },
+        {
+          "mintage": 5500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-the-royal-tudor-beasts-the-seymour-unicorn-5/",
+          "quotedText": "Limited Edition 5500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6118,
+      "title": "The Royal Tudor Beasts 2025 Queen's Panther 2oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/2oz-silver-bullion-coins/rqp252s--the-royal-tudor-beasts-2025-queens-panther-2oz-silver-bullion-coin",
+      "query": "2oz 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-waterloo-medal-victory-2oz-silver-proof-5/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2025-freddie-mercury-5/",
+          "quotedText": "Limited Edition 12,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6121,
+      "title": "The Royal Tudor Beasts 2025 Greyhound of Richmond 2oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/2oz-silver-bullion-coins/RTGR252S-The-Royal-Tudor-Beasts-2025-Greyhound-of-Richmond-2oz-Silver-Bullion-Coin",
+      "query": "2oz 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-waterloo-medal-victory-2oz-silver-proof-5/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2025-freddie-mercury-5/",
+          "quotedText": "Limited Edition 12,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6122,
+      "title": "Star Wars TIE Fighter 2024 UK 50p Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Star-Wars-TIE-Fighter-2024-UK-50p-Silver-Proof-Colour-oin",
+      "query": "50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6129,
+      "title": "The Waterloo Medal Allied Leaders 2024 UK 5oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Waterloo-Medal-Allied-Leaders-2024-UK-5oz-Silver-Proof-Coin",
+      "query": "5oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6145,
+      "title": "The Lion and the Eagle 2026 1/2oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/the-lion-and-the-eagle-2026-1-2oz-silver-bullion-coin",
+      "query": "2oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6146,
+      "title": "The Lion and the Eagle 2026 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-lion-and-the-eagle-2026-1oz-gold-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6147,
+      "title": "The Lion and the Eagle 2026 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/the-lion-and-the-eagle-2026-1oz-silver-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6163,
+      "title": "The Sovereign 2026 Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-sovereign-2026-gold-bullion-coin-in-blister",
+      "query": "The Sovereign Gold Bullion Coin in 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6170,
+      "title": "Charles III Definitives 2024 UK 2p Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/tp25px152",
+      "query": "Charles III Definitives UK 2p Silver 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6199,
+      "title": "The Lion and the Eagle 2026 1/2oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/limited-editions/the-lion-and-eagle/bullion-range/the-lion-and-the-eagle-2026-1-2oz-silver-bullion-coin",
+      "query": "2oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6200,
+      "title": "The Lion and the Eagle 2026 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/limited-editions/the-lion-and-eagle/bullion-range/the-lion-and-the-eagle-2026-1oz-silver-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6211,
+      "title": "1995 Eire United Nations Silver £1",
+      "source_url": "https://www.royalmint.com/shop/world/1995-Eire-United-Nations-Silver-1",
+      "query": "Eire United Nations Silver £1 1995 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6212,
+      "title": "200 Years of the RNLI 2024 UK 50p Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/200-Years-of-the-RNLI-2024-UK-50p-Silver-Proof-Coin",
+      "query": "RNLI 50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 150,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/50p-coins/2024-200-years-of-the-rnli-50p/",
+          "quotedText": "Limited Edition 150"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6213,
+      "title": "2001 Britannia Silver Proof Set",
+      "source_url": "https://www.royalmint.com/shop/coin-sets/2001-Britannia-Silver-Proof-Set",
+      "query": "Britannia Silver Proof Set 2001 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6214,
+      "title": "2009 Sir Isaac Newton Silver £5 'Celebration Of Britain'",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2009-Sir-Isaac-Newton-Silver-5-Celebration-Of-Britain",
+      "query": "Sir Isaac Newton Silver £5 Celebration 2009 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6215,
+      "title": "2017 'A Life of Service' Prince Philip Silver £5 Crown",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2017-A-Life-of-Service-Prince-Philip-Silver-5-Crown",
+      "query": "A Life of Service Prince Philip 2017 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6216,
+      "title": "2019 Queen Victoria UK Silver Proof £5 Piedfort Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Queen-Victoria-UK-Silver-Proof-5-Piedfort-Coin",
+      "query": "piedfort 2019 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 600,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2019-sherlock-holmes-gold-proof-fifty-pence-piece-50p/",
+          "quotedText": "mintage of 600,"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6217,
+      "title": "2019 Remembrance Day UK £5 Silver Proof Piedfort",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Remembrance-Day-UK-5-Silver-Proof-Piedfort",
+      "query": "piedfort 2019 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 600,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2019-sherlock-holmes-gold-proof-fifty-pence-piece-50p/",
+          "quotedText": "mintage of 600,"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6219,
+      "title": "Britannia 2024 UK 1/10oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1-10oz-Silver-Bullion-Coin",
+      "query": "Britannia UK 110oz Silver Bullion Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6220,
+      "title": "Britannia 2024 UK 1/10oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1-10oz-Silver-Proof-Coin",
+      "query": "Britannia UK 110oz Silver Proof Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6221,
+      "title": "Britannia 2024 UK 1/20oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1-20oz-Silver-Proof-Coin",
+      "query": "Britannia UK 120oz Silver Proof Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6222,
+      "title": "Britannia 2024 UK 1/2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6223,
+      "title": "Britannia 2024 UK 1/4oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1-4oz-Silver-Proof-Coin-TP25PX103",
+      "query": "Britannia UK 14oz Silver Proof Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6224,
+      "title": "Britannia 2024 UK 1/4oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1-4oz-Silver-Proof-Coin",
+      "query": "Britannia UK 14oz Silver Proof Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6225,
+      "title": "Britannia 2024 UK 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1oz-Silver-Bullion-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6226,
+      "title": "Britannia 2024 UK 1oz Silver Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1oz-Silver-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6227,
+      "title": "Britannia 2024 UK 1oz Silver Proof Coin (Frosted)",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1oz-Silver-Proof-Coin-Frosted",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6228,
+      "title": "Britannia 2024 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-1oz-Silver-Proof-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6229,
+      "title": "Britannia 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6230,
+      "title": "Britannia 2024 UK 5oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-2024-UK-5oz-Silver-Proof-Coin",
+      "query": "5oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6231,
+      "title": "Britannia and Liberty 2024 UK 1/4oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-and-Liberty-2024-UK-1-4oz-Silver-Bullion-Coin",
+      "query": "Britannia and Liberty UK 14oz Silver 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6232,
+      "title": "Britannia and Liberty 2024 UK 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-and-Liberty-2024-UK-1oz-Silver-Bullion-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6233,
+      "title": "Britannia and Liberty 2024 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-and-Liberty-2024-UK-1oz-Silver-Proof-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6234,
+      "title": "Britannia and Liberty 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-and-Liberty-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6235,
+      "title": "Britannia and Liberty 2024 UK 5oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Britannia-and-Liberty-2024-UK-5oz-Silver-Proof-Coin",
+      "query": "5oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6236,
+      "title": "Buckingham Palace 2024 UK £5 Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Buckingham-Palace-2024-UK-5-Silver-Proof-Coin",
+      "query": "Buckingham Palace UK £5 Silver Proof 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-buckingham-palace-5/",
+          "quotedText": "Limited Edition 2,500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6237,
+      "title": "Buckingham Palace 2024 UK £5 Silver Proof Piedfort Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Buckingham-Palace-2024-UK-5-Silver-Proof-Piedfort-Coin",
+      "query": "piedfort 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 8000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/50p-coins/2024-d-day-50p/",
+          "quotedText": "Limited Edition 8000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6238,
+      "title": "Charles III Definitives 2024 UK 10p Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Charles-III-Definitives-2024-UK-10p-Silver-Proof-Coin",
+      "query": "Charles III Definitives UK 10p Silver 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6239,
+      "title": "Charles III Definitives 2024 UK 20p Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Charles-III-Definitives-2024-UK-20p-Silver-Proof-Coin",
+      "query": "Charles III Definitives UK 20p Silver 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6240,
+      "title": "Charles III Definitives 2024 UK 5p Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Charles-III-Definitives-2024-UK-5p-Silver-Proof-Coin",
+      "query": "Charles III Definitives UK 5p Silver 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6241,
+      "title": "D-Day 2024 UK 1oz £2 Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/D-Day-2024-UK-1oz-2-Pound-Silver-Proof-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6242,
+      "title": "D-Day 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/D-Day-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6243,
+      "title": "D-Day 2024 UK 50p Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/D-Day-2024-UK-50p-Silver-Proof-Coin",
+      "query": "50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2024,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-d-day-50p-bu/",
+          "quotedText": "Limited Edition coins. This coin is the 2024"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6244,
+      "title": "George Michael 2024 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/George-Michael-2024-UK-1oz-Silver-Proof-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6245,
+      "title": "George Michael 2024 UK 1oz Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/George-Michael-2024-UK-1oz-Silver-Proof-Colour-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6246,
+      "title": "George Michael 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/George-Michael-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6247,
+      "title": "Lunar Year of the Dragon 2024 UK 5oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Lunar-Year-of-the-Dragon-2024-UK-5oz-Silver-Proof-Coin",
+      "query": "5oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6248,
+      "title": "Paul McCartney 2024 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Paul-McCartney-2024-UK-1oz-Silver-Proof-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6249,
+      "title": "Paul McCartney 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Paul-McCartney-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6250,
+      "title": "Paul McCartney 2024 UK 1oz Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Paul-McCartney2024-UK-1oz-Silver-Proof-Colour-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6251,
+      "title": "Penny 2024 Silver Brilliant Uncirculated Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Penny-2024-Silver-Brilliant-Uncirculated-Coin",
+      "query": "Penny Silver Brilliant Uncirculated Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        },
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6252,
+      "title": "Star Wars X-Wing 2024 UK 50p Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Star-Wars-X-Wing-2024-UK-50p-Silver-Proof-Colour-Coin",
+      "query": "50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2024,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-d-day-50p-bu/",
+          "quotedText": "Limited Edition coins. This coin is the 2024"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6254,
+      "title": "The Lion and The Eagle 2024 UK 1/10oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Lion-and-The-Eagle-2024-UK-1-10oz-Silver-Proof-Coin",
+      "query": "The Lion and The Eagle UK 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6256,
+      "title": "The Lion and The Eagle 2024 UK 1/4oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Lion-and-The-Eagle-2024-UK-1-4oz-Silver-Proof-Coin",
+      "query": "The Lion and The Eagle UK 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6257,
+      "title": "The Lion and The Eagle 2024 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Lion-and-The-Eagle-2024-UK-1oz-Silver-Proof-Coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6258,
+      "title": "The Lion and The Eagle 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Lion-and-The-Eagle-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6259,
+      "title": "The Lion and The Eagle 2024 UK 5oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Lion-and-The-Eagle-2024-UK-5oz-Silver-Proof-Coin",
+      "query": "5oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6260,
+      "title": "The Police 2023 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Police-2023-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 600,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2023-british-monarchs-king-henry-viii-five-pounds-2oz-silver-proof/",
+          "quotedText": "Limited edition mintage of 600."
+        },
+        {
+          "mintage": 5000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2023-the-75th-birthday-of-his-majesty-king-charles-iii-5/",
+          "quotedText": "Limited Edition 5000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6261,
+      "title": "The Royal Arms 2024 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/the-royal-arms-2024-1oz-silver-bullion-coin-73f522dc",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6262,
+      "title": "Britannia 2024 UK 1/20oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/TP25PX110-Britannia-2024-UK-1-20oz-Silver-Proof-Coin",
+      "query": "Britannia UK 120oz Silver Proof Coin 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6275,
+      "title": "Star Wars Darth Vader and Emperor Palpatine 2023 UK 5oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Star-Wars-Darth-Vader-and-Emperor-Palpatine-2023-UK-5oz-Silver-Proof-Coin",
+      "query": "5oz 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 5500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-the-royal-tudor-beasts-the-seymour-unicorn-5/",
+          "quotedText": "Limited Edition 5500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6276,
+      "title": "Star Wars Death Star ll 2024 UK 50p Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Star-Wars-Death-Star-ll-2024-UK-50p-Silver-Proof-Colour-Coin",
+      "query": "50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2024,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-d-day-50p-bu/",
+          "quotedText": "Limited Edition coins. This coin is the 2024"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6277,
+      "title": "Star Wars Han Solo and Chewbacca 2024 UK 50p Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Star-Wars-Han-Solo-and-Chewbacca-2024-UK-50p-Silver-Proof-Colour-Coin",
+      "query": "50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2024,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-d-day-50p-bu/",
+          "quotedText": "Limited Edition coins. This coin is the 2024"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6278,
+      "title": "Star Wars Millennium Falcon 2024 UK 50p Silver Proof Colour Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/Star-Wars-Millennium-Falcon-2024-UK-50p-Silver-Proof-Colour-Coin",
+      "query": "50p 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2024,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-d-day-50p-bu/",
+          "quotedText": "Limited Edition coins. This coin is the 2024"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6286,
+      "title": "The British Lion and American Eagle 2024 1oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/the-british-lion-and-american-eagle-2024-1oz-silver-bullion-coin",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6290,
+      "title": "2023 The Lion and The Eagle 1kg Silver Proof Trial Piece",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/The-Lion-and-The-Eagle-2023-1kg-Silver-Proof-Trial-Piece-with-Microdot-Matt-Finish-Obverse",
+      "query": "The Lion and The Eagle 1kg 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6291,
+      "title": "The Lion and The Eagle 2024 UK 1oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/the-lion-and-the-eagle-2024-uk-1oz-silver-proof-coin-03060cf0",
+      "query": "1oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-bond-films-of-the-2000s-1oz-golf-proof-six-decades-of-007-charles-iii/",
+          "quotedText": "Limited Edition is 250."
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6292,
+      "title": "The Royal Tudor Beasts 2023 Yale of Beaufort 10oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/the-royal-tudor-beasts-2023-yale-of-beaufort-10oz-silver-bullion-coin",
+      "query": "The Royal Tudor Beasts Yale of 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1250,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2023-the-royal-tudor-beasts-the-yale-of-beaufort-5/",
+          "quotedText": "Limited Edition 1250"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6293,
+      "title": "The Royal Tudor Beasts 2026 Queen’s Lion 10oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/the-royal-tudor-beasts-2026-queens-lion-10oz-silver-bullion-coin",
+      "query": "The Royal Tudor Beasts Queens Lion 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6294,
+      "title": "The Royal Tudor Beasts 2026 Queen’s Lion 2oz Silver Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/the-royal-tudor-beasts-2026-queens-lion-2oz-silver-bullion-coin",
+      "query": "2oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6299,
+      "title": "The Waterloo Medal Allied Leaders 2024 UK 2oz Silver Proof Matt Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Waterloo-Medal-Allied-Leaders-2024-UK-2oz-Silver-Proof-Coin-Matt",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6300,
+      "title": "The Waterloo Medal Allied Leaders 2024 UK 2oz Silver Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Waterloo-Medal-Allied-Leaders-2024-UK-2oz-Silver-Proof-Coin",
+      "query": "2oz 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2950,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-st-george-and-the-dragon-2oz-silver-proof/",
+          "quotedText": "Mintage: <b>2,950"
+        },
+        {
+          "mintage": 10000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2024-paul-mccartney-5/",
+          "quotedText": "Limited Edition 10,000"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6495,
+      "title": "1908 Elizabeth II The 4th Olympian London Gold £2",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/1908-Elizabeth-II-The-4th-Olympian-London-Gold-Proof-2",
+      "query": "Elizabeth II The 4th Olympian London 1908 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6496,
+      "title": "1991 Elizabeth II Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/1991-Elizabeth-II-Proof-Sovereign",
+      "query": "Elizabeth II Sovereign 1991 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6497,
+      "title": "1994 Elizabeth II Proof Double Sovereign Gold Coin",
+      "source_url": "https://www.royalmint.com/sovereign/all/1994-Elizabeth-II-Proof-Double-Sovereign-Gold-Coin",
+      "query": "Elizabeth II Proof Double Sovereign Gold 1994 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6498,
+      "title": "1995 Dove of Peace £2 Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/1995-dove-of-peace-2-pound-coin",
+      "query": "Dove of Peace £2 Coin 1995 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6499,
+      "title": "1995 Elizabeth II United Nations Gold £2 Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/1995-Elizabeth-II-United-Nations-Gold-2-Coin",
+      "query": "Elizabeth II United Nations Gold £2 1995 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6502,
+      "title": "2000 Elizabeth II Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2000-Elizabeth-II-Half-Sovereign",
+      "query": "Elizabeth II Half Sovereign 2000 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6503,
+      "title": "2002 Elizabeth II Golden Jubilee Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2002-Elizabeth-II-Golden-Jubilee-Half-Sovereign",
+      "query": "Elizabeth II Golden Jubilee Half Sovereign 2002 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6504,
+      "title": "2002 Queen Elizabeth II £2 Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2002-Queen-Elizabeth-II-2-Proof-Sovereign",
+      "query": "Queen Elizabeth II £2 Proof Sovereign 2002 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6505,
+      "title": "2004 UK Proof Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2004-UK-Proof-Half-Sovereign",
+      "query": "UK Proof Half Sovereign 2004 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6506,
+      "title": "2005 Elizabeth II Gold Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2005-Elizabeth-II-Gold-Sovereign",
+      "query": "Elizabeth II Gold Sovereign 2005 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 5140500,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2005-2-pound-coin-gunpowder-plot-guy-fawkes-and-bonfire-night/",
+          "quotedText": "Mintage was 5,140,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6507,
+      "title": "2005 Elizabeth II Gunpowder Plot Double Proof £2 Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2005-Elizabeth-II-Gunpowder-Plot-Double-Proof-2-Coin",
+      "query": "Elizabeth II Gunpowder Plot Double Proof 2005 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 5140500,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2005-2-pound-coin-gunpowder-plot-guy-fawkes-and-bonfire-night/",
+          "quotedText": "Mintage was 5,140,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6508,
+      "title": "2006 Elizabeth II 200th Anniversary of the Birth of Isambard Kingdom Brunel Gold 2-Coin £2 Proof Set",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2006-Elizabeth-II-200th-Anniversary-of-the-Birth-of-Isambard-Kingdom-Brunel-Gold-2-Coin-2-Gold-Proof-Set",
+      "query": "Elizabeth II 200th Anniversary of the 2006 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6509,
+      "title": "2006 Queen Elizabeth II Proof Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2006-queen-elizabeth-ii-proof-half-sovereign-pf69",
+      "query": "Queen Elizabeth II Proof Half Sovereign 2006 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6510,
+      "title": "2008 Elizabeth II Beijing to London Olympic Gold  £2",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2008-Elizabeth-II-Beijing-to-London-Olympic-Gold-Proof-2",
+      "query": "Elizabeth II Beijing to London Olympic 2008 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 22106000,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/South_Africa/Five_Rand_2008_Nelson_Mandela/",
+          "quotedText": "Mintage\", \"value\": \"22,106,000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6511,
+      "title": "2009 Elizabeth II Proof Half-Sovereign in Capsule",
+      "source_url": "https://www.royalmint.com/sovereign/all/2009-Elizabeth-II-Proof-Half-Sovereign-in-Capsule",
+      "query": "Elizabeth II Proof HalfSovereign in Capsule 2009 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 26000,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/Mexico/Silver_Five_Ounces_2009_Libertad/",
+          "quotedText": "Mintage\", \"value\": \"26,000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6512,
+      "title": "2009 Elizabeth II Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2009-Elizabeth-II-Proof-Half-Sovereign",
+      "query": "Elizabeth II Half Sovereign 2009 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6513,
+      "title": "2010 Elizabeth II Belfast £1 Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2010-Elizabeth-II-Belfast-1-Gold-Proof-Coin",
+      "query": "Elizabeth II Belfast £1 Gold Proof 2010 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6514,
+      "title": "2010 Elizabeth II Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2010-Elizabeth-II-Half-Sovereign",
+      "query": "Elizabeth II Half Sovereign 2010 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6515,
+      "title": "2010 Elizabeth II London £1 Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2010-Elizabeth-II-London-1-Gold-Proof-Coin",
+      "query": "Elizabeth II London £1 Gold Proof 2010 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6516,
+      "title": "2011 Elizabeth II Altius Olympic Three Coin Gold Proof Set",
+      "source_url": "https://www.royalmint.com/shop/coin-sets/2011-Elizabeth-II-Altius-Olympic-Three-Coin-Gold-Proof-Set",
+      "query": "Elizabeth II Altius Olympic Three Coin 2011 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6517,
+      "title": "2011 Elizabeth II Quarter-Sovereign Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/sovereign/all/2011-Elizabeth-II-Quarter-Sovereign-Gold-Proof-Coin",
+      "query": "Elizabeth II QuarterSovereign Gold Proof Coin 2011 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6518,
+      "title": "2012 Elizabeth II 'Diamond Jubilee' Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2012-Elizabeth-II-Diamond-Jubilee-Sovereign",
+      "query": "Elizabeth II Diamond Jubilee Sovereign 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6519,
+      "title": "2012 Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2012-Elizabeth-II-Gold-Proof-Sovereign-PF70",
+      "query": "Elizabeth II Gold Proof Sovereign 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6520,
+      "title": "2012 Elizabeth II London to Rio Olympic Gold £2",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2012-Elizabeth-II-London-to-Rio-Olympic-Gold-Proof-2",
+      "query": "Elizabeth II London to Rio Olympic 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6521,
+      "title": "2012 Elizabeth II Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2012-Elizabeth-II-Sovereign",
+      "query": "Elizabeth II Sovereign 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6522,
+      "title": "2012 London Olympic & Paralympic Gold Proof £5, two coin set",
+      "source_url": "https://www.royalmint.com/shop/coin-sets/2012-London-Olympic-Paralympic-Gold-Proof-5-two-coin-set",
+      "query": "London Olympic Paralympic Gold Proof £5 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2460,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/Australia/Gold_Two_Ounces_2006_Year_of_the_Dog/",
+          "quotedText": "Mintage\", \"value\": \"2,460"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6523,
+      "title": "The 2012 Gold Proof Half-Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2012-uk-proof-half-sovereign",
+      "query": "The Gold Proof HalfSovereign 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6524,
+      "title": "2013 Elizabeth II Brilliant Uncirculated Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark",
+      "query": "Elizabeth II Brilliant Uncirculated Sovereign 2013 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6525,
+      "title": "2014 Bullion Sovereign - India Mint Mark",
+      "source_url": "https://www.royalmint.com/sovereign/all/2014-Bullion-Sovereign-India-Mint-Mark",
+      "query": "Bullion Sovereign India Mint Mark 2014 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6526,
+      "title": "2014 Sovereign I Mint Mark",
+      "source_url": "https://www.royalmint.com/sovereign/all/2014-sovereign-I-mint-mark",
+      "query": "Sovereign I Mint Mark 2014 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6527,
+      "title": "2015 Elizabeth II Five-Pound Sovereign - One of the First 250 Struck",
+      "source_url": "https://www.royalmint.com/sovereign/all/2015-Elizabeth-II-Five-Pound-Sovereign",
+      "query": "Elizabeth II FivePound Sovereign One of 2015 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6528,
+      "title": "2015 Elizabeth II 'Ian Rank Broadley' Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2015-Elizabeth-II-Ian-Rank-Broadley-Gold-Proof-Sovereign-PF70",
+      "query": "Elizabeth II Ian Rank Broadley Gold 2015 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6529,
+      "title": "2016 Queen Elizabeth II 950th Anniversary of Battle of Hastings 50p Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2016-Queen-Elizabeth-II-950th-Anniversary-of-Battle-of-Hastings-50p-Gold-Proof-Coin",
+      "query": "50p 2016 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 450,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2017-tale-of-peter-rabbit-gold-50p-set/",
+          "quotedText": "mintage is limited to 450"
+        },
+        {
+          "mintage": 520,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/coin-guide/guide-to-beatrix-potter-50p-coins/",
+          "quotedText": "Mintage-Figures.jpg\" alt=\"\" class=\"wp-image-520"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6531,
+      "title": "2017 Elizabeth II Piedfort Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2017-Elizabeth-II-Piedfort-Proof-Sovereign",
+      "query": "piedfort 2017 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6532,
+      "title": "2017 Elizabeth II Queen's Beasts Unicorn of Scotland Gold Proof Quarter-Ounce Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2017-Elizabeth-II-Queens-Beasts-Unicorn-of-Scotland-Gold-Proof-Quarter-Ounce-Coin",
+      "query": "Elizabeth II Queens Beasts Unicorn of 2017 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6533,
+      "title": "2017 Elizabeth II Gold Sovereign Coin",
+      "source_url": "https://www.royalmint.com/sovereign/all/2017-Elizabeth-II-Sovereign",
+      "query": "Elizabeth II Gold Sovereign Coin 2017 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6534,
+      "title": "2018 Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2018-Elizabeth-II-Gold-Proof-Sovereign",
+      "query": "Elizabeth II Gold Proof Sovereign 2018 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6536,
+      "title": "2019 Elizabeth II Gold Proof Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Gold-Proof-Half-Sovereign",
+      "query": "Elizabeth II Gold Proof Half Sovereign 2019 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6537,
+      "title": "2019 Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Gold-Proof-Sovereign",
+      "query": "Elizabeth II Gold Proof Sovereign 2019 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6538,
+      "title": "2019 Elizabeth II Piedfort Sovereign Proof Gold Coin",
+      "source_url": "https://www.royalmint.com/sovereign/all/2019-Elizabeth-II-Piedfort-Sovereign-Proof-Gold-Coin",
+      "query": "piedfort 2019 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 600,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2019-sherlock-holmes-gold-proof-fifty-pence-piece-50p/",
+          "quotedText": "mintage of 600,"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6539,
+      "title": "2019 Queen Elizabeth II Remembrance Day UK £5 Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Queen-Elizabeth-II-Remembrance-Day-UK-5-Gold-Proof-Coin",
+      "query": "Queen Elizabeth II Remembrance Day UK 2019 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6541,
+      "title": "2020 Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2020-Elizabeth-II-Gold-Proof-Sovereign",
+      "query": "Elizabeth II Gold Proof Sovereign 2020 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 10000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2020-gold-sovereign-bu/",
+          "quotedText": "Mintage: <b>10,000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6542,
+      "title": "2020 Queen Elizabeth II Gold Proof Snowman 50p Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2020-Queen-Elizabeth-II-Gold-Proof-Snowman-50p-Coin",
+      "query": "50p 2020 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 45000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2020-50-pence-coin-winnie-the-pooh-piglet-colour/",
+          "quotedText": "Mintage: <b>45,000"
+        },
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/50p-coins/2025-the-snowman-50p/",
+          "quotedText": "Limited Edition 12,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6543,
+      "title": "2021 Elizabeth II 95th Birthday Gold Proof Five Pounds",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2021-Elizabeth-II-95th-Birthday-Gold-Proof-Five-Pounds",
+      "query": "Elizabeth II 95th Birthday Gold Proof 2021 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1952,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/royal-mint-proof-sets/",
+          "quotedText": "mintage'>(1952"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6544,
+      "title": "2021 Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2021-Elizabeth-II-Gold-Proof-Sovereign",
+      "query": "Elizabeth II Gold Proof Sovereign 2021 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6545,
+      "title": "2022 Charles III Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2022-Charles-III-Half-Sovereign",
+      "query": "Charles III Half Sovereign 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6546,
+      "title": "2022 Charles III Memorial Sovereign Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/sovereign/all/2022-Charles-III-Memorial-Sovereign-Gold-Proof-Coin",
+      "query": "Charles III Memorial Sovereign Gold Proof 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6547,
+      "title": "2022 Elizabeth II Gold Proof £5 (Quintuple) Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Gold-Proof-5-Quintuple-Sovereign-PF70",
+      "query": "Elizabeth II Gold Proof £5 Quintuple 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6548,
+      "title": "2022 Elizabeth II Gold Proof Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Gold-Proof-Half-Sovereign-PF70",
+      "query": "Elizabeth II Gold Proof Half Sovereign 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6550,
+      "title": "2022 Elizabeth II Platinum Jubilee Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2022-Elizabeth-II-Platinum-Jubilee-Gold-Proof-Sovereign",
+      "query": "Elizabeth II Platinum Jubilee Gold Proof 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6551,
+      "title": "2022 Queen Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2022-Queen-Elizabeth-II-Sovereign-PF70",
+      "query": "Queen Elizabeth II Gold Proof Sovereign 2022 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6552,
+      "title": "2023 Charles III Gold Proof Coronation Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2023-Charles-III-Gold-Proof-Coronation-Sovereign",
+      "query": "Charles III Gold Proof Coronation Sovereign 2023 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2023-the-coronation-of-his-majesty-king-charles-iii-5/",
+          "quotedText": "Limited Edition 12,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6553,
+      "title": "2024 Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/2024-Proof-Sovereign",
+      "query": "Proof Sovereign 2024 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1250,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2024-gold-half-sovereign-proof-charles-iii/",
+          "quotedText": "Limited Edition mintage is 1,250."
+        },
+        {
+          "mintage": 50000,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/silver-bullion-coins/2025-the-silver-sovereign-coin/",
+          "quotedText": "Limited Edition 50,000"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6559,
+      "title": "Britannia 2026 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26g1c-britannia-2026-1oz-gold-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6560,
+      "title": "Britannia 2026 1/2oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26ghc-britannia-2026-1-2-oz-gold-bullion-coin",
+      "query": "2oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6561,
+      "title": "Britannia 2026 1/2oz Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gho-britannia-2026-1-2oz-gold-bullion-coin-in-blister",
+      "query": "2oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6562,
+      "title": "Britannia 2026 1oz Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gio-britannia-2026-1oz-gold-bullion-coin-in-blister",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6563,
+      "title": "Britannia 2026 1/4oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gqc-britannia-2026-quarter-oz-gold-bullion-coin",
+      "query": "Britannia 14oz Gold Bullion Coin 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6564,
+      "title": "Britannia 2026 1/4oz Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gqo-britannia-2026-quarter-oz-gold-bullion-coin-in-blister",
+      "query": "Britannia 14oz Gold Bullion Coin in 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6565,
+      "title": "Britannia 2026 1/10oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gxc-britannia-2026-tenth-oz-gold-bullion-coin",
+      "query": "Britannia 110oz Gold Bullion Coin 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6566,
+      "title": "Britannia 2026 1/10oz Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gxo-britannia-2026-tenth-oz-gold-bullion-coin-in-blister",
+      "query": "Britannia 110oz Gold Bullion Coin in 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6568,
+      "title": "Count Dracula 2025 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/count-dracula-2025-1oz-gold-bullion-coin",
+      "query": "1oz 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 4500,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-britannia-1oz-silver-proof/",
+          "quotedText": "limited edition of 4,500"
+        },
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2025-freddie-mercury-5/",
+          "quotedText": "Limited Edition 12,500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6569,
+      "title": "Elizabeth II 2000 Bullion Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/Elizabeth-II-2000-Bullion-Sovereign",
+      "query": "Elizabeth II Bullion Sovereign 2000 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6570,
+      "title": "Elizabeth II 2002 Gold Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/Elizabeth-II-2002-Gold-Sovereign",
+      "query": "Elizabeth II Gold Sovereign 2002 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6571,
+      "title": "George III Two-Coin Set",
+      "source_url": "https://www.royalmint.com/shop/coin-sets/George-III-Two-Coin-Set",
+      "query": "George III TwoCoin Set Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6572,
+      "title": "The 1997 Golden Wedding £5 Gold Proof Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/golden-wedding-gold-5-pound",
+      "query": "The Golden Wedding £5 Gold Proof 1997 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6573,
+      "title": "The Half-Sovereign 2018",
+      "source_url": "https://www.royalmint.com/sovereign/all/half-sovereign-2018",
+      "query": "The HalfSovereign 2018 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6574,
+      "title": "2000 Elizabeth II Proof Half-Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/hishso00",
+      "query": "Elizabeth II Proof HalfSovereign 2000 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6575,
+      "title": "2006 UK Proof Half Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/hishso06",
+      "query": "UK Proof Half Sovereign 2006 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6576,
+      "title": "Legendary Creatures Loch Ness Monster 2026 UK 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/legendary-creatures-loch-ness-monster-2026-uk-1oz-gold-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6583,
+      "title": "The Queen's 80th Birthday 2006 Gold Proof £5 Coin",
+      "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/queens-80th-birthday-gold-5-pound-coin",
+      "query": "The Queens 80th Birthday Gold Proof 2006 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6585,
+      "title": "The 2010 Five Sovereign Piece",
+      "source_url": "https://www.royalmint.com/sovereign/all/Sovereign-2010-proof",
+      "query": "The Five Sovereign Piece 2010 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6587,
+      "title": "The 2002 £2 Double Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/The-2002-2-Double-Sovereign",
+      "query": "The £2 Double Sovereign 2002 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6588,
+      "title": "The 2015 Queen Elizabeth II Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/The-2015-Queen-Elizabeth-II-Sovereign",
+      "query": "The Queen Elizabeth II Sovereign 2015 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6592,
+      "title": "The Double-Sovereign 2026 Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-double-sovereign-2026-gold-bullion-coin-in-blister",
+      "query": "The DoubleSovereign Gold Bullion Coin in 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6593,
+      "title": "The Double-Sovereign 2026 Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-double-sovereign-2026-gold-bullion-coin",
+      "query": "The DoubleSovereign Gold Bullion Coin 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6594,
+      "title": "The Evolution of Coinage Premium Six-Coin Set",
+      "source_url": "https://www.royalmint.com/shop/coin-sets/The-Evolution-of-Coinage-Premium-Six-Coin-Set",
+      "query": "The Evolution of Coinage Premium SixCoin Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        },
+        {
+          "mintage": 2460,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/Australia/Gold_Two_Ounces_2006_Year_of_the_Dog/",
+          "quotedText": "Mintage\", \"value\": \"2,460"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6596,
+      "title": "The Half-Sovereign 1991",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-1991",
+      "query": "The HalfSovereign 1991 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6597,
+      "title": "The Half-Sovereign 1994",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-1994",
+      "query": "The HalfSovereign 1994 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6598,
+      "title": "The Half-Sovereign 1995",
+      "source_url": "https://www.royalmint.com/sovereign/all/The-Half-Sovereign-1995",
+      "query": "The HalfSovereign 1995 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6599,
+      "title": "The Half-Sovereign 1996",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-1996",
+      "query": "The HalfSovereign 1996 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6600,
+      "title": "The Half-Sovereign 1997",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-1997",
+      "query": "The HalfSovereign 1997 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6601,
+      "title": "The Half-Sovereign 1998",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-1998",
+      "query": "The HalfSovereign 1998 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6602,
+      "title": "The Half-Sovereign 1999",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-1999",
+      "query": "The HalfSovereign 1999 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6603,
+      "title": "The Half-Sovereign 2001",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2001",
+      "query": "The HalfSovereign 2001 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6604,
+      "title": "2002 Elizabeth II Proof Half-Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2002",
+      "query": "Elizabeth II Proof HalfSovereign 2002 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6605,
+      "title": "The 2003 Gold Proof Half-Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2003",
+      "query": "The Gold Proof HalfSovereign 2003 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6606,
+      "title": "The Half-Sovereign 2005",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2005",
+      "query": "The HalfSovereign 2005 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6607,
+      "title": "The Half-Sovereign 2007",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2007",
+      "query": "The HalfSovereign 2007 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6608,
+      "title": "The Half-Sovereign 2008",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2008",
+      "query": "The HalfSovereign 2008 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6609,
+      "title": "The Half-Sovereign 2009",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2009",
+      "query": "The HalfSovereign 2009 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6610,
+      "title": "The Half-Sovereign 2011",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2011",
+      "query": "The HalfSovereign 2011 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6611,
+      "title": "The Half-Sovereign 2013",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2013",
+      "query": "The HalfSovereign 2013 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6612,
+      "title": "The Half-Sovereign 2014",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2014",
+      "query": "The HalfSovereign 2014 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6613,
+      "title": "The Half-Sovereign 2015",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-half-sovereign-2015",
+      "query": "The HalfSovereign 2015 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6614,
+      "title": "The Half-Sovereign 2026 Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-half-sovereign-2026-gold-bullion-coin-in-blister",
+      "query": "The HalfSovereign Gold Bullion Coin in 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6616,
+      "title": "The Lion and the Eagle 2026 1/4oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/limited-editions/the-lion-and-eagle/bullion-range/the-lion-and-the-eagle-2026-1-4oz-gold-bullion-coin",
+      "query": "The Lion and the Eagle 14oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6617,
+      "title": "The Lion and the Eagle 2026 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/shop/limited-editions/the-lion-and-eagle/bullion-range/the-lion-and-the-eagle-2026-1oz-gold-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6620,
+      "title": "The Quarter-Sovereign 2026 Gold Bullion Coin in Blister",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-quarter-sovereign-2026-gold-bullion-coin-in-blister",
+      "query": "The QuarterSovereign Gold Bullion Coin in 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6621,
+      "title": "The Quarter-Sovereign 2026 Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-quarter-sovereign-2026-gold-bullion-coin",
+      "query": "The QuarterSovereign Gold Bullion Coin 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 40,
+          "host": "onlinecoin.club",
+          "sourceUrl": "https://onlinecoin.club/Coins/Country/United_Kingdom/Silver_Kilo_2026_Queen_Elizabeth_II/",
+          "quotedText": "Limited Edition: 40."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6622,
+      "title": "The Royal Arms 2025 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-royal-arms-2025-1oz-gold-bullion-coin-64b852f7",
+      "query": "1oz 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 4500,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-britannia-1oz-silver-proof/",
+          "quotedText": "limited edition of 4,500"
+        },
+        {
+          "mintage": 12500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2025-freddie-mercury-5/",
+          "quotedText": "Limited Edition 12,500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6623,
+      "title": "The Royal Tudor Beasts 2026 Queen’s Lion 1/4oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-royal-tudor-beasts-2026-queens-lion-14oz-gold-bullion-coin",
+      "query": "The Royal Tudor Beasts Queens Lion 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2500,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-the-royal-tudor-beasts-the-queens-lion-5/",
+          "quotedText": "Limited Edition 2500"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6624,
+      "title": "The Royal Tudor Beasts 2026 Queen’s Lion 1oz Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-royal-tudor-beasts-2026-queens-lion-1oz-gold-bullion-coin",
+      "query": "1oz 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 50000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2025-silver-sovereign-proof/",
+          "quotedText": "Limited Edition mintage is set at 50,000."
+        },
+        {
+          "mintage": 3288,
+          "host": "coinchecker.co.uk",
+          "sourceUrl": "https://www.coinchecker.co.uk/5-coins/2026-lunar-year-of-the-horse-5/",
+          "quotedText": "Limited Edition 3,288"
+        },
+        {
+          "mintage": 100,
+          "host": "chards.co.uk",
+          "sourceUrl": "https://www.chards.co.uk/2026-The-Penny-Drops-Great-British-Treasure-Hunt-Gold-Coin/22656",
+          "quotedText": "Limited Edition Presentation: 100"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6627,
+      "title": "The Sovereign 1995",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-1995-proof",
+      "query": "The Sovereign 1995 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 9330,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/1995-gold-sovereign-proof/",
+          "quotedText": "Mintage: <b>9,330"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6628,
+      "title": "The 1996 Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-1996-proof",
+      "query": "The Sovereign 1996 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6629,
+      "title": "The Sovereign 1997",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-1997-proof",
+      "query": "The Sovereign 1997 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6630,
+      "title": "The 1998 Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-1998-proof",
+      "query": "The Sovereign 1998 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6631,
+      "title": "The 1999 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-1999",
+      "query": "The Gold Proof Sovereign 1999 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6632,
+      "title": "The 2000 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2000",
+      "query": "The Gold Proof Sovereign 2000 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6633,
+      "title": "The 2002 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2002",
+      "query": "The Gold Proof Sovereign 2002 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6634,
+      "title": "The 2003 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2003",
+      "query": "The Gold Proof Sovereign 2003 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 4299000,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/the-2003-2-pound-coin-dna-double-helix/",
+          "quotedText": "Mintage of circulating coins was 4,299,000."
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6635,
+      "title": "The 2004 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2004",
+      "query": "The Gold Proof Sovereign 2004 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6636,
+      "title": "The 2005 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2005",
+      "query": "The Gold Proof Sovereign 2005 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 5140500,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/2005-2-pound-coin-gunpowder-plot-guy-fawkes-and-bonfire-night/",
+          "quotedText": "Mintage was 5,140,500"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6637,
+      "title": "The 2006 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2006",
+      "query": "The Gold Proof Sovereign 2006 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6638,
+      "title": "The 2007 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2007",
+      "query": "The Gold Proof Sovereign 2007 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6639,
+      "title": "The 2008 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2008",
+      "query": "The Gold Proof Sovereign 2008 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6640,
+      "title": "The 2009 Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2009",
+      "query": "The Gold Proof Sovereign 2009 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6641,
+      "title": "The 2010 Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2010-proof",
+      "query": "The Sovereign 2010 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6642,
+      "title": "2011 UK Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2011-proof",
+      "query": "UK Proof Sovereign 2011 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6643,
+      "title": "The Sovereign 2012",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2012-proof",
+      "query": "The Sovereign 2012 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 2018,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/australian-gold-sovereigns-history-and-mintage/",
+          "quotedText": "Mintage\",\"datePublished\":\"2018"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6644,
+      "title": "2013 Elizabeth II Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2013-proof",
+      "query": "Elizabeth II Sovereign 2013 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [
+        {
+          "mintage": 1760,
+          "host": "coinparade.co.uk",
+          "sourceUrl": "https://coinparade.co.uk/sovereigns/",
+          "quotedText": "mintage'>(1760"
+        }
+      ],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "needs_second_source",
+      "verificationNotes": "Есть кандидаты, но нет совпадения на 2 доменах."
+    },
+    {
+      "coinId": 6645,
+      "title": "2014 Elizabeth II Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2014-proof",
+      "query": "Elizabeth II Sovereign 2014 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6646,
+      "title": "2015 Elizabeth II Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/The-Sovereign-2015",
+      "query": "Elizabeth II Sovereign 2015 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6647,
+      "title": "2017 Elizabeth II Gold Proof Sovereign",
+      "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2017-proof",
+      "query": "Elizabeth II Gold Proof Sovereign 2017 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6648,
+      "title": "The Sovereign 2026 Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/the-sovereign-2026-gold-bullion-coin",
+      "query": "The Sovereign Gold Bullion Coin 2026 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    },
+    {
+      "coinId": 6650,
+      "title": "The Quarter-Sovereign 2025 Gold Bullion Coin",
+      "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/ukb25qso--the-quarter-sovereign-2025-gold-bullion-coin-a31a37e4",
+      "query": "The QuarterSovereign Gold Bullion Coin 2025 Royal Mint coin mintage \"limited edition\" \"edition limit\"",
+      "proposals": [],
+      "verifiedMintage": null,
+      "verifiedMintageDisplay": null,
+      "status": "pending",
+      "verificationNotes": "Не найдено числового тиража в первых результатах поиска."
+    }
+  ]
+}

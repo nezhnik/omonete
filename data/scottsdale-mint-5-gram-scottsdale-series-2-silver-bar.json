@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/5-gram-scottsdale-series-2-silver-bar",
     "title": "5 Gram Silver Bar",
-    "specs": {},
+    "specs": {
+      "Weight": "5 Gram",
+      "Purity": ".999 Silver",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/5-gram-scottsdale-series-2-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/5-gram-scottsdale-series-2-silver-bar/02.jpg",
@@ -41,7 +46,7 @@
       "/image/coins/foreign/scottsdale/5-gram-scottsdale-series-2-silver-bar/35.jpg",
       "/image/coins/foreign/scottsdale/5-gram-scottsdale-series-2-silver-bar/36.jpg"
     ],
-    "parsedAt": "2026-03-31T17:04:31.020Z",
+    "parsedAt": "2026-03-31T21:04:24.180Z",
     "slug": "5-gram-scottsdale-series-2-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/5-gram-scottsdale-series-2-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/5-gram-scottsdale-series-2-silver-bar/02.jpg"

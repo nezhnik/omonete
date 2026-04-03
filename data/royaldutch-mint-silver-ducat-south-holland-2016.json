@@ -4,14 +4,25 @@
     "title": "Silver Ducat South Holland 2016",
     "price_display": "€49.95",
     "description": "Direct beschikbaar! Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
-    "specs": {},
+    "specs": {
+      "Article number": "094374",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40.0 mm",
+      "Quality": "Proof",
+      "Mintage": "max. 4,000",
+      "Edge": "Cable"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/02.jpeg"
+      "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/obv.jpeg",
+      "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/rev.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:45:17.269Z",
+    "parsedAt": "2026-03-31T20:34:56.921Z",
     "slug": "silver-ducat-south-holland-2016",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-south-holland-2016/rev.jpeg",
+    "image_packaging": null,
+    "image_box": null
   }
 }

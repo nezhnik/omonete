@@ -4,9 +4,16 @@
     "title": "2 Francs 1904-1909 FR - Léopold II TTB",
     "price_display": "15,00 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0111264",
+      "Métal": "Argent",
+      "Teneur": "835/1000",
+      "Poids": "10 g",
+      "Diamètre": "27,0 mm",
+      "Qualité": "Très très beau"
+    },
     "imageUrls": [],
-    "parsedAt": "2026-03-31T19:06:47.092Z",
+    "parsedAt": "2026-03-31T20:45:56.840Z",
     "slug": "2-francs-1904-1909-fr-leopold-ii-ttb",
     "image_obverse": null,
     "image_reverse": null

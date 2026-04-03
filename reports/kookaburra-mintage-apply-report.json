@@ -1,0 +1,442 @@
+{
+  "generatedAt": "2026-03-31T22:38:08.964Z",
+  "apply": true,
+  "updated": 62,
+  "errors": [],
+  "actions": [
+    {
+      "coinId": 5891,
+      "title": "Australian Kookaburra 1992 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 29576,
+      "toMintage": 29576
+    },
+    {
+      "coinId": 5893,
+      "title": "Australian Kookaburra 1993 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 35329,
+      "toMintage": 35329
+    },
+    {
+      "coinId": 5894,
+      "title": "Australian Kookaburra 1993 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 10161,
+      "toMintage": 10161
+    },
+    {
+      "coinId": 5896,
+      "title": "Australian Kookaburra 1994 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 39603,
+      "toMintage": 39603
+    },
+    {
+      "coinId": 5898,
+      "title": "Australian Kookaburra 1996 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 7557,
+      "toMintage": 7557
+    },
+    {
+      "coinId": 5899,
+      "title": "Australian Kookaburra 1997 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 32896,
+      "toMintage": 32896
+    },
+    {
+      "coinId": 5900,
+      "title": "Australian Kookaburra 1997 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 7967,
+      "toMintage": 7967
+    },
+    {
+      "coinId": 5903,
+      "title": "Australian Kookaburra 1999 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 20602,
+      "toMintage": 20602
+    },
+    {
+      "coinId": 5904,
+      "title": "Australian Kookaburra 1999 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 4012,
+      "toMintage": 4012
+    },
+    {
+      "coinId": 5905,
+      "title": "Australian Kookaburra 1999 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 4714,
+      "toMintage": 4714
+    },
+    {
+      "coinId": 5907,
+      "title": "Australian Kookaburra 2000 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 23872,
+      "toMintage": 23872
+    },
+    {
+      "coinId": 5909,
+      "title": "Australian Kookaburra 2001 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 17050,
+      "toMintage": 17050
+    },
+    {
+      "coinId": 5910,
+      "title": "Australian Kookaburra 2001 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 2766,
+      "toMintage": 2766
+    },
+    {
+      "coinId": 5912,
+      "title": "Australian Kookaburra 2002 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 15696,
+      "toMintage": 15696
+    },
+    {
+      "coinId": 5913,
+      "title": "Australian Kookaburra 2002 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 2438,
+      "toMintage": 2438
+    },
+    {
+      "coinId": 5915,
+      "title": "Australian Kookaburra 2003 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 16663,
+      "toMintage": 16663
+    },
+    {
+      "coinId": 5916,
+      "title": "Australian Kookaburra 2003 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 3558,
+      "toMintage": 3558
+    },
+    {
+      "coinId": 5917,
+      "title": "Australian Kookaburra 2003 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 3016,
+      "toMintage": 3016
+    },
+    {
+      "coinId": 5918,
+      "title": "Australian Kookaburra 2004 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 2712,
+      "toMintage": 2712
+    },
+    {
+      "coinId": 5919,
+      "title": "Australian Kookaburra 2005 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 14082,
+      "toMintage": 14082
+    },
+    {
+      "coinId": 5922,
+      "title": "Australian Kookaburra 2007 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 13938,
+      "toMintage": 13938
+    },
+    {
+      "coinId": 5923,
+      "title": "Australian Kookaburra 2007 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 5993,
+      "toMintage": 5993
+    },
+    {
+      "coinId": 5924,
+      "title": "Australian Kookaburra 2008 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 20083,
+      "toMintage": 20083
+    },
+    {
+      "coinId": 5925,
+      "title": "Australian Kookaburra 2008 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 17213,
+      "toMintage": 17213
+    },
+    {
+      "coinId": 5926,
+      "title": "Australian Kookaburra 2009 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 74757,
+      "toMintage": 74757
+    },
+    {
+      "coinId": 5928,
+      "title": "Australian Kookaburra 2010 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 18782,
+      "toMintage": 18782
+    },
+    {
+      "coinId": 5930,
+      "title": "Australian Kookaburra 2012 1 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 500000,
+      "toMintage": 500000
+    },
+    {
+      "coinId": 5931,
+      "title": "Australian Kookaburra 2014 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 28547,
+      "toMintage": 28547
+    },
+    {
+      "coinId": 5932,
+      "title": "Australian Kookaburra 2021 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 5261,
+      "toMintage": 5261
+    },
+    {
+      "coinId": 5933,
+      "title": "Australian Kookaburra 2017 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 10936,
+      "toMintage": 10936
+    },
+    {
+      "coinId": 5934,
+      "title": "Australian Kookaburra 2018 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 11716,
+      "toMintage": 11716
+    },
+    {
+      "coinId": 5935,
+      "title": "Australian Kookaburra 2019 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 15084,
+      "toMintage": 15084
+    },
+    {
+      "coinId": 5936,
+      "title": "Australian Kookaburra 2020 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 13665,
+      "toMintage": 13665
+    },
+    {
+      "coinId": 5938,
+      "title": "Australian Kookaburra 2021 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 2391,
+      "toMintage": 2391
+    },
+    {
+      "coinId": 5967,
+      "title": "Australian Kookaburra 1994 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 11231,
+      "toMintage": 11231
+    },
+    {
+      "coinId": 5968,
+      "title": "Australian Kookaburra 1998 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 5424,
+      "toMintage": 5424
+    },
+    {
+      "coinId": 5969,
+      "title": "Australian Kookaburra 2004 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 2270,
+      "toMintage": 2270
+    },
+    {
+      "coinId": 5970,
+      "title": "Australian Kookaburra 2005 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 2112,
+      "toMintage": 2112
+    },
+    {
+      "coinId": 5971,
+      "title": "Australian Kookaburra 2006 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 2999,
+      "toMintage": 2999
+    },
+    {
+      "coinId": 5972,
+      "title": "Australian Kookaburra 2011 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 45901,
+      "toMintage": 45901
+    },
+    {
+      "coinId": 5973,
+      "title": "Australian Kookaburra 2012 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 25608,
+      "toMintage": 25608
+    },
+    {
+      "coinId": 5974,
+      "title": "Australian Kookaburra 2013 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 24481,
+      "toMintage": 24481
+    },
+    {
+      "coinId": 5975,
+      "title": "Australian Kookaburra 2023 10 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 4891,
+      "toMintage": 4891
+    },
+    {
+      "coinId": 5976,
+      "title": "Australian Kookaburra 1992 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 47348,
+      "toMintage": 47348
+    },
+    {
+      "coinId": 5977,
+      "title": "Australian Kookaburra 1993 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 13550,
+      "toMintage": 13550
+    },
+    {
+      "coinId": 5978,
+      "title": "Australian Kookaburra 1995 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 11721,
+      "toMintage": 11721
+    },
+    {
+      "coinId": 5979,
+      "title": "Australian Kookaburra 1996 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 8961,
+      "toMintage": 8961
+    },
+    {
+      "coinId": 5980,
+      "title": "Australian Kookaburra 2001 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 3108,
+      "toMintage": 3108
+    },
+    {
+      "coinId": 5981,
+      "title": "Australian Kookaburra 2002 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 2856,
+      "toMintage": 2856
+    },
+    {
+      "coinId": 5982,
+      "title": "Australian Kookaburra 2005 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 2100,
+      "toMintage": 2100
+    },
+    {
+      "coinId": 5983,
+      "title": "Australian Kookaburra 2006 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 4467,
+      "toMintage": 4467
+    },
+    {
+      "coinId": 5984,
+      "title": "Australian Kookaburra 2014 1 кг Silver BU",
+      "result": "updated",
+      "fromMintage": 34534,
+      "toMintage": 34534
+    },
+    {
+      "coinId": 5988,
+      "title": "Australian Kookaburra 1996 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 78424,
+      "toMintage": 78424
+    },
+    {
+      "coinId": 5989,
+      "title": "Australian Kookaburra 1998 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 21184,
+      "toMintage": 21184
+    },
+    {
+      "coinId": 5990,
+      "title": "Australian Kookaburra 2004 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 13969,
+      "toMintage": 13969
+    },
+    {
+      "coinId": 5991,
+      "title": "Australian Kookaburra 2006 2 oz Silver BU",
+      "result": "updated",
+      "fromMintage": 12802,
+      "toMintage": 12802
+    },
+    {
+      "coinId": 5993,
+      "title": "Australian Kookaburra 2018 5 oz Silver High Relief",
+      "result": "updated",
+      "fromMintage": 500,
+      "toMintage": 500
+    },
+    {
+      "coinId": 5994,
+      "title": "Australian Kookaburra 2019 5 oz Silver High Relief",
+      "result": "updated",
+      "fromMintage": 500,
+      "toMintage": 500
+    },
+    {
+      "coinId": 5995,
+      "title": "Australian Kookaburra 2020 5 oz Silver High Relief",
+      "result": "updated",
+      "fromMintage": 500,
+      "toMintage": 500
+    },
+    {
+      "coinId": 7176,
+      "title": "UFO MP -1766 BLUE GALAXY, 1766 CFA francs",
+      "result": "updated",
+      "fromMintage": 333,
+      "toMintage": 333
+    },
+    {
+      "coinId": 7191,
+      "title": "Welcome to the world, 2000 CFA francs",
+      "result": "updated",
+      "fromMintage": 199,
+      "toMintage": 199
+    },
+    {
+      "coinId": 7199,
+      "title": "Year of The Dragon, 50 dollars",
+      "result": "updated",
+      "fromMintage": 200,
+      "toMintage": 200
+    }
+  ]
+}

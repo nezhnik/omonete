@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-cl20-20-oz-silver-bar-secondary-market",
     "title": "Scottsdale CL20",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "20 Troy oz",
+      "Grade": "Circulated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/02.jpg",
@@ -23,6 +28,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/17.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/18.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/19.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/20.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/21.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/22.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/23.jpg",
@@ -67,7 +73,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/62.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/63.jpg"
     ],
-    "parsedAt": "2026-03-31T17:09:41.415Z",
+    "parsedAt": "2026-03-31T21:07:30.084Z",
     "slug": "scottsdale-cl20-20-oz-silver-bar-secondary-market",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/02.jpg"

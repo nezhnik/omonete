@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/100-gram-cast-silver-bar-by-scottsdale",
     "title": "100 Gram Silver Bar",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "100 Gram",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/100-gram-cast-silver-bar-by-scottsdale/01.jpg",
       "/image/coins/foreign/scottsdale/100-gram-cast-silver-bar-by-scottsdale/02.jpg",
@@ -53,7 +58,7 @@
       "/image/coins/foreign/scottsdale/100-gram-cast-silver-bar-by-scottsdale/47.jpg",
       "/image/coins/foreign/scottsdale/100-gram-cast-silver-bar-by-scottsdale/48.jpg"
     ],
-    "parsedAt": "2026-03-31T16:54:39.701Z",
+    "parsedAt": "2026-03-31T20:57:36.908Z",
     "slug": "100-gram-cast-silver-bar-by-scottsdale",
     "image_obverse": "/image/coins/foreign/scottsdale/100-gram-cast-silver-bar-by-scottsdale/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/100-gram-cast-silver-bar-by-scottsdale/02.jpg"

@@ -4,7 +4,13 @@
     "title": "DR 250 Frank 1996 Boudewijn St. Proof",
     "price_display": "€67.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0113576",
+      "Metal": "Silver",
+      "Weight": "18.75 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/dr-250-frank-1996-boudewijn-st-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/dr-250-frank-1996-boudewijn-st-proof/02.jpeg",
@@ -14,7 +20,7 @@
       "/image/coins/foreign/royaldutch/dr-250-frank-1996-boudewijn-st-proof/06.jpeg",
       "/image/coins/foreign/royaldutch/dr-250-frank-1996-boudewijn-st-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:13:29.504Z",
+    "parsedAt": "2026-03-31T20:12:08.803Z",
     "slug": "dr-250-frank-1996-boudewijn-st-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/dr-250-frank-1996-boudewijn-st-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/dr-250-frank-1996-boudewijn-st-proof/02.jpeg"

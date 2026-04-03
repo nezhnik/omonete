@@ -4,7 +4,17 @@
     "title": "Beemster 5 Euro Coin 2019 Silver Proof",
     "price_display": "€49.95",
     "description": "Why this commemorative coin? Every year, since 2012, special commemorative coins have been issued celebrating Dutch World Heritage. The Kingdom of the Netherlands currently has ten UNESCO world heritage listings, of which the Royal Dutch Mint has immortalized seven of them on a commemorative coin. Now, it’s time for number eight: The Beemster 5 Euro Coin! This coin tells the story of the historical polder in the North Holland province, where the Dutch drained lands and converted it to fertile agricultural land. This year marks the 20th anniversary of The Beemster as world heritage! Are you standing under water? The design of the packaging features a section of the landscape of The Beemster; you can see the water being held down by the embankment. Next to the embankment, you can see a mill. Mills were used in the 17th century to help drain the lands. The image tells us that everyone in The Beemster lives and works below sea level. This unique perception is a symbol for the draining of The Beemsterlake and the importance of our Dutch embankments. If the dams break, there’s a chance your city could be under water. If you order one of the Beemster 5 Euro Coins, you will receive a free sea level map, which shows the Netherlands and the various sea levels per city. Please note: until the stocks are exhausted. Designed by Katrin Korfmann The German artist Katrin Korfmann, who lives in Amsterdam, is the designer of the Beemster 5 Euro Coin. She also signed for the Schokland 5 Euro Coin, published in 2018. In the designs of both coins, she emphasizes the contrast between the free, organic form of the natural landscape and the sleek, constructed grid of the polder landscape. The obverse of the coin shows the profile of the King, looking to the right: abstract but recognizable. Portrait, landscape, icons and letters are deeper in relation to the landscape, just like the former Beemsterlake was in relation to the surrounding old country. On the Schokland 5 Euro Coin this was exactly the other way around as a reference to the former island, which stood out above the Zuiderzee. Korfmann worked with Céline Hurka for typography.",
-    "specs": {},
+    "specs": {
+      "Article number": "0105603",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "4,000",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/beemster-5-euro-coin-2019-silver-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/beemster-5-euro-coin-2019-silver-proof/02.jpeg",
@@ -14,7 +24,7 @@
       "/image/coins/foreign/royaldutch/beemster-5-euro-coin-2019-silver-proof/06.jpeg",
       "/image/coins/foreign/royaldutch/beemster-5-euro-coin-2019-silver-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:12:00.143Z",
+    "parsedAt": "2026-03-31T20:10:49.270Z",
     "slug": "beemster-5-euro-coin-2019-silver-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/beemster-5-euro-coin-2019-silver-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/beemster-5-euro-coin-2019-silver-proof/02.jpeg"

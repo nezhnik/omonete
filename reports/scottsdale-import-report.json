@@ -1,8 +1,8 @@
 {
   "total": 101,
-  "inserted": 1,
+  "inserted": 0,
   "updated": 100,
   "skipped_random": 0,
-  "skipped_duplicate": 0,
+  "skipped_duplicate": 1,
   "errors": 0
 }

@@ -27,3 +27,6 @@
 
 6. **Список «сколько и каких» в БД** (та же логика, что `coinNeedsMintageResearch`):  
    `npm run coins:report-missing-mintage` — сводка по странам и дворам, построчный список в консоль, файл `data/coins-missing-mintage-report.json`. Флаг `--no-list` — только сводка и JSON; `--probe` — эвристика по HTML Royal/Perth (медленно).
+
+7. **Ручной поиск тиражей (официальные сайты + вторичные источники, очереди, команды):**  
+   **`docs/MINTAGE_RESEARCH_PLAYBOOK.md`** — единый справочник на основе опыта по когорте missing-from-4555 и текущей очереди `mintage-export-gap-research`.

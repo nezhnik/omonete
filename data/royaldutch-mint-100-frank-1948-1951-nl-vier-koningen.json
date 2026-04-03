@@ -4,14 +4,21 @@
     "title": "HJ 100 Frank 1948-1950/54 NL -4 Koningen",
     "price_display": "€104.95",
     "description": "Deze originele historische zilveren munt van 100 Frank België toont een afbeelding van de vier Koningen: Leopold I, Leopold II, Albert I en Leopold III. De munt is uitgegeven in 1948, 1949, 1950, in een Vlaamse en Franse editie, in 1951 enkel in het Vlaams en in 1954 enkel in het Frans. De munt is uitgegeven in de tijd van de Koningskwestie, een politiek conflict over het al dan niet terugkeren van Leopold III als koning. In de tussentijd nam Prins Karel, broer van Leopold III en de laatste Graaf van Vlaanderen, van 1944 – 1950 het regentschap van België op zich. In 1950 gingen de koninklijke verantwoordelijkheden over op Boudewijn als Koninklijke Prins. Een jaar later deed Leopold III troonsafstand en werd Boudewijn de vijfde Koning der Belgen.",
-    "specs": {},
+    "specs": {
+      "Article number": "0111791",
+      "Metal": "Silver",
+      "Content": "835/1000",
+      "Weight": "18.0 g",
+      "Diameter": "33.0 mm",
+      "Edge": "Gekarteld"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/01.jpeg",
       "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/02.jpeg",
       "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/03.jpeg",
       "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:58:57.318Z",
+    "parsedAt": "2026-03-31T19:59:42.646Z",
     "slug": "100-frank-1948-1951-nl-vier-koningen",
     "image_obverse": "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/02.jpeg"

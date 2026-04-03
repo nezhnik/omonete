@@ -4,7 +4,17 @@
     "title": "Aruba 5 Florin ‘Warawara’ 2022 Silver Prooflike",
     "price_display": "€65.00",
     "description": "The Aruban commemorative coin of 2022 is all about the Warawara, a bird of prey that can be spotted on the island of Aruba. The Warawara is a big, brown-black bird with long legs. Especially the bird’s beak is quite special: it’s curved and has a pointed, hook-shaped curved tip. The Warawara mainly eats the carcasses of wild goats, but it also feeds on mice and lizards. This bird of prey feels most at home above the hills, the ocean or the Aruban lowlands. If danger is close, the bird hides under the bushes. The Warawara is becoming more and more common in Aruba, especially in Arikok National Park. This animal can now also be found on an official commemorative coin. This special colored coin is a real asset to your collection!",
-    "specs": {},
+    "specs": {
+      "Article number": "0114523",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "25 g",
+      "Diameter": "38 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 Aruban florin",
+      "Mintage": "700",
+      "Edge lettering": "* DIOS * TA * CU * NOS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/aruba-5-florin-warawara-2022-silver-prooflike/01.jpeg",
       "/image/coins/foreign/royaldutch/aruba-5-florin-warawara-2022-silver-prooflike/02.jpeg",
@@ -13,7 +23,7 @@
       "/image/coins/foreign/royaldutch/aruba-5-florin-warawara-2022-silver-prooflike/05.jpeg",
       "/image/coins/foreign/royaldutch/aruba-5-florin-warawara-2022-silver-prooflike/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:11:13.706Z",
+    "parsedAt": "2026-03-31T20:10:02.564Z",
     "slug": "aruba-5-florin-warawara-2022-silver-prooflike",
     "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-warawara-2022-silver-prooflike/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-warawara-2022-silver-prooflike/02.jpeg"

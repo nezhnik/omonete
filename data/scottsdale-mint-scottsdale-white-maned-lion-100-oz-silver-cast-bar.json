@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-white-maned-lion-100-oz-silver-cast-bar",
     "title": "Scottsdale White Maned Lion",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "100 Troy oz",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/02.jpg",
@@ -43,15 +48,9 @@
       "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/37.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/38.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/39.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/40.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/41.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/42.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/43.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/44.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/45.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/46.jpg"
+      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/40.jpg"
     ],
-    "parsedAt": "2026-03-31T17:48:49.855Z",
+    "parsedAt": "2026-03-31T21:28:28.209Z",
     "slug": "scottsdale-white-maned-lion-100-oz-silver-cast-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/02.jpg"

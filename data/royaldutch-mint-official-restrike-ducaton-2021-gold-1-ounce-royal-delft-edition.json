@@ -4,14 +4,25 @@
     "title": "Official Restrike: Ducaton 2021 Gold 1 Ounce – Royal Delft Edition",
     "price_display": "€2,799.00",
     "description": "In 2021, the Royal Dutch Mint Ducaton is found in the familiar Royal Delft earthenware. The Delft Blue coin holder depicts classic Dutch scenery: a flat landscape with water, a windmill and beautiful flowers. We salute the Dutch landscape with this design. The artisanal coin holders by Royal Delft have become true collector’s items on their own. The Ducaton in Silver Proof comes with a uniquely numbered Certificate of Authenticity. Hand-painted Royal Delft coin holder In 2021, the Royal Dutch Mint Ducaton is found in the familiar Royal Delft earthenware. The Delft Blue coin holder depicts classic Dutch scenery: a flat landscape with water, a windmill and beautiful flowers. We salute the Dutch landscape with this design. The artisanal coin holders by Royal Delft have become true collector’s items on their own. The coin holder with the Ducaton in Gold Proof is hand-painted and uniquely numbered, and comes with a Certificate of Authenticity. Read more about the manufacturing process of the Royal Delft coin holder. Specifications Royal Delft coin holder Dimensions 110 mm diameter, 40 mm height Weight 280 g Material Earthenware Design Hand-painted and uniquely numbered Year of issue 2021",
-    "specs": {},
+    "specs": {
+      "Article number": "0110089",
+      "Metal": "Gold",
+      "Content": "999.9/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "50 stuks (in Royal Delft)",
+      "Edge": "serrated"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/02.jpeg"
+      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/rev.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:26:00.652Z",
+    "parsedAt": "2026-03-31T20:19:44.449Z",
     "slug": "official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/rev.jpeg",
+    "image_packaging": null,
+    "image_box": null
   }
 }

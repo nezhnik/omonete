@@ -4,14 +4,20 @@
     "title": "250 Francs 1976 FR - 25 ans de règne du roi Baudouin",
     "price_display": "149,95 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0111787",
+      "Métal": "Argent",
+      "Teneur": "835/1000",
+      "Poids": "25,0 g",
+      "Diamètre": "37,0 mm"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/01.jpeg",
       "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/02.jpeg",
       "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/03.jpeg",
       "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T19:08:05.335Z",
+    "parsedAt": "2026-03-31T20:47:05.979Z",
     "slug": "250-frank-1976-fr-25-jaar-koning-boudewijn-0111787",
     "image_obverse": "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/01.jpeg",
     "image_reverse": "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/02.jpeg"

@@ -4,11 +4,19 @@
     "title": "HM 5 Euro 2005 Vredes Vijfje UNC CC",
     "price_display": "€45.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0106750",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "11.9 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Uncirculated",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-unc-coincard/01.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:03:18.013Z",
+    "parsedAt": "2026-03-31T20:03:17.854Z",
     "slug": "5-euro-2005-vredes-vijfje-unc-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-unc-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-unc-coincard/01.jpeg"

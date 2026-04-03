@@ -4,11 +4,23 @@
     "title": "DR 1 Cent Willem III Zf (zwaard)",
     "price_display": "€25.00",
     "description": null,
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T17:56:58.092Z",
+    "specs": {
+      "Article number": "0108441",
+      "Metal": "Copper",
+      "Weight": "3.8 g",
+      "Diameter": "22.0 mm"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/obv.jpeg",
+      "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/rev.jpeg",
+      "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/pack.jpeg",
+      "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/box.jpeg"
+    ],
+    "parsedAt": "2026-03-31T23:01:35.970Z",
     "slug": "1-cent-1860-1873-willem-iii-zfr",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/1-cent-1860-1873-willem-iii-zfr/box.jpeg"
   }
 }

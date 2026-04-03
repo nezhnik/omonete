@@ -4,7 +4,16 @@
     "title": "Curaçao and Sint Maarten '190 years Central Bank' 2018 Silver Proof",
     "price_display": "€54.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0103936",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "11.9 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Proof",
+      "Mintage": "550",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/01.png",
       "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/02.jpeg",
@@ -13,7 +22,7 @@
       "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/05.jpeg",
       "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:13:01.844Z",
+    "parsedAt": "2026-03-31T20:11:46.073Z",
     "slug": "curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/01.png",
     "image_reverse": "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/02.jpeg"

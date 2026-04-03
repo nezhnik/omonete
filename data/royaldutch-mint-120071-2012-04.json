@@ -4,7 +4,16 @@
     "title": "KNM 5 Euro 2012 Grachtengordel Proof",
     "price_display": "€35.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "120071.2012.04",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "12,500"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/120071-2012-04/01.jpeg",
       "/image/coins/foreign/royaldutch/120071-2012-04/02.jpeg",
@@ -13,7 +22,7 @@
       "/image/coins/foreign/royaldutch/120071-2012-04/05.jpeg",
       "/image/coins/foreign/royaldutch/120071-2012-04/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:59:58.720Z",
+    "parsedAt": "2026-03-31T20:00:33.258Z",
     "slug": "120071-2012-04",
     "image_obverse": "/image/coins/foreign/royaldutch/120071-2012-04/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/120071-2012-04/02.jpeg"

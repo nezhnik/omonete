@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-stacker-5-oz-silver-round",
     "title": "Scottsdale Stacker®",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "5 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round/02.jpg",
@@ -54,7 +59,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round/48.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round/49.jpg"
     ],
-    "parsedAt": "2026-03-31T17:44:53.386Z",
+    "parsedAt": "2026-03-31T21:25:39.860Z",
     "slug": "scottsdale-stacker-5-oz-silver-round",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round/02.jpg"

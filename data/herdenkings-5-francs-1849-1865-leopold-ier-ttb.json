@@ -4,14 +4,21 @@
     "title": "5 Francs 1849-1865 Leopold Ier TTB",
     "price_display": "39,00 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0111182",
+      "Métal": "Argent",
+      "Teneur": "900/1000",
+      "Poids": "25 g",
+      "Diamètre": "37,0 mm",
+      "Qualité": "Très très beau"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/01.jpeg",
       "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/02.jpeg",
       "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/03.jpeg",
       "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T19:08:15.384Z",
+    "parsedAt": "2026-03-31T20:47:13.726Z",
     "slug": "5-francs-1849-1865-leopold-ier-ttb",
     "image_obverse": "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/01.jpeg",
     "image_reverse": "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/02.jpeg"

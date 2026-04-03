@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-cast-100-oz-silver-bar",
     "title": "Scottsdale Cast Bar",
-    "specs": {},
+    "specs": {
+      "Weight": "100 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/02.jpg",
@@ -35,7 +40,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/29.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/30.jpg"
     ],
-    "parsedAt": "2026-03-31T17:10:15.579Z",
+    "parsedAt": "2026-03-31T21:07:13.740Z",
     "slug": "scottsdale-cast-100-oz-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/02.jpg"

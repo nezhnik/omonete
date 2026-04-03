@@ -4,11 +4,23 @@
     "title": "DR 1 Cent Willem I Zf (fakkel)",
     "price_display": "€35.00",
     "description": null,
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T17:56:53.476Z",
+    "specs": {
+      "Article number": "0108440",
+      "Metal": "Copper",
+      "Weight": "3.8 g",
+      "Diameter": "22.0 mm"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/obv.jpeg",
+      "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/rev.jpeg",
+      "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/pack.jpeg",
+      "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/box.jpeg"
+    ],
+    "parsedAt": "2026-03-31T23:01:27.436Z",
     "slug": "1-cent-1819-1837-willem-i-fr",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/1-cent-1819-1837-willem-i-fr/box.jpeg"
   }
 }

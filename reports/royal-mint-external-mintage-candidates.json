@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-04-02T09:58:30.741Z",
+  "definition": "Кандидаты тиража для Royal Mint монет, где на официальном сайте не удалось однозначно извлечь число. Сохраняем ТОЛЬКО значения, которые в источнике сопровождаются формулировками «maximum coin mintage» или «edition limit». Для каждой монеты может быть несколько кандидатов из разных источников.",
+  "items": {
+    "6023": {
+      "title": "200 Years of the RNLI 2024 UK 50p Silver Proof Piedfort Coin",
+      "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/200-Years-of-the-RNLI-2024-UK-50p-Silver-Proof-Piedfort-Coin",
+      "candidates": [
+        {
+          "type": "maximum_coin_mintage",
+          "value": 2084,
+          "source_url": "https://www.coinchecker.co.uk/50p-coins/2024-200-years-of-the-rnli-50p/",
+          "evidence": "в выдаче/описании источника указано: «The maximum coin mintage ... is 2,084 coins» (для 50p Silver Proof Piedfort)."
+        },
+        {
+          "type": "edition_limit",
+          "value": 1824,
+          "source_url": "https://blog.westminstercollection.com/2024/02/05/celebrating-200-years-of-bravery-at-sea-the-new-uk-2024-rnli-50p-coin/",
+          "evidence": "в тексте источника указано: «... has an edition limit of JUST 1,824»."
+        }
+      ]
+    }
+  }
+}
+

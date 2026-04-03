@@ -4,11 +4,19 @@
     "title": "HM 5 Euro 2004 \"Europamunt\" UNC Coincard",
     "price_display": "€325.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0106941",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "11.9 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Uncirculated",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-unc-coincard/01.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:03:01.801Z",
+    "parsedAt": "2026-03-31T20:03:01.214Z",
     "slug": "5-euro-2004-europamunt-unc-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-unc-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-unc-coincard/01.jpeg"

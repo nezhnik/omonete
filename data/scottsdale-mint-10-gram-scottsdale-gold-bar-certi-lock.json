@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/10-gram-scottsdale-gold-bar-certi-lock",
     "title": "Scottsdale Gold in Certi-Lock®",
-    "specs": {},
+    "specs": {
+      "Weight": "10 Gram",
+      "Purity": ".9999 Gold",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/01.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/02.jpg",
@@ -60,6 +65,7 @@
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/55.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/56.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/57.jpg",
+      "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/58.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/59.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/60.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/61.jpg",
@@ -73,7 +79,7 @@
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/69.jpg",
       "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/70.jpg"
     ],
-    "parsedAt": "2026-03-31T16:51:39.447Z",
+    "parsedAt": "2026-03-31T20:55:33.147Z",
     "slug": "10-gram-scottsdale-gold-bar-certi-lock",
     "image_obverse": "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/02.jpg"

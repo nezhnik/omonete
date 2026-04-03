@@ -2,7 +2,11 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar",
     "title": "Rebellion to Tyrants",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".9999 Silver",
+      "Grade": "None"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar/02.jpg",
@@ -44,7 +48,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar/38.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar/39.jpg"
     ],
-    "parsedAt": "2026-03-31T17:37:37.419Z",
+    "parsedAt": "2026-03-31T21:21:05.690Z",
     "slug": "scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-rebellion-to-tyrants-1-troy-oz-999-silver-color-bar/02.jpg"

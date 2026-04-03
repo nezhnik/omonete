@@ -4,19 +4,20 @@
     "title": "Pièce de 5 euros Belgique 2021 « 175 ans de Charles Van Depoele » Belle-épreuve en Argent",
     "price_display": "49,95 €",
     "description": "Écrivains, savants, artistes, … Que notre pays a pu produire tant de talents ! Charles Van Depoele en est un bel exemple. Né à Lichtervelde, il est parti en 1869 aux USA pour mener sa carrière à Detroit. En quelques années à peine, cet ingénieur électricien est devenu un pionnier de l'électricité, et a déposé près de 250 brevets à son nom. Honneur à qui honneur est dû À l'approche du 175e anniversaire de Charles Van Depoele, la Monnaie Royale émet une pièce en argent qualité Belle-Épreuve qui rend hommage à ses ingénieuses réalisations. Sur l'avers, on retrouve le portrait de Van Depoele de profil, ainsi que ses inventions les plus importantes : la lampe à arc électrique, la dynamo avec balais de charbon et le tram électrique. Le revers reprend les éléments européens traditionnels, la valeur nominale et le nom du pays. Enfin, cette pièce commémorative est proposée dans un luxueux étui.",
-    "specs": {},
-    "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/02.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/06.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/07.jpeg"
-    ],
-    "parsedAt": "2026-03-31T19:14:48.961Z",
+    "specs": {
+      "Numéro d'article": "0110305",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "14,60 g",
+      "Diamètre": "30,0 mm",
+      "Qualité": "Belle Épreuve",
+      "Tirage": "5 000",
+      "Création": "Luc Luycx"
+    },
+    "imageUrls": [],
+    "parsedAt": "2026-03-31T20:52:42.835Z",
     "slug": "piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2021-175-ans-de-charles-van-depoele-belle-epreuve-en-argent/02.jpeg"
+    "image_obverse": null,
+    "image_reverse": null
   }
 }

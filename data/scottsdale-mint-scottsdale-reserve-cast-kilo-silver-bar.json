@@ -2,12 +2,18 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-reserve-cast-kilo-silver-bar",
     "title": "Scottsdale RESERVE Cast",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "1 Kilogram",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/02.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/03.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/04.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/05.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/06.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/07.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/08.jpg",
@@ -74,7 +80,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/69.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/70.jpg"
     ],
-    "parsedAt": "2026-03-31T17:40:05.852Z",
+    "parsedAt": "2026-03-31T21:21:48.749Z",
     "slug": "scottsdale-reserve-cast-kilo-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/02.jpg"

@@ -12,6 +12,7 @@
 const fs = require("fs");
 const path = require("path");
 const { formatDenominationForFaceValue } = require("./format-coin-characteristics.js");
+const { extractPampMintagePhraseFromPlainText } = require("./parsing-mintage-constants.js");
 const {
   materializePampClassified,
   snapshotClassifiedSourceUrls,
@@ -26,16 +27,14 @@ function normalizeUrl(raw) {
   return u.toString().replace(/\/$/, "");
 }
 
-/** Тираж и номинал из плоского текста описания (GQL или DOM). Заполняет только пустые поля. */
+/** Тираж и номинал из плоского текста описания (GQL, DOM .product-description__text). Заполняет только пустые поля. */
 function mergeSpecsFromDescriptionPlain(specs, plain) {
   if (!plain || !specs) return;
   const descPlain = String(plain).replace(/\s+/g, " ").trim();
   if (!descPlain) return;
   if (!specs.Mintage) {
-    const mintageCoins = descPlain.match(/\bmintage of (?:only\s+)?([\d,.\s]+)\s*coins?\b/i);
-    const mintageBars = descPlain.match(/\blimited mintage of\s*([\d,.\s]+)\s*bars?\b/i);
-    if (mintageCoins) specs.Mintage = mintageCoins[1].replace(/\s+/g, " ").trim();
-    else if (mintageBars) specs.Mintage = mintageBars[1].replace(/\s+/g, " ").trim();
+    const phrase = extractPampMintagePhraseFromPlainText(descPlain);
+    if (phrase) specs.Mintage = phrase;
   }
   if (!specs.Denomination) {
     const solomon = /Solomon\s+Islands/i.test(descPlain);
@@ -265,6 +264,20 @@ function pampProductFilePrefix(outputKind) {
   return "pamp-collectible-";
 }
 
+/**
+ * Только характеристики и заголовок с PDP (без картинок) — для автосбора тиража export-gap.
+ * @param {import('playwright').Page} page
+ * @param {{ gen: number, product: object | null }} gqlCapture
+ */
+async function parsePampProductPageLight(page, gqlCapture, rawSourceUrl) {
+  beginPampNavigation(gqlCapture);
+  const sourceUrl = normalizeUrl(rawSourceUrl);
+  await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 70000 });
+  await page.waitForTimeout(4500);
+  const parsed = await parsePampProduct(page, sourceUrl, gqlCapture.product);
+  return { specs: parsed.specs || {}, title: parsed.title || "" };
+}
+
 async function fetchPampProductOnce(context, page, gqlCapture, rawSourceUrl, outputKind) {
   beginPampNavigation(gqlCapture);
   const sourceUrl = normalizeUrl(rawSourceUrl);
@@ -368,5 +381,6 @@ module.exports = {
   pampProductOutPath,
   writePampProductJson,
   launchPampBrowser,
+  parsePampProductPageLight,
 };
 

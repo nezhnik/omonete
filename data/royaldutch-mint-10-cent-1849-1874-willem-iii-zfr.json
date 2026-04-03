@@ -4,11 +4,23 @@
     "title": "DR 10 Cent Willem III Zfr (zwaard)",
     "price_display": "€65.00",
     "description": null,
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T17:57:09.304Z",
+    "specs": {
+      "Article number": "0109336",
+      "Metal": "Silver",
+      "Weight": "1.40 g",
+      "Diameter": "15 mm"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/obv.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/rev.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/pack.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/box.jpeg"
+    ],
+    "parsedAt": "2026-03-31T23:01:52.133Z",
     "slug": "10-cent-1849-1874-willem-iii-zfr",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/10-cent-1849-1874-willem-iii-zfr/box.jpeg"
   }
 }

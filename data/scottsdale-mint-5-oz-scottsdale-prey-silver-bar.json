@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/5-oz-scottsdale-prey-silver-bar",
     "title": "Scottsdale Prey",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "5 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-prey-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-prey-silver-bar/02.jpg",
@@ -57,7 +62,7 @@
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-prey-silver-bar/51.jpg",
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-prey-silver-bar/52.jpg"
     ],
-    "parsedAt": "2026-03-31T17:05:02.805Z",
+    "parsedAt": "2026-03-31T21:04:57.350Z",
     "slug": "5-oz-scottsdale-prey-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/5-oz-scottsdale-prey-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/5-oz-scottsdale-prey-silver-bar/02.jpg"

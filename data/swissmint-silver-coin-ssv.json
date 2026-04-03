@@ -1,10 +1,10 @@
 {
   "coin": {
     "source_url": "https://www.sondermuenze.ch/en/silver-coin-ssv",
-    "title": "Silver coin “Swiss Shooting Sport Federation”",
-    "description": "The Swiss Shooting Sports Federation special coin is the first of the two-part series in honour of the organisation. With it, Swissmint pays homage to the Swiss Shooting Sports Federation, which will celebrate its 200th anniversary from 16 to 18 August 2024. The 20g Swiss Shooting Sports Federation special coin, alloyed with 999.9 silver, shows an artist’s interpretation of an eye and a target on the obverse. For the reverse side, elements were taken from the predecessor of what would later become the shooting taler – which did not have any nominal value at the time – that was produced to celebrate the Chur shooting festival in 1842.",
+    "title": "Silver coin “SSV” - Swissmint",
+    "description": "Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.-",
     "specs": {
-      "Legal face value": "CHF 20",
+      "Legal face value": "CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 02.06.2023 Mintage Proof in presentation case: 5’000 units Proof in presentation case with certificate from the artist: 250 units Uncirculated: 15,000 units Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.-",
       "Alloy": "Silver 999",
       "Diameter": "33 mm",
       "Weight": "20 g",
@@ -12,17 +12,14 @@
       "Mintage Proof in presentation case": "5’000 units Proof in presentation case with certificate from the artist: 250 units",
       "Uncirculated": "15,000 units"
     },
-    "specsText": "Silver coin “Swiss Shooting Sport Federation” The Swiss Shooting Sports Federation special coin is the first of the two-part series in honour of the organisation. With it, Swissmint pays homage to the Swiss Shooting Sports Federation, which will celebrate its 200th anniversary from 16 to 18 August 2024. The 20g Swiss Shooting Sports Federation special coin, alloyed with 999.9 silver, shows an artist’s interpretation of an eye and a target on the obverse. For the reverse side, elements were taken from the predecessor of what would later become the shooting taler – which did not have any nominal value at the time – that was produced to celebrate the Chur shooting festival in 1842. Legal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 02.06.2023 Mintage Proof in presentation case: 5’000 units Proof in presentation case with certificate from the artist: 250 units Uncirculated: 15,000 units Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.- <img fetchpriority=\"high\" decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/ssv-silbermuenze-sondermuenze-vs-620x620px.png\" alt=\"Silver coin “SSV”\" width=\"620\" height=\"620\" /><img decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/ssv-silbermuenze-sondermuenze-rs-620x620px.png\" alt=\"Silver coin “SSV”\" width=\"620\" height=\"620\" />",
+    "specsText": "Silver coin “Swiss Shooting Sport Federation” The Swiss Shooting Sports Federation special coin is the first of the two-part series in honour of the organisation. With it, Swissmint pays homage to the Swiss Shooting Sports Federation, which will celebrate its 200th anniversary from 16 to 18 August 2024. The 20g Swiss Shooting Sports Federation special coin, alloyed with 999.9 silver, shows an artist’s interpretation of an eye and a target on the obverse. For the reverse side, elements were taken from the predecessor of what would later become the shooting taler – which did not have any nominal value at the time – that was produced to celebrate the Chur shooting festival in 1842.\n\nSilver coin “Swiss Shooting Sport Federation” The Swiss Shooting Sports Federation special coin is the first of the two-part series in honour of the organisation. With it, Swissmint pays homage to the Swiss Shooting Sports Federation, which will celebrate its 200th anniversary from 16 to 18 August 2024. The 20g Swiss Shooting Sports Federation special coin, alloyed with 999.9 silver, shows an artist’s interpretation of an eye and a target on the obverse. For the reverse side, elements were taken from the predecessor of what would later become the shooting taler – which did not have any nominal value at the time – that was produced to celebrate the Chur shooting festival in 1842.\n\nThe Swiss Shooting Sports Federation special coin is the first of the two-part series in honour of the organisation.\n\nLegal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 02.06.2023 Mintage Proof in presentation case: 5’000 units Proof in presentation case with certificate from the artist: 250 units Uncirculated: 15,000 units Prices Proof in presentation case: CHF 79.- Proof in presentation case with certificate from the artist: CHF 90.- Uncirculated: CHF 30.-",
     "imageUrls": [
-      "/image/coins/foreign/swissmint/silver-coin-ssv/01.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-ssv/02.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-ssv/03.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-ssv/04.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-ssv/05.jpg"
+      "/image/coins/foreign/swissmint/silver-coin-ssv/01.png",
+      "/image/coins/foreign/swissmint/silver-coin-ssv/02.png"
     ],
-    "parsedAt": "2026-03-31T18:23:11.813Z",
+    "parsedAt": "2026-04-03T15:59:35.766Z",
     "slug": "silver-coin-ssv",
-    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-ssv/01.jpg",
-    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-ssv/02.jpg"
+    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-ssv/01.png",
+    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-ssv/02.png"
   }
 }

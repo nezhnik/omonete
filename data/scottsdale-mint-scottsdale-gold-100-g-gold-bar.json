@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-gold-100-g-gold-bar",
     "title": "Scottsdale Gold Cast Bar",
-    "specs": {},
+    "specs": {
+      "Weight": "100 Gram",
+      "Purity": ".9999 Gold",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/02.jpg",
@@ -38,6 +43,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/32.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/33.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/34.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/35.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/36.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/37.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/38.jpg",
@@ -60,7 +66,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/55.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/56.jpg"
     ],
-    "parsedAt": "2026-03-31T17:21:19.878Z",
+    "parsedAt": "2026-03-31T21:12:03.974Z",
     "slug": "scottsdale-gold-100-g-gold-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-gold-100-g-gold-bar/02.jpg"

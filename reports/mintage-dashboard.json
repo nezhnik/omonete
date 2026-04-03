@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-03-31T23:23:23.211Z",
+  "database": {
+    "total_rows": 5305
+  },
+  "exportCatalog": {
+    "exported_count": 5168,
+    "mintage_needs_research_count": 559,
+    "mintage_needs_research_inside_official_pass_cohort": 0,
+    "mintage_needs_research_outside_official_pass_cohort": 559
+  },
+  "officialMintagePassFile": {
+    "passFileItems": 394,
+    "official_status_counts": {
+      "found": 296,
+      "not_found": 36,
+      "no_source": 59,
+      "fetch_failed": 3
+    },
+    "found_valid_still_needs_research_in_db": 0,
+    "found_valid_closed_in_db": 295,
+    "found_valid_official_mintage_equals_db": 295,
+    "found_valid_coin_missing_in_db": 0,
+    "sourceSummary": {
+      "found": 296,
+      "not_found": 36,
+      "no_source": 59,
+      "fetch_failed": 3
+    }
+  },
+  "hint": "Заливка из pass: npm run coins:apply-official-mintage-pass:apply. Сводка: этот файл. Экспорт: npm run data:export."
+}

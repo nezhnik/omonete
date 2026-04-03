@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round",
     "title": "Scottsdale Crew | Harvey the Walrus",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round/01.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round/02.jpg",
@@ -45,7 +50,7 @@
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round/39.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round/40.jpg"
     ],
-    "parsedAt": "2026-03-31T17:01:08.009Z",
+    "parsedAt": "2026-03-31T21:02:33.800Z",
     "slug": "2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round",
     "image_obverse": "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/2024-scottsdale-crew-abc-childrens-book-harvey-the-walrus-1-troy-ounce-999-fine-silver-color-proof-like-round/02.jpg"

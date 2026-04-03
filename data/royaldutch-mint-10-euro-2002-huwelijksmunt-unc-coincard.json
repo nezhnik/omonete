@@ -4,16 +4,26 @@
     "title": "HM 10 Euro 2002 Huwelijk UNC Coincard",
     "price_display": "€360.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0107181",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "17.80 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Uncirculated",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/04.jpeg"
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/obv.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/rev.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/pack.jpeg",
+      "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/box.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:58:01.218Z",
+    "parsedAt": "2026-03-31T23:02:51.784Z",
     "slug": "10-euro-2002-huwelijksmunt-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/10-euro-2002-huwelijksmunt-unc-coincard/box.jpeg"
   }
 }

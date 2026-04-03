@@ -4,14 +4,22 @@
     "title": "HM 10 Euro 2017 KWA 50 Jaar UNC Coincard",
     "price_display": "€19.50",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0114609",
+      "Metal": "Silver plated copper",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Uncirculated",
+      "Nominal value": "10 euros",
+      "Mintage": "158,000"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/10-euro-2017-willem-alexander-50-jaar-unc-coincard/01.jpeg",
       "/image/coins/foreign/royaldutch/10-euro-2017-willem-alexander-50-jaar-unc-coincard/02.jpeg",
       "/image/coins/foreign/royaldutch/10-euro-2017-willem-alexander-50-jaar-unc-coincard/03.jpeg",
       "/image/coins/foreign/royaldutch/10-euro-2017-willem-alexander-50-jaar-unc-coincard/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:58:27.282Z",
+    "parsedAt": "2026-03-31T19:59:14.115Z",
     "slug": "10-euro-2017-willem-alexander-50-jaar-unc-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2017-willem-alexander-50-jaar-unc-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2017-willem-alexander-50-jaar-unc-coincard/02.jpeg"

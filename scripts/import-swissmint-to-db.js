@@ -40,7 +40,12 @@ function parseWeight(specs, title) {
     const g = Math.round(n * 1000 * 100) / 100;
     return { weight_g: g, weight_oz: Math.round((g / 31.1034768) * 10000) / 10000 };
   }
-  const g = Math.round(n * 100) / 100;
+  let g = Math.round(n * 100) / 100;
+  /** «32258» без точки при золоте ~32.258 g */
+  if (g >= 1000 && g <= 99999 && /gold|золот|au\b/i.test(`${specs.Alloy || ""} ${title}`)) {
+    const scaled = g / 1000;
+    if (scaled >= 0.5 && scaled <= 500) g = Math.round(scaled * 1000) / 1000;
+  }
   return { weight_g: g, weight_oz: Math.round((g / 31.1034768) * 10000) / 10000 };
 }
 
@@ -54,24 +59,113 @@ function parseMetal(specs, title) {
 }
 
 function parseMintage(specs) {
-  const raw = String(specs.Mintage || specs["Maximum mintage"] || "").trim();
-  if (!raw) return { mintage: null, mintage_display: null };
-  if (/∞|unlimited/i.test(raw)) return { mintage: null, mintage_display: "Не ограничен" };
-  const digits = raw.replace(/[^\d]/g, "");
-  const n = digits ? Number(digits) : null;
-  return { mintage: Number.isFinite(n) && n > 0 ? n : null, mintage_display: raw };
+  const specBlob = Object.values(specs || {})
+    .map((v) => String(v || "").trim())
+    .filter(Boolean)
+    .join("\n");
+
+  const parseSwissQty = (chunk) => {
+    const normalized = String(chunk || "")
+      .replace(/[\s''’']/g, "")
+      .replace(/\./g, "")
+      .replace(/,/g, "");
+    const n = Number(normalized);
+    return Number.isFinite(n) && n > 0 && n < 1e9 ? n : null;
+  };
+
+  /** Общие шаблоны Swissmint (shop + sondermuenze) по полному тексту specs */
+  function tryMintageFromSpecBlob(displayFallback) {
+    const disp = displayFallback || specBlob.slice(0, 500);
+    const mintageColonUnits = specBlob.match(/\bMintage:\s*([\d\s''’.,]+?)\s*units\b/i);
+    if (mintageColonUnits) {
+      const n = parseSwissQty(mintageColonUnits[1]);
+      if (n != null) return { mintage: n, mintage_display: disp };
+    }
+    const mintageLabeledUnits = specBlob.match(/\bMintage\s+[^:]+:\s*([\d\s''’.,]+?)\s*units\b/i);
+    if (mintageLabeledUnits) {
+      const n = parseSwissQty(mintageLabeledUnits[1]);
+      if (n != null) return { mintage: n, mintage_display: disp };
+    }
+    const mintageLabeledPieces = specBlob.match(/\bMintage\s+[^:]+:\s*([\d\s''’.,]+?)\s*pieces\b/i);
+    if (mintageLabeledPieces) {
+      const n = parseSwissQty(mintageLabeledPieces[1]);
+      if (n != null) return { mintage: n, mintage_display: disp };
+    }
+    const proofCoins = specBlob.match(/\bProof:\s*([\d\s''’.,]+?)\s*coins\b/i);
+    if (proofCoins) {
+      const n = parseSwissQty(proofCoins[1]);
+      if (n != null) return { mintage: n, mintage_display: disp };
+    }
+    return null;
+  }
+
+  const direct = String(specs.Mintage || specs["Maximum mintage"] || "").trim();
+  const mintageLike = Object.entries(specs || {}).filter(([k]) => /mintage/i.test(String(k || "")));
+  const joined = mintageLike
+    .map(([k, v]) => `${k}: ${String(v || "").trim()}`)
+    .filter((x) => !/: $/.test(x))
+    .join("; ");
+  const raw = direct || joined;
+
+  if (raw && /∞|unlimited/i.test(raw)) return { mintage: null, mintage_display: "Не ограничен" };
+
+  if (raw) {
+    let firstValue = direct || (mintageLike.length ? String(mintageLike[0][1] || "") : raw);
+    /** «5,000 units Price … CHF 719.-» — иначе все цифры склеиваются в 5000719 */
+    firstValue = firstValue.split(/\bPrice\b/i)[0].trim();
+    const unitsM = firstValue.match(/([\d\s''’\.,]+?)\s*units\b/i);
+    if (unitsM) {
+      const normalized = unitsM[1].replace(/[\s''’']/g, "").replace(/\./g, "").replace(/,/g, "");
+      const n = Number(normalized);
+      if (Number.isFinite(n) && n > 0 && n < 1e10)
+        return { mintage: n, mintage_display: firstValue || raw };
+    }
+    const fromBlob = tryMintageFromSpecBlob(firstValue || raw);
+    if (fromBlob) return fromBlob;
+    const firstNumM = firstValue.match(/\b(\d{1,3}(?:[,\s]\d{3})+|\d{2,7})\b/);
+    if (firstNumM) {
+      const n = Number(firstNumM[1].replace(/[\s,]/g, ""));
+      if (Number.isFinite(n) && n > 0 && n < 1e9) return { mintage: n, mintage_display: firstValue || raw };
+    }
+    return { mintage: null, mintage_display: raw };
+  }
+
+  const fromBlobOnly = tryMintageFromSpecBlob(specBlob ? specBlob.slice(0, 500) : null);
+  if (fromBlobOnly) return fromBlobOnly;
+  return { mintage: null, mintage_display: null };
 }
 
 function parseFaceValue(specs, title) {
   const raw = String(specs.Denomination || specs["Face value"] || "").trim();
   if (raw) return raw;
+  const legal = String(specs["Legal face value"] || "").trim();
+  if (legal) {
+    const mChfPrefix = legal.match(/^CHF\s*(\d+(?:[.,]\d+)?)\b/i);
+    if (mChfPrefix) return `${mChfPrefix[1].replace(",", ".")} CHF`;
+    const mSwiss = legal.match(/(\d+(?:[.,]\d+)?)\s*Swiss\s+francs/i);
+    if (mSwiss) return `${mSwiss[1].replace(",", ".")} CHF`;
+  }
+  for (const v of Object.values(specs || {})) {
+    const s = String(v || "");
+    const mFv = s.match(/Face value:\s*(\d+(?:[.,]\d+)?)\s*Swiss francs/i);
+    if (mFv) return `${mFv[1].replace(",", ".")} CHF`;
+  }
   const m = String(title || "").match(/\b(\d+(?:[.,]\d+)?)\s*[- ]?(franc|chf)\b/i);
   if (!m) return null;
   return `${m[1].replace(",", ".")} CHF`;
 }
 
 function parseFineness(specs, title) {
-  const raw = String(specs.Fineness || specs.Purity || title || "").trim();
+  const alloy = String(specs.Alloy || "").trim();
+  /** «Gold 0,900» / «Silver 0,999» — не брать Fineness из title («100 year» давало пробу 1000) */
+  const mAlloy = alloy.match(/(\d+[.,]\d{1,3}|\d{3,4})\b/);
+  if (mAlloy) {
+    const n = Number(mAlloy[1].replace(",", "."));
+    if (Number.isFinite(n) && n > 0 && n <= 1.1) return String(Math.round(n * 1000));
+    if (Number.isFinite(n) && n >= 800 && n <= 999 && /gold|silver/i.test(alloy)) return String(Math.round(n));
+  }
+  const raw = String(specs.Fineness || specs.Purity || "").trim();
+  if (!raw) return null;
   const m = raw.match(/(\d{2,4}(?:\.\d+)?)/);
   if (!m) return null;
   const n = Number(m[1]);
@@ -135,7 +229,15 @@ async function main() {
       const metal = parseMetal(specs, title);
       const { weight_g, weight_oz } = parseWeight(specs, title);
 
-      if (title && releaseDate && metal && weight_g != null) {
+      const [existsBySource] = await conn.execute("SELECT id FROM coins WHERE source_url = ? LIMIT 1", [source]);
+      /** Дубликат по сигнатуре — только при вставке новой строки; иначе блокировался UPDATE по source_url и залипали старые пути к картинкам. */
+      if (
+        !existsBySource.length &&
+        title &&
+        releaseDate &&
+        metal &&
+        weight_g != null
+      ) {
         const [dup] = await conn.execute(
           `SELECT id FROM coins
            WHERE title_en = ? AND release_date = ? AND metal = ? AND ABS(CAST(weight_g AS DECIMAL(10,3)) - ?) <= 0.03
@@ -178,8 +280,7 @@ async function main() {
         source_url: source,
       };
 
-      const [exists] = await conn.execute("SELECT id FROM coins WHERE source_url = ? LIMIT 1", [source]);
-      if (exists.length) {
+      if (existsBySource.length) {
         const setClause = cols.map((x) => `${x} = ?`).join(", ");
         await conn.execute(`UPDATE coins SET ${setClause} WHERE source_url = ?`, [
           ...cols.map((x) => row[x]),

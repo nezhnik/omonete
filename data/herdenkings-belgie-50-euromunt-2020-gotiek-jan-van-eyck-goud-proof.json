@@ -4,7 +4,16 @@
     "title": "Pièce de 50 euros Belgique 2020 « Gothique – Jan van Eyck » Belle-épreuve en Or",
     "price_display": "449,00 €",
     "description": "Á tout seigneur, tout honneur ! Pour la pièce d’or, nous avons opté sans hésiter pour le chef d’oeuvre absolu de Van Eyck : « l’Adoration de l’Agneau Mystique ». L’avers représente le plus marquant des détails du panneau central du polyptique : l’agneau ensanglanté symbolisant le Christ rédempteur, Fils de Dieu qui sacrifie donc sa vie pour racheter les péchés de l’humanité. Le revers reprend exactement la même composition que la pièce d’argent de 10 euros, à l’exception bien sûr de la valeur nominale. Il s'agit de la dernière émission de pièces dans le cadre du programme Europe Star Euro. Les anciens numéros d'or de ce programme ne sont plus disponibles !",
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0109217",
+      "Métal": "Or",
+      "Teneur": "999/1000",
+      "Poids": "6,22 g",
+      "Diamètre": "21,0 mm",
+      "Qualité": "Belle Épreuve",
+      "Tirage": "max. 1.000 (waarvan max 250 in Prestigeset)",
+      "Création": "Luc Luycx"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/01.png",
       "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/02.jpeg",
@@ -14,7 +23,7 @@
       "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/06.jpeg",
       "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T19:08:41.853Z",
+    "parsedAt": "2026-03-31T20:47:39.146Z",
     "slug": "belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof",
     "image_obverse": "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/01.png",
     "image_reverse": "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/02.jpeg"

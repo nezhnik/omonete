@@ -63,7 +63,8 @@ function download(url, dst) {
 
 async function parseProduct(page, sourceUrl) {
   await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 120000 });
-  await page.waitForTimeout(1800);
+  await page.waitForSelector("img.fotorama__img, .fotorama img", { state: "attached", timeout: 25000 }).catch(() => {});
+  await page.waitForTimeout(1200);
 
   const parsed = await page.evaluate(() => {
     const txt = (el) => (el && el.textContent ? el.textContent.replace(/\s+/g, " ").trim() : "");
@@ -78,11 +79,24 @@ async function parseProduct(page, sourceUrl) {
       txt(document.querySelector(".product.attribute.description")) ||
       null;
 
-    const tableText = txt(
+    const table =
       document.querySelector(".additional-attributes-wrapper .table-wrapper table.additional-attributes") ||
-      document.querySelector("table.additional-attributes")
-    );
+      document.querySelector("table.additional-attributes");
+    const tableText = txt(table);
     const specsText = tableText || "";
+    const specs = {};
+    const rows = table ? Array.from(table.querySelectorAll("tr")) : [];
+    for (const tr of rows) {
+      const k =
+        txt(tr.querySelector("th")) ||
+        txt(tr.querySelector(".label")) ||
+        txt(tr.children && tr.children[0]);
+      const v =
+        txt(tr.querySelector("td")) ||
+        txt(tr.querySelector(".data")) ||
+        txt(tr.children && tr.children[1]);
+      if (k && v && !specs[k]) specs[k] = v;
+    }
 
     const imageSet = new Set();
     const nodes = [
@@ -109,6 +123,7 @@ async function parseProduct(page, sourceUrl) {
       price_display: price || null,
       description: desc,
       specsText,
+      specs,
       imageUrls: Array.from(imageSet),
     };
   });
@@ -118,7 +133,7 @@ async function parseProduct(page, sourceUrl) {
     title: parsed.title,
     price_display: parsed.price_display,
     description: parsed.description,
-    specs: parseSpecPairs(parsed.specsText),
+    specs: Object.keys(parsed.specs || {}).length ? parsed.specs : parseSpecPairs(parsed.specsText),
     imageUrls: parsed.imageUrls.filter((u) => /royaldutchmint\.com|\/media\//i.test(u)),
     parsedAt: new Date().toISOString(),
   };

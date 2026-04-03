@@ -4,11 +4,18 @@
     "title": "HM 5 Euro 2010 Max Havelaar UNC Coincard",
     "price_display": "€11.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0111304",
+      "Metal": "Silver plated copper",
+      "Weight": "10. 50 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Uncirculated",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-unc-coincard/01.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:03:47.078Z",
+    "parsedAt": "2026-03-31T20:03:46.553Z",
     "slug": "5-euro-2010-max-havelaar-unc-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-unc-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-unc-coincard/01.jpeg"

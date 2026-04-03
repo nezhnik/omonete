@@ -249,6 +249,21 @@
 Короткий шаблон для нового источника:  
 `listing (with load-more)` → `fetch:all (single browser)` → `import (source_url key + duplicate guard)` → `data:export:incremental`.
 
+### 7.2. Обязательный контроль «что исчезло из каталога»
+
+Чтобы не терять видимость изменений после парсинга/импорта:
+
+1. **Каждый запуск `data:export` создаёт snapshot экспорта.**  
+   Файлы: `reports/export-snapshots/export-snapshot-YYYY-MM-DD_HH-mm-ss.json`.
+2. **Сразу после snapshot строится diff с предыдущим снимком.**  
+   Файл: `reports/export-diff-latest.md`.
+3. **В snapshot пишется причина исключения из каталога для каждой монеты:**  
+   `OK`, `NO_MINTAGE`, `EXCLUDED_ID` (и при расширении — новые причины).
+4. **Перед деплоем проверять `export-diff-latest.md`.**  
+   Если есть массовое исчезновение, сначала разобрать причины, потом выкладывать сайт.
+
+Это правило обязательно для всех длинных пайплайнов (`*:sync`, `deploy:*`, ручной `data:export:*`).
+
 ---
 
 ## 8. История намерений (чтобы не повторять разговоры)

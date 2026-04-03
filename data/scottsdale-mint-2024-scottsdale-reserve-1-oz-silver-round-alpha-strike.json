@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike",
     "title": "2024 Scottsdale Reserve",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "499"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/01.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/02.jpg",
@@ -65,7 +70,7 @@
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/59.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/60.jpg"
     ],
-    "parsedAt": "2026-03-31T17:02:59.275Z",
+    "parsedAt": "2026-03-31T21:03:42.661Z",
     "slug": "2024-scottsdale-reserve-1-oz-silver-round-alpha-strike",
     "image_obverse": "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/02.jpg"

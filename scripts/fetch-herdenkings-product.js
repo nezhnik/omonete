@@ -75,9 +75,21 @@ async function parseProduct(page, sourceUrl) {
       txt(document.querySelector(".product.attribute.description .value")) ||
       txt(document.querySelector(".product.attribute.description")) ||
       null;
-    const tableText = txt(
-      document.querySelector(".data.table.additional-attributes, table.additional-attributes")
-    );
+    const table = document.querySelector(".data.table.additional-attributes, table.additional-attributes");
+    const tableText = txt(table);
+    const specs = {};
+    const rows = table ? Array.from(table.querySelectorAll("tr")) : [];
+    for (const tr of rows) {
+      const k =
+        txt(tr.querySelector("th")) ||
+        txt(tr.querySelector(".label")) ||
+        txt(tr.children && tr.children[0]);
+      const v =
+        txt(tr.querySelector("td")) ||
+        txt(tr.querySelector(".data")) ||
+        txt(tr.children && tr.children[1]);
+      if (k && v && !specs[k]) specs[k] = v;
+    }
     const imageSet = new Set();
     const nodes = [
       ...document.querySelectorAll(".fotorama__wrap img, .fotorama img, .fotorama__stage__frame img, .fotorama__nav-wrap img"),
@@ -100,6 +112,7 @@ async function parseProduct(page, sourceUrl) {
       price_display: price || null,
       description: desc,
       specsText: tableText || "",
+      specs,
       imageUrls: Array.from(imageSet),
     };
   });
@@ -109,7 +122,7 @@ async function parseProduct(page, sourceUrl) {
     title: parsed.title,
     price_display: parsed.price_display,
     description: parsed.description,
-    specs: parseSpecPairs(parsed.specsText),
+    specs: Object.keys(parsed.specs || {}).length ? parsed.specs : parseSpecPairs(parsed.specsText),
     imageUrls: parsed.imageUrls.filter((u) => /herdenkingsmunten\.be|\/media\//i.test(u)),
     parsedAt: new Date().toISOString(),
   };

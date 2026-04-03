@@ -4,19 +4,30 @@
     "title": "Official Restrike: Lion Dollar 2022 Gold 1 Ounce",
     "price_display": "€2,999.00",
     "description": "The Lion Dollar is an iconic trade coin that has been part of the annual program of the Royal Dutch Mint since 2017. The Lion Dollar owes its name to the depiction of the Dutch lion on the obverse and was first minted in 1575 by the provinces of the Netherlands. Each province had its own lion and its own mint where these coins were minted. The Lion Dollars were mainly used for maritime trade and quickly became internationally loved trade coins. Extremely Rare Lion Dollar from Nijmegen In recent years, the Royal Dutch Mint has restruck Lion Dollars from the most famous provinces, such as Utrecht, Zeeland, Gelderland, Holland and Overijssel. But did you know that Dutch cities have also minted Lion Dollars in the past? This year we are restriking the rare Lion Dollar from Nijmegen. Coincidentally, this year it has been 330 years since the last Nijmegen Lion Dollar was minted. Authentic copies of these Nijmegen Lion Dollars are extremely rare these days. This restrike will therefore be a valuable addition to your collection! Coin Holder with Leather from Castelijn and Beerens For the coin holder, the Royal Dutch Mint has joined forces with Castelijn en Beerens, producer of luxury leather goods. As makers of wallets, among other things, this company has been a specialist in safe storage of coins for years! Both coins and tanning are age-old crafts, which makes it an extra special collaboration. The luxurious wooden coin holder of the golden Lion Dollars is numbered and has red leather at the top. The coin holder includes a numbered Certificate of Authenticity.",
-    "specs": {},
+    "specs": {
+      "Article number": "0113806",
+      "Metal": "Gold",
+      "Content": "999.9/1000",
+      "Weight": "31.1 g (1 troy ounce)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "25",
+      "Edge": "serrated"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/07.jpeg"
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/rev.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/pack.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/box.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/cert.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/blister-obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/blister-rev.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:33:12.207Z",
+    "parsedAt": "2026-03-31T20:25:38.253Z",
     "slug": "official-restrike-lion-dollar-2022-gold-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-gold-1-ounce/box.jpeg"
   }
 }

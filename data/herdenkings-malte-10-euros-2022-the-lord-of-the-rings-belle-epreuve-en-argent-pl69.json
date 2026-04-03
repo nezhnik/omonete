@@ -4,20 +4,24 @@
     "title": "Malte 10 euros 2022 « The Lord of the Rings » Belle-épreuve en Argent PL69",
     "price_display": "94,00 €",
     "description": "#html-body [data-pb-style=I4ILONQ]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Votre nouvelle pièce Malta 10 euros 2022 « The Lord of the Rings » en argent Prooflike PL69 vous attend. Les pièces PL69 éblouissent par leur éclat riche et leurs surfaces presque parfaites. Les petites marques sont à peine visibles, préservant ainsi toute leur brillance. Cette magnifique pièce est un excellent choix pour les collectionneurs recherchant un fort impact visuel. Dessin L'avers de la pièce de 10 euros montre au centre l'arbre blanc de Gondor, le symbole du Gondor continental, dont les habitants pensaient qu'il portait bonheur. Cet arbre présente un détail en couleur. L'arbre est entouré du texte figurant sur l'anneau. Le texte se lit comme suit : \"Un anneau pour régner sur tous, un anneau pour les trouver, un anneau qui les amènera et les liera dans les ténèbres\". Les lettres supérieures sont gaufrées, tandis que les lettres inférieures sont gaufrées en or. Le revers présente le logo de la Banque centrale de Malte, le différent de la Maison de la Monnaie et l'année d'émission.",
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0122580",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "28,28 g",
+      "Diamètre": "38,61 mm",
+      "Qualité": "Prooflike",
+      "Valeur nominale": "10 euros",
+      "Tirage": "47",
+      "Bord": "Dentelé"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/01.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/02.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/03.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/04.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/05.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/06.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/07.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/08.jpg"
+      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/02.png"
     ],
-    "parsedAt": "2026-03-31T19:09:27.644Z",
+    "parsedAt": "2026-03-31T20:48:10.605Z",
     "slug": "malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69",
     "image_obverse": "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/02.jpg"
+    "image_reverse": "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl69/02.png"
   }
 }

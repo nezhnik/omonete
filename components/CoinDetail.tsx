@@ -313,13 +313,14 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               )}
             </div>
             {images.length > 1 && (
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 flex-wrap">
                 {images.map((url, i) => (
                   <button
                     key={i}
                     type="button"
                     onClick={() => setSelectedImage(i)}
-                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center shrink-0 cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular ? "rounded-[0.5rem]" : "rounded-full"} ${
+                    aria-label={`Изображение ${i + 1}`}
+                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular ? "rounded-[0.5rem]" : "rounded-full"} ${
                       i === selectedImage ? "outline outline-2 outline-[#11111B] outline-offset-[-1px]" : "outline outline-1 outline-[#E4E4EA] outline-offset-[-1px]"
                     }`}
                   >

@@ -1,14 +1,29 @@
 {
   "coin": {
     "source_url": "https://www.swissmintshop.admin.ch/en/product/000000000510000723/Windenergie,%20polierte%20Platte",
-    "title": "Swissmint",
-    "description": null,
-    "specs": {},
-    "specsText": "Please enable JavaScript to continue using this application.",
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T18:24:50.546Z",
+    "title": "Windenergie, proof",
+    "description": "Silver, proof",
+    "specs": {
+      "Legal face value": "20 Swiss francs - Date of issue: 27 September 2023 - Selling period: up to 26 September 2026 or while stocks last - Design: Benjamin Löbbert, Bern - Alloy: Silver 0,999 - Weight: 20 g - Diameter: 33 mm - Proof: 10,000 coins The 20-franc “Wind power” silver coin is not included in the subscription. Reviews",
+      "Alloy": "Silver 0,999 -",
+      "Diameter": "33 mm - Proof: 10,000 coins The 20-franc “Wind power” silver coin is not included in the subscription. Reviews",
+      "Weight": "20 g - Diameter: 33 mm - Proof: 10,000 coins The 20-franc “Wind power” silver coin is not included in the subscription. Reviews",
+      "Date of issue": "27 September 2023 - Selling period: up to 26 September 2026 or while stocks last - Design: Benjamin Löbbert, Bern - Alloy: Silver 0,999 - Weight: 20 g - Diameter: 33 mm - Proof: 10,000 coins The 20-franc “Wind power” silver coin is not included in the subscription. Reviews"
+    },
+    "specsText": "Product details Wind power Energy of the future Alongside hydropower and solar energy, wind power is becoming the third pillar of Switzerland's energy supply: wind energy bridges the gap created by lower hydroelectric and solar energy production in winter. This is because wind power generates two thirds of its total production in winter. The combination of wind, solar and hydropower means we can all receive Swiss-sourced carbon-free electricity. \"Wind power\", is the last coin in the trilogy on the theme of \"Energy of the future\". - Coin image: Wind power – coin with colour and fluorescent elements - Legal face value: 20 Swiss francs - Date of issue: 27 September 2023 - Selling period: up to 26 September 2026 or while stocks last - Design: Benjamin Löbbert, Bern - Alloy: Silver 0,999 - Weight: 20 g - Diameter: 33 mm - Proof: 10,000 coins The 20-franc “Wind power” silver coin is not included in the subscription. Reviews Reviews (0) Overall rating Write review No reviews yet\n\nSkip to Header Skip to Main content Skip to Footer Language: Deutsch Français Italiano English ContactOnline shop of the Federal Mint SwissmintSearch Close search Suggested Keywords Angesagte Suche Recent searches Close search If search suggestions are available, use the up and down arrows to review the results and press enter to select. Users of touch devices can explore the results by touch or with swipe gestures. Special coins Magazine Company Purchase coins Special coins Magazine Company Purchase coins Sign in/Register 0 HomeSilver coins Windenergie, proof Enlarge image DetailsArticle number510000723Article number510000723 110,00 CHF Silver, proofQuantity - + Only 7 left in stock Add to cart Sign in to add to wishlist Product details Wind power Energy of the future Alongside hydropower and solar energy, wind power is becoming the third pillar of Switzerland's energy supply: wind energy bridges the gap created by lower hydroelectric and solar energy production in winter. This is because wind power generates two thirds of its total production in winter. The combination of wind, solar and hydropower means we can all receive Swiss-sourced carbon-free electricity. \"Wind power\", is the last coin in the trilogy on the theme of \"Energy of the future\". - Coin image: Wind power – coin with colour and fluorescent elements - Legal face value: 20 Swiss francs - Date of issue: 27 September 2023 - Selling period: up to 26 September 2026 or while stocks last - Design: Benjamin Löbbert, Bern - Alloy: Silver 0,999 - Weight: 20 g - Diameter: 33 mm - Proof: 10,000 coins The 20-franc “Wind power” silver coin is not included in the subscription. Reviews Reviews (0) Overall rating Write review No reviews yet About us The Federal Mint Swissmint is the official issuer of Swiss circulation and commemorative coins Stay informed Further information Contact GTC Frequently asked questions Privacy Notice Cookie Settings/Privacy We use technical cookies that are necessary for the operation of the shop (e.g. for restoring the shopping cart when revisiting the shop). Show details Allow all Please enable JavaScript to continue using this application.",
+    "imageUrls": [
+      "/image/coins/foreign/windenergie-proof-obv.webp",
+      "/image/coins/foreign/windenergie-proof-rev.webp",
+      "/image/coins/foreign/windenergie-proof-box.webp"
+    ],
+    "parsedAt": "2026-04-03T17:33:28.180Z",
     "slug": "windenergie-20polierte-20platte",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/windenergie-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/windenergie-proof-rev.webp",
+    "imageUrlRoles": [
+      "obverse",
+      "reverse",
+      "box"
+    ]
   }
 }

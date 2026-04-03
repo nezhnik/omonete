@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-gold-1-100th-oz-bar",
     "title": "Scottsdale Gold",
-    "specs": {},
+    "specs": {
+      "Purity": ".9999 Gold",
+      "Weight": "1/100 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/02.jpg",
@@ -52,6 +57,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/46.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/47.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/48.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/49.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/50.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/51.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/52.jpg",
@@ -62,6 +68,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/57.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/58.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/59.jpg",
+      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/60.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/61.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/62.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/63.jpg",
@@ -79,7 +86,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/75.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/76.jpg"
     ],
-    "parsedAt": "2026-03-31T17:16:16.810Z",
+    "parsedAt": "2026-03-31T21:10:46.816Z",
     "slug": "scottsdale-gold-1-100th-oz-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/02.jpg"

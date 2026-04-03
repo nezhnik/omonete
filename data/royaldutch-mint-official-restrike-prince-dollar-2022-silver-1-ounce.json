@@ -4,19 +4,30 @@
     "title": "Official Restrike: Prince Dollar 2022 Silver 1 ounce",
     "price_display": "€99.00",
     "description": "With great pride, the Royal Dutch Mint launches an official restrike of the Prince Dollar from 1583, in honor of 450 years of the Netherlands. The coin is the only official one with an image of Willem van Oranje. The Prince played a very important part in the Dutch Revolt and eventually the Birth of the Netherlands. The Prince Dollar Restrike will be available in silver and gold, both in 1 and 2 ounces. Design prince dollar After the introduction of the lion dollar, Holland also came up with the need to enter a heavier rijksdaalder, a coin that would comply with the German laws at that time. The Baltic Sea trade also created demand for a better coin. The first emission of the prince dollar took place from 1583 – 1585. The original silver coin has an armored statue of Willem van Oranje on the obverse, he is carrying a sword in his right hand. The inscription contains the saying ‘Vigilate Deo confidentes’, which means ‘Watch, trusting on God’. The reverse contains a helmeted provincial coat of arms. With the restrike, the year 2022 is also placed on the coin. The Prince Dollar in Silver Proof will be delivered in a luxurious packaging, including a numbered Certificate of Authenticity.",
-    "specs": {},
+    "specs": {
+      "Article number": "0114639",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "300",
+      "Edge": "Smooth"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/07.jpeg"
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/rev.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/pack.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/box.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/cert.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/blister-obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/blister-rev.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:36:08.621Z",
+    "parsedAt": "2026-03-31T20:28:11.618Z",
     "slug": "official-restrike-prince-dollar-2022-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/box.jpeg"
   }
 }

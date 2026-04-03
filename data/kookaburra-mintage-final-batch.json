@@ -1,0 +1,436 @@
+{
+  "generatedAt": "2026-03-31T22:30:52.524Z",
+  "items": [
+    {
+      "coinId": 5891,
+      "mintage": 29576,
+      "mintage_display": "29 576 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1992|10oz"
+    },
+    {
+      "coinId": 5893,
+      "mintage": 35329,
+      "mintage_display": "35 329 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1993|2oz"
+    },
+    {
+      "coinId": 5894,
+      "mintage": 10161,
+      "mintage_display": "10 161 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1993|10oz"
+    },
+    {
+      "coinId": 5896,
+      "mintage": 39603,
+      "mintage_display": "39 603 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1994|2oz"
+    },
+    {
+      "coinId": 5898,
+      "mintage": 7557,
+      "mintage_display": "7 557 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1996|10oz"
+    },
+    {
+      "coinId": 5899,
+      "mintage": 32896,
+      "mintage_display": "32 896 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1997|2oz"
+    },
+    {
+      "coinId": 5900,
+      "mintage": 7967,
+      "mintage_display": "7 967 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1997|1kg"
+    },
+    {
+      "coinId": 5903,
+      "mintage": 20602,
+      "mintage_display": "20 602 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1999|2oz"
+    },
+    {
+      "coinId": 5904,
+      "mintage": 4012,
+      "mintage_display": "4 012 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1999|10oz"
+    },
+    {
+      "coinId": 5905,
+      "mintage": 4714,
+      "mintage_display": "4 714 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1999|1kg"
+    },
+    {
+      "coinId": 5907,
+      "mintage": 23872,
+      "mintage_display": "23 872 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2000|2oz"
+    },
+    {
+      "coinId": 5909,
+      "mintage": 17050,
+      "mintage_display": "17 050 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2001|2oz"
+    },
+    {
+      "coinId": 5910,
+      "mintage": 2766,
+      "mintage_display": "2 766 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2001|10oz"
+    },
+    {
+      "coinId": 5912,
+      "mintage": 15696,
+      "mintage_display": "15 696 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2002|2oz"
+    },
+    {
+      "coinId": 5913,
+      "mintage": 2438,
+      "mintage_display": "2 438 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2002|10oz"
+    },
+    {
+      "coinId": 5915,
+      "mintage": 16663,
+      "mintage_display": "16 663 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2003|2oz"
+    },
+    {
+      "coinId": 5916,
+      "mintage": 3558,
+      "mintage_display": "3 558 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2003|10oz"
+    },
+    {
+      "coinId": 5917,
+      "mintage": 3016,
+      "mintage_display": "3 016 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2003|1kg"
+    },
+    {
+      "coinId": 5918,
+      "mintage": 2712,
+      "mintage_display": "2 712 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2004|1kg"
+    },
+    {
+      "coinId": 5919,
+      "mintage": 14082,
+      "mintage_display": "14 082 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2005|2oz"
+    },
+    {
+      "coinId": 5922,
+      "mintage": 13938,
+      "mintage_display": "13 938 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2007|2oz"
+    },
+    {
+      "coinId": 5923,
+      "mintage": 5993,
+      "mintage_display": "5 993 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2007|10oz"
+    },
+    {
+      "coinId": 5924,
+      "mintage": 20083,
+      "mintage_display": "20 083 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2008|2oz"
+    },
+    {
+      "coinId": 5925,
+      "mintage": 17213,
+      "mintage_display": "17 213 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2008|10oz"
+    },
+    {
+      "coinId": 5926,
+      "mintage": 74757,
+      "mintage_display": "74 757 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2009|1kg"
+    },
+    {
+      "coinId": 5928,
+      "mintage": 18782,
+      "mintage_display": "18 782 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2010|10oz"
+    },
+    {
+      "coinId": 5930,
+      "mintage": 500000,
+      "mintage_display": "500 000 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2012|1oz"
+    },
+    {
+      "coinId": 5931,
+      "mintage": 28547,
+      "mintage_display": "28 547 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2014|10oz"
+    },
+    {
+      "coinId": 5932,
+      "mintage": 5261,
+      "mintage_display": "5 261 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2021|1kg"
+    },
+    {
+      "coinId": 5933,
+      "mintage": 10936,
+      "mintage_display": "10 936 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2017|1kg"
+    },
+    {
+      "coinId": 5934,
+      "mintage": 11716,
+      "mintage_display": "11 716 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2018|1kg"
+    },
+    {
+      "coinId": 5935,
+      "mintage": 15084,
+      "mintage_display": "15 084 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2019|1kg"
+    },
+    {
+      "coinId": 5936,
+      "mintage": 13665,
+      "mintage_display": "13 665 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2020|1kg"
+    },
+    {
+      "coinId": 5938,
+      "mintage": 2391,
+      "mintage_display": "2 391 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2021|10oz"
+    },
+    {
+      "coinId": 5967,
+      "mintage": 11231,
+      "mintage_display": "11 231 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1994|10oz"
+    },
+    {
+      "coinId": 5968,
+      "mintage": 5424,
+      "mintage_display": "5 424 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1998|10oz"
+    },
+    {
+      "coinId": 5969,
+      "mintage": 2270,
+      "mintage_display": "2 270 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2004|10oz"
+    },
+    {
+      "coinId": 5970,
+      "mintage": 2112,
+      "mintage_display": "2 112 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2005|10oz"
+    },
+    {
+      "coinId": 5971,
+      "mintage": 2999,
+      "mintage_display": "2 999 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2006|10oz"
+    },
+    {
+      "coinId": 5972,
+      "mintage": 45901,
+      "mintage_display": "45 901 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2011|10oz"
+    },
+    {
+      "coinId": 5973,
+      "mintage": 25608,
+      "mintage_display": "25 608 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2012|10oz"
+    },
+    {
+      "coinId": 5974,
+      "mintage": 24481,
+      "mintage_display": "24 481 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2013|10oz"
+    },
+    {
+      "coinId": 5975,
+      "mintage": 4891,
+      "mintage_display": "4 891 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2023|10oz"
+    },
+    {
+      "coinId": 5976,
+      "mintage": 47348,
+      "mintage_display": "47 348 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1992|1kg"
+    },
+    {
+      "coinId": 5977,
+      "mintage": 13550,
+      "mintage_display": "13 550 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1993|1kg"
+    },
+    {
+      "coinId": 5978,
+      "mintage": 11721,
+      "mintage_display": "11 721 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1995|1kg"
+    },
+    {
+      "coinId": 5979,
+      "mintage": 8961,
+      "mintage_display": "8 961 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1996|1kg"
+    },
+    {
+      "coinId": 5980,
+      "mintage": 3108,
+      "mintage_display": "3 108 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2001|1kg"
+    },
+    {
+      "coinId": 5981,
+      "mintage": 2856,
+      "mintage_display": "2 856 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2002|1kg"
+    },
+    {
+      "coinId": 5982,
+      "mintage": 2100,
+      "mintage_display": "2 100 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2005|1kg"
+    },
+    {
+      "coinId": 5983,
+      "mintage": 4467,
+      "mintage_display": "4 467 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2006|1kg"
+    },
+    {
+      "coinId": 5984,
+      "mintage": 34534,
+      "mintage_display": "34 534 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2014|1kg"
+    },
+    {
+      "coinId": 5988,
+      "mintage": 78424,
+      "mintage_display": "78 424 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1996|2oz"
+    },
+    {
+      "coinId": 5989,
+      "mintage": 21184,
+      "mintage_display": "21 184 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "1998|2oz"
+    },
+    {
+      "coinId": 5990,
+      "mintage": 13969,
+      "mintage_display": "13 969 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2004|2oz"
+    },
+    {
+      "coinId": 5991,
+      "mintage": 12802,
+      "mintage_display": "12 802 (Perth Mint declared bullion mintage (PDF «Australian Kookaburra Silver Bullion Coin Series 1990–2022», обновление 23 May 2024; 2023 10oz/1kg — PDF 2023 Perth Mint bullion releases, обновление Dec 2025))",
+      "source_url": "https://www.perthmint.com/bullion/information-for-bullion-buyers/declared-mintages/",
+      "note": "2006|2oz"
+    },
+    {
+      "coinId": 5993,
+      "mintage": 500,
+      "mintage_display": "500 (Perth Mint shop: Maximum Mintage 500 (proof high relief))",
+      "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kookaburra-2018-5oz-silver-proof-high-relief-coin",
+      "note": "2018|hr5"
+    },
+    {
+      "coinId": 5994,
+      "mintage": 500,
+      "mintage_display": "500 (Perth Mint shop: Maximum Mintage 500 (proof high relief))",
+      "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kookaburra-2019-5oz-silver-proof-high-relief-coin",
+      "note": "2019|hr5"
+    },
+    {
+      "coinId": 5995,
+      "mintage": 500,
+      "mintage_display": "500 (Perth Mint shop: Maximum Mintage 500 (proof high relief))",
+      "source_url": "https://www.perthmint.com/shop/collector-coins/coins/30th-anniversary-australian-kookaburra-2020-5oz-silver-proof-high-relief-gilded-coin",
+      "note": "2020|hr5"
+    },
+    {
+      "coinId": 7176,
+      "mintage": 333,
+      "mintage_display": "333 (Mennica inwestycje.mennica.com.pl — поле Mintage)",
+      "source_url": "https://inwestycje.mennica.com.pl/ufo-mp-1766-blue-galaxy-1766-cfa-francs"
+    },
+    {
+      "coinId": 7191,
+      "mintage": 199,
+      "mintage_display": "199 (Mennica inwestycje.mennica.com.pl — поле Mintage)",
+      "source_url": "https://inwestycje.mennica.com.pl/welcome-to-the-world-2000-cfa-francs"
+    },
+    {
+      "coinId": 7199,
+      "mintage": 200,
+      "mintage_display": "200 (Mennica inwestycje.mennica.com.pl — поле Mintage)",
+      "source_url": "https://inwestycje.mennica.com.pl/year-of-the-dragon-50-dollars"
+    }
+  ]
+}

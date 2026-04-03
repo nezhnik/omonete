@@ -4,11 +4,23 @@
     "title": "200 Francs 2000 - Millénaire La Ville UNC",
     "price_display": "37,50 €",
     "description": null,
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T19:07:13.358Z",
+    "specs": {
+      "Numéro d'article": "0111639",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "18,75 g",
+      "Diamètre": "33,0 mm",
+      "Qualité": "Uncirculated"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/200-francs-2000-millenaire-la-ville-unc/01.jpg",
+      "/image/coins/foreign/herdenkings/200-francs-2000-millenaire-la-ville-unc/02.jpg",
+      "/image/coins/foreign/herdenkings/200-francs-2000-millenaire-la-ville-unc/03.jpg",
+      "/image/coins/foreign/herdenkings/200-francs-2000-millenaire-la-ville-unc/04.jpg"
+    ],
+    "parsedAt": "2026-03-31T20:46:24.958Z",
     "slug": "200-francs-2000-millenaire-la-ville-unc",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/herdenkings/200-francs-2000-millenaire-la-ville-unc/01.jpg",
+    "image_reverse": "/image/coins/foreign/herdenkings/200-francs-2000-millenaire-la-ville-unc/02.jpg"
   }
 }

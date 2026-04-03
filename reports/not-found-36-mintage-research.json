@@ -1,0 +1,348 @@
+{
+  "generated_at": "2026-04-01T00:00:00.000Z",
+  "note": "36 позиций из missing-from-4555-official-mintage-pass (official_status=not_found). На страницах Perth Mint в ProductRoot у этих SKU mintage/issueLimit/mintageMessage пустые или 0 — автопарсер не находил цифру. Ниже: рекомендуемые значения для БД/экспорта и источники (≥2 где возможно).",
+  "reference_urls": [
+    "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+    "https://www.goldsovereigns.co.uk/pretoriamintsouthafrica.html",
+    "https://onlinecoin.club/Coins/CoinType/Australia/Australia_Sovereign/",
+    "https://en.numista.com/catalogue/pieces11463.html"
+  ],
+  "items": [
+    {
+      "ids": ["4220"],
+      "sku": "10Q39AAA",
+      "title": "The Perth Mint Gold Sovereigns 1899 and 1931",
+      "kind": "historic_set",
+      "mintage": null,
+      "mintage_display": "Набор из 2 подлинных соверенов Perth Mint: 1899 г. — тираж чеканки 690 992; 1931 г. — 1 173 568 (таблица Perth, goldsovereigns.co.uk/perthmintaustralia.html). Лимит сборки набора Perth Mint не публикуется.",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "https://www.downies.com/products/1899-1931-perth-mint-first-last-gold-sovereign-pair-vf-aunc"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["4221", "5996"],
+      "sku": "21M80AAA",
+      "title": "1911-1931 King George V Sovereign Typeset Collection",
+      "kind": "historic_typeset",
+      "mintage": null,
+      "mintage_display": "Коллекция подлинных соверенов George V 1911–1931 (короб Perth Mint). Максимальный тираж/лимит набора на сайте и в JSON товара не указан; монеты — оригинальная чеканка разных годов и монетных дворов.",
+      "sources": ["https://www.perthmint.com/shop/collector-coins/sovereigns/1911-1931-king-george-v-sovereign-typeset-collection/"],
+      "confidence": "low"
+    },
+    {
+      "ids": ["4224", "6010"],
+      "sku": "25Y99AAA",
+      "title": "1926 King George V South African Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 11107611,
+      "mintage_display": "11 107 611 (чеканка Pretoria 1926; Atkinsons / справочники SA sovereign)",
+      "sources": [
+        "https://atkinsonsbullion.com/gold/gold-coins/gold-sovereign-coins/pre-owned-1926-south-african-mint-george-v-full-sovereign-gold-coin",
+        "https://en.numista.com/catalogue/pieces11043.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["4225", "6011"],
+      "sku": "25Z03AAA",
+      "title": "1927 King George V South African Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 16379704,
+      "mintage_display": "16 379 704 (чеканка Pretoria 1927; Sovr.co.uk, Britannia Coin)",
+      "sources": [
+        "https://www.sovr.co.uk/products/george-v-1927-sa-sovereign-pretoria-mint-gi25771",
+        "https://britanniacoincompany.com/buy-coins/gold-coins/1927-sovereign-south-africa/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["4490"],
+      "sku": "21K01AAA",
+      "title": "Her Majesty Queen Elizabeth II 95th Birthday 2021 2oz Gold Proof Coin",
+      "kind": "modern_proof",
+      "mintage": 150,
+      "mintage_display": "150",
+      "sources": [
+        "https://www.emk.com/en-us/queen-elizabeth-ii-2-oz-iaus862137",
+        "https://goldsilver.be/en/gold/4043-her-majesty-queen-elizabeth-ii-95th-birthday-2021-2oz-gold-proof-coin.html",
+        "https://coinweek.com/queen-elizabeth-iis-95th-birthday-celebrated-on-new-gold-silver-proof-coins-from-perth-mint/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5208", "6002"],
+      "sku": "19G99BAA",
+      "title": "1910 King Edward VII Sovereign Mintmark Trio",
+      "kind": "historic_trio",
+      "mintage": null,
+      "mintage_display": "Набор из 3 подлинных соверенов 1910 г. (монетные знаки P, M, S). Лимит набора не опубликован. Тираж чеканки Perth (P) за 1910 г.: 4 690 625 (goldsovereigns.co.uk/perthmintaustralia.html).",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/1910-king-edward-vii-sovereign-mintmark-trio/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5209"],
+      "sku": "18F43AAA",
+      "title": "1911 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 4373165,
+      "mintage_display": "4 373 165 (чеканка Perth 1911, George V)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "https://www.goldsovereigns.co.uk/1911sovereign.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5210"],
+      "sku": "19F79AAA",
+      "title": "1912 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 4278144,
+      "mintage_display": "4 278 144 (чеканка Perth 1912)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "https://www.chards.co.uk/1912-gold-sovereign-george-v-perth/6071"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5212", "6003"],
+      "sku": "14W18AAA",
+      "title": "1914 Gold Sovereign Mintmark Trio",
+      "kind": "historic_trio",
+      "mintage": null,
+      "mintage_display": "Набор из 3 подлинных соверенов 1914 г. (P, M, S). Лимит не опубликован. Тираж Perth (P) за 1914 г.: 4 815 996 (goldsovereigns.co.uk/perthmintaustralia.html).",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/1914-gold-sovereign-mintmark-trio/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5213"],
+      "sku": "14W96AAA",
+      "title": "1914 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 4815996,
+      "mintage_display": "4 815 996 (чеканка Perth 1914)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "http://www.goldsovereigns.co.uk/1914sovereign.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5214", "6004"],
+      "sku": "15X69BAA",
+      "title": "1915 Gold Sovereign Mintmark Trio",
+      "kind": "historic_trio",
+      "mintage": null,
+      "mintage_display": "Набор из 3 подлинных соверенов 1915 г. (P, M, S). Лимит не опубликован. Тираж Perth (P) за 1915 г.: 4 373 596.",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/1915-gold-sovereign-mintmark-trio/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5215"],
+      "sku": "15X69AAA",
+      "title": "1915 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 4373596,
+      "mintage_display": "4 373 596 (чеканка Perth 1915)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "http://www.goldsovereigns.co.uk/1915sovereign.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5216", "6005"],
+      "sku": "16A21AAA",
+      "title": "1916 King George V Gold Sovereign Mintmark Trio",
+      "kind": "historic_trio",
+      "mintage": null,
+      "mintage_display": "Набор из 3 подлинных соверенов 1916 г. (P, M, S). Лимит не опубликован. Тираж Perth (P) за 1916 г.: 4 096 721.",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/1916-king-george-v-gold-sovereign-mintmark-trio/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5217"],
+      "sku": "16Y89DAA",
+      "title": "1916 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 4096721,
+      "mintage_display": "4 096 721 (чеканка Perth 1916)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "http://www.goldsovereigns.co.uk/1916sovereign.php"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5219"],
+      "sku": "17B71AAA",
+      "title": "1917 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 4110286,
+      "mintage_display": "4 110 286 (чеканка Perth 1917)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "http://www.goldsovereigns.co.uk/1917sovereign.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5220", "6007"],
+      "sku": "18D76AAA",
+      "title": "1918 Gold Sovereign Mintmark Trio",
+      "kind": "historic_trio",
+      "mintage": null,
+      "mintage_display": "Набор из 3 подлинных соверенов 1918 г. (P, M, S). Лимит не опубликован. Тираж Perth (P) за 1918 г.: 3 812 884.",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/1918-gold-sovereign-mintmark-trio/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5221"],
+      "sku": "17D34AAA",
+      "title": "1918 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 3812884,
+      "mintage_display": "3 812 884 (чеканка Perth 1918)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "http://www.goldsovereigns.co.uk/1918sovereign.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5222", "6008"],
+      "sku": "18F42AAA",
+      "title": "1919 Gold Sovereign Mintmark Trio",
+      "kind": "historic_trio",
+      "mintage": null,
+      "mintage_display": "Набор из 3 подлинных соверенов 1919 г. (P, M, S). Лимит не опубликован. Тираж Perth (P) за 1919 г.: 2 995 216.",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/1919-gold-sovereign-mintmark-trio/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5224"],
+      "sku": "19G16AAA",
+      "title": "1920 King George V Perth Mint Gold Sovereign",
+      "kind": "historic_single",
+      "mintage": 2421196,
+      "mintage_display": "2 421 196 (чеканка Perth 1920)",
+      "sources": [
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html",
+        "http://www.goldsovereigns.co.uk/1920sovereign.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5225", "6009"],
+      "sku": "18F19AAA",
+      "title": "1925 King George V London Mint Sovereign",
+      "kind": "historic_single",
+      "mintage": 3520000,
+      "mintage_display": "3 520 000 (London 1925 George V; справочники дилеров)",
+      "sources": [
+        "https://mjhughescoins.com/1925-gold-sovereign-london/",
+        "https://coinparade.co.uk/1925-gold-sovereign-london/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5262"],
+      "sku": "14V29AAA",
+      "title": "Australia Sovereign 2014 Gold Proof Coin",
+      "kind": "modern_proof",
+      "mintage": 1500,
+      "mintage_display": "1 500",
+      "sources": [
+        "https://onlinecoin.club/Coins/Country/Australia/Australia_Sovereign_2014/",
+        "https://www.thelondoncoincompany.com/store/2014-P-Australia-Perth-Mint-$25-Full-Sovereign-Gold-Proof-Coin-PCGS-PR70-DCAM-p427759434"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5264"],
+      "sku": "16Y03AAA",
+      "title": "Australia Sovereign 2016 Gold Proof Coin",
+      "kind": "modern_proof",
+      "mintage": 1500,
+      "mintage_display": "1 500",
+      "sources": [
+        "https://onlinecoin.club/Coins/Country/Australia/Australia_Sovereign_2016/",
+        "https://www.sterlingcurrency.com.au/2016-perth-mint-gold-proof-australia-sovereign"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5266"],
+      "sku": "18B45AAA",
+      "title": "Australia Sovereign 2018 Gold Proof Coin",
+      "kind": "modern_proof",
+      "mintage": 1000,
+      "mintage_display": "1 000",
+      "sources": [
+        "https://onlinecoin.club/Coins/Country/Australia/Australia_Sovereign_2018/",
+        "https://www.thelondoncoincompany.com/store/2018-Australia-Perth-Mint-$25-Gold-Proof-Sovereign-Coin-Box-Coa-p632566639"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5549"],
+      "sku": "14W26AAA",
+      "title": "Perth Mint Great War Gold Sovereign Collection 1914–1918",
+      "kind": "historic_set",
+      "mintage": null,
+      "mintage_display": "Набор из 5 подлинных золотых соверенов Perth периода Первой мировой войны (1914–1918). Лимит набора Perth Mint в открытых данных не найден; тиражи по годам — см. таблицу Perth на goldsovereigns.co.uk/perthmintaustralia.html (1914: 4 815 996 … 1918: 3 812 884).",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-great-war-gold-sovereign-collection-1914-1918/",
+        "https://www.goldsovereigns.co.uk/perthmintaustralia.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "ids": ["5807"],
+      "sku": "20G93AAA",
+      "title": "Voyage of Discovery Endeavour 1770-2020 2oz Silver Antiqued Coin",
+      "kind": "modern_proof",
+      "mintage": 1770,
+      "mintage_display": "1 770",
+      "sources": [
+        "https://onlinecoin.club/Coins/Country/Australia/Silver_Two_Ounces_2020_Endeavour/",
+        "https://www.powercoin.it/en/perth-mint-australia/4636-endeavour-voyage-of-discovery-2-oz-silver-coin-2-australia-2020.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "ids": ["5999"],
+      "sku": "21N95AAA",
+      "title": "Perth Mint 2021 Gold Sovereign Anniversary Two-Coin Set",
+      "kind": "modern_set",
+      "mintage": null,
+      "mintage_display": "Два золотых соверена 2021 г. в юбилейном наборе; точный объявленный лимит набора в открытых источниках не подтверждён (проверить COA / объявленные тиражи Perth Mint). Ориентир: стандартный Australia Sovereign 2021 proof — до 1 000 экз. (onlinecoin.club), piedfort/спецверсии — другие лимиты.",
+      "sources": [
+        "https://www.perthmint.com/shop/collector-coins/sovereigns/perth-mint-2021-gold-sovereign-anniversary-pair/",
+        "https://onlinecoin.club/Coins/Country/Australia/Australia_Sovereign_2021/"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

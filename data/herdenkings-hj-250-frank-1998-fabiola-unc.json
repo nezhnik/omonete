@@ -4,16 +4,18 @@
     "title": "250 Francs 1998 - Reine Fabiola UNC",
     "price_display": "123,95 €",
     "description": null,
-    "specs": {},
-    "imageUrls": [
-      "/image/coins/foreign/herdenkings/hj-250-frank-1998-fabiola-unc/01.jpeg",
-      "/image/coins/foreign/herdenkings/hj-250-frank-1998-fabiola-unc/02.jpeg",
-      "/image/coins/foreign/herdenkings/hj-250-frank-1998-fabiola-unc/03.jpeg",
-      "/image/coins/foreign/herdenkings/hj-250-frank-1998-fabiola-unc/04.jpeg"
-    ],
-    "parsedAt": "2026-03-31T19:08:59.379Z",
+    "specs": {
+      "Numéro d'article": "0113426",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "18,75 g",
+      "Diamètre": "33,0 mm",
+      "Qualité": "Uncirculated"
+    },
+    "imageUrls": [],
+    "parsedAt": "2026-03-31T20:47:53.801Z",
     "slug": "hj-250-frank-1998-fabiola-unc",
-    "image_obverse": "/image/coins/foreign/herdenkings/hj-250-frank-1998-fabiola-unc/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/hj-250-frank-1998-fabiola-unc/02.jpeg"
+    "image_obverse": null,
+    "image_reverse": null
   }
 }

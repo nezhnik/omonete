@@ -4,20 +4,31 @@
     "title": "Official Restrike: “Scheepjesschelling” 2023 Silver 2 Ounce",
     "price_display": "€199.95",
     "description": "The Royal Dutch Mint yearly restrikes popular trading coins. And after the success of the previous restrike of the Scheepjesschelling, this popular trade coin will once again be minted once again. This year it’s the turn of the Scheepjesschelling from the province of West-Friesland, which dates from 1678. The Scheepjesschelling is one of the Dutch shillings, which thanks its name to the image of a warship on the obverse. The state of the Republic as a naval force had to be emphasized. The Scheepjesschelling grew to be an international trade coin and was particularly popular in the East. The Silver restrike of the Scheepjesschelling will be delivered in a luxurious packaging, including a Certificate of Authenticity. Piedfort Traditionally, Piedfort coins were used as a way of showing wealth and power. In the sixteenth and seventeenth century, rulers across Europe started the tradition of giving “prestige pieces” to members of their court. Nowadays, Piedfort coins are real collector’s items. This Silver restrike of the Scheepjesschelling is twice as thick and therefore twice as special Design The obverse of the Scheepjesschelling from West-Friesland shows a warship with a flag on the stern and the inscription ‘DEVS. FORTITVDO. ET. SPES. NOSTRA’. This proverb can be translated to ‘God is our strength and hope’. The reverse shows the provincial coat of arms of West-Friesland and the inscription ‘MON. NOV. ORDIN. WEST. FRISIAE’, in full MONETA NOVA ORDINUM FRISIAE. This means: new silver coin of Friesland.",
-    "specs": {},
+    "specs": {
+      "Article number": "0115165",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "2 troy ounce (62.2 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "250",
+      "Edge": "Smooth"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/02.jpg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/07.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/08.jpg"
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/rev.jpg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/pack.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/box.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/cert.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/blister-obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/blister-rev.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/extra-8.jpg"
     ],
-    "parsedAt": "2026-03-31T18:37:47.694Z",
+    "parsedAt": "2026-03-31T20:29:33.538Z",
     "slug": "official-restrike-scheepjesschelling-2023-silver-2-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/02.jpg"
+    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/rev.jpg",
+    "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2023-silver-2-ounce/box.jpeg"
   }
 }

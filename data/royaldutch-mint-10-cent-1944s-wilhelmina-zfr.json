@@ -4,16 +4,23 @@
     "title": "DR 10 Cent Wilhelmina Zfr (eikel/s)",
     "price_display": "€15.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0109356",
+      "Metal": "Silver",
+      "Weight": "1.40 g",
+      "Diameter": "15 mm"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/01.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/02.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/03.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/04.jpeg"
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/obv.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/rev.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/pack.jpeg",
+      "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/box.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:57:54.338Z",
+    "parsedAt": "2026-03-31T23:02:44.448Z",
     "slug": "10-cent-1944s-wilhelmina-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/10-cent-1944s-wilhelmina-zfr/box.jpeg"
   }
 }

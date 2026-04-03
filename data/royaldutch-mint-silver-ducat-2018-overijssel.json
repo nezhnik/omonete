@@ -4,14 +4,22 @@
     "title": "Silver Ducat 2018 Overijssel",
     "price_display": "€49.95",
     "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
-    "specs": {},
+    "specs": {
+      "Article number": "094386",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40.0 mm",
+      "Quality": "Proof",
+      "Mintage": "4,000"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/01.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/02.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/03.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:41:43.054Z",
+    "parsedAt": "2026-03-31T20:32:18.628Z",
     "slug": "silver-ducat-2018-overijssel",
     "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/02.jpeg"

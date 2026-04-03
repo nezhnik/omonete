@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-03-31T23:09:44.526Z",
+  "cohortFile": "reports/missing-from-4555-coins.json",
+  "cohortIds": 394,
+  "foundInDb": 394,
+  "stillMintageNeedsResearch": 0,
+  "closedInCohort": 394,
+  "notFoundInDb": 0,
+  "sampleStillGap": []
+}

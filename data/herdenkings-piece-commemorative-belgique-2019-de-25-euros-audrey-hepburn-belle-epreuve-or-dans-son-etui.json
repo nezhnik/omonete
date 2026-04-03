@@ -4,7 +4,15 @@
     "title": "Pièce commémorative Belgique 2019 de 25 euros « Audrey Hepburn » Belle-épreuve Or dans son étui.",
     "price_display": "265,00 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0105309",
+      "Métal": "Or",
+      "Teneur": "999/1000",
+      "Poids": "3,11 g",
+      "Diamètre": "18 mm",
+      "Qualité": "Belle Épreuve",
+      "Tirage": "1 000"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/01.jpeg",
       "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/02.jpeg",
@@ -13,7 +21,7 @@
       "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/05.jpeg",
       "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T19:10:44.567Z",
+    "parsedAt": "2026-03-31T20:49:23.769Z",
     "slug": "piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui",
     "image_obverse": "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/01.jpeg",
     "image_reverse": "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/02.jpeg"

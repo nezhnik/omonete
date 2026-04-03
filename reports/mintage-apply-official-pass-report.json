@@ -1,0 +1,1796 @@
+{
+  "generatedAt": "2026-03-31T23:21:25.625Z",
+  "apply": false,
+  "force": false,
+  "sourceSummary": {
+    "found": 296,
+    "not_found": 36,
+    "no_source": 59,
+    "fetch_failed": 3
+  },
+  "updated": 0,
+  "skipped": 0,
+  "skippedBadNumber": 1,
+  "skippedNotFound": 98,
+  "skippedRussia": 0,
+  "skippedNoChange": 0,
+  "skippedAlreadyOk": 295,
+  "errors": [],
+  "actions": [
+    {
+      "id": 4194,
+      "result": "skip_db_already_closed",
+      "dbMintage": 350,
+      "official": 350
+    },
+    {
+      "id": 4200,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 4215,
+      "result": "skip_db_already_closed",
+      "dbMintage": 10,
+      "official": 10
+    },
+    {
+      "id": 4218,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4230,
+      "result": "skip_db_already_closed",
+      "dbMintage": 75,
+      "official": 75
+    },
+    {
+      "id": 4231,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4240,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4244,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 4245,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 4249,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4251,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4253,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4255,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4261,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4264,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4267,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4269,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4272,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4274,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4276,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4279,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4281,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4283,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4284,
+      "result": "skip_bad_number",
+      "official_mintage": 199199199199
+    },
+    {
+      "id": 4287,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4289,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4291,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4294,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4295,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4297,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4298,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4300,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4301,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4303,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4304,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4306,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4307,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4310,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4312,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4315,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4317,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4320,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4322,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4325,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4327,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4348,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4351,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4355,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4359,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4363,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4366,
+      "result": "skip_db_already_closed",
+      "dbMintage": 55,
+      "official": 55
+    },
+    {
+      "id": 4367,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4370,
+      "result": "skip_db_already_closed",
+      "dbMintage": 350,
+      "official": 350
+    },
+    {
+      "id": 4373,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4375,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4378,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4381,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4383,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4385,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4389,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4392,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4393,
+      "result": "skip_db_already_closed",
+      "dbMintage": 400,
+      "official": 400
+    },
+    {
+      "id": 4394,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4396,
+      "result": "skip_db_already_closed",
+      "dbMintage": 175,
+      "official": 175
+    },
+    {
+      "id": 4399,
+      "result": "skip_db_already_closed",
+      "dbMintage": 70,
+      "official": 70
+    },
+    {
+      "id": 4408,
+      "result": "skip_db_already_closed",
+      "dbMintage": 350,
+      "official": 350
+    },
+    {
+      "id": 4409,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4418,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4426,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4428,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4444,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4446,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4447,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4448,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4449,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4450,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4452,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4453,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4464,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4467,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4469,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4472,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4474,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4476,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4492,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4498,
+      "result": "skip_db_already_closed",
+      "dbMintage": 75,
+      "official": 75
+    },
+    {
+      "id": 4499,
+      "result": "skip_db_already_closed",
+      "dbMintage": 60,
+      "official": 60
+    },
+    {
+      "id": 4500,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4502,
+      "result": "skip_db_already_closed",
+      "dbMintage": 288,
+      "official": 288
+    },
+    {
+      "id": 4514,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4515,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4516,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4517,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4518,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4519,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4520,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4521,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4574,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4578,
+      "result": "skip_db_already_closed",
+      "dbMintage": 120,
+      "official": 120
+    },
+    {
+      "id": 4582,
+      "result": "skip_db_already_closed",
+      "dbMintage": 8,
+      "official": 8
+    },
+    {
+      "id": 4583,
+      "result": "skip_db_already_closed",
+      "dbMintage": 8,
+      "official": 8
+    },
+    {
+      "id": 4590,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4593,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4600,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4601,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4602,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4603,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4610,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4616,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4629,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4632,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4635,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4636,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4638,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 4641,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4642,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4644,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 4660,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4662,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4667,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4672,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4673,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4674,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4675,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4682,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4687,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4689,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4690,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4691,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4702,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4706,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4708,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4709,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4710,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4717,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4721,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4723,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4724,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4725,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4732,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 4736,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4737,
+      "result": "skip_db_already_closed",
+      "dbMintage": 225,
+      "official": 225
+    },
+    {
+      "id": 4738,
+      "result": "skip_db_already_closed",
+      "dbMintage": 25,
+      "official": 25
+    },
+    {
+      "id": 4745,
+      "result": "skip_db_already_closed",
+      "dbMintage": 10,
+      "official": 10
+    },
+    {
+      "id": 4747,
+      "result": "skip_db_already_closed",
+      "dbMintage": 10,
+      "official": 10
+    },
+    {
+      "id": 4748,
+      "result": "skip_db_already_closed",
+      "dbMintage": 10,
+      "official": 10
+    },
+    {
+      "id": 4749,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4753,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4754,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4756,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 4758,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4760,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 4762,
+      "result": "skip_db_already_closed",
+      "dbMintage": 288,
+      "official": 288
+    },
+    {
+      "id": 4772,
+      "result": "skip_db_already_closed",
+      "dbMintage": 375,
+      "official": 375
+    },
+    {
+      "id": 4775,
+      "result": "skip_db_already_closed",
+      "dbMintage": 125,
+      "official": 125
+    },
+    {
+      "id": 4777,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4913,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 4916,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 5190,
+      "result": "skip_db_already_closed",
+      "dbMintage": 350,
+      "official": 350
+    },
+    {
+      "id": 5231,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5238,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5240,
+      "result": "skip_db_already_closed",
+      "dbMintage": 75,
+      "official": 75
+    },
+    {
+      "id": 5259,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 5282,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 5294,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 5298,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5316,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 5318,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 5342,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5539,
+      "result": "skip_db_already_closed",
+      "dbMintage": 6,
+      "official": 6
+    },
+    {
+      "id": 5577,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 5578,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 5583,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 5590,
+      "result": "skip_db_already_closed",
+      "dbMintage": 80,
+      "official": 80
+    },
+    {
+      "id": 5594,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 5596,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 5600,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 5603,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 5609,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 5617,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 5643,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 5654,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 5668,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 5675,
+      "result": "skip_db_already_closed",
+      "dbMintage": 388,
+      "official": 388
+    },
+    {
+      "id": 5714,
+      "result": "skip_db_already_closed",
+      "dbMintage": 75,
+      "official": 75
+    },
+    {
+      "id": 5720,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5722,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5724,
+      "result": "skip_db_already_closed",
+      "dbMintage": 10,
+      "official": 10
+    },
+    {
+      "id": 5729,
+      "result": "skip_db_already_closed",
+      "dbMintage": 150,
+      "official": 150
+    },
+    {
+      "id": 5730,
+      "result": "skip_db_already_closed",
+      "dbMintage": 10,
+      "official": 10
+    },
+    {
+      "id": 5733,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5735,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5737,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 5756,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5761,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5765,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5774,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5779,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 5786,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 5789,
+      "result": "skip_db_already_closed",
+      "dbMintage": 8,
+      "official": 8
+    },
+    {
+      "id": 5792,
+      "result": "skip_db_already_closed",
+      "dbMintage": 350,
+      "official": 350
+    },
+    {
+      "id": 5801,
+      "result": "skip_db_already_closed",
+      "dbMintage": 8,
+      "official": 8
+    },
+    {
+      "id": 5802,
+      "result": "skip_db_already_closed",
+      "dbMintage": 8,
+      "official": 8
+    },
+    {
+      "id": 5827,
+      "result": "skip_db_already_closed",
+      "dbMintage": 188,
+      "official": 188
+    },
+    {
+      "id": 5830,
+      "result": "skip_db_already_closed",
+      "dbMintage": 75,
+      "official": 75
+    },
+    {
+      "id": 5833,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 6303,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 6305,
+      "result": "skip_db_already_closed",
+      "dbMintage": 499,
+      "official": 499
+    },
+    {
+      "id": 6306,
+      "result": "skip_db_already_closed",
+      "dbMintage": 499,
+      "official": 499
+    },
+    {
+      "id": 6308,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 6311,
+      "result": "skip_db_already_closed",
+      "dbMintage": 499,
+      "official": 499
+    },
+    {
+      "id": 6313,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 6318,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6328,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 6331,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6339,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6344,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6357,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6360,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6367,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 6374,
+      "result": "skip_db_already_closed",
+      "dbMintage": 400,
+      "official": 400
+    },
+    {
+      "id": 6375,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 6376,
+      "result": "skip_db_already_closed",
+      "dbMintage": 400,
+      "official": 400
+    },
+    {
+      "id": 6377,
+      "result": "skip_db_already_closed",
+      "dbMintage": 400,
+      "official": 400
+    },
+    {
+      "id": 6378,
+      "result": "skip_db_already_closed",
+      "dbMintage": 400,
+      "official": 400
+    },
+    {
+      "id": 6392,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6421,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 6426,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6433,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6438,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 6441,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 6442,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6445,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6450,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6455,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6458,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6465,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6470,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6473,
+      "result": "skip_db_already_closed",
+      "dbMintage": 100,
+      "official": 100
+    },
+    {
+      "id": 6656,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7410,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7423,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7433,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7482,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7484,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7486,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7488,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7491,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7492,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7508,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 7521,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7552,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7570,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7584,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7593,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7604,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7611,
+      "result": "skip_db_already_closed",
+      "dbMintage": 99,
+      "official": 99
+    },
+    {
+      "id": 7612,
+      "result": "skip_db_already_closed",
+      "dbMintage": 1,
+      "official": 1
+    },
+    {
+      "id": 7615,
+      "result": "skip_db_already_closed",
+      "dbMintage": 18,
+      "official": 18
+    },
+    {
+      "id": 7616,
+      "result": "skip_db_already_closed",
+      "dbMintage": 88,
+      "official": 88
+    },
+    {
+      "id": 7622,
+      "result": "skip_db_already_closed",
+      "dbMintage": 12,
+      "official": 12
+    },
+    {
+      "id": 7626,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 7628,
+      "result": "skip_db_already_closed",
+      "dbMintage": 9,
+      "official": 9
+    },
+    {
+      "id": 7634,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 7636,
+      "result": "skip_db_already_closed",
+      "dbMintage": 24,
+      "official": 24
+    },
+    {
+      "id": 7638,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7645,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7647,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 7649,
+      "result": "skip_db_already_closed",
+      "dbMintage": 400,
+      "official": 400
+    },
+    {
+      "id": 7651,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 7658,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 7666,
+      "result": "skip_db_already_closed",
+      "dbMintage": 200,
+      "official": 200
+    },
+    {
+      "id": 7714,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7716,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 7718,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7719,
+      "result": "skip_db_already_closed",
+      "dbMintage": 99,
+      "official": 99
+    },
+    {
+      "id": 7748,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7749,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7773,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7785,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7796,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7809,
+      "result": "skip_db_already_closed",
+      "dbMintage": 75,
+      "official": 75
+    },
+    {
+      "id": 7820,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7823,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 7825,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7826,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7827,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7840,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7850,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7851,
+      "result": "skip_db_already_closed",
+      "dbMintage": 300,
+      "official": 300
+    },
+    {
+      "id": 7863,
+      "result": "skip_db_already_closed",
+      "dbMintage": 112,
+      "official": 112
+    },
+    {
+      "id": 7880,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 7892,
+      "result": "skip_db_already_closed",
+      "dbMintage": 250,
+      "official": 250
+    },
+    {
+      "id": 7900,
+      "result": "skip_db_already_closed",
+      "dbMintage": 28,
+      "official": 28
+    },
+    {
+      "id": 7905,
+      "result": "skip_db_already_closed",
+      "dbMintage": 50,
+      "official": 50
+    },
+    {
+      "id": 7906,
+      "result": "skip_db_already_closed",
+      "dbMintage": 26,
+      "official": 26
+    }
+  ]
+}

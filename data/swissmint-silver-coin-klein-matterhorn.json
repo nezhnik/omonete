@@ -1,10 +1,10 @@
 {
   "coin": {
     "source_url": "https://www.sondermuenze.ch/en/silver-coin-klein-matterhorn",
-    "title": "Silver coin Aerial Cableway Klein Matterhorn",
-    "description": "The silver coin “Aerial Cableway Klein Matterhorn” is the first coin in the trilogy on the theme of “Swiss aerial cableways”. It honors a major Zermatt project that will be completed by the summer of 2023: with the continuous, year-round connection between Zermatt and Cervinia (Italy) thanks the Matterhorn Alpine Crossing, a long-cherished vision will become reality after more than 80 years.",
+    "title": "Silver coin Aerial Cableway Klein Matterhorn - Swissmint",
+    "description": "Prices Proof in presentation case: CHF 75.- Proof with certificate from the artist: CHF 90.- Uncirculated: CHF 25.-",
     "specs": {
-      "Legal face value": "CHF 20",
+      "Legal face value": "CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 21.03.2023 Mintage Proof in presentation case: 3,050 units Proof with certificate from the artist: 200 units Uncirculated: 11,000 units Prices Proof in presentation case: CHF 75.- Proof with certificate from the artist: CHF 90.- Uncirculated: CHF 25.-",
       "Alloy": "Silver 999",
       "Diameter": "33 mm",
       "Weight": "20 g",
@@ -12,17 +12,14 @@
       "Mintage Proof in presentation case": "3,050 units Proof with certificate from the artist: 200 units",
       "Uncirculated": "11,000 units"
     },
-    "specsText": "Silver coin Aerial Cableway Klein Matterhorn The silver coin “Aerial Cableway Klein Matterhorn” is the first coin in the trilogy on the theme of “Swiss aerial cableways”. It honors a major Zermatt project that will be completed by the summer of 2023: with the continuous, year-round connection between Zermatt and Cervinia (Italy) thanks the Matterhorn Alpine Crossing, a long-cherished vision will become reality after more than 80 years. Legal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 21.03.2023 Mintage Proof in presentation case: 3,050 units Proof with certificate from the artist: 200 units Uncirculated: 11,000 units Prices Proof in presentation case: CHF 75.- Proof with certificate from the artist: CHF 90.- Uncirculated: CHF 25.- <img fetchpriority=\"high\" decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/swissmint-soldat-seilbahn-kl-matterhorn-bs.png\" alt=\"Silver coin Aerial Cableway Klein Matterhorn\" width=\"620\" height=\"620\" /><img decoding=\"async\" src=\"https://www.sondermuenze.ch/wp-content/uploads/swissmint-soldat-seilbahn-kl-matterhorn-ws-1-1.png\" alt=\"Silver coin Aerial Cableway Klein Matterhorn\" width=\"620\" height=\"620\" />",
+    "specsText": "Silver coin Aerial Cableway Klein Matterhorn The silver coin “Aerial Cableway Klein Matterhorn” is the first coin in the trilogy on the theme of “Swiss aerial cableways”. It honors a major Zermatt project that will be completed by the summer of 2023: with the continuous, year-round connection between Zermatt and Cervinia (Italy) thanks the Matterhorn Alpine Crossing, a long-cherished vision will become reality after more than 80 years.\n\nSilver coin Aerial Cableway Klein Matterhorn The silver coin “Aerial Cableway Klein Matterhorn” is the first coin in the trilogy on the theme of “Swiss aerial cableways”. It honors a major Zermatt project that will be completed by the summer of 2023: with the continuous, year-round connection between Zermatt and Cervinia (Italy) thanks the Matterhorn Alpine Crossing, a long-cherished vision will become reality after more than 80 years.\n\nThe silver coin \"Aerial Cableway Klein Matterhorn\" is the first coin in the trilogy on the theme of \"Swiss aerial cableways\".\n\nLegal face value: CHF 20 Alloy: Silver 999 Diameter: 33 mm Weight: 20 g Date of issue: 21.03.2023 Mintage Proof in presentation case: 3,050 units Proof with certificate from the artist: 200 units Uncirculated: 11,000 units Prices Proof in presentation case: CHF 75.- Proof with certificate from the artist: CHF 90.- Uncirculated: CHF 25.-",
     "imageUrls": [
-      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/01.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/02.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/03.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/04.jpg",
-      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/05.jpg"
+      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/01.png",
+      "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/02.png"
     ],
-    "parsedAt": "2026-03-31T18:22:51.411Z",
+    "parsedAt": "2026-04-03T15:59:23.828Z",
     "slug": "silver-coin-klein-matterhorn",
-    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/01.jpg",
-    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/02.jpg"
+    "image_obverse": "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/01.png",
+    "image_reverse": "/image/coins/foreign/swissmint/silver-coin-klein-matterhorn/02.png"
   }
 }

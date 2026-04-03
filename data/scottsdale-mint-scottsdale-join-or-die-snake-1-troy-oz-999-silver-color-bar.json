@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar",
     "title": "Join or Die Snake",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar/02.jpg",
@@ -44,7 +49,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar/38.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar/39.jpg"
     ],
-    "parsedAt": "2026-03-31T17:24:52.576Z",
+    "parsedAt": "2026-03-31T21:13:22.089Z",
     "slug": "scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-join-or-die-snake-1-troy-oz-999-silver-color-bar/02.jpg"

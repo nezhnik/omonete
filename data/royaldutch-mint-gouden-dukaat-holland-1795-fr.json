@@ -4,13 +4,19 @@
     "title": "DR Gouden Dukaat Holland 1795 Fr",
     "price_display": "€670.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0119258",
+      "Metal": "Gold",
+      "Content": "983/1000",
+      "Weight": "3.49 g"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/01.jpeg",
       "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/02.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/03.jpeg"
+      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/03.jpeg",
+      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:16:50.895Z",
+    "parsedAt": "2026-03-31T20:13:11.929Z",
     "slug": "gouden-dukaat-holland-1795-fr",
     "image_obverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/02.jpeg"

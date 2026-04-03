@@ -66,7 +66,11 @@ export function CoinCard(props: CoinCardProps) {
   } = props
 
   const isPackagingRole = (role: string | undefined) =>
-    role === "box" || role === "certificate" || role === "blister_reverse" || role === "blister_obverse"
+    role === "box" ||
+    role === "certificate" ||
+    role === "packaging" ||
+    role === "blister_reverse" ||
+    role === "blister_obverse"
   const isPackaging = (i: number) => isPackagingRole(imageUrlRoles?.[i])
 
   const images = imageUrls?.length ? imageUrls : [imageUrl]

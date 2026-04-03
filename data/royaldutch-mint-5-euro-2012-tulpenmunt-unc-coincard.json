@@ -4,11 +4,18 @@
     "title": "HM 5 Euro 2012 Tulpenmunt UNC Coincard",
     "price_display": "€10.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0106737",
+      "Metal": "Silver plated copper",
+      "Weight": "10. 50 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Uncirculated",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2012-tulpenmunt-unc-coincard/01.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:04:09.669Z",
+    "parsedAt": "2026-03-31T20:04:13.467Z",
     "slug": "5-euro-2012-tulpenmunt-unc-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2012-tulpenmunt-unc-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2012-tulpenmunt-unc-coincard/01.jpeg"

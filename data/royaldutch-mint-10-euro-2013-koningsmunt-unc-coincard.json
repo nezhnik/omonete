@@ -4,14 +4,23 @@
     "title": "HM 10 Euro 2013 Kroning UNC Coincard",
     "price_display": "€19.50",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0111110",
+      "Metal": "Silver plated copper",
+      "Weight": "15.5 g",
+      "Diameter": "30.0 mm",
+      "Quality": "Uncirculated",
+      "Nominal value": "10 euros",
+      "Mintage": "400,000",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/01.jpeg",
       "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/02.jpeg",
       "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/03.jpeg",
       "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:58:20.663Z",
+    "parsedAt": "2026-03-31T19:59:07.138Z",
     "slug": "10-euro-2013-koningsmunt-unc-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/10-euro-2013-koningsmunt-unc-coincard/02.jpeg"

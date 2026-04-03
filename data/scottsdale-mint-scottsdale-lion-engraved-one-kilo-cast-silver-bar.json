@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-lion-engraved-one-kilo-cast-silver-bar",
     "title": "Scottsdale Lion",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Kilogram",
+      "Purity": ".999 Silver",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-lion-engraved-one-kilo-cast-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-lion-engraved-one-kilo-cast-silver-bar/02.jpg",
@@ -25,7 +30,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-lion-engraved-one-kilo-cast-silver-bar/19.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-lion-engraved-one-kilo-cast-silver-bar/20.jpg"
     ],
-    "parsedAt": "2026-03-31T17:26:37.642Z",
+    "parsedAt": "2026-03-31T21:14:20.359Z",
     "slug": "scottsdale-lion-engraved-one-kilo-cast-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-lion-engraved-one-kilo-cast-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-lion-engraved-one-kilo-cast-silver-bar/02.jpg"

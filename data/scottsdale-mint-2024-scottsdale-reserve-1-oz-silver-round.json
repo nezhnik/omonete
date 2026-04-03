@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/2024-scottsdale-reserve-1-oz-silver-round",
     "title": "2024 Scottsdale Reserve",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/01.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/02.jpg",
@@ -39,6 +44,7 @@
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/33.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/34.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/35.jpg",
+      "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/36.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/37.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/38.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/39.jpg",
@@ -54,7 +60,7 @@
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/49.jpg",
       "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/50.jpg"
     ],
-    "parsedAt": "2026-03-31T17:01:57.541Z",
+    "parsedAt": "2026-03-31T21:03:24.652Z",
     "slug": "2024-scottsdale-reserve-1-oz-silver-round",
     "image_obverse": "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round/02.jpg"

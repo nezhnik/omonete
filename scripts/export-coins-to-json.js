@@ -24,6 +24,31 @@ const EXPORT_SNAPSHOTS_DIR = path.join(REPORTS_DIR, "export-snapshots");
 /** Не выгружать в JSON (удалены из каталога); см. scripts/sql/delete-coins-5998-6000.sql */
 const EXCLUDED_EXPORT_COIN_IDS = new Set(["5998", "6000", "6012"]);
 
+/** Порядок кадров в JSON image_urls (Swissmint shop и др.): после колонок obverse/reverse подмешиваем остальное с этими ролями. */
+const IMAGE_URL_JSON_INDEX_ROLES = ["obverse", "reverse", "box", "packaging", "certificate", "extra"];
+
+function parseImageUrlsColumn(raw) {
+  if (raw == null || raw === "") return null;
+  if (Array.isArray(raw)) return raw;
+  if (typeof Buffer !== "undefined" && Buffer.isBuffer(raw)) {
+    try {
+      const p = JSON.parse(raw.toString("utf8"));
+      return Array.isArray(p) ? p : null;
+    } catch {
+      return null;
+    }
+  }
+  if (typeof raw === "string") {
+    try {
+      const p = JSON.parse(raw);
+      return Array.isArray(p) ? p : null;
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
+
 // Только свои пути из БД. URL ЦБ не используем — на сайте только монеты с картинками в БД.
 function obverseUrl(imageObverse) {
   if (imageObverse && String(imageObverse).trim()) return imageObverse.trim();
@@ -425,6 +450,21 @@ function isRectangularFromInBlisterMainImagePaths(title, titleEn, obverseUrl, re
   return /in-blister/i.test(o + rev);
 }
 
+/**
+ * Royal Mint «in Blister»: в БД часто заполнен только image_blister_reverse, а кадр av. блистера — в image_obverse
+ * (путь …-in-blister-obv.webp). Без подстановки в экспорте остаётся одна картинка.
+ */
+function blisterUrlsWithMainImageFallback(title, titleEn, obverse, reverse, blisterObverse, blisterReverse) {
+  if (!blisterObverse && !blisterReverse) return { blisterObverse, blisterReverse };
+  if (!isRectangularFromInBlisterMainImagePaths(title, titleEn, obverse, reverse)) {
+    return { blisterObverse, blisterReverse };
+  }
+  return {
+    blisterObverse: blisterObverse || (obverse && /in-blister/i.test(String(obverse)) ? obverse : null),
+    blisterReverse: blisterReverse || (reverse && /in-blister/i.test(String(reverse)) ? reverse : null),
+  };
+}
+
 async function run() {
   const incremental = process.argv.includes("--incremental");
   if (incremental) console.log("Режим: инкрементальный (только изменённые/новые)");
@@ -578,10 +618,18 @@ async function run() {
     const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
     const reverse = normalizeAssetUrl(dropWrong(reverseUrl(imageReverse)));
     const obverse = normalizeAssetUrl(dropWrong(obverseUrl(imageObverse)));
-    const blisterReverse = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
-    const blisterObverse = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
+    const blisterReverseRaw = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
+    const blisterObverseRaw = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
+    const { blisterObverse, blisterReverse } = blisterUrlsWithMainImageFallback(
+      r.title,
+      r.title_en,
+      obverse,
+      reverse,
+      blisterObverseRaw,
+      blisterReverseRaw
+    );
     /** Хотя бы один кадр Assay/blister в БД — показываем только блистер(ы), без «голого» слитка/монеты. */
-    const hasAnyBlister = !!(blisterReverse || blisterObverse);
+    const hasAnyBlister = !!(blisterReverseRaw || blisterObverseRaw);
     const imageUrl = hasAnyBlister
       ? (firstImageSide === "reverse" ? (blisterReverse ?? blisterObverse ?? PLACEHOLDER) : (blisterObverse ?? blisterReverse ?? PLACEHOLDER))
       : (firstImageSide === "reverse" ? (reverse ?? obverse ?? PLACEHOLDER) : (obverse ?? reverse ?? PLACEHOLDER));
@@ -613,11 +661,16 @@ async function run() {
       if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
     }
     // При любом блистер-кадре не подмешиваем image_urls (там перспектива слитка и дубли certi).
-    if (!hasAnyBlister && imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
-      const filtered = (isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
-        .map((u) => normalizeAssetUrl(u))
-        .filter(Boolean);
-      if (filtered.length > 0) imageUrlsOut.push(...filtered);
+    if (!hasAnyBlister) {
+      const arr = parseImageUrlsColumn(imageUrls);
+      if (arr && arr.length > 0) {
+        const filtered = (isThreeCoinSet ? arr : arr.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
+          .map((u) => normalizeAssetUrl(u))
+          .filter(Boolean);
+        for (let i = 0; i < filtered.length; i++) {
+          pushIfNew(filtered[i], IMAGE_URL_JSON_INDEX_ROLES[i] || "extra");
+        }
+      }
     }
     const { code: metalCode } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
@@ -625,6 +678,9 @@ async function run() {
     const weightG = parseWeightG(r.weight_g);
     const metalLabelStr = metalOnly(r.metal);
     const mintageDisp = r.mintage_display != null && String(r.mintage_display).trim() ? String(r.mintage_display).trim() : undefined;
+    const mintageNum = r.mintage != null && String(r.mintage).trim() !== "" ? Number(r.mintage) : NaN;
+    const mintageOut =
+      Number.isFinite(mintageNum) && mintageNum > 0 ? mintageNum : undefined;
     return {
       id: String(r.id),
       title: cleanTitle(r.title),
@@ -632,6 +688,7 @@ async function run() {
       country: r.country ?? "Россия",
       year: year ?? 0,
       faceValue: (stripCountryFromFaceValue(r.face_value) || r.face_value) ?? undefined,
+      mintage: mintageOut,
       mintageDisplay: mintageDisp,
       mintageNeedsResearch: coinNeedsMintageResearch(r),
       imageUrl,
@@ -770,9 +827,17 @@ async function run() {
     const dropWrong = (u) => u && !isThreeCoinSet && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
     const obverse = normalizeAssetUrl(dropWrong(obverseUrl(imageObverse)));
     const reverse = normalizeAssetUrl(dropWrong(reverseUrl(imageReverse)));
-    const blisterReverse = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
-    const blisterObverse = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
-    const hasAnyBlister = !!(blisterReverse || blisterObverse);
+    const blisterReverseRaw = normalizeAssetUrl(imageBlisterRev ? String(imageBlisterRev).trim() : null);
+    const blisterObverseRaw = normalizeAssetUrl(imageBlisterObv ? String(imageBlisterObv).trim() : null);
+    const { blisterObverse, blisterReverse } = blisterUrlsWithMainImageFallback(
+      r.title,
+      r.title_en,
+      obverse,
+      reverse,
+      blisterObverseRaw,
+      blisterReverseRaw
+    );
+    const hasAnyBlister = !!(blisterReverseRaw || blisterObverseRaw);
     const firstImage = hasAnyBlister
       ? (firstImageSide === "reverse" ? (blisterReverse ?? blisterObverse ?? "") : (blisterObverse ?? blisterReverse ?? ""))
       : (firstImageSide === "reverse" ? (reverse ?? obverse ?? "") : (obverse ?? reverse ?? ""));
@@ -803,11 +868,16 @@ async function run() {
       if (normalizeAssetUrl(imageBox?.trim())) pushIfNew(normalizeAssetUrl(imageBox.trim()), "box");
       if (normalizeAssetUrl(imageCertificate?.trim())) pushIfNew(normalizeAssetUrl(imageCertificate.trim()), "certificate");
     }
-    if (!hasAnyBlister && imageUrlsOut.length === 0 && Array.isArray(imageUrls) && imageUrls.length > 0) {
-      const filtered = (isThreeCoinSet ? imageUrls : imageUrls.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
-        .map((u) => normalizeAssetUrl(u))
-        .filter(Boolean);
-      if (filtered.length > 0) imageUrlsOut.push(...filtered);
+    if (!hasAnyBlister) {
+      const arr = parseImageUrlsColumn(imageUrls);
+      if (arr && arr.length > 0) {
+        const filtered = (isThreeCoinSet ? arr : arr.filter((u) => !String(u).includes(WRONG_3_COIN_SET_PATH)))
+          .map((u) => normalizeAssetUrl(u))
+          .filter(Boolean);
+        for (let i = 0; i < filtered.length; i++) {
+          pushIfNew(filtered[i], IMAGE_URL_JSON_INDEX_ROLES[i] || "extra");
+        }
+      }
     }
     const releaseDate = r.release_date;
     const titleStr = [r.title, r.title_en].filter(Boolean).join(" ");
@@ -876,9 +946,21 @@ async function run() {
       sameSeries = sameRows.filter(hasImage).slice(0, 6).map((s) => {
         const rev = reverseUrl(s.image_reverse);
         const obv = obverseUrl(s.image_obverse);
-        const sBlisterRev = normalizeAssetUrl(s.image_blister_reverse ? String(s.image_blister_reverse).trim() : null);
-        const sBlisterObv = normalizeAssetUrl(s.image_blister_obverse ? String(s.image_blister_obverse).trim() : null);
-        const sHasAnyBlister = !!(sBlisterRev || sBlisterObv);
+        const sIsThreeCoin = (s.title || "").includes("Three Coin Set") || (s.title || "").includes("3 Coin Set");
+        const sDropWrong = (u) => u && !sIsThreeCoin && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
+        const sObv = normalizeAssetUrl(sDropWrong(obverseUrl(s.image_obverse)));
+        const sRev = normalizeAssetUrl(sDropWrong(reverseUrl(s.image_reverse)));
+        const sBlisterRevRaw = normalizeAssetUrl(s.image_blister_reverse ? String(s.image_blister_reverse).trim() : null);
+        const sBlisterObvRaw = normalizeAssetUrl(s.image_blister_obverse ? String(s.image_blister_obverse).trim() : null);
+        const sHasAnyBlister = !!(sBlisterRevRaw || sBlisterObvRaw);
+        const { blisterObverse: sBlisterObv, blisterReverse: sBlisterRev } = blisterUrlsWithMainImageFallback(
+          s.title,
+          s.title_en,
+          sObv,
+          sRev,
+          sBlisterObvRaw,
+          sBlisterRevRaw
+        );
         const si = sHasAnyBlister
           ? (firstImageSide === "reverse" ? (sBlisterRev ?? sBlisterObv) : (sBlisterObv ?? sBlisterRev))
           : (firstImageSide === "reverse" ? (rev ?? obv) : (obv ?? rev));
@@ -887,10 +969,6 @@ async function run() {
         const metalCodes = getMetalCodes(s.metal);
         const metalName = metalOnly(s.metal);
         const weightG = formatWeightG(s.weight_g) ?? (s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined);
-        const sIsThreeCoin = (s.title || "").includes("Three Coin Set") || (s.title || "").includes("3 Coin Set");
-        const sDropWrong = (u) => u && !sIsThreeCoin && String(u).includes(WRONG_3_COIN_SET_PATH) ? null : u;
-        const sObv = normalizeAssetUrl(sDropWrong(obverseUrl(s.image_obverse)));
-        const sRev = normalizeAssetUrl(sDropWrong(reverseUrl(s.image_reverse)));
         return {
           id: String(s.id),
           title: s.title,

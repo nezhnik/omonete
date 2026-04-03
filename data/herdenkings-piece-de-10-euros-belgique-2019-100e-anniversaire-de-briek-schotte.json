@@ -4,7 +4,15 @@
     "title": "Pièce de 10 euros Belgique 2019 100e anniversaire de Briek Schotte",
     "price_display": "54,95 €",
     "description": "Briek Schotte est né le 7 septembre 1919 à Kanegem. Il fut un talentueux cycliste belge. Au terme de sa carrière de sportif, il resta actif pendant 30 ans en tant que Chef d’équipe. Il gagna le Tour des Flandres à deux reprises, et fut deux fois champion du monde, ce qui lui valut des surnoms comme L’Homme de Fer ou Le dernier des Flandriens. Il repose maintenant à Waregem, ville dont il fut aussi citoyen d’honneur. C’est en commémoration du 100e anniversaire de la naissance de Briek Schotte qu’est émise la pièce de 10 euros en argent Sterling.",
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0105954",
+      "Métal": "Argent",
+      "Poids": "18,75 g",
+      "Diamètre": "33,0 mm",
+      "Qualité": "Belle Épreuve",
+      "Tirage": "max. 3.000",
+      "Création": "Luc Luycx"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/01.png",
       "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/02.png",
@@ -13,7 +21,7 @@
       "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/05.png",
       "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/06.png"
     ],
-    "parsedAt": "2026-03-31T19:11:24.220Z",
+    "parsedAt": "2026-03-31T20:49:56.277Z",
     "slug": "piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte",
     "image_obverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/01.png",
     "image_reverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/02.png"

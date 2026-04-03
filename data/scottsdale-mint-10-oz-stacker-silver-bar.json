@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/10-oz-stacker-silver-bar",
     "title": "Scottsdale Stacker®",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "10 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/10-oz-stacker-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/10-oz-stacker-silver-bar/02.jpg",
@@ -82,7 +87,7 @@
       "/image/coins/foreign/scottsdale/10-oz-stacker-silver-bar/76.jpg",
       "/image/coins/foreign/scottsdale/10-oz-stacker-silver-bar/77.jpg"
     ],
-    "parsedAt": "2026-03-31T16:54:17.586Z",
+    "parsedAt": "2026-03-31T20:57:16.491Z",
     "slug": "10-oz-stacker-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/10-oz-stacker-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/10-oz-stacker-silver-bar/02.jpg"

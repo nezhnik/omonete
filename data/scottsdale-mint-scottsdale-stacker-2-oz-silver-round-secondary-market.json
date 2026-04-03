@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-stacker-2-oz-silver-round-secondary-market",
     "title": "Scottsdale Stacker®",
-    "specs": {},
+    "specs": {
+      "Weight": "2 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "Circulated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/02.jpg",
@@ -27,7 +32,6 @@
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/21.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/22.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/23.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/24.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/25.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/26.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/27.jpg",
@@ -50,7 +54,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/44.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/45.jpg"
     ],
-    "parsedAt": "2026-03-31T17:44:34.365Z",
+    "parsedAt": "2026-03-31T21:24:36.590Z",
     "slug": "scottsdale-stacker-2-oz-silver-round-secondary-market",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-2-oz-silver-round-secondary-market/02.jpg"

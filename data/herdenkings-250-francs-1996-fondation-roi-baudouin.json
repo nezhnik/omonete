@@ -4,16 +4,18 @@
     "title": "250 Francs 1996 - Fondation Roi Baudouin",
     "price_display": "123,95 €",
     "description": null,
-    "specs": {},
-    "imageUrls": [
-      "/image/coins/foreign/herdenkings/250-francs-1996-fondation-roi-baudouin/01.jpeg",
-      "/image/coins/foreign/herdenkings/250-francs-1996-fondation-roi-baudouin/02.jpeg",
-      "/image/coins/foreign/herdenkings/250-francs-1996-fondation-roi-baudouin/03.jpeg",
-      "/image/coins/foreign/herdenkings/250-francs-1996-fondation-roi-baudouin/04.jpeg"
-    ],
-    "parsedAt": "2026-03-31T19:07:25.858Z",
+    "specs": {
+      "Numéro d'article": "0113422",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "18,75 g",
+      "Diamètre": "33,0 mm",
+      "Qualité": "Uncirculated"
+    },
+    "imageUrls": [],
+    "parsedAt": "2026-03-31T20:46:38.973Z",
     "slug": "250-francs-1996-fondation-roi-baudouin",
-    "image_obverse": "/image/coins/foreign/herdenkings/250-francs-1996-fondation-roi-baudouin/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/250-francs-1996-fondation-roi-baudouin/02.jpeg"
+    "image_obverse": null,
+    "image_reverse": null
   }
 }

@@ -4,14 +4,21 @@
     "title": "HM 5 Euro 2016 Jeroen Bosch BU CC",
     "price_display": "€12.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0118864",
+      "Metal": "Silver plated copper",
+      "Weight": "10.5 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Brilliant Uncirculated",
+      "Mintage": "12,500"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-bu-coincard/01.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-bu-coincard/02.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-bu-coincard/03.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-bu-coincard/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:05:03.194Z",
+    "parsedAt": "2026-03-31T20:05:22.730Z",
     "slug": "5-euro-2016-jeroen-bosch-bu-coincard",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-bu-coincard/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-bu-coincard/02.jpeg"

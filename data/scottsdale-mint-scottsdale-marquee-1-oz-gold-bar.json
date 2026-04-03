@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-marquee-1-oz-gold-bar",
     "title": "Scottsdale Gold Marquee",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".9999 Gold",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/02.jpg",
@@ -73,15 +78,9 @@
       "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/67.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/68.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/69.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/70.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/71.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/72.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/73.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/74.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/75.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/76.jpg"
+      "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/70.jpg"
     ],
-    "parsedAt": "2026-03-31T19:25:37.680Z",
+    "parsedAt": "2026-03-31T21:14:50.253Z",
     "slug": "scottsdale-marquee-1-oz-gold-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-marquee-1-oz-gold-bar/02.jpg"

@@ -4,7 +4,17 @@
     "title": "Aviation 10 euro coin 2019 Gold Proof",
     "price_display": "€389.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0104842",
+      "Metal": "Gold",
+      "Content": "900/1000",
+      "Weight": "6.72 g",
+      "Diameter": "22.5 mm",
+      "Quality": "Proof",
+      "Nominal value": "10 euros",
+      "Mintage": "max 1,000 pieces",
+      "Edge": "serrated"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/02.jpeg",
@@ -13,7 +23,7 @@
       "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/05.jpeg",
       "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:11:29.730Z",
+    "parsedAt": "2026-03-31T20:10:19.267Z",
     "slug": "aviation-10-euro-coin-2019-gold-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/02.jpeg"

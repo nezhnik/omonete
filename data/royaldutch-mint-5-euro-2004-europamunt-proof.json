@@ -4,14 +4,22 @@
     "title": "HM 5 Euro 2004 Europamunt Proof",
     "price_display": "€47.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0106752",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Diameter": "29.0 mm",
+      "Quality": "Proof",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS",
+      "Mintmaster sign": "Koerszettende zeilen"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/02.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/03.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:02:52.519Z",
+    "parsedAt": "2026-03-31T20:02:52.556Z",
     "slug": "5-euro-2004-europamunt-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/02.jpeg"

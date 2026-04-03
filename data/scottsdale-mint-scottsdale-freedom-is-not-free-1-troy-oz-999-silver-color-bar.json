@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar",
     "title": "Freedom is Not Free",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".9999 Silver",
+      "Grade": "None",
+      "Mintage": "299"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar/02.jpg",
@@ -35,7 +40,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar/29.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar/30.jpg"
     ],
-    "parsedAt": "2026-03-31T17:16:00.202Z",
+    "parsedAt": "2026-03-31T21:10:31.090Z",
     "slug": "scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-freedom-is-not-free-1-troy-oz-999-silver-color-bar/02.jpg"

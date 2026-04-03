@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-04-03T14:02:52.478Z",
+  "source_report_generatedAt": "2026-04-03T12:05:29.097Z",
+  "cohort_missing_count": 144,
+  "rows_with_any_mintage_source_block": 25,
+  "found_mintage_count": 3,
+  "items": [
+    {
+      "id": 6792,
+      "catalog_number": "CH-PAMP-ANIMALS-AFRICA-1OZ-PURE-",
+      "title": "Animals of Africa - 1oz Pure Silver African Lion Coin",
+      "official_pamp_url": "https://www.pamp.com/product/collectible/animals-africa-1oz-pure-silver-african-lion-coin",
+      "web_status": "partial",
+      "verified_mintage": null,
+      "agreeing_hosts": [],
+      "proposed_mintages": [
+        3
+      ],
+      "sources_count": 1,
+      "sources_detail": [
+        {
+          "host": "jmbullion.com",
+          "url": "https://www.jmbullion.com/gold/",
+          "mintage": 3,
+          "quoted_text": "mintage figures.\\u003"
+        }
+      ],
+      "researched_at": "2026-04-03T14:01:42.148Z",
+      "method": "dealer_internal_search_top4",
+      "query_used": "Animals of Africa - 1oz Pure Silver African Lion Coin PAMP mintage \"limited edition\"",
+      "note": "Только один домен дал число — желательно второй источник."
+    },
+    {
+      "id": 6881,
+      "catalog_number": "CH-PAMP-2024-YEAR-DRAGON-LEGEND-",
+      "title": "2024 Year of the Dragon - Legend of the Azure Dragon 10g Silver Bar",
+      "official_pamp_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-10g-silver-bar",
+      "web_status": "partial",
+      "verified_mintage": null,
+      "agreeing_hosts": [],
+      "proposed_mintages": [
+        50000
+      ],
+      "sources_count": 1,
+      "sources_detail": [
+        {
+          "host": "jmbullion.com",
+          "url": "https://www.jmbullion.com/lunar-year-series/year-of-the-horse/",
+          "mintage": 50000,
+          "quoted_text": "mintage of only 50,000"
+        }
+      ],
+      "researched_at": "2026-04-03T14:02:30.314Z",
+      "method": "dealer_internal_search_top4",
+      "query_used": "2024 Year of the Dragon - Legend of the Azure Dragon 10g Silver Bar PAMP 2024 mintage \"limited edition\"",
+      "note": "Только один домен дал число — желательно второй источник."
+    },
+    {
+      "id": 6883,
+      "catalog_number": "CH-PAMP-2024-YEAR-DRAGON-LEGEND-",
+      "title": "2024 Year of the Dragon - Legend of the Azure Dragon 1oz Silver Bar",
+      "official_pamp_url": "https://www.pamp.com/product/minted-ingots/2024-year-dragon-legend-azure-dragon-1oz-silver-bar",
+      "web_status": "partial",
+      "verified_mintage": null,
+      "agreeing_hosts": [],
+      "proposed_mintages": [
+        50000
+      ],
+      "sources_count": 1,
+      "sources_detail": [
+        {
+          "host": "jmbullion.com",
+          "url": "https://www.jmbullion.com/lunar-year-series/year-of-the-horse/",
+          "mintage": 50000,
+          "quoted_text": "mintage of only 50,000"
+        }
+      ],
+      "researched_at": "2026-04-03T14:02:40.644Z",
+      "method": "dealer_internal_search_top4",
+      "query_used": "2024 Year of the Dragon - Legend of the Azure Dragon 1oz Silver Bar PAMP 2024 mintage \"limited edition\"",
+      "note": "Только один домен дал число — желательно второй источник."
+    }
+  ]
+}

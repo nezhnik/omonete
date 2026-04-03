@@ -4,14 +4,21 @@
     "title": "HJ 50 Frank 1960 - Koninklijk Huwelijk",
     "price_display": "€74.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0111786",
+      "Metal": "Silver",
+      "Content": "835/1000",
+      "Weight": "12.5 g",
+      "Diameter": "30.0 mm",
+      "Quality": "Almost Uncirculated"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/01.jpeg",
       "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/02.jpeg",
       "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/03.jpeg",
       "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:13:35.598Z",
+    "parsedAt": "2026-03-31T20:12:16.769Z",
     "slug": "dr-50-fr-1960-koninklijk-huwelijk-unc",
     "image_obverse": "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/02.jpeg"

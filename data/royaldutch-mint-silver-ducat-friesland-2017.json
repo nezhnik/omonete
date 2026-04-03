@@ -4,7 +4,15 @@
     "title": "Silver Ducat Friesland 2017",
     "price_display": "€49.95",
     "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af! Het is ook mogelijk om alle 12 van deze munten te verzamelen, u kunt zich dan inschrijven voor onze collectie 'De Twaalf Provinciën'. U ontvangt dan iedere maand een nieuwe uitgifte.",
-    "specs": {},
+    "specs": {
+      "Article number": "094382",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40.0 mm",
+      "Quality": "Proof",
+      "Mintage": "4,000"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/01.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/02.jpeg",
@@ -13,7 +21,7 @@
       "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/05.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:44:00.608Z",
+    "parsedAt": "2026-03-31T20:33:13.972Z",
     "slug": "silver-ducat-friesland-2017",
     "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/02.jpeg"

@@ -4,14 +4,19 @@
     "title": "DR 25 Cent Wilhelmina Pr (eikel/p)",
     "price_display": "€18.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0109372",
+      "Metal": "Silver",
+      "Weight": "3.575 g",
+      "Diameter": "19 mm"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/01.jpeg",
       "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/02.jpeg",
       "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/03.jpeg",
       "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:01:16.148Z",
+    "parsedAt": "2026-03-31T20:01:44.881Z",
     "slug": "25-cent-wilhelmina-pr",
     "image_obverse": "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/02.jpeg"

@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike",
     "title": "Scottsdale Snowflake | First in Series",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".9999 Silver",
+      "Grade": "None",
+      "Mintage": "199"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/02.jpg",
@@ -65,7 +70,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/59.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/60.jpg"
     ],
-    "parsedAt": "2026-03-31T17:42:46.862Z",
+    "parsedAt": "2026-03-31T21:22:36.589Z",
     "slug": "scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/02.jpg"

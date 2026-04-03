@@ -4,7 +4,16 @@
     "title": "HM 5 Euro 2005 Vredes Vijfje Proof",
     "price_display": "€47.95",
     "description": "Op 5 mei 1945 werd Nederland bevrijd. Maar pas op 15 augustus van dat jaar capituleerde Japan en werd ook voormalig Nederlands-Indië bevrijd. Hiermee kwam er officieel een einde aan de Tweede Wereldoorlog in het Koninkrijk der Nederlanden. Om 60 jaar van vrede en vrijheid op gepaste wijze te herdenken, slaat de Koninklijke Nederlandse Munt, in opdracht van het Ministerie van Financiën de tweede herdenkingsmunt van 2005, het Vredes Vijfje.",
-    "specs": {},
+    "specs": {
+      "Article number": "0108726",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "11.9 g",
+      "Diameter": "29.0 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "40,000"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/02.jpeg",
@@ -14,7 +23,7 @@
       "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/06.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:03:08.795Z",
+    "parsedAt": "2026-03-31T20:03:09.553Z",
     "slug": "5-euro-2005-vredes-vijfje-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/02.jpeg"

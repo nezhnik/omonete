@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-gold-lion-1-oz-9999-gold-cast-bar",
     "title": "Scottsdale Gold Cast Bar",
-    "specs": {},
+    "specs": {
+      "Purity": ".9999 Gold",
+      "Weight": "1 Troy oz",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/02.jpg",
@@ -59,7 +64,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/53.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/54.jpg"
     ],
-    "parsedAt": "2026-03-31T17:24:19.996Z",
+    "parsedAt": "2026-03-31T21:12:46.560Z",
     "slug": "scottsdale-gold-lion-1-oz-9999-gold-cast-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/02.jpg"

@@ -4,14 +4,22 @@
     "title": "HM 5 Euro 2010 Max Havelaar Proof",
     "price_display": "€47.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0107626",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/02.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/03.jpeg",
       "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/04.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:03:40.543Z",
+    "parsedAt": "2026-03-31T20:03:39.399Z",
     "slug": "5-euro-2010-max-havelaar-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/02.jpeg"

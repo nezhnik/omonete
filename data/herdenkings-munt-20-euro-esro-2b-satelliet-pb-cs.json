@@ -4,7 +4,16 @@
     "title": "Pièce de 20 euros Belgique 2018 « ESRO-2B » en argent",
     "price_display": "64,95 €",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Numéro d'article": "0103866",
+      "Métal": "Argent",
+      "Teneur": "925/1000",
+      "Poids": "22,85 g",
+      "Diamètre": "37,0 mm",
+      "Qualité": "Belle Épreuve",
+      "Valeur nominale": "20 euros",
+      "Tirage": "5 000"
+    },
     "imageUrls": [
       "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/01.jpeg",
       "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/02.jpeg",
@@ -13,7 +22,7 @@
       "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/05.jpeg",
       "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T19:10:25.712Z",
+    "parsedAt": "2026-03-31T20:49:08.749Z",
     "slug": "munt-20-euro-esro-2b-satelliet-pb-cs",
     "image_obverse": "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/01.jpeg",
     "image_reverse": "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/02.jpeg"

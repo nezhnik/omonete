@@ -4,7 +4,15 @@
     "title": "Official Restrike Lion Dollar 2019 Gold Proof – Piedfort edition",
     "price_display": "€4,999.95",
     "description": "Piedfort Piedfort is een Franse term in de Nederlandse numismatiek voor een munt geslagen op een dubbeldikke rondel. De Herslag Piedforts in Zilver Proof en Goud Proof hebben dus het dubbele gewicht van een Leeuwendaalder (2 Oz = 62,2 gram).",
-    "specs": {},
+    "specs": {
+      "Article number": "0104881",
+      "Metal": "Gold",
+      "Content": "999.9/1000",
+      "Weight": "2 Oz (62.2 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "max. 10"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/01.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/02.jpeg",
@@ -13,7 +21,7 @@
       "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/05.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:31:47.427Z",
+    "parsedAt": "2026-03-31T20:24:28.545Z",
     "slug": "official-restrike-lion-dollar-2019-gold-proof-piedfort-edition",
     "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/02.jpeg"

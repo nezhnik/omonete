@@ -4,20 +4,31 @@
     "title": "Official Restrike: “Scheepjesschelling” 2021 Silver 1 Ounce",
     "price_display": "€99.95",
     "description": "The Royal Dutch Mint proudly presents the Official Restrike of the original Utrecht “Scheepjesschelling” from 1786! The silver restrike is available in 1 and 2 troy ounce(s)! This system of units of mass is primarily used in the precious metals industry. It is internationally used and loved, and is therefore more than suitable for this former trade coin! The “schelling” is a Dutch coin type which has been around in many varieties. The Scheepjesschelling was brought into circulation in 1670 because many inferior pieces were in circulation of previous varieties of the coin. It had a nominal value of six stuivers (5 cent coins). The name of the Scheepjesschelling is derived from its use in trades. The coin was mostly used internationally. The obverse therefore depicts a ship: “scheepje” in Dutch! Design The obverse of the Scheepjesschelling depicts a warship with a flag on the stern. The inscription reads “CONCORDIA RES PARVAE CRESCUNT” which may be translated as Unity makes Strength. The reverse shows the province weapon of Utrecht and the inscription “MO:NO:ARG:ORDIN:TRAIECT”: MONETA NOVA ARGENTEA ORDINUM TRAIECTUM. It means New silver coin of Utrecht. The silver restrike of the Scheepjesschelling comes in luxury packaging, including a numbered Certificate of Authenticity.",
-    "specs": {},
+    "specs": {
+      "Article number": "0110166",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "1,000",
+      "Edge": "Smooth"
+    },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/07.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/08.jpeg"
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/rev.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/pack.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/box.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/cert.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/blister-obv.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/blister-rev.jpeg",
+      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/extra-8.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:36:36.913Z",
+    "parsedAt": "2026-03-31T20:28:36.391Z",
     "slug": "official-restrike-scheepjesschelling-2021-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/02.jpeg"
+    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/obv.jpeg",
+    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/rev.jpeg",
+    "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/pack.jpeg",
+    "image_box": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2021-silver-1-ounce/box.jpeg"
   }
 }

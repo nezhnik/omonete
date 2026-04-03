@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/2-oz-scottsdale-silver-stacker-round",
     "title": "Scottsdale Stacker®",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "2 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/2-oz-scottsdale-silver-stacker-round/01.jpg",
       "/image/coins/foreign/scottsdale/2-oz-scottsdale-silver-stacker-round/02.jpg",
@@ -56,7 +61,7 @@
       "/image/coins/foreign/scottsdale/2-oz-scottsdale-silver-stacker-round/50.jpg",
       "/image/coins/foreign/scottsdale/2-oz-scottsdale-silver-stacker-round/51.jpg"
     ],
-    "parsedAt": "2026-03-31T16:57:23.433Z",
+    "parsedAt": "2026-03-31T20:59:16.771Z",
     "slug": "2-oz-scottsdale-silver-stacker-round",
     "image_obverse": "/image/coins/foreign/scottsdale/2-oz-scottsdale-silver-stacker-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/2-oz-scottsdale-silver-stacker-round/02.jpg"

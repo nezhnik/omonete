@@ -66,6 +66,13 @@ function parseSpecPairsFromText(raw) {
     if (!labels.has(k)) continue;
     if (!out[lines[i]]) out[lines[i]] = lines[i + 1];
   }
+  for (const line of lines) {
+    const m = line.match(/^([^:]{2,60}):\s*(.+)$/);
+    if (!m) continue;
+    const key = m[1].trim();
+    if (!labels.has(key.toLowerCase())) continue;
+    if (!out[key]) out[key] = m[2].trim();
+  }
   return out;
 }
 
@@ -100,7 +107,7 @@ async function parseProduct(page, sourceUrl) {
       ...document.querySelectorAll(".e-n-tabs, [role='tabpanel'], .elementor-widget-heading, .elementor-widget-text-editor"),
     ];
     for (const c of candidates) {
-      const t = (c.textContent || "").replace(/\s+/g, " ").trim();
+      const t = (c.innerText || c.textContent || "").trim();
       if (!t) continue;
       if (/dimensions|weight|purity|manufacturer|packaging|grade|mintage|obverse design/i.test(t)) allTexts.push(t);
     }

@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/1-oz-scottsdale-the-one-silver-bar",
     "title": "Scottsdale Lion \"The One\"",
-    "specs": {},
+    "specs": {
+      "Weight": "1 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/1-oz-scottsdale-the-one-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/1-oz-scottsdale-the-one-silver-bar/02.jpg",
@@ -61,7 +66,7 @@
       "/image/coins/foreign/scottsdale/1-oz-scottsdale-the-one-silver-bar/55.jpg",
       "/image/coins/foreign/scottsdale/1-oz-scottsdale-the-one-silver-bar/56.jpg"
     ],
-    "parsedAt": "2026-03-31T16:51:21.162Z",
+    "parsedAt": "2026-03-31T20:55:15.103Z",
     "slug": "1-oz-scottsdale-the-one-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/1-oz-scottsdale-the-one-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/1-oz-scottsdale-the-one-silver-bar/02.jpg"

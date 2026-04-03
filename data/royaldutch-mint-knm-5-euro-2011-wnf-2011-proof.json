@@ -4,7 +4,15 @@
     "title": "HM 5 Euro 2011 WNF Proof",
     "price_display": "€57.95",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0112209",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Mintage": "17,500"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/02.jpeg",
@@ -15,7 +23,7 @@
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/07.jpeg",
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/08.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:18:42.389Z",
+    "parsedAt": "2026-03-31T20:14:37.608Z",
     "slug": "knm-5-euro-2011-wnf-2011-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/02.jpeg"

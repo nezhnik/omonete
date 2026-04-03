@@ -11,7 +11,11 @@ require("dotenv").config({ path: ".env" });
 const mysql = require("mysql2/promise");
 const fs = require("fs");
 const path = require("path");
-const { finalizeMintageForDb, logImportMintageSummary } = require("./parsing-mintage-constants.js");
+const {
+  finalizeMintageForDb,
+  logImportMintageSummary,
+  extractPampMintagePhraseFromPlainText,
+} = require("./parsing-mintage-constants.js");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const PUBLIC_ROOT = path.join(__dirname, "..", "public");
@@ -72,16 +76,9 @@ function parseMintage(specs, title) {
     return { mintage: Number.isFinite(n) && n > 0 ? n : null, mintageDisplay: specM || null };
   }
   const t = String(title || "").trim();
-  const fromDesc = t.match(/\blimited mintage of\s*([\d,.\s]+)\b/i);
-  if (fromDesc) {
-    const display = fromDesc[1].replace(/\s+/g, " ").trim();
-    const digits = display.replace(/[^\d]/g, "");
-    const n = digits ? Number(digits) : null;
-    return { mintage: Number.isFinite(n) && n > 0 ? n : null, mintageDisplay: display || null };
-  }
-  const fromCoinsTitle = t.match(/\bmintage of (?:only\s+)?([\d,.\s]+)\s*coins?\b/i);
-  if (fromCoinsTitle) {
-    const display = fromCoinsTitle[1].replace(/\s+/g, " ").trim();
+  const fromTitle = extractPampMintagePhraseFromPlainText(t);
+  if (fromTitle) {
+    const display = fromTitle;
     const digits = display.replace(/[^\d]/g, "");
     const n = digits ? Number(digits) : null;
     return { mintage: Number.isFinite(n) && n > 0 ? n : null, mintageDisplay: display || null };

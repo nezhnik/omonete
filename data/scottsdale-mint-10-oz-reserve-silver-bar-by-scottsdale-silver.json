@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/10-oz-reserve-silver-bar-by-scottsdale-silver",
     "title": "Scottsdale RESERVE",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "10 Troy oz",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/10-oz-reserve-silver-bar-by-scottsdale-silver/01.jpg",
       "/image/coins/foreign/scottsdale/10-oz-reserve-silver-bar-by-scottsdale-silver/02.jpg",
@@ -47,7 +52,7 @@
       "/image/coins/foreign/scottsdale/10-oz-reserve-silver-bar-by-scottsdale-silver/41.jpg",
       "/image/coins/foreign/scottsdale/10-oz-reserve-silver-bar-by-scottsdale-silver/42.jpg"
     ],
-    "parsedAt": "2026-03-31T16:53:32.125Z",
+    "parsedAt": "2026-03-31T20:56:41.098Z",
     "slug": "10-oz-reserve-silver-bar-by-scottsdale-silver",
     "image_obverse": "/image/coins/foreign/scottsdale/10-oz-reserve-silver-bar-by-scottsdale-silver/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/10-oz-reserve-silver-bar-by-scottsdale-silver/02.jpg"

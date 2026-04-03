@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar",
     "title": "Scottsdale Gold Cast Bar",
-    "specs": {},
+    "specs": {
+      "Purity": ".9999 Gold",
+      "Weight": "1 Kilogram",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/02.jpg",
@@ -14,7 +19,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/08.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/09.jpg"
     ],
-    "parsedAt": "2026-03-31T17:32:10.453Z",
+    "parsedAt": "2026-03-31T21:16:21.455Z",
     "slug": "scottsdale-mint-1-kilo-9999-fine-gold-cast-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/02.jpg"

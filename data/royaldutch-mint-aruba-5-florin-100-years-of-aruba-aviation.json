@@ -4,7 +4,17 @@
     "title": "Aruba 5 Florin ‘100 years of Aruba Aviation’",
     "price_display": "€69.00",
     "description": "Are you in the mood for a lovely holiday full of sun, sea and sand? The happy island of Aruba is a magical place that is only a flight away. These days, several flights depart for Aruba on a daily basis, but this was not the case 100 years ago. In 2023 we celebrate 100 years of aviation in Aruba. The Royal Dutch Mint issues a special commemorative coin: the Aruba 5 Florin “100 years of Aruba Aviation”. The coin is commissioned by the Central Bank of Aruba. The first flight In 1923, the first two planes landed in the Paardenbaai Harbor of Oranjestad, Aruba. That is how aviation in Aruba was born: from 1934, the commercial flights also started on the island. Once per week, six passengers could be transported between Aruba and Curacao. In 1942, a small building was placed that would serve as a terminal. Since then, Aruba’s airport has been expanded and modernized. From the Queen Beatrix International Airport, passengers currently fly to more than thirty destinations in more than ten countries.",
-    "specs": {},
+    "specs": {
+      "Article number": "0117454",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "25 g",
+      "Diameter": "38 mm",
+      "Quality": "Prooflike",
+      "Nominal value": "5 Aruban florin",
+      "Mintage": "700",
+      "Edge lettering": "* DIOS * TA * CU * NOS"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/01.jpeg",
       "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/02.jpeg",
@@ -14,7 +24,7 @@
       "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/06.jpeg",
       "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:10:18.252Z",
+    "parsedAt": "2026-03-31T20:09:16.891Z",
     "slug": "aruba-5-florin-100-years-of-aruba-aviation",
     "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/02.jpeg"

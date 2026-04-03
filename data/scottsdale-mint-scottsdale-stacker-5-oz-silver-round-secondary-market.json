@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-stacker-5-oz-silver-round-secondary-market",
     "title": "Scottsdale Stacker®",
-    "specs": {},
+    "specs": {
+      "Weight": "5 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "Circulated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round-secondary-market/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round-secondary-market/02.jpg",
@@ -61,7 +66,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round-secondary-market/55.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round-secondary-market/56.jpg"
     ],
-    "parsedAt": "2026-03-31T17:45:15.415Z",
+    "parsedAt": "2026-03-31T21:26:10.090Z",
     "slug": "scottsdale-stacker-5-oz-silver-round-secondary-market",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round-secondary-market/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-5-oz-silver-round-secondary-market/02.jpg"

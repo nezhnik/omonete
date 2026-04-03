@@ -4,7 +4,15 @@
     "title": "Silver Ducat North Brabant 2015",
     "price_display": "€44.95",
     "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
-    "specs": {},
+    "specs": {
+      "Article number": "093422",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40.0 mm",
+      "Quality": "Proof",
+      "Edge": "Cable"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/silver-ducat-north-brabant-2015/01.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-north-brabant-2015/02.jpeg",
@@ -13,7 +21,7 @@
       "/image/coins/foreign/royaldutch/silver-ducat-north-brabant-2015/05.jpeg",
       "/image/coins/foreign/royaldutch/silver-ducat-north-brabant-2015/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:42:54.163Z",
+    "parsedAt": "2026-03-31T20:34:12.564Z",
     "slug": "silver-ducat-north-brabant-2015",
     "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-north-brabant-2015/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-north-brabant-2015/02.jpeg"

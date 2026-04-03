@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-mint-1-2-oz-silver-proof-like-coin",
     "title": "Scottsdale Mint Lion Round",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "1/2 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/02.jpg",
@@ -61,7 +66,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/55.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/56.jpg"
     ],
-    "parsedAt": "2026-03-31T17:31:17.904Z",
+    "parsedAt": "2026-03-31T21:15:54.336Z",
     "slug": "scottsdale-mint-1-2-oz-silver-proof-like-coin",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/02.jpg"

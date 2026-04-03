@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/100-oz-long-cast-silver-bar",
     "title": "Scottsdale Long Cast",
-    "specs": {},
+    "specs": {
+      "Weight": "100 Troy oz",
+      "Purity": ".999 Silver",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/01.jpg",
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/02.jpg",
@@ -62,10 +67,11 @@
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/56.jpg",
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/57.jpg",
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/58.jpg",
+      "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/59.jpg",
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/60.jpg",
       "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/61.jpg"
     ],
-    "parsedAt": "2026-03-31T16:55:17.614Z",
+    "parsedAt": "2026-03-31T20:58:15.827Z",
     "slug": "100-oz-long-cast-silver-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/100-oz-long-cast-silver-bar/02.jpg"

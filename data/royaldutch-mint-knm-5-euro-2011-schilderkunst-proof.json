@@ -4,7 +4,16 @@
     "title": "KNM 5 Euro 2011 Schilderkunst Proof",
     "price_display": "€35.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "120071.2011.01",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33.0 mm",
+      "Quality": "Proof",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS",
+      "Mintmaster sign": "Koerszettende zeilen"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-schilderkunst-proof/01.jpeg",
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-schilderkunst-proof/02.jpeg",
@@ -15,7 +24,7 @@
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-schilderkunst-proof/07.jpeg",
       "/image/coins/foreign/royaldutch/knm-5-euro-2011-schilderkunst-proof/08.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:18:34.682Z",
+    "parsedAt": "2026-03-31T20:14:30.360Z",
     "slug": "knm-5-euro-2011-schilderkunst-proof",
     "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-schilderkunst-proof/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-schilderkunst-proof/02.jpeg"

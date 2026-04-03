@@ -4,7 +4,16 @@
     "title": "Official Restrike: Florin of Kampen Gold 1 ounce",
     "price_display": "€2,999.00",
     "description": "The Royal Dutch Mint is proud to launch an official restrike of the silver Florin of Kampen from 1618, in honour of 800 years of Hanseatic cities. The coin has a face value of 28 Stuivers (pennies), is also known by the name Eagle's Dagger and has travelled as a silver Florin along many Hanseatic cities. This variant was minted in Kampen, an important hub in the Hanseatic network. The silver Florin of Kampen is re-struck in silver and gold, in both 1 and 2 ounces. Design of the Kampen florin Because of its favourable location, Kampen had been a trading town for much longer than it was a Hanseatic city, officially becoming a member of the Hanseatic League in 1441. To trade well with the coggeships that sailed to and fro, large silver coins such as the Florin were in demand. The first issue of this silver Florin took place from 1616 to 1686. The original silver coin shows the crowned coat of arms of Kampen on the obverse. The caption: 'FLOR.ARG.CIV.IMP. CAMPEN', meaning 'silver Florin of the Civil Empire of Kampen'. The reverse shows a two-headed eagle and the inscription: 'MATTH.I.D. ROM.IMP.SEM.AVGV', meaning 'In the name of Matthias I as Holy Roman Emperor'. At the restrike, the year 2023 is placed on the coin. The Florin van Kampen in Gold Proof comes in a luxury wooden cassette including a numbered Certificate of Authenticity.",
-    "specs": {},
+    "specs": {
+      "Article number": "0116468",
+      "Metal": "Gold",
+      "Content": "999.9/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "15",
+      "Edge": "serrated"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/official-restrike-florin-of-kampen-gold-1-ounce/01.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-florin-of-kampen-gold-1-ounce/02.jpeg",
@@ -14,7 +23,7 @@
       "/image/coins/foreign/royaldutch/official-restrike-florin-of-kampen-gold-1-ounce/06.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-florin-of-kampen-gold-1-ounce/07.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:30:54.671Z",
+    "parsedAt": "2026-03-31T20:23:39.882Z",
     "slug": "official-restrike-florin-of-kampen-gold-1-ounce",
     "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-florin-of-kampen-gold-1-ounce/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-florin-of-kampen-gold-1-ounce/02.jpeg"

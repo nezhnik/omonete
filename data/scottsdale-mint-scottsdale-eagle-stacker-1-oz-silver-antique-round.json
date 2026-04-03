@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/scottsdale-eagle-stacker-1-oz-silver-antique-round",
     "title": "Scottsdale Eagle Stacker®",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "1 Troy oz",
+      "Grade": "Brilliant Uncirculated",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/01.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/02.jpg",
@@ -39,7 +44,7 @@
       "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/33.jpg",
       "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/34.jpg"
     ],
-    "parsedAt": "2026-03-31T17:13:16.595Z",
+    "parsedAt": "2026-03-31T21:08:57.772Z",
     "slug": "scottsdale-eagle-stacker-1-oz-silver-antique-round",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/02.jpg"

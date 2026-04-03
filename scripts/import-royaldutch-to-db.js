@@ -127,6 +127,8 @@ async function main() {
     "width_mm",
     "image_obverse",
     "image_reverse",
+    "image_packaging",
+    "image_box",
     "image_urls",
     "source_url",
   ];
@@ -188,6 +190,8 @@ async function main() {
         width_mm: null,
         image_obverse: c.image_obverse || null,
         image_reverse: c.image_reverse || c.image_obverse || null,
+        image_packaging: c.image_packaging || null,
+        image_box: c.image_box || null,
         image_urls: Array.isArray(c.imageUrls) ? JSON.stringify(c.imageUrls.filter(Boolean)) : null,
         source_url: source,
       };

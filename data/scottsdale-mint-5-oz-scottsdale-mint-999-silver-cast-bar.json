@@ -2,7 +2,12 @@
   "coin": {
     "source_url": "https://www.scottsdalemint.com/product/5-oz-scottsdale-mint-999-silver-cast-bar",
     "title": "5 oz Silver Bar",
-    "specs": {},
+    "specs": {
+      "Purity": ".999 Silver",
+      "Weight": "5 Troy oz",
+      "Grade": "None",
+      "Mintage": "∞"
+    },
     "imageUrls": [
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/01.jpg",
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/02.jpg",
@@ -55,7 +60,7 @@
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/49.jpg",
       "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/50.jpg"
     ],
-    "parsedAt": "2026-03-31T17:04:44.828Z",
+    "parsedAt": "2026-03-31T21:04:39.398Z",
     "slug": "5-oz-scottsdale-mint-999-silver-cast-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/01.jpg",
     "image_reverse": "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/02.jpg"

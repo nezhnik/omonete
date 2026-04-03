@@ -4,17 +4,25 @@
     "title": "Official restrike: Ducaton \"Silver Rider\" 1 Ounce - Royal Delft edition",
     "price_display": "€199.00",
     "description": "Royal Delft and the Royal Dutch Mint are two companies that both found their origin in traditional work and have joined forces for a special issue. Together we take you into the story of the rich history of the Netherlands in the Golden Age with a beautiful issue in an exclusive Delft Blue coin holder. The painting on the container strikes the craft, the 'miting of coins' in the Golden Age. In the coin holder you will find a restrike of an original Ducaton \"Silver Rider\". According to many, the most beautiful coin ever issued. The Ducaton is a silver coin that was common in the 16th to the 18th century, also the equivalent of the Golden Ducat. Do you want to know more about the production process of this unique coin hoder? We visited Royal Delft to find out, you can learn more here.",
-    "specs": {},
+    "specs": {
+      "Article number": "0104727",
+      "Metal": "Silver",
+      "Content": "999.9/1000",
+      "Weight": "1 Oz (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "500 genummerd in Delfts Blauwe munthouder",
+      "Edge": "Tulip edge"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/01.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/02.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/03.png",
       "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/04.jpeg",
       "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/05.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/07.jpeg"
+      "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/06.jpeg"
     ],
-    "parsedAt": "2026-03-31T18:29:41.732Z",
+    "parsedAt": "2026-03-31T20:22:54.011Z",
     "slug": "official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition",
     "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-silver-rider-1-ounce-royal-delft-edition/02.jpeg"

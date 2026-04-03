@@ -4,12 +4,17 @@
     "title": "DR Gouden Dukaat Utrecht 1792 ZFr",
     "price_display": "€775.00",
     "description": null,
-    "specs": {},
+    "specs": {
+      "Article number": "0119257",
+      "Metal": "Gold",
+      "Content": "983/1000",
+      "Weight": "3.49 g"
+    },
     "imageUrls": [
       "/image/coins/foreign/royaldutch/0119257/01.jpeg",
       "/image/coins/foreign/royaldutch/0119257/02.jpeg"
     ],
-    "parsedAt": "2026-03-31T17:56:47.886Z",
+    "parsedAt": "2026-03-31T19:57:46.019Z",
     "slug": "0119257",
     "image_obverse": "/image/coins/foreign/royaldutch/0119257/01.jpeg",
     "image_reverse": "/image/coins/foreign/royaldutch/0119257/02.jpeg"

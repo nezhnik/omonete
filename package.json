@@ -213,6 +213,7 @@
     "swissmint:fetch:all": "node scripts/fetch-swissmint-all.js",
     "swissmint:fetch:missing": "node scripts/fetch-swissmint-all.js --only-missing",
     "swissmint:import": "node scripts/import-swissmint-to-db.js",
+    "swissmint:repair-local": "node scripts/repair-swissmint-local-json-and-images.js",
     "swissmint:sync": "npm run swissmint:listing && npm run swissmint:fetch:all && npm run swissmint:import && npm run data:export:incremental",
     "herdenkings:listing": "node scripts/fetch-herdenkings-listing.js",
     "herdenkings:fetch": "node scripts/fetch-herdenkings-product.js",

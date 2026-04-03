@@ -20,9 +20,18 @@ async function getBaseUrl(): Promise<string> {
   }
 }
 
-/** Список монет: GET /api/coins или /data/coins.json */
+/** Список монет: сначала /data/coins.json (как у SSG страниц монет и при output: export), затем API. */
 export async function fetchCoinsList(): Promise<CoinsListResponse> {
   if (typeof window !== "undefined") {
+    try {
+      const static_ = await fetch("/data/coins.json");
+      if (static_.ok) {
+        const data = (await static_.json()) as CoinsListResponse;
+        if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) return data;
+      }
+    } catch {
+      // ignore
+    }
     try {
       const api = await fetch("/api/coins");
       if (api.ok) {
@@ -32,11 +41,18 @@ export async function fetchCoinsList(): Promise<CoinsListResponse> {
     } catch {
       // ignore
     }
-    const static_ = await fetch("/data/coins.json");
-    const data = (await static_.json()) as CoinsListResponse;
-    return { coins: data.coins ?? [], total: data.total ?? 0 };
+    return { coins: [], total: 0 };
   }
   const base = await getBaseUrl();
+  try {
+    const static_ = await fetch(`${base}/data/coins.json`);
+    if (static_.ok) {
+      const data = (await static_.json()) as CoinsListResponse;
+      if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) return data;
+    }
+  } catch {
+    // ignore
+  }
   try {
     const api = await fetch(`${base}/api/coins`);
     if (api.ok) {
@@ -46,14 +62,18 @@ export async function fetchCoinsList(): Promise<CoinsListResponse> {
   } catch {
     // ignore
   }
-  const static_ = await fetch(`${base}/data/coins.json`);
-  const data = (await static_.json()) as CoinsListResponse;
-  return { coins: data.coins ?? [], total: data.total ?? 0 };
+  return { coins: [], total: 0 };
 }
 
-/** Одна монета: GET /api/coins/[id] или /data/coins/[id].json */
+/** Одна монета: сначала статический JSON, затем API (согласовано со страницей /coins/[id]). */
 export async function fetchCoinById(id: string): Promise<CoinDetailResponse | null> {
   if (typeof window !== "undefined") {
+    try {
+      const static_ = await fetch(`/data/coins/${id}.json`);
+      if (static_.ok) return (await static_.json()) as CoinDetailResponse;
+    } catch {
+      // ignore
+    }
     try {
       const api = await fetch(`/api/coins/${id}`);
       if (api.ok) {
@@ -63,23 +83,21 @@ export async function fetchCoinById(id: string): Promise<CoinDetailResponse | nu
     } catch {
       // ignore
     }
-    const static_ = await fetch(`/data/coins/${id}.json`);
-    if (static_.ok) return (await static_.json()) as CoinDetailResponse;
     return null;
   }
   const base = await getBaseUrl();
+  try {
+    const static_ = await fetch(`${base}/data/coins/${id}.json`);
+    if (static_.ok) return (await static_.json()) as CoinDetailResponse;
+  } catch {
+    // ignore
+  }
   try {
     const api = await fetch(`${base}/api/coins/${id}`);
     if (api.ok) {
       const data = (await api.json()) as CoinDetailResponse;
       if (data.coin) return data;
     }
-  } catch {
-    // ignore
-  }
-  try {
-    const static_ = await fetch(`${base}/data/coins/${id}.json`);
-    if (static_.ok) return (await static_.json()) as CoinDetailResponse;
   } catch {
     // ignore
   }

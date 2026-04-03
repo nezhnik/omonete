@@ -4,11 +4,23 @@
     "title": "2 Franc 1904-1909 NL - Léopold II TTB+",
     "price_display": "37,50 €",
     "description": null,
-    "specs": {},
-    "imageUrls": [],
-    "parsedAt": "2026-03-31T19:06:41.523Z",
+    "specs": {
+      "Numéro d'article": "0111265",
+      "Métal": "Argent",
+      "Teneur": "835/1000",
+      "Poids": "10 g",
+      "Diamètre": "27,0 mm",
+      "Qualité": "Très très beau +"
+    },
+    "imageUrls": [
+      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/01.jpeg",
+      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/02.jpeg",
+      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/03.jpeg",
+      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/04.jpeg"
+    ],
+    "parsedAt": "2026-03-31T20:45:49.456Z",
     "slug": "2-franc-1904-1909-nl-leopold-ii-ttb",
-    "image_obverse": null,
-    "image_reverse": null
+    "image_obverse": "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/01.jpeg",
+    "image_reverse": "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/02.jpeg"
   }
 }
