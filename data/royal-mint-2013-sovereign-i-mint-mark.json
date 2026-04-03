@@ -23,8 +23,8 @@
     "catalog_suffix": "2013-sovereign-i-mint-mark",
     "price_display": "Price: £890.00",
     "source_url": "https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark",
-    "image_obverse": null,
-    "image_reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+    "image_obverse": "/image/coins/foreign/2013-sovereign-i-mint-mark-obv.webp",
+    "image_reverse": "/image/coins/foreign/2013-sovereign-i-mint-mark-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
@@ -45,8 +45,8 @@
     },
     "specificationBlockFound": true,
     "imageUrls": [
-      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_the_sovereign_obverse_pamp1.jpg",
       "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_sov_the_sovereign_reverse_pamp1.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_the_sovereign_obverse_pamp1.jpg",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon_small.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-mobile-icon.png",
       "https://www.royalmint.com/globalassets/__rebrand/_common/trm-logo-225.png",
@@ -113,28 +113,31 @@
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-capsule.jpg",
       "https://www.royalmint.com/globalassets/icn_success.svg",
       "https://www.royalmint.com/globalassets/bullion/_new_structure/coins/silver/ukbsb221c-reverse.png",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/gold-1-oz/bb26g1c---2026-bullion-britannia-1oz-gold-reverse-capsule-1500x1500-f3a2c67.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/loch-ness/products/lc1251sc---2026-legendary-creatures---coin-1-1oz-silver-bullion-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/denis-the-menace/product-images/uk26dmbc-75-years-of-dennis-the-menace-2026-uk-50p-brilliant-uncirculated-colour-coin-pack-front.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/100th-anniversary-of-birth-of-qeii/product-images/uk26qebu---100th-anniversary-of-the-birth-of-queen-elizabeth-ii-2026-uk-5-brilliant-uncirculated-coin-bu-pack-front.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/britannia/products/silver-1-oz/bb26s1c---2026-bullion-britannia-1oz-silver-reverse-tube.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2025/britannia/secure-bars/prods/1g/sembgbb1gs---britannia-bar-minted-gold-1g-reverse-blister-1500x1500-f3a2c67.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/level-2-medal.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/denis-the-menace/product-images/uk26dmbu-75-years-of-dennis-the-menace-2026-uk-50p-brilliant-uncirculated-coin-reverse-pack-front.jpg",
+      "https://www.royalmint.com/globalassets/__rebrand/_structure/invest/little-treasures/product-images-2020/little-treasures-minty-icon.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26hsc---bullion-2026-half-sovereign-gold-coin-reverse-capsule.jpg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/visa-inc..svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/mastercard.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/apple_pay_no_border.svg",
       "https://www.royalmint.com/globalassets/_ecommerce/invest/optimisation/2025/gpay_acceptance_mark_800.png",
       "https://www.royalmint.com/globalassets/_beta_v3/video/youtube-video.svg"
     ],
+    "imageUrlsFluidGallery": [
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_sov_the_sovereign_reverse_pamp1.jpg",
+      "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_the_sovereign_obverse_pamp1.jpg"
+    ],
     "imageUrlsProduct": [
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26gml5---level-5-genius-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
-      "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26dml3---level-3-decoder-medal-reverse.jpg"
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26svc---bullion-2026-sovereign-gold-coin-reverse-capsule.jpg",
+      "https://www.royalmint.com/globalassets/_ecommerce/invest/launches/2026/sovereign/products/ukb26hsc---bullion-2026-half-sovereign-gold-coin-reverse-capsule.jpg"
     ],
     "classified": {
-      "obverse": null,
-      "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+      "obverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_the_sovereign_obverse_pamp1.jpg",
+      "reverse": "https://www.royalmint.com/globalassets/consumer/_campaigns/2019/historics/product-photography/hisim13_2013_sov_the_sovereign_reverse_pamp1.jpg",
       "blister_obverse": null,
       "blister_reverse": null,
       "box": null,
@@ -143,11 +146,11 @@
     "price": "Price: £890.00",
     "requestedUrl": "https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark",
     "pdpUrl": "https://www.royalmint.com/sovereign/all/2013-Sovereign-I-Mint-Mark",
-    "pdpPlainTextPreview": "Buy this historic 2013 Sovereign  with a special Mint Mark only limited level of stock.\nWE ARE STRENGTHENING ACCOUNT SECURITY AND PROTECTING YOUR ACCESS WITH 2 STEP VERIFICATION. FIND OUT MORE Home Sovereign All Sovereign Coins 2013 Elizabeth II Brilliant Uncirculated Sovereign Share via BRILLIANT UNCIRCULATED COIN 2013 Elizabeth II Brilliant Uncirculated Sovereign India Mint Mark Price: £890.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISIM13 Unusual and collectable sovereign Struck in the Indian branch mint as shown by the I mint mark Very limited stock YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £62.47 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £61.27 In Stock ADD TO BASKET Level 5 Genius Medal £9.95 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,484.37 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET Britannia 2026 1oz Silver Bullion Twenty-Five Coin Tube £1,481.75 In Stock ADD TO BASKET Level 4 Mastermind Medal £9.95 In Stock ADD TO BASKET Britannia 1g Gold Bullion Minted Bar £140.68 In Stock ADD TO BASKET Level 3 Decoder Medal £9.95 In Stock ADD TO BASKET Level 2 Explorer Medal and Collector Folder £9.95 In Stock SPECIFICATION 2013 Sovereign I Mint Mark Specification Value Denomination Sovereign Alloy 22 Carat Gold Weight 7.98 g Diameter 22.05mm Reverse Designer Benedetto Pistrucci Specification Value Obverse Designer Ian Rank-Broadley FRBS Quality Brilliant Uncirculated Year 2013 Pure Metal Type Gold"
+    "pdpPlainTextPreview": "Buy this historic 2013 Sovereign  with a special Mint Mark only limited level of stock.\nFREE UK DELIVERY^ ON ALL ONLINE ORDERS OVER £35 | USE CODE EASTER26 SHOP NOW Home Sovereign All Sovereign Coins 2013 Elizabeth II Brilliant Uncirculated Sovereign Share via BRILLIANT UNCIRCULATED COIN 2013 Elizabeth II Brilliant Uncirculated Sovereign India Mint Mark Price: £890.00 EMAIL ME WHEN IN STOCK Email Me When In Stock PRODUCT CODE: HISIM13 Unusual and collectable sovereign Struck in the Indian branch mint as shown by the I mint mark Very limited stock YOU MIGHT ALSO BE INTERESTED IN ADD TO BASKET Britannia 2026 1oz Silver Bullion Coin £65.97 In Stock ADD TO BASKET Britannia 2022 1 oz Silver Bullion Coin £64.77 In Stock ADD TO BASKET Britannia 2026 1oz Gold Bullion Coin £3,758.19 In Stock ADD TO BASKET The Sovereign 2026 Gold Bullion Coin £882.34 In Stock ADD TO BASKET Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin £69.61 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Colour Coin £25.00 In Stock ADD TO BASKET 100th Anniversary of the Birth of Queen Elizabeth II 2026 UK £5 Brilliant Uncirculated Coin £17.50 In Stock ADD TO BASKET 75 Years of Dennis the Menace 2026 UK 50p Brilliant Uncirculated Coin £15.00 In Stock ADD TO BASKET Little Treasures £3,550.49 In Stock ADD TO BASKET The Half-Sovereign 2026 Gold Bullion Coin £447.60 In Stock SPECIFICATION 2013 Sovereign I Mint Mark Specification Value Denomination Sovereign Alloy 22 Carat Gold Weight 7.98 g Diameter 22.05mm Reverse Designer Benedetto Pistrucci Specification Value Obverse Designer Ian Rank-Broadley FRBS Quality Brilliant Uncirculated Year 2013 Pure Metal Type Gold"
   },
   "saved": {
-    "obverse": null,
-    "reverse": "https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2026-launches/great-british-treasure-hunt/pdp-image/uk26mml4---level-4-mastermind-medal-reverse.jpg",
+    "obverse": "/image/coins/foreign/2013-sovereign-i-mint-mark-obv.webp",
+    "reverse": "/image/coins/foreign/2013-sovereign-i-mint-mark-rev.webp",
     "blister_obverse": null,
     "blister_reverse": null,
     "box": null,
