@@ -129,6 +129,7 @@ async function main() {
     "image_reverse",
     "image_packaging",
     "image_box",
+    "image_certificate",
     "image_urls",
     "source_url",
   ];
@@ -192,6 +193,8 @@ async function main() {
         image_reverse: c.image_reverse || c.image_obverse || null,
         image_packaging: c.image_packaging || null,
         image_box: c.image_box || null,
+        image_certificate: c.image_certificate || null,
+        /** Упорядоченные пути — совпадают с колонками + блистер в хвосте; без низкокачественных превью из nav. */
         image_urls: Array.isArray(c.imageUrls) ? JSON.stringify(c.imageUrls.filter(Boolean)) : null,
         source_url: source,
       };

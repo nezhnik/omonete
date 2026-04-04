@@ -1,6 +1,20 @@
 /**
  * Парсинг одной карточки Royal Dutch Mint.
- * Сохраняет data/royaldutch-mint-<slug>.json и картинки в public/image/coins/foreign/<slug>-{obv|rev|…}.webp.
+ * Сохраняет data/royaldutch-mint-<slug>.json и webp в public/image/coins/foreign/<slug>-<role>.webp.
+ *
+ * Картинки:
+ * - Берём только кадры главной сцены .fotorama__stage (без превью .fotorama__nav — там дубли в низком разрешении).
+ * - Для каждого img выбираем максимальный URL из srcset (или data-src/src).
+ * - Дедуп по basename файла, чтобы один ракурс не попал дважды.
+ *
+ * Роли по порядку слайда (как на сайте Omonete / колонки БД + хвост в image_urls):
+ *   1 obv, 2 rev, 3 packaging (pack), 4 box, 5 cert, 6 blister-obv, 7 blister-rev
+ * Колонка image_blister_* НЕ заполняем: см. export — при hasAnyBlister в галерее только блистер, без «голой» монеты.
+ * Доп. кадры блистера лежат в image_urls и файлах *-blister-obv/rev.webp.
+ *
+ * image_urls в БД (и у других минтов):
+ * - Swissmint, Scottsdale, Herdenkings: в импорте кладётся полный массив из парсера; export подмешивает его к колонкам с дедупом по URL.
+ * - Royal Dutch после этого скрипта: те же пути продублированы в колонках obv/rev/pack/box/cert и в image_urls одним упорядоченным массивом без превью-дублей.
  */
 const fs = require("fs");
 const path = require("path");
@@ -11,6 +25,9 @@ const { saveBufferAsForeignUnified } = require("./lib/save-foreign-unified-webp.
 const ROOT = path.join(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
 const FOREIGN = path.join(ROOT, "public", "image", "coins", "foreign");
+
+/** Совпадает с порядком в export-coins / buildImageUrls: pack = упаковка, box = короб. */
+const ROLE_SEQUENCE = ["obv", "rev", "pack", "box", "cert", "blister-obv", "blister-rev"];
 
 function normalizeUrl(raw) {
   const u = new URL(raw);
@@ -65,7 +82,10 @@ function download(url, dst) {
 
 async function parseProduct(page, sourceUrl) {
   await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 120000 });
-  await page.waitForSelector("img.fotorama__img, .fotorama img", { state: "attached", timeout: 25000 }).catch(() => {});
+  await page.waitForSelector(".fotorama__stage .fotorama__stage__frame img, .fotorama__stage__frame img", {
+    state: "attached",
+    timeout: 25000,
+  }).catch(() => {});
   await page.waitForTimeout(1200);
 
   const parsed = await page.evaluate(() => {
@@ -100,24 +120,62 @@ async function parseProduct(page, sourceUrl) {
       if (k && v && !specs[k]) specs[k] = v;
     }
 
-    const imageSet = new Set();
-    const nodes = [
-      ...document.querySelectorAll(".fotorama__stage__frame img"),
-      ...document.querySelectorAll(".fotorama__nav-wrap img"),
-      ...document.querySelectorAll(".fotorama img"),
-    ];
-    for (const n of nodes) {
-      const vals = [n.getAttribute("src"), n.getAttribute("data-src"), n.getAttribute("srcset")];
-      for (const v of vals) {
-        if (!v) continue;
-        for (const part of String(v).split(",")) {
-          const u = part.trim().split(" ")[0];
-          if (!u) continue;
-          if (/^https?:\/\//i.test(u)) imageSet.add(u);
-          else if (u.startsWith("//")) imageSet.add("https:" + u);
-          else if (u.startsWith("/")) imageSet.add(location.origin + u);
+    function absUrl(u) {
+      if (!u || !String(u).trim()) return null;
+      const raw = String(u).trim().split(/\s+/)[0];
+      if (/^https?:\/\//i.test(raw)) return raw;
+      if (raw.startsWith("//")) return `https:${raw}`;
+      if (raw.startsWith("/")) return `${location.origin}${raw}`;
+      return null;
+    }
+
+    function bestFromImg(img) {
+      const srcset = img.getAttribute("srcset");
+      let bestUrl = null;
+      let bestW = 0;
+      if (srcset) {
+        for (const part of srcset.split(",")) {
+          const bits = part.trim().split(/\s+/);
+          const cand = bits[0];
+          if (!cand) continue;
+          const wPart = bits[1] ? parseInt(String(bits[1]).replace(/[^\d]/g, ""), 10) : 0;
+          const w = Number.isFinite(wPart) && wPart > 0 ? wPart : 0;
+          if (cand && w >= bestW) {
+            bestW = w;
+            bestUrl = cand;
+          }
         }
       }
+      if (!bestUrl) {
+        bestUrl = img.getAttribute("data-src") || img.getAttribute("src") || img.currentSrc || img.src || null;
+      }
+      return absUrl(bestUrl);
+    }
+
+    function basenameKey(url) {
+      try {
+        const u = new URL(url);
+        const parts = u.pathname.split("/").filter(Boolean);
+        const seg = parts[parts.length - 1] || "";
+        return seg.replace(/\.(jpg|jpeg|png|webp|gif)$/i, "").toLowerCase();
+      } catch {
+        return url;
+      }
+    }
+
+    const stageImgs = Array.from(
+      document.querySelectorAll(".fotorama__stage .fotorama__stage__frame img.fotorama__img, .fotorama__stage .fotorama__stage__frame img")
+    );
+
+    const seen = new Set();
+    const orderedUrls = [];
+    for (const img of stageImgs) {
+      const u = bestFromImg(img);
+      if (!u || !/royaldutchmint\.com|\/media\//i.test(u)) continue;
+      const k = basenameKey(u);
+      if (!k || seen.has(k)) continue;
+      seen.add(k);
+      orderedUrls.push(u);
     }
 
     return {
@@ -126,7 +184,7 @@ async function parseProduct(page, sourceUrl) {
       description: desc,
       specsText,
       specs,
-      imageUrls: Array.from(imageSet),
+      orderedUrls,
     };
   });
 
@@ -136,7 +194,7 @@ async function parseProduct(page, sourceUrl) {
     price_display: parsed.price_display,
     description: parsed.description,
     specs: Object.keys(parsed.specs || {}).length ? parsed.specs : parseSpecPairs(parsed.specsText),
-    imageUrls: parsed.imageUrls.filter((u) => /royaldutchmint\.com|\/media\//i.test(u)),
+    orderedUrls: parsed.orderedUrls || [],
     parsedAt: new Date().toISOString(),
   };
 }
@@ -155,10 +213,14 @@ async function saveParsed(parsed) {
     }
   }
 
-  const local = [];
-  for (let i = 0; i < (parsed.imageUrls || []).length; i++) {
-    const u = parsed.imageUrls[i];
-    const tmp = path.join(os.tmpdir(), `rdm-${slug}-${i}-${Date.now()}`);
+  const byRole = {};
+  const urls = parsed.orderedUrls || [];
+  const n = Math.min(urls.length, ROLE_SEQUENCE.length);
+
+  for (let i = 0; i < n; i++) {
+    const role = ROLE_SEQUENCE[i];
+    const u = urls[i];
+    const tmp = path.join(os.tmpdir(), `rdm-${slug}-${role}-${Date.now()}`);
     if (!(await download(u, tmp))) continue;
     let buf;
     try {
@@ -170,26 +232,42 @@ async function saveParsed(parsed) {
       fs.unlinkSync(tmp);
     } catch (_) {}
     try {
-      local.push(await saveBufferAsForeignUnified(buf, slug, i + 1));
-    } catch (_) {
-      /* empty */
-    }
+      byRole[role] = await saveBufferAsForeignUnified(buf, slug, role);
+    } catch (_) {}
   }
+
+  const obv = byRole.obv || null;
+  const rev = byRole.rev || null;
+  const pack = byRole.pack || null;
+  const box = byRole.box || null;
+  const cert = byRole.cert || null;
+  const blisterObv = byRole["blister-obv"] || null;
+  const blisterRev = byRole["blister-rev"] || null;
+
+  const imageUrls = [obv, rev, pack, box, cert, blisterObv, blisterRev].filter(Boolean);
 
   const out = {
     coin: {
-      ...parsed,
       source_url: source,
       slug,
-      imageUrls: local,
-      image_obverse: local[0] || null,
-      image_reverse: local[1] || local[0] || null,
+      title: parsed.title,
+      price_display: parsed.price_display,
+      description: parsed.description,
+      specs: parsed.specs,
+      parsedAt: parsed.parsedAt,
+      image_obverse: obv,
+      image_reverse: rev || obv,
+      image_packaging: pack,
+      image_box: box,
+      image_certificate: cert,
+      imageUrls,
     },
   };
+
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
   const outFile = path.join(DATA_DIR, `royaldutch-mint-${slug}.json`);
-  fs.writeFileSync(outFile, JSON.stringify(out, null, 2), "utf8");
-  return { outFile, imageCount: local.length, imageUrls: local };
+  fs.writeFileSync(outFile, JSON.stringify(out, null, 2) + "\n", "utf8");
+  return { outFile, imageCount: imageUrls.length, imageUrls, byRole };
 }
 
 async function fetchOneWithPage(page, rawUrl) {
@@ -220,7 +298,7 @@ async function main() {
   console.log("Готово:", r.outFile, "Картинок:", r.imageCount);
 }
 
-module.exports = { normalizeUrl, slugFromUrl, parseProduct, fetchOneWithPage };
+module.exports = { normalizeUrl, slugFromUrl, parseProduct, saveParsed, fetchOneWithPage, ROLE_SEQUENCE };
 
 if (require.main === module) {
   main().catch((e) => {
@@ -228,4 +306,3 @@ if (require.main === module) {
     process.exit(1);
   });
 }
-
