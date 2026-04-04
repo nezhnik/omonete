@@ -11,6 +11,7 @@ import {
   coinSeoDescription,
   coinSeoTitle,
 } from "../../../lib/coin-page-seo";
+import { isGradedCoinTitle } from "../../../lib/isGradedCoinTitle";
 import { absolutePageUrl } from "../../../lib/site-url";
 import { CoinPageClient } from "./CoinPageClient";
 
@@ -53,11 +54,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = coinSeoDescription(coin);
   const canonical = absolutePageUrl(coinCanonicalPath(id));
   const ogImages = coinOpenGraphImageUrls(coin).map((url) => ({ url }));
+  const hideGraded = isGradedCoinTitle(coin.title);
 
   return {
     title,
     description,
     alternates: { canonical },
+    ...(hideGraded ? { robots: { index: false, follow: false } as const } : {}),
     openGraph: {
       title,
       description,

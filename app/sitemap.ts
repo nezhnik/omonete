@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
+import { isGradedCoinTitle } from "../lib/isGradedCoinTitle";
 
 export const dynamic = "force-static";
 
@@ -26,9 +27,15 @@ function readJsonSafe<T>(absPath: string, fallback: T): T {
 export default function sitemap(): MetadataRoute.Sitemap {
   const dataDir = path.join(process.cwd(), "public", "data");
   const coinIdsPath = path.join(dataDir, "coin-ids.json");
+  const coinsListPath = path.join(dataDir, "coins.json");
   const mintsPath = path.join(dataDir, "mints.json");
 
   const coinIds = readJsonSafe<string[]>(coinIdsPath, []);
+  const catalogCoins = readJsonSafe<{ coins?: { id: string; title?: string; titleEn?: string }[] }>(coinsListPath, { coins: [] }).coins ?? [];
+  const gradedId = new Set<string>();
+  for (const c of catalogCoins) {
+    if (isGradedCoinTitle(c.titleEn, c.title)) gradedId.add(String(c.id));
+  }
   const mints = readJsonSafe<{ mints?: Array<{ slug?: string; id?: string }> }>(mintsPath, {
     mints: [],
   }).mints ?? [];
@@ -54,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const coinPages: MetadataRoute.Sitemap = coinIds
     .map((id) => String(id).trim())
     .filter(Boolean)
+    .filter((id) => !gradedId.has(id))
     .map((id) => ({
       url: withSlash(`/coins/${id}`),
       lastModified: now,

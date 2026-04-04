@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { IconChevronLeft, IconChevronRight, IconCheck, IconPlus, IconShare3 } from "@tabler/icons-react";
 import { buildCoinVisibleIntro } from "../lib/coin-visible-intro";
@@ -17,6 +17,7 @@ import {
   isMeaningfulSpecString,
 } from "../lib/specValueVisibility";
 import { COIN_DETAIL_MAIN_IMAGE_SCALE } from "../lib/coinCatalogImageScale";
+import { isGradedCoinTitle } from "../lib/isGradedCoinTitle";
 
 /** Данные монеты для страницы деталей (переиспользуемый тип) */
 export type CoinDetailData = {
@@ -130,6 +131,10 @@ const DETAIL_GALLERY_ROLE_ORDER = [
 ] as const;
 
 export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backLabel = "Назад", isAuthorized = false, onToggleCollection }: CoinDetailProps) {
+  const visibleSameSeries = useMemo(
+    () => sameSeries.filter((item) => !isGradedCoinTitle(item.title)),
+    [sameSeries]
+  );
   /** Детальный JSON раньше мог содержать только «доп.» кадры в imageUrls без главного imageUrl — склеиваем как в каталоге. */
   const mergedUrls = (() => {
     const urls = (coin.imageUrls ?? []).filter(Boolean);
@@ -599,11 +604,11 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             </section>
           )}
 
-          {sameSeries.length > 0 && (
+          {visibleSameSeries.length > 0 && (
             <section>
               <h2 className="text-black text-[24px] font-semibold pb-5">Ещё монеты из этой серии</h2>
               <div className="flex flex-col">
-                {sameSeries.map((item) => (
+                {visibleSameSeries.map((item) => (
                   <Link
                     key={item.id}
                     href={`/coins/${item.id}/`}

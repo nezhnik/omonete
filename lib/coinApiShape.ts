@@ -3,6 +3,7 @@
  * Используется в /api/coins и /api/coins/[id]. Логика совпадает с scripts/export-coins-to-json.js.
  */
 import { getConnection } from "./db";
+import { isGradedCoinTitle } from "./isGradedCoinTitle";
 import { coinNeedsMintageResearch } from "./mintageResearch";
 import fs from "fs";
 import path from "path";
@@ -621,7 +622,10 @@ export async function getCoinsList(): Promise<{ coins: ListCoin[]; total: number
       // mints может отсутствовать
     }
     const [rows] = await conn.execute(COINS_SELECT);
-    const list = (rows as Row[]).filter(hasImage).map((r) => rowToListCoin(r, mintLogoMap, getFirstImageSide(r.mint as string | null), rectangularBases, rectangularIds));
+    const list = (rows as Row[])
+      .filter(hasImage)
+      .filter((r) => !isGradedCoinTitle(r.title as string | null, r.title_en as string | null))
+      .map((r) => rowToListCoin(r, mintLogoMap, getFirstImageSide(r.mint as string | null), rectangularBases, rectangularIds));
     return { coins: list, total: list.length };
   } finally {
     await conn.end();
@@ -660,6 +664,7 @@ export async function getCoinWithSameSeries(id: string): Promise<{ coin: DetailC
       );
       sameSeries = (sameRows as Row[])
         .filter(hasImage)
+        .filter((s) => !isGradedCoinTitle(s.title as string | null, s.title_en as string | null))
         .slice(0, 6)
         .map((s) => rowToSameSeriesItem(s, getFirstImageSide(s.mint as string | null), rectangularBases, rectangularIds));
     }

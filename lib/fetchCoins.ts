@@ -2,8 +2,14 @@
  * Загрузка данных монет: сначала API (БД), при ошибке — статические JSON.
  */
 
+import { isGradedCoinTitle } from "./isGradedCoinTitle";
+
 export type CoinsListResponse = { coins: unknown[]; total: number };
 export type CoinDetailResponse = { coin: unknown; sameSeries: unknown[] };
+
+function filterGradedOutOfCatalogList<T extends { title?: string; titleEn?: string }>(coins: T[]): T[] {
+  return coins.filter((c) => !isGradedCoinTitle(c.title, c.titleEn));
+}
 
 async function getBaseUrl(): Promise<string> {
   if (typeof window !== "undefined") {
@@ -27,7 +33,10 @@ export async function fetchCoinsList(): Promise<CoinsListResponse> {
       const static_ = await fetch("/data/coins.json");
       if (static_.ok) {
         const data = (await static_.json()) as CoinsListResponse;
-        if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) return data;
+        if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) {
+          const coins = filterGradedOutOfCatalogList(data.coins as { title?: string; titleEn?: string }[]);
+          return { coins, total: coins.length };
+        }
       }
     } catch {
       // ignore
@@ -36,7 +45,10 @@ export async function fetchCoinsList(): Promise<CoinsListResponse> {
       const api = await fetch("/api/coins");
       if (api.ok) {
         const data = (await api.json()) as CoinsListResponse;
-        if (data.coins && Array.isArray(data.coins)) return data;
+        if (data.coins && Array.isArray(data.coins)) {
+          const coins = filterGradedOutOfCatalogList(data.coins as { title?: string; titleEn?: string }[]);
+          return { coins, total: coins.length };
+        }
       }
     } catch {
       // ignore
@@ -48,7 +60,10 @@ export async function fetchCoinsList(): Promise<CoinsListResponse> {
     const static_ = await fetch(`${base}/data/coins.json`);
     if (static_.ok) {
       const data = (await static_.json()) as CoinsListResponse;
-      if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) return data;
+      if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) {
+        const coins = filterGradedOutOfCatalogList(data.coins as { title?: string; titleEn?: string }[]);
+        return { coins, total: coins.length };
+      }
     }
   } catch {
     // ignore
@@ -57,7 +72,10 @@ export async function fetchCoinsList(): Promise<CoinsListResponse> {
     const api = await fetch(`${base}/api/coins`);
     if (api.ok) {
       const data = (await api.json()) as CoinsListResponse;
-      if (data.coins && Array.isArray(data.coins)) return data;
+      if (data.coins && Array.isArray(data.coins)) {
+        const coins = filterGradedOutOfCatalogList(data.coins as { title?: string; titleEn?: string }[]);
+        return { coins, total: coins.length };
+      }
     }
   } catch {
     // ignore
