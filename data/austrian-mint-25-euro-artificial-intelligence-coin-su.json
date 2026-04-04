@@ -30,5 +30,7 @@
     "mintage_display": "65,000"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-25-euro-artificial-intelligence-coin-su-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-artificial-intelligence-coin-su-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-artificial-intelligence-coin-su-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-25-euro-artificial-intelligence-coin-su-box.webp"
 }

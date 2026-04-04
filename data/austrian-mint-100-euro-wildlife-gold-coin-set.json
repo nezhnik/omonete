@@ -31,5 +31,7 @@
     "mintage_display": "Набор: Auflage комплекта на сайте не указана. Одиночные 100 € Au Proof серии «Wildlife in our sights"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-box.webp"
 }

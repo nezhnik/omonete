@@ -30,5 +30,7 @@
     "mintage_display": "65,000 (серия Silber-Niobium, Sonderqualität Handgehoben; эталон Kundmachung: evi.gv.at/b/pi/blz-hrv"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-box.webp"
 }

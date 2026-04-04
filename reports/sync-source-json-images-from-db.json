@@ -2,9 +2,9 @@
   "dryRun": false,
   "dbRowsWithSourceUrl": 3499,
   "filesSeen": 3411,
-  "filesUpdated": 3255,
+  "filesUpdated": 1877,
   "skippedNoSourceUrl": 49,
   "skippedNotInDb": 62,
-  "skippedNoImagesInDb": 38,
+  "skippedNoImagesInDb": 36,
   "errors": []
 }

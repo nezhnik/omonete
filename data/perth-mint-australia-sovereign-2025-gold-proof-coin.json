@@ -29,7 +29,8 @@
     "imageUrls": [
       "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-obv.webp",
       "/image/coins/foreign/australia-sovereign-2025-gold-proof-coin-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Australia Sovereign 2025 Gold Proof Coin",

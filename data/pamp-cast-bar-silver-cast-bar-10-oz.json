@@ -32,5 +32,7 @@
     "checkedAt": "2026-03-27T23:24:55.684Z"
   },
   "image_obverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp",
-  "image_reverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp"
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/silver-cast-bar-10-oz-box.webp"
 }

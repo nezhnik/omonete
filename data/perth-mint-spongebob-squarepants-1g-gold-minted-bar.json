@@ -29,7 +29,8 @@
     "imageUrls": [
       "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-obv.webp",
       "/image/coins/foreign/spongebob-squarepants-1g-gold-minted-bar-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "SpongeBob SquarePants 1g Gold Minted Bar",

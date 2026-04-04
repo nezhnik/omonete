@@ -30,7 +30,8 @@
     "imageUrls": [
       "/image/coins/foreign/1918-gold-sovereign-mintmark-trio-obv.webp",
       "/image/coins/foreign/1918-gold-sovereign-mintmark-trio-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "1918 Gold Sovereign Mintmark Trio",

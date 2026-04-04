@@ -24,12 +24,13 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/30th-anniversary-australian-kookaburra-2020-5oz-silver-proof-high-relief-gilded-coin",
     "image_obverse": "/image/coins/foreign/kookaburra-5oz-2020-obv.webp",
     "image_reverse": "/image/coins/foreign/kookaburra-5oz-2020-rev.webp",
-    "image_box": "/image/coins/foreign/30th-anniversary-australian-kookaburra-2020-5oz-silver-proof-high-relief-gilded-coin-box.webp",
+    "image_box": "/image/coins/foreign/kookaburra-5oz-2020-box.webp",
     "image_certificate": "/image/coins/foreign/30th-anniversary-australian-kookaburra-2020-5oz-silver-proof-high-relief-gilded-coin-cert.webp",
     "imageUrls": [
       "/image/coins/foreign/kookaburra-5oz-2020-obv.webp",
       "/image/coins/foreign/kookaburra-5oz-2020-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "30th Anniversary Australian Kookaburra 2020 5oz Silver Proof High Relief Gilded Coin",

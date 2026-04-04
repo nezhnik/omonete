@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/krugerrand-2024-1oz-silver-bullion-coin-obv.webp",
       "/image/coins/foreign/krugerrand-2024-1oz-silver-bullion-coin-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "South African Krugerrand 2024 1oz Silver Bullion Coin",

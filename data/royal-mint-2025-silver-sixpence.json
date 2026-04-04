@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/2025-silver-sixpence-obv.webp",
       "/image/coins/foreign/2025-silver-sixpence-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The 2025 Silver Sixpence",

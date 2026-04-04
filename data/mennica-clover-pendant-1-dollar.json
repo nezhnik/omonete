@@ -35,5 +35,7 @@
   "listing_label": "Collectible products",
   "parsedAt": "2026-03-28T17:06:26.124Z",
   "image_obverse": "/image/coins/foreign/mennica-clover-pendant-1-dollar-obv.webp",
-  "image_reverse": "/image/coins/foreign/mennica-clover-pendant-1-dollar-rev.webp"
+  "image_reverse": "/image/coins/foreign/mennica-clover-pendant-1-dollar-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/mennica-clover-pendant-1-dollar-box.webp"
 }

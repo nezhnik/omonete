@@ -30,5 +30,7 @@
     "mintage_display": "50,000 (Münze Österreich: Auflage Polierte Platte — 50.000)"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-20-euro-silver-wolfgang-the-wunderkind-coin-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-silver-wolfgang-the-wunderkind-coin-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-silver-wolfgang-the-wunderkind-coin-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-20-euro-silver-wolfgang-the-wunderkind-coin-p-box.webp"
 }

@@ -28,7 +28,8 @@
     "image_certificate": "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-cert.webp",
     "imageUrls": [
       "/image/coins/foreign/australian-kangaroo-2019-gold-proof-five-coin-set-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Australian Kangaroo 2019 Gold Proof Five-Coin Set",

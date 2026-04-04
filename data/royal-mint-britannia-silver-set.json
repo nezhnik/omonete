@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/britannia-silver-set-obv.webp",
       "/image/coins/foreign/britannia-silver-set-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "1997 Britannia Silver Set",

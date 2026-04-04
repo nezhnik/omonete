@@ -77,5 +77,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T17:42:09.257Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-20eur-silver-coin-proof-quality-yeardate-2023-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-20eur-silver-coin-proof-quality-yeardate-2023-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-20eur-silver-coin-proof-quality-yeardate-2023-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-20eur-silver-coin-proof-quality-yeardate-2023-pack.webp",
+  "image_box": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-20eur-silver-coin-proof-quality-yeardate-2023-box.webp"
 }

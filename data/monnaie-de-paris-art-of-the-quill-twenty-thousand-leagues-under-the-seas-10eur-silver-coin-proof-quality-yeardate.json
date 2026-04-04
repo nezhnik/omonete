@@ -65,5 +65,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T16:28:47.843Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-pack.webp",
+  "image_box": null
 }

@@ -74,5 +74,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T15:54:27.384Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-pack.webp",
+  "image_box": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-box.webp"
 }

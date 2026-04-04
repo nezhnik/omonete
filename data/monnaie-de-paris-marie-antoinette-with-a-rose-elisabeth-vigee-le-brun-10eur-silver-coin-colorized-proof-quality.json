@@ -61,5 +61,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T17:36:35.243Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-marie-antoinette-with-a-rose-elisabeth-vigee-le-brun-10eur-silver-coin-colorized-proof-quality-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-marie-antoinette-with-a-rose-elisabeth-vigee-le-brun-10eur-silver-coin-colorized-proof-quality-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-marie-antoinette-with-a-rose-elisabeth-vigee-le-brun-10eur-silver-coin-colorized-proof-quality-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-marie-antoinette-with-a-rose-elisabeth-vigee-le-brun-10eur-silver-coin-colorized-proof-quality-pack.webp",
+  "image_box": null
 }

@@ -29,7 +29,8 @@
     "imageUrls": [
       "/image/coins/foreign/1899-queen-victoria-veiled-head-perth-mint-gold-sovereign-obv.webp",
       "/image/coins/foreign/1899-queen-victoria-veiled-head-perth-mint-gold-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "1899 Queen Victoria Veiled Head Perth Mint Sovereign",

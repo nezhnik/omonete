@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-half-sovereign-2014-obv.webp",
       "/image/coins/foreign/the-half-sovereign-2014-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The Half-Sovereign 2014",

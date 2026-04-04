@@ -29,7 +29,8 @@
     "imageUrls": [
       "/image/coins/foreign/dragon-2021-1oz-silver-coloured-coin-in-card-obv.webp",
       "/image/coins/foreign/dragon-2021-1oz-silver-coloured-coin-in-card-rev.webp"
-    ]
+    ],
+    "image_packaging": "/image/coins/foreign/dragon-2021-1oz-silver-coloured-coin-in-card-box.webp"
   },
   "raw": {
     "title": "Dragon 2021 1oz Silver Coloured Coin in Card",

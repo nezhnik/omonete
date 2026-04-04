@@ -30,5 +30,7 @@
     "mintage_display": "Набор Proof: Auflage набора на muenzeoesterreich.at не указана. Одиночные 10 € Ag Proof серии «Knigh"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-box.webp"
 }

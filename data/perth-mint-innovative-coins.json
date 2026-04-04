@@ -28,7 +28,8 @@
     "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/innovative-coins-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Innovative Coins",

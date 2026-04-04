@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/2026-gold-sixpence-obv.webp",
       "/image/coins/foreign/2026-gold-sixpence-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2026 Gold Sixpence",

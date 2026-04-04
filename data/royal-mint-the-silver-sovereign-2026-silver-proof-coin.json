@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-silver-sovereign-2026-silver-proof-coin-obv.webp",
       "/image/coins/foreign/the-silver-sovereign-2026-silver-proof-coin-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The Silver Sovereign 2026 Silver Proof Coin",

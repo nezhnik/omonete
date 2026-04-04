@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-sovereign-2013-proof-obv.webp",
       "/image/coins/foreign/the-sovereign-2013-proof-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2013 Elizabeth II Sovereign",

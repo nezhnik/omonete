@@ -30,7 +30,8 @@
     "imageUrls": [
       "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-obv.webp",
       "/image/coins/foreign/1912-king-george-v-perth-mint-gold-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "1912 King George V Perth Mint Gold Sovereign",

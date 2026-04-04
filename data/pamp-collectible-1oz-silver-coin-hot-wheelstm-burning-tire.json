@@ -35,5 +35,7 @@
     "checkedAt": "2026-03-27T22:12:10.826Z"
   },
   "image_obverse": "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-obv.webp",
-  "image_reverse": "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-rev.webp"
+  "image_reverse": "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-box.webp"
 }

@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-sovereign-1997-proof-obv.webp",
       "/image/coins/foreign/the-sovereign-1997-proof-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The Sovereign 1997",

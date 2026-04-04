@@ -58,5 +58,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T16:35:01.550Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-pack.webp",
+  "image_box": null
 }

@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-merlen-shield-silver-two-coin-set-obv.webp",
       "/image/coins/foreign/the-merlen-shield-silver-two-coin-set-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The Merlen Shield Silver Two-Coin Set",

@@ -56,5 +56,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T17:24:01.129Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-pack.webp",
+  "image_box": null
 }

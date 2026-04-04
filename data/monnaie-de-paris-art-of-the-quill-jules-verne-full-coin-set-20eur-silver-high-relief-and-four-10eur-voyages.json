@@ -64,5 +64,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T16:30:32.355Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-pack.webp",
+  "image_box": null
 }

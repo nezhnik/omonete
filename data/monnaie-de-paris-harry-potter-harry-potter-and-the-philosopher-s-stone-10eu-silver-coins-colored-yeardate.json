@@ -66,5 +66,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T18:02:05.593Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-philosopher-s-stone-10eu-silver-coins-colored-yeardate-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-philosopher-s-stone-10eu-silver-coins-colored-yeardate-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-philosopher-s-stone-10eu-silver-coins-colored-yeardate-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-philosopher-s-stone-10eu-silver-coins-colored-yeardate-pack.webp",
+  "image_box": null
 }

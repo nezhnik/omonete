@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/2005-elizabeth-ii-gold-sovereign-obv.webp",
       "/image/coins/foreign/2005-elizabeth-ii-gold-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2005 Elizabeth II Gold Sovereign",

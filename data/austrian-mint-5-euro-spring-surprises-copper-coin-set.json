@@ -30,5 +30,7 @@
     "mintage_display": "Набор: Auflage на muenzeoesterreich.at не указана. Одиночные 5 € Cu/Ag пасхальной серии — см. офиц."
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-box.webp"
 }

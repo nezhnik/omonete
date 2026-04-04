@@ -30,7 +30,8 @@
     "imageUrls": [
       "/image/coins/foreign/1857-1931-australian-sovereign-prestige-collection-obv.webp",
       "/image/coins/foreign/1857-1931-australian-sovereign-prestige-collection-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "1857-1931 Australian Sovereign Prestige Collection",

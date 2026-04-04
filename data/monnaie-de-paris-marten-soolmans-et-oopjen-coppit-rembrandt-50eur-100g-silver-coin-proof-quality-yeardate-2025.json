@@ -76,5 +76,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T16:36:55.613Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-et-oopjen-coppit-rembrandt-50eur-100g-silver-coin-proof-quality-yeardate-2025-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-et-oopjen-coppit-rembrandt-50eur-100g-silver-coin-proof-quality-yeardate-2025-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-et-oopjen-coppit-rembrandt-50eur-100g-silver-coin-proof-quality-yeardate-2025-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-et-oopjen-coppit-rembrandt-50eur-100g-silver-coin-proof-quality-yeardate-2025-pack.webp",
+  "image_box": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-et-oopjen-coppit-rembrandt-50eur-100g-silver-coin-proof-quality-yeardate-2025-box.webp"
 }

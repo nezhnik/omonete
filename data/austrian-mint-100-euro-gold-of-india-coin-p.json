@@ -30,5 +30,7 @@
     "mintage_display": "20,000"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-gold-of-india-coin-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-gold-of-india-coin-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-gold-of-india-coin-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-100-euro-gold-of-india-coin-p-box.webp"
 }

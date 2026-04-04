@@ -24,12 +24,13 @@
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/australian-kookaburra-2019-5oz-silver-proof-high-relief-coin",
     "image_obverse": "/image/coins/foreign/kookaburra-5oz-2019-obv.webp",
     "image_reverse": "/image/coins/foreign/kookaburra-5oz-2019-rev.webp",
-    "image_box": "/image/coins/foreign/australian-kookaburra-2019-5oz-silver-proof-high-relief-coin-box.webp",
+    "image_box": null,
     "image_certificate": "/image/coins/foreign/australian-kookaburra-2019-5oz-silver-proof-high-relief-coin-cert.webp",
     "imageUrls": [
       "/image/coins/foreign/kookaburra-5oz-2019-obv.webp",
       "/image/coins/foreign/kookaburra-5oz-2019-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Australian Kookaburra 2019 5oz Silver Proof High Relief Coin",

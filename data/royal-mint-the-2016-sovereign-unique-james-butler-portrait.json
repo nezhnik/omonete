@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-2016-sovereign-unique-james-butler-portrait-obv.webp",
       "/image/coins/foreign/the-2016-sovereign-unique-james-butler-portrait-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The 2016 Sovereign - Unique James Butler Portrait",

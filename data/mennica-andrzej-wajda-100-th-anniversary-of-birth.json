@@ -35,5 +35,7 @@
   "listing_label": "Collectible products",
   "parsedAt": "2026-03-28T17:05:47.722Z",
   "image_obverse": "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-obv.webp",
-  "image_reverse": "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-rev.webp"
+  "image_reverse": "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-box.webp"
 }

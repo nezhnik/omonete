@@ -30,5 +30,7 @@
     "mintage_display": "50,000 (Münze Österreich: Auflage Polierte Platte — 50.000)"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-20-euro-25th-anniversary-of-the-fall-of-the-iron-curtain-coin-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-25th-anniversary-of-the-fall-of-the-iron-curtain-coin-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-25th-anniversary-of-the-fall-of-the-iron-curtain-coin-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-20-euro-25th-anniversary-of-the-fall-of-the-iron-curtain-coin-p-box.webp"
 }

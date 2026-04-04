@@ -65,5 +65,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T17:19:19.361Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-50eur-gold-1-4-oz-coin-proof-quality-yeardate-2023-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-50eur-gold-1-4-oz-coin-proof-quality-yeardate-2023-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-50eur-gold-1-4-oz-coin-proof-quality-yeardate-2023-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-50eur-gold-1-4-oz-coin-proof-quality-yeardate-2023-pack.webp",
+  "image_box": null
 }

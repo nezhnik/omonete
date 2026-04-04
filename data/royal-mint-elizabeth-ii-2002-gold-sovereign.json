@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/elizabeth-ii-2002-gold-sovereign-obv.webp",
       "/image/coins/foreign/elizabeth-ii-2002-gold-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Elizabeth II 2002 Gold Sovereign",

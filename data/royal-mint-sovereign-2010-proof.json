@@ -31,7 +31,8 @@
     "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/sovereign-2010-proof-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The 2010 Five Sovereign Piece",

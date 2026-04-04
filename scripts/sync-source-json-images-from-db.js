@@ -1,6 +1,7 @@
 /**
- * Подтягивает в data/*.json поля imageUrls, image_obverse, image_reverse из MySQL (по source_url),
- * чтобы последующие *:import не затирали миграцию unified webp и плоские пути.
+ * Подтягивает в data/*.json из MySQL (по source_url) поля картинок для импортов:
+ * imageUrls, image_obverse, image_reverse, image_packaging, image_box — чтобы *:import
+ * не затирал миграцию unified webp (в т.ч. Royal Dutch pack/box в JSON).
  *
  *   node scripts/sync-source-json-images-from-db.js
  *   node scripts/sync-source-json-images-from-db.js --dry-run
@@ -69,7 +70,7 @@ async function main() {
   const cfg = getConfig();
   const conn = await mysql.createConnection(cfg);
   const [rows] = await conn.execute(
-    `SELECT source_url, image_urls, image_obverse, image_reverse FROM coins
+    `SELECT source_url, image_urls, image_obverse, image_reverse, image_packaging, image_box FROM coins
      WHERE source_url IS NOT NULL AND TRIM(source_url) != ''`
   );
   await conn.end();
@@ -88,6 +89,8 @@ async function main() {
       imageUrls: urls,
       image_obverse: ob,
       image_reverse: rev,
+      image_packaging: r.image_packaging ?? null,
+      image_box: r.image_box ?? null,
     });
   }
 
@@ -125,28 +128,50 @@ async function main() {
       report.skippedNotInDb++;
       continue;
     }
-    if (!dbRow.imageUrls.length && !dbRow.image_obverse && !dbRow.image_reverse) {
+    const hasFrames =
+      dbRow.imageUrls.length > 0 || dbRow.image_obverse || dbRow.image_reverse;
+    const pkgDb = dbRow.image_packaging ?? null;
+    const boxDb = dbRow.image_box ?? null;
+    const hasPkgBox = !!(pkgDb || boxDb);
+    if (!hasFrames && !hasPkgBox) {
       report.skippedNoImagesInDb++;
       continue;
     }
 
     let changed = false;
-    /** Собрано из image_urls и при необходимости из obverse/reverse */
     const urls = dbRow.imageUrls;
-    if (!sameUrls(target.imageUrls, urls)) {
-      if (urls.length) target.imageUrls = urls;
-      else if (target.imageUrls !== undefined) delete target.imageUrls;
-      changed = true;
+
+    if (hasFrames) {
+      if (urls.length > 0 && !sameUrls(target.imageUrls, urls)) {
+        target.imageUrls = urls;
+        changed = true;
+      }
+      const obv = dbRow.image_obverse || urls[0] || null;
+      const rev = dbRow.image_reverse || urls[1] || urls[0] || null;
+      if (target.image_obverse !== obv) {
+        target.image_obverse = obv;
+        changed = true;
+      }
+      if (target.image_reverse !== rev) {
+        target.image_reverse = rev;
+        changed = true;
+      }
     }
-    const obv = dbRow.image_obverse || urls[0] || null;
-    const rev = dbRow.image_reverse || urls[1] || urls[0] || null;
-    if (target.image_obverse !== obv) {
-      target.image_obverse = obv;
-      changed = true;
-    }
-    if (target.image_reverse !== rev) {
-      target.image_reverse = rev;
-      changed = true;
+
+    if (
+      Object.prototype.hasOwnProperty.call(target, "image_packaging") ||
+      Object.prototype.hasOwnProperty.call(target, "image_box") ||
+      pkgDb ||
+      boxDb
+    ) {
+      if (target.image_packaging !== pkgDb) {
+        target.image_packaging = pkgDb;
+        changed = true;
+      }
+      if (target.image_box !== boxDb) {
+        target.image_box = boxDb;
+        changed = true;
+      }
     }
 
     if (changed) {

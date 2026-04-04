@@ -30,7 +30,8 @@
     "imageUrls": [
       "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-obv.webp",
       "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Perth Mint Great War Gold Sovereign Collection 1914–1918",

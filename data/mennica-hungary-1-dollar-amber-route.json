@@ -35,5 +35,7 @@
   "listing_label": "Collectible products",
   "parsedAt": "2026-03-28T17:05:36.893Z",
   "image_obverse": "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-obv.webp",
-  "image_reverse": "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-rev.webp"
+  "image_reverse": "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-box.webp"
 }

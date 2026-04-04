@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/2004-uk-proof-half-sovereign-obv.webp",
       "/image/coins/foreign/2004-uk-proof-half-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2004 UK Proof Half Sovereign",

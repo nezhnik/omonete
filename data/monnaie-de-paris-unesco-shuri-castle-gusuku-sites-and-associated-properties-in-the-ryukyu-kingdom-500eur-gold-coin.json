@@ -58,5 +58,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T18:15:01.834Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-unesco-shuri-castle-gusuku-sites-and-associated-properties-in-the-ryukyu-kingdom-500eur-gold-coin-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-unesco-shuri-castle-gusuku-sites-and-associated-properties-in-the-ryukyu-kingdom-500eur-gold-coin-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-unesco-shuri-castle-gusuku-sites-and-associated-properties-in-the-ryukyu-kingdom-500eur-gold-coin-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-unesco-shuri-castle-gusuku-sites-and-associated-properties-in-the-ryukyu-kingdom-500eur-gold-coin-pack.webp",
+  "image_box": null
 }

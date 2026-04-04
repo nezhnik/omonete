@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-half-sovereign-2002-obv.webp",
       "/image/coins/foreign/the-half-sovereign-2002-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2002 Elizabeth II Proof Half-Sovereign",

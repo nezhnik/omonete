@@ -35,5 +35,7 @@
   "listing_label": "Collectible products",
   "parsedAt": "2026-03-28T17:06:02.036Z",
   "image_obverse": "/image/coins/foreign/mennica-eagle-owl-500-cfa-francs-save-the-world-collection-obv.webp",
-  "image_reverse": "/image/coins/foreign/mennica-eagle-owl-500-cfa-francs-save-the-world-collection-rev.webp"
+  "image_reverse": "/image/coins/foreign/mennica-eagle-owl-500-cfa-francs-save-the-world-collection-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/mennica-eagle-owl-500-cfa-francs-save-the-world-collection-box.webp"
 }

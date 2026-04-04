@@ -30,5 +30,7 @@
     "mintage_display": "30,000 (evi.gv.at/b/pi/bmh-nc7 — Sonderqualität Silber, Polierte Platte/Proof)"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-box.webp"
 }

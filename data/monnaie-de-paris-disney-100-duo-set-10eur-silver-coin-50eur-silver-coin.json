@@ -76,5 +76,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T17:23:56.185Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-pack.webp",
+  "image_box": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-box.webp"
 }

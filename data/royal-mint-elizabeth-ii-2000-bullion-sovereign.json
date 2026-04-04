@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/elizabeth-ii-2000-bullion-sovereign-obv.webp",
       "/image/coins/foreign/elizabeth-ii-2000-bullion-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Elizabeth II 2000 Bullion Sovereign",

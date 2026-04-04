@@ -28,7 +28,8 @@
     "image_certificate": "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-cert.webp",
     "imageUrls": [
       "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "Quokka 2021 1oz Silver Proof Coin",

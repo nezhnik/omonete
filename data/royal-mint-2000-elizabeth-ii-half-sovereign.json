@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/2000-elizabeth-ii-half-sovereign-obv.webp",
       "/image/coins/foreign/2000-elizabeth-ii-half-sovereign-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2000 Elizabeth II Half Sovereign",

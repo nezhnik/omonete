@@ -31,7 +31,8 @@
     "image_certificate": "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-cert.webp",
     "imageUrls": [
       "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The Snowman 2025 UK 50p Silver Proof Colour Coin",

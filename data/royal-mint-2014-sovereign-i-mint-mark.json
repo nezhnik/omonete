@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/2014-sovereign-i-mint-mark-obv.webp",
       "/image/coins/foreign/2014-sovereign-i-mint-mark-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2014 Sovereign I Mint Mark",

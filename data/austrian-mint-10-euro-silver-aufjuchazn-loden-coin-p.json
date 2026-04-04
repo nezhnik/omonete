@@ -31,5 +31,7 @@
     "mintage_display": "30,000"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufjuchazn-loden-coin-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufjuchazn-loden-coin-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufjuchazn-loden-coin-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-10-euro-silver-aufjuchazn-loden-coin-p-box.webp"
 }

@@ -30,5 +30,7 @@
     "mintage_display": "Набор Proof: Auflage набора не указана. Одиночные 20 € Ag Proof серии «The Legend Lives On» — 30.000"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-the-legend-lives-on-20-euro-silver-coin-set-proof-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-the-legend-lives-on-20-euro-silver-coin-set-proof-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-the-legend-lives-on-20-euro-silver-coin-set-proof-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-the-legend-lives-on-20-euro-silver-coin-set-proof-box.webp"
 }

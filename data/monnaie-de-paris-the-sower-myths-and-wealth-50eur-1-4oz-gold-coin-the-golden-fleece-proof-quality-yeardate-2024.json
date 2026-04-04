@@ -65,5 +65,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T16:54:26.612Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-sower-myths-and-wealth-50eur-1-4oz-gold-coin-the-golden-fleece-proof-quality-yeardate-2024-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-sower-myths-and-wealth-50eur-1-4oz-gold-coin-the-golden-fleece-proof-quality-yeardate-2024-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-sower-myths-and-wealth-50eur-1-4oz-gold-coin-the-golden-fleece-proof-quality-yeardate-2024-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-the-sower-myths-and-wealth-50eur-1-4oz-gold-coin-the-golden-fleece-proof-quality-yeardate-2024-pack.webp",
+  "image_box": null
 }

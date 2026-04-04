@@ -58,5 +58,7 @@
   "listing_label": "Coins (en)",
   "parsedAt": "2026-03-29T17:10:41.812Z",
   "image_obverse": "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-obv.webp",
-  "image_reverse": "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-rev.webp"
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-rev.webp",
+  "image_packaging": "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-pack.webp",
+  "image_box": null
 }

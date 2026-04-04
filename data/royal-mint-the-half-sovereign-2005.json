@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-half-sovereign-2005-obv.webp",
       "/image/coins/foreign/the-half-sovereign-2005-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The Half-Sovereign 2005",

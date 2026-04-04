@@ -30,5 +30,7 @@
     "mintage_display": "30,000"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-europe-the-wisdom-of-the-owl-20-euro-silver-coin-proof-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-europe-the-wisdom-of-the-owl-20-euro-silver-coin-proof-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-europe-the-wisdom-of-the-owl-20-euro-silver-coin-proof-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-europe-the-wisdom-of-the-owl-20-euro-silver-coin-proof-box.webp"
 }

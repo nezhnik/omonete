@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/the-sovereign-2011-proof-obv.webp",
       "/image/coins/foreign/the-sovereign-2011-proof-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2011 UK Proof Sovereign",

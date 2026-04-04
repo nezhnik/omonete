@@ -31,7 +31,8 @@
     "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/the-sovereign-2007-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "The 2007 Gold Proof Sovereign",

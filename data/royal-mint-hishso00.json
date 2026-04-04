@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/hishso00-obv.webp",
       "/image/coins/foreign/hishso00-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2000 Elizabeth II Proof Half-Sovereign",

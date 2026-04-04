@@ -30,5 +30,7 @@
     "mintage_display": "50,000 (серия «The White Gold of Hallstatt», 20 € Ag Proof; тот же порядок величины, что у соседних"
   },
   "image_obverse": "/image/coins/foreign/austrian-mint-20-euro-beliefs-and-rituals-coin-p-obv.webp",
-  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-beliefs-and-rituals-coin-p-rev.webp"
+  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-beliefs-and-rituals-coin-p-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/austrian-mint-20-euro-beliefs-and-rituals-coin-p-box.webp"
 }

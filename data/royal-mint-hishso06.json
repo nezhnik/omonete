@@ -32,7 +32,8 @@
     "imageUrls": [
       "/image/coins/foreign/hishso06-obv.webp",
       "/image/coins/foreign/hishso06-rev.webp"
-    ]
+    ],
+    "image_packaging": null
   },
   "raw": {
     "title": "2006 UK Proof Half Sovereign",

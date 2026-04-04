@@ -35,5 +35,7 @@
   "listing_label": "Collectible products",
   "parsedAt": "2026-03-28T17:05:33.099Z",
   "image_obverse": "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-obv.webp",
-  "image_reverse": "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-rev.webp"
+  "image_reverse": "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-rev.webp",
+  "image_packaging": null,
+  "image_box": "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-box.webp"
 }
