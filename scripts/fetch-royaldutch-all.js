@@ -13,14 +13,23 @@ function outPathForUrl(url) {
   return path.join(DATA_DIR, `royaldutch-mint-${slugFromUrl(url)}.json`);
 }
 
+function argvFromFile() {
+  const a = process.argv.find((x) => x.startsWith("--from-file="));
+  if (!a) return null;
+  const p = a.slice("--from-file=".length).trim();
+  return path.isAbsolute(p) ? p : path.join(ROOT, p);
+}
+
 async function main() {
   const onlyMissing = process.argv.includes("--only-missing");
-  if (!fs.existsSync(URLS_TXT)) {
-    console.error("Нет файла URL:", URLS_TXT, "Сначала: npm run royaldutch:listing");
+  const fromFile = argvFromFile();
+  const urlFile = fromFile || URLS_TXT;
+  if (!fs.existsSync(urlFile)) {
+    console.error("Нет файла URL:", urlFile, fromFile ? "" : "Сначала: npm run royaldutch:listing");
     process.exit(1);
   }
   const list = fs
-    .readFileSync(URLS_TXT, "utf8")
+    .readFileSync(urlFile, "utf8")
     .split(/\r?\n/)
     .map((x) => x.trim())
     .filter(Boolean)
@@ -31,8 +40,8 @@ async function main() {
     return;
   }
 
-  const work = onlyMissing ? list.filter((u) => !fs.existsSync(outPathForUrl(u))) : list;
-  console.log(`Всего URL: ${list.length}. К обработке: ${work.length}.`);
+  const work = onlyMissing && !fromFile ? list.filter((u) => !fs.existsSync(outPathForUrl(u))) : list;
+  console.log(`Источник URL: ${urlFile}. Всего: ${list.length}. К обработке: ${work.length}.`);
   if (!work.length) return;
 
   const { chromium } = require("playwright-extra");

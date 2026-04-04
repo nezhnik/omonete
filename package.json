@@ -207,6 +207,8 @@
     "royaldutch:fetch": "node scripts/fetch-royaldutch-product.js",
     "royaldutch:fetch:all": "node scripts/fetch-royaldutch-all.js",
     "royaldutch:fetch:missing": "node scripts/fetch-royaldutch-all.js --only-missing",
+    "royaldutch:audit-images": "node scripts/audit-royaldutch-images.js",
+    "royaldutch:fetch:refetch-list": "node scripts/fetch-royaldutch-all.js --from-file=reports/royaldutch-refetch-urls.txt",
     "royaldutch:import": "node scripts/import-royaldutch-to-db.js",
     "royaldutch:sync": "npm run royaldutch:listing && npm run royaldutch:fetch:all && npm run royaldutch:import && npm run data:export:incremental",
     "swissmint:listing": "node scripts/fetch-swissmint-listing.js",
