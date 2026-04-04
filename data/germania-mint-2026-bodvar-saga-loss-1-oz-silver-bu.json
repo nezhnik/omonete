@@ -18,14 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Revers_900-kopia-1.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Avers_900px-kopia-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Bodvar-Saga-Loss-1-oz-Silver-BU_Revers_900-kopia-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-1-1818x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-2-1818x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-3-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-4-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-5-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar-1-oz-6-1920x1080.jpg"
+    "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:30:28.270Z"
+  "parsedAt": "2026-03-23T19:30:28.270Z",
+  "image_obverse": "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-silver-bu-rev.webp"
 }

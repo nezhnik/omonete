@@ -69,13 +69,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/m/o/montage_cartelette_10_50____eaac.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063409_BD_5ce6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063412_BD_1cfe.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063413_BD_e765.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063408_BD_ca83.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:23:56.185Z"
+  "parsedAt": "2026-03-29T17:23:56.185Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-100-duo-set-10eur-silver-coin-50eur-silver-coin-rev.webp"
 }

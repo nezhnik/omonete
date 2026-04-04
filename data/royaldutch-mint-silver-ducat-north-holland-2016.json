@@ -15,17 +15,17 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/05.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/06.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/07.jpeg"
+      "/image/coins/foreign/silver-ducat-north-holland-2016-obv.webp",
+      "/image/coins/foreign/silver-ducat-north-holland-2016-rev.webp",
+      "/image/coins/foreign/silver-ducat-north-holland-2016-box.webp",
+      "/image/coins/foreign/silver-ducat-north-holland-2016-pack.webp",
+      "/image/coins/foreign/silver-ducat-north-holland-2016-cert.webp",
+      "/image/coins/foreign/silver-ducat-north-holland-2016-img-06.webp",
+      "/image/coins/foreign/silver-ducat-north-holland-2016-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:34:20.290Z",
     "slug": "silver-ducat-north-holland-2016",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-north-holland-2016/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-north-holland-2016-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-north-holland-2016-rev.webp"
   }
 }

@@ -73,13 +73,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041391310000_25_NAISSANCE_5_AG_BE_triptyque_entre_ouvert_v2_BD_1_9c81.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041391310000_25_NAISSANCE_5_AG_BE_triptyque_avec_certificat_v2_BD_5cab.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399010000_26_NAISSANCE_5_AG_BE_FACE_RVB_BD_a502.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399010000_26_NAISSANCE_5_AG_BE_revers_BD_f7fd.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066579_BD_1dac.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-my-first-coin-5eur-silver-colorized-coin-proof-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-my-first-coin-5eur-silver-colorized-coin-proof-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:14:18.908Z"
+  "parsedAt": "2026-03-29T15:14:18.908Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-my-first-coin-5eur-silver-colorized-coin-proof-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-my-first-coin-5eur-silver-colorized-coin-proof-quality-yeardate-2026-rev.webp"
 }

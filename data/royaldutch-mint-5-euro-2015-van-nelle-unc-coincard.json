@@ -15,17 +15,17 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/04.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/05.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/06.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/07.jpeg"
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-obv.webp",
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-rev.webp",
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-box.webp",
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-pack.webp",
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-cert.webp",
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-img-06.webp",
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:05:14.582Z",
     "slug": "5-euro-2015-van-nelle-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2015-van-nelle-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-rev.webp"
   }
 }

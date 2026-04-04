@@ -9,14 +9,14 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar/04.jpg"
+      "/image/coins/foreign/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar-box.webp",
+      "/image/coins/foreign/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:43:21.563Z",
     "slug": "scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-tread-on-them-1-troy-oz-999-silver-color-bar-rev.webp"
   }
 }

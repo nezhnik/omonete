@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/04/Inverted_Jenny_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/04/Inverted_Jenny_reverse.png"
+    "/image/coins/foreign/mennica-inverted-jenny-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-inverted-jenny-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:03:37.193Z"
+  "parsedAt": "2026-03-28T17:03:37.193Z",
+  "image_obverse": "/image/coins/foreign/mennica-inverted-jenny-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-inverted-jenny-500-cfa-francs-rev.webp"
 }

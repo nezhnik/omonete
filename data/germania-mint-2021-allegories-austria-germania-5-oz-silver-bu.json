@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2021-Allegories-Austra-Germania_5oz_rev_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021-Allegories-Austra-Germania_5oz_av_900px-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021-Allegories-Austra-Germania_5oz_rev_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/aus-5-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/aus-5-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/aus-5-3.jpg"
+    "/image/coins/foreign/2021-allegories-austria-germania-5-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2021-allegories-austria-germania-5-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:04:10.649Z"
+  "parsedAt": "2026-03-24T10:04:10.649Z",
+  "image_obverse": "/image/coins/foreign/2021-allegories-austria-germania-5-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2021-allegories-austria-germania-5-oz-silver-bu-rev.webp"
 }

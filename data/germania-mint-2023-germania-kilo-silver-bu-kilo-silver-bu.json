@@ -8,8 +8,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-kilo-silver-bu_b_900.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-kilo-silver-bu_a_900.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-2023-kilo-silver-bu_b_900.webp"
+    "/image/coins/foreign/2023-germania-kilo-silver-bu-kilo-silver-bu-obv.webp",
+    "/image/coins/foreign/2023-germania-kilo-silver-bu-kilo-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:49.436Z"
+  "parsedAt": "2026-03-23T19:31:49.436Z",
+  "image_obverse": "/image/coins/foreign/2023-germania-kilo-silver-bu-kilo-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2023-germania-kilo-silver-bu-kilo-silver-bu-rev.webp"
 }

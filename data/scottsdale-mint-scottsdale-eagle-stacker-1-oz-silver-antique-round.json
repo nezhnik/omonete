@@ -9,14 +9,14 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/04.jpg"
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-silver-antique-round-obv.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-silver-antique-round-rev.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-silver-antique-round-box.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-silver-antique-round-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:31:17.621Z",
     "slug": "scottsdale-eagle-stacker-1-oz-silver-antique-round",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-silver-antique-round/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-silver-antique-round-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-silver-antique-round-rev.webp"
   }
 }

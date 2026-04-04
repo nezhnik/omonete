@@ -20,11 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_8.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_14.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-open_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-back_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00887_b_-.png"
+    "/image/coins/foreign/fenderr-75th-anniversary-telecasterr-1oz-pure-silver-shaped-coin-obv.webp",
+    "/image/coins/foreign/fenderr-75th-anniversary-telecasterr-1oz-pure-silver-shaped-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:08:13.946Z"
+  "parsedAt": "2026-03-27T16:08:13.946Z",
+  "image_obverse": "/image/coins/foreign/fenderr-75th-anniversary-telecasterr-1oz-pure-silver-shaped-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-75th-anniversary-telecasterr-1oz-pure-silver-shaped-coin-rev.webp"
 }

@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-09/willy-wonka_5g-au_certi-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/willy-wonka_5g-au_certi-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/willy-wonka_5g-au_perspective-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/willy-wonka_5g-au_perspective-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/willy-wonka_5g-au_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/willy-wonka_5g-au_sleeve-back.png"
+    "/image/coins/foreign/5g-pure-gold-bar-wonka-chocolate-obv.webp",
+    "/image/coins/foreign/5g-pure-gold-bar-wonka-chocolate-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:03:52.674Z"
+  "parsedAt": "2026-03-27T16:03:52.674Z",
+  "image_obverse": "/image/coins/foreign/5g-pure-gold-bar-wonka-chocolate-obv.webp",
+  "image_reverse": "/image/coins/foreign/5g-pure-gold-bar-wonka-chocolate-rev.webp"
 }

@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/Galaxy_NGC_1232_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/Galaxy_NGC_1232_rewers.png"
+    "/image/coins/foreign/mennica-galaxy-ngc1232-obv.webp",
+    "/image/coins/foreign/mennica-galaxy-ngc1232-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:08:10.914Z"
+  "parsedAt": "2026-03-28T17:08:10.914Z",
+  "image_obverse": "/image/coins/foreign/mennica-galaxy-ngc1232-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-galaxy-ngc1232-rev.webp"
 }

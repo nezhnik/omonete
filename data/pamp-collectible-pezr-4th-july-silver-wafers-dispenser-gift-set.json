@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_front-packaging.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_perspective-packaging.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_capsule.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/pez-4th-july_dispenser.png"
+    "/image/coins/foreign/pezr-4th-july-silver-wafers-dispenser-gift-set-obv.webp",
+    "/image/coins/foreign/pezr-4th-july-silver-wafers-dispenser-gift-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:13:31.692Z"
+  "parsedAt": "2026-03-27T16:13:31.692Z",
+  "image_obverse": "/image/coins/foreign/pezr-4th-july-silver-wafers-dispenser-gift-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/pezr-4th-july-silver-wafers-dispenser-gift-set-rev.webp"
 }

@@ -10,16 +10,8 @@
   },
   "price_display": "40.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/8/0/3/12573086-1-ger-DE/343e9f763132-2026_Fruehlings-Set_Sackerl_Hasentrio-2026_stehend_800px.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/4/7/0/3/12573074-1-ger-DE/47583266f961-2026_Fruehlings-Set_Sackerl_Hasentrio-2026_liegend_800px.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/3/8/0/9640833-1-ger-DE/90507038e442-2026_5E_Duerer_Hasen_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/8/4/6/9546482-3-eng-US/4b67d271216a-2025_5E_Narzisse_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/7/6/2/9502670-1-ger-DE/a2341cb8e7f5-2024_5E_Auf_dem_Weg_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/1/2/5/9275216-1-ger-DE/2023_5E_Bienentanz_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/9/5/4/0/7850459-1-ger-DE/2022_5E_Das_kleine_Ich_bin_Ich_Cu_RS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2021_ostermuenze_cu_rs/6662016-1-ger-DE/5e_2021_ostermuenze_cu_rs.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2020_ostermuenze_cu_rv/5288092-1-ger-DE/5e_2020_ostermuenze_cu_rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2016_duerer-feldhase_cu-av/10131-51-ger-DE/5e_2016_duerer-feldhase_cu-av.png.webp"
+    "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-obv.webp",
+    "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -36,5 +28,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор: Auflage на muenzeoesterreich.at не указана. Одиночные 5 € Cu/Ag пасхальной серии — см. офиц."
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-spring-surprises-copper-coin-set-rev.webp"
 }

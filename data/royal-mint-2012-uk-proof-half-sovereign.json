@@ -23,12 +23,15 @@
     "catalog_suffix": "2012-uk-proof-half-sovereign",
     "price_display": "Price: £830.00",
     "source_url": "https://www.royalmint.com/sovereign/all/2012-uk-proof-half-sovereign/",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/2012-uk-proof-half-sovereign-rev.webp",
     "image_reverse": "/image/coins/foreign/2012-uk-proof-half-sovereign-rev.webp",
     "image_blister_reverse": "/image/coins/foreign/2012-uk-proof-half-sovereign-blister-rev.webp",
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2012-uk-proof-half-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 2012 Gold Proof Half-Sovereign",

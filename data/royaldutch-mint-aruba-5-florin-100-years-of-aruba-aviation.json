@@ -16,17 +16,17 @@
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/01.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/02.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/03.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/04.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/05.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/06.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/07.jpeg"
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-obv.webp",
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-rev.webp",
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-box.webp",
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-pack.webp",
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-cert.webp",
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-img-06.webp",
+      "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:09:16.891Z",
     "slug": "aruba-5-florin-100-years-of-aruba-aviation",
-    "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-100-years-of-aruba-aviation/02.jpeg"
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-100-years-of-aruba-aviation-rev.webp"
   }
 }

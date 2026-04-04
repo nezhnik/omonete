@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/star-wars-tie-fighter-2024-uk-50p-silver-proof-colour-oin-obv.webp",
+      "/image/coins/foreign/star-wars-tie-fighter-2024-uk-50p-silver-proof-colour-oin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Star Wars TIE Fighter 2024 UK 50p Silver Proof Colour Coin",

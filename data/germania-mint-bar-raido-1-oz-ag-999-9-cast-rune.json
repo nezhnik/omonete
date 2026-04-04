@@ -16,11 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_r.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_a_uv.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/raido-1-oz-cast-rune-900px_r.png",
-    "https://germaniamint.com/wp-content/uploads/2024/01/raido-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2024/02/green-runes-1-1092x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2024/01/raido-1.jpg"
+    "/image/coins/foreign/raido-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/raido-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:36.099Z"
+  "parsedAt": "2026-03-27T11:09:36.099Z",
+  "image_obverse": "/image/coins/foreign/raido-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/raido-1-oz-ag-999-9-cast-rune-rev.webp"
 }

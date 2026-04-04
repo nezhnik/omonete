@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2020-1-kilo-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2020 1 Kilo Gold Proof Coin",

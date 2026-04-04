@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062285_BD_9493.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062286_BD_85e1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062287_BD_dbf0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062288_BD_91f3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-200eur-gold-coin-proof-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-200eur-gold-coin-proof-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:42:55.814Z"
+  "parsedAt": "2026-03-29T17:42:55.814Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-200eur-gold-coin-proof-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-pierre-herme-macaron-200eur-gold-coin-proof-quality-yeardate-2023-rev.webp"
 }

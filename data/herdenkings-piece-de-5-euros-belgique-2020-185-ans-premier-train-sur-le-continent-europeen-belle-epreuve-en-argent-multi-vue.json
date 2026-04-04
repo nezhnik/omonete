@@ -15,19 +15,17 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/01.png",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/02.png",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/03.png",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/04.png",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/05.png",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/06.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/07.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/08.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/09.png"
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-obv.webp",
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-rev.webp",
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-box.webp",
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-pack.webp",
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-cert.webp",
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-img-06.webp",
+      "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:52:35.814Z",
     "slug": "piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue/02.png"
+    "image_obverse": "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-5-euros-belgique-2020-185-ans-premier-train-sur-le-continent-europeen-belle-epreuve-en-argent-multi-vue-rev.webp"
   }
 }

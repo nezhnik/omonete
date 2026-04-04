@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/perth-money-expo-anda-special-australian-kookaburra-2022-1oz-silver-coin-with-numbat-privy-mark-obv.webp",
     "image_reverse": "/image/coins/foreign/perth-money-expo-anda-special-australian-kookaburra-2022-1oz-silver-coin-with-numbat-privy-mark-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/perth-money-expo-anda-special-australian-kookaburra-2022-1oz-silver-coin-with-numbat-privy-mark-obv.webp",
+      "/image/coins/foreign/perth-money-expo-anda-special-australian-kookaburra-2022-1oz-silver-coin-with-numbat-privy-mark-rev.webp"
+    ]
   },
   "raw": {
     "title": "Perth Money Expo ANDA Special Australian Kookaburra 2022 1oz Silver Coin with Numbat Privy Mark",

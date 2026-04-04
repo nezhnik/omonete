@@ -20,10 +20,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_8.png",
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_capricorn.png",
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_8.png"
+    "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-obv.webp",
+    "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:09:23.183Z",
   "classified_source_urls": {
@@ -37,5 +35,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:09:23.185Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-obv.webp",
+  "image_reverse": "/image/coins/foreign/12g-gold-bar-zodiac-capricorn-rev.webp"
 }

@@ -18,13 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/skoll-1-oz-black-silver-bu_a_900px-2-no-shadow.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/Notre-Dame-Av_zielony.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/skoll-1-oz-black-silver-bu_a_900px-2-no-shadow.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/notre-dame-gallery-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/notre-dame-gallery-2.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/notre-dame-gallery-3.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/notre-dame-gallery-4.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/notre-dame-gallery-5.webp"
+    "/image/coins/foreign/2021-notre-dame-2-oz-silver-hr-obv.webp",
+    "/image/coins/foreign/2021-notre-dame-2-oz-silver-hr-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:35:10.997Z"
+  "parsedAt": "2026-03-23T19:35:10.997Z",
+  "image_obverse": "/image/coins/foreign/2021-notre-dame-2-oz-silver-hr-obv.webp",
+  "image_reverse": "/image/coins/foreign/2021-notre-dame-2-oz-silver-hr-rev.webp"
 }

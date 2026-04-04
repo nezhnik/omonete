@@ -15,14 +15,14 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-catharijnepoort-utrecht-2023/01.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-catharijnepoort-utrecht-2023/02.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-catharijnepoort-utrecht-2023/03.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-catharijnepoort-utrecht-2023/04.png"
+      "/image/coins/foreign/silver-ducat-catharijnepoort-utrecht-2023-obv.webp",
+      "/image/coins/foreign/silver-ducat-catharijnepoort-utrecht-2023-rev.webp",
+      "/image/coins/foreign/silver-ducat-catharijnepoort-utrecht-2023-box.webp",
+      "/image/coins/foreign/silver-ducat-catharijnepoort-utrecht-2023-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:32:44.279Z",
     "slug": "silver-ducat-catharijnepoort-utrecht-2023",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-catharijnepoort-utrecht-2023/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-catharijnepoort-utrecht-2023/02.png"
+    "image_obverse": "/image/coins/foreign/silver-ducat-catharijnepoort-utrecht-2023-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-catharijnepoort-utrecht-2023-rev.webp"
   }
 }

@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_front-packaging.png",
-    "https://www.pamp.com/sites/pamp/files/2024-06/roger-dodger_packaging-open.png"
+    "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-rodger-dodgertm-obv.webp",
+    "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-rodger-dodgertm-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:09:40.349Z"
+  "parsedAt": "2026-03-27T16:09:40.349Z",
+  "image_obverse": "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-rodger-dodgertm-obv.webp",
+  "image_reverse": "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-rodger-dodgertm-rev.webp"
 }

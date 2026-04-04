@@ -16,18 +16,18 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/obv.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/rev.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/pack.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/box.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/cert.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/blister-rev.jpeg"
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-obv.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-rev.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-pack.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-box.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-cert.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-blister-obv.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:18:05.616Z",
     "slug": "market-garden-10-euro-coin-2019-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/market-garden-10-euro-coin-2019-gold-proof/box.jpeg"
   }

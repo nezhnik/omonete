@@ -28,12 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Atlas_Maior_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Atlas_Maior_reverse_2.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Atlas_Maior_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Atlas_Maior_box.png"
+    "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:33.099Z"
+  "parsedAt": "2026-03-28T17:05:33.099Z",
+  "image_obverse": "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-atlas-maior-1000-cfa-francs-rev.webp"
 }

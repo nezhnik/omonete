@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/barbie-65th_packaging-booklet3.png"
+    "/image/coins/foreign/barbier-blue-sapphire-65th-anniversary-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/barbier-blue-sapphire-65th-anniversary-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:01.597Z"
+  "parsedAt": "2026-03-27T16:06:01.597Z",
+  "image_obverse": "/image/coins/foreign/barbier-blue-sapphire-65th-anniversary-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/barbier-blue-sapphire-65th-anniversary-1oz-silver-coin-rev.webp"
 }

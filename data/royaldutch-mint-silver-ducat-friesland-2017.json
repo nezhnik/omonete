@@ -14,16 +14,16 @@
       "Mintage": "4,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/05.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/06.jpeg"
+      "/image/coins/foreign/silver-ducat-friesland-2017-obv.webp",
+      "/image/coins/foreign/silver-ducat-friesland-2017-rev.webp",
+      "/image/coins/foreign/silver-ducat-friesland-2017-box.webp",
+      "/image/coins/foreign/silver-ducat-friesland-2017-pack.webp",
+      "/image/coins/foreign/silver-ducat-friesland-2017-cert.webp",
+      "/image/coins/foreign/silver-ducat-friesland-2017-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:33:13.972Z",
     "slug": "silver-ducat-friesland-2017",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-friesland-2017/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-friesland-2017-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-friesland-2017-rev.webp"
   }
 }

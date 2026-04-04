@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-obv.webp",
+      "/image/coins/foreign/australian-lunar-gold-coin-series-2018-year-of-the-dog-gold-proof-three-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Lunar Gold Coin Series II 2018 Year of the Dog Gold Proof Three-Coin Set",

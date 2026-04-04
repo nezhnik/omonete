@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/Junonia_almana_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/Junonia_almana_reverse.png"
+    "/image/coins/foreign/mennica-butterflies-junonia-almana-obv.webp",
+    "/image/coins/foreign/mennica-butterflies-junonia-almana-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:03:10.896Z"
+  "parsedAt": "2026-03-28T17:03:10.896Z",
+  "image_obverse": "/image/coins/foreign/mennica-butterflies-junonia-almana-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-butterflies-junonia-almana-rev.webp"
 }

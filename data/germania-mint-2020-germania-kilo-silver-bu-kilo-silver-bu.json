@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_rev.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_av.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/1kg_Germania-2020-BU-Ag-9999_rev.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2020silverkg-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2020silverkg-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2020silverkg-3.jpg"
+    "/image/coins/foreign/2020-germania-kilo-silver-bu-kilo-silver-bu-obv.webp",
+    "/image/coins/foreign/2020-germania-kilo-silver-bu-kilo-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:06:02.191Z"
+  "parsedAt": "2026-03-24T10:06:02.191Z",
+  "image_obverse": "/image/coins/foreign/2020-germania-kilo-silver-bu-kilo-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2020-germania-kilo-silver-bu-kilo-silver-bu-rev.webp"
 }

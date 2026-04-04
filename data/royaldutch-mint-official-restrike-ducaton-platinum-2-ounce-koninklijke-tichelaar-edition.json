@@ -14,18 +14,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/07.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/08.jpeg"
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-box.webp",
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-img-06.webp",
+      "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:22:40.110Z",
     "slug": "official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-platinum-2-ounce-koninklijke-tichelaar-edition-rev.webp"
   }
 }

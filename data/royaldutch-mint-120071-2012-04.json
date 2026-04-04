@@ -15,16 +15,16 @@
       "Mintage": "12,500"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/120071-2012-04/01.jpeg",
-      "/image/coins/foreign/royaldutch/120071-2012-04/02.jpeg",
-      "/image/coins/foreign/royaldutch/120071-2012-04/03.jpeg",
-      "/image/coins/foreign/royaldutch/120071-2012-04/04.jpeg",
-      "/image/coins/foreign/royaldutch/120071-2012-04/05.jpeg",
-      "/image/coins/foreign/royaldutch/120071-2012-04/06.jpeg"
+      "/image/coins/foreign/120071-2012-04-obv.webp",
+      "/image/coins/foreign/120071-2012-04-rev.webp",
+      "/image/coins/foreign/120071-2012-04-box.webp",
+      "/image/coins/foreign/120071-2012-04-pack.webp",
+      "/image/coins/foreign/120071-2012-04-cert.webp",
+      "/image/coins/foreign/120071-2012-04-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:00:33.258Z",
     "slug": "120071-2012-04",
-    "image_obverse": "/image/coins/foreign/royaldutch/120071-2012-04/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/120071-2012-04/02.jpeg"
+    "image_obverse": "/image/coins/foreign/120071-2012-04-obv.webp",
+    "image_reverse": "/image/coins/foreign/120071-2012-04-rev.webp"
   }
 }

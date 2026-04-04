@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2014-bullion-sovereign-india-mint-mark-obv.webp",
+      "/image/coins/foreign/2014-bullion-sovereign-india-mint-mark-rev.webp"
+    ]
   },
   "raw": {
     "title": "2014 Bullion Sovereign - India Mint Mark",

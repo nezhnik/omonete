@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/10/CITY-HALL-CLOKS-LONDON-BIG-BEN_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/10/CITY-HALL-CLOKS-LONDON_BIG_BEN_reverse.png"
+    "/image/coins/foreign/mennica-london-big-ben-5-euro-city-hall-clocks-obv.webp",
+    "/image/coins/foreign/mennica-london-big-ben-5-euro-city-hall-clocks-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:00:44.913Z"
+  "parsedAt": "2026-03-28T17:00:44.913Z",
+  "image_obverse": "/image/coins/foreign/mennica-london-big-ben-5-euro-city-hall-clocks-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-london-big-ben-5-euro-city-hall-clocks-rev.webp"
 }

@@ -21,13 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_11.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_17.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_11.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv-p_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-back_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-open_4.png"
+    "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-grizzly-bear-coin-obv.webp",
+    "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-grizzly-bear-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:16:05.448Z"
+  "parsedAt": "2026-03-27T16:16:05.448Z",
+  "image_obverse": "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-grizzly-bear-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-grizzly-bear-coin-rev.webp"
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-10th-anniversary-2024-1-5oz-bi-metal-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-10th-anniversary-2024-1-5oz-bi-metal-proof-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-wedge-tailed-eagle-10th-anniversary-2024-1-5oz-bi-metal-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-wedge-tailed-eagle-10th-anniversary-2024-1-5oz-bi-metal-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 10th Anniversary 2024 1.5oz Bi-Metal Proof Coin",

@@ -9,13 +9,13 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay/03.jpg"
+      "/image/coins/foreign/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay-obv.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay-rev.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay-box.webp"
     ],
     "parsedAt": "2026-04-04T15:38:22.518Z",
     "slug": "scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-prepper-gold-1-gram-9999-fine-lion-gold-bar-in-assay-rev.webp"
   }
 }

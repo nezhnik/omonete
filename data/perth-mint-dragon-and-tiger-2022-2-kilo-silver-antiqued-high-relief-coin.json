@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
+      "/image/coins/foreign/dragon-and-tiger-2022-2-kilo-silver-antiqued-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Dragon and Tiger 2022 2 Kilo Silver Antiqued High Relief Coin",

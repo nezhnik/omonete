@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-obv.webp",
+      "/image/coins/foreign/industry-in-motion-2020-1oz-silver-gear-shaped-two-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Industry in Motion 2020 1oz Silver Gear-Shaped Two-Coin Set",

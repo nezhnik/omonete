@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/Perth/The Queen's 80th Birthday 2006-obv.png",
+      "/image/coins/Perth/The Queen's 80th Birthday 2006-rev.png"
+    ]
   },
   "raw": {
     "title": "The Queen's 80th Birthday 2006 Gold Proof £5 Coin",

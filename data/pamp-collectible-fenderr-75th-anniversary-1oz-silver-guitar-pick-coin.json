@@ -20,13 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_5.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_2.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_4_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/75th_fender_pick_1oz_zagfc00866_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00866_a_13.png",
-    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00866_a_14.png"
+    "/image/coins/foreign/fenderr-75th-anniversary-1oz-silver-guitar-pick-coin-obv.webp",
+    "/image/coins/foreign/fenderr-75th-anniversary-1oz-silver-guitar-pick-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:58.205Z"
+  "parsedAt": "2026-03-27T16:07:58.205Z",
+  "image_obverse": "/image/coins/foreign/fenderr-75th-anniversary-1oz-silver-guitar-pick-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-75th-anniversary-1oz-silver-guitar-pick-coin-rev.webp"
 }

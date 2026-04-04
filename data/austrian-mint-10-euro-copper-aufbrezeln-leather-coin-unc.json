@@ -10,9 +10,8 @@
   },
   "price_display": "10.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/3/8/0/9620832-3-eng-US/5a118801a18b-2025_10E_Leder_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/5/1/0/9630152-1-ger-DE/8bd11c761289-2025_10E_Leder_Cu_NP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/5/2/0/9630252-1-ger-DE/f1c5ab5c3d3f-2025_10E_Leder_Cu_NP_RS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-copper-aufbrezeln-leather-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-copper-aufbrezeln-leather-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-copper-aufbrezeln-leather-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-copper-aufbrezeln-leather-coin-unc-rev.webp"
 }

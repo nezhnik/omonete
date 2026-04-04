@@ -9,12 +9,12 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar/02.jpg"
+      "/image/coins/foreign/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar-rev.webp"
     ],
     "parsedAt": "2026-04-04T15:43:53.229Z",
     "slug": "scottsdale-white-lion-engraved-one-kilo-cast-silver-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-white-lion-engraved-one-kilo-cast-silver-bar-rev.webp"
   }
 }

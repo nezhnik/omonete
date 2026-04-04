@@ -15,18 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/01.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/02.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/03.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/04.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/05.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/06.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/07.jpeg",
-      "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/08.jpeg"
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-obv.webp",
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-rev.webp",
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-box.webp",
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-pack.webp",
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-cert.webp",
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-img-06.webp",
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:13:26.626Z",
     "slug": "herman-brood-medal-silver-1-ounce-with-colour",
-    "image_obverse": "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/herman-brood-medal-silver-1-ounce-with-colour/02.jpeg"
+    "image_obverse": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-obv.webp",
+    "image_reverse": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-rev.webp"
   }
 }

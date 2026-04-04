@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/deadly-dangerous-bluebottle-2024-1oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Deadly and Dangerous Australia's Bluebottle 2024 1oz Silver Proof Coloured Coin",

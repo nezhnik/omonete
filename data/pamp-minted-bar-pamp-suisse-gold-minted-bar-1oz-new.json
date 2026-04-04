@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-03/obv_certipamp2.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/rev_certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/rev-2.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/micro-engraving-1.jpg",
-    "https://www.pamp.com/sites/pamp/files/2023-03/obv_p.jpg"
+    "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-obv.webp",
+    "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:29:16.900Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:07:57.814Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-obv.webp",
+  "image_reverse": "/image/coins/foreign/pamp-suisse-gold-minted-bar-1oz-new-rev.webp"
 }

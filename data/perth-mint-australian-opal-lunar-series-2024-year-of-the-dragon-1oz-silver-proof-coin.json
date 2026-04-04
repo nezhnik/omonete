@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-opal-lunar-series-2024-year-of-the-dragon-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Opal Lunar Series 2024 Year of the Dragon 1oz Silver Proof Coin",

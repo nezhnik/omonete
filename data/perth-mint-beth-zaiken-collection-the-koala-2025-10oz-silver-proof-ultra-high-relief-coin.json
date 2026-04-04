@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-obv.webp",
+      "/image/coins/foreign/beth-zaiken-collection-the-koala-2025-10oz-silver-proof-ultra-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Beth Zaiken Collection - The Koala 2025 10oz Silver Proof Ultra High Relief Coin",

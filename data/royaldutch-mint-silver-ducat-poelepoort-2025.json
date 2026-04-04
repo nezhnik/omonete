@@ -15,12 +15,12 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-poelepoort-2025/01.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-poelepoort-2025/02.png"
+      "/image/coins/foreign/silver-ducat-poelepoort-2025-obv.webp",
+      "/image/coins/foreign/silver-ducat-poelepoort-2025-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:34:26.372Z",
     "slug": "silver-ducat-poelepoort-2025",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-poelepoort-2025/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-poelepoort-2025/02.png"
+    "image_obverse": "/image/coins/foreign/silver-ducat-poelepoort-2025-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-poelepoort-2025-rev.webp"
   }
 }

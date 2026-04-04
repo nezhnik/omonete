@@ -15,17 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/07.jpeg"
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-obv.webp",
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-rev.webp",
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-box.webp",
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-pack.webp",
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-cert.webp",
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-img-06.webp",
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:36:13.588Z",
     "slug": "stichting-opkikker-medal-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/stichting-opkikker-medal-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-rev.webp"
   }
 }

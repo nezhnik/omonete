@@ -11,14 +11,14 @@
       "Diameter": "19 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/01.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/02.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/03.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/04.jpeg"
+      "/image/coins/foreign/25-cent-1849-willem-iii-fr-obv.webp",
+      "/image/coins/foreign/25-cent-1849-willem-iii-fr-rev.webp",
+      "/image/coins/foreign/25-cent-1849-willem-iii-fr-box.webp",
+      "/image/coins/foreign/25-cent-1849-willem-iii-fr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:00:45.945Z",
     "slug": "25-cent-1849-willem-iii-fr",
-    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1849-willem-iii-fr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/25-cent-1849-willem-iii-fr-obv.webp",
+    "image_reverse": "/image/coins/foreign/25-cent-1849-willem-iii-fr-rev.webp"
   }
 }

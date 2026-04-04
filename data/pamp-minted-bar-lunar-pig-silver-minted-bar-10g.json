@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigag_10g_certipamp_rev100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/lunarpigag_10g_certipamp_obv100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/234100_pamp_lunar_pig_rev_ag.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/234100_pamp_lunar_pig_obv_ag_10g.png"
+    "/image/coins/foreign/lunar-pig-silver-minted-bar-10g-obv.webp",
+    "/image/coins/foreign/lunar-pig-silver-minted-bar-10g-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:26:35.008Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:03:00.030Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-pig-silver-minted-bar-10g-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-pig-silver-minted-bar-10g-rev.webp"
 }

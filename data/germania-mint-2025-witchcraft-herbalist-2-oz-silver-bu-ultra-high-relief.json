@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-witchcraft-herbalist-2-oz-silver-bu-uhr_r_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/2025-witchcraft-herbalist-2-oz-silver-bu-uhr_a_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/2025-witchcraft-herbalist-2-oz-silver-bu-uhr_r_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-2-3.jpg"
+    "/image/coins/foreign/2025-witchcraft-herbalist-2-oz-silver-bu-ultra-high-relief-obv.webp",
+    "/image/coins/foreign/2025-witchcraft-herbalist-2-oz-silver-bu-ultra-high-relief-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:37:41.770Z"
+  "parsedAt": "2026-03-23T19:37:41.770Z",
+  "image_obverse": "/image/coins/foreign/2025-witchcraft-herbalist-2-oz-silver-bu-ultra-high-relief-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-witchcraft-herbalist-2-oz-silver-bu-ultra-high-relief-rev.webp"
 }

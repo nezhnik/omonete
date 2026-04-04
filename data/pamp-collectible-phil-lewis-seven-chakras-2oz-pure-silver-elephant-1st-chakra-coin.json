@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-10/rev_front_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-10/obv_front_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-10/packagin_front.png",
-    "https://www.pamp.com/sites/pamp/files/2022-10/packaging_open.png"
+    "/image/coins/foreign/phil-lewis-seven-chakras-2oz-pure-silver-elephant-1st-chakra-coin-obv.webp",
+    "/image/coins/foreign/phil-lewis-seven-chakras-2oz-pure-silver-elephant-1st-chakra-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:15:26.121Z"
+  "parsedAt": "2026-03-27T16:15:26.121Z",
+  "image_obverse": "/image/coins/foreign/phil-lewis-seven-chakras-2oz-pure-silver-elephant-1st-chakra-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/phil-lewis-seven-chakras-2oz-pure-silver-elephant-1st-chakra-coin-rev.webp"
 }

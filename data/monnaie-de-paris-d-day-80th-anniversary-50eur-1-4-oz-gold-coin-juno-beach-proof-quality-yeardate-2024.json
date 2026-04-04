@@ -58,11 +58,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065447_BD_e577.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065539_BD_3782.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065448_BD_2300.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-d-day-80th-anniversary-50eur-1-4-oz-gold-coin-juno-beach-proof-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-d-day-80th-anniversary-50eur-1-4-oz-gold-coin-juno-beach-proof-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:02:48.270Z"
+  "parsedAt": "2026-03-29T17:02:48.270Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-d-day-80th-anniversary-50eur-1-4-oz-gold-coin-juno-beach-proof-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-d-day-80th-anniversary-50eur-1-4-oz-gold-coin-juno-beach-proof-quality-yeardate-2024-rev.webp"
 }

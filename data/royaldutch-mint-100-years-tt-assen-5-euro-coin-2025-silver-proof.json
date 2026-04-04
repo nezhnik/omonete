@@ -15,20 +15,17 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/01.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/02.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/03.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/04.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/05.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/06.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/07.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/08.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/09.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/10.png"
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-obv.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-rev.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-box.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-pack.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-cert.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-img-06.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:00:12.476Z",
     "slug": "100-years-tt-assen-5-euro-coin-2025-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-silver-proof/02.png"
+    "image_obverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-silver-proof-rev.webp"
   }
 }

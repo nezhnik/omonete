@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2-oz-silver-bu_r_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2-oz-silver-bu_a_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2-oz-silver-bu_r_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2-3.jpg"
+    "/image/coins/foreign/germania-beasts-gullinbursti-ultra-double-high-relief-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/germania-beasts-gullinbursti-ultra-double-high-relief-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:25.394Z"
+  "parsedAt": "2026-03-23T19:31:25.394Z",
+  "image_obverse": "/image/coins/foreign/germania-beasts-gullinbursti-ultra-double-high-relief-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-beasts-gullinbursti-ultra-double-high-relief-2-oz-silver-bu-rev.webp"
 }

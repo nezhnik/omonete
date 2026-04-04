@@ -92,14 +92,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068355_BD_28cb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068323_BD_9652.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068356_BD_25cc.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068326_BD_9910.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068327_BD_95a5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068322_BD_85ad.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-snoopy-duo-cardlet-50eur-10eur-silver-coin-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-snoopy-duo-cardlet-50eur-10eur-silver-coin-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:55:21.383Z"
+  "parsedAt": "2026-03-29T15:55:21.383Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-snoopy-duo-cardlet-50eur-10eur-silver-coin-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-snoopy-duo-cardlet-50eur-10eur-silver-coin-circulating-quality-yeardate-2025-rev.webp"
 }

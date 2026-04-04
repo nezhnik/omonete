@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_ingot-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_ingot-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/ayatul-kursi_sleeve-back.png"
+    "/image/coins/foreign/ayat-al-kursi-10g-pure-gold-bar-obv.webp",
+    "/image/coins/foreign/ayat-al-kursi-10g-pure-gold-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:05:54.239Z"
+  "parsedAt": "2026-03-27T16:05:54.239Z",
+  "image_obverse": "/image/coins/foreign/ayat-al-kursi-10g-pure-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/ayat-al-kursi-10g-pure-gold-bar-rev.webp"
 }

@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2021-5oz-silver-enhanced-reverse-proof-high-relief-coin-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2021-5oz-silver-enhanced-reverse-proof-high-relief-coin-obv.webp",
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2021-5oz-silver-enhanced-reverse-proof-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2021 5oz Silver Enhanced Reverse Proof High Relief Coin",

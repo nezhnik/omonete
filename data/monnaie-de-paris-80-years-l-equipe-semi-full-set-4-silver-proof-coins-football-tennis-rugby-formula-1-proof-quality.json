@@ -81,15 +81,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069945_BD_ce46.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069419_BD_38b0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069929_BD_a723.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069931_BD_f0f8.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069933_BD_b337.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069935_BD_7a7c.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069934_BD_c7e8.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-80-years-l-equipe-semi-full-set-4-silver-proof-coins-football-tennis-rugby-formula-1-proof-quality-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-80-years-l-equipe-semi-full-set-4-silver-proof-coins-football-tennis-rugby-formula-1-proof-quality-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:42:30.367Z"
+  "parsedAt": "2026-03-29T14:42:30.367Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-80-years-l-equipe-semi-full-set-4-silver-proof-coins-football-tennis-rugby-formula-1-proof-quality-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-80-years-l-equipe-semi-full-set-4-silver-proof-coins-football-tennis-rugby-formula-1-proof-quality-rev.webp"
 }

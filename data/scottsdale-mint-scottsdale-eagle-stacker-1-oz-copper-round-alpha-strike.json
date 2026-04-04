@@ -9,14 +9,14 @@
       "Mintage": "99"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike/04.jpg"
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike-obv.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike-rev.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike-box.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:30:07.684Z",
     "slug": "scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-alpha-strike-rev.webp"
   }
 }

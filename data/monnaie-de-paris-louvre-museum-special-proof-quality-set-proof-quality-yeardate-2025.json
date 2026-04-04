@@ -68,12 +68,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067191_BD_e4db.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067202_BD_e0a3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067203_BD_d208.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041397570000_25_LOUVRE_20____Ag_BE_seule_revers_6cf2.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-special-proof-quality-set-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-special-proof-quality-set-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:35:06.172Z"
+  "parsedAt": "2026-03-29T16:35:06.172Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-special-proof-quality-set-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-special-proof-quality-set-proof-quality-yeardate-2025-rev.webp"
 }

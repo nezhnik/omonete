@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/elizabeth-ii-2002-gold-sovereign-cert.webp"
+    "image_certificate": "/image/coins/foreign/elizabeth-ii-2002-gold-sovereign-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/elizabeth-ii-2002-gold-sovereign-obv.webp",
+      "/image/coins/foreign/elizabeth-ii-2002-gold-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "Elizabeth II 2002 Gold Sovereign",

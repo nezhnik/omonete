@@ -9,11 +9,11 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/01.jpg"
+      "/image/coins/foreign/1-oz-scottsdale-omnia-silver-round-obv.webp"
     ],
     "parsedAt": "2026-04-04T15:19:39.217Z",
     "slug": "1-oz-scottsdale-omnia-silver-round",
-    "image_obverse": "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/1-oz-scottsdale-omnia-silver-round/01.jpg"
+    "image_obverse": "/image/coins/foreign/1-oz-scottsdale-omnia-silver-round-obv.webp",
+    "image_reverse": "/image/coins/foreign/1-oz-scottsdale-omnia-silver-round-obv.webp"
   }
 }

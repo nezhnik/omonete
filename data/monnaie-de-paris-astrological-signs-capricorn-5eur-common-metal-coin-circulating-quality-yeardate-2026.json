@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068388_ORI2_9040.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068389_ORI2_c759.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068121_ORI2_bbc2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068122_ORI2_49f4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-capricorn-5eur-common-metal-coin-circulating-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-capricorn-5eur-common-metal-coin-circulating-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:46:50.186Z"
+  "parsedAt": "2026-03-29T15:46:50.186Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-capricorn-5eur-common-metal-coin-circulating-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-capricorn-5eur-common-metal-coin-circulating-quality-yeardate-2026-rev.webp"
 }

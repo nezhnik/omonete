@@ -19,13 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a2_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2025-germania-beasts-gullinbursti-2x1-oz-silver-bu_a2_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-4.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gullin-2x1-5.jpg"
+    "/image/coins/foreign/germania-beasts-gullinbursti-geminus-2x1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/germania-beasts-gullinbursti-geminus-2x1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:21.306Z"
+  "parsedAt": "2026-03-23T19:31:21.306Z",
+  "image_obverse": "/image/coins/foreign/germania-beasts-gullinbursti-geminus-2x1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-beasts-gullinbursti-geminus-2x1-oz-silver-bu-rev.webp"
 }

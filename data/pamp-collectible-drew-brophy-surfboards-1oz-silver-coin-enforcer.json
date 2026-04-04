@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-05/front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-05/front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-05/packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-05/packaging-open_01.png"
+    "/image/coins/foreign/drew-brophy-surfboards-1oz-silver-coin-enforcer-obv.webp",
+    "/image/coins/foreign/drew-brophy-surfboards-1oz-silver-coin-enforcer-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:21.536Z"
+  "parsedAt": "2026-03-27T16:07:21.536Z",
+  "image_obverse": "/image/coins/foreign/drew-brophy-surfboards-1oz-silver-coin-enforcer-obv.webp",
+  "image_reverse": "/image/coins/foreign/drew-brophy-surfboards-1oz-silver-coin-enforcer-rev.webp"
 }

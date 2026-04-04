@@ -42,10 +42,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/i/Miniset_Disney_940a.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/i/Miniset_Mockup_revers_100_ans_12b6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-disney-centenary-miniset-brilliant-uncirculated-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-disney-centenary-miniset-brilliant-uncirculated-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:20:45.532Z"
+  "parsedAt": "2026-03-29T17:20:45.532Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-miniset-brilliant-uncirculated-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-miniset-brilliant-uncirculated-quality-yeardate-2023-rev.webp"
 }

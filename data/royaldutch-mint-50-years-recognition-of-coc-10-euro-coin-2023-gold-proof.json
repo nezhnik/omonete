@@ -16,12 +16,12 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof/02.jpeg"
+      "/image/coins/foreign/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof-obv.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:06:02.636Z",
     "slug": "50-years-recognition-of-coc-10-euro-coin-2023-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/50-years-recognition-of-coc-10-euro-coin-2023-gold-proof-rev.webp"
   }
 }

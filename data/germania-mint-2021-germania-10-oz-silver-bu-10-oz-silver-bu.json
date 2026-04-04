@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/4_Germania_2021_10oz_BU-reverse.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2_Germania_2021_10oz_BU-obverse.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/4_Germania_2021_10oz_BU-reverse.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/10oz-21-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/10oz-21-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/10oz-21-3.jpg"
+    "/image/coins/foreign/2021-germania-10-oz-silver-bu-10-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2021-germania-10-oz-silver-bu-10-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:06:22.248Z"
+  "parsedAt": "2026-03-24T10:06:22.248Z",
+  "image_obverse": "/image/coins/foreign/2021-germania-10-oz-silver-bu-10-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2021-germania-10-oz-silver-bu-10-oz-silver-bu-rev.webp"
 }

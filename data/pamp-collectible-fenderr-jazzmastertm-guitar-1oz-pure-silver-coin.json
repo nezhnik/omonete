@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_front-packaging.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-jazzmaster_perspective-packaging-open.png"
+    "/image/coins/foreign/fenderr-jazzmastertm-guitar-1oz-pure-silver-coin-obv.webp",
+    "/image/coins/foreign/fenderr-jazzmastertm-guitar-1oz-pure-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:08:27.953Z"
+  "parsedAt": "2026-03-27T16:08:27.953Z",
+  "image_obverse": "/image/coins/foreign/fenderr-jazzmastertm-guitar-1oz-pure-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-jazzmastertm-guitar-1oz-pure-silver-coin-rev.webp"
 }

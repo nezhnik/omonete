@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-02/packaging-closed-cod-ag.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-front-ag.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/certipamp_cod-back-ag.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-agframe.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/cod-obv-agframe.png",
-    "https://www.pamp.com/sites/pamp/files/2024-02/cod-rev-ag-perspective.png"
+    "/image/coins/foreign/call-dutyr-modern-warfarer-iii-1oz-silver-bar-pendant-frame-bonus-game-weapon-obv.webp",
+    "/image/coins/foreign/call-dutyr-modern-warfarer-iii-1oz-silver-bar-pendant-frame-bonus-game-weapon-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:30.380Z"
+  "parsedAt": "2026-03-27T16:06:30.380Z",
+  "image_obverse": "/image/coins/foreign/call-dutyr-modern-warfarer-iii-1oz-silver-bar-pendant-frame-bonus-game-weapon-obv.webp",
+  "image_reverse": "/image/coins/foreign/call-dutyr-modern-warfarer-iii-1oz-silver-bar-pendant-frame-bonus-game-weapon-rev.webp"
 }

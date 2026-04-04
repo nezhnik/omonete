@@ -23,12 +23,15 @@
     "catalog_suffix": "stegosaurus-2024-50p-silver-proof-colour-coin",
     "price_display": "£92.50",
     "source_url": "https://www.royalmint.com/shop/limited-editions/dinosaurs-iconic-specimens/stegosaurus/stegosaurus-2024-50p-silver-proof-colour-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/stegosaurus-2024-50p-silver-proof-colour-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/stegosaurus-2024-50p-silver-proof-colour-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/stegosaurus-2024-50p-silver-proof-colour-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/stegosaurus-2024-50p-silver-proof-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Stegosaurus 2024 UK 50p Silver Proof Colour Coin",

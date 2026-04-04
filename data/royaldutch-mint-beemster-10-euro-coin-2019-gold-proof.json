@@ -16,17 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/07.jpeg"
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-obv.webp",
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-rev.webp",
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-box.webp",
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-pack.webp",
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-cert.webp",
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-img-06.webp",
+      "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:10:40.380Z",
     "slug": "beemster-10-euro-coin-2019-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/beemster-10-euro-coin-2019-gold-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/beemster-10-euro-coin-2019-gold-proof-rev.webp"
   }
 }

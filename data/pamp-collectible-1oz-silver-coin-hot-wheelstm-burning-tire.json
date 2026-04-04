@@ -20,10 +20,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2026-02/rev.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/obv.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/box.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/outer_box_opened.png"
+    "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-obv.webp",
+    "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:12:10.824Z",
   "classified_source_urls": {
@@ -35,5 +33,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:12:10.826Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-obv.webp",
+  "image_reverse": "/image/coins/foreign/1oz-silver-coin-hot-wheelstm-burning-tire-rev.webp"
 }

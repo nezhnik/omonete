@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-r-1g.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-a-1g.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-christmas-edition-r-1g.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_14_11.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_19_12.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_22_08.jpg"
+    "/image/coins/foreign/gold-minted-bar-1-g-christmas-edition-obv.webp",
+    "/image/coins/foreign/gold-minted-bar-1-g-christmas-edition-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:07:23.613Z"
+  "parsedAt": "2026-03-27T11:07:23.613Z",
+  "image_obverse": "/image/coins/foreign/gold-minted-bar-1-g-christmas-edition-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-minted-bar-1-g-christmas-edition-rev.webp"
 }

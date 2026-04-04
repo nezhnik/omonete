@@ -16,18 +16,17 @@
       "Bord": "Dentelé"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/01.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/02.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/03.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/04.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/05.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/06.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/07.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/08.jpg"
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-obv.webp",
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-rev.webp",
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-box.webp",
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-pack.webp",
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-cert.webp",
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-img-06.webp",
+      "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:48:43.387Z",
     "slug": "malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69",
-    "image_obverse": "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69/02.jpg"
+    "image_obverse": "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-obv.webp",
+    "image_reverse": "/image/coins/foreign/malte-10-euros-2023-europride-malte-belle-epreuve-en-argent-pl69-rev.webp"
   }
 }

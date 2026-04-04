@@ -55,11 +55,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067280_ORI_BD_a92d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067281_ORI_BD_cff6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041396450001_25_DC_COURAGE_OR_250_V1_cartelette__2_BD_ad34.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-dc-comics-250eur-gold-coin-wonder-woman-courage-bu-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-dc-comics-250eur-gold-coin-wonder-woman-courage-bu-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:18:56.991Z"
+  "parsedAt": "2026-03-29T16:18:56.991Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-dc-comics-250eur-gold-coin-wonder-woman-courage-bu-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-dc-comics-250eur-gold-coin-wonder-woman-courage-bu-quality-yeardate-2025-rev.webp"
 }

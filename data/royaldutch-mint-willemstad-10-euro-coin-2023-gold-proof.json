@@ -16,17 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/01.png",
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/02.png",
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/03.png",
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/04.png",
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/05.png",
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/06.png",
-      "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/07.png"
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-obv.webp",
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-rev.webp",
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-box.webp",
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-pack.webp",
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-cert.webp",
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-img-06.webp",
+      "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:36:46.566Z",
     "slug": "willemstad-10-euro-coin-2023-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/willemstad-10-euro-coin-2023-gold-proof/02.png"
+    "image_obverse": "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/willemstad-10-euro-coin-2023-gold-proof-rev.webp"
   }
 }

@@ -14,16 +14,16 @@
       "Mintage": "max. 10"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/06.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:24:28.545Z",
     "slug": "official-restrike-lion-dollar-2019-gold-proof-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-piedfort-edition-rev.webp"
   }
 }

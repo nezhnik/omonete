@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/australia-half-sovereign-2017-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australia Half Sovereign 2017 Gold Proof Coin",

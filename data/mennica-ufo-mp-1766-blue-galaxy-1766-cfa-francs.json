@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/UFO_Blue_Galaxy_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/UFO_Blue_Galaxy_reverse.png"
+    "/image/coins/foreign/mennica-ufo-mp-1766-blue-galaxy-1766-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-ufo-mp-1766-blue-galaxy-1766-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:04:21.888Z"
+  "parsedAt": "2026-03-28T17:04:21.888Z",
+  "image_obverse": "/image/coins/foreign/mennica-ufo-mp-1766-blue-galaxy-1766-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-ufo-mp-1766-blue-galaxy-1766-cfa-francs-rev.webp"
 }

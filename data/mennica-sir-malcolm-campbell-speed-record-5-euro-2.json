@@ -28,12 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Sir_Malcolm_Campbell-reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Sir_Malcolm_Campbell-obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Sir_Malcolm_Campbell-Box_1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Sir_Malcolm_Campbell-Box_2.png"
+    "/image/coins/foreign/mennica-sir-malcolm-campbell-speed-record-5-euro-2-obv.webp",
+    "/image/coins/foreign/mennica-sir-malcolm-campbell-speed-record-5-euro-2-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:19.345Z"
+  "parsedAt": "2026-03-28T17:06:19.345Z",
+  "image_obverse": "/image/coins/foreign/mennica-sir-malcolm-campbell-speed-record-5-euro-2-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-sir-malcolm-campbell-speed-record-5-euro-2-rev.webp"
 }

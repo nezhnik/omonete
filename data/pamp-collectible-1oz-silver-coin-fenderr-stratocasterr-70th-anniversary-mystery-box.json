@@ -20,15 +20,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-sunburst_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_obverse_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_closed-packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_sunburst_open-packaging.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_closed-packaging-back.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-amethyst_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-antigua_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-comet-burst_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/fender-stratocaster-70th-anniversary_reverse-nebula-noir_front.png"
+    "/image/coins/foreign/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box-obv.webp",
+    "/image/coins/foreign/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:11:58.116Z",
   "classified_source_urls": {
@@ -39,5 +32,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:11:58.117Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box-obv.webp",
+  "image_reverse": "/image/coins/foreign/1oz-silver-coin-fenderr-stratocasterr-70th-anniversary-mystery-box-rev.webp"
 }

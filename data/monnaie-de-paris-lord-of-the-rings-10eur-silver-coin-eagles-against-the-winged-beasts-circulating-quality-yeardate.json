@@ -51,11 +51,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068949_BD_493e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068950_BD_d4c9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068947_BD_8c0b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-eagles-against-the-winged-beasts-circulating-quality-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-eagles-against-the-winged-beasts-circulating-quality-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:22:45.869Z"
+  "parsedAt": "2026-03-29T14:22:45.869Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-eagles-against-the-winged-beasts-circulating-quality-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-eagles-against-the-winged-beasts-circulating-quality-yeardate-rev.webp"
 }

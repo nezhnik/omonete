@@ -10,12 +10,8 @@
   },
   "price_display": "203.35 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/8/0/8/7838082-1-ger-DE/Ritter_Set_AG_HGH_716x716.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2019_ritterlichkeit_ag_hgh_blister/4314741-2-ger-DE/10e_2019_ritterlichkeit_ag_hgh_blister.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2019_abenteuer_blst/4980269-1-ger-DE/10e_2019_abenteuer_blst.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2020_tapferkeit_ag_hgh_blister/5288156-2-ger-DE/10e_2020_tapferkeit_ag_hgh_blister.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2020_standhaftigkeit_ag_hgh_blister/6102097-3-ger-DE/10e_2020_standhaftigkeit_ag_hgh_blister.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/4/9/0/1/6851094-3-eng-US/2021_10E_Bruederlichkeit_Ag_HGH_blister.png.webp"
+    "/image/coins/foreign/austrian-mint-knights-tales-silver-coin-set-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-knights-tales-silver-coin-set-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -32,5 +28,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор Ag SU: Auflage набора не указана на PDP. Одиночные 10 € Ag Handgehoben серии — 30.000 (muenzeo"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-knights-tales-silver-coin-set-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-knights-tales-silver-coin-set-su-rev.webp"
 }

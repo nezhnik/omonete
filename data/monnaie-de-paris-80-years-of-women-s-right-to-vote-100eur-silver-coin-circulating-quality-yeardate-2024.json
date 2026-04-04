@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065193_BD_4d00.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065194_BD_36be.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-80-years-of-women-s-right-to-vote-100eur-silver-coin-circulating-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-80-years-of-women-s-right-to-vote-100eur-silver-coin-circulating-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:14:27.226Z"
+  "parsedAt": "2026-03-29T17:14:27.226Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-80-years-of-women-s-right-to-vote-100eur-silver-coin-circulating-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-80-years-of-women-s-right-to-vote-100eur-silver-coin-circulating-quality-yeardate-2024-rev.webp"
 }

@@ -15,20 +15,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/01.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/02.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/03.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/04.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/05.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/06.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/07.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/08.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/09.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/10.png"
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-obv.webp",
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-rev.webp",
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-box.webp",
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-pack.webp",
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-cert.webp",
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-img-06.webp",
+      "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T19:59:50.157Z",
     "slug": "100-years-tt-assen-10-euro-coin-2025-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/100-years-tt-assen-10-euro-coin-2025-gold-proof/02.png"
+    "image_obverse": "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/100-years-tt-assen-10-euro-coin-2025-gold-proof-rev.webp"
   }
 }

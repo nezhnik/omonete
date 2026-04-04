@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/11/EGG-WITH-WATCH_Obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/11/EGG-WITH-WATCH_Reverse.png"
+    "/image/coins/foreign/mennica-egg-with-watch-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-egg-with-watch-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:09:17.706Z"
+  "parsedAt": "2026-03-28T17:09:17.706Z",
+  "image_obverse": "/image/coins/foreign/mennica-egg-with-watch-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-egg-with-watch-1-dollar-rev.webp"
 }

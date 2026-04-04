@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_rev.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_av.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021-Germania-1-oz-Silver-Proof_900px_rev.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021proof-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021proof-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2021proof-1.jpg"
+    "/image/coins/foreign/2021-germania-1-oz-silver-proof-1-oz-silver-proof-obv.webp",
+    "/image/coins/foreign/2021-germania-1-oz-silver-proof-1-oz-silver-proof-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:06:16.503Z"
+  "parsedAt": "2026-03-24T10:06:16.503Z",
+  "image_obverse": "/image/coins/foreign/2021-germania-1-oz-silver-proof-1-oz-silver-proof-obv.webp",
+  "image_reverse": "/image/coins/foreign/2021-germania-1-oz-silver-proof-1-oz-silver-proof-rev.webp"
 }

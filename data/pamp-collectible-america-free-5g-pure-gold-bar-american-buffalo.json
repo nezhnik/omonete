@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_certipamp-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_perspective-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-02/5g-au_buffalo_perspective-obv.png"
+    "/image/coins/foreign/america-free-5g-pure-gold-bar-american-buffalo-obv.webp",
+    "/image/coins/foreign/america-free-5g-pure-gold-bar-american-buffalo-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:04:51.941Z"
+  "parsedAt": "2026-03-27T16:04:51.941Z",
+  "image_obverse": "/image/coins/foreign/america-free-5g-pure-gold-bar-american-buffalo-obv.webp",
+  "image_reverse": "/image/coins/foreign/america-free-5g-pure-gold-bar-american-buffalo-rev.webp"
 }

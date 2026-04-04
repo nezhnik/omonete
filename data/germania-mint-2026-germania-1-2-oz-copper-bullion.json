@@ -17,9 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Rewers-900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Awers-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Germania-2026-1-2-Cu-Rewers-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/coming.jpg"
+    "/image/coins/foreign/2026-germania-1-2-oz-copper-bullion-obv.webp",
+    "/image/coins/foreign/2026-germania-1-2-oz-copper-bullion-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:32:47.421Z"
+  "parsedAt": "2026-03-23T19:32:47.421Z",
+  "image_obverse": "/image/coins/foreign/2026-germania-1-2-oz-copper-bullion-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-germania-1-2-oz-copper-bullion-rev.webp"
 }

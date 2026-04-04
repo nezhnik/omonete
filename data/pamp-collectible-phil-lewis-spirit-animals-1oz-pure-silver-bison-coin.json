@@ -21,12 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-open.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv-p.png"
+    "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-bison-coin-obv.webp",
+    "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-bison-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:15:50.257Z"
+  "parsedAt": "2026-03-27T16:15:50.257Z",
+  "image_obverse": "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-bison-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/phil-lewis-spirit-animals-1oz-pure-silver-bison-coin-rev.webp"
 }

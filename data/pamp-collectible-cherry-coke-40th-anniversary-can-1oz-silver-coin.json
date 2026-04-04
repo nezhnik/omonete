@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-rev-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-obv-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_can-open.png",
-    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_can-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_coin-rev-capsule.png",
-    "https://www.pamp.com/sites/pamp/files/2025-10/cerry-coke_box-perspective.png"
+    "/image/coins/foreign/cherry-coke-40th-anniversary-can-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/cherry-coke-40th-anniversary-can-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:45.549Z"
+  "parsedAt": "2026-03-27T16:06:45.549Z",
+  "image_obverse": "/image/coins/foreign/cherry-coke-40th-anniversary-can-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/cherry-coke-40th-anniversary-can-1oz-silver-coin-rev.webp"
 }

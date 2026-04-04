@@ -10,9 +10,8 @@
   },
   "price_display": "57.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/1/4/8/9548413-7-ger-DE/0d110f132288-2025_10E_Leinen_Ag_Farbe_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/3/4/8/9548435-6-eng-US/5062aca7b73e-2025_10E_Leinen_Ag_Farbe_PP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/8/7/4/9554785-5-eng-US/eb612a5e6cfc-2025_10E_Leinen_PP_Etui.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000 (evi.gv.at/b/pi/bmh-nc7 — Sonderqualität Silber, Polierte Platte/Proof)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufdirndln-linen-coin-p-rev.webp"
 }

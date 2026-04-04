@@ -23,12 +23,15 @@
     "catalog_suffix": "the-sovereign-2003",
     "price_display": "Price: £1,325.00",
     "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-2003/",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/the-sovereign-2003-rev.webp",
     "image_reverse": "/image/coins/foreign/the-sovereign-2003-rev.webp",
     "image_blister_reverse": "/image/coins/foreign/the-sovereign-2003-blister-rev.webp",
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-sovereign-2003-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 2003 Gold Proof Sovereign",

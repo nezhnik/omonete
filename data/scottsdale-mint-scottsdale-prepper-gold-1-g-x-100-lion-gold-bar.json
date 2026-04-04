@@ -9,16 +9,16 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/06.jpg"
+      "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-box.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-pack.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-cert.webp",
+      "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-img-06.webp"
     ],
     "parsedAt": "2026-04-04T15:38:09.337Z",
     "slug": "scottsdale-prepper-gold-1-g-x-100-lion-gold-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-prepper-gold-1-g-x-100-lion-gold-bar-rev.webp"
   }
 }

@@ -15,12 +15,12 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent/02.jpeg"
+      "/image/coins/foreign/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent-obv.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:50:21.124Z",
     "slug": "piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-10-euros-belgique-2021-florin-d-argent-carolus-belle-epreuve-en-argent-rev.webp"
   }
 }

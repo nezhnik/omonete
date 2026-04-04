@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-rev.webp",
     "image_box": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-box.webp",
     "image_certificate": "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-obv.webp",
+      "/image/coins/foreign/perth-mint-2021-gold-sovereign-anniversary-pair-rev.webp"
+    ]
   },
   "raw": {
     "title": "Perth Mint 2021 Gold Sovereign Anniversary Two-Coin Set",

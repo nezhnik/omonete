@@ -16,18 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/07.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/08.jpeg"
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-obv.webp",
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-rev.webp",
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-box.webp",
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-pack.webp",
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-cert.webp",
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-img-06.webp",
+      "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:16:30.231Z",
     "slug": "malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2022-queen-elizabeth-ii-platinum-jubilee-silver-proof-rev.webp"
   }
 }

@@ -14,19 +14,18 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/rev.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/pack.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/box.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/cert.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/blister-rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/extra-8.png"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-rev.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-pack.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-box.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-cert.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:28:46.218Z",
     "slug": "official-restrike-scheepjesschelling-2022-gold",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/rev.png",
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold/box.jpeg"
   }

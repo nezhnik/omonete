@@ -20,13 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-11/312515_slab.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/coca-cola_holiday-2025_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/312515_b.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/312515_a.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/312515_f.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/312515_d.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/312515_e.png"
+    "/image/coins/foreign/coca-colar-holiday-bottle-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/coca-colar-holiday-bottle-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:52.618Z"
+  "parsedAt": "2026-03-27T16:06:52.618Z",
+  "image_obverse": "/image/coins/foreign/coca-colar-holiday-bottle-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/coca-colar-holiday-bottle-1oz-silver-coin-rev.webp"
 }

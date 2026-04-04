@@ -14,14 +14,14 @@
       "Mintage": "max. 200"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof/04.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:24:21.503Z",
     "slug": "official-restrike-lion-dollar-2019-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-gold-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-rev.webp"
   }
 }

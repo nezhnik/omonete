@@ -14,20 +14,17 @@
       "Mintage": "50,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/02.jpg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/04.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/05.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/06.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/07.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/08.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/09.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/10.jpg"
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-obv.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-rev.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-box.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-pack.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-cert.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-img-06.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:06:16.258Z",
     "slug": "50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard/02.jpg"
+    "image_obverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-unc-in-coincard-rev.webp"
   }
 }

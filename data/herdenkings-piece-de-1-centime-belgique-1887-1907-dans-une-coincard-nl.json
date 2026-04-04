@@ -15,18 +15,17 @@
       "Création": "Joseph Pierre Braemt"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/01.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/02.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/03.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/04.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/05.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/06.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/07.png",
-      "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/08.png"
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-obv.webp",
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-rev.webp",
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-box.webp",
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-pack.webp",
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-cert.webp",
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-img-06.webp",
+      "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:49:47.768Z",
     "slug": "piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl/02.png"
+    "image_obverse": "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-1-centime-belgique-1887-1907-dans-une-coincard-nl-rev.webp"
   }
 }

@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/0/0066d4dc0d42c9181075da4589b166e260d39bbc_Face_50____Or_Tigre_95b9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/3/03030e6b64ee2cee0699af0bb9f5e92ce7257513_Revers_50____Or_Tigre_892d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-50eu-1-4-oz-gold-coin-proof-quality-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-50eu-1-4-oz-gold-coin-proof-quality-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:52:22.109Z"
+  "parsedAt": "2026-03-29T17:52:22.109Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-50eu-1-4-oz-gold-coin-proof-quality-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-50eu-1-4-oz-gold-coin-proof-quality-yeardate-2022-rev.webp"
 }

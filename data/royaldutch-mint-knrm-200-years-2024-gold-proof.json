@@ -16,17 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/01.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/02.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/03.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/04.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/05.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/06.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/07.png"
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-obv.webp",
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-rev.webp",
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-box.webp",
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-pack.webp",
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-cert.webp",
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-img-06.webp",
+      "/image/coins/foreign/knrm-200-years-2024-gold-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:14:49.058Z",
     "slug": "knrm-200-years-2024-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/knrm-200-years-2024-gold-proof/02.png"
+    "image_obverse": "/image/coins/foreign/knrm-200-years-2024-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/knrm-200-years-2024-gold-proof-rev.webp"
   }
 }

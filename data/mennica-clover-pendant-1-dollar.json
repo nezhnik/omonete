@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_rewers.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_awers.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/clover_pendant_box.png"
+    "/image/coins/foreign/mennica-clover-pendant-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-clover-pendant-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:26.124Z"
+  "parsedAt": "2026-03-28T17:06:26.124Z",
+  "image_obverse": "/image/coins/foreign/mennica-clover-pendant-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-clover-pendant-1-dollar-rev.webp"
 }

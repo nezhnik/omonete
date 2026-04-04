@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/lunar-year-of-the-horse-1-oz-gold-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/lunar-year-of-the-horse-1-oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/lunar-year-of-the-horse-1-oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Lunar Year of the Horse 2026 UK 1oz Gold Proof Coin",

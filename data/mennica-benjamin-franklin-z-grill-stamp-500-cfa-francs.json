@@ -28,12 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/Benjamin_Franklin_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/Benjamin_Franklin_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/Benjamin_Franklin_box.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/Benjamin_Franklin_box_2.png"
+    "/image/coins/foreign/mennica-benjamin-franklin-z-grill-stamp-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-benjamin-franklin-z-grill-stamp-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:07:02.955Z"
+  "parsedAt": "2026-03-28T17:07:02.955Z",
+  "image_obverse": "/image/coins/foreign/mennica-benjamin-franklin-z-grill-stamp-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-benjamin-franklin-z-grill-stamp-500-cfa-francs-rev.webp"
 }

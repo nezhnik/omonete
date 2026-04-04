@@ -10,8 +10,8 @@
   },
   "price_display": "5.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2017_osterlamm_cu_av/73599-1-ger-DE/5E_2017_Osterlamm_Cu_AV.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2017_osterlamm_cu_rv/73603-1-ger-DE/5E_2017_Osterlamm_Cu_RV.png.webp"
+    "/image/coins/foreign/austrian-mint-5-euro-copper-easter-lamb-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-5-euro-copper-easter-lamb-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 50000925,
     "mintage_display": "50,000 (Silver Ag 925)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-5-euro-copper-easter-lamb-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-copper-easter-lamb-coin-unc-rev.webp"
 }

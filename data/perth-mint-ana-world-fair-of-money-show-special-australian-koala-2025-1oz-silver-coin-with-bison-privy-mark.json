@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/ana-world-fair-of-money-show-special-australian-koala-2025-1oz-silver-coin-with-bison-privy-mark-obv.webp",
     "image_reverse": "/image/coins/foreign/ana-world-fair-of-money-show-special-australian-koala-2025-1oz-silver-coin-with-bison-privy-mark-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/ana-world-fair-of-money-show-special-australian-koala-2025-1oz-silver-coin-with-bison-privy-mark-obv.webp",
+      "/image/coins/foreign/ana-world-fair-of-money-show-special-australian-koala-2025-1oz-silver-coin-with-bison-privy-mark-rev.webp"
+    ]
   },
   "raw": {
     "title": "ANA World's Fair of Money Show Special Australian Koala 2025 1oz Silver Coin with Bison Privy Mark",

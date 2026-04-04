@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kangaroo-king-charles-iii-obverse-first-issue-2024-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-king-charles-iii-obverse-first-issue-2024-1oz-silver-proof-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-kangaroo-king-charles-iii-obverse-first-issue-2024-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-kangaroo-king-charles-iii-obverse-first-issue-2024-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo King Charles III Obverse First Issue 2024 1oz Silver Proof Coin",

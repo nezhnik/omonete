@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/team-gb-and-paralympicsgb-2024-50p-silver-proof-colour-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/team-gb-and-paralympicsgb-2024-50p-silver-proof-colour-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/team-gb-and-paralympicsgb-2024-50p-silver-proof-colour-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/team-gb-and-paralympicsgb-2024-50p-silver-proof-colour-coin-obv.webp",
+      "/image/coins/foreign/team-gb-and-paralympicsgb-2024-50p-silver-proof-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Team GB and ParalympicsGB 2024 UK 50p Silver Proof Colour Coin",

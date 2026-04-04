@@ -51,11 +51,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067157_BD_aaef.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067300_BD_573f.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067164_BD_c625.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:35:01.550Z"
+  "parsedAt": "2026-03-29T16:35:01.550Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-unesco-the-coliseum-historic-centre-of-rome-the-properties-of-the-holy-see-located-in-this-city-rev.webp"
 }

@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-05/lunargoatag_10g_certipamp_rev100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/lunargoatag_10g_certipamp_obv100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/ag_lunar_goat.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/ag_10g_goat.png"
+    "/image/coins/foreign/lunar-goat-silver-minted-bar-10g-obv.webp",
+    "/image/coins/foreign/lunar-goat-silver-minted-bar-10g-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:24:17.189Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:58:17.523Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-goat-silver-minted-bar-10g-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-goat-silver-minted-bar-10g-rev.webp"
 }

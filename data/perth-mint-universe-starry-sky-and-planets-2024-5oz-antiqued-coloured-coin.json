@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-obv.webp",
+      "/image/coins/foreign/universe-starry-sky-and-planets-2024-5oz-antiqued-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Universe Starry Sky and Planets 2024 5oz Silver Antiqued Coloured Coin",

@@ -51,11 +51,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068953_BD_d505.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068954_BD_a526.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00070273_BD_a246.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-merry-pippin-the-treebeard-circulating-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-merry-pippin-the-treebeard-circulating-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": null,
   "listing_label": null,
-  "parsedAt": "2026-03-29T12:14:15.718Z"
+  "parsedAt": "2026-03-29T12:14:15.718Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-merry-pippin-the-treebeard-circulating-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-lord-of-the-rings-10eur-silver-coin-merry-pippin-the-treebeard-circulating-quality-yeardate-2026-rev.webp"
 }

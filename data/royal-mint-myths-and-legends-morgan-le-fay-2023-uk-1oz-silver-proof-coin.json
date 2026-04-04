@@ -28,7 +28,11 @@
     "image_blister_reverse": "/image/coins/foreign/myths-and-legends-morgan-le-fay-2023-uk-1oz-silver-proof-coin-blister-rev.webp",
     "image_blister_obverse": "/image/coins/foreign/myths-and-legends-morgan-le-fay-2023-uk-1oz-silver-proof-coin-blister-obv.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/myths-and-legends-morgan-le-fay-2023-uk-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/myths-and-legends-morgan-le-fay-2023-uk-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Myths and Legends Morgan le Fay 2023 UK 1oz Silver Proof Coin",

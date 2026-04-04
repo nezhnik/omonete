@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-obv.webp",
     "image_reverse": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-rev.webp",
     "image_box": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-box.webp",
-    "image_certificate": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-cert.webp"
+    "image_certificate": "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-obv.webp",
+      "/image/coins/foreign/lake-argyle-pink-diamond-2018-1oz-pink-gold-ingot-rev.webp"
+    ]
   },
   "raw": {
     "title": "Lake Argyle Pink Diamond 2018 1oz Pink Gold Ingot",

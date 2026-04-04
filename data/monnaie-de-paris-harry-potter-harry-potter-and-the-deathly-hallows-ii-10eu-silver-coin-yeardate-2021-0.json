@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/9/19d4959bc86f1dfead77137df0137349129a32e6_M5066_MDP_00061232_BD_8fd4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/1/5137ee4c8b5a4c95fbbb2276bd076383fe24818e_M5066_MDP_00061339_BD_8e40.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/a/5ad80485149e611d56dfbbdce0bc22d083d53ada_M5066_MDP_00061241_BD_8238.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-deathly-hallows-ii-10eu-silver-coin-yeardate-2021-0-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-deathly-hallows-ii-10eu-silver-coin-yeardate-2021-0-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:53:23.987Z"
+  "parsedAt": "2026-03-29T17:53:23.987Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-deathly-hallows-ii-10eu-silver-coin-yeardate-2021-0-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-deathly-hallows-ii-10eu-silver-coin-yeardate-2021-0-rev.webp"
 }

@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2022-elizabeth-ii-platinum-jubilee-gold-proof-sovereign-obv.webp",
+      "/image/coins/foreign/2022-elizabeth-ii-platinum-jubilee-gold-proof-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "2022 Elizabeth II Platinum Jubilee Gold Proof Sovereign",

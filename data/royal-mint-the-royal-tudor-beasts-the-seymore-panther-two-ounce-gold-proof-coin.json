@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/the-royal-tudor-beasts-the-seymore-panther-two-ounce-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Royal Tudor Beasts The Seymore Panther Two-Ounce Gold Proof Coin",

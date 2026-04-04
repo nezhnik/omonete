@@ -16,12 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2024/02/germania-mint-laguz-rune_r_900-px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-laguz-rune_a_900-px-uv.png",
-    "https://germaniamint.com/wp-content/uploads/2024/02/germania-mint-laguz-rune_r_900-px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/laguz-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2024/02/green-runes-1-1092x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/laguz-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/laguz-3.jpg"
+    "/image/coins/foreign/laguz-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/laguz-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:28.349Z"
+  "parsedAt": "2026-03-27T11:09:28.349Z",
+  "image_obverse": "/image/coins/foreign/laguz-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/laguz-1-oz-ag-999-9-cast-rune-rev.webp"
 }

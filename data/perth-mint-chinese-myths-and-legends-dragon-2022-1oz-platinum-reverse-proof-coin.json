@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-obv.webp",
+      "/image/coins/foreign/chinese-myths-and-legends-dragon-2022-1oz-platinum-reverse-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Chinese Myths and Legends Dragon 2022 1oz Platinum Reverse Proof Coin",

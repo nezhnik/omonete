@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/6/3/63d50153aa3c870f00c1ca33220845f286763ad0_M5066_MDP_00060832_BD_767f.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/6/f/6f7814c2217bdf1286b0cf7fcec6ba6e96069a10_M5066_MDP_00060835_BD_51e2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-take-me-to-the-moon-proof-quality-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-take-me-to-the-moon-proof-quality-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:04:40.749Z"
+  "parsedAt": "2026-03-29T18:04:40.749Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-take-me-to-the-moon-proof-quality-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-take-me-to-the-moon-proof-quality-yeardate-2021-rev.webp"
 }

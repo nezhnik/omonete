@@ -10,10 +10,8 @@
   },
   "price_display": "57.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/0/2/0/9630206-1-ger-DE/941ccb3bdb96-2025_10E_Leder_Ag_Farbe_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/4/9/1/0/9630194-1-ger-DE/b3a73d7e2713-2025_10E_Leder_Ag_Farbe_PP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/1/2/0/9630218-1-ger-DE/1c9773c75f15-2025_10E_Leder_Ag_Farbe_Etui.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/2/2/0/9630228-1-ger-DE/9b1ef00b131b-2025_10E_Leder_Ag_Farbe_PP_RS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-silver-aufbrezeln-leather-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-silver-aufbrezeln-leather-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -30,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufbrezeln-leather-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-aufbrezeln-leather-coin-p-rev.webp"
 }

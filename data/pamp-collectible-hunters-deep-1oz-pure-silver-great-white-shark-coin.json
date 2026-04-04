@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_3_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_2_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/whiteshark_zagfc00619_4.png"
+    "/image/coins/foreign/hunters-deep-1oz-pure-silver-great-white-shark-coin-obv.webp",
+    "/image/coins/foreign/hunters-deep-1oz-pure-silver-great-white-shark-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:10:13.205Z"
+  "parsedAt": "2026-03-27T16:10:13.205Z",
+  "image_obverse": "/image/coins/foreign/hunters-deep-1oz-pure-silver-great-white-shark-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/hunters-deep-1oz-pure-silver-great-white-shark-coin-rev.webp"
 }

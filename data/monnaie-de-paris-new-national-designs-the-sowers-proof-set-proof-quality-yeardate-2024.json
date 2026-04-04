@@ -68,12 +68,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065153_BD_3824.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065171_BD_0f05.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065173_BD_a2f3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065172_BD_1f02.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-new-national-designs-the-sowers-proof-set-proof-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-new-national-designs-the-sowers-proof-set-proof-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:12:44.765Z"
+  "parsedAt": "2026-03-29T17:12:44.765Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-new-national-designs-the-sowers-proof-set-proof-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-new-national-designs-the-sowers-proof-set-proof-quality-yeardate-2024-rev.webp"
 }

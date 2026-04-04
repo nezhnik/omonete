@@ -57,11 +57,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067360_ORI2_b82e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067359_ORI2_ebbb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067440_ORI2_5d02.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:30:32.355Z"
+  "parsedAt": "2026-03-29T16:30:32.355Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-full-coin-set-20eur-silver-high-relief-and-four-10eur-voyages-rev.webp"
 }

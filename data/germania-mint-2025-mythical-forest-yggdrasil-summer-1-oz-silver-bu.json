@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2025-mythical-forest-yggdrasil-1-oz-silver-bu-r-900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2025-mythical-forest-yggdrasil-1-oz-silver-bu-a-900px-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2025-mythical-forest-yggdrasil-1-oz-silver-bu-r-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/summer-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/summer-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/spring-3.jpg"
+    "/image/coins/foreign/2025-mythical-forest-yggdrasil-summer-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2025-mythical-forest-yggdrasil-summer-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:35:02.990Z"
+  "parsedAt": "2026-03-23T19:35:02.990Z",
+  "image_obverse": "/image/coins/foreign/2025-mythical-forest-yggdrasil-summer-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-mythical-forest-yggdrasil-summer-1-oz-silver-bu-rev.webp"
 }

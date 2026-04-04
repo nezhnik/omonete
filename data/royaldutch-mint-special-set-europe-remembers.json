@@ -13,19 +13,17 @@
       "Mintage": "2,000 sets"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/01.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/02.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/03.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/04.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/05.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/06.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/07.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/08.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-europe-remembers/09.jpeg"
+      "/image/coins/foreign/special-set-europe-remembers-obv.webp",
+      "/image/coins/foreign/special-set-europe-remembers-rev.webp",
+      "/image/coins/foreign/special-set-europe-remembers-box.webp",
+      "/image/coins/foreign/special-set-europe-remembers-pack.webp",
+      "/image/coins/foreign/special-set-europe-remembers-cert.webp",
+      "/image/coins/foreign/special-set-europe-remembers-img-06.webp",
+      "/image/coins/foreign/special-set-europe-remembers-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:35:59.402Z",
     "slug": "special-set-europe-remembers",
-    "image_obverse": "/image/coins/foreign/royaldutch/special-set-europe-remembers/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/special-set-europe-remembers/02.jpeg"
+    "image_obverse": "/image/coins/foreign/special-set-europe-remembers-obv.webp",
+    "image_reverse": "/image/coins/foreign/special-set-europe-remembers-rev.webp"
   }
 }

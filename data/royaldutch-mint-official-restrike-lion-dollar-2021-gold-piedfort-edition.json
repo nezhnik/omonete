@@ -15,20 +15,18 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/pack.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/box.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/cert.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/blister-rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/extra-8.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/extra-9.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:25:21.915Z",
     "slug": "official-restrike-lion-dollar-2021-gold-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2021-gold-piedfort-edition-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-gold-piedfort-edition/box.jpeg"
   }

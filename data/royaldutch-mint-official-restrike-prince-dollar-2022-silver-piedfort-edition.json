@@ -15,18 +15,18 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/pack.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/box.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/cert.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/blister-rev.jpeg"
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-box.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:28:16.655Z",
     "slug": "official-restrike-prince-dollar-2022-silver-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-piedfort-edition-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-piedfort-edition/box.jpeg"
   }

@@ -11,15 +11,15 @@
       "Diameter": "15 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/obv.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/rev.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/pack.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/box.jpeg"
+      "/image/coins/foreign/10-cent-1898-1906-wilhelmina-zfr-obv.webp",
+      "/image/coins/foreign/10-cent-1898-1906-wilhelmina-zfr-rev.webp",
+      "/image/coins/foreign/10-cent-1898-1906-wilhelmina-zfr-pack.webp",
+      "/image/coins/foreign/10-cent-1898-1906-wilhelmina-zfr-box.webp"
     ],
     "parsedAt": "2026-03-31T23:02:29.447Z",
     "slug": "10-cent-1898-1906-wilhelmina-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/10-cent-1898-1906-wilhelmina-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/10-cent-1898-1906-wilhelmina-zfr-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/10-cent-1898-1906-wilhelmina-zfr/box.jpeg"
   }

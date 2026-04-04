@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068457_ORI2_c791.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068452_ORI2_50db.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068429_ORI2_5ee1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-500eur-5-oz-gold-coin-reverse-proof-proof-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-500eur-5-oz-gold-coin-reverse-proof-proof-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:00:51.798Z"
+  "parsedAt": "2026-03-29T16:00:51.798Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-500eur-5-oz-gold-coin-reverse-proof-proof-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-500eur-5-oz-gold-coin-reverse-proof-proof-quality-yeardate-2026-rev.webp"
 }

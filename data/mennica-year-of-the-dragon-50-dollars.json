@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/Dragon_Gold_Coin_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/Dragon_Gold_Coin_reverse.png"
+    "/image/coins/foreign/mennica-year-of-the-dragon-50-dollars-obv.webp",
+    "/image/coins/foreign/mennica-year-of-the-dragon-50-dollars-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:11.502Z"
+  "parsedAt": "2026-03-28T17:05:11.502Z",
+  "image_obverse": "/image/coins/foreign/mennica-year-of-the-dragon-50-dollars-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-year-of-the-dragon-50-dollars-rev.webp"
 }

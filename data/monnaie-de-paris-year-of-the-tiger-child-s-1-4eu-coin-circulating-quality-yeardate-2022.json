@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/c/3/c30dc5ccf998b12045a2fb65518a7f0972c512b1_Face_quarter_enfantin_m__tal_courant_6905.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/b/5b48bf964383c0553be64f0f93bc752d4ee1b833_Revers_quarter_enfantin_m__tal_courant_72fb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-child-s-1-4eu-coin-circulating-quality-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-child-s-1-4eu-coin-circulating-quality-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:52:25.264Z"
+  "parsedAt": "2026-03-29T17:52:25.264Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-child-s-1-4eu-coin-circulating-quality-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-child-s-1-4eu-coin-circulating-quality-yeardate-2022-rev.webp"
 }

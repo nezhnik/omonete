@@ -26,7 +26,11 @@
     "image_obverse": "/image/coins/foreign/1925-2025-perth-mint-gold-sovereign-centenary-pair-obv.webp",
     "image_reverse": "/image/coins/foreign/1925-2025-perth-mint-gold-sovereign-centenary-pair-rev.webp",
     "image_box": "/image/coins/foreign/1925-2025-perth-mint-gold-sovereign-centenary-pair-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/1925-2025-perth-mint-gold-sovereign-centenary-pair-obv.webp",
+      "/image/coins/foreign/1925-2025-perth-mint-gold-sovereign-centenary-pair-rev.webp"
+    ]
   },
   "raw": {
     "title": "1925 and 2025 Perth Mint Gold Sovereign Centenary Pair",

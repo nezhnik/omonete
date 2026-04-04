@@ -44,10 +44,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/b/b/bb9d36d6bb77f8481a503ddc17662a1e75413ff4_21_EXCELLENCE_200____OR_1oz_BE_FACE_4172.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/d/7/d7b3b7cc291592a2529fa14d183be13836dd6415_21_EXCELLENCE_200____OR_1oz_BE_REVERS_cf22.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-200eu-pink-gold-coin-proof-quality-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-200eu-pink-gold-coin-proof-quality-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:10:52.038Z"
+  "parsedAt": "2026-03-29T18:10:52.038Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-200eu-pink-gold-coin-proof-quality-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-200eu-pink-gold-coin-proof-quality-yeardate-2021-rev.webp"
 }

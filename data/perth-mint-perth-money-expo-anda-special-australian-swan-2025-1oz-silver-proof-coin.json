@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/perth-money-expo-anda-special-australian-swan-2025-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Perth Money Expo ANDA Special Australian Swan 2025 1oz Silver Proof Coin",

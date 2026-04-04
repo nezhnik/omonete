@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/gods-freyr-2oz-cast-bar-1200_r-reverse.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/gods-freyr-2oz-cast-bar-1200_a-obverse.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/gods-freyr-2oz-cast-bar-1200_r-reverse.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/americana-01.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/bar-americana-gallery-02.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/bar-americana-gallery-03.webp"
+    "/image/coins/foreign/americana-bald-eagle-2-oz-ag-999-9-cast-bar-2-obv.webp",
+    "/image/coins/foreign/americana-bald-eagle-2-oz-ag-999-9-cast-bar-2-rev.webp"
   ],
-  "parsedAt": "2026-03-24T09:37:38.971Z"
+  "parsedAt": "2026-03-24T09:37:38.971Z",
+  "image_obverse": "/image/coins/foreign/americana-bald-eagle-2-oz-ag-999-9-cast-bar-2-obv.webp",
+  "image_reverse": "/image/coins/foreign/americana-bald-eagle-2-oz-ag-999-9-cast-bar-2-rev.webp"
 }

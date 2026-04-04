@@ -20,13 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-a.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/03/bodvar2oz-r.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_32_19.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_37_16.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_47_11.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_01_00_17.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_01_05_23.jpg"
+    "/image/coins/foreign/2026-bodvar-saga-loss-2-oz-silver-bu-ultra-high-relief-obv.webp",
+    "/image/coins/foreign/2026-bodvar-saga-loss-2-oz-silver-bu-ultra-high-relief-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:30:32.342Z"
+  "parsedAt": "2026-03-23T19:30:32.342Z",
+  "image_obverse": "/image/coins/foreign/2026-bodvar-saga-loss-2-oz-silver-bu-ultra-high-relief-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-bodvar-saga-loss-2-oz-silver-bu-ultra-high-relief-rev.webp"
 }

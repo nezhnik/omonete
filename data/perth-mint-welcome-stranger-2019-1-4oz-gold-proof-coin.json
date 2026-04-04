@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/welcome-stranger-2019-1-4oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Welcome Stranger 2019 1/4oz Gold Proof Coin",

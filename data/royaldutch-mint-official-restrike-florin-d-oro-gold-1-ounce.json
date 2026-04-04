@@ -15,12 +15,12 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-gold-1-ounce/01.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-gold-1-ounce/02.png"
+      "/image/coins/foreign/official-restrike-florin-d-oro-gold-1-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-florin-d-oro-gold-1-ounce-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:23:07.678Z",
     "slug": "official-restrike-florin-d-oro-gold-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-gold-1-ounce/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-gold-1-ounce/02.png"
+    "image_obverse": "/image/coins/foreign/official-restrike-florin-d-oro-gold-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-florin-d-oro-gold-1-ounce-rev.webp"
   }
 }

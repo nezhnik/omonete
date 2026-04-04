@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/o/Cowpens_face_1941.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/o/Cowpens_revers_ad1e.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-20eur-silver-coin-proof-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-20eur-silver-coin-proof-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:56:21.043Z"
+  "parsedAt": "2026-03-29T16:56:21.043Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-20eur-silver-coin-proof-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-20eur-silver-coin-proof-quality-yeardate-2024-rev.webp"
 }

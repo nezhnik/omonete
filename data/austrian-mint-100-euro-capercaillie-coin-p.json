@@ -10,9 +10,8 @@
   },
   "price_display": "2,208.45 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2015_auerhahn-av/11625-11-ger-DE/100e_2015_auerhahn-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2015_auerhahn-rv/11633-12-ger-DE/100e_2015_auerhahn-rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2015_auerhahn-etui/11629-10-ger-DE/100e_2015_auerhahn-etui.png.webp"
+    "/image/coins/foreign/austrian-mint-100-euro-capercaillie-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-100-euro-capercaillie-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-capercaillie-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-capercaillie-coin-p-rev.webp"
 }

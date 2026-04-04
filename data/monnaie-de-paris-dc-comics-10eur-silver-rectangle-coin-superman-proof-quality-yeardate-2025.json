@@ -69,12 +69,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067691_BD_4e68.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067936_BD_4fc6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067689_BD_04ef.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067516_BD_eb5b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-rectangle-coin-superman-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-rectangle-coin-superman-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:12:42.812Z"
+  "parsedAt": "2026-03-29T16:12:42.812Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-rectangle-coin-superman-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-rectangle-coin-superman-proof-quality-yeardate-2025-rev.webp"
 }

@@ -17,11 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gods-widar_r_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gods-widar_a_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gods-widar_r_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2024/08/MRK-1407-widar_2oz_silver_cast_bar-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2024/08/MRK-1407-widar_2oz_silver_cast_bar.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/freyr_2oz_silver_cast_bar-2-1.jpg"
+    "/image/coins/foreign/gods-widar-2-oz-ag-999-9-cast-bar-obv.webp",
+    "/image/coins/foreign/gods-widar-2-oz-ag-999-9-cast-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:43.898Z"
+  "parsedAt": "2026-03-27T11:06:43.898Z",
+  "image_obverse": "/image/coins/foreign/gods-widar-2-oz-ag-999-9-cast-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/gods-widar-2-oz-ag-999-9-cast-bar-rev.webp"
 }

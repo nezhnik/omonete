@@ -15,17 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/01.jpeg",
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/02.jpeg",
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/03.jpeg",
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/04.jpeg",
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/05.jpeg",
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/06.jpeg",
-      "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/07.jpeg"
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-obv.webp",
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-rev.webp",
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-box.webp",
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-pack.webp",
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-cert.webp",
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-img-06.webp",
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:13:46.558Z",
     "slug": "invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum",
-    "image_obverse": "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum/02.jpeg"
+    "image_obverse": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-obv.webp",
+    "image_reverse": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-rev.webp"
   }
 }

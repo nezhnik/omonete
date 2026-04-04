@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2025-1oz-silver-coloured-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2025-1oz-silver-coloured-coin-in-card-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2025-1oz-silver-coloured-coin-in-card-obv.webp",
+      "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2025-1oz-silver-coloured-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Brisbane Money Expo ANDA Special Australian Koala 2025 1oz Silver Coloured Coin in Card",

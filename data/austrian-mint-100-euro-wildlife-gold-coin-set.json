@@ -11,15 +11,8 @@
   },
   "price_display": "13,259.31 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2018_stockente_sammelcase/4389014-3-ger-DE/100e_2018_stockente_sammelcase.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/wildtiere-kamapgne/wildtierschatulle_stehend_ok/11693-17-ger-DE/wildtierschatulle_stehend_ok.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/web-produktbilder/2.sammeln/2.7.100_euro/wildtiere/wildtiere-kamapgne/wildtierschatulle_plakette/11689-15-ger-DE/wildtierschatulle_plakette.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2013_rothirsch-av/11593-1-ger-DE/100e_2013_rothirsch-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2014_wildschwein-av/11609-6-ger-DE/100e_2014_wildschwein-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2015_auerhahn-av/11625-11-ger-DE/100e_2015_auerhahn-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2016_fuchs-av/61617-2-ger-DE/100e_2016_fuchs-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2017_steinbock-av/3131529-2-ger-DE/100e_2017_steinbock-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2018_stockente_av/4369944-3-ger-DE/100e_2018_stockente_av.png.webp"
+    "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-obv.webp",
+    "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -36,5 +29,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор: Auflage комплекта на сайте не указана. Одиночные 100 € Au Proof серии «Wildlife in our sights"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-wildlife-gold-coin-set-rev.webp"
 }

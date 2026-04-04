@@ -44,10 +44,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062712_BD_48ee.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062713_BD_7efd.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-william-shakespeare-20eur-high-relief-silver-coin-proof-quality-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-william-shakespeare-20eur-high-relief-silver-coin-proof-quality-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:39:14.376Z"
+  "parsedAt": "2026-03-29T17:39:14.376Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-william-shakespeare-20eur-high-relief-silver-coin-proof-quality-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-william-shakespeare-20eur-high-relief-silver-coin-proof-quality-yeardate-2022-rev.webp"
 }

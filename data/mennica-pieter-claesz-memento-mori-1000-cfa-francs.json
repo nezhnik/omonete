@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Dark-Edition_Pieter-Claesz_Memento-Mori-reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Dark-Edition_Pieter-Clanesz_Memento-Mori-obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Dark-Edition_Pieter-Claesz_Memento-Mori-box.png"
+    "/image/coins/foreign/mennica-pieter-claesz-memento-mori-1000-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-pieter-claesz-memento-mori-1000-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:48.002Z"
+  "parsedAt": "2026-03-28T17:06:48.002Z",
+  "image_obverse": "/image/coins/foreign/mennica-pieter-claesz-memento-mori-1000-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-pieter-claesz-memento-mori-1000-cfa-francs-rev.webp"
 }

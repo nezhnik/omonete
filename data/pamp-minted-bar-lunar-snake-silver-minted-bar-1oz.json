@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_1oz_certipamp_rev100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/lunarsnakeag_1oz_certipamp_obv100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/ag_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/ag_1oz.png"
+    "/image/coins/foreign/lunar-snake-silver-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/lunar-snake-silver-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:28:20.130Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:05:57.446Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-snake-silver-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-snake-silver-minted-bar-1oz-rev.webp"
 }

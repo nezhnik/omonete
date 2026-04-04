@@ -90,14 +90,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/a/Capture_d___cran_2026_02_17_143124_2fc9.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041413060000_26_CHRISTIE_COFFRET_PLEIN_face_3027.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041413060000_26_CHRISTIE_COFFRET_PLEIN_cot___6028.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/a/Capture_d___cran_2026_02_17_143242_20e0.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/6/26_AGATHA_CHRISTIE_Fourreau_Certificat_5a86.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/a/Capture_d___cran_2026_02_17_143325_be78.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-full-coin-set-20eur-silver-high-relief-and-three-10eur-novel-coins-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-full-coin-set-20eur-silver-high-relief-and-three-10eur-novel-coins-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:49:38.372Z"
+  "parsedAt": "2026-03-29T14:49:38.372Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-full-coin-set-20eur-silver-high-relief-and-three-10eur-novel-coins-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-full-coin-set-20eur-silver-high-relief-and-three-10eur-novel-coins-rev.webp"
 }

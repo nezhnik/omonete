@@ -20,10 +20,10 @@
     "certificate": "https://www.pamp.com/sites/pamp/files/2023-09/pez_deer_box-tray_0.png"
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-09/pez_deer_box-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/pez_deer_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/pez_deer_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/pez_deer_box-tray_0.png"
+    "/image/coins/foreign/pezr-reindeer-silver-wafers-dispenser-gift-set-obv.webp",
+    "/image/coins/foreign/pezr-reindeer-silver-wafers-dispenser-gift-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:14:37.025Z"
+  "parsedAt": "2026-03-27T16:14:37.025Z",
+  "image_obverse": "/image/coins/foreign/pezr-reindeer-silver-wafers-dispenser-gift-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/pezr-reindeer-silver-wafers-dispenser-gift-set-rev.webp"
 }

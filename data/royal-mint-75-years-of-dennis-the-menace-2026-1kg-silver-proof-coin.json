@@ -23,12 +23,15 @@
     "catalog_suffix": "75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin",
     "price_display": "Price: £17,217.50",
     "source_url": "https://www.royalmint.com/shop/limited-editions/dennis-the-menace/75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/75-years-of-dennis-the-menace-2026-1kg-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "75 Years of Dennis the Menace 2026 UK 1kg Silver Proof Coin",

@@ -23,12 +23,15 @@
     "catalog_suffix": "britannia-2022-1-oz-silver-bullion-coin",
     "price_display": "Price: From £61.04",
     "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/silver-coins/britannia-2022-1-oz-silver-bullion-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/britannia-2022-1-oz-silver-bullion-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/britannia-2022-1-oz-silver-bullion-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/britannia-2022-1-oz-silver-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Britannia 2022 1 oz Silver Bullion Coin",

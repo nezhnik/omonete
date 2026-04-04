@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin-brolga-privy-en-aspx-obv.webp",
     "image_reverse": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin-brolga-privy-en-aspx-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/brisbane-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin-brolga-privy-en-aspx-obv.webp",
+      "/image/coins/foreign/brisbane-money-expo-anda-special-australian-kookaburra-2023-1oz-silver-coin-brolga-privy-en-aspx-rev.webp"
+    ]
   },
   "raw": {
     "title": "Brisbane Money Expo ANDA Special Australian Kookaburra 2023 1oz Silver Coin with Brolga Privy Mark",

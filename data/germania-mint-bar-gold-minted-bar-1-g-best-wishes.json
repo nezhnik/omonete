@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-best-wishes-2.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-best-wishes-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-1g-best-wishes-2.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_12_03.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_17_18.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_26_16.jpg"
+    "/image/coins/foreign/gold-minted-bar-1-g-best-wishes-obv.webp",
+    "/image/coins/foreign/gold-minted-bar-1-g-best-wishes-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:07:15.797Z"
+  "parsedAt": "2026-03-27T11:07:15.797Z",
+  "image_obverse": "/image/coins/foreign/gold-minted-bar-1-g-best-wishes-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-minted-bar-1-g-best-wishes-rev.webp"
 }

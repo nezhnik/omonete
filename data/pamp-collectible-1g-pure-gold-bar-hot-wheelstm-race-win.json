@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_perspective-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_perspective-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/hot-wheels-painted-tracks_sleeve-back.png"
+    "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-obv.webp",
+    "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:10:41.772Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:10:41.774Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-obv.webp",
+  "image_reverse": "/image/coins/foreign/1g-pure-gold-bar-hot-wheelstm-race-win-rev.webp"
 }

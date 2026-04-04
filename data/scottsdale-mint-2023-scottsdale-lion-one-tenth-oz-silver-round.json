@@ -9,12 +9,12 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/2023-scottsdale-lion-one-tenth-oz-silver-round/01.jpg",
-      "/image/coins/foreign/scottsdale/2023-scottsdale-lion-one-tenth-oz-silver-round/03.jpg"
+      "/image/coins/foreign/2023-scottsdale-lion-one-tenth-oz-silver-round-obv.webp",
+      "/image/coins/foreign/2023-scottsdale-lion-one-tenth-oz-silver-round-box.webp"
     ],
     "parsedAt": "2026-04-04T15:23:06.235Z",
     "slug": "2023-scottsdale-lion-one-tenth-oz-silver-round",
-    "image_obverse": "/image/coins/foreign/scottsdale/2023-scottsdale-lion-one-tenth-oz-silver-round/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/2023-scottsdale-lion-one-tenth-oz-silver-round/03.jpg"
+    "image_obverse": "/image/coins/foreign/2023-scottsdale-lion-one-tenth-oz-silver-round-obv.webp",
+    "image_reverse": "/image/coins/foreign/2023-scottsdale-lion-one-tenth-oz-silver-round-box.webp"
   }
 }

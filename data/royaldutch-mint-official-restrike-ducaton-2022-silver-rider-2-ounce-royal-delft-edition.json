@@ -15,14 +15,14 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition/04.jpeg"
+      "/image/coins/foreign/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition-box.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:20:22.213Z",
     "slug": "official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2022-silver-rider-2-ounce-royal-delft-edition-rev.webp"
   }
 }

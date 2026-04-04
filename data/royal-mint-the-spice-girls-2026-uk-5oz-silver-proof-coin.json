@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-spice-girls-2026-uk-5oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-spice-girls-2026-uk-5oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-spice-girls-2026-uk-5oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/the-spice-girls-2026-uk-5oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Spice Girls 2026 UK 5oz Silver Proof Coin",

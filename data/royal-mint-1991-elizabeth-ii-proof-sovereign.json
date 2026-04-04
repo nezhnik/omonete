@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/1991-elizabeth-ii-proof-sovereign-obv.webp",
+      "/image/coins/foreign/1991-elizabeth-ii-proof-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "1991 Elizabeth II Sovereign",

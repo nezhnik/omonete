@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2021-elizabeth-ii-95th-birthday-gold-proof-five-pounds-obv.webp",
+      "/image/coins/foreign/2021-elizabeth-ii-95th-birthday-gold-proof-five-pounds-rev.webp"
+    ]
   },
   "raw": {
     "title": "2021 Elizabeth II 95th Birthday Gold Proof Five Pounds",

@@ -15,16 +15,16 @@
       "Création": "Iris Bruijns (voorzijde) Luc Luycx (keerzijde)"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/02.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/06.jpeg"
+      "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-obv.webp",
+      "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-rev.webp",
+      "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-box.webp",
+      "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-pack.webp",
+      "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-cert.webp",
+      "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:52:01.550Z",
     "slug": "piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-20-euros-belgique-2022-150-ans-red-star-line-belle-epreuve-en-argent-rev.webp"
   }
 }

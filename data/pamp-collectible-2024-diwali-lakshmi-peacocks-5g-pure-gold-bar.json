@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-09/diwali-2024-peacock_5g-au_rev_certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/diwali-2024-peacock_5g-au_obv_certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/diwali-2024-peacock_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/diwali-2024-peacock_sleeve-back.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/diwali-2024-peacock_5g-au_rev_perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/diwali-2024-peacock_5g-au_obv_perspective.png"
+    "/image/coins/foreign/2024-diwali-lakshmi-peacocks-5g-pure-gold-bar-obv.webp",
+    "/image/coins/foreign/2024-diwali-lakshmi-peacocks-5g-pure-gold-bar-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:12:58.780Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:12:58.782Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/2024-diwali-lakshmi-peacocks-5g-pure-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/2024-diwali-lakshmi-peacocks-5g-pure-gold-bar-rev.webp"
 }

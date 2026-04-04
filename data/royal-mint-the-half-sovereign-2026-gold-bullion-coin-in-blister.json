@@ -28,7 +28,11 @@
     "image_blister_reverse": "/image/coins/foreign/the-half-sovereign-2026-gold-bullion-coin-in-blister-blister-rev.webp",
     "image_blister_obverse": "/image/coins/foreign/the-half-sovereign-2026-gold-bullion-coin-in-blister-blister-obv.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-half-sovereign-2026-gold-bullion-coin-in-blister-obv.webp",
+      "/image/coins/foreign/the-half-sovereign-2026-gold-bullion-coin-in-blister-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Half-Sovereign 2026 Gold Bullion Coin in Blister",

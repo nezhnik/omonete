@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-obv.webp",
+      "/image/coins/foreign/surfboard-2020-2oz-silver-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Surfboard 2020 2oz Silver Coloured Coin",

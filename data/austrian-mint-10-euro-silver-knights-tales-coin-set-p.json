@@ -10,12 +10,8 @@
   },
   "price_display": "222.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/9/0/8/7838090-1-ger-DE/Ritter_Set_AG_PP_716x716.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2019_ritterlichkeit_ag_pp_av/4314745-2-ger-DE/10e_2019_ritterlichkeit_ag_pp_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2019_abenteuer_ag_av_pp/4980261-1-ger-DE/10e_2019_abenteuer_ag_av_pp.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2020_tapferkeit_ag_av_pp/5288160-1-ger-DE/10e_2020_tapferkeit_ag_av_pp.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2020_standhaftigkeit_ag_av_pp/6102101-1-ger-DE/10e_2020_standhaftigkeit_ag_av_pp.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2021_bruederlichkeit_ag_av_pp/6662068-1-ger-DE/10e_2021_bruederlichkeit_ag_av_pp.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -32,5 +28,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор Proof: Auflage набора на muenzeoesterreich.at не указана. Одиночные 10 € Ag Proof серии «Knigh"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-knights-tales-coin-set-p-rev.webp"
 }

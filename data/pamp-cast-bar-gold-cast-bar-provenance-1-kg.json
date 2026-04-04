@@ -19,8 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-12/provenance_1kg_cast_bar.png",
-    "https://www.pamp.com/sites/pamp/files/2022-03/au_1kg_monster-box.png"
+    "/image/coins/foreign/gold-cast-bar-provenance-1-kg-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:02.105Z",
   "classified_source_urls": {
@@ -31,5 +30,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:05.470Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/gold-cast-bar-provenance-1-kg-rev.webp",
+  "image_reverse": "/image/coins/foreign/gold-cast-bar-provenance-1-kg-rev.webp"
 }

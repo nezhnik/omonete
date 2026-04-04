@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-05/chakra-lotus_reverse.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/chakra-lotus_obverse.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/chakra-lotus_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/chakra-lotus_packaging-open.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/chakra-lotus_reverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2024-05/chakra-lotus_obverse-perspective.png"
+    "/image/coins/foreign/lotus-7th-chakra-2oz-silver-coin-color-obv.webp",
+    "/image/coins/foreign/lotus-7th-chakra-2oz-silver-coin-color-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:11:52.508Z"
+  "parsedAt": "2026-03-27T16:11:52.508Z",
+  "image_obverse": "/image/coins/foreign/lotus-7th-chakra-2oz-silver-coin-color-obv.webp",
+  "image_reverse": "/image/coins/foreign/lotus-7th-chakra-2oz-silver-coin-color-rev.webp"
 }

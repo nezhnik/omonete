@@ -10,15 +10,8 @@
   },
   "price_display": "415.20 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/7/5/0/9530572-3-eng-US/bd4a2b97dd96-Komplettset-Polierte-Platte-Mit-der-Sprache-der-Blumen.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/7/4/0/7260477-3-ger-DE/2021_10E_DieRose_Ag_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/0/3/4/8014307-1-ger-DE/2022_10E_Loewenzahn_Ag_gelb_PP_RS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/3/8/3/8583833-1-ger-DE/2022_10E_Ringelblume_Ag_orange_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/0/3/5/9275300-1-ger-DE/2023_10E_Vergissmeinnicht_Ag_blau_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/0/6/6/9386601-1-ger-DE/7a493c397617-2023_10E_Kamille_Ag_gelb_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/9/2/1/6/9516129-6-eng-US/b257ffaef0d8-2024_10E_Pfingstrose_Ag_rosa_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/9/6/6/9526692-3-eng-US/e1775db8fec7-2024_10E_Veilchen_Ag_Lila_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/2/5/0/7260521-1-ger-DE/Blumenbuch_bild1.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-seven-flower-silver-coin-set-including-book-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-seven-flower-silver-coin-set-including-book-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -35,5 +28,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор с книгой: Auflage на карточке товара не указана. Монеты серии — Ag Handgehoben 30.000 шт. (офи"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-seven-flower-silver-coin-set-including-book-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-seven-flower-silver-coin-set-including-book-rev.webp"
 }

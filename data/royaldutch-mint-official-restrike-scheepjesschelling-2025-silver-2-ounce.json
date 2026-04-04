@@ -15,17 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/01.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/02.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/03.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/04.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/05.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/06.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/07.png"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-box.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-pack.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-cert.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-img-06.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:30:36.846Z",
     "slug": "official-restrike-scheepjesschelling-2025-silver-2-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2025-silver-2-ounce/02.png"
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2025-silver-2-ounce-rev.webp"
   }
 }

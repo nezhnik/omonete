@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/c-day-50th-anniversary-2025-1oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/c-day-50th-anniversary-2025-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/c-day-50th-anniversary-2025-1oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/c-day-50th-anniversary-2025-1oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "C-Day 50th Anniversary 2025 1oz Silver Proof Coloured Coin",

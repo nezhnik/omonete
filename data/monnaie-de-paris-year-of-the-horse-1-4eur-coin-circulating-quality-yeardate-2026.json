@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067488_BD_3230.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067489_BD_54d3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-1-4eur-coin-circulating-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-1-4eur-coin-circulating-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:00:03.502Z"
+  "parsedAt": "2026-03-29T16:00:03.502Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-1-4eur-coin-circulating-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-horse-1-4eur-coin-circulating-quality-yeardate-2026-rev.webp"
 }

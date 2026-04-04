@@ -15,20 +15,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/01.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/02.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/03.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/04.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/05.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/06.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/07.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/08.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/09.png",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/10.png"
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-box.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-img-06.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:21:46.212Z",
     "slug": "official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition/02.png"
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-rev.webp"
   }
 }

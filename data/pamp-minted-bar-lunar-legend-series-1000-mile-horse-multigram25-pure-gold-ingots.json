@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-11/multigram_1g-au_lunar-legend_horse_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/multigram_1g-au_lunar-legend_horse_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/multigram_1g-au_lunar-legend_horse_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/multigram_1g-au_lunar-legend_horse_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/multigram_1g-au_lunar-legend_horse_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/multigram_1g-au_lunar-legend_horse_sleeve-back.png"
+    "/image/coins/foreign/lunar-legend-series-1000-mile-horse-multigram25-pure-gold-ingots-obv.webp",
+    "/image/coins/foreign/lunar-legend-series-1000-mile-horse-multigram25-pure-gold-ingots-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:24:53.278Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:59:34.090Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-legend-series-1000-mile-horse-multigram25-pure-gold-ingots-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-legend-series-1000-mile-horse-multigram25-pure-gold-ingots-rev.webp"
 }

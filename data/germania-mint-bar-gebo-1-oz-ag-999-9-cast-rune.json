@@ -16,11 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2024/01/gebo-1-oz-cast-rune_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/gebo-1-oz-cast-rune-uv_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2024/01/gebo-1-oz-cast-rune_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/rhunes_1oz_gebo.jpg",
-    "https://germaniamint.com/wp-content/uploads/2024/02/green-runes-1-1092x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/rhunes_1oz_gebo-2.jpg"
+    "/image/coins/foreign/gebo-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/gebo-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:09.021Z"
+  "parsedAt": "2026-03-27T11:09:09.021Z",
+  "image_obverse": "/image/coins/foreign/gebo-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/gebo-1-oz-ag-999-9-cast-rune-rev.webp"
 }

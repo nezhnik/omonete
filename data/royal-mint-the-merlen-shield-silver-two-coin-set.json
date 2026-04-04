@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-merlen-shield-silver-two-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-merlen-shield-silver-two-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-merlen-shield-silver-two-coin-set-obv.webp",
+      "/image/coins/foreign/the-merlen-shield-silver-two-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Merlen Shield Silver Two-Coin Set",

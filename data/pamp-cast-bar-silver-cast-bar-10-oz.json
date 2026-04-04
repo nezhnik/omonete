@@ -19,8 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/silver_10oz_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/10oz_monster-box.png"
+    "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:54.447Z",
   "classified_source_urls": {
@@ -31,5 +30,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:55.684Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp"
 }

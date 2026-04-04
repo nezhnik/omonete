@@ -11,14 +11,14 @@
       "Diameter": "19 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/25-cent-1926-1928-wilhelmina-zfr/01.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1926-1928-wilhelmina-zfr/02.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1926-1928-wilhelmina-zfr/03.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1926-1928-wilhelmina-zfr/04.jpeg"
+      "/image/coins/foreign/25-cent-1926-1928-wilhelmina-zfr-obv.webp",
+      "/image/coins/foreign/25-cent-1926-1928-wilhelmina-zfr-rev.webp",
+      "/image/coins/foreign/25-cent-1926-1928-wilhelmina-zfr-box.webp",
+      "/image/coins/foreign/25-cent-1926-1928-wilhelmina-zfr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:01:28.300Z",
     "slug": "25-cent-1926-1928-wilhelmina-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1926-1928-wilhelmina-zfr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1926-1928-wilhelmina-zfr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/25-cent-1926-1928-wilhelmina-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/25-cent-1926-1928-wilhelmina-zfr-rev.webp"
   }
 }

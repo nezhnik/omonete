@@ -47,10 +47,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067878_BD_84c5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067879_BD_e7d8.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-departure-arrival-200eur-1-oz-gold-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-departure-arrival-200eur-1-oz-gold-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:02:04.592Z"
+  "parsedAt": "2026-03-29T16:02:04.592Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-departure-arrival-200eur-1-oz-gold-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-departure-arrival-200eur-1-oz-gold-coin-proof-quality-yeardate-2025-rev.webp"
 }

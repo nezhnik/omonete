@@ -15,16 +15,16 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/03.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/05.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/06.jpeg"
+      "/image/coins/foreign/silver-ducat-2019-flevoland-obv.webp",
+      "/image/coins/foreign/silver-ducat-2019-flevoland-rev.webp",
+      "/image/coins/foreign/silver-ducat-2019-flevoland-box.webp",
+      "/image/coins/foreign/silver-ducat-2019-flevoland-pack.webp",
+      "/image/coins/foreign/silver-ducat-2019-flevoland-cert.webp",
+      "/image/coins/foreign/silver-ducat-2019-flevoland-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:32:25.953Z",
     "slug": "silver-ducat-2019-flevoland",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-2019-flevoland/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-2019-flevoland-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-2019-flevoland-rev.webp"
   }
 }

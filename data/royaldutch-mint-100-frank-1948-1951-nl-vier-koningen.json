@@ -13,14 +13,14 @@
       "Edge": "Gekarteld"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/01.jpeg",
-      "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/02.jpeg",
-      "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/03.jpeg",
-      "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/04.jpeg"
+      "/image/coins/foreign/100-frank-1948-1951-nl-vier-koningen-obv.webp",
+      "/image/coins/foreign/100-frank-1948-1951-nl-vier-koningen-rev.webp",
+      "/image/coins/foreign/100-frank-1948-1951-nl-vier-koningen-box.webp",
+      "/image/coins/foreign/100-frank-1948-1951-nl-vier-koningen-pack.webp"
     ],
     "parsedAt": "2026-03-31T19:59:42.646Z",
     "slug": "100-frank-1948-1951-nl-vier-koningen",
-    "image_obverse": "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/100-frank-1948-1951-nl-vier-koningen/02.jpeg"
+    "image_obverse": "/image/coins/foreign/100-frank-1948-1951-nl-vier-koningen-obv.webp",
+    "image_reverse": "/image/coins/foreign/100-frank-1948-1951-nl-vier-koningen-rev.webp"
   }
 }

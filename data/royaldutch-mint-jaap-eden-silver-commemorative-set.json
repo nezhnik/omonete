@@ -16,19 +16,17 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/01.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/02.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/03.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/04.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/05.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/06.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/07.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/08.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/09.jpeg"
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-obv.webp",
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-rev.webp",
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-box.webp",
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-pack.webp",
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-cert.webp",
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-img-06.webp",
+      "/image/coins/foreign/jaap-eden-silver-commemorative-set-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:14:13.125Z",
     "slug": "jaap-eden-silver-commemorative-set",
-    "image_obverse": "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/jaap-eden-silver-commemorative-set/02.jpeg"
+    "image_obverse": "/image/coins/foreign/jaap-eden-silver-commemorative-set-obv.webp",
+    "image_reverse": "/image/coins/foreign/jaap-eden-silver-commemorative-set-rev.webp"
   }
 }

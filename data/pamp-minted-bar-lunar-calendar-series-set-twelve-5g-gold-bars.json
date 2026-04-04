@@ -19,8 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-02/12-lunar_composition_01.png",
-    "https://www.pamp.com/sites/pamp/files/2023-02/12-lunar_composition_05.png"
+    "/image/coins/foreign/lunar-calendar-series-set-twelve-5g-gold-bars-obv.webp",
+    "/image/coins/foreign/lunar-calendar-series-set-twelve-5g-gold-bars-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:23:09.752Z",
   "classified_source_urls": {
@@ -31,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:56:23.068Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-calendar-series-set-twelve-5g-gold-bars-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-calendar-series-set-twelve-5g-gold-bars-rev.webp"
 }

@@ -15,14 +15,14 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/complete-900-jaar-utrecht-collectie-1-ounce-zilver/01.jpeg",
-      "/image/coins/foreign/royaldutch/complete-900-jaar-utrecht-collectie-1-ounce-zilver/02.jpeg",
-      "/image/coins/foreign/royaldutch/complete-900-jaar-utrecht-collectie-1-ounce-zilver/03.jpeg",
-      "/image/coins/foreign/royaldutch/complete-900-jaar-utrecht-collectie-1-ounce-zilver/04.jpeg"
+      "/image/coins/foreign/complete-900-jaar-utrecht-collectie-1-ounce-zilver-obv.webp",
+      "/image/coins/foreign/complete-900-jaar-utrecht-collectie-1-ounce-zilver-rev.webp",
+      "/image/coins/foreign/complete-900-jaar-utrecht-collectie-1-ounce-zilver-box.webp",
+      "/image/coins/foreign/complete-900-jaar-utrecht-collectie-1-ounce-zilver-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:11:24.535Z",
     "slug": "complete-900-jaar-utrecht-collectie-1-ounce-zilver",
-    "image_obverse": "/image/coins/foreign/royaldutch/complete-900-jaar-utrecht-collectie-1-ounce-zilver/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/complete-900-jaar-utrecht-collectie-1-ounce-zilver/02.jpeg"
+    "image_obverse": "/image/coins/foreign/complete-900-jaar-utrecht-collectie-1-ounce-zilver-obv.webp",
+    "image_reverse": "/image/coins/foreign/complete-900-jaar-utrecht-collectie-1-ounce-zilver-rev.webp"
   }
 }

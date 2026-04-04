@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/7/3/738f100dbcfe288e53b747330626710fea8ea18b_M5066_MDP_00060834_BD_a0c0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/2/5275240d48355c15b69c5c94e6fc2e6c0263b8dc_M5066_MDP_00060835_BD_4e0a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-the-little-prince-and-the-fox-proof-quality-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-the-little-prince-and-the-fox-proof-quality-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:06:25.575Z"
+  "parsedAt": "2026-03-29T18:06:25.575Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-the-little-prince-and-the-fox-proof-quality-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-10eu-silver-coin-the-little-prince-and-the-fox-proof-quality-yeardate-rev.webp"
 }

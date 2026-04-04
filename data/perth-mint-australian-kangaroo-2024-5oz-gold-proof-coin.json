@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-kangaroo-2024-5oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo 2024 5oz Gold Proof Coin",

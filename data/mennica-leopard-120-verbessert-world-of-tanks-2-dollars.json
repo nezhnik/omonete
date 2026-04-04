@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/10/WoT_Leopard_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/10/WoT_Leopard_reverse.png"
+    "/image/coins/foreign/mennica-leopard-120-verbessert-world-of-tanks-2-dollars-obv.webp",
+    "/image/coins/foreign/mennica-leopard-120-verbessert-world-of-tanks-2-dollars-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:00:29.633Z"
+  "parsedAt": "2026-03-28T17:00:29.633Z",
+  "image_obverse": "/image/coins/foreign/mennica-leopard-120-verbessert-world-of-tanks-2-dollars-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-leopard-120-verbessert-world-of-tanks-2-dollars-rev.webp"
 }

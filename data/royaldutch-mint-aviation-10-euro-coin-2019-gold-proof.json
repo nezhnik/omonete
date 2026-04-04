@@ -16,16 +16,16 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/06.jpeg"
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-obv.webp",
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-rev.webp",
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-box.webp",
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-pack.webp",
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-cert.webp",
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:10:19.267Z",
     "slug": "aviation-10-euro-coin-2019-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/aviation-10-euro-coin-2019-gold-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-rev.webp"
   }
 }

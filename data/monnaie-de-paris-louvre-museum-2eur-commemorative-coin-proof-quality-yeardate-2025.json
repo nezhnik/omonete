@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067246_ORI_BD_23fd.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041397020000_25_COM_2____BE_LOUVRE_face_5c96.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067247_ORI_BD_af22.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-2eur-commemorative-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-2eur-commemorative-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:23:29.869Z"
+  "parsedAt": "2026-03-29T16:23:29.869Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-2eur-commemorative-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-2eur-commemorative-coin-proof-quality-yeardate-2025-rev.webp"
 }

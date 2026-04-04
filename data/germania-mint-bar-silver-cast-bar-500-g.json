@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-back.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-front.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/2_SCB_500g-back.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_11_20.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_23_14.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_31_22.jpg"
+    "/image/coins/foreign/silver-cast-bar-500-g-obv.webp",
+    "/image/coins/foreign/silver-cast-bar-500-g-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:10:25.966Z"
+  "parsedAt": "2026-03-27T11:10:25.966Z",
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-500-g-obv.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-500-g-rev.webp"
 }

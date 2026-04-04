@@ -15,10 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_R.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_A_1.png",
-    "https://germaniamint.com/wp-content/uploads/2026/02/HIM-11988-St.-Patricks-Day-Germania-Mint-Gold-Minted-Bar-1-g_R.png",
-    "https://germaniamint.com/wp-content/uploads/2026/02/st.-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/st.-2.jpg"
+    "/image/coins/foreign/gold-minted-bar-1-g-st-patricks-day-obv.webp",
+    "/image/coins/foreign/gold-minted-bar-1-g-st-patricks-day-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:07:50.971Z"
+  "parsedAt": "2026-03-27T11:07:50.971Z",
+  "image_obverse": "/image/coins/foreign/gold-minted-bar-1-g-st-patricks-day-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-minted-bar-1-g-st-patricks-day-rev.webp"
 }

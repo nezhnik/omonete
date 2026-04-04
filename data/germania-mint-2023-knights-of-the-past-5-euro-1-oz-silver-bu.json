@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-5-euro-1-oz-silver-bu_revers_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-5-euro-1-oz-silver-bu_awers_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/knights-of-the-past-5-euro-1-oz-silver-bu_revers_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_20_20.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_30_11-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_32_10.jpg"
+    "/image/coins/foreign/2023-knights-of-the-past-5-euro-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2023-knights-of-the-past-5-euro-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:33:44.607Z"
+  "parsedAt": "2026-03-23T19:33:44.607Z",
+  "image_obverse": "/image/coins/foreign/2023-knights-of-the-past-5-euro-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2023-knights-of-the-past-5-euro-1-oz-silver-bu-rev.webp"
 }

@@ -20,10 +20,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-12/pacman_packaging-perspective-left.png"
+    "/image/coins/foreign/1oz-silver-coin-pac-mantm-45th-anniversary-obv.webp",
+    "/image/coins/foreign/1oz-silver-coin-pac-mantm-45th-anniversary-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:12:19.160Z",
   "classified_source_urls": {
@@ -34,5 +32,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:12:19.162Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1oz-silver-coin-pac-mantm-45th-anniversary-obv.webp",
+  "image_reverse": "/image/coins/foreign/1oz-silver-coin-pac-mantm-45th-anniversary-rev.webp"
 }

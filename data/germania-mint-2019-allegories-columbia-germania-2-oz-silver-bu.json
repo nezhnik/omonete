@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2oz_Columbia__Germania_2019-R.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2oz_Columbia__Germania_2019-A.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2oz_Columbia__Germania_2019-R.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/a19-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/a19-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/a19-2-3.jpg"
+    "/image/coins/foreign/2019-allegories-columbia-germania-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2019-allegories-columbia-germania-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:29:41.121Z"
+  "parsedAt": "2026-03-23T19:29:41.121Z",
+  "image_obverse": "/image/coins/foreign/2019-allegories-columbia-germania-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2019-allegories-columbia-germania-2-oz-silver-bu-rev.webp"
 }

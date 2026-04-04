@@ -10,8 +10,8 @@
   },
   "price_display": "10.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/5/1/6/9516157-3-eng-US/61e805e9fd4e-2024_10E_Pfingstrose_Cu_NP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/9/4/1/6/9516149-4-eng-US/044d008656bf-2024_10E_Pfingstrose_Cu_NP_RS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-copper-pfingstrose-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-copper-pfingstrose-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-copper-pfingstrose-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-copper-pfingstrose-coin-unc-rev.webp"
 }

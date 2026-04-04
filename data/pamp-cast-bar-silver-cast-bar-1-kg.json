@@ -19,8 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/silver_1kg_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-03/ag_1kg_monsterbox.png"
+    "/image/coins/foreign/silver-cast-bar-1-kg-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:47.374Z",
   "classified_source_urls": {
@@ -30,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:49.464Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-1-kg-rev.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-1-kg-rev.webp"
 }

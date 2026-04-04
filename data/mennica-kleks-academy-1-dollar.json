@@ -30,10 +30,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/01/kleks-maska-kolor-1200x1200-1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/01/Awers-kleks.png"
+    "/image/coins/foreign/mennica-kleks-academy-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-kleks-academy-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:04:49.582Z"
+  "parsedAt": "2026-03-28T17:04:49.582Z",
+  "image_obverse": "/image/coins/foreign/mennica-kleks-academy-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-kleks-academy-1-dollar-rev.webp"
 }

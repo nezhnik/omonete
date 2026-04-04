@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_rev_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_av_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2022-valkyries-hildegard-2-oz-silver-bu-uhr_rev_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/hilde-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/hilde-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/hilde-2-3.jpg"
+    "/image/coins/foreign/2022-valkyries-hildegard-2-oz-silver-ultra-high-relief-obv.webp",
+    "/image/coins/foreign/2022-valkyries-hildegard-2-oz-silver-ultra-high-relief-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:08:53.880Z"
+  "parsedAt": "2026-03-24T10:08:53.880Z",
+  "image_obverse": "/image/coins/foreign/2022-valkyries-hildegard-2-oz-silver-ultra-high-relief-obv.webp",
+  "image_reverse": "/image/coins/foreign/2022-valkyries-hildegard-2-oz-silver-ultra-high-relief-rev.webp"
 }

@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/valkyries_hildegard_valhalla_1_oz_silver_bu_b_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/valkyries_hildegard_valhalla_1_oz_silver_bu_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/valkyries_hildegard_valhalla_1_oz_silver_bu_b_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/h-1-v-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/h-1-v-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/h-1-v-3.jpg"
+    "/image/coins/foreign/2022-valkyries-hildegard-valhalla-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2022-valkyries-hildegard-valhalla-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:08:58.881Z"
+  "parsedAt": "2026-03-24T10:08:58.881Z",
+  "image_obverse": "/image/coins/foreign/2022-valkyries-hildegard-valhalla-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2022-valkyries-hildegard-valhalla-1-oz-silver-bu-rev.webp"
 }

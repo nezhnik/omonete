@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/harry-potter-goblet-of-fire-2025-2oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Harry Potter™ and the Goblet of Fire 2025 2oz Silver Proof Coloured Coin",

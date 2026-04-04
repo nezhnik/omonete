@@ -28,7 +28,11 @@
     "image_blister_reverse": "/image/coins/foreign/zog-2025-1-40-oz-gold-proof-coin-blister-rev.webp",
     "image_blister_obverse": "/image/coins/foreign/zog-2025-1-40-oz-gold-proof-coin-blister-obv.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/zog-2025-1-40-oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/zog-2025-1-40-oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Zog 2025 UK 1/40 oz Gold Proof Coin",

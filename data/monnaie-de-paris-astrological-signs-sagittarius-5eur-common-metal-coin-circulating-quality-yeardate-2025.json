@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066477_BD_1d24.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066478_BD_173e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066512_BD_79fd.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066513_BD_748e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-sagittarius-5eur-common-metal-coin-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-sagittarius-5eur-common-metal-coin-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:49:04.714Z"
+  "parsedAt": "2026-03-29T16:49:04.714Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-sagittarius-5eur-common-metal-coin-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-sagittarius-5eur-common-metal-coin-circulating-quality-yeardate-2025-rev.webp"
 }

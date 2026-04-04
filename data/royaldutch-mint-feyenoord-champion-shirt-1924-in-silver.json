@@ -13,19 +13,17 @@
       "Mintage": "100"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/01.png",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/02.png",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/03.png",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/04.png",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/05.png",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/06.png",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/07.jpeg",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/08.jpeg",
-      "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/09.png"
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-obv.webp",
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-rev.webp",
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-box.webp",
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-pack.webp",
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-cert.webp",
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-img-06.webp",
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:12:56.743Z",
     "slug": "feyenoord-champion-shirt-1924-in-silver",
-    "image_obverse": "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/feyenoord-champion-shirt-1924-in-silver/02.png"
+    "image_obverse": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-obv.webp",
+    "image_reverse": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-rev.webp"
   }
 }

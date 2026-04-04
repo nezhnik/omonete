@@ -15,16 +15,16 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/01.png",
-      "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/04.png",
-      "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/06.jpeg"
+      "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-obv.webp",
+      "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-rev.webp",
+      "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-box.webp",
+      "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-pack.webp",
+      "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-cert.webp",
+      "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:11:46.073Z",
     "slug": "curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/curacao-and-sint-maarten-190-years-central-bank-2018-silver-proof-rev.webp"
   }
 }

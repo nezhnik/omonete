@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/07/Chelmonski-Czworka_rewers-WWW.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/07/Chelmonski-Babie-lato_awers-WWW.png"
+    "/image/coins/foreign/mennica-jozef-chelmonski-the-four-in-hand-obv.webp",
+    "/image/coins/foreign/mennica-jozef-chelmonski-the-four-in-hand-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:02:11.961Z"
+  "parsedAt": "2026-03-28T17:02:11.961Z",
+  "image_obverse": "/image/coins/foreign/mennica-jozef-chelmonski-the-four-in-hand-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-jozef-chelmonski-the-four-in-hand-rev.webp"
 }

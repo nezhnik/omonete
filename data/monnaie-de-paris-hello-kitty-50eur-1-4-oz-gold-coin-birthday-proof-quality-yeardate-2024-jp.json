@@ -51,11 +51,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065001_BD_dbd2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065057_BD_6941.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065002_BD_b0a2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:10:41.812Z"
+  "parsedAt": "2026-03-29T17:10:41.812Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-hello-kitty-50eur-1-4-oz-gold-coin-birthday-proof-quality-yeardate-2024-jp-rev.webp"
 }

@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/giant_whale_s-mks-1galapawhalesha_5.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/giant_whale_s-mks-1galapawhalesha_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/giant_whale_s-mks-1galapawhalesha_10.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/giant_whale_s-mks-1galapawhalesha_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/giant_whale_s-mks-1galapawhalesha_6.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/giant_whale_s-mks-1galapawhalesha_2.png"
+    "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-whale-shark-coin-obv.webp",
+    "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-whale-shark-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:09:10.623Z"
+  "parsedAt": "2026-03-27T16:09:10.623Z",
+  "image_obverse": "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-whale-shark-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-whale-shark-coin-rev.webp"
 }

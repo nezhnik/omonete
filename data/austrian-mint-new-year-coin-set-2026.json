@@ -10,14 +10,8 @@
   },
   "price_display": "35.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/6/7/1/9631761-1-ger-DE/501b5700f3a6-Neujahrset-2026-7_Muenzen_WEB-800px.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/2/7/1/9631725-1-ger-DE/28b071a504f2-2026_5E_Neujahrsmuenze_Spring_ins_Glueck_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/0/4/8/9528406-4-eng-US/6c850f095a82-2025_5E_Neujahrsmuenze_Tanz_dich_frei_neu_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/2/2/1/9491228-1-ger-DE/8b0c3b8f86ae-2024_5E_Neujahrsmuenze_365_Tage_CU_NP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/4/2/2/9/8899224-1-ger-DE/2023_5E_Neujahrsmuenze_Schwein_gehabt_Cu_RS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/7/7/2/7402777-1-ger-DE/5E_Neujahrsmuenze2022_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2021_janus_cu_rv/6294222-1-ger-DE/5e_2021_janus_cu_rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2019_lebensfreude_cu_rv/4509281-1-ger-DE/5e_2019_lebensfreude_cu_rv.png.webp"
+    "/image/coins/foreign/austrian-mint-new-year-coin-set-2026-obv.webp",
+    "/image/coins/foreign/austrian-mint-new-year-coin-set-2026-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -34,5 +28,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор Neujahr 2026: Auflage на muenzeoesterreich.at/eine-handvoll-glueck-2026 не указана; см. Kundma"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-new-year-coin-set-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-new-year-coin-set-2026-rev.webp"
 }

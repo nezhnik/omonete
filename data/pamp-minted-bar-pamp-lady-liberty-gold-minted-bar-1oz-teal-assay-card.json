@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_certipamp_back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_ingot_front_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/lady_of_liberty_1oz_au_dark_teal_ingot_front_obv.png"
+    "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-obv.webp",
+    "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:28:53.828Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:07:08.248Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-obv.webp",
+  "image_reverse": "/image/coins/foreign/pamp-lady-liberty-gold-minted-bar-1oz-teal-assay-card-rev.webp"
 }

@@ -11,14 +11,14 @@
       "Weight": "3.49 g"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1782-zfr/01.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1782-zfr/02.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1782-zfr/03.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1782-zfr/04.jpeg"
+      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-obv.webp",
+      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-rev.webp",
+      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-box.webp",
+      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:13:04.959Z",
     "slug": "gouden-dukaat-holland-1782-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1782-zfr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1782-zfr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-rev.webp"
   }
 }

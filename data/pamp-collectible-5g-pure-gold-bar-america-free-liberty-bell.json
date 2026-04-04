@@ -19,10 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_reverse-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_obverse-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_reverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_liberty-bell_obverse-perspective.png"
+    "/image/coins/foreign/5g-pure-gold-bar-america-free-liberty-bell-obv.webp",
+    "/image/coins/foreign/5g-pure-gold-bar-america-free-liberty-bell-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:02:55.681Z"
+  "parsedAt": "2026-03-27T16:02:55.681Z",
+  "image_obverse": "/image/coins/foreign/5g-pure-gold-bar-america-free-liberty-bell-obv.webp",
+  "image_reverse": "/image/coins/foreign/5g-pure-gold-bar-america-free-liberty-bell-rev.webp"
 }

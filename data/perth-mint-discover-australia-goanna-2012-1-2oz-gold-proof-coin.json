@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/discover-australia-goanna-2012-1-2oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/discover-australia-goanna-2012-1-2oz-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/discover-australia-goanna-2012-1-2oz-gold-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/discover-australia-goanna-2012-1-2oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/discover-australia-goanna-2012-1-2oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Discover Australia - Goanna 2012 1/2oz Gold Proof Coin",

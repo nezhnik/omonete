@@ -19,14 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_5.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_7.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_8.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_12.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/sweetheart_zagfc00869_14.png"
+    "/image/coins/foreign/2021-sweetheartsr-gift-set-pure-silver-wafers-obv.webp",
+    "/image/coins/foreign/2021-sweetheartsr-gift-set-pure-silver-wafers-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:12:37.220Z",
   "classified_source_urls": {
@@ -37,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:12:37.225Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/2021-sweetheartsr-gift-set-pure-silver-wafers-obv.webp",
+  "image_reverse": "/image/coins/foreign/2021-sweetheartsr-gift-set-pure-silver-wafers-rev.webp"
 }

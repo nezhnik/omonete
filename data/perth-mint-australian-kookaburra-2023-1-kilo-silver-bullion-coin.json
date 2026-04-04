@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-kookaburra-2023-1-kilo-silver-bullion-coin-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kookaburra-2023-1-kilo-silver-bullion-coin-obv.webp",
+      "/image/coins/foreign/australian-kookaburra-2023-1-kilo-silver-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kookaburra 2023 1 Kilo Silver Bullion Coin",

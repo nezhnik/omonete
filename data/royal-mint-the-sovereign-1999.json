@@ -23,12 +23,15 @@
     "catalog_suffix": "the-sovereign-1999",
     "price_display": "Price: £1,380.00",
     "source_url": "https://www.royalmint.com/sovereign/all/the-sovereign-1999/",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/the-sovereign-1999-rev.webp",
     "image_reverse": "/image/coins/foreign/the-sovereign-1999-rev.webp",
     "image_blister_reverse": "/image/coins/foreign/the-sovereign-1999-blister-rev.webp",
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-sovereign-1999-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 1999 Gold Proof Sovereign",

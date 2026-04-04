@@ -14,16 +14,16 @@
       "Mintage": "220,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/01.jpeg",
-      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/02.jpeg",
-      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/03.jpeg",
-      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/04.jpeg",
-      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/05.jpeg",
-      "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/06.jpeg"
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-obv.webp",
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-rev.webp",
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-box.webp",
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-pack.webp",
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-cert.webp",
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:13:39.272Z",
     "slug": "hm-5-euro-2012-grachtengordel-unc-cc",
-    "image_obverse": "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/hm-5-euro-2012-grachtengordel-unc-cc/02.jpeg"
+    "image_obverse": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-obv.webp",
+    "image_reverse": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-rev.webp"
   }
 }

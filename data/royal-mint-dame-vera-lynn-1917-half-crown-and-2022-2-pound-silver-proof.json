@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof-obv.webp",
+      "/image/coins/foreign/dame-vera-lynn-1917-half-crown-and-2022-2-pound-silver-proof-rev.webp"
+    ]
   },
   "raw": {
     "title": "Dame Vera Lynn 1917 Half-Crown and 2022 UK £2 Silver Proof",

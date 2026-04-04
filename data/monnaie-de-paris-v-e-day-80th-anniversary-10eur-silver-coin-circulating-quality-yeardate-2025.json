@@ -65,12 +65,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067519_BD_910d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067520_BD_9d66.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067526_BD_0592.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067528_BD_72b0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-v-e-day-80th-anniversary-10eur-silver-coin-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-v-e-day-80th-anniversary-10eur-silver-coin-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:16:03.214Z"
+  "parsedAt": "2026-03-29T16:16:03.214Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-v-e-day-80th-anniversary-10eur-silver-coin-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-v-e-day-80th-anniversary-10eur-silver-coin-circulating-quality-yeardate-2025-rev.webp"
 }

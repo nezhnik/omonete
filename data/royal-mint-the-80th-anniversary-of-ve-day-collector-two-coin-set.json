@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/the-80th-anniversary-of-ve-day-collector-two-coin-set-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-80th-anniversary-of-ve-day-collector-two-coin-set-obv.webp",
+      "/image/coins/foreign/the-80th-anniversary-of-ve-day-collector-two-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 80th Anniversary of VE Day Collector Two-Coin Set",

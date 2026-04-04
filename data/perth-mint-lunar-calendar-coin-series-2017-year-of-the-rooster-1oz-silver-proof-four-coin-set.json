@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-obv.webp",
+      "/image/coins/foreign/lunar-calendar-coin-series-2017-year-of-the-rooster-1oz-silver-proof-four-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Lunar Calendar Coin Series 2017 Year of the Rooster 1oz Silver Proof Four-Coin Set",

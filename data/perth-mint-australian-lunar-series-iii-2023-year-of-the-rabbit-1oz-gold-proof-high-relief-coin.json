@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-obv.webp",
+      "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-1oz-gold-proof-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Lunar Series III 2023 Year of the Rabbit 1oz Gold Proof High Relief Coin",

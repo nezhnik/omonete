@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-rev.webp",
     "image_box": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-obv.webp",
+      "/image/coins/foreign/australian-kangaroo-2017-2oz-gold-proof-pink-diamond-edition-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo 2017 2oz Gold Proof Pink Diamond Edition",

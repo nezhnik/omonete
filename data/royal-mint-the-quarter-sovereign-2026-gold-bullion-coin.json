@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-quarter-sovereign-2026-gold-bullion-coin-obv.webp",
+      "/image/coins/foreign/the-quarter-sovereign-2026-gold-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Quarter-Sovereign 2026 Gold Bullion Coin",

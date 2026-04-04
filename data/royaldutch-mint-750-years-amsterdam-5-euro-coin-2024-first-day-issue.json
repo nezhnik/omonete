@@ -14,20 +14,17 @@
       "Mintage": "3,805"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/01.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/02.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/03.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/04.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/05.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/06.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/07.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/08.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/09.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/10.png"
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-obv.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-rev.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-box.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-pack.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-cert.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-img-06.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:07:49.799Z",
     "slug": "750-years-amsterdam-5-euro-coin-2024-first-day-issue",
-    "image_obverse": "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-first-day-issue/02.png"
+    "image_obverse": "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-obv.webp",
+    "image_reverse": "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-first-day-issue-rev.webp"
   }
 }

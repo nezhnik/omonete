@@ -14,16 +14,16 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/01.png",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/02.png",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/03.png",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/04.png",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/05.png",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/06.png"
+      "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-obv.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-rev.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-box.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-pack.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-cert.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:49:56.277Z",
     "slug": "piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte/02.png"
+    "image_obverse": "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-10-euros-belgique-2019-100e-anniversaire-de-briek-schotte-rev.webp"
   }
 }

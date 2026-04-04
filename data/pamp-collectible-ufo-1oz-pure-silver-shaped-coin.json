@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_2.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/ufo_zagfc00639_1.png"
+    "/image/coins/foreign/ufo-1oz-pure-silver-shaped-coin-obv.webp",
+    "/image/coins/foreign/ufo-1oz-pure-silver-shaped-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:16:19.425Z"
+  "parsedAt": "2026-03-27T16:16:19.425Z",
+  "image_obverse": "/image/coins/foreign/ufo-1oz-pure-silver-shaped-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/ufo-1oz-pure-silver-shaped-coin-rev.webp"
 }

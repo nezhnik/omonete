@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-obv.webp",
+      "/image/coins/foreign/australian-kangaroo-2024-gold-proof-four-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo 2024 Gold Proof Four-Coin Set",

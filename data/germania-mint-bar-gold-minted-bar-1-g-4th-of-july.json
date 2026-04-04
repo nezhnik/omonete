@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-2_a_900px-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-1_a_900px-kopia.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-4th-of-july-1g-pack-2_a_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_09_22.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_20_00.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_28_17.jpg"
+    "/image/coins/foreign/gold-minted-bar-1-g-4th-of-july-obv.webp",
+    "/image/coins/foreign/gold-minted-bar-1-g-4th-of-july-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:07:11.887Z"
+  "parsedAt": "2026-03-27T11:07:11.887Z",
+  "image_obverse": "/image/coins/foreign/gold-minted-bar-1-g-4th-of-july-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-minted-bar-1-g-4th-of-july-rev.webp"
 }

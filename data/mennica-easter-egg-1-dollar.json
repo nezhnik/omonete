@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/Happy_Easter_2024_rewers-1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/Happy_Easter_2024_awers.png"
+    "/image/coins/foreign/mennica-easter-egg-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-easter-egg-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:08:18.164Z"
+  "parsedAt": "2026-03-28T17:08:18.164Z",
+  "image_obverse": "/image/coins/foreign/mennica-easter-egg-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-easter-egg-1-dollar-rev.webp"
 }

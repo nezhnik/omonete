@@ -19,7 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-01/ag00lb027q999_04.png"
+    "/image/coins/foreign/large-silver-cast-bar-1000-oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:27.546Z",
   "classified_source_urls": {
@@ -29,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:29.528Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/large-silver-cast-bar-1000-oz-rev.webp",
+  "image_reverse": "/image/coins/foreign/large-silver-cast-bar-1000-oz-rev.webp"
 }

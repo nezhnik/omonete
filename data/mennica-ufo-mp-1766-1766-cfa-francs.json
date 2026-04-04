@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/UFO_OBVERSE.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/UFO_REVERSE.png"
+    "/image/coins/foreign/mennica-ufo-mp-1766-1766-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-ufo-mp-1766-1766-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:04.654Z"
+  "parsedAt": "2026-03-28T17:05:04.654Z",
+  "image_obverse": "/image/coins/foreign/mennica-ufo-mp-1766-1766-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-ufo-mp-1766-1766-cfa-francs-rev.webp"
 }

@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-oz-gold-bu_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-oz-gold-bu_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-oz-gold-bu_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/cl-1-1-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/cl-1-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/cl-1-3-1.jpg"
+    "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-500-dollars-1-oz-gold-bu-obv.webp",
+    "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-500-dollars-1-oz-gold-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:34:16.564Z"
+  "parsedAt": "2026-03-23T19:34:16.564Z",
+  "image_obverse": "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-500-dollars-1-oz-gold-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-500-dollars-1-oz-gold-bu-rev.webp"
 }

@@ -14,17 +14,17 @@
       "Mintage": "750 sets"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/07.jpeg"
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-obv.webp",
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-rev.webp",
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-box.webp",
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-pack.webp",
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-cert.webp",
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-img-06.webp",
+      "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:14:43.783Z",
     "slug": "knm-5-euro-2021-tulpen-kleurenset-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2021-tulpen-kleurenset-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/knm-5-euro-2021-tulpen-kleurenset-proof-rev.webp"
   }
 }

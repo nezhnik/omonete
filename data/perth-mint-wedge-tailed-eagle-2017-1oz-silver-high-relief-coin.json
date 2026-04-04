@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-obv.webp",
+      "/image/coins/foreign/wedge-tailed-eagle-2017-1oz-silver-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Wedge-Tailed Eagle 2017 1oz Silver High Relief Coin",

@@ -19,10 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-10/packaging-closed_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-10/santa_obv_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-10/sant_rev_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-10/santa_obv_p_0.png"
+    "/image/coins/foreign/pezr-santa-gift-set-obv.webp",
+    "/image/coins/foreign/pezr-santa-gift-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:14:54.113Z"
+  "parsedAt": "2026-03-27T16:14:54.113Z",
+  "image_obverse": "/image/coins/foreign/pezr-santa-gift-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/pezr-santa-gift-set-rev.webp"
 }

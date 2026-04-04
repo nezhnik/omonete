@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-11/lady-of-justice_front-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/lady-of-justice_back-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/lady-of-justice_rev-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/lady-of-justice_obv-perspective.png"
+    "/image/coins/foreign/lady-justice-1oz-gold-bar-obv.webp",
+    "/image/coins/foreign/lady-justice-1oz-gold-bar-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:22:41.698Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:54:31.763Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-justice-1oz-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-justice-1oz-gold-bar-rev.webp"
 }

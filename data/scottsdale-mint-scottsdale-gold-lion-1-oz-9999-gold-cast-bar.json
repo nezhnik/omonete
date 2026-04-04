@@ -9,16 +9,16 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/06.jpg"
+      "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-box.webp",
+      "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-pack.webp",
+      "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-cert.webp",
+      "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-img-06.webp"
     ],
     "parsedAt": "2026-04-04T15:34:49.933Z",
     "slug": "scottsdale-gold-lion-1-oz-9999-gold-cast-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-gold-lion-1-oz-9999-gold-cast-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-gold-lion-1-oz-9999-gold-cast-bar-rev.webp"
   }
 }

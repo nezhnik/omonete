@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-lion-and-the-eagle-2026-1oz-gold-bullion-coin-obv.webp",
+      "/image/coins/foreign/the-lion-and-the-eagle-2026-1oz-gold-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Lion and the Eagle 2026 1oz Gold Bullion Coin",

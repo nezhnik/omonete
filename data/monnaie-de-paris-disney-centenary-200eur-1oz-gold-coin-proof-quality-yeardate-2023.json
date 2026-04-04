@@ -49,11 +49,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063404_BD_fe8d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/F/o/Fourreau_Disney_jpg_36fd.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063405_BD_dafc.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:24:01.129Z"
+  "parsedAt": "2026-03-29T17:24:01.129Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-centenary-200eur-1oz-gold-coin-proof-quality-yeardate-2023-rev.webp"
 }

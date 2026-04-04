@@ -15,17 +15,17 @@
       "Création": "Iris Bruijns"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/02.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/06.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/07.jpeg"
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-obv.webp",
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-rev.webp",
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-box.webp",
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-pack.webp",
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-cert.webp",
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-img-06.webp",
+      "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:51:35.893Z",
     "slug": "piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-12-5-euros-belgique-2023-50eme-anniversaire-de-la-reine-mathilde-belle-epreuve-en-or-dans-un-coffret-rev.webp"
   }
 }

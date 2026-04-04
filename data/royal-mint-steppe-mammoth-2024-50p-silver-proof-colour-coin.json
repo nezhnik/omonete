@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/steppe-mammoth-2024-50p-silver-proof-colour-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/steppe-mammoth-2024-50p-silver-proof-colour-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/steppe-mammoth-2024-50p-silver-proof-colour-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/steppe-mammoth-2024-50p-silver-proof-colour-coin-obv.webp",
+      "/image/coins/foreign/steppe-mammoth-2024-50p-silver-proof-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Steppe Mammoth 2024 UK 50p Silver Proof Colour Coin",

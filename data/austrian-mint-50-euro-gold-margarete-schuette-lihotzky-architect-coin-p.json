@@ -10,9 +10,8 @@
   },
   "price_display": "1,074.15 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/2/0/6/9546020-3-eng-US/9b82831debf1-2025_50E_Margarete_Schuette_Lihotzky_Au_PP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/2/1/0/6/9546012-3-eng-US/7348c9488662-2025_50E_Margarete_Schuette_Lihotzky_Au_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/2/0/6/9546028-3-eng-US/b3af83b700b3-Packshot-Etui_50EUR-Schuette-Lihot_800px.png.webp"
+    "/image/coins/foreign/austrian-mint-50-euro-gold-margarete-schuette-lihotzky-architect-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-50-euro-gold-margarete-schuette-lihotzky-architect-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 20000,
     "mintage_display": "20,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-50-euro-gold-margarete-schuette-lihotzky-architect-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-50-euro-gold-margarete-schuette-lihotzky-architect-coin-p-rev.webp"
 }

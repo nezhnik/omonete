@@ -9,12 +9,12 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes/02.jpg"
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes-obv.webp",
+      "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes-rev.webp"
     ],
     "parsedAt": "2026-04-04T15:30:18.465Z",
     "slug": "scottsdale-eagle-stacker-1-oz-copper-round-in-tubes",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-eagle-stacker-1-oz-copper-round-in-tubes-rev.webp"
   }
 }

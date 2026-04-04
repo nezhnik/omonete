@@ -11,14 +11,14 @@
       "Diameter": "16 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/cent-1841-1843-willem-ii-zfr/01.jpeg",
-      "/image/coins/foreign/royaldutch/cent-1841-1843-willem-ii-zfr/02.jpeg",
-      "/image/coins/foreign/royaldutch/cent-1841-1843-willem-ii-zfr/03.jpeg",
-      "/image/coins/foreign/royaldutch/cent-1841-1843-willem-ii-zfr/04.jpeg"
+      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-obv.webp",
+      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-rev.webp",
+      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-box.webp",
+      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:11:02.927Z",
     "slug": "cent-1841-1843-willem-ii-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/cent-1841-1843-willem-ii-zfr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/cent-1841-1843-willem-ii-zfr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-rev.webp"
   }
 }

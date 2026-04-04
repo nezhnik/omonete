@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/W.Siudmak-reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/W.-Siudmak-obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/W.Siudmak-box.png"
+    "/image/coins/foreign/mennica-__trashed-obv.webp",
+    "/image/coins/foreign/mennica-__trashed-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:55.825Z"
+  "parsedAt": "2026-03-28T17:06:55.825Z",
+  "image_obverse": "/image/coins/foreign/mennica-__trashed-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-__trashed-rev.webp"
 }

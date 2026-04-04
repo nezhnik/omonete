@@ -10,9 +10,8 @@
   },
   "price_display": "1,383.50 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/klimt/50e_2013_klimt-rv/11446-6-ger-DE/50e_2013_klimt-rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/klimt/50e_2013_klimt-av/11442-5-ger-DE/50e_2013_klimt-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/klimt/50e_2013_etui_erwartung/11438-4-ger-DE/50e_2013_etui_erwartung.png.webp"
+    "/image/coins/foreign/austrian-mint-50-euro-gold-the-expectation-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-50-euro-gold-the-expectation-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-50-euro-gold-the-expectation-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-50-euro-gold-the-expectation-coin-p-rev.webp"
 }

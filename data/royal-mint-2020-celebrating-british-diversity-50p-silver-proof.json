@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2020-celebrating-british-diversity-50p-silver-proof-obv.webp",
+      "/image/coins/foreign/2020-celebrating-british-diversity-50p-silver-proof-rev.webp"
+    ]
   },
   "raw": {
     "title": "2020 Celebrating British Diversity 50p Silver Proof",

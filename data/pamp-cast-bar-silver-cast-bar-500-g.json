@@ -19,7 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/silver_500g_0.png"
+    "/image/coins/foreign/silver-cast-bar-500-g-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:25:00.602Z",
   "classified_source_urls": {
@@ -29,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:25:00.605Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-500-g-rev.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-500-g-rev.webp"
 }

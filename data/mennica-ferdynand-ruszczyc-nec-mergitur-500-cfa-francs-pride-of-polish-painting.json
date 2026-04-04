@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/12/9_ferdynand-ruszyc.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/12/Awers_DMP.png"
+    "/image/coins/foreign/mennica-ferdynand-ruszczyc-nec-mergitur-500-cfa-francs-pride-of-polish-painting-obv.webp",
+    "/image/coins/foreign/mennica-ferdynand-ruszczyc-nec-mergitur-500-cfa-francs-pride-of-polish-painting-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:53.062Z"
+  "parsedAt": "2026-03-28T17:06:53.062Z",
+  "image_obverse": "/image/coins/foreign/mennica-ferdynand-ruszczyc-nec-mergitur-500-cfa-francs-pride-of-polish-painting-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-ferdynand-ruszczyc-nec-mergitur-500-cfa-francs-pride-of-polish-painting-rev.webp"
 }

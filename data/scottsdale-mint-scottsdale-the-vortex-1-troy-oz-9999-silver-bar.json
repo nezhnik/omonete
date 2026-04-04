@@ -9,16 +9,16 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/07.jpg"
+      "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-box.webp",
+      "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-pack.webp",
+      "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-cert.webp",
+      "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-img-07.webp"
     ],
     "parsedAt": "2026-04-04T15:42:35.725Z",
     "slug": "scottsdale-the-vortex-1-troy-oz-9999-silver-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-the-vortex-1-troy-oz-9999-silver-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-the-vortex-1-troy-oz-9999-silver-bar-rev.webp"
   }
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card-obv.webp",
     "image_reverse": "/image/coins/foreign/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card-obv.webp",
+      "/image/coins/foreign/perth-2023-national-stamp-coin-exhibition-koala-2023-1oz-silver-coloured-coin-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Perth 2023 National Stamp and Coin Exhibition Koala 2023 1oz Silver Coloured Coin in Card",

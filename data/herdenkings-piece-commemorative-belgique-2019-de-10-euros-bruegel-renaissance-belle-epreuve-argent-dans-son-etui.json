@@ -15,16 +15,16 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/02.png",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/06.png"
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-obv.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-rev.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-box.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-pack.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-cert.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:49:15.704Z",
     "slug": "piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui/02.png"
+    "image_obverse": "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-commemorative-belgique-2019-de-10-euros-bruegel-renaissance-belle-epreuve-argent-dans-son-etui-rev.webp"
   }
 }

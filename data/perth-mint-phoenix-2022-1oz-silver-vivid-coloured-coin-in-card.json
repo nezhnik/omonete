@@ -26,7 +26,11 @@
     "image_obverse": "/image/coins/foreign/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card-rev.webp",
     "image_box": "/image/coins/foreign/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card-obv.webp",
+      "/image/coins/foreign/phoenix-2022-1oz-silver-vivid-coloured-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Phoenix 2022 1oz Silver Vivid Coloured Coin in Card",

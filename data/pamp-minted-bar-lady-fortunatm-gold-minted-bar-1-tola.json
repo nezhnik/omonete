@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/au_1tola_revcertipamp_0.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/au_1tola_obvcertipamp_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/1tola_0.png"
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-tola-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-tola-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:19:58.820Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:48:48.720Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-tola-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1-tola-rev.webp"
 }

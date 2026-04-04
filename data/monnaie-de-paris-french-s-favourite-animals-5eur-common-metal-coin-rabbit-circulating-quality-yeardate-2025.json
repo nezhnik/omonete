@@ -77,13 +77,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068827_BD_91a2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068824_BD_c47a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068813_BD_005d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068825_BD_b8e3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068826_BD_1489.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-french-s-favourite-animals-5eur-common-metal-coin-rabbit-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-s-favourite-animals-5eur-common-metal-coin-rabbit-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:13:10.342Z"
+  "parsedAt": "2026-03-29T15:13:10.342Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-s-favourite-animals-5eur-common-metal-coin-rabbit-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-s-favourite-animals-5eur-common-metal-coin-rabbit-circulating-quality-yeardate-2025-rev.webp"
 }

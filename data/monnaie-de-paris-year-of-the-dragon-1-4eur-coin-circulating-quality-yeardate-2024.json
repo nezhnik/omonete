@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063390_BD_df60.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063391_BD_d47a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-1-4eur-coin-circulating-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-1-4eur-coin-circulating-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:24:03.644Z"
+  "parsedAt": "2026-03-29T17:24:03.644Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-1-4eur-coin-circulating-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-1-4eur-coin-circulating-quality-yeardate-2024-rev.webp"
 }

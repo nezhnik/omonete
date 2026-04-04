@@ -21,11 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_7.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_13.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-back.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front-open.png"
+    "/image/coins/foreign/fenderr-75th-anniversary-stratocasterr-1oz-pure-silver-shaped-coin-obv.webp",
+    "/image/coins/foreign/fenderr-75th-anniversary-stratocasterr-1oz-pure-silver-shaped-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:08:05.584Z"
+  "parsedAt": "2026-03-27T16:08:05.584Z",
+  "image_obverse": "/image/coins/foreign/fenderr-75th-anniversary-stratocasterr-1oz-pure-silver-shaped-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-75th-anniversary-stratocasterr-1oz-pure-silver-shaped-coin-rev.webp"
 }

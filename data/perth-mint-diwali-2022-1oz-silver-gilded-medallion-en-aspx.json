@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/diwali-2022-1oz-silver-gilded-medallion-en-aspx-rev.webp",
     "image_box": "/image/coins/foreign/diwali-2022-1oz-silver-gilded-medallion-en-aspx-box.webp",
     "image_certificate": "/image/coins/foreign/diwali-2022-1oz-silver-gilded-medallion-en-aspx-cert.webp",
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/diwali-2022-1oz-silver-gilded-medallion-en-aspx-obv.webp",
+      "/image/coins/foreign/diwali-2022-1oz-silver-gilded-medallion-en-aspx-rev.webp"
+    ]
   },
   "raw": {
     "title": "Diwali 1oz Silver Gilded Medallion",

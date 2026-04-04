@@ -15,21 +15,17 @@
       "Mintage": "500"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/01.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/02.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/03.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/04.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/05.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/06.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/07.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/08.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/09.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/10.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/11.jpeg"
+      "/image/coins/foreign/special-set-tokyo-then-and-now-obv.webp",
+      "/image/coins/foreign/special-set-tokyo-then-and-now-rev.webp",
+      "/image/coins/foreign/special-set-tokyo-then-and-now-box.webp",
+      "/image/coins/foreign/special-set-tokyo-then-and-now-pack.webp",
+      "/image/coins/foreign/special-set-tokyo-then-and-now-cert.webp",
+      "/image/coins/foreign/special-set-tokyo-then-and-now-img-06.webp",
+      "/image/coins/foreign/special-set-tokyo-then-and-now-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:36:06.578Z",
     "slug": "special-set-tokyo-then-and-now",
-    "image_obverse": "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/special-set-tokyo-then-and-now/02.jpeg"
+    "image_obverse": "/image/coins/foreign/special-set-tokyo-then-and-now-obv.webp",
+    "image_reverse": "/image/coins/foreign/special-set-tokyo-then-and-now-rev.webp"
   }
 }

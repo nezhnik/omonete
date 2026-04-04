@@ -23,12 +23,15 @@
     "catalog_suffix": "the-lion-and-the-eagle-2024-uk-5oz-silver-proof-coin",
     "price_display": "Price: £695.00",
     "source_url": "https://www.royalmint.com/shop/ancient-historic/trial-of-the-pyx/The-Lion-and-The-Eagle-2024-UK-5oz-Silver-Proof-Coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/the-lion-and-the-eagle-2024-uk-5oz-silver-proof-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/the-lion-and-the-eagle-2024-uk-5oz-silver-proof-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-lion-and-the-eagle-2024-uk-5oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Lion and The Eagle 2024 UK 5oz Silver Proof Coin",

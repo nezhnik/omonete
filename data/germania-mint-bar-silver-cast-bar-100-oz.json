@@ -15,10 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/silver_cast_bar_100_oz_number-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/silver_cast_bar_100_oz_number-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_12_07.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_33_13.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_48_11.jpg"
+    "/image/coins/foreign/silver-cast-bar-100-oz-obv.webp",
+    "/image/coins/foreign/silver-cast-bar-100-oz-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:10:06.040Z"
+  "parsedAt": "2026-03-27T11:10:06.040Z",
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-100-oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-100-oz-rev.webp"
 }

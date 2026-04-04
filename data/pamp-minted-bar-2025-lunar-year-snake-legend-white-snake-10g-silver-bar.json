@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-12/lunar-snake_10g-ag_certipamp-reverse.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/lunar-snake_10g-ag_certipamp-obverse.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/lunar-snake_10g_perspective-reverse.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/lunar-snake_10g_perspective-obverse.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/lunar-snake_10g-ag_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-12/lunar-snake_10g-ag_sleeve-back.png"
+    "/image/coins/foreign/2025-lunar-year-snake-legend-white-snake-10g-silver-bar-obv.webp",
+    "/image/coins/foreign/2025-lunar-year-snake-legend-white-snake-10g-silver-bar-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:17:43.876Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:44:11.148Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/2025-lunar-year-snake-legend-white-snake-10g-silver-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-lunar-year-snake-legend-white-snake-10g-silver-bar-rev.webp"
 }

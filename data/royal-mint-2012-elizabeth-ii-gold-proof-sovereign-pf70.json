@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2012-elizabeth-ii-gold-proof-sovereign-pf70-obv.webp",
+      "/image/coins/foreign/2012-elizabeth-ii-gold-proof-sovereign-pf70-rev.webp"
+    ]
   },
   "raw": {
     "title": "2012 Elizabeth II Gold Proof Sovereign",

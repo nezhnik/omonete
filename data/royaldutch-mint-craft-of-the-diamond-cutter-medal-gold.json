@@ -14,18 +14,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/01.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/02.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/03.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/04.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/05.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/06.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/07.jpeg",
-      "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/08.jpeg"
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-obv.webp",
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-rev.webp",
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-box.webp",
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-pack.webp",
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-cert.webp",
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-img-06.webp",
+      "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:11:32.313Z",
     "slug": "craft-of-the-diamond-cutter-medal-gold",
-    "image_obverse": "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/craft-of-the-diamond-cutter-medal-gold/02.jpeg"
+    "image_obverse": "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-obv.webp",
+    "image_reverse": "/image/coins/foreign/craft-of-the-diamond-cutter-medal-gold-rev.webp"
   }
 }

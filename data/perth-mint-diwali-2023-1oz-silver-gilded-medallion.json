@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-rev.webp",
     "image_box": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-box.webp",
     "image_certificate": "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-cert.webp",
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-obv.webp",
+      "/image/coins/foreign/diwali-2023-1oz-silver-gilded-medallion-rev.webp"
+    ]
   },
   "raw": {
     "title": "Diwali 1oz Silver Gilded Medallion",

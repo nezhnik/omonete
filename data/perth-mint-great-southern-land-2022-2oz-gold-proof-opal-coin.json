@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-rev.webp",
     "image_box": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-obv.webp",
+      "/image/coins/foreign/great-southern-land-2022-2oz-gold-proof-opal-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Great Southern Land 2022 2oz Gold Proof Opal Coin",

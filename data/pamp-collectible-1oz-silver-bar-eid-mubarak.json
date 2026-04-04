@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_1oz-ag_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_1oz-ag_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_1oz-ag_rev-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_1oz-ag_obv-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_1oz-ag_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/eid-mubarak_1oz-ag_sleeve-back.png"
+    "/image/coins/foreign/1oz-silver-bar-eid-mubarak-obv.webp",
+    "/image/coins/foreign/1oz-silver-bar-eid-mubarak-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:11:46.380Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:11:46.384Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1oz-silver-bar-eid-mubarak-obv.webp",
+  "image_reverse": "/image/coins/foreign/1oz-silver-bar-eid-mubarak-rev.webp"
 }

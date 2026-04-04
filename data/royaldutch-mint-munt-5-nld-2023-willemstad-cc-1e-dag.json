@@ -14,20 +14,17 @@
       "Mintage": "3,099"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/01.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/02.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/03.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/04.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/05.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/06.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/07.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/08.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/09.jpeg",
-      "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/10.jpeg"
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-obv.webp",
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-rev.webp",
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-box.webp",
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-pack.webp",
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-cert.webp",
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-img-06.webp",
+      "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:18:56.014Z",
     "slug": "munt-5-nld-2023-willemstad-cc-1e-dag",
-    "image_obverse": "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/munt-5-nld-2023-willemstad-cc-1e-dag/02.jpeg"
+    "image_obverse": "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-obv.webp",
+    "image_reverse": "/image/coins/foreign/munt-5-nld-2023-willemstad-cc-1e-dag-rev.webp"
   }
 }

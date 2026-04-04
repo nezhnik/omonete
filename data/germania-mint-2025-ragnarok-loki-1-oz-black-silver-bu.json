@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-ragnarok-loki-1-oz-black-silver-bu-r-900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/2025-ragnarok-loki-1-oz-black-silver-bu-a-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/2025-ragnarok-loki-1-oz-black-silver-bu-r-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2881-Loki-1-oz-Black-Silver-BU-i-Heimdall-1-oz-Black-Silver-BU_5.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2881-Loki-1-oz-Black-Silver-BU-i-Heimdall-1-oz-Black-Silver-BU_7.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2881-Loki-1-oz-Black-Silver-BU-i-Heimdall-1-oz-Black-Silver-BU_6.jpg"
+    "/image/coins/foreign/2025-ragnarok-loki-1-oz-black-silver-bu-obv.webp",
+    "/image/coins/foreign/2025-ragnarok-loki-1-oz-black-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:36:34.212Z"
+  "parsedAt": "2026-03-23T19:36:34.212Z",
+  "image_obverse": "/image/coins/foreign/2025-ragnarok-loki-1-oz-black-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-ragnarok-loki-1-oz-black-silver-bu-rev.webp"
 }

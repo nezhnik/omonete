@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond-obv.webp",
     "image_reverse": "/image/coins/foreign/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond-rev.webp",
     "image_box": "/image/coins/foreign/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond-obv.webp",
+      "/image/coins/foreign/kimberley-sunrise-2023-5oz-gold-proof-high-relief-coin-with-diamond-rev.webp"
+    ]
   },
   "raw": {
     "title": "Kimberley Sunrise 2023 5oz Gold Proof High Relief Coin with Diamond",

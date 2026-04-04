@@ -11,14 +11,14 @@
       "Diameter": "19 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/25-cent-1848-1849-willem-ii-zfr/01.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1848-1849-willem-ii-zfr/02.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1848-1849-willem-ii-zfr/03.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-1848-1849-willem-ii-zfr/04.jpeg"
+      "/image/coins/foreign/25-cent-1848-1849-willem-ii-zfr-obv.webp",
+      "/image/coins/foreign/25-cent-1848-1849-willem-ii-zfr-rev.webp",
+      "/image/coins/foreign/25-cent-1848-1849-willem-ii-zfr-box.webp",
+      "/image/coins/foreign/25-cent-1848-1849-willem-ii-zfr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:00:39.229Z",
     "slug": "25-cent-1848-1849-willem-ii-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-1848-1849-willem-ii-zfr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-1848-1849-willem-ii-zfr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/25-cent-1848-1849-willem-ii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/25-cent-1848-1849-willem-ii-zfr-rev.webp"
   }
 }

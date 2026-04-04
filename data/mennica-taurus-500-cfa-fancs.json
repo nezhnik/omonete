@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/04/Byk-rewers.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/04/BYK-rewers-2.png"
+    "/image/coins/foreign/mennica-taurus-500-cfa-fancs-obv.webp",
+    "/image/coins/foreign/mennica-taurus-500-cfa-fancs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:09:46.068Z"
+  "parsedAt": "2026-03-28T17:09:46.068Z",
+  "image_obverse": "/image/coins/foreign/mennica-taurus-500-cfa-fancs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-taurus-500-cfa-fancs-rev.webp"
 }

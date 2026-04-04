@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Rev.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Av.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Fafnir-2-oz-Ag-999_Rev.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fafnir-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fafnir-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fafnir-2-3.jpg"
+    "/image/coins/foreign/germania-beasts-fafnir-ultra-double-high-relief-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/germania-beasts-fafnir-ultra-double-high-relief-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:01.124Z"
+  "parsedAt": "2026-03-23T19:31:01.124Z",
+  "image_obverse": "/image/coins/foreign/germania-beasts-fafnir-ultra-double-high-relief-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-beasts-fafnir-ultra-double-high-relief-2-oz-silver-bu-rev.webp"
 }

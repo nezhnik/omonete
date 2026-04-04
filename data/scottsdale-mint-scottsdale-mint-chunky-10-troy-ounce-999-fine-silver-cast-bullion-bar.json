@@ -9,13 +9,13 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar/03.jpg"
+      "/image/coins/foreign/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar-box.webp"
     ],
     "parsedAt": "2026-04-04T15:37:42.103Z",
     "slug": "scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-mint-chunky-10-troy-ounce-999-fine-silver-cast-bullion-bar-rev.webp"
   }
 }

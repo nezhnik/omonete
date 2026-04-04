@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-02/lucky-pig_certi-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-02/lucky-pig_certi-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-02/lucky-pig_perspective-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-02/lucky-pig_perspective-obv.png"
+    "/image/coins/foreign/lucky-pig-5g-pure-gold-bar-obv.webp",
+    "/image/coins/foreign/lucky-pig-5g-pure-gold-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:12:00.332Z"
+  "parsedAt": "2026-03-27T16:12:00.332Z",
+  "image_obverse": "/image/coins/foreign/lucky-pig-5g-pure-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/lucky-pig-5g-pure-gold-bar-rev.webp"
 }

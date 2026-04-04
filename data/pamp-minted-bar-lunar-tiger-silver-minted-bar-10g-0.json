@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger_ag_10g_certipamp_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-03/lunartiger-ag-10g_certipamp_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_rev_ag_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-03/265100_pamp_the_lunar_calendar_series_tiger_10g_ag.png"
+    "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-obv.webp",
+    "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:28:38.440Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:06:33.600Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-tiger-silver-minted-bar-10g-0-rev.webp"
 }

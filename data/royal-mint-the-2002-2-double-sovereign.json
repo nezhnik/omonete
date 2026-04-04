@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-2002-2-double-sovereign-obv.webp",
+      "/image/coins/foreign/the-2002-2-double-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 2002 £2 Double Sovereign",

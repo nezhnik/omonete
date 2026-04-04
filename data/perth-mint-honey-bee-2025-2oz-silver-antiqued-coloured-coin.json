@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-obv.webp",
+      "/image/coins/foreign/honey-bee-2025-2oz-silver-antiqued-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Honey Bee 2025 2oz Silver Antiqued Coloured Coin",

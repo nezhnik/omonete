@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_star-of-david_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_star-of-david_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_star-of-david_rev-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_star-of-david_obv-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_star-of-david_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-08/5g-au_star-of-david_sleeve-back.png"
+    "/image/coins/foreign/5g-pure-gold-bar-star-david-obv.webp",
+    "/image/coins/foreign/5g-pure-gold-bar-star-david-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:03:42.210Z"
+  "parsedAt": "2026-03-27T16:03:42.210Z",
+  "image_obverse": "/image/coins/foreign/5g-pure-gold-bar-star-david-obv.webp",
+  "image_reverse": "/image/coins/foreign/5g-pure-gold-bar-star-david-rev.webp"
 }

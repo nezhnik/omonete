@@ -14,20 +14,18 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/obv.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/rev.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/pack.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/box.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/cert.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/blister-obv.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/blister-rev.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/extra-8.png",
-      "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/extra-9.png"
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-pack.webp",
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-box.webp",
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-cert.webp",
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:27:43.644Z",
     "slug": "official-restrike-parrot-duit-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/obv.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/rev.png",
+    "image_obverse": "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-parrot-duit-silver-1-ounce-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/pack.png",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-parrot-duit-silver-1-ounce/box.png"
   }

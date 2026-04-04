@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-royal-tudor-beasts-2026-queens-lion-14oz-gold-bullion-coin-obv.webp",
+      "/image/coins/foreign/the-royal-tudor-beasts-2026-queens-lion-14oz-gold-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Royal Tudor Beasts 2026 Queen’s Lion 1/4oz Gold Bullion Coin",

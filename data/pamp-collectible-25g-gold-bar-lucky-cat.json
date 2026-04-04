@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2026-03/good-luck-cat-_front-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2026-03/good-luck-cat-_back-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2026-03/good-luck-cat-_perspesctive-ingot-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2026-03/good-luck-cat-_perspesctive-ingot-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2026-03/good-luck-cat-_front-cartoncino.png",
-    "https://www.pamp.com/sites/pamp/files/2026-03/good-luck-cat-_back-cartoncino.png"
+    "/image/coins/foreign/25g-gold-bar-lucky-cat-obv.webp",
+    "/image/coins/foreign/25g-gold-bar-lucky-cat-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:02:02.323Z"
+  "parsedAt": "2026-03-27T16:02:02.323Z",
+  "image_obverse": "/image/coins/foreign/25g-gold-bar-lucky-cat-obv.webp",
+  "image_reverse": "/image/coins/foreign/25g-gold-bar-lucky-cat-rev.webp"
 }

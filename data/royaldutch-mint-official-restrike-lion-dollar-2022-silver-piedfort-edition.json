@@ -15,17 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/07.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-img-06.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:25:55.912Z",
     "slug": "official-restrike-lion-dollar-2022-silver-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2022-silver-piedfort-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-rev.webp"
   }
 }

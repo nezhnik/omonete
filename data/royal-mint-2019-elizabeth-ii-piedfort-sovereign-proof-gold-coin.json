@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin-obv.webp",
+      "/image/coins/foreign/2019-elizabeth-ii-piedfort-sovereign-proof-gold-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "2019 Elizabeth II Piedfort Sovereign Proof Gold Coin",

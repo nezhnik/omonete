@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_box-closed-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/pez-halloween-ghost_capsule.png"
+    "/image/coins/foreign/pezr-ghost-silver-wafers-dispenser-gift-set-obv.webp",
+    "/image/coins/foreign/pezr-ghost-silver-wafers-dispenser-gift-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:14:05.418Z"
+  "parsedAt": "2026-03-27T16:14:05.418Z",
+  "image_obverse": "/image/coins/foreign/pezr-ghost-silver-wafers-dispenser-gift-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/pezr-ghost-silver-wafers-dispenser-gift-set-rev.webp"
 }

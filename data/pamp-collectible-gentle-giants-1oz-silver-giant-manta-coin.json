@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-03/front-manta.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/back-manta.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/front-packaging-manta.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/opened-packaging.png"
+    "/image/coins/foreign/gentle-giants-1oz-silver-giant-manta-coin-obv.webp",
+    "/image/coins/foreign/gentle-giants-1oz-silver-giant-manta-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:08:41.969Z"
+  "parsedAt": "2026-03-27T16:08:41.969Z",
+  "image_obverse": "/image/coins/foreign/gentle-giants-1oz-silver-giant-manta-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/gentle-giants-1oz-silver-giant-manta-coin-rev.webp"
 }

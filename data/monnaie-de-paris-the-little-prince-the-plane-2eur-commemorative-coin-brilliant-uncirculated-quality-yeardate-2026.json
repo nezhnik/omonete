@@ -69,12 +69,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069364_BD_7fc2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069344_BD_9128.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069343_BD_a2ba.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069365_BD_7dd9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-plane-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-plane-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:58:00.747Z"
+  "parsedAt": "2026-03-29T14:58:00.747Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-plane-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-plane-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-rev.webp"
 }

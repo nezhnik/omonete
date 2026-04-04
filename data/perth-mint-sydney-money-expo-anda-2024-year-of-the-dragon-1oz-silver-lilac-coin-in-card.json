@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card-obv.webp",
+      "/image/coins/foreign/sydney-money-expo-anda-2024-year-of-the-dragon-1oz-silver-lilac-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Sydney Money Expo Australian Lunar Series III 2024 Year of the Dragon 1oz Silver Lilac Coin in Card",

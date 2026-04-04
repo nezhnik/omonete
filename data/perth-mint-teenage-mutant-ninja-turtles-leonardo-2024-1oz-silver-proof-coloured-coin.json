@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/teenage-mutant-ninja-turtles-leonardo-2024-1oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Teenage Mutant Ninja Turtles - Leonardo 2024 1oz Silver Proof Coloured Coin",

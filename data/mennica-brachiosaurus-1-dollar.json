@@ -28,13 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Dinosauria_Brachiosaurus_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Dinosauria_Brachiosaurus_reverse_1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Dinosauria_Brachiosaurus_reverse_2.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Dinosauria_Brachiosaurus_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Dinosauria_Brachiosaurus_box.png"
+    "/image/coins/foreign/mennica-brachiosaurus-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-brachiosaurus-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:15.050Z"
+  "parsedAt": "2026-03-28T17:05:15.050Z",
+  "image_obverse": "/image/coins/foreign/mennica-brachiosaurus-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-brachiosaurus-1-dollar-rev.webp"
 }

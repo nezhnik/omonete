@@ -15,16 +15,16 @@
       "Tirage": "5 000"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/01.jpeg",
-      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/02.jpeg",
-      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/03.jpeg",
-      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/04.jpeg",
-      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/05.jpeg",
-      "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/06.jpeg"
+      "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-obv.webp",
+      "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-rev.webp",
+      "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-box.webp",
+      "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-pack.webp",
+      "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-cert.webp",
+      "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:49:08.749Z",
     "slug": "munt-20-euro-esro-2b-satelliet-pb-cs",
-    "image_obverse": "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/munt-20-euro-esro-2b-satelliet-pb-cs/02.jpeg"
+    "image_obverse": "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-obv.webp",
+    "image_reverse": "/image/coins/foreign/munt-20-euro-esro-2b-satelliet-pb-cs-rev.webp"
   }
 }

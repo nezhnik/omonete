@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2020-1-oz-BU-AU-Rev.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2020-1-oz-BU-Ag-Av.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2020-1-oz-BU-AU-Rev.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ggold20-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ggold20-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ggold20-3.jpg"
+    "/image/coins/foreign/2020-germania-1-oz-gold-bu-1-oz-gold-bu-obv.webp",
+    "/image/coins/foreign/2020-germania-1-oz-gold-bu-1-oz-gold-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:05:39.340Z"
+  "parsedAt": "2026-03-24T10:05:39.340Z",
+  "image_obverse": "/image/coins/foreign/2020-germania-1-oz-gold-bu-1-oz-gold-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2020-germania-1-oz-gold-bu-1-oz-gold-bu-rev.webp"
 }

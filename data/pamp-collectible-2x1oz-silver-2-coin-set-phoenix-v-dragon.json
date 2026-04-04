@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/phoenixdragon-packaging-open.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/phoenix-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/dragon-rev.png"
+    "/image/coins/foreign/2x1oz-silver-2-coin-set-phoenix-v-dragon-obv.webp",
+    "/image/coins/foreign/2x1oz-silver-2-coin-set-phoenix-v-dragon-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:02:12.304Z"
+  "parsedAt": "2026-03-27T16:02:12.304Z",
+  "image_obverse": "/image/coins/foreign/2x1oz-silver-2-coin-set-phoenix-v-dragon-obv.webp",
+  "image_reverse": "/image/coins/foreign/2x1oz-silver-2-coin-set-phoenix-v-dragon-rev.webp"
 }

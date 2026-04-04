@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/2022-kookaburra-1oz-silver-coloured-platypus-privy-anda-special-obv.webp",
     "image_reverse": "/image/coins/foreign/2022-kookaburra-1oz-silver-coloured-platypus-privy-anda-special-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2022-kookaburra-1oz-silver-coloured-platypus-privy-anda-special-obv.webp",
+      "/image/coins/foreign/2022-kookaburra-1oz-silver-coloured-platypus-privy-anda-special-rev.webp"
+    ]
   },
   "raw": {
     "title": "Sydney Money Expo ANDA Special Australian Kookaburra 2022 1oz Silver Coin with Platypus Privy Mark",

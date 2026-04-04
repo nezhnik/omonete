@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp",
     "image_box": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-box.webp",
     "image_certificate": "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-obv.webp",
+      "/image/coins/foreign/2013-koala-1oz-99-9-silver-pr-pp-discover-australia-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Discover Australia Koala 2013 1oz Silver Proof Coin",

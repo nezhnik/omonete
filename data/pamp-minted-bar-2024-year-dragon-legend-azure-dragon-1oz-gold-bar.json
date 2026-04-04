@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-09/lunar-dragon-1oz-au-certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/lunar-dragon-1oz-au-certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/lunar-dragon-1oz-au-front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/lunar-dragon-1oz-au-front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/lunar-dragon-envelope-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/lunar-dragon-envelope-back.png"
+    "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-1oz-gold-bar-obv.webp",
+    "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-1oz-gold-bar-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:17:07.021Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:43:01.636Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-1oz-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/2024-year-dragon-legend-azure-dragon-1oz-gold-bar-rev.webp"
 }

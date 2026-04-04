@@ -19,8 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/silver_ingot_1kg_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/silver_ingot_1kg.png"
+    "/image/coins/foreign/lady-fortunatm-silver-minted-bar-1-kg-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-silver-minted-bar-1-kg-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:22:26.771Z",
   "classified_source_urls": {
@@ -31,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:54:01.929Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-silver-minted-bar-1-kg-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-silver-minted-bar-1-kg-rev.webp"
 }

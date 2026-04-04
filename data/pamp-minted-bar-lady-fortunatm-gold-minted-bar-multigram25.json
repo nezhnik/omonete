@@ -19,13 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/gold_reverse_25_1.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/gold_obverse_25.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_multigram_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/1g_multigram_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_multigram_1staccato_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/multigram15_rev_one_peace.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/multigram15_obv_one_peace_1.png"
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-multigram25-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-multigram25-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:21:50.629Z",
   "classified_source_urls": {
@@ -36,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:53:02.264Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-multigram25-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-multigram25-rev.webp"
 }

@@ -20,12 +20,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_reverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_obverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_sleeve-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-09/icon-barbie_sleeve-back.png"
+    "/image/coins/foreign/1g-pure-gold-bar-iconic-barbietm-obv.webp",
+    "/image/coins/foreign/1g-pure-gold-bar-iconic-barbietm-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:10:46.962Z",
   "classified_source_urls": {
@@ -39,5 +35,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:10:46.963Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1g-pure-gold-bar-iconic-barbietm-obv.webp",
+  "image_reverse": "/image/coins/foreign/1g-pure-gold-bar-iconic-barbietm-rev.webp"
 }

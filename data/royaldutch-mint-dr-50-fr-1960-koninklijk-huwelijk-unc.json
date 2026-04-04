@@ -13,14 +13,14 @@
       "Quality": "Almost Uncirculated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/01.jpeg",
-      "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/02.jpeg",
-      "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/03.jpeg",
-      "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/04.jpeg"
+      "/image/coins/foreign/dr-50-fr-1960-koninklijk-huwelijk-unc-obv.webp",
+      "/image/coins/foreign/dr-50-fr-1960-koninklijk-huwelijk-unc-rev.webp",
+      "/image/coins/foreign/dr-50-fr-1960-koninklijk-huwelijk-unc-box.webp",
+      "/image/coins/foreign/dr-50-fr-1960-koninklijk-huwelijk-unc-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:12:16.769Z",
     "slug": "dr-50-fr-1960-koninklijk-huwelijk-unc",
-    "image_obverse": "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/dr-50-fr-1960-koninklijk-huwelijk-unc/02.jpeg"
+    "image_obverse": "/image/coins/foreign/dr-50-fr-1960-koninklijk-huwelijk-unc-obv.webp",
+    "image_reverse": "/image/coins/foreign/dr-50-fr-1960-koninklijk-huwelijk-unc-rev.webp"
   }
 }

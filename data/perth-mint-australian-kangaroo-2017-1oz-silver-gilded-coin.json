@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-box.webp",
     "image_certificate": "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-obv.webp",
+      "/image/coins/foreign/australian-kangaroo-2017-1oz-silver-gilded-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo 2017 1oz Silver Gilded Coin",

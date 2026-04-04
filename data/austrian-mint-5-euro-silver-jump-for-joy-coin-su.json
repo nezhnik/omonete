@@ -10,9 +10,8 @@
   },
   "price_display": "22.20 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/5/7/1/9631758-3-eng-US/b3088c7e2d3f-3D_Blister_Neujahr-SpringInsGlueck-2026_800px.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/4/6/1/9631643-1-ger-DE/672784545660-2026_5E_Neujahrsmuenze_Spring_ins_Glueck_Ag_HGH_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/5/6/1/9631655-1-ger-DE/0285c86172a0-2026_5E_Neujahrsmuenze_Spring_ins_Glueck_Ag_HGH_VS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-5-euro-silver-jump-for-joy-coin-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-5-euro-silver-jump-for-joy-coin-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 50000,
     "mintage_display": "50,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-5-euro-silver-jump-for-joy-coin-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-silver-jump-for-joy-coin-su-rev.webp"
 }

@@ -16,18 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/01.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/02.jpg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/03.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/04.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/05.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/06.jpg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/07.jpg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/08.jpg"
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-obv.webp",
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-rev.webp",
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-box.webp",
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-pack.webp",
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-cert.webp",
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-img-06.webp",
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:17:51.865Z",
     "slug": "malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69",
-    "image_obverse": "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69/02.jpg"
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl69-rev.webp"
   }
 }

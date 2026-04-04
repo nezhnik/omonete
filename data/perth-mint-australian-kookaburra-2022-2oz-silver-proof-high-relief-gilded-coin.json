@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-obv.webp",
+      "/image/coins/foreign/australian-kookaburra-2022-2oz-silver-proof-high-relief-gilded-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kookaburra 2022 2oz Silver Proof High Relief Gilded Coin",

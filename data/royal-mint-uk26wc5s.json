@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/uk26wc5s-cert.webp"
+    "image_certificate": "/image/coins/foreign/uk26wc5s-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/uk26wc5s-obv.webp",
+      "/image/coins/foreign/uk26wc5s-rev.webp"
+    ]
   },
   "raw": {
     "title": "William IV Crown 2026 UK 5oz Silver Proof Coin",

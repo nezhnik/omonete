@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-4-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-2-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/gold-minted-bar-happy-birthday-1g-pack-4-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_13_13.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_19_14.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_31_01.jpg"
+    "/image/coins/foreign/gold-minted-bar-1-g-happy-birthday-obv.webp",
+    "/image/coins/foreign/gold-minted-bar-1-g-happy-birthday-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:07:39.321Z"
+  "parsedAt": "2026-03-27T11:07:39.321Z",
+  "image_obverse": "/image/coins/foreign/gold-minted-bar-1-g-happy-birthday-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-minted-bar-1-g-happy-birthday-rev.webp"
 }

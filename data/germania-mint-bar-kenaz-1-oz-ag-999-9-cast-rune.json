@@ -16,12 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/kenaz-1-oz-Ag-999_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/kenaz-1-oz-Ag-999_a_900px_uv.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/kenaz-1-oz-Ag-999_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Kenaz-1-oz-Ag-999.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Kenaz-1-oz-Ag-999_2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Kenaz-1-oz-Ag-999_3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Kenaz-1-oz-Ag-999_4.jpg"
+    "/image/coins/foreign/kenaz-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/kenaz-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:24.442Z"
+  "parsedAt": "2026-03-27T11:09:24.442Z",
+  "image_obverse": "/image/coins/foreign/kenaz-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/kenaz-1-oz-ag-999-9-cast-rune-rev.webp"
 }

@@ -19,7 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-12/50g_cast_bar_0.png"
+    "/image/coins/foreign/gold-cast-bar-50-g-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:23:44.217Z",
   "classified_source_urls": {
@@ -29,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:23:44.717Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/gold-cast-bar-50-g-rev.webp",
+  "image_reverse": "/image/coins/foreign/gold-cast-bar-50-g-rev.webp"
 }

@@ -16,17 +16,17 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/07.jpeg"
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-obv.webp",
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-rev.webp",
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-box.webp",
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-pack.webp",
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-cert.webp",
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-img-06.webp",
+      "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:13:58.945Z",
     "slug": "jaap-eden-5-euro-coin-2019-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/jaap-eden-5-euro-coin-2019-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/jaap-eden-5-euro-coin-2019-silver-proof-rev.webp"
   }
 }

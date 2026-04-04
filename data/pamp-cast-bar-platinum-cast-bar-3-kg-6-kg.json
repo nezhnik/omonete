@@ -19,8 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-01/5kg_platinum_lb2022-xweb.png",
-    "https://www.pamp.com/sites/pamp/files/2023-01/5kg_platinum_lb2022-xweb02.png"
+    "/image/coins/foreign/platinum-cast-bar-3-kg-6-kg-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:40.428Z",
   "classified_source_urls": {
@@ -30,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:42.458Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/platinum-cast-bar-3-kg-6-kg-rev.webp",
+  "image_reverse": "/image/coins/foreign/platinum-cast-bar-3-kg-6-kg-rev.webp"
 }

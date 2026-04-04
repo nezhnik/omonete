@@ -10,9 +10,8 @@
   },
   "price_display": "1,074.15 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/3/0/4/9494035-1-ger-DE/b8dad68f0914-2024_50E_Veza_Canetti_Au_PP_VS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/4/0/4/9494043-1-ger-DE/b8c48bbff1f3-2024_50E_Veza_Canetti_Au_PP_RS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/2/0/4/9494027-1-ger-DE/0237e5e0af45-Packshot-Etui_50EUR-Veza-Canetti.png.webp"
+    "/image/coins/foreign/austrian-mint-50-euro-gold-veza-canetti-writer-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-50-euro-gold-veza-canetti-writer-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 20000,
     "mintage_display": "20,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-50-euro-gold-veza-canetti-writer-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-50-euro-gold-veza-canetti-writer-coin-p-rev.webp"
 }

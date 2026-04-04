@@ -23,12 +23,15 @@
     "catalog_suffix": "the-snowman-2025-50p-silver-proof-colour-coin",
     "price_display": "Price: £92.50",
     "source_url": "https://www.royalmint.com/shop/commemorative/childhood-characters/the-snowman/the-snowman-2025-50p-silver-proof-colour-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-snowman-2025-50p-silver-proof-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Snowman 2025 UK 50p Silver Proof Colour Coin",

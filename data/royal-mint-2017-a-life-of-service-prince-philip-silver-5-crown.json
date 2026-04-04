@@ -23,12 +23,15 @@
     "catalog_suffix": "2017-a-life-of-service-prince-philip-silver-5-crown",
     "price_display": null,
     "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2017-A-Life-of-Service-Prince-Philip-Silver-5-Crown",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/2017-a-life-of-service-prince-philip-silver-5-crown-rev.webp",
     "image_reverse": "/image/coins/foreign/2017-a-life-of-service-prince-philip-silver-5-crown-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2017-a-life-of-service-prince-philip-silver-5-crown-rev.webp"
+    ]
   },
   "raw": {
     "title": "2017 'A Life of Service' Prince Philip Silver £5 Crown",

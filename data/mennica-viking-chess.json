@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/09/Viking_chess_box_box_pl.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/09/IMG_2192.jpg"
+    "/image/coins/foreign/mennica-viking-chess-obv.webp",
+    "/image/coins/foreign/mennica-viking-chess-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:09:33.594Z"
+  "parsedAt": "2026-03-28T17:09:33.594Z",
+  "image_obverse": "/image/coins/foreign/mennica-viking-chess-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-viking-chess-rev.webp"
 }

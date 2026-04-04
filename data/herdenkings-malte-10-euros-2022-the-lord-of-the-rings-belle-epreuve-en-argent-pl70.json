@@ -16,18 +16,17 @@
       "Bord": "Dentelé"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/01.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/02.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/03.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/04.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/05.png",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/06.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/07.jpg",
-      "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/08.jpg"
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-obv.webp",
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-rev.webp",
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-box.webp",
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-pack.webp",
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-cert.webp",
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-img-06.webp",
+      "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:48:21.022Z",
     "slug": "malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70",
-    "image_obverse": "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70/02.jpg"
+    "image_obverse": "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-obv.webp",
+    "image_reverse": "/image/coins/foreign/malte-10-euros-2022-the-lord-of-the-rings-belle-epreuve-en-argent-pl70-rev.webp"
   }
 }

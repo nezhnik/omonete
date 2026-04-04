@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067320_ORI_BD_4901.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041397030000_25_COM_2____BU_LOUVRE_seule_revers_99a6.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067321_ORI2_BD_be7e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041397030000_25_COM_2____BU_LOUVRE_seule_face_4613.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-l-amour-et-psyche-a-demi-couchee-2eur-commemorative-coin-brilliant-uncirculated-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-l-amour-et-psyche-a-demi-couchee-2eur-commemorative-coin-brilliant-uncirculated-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:23:29.038Z"
+  "parsedAt": "2026-03-29T16:23:29.038Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-l-amour-et-psyche-a-demi-couchee-2eur-commemorative-coin-brilliant-uncirculated-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-l-amour-et-psyche-a-demi-couchee-2eur-commemorative-coin-brilliant-uncirculated-rev.webp"
 }

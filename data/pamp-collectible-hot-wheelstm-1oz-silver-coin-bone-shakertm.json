@@ -21,11 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-09/hot-wheels_bone-shaker_rev-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/hot-wheels_bone-shaker_obv-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/hot-wheels_bone-shaker_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/hot-wheels_bone-shaker_rev-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2024-09/hot-wheels_bone-shaker_obv-perspective.png"
+    "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-bone-shakertm-obv.webp",
+    "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-bone-shakertm-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:09:33.364Z"
+  "parsedAt": "2026-03-27T16:09:33.364Z",
+  "image_obverse": "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-bone-shakertm-obv.webp",
+  "image_reverse": "/image/coins/foreign/hot-wheelstm-1oz-silver-coin-bone-shakertm-rev.webp"
 }

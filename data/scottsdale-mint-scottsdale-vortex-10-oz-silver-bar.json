@@ -9,14 +9,14 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-vortex-10-oz-silver-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-vortex-10-oz-silver-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-vortex-10-oz-silver-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-vortex-10-oz-silver-bar/04.jpg"
+      "/image/coins/foreign/scottsdale-vortex-10-oz-silver-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-vortex-10-oz-silver-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-vortex-10-oz-silver-bar-box.webp",
+      "/image/coins/foreign/scottsdale-vortex-10-oz-silver-bar-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:43:31.500Z",
     "slug": "scottsdale-vortex-10-oz-silver-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-vortex-10-oz-silver-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-vortex-10-oz-silver-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-vortex-10-oz-silver-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-vortex-10-oz-silver-bar-rev.webp"
   }
 }

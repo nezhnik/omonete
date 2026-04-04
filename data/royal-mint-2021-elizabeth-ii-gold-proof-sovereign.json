@@ -24,11 +24,14 @@
     "price_display": null,
     "source_url": "https://www.royalmint.com/sovereign/all/2021-Elizabeth-II-Gold-Proof-Sovereign/",
     "image_obverse": "/image/coins/foreign/2021-elizabeth-ii-gold-proof-sovereign-obv.webp",
-    "image_reverse": null,
+    "image_reverse": "/image/coins/foreign/2021-elizabeth-ii-gold-proof-sovereign-obv.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2021-elizabeth-ii-gold-proof-sovereign-obv.webp"
+    ]
   },
   "raw": {
     "title": "2021 Elizabeth II Gold Proof Sovereign",

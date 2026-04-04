@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-reverse.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_certipamp-obverse.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_reverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/yellowstone-cowboy_1oz-au_obverse-perspective.png"
+    "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-obv.webp",
+    "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:29:22.435Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:08:26.437Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/reflections-america-yellowstone-cowboy-1oz-gold-bar-rev.webp"
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-ii-2017-year-of-the-rooster-silver-proof-three-coin-set-2oz1oz-1-2oz-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-ii-2017-year-of-the-rooster-silver-proof-three-coin-set-2oz1oz-1-2oz-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-ii-2017-year-of-the-rooster-silver-proof-three-coin-set-2oz1oz-1-2oz-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-lunar-series-ii-2017-year-of-the-rooster-silver-proof-three-coin-set-2oz1oz-1-2oz-obv.webp",
+      "/image/coins/foreign/australian-lunar-series-ii-2017-year-of-the-rooster-silver-proof-three-coin-set-2oz1oz-1-2oz-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Lunar Series II 2017 Year of the Rooster Silver Proof Three Coin Set (2oz 1oz 1/2oz)",

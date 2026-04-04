@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2014-sovereign-i-mint-mark-obv.webp",
+      "/image/coins/foreign/2014-sovereign-i-mint-mark-rev.webp"
+    ]
   },
   "raw": {
     "title": "2014 Sovereign I Mint Mark",

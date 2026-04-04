@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/legendary-creatures-loch-ness-monster-2026-uk-1oz-silver-bullion-coin-obv.webp",
+      "/image/coins/foreign/legendary-creatures-loch-ness-monster-2026-uk-1oz-silver-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Legendary Creatures Loch Ness Monster 2026 UK 1oz Silver Bullion Coin",

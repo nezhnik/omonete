@@ -20,11 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_2.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/crocodile_zagfc00880_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00880_c_15_1.png"
+    "/image/coins/foreign/animals-africa-1oz-pure-silver-nile-crocodile-coin-obv.webp",
+    "/image/coins/foreign/animals-africa-1oz-pure-silver-nile-crocodile-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:05:14.272Z"
+  "parsedAt": "2026-03-27T16:05:14.272Z",
+  "image_obverse": "/image/coins/foreign/animals-africa-1oz-pure-silver-nile-crocodile-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/animals-africa-1oz-pure-silver-nile-crocodile-coin-rev.webp"
 }

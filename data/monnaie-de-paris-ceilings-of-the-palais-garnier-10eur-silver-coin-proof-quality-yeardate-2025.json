@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068412_BD_7dae.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068451_BD_0932.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068411_BD_8824.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-ceilings-of-the-palais-garnier-10eur-silver-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-ceilings-of-the-palais-garnier-10eur-silver-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:35:37.160Z"
+  "parsedAt": "2026-03-29T15:35:37.160Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-ceilings-of-the-palais-garnier-10eur-silver-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-ceilings-of-the-palais-garnier-10eur-silver-coin-proof-quality-yeardate-2025-rev.webp"
 }

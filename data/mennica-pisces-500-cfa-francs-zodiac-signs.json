@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Aquarius_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Pisces_reverse.png"
+    "/image/coins/foreign/mennica-pisces-500-cfa-francs-zodiac-signs-obv.webp",
+    "/image/coins/foreign/mennica-pisces-500-cfa-francs-zodiac-signs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:04:18.156Z"
+  "parsedAt": "2026-03-28T17:04:18.156Z",
+  "image_obverse": "/image/coins/foreign/mennica-pisces-500-cfa-francs-zodiac-signs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-pisces-500-cfa-francs-zodiac-signs-rev.webp"
 }

@@ -15,17 +15,17 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/01.png",
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/02.jpeg",
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/03.png",
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/04.png",
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/05.png",
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/06.jpeg",
-      "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/07.jpeg"
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-obv.webp",
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-rev.webp",
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-box.webp",
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-pack.webp",
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-cert.webp",
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-img-06.webp",
+      "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:47:39.146Z",
     "slug": "belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof",
-    "image_obverse": "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/belgie-50-euromunt-2020-gotiek-jan-van-eyck-goud-proof-rev.webp"
   }
 }

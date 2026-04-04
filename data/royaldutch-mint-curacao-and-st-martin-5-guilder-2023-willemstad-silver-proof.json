@@ -17,17 +17,17 @@
       "Designer": "Cleo Maxime de Brabander"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/07.jpeg"
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-obv.webp",
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-rev.webp",
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-box.webp",
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-pack.webp",
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-cert.webp",
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-img-06.webp",
+      "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:11:54.136Z",
     "slug": "curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/curacao-and-st-martin-5-guilder-2023-willemstad-silver-proof-rev.webp"
   }
 }

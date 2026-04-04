@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/Van_Gogh_autoportret_rewers.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/Van_Gogh_autoportret_awers.png"
+    "/image/coins/foreign/mennica-self-portrait-with-bandaged-ear-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-self-portrait-with-bandaged-ear-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:09:29.980Z"
+  "parsedAt": "2026-03-28T17:09:29.980Z",
+  "image_obverse": "/image/coins/foreign/mennica-self-portrait-with-bandaged-ear-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-self-portrait-with-bandaged-ear-1-dollar-rev.webp"
 }

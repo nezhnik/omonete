@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/Paul_Cezanne_reverse.jpg",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/Paul_Cezanne_obverse.png"
+    "/image/coins/foreign/mennica-paul-cezanne-flowers-in-a-rococo-vase-500-cfa-francs-flowers-in-painting-collection-obv.webp",
+    "/image/coins/foreign/mennica-paul-cezanne-flowers-in-a-rococo-vase-500-cfa-francs-flowers-in-painting-collection-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:59.362Z"
+  "parsedAt": "2026-03-28T17:06:59.362Z",
+  "image_obverse": "/image/coins/foreign/mennica-paul-cezanne-flowers-in-a-rococo-vase-500-cfa-francs-flowers-in-painting-collection-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-paul-cezanne-flowers-in-a-rococo-vase-500-cfa-francs-flowers-in-painting-collection-rev.webp"
 }

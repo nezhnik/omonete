@@ -15,17 +15,17 @@
       "Création": "Charles Samuel & Jules Lagae"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/01.png",
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/02.png",
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/03.png",
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/04.png",
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/05.png",
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/06.png",
-      "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/07.png"
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-obv.webp",
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-rev.webp",
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-box.webp",
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-pack.webp",
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-cert.webp",
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-img-06.webp",
+      "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:52:55.689Z",
     "slug": "reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc",
-    "image_obverse": "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc/02.png"
+    "image_obverse": "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-obv.webp",
+    "image_reverse": "/image/coins/foreign/reedition-piece-de-20-franc-belgique-1920-en-vermeil-qualite-fdc-rev.webp"
   }
 }

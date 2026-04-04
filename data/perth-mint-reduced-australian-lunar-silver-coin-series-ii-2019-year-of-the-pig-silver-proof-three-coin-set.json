@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-obv.webp",
+      "/image/coins/foreign/reduced-australian-lunar-silver-coin-series-ii-2019-year-of-the-pig-silver-proof-three-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Lunar Silver Coin Series II 2019 Year of the Pig Silver Proof Three-Coin Set",

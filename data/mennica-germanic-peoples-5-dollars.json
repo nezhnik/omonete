@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/GERMANIC_PEOPLES_OBVERSE.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/GERMANIC_PEOPLES_REVERSE-1.png"
+    "/image/coins/foreign/mennica-germanic-peoples-5-dollars-obv.webp",
+    "/image/coins/foreign/mennica-germanic-peoples-5-dollars-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:42.051Z"
+  "parsedAt": "2026-03-28T17:05:42.051Z",
+  "image_obverse": "/image/coins/foreign/mennica-germanic-peoples-5-dollars-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-germanic-peoples-5-dollars-rev.webp"
 }

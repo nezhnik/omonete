@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/buckingham-palace-2024-uk-5-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/buckingham-palace-2024-uk-5-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Buckingham Palace 2024 UK £5 Silver Proof Coin",

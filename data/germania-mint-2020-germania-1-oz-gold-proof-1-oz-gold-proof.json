@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2020-1-oz-Proof-Au_rew.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2020-1-oz-Proof-Au_av.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Germania-2020-1-oz-Proof-Au_rew.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ggold20proof-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ggold20proof-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ggold20proof-1.jpg"
+    "/image/coins/foreign/2020-germania-1-oz-gold-proof-1-oz-gold-proof-obv.webp",
+    "/image/coins/foreign/2020-germania-1-oz-gold-proof-1-oz-gold-proof-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:05:43.914Z"
+  "parsedAt": "2026-03-24T10:05:43.914Z",
+  "image_obverse": "/image/coins/foreign/2020-germania-1-oz-gold-proof-1-oz-gold-proof-obv.webp",
+  "image_reverse": "/image/coins/foreign/2020-germania-1-oz-gold-proof-1-oz-gold-proof-rev.webp"
 }

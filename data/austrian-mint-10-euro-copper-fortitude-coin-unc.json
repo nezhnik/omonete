@@ -10,8 +10,8 @@
   },
   "price_display": "10.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2020_standhaftigkeit_cu_av/6102113-1-ger-DE/10e_2020_standhaftigkeit_cu_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/ritter/10e_2020_standhaftigkeit_cu_rv/6102117-1-ger-DE/10e_2020_standhaftigkeit_cu_rv.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-copper-fortitude-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-copper-fortitude-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-copper-fortitude-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-copper-fortitude-coin-unc-rev.webp"
 }

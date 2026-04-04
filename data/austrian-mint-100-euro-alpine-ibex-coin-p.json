@@ -10,9 +10,8 @@
   },
   "price_display": "2,208.45 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2017_steinbock-av/3131529-2-ger-DE/100e_2017_steinbock-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2017_steinbock-rv/3131533-2-ger-DE/100e_2017_steinbock-rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2017_steinbock-etui/3131541-1-ger-DE/100e_2017_steinbock-etui.png.webp"
+    "/image/coins/foreign/austrian-mint-100-euro-alpine-ibex-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-100-euro-alpine-ibex-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-alpine-ibex-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-alpine-ibex-coin-p-rev.webp"
 }

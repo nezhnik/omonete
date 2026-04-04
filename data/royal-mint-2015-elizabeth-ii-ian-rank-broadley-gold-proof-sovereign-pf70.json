@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2015-elizabeth-ii-ian-rank-broadley-gold-proof-sovereign-pf70-obv.webp",
+      "/image/coins/foreign/2015-elizabeth-ii-ian-rank-broadley-gold-proof-sovereign-pf70-rev.webp"
+    ]
   },
   "raw": {
     "title": "2015 Elizabeth II 'Ian Rank Broadley' Gold Proof Sovereign",

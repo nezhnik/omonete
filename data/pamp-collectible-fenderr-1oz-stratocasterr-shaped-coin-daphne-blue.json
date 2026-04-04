@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/daphne-blue_packaging-open.png"
+    "/image/coins/foreign/fenderr-1oz-stratocasterr-shaped-coin-daphne-blue-obv.webp",
+    "/image/coins/foreign/fenderr-1oz-stratocasterr-shaped-coin-daphne-blue-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:35.152Z"
+  "parsedAt": "2026-03-27T16:07:35.152Z",
+  "image_obverse": "/image/coins/foreign/fenderr-1oz-stratocasterr-shaped-coin-daphne-blue-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-1oz-stratocasterr-shaped-coin-daphne-blue-rev.webp"
 }

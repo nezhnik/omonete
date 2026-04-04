@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2024-valkyries-solveig-2-oz-silver-bu-uhr-900-r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2024-valkyries-solveig-2-oz-silver-bu-uhr-900-a.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2024-valkyries-solveig-2-oz-silver-bu-uhr-900-r.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/s-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/s-2-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/s-2-3-1.jpg"
+    "/image/coins/foreign/2024-valkyries-solveig-2-oz-silver-bu-ultra-high-relief-obv.webp",
+    "/image/coins/foreign/2024-valkyries-solveig-2-oz-silver-bu-ultra-high-relief-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:09:21.456Z"
+  "parsedAt": "2026-03-24T10:09:21.456Z",
+  "image_obverse": "/image/coins/foreign/2024-valkyries-solveig-2-oz-silver-bu-ultra-high-relief-obv.webp",
+  "image_reverse": "/image/coins/foreign/2024-valkyries-solveig-2-oz-silver-bu-ultra-high-relief-rev.webp"
 }

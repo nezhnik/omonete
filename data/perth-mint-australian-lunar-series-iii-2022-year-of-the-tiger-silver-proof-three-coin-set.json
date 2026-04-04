@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-obv.webp",
+      "/image/coins/foreign/australian-lunar-series-iii-2022-year-of-the-tiger-silver-proof-three-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Lunar Series III 2022 Year of the Tiger Silver Proof Three-Coin Set",

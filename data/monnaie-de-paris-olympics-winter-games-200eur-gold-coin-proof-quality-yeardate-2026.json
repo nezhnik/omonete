@@ -51,11 +51,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069603_BD_78b6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069877_BD_f0d5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069604_BD_30c7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-olympics-winter-games-200eur-gold-coin-proof-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-olympics-winter-games-200eur-gold-coin-proof-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:24:46.776Z"
+  "parsedAt": "2026-03-29T14:24:46.776Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-olympics-winter-games-200eur-gold-coin-proof-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-olympics-winter-games-200eur-gold-coin-proof-quality-yeardate-2026-rev.webp"
 }

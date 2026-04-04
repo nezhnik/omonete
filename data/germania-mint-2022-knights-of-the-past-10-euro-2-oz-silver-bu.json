@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-revers_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-avers_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2023-knights-of-the-past-2-oz-uhr-revers_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_22_06.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_42_12.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_54_12.jpg"
+    "/image/coins/foreign/2022-knights-of-the-past-10-euro-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2022-knights-of-the-past-10-euro-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:07:22.898Z"
+  "parsedAt": "2026-03-24T10:07:22.898Z",
+  "image_obverse": "/image/coins/foreign/2022-knights-of-the-past-10-euro-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2022-knights-of-the-past-10-euro-2-oz-silver-bu-rev.webp"
 }

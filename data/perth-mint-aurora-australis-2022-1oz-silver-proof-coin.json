@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/aurora-australis-2022-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Aurora Australis 2022 1oz Silver Proof Coin",

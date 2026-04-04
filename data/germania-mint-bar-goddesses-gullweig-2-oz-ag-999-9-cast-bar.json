@@ -17,10 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6166_etap-fizyczny_rewers_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6720_Etap-fizyczny-Germania-Mint-Goddesses-Gullweig-2-oz-999_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6166_etap-fizyczny_rewers_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2024/03/gullweig_2oz_silver_cast_bar.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/freyr_2oz_silver_cast_bar-2.jpg"
+    "/image/coins/foreign/goddesses-gullweig-2-oz-ag-999-9-cast-bar-obv.webp",
+    "/image/coins/foreign/goddesses-gullweig-2-oz-ag-999-9-cast-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:12.741Z"
+  "parsedAt": "2026-03-27T11:06:12.741Z",
+  "image_obverse": "/image/coins/foreign/goddesses-gullweig-2-oz-ag-999-9-cast-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/goddesses-gullweig-2-oz-ag-999-9-cast-bar-rev.webp"
 }

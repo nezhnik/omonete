@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/fenrir-1-oz-silver-bu_rewers-900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/fenrir-1-oz-silver-bu_awers-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/fenrir-1-oz-silver-bu_rewers-900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/fenrir-1-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/fenrir-1-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/fenrir-1-3.jpg"
+    "/image/coins/foreign/germania-beasts-fenrir-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/germania-beasts-fenrir-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:05.240Z"
+  "parsedAt": "2026-03-23T19:31:05.240Z",
+  "image_obverse": "/image/coins/foreign/germania-beasts-fenrir-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-beasts-fenrir-1-oz-silver-bu-rev.webp"
 }

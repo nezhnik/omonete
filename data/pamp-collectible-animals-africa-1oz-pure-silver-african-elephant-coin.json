@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_14.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_20.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/aa_elephant_packaging-open_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_15.png"
+    "/image/coins/foreign/animals-africa-1oz-pure-silver-african-elephant-coin-obv.webp",
+    "/image/coins/foreign/animals-africa-1oz-pure-silver-african-elephant-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:04:59.608Z"
+  "parsedAt": "2026-03-27T16:04:59.608Z",
+  "image_obverse": "/image/coins/foreign/animals-africa-1oz-pure-silver-african-elephant-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/animals-africa-1oz-pure-silver-african-elephant-coin-rev.webp"
 }

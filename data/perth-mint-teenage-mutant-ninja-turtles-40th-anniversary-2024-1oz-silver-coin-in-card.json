@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/teenage-mutant-ninja-turtles-40th-anniversary-2024-1oz-silver-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/teenage-mutant-ninja-turtles-40th-anniversary-2024-1oz-silver-coin-in-card-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/teenage-mutant-ninja-turtles-40th-anniversary-2024-1oz-silver-coin-in-card-obv.webp",
+      "/image/coins/foreign/teenage-mutant-ninja-turtles-40th-anniversary-2024-1oz-silver-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Teenage Mutant Ninja Turtles 40th Anniversary 2024 1oz Silver Coin in Card",

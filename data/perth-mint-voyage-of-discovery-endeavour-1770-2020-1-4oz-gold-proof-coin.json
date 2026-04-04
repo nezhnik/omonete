@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/voyage-of-discovery-endeavour-1770-2020-1-4oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Voyage of Discovery Endeavour 1770-2020 1/4oz Gold Proof Coin",

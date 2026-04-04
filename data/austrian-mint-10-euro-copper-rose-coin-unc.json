@@ -10,8 +10,8 @@
   },
   "price_display": "10.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/0/5/0/7260501-2-ger-DE/2021_10E_DieRose_Cu_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/9/4/0/7260497-2-ger-DE/2021_10E_DieRose_Cu_NP_VS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-copper-rose-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-copper-rose-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-copper-rose-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-copper-rose-coin-unc-rev.webp"
 }

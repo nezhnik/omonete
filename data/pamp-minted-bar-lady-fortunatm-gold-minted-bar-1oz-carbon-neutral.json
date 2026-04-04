@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-04/au_1oz_revcertipamp_3.png",
-    "https://www.pamp.com/sites/pamp/files/2025-05/au_1oz_obvcertipamp_carbon_neutral.tif_.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/pamp_gold_fortuna_1oz_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/pamp-gold-fortuna-1oz-obv.png"
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:20:37.272Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:50:21.571Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-1oz-carbon-neutral-rev.webp"
 }

@@ -10,8 +10,8 @@
   },
   "price_display": "10.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/web-produktbilder/2.sammeln/2.3.10_euro/bundeslaender/10e_2016_ooe-cu-rv/10496-55-ger-DE/10E_2016_OOe-Cu-RV.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.3.10_euro/bundeslaender/10e_2016_ooe-cu-av/10492-54-ger-DE/10e_2016_ooe-cu-av.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-copper-upper-austria-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-copper-upper-austria-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 130000,
     "mintage_display": "130,000 (Münze Österreich: Auflage Normalprägung — 130.000 Kupfer)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-copper-upper-austria-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-copper-upper-austria-coin-unc-rev.webp"
 }

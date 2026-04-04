@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041365410000_22_BLE_250____Or_BU_FACE_09e6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041365410000_22_BLE_250____Or_BU_REVERS_6bbb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-wheat-250eu-gold-coin-brilliant-uncirculated-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-wheat-250eu-gold-coin-brilliant-uncirculated-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:49:46.603Z"
+  "parsedAt": "2026-03-29T17:49:46.603Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-wheat-250eu-gold-coin-brilliant-uncirculated-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-wheat-250eu-gold-coin-brilliant-uncirculated-yeardate-2022-rev.webp"
 }

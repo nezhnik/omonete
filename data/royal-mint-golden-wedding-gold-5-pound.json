@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/Perth/The 1997 Golden Wedding £5 Gold Proof Coin-box.png",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/Perth/The 1997 Golden Wedding £5 Gold Proof Coin-obv.png",
+      "/image/coins/Perth/The 1997 Golden Wedding £5 Gold Proof Coin-rev.png"
+    ]
   },
   "raw": {
     "title": "The 1997 Golden Wedding £5 Gold Proof Coin",

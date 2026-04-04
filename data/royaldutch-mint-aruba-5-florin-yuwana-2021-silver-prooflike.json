@@ -16,16 +16,16 @@
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/01.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/02.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/03.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/04.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/05.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/06.jpeg"
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-obv.webp",
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-rev.webp",
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-box.webp",
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-pack.webp",
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-cert.webp",
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:10:11.623Z",
     "slug": "aruba-5-florin-yuwana-2021-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-yuwana-2021-silver-prooflike/02.jpeg"
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-rev.webp"
   }
 }

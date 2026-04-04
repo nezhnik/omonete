@@ -19,8 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_23.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/5oz_1.png"
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-5oz-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-gold-minted-bar-5oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:21:44.658Z",
   "classified_source_urls": {
@@ -31,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:52:51.085Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-5oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-gold-minted-bar-5oz-rev.webp"
 }

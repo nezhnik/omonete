@@ -15,14 +15,14 @@
       "Mintage": "12,500"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/02.png",
-      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/04.png"
+      "/image/coins/foreign/5-euro-2013-vredespaleis-proof-obv.webp",
+      "/image/coins/foreign/5-euro-2013-vredespaleis-proof-rev.webp",
+      "/image/coins/foreign/5-euro-2013-vredespaleis-proof-box.webp",
+      "/image/coins/foreign/5-euro-2013-vredespaleis-proof-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:04:33.373Z",
     "slug": "5-euro-2013-vredespaleis-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2013-vredespaleis-proof/02.png"
+    "image_obverse": "/image/coins/foreign/5-euro-2013-vredespaleis-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2013-vredespaleis-proof-rev.webp"
   }
 }

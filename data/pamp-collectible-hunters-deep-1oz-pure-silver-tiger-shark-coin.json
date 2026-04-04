@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/tiger_shark_zagfc00645_1_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/tiger_shark_zagfc00645_2_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/tiger_shark_zagfc00645_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/tiger_shark_zagfc00645_4.png"
+    "/image/coins/foreign/hunters-deep-1oz-pure-silver-tiger-shark-coin-obv.webp",
+    "/image/coins/foreign/hunters-deep-1oz-pure-silver-tiger-shark-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:10:27.218Z"
+  "parsedAt": "2026-03-27T16:10:27.218Z",
+  "image_obverse": "/image/coins/foreign/hunters-deep-1oz-pure-silver-tiger-shark-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/hunters-deep-1oz-pure-silver-tiger-shark-coin-rev.webp"
 }

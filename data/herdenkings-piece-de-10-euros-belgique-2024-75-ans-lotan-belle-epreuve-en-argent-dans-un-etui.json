@@ -16,17 +16,17 @@
       "Création": "Iris Bruijns (voorzijde) Luc Luycx (keerzijde)"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/02.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/06.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/07.jpeg"
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-obv.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-rev.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-box.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-pack.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-cert.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-img-06.webp",
+      "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:50:45.141Z",
     "slug": "piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-10-euros-belgique-2024-75-ans-lotan-belle-epreuve-en-argent-dans-un-etui-rev.webp"
   }
 }

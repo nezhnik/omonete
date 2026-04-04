@@ -14,14 +14,14 @@
       "Mintage": "4,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/04.jpeg"
+      "/image/coins/foreign/silver-ducat-2018-overijssel-obv.webp",
+      "/image/coins/foreign/silver-ducat-2018-overijssel-rev.webp",
+      "/image/coins/foreign/silver-ducat-2018-overijssel-box.webp",
+      "/image/coins/foreign/silver-ducat-2018-overijssel-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:32:18.628Z",
     "slug": "silver-ducat-2018-overijssel",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-2018-overijssel/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-2018-overijssel-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-2018-overijssel-rev.webp"
   }
 }

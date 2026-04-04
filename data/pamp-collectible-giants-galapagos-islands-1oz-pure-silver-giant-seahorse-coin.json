@@ -21,11 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/seahorse_s-mks-1galapaseahorse_8.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/seahorse_s-mks-1galapaseahorse_6.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/seahorse_s-mks-1galapaseahorse_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/seahorse_s-mks-1galapaseahorse_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/seahorse_s-mks-1galapaseahorse_10.png"
+    "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-giant-seahorse-coin-obv.webp",
+    "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-giant-seahorse-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:09:03.329Z"
+  "parsedAt": "2026-03-27T16:09:03.329Z",
+  "image_obverse": "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-giant-seahorse-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/giants-galapagos-islands-1oz-pure-silver-giant-seahorse-coin-rev.webp"
 }

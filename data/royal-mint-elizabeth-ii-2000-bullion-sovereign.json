@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/elizabeth-ii-2000-bullion-sovereign-obv.webp",
+      "/image/coins/foreign/elizabeth-ii-2000-bullion-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "Elizabeth II 2000 Bullion Sovereign",

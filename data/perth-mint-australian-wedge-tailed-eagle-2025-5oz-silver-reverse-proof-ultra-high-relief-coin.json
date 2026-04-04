@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2025-5oz-silver-reverse-proof-ultra-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2025-5oz-silver-reverse-proof-ultra-high-relief-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2025-5oz-silver-reverse-proof-ultra-high-relief-coin-obv.webp",
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2025-5oz-silver-reverse-proof-ultra-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2025 5oz Silver Reverse Proof Ultra High Relief Coin",

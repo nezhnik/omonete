@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/the-spice-girl-2026-uk-1oz-silver-proof-colour-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-spice-girl-2026-uk-1oz-silver-proof-colour-coin-obv.webp",
+      "/image/coins/foreign/the-spice-girl-2026-uk-1oz-silver-proof-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Spice Girls 2026 UK 1oz Silver Proof Colour Coin",

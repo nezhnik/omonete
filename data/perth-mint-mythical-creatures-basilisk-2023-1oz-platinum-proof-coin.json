@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-obv.webp",
+      "/image/coins/foreign/mythical-creatures-basilisk-2023-1oz-platinum-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Mythical Creatures - Basilisk 2023 1oz Platinum Proof Coin",

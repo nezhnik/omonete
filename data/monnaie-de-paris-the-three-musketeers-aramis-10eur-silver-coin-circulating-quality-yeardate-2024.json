@@ -69,12 +69,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066055_BD_faf7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066056_BD_3b18.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066212_BD_0f90.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066214_BD_6b6d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-aramis-10eur-silver-coin-circulating-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-aramis-10eur-silver-coin-circulating-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:50:51.357Z"
+  "parsedAt": "2026-03-29T16:50:51.357Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-aramis-10eur-silver-coin-circulating-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-aramis-10eur-silver-coin-circulating-quality-yeardate-2024-rev.webp"
 }

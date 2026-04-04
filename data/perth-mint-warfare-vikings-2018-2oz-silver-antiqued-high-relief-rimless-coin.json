@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-rev.webp",
     "image_box": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-obv.webp",
+      "/image/coins/foreign/warfare-vikings-2018-2oz-silver-antiqued-high-relief-rimless-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Warfare - Vikings 2018 2oz Silver Antiqued High Relief Rimless Coin",

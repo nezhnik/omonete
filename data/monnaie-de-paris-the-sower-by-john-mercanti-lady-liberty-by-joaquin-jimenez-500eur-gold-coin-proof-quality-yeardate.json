@@ -47,10 +47,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/v/i/visuel_3d_face_500_euro_OR_Mecanti_Jimenez_diam_50_9ef7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/v/i/visuel_3d_revers_500_euro_Mecanti_Jimenez_bed7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-sower-by-john-mercanti-lady-liberty-by-joaquin-jimenez-500eur-gold-coin-proof-quality-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-sower-by-john-mercanti-lady-liberty-by-joaquin-jimenez-500eur-gold-coin-proof-quality-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:41:50.834Z"
+  "parsedAt": "2026-03-29T16:41:50.834Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-sower-by-john-mercanti-lady-liberty-by-joaquin-jimenez-500eur-gold-coin-proof-quality-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-sower-by-john-mercanti-lady-liberty-by-joaquin-jimenez-500eur-gold-coin-proof-quality-yeardate-rev.webp"
 }

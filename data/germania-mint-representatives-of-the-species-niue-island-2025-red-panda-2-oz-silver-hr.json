@@ -19,12 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/Niue-Island-2025-Red-Panda-2-oz-Silver-HR_revers_900px-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/Niue-Island-2025-Red-Panda-2-oz-Silver-HR_avers_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Niue-Island-2025-Red-Panda-2-oz-Silver-HR_revers_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_21_09.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_33_10.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_57_22.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_01_02_23.jpg"
+    "/image/coins/foreign/representatives-of-the-species-niue-island-2025-red-panda-2-oz-silver-hr-obv.webp",
+    "/image/coins/foreign/representatives-of-the-species-niue-island-2025-red-panda-2-oz-silver-hr-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:36:56.368Z"
+  "parsedAt": "2026-03-23T19:36:56.368Z",
+  "image_obverse": "/image/coins/foreign/representatives-of-the-species-niue-island-2025-red-panda-2-oz-silver-hr-obv.webp",
+  "image_reverse": "/image/coins/foreign/representatives-of-the-species-niue-island-2025-red-panda-2-oz-silver-hr-rev.webp"
 }

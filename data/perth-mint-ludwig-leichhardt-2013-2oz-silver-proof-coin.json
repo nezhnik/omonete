@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/ludwig-leichhardt-2013-2oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Ludwig Leichhardt 2013 2oz Silver Proof Coin",

@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/a/c/ac9906b012ead8dde47c43561fd462ef03d4c021_M5066_MDP_00060929_BD_4019.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/7/574b2e5d0e838852ede1350a4246d68d31086b9c_M5066_MDP_00060988_BD_a011.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/d/0/d01657f7fa483c1322532e02ee70817b80fc1cc7_M5066_MDP_00061241_BD_12ca.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-colored-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-colored-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:01:04.510Z"
+  "parsedAt": "2026-03-29T18:01:04.510Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-colored-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-colored-yeardate-rev.webp"
 }

@@ -10,13 +10,8 @@
   },
   "price_display": "3,222.45 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/50e_psychotherapie_sammelkassette/2954780-2-ger-DE/50e_psychotherapie_sammelkassette.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2017_50e_freud_av/207794-3-ger-DE/2017_50e_freud_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2017_50e_freud_rv/207798-3-ger-DE/2017_50e_freud_rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2018_50e_adler_av/3555751-1-ger-DE/2018_50e_adler_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2018_50e_adler_rv/3555755-1-ger-DE/2018_50e_adler_rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2019_50e_frankl_av/4641199-1-ger-DE/2019_50e_frankl_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2019_50e_frankl_rv/4641203-1-ger-DE/2019_50e_frankl_rv.png.webp"
+    "/image/coins/foreign/austrian-mint-the-vienna-schools-of-psychotherapy-gold-coin-set-proof-obv.webp",
+    "/image/coins/foreign/austrian-mint-the-vienna-schools-of-psychotherapy-gold-coin-set-proof-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -33,5 +28,7 @@
   "mintage_sync": {
     "mintage": null,
     "mintage_display": "Набор золотых Proof: Auflage набора на muenzeoesterreich.at не указана. Одиночные 50 € Au Proof сери"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-the-vienna-schools-of-psychotherapy-gold-coin-set-proof-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-the-vienna-schools-of-psychotherapy-gold-coin-set-proof-rev.webp"
 }

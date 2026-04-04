@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/Moneta_weselna_2024_REWERS.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/Moneta_weselna_2024_AWERS.png"
+    "/image/coins/foreign/mennica-wedding-coin-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-wedding-coin-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:22.395Z"
+  "parsedAt": "2026-03-28T17:05:22.395Z",
+  "image_obverse": "/image/coins/foreign/mennica-wedding-coin-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-wedding-coin-500-cfa-francs-rev.webp"
 }

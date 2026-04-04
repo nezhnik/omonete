@@ -20,12 +20,10 @@
     "certificate": "https://www.pamp.com/sites/pamp/files/2022-02/box-open.png"
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_15.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_21.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/box-open.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_17.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev-capsule.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv-capsule.png"
+    "/image/coins/foreign/animals-africa-1oz-pure-silver-african-lion-coin-obv.webp",
+    "/image/coins/foreign/animals-africa-1oz-pure-silver-african-lion-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:05:07.169Z"
+  "parsedAt": "2026-03-27T16:05:07.169Z",
+  "image_obverse": "/image/coins/foreign/animals-africa-1oz-pure-silver-african-lion-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/animals-africa-1oz-pure-silver-african-lion-coin-rev.webp"
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-rev.webp",
     "image_box": "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-obv.webp",
+      "/image/coins/foreign/figure-8-dragon-and-phoenix-2020-2oz-silver-antiqued-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Figure 8 Dragon and Phoenix 2020 2oz Silver Antiqued Coin",

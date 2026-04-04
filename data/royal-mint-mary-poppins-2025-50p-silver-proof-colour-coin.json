@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/mary-poppins-2025-50p-silver-proof-colour-coin-obv.webp",
+      "/image/coins/foreign/mary-poppins-2025-50p-silver-proof-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Mary Poppins 2025 UK 50p Silver Proof Colour Coin",

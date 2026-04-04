@@ -9,16 +9,16 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/05.jpg",
-      "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/06.jpg"
+      "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-obv.webp",
+      "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-rev.webp",
+      "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-box.webp",
+      "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-pack.webp",
+      "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-cert.webp",
+      "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-img-06.webp"
     ],
     "parsedAt": "2026-04-04T15:26:59.802Z",
     "slug": "5-oz-scottsdale-mint-999-silver-cast-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/5-oz-scottsdale-mint-999-silver-cast-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-oz-scottsdale-mint-999-silver-cast-bar-rev.webp"
   }
 }

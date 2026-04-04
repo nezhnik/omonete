@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063063_BD_11de.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063062_BD_a513.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-1000eur-gold-coin-brilliant-uncirculated-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-1000eur-gold-coin-brilliant-uncirculated-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:35:27.309Z"
+  "parsedAt": "2026-03-29T17:35:27.309Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-1000eur-gold-coin-brilliant-uncirculated-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-1000eur-gold-coin-brilliant-uncirculated-quality-yeardate-2023-rev.webp"
 }

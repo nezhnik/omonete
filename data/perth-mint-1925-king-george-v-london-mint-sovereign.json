@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1925-king-george-v-london-mint-sovereign-rev.webp",
     "image_box": "/image/coins/foreign/1925-king-george-v-london-mint-sovereign-box.webp",
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1925-king-george-v-london-mint-sovereign-obv.webp",
+      "/image/coins/foreign/1925-king-george-v-london-mint-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "1925 King George V London Mint Sovereign",

@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067509_BD_4222.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067507_BD_d01e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067506_BD_7789.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067510_BD_9875.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-50eur-silver-coin-circulating-coin-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-50eur-silver-coin-circulating-coin-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:22:37.733Z"
+  "parsedAt": "2026-03-29T16:22:37.733Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-50eur-silver-coin-circulating-coin-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-50eur-silver-coin-circulating-coin-yeardate-2025-rev.webp"
 }

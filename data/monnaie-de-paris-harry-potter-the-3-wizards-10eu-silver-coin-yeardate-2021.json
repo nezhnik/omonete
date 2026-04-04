@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/a/0afcfe0abfb4c2f6fd7ad9b1343b640e649fce49_M5066_MDP_00060923_BD_8ca9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/d/1d953a07f7bf8443bb14c659b18d2912e2c5fcfd_M5066_MDP_00060994_BD_8e27.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/6/5/6528b391a6d9e2cea78b22731f331d096835abbd_M5066_MDP_00061241_BD_4cbb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-the-3-wizards-10eu-silver-coin-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-the-3-wizards-10eu-silver-coin-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:02:04.487Z"
+  "parsedAt": "2026-03-29T18:02:04.487Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-the-3-wizards-10eu-silver-coin-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-the-3-wizards-10eu-silver-coin-yeardate-2021-rev.webp"
 }

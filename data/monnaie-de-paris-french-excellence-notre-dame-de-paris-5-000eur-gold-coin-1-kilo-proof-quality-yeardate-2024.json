@@ -93,15 +93,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066980_BD_b7a7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066913_BD_8224.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066981_BD_6772.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066914_BD_0f07.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066976_BD_9384.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066940_BD_e90f.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066945_BD_8929.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-notre-dame-de-paris-5-000eur-gold-coin-1-kilo-proof-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-notre-dame-de-paris-5-000eur-gold-coin-1-kilo-proof-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:43:43.350Z"
+  "parsedAt": "2026-03-29T16:43:43.350Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-notre-dame-de-paris-5-000eur-gold-coin-1-kilo-proof-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-notre-dame-de-paris-5-000eur-gold-coin-1-kilo-proof-quality-yeardate-2024-rev.webp"
 }

@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/the-perth-mint-gold-sovereigns-1899-and-1931-rev.webp",
     "image_box": "/image/coins/foreign/the-perth-mint-gold-sovereigns-1899-and-1931-box.webp",
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-perth-mint-gold-sovereigns-1899-and-1931-obv.webp",
+      "/image/coins/foreign/the-perth-mint-gold-sovereigns-1899-and-1931-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Perth Mint Gold Sovereigns 1899 and 1931",

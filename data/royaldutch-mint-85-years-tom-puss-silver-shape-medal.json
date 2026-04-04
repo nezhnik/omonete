@@ -15,20 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/01.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/02.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/03.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/04.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/05.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/06.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/07.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/08.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/09.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/10.png"
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-obv.webp",
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-rev.webp",
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-box.webp",
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-pack.webp",
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-cert.webp",
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-img-06.webp",
+      "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:08:33.310Z",
     "slug": "85-years-tom-puss-silver-shape-medal",
-    "image_obverse": "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/85-years-tom-puss-silver-shape-medal/02.png"
+    "image_obverse": "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-obv.webp",
+    "image_reverse": "/image/coins/foreign/85-years-tom-puss-silver-shape-medal-rev.webp"
   }
 }

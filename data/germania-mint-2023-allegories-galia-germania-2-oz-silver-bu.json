@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-2-oz-silver-bu-r-900.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-2-oz-silver-bu-a-900.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/galia-germania-2-oz-silver-bu-r-900.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2oz.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/2oz-3.jpg"
+    "/image/coins/foreign/2023-allegories-galia-germania-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2023-allegories-galia-germania-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:29:58.233Z"
+  "parsedAt": "2026-03-23T19:29:58.233Z",
+  "image_obverse": "/image/coins/foreign/2023-allegories-galia-germania-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2023-allegories-galia-germania-2-oz-silver-bu-rev.webp"
 }

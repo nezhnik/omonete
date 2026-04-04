@@ -20,11 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_pack-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_pack-open.png",
-    "https://www.pamp.com/sites/pamp/files/2024-11/hotwheels-gift-set_pins1.png"
+    "/image/coins/foreign/hot-wheelstm-holiday-mystery-box-night-shifter-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/hot-wheelstm-holiday-mystery-box-night-shifter-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:10:06.312Z"
+  "parsedAt": "2026-03-27T16:10:06.312Z",
+  "image_obverse": "/image/coins/foreign/hot-wheelstm-holiday-mystery-box-night-shifter-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/hot-wheelstm-holiday-mystery-box-night-shifter-1oz-silver-coin-rev.webp"
 }

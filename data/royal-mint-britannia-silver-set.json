@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/britannia-silver-set-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/britannia-silver-set-obv.webp",
+      "/image/coins/foreign/britannia-silver-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "1997 Britannia Silver Set",

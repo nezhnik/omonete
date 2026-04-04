@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/the-jewelled-horse-2021-10oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/the-jewelled-horse-2021-10oz-gold-proof-coin-rev.webp",
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-jewelled-horse-2021-10oz-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-jewelled-horse-2021-10oz-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-jewelled-horse-2021-10oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/the-jewelled-horse-2021-10oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Jewelled Horse 2021 10oz Gold Proof Coin",

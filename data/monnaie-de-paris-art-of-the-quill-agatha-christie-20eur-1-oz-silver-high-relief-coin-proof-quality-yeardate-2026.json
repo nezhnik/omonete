@@ -85,14 +85,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069740_ORI2_1866.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/6/26_AGATHA_CHRISTIE_Fourreau_Certificat_5a86.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041403880000_26_CHRISTIE_20____AG_HR_1oz_BE_face_7a7c.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041403880000_26_CHRISTIE_20____AG_HR_1oz_BE_revers_8977.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069474_ORI2_e191.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069741_ORI2_7b1e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:52:48.435Z"
+  "parsedAt": "2026-03-29T14:52:48.435Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-agatha-christie-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2026-rev.webp"
 }

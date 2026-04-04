@@ -27,10 +27,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/rewers-Witaj-na-swiecie-2024-Au.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/awers-Witaj-na-swiecie-2024-Au.png"
+    "/image/coins/foreign/mennica-welcome-to-the-world-2000-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-welcome-to-the-world-2000-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:18.817Z"
+  "parsedAt": "2026-03-28T17:05:18.817Z",
+  "image_obverse": "/image/coins/foreign/mennica-welcome-to-the-world-2000-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-welcome-to-the-world-2000-cfa-francs-rev.webp"
 }

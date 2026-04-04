@@ -28,7 +28,11 @@
     "image_blister_reverse": "/image/coins/foreign/star-wars-darth-vader-and-emperor-palpatine-2023-uk-5oz-silver-proof-coin-blister-rev.webp",
     "image_blister_obverse": "/image/coins/foreign/star-wars-darth-vader-and-emperor-palpatine-2023-uk-5oz-silver-proof-coin-blister-obv.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/star-wars-darth-vader-and-emperor-palpatine-2023-uk-5oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/star-wars-darth-vader-and-emperor-palpatine-2023-uk-5oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Star Wars Darth Vader and Emperor Palpatine 2023 UK 5oz Silver Proof Coin",

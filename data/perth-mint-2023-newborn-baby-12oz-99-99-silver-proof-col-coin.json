@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/2023-newborn-baby-12oz-99-99-silver-proof-col-coin-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/2023-newborn-baby-12oz-99-99-silver-proof-col-coin-obv.webp",
+      "/image/coins/foreign/2023-newborn-baby-12oz-99-99-silver-proof-col-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Newborn 2023 1/2oz Silver Proof Coloured Coin",

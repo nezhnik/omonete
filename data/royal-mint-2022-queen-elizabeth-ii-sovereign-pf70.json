@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2022-queen-elizabeth-ii-sovereign-pf70-obv.webp",
+      "/image/coins/foreign/2022-queen-elizabeth-ii-sovereign-pf70-rev.webp"
+    ]
   },
   "raw": {
     "title": "2022 Queen Elizabeth II Gold Proof Sovereign",

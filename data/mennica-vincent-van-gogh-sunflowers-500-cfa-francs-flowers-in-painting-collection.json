@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/09/Van-Gogh-obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/09/Van-Gogh-reverse-2.png"
+    "/image/coins/foreign/mennica-vincent-van-gogh-sunflowers-500-cfa-francs-flowers-in-painting-collection-obv.webp",
+    "/image/coins/foreign/mennica-vincent-van-gogh-sunflowers-500-cfa-francs-flowers-in-painting-collection-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:01:23.987Z"
+  "parsedAt": "2026-03-28T17:01:23.987Z",
+  "image_obverse": "/image/coins/foreign/mennica-vincent-van-gogh-sunflowers-500-cfa-francs-flowers-in-painting-collection-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-vincent-van-gogh-sunflowers-500-cfa-francs-flowers-in-painting-collection-rev.webp"
 }

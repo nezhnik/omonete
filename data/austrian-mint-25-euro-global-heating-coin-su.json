@@ -10,9 +10,8 @@
   },
   "price_display": "82.20 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/8/8/6/9386881-1-ger-DE/c92cb0769d58-2023_25E_Erderwaermung_VS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/7/8/6/9386873-1-ger-DE/fe1f67d42768-2023_25E_Erderwaermung_RS.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/9/7/1/9411795-1-ger-DE/13f1ff5f2f83-2023_Etui_25E-Erderwaermung.png.webp"
+    "/image/coins/foreign/austrian-mint-25-euro-global-heating-coin-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-25-euro-global-heating-coin-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-niobium-coins",
   "listing_label": "Collector coins — Silver Niobium",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 65000,
     "mintage_display": "65,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-25-euro-global-heating-coin-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-global-heating-coin-su-rev.webp"
 }

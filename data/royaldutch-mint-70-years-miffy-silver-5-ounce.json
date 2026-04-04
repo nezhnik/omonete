@@ -15,19 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/01.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/02.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/03.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/04.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/05.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/06.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/07.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/08.png",
-      "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/09.png"
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-obv.webp",
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-rev.webp",
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-box.webp",
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-pack.webp",
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-cert.webp",
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-img-06.webp",
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:07:01.619Z",
     "slug": "70-years-miffy-silver-5-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/70-years-miffy-silver-5-ounce/02.png"
+    "image_obverse": "/image/coins/foreign/70-years-miffy-silver-5-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/70-years-miffy-silver-5-ounce-rev.webp"
   }
 }

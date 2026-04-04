@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-09/front-buddha-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/back-buddha-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/rev_buddha.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/obv_buddha.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/front-buddha-sleeve.png",
-    "https://www.pamp.com/sites/pamp/files/2023-09/back-buddha-sleeve.png"
+    "/image/coins/foreign/laughing-buddha-good-luck-5g-pure-gold-bar-obv.webp",
+    "/image/coins/foreign/laughing-buddha-good-luck-5g-pure-gold-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:11:38.713Z"
+  "parsedAt": "2026-03-27T16:11:38.713Z",
+  "image_obverse": "/image/coins/foreign/laughing-buddha-good-luck-5g-pure-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/laughing-buddha-good-luck-5g-pure-gold-bar-rev.webp"
 }

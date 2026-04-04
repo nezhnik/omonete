@@ -19,11 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_front-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_back-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_reverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/50g-au_yellow-dragon_obverse-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-11/yellow_dragon_sleeve_.png"
+    "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-obv.webp",
+    "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:19:18.472Z",
   "classified_source_urls": {
@@ -37,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:47:34.636Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/good-luck-yellow-dragon-50g-gold-bar-rev.webp"
 }

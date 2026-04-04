@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-obv.webp",
+      "/image/coins/foreign/house-of-bridgerton-2026-2oz-silver-proof-gilded-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "House of Bridgerton 2026 2oz Silver Proof Gilded Coin",

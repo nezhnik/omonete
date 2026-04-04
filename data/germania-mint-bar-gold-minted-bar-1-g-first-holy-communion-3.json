@@ -16,17 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_a.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/gold-minted-bar-first-holy-communion-1-g_r.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-1-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-2-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-3-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-4-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-5-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-6-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-7-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-8-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/first-9-1920x1080.jpg"
+    "/image/coins/foreign/gold-minted-bar-1-g-first-holy-communion-3-obv.webp",
+    "/image/coins/foreign/gold-minted-bar-1-g-first-holy-communion-3-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:07:35.440Z"
+  "parsedAt": "2026-03-27T11:07:35.440Z",
+  "image_obverse": "/image/coins/foreign/gold-minted-bar-1-g-first-holy-communion-3-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-minted-bar-1-g-first-holy-communion-3-rev.webp"
 }

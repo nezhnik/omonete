@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/1g_platinum_reverse_vecchio_certipamp_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/1g-obverse-vecchio-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fortuna_platinum_reverse_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/1g_platinum_obv_2.png"
+    "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1g-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1g-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:22:08.049Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:53:35.129Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1g-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-platinum-minted-bar-1g-rev.webp"
 }

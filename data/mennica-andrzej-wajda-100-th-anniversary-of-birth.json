@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Andrzej-Wajda_100-rocznica-urodzin-rewers-WWW.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Andrzej-Wajda_100-rocznica-urodzin-awers-WWW.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Andrzej-Wajda_100-rocznica-urodzin-box-WWW.png"
+    "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-obv.webp",
+    "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:47.722Z"
+  "parsedAt": "2026-03-28T17:05:47.722Z",
+  "image_obverse": "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-andrzej-wajda-100-th-anniversary-of-birth-rev.webp"
 }

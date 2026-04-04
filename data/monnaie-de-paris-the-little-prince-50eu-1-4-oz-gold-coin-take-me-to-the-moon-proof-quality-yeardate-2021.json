@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/4/3/435c31205432a9317488a5b5cd3c24b7f290d9fa_M5066_MDP_00060826_BD_c7de.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/4/b/4b1d719a44d0c8416ea98a1cdfe26ba48724dbac_M5066_MDP_00060829_BD_97cf.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-take-me-to-the-moon-proof-quality-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-take-me-to-the-moon-proof-quality-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:06:26.684Z"
+  "parsedAt": "2026-03-29T18:06:26.684Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-take-me-to-the-moon-proof-quality-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-take-me-to-the-moon-proof-quality-yeardate-2021-rev.webp"
 }

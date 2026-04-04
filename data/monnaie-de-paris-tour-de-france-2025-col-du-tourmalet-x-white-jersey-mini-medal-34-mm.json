@@ -55,11 +55,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067657_BD_87db.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067660_BD_4041.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067670_BD_f0a0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-col-du-tourmalet-x-white-jersey-mini-medal-34-mm-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-col-du-tourmalet-x-white-jersey-mini-medal-34-mm-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:01:03.446Z"
+  "parsedAt": "2026-03-29T16:01:03.446Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-col-du-tourmalet-x-white-jersey-mini-medal-34-mm-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-tour-de-france-2025-col-du-tourmalet-x-white-jersey-mini-medal-34-mm-rev.webp"
 }

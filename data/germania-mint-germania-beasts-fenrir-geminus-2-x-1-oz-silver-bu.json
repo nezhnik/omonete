@@ -19,13 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_BA.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_AA.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir_geminus_2x1oz_silver_bu_BA.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-4.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-geminius-5.jpg"
+    "/image/coins/foreign/germania-beasts-fenrir-geminus-2-x-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/germania-beasts-fenrir-geminus-2-x-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:09.286Z"
+  "parsedAt": "2026-03-23T19:31:09.286Z",
+  "image_obverse": "/image/coins/foreign/germania-beasts-fenrir-geminus-2-x-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-beasts-fenrir-geminus-2-x-1-oz-silver-bu-rev.webp"
 }

@@ -15,13 +15,13 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/rev.jpeg"
+      "/image/coins/foreign/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:19:44.449Z",
     "slug": "official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2021-gold-1-ounce-royal-delft-edition-rev.webp",
     "image_packaging": null,
     "image_box": null
   }

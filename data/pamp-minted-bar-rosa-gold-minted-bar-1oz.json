@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-05/rosa_1oz_certipamp_reverse.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/rosa_1oz_certipamp_obverse.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/rosa_gold_reverse_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/rosa_au1oz_obverse.png"
+    "/image/coins/foreign/rosa-gold-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/rosa-gold-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:29:40.348Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:08:57.338Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/rosa-gold-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/rosa-gold-minted-bar-1oz-rev.webp"
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/electric-sky-2024-1oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/electric-sky-2024-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/electric-sky-2024-1oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/electric-sky-2024-1oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Electric Sky 2024 1oz Silver Proof Coloured Coin",

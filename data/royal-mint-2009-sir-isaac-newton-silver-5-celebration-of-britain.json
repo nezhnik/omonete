@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2009-sir-isaac-newton-silver-5-celebration-of-britain-obv.webp",
+      "/image/coins/foreign/2009-sir-isaac-newton-silver-5-celebration-of-britain-rev.webp"
+    ]
   },
   "raw": {
     "title": "2009 Sir Isaac Newton Silver £5 'Celebration Of Britain'",

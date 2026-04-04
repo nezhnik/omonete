@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/happy-birthday-2022-1oz-silver-proof-coin-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/happy-birthday-2022-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/happy-birthday-2022-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Happy Birthday 2022 1oz Silver Proof Coin",

@@ -28,12 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/06/spirit_animalswolf.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Spirit-Animals_Wolf_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Spirit-Animals_Wolf_box.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/Spirit-Animals_Wolf_box_2.png"
+    "/image/coins/foreign/mennica-spirit-animals-wolf-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-spirit-animals-wolf-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:31.208Z"
+  "parsedAt": "2026-03-28T17:06:31.208Z",
+  "image_obverse": "/image/coins/foreign/mennica-spirit-animals-wolf-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-spirit-animals-wolf-1-dollar-rev.webp"
 }

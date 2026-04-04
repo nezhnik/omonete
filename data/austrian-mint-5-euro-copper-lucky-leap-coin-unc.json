@@ -10,8 +10,8 @@
   },
   "price_display": "5.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/4/2/1/9491240-1-ger-DE/f11a2a03c173-2024_5E_Neujahrsmuenze_365_Tage_CU_NP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/2/2/1/9491228-1-ger-DE/8b0c3b8f86ae-2024_5E_Neujahrsmuenze_365_Tage_CU_NP_VS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-5-euro-copper-lucky-leap-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-5-euro-copper-lucky-leap-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 50000,
     "mintage_display": "50,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-5-euro-copper-lucky-leap-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-copper-lucky-leap-coin-unc-rev.webp"
 }

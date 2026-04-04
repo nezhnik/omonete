@@ -19,10 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag-front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-03/lady-fortuna-45th-anniversary_1oz-ag-front-obv.png"
+    "/image/coins/foreign/lady-fortunatm-45th-anniversary-1oz-silver-bar-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-45th-anniversary-1oz-silver-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:11:19.411Z"
+  "parsedAt": "2026-03-27T16:11:19.411Z",
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-45th-anniversary-1oz-silver-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-45th-anniversary-1oz-silver-bar-rev.webp"
 }

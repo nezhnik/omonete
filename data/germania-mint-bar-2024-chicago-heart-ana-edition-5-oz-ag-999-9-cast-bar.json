@@ -17,11 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/10/2024-Chicago-Heart-5-oz-Ag-999.9-cast-bar-900_rewers.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/10/2024-Chicago-Heart-5-oz-Ag-999.9-cast-bar-900_awers.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/2024-Chicago-Heart-5-oz-Ag-999.9-cast-bar-900_rewers.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/bar-americana-gallery-02.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/bar-americana-gallery-01.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/2024-Chicago-Heart-5-oz-Ag-999.9-cast-bar-pack-6-1.webp"
+    "/image/coins/foreign/2024-chicago-heart-ana-edition-5-oz-ag-999-9-cast-bar-obv.webp",
+    "/image/coins/foreign/2024-chicago-heart-ana-edition-5-oz-ag-999-9-cast-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:05:29.395Z"
+  "parsedAt": "2026-03-27T11:05:29.395Z",
+  "image_obverse": "/image/coins/foreign/2024-chicago-heart-ana-edition-5-oz-ag-999-9-cast-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/2024-chicago-heart-ana-edition-5-oz-ag-999-9-cast-bar-rev.webp"
 }

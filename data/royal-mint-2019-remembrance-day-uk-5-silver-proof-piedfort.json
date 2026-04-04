@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2019-remembrance-day-uk-5-silver-proof-piedfort-obv.webp",
+      "/image/coins/foreign/2019-remembrance-day-uk-5-silver-proof-piedfort-rev.webp"
+    ]
   },
   "raw": {
     "title": "2019 Remembrance Day UK £5 Silver Proof Piedfort",

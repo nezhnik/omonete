@@ -16,18 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/01.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/02.jpg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/03.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/04.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/05.png",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/06.jpg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/07.jpg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/08.jpg"
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-obv.webp",
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-rev.webp",
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-box.webp",
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-pack.webp",
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-cert.webp",
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-img-06.webp",
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:17:14.301Z",
     "slug": "malta-10-euro-2023-europride-malta-silver-prooflike-pl67",
-    "image_obverse": "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/malta-10-euro-2023-europride-malta-silver-prooflike-pl67/02.jpg"
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pl67-rev.webp"
   }
 }

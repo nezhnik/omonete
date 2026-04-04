@@ -15,17 +15,17 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/05.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/06.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/07.jpeg"
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-obv.webp",
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-rev.webp",
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-box.webp",
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-pack.webp",
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-cert.webp",
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-img-06.webp",
+      "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:33:45.694Z",
     "slug": "silver-ducat-kuinderburcht-bridge-2023",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-kuinderburcht-bridge-2023/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-kuinderburcht-bridge-2023-rev.webp"
   }
 }

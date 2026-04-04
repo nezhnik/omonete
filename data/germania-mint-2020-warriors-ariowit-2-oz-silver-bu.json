@@ -20,10 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/Warrior-Ariowit-2-oz-Ag-9999_rev.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/skoll-1-oz-black-silver-bu_a_900px-1-1.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/Warrior-Ariowit-2-oz-Ag-9999_rev.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/warriors-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/warriors-2-2-1.jpg"
+    "/image/coins/foreign/2020-warriors-ariowit-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2020-warriors-ariowit-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:37:13.524Z"
+  "parsedAt": "2026-03-23T19:37:13.524Z",
+  "image_obverse": "/image/coins/foreign/2020-warriors-ariowit-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2020-warriors-ariowit-2-oz-silver-bu-rev.webp"
 }

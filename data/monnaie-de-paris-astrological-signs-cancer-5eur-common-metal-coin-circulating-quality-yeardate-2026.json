@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068376_ORI2_9d35.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068377_ORI2_accb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068109_ORI2_a400.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068110_ORI2_6a0c.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-cancer-5eur-common-metal-coin-circulating-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-cancer-5eur-common-metal-coin-circulating-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:52:35.863Z"
+  "parsedAt": "2026-03-29T15:52:35.863Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-cancer-5eur-common-metal-coin-circulating-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-cancer-5eur-common-metal-coin-circulating-quality-yeardate-2026-rev.webp"
 }

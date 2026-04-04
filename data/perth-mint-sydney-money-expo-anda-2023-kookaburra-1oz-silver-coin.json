@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin-obv.webp",
+      "/image/coins/foreign/sydney-money-expo-anda-2023-kookaburra-1oz-silver-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Sydney Money Expo ANDA Special Australian Kookaburra 2023 1oz Silver Coin with Kookaburra Privy Mark",

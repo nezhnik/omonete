@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/brisbane-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coin-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/brisbane-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coin-obv.webp",
+      "/image/coins/foreign/brisbane-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Brisbane ANDA Coin Show Special - Australian Lunar Series II - 2012 Year of the Dragon 1oz Silver Coin",

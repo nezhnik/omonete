@@ -20,12 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/niue-island-2023-chameleon-2-oz-silver-hr_r_900-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/niue-island-2023-chameleon-2-oz-silver-hr_a_900-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/niue-island-2023-chameleon-2-oz-silver-hr_r_900-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_25_13.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_33_24.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_45_23.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_01_00_12.jpg"
+    "/image/coins/foreign/representatives-of-the-species-niue-island-2023-chameleon-2-oz-silver-hr-2-obv.webp",
+    "/image/coins/foreign/representatives-of-the-species-niue-island-2023-chameleon-2-oz-silver-hr-2-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:36:47.706Z"
+  "parsedAt": "2026-03-23T19:36:47.706Z",
+  "image_obverse": "/image/coins/foreign/representatives-of-the-species-niue-island-2023-chameleon-2-oz-silver-hr-2-obv.webp",
+  "image_reverse": "/image/coins/foreign/representatives-of-the-species-niue-island-2023-chameleon-2-oz-silver-hr-2-rev.webp"
 }

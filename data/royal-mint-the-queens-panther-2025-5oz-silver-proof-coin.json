@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/the-queens-panther-2025-5oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/the-queens-panther-2025-5oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-queens-panther-2025-5oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-queens-panther-2025-5oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/the-queens-panther-2025-5oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Royal Tudor Beasts The Queen’s Panther 2025 UK 5oz Silver Proof Coin",

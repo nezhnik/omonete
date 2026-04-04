@@ -14,19 +14,17 @@
       "Mintage": "3,411"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/01.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/02.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/03.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/04.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/05.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/06.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/07.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/08.jpeg",
-      "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/09.jpeg"
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-obv.webp",
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-rev.webp",
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-box.webp",
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-pack.webp",
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-cert.webp",
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-img-06.webp",
+      "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:31:09.922Z",
     "slug": "piet-mondriaan-5-euro-coin-first-day-issue",
-    "image_obverse": "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/piet-mondriaan-5-euro-coin-first-day-issue/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-obv.webp",
+    "image_reverse": "/image/coins/foreign/piet-mondriaan-5-euro-coin-first-day-issue-rev.webp"
   }
 }

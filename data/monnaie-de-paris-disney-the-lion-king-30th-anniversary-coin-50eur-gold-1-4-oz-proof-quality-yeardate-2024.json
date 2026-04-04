@@ -50,11 +50,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066837_ORI2_84bd.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/F/o/Fourreau_Roi_Lion_c238.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066838_ORI2_3c19.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-disney-the-lion-king-30th-anniversary-coin-50eur-gold-1-4-oz-proof-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-disney-the-lion-king-30th-anniversary-coin-50eur-gold-1-4-oz-proof-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:46:21.244Z"
+  "parsedAt": "2026-03-29T16:46:21.244Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-disney-the-lion-king-30th-anniversary-coin-50eur-gold-1-4-oz-proof-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-disney-the-lion-king-30th-anniversary-coin-50eur-gold-1-4-oz-proof-quality-yeardate-2024-rev.webp"
 }

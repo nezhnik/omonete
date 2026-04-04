@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-obv.webp",
+      "/image/coins/foreign/zodiac-signs-and-goddesses-2025-5oz-silver-antiqued-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Zodiac Signs and Goddesses 2025 5oz Silver Antiqued Coloured Coin",

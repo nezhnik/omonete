@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-07/liberty-bell_certipamp-rev2.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/liberty-bell_certipamp-obv2.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/liberty-bell_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/liberty-bell_front-obv.png"
+    "/image/coins/foreign/america-free-liberty-bell-gold-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/america-free-liberty-bell-gold-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:18:36.175Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:45:55.725Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/america-free-liberty-bell-gold-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/america-free-liberty-bell-gold-minted-bar-1oz-rev.webp"
 }

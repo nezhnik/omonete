@@ -17,11 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/10/gods-freyr-2oz-cast-bar-1200_r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/10/gods-freyr-2oz-cast-bar-1200_a.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/gods-freyr-2oz-cast-bar-1200_r.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fayer.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fayer.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fayer-2.png"
+    "/image/coins/foreign/gods-freyr-2-oz-ag-999-9-cast-bar-obv.webp",
+    "/image/coins/foreign/gods-freyr-2-oz-ag-999-9-cast-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:28.512Z"
+  "parsedAt": "2026-03-27T11:06:28.512Z",
+  "image_obverse": "/image/coins/foreign/gods-freyr-2-oz-ag-999-9-cast-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/gods-freyr-2-oz-ag-999-9-cast-bar-rev.webp"
 }

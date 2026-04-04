@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1911-1931-king-george-v-sovereign-typeset-collection-rev.webp",
     "image_box": "/image/coins/foreign/1911-1931-king-george-v-sovereign-typeset-collection-box.webp",
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1911-1931-king-george-v-sovereign-typeset-collection-obv.webp",
+      "/image/coins/foreign/1911-1931-king-george-v-sovereign-typeset-collection-rev.webp"
+    ]
   },
   "raw": {
     "title": "1911-1931 King George V Sovereign Typeset Collection",

@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/silver_castbar_9999_10oz_r-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/silver_castbar_9999_10oz_wiz-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/silver_castbar_9999_10oz_r-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_11_21.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_22_23.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_15_14.jpg"
+    "/image/coins/foreign/silver-cast-bar-10-oz-obv.webp",
+    "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:58.125Z"
+  "parsedAt": "2026-03-27T11:09:58.125Z",
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-10-oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-10-oz-rev.webp"
 }

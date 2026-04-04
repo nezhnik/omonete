@@ -17,10 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6166_etap-fizyczny_rewers_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6430_etap-fizyczny_awers_900px-2.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6166_etap-fizyczny_rewers_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-goddesses-freyja-2oz-e1768572292338.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/freyr_2oz_silver_cast_bar-2.jpg"
+    "/image/coins/foreign/goddesses-freyja-2-oz-ag-999-9-cast-bar-obv.webp",
+    "/image/coins/foreign/goddesses-freyja-2-oz-ag-999-9-cast-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:01.073Z"
+  "parsedAt": "2026-03-27T11:06:01.073Z",
+  "image_obverse": "/image/coins/foreign/goddesses-freyja-2-oz-ag-999-9-cast-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/goddesses-freyja-2-oz-ag-999-9-cast-bar-rev.webp"
 }

@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-box.webp",
     "image_certificate": "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-wedge-tailed-eagle-2018-1kg-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Wedge-tailed Eagle 2018 1kg Gold Proof Coin",

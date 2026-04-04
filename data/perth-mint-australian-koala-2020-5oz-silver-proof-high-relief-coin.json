@@ -26,7 +26,11 @@
     "image_obverse": "/image/coins/foreign/australian-koala-2020-5oz-silver-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-koala-2020-5oz-silver-proof-high-relief-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-koala-2020-5oz-silver-proof-high-relief-coin-obv.webp",
+      "/image/coins/foreign/australian-koala-2020-5oz-silver-proof-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Koala 2020 5oz Silver Proof High Relief Coin",

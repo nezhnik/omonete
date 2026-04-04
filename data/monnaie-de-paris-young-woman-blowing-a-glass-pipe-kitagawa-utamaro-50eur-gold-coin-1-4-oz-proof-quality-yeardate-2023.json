@@ -53,11 +53,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062458_BD_f59d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/f/o/fourreau_kitagawa_bd_4a8a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062459_BD_aaaf.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-young-woman-blowing-a-glass-pipe-kitagawa-utamaro-50eur-gold-coin-1-4-oz-proof-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-young-woman-blowing-a-glass-pipe-kitagawa-utamaro-50eur-gold-coin-1-4-oz-proof-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:36:33.242Z"
+  "parsedAt": "2026-03-29T17:36:33.242Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-young-woman-blowing-a-glass-pipe-kitagawa-utamaro-50eur-gold-coin-1-4-oz-proof-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-young-woman-blowing-a-glass-pipe-kitagawa-utamaro-50eur-gold-coin-1-4-oz-proof-quality-yeardate-2023-rev.webp"
 }

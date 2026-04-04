@@ -22,10 +22,13 @@
     "catalog_suffix": "25x41aaa",
     "price_display": "AUD 220.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/coins/quokka-2021-1oz-silver-proof-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/quokka-2021-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Quokka 2021 1oz Silver Proof Coin",

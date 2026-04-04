@@ -9,15 +9,15 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/05.jpg"
+      "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-box.webp",
+      "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-pack.webp",
+      "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-cert.webp"
     ],
     "parsedAt": "2026-04-04T15:40:17.283Z",
     "slug": "scottsdale-reserve-cast-kilo-silver-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-reserve-cast-kilo-silver-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-reserve-cast-kilo-silver-bar-rev.webp"
   }
 }

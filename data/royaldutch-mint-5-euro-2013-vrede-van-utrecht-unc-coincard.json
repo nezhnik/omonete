@@ -15,14 +15,14 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/04.jpeg"
+      "/image/coins/foreign/5-euro-2013-vrede-van-utrecht-unc-coincard-obv.webp",
+      "/image/coins/foreign/5-euro-2013-vrede-van-utrecht-unc-coincard-rev.webp",
+      "/image/coins/foreign/5-euro-2013-vrede-van-utrecht-unc-coincard-box.webp",
+      "/image/coins/foreign/5-euro-2013-vrede-van-utrecht-unc-coincard-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:04:27.247Z",
     "slug": "5-euro-2013-vrede-van-utrecht-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2013-vrede-van-utrecht-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2013-vrede-van-utrecht-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2013-vrede-van-utrecht-unc-coincard-rev.webp"
   }
 }

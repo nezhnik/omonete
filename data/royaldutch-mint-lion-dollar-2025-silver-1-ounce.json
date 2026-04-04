@@ -15,19 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/01.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/02.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/03.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/04.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/05.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/06.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/07.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/08.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/09.png"
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-obv.webp",
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-rev.webp",
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-box.webp",
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-pack.webp",
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-cert.webp",
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-img-06.webp",
+      "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:15:46.978Z",
     "slug": "lion-dollar-2025-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/lion-dollar-2025-silver-1-ounce/02.png"
+    "image_obverse": "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/lion-dollar-2025-silver-1-ounce-rev.webp"
   }
 }

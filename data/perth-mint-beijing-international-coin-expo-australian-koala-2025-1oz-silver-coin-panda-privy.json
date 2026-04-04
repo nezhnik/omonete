@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-obv.webp",
     "image_reverse": "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-obv.webp",
+      "/image/coins/foreign/beijing-international-coin-expo-australian-koala-2025-1oz-silver-coin-panda-privy-rev.webp"
+    ]
   },
   "raw": {
     "title": "Beijing International Coin Expo Special Australian Koala 2025 1oz Silver Coin with Panda Privy",

@@ -68,12 +68,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067328_BD_984f.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/R/E/REMBRANDT_50_______OR_1_4oz_Rever_cccd.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/R/E/REMBRANDT_50_______OR_1_4oz_Face_e792.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067329_BD_6d9e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-marten-soolmans-and-oopjen-coppit-rembrandt-50eur-oz-gold-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-marten-soolmans-and-oopjen-coppit-rembrandt-50eur-oz-gold-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:35:55.847Z"
+  "parsedAt": "2026-03-29T16:35:55.847Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-and-oopjen-coppit-rembrandt-50eur-oz-gold-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-marten-soolmans-and-oopjen-coppit-rembrandt-50eur-oz-gold-coin-proof-quality-yeardate-2025-rev.webp"
 }

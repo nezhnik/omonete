@@ -14,16 +14,16 @@
       "Mintage": "max. 500"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/06.jpeg"
+      "/image/coins/foreign/mr-owl-medal-2018-silver-proof-obv.webp",
+      "/image/coins/foreign/mr-owl-medal-2018-silver-proof-rev.webp",
+      "/image/coins/foreign/mr-owl-medal-2018-silver-proof-box.webp",
+      "/image/coins/foreign/mr-owl-medal-2018-silver-proof-pack.webp",
+      "/image/coins/foreign/mr-owl-medal-2018-silver-proof-cert.webp",
+      "/image/coins/foreign/mr-owl-medal-2018-silver-proof-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:18:36.314Z",
     "slug": "mr-owl-medal-2018-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/mr-owl-medal-2018-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/mr-owl-medal-2018-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/mr-owl-medal-2018-silver-proof-rev.webp"
   }
 }

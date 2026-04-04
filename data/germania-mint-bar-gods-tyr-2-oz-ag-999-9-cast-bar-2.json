@@ -18,11 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/HIM-7341_Etap-fizyczny_Germania-Mint-Gods_Freyr_rewers_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-7138_Etap-fizyczny_Germania-Mint-Gods_Ty_900px-1.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/HIM-7341_Etap-fizyczny_Germania-Mint-Gods_Freyr_rewers_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/tyr_2oz_silver_cast_bar-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/freyr_2oz_silver_cast_bar-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/tyr_2oz_silver_cast_bar.jpg"
+    "/image/coins/foreign/gods-tyr-2-oz-ag-999-9-cast-bar-2-obv.webp",
+    "/image/coins/foreign/gods-tyr-2-oz-ag-999-9-cast-bar-2-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:36.217Z"
+  "parsedAt": "2026-03-27T11:06:36.217Z",
+  "image_obverse": "/image/coins/foreign/gods-tyr-2-oz-ag-999-9-cast-bar-2-obv.webp",
+  "image_reverse": "/image/coins/foreign/gods-tyr-2-oz-ag-999-9-cast-bar-2-rev.webp"
 }

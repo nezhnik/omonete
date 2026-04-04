@@ -30,10 +30,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/10/ZBeksinski_rewers_postac_01a-WYPRZEDANE-v2.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/02/ZBeksinski_Postac_awers.png"
+    "/image/coins/foreign/mennica-figure-zdzislaw-beksinski-obv.webp",
+    "/image/coins/foreign/mennica-figure-zdzislaw-beksinski-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:04:56.061Z"
+  "parsedAt": "2026-03-28T17:04:56.061Z",
+  "image_obverse": "/image/coins/foreign/mennica-figure-zdzislaw-beksinski-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-figure-zdzislaw-beksinski-rev.webp"
 }

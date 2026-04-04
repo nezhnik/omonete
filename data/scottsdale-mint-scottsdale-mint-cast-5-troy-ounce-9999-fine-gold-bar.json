@@ -9,12 +9,12 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar/02.jpg"
+      "/image/coins/foreign/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar-rev.webp"
     ],
     "parsedAt": "2026-04-04T15:37:33.615Z",
     "slug": "scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-mint-cast-5-troy-ounce-9999-fine-gold-bar-rev.webp"
   }
 }

@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1916-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "image_box": "/image/coins/foreign/1916-king-george-v-perth-mint-gold-sovereign-box.webp",
     "image_certificate": "/image/coins/foreign/1916-king-george-v-perth-mint-gold-sovereign-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1916-king-george-v-perth-mint-gold-sovereign-obv.webp",
+      "/image/coins/foreign/1916-king-george-v-perth-mint-gold-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "1916 King George V Perth Mint Gold Sovereign",

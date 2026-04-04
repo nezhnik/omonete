@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/germania-mint_1-100-oz-au_r_pack-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/germania-mint_1-100-oz-au_a_pack-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/germania-mint_1-100-oz-au_r_pack-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_23_15.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_45_02.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_40_04.jpg"
+    "/image/coins/foreign/germania-mint-1-100-oz-au-999-9-minted-bar-obv.webp",
+    "/image/coins/foreign/germania-mint-1-100-oz-au-999-9-minted-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:51.617Z"
+  "parsedAt": "2026-03-27T11:06:51.617Z",
+  "image_obverse": "/image/coins/foreign/germania-mint-1-100-oz-au-999-9-minted-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-mint-1-100-oz-au-999-9-minted-bar-rev.webp"
 }

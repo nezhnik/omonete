@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/1994-elizabeth-ii-proof-double-sovereign-gold-coin-obv.webp",
+      "/image/coins/foreign/1994-elizabeth-ii-proof-double-sovereign-gold-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "1994 Elizabeth II Proof Double Sovereign Gold Coin",

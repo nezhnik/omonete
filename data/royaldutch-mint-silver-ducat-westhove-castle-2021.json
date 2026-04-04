@@ -15,18 +15,17 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/05.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/06.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/07.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/08.jpeg"
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-obv.webp",
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-rev.webp",
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-box.webp",
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-pack.webp",
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-cert.webp",
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-img-06.webp",
+      "/image/coins/foreign/silver-ducat-westhove-castle-2021-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:35:18.318Z",
     "slug": "silver-ducat-westhove-castle-2021",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-westhove-castle-2021/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-westhove-castle-2021-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-westhove-castle-2021-rev.webp"
   }
 }

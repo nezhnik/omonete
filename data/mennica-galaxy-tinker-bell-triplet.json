@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/05/Tinker_Bell_Triplet_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/05/Tinker_Bell_Triplet_reverse-1.png"
+    "/image/coins/foreign/mennica-galaxy-tinker-bell-triplet-obv.webp",
+    "/image/coins/foreign/mennica-galaxy-tinker-bell-triplet-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:08:14.536Z"
+  "parsedAt": "2026-03-28T17:08:14.536Z",
+  "image_obverse": "/image/coins/foreign/mennica-galaxy-tinker-bell-triplet-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-galaxy-tinker-bell-triplet-rev.webp"
 }

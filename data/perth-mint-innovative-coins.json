@@ -22,10 +22,13 @@
     "catalog_suffix": "26w20aaa",
     "price_display": "AUD 335.00",
     "source_url": "https://www.perthmint.com/shop/collector-coins/innovative-coins",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/innovative-coins-rev.webp",
     "image_reverse": "/image/coins/foreign/innovative-coins-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/innovative-coins-rev.webp"
+    ]
   },
   "raw": {
     "title": "Innovative Coins",

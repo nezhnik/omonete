@@ -20,14 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-06/bass_rev_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/bass_obv_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/amp_rev_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/amp_obv_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/dynamic-duos-packaging_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/dynamic-duos-packaging_perspective_1.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/bassamp_rev-capsule.png",
-    "https://www.pamp.com/sites/pamp/files/2023-06/bassamp_obv-capsule.png"
+    "/image/coins/foreign/fenderr-2x1oz-dynamic-duo-coin-set-precision-bassr-guitar-bassmanr-amp-obv.webp",
+    "/image/coins/foreign/fenderr-2x1oz-dynamic-duo-coin-set-precision-bassr-guitar-bassmanr-amp-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:42.205Z"
+  "parsedAt": "2026-03-27T16:07:42.205Z",
+  "image_obverse": "/image/coins/foreign/fenderr-2x1oz-dynamic-duo-coin-set-precision-bassr-guitar-bassmanr-amp-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-2x1oz-dynamic-duo-coin-set-precision-bassr-guitar-bassmanr-amp-rev.webp"
 }

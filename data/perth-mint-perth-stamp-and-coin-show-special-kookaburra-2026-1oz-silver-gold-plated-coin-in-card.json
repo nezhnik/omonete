@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card-obv.webp",
+      "/image/coins/foreign/perth-stamp-and-coin-show-special-kookaburra-2026-1oz-silver-gold-plated-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Perth Stamp and Coin Show Special Kookaburra 2026 1oz Silver Gold-Plated Coin in Card",

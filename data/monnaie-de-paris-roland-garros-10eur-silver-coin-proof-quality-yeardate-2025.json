@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067702_BD_66a5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/O/COMPO_ROLAND_GARROS_FourreauCertificat_c530.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067700_BD_5dfa.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-roland-garros-10eur-silver-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-roland-garros-10eur-silver-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:14:45.698Z"
+  "parsedAt": "2026-03-29T16:14:45.698Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-roland-garros-10eur-silver-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-roland-garros-10eur-silver-coin-proof-quality-yeardate-2025-rev.webp"
 }

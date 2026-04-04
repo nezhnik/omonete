@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_rev_perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_pack_closed_front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/hotwheels_24_seven_pack_closed_back.png"
+    "/image/coins/foreign/hot-wheelstm-24seventm-1oz-shaped-coin-obv.webp",
+    "/image/coins/foreign/hot-wheelstm-24seventm-1oz-shaped-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:09:59.258Z"
+  "parsedAt": "2026-03-27T16:09:59.258Z",
+  "image_obverse": "/image/coins/foreign/hot-wheelstm-24seventm-1oz-shaped-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/hot-wheelstm-24seventm-1oz-shaped-coin-rev.webp"
 }

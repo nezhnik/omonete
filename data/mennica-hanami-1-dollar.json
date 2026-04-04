@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Hanami_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/03/Hanami_reverse.png"
+    "/image/coins/foreign/mennica-hanami-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-hanami-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:04:31.677Z"
+  "parsedAt": "2026-03-28T17:04:31.677Z",
+  "image_obverse": "/image/coins/foreign/mennica-hanami-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-hanami-1-dollar-rev.webp"
 }

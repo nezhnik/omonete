@@ -15,18 +15,18 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/pack.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/box.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/cert.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/blister-rev.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:25:09.207Z",
     "slug": "official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition/box.jpeg"
   }

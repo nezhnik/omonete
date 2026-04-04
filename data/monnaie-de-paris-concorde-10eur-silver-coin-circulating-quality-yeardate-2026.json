@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069341_BD_0783.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069342_BD_5c46.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069415_BD_5e50.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069417_BD_7f16.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-concorde-10eur-silver-coin-circulating-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-concorde-10eur-silver-coin-circulating-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:09:20.568Z"
+  "parsedAt": "2026-03-29T15:09:20.568Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-concorde-10eur-silver-coin-circulating-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-concorde-10eur-silver-coin-circulating-quality-yeardate-2026-rev.webp"
 }

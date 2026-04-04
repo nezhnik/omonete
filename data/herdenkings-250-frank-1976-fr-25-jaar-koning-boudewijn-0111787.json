@@ -12,14 +12,14 @@
       "Diamètre": "37,0 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/01.jpeg",
-      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/02.jpeg",
-      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/03.jpeg",
-      "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/04.jpeg"
+      "/image/coins/foreign/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787-obv.webp",
+      "/image/coins/foreign/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787-rev.webp",
+      "/image/coins/foreign/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787-box.webp",
+      "/image/coins/foreign/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:47:05.979Z",
     "slug": "250-frank-1976-fr-25-jaar-koning-boudewijn-0111787",
-    "image_obverse": "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787/02.jpeg"
+    "image_obverse": "/image/coins/foreign/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787-obv.webp",
+    "image_reverse": "/image/coins/foreign/250-frank-1976-fr-25-jaar-koning-boudewijn-0111787-rev.webp"
   }
 }

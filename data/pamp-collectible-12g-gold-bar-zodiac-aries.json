@@ -20,10 +20,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_aries-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse-certipamp_4.png",
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_aries.png",
-    "https://www.pamp.com/sites/pamp/files/2026-01/zodiac_obverse_4.png"
+    "/image/coins/foreign/12g-gold-bar-zodiac-aries-obv.webp",
+    "/image/coins/foreign/12g-gold-bar-zodiac-aries-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:09:12.628Z",
   "classified_source_urls": {
@@ -37,5 +35,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:09:12.630Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/12g-gold-bar-zodiac-aries-obv.webp",
+  "image_reverse": "/image/coins/foreign/12g-gold-bar-zodiac-aries-rev.webp"
 }

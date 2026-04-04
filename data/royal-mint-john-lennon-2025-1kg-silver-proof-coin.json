@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/john-lennon-2025-1kg-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "John Lennon 2025 UK 1KG Silver Proof Coin",

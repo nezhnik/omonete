@@ -51,11 +51,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041403890000_26_CHRISTIE_10_AG_BE_MORT_NIL_face_ORI2_8ec0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069340_ORI2_f791.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069745_ORI2_9a2a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-death-on-the-nile-10eur-silver-coin-proof-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-death-on-the-nile-10eur-silver-coin-proof-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T14:55:49.954Z"
+  "parsedAt": "2026-03-29T14:55:49.954Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-death-on-the-nile-10eur-silver-coin-proof-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-death-on-the-nile-10eur-silver-coin-proof-quality-yeardate-2026-rev.webp"
 }

@@ -14,14 +14,14 @@
       "Mintage": "max. 400"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition/04.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:24:43.271Z",
     "slug": "official-restrike-lion-dollar-2019-silver-proof-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-silver-proof-piedfort-edition-rev.webp"
   }
 }

@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/1oz_reverse_vecchio_certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/1oz_obverse_vecchio_certipamp_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/palladium_reverse_ingots_2019_10z_5oz_250g.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/palladium_obv_1_ounce.png"
+    "/image/coins/foreign/lady-fortunatm-palladium-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/lady-fortunatm-palladium-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:21:55.914Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:53:13.133Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-palladium-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-palladium-minted-bar-1oz-rev.webp"
 }

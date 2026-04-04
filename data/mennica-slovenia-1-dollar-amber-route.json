@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Amber_Route_Slovenia_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Amber_Route-Slovenia_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/01/Amber_Route_Slovenia_box.png"
+    "/image/coins/foreign/mennica-slovenia-1-dollar-amber-route-obv.webp",
+    "/image/coins/foreign/mennica-slovenia-1-dollar-amber-route-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:06:44.704Z"
+  "parsedAt": "2026-03-28T17:06:44.704Z",
+  "image_obverse": "/image/coins/foreign/mennica-slovenia-1-dollar-amber-route-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-slovenia-1-dollar-amber-route-rev.webp"
 }

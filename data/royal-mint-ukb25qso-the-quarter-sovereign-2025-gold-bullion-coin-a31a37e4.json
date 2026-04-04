@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/ukb25qso-the-quarter-sovereign-2025-gold-bullion-coin-a31a37e4-obv.webp",
+      "/image/coins/foreign/ukb25qso-the-quarter-sovereign-2025-gold-bullion-coin-a31a37e4-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Quarter-Sovereign 2025 Gold Bullion Coin",

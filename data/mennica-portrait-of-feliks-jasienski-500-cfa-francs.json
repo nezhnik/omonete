@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/10/Portrait_of_Jozef_Pilsudski_obverse.jpg",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/10/Portrait_of_Feliks_Jasienski_reverse.png"
+    "/image/coins/foreign/mennica-portrait-of-feliks-jasienski-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-portrait-of-feliks-jasienski-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:09:06.743Z"
+  "parsedAt": "2026-03-28T17:09:06.743Z",
+  "image_obverse": "/image/coins/foreign/mennica-portrait-of-feliks-jasienski-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-portrait-of-feliks-jasienski-500-cfa-francs-rev.webp"
 }

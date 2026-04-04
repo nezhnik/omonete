@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/2022-sydney-show-special-tiger-1-4oz-99-99-ag-col-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/2022-sydney-show-special-tiger-1-4oz-99-99-ag-col-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2022-sydney-show-special-tiger-1-4oz-99-99-ag-col-coin-obv.webp",
+      "/image/coins/foreign/2022-sydney-show-special-tiger-1-4oz-99-99-ag-col-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "2022 Sydney Show Special Tiger 1/4 oz Silver Coloured Coin",

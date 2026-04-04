@@ -9,13 +9,13 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/04.jpg"
+      "/image/coins/foreign/scottsdale-white-maned-lion-100-oz-silver-cast-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-white-maned-lion-100-oz-silver-cast-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-white-maned-lion-100-oz-silver-cast-bar-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:44:03.472Z",
     "slug": "scottsdale-white-maned-lion-100-oz-silver-cast-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-white-maned-lion-100-oz-silver-cast-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-white-maned-lion-100-oz-silver-cast-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-white-maned-lion-100-oz-silver-cast-bar-rev.webp"
   }
 }

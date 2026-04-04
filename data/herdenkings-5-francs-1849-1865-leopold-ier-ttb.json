@@ -13,14 +13,14 @@
       "Qualité": "Très très beau"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/01.jpeg",
-      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/02.jpeg",
-      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/03.jpeg",
-      "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/04.jpeg"
+      "/image/coins/foreign/5-francs-1849-1865-leopold-ier-ttb-obv.webp",
+      "/image/coins/foreign/5-francs-1849-1865-leopold-ier-ttb-rev.webp",
+      "/image/coins/foreign/5-francs-1849-1865-leopold-ier-ttb-box.webp",
+      "/image/coins/foreign/5-francs-1849-1865-leopold-ier-ttb-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:47:13.726Z",
     "slug": "5-francs-1849-1865-leopold-ier-ttb",
-    "image_obverse": "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/5-francs-1849-1865-leopold-ier-ttb/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-francs-1849-1865-leopold-ier-ttb-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-francs-1849-1865-leopold-ier-ttb-rev.webp"
   }
 }

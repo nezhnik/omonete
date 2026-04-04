@@ -16,18 +16,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/01.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/02.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/03.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/04.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/05.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/06.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/07.jpeg",
-      "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/08.jpeg"
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-obv.webp",
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-rev.webp",
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-box.webp",
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pack.webp",
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-cert.webp",
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-img-06.webp",
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:16:37.093Z",
     "slug": "malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike/02.jpeg"
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-rev.webp"
   }
 }

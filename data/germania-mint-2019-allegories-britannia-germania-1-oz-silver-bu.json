@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_R_pop2.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_A_pop2.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/1oz_Germania__Britannia_2019_R_pop2.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/a19-b-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/a19-b-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/a19-b-3.jpg"
+    "/image/coins/foreign/2019-allegories-britannia-germania-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2019-allegories-britannia-germania-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:29:26.839Z"
+  "parsedAt": "2026-03-23T19:29:26.839Z",
+  "image_obverse": "/image/coins/foreign/2019-allegories-britannia-germania-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2019-allegories-britannia-germania-1-oz-silver-bu-rev.webp"
 }

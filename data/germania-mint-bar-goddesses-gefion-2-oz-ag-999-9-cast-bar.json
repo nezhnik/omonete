@@ -17,11 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6166_etap-fizyczny_rewers_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6149_Germania-Mint-Goddesses-Gefion_900.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-6166_etap-fizyczny_rewers_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2024/06/MRK-1099-castbar_gefion_2oz.jpg",
-    "https://germaniamint.com/wp-content/uploads/2024/06/MRK-1099-castbar_gefion_2oz-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/freyr_2oz_silver_cast_bar-2.jpg"
+    "/image/coins/foreign/goddesses-gefion-2-oz-ag-999-9-cast-bar-obv.webp",
+    "/image/coins/foreign/goddesses-gefion-2-oz-ag-999-9-cast-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:08.818Z"
+  "parsedAt": "2026-03-27T11:06:08.818Z",
+  "image_obverse": "/image/coins/foreign/goddesses-gefion-2-oz-ag-999-9-cast-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/goddesses-gefion-2-oz-ag-999-9-cast-bar-rev.webp"
 }

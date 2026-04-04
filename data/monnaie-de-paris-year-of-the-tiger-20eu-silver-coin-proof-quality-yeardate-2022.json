@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/a/c/ac5ce0d2a89c60c8a152a79b6e05bd28c106f9a5_Face_20____Argent_Tigre_731a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/6/06162db94b4e8b6797484e5c11e190b25df9a92f_Revers_20____Argent_Tigre_7bcb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-20eu-silver-coin-proof-quality-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-20eu-silver-coin-proof-quality-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:52:23.178Z"
+  "parsedAt": "2026-03-29T17:52:23.178Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-20eu-silver-coin-proof-quality-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-tiger-20eu-silver-coin-proof-quality-yeardate-2022-rev.webp"
 }

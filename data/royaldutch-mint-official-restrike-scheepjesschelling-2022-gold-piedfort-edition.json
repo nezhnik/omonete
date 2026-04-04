@@ -15,19 +15,18 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/rev.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/pack.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/box.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/cert.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/blister-rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/extra-8.png"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-box.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:28:51.177Z",
     "slug": "official-restrike-scheepjesschelling-2022-gold-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/rev.png",
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2022-gold-piedfort-edition-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2022-gold-piedfort-edition/box.jpeg"
   }

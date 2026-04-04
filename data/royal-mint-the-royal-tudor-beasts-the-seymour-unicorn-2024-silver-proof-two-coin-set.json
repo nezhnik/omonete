@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set-obv.webp",
+      "/image/coins/foreign/the-royal-tudor-beasts-the-seymour-unicorn-2024-silver-proof-two-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Royal Tudor Beasts The Seymour Unicorn 2024 UK Silver Proof Two-Coin Set",

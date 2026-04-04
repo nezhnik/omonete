@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-obv.webp",
+      "/image/coins/foreign/mini-roo-2023-0-5g-gold-proof-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Mini Roo 2023 0.5g Gold Proof Coin in Card",

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/deadly-and-dangerous-australias-tiger-shark-2023-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Deadly and Dangerous Australia’s Tiger Shark 2023 1oz Silver Proof Coloured Coin",

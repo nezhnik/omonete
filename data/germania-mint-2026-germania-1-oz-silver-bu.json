@@ -19,13 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/germania-1-26.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/HIM-11829_etap-fizyczny_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-1-26.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_26_11.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_37_07.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_15_03.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_21_00.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_01_00_10.jpg"
+    "/image/coins/foreign/2026-germania-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2026-germania-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:32:55.472Z"
+  "parsedAt": "2026-03-23T19:32:55.472Z",
+  "image_obverse": "/image/coins/foreign/2026-germania-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-germania-1-oz-silver-bu-rev.webp"
 }

@@ -9,13 +9,13 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/03.jpg"
+      "/image/coins/foreign/scottsdale-cast-100-oz-silver-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-cast-100-oz-silver-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-cast-100-oz-silver-bar-box.webp"
     ],
     "parsedAt": "2026-04-04T15:29:45.996Z",
     "slug": "scottsdale-cast-100-oz-silver-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-cast-100-oz-silver-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-cast-100-oz-silver-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-cast-100-oz-silver-bar-rev.webp"
   }
 }

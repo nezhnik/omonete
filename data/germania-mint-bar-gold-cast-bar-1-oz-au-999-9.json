@@ -17,11 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_r-1.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_a-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_r-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/cast-bar.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/cast-bar-2.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/cast-bar-3.png"
+    "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-obv.webp",
+    "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:08:06.893Z"
+  "parsedAt": "2026-03-27T11:08:06.893Z",
+  "image_obverse": "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-rev.webp"
 }

@@ -15,16 +15,16 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/04.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/05.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/06.jpeg"
+      "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-obv.webp",
+      "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-rev.webp",
+      "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-box.webp",
+      "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-pack.webp",
+      "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-cert.webp",
+      "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:04:47.786Z",
     "slug": "5-euro-2014-dnb-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2014-dnb-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2014-dnb-unc-coincard-rev.webp"
   }
 }

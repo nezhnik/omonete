@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2025-baby-silver-penny-obv.webp",
+      "/image/coins/foreign/2025-baby-silver-penny-rev.webp"
+    ]
   },
   "raw": {
     "title": "2025 Baby Silver Penny",

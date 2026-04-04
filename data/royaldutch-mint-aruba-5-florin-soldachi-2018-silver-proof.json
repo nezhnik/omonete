@@ -15,16 +15,16 @@
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/01.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/04.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/06.jpeg"
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-obv.webp",
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-rev.webp",
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-box.webp",
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-pack.webp",
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-cert.webp",
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:09:42.141Z",
     "slug": "aruba-5-florin-soldachi-2018-silver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-soldachi-2018-silver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-rev.webp"
   }
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/tottenham-hotspur-europa-league-winners-2025-1oz-silver-coloured-bar-obv.webp",
     "image_reverse": "/image/coins/foreign/tottenham-hotspur-europa-league-winners-2025-1oz-silver-coloured-bar-rev.webp",
     "image_box": "/image/coins/foreign/tottenham-hotspur-europa-league-winners-2025-1oz-silver-coloured-bar-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/tottenham-hotspur-europa-league-winners-2025-1oz-silver-coloured-bar-obv.webp",
+      "/image/coins/foreign/tottenham-hotspur-europa-league-winners-2025-1oz-silver-coloured-bar-rev.webp"
+    ]
   },
   "raw": {
     "title": "Tottenham Hotspur Europa League Winners 2025 1oz Silver Coloured Bar",

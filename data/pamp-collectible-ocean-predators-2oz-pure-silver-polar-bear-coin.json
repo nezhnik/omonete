@@ -20,11 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_7.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_6.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_9.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/polarbear_zagfc00876_3.png"
+    "/image/coins/foreign/ocean-predators-2oz-pure-silver-polar-bear-coin-obv.webp",
+    "/image/coins/foreign/ocean-predators-2oz-pure-silver-polar-bear-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:13:23.596Z"
+  "parsedAt": "2026-03-27T16:13:23.596Z",
+  "image_obverse": "/image/coins/foreign/ocean-predators-2oz-pure-silver-polar-bear-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/ocean-predators-2oz-pure-silver-polar-bear-coin-rev.webp"
 }

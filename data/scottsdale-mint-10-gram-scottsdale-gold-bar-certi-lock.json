@@ -9,15 +9,15 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/01.jpg",
-      "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/02.jpg",
-      "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/03.jpg",
-      "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/04.jpg",
-      "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/05.jpg"
+      "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-obv.webp",
+      "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-rev.webp",
+      "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-box.webp",
+      "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-pack.webp",
+      "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-cert.webp"
     ],
     "parsedAt": "2026-04-04T15:20:07.114Z",
     "slug": "10-gram-scottsdale-gold-bar-certi-lock",
-    "image_obverse": "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/10-gram-scottsdale-gold-bar-certi-lock/02.jpg"
+    "image_obverse": "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-obv.webp",
+    "image_reverse": "/image/coins/foreign/10-gram-scottsdale-gold-bar-certi-lock-rev.webp"
   }
 }

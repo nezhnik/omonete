@@ -19,12 +19,9 @@
     "certificate": "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_box-open_with-certipamp.png"
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_ingotframe_composition.png",
-    "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_box-closed.png",
-    "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_box-open_with-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_box-open_no-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_certipamp-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-01/fortuna-with-bezel-frame_certipamp-obv.png"
+    "/image/coins/foreign/lady-fortunatm-10g-fine-gold-bar-pendant-frame-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:10:57.331Z"
+  "parsedAt": "2026-03-27T16:10:57.331Z",
+  "image_obverse": "/image/coins/foreign/lady-fortunatm-10g-fine-gold-bar-pendant-frame-rev.webp",
+  "image_reverse": "/image/coins/foreign/lady-fortunatm-10g-fine-gold-bar-pendant-frame-rev.webp"
 }

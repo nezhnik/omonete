@@ -15,17 +15,17 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/01.png",
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/02.png",
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/03.png",
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/04.png",
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/05.png",
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/06.jpeg",
-      "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/07.png"
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-obv.webp",
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-rev.webp",
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-box.webp",
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-pack.webp",
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-cert.webp",
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-img-06.webp",
+      "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:46:02.426Z",
     "slug": "20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent",
-    "image_obverse": "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/01.png",
-    "image_reverse": "/image/coins/foreign/herdenkings/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent/02.png"
+    "image_obverse": "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-obv.webp",
+    "image_reverse": "/image/coins/foreign/20-euros-bruges-centre-ville-historique-20-ans-de-patrimoine-mondial-belle-epreuve-en-argent-rev.webp"
   }
 }

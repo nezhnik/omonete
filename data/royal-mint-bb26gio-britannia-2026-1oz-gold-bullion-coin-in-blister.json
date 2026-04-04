@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/bb26gio-britannia-2026-1oz-gold-bullion-coin-in-blister-obv.webp",
+      "/image/coins/foreign/bb26gio-britannia-2026-1oz-gold-bullion-coin-in-blister-rev.webp"
+    ]
   },
   "raw": {
     "title": "Britannia 2026 1oz Gold Bullion Coin in Blister",

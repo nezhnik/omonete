@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-waterloo-medal-allied-leaders-2024-uk-2oz-silver-proof-coin-matt-obv.webp",
+      "/image/coins/foreign/the-waterloo-medal-allied-leaders-2024-uk-2oz-silver-proof-coin-matt-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Waterloo Medal Allied Leaders 2024 UK 2oz Silver Proof Matt Coin",

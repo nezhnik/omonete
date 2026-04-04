@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-rev.webp",
     "image_box": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-obv.webp",
+      "/image/coins/foreign/brisbane-money-expo-anda-special-australian-koala-2021-1oz-silver-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Brisbane Money Expo ANDA Special - Australian Koala 2021 1oz Silver Coin",

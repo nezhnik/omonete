@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Proof_2019-Rm.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Proof_2019-Am.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/1oz_Oak_Leaf-Proof_2019-Rm.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/oak-proof-s-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/oak-proof-s-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/oak-proof-s-3.jpg"
+    "/image/coins/foreign/2019-mythical-forest-oak-leaf-1-oz-silver-proof-obv.webp",
+    "/image/coins/foreign/2019-mythical-forest-oak-leaf-1-oz-silver-proof-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:07:59.995Z"
+  "parsedAt": "2026-03-24T10:07:59.995Z",
+  "image_obverse": "/image/coins/foreign/2019-mythical-forest-oak-leaf-1-oz-silver-proof-obv.webp",
+  "image_reverse": "/image/coins/foreign/2019-mythical-forest-oak-leaf-1-oz-silver-proof-rev.webp"
 }

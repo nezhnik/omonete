@@ -13,14 +13,14 @@
       "Qualité": "Très très beau"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/5-francs-1865-1876-leopold-ii-ttb/01.jpeg",
-      "/image/coins/foreign/herdenkings/5-francs-1865-1876-leopold-ii-ttb/02.jpeg",
-      "/image/coins/foreign/herdenkings/5-francs-1865-1876-leopold-ii-ttb/03.jpeg",
-      "/image/coins/foreign/herdenkings/5-francs-1865-1876-leopold-ii-ttb/04.jpeg"
+      "/image/coins/foreign/5-francs-1865-1876-leopold-ii-ttb-obv.webp",
+      "/image/coins/foreign/5-francs-1865-1876-leopold-ii-ttb-rev.webp",
+      "/image/coins/foreign/5-francs-1865-1876-leopold-ii-ttb-box.webp",
+      "/image/coins/foreign/5-francs-1865-1876-leopold-ii-ttb-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:47:21.699Z",
     "slug": "5-francs-1865-1876-leopold-ii-ttb",
-    "image_obverse": "/image/coins/foreign/herdenkings/5-francs-1865-1876-leopold-ii-ttb/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/5-francs-1865-1876-leopold-ii-ttb/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-francs-1865-1876-leopold-ii-ttb-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-francs-1865-1876-leopold-ii-ttb-rev.webp"
   }
 }

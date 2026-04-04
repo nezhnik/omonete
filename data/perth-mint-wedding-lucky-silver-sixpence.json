@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/wedding-lucky-silver-sixpence-rev.webp",
     "image_box": null,
     "image_certificate": "/image/coins/foreign/wedding-lucky-silver-sixpence-cert.webp",
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/wedding-lucky-silver-sixpence-obv.webp",
+      "/image/coins/foreign/wedding-lucky-silver-sixpence-rev.webp"
+    ]
   },
   "raw": {
     "title": "Wedding Lucky Silver Sixpence",

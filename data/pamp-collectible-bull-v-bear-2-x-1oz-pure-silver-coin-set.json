@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/bullbear-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/bullbear-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/bull_bear_-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/bull_bear_-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_5.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-open_5.png"
+    "/image/coins/foreign/bull-v-bear-2-x-1oz-pure-silver-coin-set-obv.webp",
+    "/image/coins/foreign/bull-v-bear-2-x-1oz-pure-silver-coin-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:09.151Z"
+  "parsedAt": "2026-03-27T16:06:09.151Z",
+  "image_obverse": "/image/coins/foreign/bull-v-bear-2-x-1oz-pure-silver-coin-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/bull-v-bear-2-x-1oz-pure-silver-coin-set-rev.webp"
 }

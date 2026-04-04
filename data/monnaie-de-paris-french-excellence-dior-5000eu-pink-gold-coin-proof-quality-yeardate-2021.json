@@ -44,10 +44,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/6/0684d4322f8a9b49047190f67099f954faec302e_21_EXCELLENCE_5000____OR_1kg_BE_FACE_d391.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/4/b/4b037ebf28d2add319c99170b48530b0a61d29d2_21_EXCELLENCE_5000____OR_1kg_BE_REVERS_7dc9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-5000eu-pink-gold-coin-proof-quality-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-5000eu-pink-gold-coin-proof-quality-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:50:39.105Z"
+  "parsedAt": "2026-03-29T17:50:39.105Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-5000eu-pink-gold-coin-proof-quality-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-5000eu-pink-gold-coin-proof-quality-yeardate-2021-rev.webp"
 }

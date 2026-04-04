@@ -10,9 +10,8 @@
   },
   "price_display": "46.80 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/0/3/5/9275300-1-ger-DE/2023_10E_Vergissmeinnicht_Ag_blau_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/0/3/5/9275308-1-ger-DE/2023_10E_Vergissmeinnicht_Ag_blau_PP_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/8/3/5/9275388-1-ger-DE/2023_10E_Vergissmeinnicht-Etui_Packshot.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-silver-forget-me-not-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-silver-forget-me-not-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-forget-me-not-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-forget-me-not-coin-p-rev.webp"
 }

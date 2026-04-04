@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/corporate-personalised-medallions-rev.webp",
     "image_box": null,
     "image_certificate": "/image/coins/foreign/corporate-personalised-medallions-cert.webp",
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/corporate-personalised-medallions-obv.webp",
+      "/image/coins/foreign/corporate-personalised-medallions-rev.webp"
+    ]
   },
   "raw": {
     "title": "Corporate Personalised Medallions",

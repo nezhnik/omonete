@@ -19,13 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/Germania-1-oz-gold-BU_Revers_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/etap-fizyczny_gold-bu_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Germania-1-oz-gold-BU_Revers_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_9_1200.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_1_1200.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_3_1200.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_7_1200.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-3324_Germania-1-oz-Gold-BU_4_1200.jpg"
+    "/image/coins/foreign/2026-germania-1-oz-gold-bu-obv.webp",
+    "/image/coins/foreign/2026-germania-1-oz-gold-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:32:51.350Z"
+  "parsedAt": "2026-03-23T19:32:51.350Z",
+  "image_obverse": "/image/coins/foreign/2026-germania-1-oz-gold-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-germania-1-oz-gold-bu-rev.webp"
 }

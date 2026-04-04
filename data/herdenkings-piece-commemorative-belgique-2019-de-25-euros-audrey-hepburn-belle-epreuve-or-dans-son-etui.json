@@ -14,16 +14,16 @@
       "Tirage": "1 000"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/02.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/06.jpeg"
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-obv.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-rev.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-box.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-pack.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-cert.webp",
+      "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:49:23.769Z",
     "slug": "piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-commemorative-belgique-2019-de-25-euros-audrey-hepburn-belle-epreuve-or-dans-son-etui-rev.webp"
   }
 }

@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-04/liberty-bell_packaging-perspective.png"
+    "/image/coins/foreign/america-free-2oz-silver-coin-liberty-bell-obv.webp",
+    "/image/coins/foreign/america-free-2oz-silver-coin-liberty-bell-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:04:28.156Z"
+  "parsedAt": "2026-03-27T16:04:28.156Z",
+  "image_obverse": "/image/coins/foreign/america-free-2oz-silver-coin-liberty-bell-obv.webp",
+  "image_reverse": "/image/coins/foreign/america-free-2oz-silver-coin-liberty-bell-rev.webp"
 }

@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/2025-britannia-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/2025-britannia-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/2025-britannia-1oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/2025-britannia-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/2025-britannia-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "2025 Britannia UK 1oz Silver Proof Coin",

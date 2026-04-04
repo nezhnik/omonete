@@ -19,8 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-01/5kg_palladium_lb2022_xweb02.png",
-    "https://www.pamp.com/sites/pamp/files/2023-01/5kg_palladium_lb2022_xweb01.png"
+    "/image/coins/foreign/palladium-cast-bar-3-kg-6-kg-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:34.383Z",
   "classified_source_urls": {
@@ -30,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:35.553Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/palladium-cast-bar-3-kg-6-kg-rev.webp",
+  "image_reverse": "/image/coins/foreign/palladium-cast-bar-3-kg-6-kg-rev.webp"
 }

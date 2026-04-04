@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Amber_Route_Magyarorszag_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Amber_Route_Magyarorszag_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Amber_Route_Magyarorszag_box.png"
+    "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-obv.webp",
+    "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:36.893Z"
+  "parsedAt": "2026-03-28T17:05:36.893Z",
+  "image_obverse": "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-hungary-1-dollar-amber-route-rev.webp"
 }

@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/Perth/2012-london-olympic--paralympic-gold-proof-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/Perth/2012 London Olympic & Paralympic Gold Proof £5, two coin set-obv.png",
+      "/image/coins/Perth/2012 London Olympic & Paralympic Gold Proof £5, two coin set-rev.png"
+    ]
   },
   "raw": {
     "title": "2012 London Olympic & Paralympic Gold Proof £5, two coin set",

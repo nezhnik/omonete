@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-obv.webp",
     "image_reverse": "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-rev.webp",
     "image_box": "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-box.webp",
-    "image_certificate": "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-cert.webp"
+    "image_certificate": "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-obv.webp",
+      "/image/coins/foreign/extragalactic-2025-5oz-silver-patinaed-coloured-coin-with-diamonds-rev.webp"
+    ]
   },
   "raw": {
     "title": "Extragalactic 2025 5oz Silver Patinaed Coloured Coin with Diamonds",

@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_rev3x.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/pamp_lunar_rabbit_au_5g_certipamp_obv3x.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/275400_pamp_lunar_rabbit_reverse_au_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/275400_pamp_lunar_rabbit_obverse_au_5g.png"
+    "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-obv.webp",
+    "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:26:53.105Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:03:29.630Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-rabbit-gold-minted-bar-5g-rev.webp"
 }

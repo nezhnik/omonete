@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/george-iii-two-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/george-iii-two-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/george-iii-two-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/george-iii-two-coin-set-obv.webp",
+      "/image/coins/foreign/george-iii-two-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "George III Two-Coin Set",

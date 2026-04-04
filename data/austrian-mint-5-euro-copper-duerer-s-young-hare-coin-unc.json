@@ -10,8 +10,8 @@
   },
   "price_display": "5.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2016_duerer-feldhase_cu-av/10131-51-ger-DE/5e_2016_duerer-feldhase_cu-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.2.5_euro/5e_2016_duerer-feldhase_cu-rv/10135-52-ger-DE/5e_2016_duerer-feldhase_cu-rv.png.webp"
+    "/image/coins/foreign/austrian-mint-5-euro-copper-duerer-s-young-hare-coin-unc-obv.webp",
+    "/image/coins/foreign/austrian-mint-5-euro-copper-duerer-s-young-hare-coin-unc-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/copper-coins",
   "listing_label": "Collector coins — Copper",
@@ -28,5 +28,7 @@
   "mintage_sync": {
     "mintage": 200000,
     "mintage_display": "200,000 (структура офиц. Kundmachungen для 5 € Cu Ostermünzen: evi.gv.at/b/pi/bpb-x29 — Umlaufqualit"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-5-euro-copper-duerer-s-young-hare-coin-unc-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-5-euro-copper-duerer-s-young-hare-coin-unc-rev.webp"
 }

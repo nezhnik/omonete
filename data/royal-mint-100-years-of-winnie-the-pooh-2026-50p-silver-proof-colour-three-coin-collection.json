@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection-obv.webp",
+      "/image/coins/foreign/100-years-of-winnie-the-pooh-2026-50p-silver-proof-colour-three-coin-collection-rev.webp"
+    ]
   },
   "raw": {
     "title": "100 Years of Winnie the Pooh 2026 UK 50p Silver Proof Colour Three-Coin Collection",

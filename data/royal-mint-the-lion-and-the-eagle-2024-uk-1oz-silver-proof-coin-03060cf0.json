@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/the-lion-and-the-eagle-2024-uk-1oz-silver-proof-coin-03060cf0-obv.webp",
+      "/image/coins/foreign/the-lion-and-the-eagle-2024-uk-1oz-silver-proof-coin-03060cf0-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Lion and The Eagle 2024 UK 1oz Silver Proof Coin",

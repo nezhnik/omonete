@@ -16,17 +16,17 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/01.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/02.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/03.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/04.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/05.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/06.png",
-      "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/07.png"
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-obv.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-rev.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-box.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-pack.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-cert.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-img-06.webp",
+      "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:08:03.838Z",
     "slug": "750-years-amsterdam-5-euro-coin-2024-zilver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/750-years-amsterdam-5-euro-coin-2024-zilver-proof/02.png"
+    "image_obverse": "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/750-years-amsterdam-5-euro-coin-2024-zilver-proof-rev.webp"
   }
 }

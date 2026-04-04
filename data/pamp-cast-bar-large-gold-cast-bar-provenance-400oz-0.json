@@ -19,8 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-01/400oz_au_carbon-provenanceprospective.png",
-    "https://www.pamp.com/sites/pamp/files/2023-01/400oz_au_provenance_front.png"
+    "/image/coins/foreign/large-gold-cast-bar-provenance-400oz-0-obv.webp",
+    "/image/coins/foreign/large-gold-cast-bar-provenance-400oz-0-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:24:19.407Z",
   "classified_source_urls": {
@@ -31,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:24:22.579Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/large-gold-cast-bar-provenance-400oz-0-obv.webp",
+  "image_reverse": "/image/coins/foreign/large-gold-cast-bar-provenance-400oz-0-rev.webp"
 }

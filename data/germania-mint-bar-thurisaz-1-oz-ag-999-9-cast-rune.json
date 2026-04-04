@@ -16,13 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-thurisaz-cast-rune_uv_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-thurisaz-cast-rune_uv_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-thurisaz-cast-rune_uv_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Thurisaz-1-oz-Ag-999_5.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Thurisaz-1-oz-Ag-999.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Thurisaz-1-oz-Ag-999_4.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Thurisaz-1-oz-Ag-999_2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Thurisaz-1-oz-Ag-999_6.jpg"
+    "/image/coins/foreign/thurisaz-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/thurisaz-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:40.038Z"
+  "parsedAt": "2026-03-27T11:09:40.038Z",
+  "image_obverse": "/image/coins/foreign/thurisaz-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/thurisaz-1-oz-ag-999-9-cast-rune-rev.webp"
 }

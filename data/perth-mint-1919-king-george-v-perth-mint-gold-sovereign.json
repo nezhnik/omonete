@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1919-king-george-v-perth-mint-gold-sovereign-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1919-king-george-v-perth-mint-gold-sovereign-obv.webp",
+      "/image/coins/foreign/1919-king-george-v-perth-mint-gold-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "1919 King George V Perth Mint Gold Sovereign",

@@ -47,10 +47,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067907_BD_6cb5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067906_BD_b35a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-george-washington-bust-200eur-1-oz-gold-coin-high-relief-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-george-washington-bust-200eur-1-oz-gold-coin-high-relief-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:13:50.501Z"
+  "parsedAt": "2026-03-29T16:13:50.501Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-george-washington-bust-200eur-1-oz-gold-coin-high-relief-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-george-washington-bust-200eur-1-oz-gold-coin-high-relief-proof-quality-yeardate-2025-rev.webp"
 }

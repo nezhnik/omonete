@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/witchcraft-seeress-ritual-1-oz-silver-bu_900px_r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/witchcraft-seeress-ritual-1-oz-silver-bu_900px_a.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/witchcraft-seeress-ritual-1-oz-silver-bu_900px_r.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/seeress-1-r-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/seeress-1-r-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/seeress-1-r-2.jpg"
+    "/image/coins/foreign/2023-witchcraft-seeress-ritual-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2023-witchcraft-seeress-ritual-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:37:30.893Z"
+  "parsedAt": "2026-03-23T19:37:30.893Z",
+  "image_obverse": "/image/coins/foreign/2023-witchcraft-seeress-ritual-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2023-witchcraft-seeress-ritual-1-oz-silver-bu-rev.webp"
 }

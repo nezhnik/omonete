@@ -15,12 +15,12 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/250-years-of-circus-culture-gold-2-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/250-years-of-circus-culture-gold-2-ounce/02.jpeg"
+      "/image/coins/foreign/250-years-of-circus-culture-gold-2-ounce-obv.webp",
+      "/image/coins/foreign/250-years-of-circus-culture-gold-2-ounce-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:01:57.457Z",
     "slug": "250-years-of-circus-culture-gold-2-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/250-years-of-circus-culture-gold-2-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/250-years-of-circus-culture-gold-2-ounce/02.jpeg"
+    "image_obverse": "/image/coins/foreign/250-years-of-circus-culture-gold-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/250-years-of-circus-culture-gold-2-ounce-rev.webp"
   }
 }

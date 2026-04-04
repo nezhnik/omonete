@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/her-majesty-queen-elizabeth-ii-95th-birthday-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Her Majesty Queen Elizabeth II 95th Birthday 1oz Silver Proof Coin",

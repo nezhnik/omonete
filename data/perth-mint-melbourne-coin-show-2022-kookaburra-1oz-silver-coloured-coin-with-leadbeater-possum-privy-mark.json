@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/melbourne-coin-show-2022-kookaburra-1oz-silver-coloured-coin-with-leadbeater-possum-privy-mark-obv.webp",
     "image_reverse": "/image/coins/foreign/melbourne-coin-show-2022-kookaburra-1oz-silver-coloured-coin-with-leadbeater-possum-privy-mark-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/melbourne-coin-show-2022-kookaburra-1oz-silver-coloured-coin-with-leadbeater-possum-privy-mark-obv.webp",
+      "/image/coins/foreign/melbourne-coin-show-2022-kookaburra-1oz-silver-coloured-coin-with-leadbeater-possum-privy-mark-rev.webp"
+    ]
   },
   "raw": {
     "title": "Melbourne Coin Show 2022 Kookaburra 1oz Silver Coloured Coin with Leadbeater Possum Privy Mark",

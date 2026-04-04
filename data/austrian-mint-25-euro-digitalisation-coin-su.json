@@ -10,9 +10,8 @@
   },
   "price_display": "99.60 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/9/7/6/9546791-3-eng-US/9cd62767fc84-2025_25E_Digitalisierung_NbAg_HGH_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/8/7/6/9546783-3-eng-US/d00b31ff5301-2025_25E_Digitalisierung_NbAg_HGH_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/9/9/7/6/9546799-4-eng-US/fca25af487a4-2025_25E_Digitalisierung_Etui.png.webp"
+    "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-niobium-coins",
   "listing_label": "Collector coins — Silver Niobium",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 65000,
     "mintage_display": "65,000 (серия Silber-Niobium, Sonderqualität Handgehoben; эталон Kundmachung: evi.gv.at/b/pi/blz-hrv"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-digitalisation-coin-su-rev.webp"
 }

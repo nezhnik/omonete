@@ -15,16 +15,16 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/02.jpg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/06.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-box.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-pack.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-cert.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:26:39.792Z",
     "slug": "official-restrike-lion-dollar-2024-gold-2-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2024-gold-2-ounce/02.jpg"
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2024-gold-2-ounce-rev.webp"
   }
 }

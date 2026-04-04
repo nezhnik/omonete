@@ -19,14 +19,10 @@
     "certificate": "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-open_no-certi.png"
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_certipamp-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-closed_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_box-open_no-certi.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_revframe_0.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_obvframe_0.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_perspective-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-10/arabian-night_perspective-obv.png"
+    "/image/coins/foreign/arabian-horse-5g-pure-gold-bar-pendant-frame-obv.webp",
+    "/image/coins/foreign/arabian-horse-5g-pure-gold-bar-pendant-frame-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:05:43.626Z"
+  "parsedAt": "2026-03-27T16:05:43.626Z",
+  "image_obverse": "/image/coins/foreign/arabian-horse-5g-pure-gold-bar-pendant-frame-obv.webp",
+  "image_reverse": "/image/coins/foreign/arabian-horse-5g-pure-gold-bar-pendant-frame-rev.webp"
 }

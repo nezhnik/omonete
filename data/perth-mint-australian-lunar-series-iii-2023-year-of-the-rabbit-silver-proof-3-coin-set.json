@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-obv.webp",
+      "/image/coins/foreign/australian-lunar-series-iii-2023-year-of-the-rabbit-silver-proof-3-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Lunar Series III 2023 Year of the Rabbit Silver Proof Three-Coin Set",

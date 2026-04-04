@@ -10,9 +10,8 @@
   },
   "price_display": "1,074.15 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2017_50e_freud_av/207794-3-ger-DE/2017_50e_freud_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2017_50e_freud_rv/207798-3-ger-DE/2017_50e_freud_rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.6.50_euro/psychotherapie/2017_50e_freud_etui/2954776-1-ger-DE/2017_50e_freud_etui.png.webp"
+    "/image/coins/foreign/austrian-mint-50-euro-gold-sigmund-freud-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-50-euro-gold-sigmund-freud-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 20000,
     "mintage_display": "20,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-50-euro-gold-sigmund-freud-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-50-euro-gold-sigmund-freud-coin-p-rev.webp"
 }

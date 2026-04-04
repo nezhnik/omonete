@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-obv.webp",
+      "/image/coins/foreign/stranger-things-the-upside-down-2026-1oz-silver-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Stranger Things - The Upside Down 2026 1oz Silver Coloured Coin",

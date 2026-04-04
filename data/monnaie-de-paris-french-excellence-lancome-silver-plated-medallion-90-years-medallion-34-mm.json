@@ -67,12 +67,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068351_ORI2_fe4d.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068352_ORI2_81a3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068594_ORI2_2bfb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068595_ORI2_27bc.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:54:27.384Z"
+  "parsedAt": "2026-03-29T15:54:27.384Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lancome-silver-plated-medallion-90-years-medallion-34-mm-rev.webp"
 }

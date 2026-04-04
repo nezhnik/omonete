@@ -20,13 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/2025-ragnarok-loki-2-oz-silver-bu_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/2025-ragnarok-loki-2-oz-silver-bu_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/2025-ragnarok-loki-2-oz-silver-bu_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2905-Loki-Heimdall-Geminus-2x1-oz-Silver-BU_1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2905-Loki-Heimdall-Geminus-2x1-oz-Silver-BU_11.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2905-Loki-Heimdall-Geminus-2x1-oz-Silver-BU_3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2905-Loki-Heimdall-Geminus-2x1-oz-Silver-BU_7.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/MRK-2905-Loki-Heimdall-Geminus-2x1-oz-Silver-BU_10.jpg"
+    "/image/coins/foreign/2025-ragnarok-loki-heimdall-geminus-2-x-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2025-ragnarok-loki-heimdall-geminus-2-x-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:36:43.101Z"
+  "parsedAt": "2026-03-23T19:36:43.101Z",
+  "image_obverse": "/image/coins/foreign/2025-ragnarok-loki-heimdall-geminus-2-x-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-ragnarok-loki-heimdall-geminus-2-x-1-oz-silver-bu-rev.webp"
 }

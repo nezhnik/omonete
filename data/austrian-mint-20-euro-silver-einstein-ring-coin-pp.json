@@ -10,10 +10,8 @@
   },
   "price_display": "74.40 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/3/1/8/4/9554813-4-ger-DE/26b0f6f99cd0-2025_20E_Einsteinring_PP_Ag_VS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/1/1/8/4/9554811-5-eng-US/212ff4b15451-2025_20E_Einsteinring_PP_Ag_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/9/4/9/4/9554949-4-eng-US/26d9cb17152e-2025_20E_Einsteinring_PP_Ag_RS_3D_V2.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/5/9/4/9554957-3-eng-US/e2de30c94389-2025_20E_Einsteinring_PP_Ag_VS_3D_V2.png.webp"
+    "/image/coins/foreign/austrian-mint-20-euro-silver-einstein-ring-coin-pp-obv.webp",
+    "/image/coins/foreign/austrian-mint-20-euro-silver-einstein-ring-coin-pp-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -30,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30.000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-20-euro-silver-einstein-ring-coin-pp-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-20-euro-silver-einstein-ring-coin-pp-rev.webp"
 }

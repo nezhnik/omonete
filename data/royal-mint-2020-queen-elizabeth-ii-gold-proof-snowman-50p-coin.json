@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin-obv.webp",
+      "/image/coins/foreign/2020-queen-elizabeth-ii-gold-proof-snowman-50p-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "2020 Queen Elizabeth II Gold Proof Snowman 50p Coin",

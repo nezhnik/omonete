@@ -58,11 +58,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041398270000_25_VERNE_10_Ag_BE_VINGT_MILLE_FACE_ORI_BD_0a04.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067245_BD_5f1e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068446_ORI2_772b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:28:47.843Z"
+  "parsedAt": "2026-03-29T16:28:47.843Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-twenty-thousand-leagues-under-the-seas-10eur-silver-coin-proof-quality-yeardate-rev.webp"
 }

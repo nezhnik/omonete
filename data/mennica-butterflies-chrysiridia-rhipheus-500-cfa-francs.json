@@ -28,12 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/CHRYSIRIDIA-RHIPHEUS_reverse-7.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/CHRYSIRIDIA-RHIPHEUS_reverse_2-3.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/CHRYSIRIDIA-RHIPHEUS_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/12/CHRYSIRIDIA-RHIPHEUS_box-3.png"
+    "/image/coins/foreign/mennica-butterflies-chrysiridia-rhipheus-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-butterflies-chrysiridia-rhipheus-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:07:10.008Z"
+  "parsedAt": "2026-03-28T17:07:10.008Z",
+  "image_obverse": "/image/coins/foreign/mennica-butterflies-chrysiridia-rhipheus-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-butterflies-chrysiridia-rhipheus-500-cfa-francs-rev.webp"
 }

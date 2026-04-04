@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-uhr-2-oz-ag-a_900px.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-uhr-2-oz-ag-b_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-uhr-2-oz-ag-a_900px.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/fenrir-2-3.jpg"
+    "/image/coins/foreign/germania-beasts-fenrir-ultra-double-high-relief-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/germania-beasts-fenrir-ultra-double-high-relief-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:31:13.291Z"
+  "parsedAt": "2026-03-23T19:31:13.291Z",
+  "image_obverse": "/image/coins/foreign/germania-beasts-fenrir-ultra-double-high-relief-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/germania-beasts-fenrir-ultra-double-high-relief-2-oz-silver-bu-rev.webp"
 }

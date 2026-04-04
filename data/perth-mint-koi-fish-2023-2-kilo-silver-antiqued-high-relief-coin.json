@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-obv.webp",
+      "/image/coins/foreign/koi-fish-2023-2-kilo-silver-antiqued-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Koi Fish 2023 2 Kilo Silver Antiqued High Relief Coin",

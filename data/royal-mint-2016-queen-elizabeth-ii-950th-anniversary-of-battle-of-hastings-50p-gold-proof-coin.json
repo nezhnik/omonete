@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2016-queen-elizabeth-ii-950th-anniversary-of-battle-of-hastings-50p-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/2016-queen-elizabeth-ii-950th-anniversary-of-battle-of-hastings-50p-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "2016 Queen Elizabeth II 950th Anniversary of Battle of Hastings 50p Gold Proof Coin",

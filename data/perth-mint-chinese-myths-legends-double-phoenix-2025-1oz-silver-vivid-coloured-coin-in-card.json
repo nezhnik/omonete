@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-obv.webp",
     "image_reverse": "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-rev.webp",
     "image_box": "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-box.webp",
-    "image_certificate": "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-cert.webp"
+    "image_certificate": "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-obv.webp",
+      "/image/coins/foreign/chinese-myths-legends-double-phoenix-2025-1oz-silver-vivid-coloured-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Chinese Myths and Legends Double Phoenix 2025 1oz Silver Vivid Coloured Coin in Card",

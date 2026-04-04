@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/09/Venus_and_Cupid_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/09/02_Spor-Apolla-z-Panem-Sad-Midasa_talerz_Apollo-and-Pan-Midass-Judgement_plate.png"
+    "/image/coins/foreign/mennica-maiolica-apollo-and-pan-midass-judgement-5-euro-obv.webp",
+    "/image/coins/foreign/mennica-maiolica-apollo-and-pan-midass-judgement-5-euro-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:01:10.763Z"
+  "parsedAt": "2026-03-28T17:01:10.763Z",
+  "image_obverse": "/image/coins/foreign/mennica-maiolica-apollo-and-pan-midass-judgement-5-euro-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-maiolica-apollo-and-pan-midass-judgement-5-euro-rev.webp"
 }

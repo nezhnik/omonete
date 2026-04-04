@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/the-queens-platinum-jubilee-2022-2oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Queen's Platinum Jubilee 2022 2oz Gold Proof Coin",

@@ -58,11 +58,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063174_BD_3df5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/E/c/Ecrin_Excellence_Lacoste_9c35.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063175_BD_ed34.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-lacoste-50eur-gold-coin-proof-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-lacoste-50eur-gold-coin-proof-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:33:38.747Z"
+  "parsedAt": "2026-03-29T17:33:38.747Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lacoste-50eur-gold-coin-proof-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-lacoste-50eur-gold-coin-proof-quality-yeardate-2023-rev.webp"
 }

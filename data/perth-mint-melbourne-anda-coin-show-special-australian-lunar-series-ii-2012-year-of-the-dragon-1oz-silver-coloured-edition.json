@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-obv.webp",
     "image_reverse": "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-rev.webp",
     "image_box": "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-box.webp",
-    "image_certificate": "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-cert.webp"
+    "image_certificate": "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-obv.webp",
+      "/image/coins/foreign/melbourne-anda-coin-show-special-australian-lunar-series-ii-2012-year-of-the-dragon-1oz-silver-coloured-edition-rev.webp"
+    ]
   },
   "raw": {
     "title": "Melbourne ANDA Coin Show Special - Australian Lunar Series II - 2012 Year of the Dragon 1oz Silver Coloured Edition",

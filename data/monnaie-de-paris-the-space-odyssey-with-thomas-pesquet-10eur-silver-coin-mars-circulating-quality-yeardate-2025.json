@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068680_ORI2_a439.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068682_ORI2_f359.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068679_ORI2_61ad.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068681_ORI2_288b.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-the-space-odyssey-with-thomas-pesquet-10eur-silver-coin-mars-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-space-odyssey-with-thomas-pesquet-10eur-silver-coin-mars-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:52:33.505Z"
+  "parsedAt": "2026-03-29T15:52:33.505Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-space-odyssey-with-thomas-pesquet-10eur-silver-coin-mars-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-space-odyssey-with-thomas-pesquet-10eur-silver-coin-mars-circulating-quality-yeardate-2025-rev.webp"
 }

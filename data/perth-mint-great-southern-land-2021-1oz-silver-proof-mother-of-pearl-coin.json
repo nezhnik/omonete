@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-rev.webp",
     "image_box": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-obv.webp",
+      "/image/coins/foreign/great-southern-land-2021-1oz-silver-proof-mother-of-pearl-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Great Southern Land 2021 1oz Silver Proof Mother of Pearl Coin",

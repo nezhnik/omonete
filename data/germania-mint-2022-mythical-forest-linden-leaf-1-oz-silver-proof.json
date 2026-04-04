@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/linden_leaf_2022_silver_proof_1oz_B.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/linden-leaf-2022-1-oz-silver-proof_awers_900.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/linden_leaf_2022_silver_proof_1oz_B.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/linden-1-proof.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/linden-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/linden-2-proof.jpg"
+    "/image/coins/foreign/2022-mythical-forest-linden-leaf-1-oz-silver-proof-obv.webp",
+    "/image/coins/foreign/2022-mythical-forest-linden-leaf-1-oz-silver-proof-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:34:28.625Z"
+  "parsedAt": "2026-03-23T19:34:28.625Z",
+  "image_obverse": "/image/coins/foreign/2022-mythical-forest-linden-leaf-1-oz-silver-proof-obv.webp",
+  "image_reverse": "/image/coins/foreign/2022-mythical-forest-linden-leaf-1-oz-silver-proof-rev.webp"
 }

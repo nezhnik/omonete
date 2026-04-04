@@ -18,9 +18,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-10/pamp-1oz-silver-round-ladyofliberty-webimage-1000x1000px-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-10/pamp-1oz-silver-round-ladyofliberty-webimage-1000x1000px-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-10/pamp-1oz-silver-round-ladyofliberty-webimage-1000x1000px-comp-1.png"
+    "/image/coins/foreign/lady-liberty-silver-minted-round-1oz-obv.webp",
+    "/image/coins/foreign/lady-liberty-silver-minted-round-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:22:59.271Z",
   "classified_source_urls": {
@@ -31,5 +30,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:55:03.972Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-liberty-silver-minted-round-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-liberty-silver-minted-round-1oz-rev.webp"
 }

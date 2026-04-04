@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-06/anaconda_front-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2024-06/anaconda_back-certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2024-06/anaconda_perspective_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-06/anaconda_perspective_obv.png"
+    "/image/coins/foreign/natures-grip-green-anaconda-1oz-silver-legal-tender-bar-obv.webp",
+    "/image/coins/foreign/natures-grip-green-anaconda-1oz-silver-legal-tender-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:12:23.839Z"
+  "parsedAt": "2026-03-27T16:12:23.839Z",
+  "image_obverse": "/image/coins/foreign/natures-grip-green-anaconda-1oz-silver-legal-tender-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/natures-grip-green-anaconda-1oz-silver-legal-tender-bar-rev.webp"
 }

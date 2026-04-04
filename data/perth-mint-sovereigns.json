@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/sovereigns-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/sovereigns-obv.webp",
+      "/image/coins/foreign/sovereigns-rev.webp"
+    ]
   },
   "raw": {
     "title": "Sovereigns",

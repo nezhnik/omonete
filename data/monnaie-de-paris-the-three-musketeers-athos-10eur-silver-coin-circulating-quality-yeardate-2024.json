@@ -69,12 +69,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066036_BD_5049.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066046_BD_32bb.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066218_BD_1a0f.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00066220_BD_c0f9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-athos-10eur-silver-coin-circulating-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-athos-10eur-silver-coin-circulating-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:52:35.260Z"
+  "parsedAt": "2026-03-29T16:52:35.260Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-athos-10eur-silver-coin-circulating-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-three-musketeers-athos-10eur-silver-coin-circulating-quality-yeardate-2024-rev.webp"
 }

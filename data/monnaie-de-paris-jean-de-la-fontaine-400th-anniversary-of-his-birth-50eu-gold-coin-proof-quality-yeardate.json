@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/a/5a1af1db1c4f61820dc477bb17af3f0d4a17f1b5_M5066_MDP_00061378_BD_9ea3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/7/8/78961200dfe24941c1991028193c2788430df402_M5066_MDP_00061379_BD_2555.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-50eu-gold-coin-proof-quality-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-50eu-gold-coin-proof-quality-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:17:14.886Z"
+  "parsedAt": "2026-03-29T18:17:14.886Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-50eu-gold-coin-proof-quality-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-50eu-gold-coin-proof-quality-yeardate-rev.webp"
 }

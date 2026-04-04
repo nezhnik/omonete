@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_r_250px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/skoll-and-hati-2x1-oz-silver-bu_skoll_r_250px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/24-2x2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/24-2x2-4.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/24-2x2-3.jpg"
+    "/image/coins/foreign/2024-ragnarok-skoll-hati-geminus-2x1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2024-ragnarok-skoll-hati-geminus-2x1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:36:25.777Z"
+  "parsedAt": "2026-03-23T19:36:25.777Z",
+  "image_obverse": "/image/coins/foreign/2024-ragnarok-skoll-hati-geminus-2x1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2024-ragnarok-skoll-hati-geminus-2x1-oz-silver-bu-rev.webp"
 }

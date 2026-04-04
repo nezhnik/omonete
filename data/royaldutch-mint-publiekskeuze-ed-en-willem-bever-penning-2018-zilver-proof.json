@@ -14,16 +14,16 @@
       "Mintage": "max. 500"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/01.png",
-      "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/04.png",
-      "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/06.jpeg"
+      "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-obv.webp",
+      "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-rev.webp",
+      "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-box.webp",
+      "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-pack.webp",
+      "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-cert.webp",
+      "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:31:16.430Z",
     "slug": "publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/publiekskeuze-ed-en-willem-bever-penning-2018-zilver-proof-rev.webp"
   }
 }

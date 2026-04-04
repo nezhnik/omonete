@@ -15,12 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-a.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/copper-raw-bar-r.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_4-1-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_1-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_2-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-_Copper-Drawn-Bar_5-1920x1080.jpg"
+    "/image/coins/foreign/copper-raw-bar-1000-g-obv.webp",
+    "/image/coins/foreign/copper-raw-bar-1000-g-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:05:57.198Z"
+  "parsedAt": "2026-03-27T11:05:57.198Z",
+  "image_obverse": "/image/coins/foreign/copper-raw-bar-1000-g-obv.webp",
+  "image_reverse": "/image/coins/foreign/copper-raw-bar-1000-g-rev.webp"
 }

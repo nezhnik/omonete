@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/adelaide-pound-2020-1-5oz-bi-metal-coin-rev.webp",
     "image_box": "/image/coins/foreign/adelaide-pound-2020-1-5oz-bi-metal-coin-box.webp",
     "image_certificate": "/image/coins/foreign/adelaide-pound-2020-1-5oz-bi-metal-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/adelaide-pound-2020-1-5oz-bi-metal-coin-obv.webp",
+      "/image/coins/foreign/adelaide-pound-2020-1-5oz-bi-metal-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Adelaide Pound 2020 1.5oz Bi-Metal Coin",

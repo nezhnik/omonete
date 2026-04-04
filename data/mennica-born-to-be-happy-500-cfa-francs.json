@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/06/Born-to-be-Happy_projekt_3-1-1.jpg",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/06/500-CFA_kapustoneta_awers-2025.png"
+    "/image/coins/foreign/mennica-born-to-be-happy-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-born-to-be-happy-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:00:00.454Z"
+  "parsedAt": "2026-03-28T17:00:00.454Z",
+  "image_obverse": "/image/coins/foreign/mennica-born-to-be-happy-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-born-to-be-happy-500-cfa-francs-rev.webp"
 }

@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2011-elizabeth-ii-altius-olympic-three-coin-gold-proof-set-obv.webp",
+      "/image/coins/foreign/2011-elizabeth-ii-altius-olympic-three-coin-gold-proof-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "2011 Elizabeth II Altius Olympic Three Coin Gold Proof Set",

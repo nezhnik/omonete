@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067701_BD_a941.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/C/O/COMPO_ROLAND_GARROS_FourreauCertificat_c530.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067703_BD_4355.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-roland-garros-20eur-1-10-oz-gold-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-roland-garros-20eur-1-10-oz-gold-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:13:52.617Z"
+  "parsedAt": "2026-03-29T16:13:52.617Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-roland-garros-20eur-1-10-oz-gold-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-roland-garros-20eur-1-10-oz-gold-coin-proof-quality-yeardate-2025-rev.webp"
 }

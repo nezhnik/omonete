@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067934_BD_a339.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067935_BD_ce76.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-coins-wave-2-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-coins-wave-2-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:17:59.923Z"
+  "parsedAt": "2026-03-29T18:17:59.923Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-coins-wave-2-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-dc-comics-10eur-silver-coins-wave-2-circulating-quality-yeardate-2025-rev.webp"
 }

@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/red-arrows-2025-50p-silver-proof-piedfort-colour-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/red-arrows-2025-50p-silver-proof-piedfort-colour-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/red-arrows-2025-50p-silver-proof-piedfort-colour-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/red-arrows-2025-50p-silver-proof-piedfort-colour-coin-obv.webp",
+      "/image/coins/foreign/red-arrows-2025-50p-silver-proof-piedfort-colour-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Red Arrows 2025 UK 50p Silver Proof Piedfort Colour Coin",

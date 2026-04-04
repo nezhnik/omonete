@@ -17,11 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_r-1.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/10/gods-freyr-2oz-cast-bar-1200_a-1.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-gold-cast-bar-1-oz_r-1.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/cast-bar-01.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/safepacks-02.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/10/cast-bar.webp"
+    "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-2-obv.webp",
+    "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-2-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:06:47.797Z"
+  "parsedAt": "2026-03-27T11:06:47.797Z",
+  "image_obverse": "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-2-obv.webp",
+  "image_reverse": "/image/coins/foreign/gold-cast-bar-1-oz-au-999-9-2-rev.webp"
 }

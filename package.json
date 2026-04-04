@@ -16,6 +16,7 @@
     "data:sync-weights-json-to-db": "node scripts/sync-coin-weights-from-json-to-db.js",
     "data:backfill:mintage-unknown-display": "node scripts/backfill-foreign-mintage-unknown-display.js",
     "data:sync-detail-images": "node scripts/sync-detail-images-from-catalog.js",
+    "data:sync-source-json-images": "node scripts/sync-source-json-images-from-db.js",
     "start": "next start",
     "lint": "eslint",
     "coins:sync": "node scripts/download-and-optimize-coins.js",

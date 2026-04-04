@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/penny-2024-silver-brilliant-uncirculated-coin-obv.webp",
+      "/image/coins/foreign/penny-2024-silver-brilliant-uncirculated-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Penny 2024 Silver Brilliant Uncirculated Coin",

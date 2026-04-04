@@ -15,19 +15,17 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/01.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/02.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/03.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/04.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/05.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/06.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/07.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/08.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/09.png"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-rev.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-box.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-pack.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-cert.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-img-06.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:29:39.807Z",
     "slug": "official-restrike-scheepjesschelling-2024-gold",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-gold/02.png"
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2024-gold-rev.webp"
   }
 }

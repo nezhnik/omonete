@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/the-sovereign-2026-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Sovereign 2026 Silver Proof Coin",

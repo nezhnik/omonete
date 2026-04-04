@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-ritual-1oz_r_900.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-ritual-1oz_a_900.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-ritual-1oz_r_900.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-1r-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-1r-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/herbalist-1r-3.jpg"
+    "/image/coins/foreign/2025-witchcraft-herbalist-ritual-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2025-witchcraft-herbalist-ritual-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:37:46.161Z"
+  "parsedAt": "2026-03-23T19:37:46.161Z",
+  "image_obverse": "/image/coins/foreign/2025-witchcraft-herbalist-ritual-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-witchcraft-herbalist-ritual-1-oz-silver-bu-rev.webp"
 }

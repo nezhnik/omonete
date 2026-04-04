@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/8/082d58005d661408a737ec99d322823c31e67251_M5066_MDP_00060828_BD_66a5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/6/169eb987cb2c3fe6be1a0461f008dab0d8eb69b4_M5066_MDP_00060829_BD_92b0.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-the-little-prince-and-the-fox-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-the-little-prince-and-the-fox-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:05:35.663Z"
+  "parsedAt": "2026-03-29T18:05:35.663Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-the-little-prince-and-the-fox-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-50eu-1-4-oz-gold-coin-the-little-prince-and-the-fox-rev.webp"
 }

@@ -10,9 +10,8 @@
   },
   "price_display": "40.66 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/6/9/9/9399966-1-ger-DE/e25bc428a3e2-3D_Blister_Kamille.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/7/1/6/6/9386617-1-ger-DE/b680aa97ea80-2023_10E_Kamille_Ag_PP_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/5/2/6/6/9386625-1-ger-DE/31c0b8168374-2023_10E_Kamille_Ag_PP_VS_2D.png.webp"
+    "/image/coins/foreign/austrian-mint-10-euro-silver-chamomile-coin-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-10-euro-silver-chamomile-coin-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-coins",
   "listing_label": "Collector coins — Silver",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000 (Münze Österreich: Auflage Handgehoben — 30.000)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-10-euro-silver-chamomile-coin-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-10-euro-silver-chamomile-coin-su-rev.webp"
 }

@@ -44,10 +44,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/4/a/4afb3b7ec31f9c999c0b69dbcaffc7440176e478_21_EXCELLENCE_50____OR_14oz_BE_FACE_add7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/3/d/3df4895de4115cf456f70e93a6efe2c7127c24e6_21_EXCELLENCE_50____OR_14oz_BE_REVERS_6227.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-50eu-gold-coin-proof-quality-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-50eu-gold-coin-proof-quality-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:50:38.069Z"
+  "parsedAt": "2026-03-29T17:50:38.069Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-50eu-gold-coin-proof-quality-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-french-excellence-dior-50eu-gold-coin-proof-quality-yeardate-2021-rev.webp"
 }

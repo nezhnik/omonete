@@ -80,13 +80,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062734_BD_6ec5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062736_BD_7572.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062737_BD_faf7.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062735_BD_2556.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00062738_BD_7de4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-louis-pasteur-bicentenary-10eur-silver-coin-circulating-quality-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-louis-pasteur-bicentenary-10eur-silver-coin-circulating-quality-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:39:45.852Z"
+  "parsedAt": "2026-03-29T17:39:45.852Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-louis-pasteur-bicentenary-10eur-silver-coin-circulating-quality-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-louis-pasteur-bicentenary-10eur-silver-coin-circulating-quality-yeardate-2022-rev.webp"
 }

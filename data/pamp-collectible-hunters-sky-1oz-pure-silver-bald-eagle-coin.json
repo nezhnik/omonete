@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_transp.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/0001.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/perspective_complete.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/layer_1_0.png"
+    "/image/coins/foreign/hunters-sky-1oz-pure-silver-bald-eagle-coin-obv.webp",
+    "/image/coins/foreign/hunters-sky-1oz-pure-silver-bald-eagle-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:10:34.017Z"
+  "parsedAt": "2026-03-27T16:10:34.017Z",
+  "image_obverse": "/image/coins/foreign/hunters-sky-1oz-pure-silver-bald-eagle-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/hunters-sky-1oz-pure-silver-bald-eagle-coin-rev.webp"
 }

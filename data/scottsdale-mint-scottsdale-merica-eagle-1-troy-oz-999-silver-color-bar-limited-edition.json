@@ -9,14 +9,14 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition/04.jpg"
+      "/image/coins/foreign/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition-obv.webp",
+      "/image/coins/foreign/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition-rev.webp",
+      "/image/coins/foreign/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition-box.webp",
+      "/image/coins/foreign/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:36:33.051Z",
     "slug": "scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-merica-eagle-1-troy-oz-999-silver-color-bar-limited-edition-rev.webp"
   }
 }

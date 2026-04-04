@@ -11,14 +11,14 @@
       "Weight": "3.49 g"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/01.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/02.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/03.jpeg",
-      "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/04.jpeg"
+      "/image/coins/foreign/gouden-dukaat-holland-1795-fr-obv.webp",
+      "/image/coins/foreign/gouden-dukaat-holland-1795-fr-rev.webp",
+      "/image/coins/foreign/gouden-dukaat-holland-1795-fr-box.webp",
+      "/image/coins/foreign/gouden-dukaat-holland-1795-fr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:13:11.929Z",
     "slug": "gouden-dukaat-holland-1795-fr",
-    "image_obverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/gouden-dukaat-holland-1795-fr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/gouden-dukaat-holland-1795-fr-obv.webp",
+    "image_reverse": "/image/coins/foreign/gouden-dukaat-holland-1795-fr-rev.webp"
   }
 }

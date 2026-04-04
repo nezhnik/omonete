@@ -19,13 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_5.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_2.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/fender_pick_5g_zagfc00867_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00867_a_13_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-01/zagfc00867_a_14_0.png"
+    "/image/coins/foreign/fenderr-sterling-silver-5g-playable-guitar-pick-obv.webp",
+    "/image/coins/foreign/fenderr-sterling-silver-5g-playable-guitar-pick-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:08:35.121Z"
+  "parsedAt": "2026-03-27T16:08:35.121Z",
+  "image_obverse": "/image/coins/foreign/fenderr-sterling-silver-5g-playable-guitar-pick-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-sterling-silver-5g-playable-guitar-pick-rev.webp"
 }

@@ -21,13 +21,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-oz-oblivion-silver-bu_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-oz-oblivion-silver-bu_a_uv_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-1-oz-oblivion-silver-bu_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_28_11.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_00_33_16.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_01_07_19.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_01_11_18.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Timeline-1_01_01_13_23.jpg"
+    "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-oblivion-20-dollars-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-oblivion-20-dollars-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:34:20.569Z"
+  "parsedAt": "2026-03-23T19:34:20.569Z",
+  "image_obverse": "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-oblivion-20-dollars-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-oblivion-20-dollars-1-oz-silver-bu-rev.webp"
 }

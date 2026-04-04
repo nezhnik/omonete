@@ -16,12 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/naudiz-1-oz-Ag-999_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/naudiz-1-oz-Ag-999_a_UV_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/naudiz-1-oz-Ag-999_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Naudiz-dodatkowe.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Naudiz-dodatkowe_4.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Naudiz-dodatkowe_1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482-Naudiz-dodatkowe_3.jpg"
+    "/image/coins/foreign/naudiz-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/naudiz-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:32.311Z"
+  "parsedAt": "2026-03-27T11:09:32.311Z",
+  "image_obverse": "/image/coins/foreign/naudiz-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/naudiz-1-oz-ag-999-9-cast-rune-rev.webp"
 }

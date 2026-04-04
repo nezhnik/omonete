@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-obv.webp",
+      "/image/coins/foreign/end-of-wwi-100th-anniversary-2018-2oz-gold-proof-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "End of WWI 100th Anniversary 2018 2oz Gold Proof High Relief Coin",

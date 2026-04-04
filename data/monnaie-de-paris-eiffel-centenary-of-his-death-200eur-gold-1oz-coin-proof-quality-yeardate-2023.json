@@ -58,11 +58,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063436_BD_37b2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00064472_ORI2_d5af.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063437_BD_33db.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-200eur-gold-1oz-coin-proof-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-200eur-gold-1oz-coin-proof-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:18:15.464Z"
+  "parsedAt": "2026-03-29T17:18:15.464Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-200eur-gold-1oz-coin-proof-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-eiffel-centenary-of-his-death-200eur-gold-1oz-coin-proof-quality-yeardate-2023-rev.webp"
 }

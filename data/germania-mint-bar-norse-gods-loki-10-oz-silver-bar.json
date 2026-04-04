@@ -14,11 +14,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2025-loki-10oz-silver-r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/2025-loki-10oz-silver-a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/2025-loki-10oz-silver-r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/loki-10-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/loki-10-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/loki-10-3.jpg"
+    "/image/coins/foreign/norse-gods-loki-10-oz-silver-bar-obv.webp",
+    "/image/coins/foreign/norse-gods-loki-10-oz-silver-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:08:18.468Z"
+  "parsedAt": "2026-03-27T11:08:18.468Z",
+  "image_obverse": "/image/coins/foreign/norse-gods-loki-10-oz-silver-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/norse-gods-loki-10-oz-silver-bar-rev.webp"
 }

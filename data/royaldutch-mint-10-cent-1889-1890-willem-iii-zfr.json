@@ -11,13 +11,13 @@
       "Diameter": "15 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/10-cent-1889-1890-willem-iii-zfr/obv.jpeg",
-      "/image/coins/foreign/royaldutch/10-cent-1889-1890-willem-iii-zfr/rev.jpeg"
+      "/image/coins/foreign/10-cent-1889-1890-willem-iii-zfr-obv.webp",
+      "/image/coins/foreign/10-cent-1889-1890-willem-iii-zfr-rev.webp"
     ],
     "parsedAt": "2026-03-31T23:02:13.500Z",
     "slug": "10-cent-1889-1890-willem-iii-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/10-cent-1889-1890-willem-iii-zfr/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/10-cent-1889-1890-willem-iii-zfr/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/10-cent-1889-1890-willem-iii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/10-cent-1889-1890-willem-iii-zfr-rev.webp",
     "image_packaging": null,
     "image_box": null
   }

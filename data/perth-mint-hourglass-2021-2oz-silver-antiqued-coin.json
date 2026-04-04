@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-rev.webp",
     "image_box": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-obv.webp",
+      "/image/coins/foreign/hourglass-2021-2oz-silver-antiqued-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Hourglass 2021 2oz Silver Antiqued Coin",

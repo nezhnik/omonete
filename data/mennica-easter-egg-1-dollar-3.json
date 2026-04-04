@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/EASTER_EGG_reverse_.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/EASTER_EGG_obverse_.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/02/EASTER_EGG_2026_BOX.png"
+    "/image/coins/foreign/mennica-easter-egg-1-dollar-3-obv.webp",
+    "/image/coins/foreign/mennica-easter-egg-1-dollar-3-rev.webp"
   ],
   "listing_url": null,
   "listing_label": null,
-  "parsedAt": "2026-03-28T17:16:11.704Z"
+  "parsedAt": "2026-03-28T17:16:11.704Z",
+  "image_obverse": "/image/coins/foreign/mennica-easter-egg-1-dollar-3-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-easter-egg-1-dollar-3-rev.webp"
 }

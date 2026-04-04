@@ -15,12 +15,12 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-silver-1-ounce/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-silver-1-ounce/02.jpeg"
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-silver-1-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2021-silver-1-ounce-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:25:25.592Z",
     "slug": "official-restrike-lion-dollar-2021-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-silver-1-ounce/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-lion-dollar-2021-silver-1-ounce/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2021-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2021-silver-1-ounce-rev.webp"
   }
 }

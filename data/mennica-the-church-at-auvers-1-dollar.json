@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/The_Church_at_Auvers_obverse-1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/07/The_Church_at_Auvers_reverse.png"
+    "/image/coins/foreign/mennica-the-church-at-auvers-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-the-church-at-auvers-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:09:26.547Z"
+  "parsedAt": "2026-03-28T17:09:26.547Z",
+  "image_obverse": "/image/coins/foreign/mennica-the-church-at-auvers-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-the-church-at-auvers-1-dollar-rev.webp"
 }

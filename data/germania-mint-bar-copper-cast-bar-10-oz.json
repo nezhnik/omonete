@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_10oz_r-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_10oz_a-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/copper_cast_bar_10oz_r-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_17_23.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_33_21.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_31_09.jpg"
+    "/image/coins/foreign/copper-cast-bar-10-oz-obv.webp",
+    "/image/coins/foreign/copper-cast-bar-10-oz-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:05:45.209Z"
+  "parsedAt": "2026-03-27T11:05:45.209Z",
+  "image_obverse": "/image/coins/foreign/copper-cast-bar-10-oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/copper-cast-bar-10-oz-rev.webp"
 }

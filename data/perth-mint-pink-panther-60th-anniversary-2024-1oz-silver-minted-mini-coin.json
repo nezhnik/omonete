@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-rev.webp",
     "image_box": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-obv.webp",
+      "/image/coins/foreign/pink-panther-60th-anniversary-2024-1oz-silver-minted-mini-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Pink Panther™ 60th Anniversary 2024 1oz Silver Minted Mini Coin",

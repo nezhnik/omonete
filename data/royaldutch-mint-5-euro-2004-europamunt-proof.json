@@ -14,14 +14,14 @@
       "Mintmaster sign": "Koerszettende zeilen"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/04.jpeg"
+      "/image/coins/foreign/5-euro-2004-europamunt-proof-obv.webp",
+      "/image/coins/foreign/5-euro-2004-europamunt-proof-rev.webp",
+      "/image/coins/foreign/5-euro-2004-europamunt-proof-box.webp",
+      "/image/coins/foreign/5-euro-2004-europamunt-proof-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:02:52.556Z",
     "slug": "5-euro-2004-europamunt-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2004-europamunt-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2004-europamunt-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2004-europamunt-proof-rev.webp"
   }
 }

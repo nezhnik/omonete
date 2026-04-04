@@ -58,11 +58,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068394_ORI2_557a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068340_ORI2_2181.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00068395_ORI2_aa5e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-taurus-5eur-1-2g-gold-coin-proof-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-astrological-signs-taurus-5eur-1-2g-gold-coin-proof-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:53:28.402Z"
+  "parsedAt": "2026-03-29T15:53:28.402Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-taurus-5eur-1-2g-gold-coin-proof-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-astrological-signs-taurus-5eur-1-2g-gold-coin-proof-quality-yeardate-2026-rev.webp"
 }

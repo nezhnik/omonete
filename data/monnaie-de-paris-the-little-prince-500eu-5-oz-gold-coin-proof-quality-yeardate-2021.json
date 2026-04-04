@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/c/f/cf0f65e201448fc8fca1c4ee44ae907c123ae561_M5066_MDP_00060908_BD_3ed4.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/d/3/d3c94ad432c210b271a43a1b1a5e3919bef514cc_M5066_MDP_00060909_BD_f791.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-500eu-5-oz-gold-coin-proof-quality-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-500eu-5-oz-gold-coin-proof-quality-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:07:14.750Z"
+  "parsedAt": "2026-03-29T18:07:14.750Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-500eu-5-oz-gold-coin-proof-quality-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-500eu-5-oz-gold-coin-proof-quality-yeardate-2021-rev.webp"
 }

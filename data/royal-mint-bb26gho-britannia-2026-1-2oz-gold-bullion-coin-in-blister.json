@@ -24,11 +24,14 @@
     "price_display": "Price: From £1,751.44",
     "source_url": "https://www.royalmint.com/invest/bullion/bullion-coins/gold-coins/bb26gho-britannia-2026-1-2oz-gold-bullion-coin-in-blister/",
     "image_obverse": "/image/coins/foreign/bb26gho-britannia-2026-1-2oz-gold-bullion-coin-in-blister-obv.webp",
-    "image_reverse": null,
+    "image_reverse": "/image/coins/foreign/bb26gho-britannia-2026-1-2oz-gold-bullion-coin-in-blister-obv.webp",
     "image_blister_reverse": "/image/coins/foreign/bb26gho-britannia-2026-1-2oz-gold-bullion-coin-in-blister-blister-rev.webp",
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/bb26gho-britannia-2026-1-2oz-gold-bullion-coin-in-blister-obv.webp"
+    ]
   },
   "raw": {
     "title": "Britannia 2026 1/2oz Gold Bullion Coin in Blister",

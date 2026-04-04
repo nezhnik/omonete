@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/d-day-2024-uk-1oz-2-pound-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/d-day-2024-uk-1oz-2-pound-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "D-Day 2024 UK 1oz £2 Silver Proof Coin",

@@ -16,12 +16,12 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof/01.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof/02.png"
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-obv.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:12:22.095Z",
     "slug": "dutch-water-defence-lines-10-euro-coin-2025-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof/02.png"
+    "image_obverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-rev.webp"
   }
 }

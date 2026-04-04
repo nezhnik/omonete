@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1926-king-george-v-south-african-mint-gold-sovereign-rev.webp",
     "image_box": null,
     "image_certificate": "/image/coins/foreign/1926-king-george-v-south-african-mint-gold-sovereign-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1926-king-george-v-south-african-mint-gold-sovereign-obv.webp",
+      "/image/coins/foreign/1926-king-george-v-south-african-mint-gold-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "1926 King George V South African Mint Gold Sovereign",

@@ -16,17 +16,17 @@
       "Edge lettering": "DIOS*TA*CU*NOS*"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/01.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/02.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/03.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/04.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/05.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/06.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/07.png"
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-obv.webp",
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-rev.webp",
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-box.webp",
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-pack.webp",
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-cert.webp",
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-img-06.webp",
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:09:48.751Z",
     "slug": "aruba-5-florin-trupial-2025-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-trupial-2025-silver-prooflike/02.png"
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-rev.webp"
   }
 }

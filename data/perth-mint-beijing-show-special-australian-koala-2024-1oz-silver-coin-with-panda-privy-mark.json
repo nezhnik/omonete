@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/beijing-show-special-australian-koala-2024-1oz-silver-coin-with-panda-privy-mark-obv.webp",
     "image_reverse": "/image/coins/foreign/beijing-show-special-australian-koala-2024-1oz-silver-coin-with-panda-privy-mark-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/beijing-show-special-australian-koala-2024-1oz-silver-coin-with-panda-privy-mark-obv.webp",
+      "/image/coins/foreign/beijing-show-special-australian-koala-2024-1oz-silver-coin-with-panda-privy-mark-rev.webp"
+    ]
   },
   "raw": {
     "title": "BICE Show Special Australian Koala 2024 1oz Silver Coin with Panda Privy Mark",

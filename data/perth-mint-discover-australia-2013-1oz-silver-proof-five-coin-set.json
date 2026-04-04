@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-obv.webp",
+      "/image/coins/foreign/discover-australia-2013-1oz-silver-proof-five-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Discover Australia 2013 1oz Silver Proof Five-Coin Set",

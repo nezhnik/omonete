@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_front_certi.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_back_certi.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_rev-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_obv-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_front_sleeve.png",
-    "https://www.pamp.com/sites/pamp/files/2026-02/coca-cola-valentines-day_back_sleeve.png"
+    "/image/coins/foreign/1g-gold-bar-coca-colar-love-obv.webp",
+    "/image/coins/foreign/1g-gold-bar-coca-colar-love-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:10:35.485Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:10:35.486Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1g-gold-bar-coca-colar-love-obv.webp",
+  "image_reverse": "/image/coins/foreign/1g-gold-bar-coca-colar-love-rev.webp"
 }

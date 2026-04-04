@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-box.webp",
-    "image_certificate": "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-obv.webp",
+      "/image/coins/foreign/chinese-astrological-series-2026-year-of-the-horse-1-5oz-gold-proof-three-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Chinese Astrological Series 2026 Year of the Horse 1/5oz Gold Proof Three-Coin Set",

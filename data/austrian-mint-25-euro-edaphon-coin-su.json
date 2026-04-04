@@ -10,9 +10,8 @@
   },
   "price_display": "82.20 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/9/7/5/9515798-3-eng-US/d5c8ab3439ac-2024_25E_Edaphon_NbAg_HGH_VS_2D_N.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/9/7/5/9515790-3-eng-US/18f22059894a-2024_25E_Edaphon_NbAg_HGH_RS_2D.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/0/8/5/9515806-3-eng-US/8a2eb80a130a-Packshot_Etui_25E-Edaphon.png.webp"
+    "/image/coins/foreign/austrian-mint-25-euro-edaphon-coin-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-25-euro-edaphon-coin-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-niobium-coins",
   "listing_label": "Collector coins — Silver Niobium",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 65000,
     "mintage_display": "65,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-25-euro-edaphon-coin-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-edaphon-coin-su-rev.webp"
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set-rev.webp",
     "image_reverse": "/image/coins/foreign/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set-rev.webp",
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set-cert.webp"
+    "image_certificate": "/image/coins/foreign/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set-rev.webp",
+      "/image/coins/foreign/friends-30th-anniversary-2024-1-2oz-silver-proof-coloured-four-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Friends™ 30th Anniversary 2024 1/2oz Silver Proof Coloured Four-Coin Set",

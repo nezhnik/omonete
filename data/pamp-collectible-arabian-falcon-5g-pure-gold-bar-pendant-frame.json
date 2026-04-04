@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-07/arabian-falcon_certipamp-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/arabian-falcon_certipamp-back.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/arabian-falcon_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/arabian-falcon_packaging-open2.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/arabian-falcon_reverseframe.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/arabian-falcon_obverseframe.png"
+    "/image/coins/foreign/arabian-falcon-5g-pure-gold-bar-pendant-frame-obv.webp",
+    "/image/coins/foreign/arabian-falcon-5g-pure-gold-bar-pendant-frame-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:05:31.821Z"
+  "parsedAt": "2026-03-27T16:05:31.821Z",
+  "image_obverse": "/image/coins/foreign/arabian-falcon-5g-pure-gold-bar-pendant-frame-obv.webp",
+  "image_reverse": "/image/coins/foreign/arabian-falcon-5g-pure-gold-bar-pendant-frame-rev.webp"
 }

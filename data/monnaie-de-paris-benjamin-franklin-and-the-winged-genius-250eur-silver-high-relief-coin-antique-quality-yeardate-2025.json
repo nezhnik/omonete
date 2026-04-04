@@ -39,10 +39,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/F/R/FRANKLIN_250____AG__FACE_a9a3.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/F/R/FRANKLIN_250____AG__REVERS_e663.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-benjamin-franklin-and-the-winged-genius-250eur-silver-high-relief-coin-antique-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-benjamin-franklin-and-the-winged-genius-250eur-silver-high-relief-coin-antique-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:35:35.628Z"
+  "parsedAt": "2026-03-29T15:35:35.628Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-benjamin-franklin-and-the-winged-genius-250eur-silver-high-relief-coin-antique-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-benjamin-franklin-and-the-winged-genius-250eur-silver-high-relief-coin-antique-quality-yeardate-2025-rev.webp"
 }

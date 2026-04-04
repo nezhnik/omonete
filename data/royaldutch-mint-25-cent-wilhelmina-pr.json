@@ -11,14 +11,14 @@
       "Diameter": "19 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/01.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/02.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/03.jpeg",
-      "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/04.jpeg"
+      "/image/coins/foreign/25-cent-wilhelmina-pr-obv.webp",
+      "/image/coins/foreign/25-cent-wilhelmina-pr-rev.webp",
+      "/image/coins/foreign/25-cent-wilhelmina-pr-box.webp",
+      "/image/coins/foreign/25-cent-wilhelmina-pr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:01:44.881Z",
     "slug": "25-cent-wilhelmina-pr",
-    "image_obverse": "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/25-cent-wilhelmina-pr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/25-cent-wilhelmina-pr-obv.webp",
+    "image_reverse": "/image/coins/foreign/25-cent-wilhelmina-pr-rev.webp"
   }
 }

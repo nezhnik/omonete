@@ -20,10 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-12/4thchakraantelope2ozag_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-12/4thchakraantelope2ozag_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-12/4thchakraantelope2ozag_packaging_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-12/4thchakraantelope2ozag_packaging_open.png"
+    "/image/coins/foreign/antelope-4th-chakra-2oz-silver-coin-color-obv.webp",
+    "/image/coins/foreign/antelope-4th-chakra-2oz-silver-coin-color-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:05:21.782Z"
+  "parsedAt": "2026-03-27T16:05:21.782Z",
+  "image_obverse": "/image/coins/foreign/antelope-4th-chakra-2oz-silver-coin-color-obv.webp",
+  "image_reverse": "/image/coins/foreign/antelope-4th-chakra-2oz-silver-coin-color-rev.webp"
 }

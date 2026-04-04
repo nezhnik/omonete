@@ -46,11 +46,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041364710000_QUADRIPTYQUE_NOUVELLE_FACE_NATIONALE_b5aa.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/0/20CA0413544308_2____BE_FR_2022_FACE_0ac2.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/0/20CA0413544307_1____BE_FR_2022_FACE_9e54.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-new-national-sides-proof-quality-quadriptych-proof-quality-yeardate-2022-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-new-national-sides-proof-quality-quadriptych-proof-quality-yeardate-2022-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:48:50.744Z"
+  "parsedAt": "2026-03-29T17:48:50.744Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-new-national-sides-proof-quality-quadriptych-proof-quality-yeardate-2022-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-new-national-sides-proof-quality-quadriptych-proof-quality-yeardate-2022-rev.webp"
 }

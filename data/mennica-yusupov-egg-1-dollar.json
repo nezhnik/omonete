@@ -28,11 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Jajo-Jusupowa_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Jajo-Jusupowa_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Jajo-Jusupowa_box.png"
+    "/image/coins/foreign/mennica-yusupov-egg-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-yusupov-egg-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:40.987Z"
+  "parsedAt": "2026-03-28T17:05:40.987Z",
+  "image_obverse": "/image/coins/foreign/mennica-yusupov-egg-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-yusupov-egg-1-dollar-rev.webp"
 }

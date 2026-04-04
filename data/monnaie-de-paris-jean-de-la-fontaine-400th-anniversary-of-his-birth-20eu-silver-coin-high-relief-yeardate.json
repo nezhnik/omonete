@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/a/6/a6fb7756e8523b5a50a56295afd666b9ef596331_M5066_MDP_00061382_BD_14d9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/d/5/d535ff94596788548e454a99e686de5776355cc5_M5066_MDP_00061383_BD_6b9a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-20eu-silver-coin-high-relief-yeardate-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-20eu-silver-coin-high-relief-yeardate-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:57:19.216Z"
+  "parsedAt": "2026-03-29T17:57:19.216Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-20eu-silver-coin-high-relief-yeardate-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-20eu-silver-coin-high-relief-yeardate-rev.webp"
 }

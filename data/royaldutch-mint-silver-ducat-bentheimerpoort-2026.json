@@ -15,17 +15,17 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/01.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/02.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/03.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/04.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/05.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/06.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/07.png"
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-obv.webp",
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-rev.webp",
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-box.webp",
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-pack.webp",
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-cert.webp",
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-img-06.webp",
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:32:38.280Z",
     "slug": "silver-ducat-bentheimerpoort-2026",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-bentheimerpoort-2026/02.png"
+    "image_obverse": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-rev.webp"
   }
 }

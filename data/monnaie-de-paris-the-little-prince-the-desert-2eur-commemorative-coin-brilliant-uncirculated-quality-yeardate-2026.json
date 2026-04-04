@@ -69,12 +69,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069358_BD_0357.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069344_BD_9128.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069343_BD_a2ba.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00069359_BD_2641.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-desert-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-desert-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T15:51:40.009Z"
+  "parsedAt": "2026-03-29T15:51:40.009Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-desert-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-the-little-prince-the-desert-2eur-commemorative-coin-brilliant-uncirculated-quality-yeardate-2026-rev.webp"
 }

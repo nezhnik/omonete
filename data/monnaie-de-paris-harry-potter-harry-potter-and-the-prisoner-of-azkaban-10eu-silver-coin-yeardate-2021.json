@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/2/02395f6d3a1e1f106451dbbe41db9d97ff8a6832_M5066_MDP_00060937_BD_6341.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/c/d/cd9ca8b7b48a76e31163dd19c7096fe3d342892d_M5066_MDP_00060992_BD_76d5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/6/56a4e86e65578f77a9c3c4209f1b5fb47a965329_M5066_MDP_00061241_BD_db6f.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:17:16.195Z"
+  "parsedAt": "2026-03-29T18:17:16.195Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-harry-potter-and-the-prisoner-of-azkaban-10eu-silver-coin-yeardate-2021-rev.webp"
 }

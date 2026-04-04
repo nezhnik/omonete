@@ -14,14 +14,14 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/04.jpeg"
+      "/image/coins/foreign/5-euro-2010-max-havelaar-proof-obv.webp",
+      "/image/coins/foreign/5-euro-2010-max-havelaar-proof-rev.webp",
+      "/image/coins/foreign/5-euro-2010-max-havelaar-proof-box.webp",
+      "/image/coins/foreign/5-euro-2010-max-havelaar-proof-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:03:39.399Z",
     "slug": "5-euro-2010-max-havelaar-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2010-max-havelaar-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2010-max-havelaar-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2010-max-havelaar-proof-rev.webp"
   }
 }

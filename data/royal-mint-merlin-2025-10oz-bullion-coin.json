@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/merlin-2025-10oz-bullion-coin-obv.webp",
+      "/image/coins/foreign/merlin-2025-10oz-bullion-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Merlin 2025 10oz Bullion Coin",

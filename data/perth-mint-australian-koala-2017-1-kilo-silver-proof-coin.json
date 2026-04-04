@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-koala-2017-1-kilo-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Koala 2017 1 Kilo Silver Proof Coin",

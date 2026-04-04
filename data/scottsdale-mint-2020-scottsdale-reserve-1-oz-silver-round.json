@@ -9,15 +9,15 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/01.jpg",
-      "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/02.jpg",
-      "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/03.jpg",
-      "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/04.jpg",
-      "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/05.jpg"
+      "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-obv.webp",
+      "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-rev.webp",
+      "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-box.webp",
+      "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-pack.webp",
+      "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-cert.webp"
     ],
     "parsedAt": "2026-04-04T15:22:54.789Z",
     "slug": "2020-scottsdale-reserve-1-oz-silver-round",
-    "image_obverse": "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/2020-scottsdale-reserve-1-oz-silver-round/02.jpg"
+    "image_obverse": "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-obv.webp",
+    "image_reverse": "/image/coins/foreign/2020-scottsdale-reserve-1-oz-silver-round-rev.webp"
   }
 }

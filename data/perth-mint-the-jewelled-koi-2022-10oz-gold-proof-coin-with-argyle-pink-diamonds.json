@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/the-jewelled-koi-2022-10oz-gold-proof-coin-with-argyle-pink-diamonds-obv.webp",
     "image_reverse": "/image/coins/foreign/the-jewelled-koi-2022-10oz-gold-proof-coin-with-argyle-pink-diamonds-rev.webp",
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-jewelled-koi-2022-10oz-gold-proof-coin-with-argyle-pink-diamonds-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-jewelled-koi-2022-10oz-gold-proof-coin-with-argyle-pink-diamonds-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-jewelled-koi-2022-10oz-gold-proof-coin-with-argyle-pink-diamonds-obv.webp",
+      "/image/coins/foreign/the-jewelled-koi-2022-10oz-gold-proof-coin-with-argyle-pink-diamonds-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Jewelled Koi 2022 10oz Gold Proof Coin",

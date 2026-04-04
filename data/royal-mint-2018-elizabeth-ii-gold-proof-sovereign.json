@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2018-elizabeth-ii-gold-proof-sovereign-obv.webp",
+      "/image/coins/foreign/2018-elizabeth-ii-gold-proof-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "2018 Elizabeth II Gold Proof Sovereign",

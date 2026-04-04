@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/ODIN_OBVERSE.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/ODIN_REVERSE-1.png"
+    "/image/coins/foreign/mennica-odin-5-dollars-obv.webp",
+    "/image/coins/foreign/mennica-odin-5-dollars-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:49.977Z"
+  "parsedAt": "2026-03-28T17:05:49.977Z",
+  "image_obverse": "/image/coins/foreign/mennica-odin-5-dollars-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-odin-5-dollars-rev.webp"
 }

@@ -9,13 +9,13 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-silver-lion-1-oz-999-silver-cast-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-silver-lion-1-oz-999-silver-cast-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-silver-lion-1-oz-999-silver-cast-bar/03.jpg"
+      "/image/coins/foreign/scottsdale-silver-lion-1-oz-999-silver-cast-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-silver-lion-1-oz-999-silver-cast-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-silver-lion-1-oz-999-silver-cast-bar-box.webp"
     ],
     "parsedAt": "2026-04-04T15:40:29.502Z",
     "slug": "scottsdale-silver-lion-1-oz-999-silver-cast-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-silver-lion-1-oz-999-silver-cast-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-silver-lion-1-oz-999-silver-cast-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-silver-lion-1-oz-999-silver-cast-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-silver-lion-1-oz-999-silver-cast-bar-rev.webp"
   }
 }

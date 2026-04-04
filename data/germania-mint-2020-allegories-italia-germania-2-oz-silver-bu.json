@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_rev-1.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_ave-1.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/italia_germania_2oz_rev-1.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ita-2-1-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ita-2-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/ita-2-3-1.jpg"
+    "/image/coins/foreign/2020-allegories-italia-germania-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2020-allegories-italia-germania-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-24T10:03:30.350Z"
+  "parsedAt": "2026-03-24T10:03:30.350Z",
+  "image_obverse": "/image/coins/foreign/2020-allegories-italia-germania-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2020-allegories-italia-germania-2-oz-silver-bu-rev.webp"
 }

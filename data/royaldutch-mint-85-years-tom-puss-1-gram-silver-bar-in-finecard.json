@@ -14,12 +14,12 @@
       "Mintage": "5,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-1-gram-silver-bar-in-finecard/01.png",
-      "/image/coins/foreign/royaldutch/85-years-tom-puss-1-gram-silver-bar-in-finecard/02.png"
+      "/image/coins/foreign/85-years-tom-puss-1-gram-silver-bar-in-finecard-obv.webp",
+      "/image/coins/foreign/85-years-tom-puss-1-gram-silver-bar-in-finecard-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:08:25.739Z",
     "slug": "85-years-tom-puss-1-gram-silver-bar-in-finecard",
-    "image_obverse": "/image/coins/foreign/royaldutch/85-years-tom-puss-1-gram-silver-bar-in-finecard/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/85-years-tom-puss-1-gram-silver-bar-in-finecard/02.png"
+    "image_obverse": "/image/coins/foreign/85-years-tom-puss-1-gram-silver-bar-in-finecard-obv.webp",
+    "image_reverse": "/image/coins/foreign/85-years-tom-puss-1-gram-silver-bar-in-finecard-rev.webp"
   }
 }

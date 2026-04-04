@@ -70,12 +70,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067318_ORI2_BD_6239.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041397030000_25_COM_2____BU_LOUVRE_seule_revers_99a6.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067319_ORII__1_BD_1ce3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041397030000_25_COM_2____BU_LOUVRE_seule_face_4613.png?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-la-victoire-de-samothrace-2eur-commemorative-coin-brilliant-uncirculated-quality-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-louvre-museum-la-victoire-de-samothrace-2eur-commemorative-coin-brilliant-uncirculated-quality-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:23:28.131Z"
+  "parsedAt": "2026-03-29T16:23:28.131Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-la-victoire-de-samothrace-2eur-commemorative-coin-brilliant-uncirculated-quality-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-louvre-museum-la-victoire-de-samothrace-2eur-commemorative-coin-brilliant-uncirculated-quality-rev.webp"
 }

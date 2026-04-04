@@ -14,11 +14,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/norse-gods-thor-10-oz-cast-bar_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/norse-gods-thor-10-oz-cast-bar_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/norse-gods-thor-10-oz-cast-bar_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/thor-10-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/thor-10-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/thor-10-3.jpg"
+    "/image/coins/foreign/norse-gods-thor-10-oz-silver-bar-obv.webp",
+    "/image/coins/foreign/norse-gods-thor-10-oz-silver-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:08:41.569Z"
+  "parsedAt": "2026-03-27T11:08:41.569Z",
+  "image_obverse": "/image/coins/foreign/norse-gods-thor-10-oz-silver-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/norse-gods-thor-10-oz-silver-bar-rev.webp"
 }

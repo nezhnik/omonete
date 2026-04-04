@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card-obv.webp",
+      "/image/coins/foreign/happy-birthday-2026-1-2oz-silver-proof-coloured-coin-in-card-rev.webp"
+    ]
   },
   "raw": {
     "title": "Happy Birthday 2026 1/2oz Silver Proof Coloured Coin in Card",

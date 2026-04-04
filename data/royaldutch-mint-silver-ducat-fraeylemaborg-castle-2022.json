@@ -15,18 +15,17 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/05.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/06.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/07.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/08.jpeg"
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-obv.webp",
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-rev.webp",
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-box.webp",
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-pack.webp",
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-cert.webp",
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-img-06.webp",
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:33:07.468Z",
     "slug": "silver-ducat-fraeylemaborg-castle-2022",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-fraeylemaborg-castle-2022/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-rev.webp"
   }
 }

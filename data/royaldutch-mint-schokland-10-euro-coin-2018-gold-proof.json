@@ -16,16 +16,16 @@
       "Edge": "serrated"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/06.jpeg"
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-obv.webp",
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-rev.webp",
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-box.webp",
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-pack.webp",
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-cert.webp",
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:32:04.284Z",
     "slug": "schokland-10-euro-coin-2018-gold-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/schokland-10-euro-coin-2018-gold-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-rev.webp"
   }
 }

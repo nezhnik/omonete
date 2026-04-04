@@ -15,18 +15,18 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/rev.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/pack.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/box.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/cert.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/blister-obv.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/blister-rev.jpeg"
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-pack.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-box.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-cert.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-blister-obv.webp",
+      "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-blister-rev.webp"
     ],
     "parsedAt": "2026-03-31T20:28:11.618Z",
     "slug": "official-restrike-prince-dollar-2022-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/obv.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/rev.jpeg",
+    "image_obverse": "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-prince-dollar-2022-silver-1-ounce-rev.webp",
     "image_packaging": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/pack.jpeg",
     "image_box": "/image/coins/foreign/royaldutch/official-restrike-prince-dollar-2022-silver-1-ounce/box.jpeg"
   }

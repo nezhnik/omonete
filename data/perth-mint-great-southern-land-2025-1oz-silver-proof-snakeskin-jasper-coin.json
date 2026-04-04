@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin-rev.webp",
     "image_box": "/image/coins/foreign/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin-obv.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin-obv.webp",
+      "/image/coins/foreign/great-southern-land-2025-1oz-silver-proof-snakeskin-jasper-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Great Southern Land 2025 1oz Silver Proof Snakeskin Jasper Coin",

@@ -10,9 +10,8 @@
   },
   "price_display": "78.00 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/0/0/7/5/7845700-1-ger-DE/25E_2022_Leben_im_All_AV.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/6/1/7/5/7845716-1-ger-DE/25E_2022_Leben_im_All_RV.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/8/0/7/5/7845708-1-ger-DE/25E_2022_Leben_im_All_Etui.png.webp"
+    "/image/coins/foreign/austrian-mint-25-euro-extraterrestrial-life-coin-su-obv.webp",
+    "/image/coins/foreign/austrian-mint-25-euro-extraterrestrial-life-coin-su-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/silver-niobium-coins",
   "listing_label": "Collector coins — Silver Niobium",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 65000,
     "mintage_display": "65,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-25-euro-extraterrestrial-life-coin-su-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-25-euro-extraterrestrial-life-coin-su-rev.webp"
 }

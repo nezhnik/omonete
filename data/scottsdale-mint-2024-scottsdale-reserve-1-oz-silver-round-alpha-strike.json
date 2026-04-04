@@ -9,15 +9,15 @@
       "Mintage": "499"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/01.jpg",
-      "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/03.jpg",
-      "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/04.jpg",
-      "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/05.jpg",
-      "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/06.jpg"
+      "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-obv.webp",
+      "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-box.webp",
+      "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-pack.webp",
+      "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-cert.webp",
+      "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-img-06.webp"
     ],
     "parsedAt": "2026-04-04T15:25:41.504Z",
     "slug": "2024-scottsdale-reserve-1-oz-silver-round-alpha-strike",
-    "image_obverse": "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike/03.jpg"
+    "image_obverse": "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-obv.webp",
+    "image_reverse": "/image/coins/foreign/2024-scottsdale-reserve-1-oz-silver-round-alpha-strike-box.webp"
   }
 }

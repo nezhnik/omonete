@@ -13,16 +13,16 @@
       "Mintage": "158,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/04.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/05.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/06.jpeg"
+      "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-obv.webp",
+      "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-rev.webp",
+      "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-box.webp",
+      "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-pack.webp",
+      "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-cert.webp",
+      "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-img-06.webp"
     ],
     "parsedAt": "2026-03-31T20:05:29.583Z",
     "slug": "5-euro-2016-jeroen-bosch-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2016-jeroen-bosch-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2016-jeroen-bosch-unc-coincard-rev.webp"
   }
 }

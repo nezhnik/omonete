@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/_fende_heavz_pick_10gs-mks-fender10grguitp_7.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/_fende_heavz_pick_10gs-mks-fender10grguitp_1.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/_fende_heavz_pick_10gs-mks-fender10grguitp_6.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/_fende_heavz_pick_10gs-mks-fender10grguitp_5.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/_fende_heavz_pick_10gs-mks-fender10grguitp_9_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/_fende_heavz_pick_10gs-mks-fender10grguitp_3.png"
+    "/image/coins/foreign/fenderr-351-heavy-sterling-silver-10g-playable-guitar-pick-obv.webp",
+    "/image/coins/foreign/fenderr-351-heavy-sterling-silver-10g-playable-guitar-pick-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:50.865Z"
+  "parsedAt": "2026-03-27T16:07:50.865Z",
+  "image_obverse": "/image/coins/foreign/fenderr-351-heavy-sterling-silver-10g-playable-guitar-pick-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-351-heavy-sterling-silver-10g-playable-guitar-pick-rev.webp"
 }

@@ -23,12 +23,15 @@
     "catalog_suffix": "the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin",
     "price_display": "Original price: £82.50Price: £61.88",
     "source_url": "https://www.royalmint.com/shop/limited-editions/ve-day/the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-80th-anniversary-of-ve-day-2025-50p-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 80th Anniversary of VE Day 2025 UK 50p Silver Proof Coin",

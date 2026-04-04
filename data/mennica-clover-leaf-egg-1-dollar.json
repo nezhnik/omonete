@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/Clover_Leaf_Egg_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/Clover_Leaf_Egg_reverse.png"
+    "/image/coins/foreign/mennica-clover-leaf-egg-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-clover-leaf-egg-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:03:04.476Z"
+  "parsedAt": "2026-03-28T17:03:04.476Z",
+  "image_obverse": "/image/coins/foreign/mennica-clover-leaf-egg-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-clover-leaf-egg-1-dollar-rev.webp"
 }

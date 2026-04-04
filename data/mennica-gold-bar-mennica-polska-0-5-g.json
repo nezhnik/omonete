@@ -23,12 +23,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/05g_rewers_certicard-1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/05/05g_awers_certicard.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/08/Sztabka_zlota_MPSA_0_50_back.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2023/08/Sztabka_zlota_MPSA_0_50_front.png"
+    "/image/coins/foreign/mennica-gold-bar-mennica-polska-0-5-g-obv.webp",
+    "/image/coins/foreign/mennica-gold-bar-mennica-polska-0-5-g-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/investment-products/gold-investment/gold-bars/",
   "listing_label": "Gold bars (available, default price range)",
-  "parsedAt": "2026-03-28T18:27:04.211Z"
+  "parsedAt": "2026-03-28T18:27:04.211Z",
+  "image_obverse": "/image/coins/foreign/mennica-gold-bar-mennica-polska-0-5-g-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-gold-bar-mennica-polska-0-5-g-rev.webp"
 }

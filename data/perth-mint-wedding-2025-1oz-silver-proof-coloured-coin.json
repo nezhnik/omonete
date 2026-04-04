@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/wedding-2025-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/wedding-2025-1oz-silver-proof-coloured-coin-box.webp",
     "image_certificate": "/image/coins/foreign/wedding-2025-1oz-silver-proof-coloured-coin-cert.webp",
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/wedding-2025-1oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/wedding-2025-1oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Wedding 2025 1oz Silver Proof Coloured Coin",

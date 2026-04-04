@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-box.webp",
     "image_certificate": "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-obv.webp",
+      "/image/coins/foreign/australian-sovereign-2020-gold-proof-high-relief-piedfort-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Sovereign 2020 Gold Proof High Relief Piedfort Coin",

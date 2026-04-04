@@ -9,14 +9,14 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/04.jpg"
+      "/image/coins/foreign/scottsdale-mint-1-2-oz-silver-proof-like-coin-obv.webp",
+      "/image/coins/foreign/scottsdale-mint-1-2-oz-silver-proof-like-coin-rev.webp",
+      "/image/coins/foreign/scottsdale-mint-1-2-oz-silver-proof-like-coin-box.webp",
+      "/image/coins/foreign/scottsdale-mint-1-2-oz-silver-proof-like-coin-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:36:51.559Z",
     "slug": "scottsdale-mint-1-2-oz-silver-proof-like-coin",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-2-oz-silver-proof-like-coin/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-mint-1-2-oz-silver-proof-like-coin-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-mint-1-2-oz-silver-proof-like-coin-rev.webp"
   }
 }

@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-09/diwali-certipamp-front_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/diwali-certipamp-back_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/diwali-rev_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/diwali-obv_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/diwali-packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2022-09/diwali-packaging-back.png"
+    "/image/coins/foreign/diwali-lakshmi-5g-pure-gold-bar-obv.webp",
+    "/image/coins/foreign/diwali-lakshmi-5g-pure-gold-bar-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:14.437Z"
+  "parsedAt": "2026-03-27T16:07:14.437Z",
+  "image_obverse": "/image/coins/foreign/diwali-lakshmi-5g-pure-gold-bar-obv.webp",
+  "image_reverse": "/image/coins/foreign/diwali-lakshmi-5g-pure-gold-bar-rev.webp"
 }

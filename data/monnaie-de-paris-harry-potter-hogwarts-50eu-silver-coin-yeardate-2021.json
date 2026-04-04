@@ -81,13 +81,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/9/09ad6211557a2212a31b410ce53511d0fa3cf97c_M5066_MDP_00060919_BD_29c3.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/e/5ecb8c3e42f271c3ecfb216a6a39fb67779f0035_M5066_MDP_00060997_BD_6e2e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/0/2/02eb411c63cf572ebf24ccbb32fb1e444eef8bba_M5066_MDP_00060920_BD_ba27.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/a/1a342a61b7118468b89dcc7505208596d74f9327_M5066_MDP_00060996_BD_a5ea.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/d/d/dd798ee85fe69cb172948852384d45a3463401f9_M5066_MDP_00060999_BD_fd45.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-hogwarts-50eu-silver-coin-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-hogwarts-50eu-silver-coin-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:04:39.643Z"
+  "parsedAt": "2026-03-29T18:04:39.643Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-hogwarts-50eu-silver-coin-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-hogwarts-50eu-silver-coin-yeardate-2021-rev.webp"
 }

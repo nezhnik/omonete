@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-box.webp",
     "image_certificate": "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-obv.webp",
+      "/image/coins/foreign/2022-australian-koala-15th-anniv-3oz-99-99-ag-gilded-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Koala 15th Anniversary 2022 3oz Silver Proof Gilded Coin",

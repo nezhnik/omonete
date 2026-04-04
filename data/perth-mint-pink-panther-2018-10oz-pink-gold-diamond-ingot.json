@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-obv.webp",
     "image_reverse": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-rev.webp",
     "image_box": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-box.webp",
-    "image_certificate": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-cert.webp"
+    "image_certificate": "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-obv.webp",
+      "/image/coins/foreign/pink-panther-2018-10oz-pink-gold-diamond-ingot-rev.webp"
+    ]
   },
   "raw": {
     "title": "Pink Panther 2018 10oz Pink Gold Diamond Ingot",

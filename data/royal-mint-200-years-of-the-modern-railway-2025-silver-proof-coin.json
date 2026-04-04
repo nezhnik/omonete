@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/200-years-of-the-modern-railway-2025-silver-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/200-years-of-the-modern-railway-2025-silver-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/200-years-of-the-modern-railway-2025-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/200-years-of-the-modern-railway-2025-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "200 Years of The Modern Railway 2025 UK £2 Silver Proof Coin",

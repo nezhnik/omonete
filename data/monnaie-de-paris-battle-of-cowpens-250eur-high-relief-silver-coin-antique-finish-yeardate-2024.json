@@ -48,10 +48,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065930_BD_f148.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00065931_BD_4ef1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-250eur-high-relief-silver-coin-antique-finish-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-250eur-high-relief-silver-coin-antique-finish-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:15:05.706Z"
+  "parsedAt": "2026-03-29T18:15:05.706Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-250eur-high-relief-silver-coin-antique-finish-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-battle-of-cowpens-250eur-high-relief-silver-coin-antique-finish-yeardate-2024-rev.webp"
 }

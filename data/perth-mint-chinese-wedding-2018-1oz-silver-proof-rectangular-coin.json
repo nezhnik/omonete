@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/chinese-wedding-2018-1oz-silver-proof-rectangular-coin-rev.webp",
     "image_box": "/image/coins/foreign/chinese-wedding-2018-1oz-silver-proof-rectangular-coin-box.webp",
     "image_certificate": "/image/coins/foreign/chinese-wedding-2018-1oz-silver-proof-rectangular-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/chinese-wedding-2018-1oz-silver-proof-rectangular-coin-obv.webp",
+      "/image/coins/foreign/chinese-wedding-2018-1oz-silver-proof-rectangular-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Chinese Wedding 2018 1oz Silver Proof Rectangular Coin",

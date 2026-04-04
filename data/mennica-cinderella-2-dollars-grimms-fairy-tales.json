@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/11/Cinderella_obverse-1.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2025/11/Cinderella2-3.png"
+    "/image/coins/foreign/mennica-cinderella-2-dollars-grimms-fairy-tales-obv.webp",
+    "/image/coins/foreign/mennica-cinderella-2-dollars-grimms-fairy-tales-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:00:16.960Z"
+  "parsedAt": "2026-03-28T17:00:16.960Z",
+  "image_obverse": "/image/coins/foreign/mennica-cinderella-2-dollars-grimms-fairy-tales-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-cinderella-2-dollars-grimms-fairy-tales-rev.webp"
 }

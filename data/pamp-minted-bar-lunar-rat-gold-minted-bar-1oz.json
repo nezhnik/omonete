@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-04/lunarratau_1oz_certipamp_rev100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/lunarratau_1oz_certipamp_obv100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/244000_pamp_the_lunar_calendar_series_rat_rev_gold.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/244000_pamp_the_lunar_calendar_series_rat_obv_gold_1oz.png"
+    "/image/coins/foreign/lunar-rat-gold-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/lunar-rat-gold-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:27:11.285Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:03:59.745Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-rat-gold-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-rat-gold-minted-bar-1oz-rev.webp"
 }

@@ -10,9 +10,8 @@
   },
   "price_display": "2,148.30 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/magie-des-goldes/2020_100e_pharaonen_av/6294166-2-ger-DE/2020_100e_pharaonen_av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/magie-des-goldes/2020_100e_pharaonen_rv/6294170-2-ger-DE/2020_100e_pharaonen_rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/magie-des-goldes/2020_100e_pharaonen_etui/6294174-4-ger-DE/2020_100e_pharaonen_etui.png.webp"
+    "/image/coins/foreign/austrian-mint-100-euro-gold-of-the-pharaohs-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-100-euro-gold-of-the-pharaohs-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 20000,
     "mintage_display": "20,000"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-gold-of-the-pharaohs-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-gold-of-the-pharaohs-coin-p-rev.webp"
 }

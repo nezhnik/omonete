@@ -9,15 +9,15 @@
       "Mintage": "199"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/02.jpeg",
-      "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/06.jpg"
+      "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-obv.webp",
+      "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-rev.webp",
+      "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-box.webp",
+      "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-cert.webp",
+      "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-img-06.webp"
     ],
     "parsedAt": "2026-04-04T15:40:40.289Z",
     "slug": "scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike/02.jpeg"
+    "image_obverse": "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-snowflake-1-troy-oz-9999-silver-bullion-round-alpha-strike-rev.webp"
   }
 }

@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/golden-eagle-1-10oz-gold-Bu_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/25-1-10-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/25-1-10-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/25-1-10-3.jpg"
+    "/image/coins/foreign/2025-malta-golden-eagle-10-euro-1-10-oz-gold-bu-limited-edition-obv.webp",
+    "/image/coins/foreign/2025-malta-golden-eagle-10-euro-1-10-oz-gold-bu-limited-edition-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:33:24.195Z"
+  "parsedAt": "2026-03-23T19:33:24.195Z",
+  "image_obverse": "/image/coins/foreign/2025-malta-golden-eagle-10-euro-1-10-oz-gold-bu-limited-edition-obv.webp",
+  "image_reverse": "/image/coins/foreign/2025-malta-golden-eagle-10-euro-1-10-oz-gold-bu-limited-edition-rev.webp"
 }

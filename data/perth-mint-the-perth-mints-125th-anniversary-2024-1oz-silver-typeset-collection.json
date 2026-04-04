@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-obv.webp",
     "image_reverse": "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-rev.webp",
     "image_box": "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-box.webp",
-    "image_certificate": "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-cert.webp"
+    "image_certificate": "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-obv.webp",
+      "/image/coins/foreign/the-perth-mints-125th-anniversary-2024-1oz-silver-typeset-collection-rev.webp"
+    ]
   },
   "raw": {
     "title": "The Perth Mint's 125th Anniversary 2024 1oz Silver Typeset Collection",

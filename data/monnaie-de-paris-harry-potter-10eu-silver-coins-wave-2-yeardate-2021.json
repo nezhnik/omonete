@@ -37,9 +37,11 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/5/5/551006bbd53df3832bc752ee3c34b2e9bd24dda0_LOT_HARRY_POTTER_10____COLORIS__E_ET_N_4534.?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-harry-potter-10eu-silver-coins-wave-2-yeardate-2021-obv.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:19:06.300Z"
+  "parsedAt": "2026-03-29T18:19:06.300Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-10eu-silver-coins-wave-2-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-harry-potter-10eu-silver-coins-wave-2-yeardate-2021-obv.webp"
 }

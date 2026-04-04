@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/1995-dove-of-peace-2-pound-coin-obv.webp",
+      "/image/coins/foreign/1995-dove-of-peace-2-pound-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "1995 Dove of Peace £2 Coin",

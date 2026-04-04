@@ -9,13 +9,13 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market/01.jpg",
-      "/image/coins/foreign/scottsdale/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market/02.jpg",
-      "/image/coins/foreign/scottsdale/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market/03.jpg"
+      "/image/coins/foreign/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market-obv.webp",
+      "/image/coins/foreign/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market-rev.webp",
+      "/image/coins/foreign/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market-box.webp"
     ],
     "parsedAt": "2026-04-04T15:19:27.426Z",
     "slug": "1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market",
-    "image_obverse": "/image/coins/foreign/scottsdale/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market/02.jpg"
+    "image_obverse": "/image/coins/foreign/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market-obv.webp",
+    "image_reverse": "/image/coins/foreign/1-kg-scottsdale-kilo-stacker-silver-bar-secondary-market-rev.webp"
   }
 }

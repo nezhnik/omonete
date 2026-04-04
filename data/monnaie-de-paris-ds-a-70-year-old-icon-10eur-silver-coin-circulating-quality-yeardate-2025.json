@@ -83,14 +83,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041399210005_25_CITROEN_DS_10_AG_COMMEMO_face_BD_3502.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/D/S/DS_Automobiles____11_Quai_de_Conti_____10_12_2024__2_e916.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067302_ORII_BD_f92e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067304_ORII_BD_a3ef.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067251_BD_3d53.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/D/S/DS_Automobiles____11_Quai_de_Conti_____10_12_2024__28_0d95.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-ds-a-70-year-old-icon-10eur-silver-coin-circulating-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-ds-a-70-year-old-icon-10eur-silver-coin-circulating-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:35:04.411Z"
+  "parsedAt": "2026-03-29T16:35:04.411Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-ds-a-70-year-old-icon-10eur-silver-coin-circulating-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-ds-a-70-year-old-icon-10eur-silver-coin-circulating-quality-yeardate-2025-rev.webp"
 }

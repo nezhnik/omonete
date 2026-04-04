@@ -20,12 +20,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-04/bald-eagle_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-04/bald-eagle_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2024-04/bald-eagle_front-packaging-closed.png",
-    "https://www.pamp.com/sites/pamp/files/2024-04/bald-eagle_perspective-packaging-open.png",
-    "https://www.pamp.com/sites/pamp/files/2024-04/bald-eagle_perspective-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2024-04/bald-eagle_perspective-obv.png"
+    "/image/coins/foreign/america-free-2oz-silver-coin-bald-eagle-obv.webp",
+    "/image/coins/foreign/america-free-2oz-silver-coin-bald-eagle-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:04:20.851Z"
+  "parsedAt": "2026-03-27T16:04:20.851Z",
+  "image_obverse": "/image/coins/foreign/america-free-2oz-silver-coin-bald-eagle-obv.webp",
+  "image_reverse": "/image/coins/foreign/america-free-2oz-silver-coin-bald-eagle-rev.webp"
 }

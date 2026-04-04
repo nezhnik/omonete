@@ -38,10 +38,12 @@
     "packaging": null
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063051_BD_5c84.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063050_BD_4923.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-100eur-silver-coin-circulating-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-100eur-silver-coin-circulating-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:38:13.298Z"
+  "parsedAt": "2026-03-29T17:38:13.298Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-100eur-silver-coin-circulating-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-golds-of-france-the-napoleon-iii-100eur-silver-coin-circulating-quality-yeardate-2023-rev.webp"
 }

@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/10/1-Jajo-z-brzozy-karelskiej-R.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/10/1-Jajo-z-brzozy-karelskiej-A.png"
+    "/image/coins/foreign/mennica-the-karelian-birch-egg-1-dollar-obv.webp",
+    "/image/coins/foreign/mennica-the-karelian-birch-egg-1-dollar-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:08:55.374Z"
+  "parsedAt": "2026-03-28T17:08:55.374Z",
+  "image_obverse": "/image/coins/foreign/mennica-the-karelian-birch-egg-1-dollar-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-the-karelian-birch-egg-1-dollar-rev.webp"
 }

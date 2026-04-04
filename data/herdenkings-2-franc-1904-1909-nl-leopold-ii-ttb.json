@@ -13,14 +13,14 @@
       "Qualité": "Très très beau +"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/01.jpeg",
-      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/02.jpeg",
-      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/03.jpeg",
-      "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/04.jpeg"
+      "/image/coins/foreign/2-franc-1904-1909-nl-leopold-ii-ttb-obv.webp",
+      "/image/coins/foreign/2-franc-1904-1909-nl-leopold-ii-ttb-rev.webp",
+      "/image/coins/foreign/2-franc-1904-1909-nl-leopold-ii-ttb-box.webp",
+      "/image/coins/foreign/2-franc-1904-1909-nl-leopold-ii-ttb-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:45:49.456Z",
     "slug": "2-franc-1904-1909-nl-leopold-ii-ttb",
-    "image_obverse": "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/2-franc-1904-1909-nl-leopold-ii-ttb/02.jpeg"
+    "image_obverse": "/image/coins/foreign/2-franc-1904-1909-nl-leopold-ii-ttb-obv.webp",
+    "image_reverse": "/image/coins/foreign/2-franc-1904-1909-nl-leopold-ii-ttb-rev.webp"
   }
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-rev.webp",
     "image_box": "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-obv.webp",
+      "/image/coins/foreign/pink-panther-60th-anniversary-2024-5oz-silver-proof-high-relief-gilded-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Pink Panther 60th Anniversary 2024 5oz Silver Proof High Relief Gilded Coin",

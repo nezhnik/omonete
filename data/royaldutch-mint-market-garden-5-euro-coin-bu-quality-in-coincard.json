@@ -14,18 +14,17 @@
       "Mintage": "15,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/04.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/05.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/06.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/07.jpeg",
-      "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/08.jpeg"
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-obv.webp",
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-rev.webp",
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-box.webp",
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-pack.webp",
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-cert.webp",
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-img-06.webp",
+      "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:18:20.525Z",
     "slug": "market-garden-5-euro-coin-bu-quality-in-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/market-garden-5-euro-coin-bu-quality-in-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/market-garden-5-euro-coin-bu-quality-in-coincard-rev.webp"
   }
 }

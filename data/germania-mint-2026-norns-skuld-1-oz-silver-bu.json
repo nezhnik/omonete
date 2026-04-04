@@ -19,15 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/rewers-900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/Skuld-900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/rewers-900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-502.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-503.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-500.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/norns-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/norns-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-504.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/Bez-nazwy-509.jpg"
+    "/image/coins/foreign/2026-norns-skuld-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2026-norns-skuld-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:35:49.099Z"
+  "parsedAt": "2026-03-23T19:35:49.099Z",
+  "image_obverse": "/image/coins/foreign/2026-norns-skuld-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-norns-skuld-1-oz-silver-bu-rev.webp"
 }

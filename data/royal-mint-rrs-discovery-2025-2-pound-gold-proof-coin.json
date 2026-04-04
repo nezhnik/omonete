@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/rrs-discovery-2025-2-pound-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/rrs-discovery-2025-2-pound-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/rrs-discovery-2025-2-pound-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/rrs-discovery-2025-2-pound-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "RRS Discovery 2025 UK £2 Gold Proof Coin",

@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-01/burton_morris_series_pop_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_packaging_front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-01/burton-morris-series_pop_packaging_back.png"
+    "/image/coins/foreign/burton-morris-american-icons-1oz-silver-coin-pop-obv.webp",
+    "/image/coins/foreign/burton-morris-american-icons-1oz-silver-coin-pop-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:16.475Z"
+  "parsedAt": "2026-03-27T16:06:16.475Z",
+  "image_obverse": "/image/coins/foreign/burton-morris-american-icons-1oz-silver-coin-pop-obv.webp",
+  "image_reverse": "/image/coins/foreign/burton-morris-american-icons-1oz-silver-coin-pop-rev.webp"
 }

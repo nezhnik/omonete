@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-obv.webp",
+      "/image/coins/foreign/australian-kookaburra-35th-anniversary-2025-2oz-gold-proof-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kookaburra 35th Anniversary 2025 2oz Gold Proof High Relief Coin",

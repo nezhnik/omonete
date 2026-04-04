@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-05/lunardragonau_5g_certipamp_rev100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/lunardragonau_5g_certipamp_obv100.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/au_dragon_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-08/au_dragon_5g.png"
+    "/image/coins/foreign/lunar-dragon-gold-minted-bar-5g-obv.webp",
+    "/image/coins/foreign/lunar-dragon-gold-minted-bar-5g-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:23:46.371Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:57:27.514Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-dragon-gold-minted-bar-5g-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-dragon-gold-minted-bar-5g-rev.webp"
 }

@@ -10,9 +10,8 @@
   },
   "price_display": "2,208.45 €",
   "imageUrls": [
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2016_fuchs-av/61617-2-ger-DE/100e_2016_fuchs-av.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2016_fuchs-rv/61625-2-ger-DE/100e_2016_fuchs-rv.png.webp",
-    "https://www.muenzeoesterreich.com/var/storage/images/_aliases/product_full/media/bilder/produktbilder/2.sammeln/2.7.100_euro/wildtiere/100e_2016_fuchs-etui/61629-1-ger-DE/100E_2016_Fuchs-Etui.png.webp"
+    "/image/coins/foreign/austrian-mint-100-euro-fox-coin-p-obv.webp",
+    "/image/coins/foreign/austrian-mint-100-euro-fox-coin-p-rev.webp"
   ],
   "listing_url": "https://www.muenzeoesterreich.com/en/collect/collector-coins/gold-coins",
   "listing_label": "Collector coins — Gold",
@@ -29,5 +28,7 @@
   "mintage_sync": {
     "mintage": 30000,
     "mintage_display": "30,000 (Münze Österreich: Auflage Polierte Platte — 30.000)"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/austrian-mint-100-euro-fox-coin-p-obv.webp",
+  "image_reverse": "/image/coins/foreign/austrian-mint-100-euro-fox-coin-p-rev.webp"
 }

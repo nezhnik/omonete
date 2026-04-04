@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-rev.webp",
     "image_box": "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-box.webp",
     "image_certificate": null,
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-obv.webp",
+      "/image/coins/foreign/1915-gold-sovereign-mintmark-trio-rev.webp"
+    ]
   },
   "raw": {
     "title": "1915 Gold Sovereign Mintmark Trio",

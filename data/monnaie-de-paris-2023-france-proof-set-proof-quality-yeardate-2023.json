@@ -57,11 +57,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/3/23_S__RIE_BE_EURO_2023_COFFRET_OUVERT_AVEC_FOURREAU_BD_7627.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/3/23_S__RIE_BE_EURO_2023_COFFRET_OUVERT_AVEC_FOURREAU_CERTIFICAT_BD_241a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/2/3/23_S__RIE_BE_EURO_2023_COFFRET_FERM___BD_fc5e.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-2023-france-proof-set-proof-quality-yeardate-2023-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-2023-france-proof-set-proof-quality-yeardate-2023-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:40:30.205Z"
+  "parsedAt": "2026-03-29T17:40:30.205Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-2023-france-proof-set-proof-quality-yeardate-2023-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-2023-france-proof-set-proof-quality-yeardate-2023-rev.webp"
 }

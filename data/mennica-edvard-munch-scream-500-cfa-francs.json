@@ -28,10 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/Reverse_The_Scream_Edvard_Munch.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2024/03/Obverse_Munch_Scream.png"
+    "/image/coins/foreign/mennica-edvard-munch-scream-500-cfa-francs-obv.webp",
+    "/image/coins/foreign/mennica-edvard-munch-scream-500-cfa-francs-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:07:58.379Z"
+  "parsedAt": "2026-03-28T17:07:58.379Z",
+  "image_obverse": "/image/coins/foreign/mennica-edvard-munch-scream-500-cfa-francs-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-edvard-munch-scream-500-cfa-francs-rev.webp"
 }

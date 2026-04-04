@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_4.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_3.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_7_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_8_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_1_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/pez_chick_zagfc00901a_5_0.png"
+    "/image/coins/foreign/pezr-chick-gift-set-obv.webp",
+    "/image/coins/foreign/pezr-chick-gift-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:13:39.827Z"
+  "parsedAt": "2026-03-27T16:13:39.827Z",
+  "image_obverse": "/image/coins/foreign/pezr-chick-gift-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/pezr-chick-gift-set-rev.webp"
 }

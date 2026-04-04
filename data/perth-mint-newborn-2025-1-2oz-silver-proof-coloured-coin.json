@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/newborn-2025-1-2oz-silver-proof-coloured-coin-rev.webp",
     "image_box": null,
     "image_certificate": null,
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/newborn-2025-1-2oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/newborn-2025-1-2oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Newborn 2025 1/2oz Silver Proof Coloured Coin",

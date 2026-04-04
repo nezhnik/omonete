@@ -15,18 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/01.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/02.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/03.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/04.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/05.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/06.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/07.jpeg",
-      "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/08.jpeg"
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-obv.webp",
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-rev.webp",
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-box.webp",
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-pack.webp",
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-cert.webp",
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-img-06.webp",
+      "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:36:26.076Z",
     "slug": "summer-carnival-rotterdam-silver-1-ounce-with-color",
-    "image_obverse": "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/summer-carnival-rotterdam-silver-1-ounce-with-color/02.jpeg"
+    "image_obverse": "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-obv.webp",
+    "image_reverse": "/image/coins/foreign/summer-carnival-rotterdam-silver-1-ounce-with-color-rev.webp"
   }
 }

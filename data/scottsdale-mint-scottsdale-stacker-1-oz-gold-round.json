@@ -9,14 +9,14 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-stacker-1-oz-gold-round/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-stacker-1-oz-gold-round/02.png",
-      "/image/coins/foreign/scottsdale/scottsdale-stacker-1-oz-gold-round/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-stacker-1-oz-gold-round/04.jpg"
+      "/image/coins/foreign/scottsdale-stacker-1-oz-gold-round-obv.webp",
+      "/image/coins/foreign/scottsdale-stacker-1-oz-gold-round-rev.webp",
+      "/image/coins/foreign/scottsdale-stacker-1-oz-gold-round-box.webp",
+      "/image/coins/foreign/scottsdale-stacker-1-oz-gold-round-pack.webp"
     ],
     "parsedAt": "2026-04-04T15:41:23.655Z",
     "slug": "scottsdale-stacker-1-oz-gold-round",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-1-oz-gold-round/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-stacker-1-oz-gold-round/02.png"
+    "image_obverse": "/image/coins/foreign/scottsdale-stacker-1-oz-gold-round-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-stacker-1-oz-gold-round-rev.webp"
   }
 }

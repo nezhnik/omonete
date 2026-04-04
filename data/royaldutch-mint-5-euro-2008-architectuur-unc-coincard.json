@@ -13,14 +13,14 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2008-architectuur-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2008-architectuur-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2008-architectuur-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2008-architectuur-unc-coincard/04.jpeg"
+      "/image/coins/foreign/5-euro-2008-architectuur-unc-coincard-obv.webp",
+      "/image/coins/foreign/5-euro-2008-architectuur-unc-coincard-rev.webp",
+      "/image/coins/foreign/5-euro-2008-architectuur-unc-coincard-box.webp",
+      "/image/coins/foreign/5-euro-2008-architectuur-unc-coincard-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:03:31.895Z",
     "slug": "5-euro-2008-architectuur-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2008-architectuur-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2008-architectuur-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2008-architectuur-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2008-architectuur-unc-coincard-rev.webp"
   }
 }

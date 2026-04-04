@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/1857-1931-australian-sovereign-prestige-collection-rev.webp",
     "image_box": null,
     "image_certificate": "/image/coins/foreign/1857-1931-australian-sovereign-prestige-collection-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/1857-1931-australian-sovereign-prestige-collection-obv.webp",
+      "/image/coins/foreign/1857-1931-australian-sovereign-prestige-collection-rev.webp"
+    ]
   },
   "raw": {
     "title": "1857-1931 Australian Sovereign Prestige Collection",

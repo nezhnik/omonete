@@ -15,19 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/01.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/02.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/03.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/04.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/05.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/06.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/07.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/08.png",
-      "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/09.png"
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-obv.webp",
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-rev.webp",
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-box.webp",
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-pack.webp",
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-cert.webp",
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-img-06.webp",
+      "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:30:44.207Z",
     "slug": "pen-38-7-dukaton-2026-ag999-2oz-cs",
-    "image_obverse": "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/pen-38-7-dukaton-2026-ag999-2oz-cs/02.png"
+    "image_obverse": "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-obv.webp",
+    "image_reverse": "/image/coins/foreign/pen-38-7-dukaton-2026-ag999-2oz-cs-rev.webp"
   }
 }

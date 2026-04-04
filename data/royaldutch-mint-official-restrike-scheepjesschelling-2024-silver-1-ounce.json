@@ -15,15 +15,15 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/01.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/03.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/04.png",
-      "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/05.png"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-box.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-pack.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-cert.webp"
     ],
     "parsedAt": "2026-03-31T20:29:58.433Z",
     "slug": "official-restrike-scheepjesschelling-2024-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-scheepjesschelling-2024-silver-1-ounce/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2024-silver-1-ounce-rev.webp"
   }
 }

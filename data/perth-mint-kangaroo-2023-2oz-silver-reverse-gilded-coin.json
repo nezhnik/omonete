@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/kangaroo-2023-2oz-silver-reverse-gilded-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/kangaroo-2023-2oz-silver-reverse-gilded-coin-rev.webp",
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/kangaroo-2023-2oz-silver-reverse-gilded-coin-obv.webp",
+      "/image/coins/foreign/kangaroo-2023-2oz-silver-reverse-gilded-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo 2023 2oz Silver Reverse Gilded Coin",

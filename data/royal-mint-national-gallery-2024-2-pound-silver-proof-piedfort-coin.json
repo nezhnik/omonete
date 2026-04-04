@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": "/image/coins/foreign/national-gallery-2024-2-pound-silver-proof-piedfort-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/national-gallery-2024-2-pound-silver-proof-piedfort-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/national-gallery-2024-2-pound-silver-proof-piedfort-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/national-gallery-2024-2-pound-silver-proof-piedfort-coin-obv.webp",
+      "/image/coins/foreign/national-gallery-2024-2-pound-silver-proof-piedfort-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "National Gallery 2024 UK £2 Silver Proof Piedfort Coin",

@@ -11,14 +11,14 @@
       "Diameter": "16 mm"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/cent-1875-1877-willem-iii-zfr/01.jpeg",
-      "/image/coins/foreign/royaldutch/cent-1875-1877-willem-iii-zfr/02.jpeg",
-      "/image/coins/foreign/royaldutch/cent-1875-1877-willem-iii-zfr/03.jpeg",
-      "/image/coins/foreign/royaldutch/cent-1875-1877-willem-iii-zfr/04.jpeg"
+      "/image/coins/foreign/cent-1875-1877-willem-iii-zfr-obv.webp",
+      "/image/coins/foreign/cent-1875-1877-willem-iii-zfr-rev.webp",
+      "/image/coins/foreign/cent-1875-1877-willem-iii-zfr-box.webp",
+      "/image/coins/foreign/cent-1875-1877-willem-iii-zfr-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:11:17.602Z",
     "slug": "cent-1875-1877-willem-iii-zfr",
-    "image_obverse": "/image/coins/foreign/royaldutch/cent-1875-1877-willem-iii-zfr/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/cent-1875-1877-willem-iii-zfr/02.jpeg"
+    "image_obverse": "/image/coins/foreign/cent-1875-1877-willem-iii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/cent-1875-1877-willem-iii-zfr-rev.webp"
   }
 }

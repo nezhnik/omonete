@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_rev-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_obv-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-05/gorilla_burton-morris_packaging-open.png"
+    "/image/coins/foreign/burton-morris-american-icons-gorilla-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/burton-morris-american-icons-gorilla-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:06:23.407Z"
+  "parsedAt": "2026-03-27T16:06:23.407Z",
+  "image_obverse": "/image/coins/foreign/burton-morris-american-icons-gorilla-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/burton-morris-american-icons-gorilla-1oz-silver-coin-rev.webp"
 }

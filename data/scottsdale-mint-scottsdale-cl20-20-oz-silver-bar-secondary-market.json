@@ -9,17 +9,17 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/06.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/07.jpg"
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-obv.webp",
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-rev.webp",
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-box.webp",
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-pack.webp",
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-cert.webp",
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-img-06.webp",
+      "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-img-07.webp"
     ],
     "parsedAt": "2026-04-04T15:29:55.904Z",
     "slug": "scottsdale-cl20-20-oz-silver-bar-secondary-market",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-cl20-20-oz-silver-bar-secondary-market/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-cl20-20-oz-silver-bar-secondary-market-rev.webp"
   }
 }

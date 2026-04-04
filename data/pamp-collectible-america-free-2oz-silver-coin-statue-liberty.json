@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-05/liberty-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/liberty-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2022-05/packaging-open_0.png"
+    "/image/coins/foreign/america-free-2oz-silver-coin-statue-liberty-obv.webp",
+    "/image/coins/foreign/america-free-2oz-silver-coin-statue-liberty-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:04:37.534Z"
+  "parsedAt": "2026-03-27T16:04:37.534Z",
+  "image_obverse": "/image/coins/foreign/america-free-2oz-silver-coin-statue-liberty-obv.webp",
+  "image_reverse": "/image/coins/foreign/america-free-2oz-silver-coin-statue-liberty-rev.webp"
 }

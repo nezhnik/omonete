@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set-obv.webp",
     "image_reverse": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set-obv.webp",
+      "/image/coins/foreign/chinese-astrological-series-2023-year-of-the-rabbit-1-5oz-gold-proof-three-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "Chinese Astrological Series 2023 Year of the Rabbit 1/5oz Gold Proof Three-Coin Set",

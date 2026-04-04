@@ -19,11 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_rev-p.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_packaging-close.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/labirynth_packaging-back.png"
+    "/image/coins/foreign/minotaur-labyrinth-crete-15oz-pure-silver-coin-obv.webp",
+    "/image/coins/foreign/minotaur-labyrinth-crete-15oz-pure-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:12:10.260Z"
+  "parsedAt": "2026-03-27T16:12:10.260Z",
+  "image_obverse": "/image/coins/foreign/minotaur-labyrinth-crete-15oz-pure-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/minotaur-labyrinth-crete-15oz-pure-silver-coin-rev.webp"
 }

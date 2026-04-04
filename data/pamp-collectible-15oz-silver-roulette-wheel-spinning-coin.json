@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_packaging-closed_01.png",
-    "https://www.pamp.com/sites/pamp/files/2023-02/roulette_packaging-open.png"
+    "/image/coins/foreign/15oz-silver-roulette-wheel-spinning-coin-obv.webp",
+    "/image/coins/foreign/15oz-silver-roulette-wheel-spinning-coin-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:10:22.608Z",
   "classified_source_urls": {
@@ -33,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:10:22.610Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/15oz-silver-roulette-wheel-spinning-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/15oz-silver-roulette-wheel-spinning-coin-rev.webp"
 }

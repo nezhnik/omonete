@@ -19,12 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-07/1oz_au_yellow_dragon_front_certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/1oz_au_yellow_dragon_back_certipamp.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/1oz_au_yellow_dragon_reverse_front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/1oz_au_yellow_dragon_obverse_front.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/1oz_au_yellow_dragon_front_sleeve.png",
-    "https://www.pamp.com/sites/pamp/files/2025-07/1oz_au_yellow_dragon_back_sleeve.png"
+    "/image/coins/foreign/good-luck-yellow-dragon-gold-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/good-luck-yellow-dragon-gold-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:19:25.554Z",
   "classified_source_urls": {
@@ -38,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:47:55.448Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/good-luck-yellow-dragon-gold-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/good-luck-yellow-dragon-gold-minted-bar-1oz-rev.webp"
 }

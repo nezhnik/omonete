@@ -20,11 +20,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/12/warrior-arminius-2-oz-ag-9999_rev900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/skoll-1-oz-black-silver-bu_a_900px-1-2.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/warrior-arminius-2-oz-ag-9999_rev900px.png",
-    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-3-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-3-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/12/warriors-3-3.jpg"
+    "/image/coins/foreign/2022-warriors-arminius-2-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2022-warriors-arminius-2-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:37:18.053Z"
+  "parsedAt": "2026-03-23T19:37:18.053Z",
+  "image_obverse": "/image/coins/foreign/2022-warriors-arminius-2-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2022-warriors-arminius-2-oz-silver-bu-rev.webp"
 }

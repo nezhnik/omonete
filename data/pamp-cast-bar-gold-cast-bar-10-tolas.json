@@ -19,7 +19,7 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-12/10-tolas_cast_bar.png"
+    "/image/coins/foreign/gold-cast-bar-10-tolas-rev.webp"
   ],
   "parsedAt": "2026-03-27T23:23:26.606Z",
   "classified_source_urls": {
@@ -29,5 +29,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:23:27.235Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/gold-cast-bar-10-tolas-rev.webp",
+  "image_reverse": "/image/coins/foreign/gold-cast-bar-10-tolas-rev.webp"
 }

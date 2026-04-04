@@ -23,12 +23,15 @@
     "catalog_suffix": "2019-queen-victoria-uk-silver-proof-5-piedfort-coin",
     "price_display": "Price: £160.00",
     "source_url": "https://www.royalmint.com/shop/monarch/queen-elizabeth-ii/2019-Queen-Victoria-UK-Silver-Proof-5-Piedfort-Coin",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/2019-queen-victoria-uk-silver-proof-5-piedfort-coin-rev.webp",
     "image_reverse": "/image/coins/foreign/2019-queen-victoria-uk-silver-proof-5-piedfort-coin-rev.webp",
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2019-queen-victoria-uk-silver-proof-5-piedfort-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "2019 Queen Victoria UK Silver Proof £5 Piedfort Coin",

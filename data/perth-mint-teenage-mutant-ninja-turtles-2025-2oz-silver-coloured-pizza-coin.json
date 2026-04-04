@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin-rev.webp",
     "image_box": "/image/coins/foreign/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin-obv.webp",
+      "/image/coins/foreign/teenage-mutant-ninja-turtles-2025-2oz-silver-coloured-pizza-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Teenage Mutant Ninja Turtles 2025 2oz Silver Coloured Pizza Coin",

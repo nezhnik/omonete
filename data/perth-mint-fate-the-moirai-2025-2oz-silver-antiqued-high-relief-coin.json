@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-rev.webp",
     "image_box": "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-obv.webp",
+      "/image/coins/foreign/fate-the-moirai-2025-2oz-silver-antiqued-high-relief-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Fate - The Moirai 2025 2oz Silver Antiqued High Relief Coin",

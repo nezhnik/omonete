@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2002-elizabeth-ii-golden-jubilee-half-sovereign-obv.webp",
+      "/image/coins/foreign/2002-elizabeth-ii-golden-jubilee-half-sovereign-rev.webp"
+    ]
   },
   "raw": {
     "title": "2002 Elizabeth II Golden Jubilee Half Sovereign",

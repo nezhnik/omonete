@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-rev.webp",
     "image_box": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-box.webp",
     "image_certificate": "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-obv.webp",
+      "/image/coins/foreign/perth-mint-great-war-gold-sovereign-collection-1914-1918-rev.webp"
+    ]
   },
   "raw": {
     "title": "Perth Mint Great War Gold Sovereign Collection 1914–1918",

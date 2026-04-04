@@ -16,12 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_r_900-px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_uv_a_900-px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_r_900-px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Isaz-1-960x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Isaz-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/germania-mint-cast-runes-isaz_a_900-px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/MRK-2482_Isaz-4-960x1080.jpg"
+    "/image/coins/foreign/isaz-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/isaz-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:16.789Z"
+  "parsedAt": "2026-03-27T11:09:16.789Z",
+  "image_obverse": "/image/coins/foreign/isaz-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/isaz-1-oz-ag-999-9-cast-rune-rev.webp"
 }

@@ -19,10 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-04/lunarox_au_1oz_certipamp_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/lunarox_au_1oz_certipamp_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/259900_pamp_the_lunar_calendar_series_ox_rev_gold.png",
-    "https://www.pamp.com/sites/pamp/files/2022-04/259900_pamp_the_lunar_calendar_series_ox_obv_gold_1oz.png"
+    "/image/coins/foreign/lunar-ox-gold-minted-bar-1oz-obv.webp",
+    "/image/coins/foreign/lunar-ox-gold-minted-bar-1oz-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:25:55.604Z",
   "classified_source_urls": {
@@ -36,5 +34,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T23:01:57.375Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lunar-ox-gold-minted-bar-1oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/lunar-ox-gold-minted-bar-1oz-rev.webp"
 }

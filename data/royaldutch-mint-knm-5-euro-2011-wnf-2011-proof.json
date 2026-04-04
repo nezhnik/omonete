@@ -14,18 +14,17 @@
       "Mintage": "17,500"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/07.jpeg",
-      "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/08.jpeg"
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-obv.webp",
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-rev.webp",
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-box.webp",
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-pack.webp",
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-cert.webp",
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-img-06.webp",
+      "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:14:37.608Z",
     "slug": "knm-5-euro-2011-wnf-2011-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/knm-5-euro-2011-wnf-2011-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/knm-5-euro-2011-wnf-2011-proof-rev.webp"
   }
 }

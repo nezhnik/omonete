@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063396_BD_8ed5.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063467_BD_e0f1.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00063397_BD_3f92.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-50eur-1-4oz-gold-coin-proof-quality-yeardate-2024-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-50eur-1-4oz-gold-coin-proof-quality-yeardate-2024-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T17:25:51.883Z"
+  "parsedAt": "2026-03-29T17:25:51.883Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-50eur-1-4oz-gold-coin-proof-quality-yeardate-2024-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-year-of-the-dragon-50eur-1-4oz-gold-coin-proof-quality-yeardate-2024-rev.webp"
 }

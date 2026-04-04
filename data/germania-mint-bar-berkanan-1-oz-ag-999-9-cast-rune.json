@@ -16,11 +16,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/HIM-9462_Berkanan_rewers_900-px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/HIM-9462_Berkanan_awers_UV-Effect_900-px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/02/HIM-9462_Berkanan_rewers_900-px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-2496_Berkanan-1-oz-Ag-999_1_full-1920x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-2496_Berkanan-1-oz-Ag-999_5_1500px-1200x1080.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/MRK-2485_runes_berkanan-3.jpg"
+    "/image/coins/foreign/berkanan-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/berkanan-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:08:53.303Z"
+  "parsedAt": "2026-03-27T11:08:53.303Z",
+  "image_obverse": "/image/coins/foreign/berkanan-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/berkanan-1-oz-ag-999-9-cast-rune-rev.webp"
 }

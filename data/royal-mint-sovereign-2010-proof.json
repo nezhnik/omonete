@@ -23,12 +23,15 @@
     "catalog_suffix": "sovereign-2010-proof",
     "price_display": "Price: £2,700.00",
     "source_url": "https://www.royalmint.com/sovereign/all/Sovereign-2010-proof/",
-    "image_obverse": null,
+    "image_obverse": "/image/coins/foreign/sovereign-2010-proof-rev.webp",
     "image_reverse": "/image/coins/foreign/sovereign-2010-proof-rev.webp",
     "image_blister_reverse": "/image/coins/foreign/sovereign-2010-proof-blister-rev.webp",
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/sovereign-2010-proof-rev.webp"
+    ]
   },
   "raw": {
     "title": "The 2010 Five Sovereign Piece",

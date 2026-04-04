@@ -14,21 +14,17 @@
       "Mintage": "10,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/01.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/02.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/03.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/04.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/05.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/06.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/07.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/08.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/09.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/10.png",
-      "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/11.png"
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-obv.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-rev.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-box.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-pack.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-cert.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-img-06.webp",
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-img-07.webp"
     ],
     "parsedAt": "2026-03-31T19:59:58.146Z",
     "slug": "100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard/02.png"
+    "image_obverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-rev.webp"
   }
 }

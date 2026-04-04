@@ -15,20 +15,17 @@
       "Edge": "various"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/01.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/02.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/03.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/04.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/05.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/06.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/07.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/08.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/09.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/10.jpeg"
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-obv.webp",
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-rev.webp",
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-box.webp",
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-pack.webp",
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-cert.webp",
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-img-06.webp",
+      "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:35:43.924Z",
     "slug": "special-set-350-years-groningen-and-coevorden-end-of-a-siege",
-    "image_obverse": "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/special-set-350-years-groningen-and-coevorden-end-of-a-siege/02.jpeg"
+    "image_obverse": "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-obv.webp",
+    "image_reverse": "/image/coins/foreign/special-set-350-years-groningen-and-coevorden-end-of-a-siege-rev.webp"
   }
 }

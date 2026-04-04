@@ -13,14 +13,14 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/04.jpeg"
+      "/image/coins/foreign/5-euro-2011-muntgebouw-unc-coincard-obv.webp",
+      "/image/coins/foreign/5-euro-2011-muntgebouw-unc-coincard-rev.webp",
+      "/image/coins/foreign/5-euro-2011-muntgebouw-unc-coincard-box.webp",
+      "/image/coins/foreign/5-euro-2011-muntgebouw-unc-coincard-pack.webp"
     ],
     "parsedAt": "2026-03-31T20:03:53.332Z",
     "slug": "5-euro-2011-muntgebouw-unc-coincard",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2011-muntgebouw-unc-coincard/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2011-muntgebouw-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2011-muntgebouw-unc-coincard-rev.webp"
   }
 }

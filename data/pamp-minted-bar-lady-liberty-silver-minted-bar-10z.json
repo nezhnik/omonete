@@ -19,9 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2025-05/pamp-10oz-silver-bar-ladyofliberty-webimage-2000x2000px-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2025-05/pamp-10oz-silver-bar-ladyofliberty-webimage-2000x2000px-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2025-05/pamp-10oz-silver-bar-ladyofliberty-webimage-2000x2000px-closeup-2.png"
+    "/image/coins/foreign/lady-liberty-silver-minted-bar-10z-obv.webp",
+    "/image/coins/foreign/lady-liberty-silver-minted-bar-10z-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:22:48.167Z",
   "classified_source_urls": {
@@ -32,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:54:47.833Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/lady-liberty-silver-minted-bar-10z-obv.webp",
+  "image_reverse": "/image/coins/foreign/lady-liberty-silver-minted-bar-10z-rev.webp"
 }

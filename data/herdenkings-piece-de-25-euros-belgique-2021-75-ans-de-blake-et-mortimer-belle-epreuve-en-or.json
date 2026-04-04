@@ -15,17 +15,17 @@
       "Création": "Luc Luycx"
     },
     "imageUrls": [
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/01.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/02.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/03.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/04.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/05.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/06.jpeg",
-      "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/07.jpeg"
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-obv.webp",
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-rev.webp",
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-box.webp",
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-pack.webp",
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-cert.webp",
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-img-06.webp",
+      "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:52:23.013Z",
     "slug": "piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or",
-    "image_obverse": "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/01.jpeg",
-    "image_reverse": "/image/coins/foreign/herdenkings/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or/02.jpeg"
+    "image_obverse": "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-obv.webp",
+    "image_reverse": "/image/coins/foreign/piece-de-25-euros-belgique-2021-75-ans-de-blake-et-mortimer-belle-epreuve-en-or-rev.webp"
   }
 }

@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-rev.webp",
     "image_box": "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-obv.webp",
+      "/image/coins/foreign/2019-australian-kangaroo-5-oz-99-99-silver-pr-hr-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kangaroo 2019 5oz Silver Proof High Relief Coin",

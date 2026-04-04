@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/wedding-2020-1oz-silver-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/wedding-2020-1oz-silver-proof-coin-box.webp",
     "image_certificate": "/image/coins/foreign/wedding-2020-1oz-silver-proof-coin-cert.webp",
-    "mintage_display": "Тираж неограничен"
+    "mintage_display": "Тираж неограничен",
+    "imageUrls": [
+      "/image/coins/foreign/wedding-2020-1oz-silver-proof-coin-obv.webp",
+      "/image/coins/foreign/wedding-2020-1oz-silver-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Wedding 2020 1oz Silver Proof Coin",

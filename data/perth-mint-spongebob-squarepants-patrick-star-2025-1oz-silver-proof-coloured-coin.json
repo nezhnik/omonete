@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-rev.webp",
     "image_box": "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-obv.webp",
+      "/image/coins/foreign/spongebob-squarepants-patrick-star-2025-1oz-silver-proof-coloured-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "SpongeBob SquarePants - Patrick Star 2025 1oz Silver Proof Coloured Coin",

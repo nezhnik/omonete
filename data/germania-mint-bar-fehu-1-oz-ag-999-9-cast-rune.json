@@ -17,12 +17,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-fehu-1-oz-cast-rune_900px_r.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-uruz-1-oz-cast-rune_900px_a_uv.png",
-    "https://germaniamint.com/wp-content/uploads/2025/06/germania-mint-fehu-1-oz-cast-rune_900px_r.png",
-    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-3.jpg",
-    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-5.jpg",
-    "https://germaniamint.com/wp-content/uploads/2023/09/red-runes-2.jpg"
+    "/image/coins/foreign/fehu-1-oz-ag-999-9-cast-rune-obv.webp",
+    "/image/coins/foreign/fehu-1-oz-ag-999-9-cast-rune-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:09:05.108Z"
+  "parsedAt": "2026-03-27T11:09:05.108Z",
+  "image_obverse": "/image/coins/foreign/fehu-1-oz-ag-999-9-cast-rune-obv.webp",
+  "image_reverse": "/image/coins/foreign/fehu-1-oz-ag-999-9-cast-rune-rev.webp"
 }

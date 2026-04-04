@@ -15,17 +15,17 @@
       "Edge": "Smooth"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/01.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/02.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/03.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/04.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/05.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/06.jpeg",
-      "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/07.jpeg"
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-box.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-pack.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-cert.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-img-06.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:20:46.832Z",
     "slug": "official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition/02.jpeg"
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2023-silver-rider-1-ounce-royal-delft-edition-rev.webp"
   }
 }

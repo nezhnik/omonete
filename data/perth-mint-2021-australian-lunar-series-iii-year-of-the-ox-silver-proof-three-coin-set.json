@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/2021-australian-lunar-series-iii-year-of-the-ox-silver-proof-three-coin-set-rev.webp",
     "image_box": "/image/coins/foreign/2021-australian-lunar-series-iii-year-of-the-ox-silver-proof-three-coin-set-box.webp",
     "image_certificate": "/image/coins/foreign/2021-australian-lunar-series-iii-year-of-the-ox-silver-proof-three-coin-set-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/2021-australian-lunar-series-iii-year-of-the-ox-silver-proof-three-coin-set-obv.webp",
+      "/image/coins/foreign/2021-australian-lunar-series-iii-year-of-the-ox-silver-proof-three-coin-set-rev.webp"
+    ]
   },
   "raw": {
     "title": "2021 Australian Lunar Series III Year of the Ox Silver Proof Three-Coin Set",

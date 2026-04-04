@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-box.webp",
     "image_certificate": "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/australian-koala-2017-5oz-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Koala 2017 5oz Gold Proof Coin",

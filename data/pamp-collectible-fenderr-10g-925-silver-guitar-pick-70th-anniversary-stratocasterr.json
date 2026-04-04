@@ -19,12 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-guitar-pick_rev-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-guitar-pick_obv-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-guitar-pick_front-pack-closed.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-guitar-pick_front-pack-open.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-guitar-pick_rev-perspective.png",
-    "https://www.pamp.com/sites/pamp/files/2024-07/fender-guitar-pick_obv-perspective.png"
+    "/image/coins/foreign/fenderr-10g-925-silver-guitar-pick-70th-anniversary-stratocasterr-obv.webp",
+    "/image/coins/foreign/fenderr-10g-925-silver-guitar-pick-70th-anniversary-stratocasterr-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:07:28.463Z"
+  "parsedAt": "2026-03-27T16:07:28.463Z",
+  "image_obverse": "/image/coins/foreign/fenderr-10g-925-silver-guitar-pick-70th-anniversary-stratocasterr-obv.webp",
+  "image_reverse": "/image/coins/foreign/fenderr-10g-925-silver-guitar-pick-70th-anniversary-stratocasterr-rev.webp"
 }

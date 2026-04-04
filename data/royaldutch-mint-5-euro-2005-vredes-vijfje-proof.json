@@ -15,17 +15,17 @@
       "Mintage": "40,000"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/01.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/02.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/03.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/04.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/05.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/06.jpeg",
-      "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/07.jpeg"
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-obv.webp",
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-rev.webp",
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-box.webp",
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-pack.webp",
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-cert.webp",
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-img-06.webp",
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:03:09.553Z",
     "slug": "5-euro-2005-vredes-vijfje-proof",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-2005-vredes-vijfje-proof/02.jpeg"
+    "image_obverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-rev.webp"
   }
 }

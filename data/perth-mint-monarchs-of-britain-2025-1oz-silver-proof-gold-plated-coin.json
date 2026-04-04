@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin-rev.webp",
     "image_box": "/image/coins/foreign/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin-box.webp",
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin-obv.webp",
+      "/image/coins/foreign/monarchs-of-britain-2025-1oz-silver-proof-gold-plated-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Monarchs of Britain 2025 1oz Silver Proof Gold-Plated Coin",

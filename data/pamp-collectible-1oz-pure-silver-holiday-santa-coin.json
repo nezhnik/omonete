@@ -19,11 +19,8 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev_9.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/obv_15.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_open_0.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/packaging-front_p.png",
-    "https://www.pamp.com/sites/pamp/files/2022-02/rev-p_9.png"
+    "/image/coins/foreign/1oz-pure-silver-holiday-santa-coin-obv.webp",
+    "/image/coins/foreign/1oz-pure-silver-holiday-santa-coin-rev.webp"
   ],
   "parsedAt": "2026-03-27T22:11:27.040Z",
   "classified_source_urls": {
@@ -34,5 +31,7 @@
     "ok": true,
     "issues": [],
     "checkedAt": "2026-03-27T22:11:27.044Z"
-  }
+  },
+  "image_obverse": "/image/coins/foreign/1oz-pure-silver-holiday-santa-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/1oz-pure-silver-holiday-santa-coin-rev.webp"
 }

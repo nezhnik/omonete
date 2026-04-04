@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": "/image/coins/foreign/portraits-of-a-queen-elizabeth-ii-the-fourth-effigy-2026-gold-proof-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/portraits-of-a-queen-elizabeth-ii-the-fourth-effigy-2026-gold-proof-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/portraits-of-a-queen-elizabeth-ii-the-fourth-effigy-2026-gold-proof-coin-obv.webp",
+      "/image/coins/foreign/portraits-of-a-queen-elizabeth-ii-the-fourth-effigy-2026-gold-proof-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Elizabeth II The Fourth Effigy 2026 UK £5 Gold Proof Coin",

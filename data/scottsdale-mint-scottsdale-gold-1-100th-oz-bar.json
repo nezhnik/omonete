@@ -9,18 +9,17 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/06.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/07.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/08.jpg"
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-obv.webp",
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-rev.webp",
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-box.webp",
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-pack.webp",
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-cert.webp",
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-img-06.webp",
+      "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-img-07.webp"
     ],
     "parsedAt": "2026-04-04T15:32:45.778Z",
     "slug": "scottsdale-gold-1-100th-oz-bar",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-gold-1-100th-oz-bar/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-gold-1-100th-oz-bar-rev.webp"
   }
 }

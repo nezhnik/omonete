@@ -16,17 +16,17 @@
       "Edge lettering": "DIOS*TA*CU*NOS*"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/01.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/02.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/03.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/04.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/05.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/06.png",
-      "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/07.png"
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-obv.webp",
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-rev.webp",
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-box.webp",
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-pack.webp",
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-cert.webp",
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-img-06.webp",
+      "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:09:23.200Z",
     "slug": "aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem",
-    "image_obverse": "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem/02.png"
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-40-years-status-aparte-and-50-years-flag-and-national-anthem-rev.webp"
   }
 }

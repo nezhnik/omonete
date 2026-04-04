@@ -21,11 +21,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-2-oz-silver-bu_r_900px.png"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-2-oz-silver-bu_a_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/2026-megafauna-cave-lion-2-oz-silver-bu_r_900px.png",
-    "https://germaniamint.com/wp-content/uploads/2026/01/cl-2-1.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/cl-2-2.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/01/cl-2-3.jpg"
+    "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-25-dollars-2-oz-silver-bu-ultra-high-relief-obv.webp",
+    "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-25-dollars-2-oz-silver-bu-ultra-high-relief-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:34:12.616Z"
+  "parsedAt": "2026-03-23T19:34:12.616Z",
+  "image_obverse": "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-25-dollars-2-oz-silver-bu-ultra-high-relief-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-republic-of-liberia-megafauna-cave-lion-25-dollars-2-oz-silver-bu-ultra-high-relief-rev.webp"
 }

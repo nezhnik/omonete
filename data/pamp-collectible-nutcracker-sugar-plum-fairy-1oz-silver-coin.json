@@ -21,10 +21,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_rev_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_obv_front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2024-10/nutcracker_4th-sugar-plum-fairy_packaging-semi-open.png"
+    "/image/coins/foreign/nutcracker-sugar-plum-fairy-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/nutcracker-sugar-plum-fairy-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:13:04.971Z"
+  "parsedAt": "2026-03-27T16:13:04.971Z",
+  "image_obverse": "/image/coins/foreign/nutcracker-sugar-plum-fairy-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/nutcracker-sugar-plum-fairy-1oz-silver-coin-rev.webp"
 }

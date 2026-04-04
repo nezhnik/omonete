@@ -25,7 +25,11 @@
     "image_obverse": "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-obv.webp",
     "image_reverse": "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-rev.webp",
     "image_box": "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-box.webp",
-    "image_certificate": "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-cert.webp"
+    "image_certificate": "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-cert.webp",
+    "imageUrls": [
+      "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-obv.webp",
+      "/image/coins/foreign/australian-kookaburra-2021-5oz-silver-incused-coin-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Kookaburra 2021 5oz Silver Incused Coin",

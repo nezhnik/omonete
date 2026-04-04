@@ -15,17 +15,17 @@
       "Edge": "Cable"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/01.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/02.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/03.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/04.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/05.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/06.jpeg",
-      "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/07.jpeg"
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-obv.webp",
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-rev.webp",
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-box.webp",
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-pack.webp",
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-cert.webp",
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-img-06.webp",
+      "/image/coins/foreign/silver-ducat-de-haar-castle-2020-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:32:56.061Z",
     "slug": "silver-ducat-de-haar-castle-2020",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-de-haar-castle-2020/02.jpeg"
+    "image_obverse": "/image/coins/foreign/silver-ducat-de-haar-castle-2020-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-de-haar-castle-2020-rev.webp"
   }
 }

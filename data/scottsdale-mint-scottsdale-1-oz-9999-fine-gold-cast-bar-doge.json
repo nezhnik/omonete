@@ -9,12 +9,12 @@
       "Mintage": "470"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-1-oz-9999-fine-gold-cast-bar-doge/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-1-oz-9999-fine-gold-cast-bar-doge/02.jpg"
+      "/image/coins/foreign/scottsdale-1-oz-9999-fine-gold-cast-bar-doge-obv.webp",
+      "/image/coins/foreign/scottsdale-1-oz-9999-fine-gold-cast-bar-doge-rev.webp"
     ],
     "parsedAt": "2026-04-04T15:28:30.211Z",
     "slug": "scottsdale-1-oz-9999-fine-gold-cast-bar-doge",
-    "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-1-oz-9999-fine-gold-cast-bar-doge/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-1-oz-9999-fine-gold-cast-bar-doge/02.jpg"
+    "image_obverse": "/image/coins/foreign/scottsdale-1-oz-9999-fine-gold-cast-bar-doge-obv.webp",
+    "image_reverse": "/image/coins/foreign/scottsdale-1-oz-9999-fine-gold-cast-bar-doge-rev.webp"
   }
 }

@@ -21,10 +21,10 @@
     "certificate": "https://www.pamp.com/sites/pamp/files/2023-11/barbie_capsule-with-stand-and-box.png"
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-11/barbie_front-rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-11/barbie_front-obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-11/barbie_packaging-front_0.png",
-    "https://www.pamp.com/sites/pamp/files/2023-11/barbie_capsule-with-stand-and-box.png"
+    "/image/coins/foreign/superstar-barbietm-1oz-silver-coin-obv.webp",
+    "/image/coins/foreign/superstar-barbietm-1oz-silver-coin-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:16:12.478Z"
+  "parsedAt": "2026-03-27T16:16:12.478Z",
+  "image_obverse": "/image/coins/foreign/superstar-barbietm-1oz-silver-coin-obv.webp",
+  "image_reverse": "/image/coins/foreign/superstar-barbietm-1oz-silver-coin-rev.webp"
 }

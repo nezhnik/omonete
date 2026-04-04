@@ -28,12 +28,12 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Alexandria-Blue-Boy_reverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Alexandria-Blue-Boy_obverse.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Alexandria-Blue-Boy_box_3.png",
-    "https://inwestycje.mennica.com.pl/wp-content/uploads/2026/03/Alexandria-Blue-Boy_box.png"
+    "/image/coins/foreign/mennica-alexandria-blue-boy-500-cfa-francs-worlds-most-valuable-stamps-obv.webp",
+    "/image/coins/foreign/mennica-alexandria-blue-boy-500-cfa-francs-worlds-most-valuable-stamps-rev.webp"
   ],
   "listing_url": "https://inwestycje.mennica.com.pl/collectible-products/?priceMax=4690&priceMin=5&_filter=",
   "listing_label": "Collectible products",
-  "parsedAt": "2026-03-28T17:05:57.279Z"
+  "parsedAt": "2026-03-28T17:05:57.279Z",
+  "image_obverse": "/image/coins/foreign/mennica-alexandria-blue-boy-500-cfa-francs-worlds-most-valuable-stamps-obv.webp",
+  "image_reverse": "/image/coins/foreign/mennica-alexandria-blue-boy-500-cfa-francs-worlds-most-valuable-stamps-rev.webp"
 }

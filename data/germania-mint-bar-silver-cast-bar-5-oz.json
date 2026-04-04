@@ -15,11 +15,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/02/silver_castbar_9999_5oz_holo_r-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/02/silver_castbar_9999_5oz_wiz-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/silver_castbar_9999_5oz_holo_r-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_12_02.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_23_24.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/02/Timeline-1_01_00_29_09.jpg"
+    "/image/coins/foreign/silver-cast-bar-5-oz-obv.webp",
+    "/image/coins/foreign/silver-cast-bar-5-oz-rev.webp"
   ],
-  "parsedAt": "2026-03-27T11:10:21.886Z"
+  "parsedAt": "2026-03-27T11:10:21.886Z",
+  "image_obverse": "/image/coins/foreign/silver-cast-bar-5-oz-obv.webp",
+  "image_reverse": "/image/coins/foreign/silver-cast-bar-5-oz-rev.webp"
 }

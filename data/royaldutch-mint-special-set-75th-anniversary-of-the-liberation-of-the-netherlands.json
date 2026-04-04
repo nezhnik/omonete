@@ -12,17 +12,17 @@
       "Mintage": "500 sets wereldwijd"
     },
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/01.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/02.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/03.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/04.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/05.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/06.jpeg",
-      "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/07.jpeg"
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-obv.webp",
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-rev.webp",
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-box.webp",
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-pack.webp",
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-cert.webp",
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-img-06.webp",
+      "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-img-07.webp"
     ],
     "parsedAt": "2026-03-31T20:35:52.603Z",
     "slug": "special-set-75th-anniversary-of-the-liberation-of-the-netherlands",
-    "image_obverse": "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/special-set-75th-anniversary-of-the-liberation-of-the-netherlands/02.jpeg"
+    "image_obverse": "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-obv.webp",
+    "image_reverse": "/image/coins/foreign/special-set-75th-anniversary-of-the-liberation-of-the-netherlands-rev.webp"
   }
 }

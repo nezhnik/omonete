@@ -28,7 +28,11 @@
     "image_blister_reverse": null,
     "image_blister_obverse": null,
     "image_box": null,
-    "image_certificate": null
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/2024-wedding-silver-sixpence-obv.webp",
+      "/image/coins/foreign/2024-wedding-silver-sixpence-rev.webp"
+    ]
   },
   "raw": {
     "title": "2024 Wedding Silver Sixpence",

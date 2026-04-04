@@ -26,7 +26,11 @@
     "image_reverse": "/image/coins/foreign/australian-koala-2013-1oz-silver-proof-gilded-edition-rev.webp",
     "image_box": "/image/coins/foreign/australian-koala-2013-1oz-silver-proof-gilded-edition-box.webp",
     "image_certificate": "/image/coins/foreign/australian-koala-2013-1oz-silver-proof-gilded-edition-cert.webp",
-    "mintage_display": null
+    "mintage_display": null,
+    "imageUrls": [
+      "/image/coins/foreign/australian-koala-2013-1oz-silver-proof-gilded-edition-obv.webp",
+      "/image/coins/foreign/australian-koala-2013-1oz-silver-proof-gilded-edition-rev.webp"
+    ]
   },
   "raw": {
     "title": "Australian Koala 2013 1oz Silver Proof Gilded Edition",

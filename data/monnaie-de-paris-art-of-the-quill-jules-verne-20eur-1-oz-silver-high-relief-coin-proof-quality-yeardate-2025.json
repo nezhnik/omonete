@@ -59,11 +59,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067357_BD_0e87.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/0/10041398250000_25_VERNE_20_AG_HR_BE_revers_ORI2_34d6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/M/5/M5066_MDP_00067440_ORI2_5d02.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700"
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2025-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2025-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T16:27:52.717Z"
+  "parsedAt": "2026-03-29T16:27:52.717Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2025-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-art-of-the-quill-jules-verne-20eur-1-oz-silver-high-relief-coin-proof-quality-yeardate-2025-rev.webp"
 }

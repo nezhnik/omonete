@@ -18,12 +18,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2026/03/HIM-11680_Bodvar-Saga_Rewers_900px-kopia.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2026/03/HIM-11680_Bodvar-Saga_Avers_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/03/HIM-11680_Bodvar-Saga_Rewers_900px-kopia.webp",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_22_02.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_00_47_13.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_01_01_13.jpg",
-    "https://germaniamint.com/wp-content/uploads/2026/03/Timeline-1_01_01_21_16.jpg"
+    "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-copper-bu-obv.webp",
+    "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-copper-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:30:24.261Z"
+  "parsedAt": "2026-03-23T19:30:24.261Z",
+  "image_obverse": "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-copper-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2026-bodvar-saga-loss-1-oz-copper-bu-rev.webp"
 }

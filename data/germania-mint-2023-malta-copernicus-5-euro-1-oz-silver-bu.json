@@ -19,11 +19,10 @@
     "reverse": "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_r.webp"
   },
   "imageUrls": [
-    "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_a.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/malta-copernicus-1oz-silver-bu-900px_r.webp",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_30_18.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_35_02.jpg",
-    "https://germaniamint.com/wp-content/uploads/2025/06/Timeline-1_01_00_46_00.jpg"
+    "/image/coins/foreign/2023-malta-copernicus-5-euro-1-oz-silver-bu-obv.webp",
+    "/image/coins/foreign/2023-malta-copernicus-5-euro-1-oz-silver-bu-rev.webp"
   ],
-  "parsedAt": "2026-03-23T19:36:09.786Z"
+  "parsedAt": "2026-03-23T19:36:09.786Z",
+  "image_obverse": "/image/coins/foreign/2023-malta-copernicus-5-euro-1-oz-silver-bu-obv.webp",
+  "image_reverse": "/image/coins/foreign/2023-malta-copernicus-5-euro-1-oz-silver-bu-rev.webp"
 }

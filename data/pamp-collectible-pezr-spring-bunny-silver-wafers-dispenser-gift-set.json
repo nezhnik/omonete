@@ -19,10 +19,10 @@
     "certificate": null
   },
   "imageUrls": [
-    "https://www.pamp.com/sites/pamp/files/2023-03/pez_bunny_packaging-front.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/pez_bunny_obv.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/pez_bunny_rev.png",
-    "https://www.pamp.com/sites/pamp/files/2023-03/pez_bunny_capsule.png"
+    "/image/coins/foreign/pezr-spring-bunny-silver-wafers-dispenser-gift-set-obv.webp",
+    "/image/coins/foreign/pezr-spring-bunny-silver-wafers-dispenser-gift-set-rev.webp"
   ],
-  "parsedAt": "2026-03-27T16:15:10.789Z"
+  "parsedAt": "2026-03-27T16:15:10.789Z",
+  "image_obverse": "/image/coins/foreign/pezr-spring-bunny-silver-wafers-dispenser-gift-set-obv.webp",
+  "image_reverse": "/image/coins/foreign/pezr-spring-bunny-silver-wafers-dispenser-gift-set-rev.webp"
 }

@@ -81,13 +81,12 @@
     ]
   },
   "imageUrls": [
-    "https://www.monnaiedeparis.fr/media/catalog/product/8/5/8505fea6fc3c19e62078cdfb4997dc99255fdae4_M5066_MDP_00061386_BD_2b5a.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/1/2/123dbe88fbb9d772262ca899831e38db4bb7d72d_M5066_MDP_00061391_BD_adb9.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/b/2/b2872facd81532a08364e9878bf82e4130966c38_M5066_MDP_00061387_BD_c9f6.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700:700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/d/9/d9d278b09ed74b6fd22af59a7942fb59975cac69_M5066_MDP_00061390_BD_be91.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700",
-    "https://www.monnaiedeparis.fr/media/catalog/product/a/c/ac6d5a2e8aefceee2dff5e6e42d8ba45f11f07d0_M5066_MDP_00061388_BD_4f85.jpg?optimize=medium&fit=bounds&height=700&width=700&canvas=700%3A700"
+    "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-10eu-silver-coin-yeardate-2021-obv.webp",
+    "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-10eu-silver-coin-yeardate-2021-rev.webp"
   ],
   "listing_url": "https://www.monnaiedeparis.fr/en/coins",
   "listing_label": "Coins (en)",
-  "parsedAt": "2026-03-29T18:00:07.106Z"
+  "parsedAt": "2026-03-29T18:00:07.106Z",
+  "image_obverse": "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-10eu-silver-coin-yeardate-2021-obv.webp",
+  "image_reverse": "/image/coins/foreign/monnaie-de-paris-jean-de-la-fontaine-400th-anniversary-of-his-birth-10eu-silver-coin-yeardate-2021-rev.webp"
 }
