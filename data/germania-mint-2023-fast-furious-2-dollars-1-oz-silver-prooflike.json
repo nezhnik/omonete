@@ -1,12 +1,16 @@
 {
   "source_url": "https://germaniamint.com/all-coins/no-series/2023-fast-furious-2-dollars-1-oz-silver-prooflike",
   "title": "2023 Fast & Furious 2 Dollars 1 oz Silver Prooflike",
-  "subtitle": "",
-  "specs": {},
+  "subtitle": null,
+  "specs": {
+    "Weight": "1 oz",
+    "Denomination": "2 Dollars",
+    "Grade": "Prooflike"
+  },
   "classified": {
     "obverse": null,
     "reverse": null
   },
   "imageUrls": [],
-  "parsedAt": "2026-03-23T19:35:15.138Z"
+  "parsedAt": "2026-04-04T16:19:58.230Z"
 }

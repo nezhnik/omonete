@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { IconChevronLeft, IconChevronRight, IconCheck, IconPlus, IconShare3 } from "@tabler/icons-react";
 import { buildCoinVisibleIntro } from "../lib/coin-visible-intro";
@@ -117,17 +117,54 @@ function SpecRow({
 const SWIPE_MIN_DISTANCE = 50;
 const SHOW_MONETIZATION_BLOCK = false;
 
+/** Страница монеты: не более 7 кадров — av, rev, box, packaging, certificate, blister av, blister rev. */
+const DETAIL_GALLERY_MAX = 7;
+const DETAIL_GALLERY_ROLE_ORDER = [
+  "obverse",
+  "reverse",
+  "box",
+  "packaging",
+  "certificate",
+  "blister_obverse",
+  "blister_reverse",
+] as const;
+
 export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backLabel = "Назад", isAuthorized = false, onToggleCollection }: CoinDetailProps) {
   /** Детальный JSON раньше мог содержать только «доп.» кадры в imageUrls без главного imageUrl — склеиваем как в каталоге. */
-  const images = (() => {
+  const mergedUrls = (() => {
     const urls = (coin.imageUrls ?? []).filter(Boolean);
     if (urls.length === 0) return [coin.imageUrl];
     if (coin.imageUrl && !urls.includes(coin.imageUrl)) return [coin.imageUrl, ...urls];
     return urls;
   })();
+  const roles = coin.imageUrlRoles;
+  /** Макс. 7 кадров по ролям (или первые 7 уникальных URL, если роли не совпали с массивом). */
+  const images = (() => {
+    if (Array.isArray(roles) && roles.length === mergedUrls.length) {
+      const picked: string[] = [];
+      for (const role of DETAIL_GALLERY_ROLE_ORDER) {
+        const idx = mergedUrls.findIndex((_, i) => roles[i] === role);
+        if (idx >= 0) picked.push(mergedUrls[idx]);
+        if (picked.length >= DETAIL_GALLERY_MAX) break;
+      }
+      if (picked.length > 0) return picked;
+    }
+    const seen = new Set<string>();
+    const out: string[] = [];
+    for (const u of mergedUrls) {
+      if (seen.has(u)) continue;
+      seen.add(u);
+      out.push(u);
+      if (out.length >= DETAIL_GALLERY_MAX) break;
+    }
+    return out.length > 0 ? out : [coin.imageUrl];
+  })();
   const rectangular = !!coin.rectangular;
   const detailMainImageScale = COIN_DETAIL_MAIN_IMAGE_SCALE[coin.id] ?? 1;
   const [selectedImage, setSelectedImage] = useState(0);
+  useEffect(() => {
+    setSelectedImage(0);
+  }, [coin.id]);
   const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
@@ -313,14 +350,14 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               )}
             </div>
             {images.length > 1 && (
-              <div className="flex items-center justify-center gap-2 flex-wrap">
+              <div className="flex items-center justify-center gap-2 flex-nowrap overflow-x-auto pb-1 -mx-1 px-1 [scrollbar-width:thin]">
                 {images.map((url, i) => (
                   <button
-                    key={i}
+                    key={`${url}-${i}`}
                     type="button"
                     onClick={() => setSelectedImage(i)}
                     aria-label={`Изображение ${i + 1}`}
-                    className={`w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular ? "rounded-[0.5rem]" : "rounded-full"} ${
+                    className={`shrink-0 w-[88px] h-[88px] p-1.5 overflow-hidden flex items-center justify-center cursor-pointer lg:w-[144px] lg:h-[144px] lg:p-2 ${rectangular ? "rounded-[0.5rem]" : "rounded-full"} ${
                       i === selectedImage ? "outline outline-2 outline-[#11111B] outline-offset-[-1px]" : "outline outline-1 outline-[#E4E4EA] outline-offset-[-1px]"
                     }`}
                   >

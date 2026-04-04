@@ -3,12 +3,12 @@
  */
 const fs = require("fs");
 const path = require("path");
+const os = require("os");
 const https = require("https");
+const { saveBufferAsForeignUnified } = require("./lib/save-foreign-unified-webp.js");
 
 const ROOT = path.join(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
-const IMG_ROOT = path.join(ROOT, "public", "image", "coins", "foreign", "swissmint");
-const FOREIGN_FLAT = path.join(ROOT, "public", "image", "coins", "foreign");
 /** Витрина swissmintshop: три кадра — obv, rev, box (без pack). */
 const SWISSMINT_SHOP_FILE_SUFFIXES = ["obv", "rev", "box"];
 const SWISSMINT_SHOP_IMAGE_ROLES = ["obverse", "reverse", "box"];
@@ -710,47 +710,28 @@ async function saveParsed(parsed) {
   const source = normalizeUrl(parsed.source_url);
   const slug = slugFromUrl(source);
   const isSwissmintShop = /swissmintshop\.admin\.ch/i.test(source);
-  const coinDir = path.join(IMG_ROOT, slug);
-  if (!fs.existsSync(coinDir)) fs.mkdirSync(coinDir, { recursive: true });
 
   let local = [];
   for (let i = 0; i < (parsed.imageUrls || []).length; i++) {
     const u = parsed.imageUrls[i];
-    const urlPath = (() => {
-      try {
-        return new URL(u).pathname;
-      } catch {
-        return String(u);
-      }
-    })();
-    const extMatch = String(urlPath).match(/\.(jpg|jpeg|png|webp)$/i) || String(u).match(/\.(jpg|jpeg|png|webp)(?:$|\?)/i);
-    let ext = extMatch ? extMatch[1].toLowerCase() : "jpg";
-    if (ext === "jpeg") ext = "jpg";
-    const name = `${String(i + 1).padStart(2, "0")}.${ext}`;
-    let abs = path.join(coinDir, name);
-    const rel = `/image/coins/foreign/swissmint/${slug}/${name}`;
-    if (!(await download(u, abs))) continue;
+    const tmp = path.join(os.tmpdir(), `sws-${slug}-${i}-${Date.now()}`);
+    if (!(await download(u, tmp))) continue;
     let buf;
     try {
-      buf = fs.readFileSync(abs);
+      buf = fs.readFileSync(tmp);
     } catch {
       continue;
     }
-    const kind = fileKindFromBuffer(buf);
-    if (kind && kind !== ext && kind !== (ext === "jpg" ? "jpeg" : ext)) {
-      const newExt = kind === "jpeg" ? "jpg" : kind;
-      const base = path.join(coinDir, String(i + 1).padStart(2, "0"));
-      try {
-        fs.unlinkSync(abs);
-      } catch {
-        /* empty */
-      }
-      abs = `${base}.${newExt}`;
-      fs.writeFileSync(abs, buf);
-      local.push(`/image/coins/foreign/swissmint/${slug}/${path.basename(abs)}`);
-      continue;
+    try {
+      fs.unlinkSync(tmp);
+    } catch {
+      /* empty */
     }
-    local.push(rel);
+    try {
+      local.push(await saveBufferAsForeignUnified(buf, slug, i + 1));
+    } catch {
+      /* empty */
+    }
   }
 
   const publicRoot = path.join(ROOT, "public");
@@ -779,44 +760,17 @@ async function saveParsed(parsed) {
   }
 
   if (isSwissmintShop && local.length > 0) {
-    if (!fs.existsSync(FOREIGN_FLAT)) fs.mkdirSync(FOREIGN_FLAT, { recursive: true });
-    const nameBase = slugifyCoinTitle(parsed.title || humanTitleFromUrl(source) || "") || slug;
     const picked = swissmintShopPickFourLocals(local);
-    const newLocal = [];
-    const toUnlink = new Set();
-    for (let i = 0; i < picked.length; i++) {
-      const rel = picked[i];
-      const oldAbs = path.join(publicRoot, rel.replace(/^\//, ""));
-      if (!fs.existsSync(oldAbs)) continue;
-      const ext = path.extname(oldAbs).replace(/^\./, "") || "webp";
-      const suf = SWISSMINT_SHOP_FILE_SUFFIXES[i] || `extra-${i + 1}`;
-      const fname = `${nameBase}-${suf}.${ext}`;
-      const newAbs = path.join(FOREIGN_FLAT, fname);
-      fs.copyFileSync(oldAbs, newAbs);
-      toUnlink.add(oldAbs);
-      newLocal.push(`/image/coins/foreign/${fname}`);
-    }
-    for (const rel of local) {
+    const drop = new Set(local.filter((r) => !picked.includes(r)));
+    for (const rel of drop) {
       const abs = path.join(publicRoot, rel.replace(/^\//, ""));
-      if (fs.existsSync(abs)) toUnlink.add(abs);
-    }
-    for (const p of toUnlink) {
       try {
-        fs.unlinkSync(p);
+        if (fs.existsSync(abs)) fs.unlinkSync(abs);
       } catch {
         /* empty */
       }
     }
-    try {
-      const dir = path.join(IMG_ROOT, slug);
-      if (fs.existsSync(dir)) {
-        const left = fs.readdirSync(dir);
-        if (left.length === 0) fs.rmdirSync(dir);
-      }
-    } catch {
-      /* empty */
-    }
-    local = newLocal;
+    local = picked;
   }
 
   const out = {

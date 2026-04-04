@@ -62,6 +62,8 @@ const PAIRS = [
   ["Lunar Year of the Horse 2026 UK 1oz Gold Proof Coin-obv.webp", "lunar-year-of-the-horse-1-oz-gold-proof-coin-obv.webp"],
   ["Lunar Year of the Horse 2026 UK 1oz Gold Proof Coin-rev.jpeg", "lunar-year-of-the-horse-1-oz-gold-proof-coin-rev.webp"],
   ["Lunar Year of the Horse 2026 UK 1oz Gold Proof Coin-box.webp", "lunar-year-of-the-horse-1-oz-gold-proof-coin-box.webp"],
+  ["100 Years 100-Franc Vreneli obv.png", "100-years-100-franc-vreneli-obv.webp"],
+  ["100 Years 100-Franc Vreneli rev.png", "100-years-100-franc-vreneli-rev.webp"],
 ];
 
 async function convertOne(srcPath, destPath) {
@@ -82,10 +84,22 @@ async function main() {
       continue;
     }
     const dest = path.join(FOREIGN, to);
+    await fs.promises.mkdir(path.dirname(dest), { recursive: true });
     await convertOne(src, dest);
     console.log("✓", to);
     ok++;
   }
+
+  const vreneliBox = path.join(FOREIGN, "100-years-100-franc-vreneli-box.jpg");
+  const vreneliLegacy = path.join(FOREIGN, "swissmint", "100-years-100-franc-vreneli", "03.jpg");
+  const vreneliSrc = fs.existsSync(vreneliBox) ? vreneliBox : vreneliLegacy;
+  const vreneliBoxOut = path.join(FOREIGN, "100-years-100-franc-vreneli-box.webp");
+  if (fs.existsSync(vreneliSrc)) {
+    await convertOne(vreneliSrc, vreneliBoxOut);
+    console.log("✓ 100-years-100-franc-vreneli-box.webp");
+    ok++;
+  }
+
   console.log("\nГотово:", ok, "файлов →", FOREIGN);
   if (process.exitCode) process.exit(1);
 }

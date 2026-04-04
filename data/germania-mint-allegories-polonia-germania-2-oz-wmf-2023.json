@@ -1,12 +1,16 @@
 {
   "source_url": "https://germaniamint.com/all-coins/no-series/allegories-polonia-germania-2-oz-wmf-2023",
   "title": "Allegories: Polonia & Germania 2 oz WMF 2023",
-  "subtitle": "",
-  "specs": {},
+  "subtitle": null,
+  "specs": {
+    "Weight": "2 oz",
+    "Mintage": "500",
+    "Grade": "BU"
+  },
   "classified": {
     "obverse": null,
     "reverse": null
   },
   "imageUrls": [],
-  "parsedAt": "2026-03-23T19:35:39.327Z"
+  "parsedAt": "2026-04-04T16:20:16.359Z"
 }

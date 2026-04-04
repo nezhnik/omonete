@@ -1,10 +1,41 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import { IconPlus, IconCheck } from '@tabler/icons-react'
 import { cleanCoinTitle } from '../lib/cleanTitle'
 import { COIN_CATALOG_CARD_IMAGE_SCALE } from '../lib/coinCatalogImageScale'
 import { MINTAGE_UNKNOWN_DISPLAY } from '../lib/mintageResearch'
+
+/** Ключ для сравнения src после onError (относительный путь или pathname). */
+function imageSrcKey(raw: string): string {
+  if (!raw) return ""
+  const t = raw.trim()
+  if (t.startsWith("/")) return t
+  try {
+    return new URL(t).pathname
+  } catch {
+    return t
+  }
+}
+
+/** Уникальные URL по порядку; дубликаты из БД/карусели не раздувают число «кадров» в карточке. */
+function uniqueUrlRolePairs(
+  imageUrls: string[] | undefined,
+  imageUrl: string,
+  imageUrlRoles: string[] | undefined
+): { url: string; role?: string }[] {
+  const base = imageUrls?.length ? imageUrls : [imageUrl]
+  const seen = new Set<string>()
+  const out: { url: string; role?: string }[] = []
+  for (let i = 0; i < base.length; i++) {
+    const u = base[i]?.trim()
+    if (!u) continue
+    if (seen.has(u)) continue
+    seen.add(u)
+    out.push({ url: u, role: imageUrlRoles?.[i] })
+  }
+  return out
+}
 
 /** Убирает из строки подзаголовка карточки сегменты «Тираж не указан» (иногда попадают в series из БД при dev через /api/coins). */
 function stripMintagePlaceholderFromLine(s: string | undefined | null): string | undefined {
@@ -71,14 +102,40 @@ export function CoinCard(props: CoinCardProps) {
     role === "packaging" ||
     role === "blister_reverse" ||
     role === "blister_obverse"
-  const isPackaging = (i: number) => isPackagingRole(imageUrlRoles?.[i])
 
-  const images = imageUrls?.length ? imageUrls : [imageUrl]
+  const [brokenSrcKeys, setBrokenSrcKeys] = useState(() => new Set<string>())
+  const imageListSignature = useMemo(
+    () => `${id}\n${imageUrl ?? ""}\n${imageUrls?.join("|") ?? ""}`,
+    [id, imageUrl, imageUrls]
+  )
+  useEffect(() => {
+    setBrokenSrcKeys(new Set())
+  }, [imageListSignature])
+
+  const galleryPairs = useMemo(
+    () => uniqueUrlRolePairs(imageUrls, imageUrl, imageUrlRoles),
+    [imageUrls, imageUrl, imageUrlRoles]
+  )
+
+  const gallery = useMemo(() => {
+    const ok = galleryPairs.filter((p) => !brokenSrcKeys.has(imageSrcKey(p.url)))
+    if (ok.length > 0) return ok
+    const u = imageUrl?.trim()
+    return u ? [{ url: u, role: undefined as string | undefined }] : []
+  }, [galleryPairs, brokenSrcKeys, imageUrl])
+
+  const images = useMemo(() => gallery.map((p) => p.url), [gallery])
+  const isPackaging = (i: number) => isPackagingRole(gallery[i]?.role)
+
   const [hoverImageIndex, setHoverImageIndex] = useState(0)
   const [justAdded, setJustAdded] = useState(false)
   const [justRemoved, setJustRemoved] = useState(false)
   const [canDesktopHoverSwitch, setCanDesktopHoverSwitch] = useState(false)
   const imageContainerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    setHoverImageIndex((i) => Math.min(i, Math.max(0, images.length - 1)))
+  }, [images.length])
 
   const handleImageMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!canDesktopHoverSwitch || images.length <= 1) return
@@ -203,8 +260,8 @@ export function CoinCard(props: CoinCardProps) {
             </div>
           </div>
         </div>
-        {/* Кружочки: количество картинок, выбранная — чёрная. Только на десктопе при 2+ картинках. Ближе к монете, подальше от текста */}
-        {images.length > 1 && (
+        {/* Кружочки: по числу реально доступных кадров (уникальные URL минус битые). Одна картинка — один кружок. */}
+        {images.length >= 1 && (
           <div className="hidden lg:flex items-center justify-center gap-1.5 mt-1 mb-2">
             {images.map((_, i) => (
               <span

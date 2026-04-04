@@ -1,12 +1,15 @@
 {
   "source_url": "https://germaniamint.com/all-coins/no-series/2023-germania-10-oz-silver-bu-ana-edition",
   "title": "2023 Germania 10 oz Silver BU ANA Edition",
-  "subtitle": "",
-  "specs": {},
+  "subtitle": null,
+  "specs": {
+    "Weight": "10 oz",
+    "Grade": "BU"
+  },
   "classified": {
     "obverse": null,
     "reverse": null
   },
   "imageUrls": [],
-  "parsedAt": "2026-03-23T19:35:23.189Z"
+  "parsedAt": "2026-04-04T16:20:03.302Z"
 }

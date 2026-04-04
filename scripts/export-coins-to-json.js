@@ -27,6 +27,16 @@ const EXCLUDED_EXPORT_COIN_IDS = new Set(["5998", "6000", "6012"]);
 /** Порядок кадров в JSON image_urls (Swissmint shop и др.): после колонок obverse/reverse подмешиваем остальное с этими ролями. */
 const IMAGE_URL_JSON_INDEX_ROLES = ["obverse", "reverse", "box", "packaging", "certificate", "extra"];
 
+/** Совпадает с галереей на странице монеты: av, rev, box, packaging, certificate, blister×2. */
+const MAX_EXPORT_GALLERY_IMAGES = 7;
+
+function capGalleryUrlsAndRoles(urls, roles) {
+  if (!Array.isArray(urls) || !Array.isArray(roles)) return;
+  if (urls.length <= MAX_EXPORT_GALLERY_IMAGES) return;
+  urls.length = MAX_EXPORT_GALLERY_IMAGES;
+  roles.length = MAX_EXPORT_GALLERY_IMAGES;
+}
+
 function parseImageUrlsColumn(raw) {
   if (raw == null || raw === "") return null;
   if (Array.isArray(raw)) return raw;
@@ -672,6 +682,7 @@ async function run() {
         }
       }
     }
+    capGalleryUrlsAndRoles(imageUrlsOut, imageUrlRoles);
     const { code: metalCode } = getMetalCodeAndColor(r.metal);
     const metalCodes = getMetalCodes(r.metal);
     const weightLabel = getWeightLabel(r.weight_g, r.weight_oz);
@@ -879,6 +890,7 @@ async function run() {
         }
       }
     }
+    capGalleryUrlsAndRoles(imageUrlsOut, imageUrlRoles);
     const releaseDate = r.release_date;
     const titleStr = [r.title, r.title_en].filter(Boolean).join(" ");
     const releaseYear = releaseDate ? (() => {

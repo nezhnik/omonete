@@ -1,12 +1,15 @@
 {
   "source_url": "https://germaniamint.com/all-coins/no-series/2023-germania-2-oz-silver-bu-ana-edition",
   "title": "2023 Germania 2 oz Silver BU ANA Edition",
-  "subtitle": "",
-  "specs": {},
+  "subtitle": null,
+  "specs": {
+    "Weight": "2 oz",
+    "Grade": "BU"
+  },
   "classified": {
     "obverse": null,
     "reverse": null
   },
   "imageUrls": [],
-  "parsedAt": "2026-03-23T19:35:27.249Z"
+  "parsedAt": "2026-04-04T16:20:07.497Z"
 }

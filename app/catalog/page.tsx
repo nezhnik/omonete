@@ -126,8 +126,6 @@ function parseCatalogState(searchParams: URLSearchParams) {
   const selectedMints = searchParams.getAll("mint");
   /** Без trim: пробелы сохраняются в инпуте; при поиске normalizeSearch обрежет */
   const searchQuery = searchParams.get("q") ?? "";
-  const noMintageParam = searchParams.get("noMintage");
-  const noMintageOnly = noMintageParam === "1" || noMintageParam === "true";
   return {
     filter,
     sort,
@@ -137,7 +135,6 @@ function parseCatalogState(searchParams: URLSearchParams) {
     selectedSeries,
     selectedMints,
     searchQuery,
-    noMintageOnly,
   };
 }
 
@@ -286,7 +283,6 @@ type CatalogFilterCtx = {
   selectedSeries: string[];
   selectedMints: string[];
   selectedMetals: string[];
-  noMintageOnly: boolean;
   searchNorm: string;
 };
 
@@ -301,7 +297,6 @@ function coinPassesCatalogFilters(c: CatalogCoin, ctx: CatalogFilterCtx): boolea
       : !!(c.metalCode && ctx.selectedMetals.includes(c.metalCode));
     if (!ok) return false;
   }
-  if (ctx.noMintageOnly && !c.mintageNeedsResearch) return false;
   if (ctx.searchNorm && !coinMatchesSearch(c, ctx.searchNorm)) return false;
   return true;
 }
@@ -339,7 +334,6 @@ function CatalogPageContent() {
   const [selectedCountries, setSelectedCountries] = useState<string[]>(() => parseCatalogState(searchParams).selectedCountries);
   const [selectedSeries, setSelectedSeries] = useState<string[]>(() => parseCatalogState(searchParams).selectedSeries);
   const [selectedMints, setSelectedMints] = useState<string[]>(() => parseCatalogState(searchParams).selectedMints);
-  const [noMintageOnly, setNoMintageOnly] = useState<boolean>(() => parseCatalogState(searchParams).noMintageOnly);
   const [searchQuery, setSearchQuery] = useState<string>(() => parseCatalogState(searchParams).searchQuery);
   const debouncedSearchForUrl = useDebouncedValue(searchQuery, 320);
   const [sort, setSort] = useState<CatalogSort>(() => parseCatalogState(searchParams).sort);
@@ -516,7 +510,6 @@ function CatalogPageContent() {
     setSelectedCountries(parsed.selectedCountries);
     setSelectedSeries(parsed.selectedSeries);
     setSelectedMints(parsed.selectedMints);
-    setNoMintageOnly(parsed.noMintageOnly);
     setSearchQuery(parsed.searchQuery);
   }, [searchParams]);
 
@@ -530,7 +523,6 @@ function CatalogPageContent() {
     selectedCountries.forEach((c) => params.append("country", c));
     selectedSeries.forEach((s) => params.append("series", s));
     selectedMints.forEach((m) => params.append("mint", m));
-    if (noMintageOnly) params.set("noMintage", "1");
     if (debouncedSearchForUrl) params.set("q", debouncedSearchForUrl);
     const q = params.toString();
     const current = searchParams.toString();
@@ -545,7 +537,6 @@ function CatalogPageContent() {
     selectedCountries,
     selectedSeries,
     selectedMints,
-    noMintageOnly,
     debouncedSearchForUrl,
     router,
     searchParams,
@@ -799,7 +790,6 @@ function CatalogPageContent() {
       selectedSeries,
       selectedMints,
       selectedMetals,
-      noMintageOnly,
       searchNorm,
     }),
     [
@@ -808,7 +798,6 @@ function CatalogPageContent() {
       selectedSeries,
       selectedMints,
       selectedMetals,
-      noMintageOnly,
       searchNorm,
     ]
   );
@@ -860,27 +849,17 @@ function CatalogPageContent() {
               ? selectedMetals.some((m) => c.metalCodes!.includes(m))
               : !!(c.metalCode && selectedMetals.includes(c.metalCode))
           );
-    const afterNoMintage = noMintageOnly ? afterMetal.filter((c) => c.mintageNeedsResearch) : afterMetal;
-    return { byMintFilter, afterNoMintage };
-  }, [
-    coins,
-    filter,
-    selectedWeights,
-    selectedCountries,
-    selectedSeries,
-    selectedMints,
-    selectedMetals,
-    noMintageOnly,
-  ]);
+    return { byMintFilter, afterMetal };
+  }, [coins, filter, selectedWeights, selectedCountries, selectedSeries, selectedMints, selectedMetals]);
 
-  const { byMintFilter, afterNoMintage } = catalogPipeline;
+  const { byMintFilter, afterMetal } = catalogPipeline;
 
   const searchIncRef = useRef<{ base: CatalogCoin[]; norm: string; matches: CatalogCoin[] } | null>(null);
   const countSearchIncRef = useRef<{ base: CatalogCoin[]; norm: string; matches: CatalogCoin[] } | null>(null);
 
   /** При наборе префикса нормализованного запроса — фильтруем только предыдущий кандидатский список */
   const filteredCoins = useMemo(() => {
-    const base = afterNoMintage;
+    const base = afterMetal;
     if (!searchNorm) {
       const out = base;
       searchIncRef.current = { base, norm: "", matches: out };
@@ -898,9 +877,9 @@ function CatalogPageContent() {
       : base.filter((c) => coinMatchesSearch(c, searchNorm));
     searchIncRef.current = { base, norm: searchNorm, matches: out };
     return out;
-  }, [afterNoMintage, searchNorm]);
+  }, [afterMetal, searchNorm]);
 
-  /** Для подсчёта в чипсах: монеты с учётом веса, страны, серии, монетного двора и поиска (без металла и без фильтра «тираж»). */
+  /** Для подсчёта в чипсах: монеты с учётом веса, страны, серии, монетного двора и поиска (без металла). */
   const coinsForFilterCounts = useMemo(() => {
     const base = byMintFilter;
     if (!searchNorm) {
@@ -929,10 +908,6 @@ function CatalogPageContent() {
     else if (sort === "weight_asc") list.sort((a, b) => (a.weightG ?? 0) - (b.weightG ?? 0));
     return list;
   }, [filteredCoins, sort]);
-  const noMintageFilterCount = useMemo(
-    () => coinsForFilterCounts.filter((c) => c.mintageNeedsResearch).length,
-    [coinsForFilterCounts]
-  );
   const displayedCoins = sortedCoins.slice(0, displayedCount);
   const hasMore = displayedCount < sortedCoins.length;
 
@@ -951,7 +926,6 @@ function CatalogPageContent() {
     selectedCountries,
     selectedSeries,
     selectedMints,
-    noMintageOnly,
     searchQuery,
   ]);
 
@@ -1175,8 +1149,7 @@ function CatalogPageContent() {
                     selectedWeights.length +
                     selectedCountries.length +
                     selectedSeries.length +
-                    selectedMints.length +
-                    (noMintageOnly ? 1 : 0) >
+                    selectedMints.length >
                     0 && (
                     <span
                       className="inline-flex items-center justify-center w-[22px] h-[22px] shrink-0 rounded-full bg-[#11111B] text-white text-[14px] font-medium leading-none"
@@ -1186,8 +1159,7 @@ function CatalogPageContent() {
                         selectedWeights.length +
                         selectedCountries.length +
                         selectedSeries.length +
-                        selectedMints.length +
-                        (noMintageOnly ? 1 : 0)}
+                        selectedMints.length}
                     </span>
                   )}
                 </span>
@@ -1268,7 +1240,6 @@ function CatalogPageContent() {
                       setSelectedCountries([]);
                       setSelectedSeries([]);
                       setSelectedMints([]);
-                      setNoMintageOnly(false);
                       setSearchQuery("");
                       setSidebarFiltersActive(false);
                       setSidebarResetKey((k) => k + 1);
@@ -1373,9 +1344,6 @@ function CatalogPageContent() {
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
                   hideSearch
-                  noMintageOnly={noMintageOnly}
-                  onNoMintageOnlyChange={setNoMintageOnly}
-                  noMintageCount={noMintageFilterCount}
                 />
               </aside>
             </div>
@@ -1507,9 +1475,6 @@ function CatalogPageContent() {
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
                   hideSearch
-                  noMintageOnly={noMintageOnly}
-                  onNoMintageOnlyChange={setNoMintageOnly}
-                  noMintageCount={noMintageFilterCount}
                 />
               </div>
             </div>

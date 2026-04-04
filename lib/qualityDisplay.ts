@@ -7,7 +7,7 @@ const QUALITY_MAP: Array<{ pattern: RegExp; label: string }> = [
   { pattern: /^proof$/i, label: "Пруф / Proof" },
   { pattern: /^ац$/i, label: "АНЦ / Uncirculated" },
   { pattern: /^uncirculated$/i, label: "АНЦ / Uncirculated" },
-  { pattern: /улучшенный|бац|brilliant\s*uncirculated/i, label: "Улучшенный Анциркулейтед / Brilliant Uncirculated" },
+  { pattern: /улучшенный|бац|brilliant\s*uncirculated/i, label: "Улучшенный АНЦ / BU" },
   { pattern: /пруф-лайк|proof-like/i, label: "Пруф-лайк / Proof-like" },
 ];
 

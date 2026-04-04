@@ -5,9 +5,12 @@ const fs = require("fs");
 const path = require("path");
 const https = require("https");
 
+const os = require("os");
+const { saveBufferAsForeignUnified } = require("./lib/save-foreign-unified-webp.js");
+
 const ROOT = path.join(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
-const IMG_DIR = path.join(ROOT, "public", "image", "coins", "foreign", "herdenkings");
+const FOREIGN = path.join(ROOT, "public", "image", "coins", "foreign");
 
 function normalizeUrl(raw) {
   const u = new URL(raw);
@@ -131,18 +134,36 @@ async function parseProduct(page, sourceUrl) {
 async function saveParsed(parsed) {
   const source = normalizeUrl(parsed.source_url);
   const slug = slugFromUrl(source);
-  const coinDir = path.join(IMG_DIR, slug);
-  if (!fs.existsSync(coinDir)) fs.mkdirSync(coinDir, { recursive: true });
+  if (fs.existsSync(FOREIGN)) {
+    const prefix = `${slug}-`;
+    for (const fn of fs.readdirSync(FOREIGN)) {
+      if (fn.startsWith(prefix) && /\.webp$/i.test(fn)) {
+        try {
+          fs.unlinkSync(path.join(FOREIGN, fn));
+        } catch (_) {}
+      }
+    }
+  }
 
   const local = [];
   for (let i = 0; i < (parsed.imageUrls || []).length; i++) {
     const u = parsed.imageUrls[i];
-    const extMatch = String(u).match(/\.(jpg|jpeg|png|webp)(?:$|\?)/i);
-    const ext = extMatch ? extMatch[1].toLowerCase() : "jpg";
-    const fn = `${String(i + 1).padStart(2, "0")}.${ext}`;
-    const abs = path.join(coinDir, fn);
-    const rel = `/image/coins/foreign/herdenkings/${slug}/${fn}`;
-    if (await download(u, abs)) local.push(rel);
+    const tmp = path.join(os.tmpdir(), `hdk-${slug}-${i}-${Date.now()}`);
+    if (!(await download(u, tmp))) continue;
+    let buf;
+    try {
+      buf = fs.readFileSync(tmp);
+    } catch (_) {
+      continue;
+    }
+    try {
+      fs.unlinkSync(tmp);
+    } catch (_) {}
+    try {
+      local.push(await saveBufferAsForeignUnified(buf, slug, i + 1));
+    } catch (_) {
+      /* empty */
+    }
   }
 
   const out = {

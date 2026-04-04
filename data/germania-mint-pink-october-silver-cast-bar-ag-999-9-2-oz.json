@@ -1,12 +1,15 @@
 {
   "source_url": "https://germaniamint.com/all-coins/co-branded/pink-october-silver-cast-bar-ag-999-9-2-oz",
   "title": "Pink October – Silver Cast Bar Ag 999.9 2 oz",
-  "subtitle": "",
-  "specs": {},
+  "subtitle": null,
+  "specs": {
+    "Weight": "2 oz",
+    "Mintage": "50"
+  },
   "classified": {
     "obverse": null,
     "reverse": null
   },
   "imageUrls": [],
-  "parsedAt": "2026-03-23T19:30:48.439Z"
+  "parsedAt": "2026-04-04T16:20:24.474Z"
 }

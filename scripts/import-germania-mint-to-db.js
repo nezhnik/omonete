@@ -137,27 +137,60 @@ function formatOz(ozValue) {
   return `${roundTo(ozValue, 4)} oz`;
 }
 
+/**
+ * Вес из спецификации и названия. Нельзя брать «первое число» из всей строки с годом:
+ * «2023 Germania Kilo…» давало n=2023 и ветку kilo → 2 023 000 г;
+ * «2023 … 1 oz» давало n=2023 и ветку oz → ~62 922 г.
+ */
 function deriveWeight(weightRaw, titleRaw) {
-  const source = `${String(weightRaw || "").trim()} ${String(titleRaw || "").trim()}`.trim();
-  if (!source) return { weightG: null, weightOz: null };
+  const specs = String(weightRaw || "").trim();
+  const title = String(titleRaw || "")
+    .replace(/^(19|20)\d{2}\s+/i, "")
+    .trim();
+  const combined = `${specs} ${title}`.trim();
+  if (!combined) return { weightG: null, weightOz: null };
 
-  const lower = source.toLowerCase();
-  const n = parseFractionLike(source) ?? parseNumberLike(source);
+  const lower = combined.toLowerCase();
+
+  const ozMatches = [...lower.matchAll(/\b(\d+(?:\.\d+)?)\s*oz\b/g)];
+  if (ozMatches.length) {
+    const n = Number(ozMatches[ozMatches.length - 1][1]);
+    if (Number.isFinite(n) && n > 0) {
+      const weightG = roundTo(n * 31.1034768, 2);
+      return { weightG, weightOz: formatOz(n) };
+    }
+  }
+
+  const kgMatch = lower.match(/\b(\d+(?:\.\d+)?)\s*(kg|kilo)\b/);
+  if (kgMatch) {
+    const n = Number(kgMatch[1]);
+    if (Number.isFinite(n) && n > 0) {
+      const weightG = roundTo(n * 1000, 2);
+      const weightOz = formatOz(n * 32.1507466);
+      return { weightG, weightOz };
+    }
+  }
+
+  if (/\bkilo\b/i.test(lower)) {
+    const weightG = roundTo(1000, 2);
+    const weightOz = formatOz(32.1507466);
+    return { weightG, weightOz };
+  }
+
+  const n = parseFractionLike(specs) ?? parseNumberLike(specs);
   if (!Number.isFinite(n) || n <= 0) return { weightG: null, weightOz: null };
-
-  if (/\boz\b|ounce|ounces|унц/i.test(lower)) {
+  const lowSpecs = specs.toLowerCase();
+  if (/\boz\b|ounce|ounces|унц/i.test(lowSpecs)) {
     const weightG = roundTo(n * 31.1034768, 2);
     return { weightG, weightOz: formatOz(n) };
   }
-  if (/\bkg\b|kilo|кил/i.test(lower)) {
+  if (/\bkg\b|kilo|кил/i.test(lowSpecs)) {
     const weightG = roundTo(n * 1000, 2);
-    const weightOz = formatOz(n * 32.1507466);
-    return { weightG, weightOz };
+    return { weightG, weightOz: formatOz(n * 32.1507466) };
   }
-  if (/\bg\b|gram|grams|гр|грам/i.test(lower)) {
+  if (/\bg\b|gram|grams|гр|грам/i.test(lowSpecs)) {
     const weightG = roundTo(n, 2);
-    const weightOz = formatOz(n / 31.1034768);
-    return { weightG, weightOz };
+    return { weightG, weightOz: formatOz(n / 31.1034768) };
   }
   return { weightG: null, weightOz: null };
 }

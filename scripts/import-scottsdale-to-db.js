@@ -209,8 +209,10 @@ async function main() {
       const manufacturer = String(specs.Manufacturer || "").trim();
       const mint = manufacturer || "Scottsdale Mint";
 
-      // Жесткая защита от явного дубля (точное совпадение title_en + year + metal + weight_g)
-      if (title && yearDate && metal && weight_g != null) {
+      const [exists] = await conn.execute("SELECT id FROM coins WHERE source_url = ? LIMIT 1", [source]);
+
+      // Только для INSERT: иначе находим ту же строку по title_en+год+металл+вес и пропускаем UPDATE (сломанные image_urls).
+      if (!exists.length && title && yearDate && metal && weight_g != null) {
         const [dup] = await conn.execute(
           `SELECT id FROM coins
            WHERE title_en = ? AND release_date = ? AND metal = ? AND ABS(CAST(weight_g AS DECIMAL(10,3)) - ?) <= 0.03
@@ -223,7 +225,8 @@ async function main() {
         }
       }
 
-      const imageUrls = Array.isArray(c.imageUrls) ? c.imageUrls.filter(Boolean) : [];
+      /** В каталоге и на сайте не больше 7 кадров; полная съёмка с Scottsdale давала 50+ дублей. */
+      const imageUrls = (Array.isArray(c.imageUrls) ? c.imageUrls.filter(Boolean) : []).slice(0, 7);
       const row = {
         title,
         title_en: title,
@@ -252,7 +255,6 @@ async function main() {
         source_url: source,
       };
 
-      const [exists] = await conn.execute("SELECT id FROM coins WHERE source_url = ? LIMIT 1", [source]);
       if (exists.length) {
         const setClause = cols.map((x) => `${x} = ?`).join(", ");
         const vals = cols.map((x) => row[x]);

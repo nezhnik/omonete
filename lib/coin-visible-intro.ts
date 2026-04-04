@@ -6,6 +6,7 @@ import {
   isMeaningfulDimensionOrWeight,
   isMeaningfulSpecString,
 } from "./specValueVisibility";
+import { formatQualityDisplay } from "./qualityDisplay";
 
 /**
  * Видимый уникальный абзац на карточке монеты: больше индексируемого текста без правок в БД.
@@ -23,7 +24,10 @@ export function buildCoinVisibleIntro(coin: CoinDetailData): string {
   if (isMeaningfulSpecString(coin.metal)) chunks.push(`металл: ${coin.metal!.trim()}`);
   const purityForIntro = formatPurityDisplay(coin.purity);
   if (purityForIntro && isMeaningfulSpecString(purityForIntro)) chunks.push(`проба: ${purityForIntro}`);
-  if (isMeaningfulSpecString(coin.quality)) chunks.push(`качество чеканки: ${coin.quality!.trim()}`);
+  if (isMeaningfulSpecString(coin.quality)) {
+    const qLine = formatQualityDisplay(coin.quality) || coin.quality!.trim();
+    chunks.push(`качество чеканки: ${qLine}`);
+  }
   if (isMeaningfulDimensionOrWeight(coin.weightOz)) chunks.push(`вес: ${coin.weightOz!.trim()}`);
   else if (isMeaningfulDimensionOrWeight(coin.weightG)) chunks.push(`чистого металла не менее ${coin.weightG!.trim()} г`);
 

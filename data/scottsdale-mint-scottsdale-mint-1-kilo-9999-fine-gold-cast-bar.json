@@ -9,19 +9,11 @@
       "Mintage": "∞"
     },
     "imageUrls": [
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/01.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/02.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/03.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/04.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/05.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/06.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/07.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/08.jpg",
-      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/09.jpg"
+      "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/01.jpg"
     ],
-    "parsedAt": "2026-03-31T21:16:21.455Z",
+    "parsedAt": "2026-04-04T15:36:59.779Z",
     "slug": "scottsdale-mint-1-kilo-9999-fine-gold-cast-bar",
     "image_obverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/01.jpg",
-    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/02.jpg"
+    "image_reverse": "/image/coins/foreign/scottsdale/scottsdale-mint-1-kilo-9999-fine-gold-cast-bar/01.jpg"
   }
 }

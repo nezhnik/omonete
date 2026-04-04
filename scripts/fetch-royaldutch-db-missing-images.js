@@ -13,8 +13,7 @@ const mysql = require("mysql2/promise");
 const { fetchOneWithPage, normalizeUrl, slugFromUrl } = require("./fetch-royaldutch-product.js");
 
 const ROOT = path.join(__dirname, "..");
-const IMG_DIR = path.join(ROOT, "public", "image", "coins", "foreign", "royaldutch");
-const ROLE_NAMES = ["obv", "rev", "pack", "box", "cert", "blister-obv", "blister-rev", "extra-8", "extra-9", "extra-10"];
+const FOREIGN = path.join(ROOT, "public", "image", "coins", "foreign");
 
 function getDbConfig() {
   const url = process.env.DATABASE_URL;
@@ -25,10 +24,16 @@ function getDbConfig() {
   return { host, port: Number(port), user, password, database };
 }
 
-function emptyProductImageDir(slug) {
-  const dir = path.join(IMG_DIR, slug);
-  if (!fs.existsSync(dir)) return;
-  for (const f of fs.readdirSync(dir)) fs.unlinkSync(path.join(dir, f));
+function emptyProductWebps(slug) {
+  if (!fs.existsSync(FOREIGN)) return;
+  const prefix = `${slug}-`;
+  for (const f of fs.readdirSync(FOREIGN)) {
+    if (f.startsWith(prefix) && /\.webp$/i.test(f)) {
+      try {
+        fs.unlinkSync(path.join(FOREIGN, f));
+      } catch (_) {}
+    }
+  }
 }
 
 function patchDataJson(slug, urlsLocal, obv, rev, pack, box) {
@@ -43,27 +48,6 @@ function patchDataJson(slug, urlsLocal, obv, rev, pack, box) {
   c.image_box = box;
   doc.coin = c;
   fs.writeFileSync(jsonPath, JSON.stringify(doc, null, 2), "utf8");
-}
-
-function renameNumericToRoles(slug) {
-  const dir = path.join(IMG_DIR, slug);
-  if (!fs.existsSync(dir)) return null;
-  const numeric = fs
-    .readdirSync(dir)
-    .filter((f) => /^\d+\./.test(f))
-    .sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
-  if (!numeric.length) return null;
-  const tmp = numeric.map((f, i) => ({ from: f, tmp: `.__ren_${i}_${f}` }));
-  for (const { from, tmp: t } of tmp) fs.renameSync(path.join(dir, from), path.join(dir, t));
-  const urls = [];
-  for (let i = 0; i < tmp.length; i++) {
-    const ext = path.extname(tmp[i].tmp.replace(/^.__ren_\d+_/, ""));
-    const role = ROLE_NAMES[i] || `extra-${i + 1}`;
-    const finalName = `${role}${ext}`;
-    fs.renameSync(path.join(dir, tmp[i].tmp), path.join(dir, finalName));
-    urls.push(`/image/coins/foreign/royaldutch/${slug}/${finalName}`);
-  }
-  return urls;
 }
 
 async function main() {
@@ -114,18 +98,18 @@ async function main() {
     const slug = slugFromUrl(rawUrl);
     process.stdout.write(`\r[${i + 1}/${urls.length}] ${slug}   `);
     try {
-      emptyProductImageDir(slug);
-      await fetchOneWithPage(page, rawUrl);
-      const urlsLocal = renameNumericToRoles(slug);
+      emptyProductWebps(slug);
+      const fetchResult = await fetchOneWithPage(page, rawUrl);
+      const urlsLocal = fetchResult.imageUrls || [];
       if (!urlsLocal || urlsLocal.length === 0) {
-        console.error(`\nНет числовых файлов после загрузки: ${slug}`);
+        console.error(`\nНет картинок после загрузки: ${slug}`);
         fail++;
         continue;
       }
       const obv = urlsLocal[0] || null;
       const rev = urlsLocal[1] || null;
-      const pack = urlsLocal[2] || null;
-      const box = urlsLocal[3] || null;
+      const box = urlsLocal[2] || null;
+      const pack = urlsLocal[3] || null;
       for (const coinId of ids) {
         await conn.execute(
           `UPDATE coins SET image_obverse = ?, image_reverse = ?, image_packaging = ?, image_box = ?, image_urls = ? WHERE id = ?`,
