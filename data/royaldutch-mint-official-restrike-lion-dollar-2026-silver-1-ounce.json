@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-lion-dollar-2026-silver-1-ounce",
+    "slug": "official-restrike-lion-dollar-2026-silver-1-ounce",
     "title": "Official Restrike Lion Dollar 2026 Silver 1 Ounce",
     "price_display": "€199.00",
     "description": "#html-body [data-pb-style=CBYTI24]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}At the Royal Dutch Mint, old trade coins are revived! Every year, we restrike iconic coins, including the Lion Dollar (“Leeuwendaalder”). This coin is one of the most famous silver coins in Dutch history: did you know that the Leeuwendaalder was first minted in 1575 by rebellious provinces in the Netherlands? For 2026, we will restrike a Leeuwendaalder from 1589, originating from Friesland. The beautiful details of this coin are perfectly showcased on the Official Restrike Leeuwendaalder Silver 1 Ounce. Lion Dollar from Friesland The 1589 Leeuwendaalder is a special example. After the Leeuwendaalder became popular in international trade, many provinces and cities began minting it. However, there was an interruption in 1586 due to the Leicester edict. During the reign of Robert Dudley (Earl of Leicester), it was decided to mint new coin types, including the ‘Leicesterreaal’ and the ‘Leicesterrijksdaalder’. However, on February 18, 1589, the States General authorized the minting of the Leeuwendaalder. After permission was granted, Friesland, Gelderland, Holland, Overijssel, Utrecht, and Zeeland joined the process. The year 1589 is the first year, in which examples from all provinces that minted this type, can be found. Coin holder The Lion Dollar Silver 1 Ounce is delivered in a beautiful, light wooden coin holder. This coin holder has the engraving of a lion on the top and has several ornaments on the edges. The luxurious appearance of this coin holder makes sure the Lion Dollar fits perfectly in your collection!",
@@ -14,13 +15,16 @@
       "Mintage": "240",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:34:24.500Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-obv.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:27:19.731Z",
-    "slug": "official-restrike-lion-dollar-2026-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-rev.webp"
+      "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2026-silver-1-ounce-pack.webp"
+    ]
   }
 }

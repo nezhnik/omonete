@@ -1,23 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68",
+    "slug": "dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68",
     "title": "Dutch Water Defence Lines 10 Euro Coin 2025 Gold Proof (PF68)",
     "price_display": "€895.00",
     "description": "#html-body [data-pb-style=FDPKQRV]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}The gold commemorative coin for the Dutch Water Defence Lines is now available in a capsule, graded PF68 by the NGC. This is one of the highest grades achievable: the coin is very sharply struck with only minimal imperfections. The Gold coin comes in a transparent, official NGC case.",
-    "specs": {},
+    "specs": {
+      "Article number": "0124271",
+      "Metal": "Gold",
+      "Content": "900/1000",
+      "Weight": "6.72 g",
+      "Diameter": "22.5 mm",
+      "Quality": "Proof",
+      "Nominal value": "10 euros",
+      "Mintage": "5",
+      "Edge": "serrated"
+    },
+    "parsedAt": "2026-04-05T09:06:43.799Z",
+    "image_obverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68-obv.webp",
+    "image_reverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68-rev.webp",
+    "image_packaging": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/01.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/02.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/03.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/04.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/05.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/06.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/07.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/08.png"
-    ],
-    "parsedAt": "2026-03-31T18:14:06.891Z",
-    "slug": "dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68",
-    "image_obverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68/02.png"
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68-obv.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68-rev.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pf68-pack.webp"
+    ]
   }
 }

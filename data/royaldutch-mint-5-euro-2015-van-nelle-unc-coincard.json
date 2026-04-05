@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2015-van-nelle-unc-coincard",
+    "slug": "5-euro-2015-van-nelle-unc-coincard",
     "title": "HM 5 Euro 2015 Van Nelle UNC Coincard",
     "price_display": "€10.00",
     "description": null,
@@ -14,18 +15,16 @@
       "Mintage": "211,000",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:56:01.105Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-rev.webp",
+    "image_packaging": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-obv.webp",
       "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-rev.webp",
-      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-box.webp",
-      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-pack.webp",
-      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-cert.webp",
-      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-img-06.webp",
-      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:05:14.582Z",
-    "slug": "5-euro-2015-van-nelle-unc-coincard",
-    "image_obverse": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-rev.webp"
+      "/image/coins/foreign/5-euro-2015-van-nelle-unc-coincard-pack.webp"
+    ]
   }
 }

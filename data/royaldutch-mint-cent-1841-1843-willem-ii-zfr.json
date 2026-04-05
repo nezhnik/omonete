@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/cent-1841-1843-willem-ii-zfr",
+    "slug": "cent-1841-1843-willem-ii-zfr",
     "title": "DR ½ Cent Willem II Zf (lelie)",
     "price_display": "€85.00",
     "description": null,
@@ -10,15 +11,15 @@
       "Weight": "1.90 g",
       "Diameter": "16 mm"
     },
+    "parsedAt": "2026-04-05T09:04:41.611Z",
+    "image_obverse": "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-obv.webp",
-      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-rev.webp",
-      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-box.webp",
-      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:11:02.927Z",
-    "slug": "cent-1841-1843-willem-ii-zfr",
-    "image_obverse": "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-obv.webp",
-    "image_reverse": "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-rev.webp"
+      "/image/coins/foreign/cent-1841-1843-willem-ii-zfr-rev.webp"
+    ]
   }
 }

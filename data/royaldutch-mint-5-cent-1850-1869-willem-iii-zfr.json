@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-cent-1850-1869-willem-iii-zfr",
+    "slug": "5-cent-1850-1869-willem-iii-zfr",
     "title": "DR 5 Cent Willem III Zfr (zwaard)",
     "price_display": "€25.00",
     "description": null,
@@ -10,15 +11,15 @@
       "Weight": "0.685 g",
       "Diameter": "12.5 mm"
     },
+    "parsedAt": "2026-04-05T08:54:19.938Z",
+    "image_obverse": "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-obv.webp",
-      "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-rev.webp",
-      "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-box.webp",
-      "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:02:33.751Z",
-    "slug": "5-cent-1850-1869-willem-iii-zfr",
-    "image_obverse": "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-rev.webp"
+      "/image/coins/foreign/5-cent-1850-1869-willem-iii-zfr-rev.webp"
+    ]
   }
 }

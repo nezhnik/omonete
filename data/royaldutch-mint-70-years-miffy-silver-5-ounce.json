@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/70-years-miffy-silver-5-ounce",
+    "slug": "70-years-miffy-silver-5-ounce",
     "title": "70 years miffy Silver 5 Ounce",
     "price_display": "€1,099.00",
     "description": "#html-body [data-pb-style=XF06UFJ]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}We’re part of the celebrations for 70 years of miffy! For the most beloved bunny in the world, nothing is too crazy. That is why the Royal Dutch Mint launches a unique issue. Discover the special 70 years miffy Silver 5 Ounce – that is especially enameled with color, in our own atelier. 70 years of miffy It is the year 1955 when miffy comes to life in the sketches of illustrator Dick Bruna. He uses them to tell stories to his son: this turns out to be such a success that Dick Bruna decides to publish a book. The very first miffy book is published in 1955 and this is the start of a very successful series: miffy is super popular! Nowadays, this fictional animal can be found in almost every household with small children. In addition to books, there are many other products available, such as cards, games, clocks, bags, toys and more. And now there is also a very special Silver coin for sale in our webshop. Design The 70 years miffy Silver 5 Ounce is a special issue for miffy’s birthday. The Silver coins with a weight of 5 Ounce have all been enameled by hand in our atelier. This makes every coin even more unique. The coins have been placed in a special packaging: miffy’s house… Open the doors to the house and discover the rhyme on the inside!",
@@ -14,18 +15,16 @@
       "Mintage": "70",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T08:58:53.933Z",
+    "image_obverse": "/image/coins/foreign/70-years-miffy-silver-5-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/70-years-miffy-silver-5-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/70-years-miffy-silver-5-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/70-years-miffy-silver-5-ounce-obv.webp",
       "/image/coins/foreign/70-years-miffy-silver-5-ounce-rev.webp",
-      "/image/coins/foreign/70-years-miffy-silver-5-ounce-box.webp",
-      "/image/coins/foreign/70-years-miffy-silver-5-ounce-pack.webp",
-      "/image/coins/foreign/70-years-miffy-silver-5-ounce-cert.webp",
-      "/image/coins/foreign/70-years-miffy-silver-5-ounce-img-06.webp",
-      "/image/coins/foreign/70-years-miffy-silver-5-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:07:01.619Z",
-    "slug": "70-years-miffy-silver-5-ounce",
-    "image_obverse": "/image/coins/foreign/70-years-miffy-silver-5-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/70-years-miffy-silver-5-ounce-rev.webp"
+      "/image/coins/foreign/70-years-miffy-silver-5-ounce-pack.webp"
+    ]
   }
 }

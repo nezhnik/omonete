@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-amsterdamse-poort-2024",
+    "slug": "silver-ducat-amsterdamse-poort-2024",
     "title": "Silver Ducat ‘Amsterdamse Poort’ 2024",
     "price_display": "€54.95",
     "description": "Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. The issue the depicting Amsterdamse Poort is part of and also the second issue of the brand-new series “Dutch city gates and access roads”. Are you also collecting these silver coins? Part 2: Amsterdamse Poort: national monument in Haarlem The impressive Amsterdamse Poort, now a national monument, can be found in the city of Haarlem. This gate, which dates from the 14th century, is the only of twelve medieval gates in Haarlem that is still standing to this day. The gate was originally used as a passage to Amsterdam. People usually travelled through the gate and arrived at the Haarlemmerpoort in the heart of Amsterdam, within 4 hours on foot. The Amsterdamse Poort, also known as the Spaarnwouderpoort, is the first Haarlem gate to ever get mentioned in a document. Historians have found remains of ancient city walls at the foot of the gate. The famous Kenau Simonsdochter Hasselaer is said to have stood on the walls at the gate during the Spanish attack in the siege of Haarlem. She is a Dutch folk hero, known for her fearless defense of Haarlem against Spanish invaders. It’s also quite remarkable that this gate withstood the siege of Haarlem very well: no significant damage was found. The Amsterdamse Poort in Haarlem is still impressive to see today. Unfortunately, its interior is not visible, since it is not open to the public. Although it is possible to walk or cycle under the gate. The gate consists of two towers that defended the passage. The towers are connected to a front gate, which is located a bit lower and also surrounded by two round towers. The presence of a Burgundian city coat of arms and the Austria coat of arms indicates that the front gate was placed somewhere in the 15th century. Duke Karel van Egmond In the previous series (Dutch Castles), knight Godard de Ginkell was on the coin. According to the Dutch Mint Act, a knight in armour should be on the coin. This time, Karel van Egmond (1467 – 1538) is taking over this honor. This armored man on the obverse of the coin was an important duke of several areas in the Netherlands. During his reign, he had to deal with threats from emperor Charles V. He also was the last independent feudal ruler of the Netherlands. For this new series, Karel van Egmond will be on the Silver Ducat. Design The obverse of the Silver Ducat “Amsterdamse Poort” depicts Duke Karel van Egmond in front of the famous building. The province weapon of North Holland can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII. HOL.SEP”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. HOL.SEP stands for the province of North Holland. On the reverse of the Silver Ducat, the national coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Here you can also find the mint mark and the privy mark. As requested by many, the packaging for the new series is adjusted. The Silver Ducat is in a smaller packaging that not only takes up less space, but also fits in the mailbox.",
@@ -14,18 +15,16 @@
       "Mintage": "1,750",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:44:50.958Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-obv.webp",
       "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-rev.webp",
-      "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-box.webp",
-      "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-pack.webp",
-      "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-cert.webp",
-      "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-img-06.webp",
-      "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:32:31.254Z",
-    "slug": "silver-ducat-amsterdamse-poort-2024",
-    "image_obverse": "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-rev.webp"
+      "/image/coins/foreign/silver-ducat-amsterdamse-poort-2024-pack.webp"
+    ]
   }
 }

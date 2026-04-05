@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2014-molen-vijfje-bu-coincard",
+    "slug": "5-euro-2014-molen-vijfje-bu-coincard",
     "title": "HM 5 Euro 2014 Molen Vijfje BU CC",
     "price_display": "€12.95",
     "description": null,
@@ -12,15 +13,15 @@
       "Quality": "Brilliant Uncirculated",
       "Mintage": "15,000"
     },
+    "parsedAt": "2026-04-05T08:55:50.755Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-obv.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-rev.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-box.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:04:56.951Z",
-    "slug": "5-euro-2014-molen-vijfje-bu-coincard",
-    "image_obverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-rev.webp"
+      "/image/coins/foreign/5-euro-2014-molen-vijfje-bu-coincard-rev.webp"
+    ]
   }
 }

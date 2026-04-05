@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/mentelity-foundation-medal-silver-1-ounce",
+    "slug": "mentelity-foundation-medal-silver-1-ounce",
     "title": "Mentelity Foundation Medal Silver 1 Ounce",
     "price_display": "€139.00",
     "description": "Multiple Paralympic snowboarding champion Bibian Mentel (September 27, 1972 - March 29, 2021) passed away a year ago. With her optimism, vitality and commitment to people with a physical challenge, Bibian has shown the Netherlands that life is too beautiful not to celebrate, regardless of the challenges that come your way. In memory of this exceptional athlete, the Royal Dutch Mint is launching a special issue, available in coincard, in Silver and in Gold. These issues follow the issues in honour of, among others, the ALS Foundation, the Princess Máxima Centre, Make-A-Wish Nederland and the Dutch Cancer Society. The Mentelity Foundation Bibian's dream was equal opportunities for everyone with a physical challenge. The Mentelity Foundation is committed to making Bibian's dream come true. The Foundation does this by inspiring and motivating people to get moving. It wants to show that people are capable of more than they think. Thus the Foundation not only changes people's lives, but also the way society looks at people with a physical challenge. Silver in Luxury Packaging The obverse of the issue is an ode to Bibian herself. This side shows her portrait and is deliberately kept simple and classic. The reverse features the logo of the Mentelity Foundation, Bibian's passion project. The caption “IK HEB EEN DROOM Gelijke kansen voor iedereen met een lichamelijke uitdaging” (translation: I HAVE A DREAM Equal opportunities for anyone with a physical challenge) emphasizes the Foundation's purpose. The Silver issue comes in a luxurious packaging depicting a mountain, a unique place for Bibian as a snowboarder. In addition, you see the motto of the Mentelity Foundation: “It's all about Mentelity”. The packaging contains an inlay of carbon, which is also used to make leg prostheses. A special reference to Bibian and the Mentelity Foundation! The issue comes with a Certificate of Authenticity.",
@@ -14,18 +15,16 @@
       "Mintage": "250",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:22:20.914Z",
+    "image_obverse": "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-obv.webp",
       "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-rev.webp",
-      "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-box.webp",
-      "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-pack.webp",
-      "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-cert.webp",
-      "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-img-06.webp",
-      "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:18:28.442Z",
-    "slug": "mentelity-foundation-medal-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-rev.webp"
+      "/image/coins/foreign/mentelity-foundation-medal-silver-1-ounce-pack.webp"
+    ]
   }
 }

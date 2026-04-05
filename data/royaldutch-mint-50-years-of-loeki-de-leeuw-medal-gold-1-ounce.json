@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/50-years-of-loeki-de-leeuw-medal-gold-1-ounce",
+    "slug": "50-years-of-loeki-de-leeuw-medal-gold-1-ounce",
     "title": "50 Years of \"Loeki de Leeuw\" Medal Gold 1 Ounce",
     "price_display": "€2,799.00",
     "description": "“Loeki de Leeuw” (Loeki the Lion) is celebrating his fiftieth birthday this year! For years, the films of the somewhat clumsy yet charming Loeki were shown in between commercials on television. He quickly conquered the hearts of many Dutch people with his films. The Royal Dutch Mint mints three exclusive issues in honour of the favourite lion of the Netherlands. Loeki de Leeuw The most famous lion in the Netherlands, created by Joop Geesink, was first seen on television in January 1972. Loeki soon became a Dutch icon. From 1984, daughter Louise Geesink took over from her father and became the owner of Loeki. After 7,000 clips, the “Ster” (the foundation that regulates advertising for Dutch public broadcasters) stopped with the Loeki films in 2004. However, the funny lion could still be admired in the theme park Efteling, where he played a role in the Carnival Festival ride for many years.. In 2021 Loeki returned to television and can be seen regularly between the commercials of the Ster. Very Limited Gold Issue The issue is entirely dedicated to birthday boy Loeki. On the obverse he is proudly cheering on the front with his arm up. The reverse shows the logo of Loeki de Leeuw with the anniversary years 1972-2022. The gold issue comes in a luxurious, case with the Loeki de Leeuw logo and a compilation of Loeki comics. A numbered Certificate of Authenticity is also included.",
@@ -14,18 +15,16 @@
       "Mintage": "10",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T08:56:33.691Z",
+    "image_obverse": "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-obv.webp",
       "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-rev.webp",
-      "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-box.webp",
-      "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-pack.webp",
-      "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-cert.webp",
-      "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-img-06.webp",
-      "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:05:48.977Z",
-    "slug": "50-years-of-loeki-de-leeuw-medal-gold-1-ounce",
-    "image_obverse": "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-rev.webp"
+      "/image/coins/foreign/50-years-of-loeki-de-leeuw-medal-gold-1-ounce-pack.webp"
+    ]
   }
 }

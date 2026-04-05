@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/willemstad-5-euro-coin-2023-silver-proof",
+    "slug": "willemstad-5-euro-coin-2023-silver-proof",
     "title": "Willemstad 5 Euro Coin 2023 Silver Proof",
     "price_display": "€49.95",
     "description": "Everyone who thinks of Willemstad on Curaçao, immediately imagines the colorful buildings at the St. Anna Bay. Willemstad is indeed known for the colorful ‘Dutch’ architecture, but when you get to know the city a little better, you will come to discover the Spanish and Portuguese influences. This mix of different cultures and influences made sure that in 1997, several of the city’s districts were being listed as UNESCO World Heritage. This is also the reason that the Royal Dutch Mint, on behalf of the Ministry of Finance, will strike a commemorative coin: the Willemstad 5 Euro coin. Willemstad UNESCO World Heritage Willemstad is the capital of the island Curaçao, but also the former capital of the Netherlands Antilles. The Spaniards were the first to discover the island, already before the year 1500. They officially settled on the island in 1527. In 1634, a trading post on St. Anna Bay was conquered by the West Indian Company (WIC). Willemstad then was in Dutch hands, but also in English hands for some years. Since 2010, Curaçao is an independent country within the Kingdom of the Netherlands. Since 1997, the historic districts of Punda, Otrabanda, Scharloo and Pietermaai are part of the UNESCO World Heritage. Willemstad is therefore part of a small group of World Heritage Cities that are regarded as monuments because of their cultural and historical value. The unique location of the districts around the water emphasize why Willemstad distinguishes itself as a port city. In addition, Willemstad still presents itself as a historically recognizable city. The Willemstad 5 Euro Coin is already the 10th commemorative coin that is released in the series UNESCO World Heritage. Since 2012, many interesting subjects have been covered in the series. Design The Willemstad 5 Euro Coin was designed by Cleo Maxime de Brabander. The obverse shows king Willem-Alexander. On the background, the Queen Juliana Bridge in Willemstad is shown. The four stars at the upper part of the obverse represent the four countries that form the Kingdom of the Netherlands: the Netherlands, Curaçao, Aruba and St. Maarten. The reverse contains a city view with all four districts that are part of the UNESCO World Heritage: Punda, Otrobanda, Scharloo and Pietermaai. Several important monuments can be discovered on the coin: the Handelskade (commercial quay), the Mikvé Israël-Emanuel synagogue and Fort Amsterdam in Punda and the Emanu-el temple, which marks the start of the district of Pietermaai.",
@@ -15,18 +16,16 @@
       "Mintage": "4,000",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T09:51:24.038Z",
+    "image_obverse": "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-obv.webp",
       "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-rev.webp",
-      "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-box.webp",
-      "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-pack.webp",
-      "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-cert.webp",
-      "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-img-06.webp",
-      "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:37:00.167Z",
-    "slug": "willemstad-5-euro-coin-2023-silver-proof",
-    "image_obverse": "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-rev.webp"
+      "/image/coins/foreign/willemstad-5-euro-coin-2023-silver-proof-pack.webp"
+    ]
   }
 }

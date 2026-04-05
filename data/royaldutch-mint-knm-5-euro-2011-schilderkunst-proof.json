@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/knm-5-euro-2011-schilderkunst-proof",
+    "slug": "knm-5-euro-2011-schilderkunst-proof",
     "title": "KNM 5 Euro 2011 Schilderkunst Proof",
     "price_display": "€35.00",
     "description": null,
@@ -14,18 +15,16 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS",
       "Mintmaster sign": "Koerszettende zeilen"
     },
+    "parsedAt": "2026-04-05T09:13:43.523Z",
+    "image_obverse": "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-obv.webp",
       "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-rev.webp",
-      "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-box.webp",
-      "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-pack.webp",
-      "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-cert.webp",
-      "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-img-06.webp",
-      "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:14:30.360Z",
-    "slug": "knm-5-euro-2011-schilderkunst-proof",
-    "image_obverse": "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-rev.webp"
+      "/image/coins/foreign/knm-5-euro-2011-schilderkunst-proof-pack.webp"
+    ]
   }
 }

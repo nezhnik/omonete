@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/hm-5-euro-2012-grachtengordel-unc-cc",
+    "slug": "hm-5-euro-2012-grachtengordel-unc-cc",
     "title": "HM 5 Euro 2012 Grachtengordel UNC CC",
     "price_display": "€10.00",
     "description": null,
@@ -13,17 +14,16 @@
       "Nominal value": "5 euro",
       "Mintage": "220,000"
     },
+    "parsedAt": "2026-04-05T09:12:24.605Z",
+    "image_obverse": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-obv.webp",
+    "image_reverse": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-rev.webp",
+    "image_packaging": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-obv.webp",
       "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-rev.webp",
-      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-box.webp",
-      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-pack.webp",
-      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-cert.webp",
-      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:13:39.272Z",
-    "slug": "hm-5-euro-2012-grachtengordel-unc-cc",
-    "image_obverse": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-obv.webp",
-    "image_reverse": "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-rev.webp"
+      "/image/coins/foreign/hm-5-euro-2012-grachtengordel-unc-cc-pack.webp"
+    ]
   }
 }

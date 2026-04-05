@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/stichting-opkikker-medal-silver-proof",
+    "slug": "stichting-opkikker-medal-silver-proof",
     "title": "Stichting Opkikker Medal Silver Proof",
     "price_display": "€119.00",
     "description": "Stichting Opkikker is a Dutch foundation that helps families with a sick child. This year, the foundation celebrates its 25th anniversary. The story began when founder Ruud Sliphorst and his family arranged a ride on a moped for their nephew Mario, who would not live to see his sixteenth birthday. The day was filled with joy. Something Ruud wished for all sick children. In 1995 he and a group of like-minded people came together at the Academic Medical Center in Amsterdam. Stichting Opkikker was born. The word “Opkikker” can be translated as pick-me-up, it’s something that brightens your day. Their mascot is a frog, as “kikker” means frog in Dutch. The foundation organises special days for families with a sick child. During this day, the family is relieved from their caring duties with a special programme, composed for their specific situation. Afterwards, patients and their brothers and sisters may also choose to become ambassadors of the foundation. They get to work to help fellow patients. One collects used cellphones, another organises a charity run at school… Anything is possible! Design In honour of the silver anniversary of Stichting Opkikker, the special issue is also exclusively available in sterling silver. It is strictly limited to 25 pieces. On the obverse of the issue, Mario’s portrait is depicted. Mario was Ruud Sliphorst’s nephew thanks to whom the foundation was established. The inscription reads “25 jaar Stichting Opkikker 1995 – 2020”. The reverse shows the foundation’s logo. The issue is struck in Proof-quality: the highest possible quality! Proof issues are struck one by one and are only touched while wearing gloves. The issue is packaged in a luxury window case and comes with a numbered Certificate of Authenticity. The exclusive issue in silver pays tribute to Stichting Opkikker and the great work they do. To another 25 years!",
@@ -14,18 +15,16 @@
       "Mintage": "25",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:50:29.300Z",
+    "image_obverse": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/stichting-opkikker-medal-silver-proof-obv.webp",
       "/image/coins/foreign/stichting-opkikker-medal-silver-proof-rev.webp",
-      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-box.webp",
-      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-pack.webp",
-      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-cert.webp",
-      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-img-06.webp",
-      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:36:13.588Z",
-    "slug": "stichting-opkikker-medal-silver-proof",
-    "image_obverse": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/stichting-opkikker-medal-silver-proof-rev.webp"
+      "/image/coins/foreign/stichting-opkikker-medal-silver-proof-pack.webp"
+    ]
   }
 }

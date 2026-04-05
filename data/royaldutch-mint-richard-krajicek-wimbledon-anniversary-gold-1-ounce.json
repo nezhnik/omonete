@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/richard-krajicek-wimbledon-anniversary-gold-1-ounce",
+    "slug": "richard-krajicek-wimbledon-anniversary-gold-1-ounce",
     "title": "Richard Krajicek Wimbledon Anniversary Gold 1 Ounce",
     "price_display": "€3,499.00",
     "description": "On 7 July 2021 it will be exactly 25 years since Richard Krajicek's victory at Wimbledon, the oldest and most prestigious tennis tournament in the world. He was the very first (and is still the only) Dutchman ever to win the grand slam tournament, quite an achievement! After his victory at Wimbledon, Krajicek founded the Krajicek Foundation to promote sports and games among youth in deprived urban neighbourhoods. The Royal Dutch Mint is launching three issues to reflect on the impact of Richard Krajicek on the Dutch sports landscape. The Krajicek Foundation In 1997 Krajicek gave a tennis clinic in a deprived neighbourhood in the city of The Hague. Here he realised that many children are not able to exercise or play in a safe environment close to home. Hence he founded the Krajicek Foundation. The Foundation aims to motivate youth in deprived urban areas to develop a healthy lifestyle. In addition, at the Krajicek Academy youngsters learn to develop themselves in a positive way to achieve their full potential. Richard Krajicek is also the founder of the annual King's Games: a festive event of sports and play in which an average of 1.2 million children participate. The King's Games traditionally take place on the last Friday before King's Day on April 27th. With his Foundation and other initiatives, Krajicek has been contributing to a sportive, inclusive and social society for nearly 25 years. Design and Packaging In honour of the 25th anniversary of Richard Krajicek's victory at Wimbledon, the Royal Dutch Mint has designed a special issue: an exclusive Gold Proof Richard Krajicek medal. The medal, struck in our highest quality, is strictly limited edition. Krajicek himself can be admired on the obverse, surrounded by a laurel wreath of his beloved tennis rackets and balls. In addition, you can see Krajicek's well-known victory slide on his knees over the court in silhouette. The text emphasises the anniversary: “25th Anniversary”, “Wimbledon Champion 1996”. Unlike the medal in coincard and the Silver Proof medal, the Gold Proof medal depicts the Wimbledon trophy on the reverse. In addition, the golden medal comes in a beautiful, numbered coin holder from Royal Delft with Richard Krajicek’s signature. The mintage of 14 golden Richard Krajicek medals reflects the date on which Krajicek won Wimbledon: the 7th of the 7th month. All in all a true collector's item! Specifications Royal Delft Coin Holder Material Royal Delft earthenware Weight 135 g Dimensions 71 x 72 mm Mintage 14 pieces Design Handmade, uniquely numbered with 24k gold decal",
@@ -14,18 +15,16 @@
       "Mintage": "14",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:43:06.072Z",
+    "image_obverse": "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-obv.webp",
       "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-rev.webp",
-      "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-box.webp",
-      "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-pack.webp",
-      "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-cert.webp",
-      "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-img-06.webp",
-      "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:31:50.726Z",
-    "slug": "richard-krajicek-wimbledon-anniversary-gold-1-ounce",
-    "image_obverse": "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-rev.webp"
+      "/image/coins/foreign/richard-krajicek-wimbledon-anniversary-gold-1-ounce-pack.webp"
+    ]
   }
 }

@@ -1,17 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo",
+    "slug": "lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo",
     "title": "Lion Dollar 2024 Silver 1 Ounce (PF69 Ultra Cameo)",
     "price_display": "€219.00",
     "description": "#html-body [data-pb-style=EY8BTH3]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A Silver Restrike coin of the highest quality in your possession? A limited amount of Lion Dollars 2024 Silver 1 Ounce are now available as a graded PF69 coin. The Lion Dollar 2024 Silver 1 Ounce was graded by independent company NGC (Numismatic Guaranty Company). Only 10 pieces received the second highest possible grading: PF69 Ultra Cameo. PF69 means that the coin has almost no post-production imperfections. Ultra Cameo means that this coin has a very bold contrast on both sides of the coin. Thanks to this grading, you can have a classified, perfectly struck silver restrike at home. Scan the QR code on this slabbed coin for the official NGC certification. More information about the total mintage and specifications of Lion Dollar 2024 Silver 1 Ounce can be found here. Lion Dollar 2024 Silver The Lion Dollar also had a big impact on the US Dollar, the biggest currency in the world. Dutch colonists brought the Lion Dollar to New Amsterdam (later New York) and used it extensively. The word ‘Daalder’ translates to ‘dollar’, which makes this Dutch coin of huge importance to the American Dollar of today. The Lion Dollar was minted in the Netherlands from 1575 and issued by six out of seven Dutch provinces and several big cities. One of these cities is Deventer, located in the East of the Netherlands. The Lion Dollar 2024 Silver 1 Ounce is a restrike of the original Deventer coin, which has a very nice surprise in store! Design Since Deventer is a city and not a province, the coat of arms of Holland is replaced by a city-eagle, the well-known figurehead of Deventer. There is also a different text than normal on the reverse of the coin: ‘ME VIGILANTE FLORET DAVENT’, this directly translates to: “Because I watch, Deventer blooms”. The text makes this Silver Lion Dollar extra special.",
-    "specs": {},
+    "specs": {
+      "Article number": "0120716",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "10",
+      "Edge": "Smooth"
+    },
+    "parsedAt": "2026-04-05T09:17:21.254Z",
+    "image_obverse": "/image/coins/foreign/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo-obv.webp",
+    "image_reverse": "/image/coins/foreign/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo-rev.webp",
+    "image_packaging": "/image/coins/foreign/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo/01.png",
-      "/image/coins/foreign/royaldutch/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo/02.png"
-    ],
-    "parsedAt": "2026-03-31T18:20:35.577Z",
-    "slug": "lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo",
-    "image_obverse": "/image/coins/foreign/royaldutch/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo/02.png"
+      "/image/coins/foreign/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo-obv.webp",
+      "/image/coins/foreign/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo-rev.webp",
+      "/image/coins/foreign/lion-dollar-2024-silver-1-ounce-pf69-ultra-cameo-pack.webp"
+    ]
   }
 }

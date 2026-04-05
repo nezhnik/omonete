@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-parrot-duit-silver-2-ounce",
+    "slug": "official-restrike-parrot-duit-silver-2-ounce",
     "title": "Official Restrike: Parrot Duit Silver 2 ounce",
     "price_display": "€269.00",
     "description": "#html-body [data-pb-style=Q85PQTG]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}On 25 November 1975, Suriname became an independent country. Suriname had been a colony of the Netherlands for almost three centuries, since 1667. To celebrate 50 years of independence of the Republic of Suriname, the Royal Dutch Mint is issuing a special reissue of the historic Surinamese Papegaai Duit (Parrot Coin). Official Parrot Coin Re-issue The original papegaai coin, token or duit is made of copper and measures approximately 20 mm. Due to its weight, diameter and material, it is also known as a Duit. The coin depicts a parrot on a branch with four, three, two or one leaf on the front. At the top the number 1, 2, 3 or 4 is shown and at the bottom “AN” and the year date. The reverse side is often blank (which is why they are also called tokens), but if it is not blank, it features a beautiful ornamental tree. One of the most beloved and well-known birds in Suriname is the parrot. That is why this bird appeared on the country's first coins, which represented values of 1, 2 and 4 pounds of sugar. 1 pound of sugar was equal to 1 stuiver (5 cents). To make it understandable for everyone, images were used on the coins: a branch with one leaf for the 1-stuiver coin, a branch with two leaves for the 2-stuiver coin, and a branch with four leaves for the 4-stuiver coin. The pure silver reissue features the year 2025 and the mint and mint master marks of the Royal Dutch Mint. The parrot duit comes in a luxurious parrot-shaped package, including authenticity details. 2 Ounce edition The 2 Ounce re-strikes have the same diameter as the regular editions, but are struck at double thickness. Traditionally, 2 Ounce coins were minted to portray wealth and power. In the 16th and 17th centuries, rulers gave these prestigious coins as gifts to their courts. Nowadays, 2 Ounce coins are real collectors' items. These double-thick editions are extra-limited and are doubly special.",
@@ -13,18 +14,16 @@
       "Mintage": "75",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:35:41.947Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-obv.webp",
       "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-rev.webp",
-      "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-box.webp",
-      "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-pack.webp",
-      "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-cert.webp",
-      "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-img-06.webp",
-      "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:27:48.912Z",
-    "slug": "official-restrike-parrot-duit-silver-2-ounce",
-    "image_obverse": "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-rev.webp"
+      "/image/coins/foreign/official-restrike-parrot-duit-silver-2-ounce-pack.webp"
+    ]
   }
 }

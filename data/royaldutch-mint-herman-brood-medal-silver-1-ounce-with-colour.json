@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/herman-brood-medal-silver-1-ounce-with-colour",
+    "slug": "herman-brood-medal-silver-1-ounce-with-colour",
     "title": "Herman Brood Medal Silver 1 Ounce with Colour",
     "price_display": "€119.00",
     "description": "Musician, painter, actor, poet. This year the creative and multi-talented Herman Brood (1946 – 2001) would have turned 75. In his memory, the Royal Dutch Mint is launching three special issues in collaboration with the Brood family. Herman Brood Herman Brood grew up in Zwolle and was already involved in making music and drawing from an early age. After high school he went to the Art Academy in Arnhem. There he played in his first band: The Moans. After playing in various bands, with the greatest success being the band Herman Brood & His Wild Romance and the hit Saturday Night, he mainly focused on his visual art Brood was inspired by the Cobra tradition: an international movement of young, progressive artists in the period 1848-1951. Brood's style is characterized by large canvases with bright colours and thick black lines. These bright primary colours were largely a necessity: Brood was colour blind. The signature “brood” often forms a striking part of the painting. Herman Brood was also known among the Dutch public as the embodiment of the credo sex, drugs and rock 'n roll. He had been struggling with a (hard) drug addiction since his student days. Unfortunately, this took its toll: in 2001 his body was exhausted by the extravagant lifestyle. On 11 July 2001, Brood took matters into his own hands and ended his life. The Design The Herman Brood issue is also available in Silver 1 Ounce with Colour. In addition to the work The Beat Goes On, which is like a thread through all Herman Brood issues, each Herman Brood issue puts a different work of art in the spotlight. The obverse of the issue in 1 ounce silver shows the work Where Were You When I Needed You in all its glory. The artist himself is depicted on the reverse with his well-known signature “brood”. The Herman Brood medal Silver 1 Ounce comes in a thematic case including a Certificate of Authenticity. A true work of art for your home!",
@@ -14,18 +15,16 @@
       "Mintage": "500",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:12:13.703Z",
+    "image_obverse": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-obv.webp",
+    "image_reverse": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-rev.webp",
+    "image_packaging": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-obv.webp",
       "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-rev.webp",
-      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-box.webp",
-      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-pack.webp",
-      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-cert.webp",
-      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-img-06.webp",
-      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:13:26.626Z",
-    "slug": "herman-brood-medal-silver-1-ounce-with-colour",
-    "image_obverse": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-obv.webp",
-    "image_reverse": "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-rev.webp"
+      "/image/coins/foreign/herman-brood-medal-silver-1-ounce-with-colour-pack.webp"
+    ]
   }
 }

@@ -1,22 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70",
+    "slug": "jaap-eden-five-euro-coin-2019-zilver-proof-ms-70",
     "title": "Jaap Eden 5 Euro Coin 2019 Silver Proof (MS70)",
     "price_display": "€74.95",
     "description": "#html-body [data-pb-style=JMUXQ1E]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Do you want to be sure you purchase a silver coin of demonstrable quality? The Jaap Eden 5 Euro Coin 2019 Silver Proof is now available as a graded MS70 coin. This commemorative coin is graded by NGC (Numismatic Guaranty Company) and received the grading MS70. MS70 is the highest possible grading and means the coin was struck perfectly with no imperfections, even after 5x magnification. These coins are struck in the same format as other circulation coins. Thanks to this grading, you can have a top quality silver coin at home. Scan the QR code on this slabbed coin for the official NGC certification. More information about the total mintage and specifications of the Jaap Eden 5 Euro Coin 2019 Silver Proof can be found here. Jaap Eden 5 Euro Coin 2019 Jacobus Johannes Eden (Groningen, October 19, 1873) became the Netherlands' greatest skating legend at the end of the 19th century. Although that was more than 100 years ago, his exceptional achievements are still widely recognized in our skating country. For example, the annual sports prize \"Athlete of the Year\" was named after him and the Jaap Eden Ice Rink was opened in Amsterdam in 1961. Design The Jaap Eden 5 Euro Coin is designed by artist Wineke Gartz. On the coin we see Jaap Eden, who comes to skate towards us in the manner of a great champion: strong and unyielding, but at the same time calm and self-evident. We see the bent posture of the winner who goes his own way, through storms and struggle, driven by the will to be the best. It even reminds us a little bit of the harsh winters of the past. The deep-lying scratches in the ice give the feeling of a Dutch landscape and symbolize the impression that Jaap Eden left as an athlete. On the front we see the scratches again, but mirrored. The impact of Jaap Eden literally presses through in the present. The superimposed scratches on the shiny background form a festive, radiant background for the portrait of King Willem-Alexander.",
-    "specs": {},
+    "specs": {
+      "Article number": "0120071",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "77",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
+    "parsedAt": "2026-04-05T09:13:19.830Z",
+    "image_obverse": "/image/coins/foreign/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70-obv.webp",
+    "image_reverse": "/image/coins/foreign/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70-rev.webp",
+    "image_packaging": "/image/coins/foreign/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/01.png",
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/02.png",
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/03.png",
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/04.png",
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/05.png",
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/06.png",
-      "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/07.png"
-    ],
-    "parsedAt": "2026-03-31T18:18:14.884Z",
-    "slug": "jaap-eden-five-euro-coin-2019-zilver-proof-ms-70",
-    "image_obverse": "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70/02.png"
+      "/image/coins/foreign/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70-obv.webp",
+      "/image/coins/foreign/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70-rev.webp",
+      "/image/coins/foreign/jaap-eden-five-euro-coin-2019-zilver-proof-ms-70-pack.webp"
+    ]
   }
 }

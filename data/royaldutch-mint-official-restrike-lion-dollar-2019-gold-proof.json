@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-lion-dollar-2019-gold-proof",
+    "slug": "official-restrike-lion-dollar-2019-gold-proof",
     "title": "Official Restrike Lion Dollar 2019 Gold Proof",
     "price_display": "€1,899.95",
     "description": "De Leeuw uit Gelderland Inmiddels nationaal en internationaal een begrip: de officiële herslagen van de Leeuwendaalders. Deze “Dutch Lions” maken inmiddels sinds 2017 hun opmars en circuleren weer, net als vroeger, wereldwijd. De Koninklijke Nederlandse Munt is blij dat herslag van deze oorspronkelijke handelsmunt waar we als Nederland trots op mogen zijn, weer in volle glorie aanwezig is op de internationale numismatische markt. Leeuwendaalders 2019 worden gemunt in verschillende kwaliteiten en uitvoeringen. In de loop van 2019 verschijnen mogelijk andere uitvoeringen, zoals export edities.",
@@ -13,15 +14,15 @@
       "Quality": "Proof",
       "Mintage": "max. 200"
     },
+    "parsedAt": "2026-04-05T09:31:36.845Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-obv.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-rev.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-box.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:24:21.503Z",
-    "slug": "official-restrike-lion-dollar-2019-gold-proof",
-    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-rev.webp"
+      "/image/coins/foreign/official-restrike-lion-dollar-2019-gold-proof-rev.webp"
+    ]
   }
 }

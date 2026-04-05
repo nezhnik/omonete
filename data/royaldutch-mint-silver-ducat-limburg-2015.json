@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-limburg-2015",
+    "slug": "silver-ducat-limburg-2015",
     "title": "Silver Ducat Limburg 2015",
     "price_display": "€44.95",
     "description": "Automatisch meerdere keren per jaar de Zilveren Dukaat ontvangen? Sluit een abonnement af!",
@@ -13,18 +14,16 @@
       "Quality": "Proof",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:47:35.490Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-limburg-2015-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-limburg-2015-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-limburg-2015-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-limburg-2015-obv.webp",
       "/image/coins/foreign/silver-ducat-limburg-2015-rev.webp",
-      "/image/coins/foreign/silver-ducat-limburg-2015-box.webp",
-      "/image/coins/foreign/silver-ducat-limburg-2015-pack.webp",
-      "/image/coins/foreign/silver-ducat-limburg-2015-cert.webp",
-      "/image/coins/foreign/silver-ducat-limburg-2015-img-06.webp",
-      "/image/coins/foreign/silver-ducat-limburg-2015-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:33:51.509Z",
-    "slug": "silver-ducat-limburg-2015",
-    "image_obverse": "/image/coins/foreign/silver-ducat-limburg-2015-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-limburg-2015-rev.webp"
+      "/image/coins/foreign/silver-ducat-limburg-2015-pack.webp"
+    ]
   }
 }

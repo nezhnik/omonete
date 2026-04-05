@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-scheepjesschelling-2023-gold-piedfort-edition",
+    "slug": "official-restrike-scheepjesschelling-2023-gold-piedfort-edition",
     "title": "Official Restrike: “Scheepjesschelling” 2023 Gold – Piedfort Edition",
     "price_display": "€2,999.95",
     "description": "The golden ‘Scheepjesschelling’ - Piedfort Edition of 2023 is a restrike of the Scheepjesschelling from 1678. This coin was minted in the province West-Friesland, in harbourcity Enkhuizen. A special characteristic of this restrike is that is has the very same measurements as the original coin. De coin is also minted in the highest possible Proof Quality. The ‘Scheepjesschelling’ is one of the most well-known Dutch coins. The ‘schelling’ (shilling) was designed to monetize a coin of better quality. Besides, a warship had to be printed on the reverse, to show the naval force of the Republic. This is how the name ‘Scheepjesschelling’ was originated. De coin was internationally successful, but was also very wanted as a trade currency in the East. Piedfort The gold Scheepjesschelling restrike – Piedfort Edition has the same diameter as the original West-Friesland Scheepjesschelling, but is twice as thick. Traditionally, Piedfort coins were used as a way of showing wealth and power. In the sixteenth and seventeenth century, rulers across Europe started the tradition of giving “prestige pieces” to members of their court. Nowadays, Piedfort coins are real collector’s items. This gold restrike of the Scheepjesschelling is twice as thick and therefore twice as special! Design The obverse of the Scheepjesschelling from West-Friesland shows a warship with a flag on the stern and the inscription ‘DEVS. FORTITVDO. ET. SPES. NOSTRA’. This proverb can be translated to ‘God is our strength and hope’. The reverse shows the provincial coat of arms of West-Friesland and the inscription ‘MON. NOV. ORDIN. WEST. FRISIAE’, in full MONETA NOVA ORDINUM FRISIAE. This means: new silver coin of Friesland. In unique coin holder The golden restrike of the Scheepjesschelling is delivered in a very special coin holder, developed in collaboration with Marketiger, a true specialist in 3D-printing. The packaging, in the shape of a treasure box, is made from 3D-printed resin. The shape of the treasure box refers to the popularity of this trading currency from 1678. The packaging has the shape of a treasure box, which refers to the popularity of this trading currency from 1678. This coin sailed many seas and would probably have ended up in many treasures. The treasure box has a cover with the logo of the Royal Dutch Mint printed on it. When the cover is being lifted, the restrike of the Scheepjesschelling lies on an artificial purple cushion. All the treasure boxes have been numbered on the side, what ensures you of a personalized packaging for your brandnew golden Scheepjesschelling. The beautiful coin holder makes sure the Scheepjesschelling will get a magnificent and remarkable spot in your collection. Specifications Coin Holder Material 3D-printed resin Height 5 cm Wide 5 cm Diameter 8,5 cm Numbering On the side",
@@ -14,18 +15,16 @@
       "Mintage": "10",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:37:25.107Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-obv.webp",
       "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-box.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:29:20.871Z",
-    "slug": "official-restrike-scheepjesschelling-2023-gold-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-piedfort-edition-pack.webp"
+    ]
   }
 }

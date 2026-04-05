@@ -5,26 +5,18 @@ import { IconPlus, IconCheck } from '@tabler/icons-react'
 import { cleanCoinTitle } from '../lib/cleanTitle'
 import { COIN_CATALOG_CARD_IMAGE_SCALE } from '../lib/coinCatalogImageScale'
 import { MINTAGE_UNKNOWN_DISPLAY } from '../lib/mintageResearch'
+import { galleryImageSrcKey } from '../lib/galleryImageSrcKey'
 
-/** Ключ для сравнения src после onError (относительный путь или pathname). */
-function imageSrcKey(raw: string): string {
-  if (!raw) return ""
-  const t = raw.trim()
-  if (t.startsWith("/")) return t
-  try {
-    return new URL(t).pathname
-  } catch {
-    return t
-  }
-}
-
-/** Уникальные URL по порядку; дубликаты из БД/карусели не раздувают число «кадров» в карточке. */
+/** Уникальные URL по порядку; дубликаты из БД/карусели не раздувают число «кадров» в карточке.
+ *  Роль берём только если длина imageUrlRoles совпадает с массивом URL — иначе роли не привязываем к чужим индексам. */
 function uniqueUrlRolePairs(
   imageUrls: string[] | undefined,
   imageUrl: string,
   imageUrlRoles: string[] | undefined
 ): { url: string; role?: string }[] {
   const base = imageUrls?.length ? imageUrls : [imageUrl]
+  const rolesAligned =
+    Array.isArray(imageUrlRoles) && imageUrlRoles.length === base.length ? imageUrlRoles : undefined
   const seen = new Set<string>()
   const out: { url: string; role?: string }[] = []
   for (let i = 0; i < base.length; i++) {
@@ -32,7 +24,7 @@ function uniqueUrlRolePairs(
     if (!u) continue
     if (seen.has(u)) continue
     seen.add(u)
-    out.push({ url: u, role: imageUrlRoles?.[i] })
+    out.push({ url: u, role: rolesAligned?.[i] })
   }
   return out
 }
@@ -118,7 +110,7 @@ export function CoinCard(props: CoinCardProps) {
   )
 
   const gallery = useMemo(() => {
-    const ok = galleryPairs.filter((p) => !brokenSrcKeys.has(imageSrcKey(p.url)))
+    const ok = galleryPairs.filter((p) => !brokenSrcKeys.has(galleryImageSrcKey(p.url)))
     if (ok.length > 0) return ok
     const u = imageUrl?.trim()
     return u ? [{ url: u, role: undefined as string | undefined }] : []
@@ -208,6 +200,17 @@ export function CoinCard(props: CoinCardProps) {
                 alt={cleanCoinTitle(title)}
                 className="w-full h-full object-contain origin-center"
                 style={catalogImageScale !== 1 ? { transform: `scale(${catalogImageScale})` } : undefined}
+                onError={() => {
+                  const raw = images[hoverImageIndex] ?? imageUrl ?? ""
+                  const key = galleryImageSrcKey(raw)
+                  if (!key) return
+                  setBrokenSrcKeys((prev) => {
+                    if (prev.has(key)) return prev
+                    const next = new Set(prev)
+                    next.add(key)
+                    return next
+                  })
+                }}
               />
             </div>
           </div>
@@ -260,8 +263,8 @@ export function CoinCard(props: CoinCardProps) {
             </div>
           </div>
         </div>
-        {/* Кружочки: по числу реально доступных кадров (уникальные URL минус битые). Одна картинка — один кружок. */}
-        {images.length >= 1 && (
+        {/* Кружочки только если кадров больше одного; число точек = числу URL в галерее (после отсечения битых). */}
+        {images.length > 1 && (
           <div className="hidden lg:flex items-center justify-center gap-1.5 mt-1 mb-2">
             {images.map((_, i) => (
               <span

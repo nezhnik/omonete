@@ -1,23 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-florin-d-oro-silver-1-ounce-pf68",
+    "slug": "official-restrike-florin-d-oro-silver-1-ounce-pf68",
     "title": "Official Restrike: Florin d’oro Silver 1 ounce PF68",
     "price_display": "€119.95",
     "description": "#html-body [data-pb-style=M00JAJC]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}The Official Restrike: Florin d’oro Silver 1 Ounce is available as a PF68 coin. PF68 coins offer great quality with only minimal signs of handling. The strike and luster remain bold and attractive. It’s a strong choice for collectors seeking value and beauty. Be fast, there are only 3 pieces available! Design The re-strike of the gold coin shows on the obverse the city arms of Florence, a Fleur-de-lys, with caption: ✠ FLOR - ENTIA; Firenze. On the reverse, an effigy of John the Baptist, the city's patron saint, with caption: ✠ . S . IOA / NNES . B. The re-strike will feature the year 2024 on the coin. This special re-strike also revives the origin, rich past and authentic atmosphere of our familiar Gulden (florin).",
-    "specs": {},
+    "specs": {
+      "Article number": "0122561",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "3",
+      "Edge": "Smooth"
+    },
+    "parsedAt": "2026-04-05T09:29:58.303Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-florin-d-oro-silver-1-ounce-pf68-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-florin-d-oro-silver-1-ounce-pf68-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-florin-d-oro-silver-1-ounce-pf68-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/01.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/02.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/03.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/04.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/05.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/06.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/07.png",
-      "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/08.png"
-    ],
-    "parsedAt": "2026-03-31T18:30:23.661Z",
-    "slug": "official-restrike-florin-d-oro-silver-1-ounce-pf68",
-    "image_obverse": "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/official-restrike-florin-d-oro-silver-1-ounce-pf68/02.png"
+      "/image/coins/foreign/official-restrike-florin-d-oro-silver-1-ounce-pf68-obv.webp",
+      "/image/coins/foreign/official-restrike-florin-d-oro-silver-1-ounce-pf68-rev.webp",
+      "/image/coins/foreign/official-restrike-florin-d-oro-silver-1-ounce-pf68-pack.webp"
+    ]
   }
 }

@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/0119257",
+    "slug": "0119257",
     "title": "DR Gouden Dukaat Utrecht 1792 ZFr",
     "price_display": "€775.00",
     "description": null,
@@ -10,13 +11,15 @@
       "Content": "983/1000",
       "Weight": "3.49 g"
     },
+    "parsedAt": "2026-04-05T10:01:06.009Z",
+    "image_obverse": "/image/coins/foreign/0119257-obv.webp",
+    "image_reverse": "/image/coins/foreign/0119257-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/0119257-obv.webp",
       "/image/coins/foreign/0119257-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T19:57:46.019Z",
-    "slug": "0119257",
-    "image_obverse": "/image/coins/foreign/0119257-obv.webp",
-    "image_reverse": "/image/coins/foreign/0119257-rev.webp"
+    ]
   }
 }

@@ -1,23 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/knrm-200-years-5-euro-coin-2024-silver-proof-pf69",
+    "slug": "knrm-200-years-5-euro-coin-2024-silver-proof-pf69",
     "title": "KNRM 200 Years 5 Euro Coin 2024 Silver Proof PF69",
     "price_display": "€59.95",
     "description": "#html-body [data-pb-style=Y92B61L]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A Silver coin of demonstrable perfection? A few of the KNRM 200 years 5 Euro Silver Proof coins are now available as graded PF69 in special slab. The KNRM 200 years 5 Euro Silver Proof has been graded by independent company NGC (Numismatic Guaranty Company): only 8 pieces received the second highest grading, PF69 Ultra Cameo. PF69 means that the coin has been struck with unnoticeable imperfections. Ultra Cameo means that this Proof coin has a very bold contrast on both sides of the coin. Thanks to this grading, you can have a classified, perfect struck Silver coin at home. Scan the QR code on this slabbed coin for the official NGC certification. More information about the total mintage and specifications of the KNRM 200 years 5 Euro Coin Silver Proof can be found here. KNRM 200 years 5 Euro Coin 2024 A voluntary organization that has been working completely free of charge for 200 years and has already saved tens of thousands of people: the Royal Netherlands Sea Rescue Institution (KNRM) is one of the most important organizations in the Netherlands. The Royal Dutch Mint launched an official Silver 5 Euro commemorative coin for KNRM 200 years, commissioned by the Dutch Ministry of Finance! Design The KNRM 200 years 5 Euro Coin Silver Proof is designed by Coralie Vogelaar, in collaboration with designer Hendrik-Jan Grievink. The obverse of the coin shows an image of Dutch King Willem-Alexander. You can see him looking out on the peaceful coast of the North Sea, with his gaze fixated on the horizon. On the top, the text ‘ Willem-Alexander, Koning der Nederlanden’ starts and continues in a semi-circle. On the reverse of the coin, the sea shows herself in a much different way: the turbulent and wild waves bear the silhouette of a KNRM rescue boat with two volunteers in it. When the coin moves, the light changes, which further emphasizes the dynamics of the sea. Thanks to the top quality of your PF69 Golden commemorative coin, this becomes extra prominent.",
-    "specs": {},
+    "specs": {
+      "Article number": "0121195",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "8"
+    },
+    "parsedAt": "2026-04-05T09:16:02.686Z",
+    "image_obverse": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pf69-obv.webp",
+    "image_reverse": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pf69-rev.webp",
+    "image_packaging": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pf69-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/01.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/02.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/03.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/04.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/05.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/06.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/07.png",
-      "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/08.png"
-    ],
-    "parsedAt": "2026-03-31T18:19:53.353Z",
-    "slug": "knrm-200-years-5-euro-coin-2024-silver-proof-pf69",
-    "image_obverse": "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/knrm-200-years-5-euro-coin-2024-silver-proof-pf69/02.png"
+      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pf69-obv.webp",
+      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pf69-rev.webp",
+      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pf69-pack.webp"
+    ]
   }
 }

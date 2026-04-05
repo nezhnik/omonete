@@ -1,21 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-duivenvoorde-castle-2021-pf70",
+    "slug": "silver-ducat-duivenvoorde-castle-2021-pf70",
     "title": "Silver Ducat “Duivenvoorde Castle” 2021 PF70",
     "price_display": "€74.95",
     "description": "#html-body [data-pb-style=TJOUMUD]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A shiny castle in your collection? The Silver Ducat ‘Duivenvoorde Castle’ 2021 is now available as PF70 graded coin. PF70 is the ultimate grade – a perfect coin with no visible flaws, even under magnification. This Silver coin is a true masterpiece of minting, offering flawless beauty and craftsmanship. Add this limited piece to your collection! Design The obverse of the Silver Ducat “Duivenvoorde Castle” depicts knight Godard de Ginkell in front of the famous castle. The province weapon of Zuid-Holland can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII. HOL MER.”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. “HOL MER.” stands for the province of Zuid-Holland. On the reverse of the Silver Ducat, the National coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength.",
-    "specs": {},
+    "specs": {
+      "Article number": "0122562",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40 mm",
+      "Quality": "Proof",
+      "Mintage": "20",
+      "Edge": "Cable"
+    },
+    "parsedAt": "2026-04-05T09:46:18.936Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf70-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf70-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf70-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/01.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/02.jpg",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/03.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/04.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/05.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/06.jpg"
-    ],
-    "parsedAt": "2026-03-31T18:42:45.889Z",
-    "slug": "silver-ducat-duivenvoorde-castle-2021-pf70",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf70/02.jpg"
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf70-obv.webp",
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf70-rev.webp",
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf70-pack.webp"
+    ]
   }
 }

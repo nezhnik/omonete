@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aruba-5-florin-warawara-2022-silver-prooflike",
+    "slug": "aruba-5-florin-warawara-2022-silver-prooflike",
     "title": "Aruba 5 Florin ‘Warawara’ 2022 Silver Prooflike",
     "price_display": "€65.00",
     "description": "The Aruban commemorative coin of 2022 is all about the Warawara, a bird of prey that can be spotted on the island of Aruba. The Warawara is a big, brown-black bird with long legs. Especially the bird’s beak is quite special: it’s curved and has a pointed, hook-shaped curved tip. The Warawara mainly eats the carcasses of wild goats, but it also feeds on mice and lizards. This bird of prey feels most at home above the hills, the ocean or the Aruban lowlands. If danger is close, the bird hides under the bushes. The Warawara is becoming more and more common in Aruba, especially in Arikok National Park. This animal can now also be found on an official commemorative coin. This special colored coin is a real asset to your collection!",
@@ -15,17 +16,16 @@
       "Mintage": "700",
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
+    "parsedAt": "2026-04-05T09:03:38.282Z",
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-rev.webp",
+    "image_packaging": "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-obv.webp",
       "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-rev.webp",
-      "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-box.webp",
-      "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-pack.webp",
-      "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-cert.webp",
-      "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:10:02.564Z",
-    "slug": "aruba-5-florin-warawara-2022-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-obv.webp",
-    "image_reverse": "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-rev.webp"
+      "/image/coins/foreign/aruba-5-florin-warawara-2022-silver-prooflike-pack.webp"
+    ]
   }
 }

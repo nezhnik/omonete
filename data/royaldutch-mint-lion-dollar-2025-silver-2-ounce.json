@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/lion-dollar-2025-silver-2-ounce",
+    "slug": "lion-dollar-2025-silver-2-ounce",
     "title": "Lion Dollar 2025 Silver 2 Ounce",
     "price_display": "€339.00",
     "description": "#html-body [data-pb-style=FNU1GTU]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll} The Lion Dollar is 450 years old! And at the Royal Dutch Mint, we celebrate this with a very special issue in Silver 1 Ounce. The British designer Jody Clark, who modeled the fifth and last portrait of Queen Elizabeth II, created a design that was based on an original Dutch Lion Dollar, struck in the city of Dordrecht in 1575. Clark has reimagined the coin and made it look brand new. Back in time It’s the year 1575 and the Dutch, renowned for their windmills and ingenious fight against water, are about to write history again. The international trade lacks a trusted, unified currency. So the Dutch step up and create a new coin: the Lion Dollar. A coin traders can rely on, made from pure Silver and with a bold lion design, symbolizing strength and pride. The Lion Dollar travels the Atlantic to New Amsterdam and becomes the symbol for innovation and unity. The name of the Lion Dollar can still be seen in the most influential currency of the modern world: The American Dollar. Be part of the Lion Dollar legacy! Design The Lion Dollar 2025 Silver 1 Ounce, designed after an original Lion Dollar from 1575, has the well-known, proud Lion on the obverse, surrounded by the words “CONFIDENS DNO NON MOVETVR”, which translates to “He who trusts in the Lord is unwavering”. The mint mark, privy mark and initials of Jody Clark can also be seen here. Because the coin is a legal tender on Ascension Island, the Coat of Arms of this island is on the reverse. In the middle is a harnessed knight holding his sash, his other hand lies on top of the Coat of Arms of the Province Holland, where the Lion Dollar was minted in 1575. Coin holder Lion Dollar 2025 Silver 1 Ounce The Lion Dollar found its way to Asia, Africa and America. Especially in America, the Lion Dollar became a popular coin. The Dutch transported the coin to their newly discovered and build city New-Amsterdam, the present New York. The Americans eventually got their own coin, based on the Lion Dollar: the Dollar. To tell the story of the Lion Dollar, we have chosen a squared, wooden coin holder with blue acrylics and a geographic drawing of New-Amsterdam. The wood symbolizes the ships that brought the Lion Dollar all over the world. The blue acrylics and the map complete the story of the voyages to New-Amsterdam.",
@@ -14,18 +15,16 @@
       "Mintage": "1,000 (50 in coin holder)",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:18:25.159Z",
+    "image_obverse": "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-obv.webp",
       "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-rev.webp",
-      "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-box.webp",
-      "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-pack.webp",
-      "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-cert.webp",
-      "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-img-06.webp",
-      "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:15:54.169Z",
-    "slug": "lion-dollar-2025-silver-2-ounce",
-    "image_obverse": "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-rev.webp"
+      "/image/coins/foreign/lion-dollar-2025-silver-2-ounce-pack.webp"
+    ]
   }
 }

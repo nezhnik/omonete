@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70",
+    "slug": "malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70",
     "title": "Malta 10 Euro 2022 ‘The Lord of the Rings’ Silver Prooflike PL70",
     "price_display": "€104.00",
     "description": "#html-body [data-pb-style=U4KNFKH]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Do you want a perfect Lord of the Rings coin in your collection? The Malta 10 Euro 2022 'The Lord of the Rings’ Silver Prooflike has received the PL70 rating for Prooflike coins. PL70 coins are absolutely perfect with deep mirror-like brilliance. They reflect expert craftsmanship and flawless preservation. This is a crown jewel for any prooflike coin enthusiast. Design The obverse of the coin shows, in the middle, the White tree of Gondor, the symbol of the continent Gondor, which brought luck, according to the inhabitants. The tree has a color detail. Around the tree is the famous text that is also on the ring. The text says: ‘One Ring to rule them all, one Ring to find them, one Ring to bring them all and in the darkness bind them’. The upper letters are embossed, the bottom letters are a gold color. On the reverse is the logo of the Central Bank of Malta, the privy mark and the year of issue.",
@@ -15,18 +16,16 @@
       "Mintage": "49",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:19:39.506Z",
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-rev.webp",
+    "image_packaging": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-obv.webp",
       "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-rev.webp",
-      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-box.webp",
-      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-pack.webp",
-      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-cert.webp",
-      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-img-06.webp",
-      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:16:59.042Z",
-    "slug": "malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70",
-    "image_obverse": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-obv.webp",
-    "image_reverse": "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-rev.webp"
+      "/image/coins/foreign/malta-10-euro-2022-the-lord-of-the-rings-silver-prooflike-pl70-pack.webp"
+    ]
   }
 }

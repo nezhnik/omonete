@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aviation-10-euro-coin-2019-gold-proof",
+    "slug": "aviation-10-euro-coin-2019-gold-proof",
     "title": "Aviation 10 euro coin 2019 Gold Proof",
     "price_display": "€389.95",
     "description": null,
@@ -15,17 +16,16 @@
       "Mintage": "max 1,000 pieces",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:03:48.536Z",
+    "image_obverse": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-obv.webp",
       "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-rev.webp",
-      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-box.webp",
-      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-pack.webp",
-      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-cert.webp",
-      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:10:19.267Z",
-    "slug": "aviation-10-euro-coin-2019-gold-proof",
-    "image_obverse": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-rev.webp"
+      "/image/coins/foreign/aviation-10-euro-coin-2019-gold-proof-pack.webp"
+    ]
   }
 }

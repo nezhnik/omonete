@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2012-beeldhouwkunst-unc-coincard",
+    "slug": "5-euro-2012-beeldhouwkunst-unc-coincard",
     "title": "HM 5 Euro 2012 Beeldhouwkunst UNC CC",
     "price_display": "€10.00",
     "description": null,
@@ -12,12 +13,14 @@
       "Quality": "Uncirculated",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:55:20.087Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2012-beeldhouwkunst-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2012-beeldhouwkunst-unc-coincard-obv.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2012-beeldhouwkunst-unc-coincard-obv.webp"
-    ],
-    "parsedAt": "2026-03-31T20:04:06.834Z",
-    "slug": "5-euro-2012-beeldhouwkunst-unc-coincard",
-    "image_obverse": "/image/coins/foreign/5-euro-2012-beeldhouwkunst-unc-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2012-beeldhouwkunst-unc-coincard-obv.webp"
+    ]
   }
 }

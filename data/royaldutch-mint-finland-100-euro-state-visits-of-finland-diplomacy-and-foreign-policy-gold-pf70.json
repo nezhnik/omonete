@@ -1,23 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70",
+    "slug": "finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70",
     "title": "Finland 100 Euro “State Visits” 2025 Gold PF70",
     "price_display": "€999.00",
     "description": "#html-body [data-pb-style=HQ0D5M8]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A coin of demonstrable perfection in your collection? PF70 is the ultimate grade – a perfect coin with no visible flaws, even under magnification. It’s a true masterpiece of minting, offering flawless beauty and craftsmanship. Add this treasure to your premium collection! Design The Finland 100 Euro 2025 “State Visits of Finland – Diplomacy and Foreign Policy was designed by Sinnika Inkeroinen-Huhta and Ilkka Huhta. The designers use a door to symbolize state visits and diplomatic relations between nations. Behind the door, negotiations take place, relationships are formed and the future is build. The obverse shows a glossy version of the door, with its surroundings roughly. The reverse shows the same door, but with a more roughly surface and a smooth and glossy surrounding.",
-    "specs": {},
+    "specs": {
+      "Article number": "0122754",
+      "Metal": "Gold 917/1000, Silver 40/1000, Copper 43/1000",
+      "Weight": "5.65 g",
+      "Diameter": "22.5 mm",
+      "Quality": "Proof",
+      "Nominal value": "100 euro",
+      "Mintage": "43",
+      "Edge": "Smooth",
+      "Designer": "Sinikka Inkeroinen-Huhta en Ilkka Huhta"
+    },
+    "parsedAt": "2026-04-05T09:11:16.063Z",
+    "image_obverse": "/image/coins/foreign/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70-obv.webp",
+    "image_reverse": "/image/coins/foreign/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70-rev.webp",
+    "image_packaging": "/image/coins/foreign/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/01.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/02.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/03.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/04.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/05.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/06.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/07.png",
-      "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/08.png"
-    ],
-    "parsedAt": "2026-03-31T18:16:25.113Z",
-    "slug": "finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70",
-    "image_obverse": "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70/02.png"
+      "/image/coins/foreign/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70-obv.webp",
+      "/image/coins/foreign/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70-rev.webp",
+      "/image/coins/foreign/finland-100-euro-state-visits-of-finland-diplomacy-and-foreign-policy-gold-pf70-pack.webp"
+    ]
   }
 }

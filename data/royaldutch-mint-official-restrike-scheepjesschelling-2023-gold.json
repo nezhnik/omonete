@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-scheepjesschelling-2023-gold",
+    "slug": "official-restrike-scheepjesschelling-2023-gold",
     "title": "Official Restrike: “Scheepjesschelling” 2023 Gold",
     "price_display": "€1,799.95",
     "description": "The golden ‘Scheepjesschelling’ of 2023 is a restrike of the Scheepjesschelling from 1678. This coin was minted in the province West-Friesland, in the city of Enkhuizen. A special characteristic of this restrike is that is has the very same measurements as the original coin. De coin is also minted in the highest possible Proof Quality. The ‘Scheepjesschelling’ is one of the most well-known Dutch coins. The ‘schelling’ (shilling) was designed to monetize a coin of better quality. Besides, a warship had to be printed on the reverse, to show the naval force of the Republic. This is how the name ‘Scheepjesschelling’ was originated. De coin was internationally successful, but was also very wanted as a trade currency in the East. Design The obverse of the Scheepjesschelling from West-Friesland shows a warship with a flag on the stern and the inscription ‘DEVS. FORTITVDO. ET. SPES. NOSTRA’. This proverb can be translated to ‘God is our strength and hope’. The reverse shows the provincial coat of arms of West-Friesland and the inscription ‘MON. NOV. ORDIN. WEST. FRISIAE’, in full MONETA NOVA ORDINUM FRISIAE. This means: new silver coin of Friesland. In unique coin holder The golden restrike of the Scheepjesschelling is delivered in a very special coin holder, developed in collaboration with Marketiger, a true specialist in 3D-printing. The packaging, in the shape of a treasure box, is made from 3D-printed resin. The shape of the treasure box refers to the popularity of this trading currency from 1678. This coin sailed many seas and would probably have ended up in many treasures. The treasure box has a cover with the logo of the Royal Dutch Mint printed on it. When the cover is being lifted, the restrike of the Scheepjesschelling lies on an artificial purple cushion. All the treasure boxes have been numbered on the side, what ensures you of a personalized packaging for your brandnew golden Scheepjesschelling. The beautiful coin holder makes sure the Scheepjesschelling will get a magnificent and remarkable spot in your collection. Specificaties munthouder Materiaal 3D-printed resin Hight 5 cm Wide 5 cm Length 8,5 cm Numbering On the side",
@@ -14,18 +15,16 @@
       "Mintage": "25",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:37:19.857Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-obv.webp",
       "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-rev.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-box.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-pack.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-cert.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-img-06.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:29:12.837Z",
-    "slug": "official-restrike-scheepjesschelling-2023-gold",
-    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-rev.webp"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2023-gold-pack.webp"
+    ]
   }
 }

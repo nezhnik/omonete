@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/dutch-water-defence-lines-10-euro-coin-2025-gold-proof",
+    "slug": "dutch-water-defence-lines-10-euro-coin-2025-gold-proof",
     "title": "Dutch Water Defence Lines 10 Euro Coin 2025 Gold Proof",
     "price_display": "€895.00",
     "description": "#html-body [data-pb-style=LB9G0SP]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}200 kilometers long, 96 forts, 2 castles, 6 fortresses and more than 100 military sluices, dikes and canals. Of course we’re talking about the Dutch Water Defence Lines! To underscore the importance of heritage, the Royal Dutch Mint launches commemorative coins in the UNESCO World Heritage series. The 11th issue, the Dutch Water Defence Lines, will be issued in 2025. As commissioned by the Dutch Ministry of Finance, Royal Dutch Mint presents: the Dutch Water Defence Lines 10 Euro Coin 2025 Gold Proof. Dutch Water Defence Lines Did you know that the Netherlands has a unique World Heritage with water as an ally? As the only large scale system of floodplains, dikes, locks and forts in the world, The Dutch Water Defence Lines perfectly illustrate how the Dutch handled the water – a practice that dates back to the Middle Ages. First, they achieved this by enabling them to live and grow food in the marshy land. Later, they also used water to defend cities. It all started with the Old Dutch Waterline, established in 1672. The New Dutch Waterline built on this: construction began in 1815. Construction of the Defence Line of Amsterdam started in 1880. In 1996, the latter received Unesco status. In 2021, both waterlines came together as the Dutch Water Defence Lines and since then they form one world heritage. With the Dutch Water Defence Lines, water went from being an enemy and challenge to ally. With a series of rivers, sluices, dikes and canals, land could be flooded: this could effectively stop enemy attacks. This interplay of technology, ingenuity and water formed the defence of the rich west of the Netherlands. Today, the Dutch Water Defence Lines World Heritage Site is still very much alive. The forts are not only a hotspot for biodiversity, but volunteers are actively involved in promoting this World Heritage site through guided tours, maintenance and more. Design The Dutch Water Defence Lines 10 Euro Coin was designed by Hans Gremmen, who also immortalized 750 years of Amsterdam on a coin. For the new commemorative coin, Gremmen choose a sculptured map of the Netherlands, showing three features: land, water and military structures. The Dutch landscape is shown in various planes (land). Several planes are shaded, referencing the inundation areas (water). The line indicates the location of the Dutch Water Defence Lines, and the triangles represent the structures along the lines: the forts, fortresses and castles. For the obverse with the portrait of King Willem-Alexander, the designer chose to use the same elements and structures. The element for water is used to create unity, but also to reference the king’s role in water management, which he focused on before his inauguration. The coin is presented in a luxury packaging.",
@@ -15,13 +16,16 @@
       "Mintage": "1,000",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:05:53.637Z",
+    "image_obverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-obv.webp",
-      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:12:22.095Z",
-    "slug": "dutch-water-defence-lines-10-euro-coin-2025-gold-proof",
-    "image_obverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-rev.webp"
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-rev.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-10-euro-coin-2025-gold-proof-pack.webp"
+    ]
   }
 }

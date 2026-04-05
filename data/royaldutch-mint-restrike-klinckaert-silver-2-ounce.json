@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/restrike-klinckaert-silver-2-ounce",
+    "slug": "restrike-klinckaert-silver-2-ounce",
     "title": "Restrike “Klinckaert” Silver 2 Ounce",
     "price_display": "€309.00",
     "description": "#html-body [data-pb-style=HPVGK98]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Imagine: it is the year 1411. In the Dutch city Dordrecht, a golden coin jingles on a merchants table. The clear sound immediately gives away the name: the Klinckaert. This coin is also known as the Golden Shield, which was introduced first time halfway through the 14th century. It is the oldest Gold coin that was minted in significant quantities in the Netherlands. And today, a new Restrike is available of this impressive coin: the Official Restrike “Klinckaert” Silver 2 Ounce. Next to this, the coin is also available in three other varieties: Silver 1 Ounce, Gold 1 Ounce and Gold 2 Ounce. From Golden Shield to Klinckaert In 1354, Count William V of Holland introduced the Golden Shield: a coin named after the coat of arms on the obverse. Under Albert of Bavaria, the weight and gold content were reduced, after which the coin was nicknamed “Klinckaert”– a reference to the clear sound it made when dropped. The “Klinckaert” is a tangible piece of Dutch history and, especially for the period in which it was minted, boasts a very impressive design. Design The restrike of the Klinckaert Silver 2 Ounce is based on the most famous variant of the Golden Shield, minted in 1411 under Count William VI. The impressive obverse depicts the count seated on a Gothic throne with a sword in his right hand and his left hand resting on a coat of arms of Holland-Bavaria. The text GVILLELM DVX COM HOLAND Z ZEL encircles the coin: \"Willem, Duke and Count of Holland and Zeeland.\" The reverse side depicts a floral cross surrounded by the inscription: XPC VINCIT, XPC REGNAT, XPC IMPERAT: ‘Christ conquers, Christ reigns, Christ commands’. Coin holder The Klinckaert Silver 2 Ounce is delivered in a round, metal coin holder. On the lid, the Coat of Arms of Dordrecht is depicted: in this city, the original Klinckaert was minted, at the Mint of Dordrecht. Around the Coat of Arms, stone ornaments are visible, coming from the old Mint gate of the city.",
@@ -14,18 +15,16 @@
       "Mintage": "100",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:42:50.150Z",
+    "image_obverse": "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-obv.webp",
       "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-rev.webp",
-      "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-box.webp",
-      "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-pack.webp",
-      "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-cert.webp",
-      "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-img-06.webp",
-      "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:31:43.966Z",
-    "slug": "restrike-klinckaert-silver-2-ounce",
-    "image_obverse": "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-rev.webp"
+      "/image/coins/foreign/restrike-klinckaert-silver-2-ounce-pack.webp"
+    ]
   }
 }

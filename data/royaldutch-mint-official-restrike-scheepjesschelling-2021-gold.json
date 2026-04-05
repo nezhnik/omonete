@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-scheepjesschelling-2021-gold",
+    "slug": "official-restrike-scheepjesschelling-2021-gold",
     "title": "Official Restrike: “Scheepjesschelling” 2021 Gold",
     "price_display": "€1,595.00",
     "description": "The Royal Dutch Mint proudly presents the Official Restrike of the original Utrecht “Scheepjesschelling” from 1786! The restrike in gold has the same dimensions as the original coin, which makes it extra special. The coin is struck in impeccable Proof-quality. The “schelling” is a Dutch coin type which has been around in many varieties. The Scheepjesschelling was brought into circulation in 1670 because many inferior pieces were in circulation of previous varieties of the coin. It had a nominal value of six stuivers (5 cent coins). The name of the Scheepjesschelling is derived from its use in trades. The coin was mostly used internationally. The obverse therefore depicts a ship: “scheepje” in Dutch! Design The obverse of the Scheepjesschelling depicts a warship with a flag on the stern. The inscription reads “CONCORDIA RES PARVAE CRESCUNT” which may be translated as Unity makes Strength. The reverse shows the province weapon of Utrecht and the inscription “MO:NO:ARG:ORDIN:TRAIECT”: MONETA NOVA ARGENTEA ORDINUM TRAIECTUM. It means New silver coin of Utrecht. In beautiful crystal coin holder The gold restrike of the Scheepjesschelling is displayed in a unique crystal coin holder, developed in collaboration with Royal Leerdam Crystal. Two pieces of crystal, connected by waves, bring the coin to life. When you look inside, the ship on the obverse is actually sailing the seas! The beautiful coin holder gives the restrike an extra dimension and can be beautifully displayed in your home. The issue comes with a numbered Certificate of Authenticity. Order quickly, as only 25 pieces are available! Specifications coin holder Material Cristal Supérieur Height 42.30 mm Diameter 78.50 mm",
@@ -14,18 +15,16 @@
       "Mintage": "25",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:36:23.271Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-obv.webp",
       "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-rev.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-box.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-pack.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-cert.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-img-06.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:28:20.391Z",
-    "slug": "official-restrike-scheepjesschelling-2021-gold",
-    "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-rev.webp"
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-gold-pack.webp"
+    ]
   }
 }

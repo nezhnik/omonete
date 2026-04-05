@@ -7,7 +7,8 @@ const path = require("path");
 const sharp = require("sharp");
 const { unifiedForeignUrl, roleFromIndex } = require("./unified-foreign-image.js");
 
-const ROOT = path.join(__dirname, "..");
+/** Корень приложения (omonete-app), не scripts/ — иначе файлы попадают в scripts/public и сайт их не видит */
+const ROOT = path.join(__dirname, "..", "..");
 const MAX_SIDE = 1200;
 const WEBP_OPTS = { quality: 82, effort: 6, smartSubsample: true };
 

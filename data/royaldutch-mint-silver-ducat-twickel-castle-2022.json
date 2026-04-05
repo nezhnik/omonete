@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-twickel-castle-2022",
+    "slug": "silver-ducat-twickel-castle-2022",
     "title": "Silver Ducat ”Twickel Castle” 2022",
     "price_display": "€54.95",
     "description": "Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. The issue depicting Coevorden Castle is part of the ongoing series “Dutch castles”. Are you also collecting these silver coins? Part 10: Discover the beautiful gardens of Twickel Castle Twickel Castle can be found in the hamlet of Deldenresch, in the township ‘Hof van Twente’ and province Overijssel. The castle is surrounded by a moat, a magnificent park and several gardens. The estate is almost seven centuries old and has a size of 4,500 hectares. The first mention of Twickel Castle dates from 1347, when Herman van Twickelo buys the castle, which is then called House Eysinck. Through the centuries, the castle is inhabited by members of the Van Twickelo family. As of 1953, the castle is owned by the Twickel Foundation. Twickel Castle is one of the most beautiful castles in the Netherlands. This is partly due to the interior, that characterizes itself because of the many paintings, the big library and gorgeous salons. The castle is also known for the splendid gardens and the park. The orangery, the garden shed and ice house have become historical. Through the years, several changes have been made to the gardens. These castle gardens are accessible for a fee. It’s also possible to follow a paid tour through the castle. Knight Godard de Ginkell As written in the Dutch Mint Act, a Silver Ducat must depict a knight in armour with a shield showing the province weapon in front of his left leg. Godard de Ginkell (1644 –1703) puts on the knight’s armour on all Silver Ducats in the series “Dutch Castles”. The historical knight is known in the Netherlands as Godard van Reede, but is named Godard de Ginkell in the United Kingdom thanks to his military earnings there. Discover Godard de Ginkell and other historical knights on our website. Design The obverse of the Silver Ducat “Twickel Castle” depicts knight Godard de Ginkell in front of the famous building. The province weapon of Overijssel can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII.TRAN”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. “TRAN.” stands for the province of Overijssel. On the reverse of the Silver Ducat, the national coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Here you can also find the mint mark and the privy mark. Are you curious to learn more about the Silver Ducats?",
@@ -14,18 +15,16 @@
       "Mintage": "2,000",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:49:08.348Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-twickel-castle-2022-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-twickel-castle-2022-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-twickel-castle-2022-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-twickel-castle-2022-obv.webp",
       "/image/coins/foreign/silver-ducat-twickel-castle-2022-rev.webp",
-      "/image/coins/foreign/silver-ducat-twickel-castle-2022-box.webp",
-      "/image/coins/foreign/silver-ducat-twickel-castle-2022-pack.webp",
-      "/image/coins/foreign/silver-ducat-twickel-castle-2022-cert.webp",
-      "/image/coins/foreign/silver-ducat-twickel-castle-2022-img-06.webp",
-      "/image/coins/foreign/silver-ducat-twickel-castle-2022-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:35:02.856Z",
-    "slug": "silver-ducat-twickel-castle-2022",
-    "image_obverse": "/image/coins/foreign/silver-ducat-twickel-castle-2022-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-twickel-castle-2022-rev.webp"
+      "/image/coins/foreign/silver-ducat-twickel-castle-2022-pack.webp"
+    ]
   }
 }

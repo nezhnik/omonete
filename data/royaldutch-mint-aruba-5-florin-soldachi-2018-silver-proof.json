@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aruba-5-florin-soldachi-2018-silver-proof",
+    "slug": "aruba-5-florin-soldachi-2018-silver-proof",
     "title": "Aruba 5 Florin ´Soldachi´ 2018 Silver Proof",
     "price_display": "€54.95",
     "description": null,
@@ -14,17 +15,16 @@
       "Nominal value": "5 Florin",
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
+    "parsedAt": "2026-04-05T09:03:08.105Z",
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-obv.webp",
       "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-rev.webp",
-      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-box.webp",
-      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-pack.webp",
-      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-cert.webp",
-      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:09:42.141Z",
-    "slug": "aruba-5-florin-soldachi-2018-silver-proof",
-    "image_obverse": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-rev.webp"
+      "/image/coins/foreign/aruba-5-florin-soldachi-2018-silver-proof-pack.webp"
+    ]
   }
 }

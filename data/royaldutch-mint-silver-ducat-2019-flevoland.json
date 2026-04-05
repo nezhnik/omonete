@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-2019-flevoland",
+    "slug": "silver-ducat-2019-flevoland",
     "title": "Silver Ducat 2019 Flevoland",
     "price_display": "€49.95",
     "description": "Every province in the Netherlands has its own Ducat. The province of Flevoland, however, received its own Silver Ducat only once before in 2014, because of its short existence. The second Silver Ducat of Flevoland in 2019 is also unique because of a royal Knight who poses on the front: King Willem III. In 1859 he gave the order to evacuate the former island of Schokland, part of the Noordoostpolder on Flevoland. Schokland was continually plagued by the Zuiderzee which smashed away pieces of the island; the ultimate symbol for the struggle of the Netherlands and this province against the water. However, Schokland was not lost after being evacuated, but due to the construction of the Noordoostpolder it became an island on dry land that nowadays proudly rises above the polder landscape.",
@@ -14,17 +15,16 @@
       "Mintage": "2,000",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:44:44.030Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-2019-flevoland-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-2019-flevoland-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-2019-flevoland-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-2019-flevoland-obv.webp",
       "/image/coins/foreign/silver-ducat-2019-flevoland-rev.webp",
-      "/image/coins/foreign/silver-ducat-2019-flevoland-box.webp",
-      "/image/coins/foreign/silver-ducat-2019-flevoland-pack.webp",
-      "/image/coins/foreign/silver-ducat-2019-flevoland-cert.webp",
-      "/image/coins/foreign/silver-ducat-2019-flevoland-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:32:25.953Z",
-    "slug": "silver-ducat-2019-flevoland",
-    "image_obverse": "/image/coins/foreign/silver-ducat-2019-flevoland-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-2019-flevoland-rev.webp"
+      "/image/coins/foreign/silver-ducat-2019-flevoland-pack.webp"
+    ]
   }
 }

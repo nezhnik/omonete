@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/knrm-200-years-5-euro-coin-2024-silver-proof",
+    "slug": "knrm-200-years-5-euro-coin-2024-silver-proof",
     "title": "KNRM 200 Years 5 Euro Coin 2024 Silver Proof",
     "price_display": "€49.95",
     "description": "A voluntary organization that has been working completely free of charge for 200 years and has already saved tens of thousands of people: the Royal Netherlands Sea Rescue Institution (KNRM) is one of the most important organizations in the Netherlands. During the jubilee year of the KNRM, that started at the 11th of November 2023 and will end on the 11th of November 2024, there will also be extra attention from the Dutch government. The Royal Dutch Mint launches an official Silver 5 Euro commemorative coin for KNRM 200 years, commissioned by the Dutch Ministry of Finance! Royal Netherlands Sea Rescue Institution 200 years We don’t know any better than that there is a rescue organization that keeps the Dutch coast safe. In 1809, the state came with an initiative to provide lifeboats, but this did not work out. An independent rescue organization was not established until 1824, as a result of a rescue operation by coastal residents of Den Helder. Thanks to the support from private individuals and shipping companies, the foundation for the KNRM success was made. More than 130.000 people have been saved in 200 years. Since its founding in 1824, the KNRM has always adhered to three pillars: Assistance is totally free. The rescue work is carried out only by volunteers. The KNRM is maintained by donations. In 200 years, there has never been any reason to change these pillars. This has ensured that the organization can continue to exist. The rescue operations are carried out only by volunteers and alarmed and coordinated by the coastguardcentre. The KNRM also works closely with organizations like the safety regions, ambulances, fire brigade, police and lifeguards. This way, rescue and assistance on the water can be further optimized. Design The KNRM 200 years 5 Euro Coin Silver Proof is designed by Coralie Vogelaar, in collaboration with designer Hendrik-Jan Grievink. The obverse of the coin shows an image of Dutch King Willem-Alexander. You can see him looking out on the peaceful coast of the North Sea, with his gaze fixated on the horizon. On the top, the text ‘ Willem-Alexander, Koning der Nederlanden’ starts and continues in a semi-circle. On the reverse of the coin, the sea shows herself in a much different way: the turbulent and wild waves bear the silhouette of a KNRM rescue boat with two volunteers in it. When the coin moves, the light changes, which further emphasizes the dynamics of the sea. The text ‘Koninklijke Nederlandse Redding Maatschappij 1824 – 2024’ can also be found on the reverse, just like the privy mark and mintmark.",
@@ -15,18 +16,16 @@
       "Mintage": "3.500 (3.300 in deze verpakking)",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T09:15:12.453Z",
+    "image_obverse": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-rev.webp",
+    "image_packaging": null,
+    "image_box": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-box.webp",
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-obv.webp",
       "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-rev.webp",
-      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-box.webp",
-      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-pack.webp",
-      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-cert.webp",
-      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-img-06.webp",
-      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:15:04.217Z",
-    "slug": "knrm-200-years-5-euro-coin-2024-silver-proof",
-    "image_obverse": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-rev.webp"
+      "/image/coins/foreign/knrm-200-years-5-euro-coin-2024-silver-proof-box.webp"
+    ]
   }
 }

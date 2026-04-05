@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-muiderslot-castle-2020",
+    "slug": "silver-ducat-muiderslot-castle-2020",
     "title": "Silver Ducat “Muiderslot Castle” 2020",
     "price_display": "€49.95",
     "description": "Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. Part 4: Gaze upon Amsterdam Castle Muiderslot The grand Amsterdam Castle Muiderslot is one of the most famous castles in the Netherlands. Fun fact: it is known as the residence of Sinterklaas when he visits the Netherlands in November and December. The castle has a long history. In 1285, the Muiderslot arose with a sole purpose: to defend! The castle was commissioned by Floris V (1254 – 1296), Count of Holland. After his death, parts of the castle were destroyed. Through the centuries the castle has been used, inhabited, taken, demolished, rebuilt and spruced. The castle was also expanded. The Dutch poet and writer Pieter Corneliszoon Hooft (1581–1647), better known as P.C. Hooft, moved into Muiderslot Castle in 1609. He was responsible for the construction of the gardens. In 1878, the castle became one of the first national museums (“rijksmuseums”) in the Netherlands. It was renovated thoroughly by the architect Pierre Cuypers, famous for his work at the Rijksmuseum in Amsterdam and Amsterdam Central Station. The architect was however also responsible for the current exterior of the beautiful De Haar Castle in Haarzuilens, Utrecht. It is no wonder that this castle was one of the first to be eternalised on a Silver Ducat in the series “Dutch Castles”. Discover Amsterdam Castle Muiderslot and the other Dutch castles in this impressive series on our website. Knight Godard de Ginkell As written in the Dutch Mint Act, a Silver Ducat must depict a knight in armour with a shield, showing the province weapon, in front of his left leg. Godard de Ginkell (1644 –1703) puts on the knight’s armour on all Silver Ducats in the series “Dutch Castles”. The historical knight is known in the Netherlands as Godard van Reede, but is named Godard de Ginkell in the United Kingdom thanks to his military earnings there. Discover Godard de Ginkell and other historical knights on our website. Design The obverse of the Silver Ducat “Amsterdam Muiderslot Castle” depicts knight Godard de Ginkell in front of the Muiderslot. The province weapon of North Holland can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII.HOL SEP”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. “HOL SEP” stands for the province of North Holland. On the reverse of the Silver Ducat, the National coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Are you curious to learn more about Silver Ducats?",
@@ -14,18 +15,16 @@
       "Mintage": "2,000",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:47:47.166Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-obv.webp",
       "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-rev.webp",
-      "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-box.webp",
-      "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-pack.webp",
-      "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-cert.webp",
-      "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-img-06.webp",
-      "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:34:04.353Z",
-    "slug": "silver-ducat-muiderslot-castle-2020",
-    "image_obverse": "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-rev.webp"
+      "/image/coins/foreign/silver-ducat-muiderslot-castle-2020-pack.webp"
+    ]
   }
 }

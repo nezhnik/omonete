@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/malta-10-euro-2023-europride-malta-silver-prooflike",
+    "slug": "malta-10-euro-2023-europride-malta-silver-prooflike",
     "title": "Malta 10 Euro 2023 “EuroPride Malta” Silver Prooflike",
     "price_display": "€104.95",
     "description": "Did you know that Malta tops the list of the most gay-friendly countries in Europe? This makes it no surprise that this beautiful island is chosen to host the newest edition of EuroPride! Especially for this milestone, the Royal Dutch Mint strikes a special commemorative coin, commissioned by the Central Bank of Malta. The Malta 10 Euro 2023 “Europride Malta” Silver Prooflike is available. EuroPride 2023 will run between 7 and 17 September 2023. During these days, people from the LGBTI+ community from all around the world will get together to celebrate. The will be a programme including several parties with performances by famous artists, educational events, like an Open Mic Night for poetry or music sharing, and a conference about inclusivity and diversity. On 16 September, the night before the last EuroPride day, a performance will be held by Christina Aguilera during the official EuroPride Valletta 2023 Concert. Malta 10 Euro Silver Prooflike The €10 “EuroPride Malta” Silver Prooflike coin is even more cheerful than the issue in coincard. The coin features rainbow coloured detailing on the letters forming the word ‘PRIDE’. The reverse of the coin shows the coat of arms of the Central Bank of Malta and the date 2023. The Malta 10 Euro 2023 “Europride Malta” Silver Prooflike coin comes in a luxury packaging.",
@@ -15,18 +16,16 @@
       "Mintage": "2,000",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:19:51.727Z",
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-rev.webp",
+    "image_packaging": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-obv.webp",
       "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-rev.webp",
-      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-box.webp",
-      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pack.webp",
-      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-cert.webp",
-      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-img-06.webp",
-      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:17:06.589Z",
-    "slug": "malta-10-euro-2023-europride-malta-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-obv.webp",
-    "image_reverse": "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-rev.webp"
+      "/image/coins/foreign/malta-10-euro-2023-europride-malta-silver-prooflike-pack.webp"
+    ]
   }
 }

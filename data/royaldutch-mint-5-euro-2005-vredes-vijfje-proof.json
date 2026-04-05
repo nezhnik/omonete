@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2005-vredes-vijfje-proof",
+    "slug": "5-euro-2005-vredes-vijfje-proof",
     "title": "HM 5 Euro 2005 Vredes Vijfje Proof",
     "price_display": "€47.95",
     "description": "Op 5 mei 1945 werd Nederland bevrijd. Maar pas op 15 augustus van dat jaar capituleerde Japan en werd ook voormalig Nederlands-Indië bevrijd. Hiermee kwam er officieel een einde aan de Tweede Wereldoorlog in het Koninkrijk der Nederlanden. Om 60 jaar van vrede en vrijheid op gepaste wijze te herdenken, slaat de Koninklijke Nederlandse Munt, in opdracht van het Ministerie van Financiën de tweede herdenkingsmunt van 2005, het Vredes Vijfje.",
@@ -14,18 +15,16 @@
       "Nominal value": "5 euro",
       "Mintage": "40,000"
     },
+    "parsedAt": "2026-04-05T08:54:43.394Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-obv.webp",
       "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-rev.webp",
-      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-box.webp",
-      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-pack.webp",
-      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-cert.webp",
-      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-img-06.webp",
-      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:03:09.553Z",
-    "slug": "5-euro-2005-vredes-vijfje-proof",
-    "image_obverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-rev.webp"
+      "/image/coins/foreign/5-euro-2005-vredes-vijfje-proof-pack.webp"
+    ]
   }
 }

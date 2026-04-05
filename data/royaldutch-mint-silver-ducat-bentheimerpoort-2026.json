@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-bentheimerpoort-2026",
+    "slug": "silver-ducat-bentheimerpoort-2026",
     "title": "Silver Ducat “Bentheimerpoort” 2026",
     "price_display": "€139.95",
     "description": "#html-body [data-pb-style=SXPUPFY]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. The issue depicting the “Bentheimerpoort” (Bentheimer Gate) is part and also the eighth issue of the series “Dutch city gates and access roads”. Are you also collecting these coins? Part 8: Historic Coevorden Gate In 2018, during construction work in Coevorden, a brick foundation of a gate was discovered, approximately three meters underground. This was the remains of the historic “Bentheimerpoort”. The city of Coevorden was on the route to Groningen and was the only passable area between marshlands. Therefore, the city had three gates, including the “Bentheimerpoort”. This gate was built around 1620 and had an important function: controlling entry and exit. In 1850, the decision was made to demolish the gate. However, the foundations were still underground and were rediscovered in 2018. Today, the remains of the gate are incorporated into the building plans for the apartments built there, so that they remain visible to the public. Duke Karel van Egmond In the previous series (Dutch Castles), knight Godard de Ginkell was on the coin. According to the Dutch Mint Act, a knight in armour should be on the coin. This time, Karel van Egmond (1467 – 1538) (also known as Karel van Gelre) is taking over this honor. This armored man on the obverse of the coin was an important duke of several areas in the Netherlands. During his reign, he had to deal with threats from emperor Charles V. He also was the last independent feudal ruler of the Netherlands. For this new series, Karel van Egmond will be on the Silver Ducat. Design The obverse of the Silver Ducat “Bentheimerpoort” depicts Duke Karel van Egmond in front of the famous building. The province weapon of Drenthe can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII.DR.”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. DR stands for the province of Drenthe. On the reverse of the Silver Ducat, the national coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Here you can also find the mint mark and the privy mark. As requested by many, the packaging for the new series is adjusted. The Silver Ducat is in a smaller packaging that not only takes up less space, but also fits in the mailbox.",
@@ -14,18 +15,16 @@
       "Mintage": "1,250",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:45:08.770Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-obv.webp",
       "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-rev.webp",
-      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-box.webp",
-      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-pack.webp",
-      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-cert.webp",
-      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-img-06.webp",
-      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:32:38.280Z",
-    "slug": "silver-ducat-bentheimerpoort-2026",
-    "image_obverse": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-rev.webp"
+      "/image/coins/foreign/silver-ducat-bentheimerpoort-2026-pack.webp"
+    ]
   }
 }

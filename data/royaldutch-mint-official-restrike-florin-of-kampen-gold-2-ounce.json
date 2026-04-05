@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-florin-of-kampen-gold-2-ounce",
+    "slug": "official-restrike-florin-of-kampen-gold-2-ounce",
     "title": "Official Restrike: Florin of Kampen Gold 2 Ounce",
     "price_display": "€5,499.00",
     "description": "The Royal Dutch Mint is proud to launch an official restrike of the silver Florin of Kampen from 1618, in honour of 800 years of Hanseatic cities. The coin has a face value of 28 Stuivers (pennies), is also known by the name Eagle's Dagger and has travelled as a silver Florin along many Hanseatic cities. This variant was minted in Kampen, an important hub in the Hanseatic network. The silver Florin of Kampen is re-struck in silver and gold, in both 1 and 2 ounces. Design of the Kampen florin Because of its favourable location, Kampen had been a trading town for much longer than it was a Hanseatic city, officially becoming a member of the Hanseatic League in 1441. To trade well with the coggeships that sailed to and fro, large silver coins such as the Florin were in demand. The first issue of this silver Florin took place from 1616 to 1686. The original silver coin shows the crowned coat of arms of Kampen on the obverse. The caption: 'FLOR.ARG.CIV.IMP. CAMPEN', meaning 'silver Florin of the Civil Empire of Kampen'. The reverse shows a two-headed eagle and the inscription: 'MATTH.I.D. ROM.IMP.SEM.AVGV', meaning 'In the name of Matthias I as Holy Roman Emperor'. At the restrike, the year 2023 is placed on the coin. The Florin van Kampen in Gold Proof comes in a luxury wooden cassette including a numbered Certificate of Authenticity. 2 Ounce edition The 2 Ounce re-coins have the same diameter as the regular editions, but are struck at double thickness. Traditionally, 2 Ounce coins were minted to portray wealth and power. In the 16th and 17th centuries, rulers gave these prestigious coins as gifts to their courts. Nowadays, 2 Ounce coins are real collectors' items. These double-thick editions are extra-limited and are doubly special.",
@@ -13,18 +14,16 @@
       "Mintage": "10",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:31:11.494Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-obv.webp",
       "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-rev.webp",
-      "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-box.webp",
-      "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-pack.webp",
-      "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-cert.webp",
-      "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-img-06.webp",
-      "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:23:47.516Z",
-    "slug": "official-restrike-florin-of-kampen-gold-2-ounce",
-    "image_obverse": "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-rev.webp"
+      "/image/coins/foreign/official-restrike-florin-of-kampen-gold-2-ounce-pack.webp"
+    ]
   }
 }

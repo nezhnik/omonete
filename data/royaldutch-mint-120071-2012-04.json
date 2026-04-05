@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/120071-2012-04",
+    "slug": "120071-2012-04",
     "title": "KNM 5 Euro 2012 Grachtengordel Proof",
     "price_display": "€35.00",
     "description": null,
@@ -14,17 +15,16 @@
       "Nominal value": "5 euro",
       "Mintage": "12,500"
     },
+    "parsedAt": "2026-04-05T08:52:30.351Z",
+    "image_obverse": "/image/coins/foreign/120071-2012-04-obv.webp",
+    "image_reverse": "/image/coins/foreign/120071-2012-04-rev.webp",
+    "image_packaging": "/image/coins/foreign/120071-2012-04-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/120071-2012-04-obv.webp",
       "/image/coins/foreign/120071-2012-04-rev.webp",
-      "/image/coins/foreign/120071-2012-04-box.webp",
-      "/image/coins/foreign/120071-2012-04-pack.webp",
-      "/image/coins/foreign/120071-2012-04-cert.webp",
-      "/image/coins/foreign/120071-2012-04-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:00:33.258Z",
-    "slug": "120071-2012-04",
-    "image_obverse": "/image/coins/foreign/120071-2012-04-obv.webp",
-    "image_reverse": "/image/coins/foreign/120071-2012-04-rev.webp"
+      "/image/coins/foreign/120071-2012-04-pack.webp"
+    ]
   }
 }

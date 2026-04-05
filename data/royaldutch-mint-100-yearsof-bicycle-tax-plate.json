@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/100-yearsof-bicycle-tax-plate",
+    "slug": "100-yearsof-bicycle-tax-plate",
     "title": "100 years of bicycle tax plate",
     "price_display": "€129.95",
     "description": "#html-body [data-pb-style=NCPS3QK]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Nostalgia and collector's enthusiasm are sometimes staked on very special themes. At the time, the most hated form of tax and now also unimaginable: Bicycle tax! With the emerging popularity of the two-wheeler, the Dutch government was forced to build a network of cycle tracks. This required money. Dutch Finance Minister Colijn decided in 1924 to tax every bicycle with fl 3,- from 1 August to 31 December. Eventually, the tax year ran from 1 August to 31 July and fl 6.- per bicycle per year was levied. It applied from August because the tax could then be paid with the holiday money. In 1924, there were 1.7 million bicycles on which tax was due, this earned the State fl 5,330,247. In 1941, the German occupying forces put an end to this form of taxation. By then, there were 3.6 million taxable bicycles riding around in the Netherlands. The bicycle tax plate had to be visibly attached to the bicycle. As this resulted in a lot of theft, the bicycle tax discs could also be worn on the left breast in a leather foedra. One could buy the plate and holders at the local post office and municipality, among others. A real design competition was held to design the bicycle badge. However, for the first edition in 1924, they eventually chose to copy the French model. From 1925 to 1933, C.J. van der Hoef signed for the designs of the annually differently shaped plates. In 1934, 35 and 36, W.J. Roozendaal was responsible and from 1937 until the last one in 1941, coin designer J.C. Wienecke took care of the designs. The issue has a gold-colored detail and comes in an appropriate holder including numbered Certificate of Authenticity.",
@@ -13,18 +14,16 @@
       "Mintage": "100",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T08:52:14.980Z",
+    "image_obverse": "/image/coins/foreign/100-yearsof-bicycle-tax-plate-obv.webp",
+    "image_reverse": "/image/coins/foreign/100-yearsof-bicycle-tax-plate-rev.webp",
+    "image_packaging": "/image/coins/foreign/100-yearsof-bicycle-tax-plate-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/100-yearsof-bicycle-tax-plate-obv.webp",
       "/image/coins/foreign/100-yearsof-bicycle-tax-plate-rev.webp",
-      "/image/coins/foreign/100-yearsof-bicycle-tax-plate-box.webp",
-      "/image/coins/foreign/100-yearsof-bicycle-tax-plate-pack.webp",
-      "/image/coins/foreign/100-yearsof-bicycle-tax-plate-cert.webp",
-      "/image/coins/foreign/100-yearsof-bicycle-tax-plate-img-06.webp",
-      "/image/coins/foreign/100-yearsof-bicycle-tax-plate-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:00:28.061Z",
-    "slug": "100-yearsof-bicycle-tax-plate",
-    "image_obverse": "/image/coins/foreign/100-yearsof-bicycle-tax-plate-obv.webp",
-    "image_reverse": "/image/coins/foreign/100-yearsof-bicycle-tax-plate-rev.webp"
+      "/image/coins/foreign/100-yearsof-bicycle-tax-plate-pack.webp"
+    ]
   }
 }

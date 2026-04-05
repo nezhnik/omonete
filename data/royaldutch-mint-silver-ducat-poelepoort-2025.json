@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-poelepoort-2025",
+    "slug": "silver-ducat-poelepoort-2025",
     "title": "Silver Ducat “Poelepoort” 2025",
     "price_display": "€104.95",
     "description": "#html-body [data-pb-style=OLVJT29]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. The issue depicting the “Poelepoort” is part and also the seventh issue of the series “Dutch city gates and access roads”. Are you also collecting these coins? Part 7: Poelepoort in Groningen: figurehead with two towers Unfortunately, we can no longer admire the Poelepoort gate in Groningen in person, as it was demolished in the 19th century. However, various sources indicate that the Poelepoort gate was one of six city gates in Groningen. It was build in the 13th century: foundations were discovered in 1989 during sewerage works. The original Poelepoort gate was most likely demolished around 1470 and moved a few meters: this new tower became the most impressive tower of the city, because of its two towers. Foundations of this new Poelepoort tower have been found during excavations in 1929 and 1989. While the gate served as a prison gate, the area behind it was used as a fortification: the city's army could be stationed behind the Poelepoort gate. This square is colloquially known as Poeleplein and is a major entertainment venue in Groningen. Duke Karel van Egmond In the previous series (Dutch Castles), knight Godard de Ginkell was on the coin. According to the Dutch Mint Act, a knight in armour should be on the coin. This time, Karel van Egmond (1467 – 1538) (also known as Karel van Gelre) is taking over this honor. This armored man on the obverse of the coin was an important duke of several areas in the Netherlands. During his reign, he had to deal with threats from emperor Charles V. He also was the last independent feudal ruler of the Netherlands. For this new series, Karel van Egmond will be on the Silver Ducat. Design The obverse of the Silver Ducat “Poelepoort” depicts Duke Karel van Egmond in front of the famous building. The province weapon of Groningen can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII.GRO.”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. GRO stands for the province of Groningen. On the reverse of the Silver Ducat, the national coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Here you can also find the mint mark and the privy mark. As requested by many, the packaging for the new series is adjusted. The Silver Ducat is in a smaller packaging that not only takes up less space, but also fits in the mailbox.",
@@ -14,13 +15,16 @@
       "Mintage": "1,500",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:48:05.002Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-poelepoort-2025-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-poelepoort-2025-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-poelepoort-2025-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-poelepoort-2025-obv.webp",
-      "/image/coins/foreign/silver-ducat-poelepoort-2025-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:34:26.372Z",
-    "slug": "silver-ducat-poelepoort-2025",
-    "image_obverse": "/image/coins/foreign/silver-ducat-poelepoort-2025-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-poelepoort-2025-rev.webp"
+      "/image/coins/foreign/silver-ducat-poelepoort-2025-rev.webp",
+      "/image/coins/foreign/silver-ducat-poelepoort-2025-pack.webp"
+    ]
   }
 }

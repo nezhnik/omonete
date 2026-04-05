@@ -1,22 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/malta-5-euro-23-warner-bros-100jr-pf70",
+    "slug": "malta-5-euro-23-warner-bros-100jr-pf70",
     "title": "Malta 5 Euro Coin 2023 “100th anniversary of Warner Bros.” (PF70 Ultra Cameo)",
     "price_display": "€124.00",
     "description": "#html-body [data-pb-style=F3E8CRB]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A Silver coin of the highest quality in your possession? A limited amount of Malta 5 Euro Coins 2023 are now available as a graded PF70 coin. The Malta 5 Euro Coin 2023 “100th anniversary of Warner Bros.” was graded by independent company NGC (Numismatic Guaranty Company). 24 pieces received the highest possible grading: PF70 Ultra Cameo. PF70 means that the coin has no post-production imperfections at 5x magnification. Ultra Cameo means that this Proof coin has a very bold contrast on both sides of the coin. Thanks to this grading, you can have a classified, perfectly struck silver coin at home. Scan the QR code on this slabbed coin for the official NGC certification. More information about the total mintage and specifications of the Malta 5 Euro Coin 2023 “100TH anniversary of Warner Bros.” can be found here. Malta 5 Euro Coin 2023 “100TH anniversary of Warner Bros.” Warner Bros. was founded by Albert, Sam, Harry and Jack Warner and incorporated on April 4, 1923. Today, the Studio is home to one of the most successful collections of brands in the world and stands at the forefront of every aspect of the entertainment industry, from feature film, television and direct-to-consumer production to animation, comic books, videogames, consumer products, themed entertainment, studio tours and brand licensing. The Studio’s vast library, one of the most prestigious and valuable in the world, consists of more than 145,000 hours of programming, including 12,500 feature films and 2,400 television programs comprised of more than 150,000 individual episodes. Warner Bros. is also home to one of the most diverse portfolios of adored franchises in the world, including Looney Tunes, Wizarding World, DC, FRIENDS, Hanna-Barbera and many more. Design The Malta coin commemorating 100 years of Warner Bros. comes in the shape of one of the first logos used by Warner Bros. The Warner Bros. shield has a clear black outlining. The obverse of the shield contains an image of the former Warner Bros. building on the top. Below, the letters W-B™ are visible: Warner Bros. The reverse of the shield depicts the coat-of-arms of the Central Bank of Malta. This commemorative coin has a face-value of 5 euros.",
-    "specs": {},
+    "specs": {
+      "Article number": "0120075",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "30.8 x 39.9 mm",
+      "Quality": "Proof",
+      "Mintage": "24",
+      "Edge": "Smooth"
+    },
+    "parsedAt": "2026-04-05T09:21:50.074Z",
+    "image_obverse": "/image/coins/foreign/malta-5-euro-23-warner-bros-100jr-pf70-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-5-euro-23-warner-bros-100jr-pf70-rev.webp",
+    "image_packaging": "/image/coins/foreign/malta-5-euro-23-warner-bros-100jr-pf70-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/01.png",
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/02.png",
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/03.png",
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/04.png",
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/05.png",
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/06.png",
-      "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/07.png"
-    ],
-    "parsedAt": "2026-03-31T18:23:41.529Z",
-    "slug": "malta-5-euro-23-warner-bros-100jr-pf70",
-    "image_obverse": "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/malta-5-euro-23-warner-bros-100jr-pf70/02.png"
+      "/image/coins/foreign/malta-5-euro-23-warner-bros-100jr-pf70-obv.webp",
+      "/image/coins/foreign/malta-5-euro-23-warner-bros-100jr-pf70-rev.webp",
+      "/image/coins/foreign/malta-5-euro-23-warner-bros-100jr-pf70-pack.webp"
+    ]
   }
 }

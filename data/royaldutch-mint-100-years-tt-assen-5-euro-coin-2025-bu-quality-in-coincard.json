@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard",
+    "slug": "100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard",
     "title": "100 years TT Assen 5 Euro Coin 2025 BU Quality in Coincard",
     "price_display": "€13.50",
     "description": "#html-body [data-pb-style=E20YQSL]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}The TT Assen: not only a sporting event, but also an iconic part of motorsport history. In 1925, the first race was held on the bumpy dirt roads between Rolde, Borger and Schoonloo. Now, 100 years later, the races are still taking place in Assen and therefore a unique commemorative coin is launched by the Royal Dutch Mint: the 100 years TT Assen 5 Euro Coin in shiny BU Quality. 100 years TT Assen For 100 years, Assen and racing have been inextricably linked. The first race was held in 1925 and since the start of the official world championship in 1949, the TT Assen has been on the agenda continuously. The circuit on which the race is held, also known as the Cathedral of Speed, has been altered and upgraded several times in 100 years, but the start/finish line has remained unchanged since 1926! Not only the annual MotoGP takes place at the circuit in Assen. Throughout the year there are almost two hundred events: from various championships to other major public events. Fortunately, the circuit can count on 1500 volunteers from all over the country who are fully committed. The biggest race fans have been coming to the races for generations: some have been visiting the races for more than 60 years! Design The 100 years TT Assen 5 Euro Coin in BU Quality was designed by artist duo Alex Jacobs and Ellemieke Schoenmaker. The design symbolizes three essential aspects of the TT: the race, the people and the location. The motorcyclist on the coin represents the speed and dynamics of the race. The grid points, incorporated on the reverse, refer to the public and the connection of the people with the event. The straight lines represent the flat Drenthe landscape. On the obverse, King Willem-Alexander is portrayed by using the grid points. This portrays the king as one of the people. The coin in BU quality is placed in a coincard, which was designed by the Royal Dutch Mint. The design of the coincard refers to the old posters of the TT that were hung up to announce the races. All coincards (UNC, BU and First Day Issue) show other ‘historical’ elements. This coincard shows a cup that could be won by the competitors.",
@@ -13,18 +14,16 @@
       "Nominal value": "5 euro",
       "Mintage": "10,000"
     },
+    "parsedAt": "2026-04-05T10:03:15.456Z",
+    "image_obverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-rev.webp",
+    "image_packaging": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-obv.webp",
       "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-rev.webp",
-      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-box.webp",
-      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-pack.webp",
-      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-cert.webp",
-      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-img-06.webp",
-      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T19:59:58.146Z",
-    "slug": "100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard",
-    "image_obverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-rev.webp"
+      "/image/coins/foreign/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard-pack.webp"
+    ]
   }
 }

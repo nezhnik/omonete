@@ -1,23 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69",
+    "slug": "25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69",
     "title": "25 euro coin Belgium 2021 ‘75 years of Blake and Mortimer’ Gold Proof PF 69",
     "price_display": "€429.95",
     "description": "#html-body [data-pb-style=CSF3GEX]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}75 years, that adds up! Captain Francis Blake and Professor Philip Mortimer are the brainchildren of Edgar P. Jacobs. The comic first appeared in the Belgian cartoon magazine Tintin in 1946. In the Netherlands, the stories were published regularly in Kuifje Weekblad from 1946 and in Pep/Sjors from 1964. The series follows the adventures of the friends Professor Philip Mortimer and Captain Francis Blake, a spy at MI5. Although the comic is named after both characters, Professor Philip Mortimer is the main protagonist. Mortimer is the one who often gets into difficult situations, after which he gets help from his friend Captain Francis Blake. The stories are set from the 1940s to the early 1960s. The cream of the crop: the golden Blake and Mortimer of 25 euros Truly a novelty, this is the very first comic coin issued in gold by the Royal Mint of Belgium. To make this numismatic gem even more exclusive, out of only 1,000 minted pieces, 50 have now been reviewed by NGC.",
-    "specs": {},
+    "specs": {
+      "Article number": "0121184",
+      "Metal": "Gold",
+      "Content": "999/1000",
+      "Weight": "3.11 g",
+      "Diameter": "18 mm",
+      "Quality": "Proof",
+      "Mintage": "5",
+      "Designer": "Luc Luycx"
+    },
+    "parsedAt": "2026-04-05T08:53:23.579Z",
+    "image_obverse": "/image/coins/foreign/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69-obv.webp",
+    "image_reverse": "/image/coins/foreign/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69-rev.webp",
+    "image_packaging": "/image/coins/foreign/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/01.png",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/02.jpg",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/03.png",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/04.png",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/05.png",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/06.jpg",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/07.jpg",
-      "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/08.jpg"
-    ],
-    "parsedAt": "2026-03-31T18:01:23.909Z",
-    "slug": "25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69",
-    "image_obverse": "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69/02.jpg"
+      "/image/coins/foreign/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69-obv.webp",
+      "/image/coins/foreign/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69-rev.webp",
+      "/image/coins/foreign/25-euro-coin-belgium-2021-75-years-of-blake-and-mortimer-gold-proof-pf-69-pack.webp"
+    ]
   }
 }

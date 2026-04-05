@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition",
+    "slug": "official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition",
     "title": "Official Restrike: Ducaton 2023 Gold 1 Ounce – Royal Delft Edition",
     "price_display": "€3,095.00",
     "description": "Previous restrikes of the Ducaton were received with great enthusiasm. Enough reason to release a restrike of this popular trade coin again for 2023! The former trade coin shows the “Silver Rider”: a rider on horseback with his sword raised, ready for battle. This year, the popular coin will be available in gold, in both 1 Ounce and 2 Ounce. The Ducatons 2023 are strictly limited and come with a Certificate of Authenticity. Unique Royal Delft coin holder The Ducaton 2023 of the Royal Dutch Mint is, as always, presented in the traditional earthenware by Royal Delft. This year, the coin holder is completely about the Girl with a Pearl Earring, a painting by Johannes Vermeer. The Ducaton was also a means of payment in the time of Vermeer. In 2023, the Rijksmuseum will be dedicating an exhibition to the 17th-century master for the first time in their history. Other museums also adapted their exhibitions to Johannes Vermeer. Also, a program can be watched on television, which will zoom in on some missing paintings by the artist. The Royal Dutch Mint also pays attention to this ‘Year of Johannes Vermeer’. The Ducaton 2023 will be released in a fitting coin holder. The con holders with the gold restrikes are hand-painted and uniquely numbered. Specifications Royal Delft Coin Holder Size 110 mm diameter, 40 mm height Weight 280 g Material Earthenware Design Hand-painted and uniquely numbered Year of issue 2022",
@@ -14,13 +15,16 @@
       "Mintage": "40",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:24:47.385Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-obv.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:20:28.844Z",
-    "slug": "official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-ducaton-2023-gold-1-ounce-royal-delft-edition-pack.webp"
+    ]
   }
 }

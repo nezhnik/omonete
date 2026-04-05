@@ -12,6 +12,63 @@ const PLACEHOLDER = "/image/coin-placeholder.png";
 
 type Row = Record<string, unknown>;
 
+/** Локальный файл под /public — иначе в галерее не показываем слот (как в prune-public-data-missing-images.js). */
+function localPublicImagePathExists(url: string): boolean {
+  const t = String(url || "").trim();
+  if (!t.startsWith("/")) return true;
+  try {
+    return fs.existsSync(path.join(process.cwd(), "public", t.replace(/^\//, "")));
+  } catch {
+    return false;
+  }
+}
+
+function pruneGalleryToExistingFiles(
+  imageUrl: string,
+  imageUrls: string[],
+  imageUrlRoles: string[]
+): { imageUrl: string; imageUrls?: string[]; imageUrlRoles?: string[] } {
+  const ordered =
+    Array.isArray(imageUrls) && imageUrls.length > 0
+      ? imageUrls.map((u) => String(u || "").trim()).filter(Boolean)
+      : imageUrl
+        ? [String(imageUrl).trim()]
+        : [];
+  const roles =
+    Array.isArray(imageUrlRoles) && imageUrlRoles.length === ordered.length
+      ? imageUrlRoles.map((r) => (r == null ? "" : String(r)))
+      : ordered.map(() => "");
+
+  const outUrls: string[] = [];
+  const outRoles: string[] = [];
+  const seen = new Set<string>();
+  for (let i = 0; i < ordered.length; i++) {
+    const u = ordered[i];
+    if (!localPublicImagePathExists(u)) continue;
+    if (seen.has(u)) continue;
+    seen.add(u);
+    outUrls.push(u);
+    outRoles.push(roles[i] ?? "");
+  }
+
+  let primary = String(imageUrl || "").trim();
+  if (!localPublicImagePathExists(primary)) primary = outUrls[0] || PLACEHOLDER;
+  if (!primary) primary = PLACEHOLDER;
+
+  const hasRoles = outRoles.some((r) => r.trim() !== "");
+  if (outUrls.length > 1) {
+    return {
+      imageUrl: localPublicImagePathExists(primary) ? primary : outUrls[0],
+      imageUrls: outUrls,
+      imageUrlRoles: hasRoles ? outRoles : undefined,
+    };
+  }
+  if (outUrls.length === 1) {
+    return { imageUrl: outUrls[0], imageUrls: undefined, imageUrlRoles: undefined };
+  }
+  return { imageUrl: primary, imageUrls: undefined, imageUrlRoles: undefined };
+}
+
 function obverseUrl(imageObverse: unknown): string | null {
   if (imageObverse && String(imageObverse).trim()) return String(imageObverse).trim();
   return null;
@@ -464,7 +521,11 @@ function rowToListCoin(
     (releaseDate ? new Date(releaseDate).getFullYear() : null) ??
     yearFromTitle(r.title) ??
     0;
-  const { imageUrl, imageUrls: imageUrlsOut, imageUrlRoles } = buildImageUrls(r, firstImageSide);
+  const built = buildImageUrls(r, firstImageSide);
+  const pruned = pruneGalleryToExistingFiles(built.imageUrl, built.imageUrls, built.imageUrlRoles);
+  const imageUrl = pruned.imageUrl;
+  const imageUrlsOut = pruned.imageUrls;
+  const imageUrlRoles = pruned.imageUrlRoles;
   const metalCode = getMetalCodeAndColor(r.metal).code;
   const metalCodes = getMetalCodes(r.metal);
   const weightLabel = getWeightLabel(r.weight_g, r.weight_oz);
@@ -484,8 +545,8 @@ function rowToListCoin(
     mintageDisplay: mintageDisp,
     mintageNeedsResearch: coinNeedsMintageResearch(r),
     imageUrl,
-    imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
-    imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
+    imageUrls: imageUrlsOut != null && imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
+    imageUrlRoles: imageUrlRoles != null && imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
     seriesName: r.series as string | undefined,
     metalCode: metalCode ?? undefined,
     metalCodes: metalCodes.length > 0 ? metalCodes : undefined,
@@ -515,7 +576,11 @@ function rowToDetailCoin(
     (releaseDate ? new Date(releaseDate).getFullYear() : null) ??
     yearFromTitle(r.title) ??
     0;
-  const { imageUrl, imageUrls: imageUrlsOut, imageUrlRoles } = buildImageUrls(r, firstImageSide);
+  const builtD = buildImageUrls(r, firstImageSide);
+  const prunedD = pruneGalleryToExistingFiles(builtD.imageUrl, builtD.imageUrls, builtD.imageUrlRoles);
+  const imageUrl = prunedD.imageUrl;
+  const imageUrlsOut = prunedD.imageUrls;
+  const imageUrlRoles = prunedD.imageUrlRoles;
   const metalCode = getMetalCodeAndColor(r.metal).code;
   const metalColor = getMetalCodeAndColor(r.metal).color;
   const metalCodes = getMetalCodes(r.metal);
@@ -527,8 +592,8 @@ function rowToDetailCoin(
     titleEn: r.title_en && String(r.title_en).trim() ? String(r.title_en).trim() : undefined,
     seriesName: r.series as string | undefined,
     imageUrl,
-    imageUrls: imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
-    imageUrlRoles: imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
+    imageUrls: imageUrlsOut != null && imageUrlsOut.length > 0 ? imageUrlsOut : undefined,
+    imageUrlRoles: imageUrlRoles != null && imageUrlRoles.length > 0 ? imageUrlRoles : undefined,
     inCollection: false,
     mintName: (r.mint as string) ?? "—",
     mintShort: r.mint_short && String(r.mint_short).trim() ? String(r.mint_short).trim() : undefined,
@@ -585,12 +650,14 @@ function rowToSameSeriesItem(
   const metalCodes = getMetalCodes(s.metal);
   const metalName = metalOnly(s.metal);
   const weightG = formatWeightG(s.weight_g) ?? (s.weight_g != null && s.weight_g !== "" ? String(s.weight_g).trim() : undefined);
+  let sameImageUrl = si2 || PLACEHOLDER;
+  if (!localPublicImagePathExists(sameImageUrl)) sameImageUrl = PLACEHOLDER;
   return {
     id: String(s.id),
     title: (s.title as string) ?? "",
     seriesName: s.series as string | undefined,
     faceValue: (stripCountryFromFaceValue(s.face_value) || (s.face_value as string)) ?? "—",
-    imageUrl: si2 || PLACEHOLDER,
+    imageUrl: sameImageUrl,
     metalCode: metalCode ?? undefined,
     metalColor: metalColor ?? undefined,
     metalCodes: metalCodes.length > 0 ? metalCodes : undefined,

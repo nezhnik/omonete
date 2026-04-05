@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/schokland-5-euro-coin-2018-silver-proof",
+    "slug": "schokland-5-euro-coin-2018-silver-proof",
     "title": "Schokland 5 euro coin 2018 Silver Proof",
     "price_display": "€49.95",
     "description": null,
@@ -15,12 +16,14 @@
       "Mintage": "4,000",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T09:43:49.502Z",
+    "image_obverse": "/image/coins/foreign/schokland-5-euro-coin-2018-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/schokland-5-euro-coin-2018-silver-proof-obv.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/schokland-5-euro-coin-2018-silver-proof-obv.webp"
-    ],
-    "parsedAt": "2026-03-31T20:32:11.681Z",
-    "slug": "schokland-5-euro-coin-2018-silver-proof",
-    "image_obverse": "/image/coins/foreign/schokland-5-euro-coin-2018-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/schokland-5-euro-coin-2018-silver-proof-obv.webp"
+    ]
   }
 }

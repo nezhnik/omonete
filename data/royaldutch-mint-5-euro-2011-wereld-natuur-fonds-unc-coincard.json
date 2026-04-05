@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2011-wereld-natuur-fonds-unc-coincard",
+    "slug": "5-euro-2011-wereld-natuur-fonds-unc-coincard",
     "title": "HM 5 Euro 2011 Wereld Nat. Fonds UNC CC",
     "price_display": "€10.00",
     "description": null,
@@ -12,15 +13,15 @@
       "Quality": "Uncirculated",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:55:15.903Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-obv.webp",
-      "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-rev.webp",
-      "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-box.webp",
-      "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:04:00.447Z",
-    "slug": "5-euro-2011-wereld-natuur-fonds-unc-coincard",
-    "image_obverse": "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-rev.webp"
+      "/image/coins/foreign/5-euro-2011-wereld-natuur-fonds-unc-coincard-rev.webp"
+    ]
   }
 }

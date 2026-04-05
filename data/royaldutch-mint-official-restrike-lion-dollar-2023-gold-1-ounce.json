@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-lion-dollar-2023-gold-1-ounce",
+    "slug": "official-restrike-lion-dollar-2023-gold-1-ounce",
     "title": "Official Restrike Lion Dollar 2023 Gold 1 Ounce",
     "price_display": "€3,095.00",
     "description": "They might be one of the most iconic coins known in The Netherlands: the Lion Dollars. Since 2017, this trade coin has been a recurring element in the annual program of the Royal Dutch Mint. The Lion Dollar owes its name to the image of a Dutch lion on the sculpture. The coin was first minted in 1575 by the Dutch Provinces. Each province had its own lion and mint where these coins were minted. The Lion Dollars were mainly used for maritime trade and quickly became internationally loved trade coins. The Official Restrike Lion Dollar 2023 Gold 1 Ounce is a true asset to your collection! Lion Dollar from West-Friesland After Utrecht, Zeeland, Gelderland, Holland, Overijssel and Nijmegen, it’s West-Friesland’s turn for the restrike of a Lion Dollar. In 2023, it’s 435 years ago that the province of West-Friesland started to mint this coin. The States-General of the Netherlands did not give permission to mint this coin until 1589, but it appears that some provinces already started minting a year earlier, in 1588. Also West-Friesland was suspected of this. With the Lion Dollar 2023, you’re in possession of the restrike of a century-old coin. Marble coin holder A special coin should have a special packaging! In collaboration with IKA Natuursteen, a special, marble coin holder was designed for the Lion Dollar Gold 1 Ounce. The Lion Dollar is a century-old coin, mainly used in the trade overseas. There must be many coins that travelled the world this way and there are no doubt coins among them who fell from the ship and sank to the bottom of the ocean. The bottom of the ocean is also the start of a new process: the formation of marble. Marble is created by the crumbling of rocks that sink, along with other organic materials. This sediment sinks under various layers of the earth and the accumulation of overlying earth layers cause a high pressure. The sedimentary rock also comes closer to the earth’s core, where the temperature is much higher. The pressure and heat change the cell structure and create marble. A marble coinholder is perfect for this trade coin! The coin holder for the golden Lion Dollars is black and has a remarkable detail on the bottom: an image of a lion has been sandblasted on it. Under it is the text “CONCORDIA RES PARVAE CRESCUNT”, which means: “Together the small will grow”. The perfect holder for a unique coin! The Lion Dollar Gold 1 Ounce is delivered in the coin holder and contains a Certificate of Authenticity.",
@@ -14,20 +15,16 @@
       "Mintage": "75 (25 in munthouder)",
       "Edge": "serrated"
     },
-    "imageUrls": [
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-obv.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-rev.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-pack.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-box.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-cert.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-blister-obv.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-blister-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:26:03.895Z",
-    "slug": "official-restrike-lion-dollar-2023-gold-1-ounce",
+    "parsedAt": "2026-04-05T09:33:04.195Z",
     "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-obv.webp",
     "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-rev.webp",
     "image_packaging": "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-pack.webp",
-    "image_box": "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-box.webp"
+    "image_box": null,
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2023-gold-1-ounce-pack.webp"
+    ]
   }
 }

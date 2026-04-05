@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aviation-5-euro-coin-2019-silver-proof",
+    "slug": "aviation-5-euro-coin-2019-silver-proof",
     "title": "Aviation 5 euro coin 2019 Silver Proof",
     "price_display": "€49.95",
     "description": null,
@@ -15,17 +16,16 @@
       "Mintage": "4,500",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T09:03:58.898Z",
+    "image_obverse": "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-obv.webp",
       "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-rev.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-box.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-pack.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-cert.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:10:31.955Z",
-    "slug": "aviation-5-euro-coin-2019-silver-proof",
-    "image_obverse": "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-rev.webp"
+      "/image/coins/foreign/aviation-5-euro-coin-2019-silver-proof-pack.webp"
+    ]
   }
 }

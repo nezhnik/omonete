@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67",
+    "slug": "malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67",
     "title": "Malta 10 euro 2024 ‘Karnival ta’ Malta’ Silver Prooflike PL67",
     "price_display": "€85.00",
     "description": "#html-body [data-pb-style=KPWFI2H]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Looking for a top quality silver coin? This Malta 10 euro 2024 ‘Karnival ta’ Malta’ Silver Prooflike has received a PL67 rating. PL67 coins maintain their mirror-like beauty despite light flaws. This is a great option for collectors who appreciate charm and history. Discover this Prooflike brilliance combined with vintage character. Very limited: one available piece! Design The Malta 10 Euro 2024 ‘Karnival ta’ Malta’ Silver Prooflike is a special issue with a colored detail. On the obverse of the coin, an animated figure looks up, arms spread out. On the head is a mask, that is a referral to the use of masks during the Malta Carnival. The background consists of a Mandala-pattern: this is specially colored in rainbow colors, which makes the coin even more unique. On the bottom of the coin is the text ’10 Euro Karnival ta’ Malta’. On the reverse is the logo of the Central Bank of Malta.",
@@ -15,18 +16,16 @@
       "Mintage": "1",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:20:32.213Z",
+    "image_obverse": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-obv.webp",
+    "image_reverse": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-rev.webp",
+    "image_packaging": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-obv.webp",
       "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-rev.webp",
-      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-box.webp",
-      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-pack.webp",
-      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-cert.webp",
-      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-img-06.webp",
-      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:17:37.422Z",
-    "slug": "malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67",
-    "image_obverse": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-obv.webp",
-    "image_reverse": "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-rev.webp"
+      "/image/coins/foreign/malta-10-euro-2024-karnival-ta-malta-silver-prooflike-pl67-pack.webp"
+    ]
   }
 }

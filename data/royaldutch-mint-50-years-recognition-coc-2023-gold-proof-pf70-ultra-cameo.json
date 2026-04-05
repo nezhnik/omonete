@@ -1,17 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo",
+    "slug": "50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo",
     "title": "50 years recognition COC 2023 Gold Proof (PF70 Ultra Cameo)",
     "price_display": "€584.00",
     "description": "A golden coin of the highest quality in your possession? A limited amount of 50 years recognition of COC 10 Euro Coins Gold Proof 2023 are available now as a graded PF70 coin. The 50 years recognition of COC 10 Euro Coin Gold Proof 2023 was graded by independent company NGC (Numismatic Guaranty Company). 7 pieces received the highest possible grading: PF70 Ultra Cameo. PF70 means that the coin has no post-production imperfections at 5x magnification. Ultra Cameo means that this Proof coin has a very bold contrast on both sides of the coin. Thanks to this grading, you can have a classified perfectly struck golden coin at home. Scan the QR code on this slabbed coin for the official NGC certification. More information about the total mintage and specifications of the 50 years recognition of COC 10 Euro Coin 2023 can be found here. 50 years recognition of COC 10 Euro Coins Gold Proof 2023 The organization COC is active in advocacy, equal rights and social acceptance of lesbian, gay, bi+, transgender and intersex people (LGBTI+). Although the COC has already submitted the application for legal personality several times, it is rejected twice due to resistance from political The Hague. A third attempt is successful: on September 19th 1973, COC receives recognition, also known as ‘Royal Approval’ by the Dutch government. This recognition means a lot: it stands for the government’s commitment to equal treatment for everyone. The Royal Dutch Mint strikes an official commemorative coin to honor 50 years recognition of COC. The coin is commissioned by the Dutch Ministry of Finance. Design The 50 years recognition of COC Golden 10 Euro coin is designed by Coen van Ham. The designer reflects on the development the COC has gone through during the recognition in 1973. The coin was designed as swirling confetti: the different kinds of confetti represent the milestones that the COC has achieved over the years. The obverse shows the portrait of King Willem-Alexander, build from swirling confetti. Around the portrait, the text “Willem-Alexander, King of the Netherlands”, is written, in a specially designed font. The reverse contains the COC logo in the middle. Around the logo are several symbols. These represent the milestones that COC has achieved, for example the opening of civil marriage to same-sex couples in 2001 (the two rings) and the obligation of LGBTI+ education in schools in 2012 (the booklet).",
-    "specs": {},
+    "specs": {
+      "Article number": "0119079",
+      "Metal": "Gold",
+      "Content": "900/1000",
+      "Weight": "6.72 g",
+      "Diameter": "22.5 mm",
+      "Quality": "Proof",
+      "Nominal value": "10 euros",
+      "Mintage": "7",
+      "Edge": "serrated"
+    },
+    "parsedAt": "2026-04-05T08:56:50.602Z",
+    "image_obverse": "/image/coins/foreign/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo-obv.webp",
+    "image_reverse": "/image/coins/foreign/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo-rev.webp",
+    "image_packaging": "/image/coins/foreign/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo/01.jpeg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo/02.jpeg"
-    ],
-    "parsedAt": "2026-03-31T18:05:57.369Z",
-    "slug": "50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo",
-    "image_obverse": "/image/coins/foreign/royaldutch/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo/01.jpeg",
-    "image_reverse": "/image/coins/foreign/royaldutch/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo/02.jpeg"
+      "/image/coins/foreign/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo-obv.webp",
+      "/image/coins/foreign/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo-rev.webp",
+      "/image/coins/foreign/50-years-recognition-coc-2023-gold-proof-pf70-ultra-cameo-pack.webp"
+    ]
   }
 }

@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2005-vredes-vijfje-unc-coincard",
+    "slug": "5-euro-2005-vredes-vijfje-unc-coincard",
     "title": "HM 5 Euro 2005 Vredes Vijfje UNC CC",
     "price_display": "€45.95",
     "description": null,
@@ -13,12 +14,14 @@
       "Quality": "Uncirculated",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:54:48.551Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-unc-coincard-obv.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2005-vredes-vijfje-unc-coincard-obv.webp"
-    ],
-    "parsedAt": "2026-03-31T20:03:17.854Z",
-    "slug": "5-euro-2005-vredes-vijfje-unc-coincard",
-    "image_obverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-unc-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2005-vredes-vijfje-unc-coincard-obv.webp"
+    ]
   }
 }

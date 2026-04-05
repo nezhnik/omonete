@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-lion-dollar-2026-gold-1-ounce",
+    "slug": "official-restrike-lion-dollar-2026-gold-1-ounce",
     "title": "Official Restrike Lion Dollar 2026 Gold 1 Ounce",
     "price_display": "€5,999.00",
     "description": "#html-body [data-pb-style=UWXWE0A]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}At the Royal Dutch Mint, old trade coins are revived! Every year, we restrike iconic coins, including the Lion Dollar (“Leeuwendaalder”). This coin is one of the most famous silver coins in Dutch history: did you know that the Leeuwendaalder was first minted in 1575 by rebellious provinces in the Netherlands? For 2026, we will restrike a Leeuwendaalder from 1589, originating from Friesland. The beautiful details of this coin are perfectly showcased on the Official Restrike Leeuwendaalder Gold 1 Ounce. Lion Dollar from Friesland The 1589 Leeuwendaalder is a special example. After the Leeuwendaalder became popular in international trade, many provinces and cities began minting it. However, there was an interruption in 1586 due to the Leicester edict. During the reign of Robert Dudley (Earl of Leicester), it was decided to mint new coin types, including the ‘Leicesterreaal’ and the ‘Leicesterrijksdaalder’. However, on February 18, 1589, the States General authorized the minting of the Leeuwendaalder. After permission was granted, Friesland, Gelderland, Holland, Overijssel, Utrecht, and Zeeland joined the process. The year 1589 is the first year, in which examples from all provinces that minted this type, can be found. Coin holder As you know from the Royal Dutch Mint, the Lion Dollar Gold 1 Ounce will be delivered in a luxury packaging. This amazing restrike is placed in a coin holder made from oakwood, featuring an engraving of a lion on the topside. On the inside of the lid, a shield is depicted with the Frisian flag. This stunning coin holder is a precious addition to your collection!",
@@ -14,18 +15,16 @@
       "Mintage": "20",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:33:53.335Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-obv.webp",
       "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-rev.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-box.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-pack.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-cert.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-img-06.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:27:04.048Z",
-    "slug": "official-restrike-lion-dollar-2026-gold-1-ounce",
-    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-rev.webp"
+      "/image/coins/foreign/official-restrike-lion-dollar-2026-gold-1-ounce-pack.webp"
+    ]
   }
 }

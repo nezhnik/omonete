@@ -1,22 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/f-blankers-koen-five-euro-2018-ag-prf-pf69",
+    "slug": "f-blankers-koen-five-euro-2018-ag-prf-pf69",
     "title": "Fanny Blankers-Koen 5 Euro Coin 2018 Silver Proof (PF69 Ultra Cameo)",
     "price_display": "€59.95",
     "description": "#html-body [data-pb-style=XI5ADDW]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Do you want to be sure you purchase a silver coin of demonstrable quality? The Fanny Blankers-Koen 5 Euro Coin 2018 Silver Proof is now available as a graded PF69 coin. This commemorative coin is graded by NGC (Numismatic Guaranty Company) and received the grading PF69 Ultra Cameo. PF69 is the second highest possible grading. It means it’s a fully struck coin with nearly imperceptible imperfections. Ultra Cameo means that this Proof coin has a very bold contrast on both sides of the coin. Thanks to this grading, you can have a top quality coin at home. Scan the QR code on this slabbed coin for the official NGC certification. Fanny Blankers-Koen 5 Euro Coin 2018 Not long after the end of the Second World War, Fanny Blankers-Koen put the Netherlands on the world map when she won four gold medals at the 1948 Olympic Games in London. She triumphed at the 100 m, 200 m, 80 m hurdles and 4 x 100 m relay. By way of thanks, she was presented with a bicycle by the local authorities, ‘because she had done more than enough running’. As Blankers-Koen was already 30 years old and a mother of two during the 1948 Olympics, she earned the nickname ‘the flying housewife’. Design The designers of this official commemorative coin are visual artists Suzan Drummen and Monique Wijbrands. They produced a twisting, dynamic line silhouette of King Willem-Alexander on the obverse. The dynamic style is a reference to the speed and strength of athlete Fanny Blankers-Koen, who is bounding across the coin’s reverse. This repetition lends the coin the quality of a celebratory flower or medal. The thin lines convey some of Blankers-Koen’s signature features: her long stride, loose arms and muscular body. This use of lines unifies the obverse and reverse of the coin. The time factor – a crucial aspect of her performance – is expressed by a circle of lines similar to the seconds on a clock face.",
-    "specs": {},
+    "specs": {
+      "Article number": "0120063",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "48",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
+    "parsedAt": "2026-04-05T09:09:46.887Z",
+    "image_obverse": "/image/coins/foreign/f-blankers-koen-five-euro-2018-ag-prf-pf69-obv.webp",
+    "image_reverse": "/image/coins/foreign/f-blankers-koen-five-euro-2018-ag-prf-pf69-rev.webp",
+    "image_packaging": "/image/coins/foreign/f-blankers-koen-five-euro-2018-ag-prf-pf69-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/01.png",
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/02.png",
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/03.png",
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/04.png",
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/05.png",
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/06.png",
-      "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/07.png"
-    ],
-    "parsedAt": "2026-03-31T18:15:41.373Z",
-    "slug": "f-blankers-koen-five-euro-2018-ag-prf-pf69",
-    "image_obverse": "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/f-blankers-koen-five-euro-2018-ag-prf-pf69/02.png"
+      "/image/coins/foreign/f-blankers-koen-five-euro-2018-ag-prf-pf69-obv.webp",
+      "/image/coins/foreign/f-blankers-koen-five-euro-2018-ag-prf-pf69-rev.webp",
+      "/image/coins/foreign/f-blankers-koen-five-euro-2018-ag-prf-pf69-pack.webp"
+    ]
   }
 }

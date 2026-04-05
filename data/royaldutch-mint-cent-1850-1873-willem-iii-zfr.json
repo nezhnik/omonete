@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/cent-1850-1873-willem-iii-zfr",
+    "slug": "cent-1850-1873-willem-iii-zfr",
     "title": "DR ½ Cent Willem III Zf (zwaard)",
     "price_display": "€35.00",
     "description": null,
@@ -10,15 +11,15 @@
       "Weight": "1.90 g",
       "Diameter": "16 mm"
     },
+    "parsedAt": "2026-04-05T09:04:46.570Z",
+    "image_obverse": "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-obv.webp",
-      "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-rev.webp",
-      "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-box.webp",
-      "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:11:09.745Z",
-    "slug": "cent-1850-1873-willem-iii-zfr",
-    "image_obverse": "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-obv.webp",
-    "image_reverse": "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-rev.webp"
+      "/image/coins/foreign/cent-1850-1873-willem-iii-zfr-rev.webp"
+    ]
   }
 }

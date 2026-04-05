@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition",
+    "slug": "official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition",
     "title": "Official Restrike: Lion Dollar 2020 Silver 2 Ounce - Royal Delft edition",
     "price_display": "€299.00",
     "description": "The Lion from Holland After Utrecht, Zeeland and Gelderland, Holland is the next province in the Lion Dollar series. From 1814 until 1840, Holland was a Dutch province. Because the north and south were technically already ruled separately, the province was officially split in two in the constitutional revision of 1840. Today the two parts are still known as Noord- and Zuid Holland. The original Lion Dollar from Holland was struck in 1612 in Dordrecht. 2020 marks the 800-year anniversary of Dordrecht being the first to gain city rights in the former province of Holland. This makes Dordrecht the oldest city in (the current) Holland. A special occasion that surely deserves an official restrike of their Lion Dollar. Royal Delft Coin Holder Following the “Official Restrike Ducaton – Royal Delft edition” from 2019 you will find the official restrikes of the Lion Dollars from the province of Holland in Silver in artisanal Royal Delft earthenware. Piedfort Piedfort is a French term used in Dutch numismatics for a coin struck on a planchet twice the normal thickness of the original. The Restrikes of the Lion Dollars in 2 ounce Silver Proof and 2 ounce Gold Proof are twice as heavy as the 1 ounce Lion Dollar. (2 ounce = 62.2 grams).",
@@ -14,20 +15,16 @@
       "Mintage": "400 stuks, waarvan 50 in Royal Delft",
       "Edge": "Smooth"
     },
-    "imageUrls": [
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-obv.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-box.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-blister-obv.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-blister-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:25:09.207Z",
-    "slug": "official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition",
+    "parsedAt": "2026-04-05T09:32:13.339Z",
     "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-obv.webp",
     "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-rev.webp",
     "image_packaging": "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-pack.webp",
-    "image_box": "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-box.webp"
+    "image_box": null,
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-obv.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-rev.webp",
+      "/image/coins/foreign/official-restrike-lion-dollar-2020-silver-2-ounce-royal-delft-edition-pack.webp"
+    ]
   }
 }

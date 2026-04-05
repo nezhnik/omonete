@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/feyenoord-champion-shirt-1924-in-silver",
+    "slug": "feyenoord-champion-shirt-1924-in-silver",
     "title": "Feyenoord Champion Shirt 1924 in Silver",
     "price_display": "€599.00",
     "description": "Feyenoord Rotterdam is the football club that’s known for its hard working mentality and never giving up. But it’s also the club of 16 championships, the first Dutch Europa Cup I-winner and the first Dutch UEFA Cup-winner. To celebrate that it’s a 100 years ago Feyenoord won their first championship, the Royal Dutch Mint presents a very special issue: the Feyenoord Champion Shirt 1924, cast in Silver, with only 100 pieces available! 1924: First Championship For the first Championship of Feyenoord Rotterdam, we go back to the Pentecost Weekend of 1924. The season 1924-1925 was played between five clubs. These clubs represented five regions, where they had emerged as winner from the regional competition. The five champions played a complete competition against each other to determine the winner of the National Championship. After winning against SC Enschede on Pentecost (0-2), Be Quick 1887 from the North Region turned out to be the final hurdle to be taken by Feyenoord. On June 9th, Feyenoord won 3-1 and became the champions: it meant the final breakthrough of the Rotterdammers. Design The Champion Shirt from 1924 comes back to life, this time its cast in Silver! The Feyenoord Champion Shirt 1924 cast in Silver is enameled by hand at the Royal Dutch Mint silversmith atelier. With only 100 pieces available, this limited edition issue is the ultimate way to always remember the very first Feyenoord Championship. The shirt is made of Silver and is carefully filled with the well-known colors of the club: red and white. This handmade shirt, cast in silver, revives old times and is a true must have!",
@@ -12,18 +13,16 @@
       "Quality": "Cast in silver with enamel",
       "Mintage": "100"
     },
+    "parsedAt": "2026-04-05T09:10:29.268Z",
+    "image_obverse": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-obv.webp",
+    "image_reverse": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-rev.webp",
+    "image_packaging": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-obv.webp",
       "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-rev.webp",
-      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-box.webp",
-      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-pack.webp",
-      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-cert.webp",
-      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-img-06.webp",
-      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:12:56.743Z",
-    "slug": "feyenoord-champion-shirt-1924-in-silver",
-    "image_obverse": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-obv.webp",
-    "image_reverse": "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-rev.webp"
+      "/image/coins/foreign/feyenoord-champion-shirt-1924-in-silver-pack.webp"
+    ]
   }
 }

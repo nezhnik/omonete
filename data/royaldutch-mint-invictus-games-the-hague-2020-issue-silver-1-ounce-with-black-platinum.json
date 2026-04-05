@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum",
+    "slug": "invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum",
     "title": "Invictus Games The Hague 2020 Issue Silver 1 Ounce with Black Platinum",
     "price_display": "€129.00",
     "description": "The Royal Dutch Mint is proud of their collaboration with the Invictus Games The Hague 2020! For the fifth edition of the Invictus Games the Royal Dutch Mint is the official supplier of the medals. To celebrate the sports event the Royal Dutch Mint also launches special issues. The Invictus Games The Invictus Games is an international adaptive sporting event for Wounded, Injured and Sick Servicemen and -women, both serving and veteran. The Games use the power of sport to inspire recovery, support rehabilitation and generate a wider understanding and respect of all those who serve their country. The word “invictus” means “unconquered”. It embodies the fighting spirit of Wounded, Injured and Sick Service members and personifies what these tenacious men and women can achieve post injury. Design The issue is designed by graphic designer Esther Bergé of the Royal Dutch Mint. On the obverse the Invictus Games The Hague 2020 tulip is depicted in the middle, surrounded by icons of all practiced sports. De reverse of the issue shows the mint mark and privy mark and the inscription “Invictus Games The Hague 2020”. The tulip and letters “I AM” are gilded against a black platinum background, in line with the colours of the Invictus Games logo. Read more about the design here.",
@@ -14,18 +15,16 @@
       "Mintage": "350",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:12:29.003Z",
+    "image_obverse": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-obv.webp",
+    "image_reverse": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-rev.webp",
+    "image_packaging": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-obv.webp",
       "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-rev.webp",
-      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-box.webp",
-      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-pack.webp",
-      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-cert.webp",
-      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-img-06.webp",
-      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:13:46.558Z",
-    "slug": "invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum",
-    "image_obverse": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-obv.webp",
-    "image_reverse": "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-rev.webp"
+      "/image/coins/foreign/invictus-games-the-hague-2020-issue-silver-1-ounce-with-black-platinum-pack.webp"
+    ]
   }
 }

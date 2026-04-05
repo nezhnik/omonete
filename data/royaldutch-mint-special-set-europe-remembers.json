@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/special-set-europe-remembers",
+    "slug": "special-set-europe-remembers",
     "title": "Special set: Europe Remembers",
     "price_display": "€299.00",
     "description": "Canada, England and the Netherlands, three countries that were involved in ending the Second World War, celebrate 75 years of freedom. To celebrate this, all three countries issue a commemorative coin in 2020. The Royal Dutch Mint brings these coins together in the Special set: Europe Remembers. In the Netherlands we celebrate Liberation Day on May 5th. In many other countries Victory in Europe Day, generally known as VE Day (United Kingdom) or V-E Day (North America), is celebrated on 8 May: the letter “V” for “Victory” is therefore often depicted on foreign commemorative coins. On this day Germany formally capitulated. Outside of Europe the Second World War lasted a while longer. The surrender of Japan on 2 September 1945 led to the official end of WWII. Exclusive collaboration with Royal Leerdam Crystal In collaboration with Royal Leerdam Crystal a beautiful coin holder to commemorate 75 years of freedom and to display the coins has been designed. The coin holder is made out of oak in which the coins can be nicely presented, combined with a glass commemorative panel attached to the wooden base. The glass with the beautiful image in the sign of 75 years of freedom was developed by the design department of Royal Leerdam Crystal. Since 1878 beautiful art- and decorative objects are designed in the Crystal factory in Leerdam. All according to old traditions, but also following modern designs. The master glassblowers of Royal Leerdam guarantee exceptional quality. The Netherlands The “75 years of freedom Five Euro Coin” is the official commemorative coin of the Netherlands, commissioned by the Dutch Ministry of Finance. The coin is designed by Dutch artist Marijke van Warmerdam. Both the number “75” on the reverse and the portrait of the King on the obverse are made out of a jaunty ribbon to depict the festivities of Liberation Day. Specifications: Metal Silver Content 925/1000 Weight 15.50 g Diameter 33 mm Lettering * GOD * ZIJ * MET * ONS Quality Proof Nominal Value 5 euros Year of issue 2020 Mintage coin 6,500 Minted by Royal Dutch Mint Canada Inspired by the 1945 Victory nickel, a large “V” for Victory dominates the reverse design by artist Pandora Young. The crowd represents jubilation on the home front on May 8, 1945, a day when Canadians poured into streets and public places to celebrate Victory in Europe (V-E) Day. The spontaneous celebration gradually fades behind the “V” to become a scene of remembrance, with three silhouettes representing the different branches (navy, army and air force) of the Canadian and British Armed Forces in which Canadians and Newfoundlanders served. The obverse features the effigy of King George VI by T. H. Paget and a Victory privy mark. Specifications: Metal Silver Content 999.9/1000 Weight 23.17 g Diameter 36.07 mm Edge Serrated Quality Proof Nominal Value 1 Canadian dollar Year of issue 2020 Mintage coin 25,000 Minted by Royal Canadian Mint United Kingdom The Silver British Pound is minted by the Royal Mint. The reverse is designed by Dominique Evans who was inspired by her grandmother. She told her lively stories about her time as a young girl during the war. At the heart of the coin he has placed people, with rays that echo the anti-aircraft searchlights. Here they become rays of hope. The obverse of the coin was designed by Jody Clark and depicts the portrait of Queen Elizabeth II and the inscription “ELIZABETH II . D . G. REG . F. D . 1 POUND”. Specifications: Metal Silver Content 999/1000 Weight 15.71 g Diameter 27 mm Edge Serrated Quality Proof Nominal Value 1 British pound Year of issue 2020 Mintage coin 2,000 Minted by The Royal Mint",
@@ -12,18 +13,16 @@
       "Nominal value": "5 euro, 1 Canadese dollar, 1 Britse pond",
       "Mintage": "2,000 sets"
     },
+    "parsedAt": "2026-04-05T09:50:16.992Z",
+    "image_obverse": "/image/coins/foreign/special-set-europe-remembers-obv.webp",
+    "image_reverse": "/image/coins/foreign/special-set-europe-remembers-rev.webp",
+    "image_packaging": "/image/coins/foreign/special-set-europe-remembers-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/special-set-europe-remembers-obv.webp",
       "/image/coins/foreign/special-set-europe-remembers-rev.webp",
-      "/image/coins/foreign/special-set-europe-remembers-box.webp",
-      "/image/coins/foreign/special-set-europe-remembers-pack.webp",
-      "/image/coins/foreign/special-set-europe-remembers-cert.webp",
-      "/image/coins/foreign/special-set-europe-remembers-img-06.webp",
-      "/image/coins/foreign/special-set-europe-remembers-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:35:59.402Z",
-    "slug": "special-set-europe-remembers",
-    "image_obverse": "/image/coins/foreign/special-set-europe-remembers-obv.webp",
-    "image_reverse": "/image/coins/foreign/special-set-europe-remembers-rev.webp"
+      "/image/coins/foreign/special-set-europe-remembers-pack.webp"
+    ]
   }
 }

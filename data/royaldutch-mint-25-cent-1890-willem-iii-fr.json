@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/25-cent-1890-willem-iii-fr",
+    "slug": "25-cent-1890-willem-iii-fr",
     "title": "DR 25 Cent Willem III Fr+ (hellebaard)",
     "price_display": "€325.00",
     "description": null,
@@ -10,15 +11,15 @@
       "Weight": "3.575 g",
       "Diameter": "19 mm"
     },
+    "parsedAt": "2026-04-05T08:52:49.951Z",
+    "image_obverse": "/image/coins/foreign/25-cent-1890-willem-iii-fr-obv.webp",
+    "image_reverse": "/image/coins/foreign/25-cent-1890-willem-iii-fr-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/25-cent-1890-willem-iii-fr-obv.webp",
-      "/image/coins/foreign/25-cent-1890-willem-iii-fr-rev.webp",
-      "/image/coins/foreign/25-cent-1890-willem-iii-fr-box.webp",
-      "/image/coins/foreign/25-cent-1890-willem-iii-fr-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:00:59.450Z",
-    "slug": "25-cent-1890-willem-iii-fr",
-    "image_obverse": "/image/coins/foreign/25-cent-1890-willem-iii-fr-obv.webp",
-    "image_reverse": "/image/coins/foreign/25-cent-1890-willem-iii-fr-rev.webp"
+      "/image/coins/foreign/25-cent-1890-willem-iii-fr-rev.webp"
+    ]
   }
 }

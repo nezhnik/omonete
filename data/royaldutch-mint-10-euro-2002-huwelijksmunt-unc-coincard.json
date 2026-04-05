@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/10-euro-2002-huwelijksmunt-unc-coincard",
+    "slug": "10-euro-2002-huwelijksmunt-unc-coincard",
     "title": "HM 10 Euro 2002 Huwelijk UNC Coincard",
     "price_display": "€360.00",
     "description": null,
@@ -13,17 +14,15 @@
       "Quality": "Uncirculated",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
-    "imageUrls": [
-      "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-obv.webp",
-      "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-rev.webp",
-      "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-pack.webp",
-      "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-box.webp"
-    ],
-    "parsedAt": "2026-03-31T23:02:51.784Z",
-    "slug": "10-euro-2002-huwelijksmunt-unc-coincard",
+    "parsedAt": "2026-04-05T10:02:13.301Z",
     "image_obverse": "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-obv.webp",
     "image_reverse": "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-rev.webp",
-    "image_packaging": "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-pack.webp",
-    "image_box": "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-box.webp"
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-obv.webp",
+      "/image/coins/foreign/10-euro-2002-huwelijksmunt-unc-coincard-rev.webp"
+    ]
   }
 }

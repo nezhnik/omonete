@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-cent-1825-1827-willem-i-zfr",
+    "slug": "5-cent-1825-1827-willem-i-zfr",
     "title": "DR 5 Cent Willem I Zfr (fakkel)",
     "price_display": "€70.00",
     "description": null,
@@ -10,15 +11,15 @@
       "Weight": "0.846 g",
       "Diameter": "15 mm"
     },
+    "parsedAt": "2026-04-05T08:54:15.561Z",
+    "image_obverse": "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-obv.webp",
-      "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-rev.webp",
-      "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-box.webp",
-      "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:02:27.572Z",
-    "slug": "5-cent-1825-1827-willem-i-zfr",
-    "image_obverse": "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-rev.webp"
+      "/image/coins/foreign/5-cent-1825-1827-willem-i-zfr-rev.webp"
+    ]
   }
 }

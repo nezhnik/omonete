@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aruba-5-florin-yuwana-2021-silver-prooflike",
+    "slug": "aruba-5-florin-yuwana-2021-silver-prooflike",
     "title": "Aruba 5 Florin “Yuwana” 2021 Silver Prooflike",
     "price_display": "€54.95",
     "description": "On the Aruban commemorative coin of the year 2021 you see the green iguana, or “Yuwana” in Papiamento. In addition to the striking colour of the Yuwana, you can recognize the animal by the dewlap, the scale on the cheek and the row of elongated scales running from the head to the tail. Yuwanas are born climbers, but they can also swim and dive like the best! Their diet consists mainly of leaves and fruits. They know how to choose the leaves that contain the most nutrients. The biggest threat to the Yuwana are humans: their meat is a beloved delicacy in the soup and so are their eggs. This has given the Yuwana the status of an endangered species. In Aruba it is by law forbidden to hunt the Yuwana. The special Aruban animal is now immortalized on a colored commemorative coin. Add this very special coin to your collection now!",
@@ -15,17 +16,16 @@
       "Mintage": "700",
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
+    "parsedAt": "2026-04-05T09:03:43.644Z",
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-rev.webp",
+    "image_packaging": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-obv.webp",
       "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-rev.webp",
-      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-box.webp",
-      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-pack.webp",
-      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-cert.webp",
-      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:10:11.623Z",
-    "slug": "aruba-5-florin-yuwana-2021-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-obv.webp",
-    "image_reverse": "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-rev.webp"
+      "/image/coins/foreign/aruba-5-florin-yuwana-2021-silver-prooflike-pack.webp"
+    ]
   }
 }

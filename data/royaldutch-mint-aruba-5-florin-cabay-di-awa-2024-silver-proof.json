@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aruba-5-florin-cabay-di-awa-2024-silver-proof",
+    "slug": "aruba-5-florin-cabay-di-awa-2024-silver-proof",
     "title": "Aruba 5 Florin “Cabay di Awa” 2024 Silver Proof",
     "price_display": "€75.00",
     "description": "#html-body [data-pb-style=S80F57G]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}After a short interruption in 2023 with the launch of the Aruba 5 Florin “100 years Aruba Aviation”, we continue this year with the commemorative series for unique animals on the Island of Aruba. The commemorative coin of this year is all about the Cabay di Awa, Papiamento for seahorse. Aruba is known to have amazing and unusual flora and fauna. The seahorse is one of the absolute Aruban attractions for lovers of diving and snorkeling. A seahorse, better known as “Cabay di Awa” in Papiamento, swims in the water around Aruba and mainly eats small crustaceans and plankton. It can be difficult to spot a seahorse in the water, since they can hide very well in the coral. They prefer to hide near the soft or rocky seabed. Aruba has several species of seahorses in various colors and sizes: the largest known seahorse is 19 centimeters. The smallest seahorses are no bigger then the nail of a small child. Right now, this series of commemorative coins for Aruba consists of seven coins: Prikichi (2017), Soldachi (2018), Turtuga (2019), Blenchi (2020), Yuwana (2021), Warawara (2022) and the latest addition Cabay di Awa (2024). Will you complete your collection of special colored coins? Order them all!",
@@ -15,18 +16,16 @@
       "Mintage": "700",
       "Edge lettering": "DIOS*TA*CU*NOS*"
     },
+    "parsedAt": "2026-04-05T09:02:53.225Z",
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-obv.webp",
       "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-rev.webp",
-      "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-box.webp",
-      "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-pack.webp",
-      "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-cert.webp",
-      "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-img-06.webp",
-      "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:09:36.892Z",
-    "slug": "aruba-5-florin-cabay-di-awa-2024-silver-proof",
-    "image_obverse": "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-rev.webp"
+      "/image/coins/foreign/aruba-5-florin-cabay-di-awa-2024-silver-proof-pack.webp"
+    ]
   }
 }

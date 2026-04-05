@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-gold-ducaton-2-ounce-royal-delft-edition",
+    "slug": "official-restrike-gold-ducaton-2-ounce-royal-delft-edition",
     "title": "Official restrike: Gold Ducaton 2 Ounce - Royal Delft edition",
     "price_display": "€5,499.00",
     "description": "Royal Delft and the Royal Dutch Mint are two companies that both found their origin in traditional work and have joined forces for a special issue. Together we take you into the story of the rich history of the Netherlands in the Golden Age with a beautiful issue in an exclusive Delft Blue coin holder. The painting on the container strikes the craft, the 'miting of coins' in the Golden Age. In the coin holder you will find a restrike of an original Ducaton \"Silver Rider\". According to many, the most beautiful coin ever issued. The Ducaton is a silver coin that was common in the 16th to the 18th century, also the equivalent of the Golden Ducat. Do you want to know more about the production process of this unique coin hoder? We visited Royal Delft to find out, you can learn more here. Piedfort Piedfort is a French term in Dutch numismatics for a coin minted on a double roundel. The Restrike Piedforts in Silver Proof and Gold Proof therefore have the double weight (2 Oz = 62.2 grams).",
@@ -12,18 +13,16 @@
       "Mintage": "10",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:31:32.083Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-obv.webp",
       "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-box.webp",
-      "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:24:15.354Z",
-    "slug": "official-restrike-gold-ducaton-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-gold-ducaton-2-ounce-royal-delft-edition-pack.webp"
+    ]
   }
 }

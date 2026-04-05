@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2014-molen-vijfje-unc-coincard",
+    "slug": "5-euro-2014-molen-vijfje-unc-coincard",
     "title": "HM 5 Euro 2014 Molen Vijfje UNC CC",
     "price_display": "€10.00",
     "description": null,
@@ -14,17 +15,16 @@
       "Mintage": "250,000",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:55:56.529Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-rev.webp",
+    "image_packaging": "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-obv.webp",
       "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-rev.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-box.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-pack.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-cert.webp",
-      "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:05:04.342Z",
-    "slug": "5-euro-2014-molen-vijfje-unc-coincard",
-    "image_obverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-rev.webp"
+      "/image/coins/foreign/5-euro-2014-molen-vijfje-unc-coincard-pack.webp"
+    ]
   }
 }

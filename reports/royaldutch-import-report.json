@@ -1,8 +1,8 @@
 {
   "total": 402,
-  "inserted": 1,
-  "updated": 342,
-  "skipped_duplicate": 0,
+  "inserted": 0,
+  "updated": 109,
+  "skipped_duplicate": 234,
   "skipped_graded": 59,
   "errors": 0
 }

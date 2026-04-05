@@ -1,17 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65",
+    "slug": "dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65",
     "title": "Dutch Water Defence Lines 5 Euro Coin 2025 Silver Proof (PF65)",
     "price_display": "€56.95",
     "description": "#html-body [data-pb-style=S80OWIA]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A unique silver coin to own: the Dutch Water Defence Lines 5 Euro Coin 2025 Silver Proof in PF65 is a special addition to any collection. The PF65 background indicates a well-struck Proof coin. Only one piece available! The Silver coin comes in a transparent NGC case.",
-    "specs": {},
+    "specs": {
+      "Article number": "0124268",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "1",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
+    "parsedAt": "2026-04-05T09:08:24.095Z",
+    "image_obverse": "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65-obv.webp",
+    "image_reverse": "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65-rev.webp",
+    "image_packaging": "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65/01.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65/02.png"
-    ],
-    "parsedAt": "2026-03-31T18:14:58.871Z",
-    "slug": "dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65",
-    "image_obverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65/02.png"
+      "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65-obv.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65-rev.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf65-pack.webp"
+    ]
   }
 }

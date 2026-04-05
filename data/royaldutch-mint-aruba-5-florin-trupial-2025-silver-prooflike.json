@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aruba-5-florin-trupial-2025-silver-prooflike",
+    "slug": "aruba-5-florin-trupial-2025-silver-prooflike",
     "title": "Aruba 5 Florin “Trupial” 2025 Silver Prooflike",
     "price_display": "€109.95",
     "description": "#html-body [data-pb-style=HHBQMT9],#html-body [data-pb-style=W5CCPMI]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A new issue in the commemorative series for unique animals on the Island of Aruba! This time, a beautiful bird is depicted on the 5 Florin: the Trupial. Thanks to the vibrant colors of this singing bird, this colored coin is extra special! Extraordinary bird on Aruba We'd love to introduce you to the wonderful world of flora and fauna on Aruba. The Trupial is a beautiful, black-and-orange bird from the Trupial family, that can sing beautifully. Its melodious song can be heard all day long and consists of two or three syllables, pronounced as \"troepie-óé troopie-óé\"—the feathers on its throat puff up while singing. Did you know that there's even a youth choir named after this bird? The Trupials, based on Aruba, found inspiration in this songbird. The bird is found on Aruba, Bonaire, and Curaçao. On Aruba, the Trupial usually builds its nest in columnar cacti. These birds primarily eat fruits such as mango, medlar, and kenepa. They also feed on insects. The Trupial is lively and defends its nest with loud calls. The Chuchubi, in particular, often bears the brunt of this: these two birds argue frequently. Right now, this series of commemorative coins about extraordinary animals on Aruba consists of seven coins: Prikichi (2017), Soldachi (2018), Turtuga (2019), Blenchi (2020), Yuwana (2021), Warawara (2022), Cabay di Awa (2024) and the latest addition Trupial (2025).",
@@ -15,18 +16,16 @@
       "Mintage": "700",
       "Edge lettering": "DIOS*TA*CU*NOS*"
     },
+    "parsedAt": "2026-04-05T09:03:13.984Z",
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-rev.webp",
+    "image_packaging": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-obv.webp",
       "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-rev.webp",
-      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-box.webp",
-      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-pack.webp",
-      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-cert.webp",
-      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-img-06.webp",
-      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:09:48.751Z",
-    "slug": "aruba-5-florin-trupial-2025-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-obv.webp",
-    "image_reverse": "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-rev.webp"
+      "/image/coins/foreign/aruba-5-florin-trupial-2025-silver-prooflike-pack.webp"
+    ]
   }
 }

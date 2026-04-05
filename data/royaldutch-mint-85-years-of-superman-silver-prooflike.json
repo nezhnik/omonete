@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/85-years-of-superman-silver-prooflike",
+    "slug": "85-years-of-superman-silver-prooflike",
     "title": "85 years of Superman Silver Prooflike",
     "price_display": "€399.00",
     "description": "In April of this year, we celebrated the 100th anniversary of Warner Bros. In a century, many iconic films and film figures have seen the light. One of these iconic film figures is Superman. This super hero is 85 years old in 2023. Superman, the alter ego of Clark Kent, is a world famous DC Super Hero. His first stories could be read in the American Action Comics from 1938. The Royal Dutch Mint shares in this celebration and launches a very special issue: the 85 years of Superman Silver Prooflike. Recognizable hero From his blue uniform to his flowing red cape and the ‘S’ shield on his chest: Superman is one of the most immediately recognizable and beloved DC Super Heroes of all time. The Man of Steel is the ultimate symbol of truth, justice and hope. He is the world’s first Super Hero. Superman has spent the last eight five years redefining what it means to stand for truth and justice. The last survivor of the doomed planet Krypton, raised in the quiet heartland of Smallville, Kansas, Superman is as much a legend as he is a man: the gold standard of heroism, compassion and responsibility. He always strives to represent the inherent goodness of the human spirit. Design The 85 years of Superman Silver Prooflike is a special issue. Especially for this jubilee, the Royal Dutch Mint launches an issue that uses cold-enamel. This is a technique that requires no heat. On the obverse of the coin you can find the well-known Superman logo in color. This is handcrafted by the silversmiths at the Royal Dutch Mint atelier. The mintmark and privy mark can be found at the bottom. On the reverse is the image of Clark Kent, who opens his jacket, which makes the Superman logo on his chest appear. On the side, the text ’85 years of Superman’ is visible.",
@@ -14,18 +15,16 @@
       "Mintage": "85",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:01:00.405Z",
+    "image_obverse": "/image/coins/foreign/85-years-of-superman-silver-prooflike-obv.webp",
+    "image_reverse": "/image/coins/foreign/85-years-of-superman-silver-prooflike-rev.webp",
+    "image_packaging": null,
+    "image_box": "/image/coins/foreign/85-years-of-superman-silver-prooflike-box.webp",
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/85-years-of-superman-silver-prooflike-obv.webp",
       "/image/coins/foreign/85-years-of-superman-silver-prooflike-rev.webp",
-      "/image/coins/foreign/85-years-of-superman-silver-prooflike-box.webp",
-      "/image/coins/foreign/85-years-of-superman-silver-prooflike-pack.webp",
-      "/image/coins/foreign/85-years-of-superman-silver-prooflike-cert.webp",
-      "/image/coins/foreign/85-years-of-superman-silver-prooflike-img-06.webp",
-      "/image/coins/foreign/85-years-of-superman-silver-prooflike-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:08:19.638Z",
-    "slug": "85-years-of-superman-silver-prooflike",
-    "image_obverse": "/image/coins/foreign/85-years-of-superman-silver-prooflike-obv.webp",
-    "image_reverse": "/image/coins/foreign/85-years-of-superman-silver-prooflike-rev.webp"
+      "/image/coins/foreign/85-years-of-superman-silver-prooflike-box.webp"
+    ]
   }
 }

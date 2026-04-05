@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/schokland-10-euro-coin-2018-gold-proof",
+    "slug": "schokland-10-euro-coin-2018-gold-proof",
     "title": "Schokland 10 euro coin 2018 Gold Proof",
     "price_display": "€389.95",
     "description": null,
@@ -15,17 +16,16 @@
       "Mintage": "max 1,000 pieces",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:43:44.126Z",
+    "image_obverse": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-obv.webp",
       "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-rev.webp",
-      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-box.webp",
-      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-pack.webp",
-      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-cert.webp",
-      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:32:04.284Z",
-    "slug": "schokland-10-euro-coin-2018-gold-proof",
-    "image_obverse": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-rev.webp"
+      "/image/coins/foreign/schokland-10-euro-coin-2018-gold-proof-pack.webp"
+    ]
   }
 }

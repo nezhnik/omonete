@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/special-set-200-years-of-knrm-rnli",
+    "slug": "special-set-200-years-of-knrm-rnli",
     "title": "Special Set: 200 years of KNRM & RNLI",
     "price_display": "€225.00",
     "description": "The Royal Netherlands Sea Rescue Organization (KNRM) celebrates its 200th anniversary in 2024! The equivalent organization that serves Great Britain, the ‘Royal National Lifeboat Institution’ (RNLI), also shares this jubilee celebrating its bicentenary this year. Both organizations celebrate 200 years of existence and, in our opinion, this requires a unique set. The Royal Dutch Mint designed a special Silver Set, with a very limited mintage of 200 pieces! KNRM and RNLI Both KNRM and RNLI are organisations of great importance. Both perform life-saving actions on the water. KNRM was founded in 1824 as an independent rescue organization, following a rescue operation by coastal residents of Den Helder. The principles that stood at the very base of the KNRM, are still valid to this day. This means total free assistance, the rescue work is only carried out by trained volunteers and the KNRM is maintained only through donations. The RNLI was founded officially on March 4th 1824, by Sir William Hillary. From wooden boots with oars and sails to the newest rescue boats equipped with state-of-the-art technology. In 200 years, the RNLI has grown into a modern organisation, supported by donations from all over Great Britain. In total, the RNLI has saved over 144.000 lives. Design The Special Set: 200 years of KNRM & RNLI consists of two Silver coins: the KNRM 200 years 5 Euro Coin Silver Proof and the 200 Years of the RNLI UK 50p Silver Proof Colour. The Royal Dutch Mint’s silver proof coin features the effigy of King Willem-Alexander on the obverse. The reverse design shows a turbulent sea with wild waves carrying a KNRM rescue boat. When the coin is moved, it almost seems like the sea is coming to life. The Royal Mint’s Silver Proof coin depicts the effigy of His Majesty King Charles III on the obverse. The reverse design shows the flag of the RNLI encircled by an orange lifebuoy, which is shown in colour. Together, the Silver coins are put in a unique packaging. It seems like the coins are in the water, this makes it a nice reference to where most rescues take place: the sea. This special and fitting packaging makes the Special Set even more wanted! Specifications: KNRM 200 Years 5 Euro Coin 2024 Silver Proof Metal Silver Content 925/1000 Quality Proof Weight 15.5 g Diameter 33 mm Edge lettering * GOD * ZIJ * MET * ONS Nominal Value 5 euro Mintage 3,500 (200 in this packaging) 200 Years of the RNLI 2024 UK 50p Silver Proof Colour Coin Metal Silver Content 925/1000 Quality Proof Weight 8 g Diameter 27,3 mm Nominal Value 50 Pence Mintage 4.000 (200 in this packaging) A payment of £2.66 per set will be paid by The Royal Mint in support of the RNLI. Payments are made to RNLI (Sales) Ltd (which pays all its taxable profits to the RNLI, a charity registered in England and Wales (209603), Scotland (SC037736), the Republic of Ireland (20003326), the Bailiwick of Jersey (14), the Isle of Man (1308 and 006329F) and the Bailiwick of Guernsey and Alderney, of West Quay Road, Poole, Dorset BH15 1HZ).",
@@ -15,18 +16,16 @@
       "Mintage": "200",
       "Edge": "various"
     },
+    "parsedAt": "2026-04-05T09:49:46.120Z",
+    "image_obverse": "/image/coins/foreign/special-set-200-years-of-knrm-rnli-obv.webp",
+    "image_reverse": "/image/coins/foreign/special-set-200-years-of-knrm-rnli-rev.webp",
+    "image_packaging": "/image/coins/foreign/special-set-200-years-of-knrm-rnli-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/special-set-200-years-of-knrm-rnli-obv.webp",
       "/image/coins/foreign/special-set-200-years-of-knrm-rnli-rev.webp",
-      "/image/coins/foreign/special-set-200-years-of-knrm-rnli-box.webp",
-      "/image/coins/foreign/special-set-200-years-of-knrm-rnli-pack.webp",
-      "/image/coins/foreign/special-set-200-years-of-knrm-rnli-cert.webp",
-      "/image/coins/foreign/special-set-200-years-of-knrm-rnli-img-06.webp",
-      "/image/coins/foreign/special-set-200-years-of-knrm-rnli-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:35:36.787Z",
-    "slug": "special-set-200-years-of-knrm-rnli",
-    "image_obverse": "/image/coins/foreign/special-set-200-years-of-knrm-rnli-obv.webp",
-    "image_reverse": "/image/coins/foreign/special-set-200-years-of-knrm-rnli-rev.webp"
+      "/image/coins/foreign/special-set-200-years-of-knrm-rnli-pack.webp"
+    ]
   }
 }

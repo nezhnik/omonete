@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2004-europamunt-proof",
+    "slug": "5-euro-2004-europamunt-proof",
     "title": "HM 5 Euro 2004 Europamunt Proof",
     "price_display": "€47.95",
     "description": null,
@@ -13,15 +14,15 @@
       "Edge lettering": "* GOD * ZIJ * MET * ONS",
       "Mintmaster sign": "Koerszettende zeilen"
     },
+    "parsedAt": "2026-04-05T08:54:33.211Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2004-europamunt-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2004-europamunt-proof-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2004-europamunt-proof-obv.webp",
-      "/image/coins/foreign/5-euro-2004-europamunt-proof-rev.webp",
-      "/image/coins/foreign/5-euro-2004-europamunt-proof-box.webp",
-      "/image/coins/foreign/5-euro-2004-europamunt-proof-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:02:52.556Z",
-    "slug": "5-euro-2004-europamunt-proof",
-    "image_obverse": "/image/coins/foreign/5-euro-2004-europamunt-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2004-europamunt-proof-rev.webp"
+      "/image/coins/foreign/5-euro-2004-europamunt-proof-rev.webp"
+    ]
   }
 }

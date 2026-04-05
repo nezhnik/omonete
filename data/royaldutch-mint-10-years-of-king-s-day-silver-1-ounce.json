@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/10-years-of-king-s-day-silver-1-ounce",
+    "slug": "10-years-of-king-s-day-silver-1-ounce",
     "title": "10 years of King's Day Silver 1 Ounce",
     "price_display": "€119.00",
     "description": "It is one of the most fun days of the year for Dutch people: King's Day. For this day, a lot of foreign people come to the Netherlands to join the party. This day celebrates the birthday of Dutch King Willem-Alexander. Throughout the country, festivals, flea markets and other festivities take place. Many Dutch people put on their orange or red-white-blue outfits, eat typical Dutch food and drink “Oranjebitter”, a Dutch liqueur. It’s a fun day that, since the King’s accession, is celebrated for 10 years. King's Day is inseparable from the Netherlands and is therefor added to the Inventory of Intangible Heritage of the Netherlands by the Royal Association of Orange Societies. King's Day brings together people from all ages. The Royal Dutch Mint launches something extra special: a Silver issue with colored detail. 10 years of King's Day In 2023, we celebrate 10 years of King's Day. But this day of fun and solidarity has been around for much longer, in a different form and with a different name. The first real Queen''s Day was celebrated for Queen Wilhelmina in 1902. With her daughter Queen Juliana, Queen's Day became an official day off and eventually a National holiday. Till then, Dutch people could go to Soestdijk Palace, where they could hand the Royal Family flowers and gifts. Queen Beatrix was the first to choose to visit the people instead of the people visiting her. Every year, she would go to a different town in The Netherlands to spend the day. With the accession of King Willem-Alexander in 2013, Queen's Day has changed to King's Day, but the idea behind it has stayed the same. The Royal Family visits a city and takes part in the arranged festivities. For this year, it’s the city of Rotterdam that will turn orange for the 10th King's Day. Design The 10 years of King's Day Silver 1 ounce has the same cheerful design as the medal in coincard. For the obverse, a special UV-colored detail is chosen: the banner at the bottom is colored orange, perfectly appropriate for this celebration! Also the text ’27 april 2023’ is orange for this Silver issue. The reverse contains the logo of the Inventory of Intangible Heritage, surrounded by festive little streamers and confetti.",
@@ -14,18 +15,16 @@
       "Mintage": "150",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T10:02:41.742Z",
+    "image_obverse": "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-obv.webp",
       "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-rev.webp",
-      "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-box.webp",
-      "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-pack.webp",
-      "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-cert.webp",
-      "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-img-06.webp",
-      "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T19:59:27.745Z",
-    "slug": "10-years-of-king-s-day-silver-1-ounce",
-    "image_obverse": "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-rev.webp"
+      "/image/coins/foreign/10-years-of-king-s-day-silver-1-ounce-pack.webp"
+    ]
   }
 }

@@ -1,23 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo",
+    "slug": "dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo",
     "title": "Dutch Water Defence Lines 5 Euro Coin 2025 Silver Proof (PF70 Ultra Cameo)",
     "price_display": "€81.95",
     "description": "#html-body [data-pb-style=QX6U8T0]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}With the Dutch Water Defence Lines 5 Euro Coin 2025 Silver Proof in PF70 Ultra Cameo, you have a guaranteed top-quality Silver coin in your collection. PF70 is the highest possible grade! NGC has carefully inspected this coin and awarded it this high grade. This silver commemorative coin is also Ultra Cameo, meaning both sides have a strong contrast.",
-    "specs": {},
+    "specs": {
+      "Article number": "0123596",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "65",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
+    "parsedAt": "2026-04-05T09:09:14.790Z",
+    "image_obverse": "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo-obv.webp",
+    "image_reverse": "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo-rev.webp",
+    "image_packaging": "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/01.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/02.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/03.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/04.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/05.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/06.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/07.png",
-      "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/08.png"
-    ],
-    "parsedAt": "2026-03-31T18:15:24.006Z",
-    "slug": "dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo",
-    "image_obverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo/02.png"
+      "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo-obv.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo-rev.webp",
+      "/image/coins/foreign/dutch-water-defence-lines-5-euro-coin-2025-silver-proof-pf70-ultra-cameo-pack.webp"
+    ]
   }
 }

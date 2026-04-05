@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour",
+    "slug": "65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour",
     "title": "65 years of Eurovision Song Contest Medal Silver 1 Ounce with colour",
     "price_display": "€119.00",
     "description": "The Eurovision Song Contest 2020, which should have taken place on 12, 14 and 16 May in Rotterdam, has been cancelled. The uncertainty created by the spread of COVID-19 throughout Europe, and the restrictions put in place by the governments of the participating broadcasters and the Dutch authorities, means the European Broadcasting Union (EBU) has taken the difficult decision that it is impossible to continue with the live event as planned. The EBU, NPO, NOS, AVROTROS and the City of Rotterdam will continue a conversation regarding the hosting of the Eurovision Song Contest in 2021. The Eurovision Song Contest issues by the Royal Dutch Mint remain available. Production and delivery will proceed as previously planned. A unique design In this ingenious design all editions of the Eurovision Song Contest come together. To obtain this, Dutch music producer Eric van Tijn created an unintelligible mix containing all songs from the 64 previous editions. Designer Juan Sanchez-Castano developed a unique installation which he placed in the middle of Rotterdam Ahoy, the venue that would have hosted the Eurovision Song Contest 2020. The installation holds a speaker. On that speaker a bowl is placed, filled with water taken from the Maas (a river in Rotterdam). The water was handed to us by Rotterdam “Eurovision councilor” Said Kasmi. The mix was then played on the speaker. The sound waves of the mix became visible through the vibrations of the water on the speaker. Sanchez-Castano documented the vibrations and transferred them to a 3D model and eventually into a physical product with a special relief. The 65 years of Eurovision Medal is a tangible keepsake in which the history of Eurovision is captured in a unique way. The medal has a visible relief, in the same way the music created a relief in the water. On the reverse of the medal the same vibrations are visible. In the center the Eurovision Song Contest 2020 logo is placed. Check out our video to see how the design came together in Rotterdam Ahoy!",
@@ -14,18 +15,16 @@
       "Mintage": "3,000",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T08:58:16.526Z",
+    "image_obverse": "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-obv.webp",
+    "image_reverse": "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-rev.webp",
+    "image_packaging": "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-obv.webp",
       "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-rev.webp",
-      "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-box.webp",
-      "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-pack.webp",
-      "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-cert.webp",
-      "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-img-06.webp",
-      "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:06:34.236Z",
-    "slug": "65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour",
-    "image_obverse": "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-obv.webp",
-    "image_reverse": "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-rev.webp"
+      "/image/coins/foreign/65-years-of-eurovision-song-contest-medal-silver-1-ounce-with-colour-pack.webp"
+    ]
   }
 }

@@ -1,0 +1,3 @@
+{
+  "_readme": "Ключи — slug из URL (как в royaldutch-mint-<slug>.json). Значение: coin-first | box-first | coin-box-third. Строки с _ в начале игнорируются."
+}

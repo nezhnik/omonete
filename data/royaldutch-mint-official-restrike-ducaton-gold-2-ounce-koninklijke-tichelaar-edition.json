@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition",
+    "slug": "official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition",
     "title": "Official Restrike: Ducaton Gold 2 Ounce - Koninklijke Tichelaar edition",
     "price_display": "€4,999.00",
     "description": "The Royal Dutch Mint and Koninklijke Tichelaar, the two oldest companies in the Netherlands still in business, have joined forces. This restrike of the Dukaton combines the strength and craftsmanship of the two companies to show Dutch culture and the tulips at its finest. Not only is the tulip hand painted on the tile, you will also find the tulip on the edge of the Golden restrike itself. Exclusive “Dutch Design” Koninklijke Tichelaar has become a worldwide concept in the field of ceramics and glazes. The Ducaton is placed in a earthenware tile that is decorated with hand painted tulips. This Golden restrike has a tulip edge that you can admire when you take the restrike out of the holder. The Ducaton is a coin type that was considered legal tender from the 16th until the 18th century. According to many the Ducaton was the most beautiful coin ever issued. Obverse - The obverse shows the rider galloping on his horse with the weapon of Utrecht pictured below. The legend states: MO: NO: ARG CON - FOE: BELG: PRO: TRAI Reverse - The reverse shows the crowned generality weapon with two crowned lions on both sides. The year 2020 is included in a cartouche of leaf ornaments. The legend states: CONCORDIA - RES PARVAE - CRESCUNT which means 'Harmony makes power'. This used to be the slogan of the Republic of the Seven United Netherlands and the city of Emden, closely associated with the Netherlands. Piedfort Piedfort is a French term used in Dutch Numismatics for a coin struck on a blank twice the normal thickness of the original. The Koninklijke Tichelaar edition is twice as heavy as the original Ducaton. (2 ounce = 62.2 grams). Specifications Makkumer tile Dimensions 130 x 130 mm Weight 350 g Material Original Frisian earthenware Quantity 20 pieces Design Unique hand-painted and numbered Year of issue 2020 Are you curious to see how the tiles were made? We visited Koninklijke Tichelaar to find out.",
@@ -14,18 +15,16 @@
       "Mintage": "20 stuks",
       "Edge": "penning: glad"
     },
+    "parsedAt": "2026-04-05T09:28:31.378Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-obv.webp",
       "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-box.webp",
-      "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:22:31.620Z",
-    "slug": "official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-ducaton-gold-2-ounce-koninklijke-tichelaar-edition-pack.webp"
+    ]
   }
 }

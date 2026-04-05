@@ -17,7 +17,10 @@ import {
   isMeaningfulSpecString,
 } from "../lib/specValueVisibility";
 import { COIN_DETAIL_MAIN_IMAGE_SCALE } from "../lib/coinCatalogImageScale";
+import { galleryImageSrcKey } from "../lib/galleryImageSrcKey";
 import { isGradedCoinTitle } from "../lib/isGradedCoinTitle";
+
+const DETAIL_IMAGE_PLACEHOLDER = "/image/coin-placeholder.png";
 
 /** Данные монеты для страницы деталей (переиспользуемый тип) */
 export type CoinDetailData = {
@@ -136,15 +139,15 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
     [sameSeries]
   );
   /** Детальный JSON раньше мог содержать только «доп.» кадры в imageUrls без главного imageUrl — склеиваем как в каталоге. */
-  const mergedUrls = (() => {
+  const mergedUrls = useMemo(() => {
     const urls = (coin.imageUrls ?? []).filter(Boolean);
     if (urls.length === 0) return [coin.imageUrl];
     if (coin.imageUrl && !urls.includes(coin.imageUrl)) return [coin.imageUrl, ...urls];
     return urls;
-  })();
+  }, [coin.imageUrl, coin.imageUrls]);
   const roles = coin.imageUrlRoles;
   /** Макс. 7 кадров по ролям (или первые 7 уникальных URL, если роли не совпали с массивом). */
-  const images = (() => {
+  const imagesFromData = useMemo(() => {
     if (Array.isArray(roles) && roles.length === mergedUrls.length) {
       const picked: string[] = [];
       for (const role of DETAIL_GALLERY_ROLE_ORDER) {
@@ -163,13 +166,30 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
       if (out.length >= DETAIL_GALLERY_MAX) break;
     }
     return out.length > 0 ? out : [coin.imageUrl];
-  })();
+  }, [mergedUrls, roles, coin.imageUrl]);
+
+  const [brokenGalleryKeys, setBrokenGalleryKeys] = useState(() => new Set<string>());
+  useEffect(() => {
+    setBrokenGalleryKeys(new Set());
+  }, [coin.id]);
+
+  const visibleImages = useMemo(() => {
+    const ok = imagesFromData.filter((u) => u && !brokenGalleryKeys.has(galleryImageSrcKey(String(u))));
+    if (ok.length > 0) return ok;
+    const u = coin.imageUrl?.trim();
+    if (u && !brokenGalleryKeys.has(galleryImageSrcKey(u))) return [u];
+    return [DETAIL_IMAGE_PLACEHOLDER];
+  }, [imagesFromData, brokenGalleryKeys, coin.imageUrl]);
+
   const rectangular = !!coin.rectangular;
   const detailMainImageScale = COIN_DETAIL_MAIN_IMAGE_SCALE[coin.id] ?? 1;
   const [selectedImage, setSelectedImage] = useState(0);
   useEffect(() => {
     setSelectedImage(0);
   }, [coin.id]);
+  useEffect(() => {
+    setSelectedImage((i) => Math.min(i, Math.max(0, visibleImages.length - 1)));
+  }, [visibleImages]);
   const [copyToast, setCopyToast] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
@@ -192,8 +212,29 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
     Boolean(coin.metalCode) ||
     isMeaningfulSpecString(coin.metal);
 
-  const goPrev = () => setSelectedImage((i) => (i - 1 + images.length) % images.length);
-  const goNext = () => setSelectedImage((i) => (i + 1) % images.length);
+  const markGalleryBroken = (raw: string) => {
+    const key = galleryImageSrcKey(raw);
+    if (!key) return;
+    setBrokenGalleryKeys((prev) => {
+      if (prev.has(key)) return prev;
+      const next = new Set(prev);
+      next.add(key);
+      return next;
+    });
+  };
+
+  const goPrev = () =>
+    setSelectedImage((i) => {
+      const n = visibleImages.length;
+      if (n <= 1) return 0;
+      return (i - 1 + n) % n;
+    });
+  const goNext = () =>
+    setSelectedImage((i) => {
+      const n = visibleImages.length;
+      if (n <= 1) return 0;
+      return (i + 1) % n;
+    });
 
   const handleShare = async (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
@@ -245,7 +286,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
     touchStartX.current = e.targetTouches[0].clientX;
   };
   const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX.current == null || images.length <= 1) return;
+    if (touchStartX.current == null || visibleImages.length <= 1) return;
     const endX = e.changedTouches[0].clientX;
     const diff = touchStartX.current - endX;
     if (Math.abs(diff) >= SWIPE_MIN_DISTANCE) {
@@ -299,7 +340,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
             <div
               className={`group/coin relative w-full aspect-square max-h-[540px] lg:max-h-[736px] flex items-center justify-center bg-white overflow-hidden ${rectangular ? "rounded-2xl" : "rounded-full"}`}
               onKeyDown={(e) => {
-                if (images.length <= 1) return;
+                if (visibleImages.length <= 1) return;
                 if (e.key === "ArrowLeft") {
                   e.preventDefault();
                   goPrev();
@@ -311,17 +352,18 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
               }}
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
-              tabIndex={images.length > 1 ? 0 : undefined}
-              role={images.length > 1 ? "region" : undefined}
-              aria-label={images.length > 1 ? "Галерея изображений монеты" : undefined}
+              tabIndex={visibleImages.length > 1 ? 0 : undefined}
+              role={visibleImages.length > 1 ? "region" : undefined}
+              aria-label={visibleImages.length > 1 ? "Галерея изображений монеты" : undefined}
             >
               <img
-                src={images[selectedImage] ?? coin.imageUrl}
+                src={visibleImages[selectedImage] ?? coin.imageUrl}
                 alt={cleanCoinTitle(coin.title)}
                 className="w-full h-full max-h-[540px] lg:max-h-[736px] object-contain origin-center pointer-events-none select-none"
                 style={detailMainImageScale !== 1 ? { transform: `scale(${detailMainImageScale})` } : undefined}
+                onError={() => markGalleryBroken(visibleImages[selectedImage] ?? coin.imageUrl ?? "")}
               />
-              {images.length > 1 && (
+              {visibleImages.length > 1 && (
                 <>
                   <button
                     type="button"
@@ -354,9 +396,9 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                 </>
               )}
             </div>
-            {images.length > 1 && (
+            {visibleImages.length > 1 && (
               <div className="flex items-center justify-center gap-2 flex-nowrap overflow-x-auto pb-1 -mx-1 px-1 [scrollbar-width:thin]">
-                {images.map((url, i) => (
+                {visibleImages.map((url, i) => (
                   <button
                     key={`${url}-${i}`}
                     type="button"
@@ -366,7 +408,7 @@ export function CoinDetail({ coin, sameSeries = [], backHref = "/catalog", backL
                       i === selectedImage ? "outline outline-2 outline-[#11111B] outline-offset-[-1px]" : "outline outline-1 outline-[#E4E4EA] outline-offset-[-1px]"
                     }`}
                   >
-                    <img src={url} alt="" className="w-[72px] h-[72px] object-contain lg:w-[128px] lg:h-[128px]" />
+                    <img src={url} alt="" className="w-[72px] h-[72px] object-contain lg:w-[128px] lg:h-[128px]" onError={() => markGalleryBroken(url)} />
                   </button>
                 ))}
               </div>

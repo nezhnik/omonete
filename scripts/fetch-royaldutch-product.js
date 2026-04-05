@@ -2,13 +2,17 @@
  * Парсинг одной карточки Royal Dutch Mint.
  * Сохраняет data/royaldutch-mint-<slug>.json и webp в public/image/coins/foreign/<slug>-<role>.webp.
  *
- * Картинки:
- * - Берём только кадры главной сцены .fotorama__stage (без превью .fotorama__nav — там дубли в низком разрешении).
- * - Для каждого img выбираем максимальный URL из srcset (или data-src/src).
- * - Дедуп по basename файла, чтобы один ракурс не попал дважды.
+ * Картинки (качество):
+ * - Основной источник — JSON галереи Magento в script[type=text/x-magento-init]: mage/gallery/gallery → data[].
+ *   У каждого слайда есть full / img / thumb; берём full || img (порядок массива = порядок слайдов на сайте).
+ * - Загрузка: для https://www.royaldutchmint.com/media/catalog/product/… убираем query (?optimize=…),
+ *   тогда CDN отдаёт оригинал (часто PNG), а не сжатый JPEG по параметрам — см. DevTools «full» vs клик по картинке.
+ * - Запасной вариант: img в .fotorama__stage__frame (как раньше), если JSON не разобрать.
+ * - Дедуп по basename пути файла (без query).
  *
- * Роли по порядку слайда (как на сайте Omonete / колонки БД + хвост в image_urls):
- *   1 obv, 2 rev, 3 packaging (pack), 4 box, 5 cert, 6 blister-obv, 7 blister-rev
+ * Роли по слайдам: порядок на royal может быть box→obv→rev или obv→rev→box. Выбор схемы:
+ *   data/royaldutch-carousel-layout.json → alt/title у img → эвристика «студийная монета».
+ * Итоговые слоты (как в export / БД): obv, rev, pack, box, cert, blister-obv, blister-rev.
  * Колонка image_blister_* НЕ заполняем: см. export — при hasAnyBlister в галерее только блистер, без «голой» монеты.
  * Доп. кадры блистера лежат в image_urls и файлах *-blister-obv/rev.webp.
  *
@@ -21,6 +25,7 @@ const path = require("path");
 const os = require("os");
 const https = require("https");
 const { saveBufferAsForeignUnified } = require("./lib/save-foreign-unified-webp.js");
+const { getRoleSequence } = require("./lib/royaldutch-carousel-layout.js");
 
 const ROOT = path.join(__dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
@@ -80,13 +85,48 @@ function download(url, dst) {
   });
 }
 
+/** Оригинал с CDN: path без query даёт исходный PNG/JPEG, с ?optimize= — уменьшенная выдача. */
+function bestRoyalDutchDownloadUrl(raw) {
+  try {
+    const u = new URL(String(raw || "").trim().split(/\s+/)[0]);
+    if (!/royaldutchmint\.com$/i.test(u.hostname)) return String(raw).trim();
+    if (!/\/media\/catalog\/product\//i.test(u.pathname)) return u.toString();
+    return `${u.origin}${u.pathname}`;
+  } catch {
+    return String(raw || "").trim();
+  }
+}
+
+async function downloadToBuffer(url) {
+  const fetchUrl = bestRoyalDutchDownloadUrl(url);
+  const tmp = path.join(os.tmpdir(), `rdm-buf-${Date.now()}-${Math.random().toString(36).slice(2)}`);
+  if (!(await download(fetchUrl, tmp))) return null;
+  try {
+    return fs.readFileSync(tmp);
+  } catch {
+    return null;
+  } finally {
+    try {
+      fs.unlinkSync(tmp);
+    } catch (_) {}
+  }
+}
+
 async function parseProduct(page, sourceUrl) {
   await page.goto(sourceUrl, { waitUntil: "domcontentloaded", timeout: 120000 });
   await page.waitForSelector(".fotorama__stage .fotorama__stage__frame img, .fotorama__stage__frame img", {
     state: "attached",
     timeout: 25000,
   }).catch(() => {});
-  await page.waitForTimeout(1200);
+  await page.waitForTimeout(800);
+  await page
+    .waitForFunction(
+      () =>
+        document.querySelectorAll(".fotorama__stage .fotorama__stage__frame.fotorama__loaded--full img").length > 0 ||
+        document.querySelectorAll(".fotorama__stage .fotorama__stage__frame img").length > 0,
+      { timeout: 12000 }
+    )
+    .catch(() => {});
 
   const parsed = await page.evaluate(() => {
     const txt = (el) => (el && el.textContent ? el.textContent.replace(/\s+/g, " ").trim() : "");
@@ -163,19 +203,100 @@ async function parseProduct(page, sourceUrl) {
       }
     }
 
-    const stageImgs = Array.from(
-      document.querySelectorAll(".fotorama__stage .fotorama__stage__frame img.fotorama__img, .fotorama__stage .fotorama__stage__frame img")
-    );
+    /**
+     * Разбор массива data из mage/gallery/gallery (скобки с учётом строк JSON).
+     */
+    function parseGalleryJsonArray(html) {
+      const i = html.indexOf('"data"');
+      if (i === -1) return null;
+      const start = html.indexOf("[", i);
+      if (start === -1 || start > i + 40) return null;
+      let depth = 0;
+      let inStr = false;
+      let esc = false;
+      let q = "";
+      for (let k = start; k < html.length; k++) {
+        const ch = html[k];
+        if (inStr) {
+          if (esc) {
+            esc = false;
+            continue;
+          }
+          if (ch === "\\") {
+            esc = true;
+            continue;
+          }
+          if (ch === q) {
+            inStr = false;
+            continue;
+          }
+          continue;
+        }
+        if (ch === '"' || ch === "'") {
+          inStr = true;
+          q = ch;
+          continue;
+        }
+        if (ch === "[") depth++;
+        else if (ch === "]") {
+          depth--;
+          if (depth === 0) {
+            try {
+              return JSON.parse(html.slice(start, k + 1));
+            } catch {
+              return null;
+            }
+          }
+        }
+      }
+      return null;
+    }
 
-    const seen = new Set();
-    const orderedUrls = [];
-    for (const img of stageImgs) {
-      const u = bestFromImg(img);
-      if (!u || !/royaldutchmint\.com|\/media\//i.test(u)) continue;
-      const k = basenameKey(u);
-      if (!k || seen.has(k)) continue;
-      seen.add(k);
-      orderedUrls.push(u);
+    function framesFromMagentoGallery() {
+      const scripts = document.querySelectorAll('script[type="text/x-magento-init"]');
+      for (const sc of scripts) {
+        const text = sc.textContent || "";
+        const gi = text.indexOf('"mage/gallery/gallery"');
+        if (gi === -1) continue;
+        const arr = parseGalleryJsonArray(text.slice(gi));
+        if (!Array.isArray(arr) || !arr.length) continue;
+        const seen = new Set();
+        const orderedFrames = [];
+        for (const item of arr) {
+          const u = item.full || item.img || item.thumb || null;
+          const abs = absUrl(u);
+          if (!abs || !/royaldutchmint\.com|\/media\//i.test(abs)) continue;
+          const k = basenameKey(abs);
+          if (!k || seen.has(k)) continue;
+          seen.add(k);
+          const cap = item.caption ? String(item.caption) : "";
+          orderedFrames.push({ url: abs, hint: cap.trim() });
+        }
+        if (orderedFrames.length) return orderedFrames;
+      }
+      return null;
+    }
+
+    let orderedFrames = framesFromMagentoGallery();
+
+    if (!orderedFrames || !orderedFrames.length) {
+      const seen = new Set();
+      orderedFrames = [];
+      const stageImgs = Array.from(
+        document.querySelectorAll(
+          ".fotorama__stage .fotorama__stage__frame img.fotorama__img, .fotorama__stage .fotorama__stage__frame img"
+        )
+      );
+      for (const img of stageImgs) {
+        const u = bestFromImg(img);
+        if (!u || !/royaldutchmint\.com|\/media\//i.test(u)) continue;
+        const k = basenameKey(u);
+        if (!k || seen.has(k)) continue;
+        seen.add(k);
+        const alt = img.getAttribute("alt") || "";
+        const tit = img.getAttribute("title") || "";
+        orderedFrames.push({ url: u, hint: `${alt} ${tit}`.trim() });
+      }
     }
 
     return {
@@ -184,9 +305,12 @@ async function parseProduct(page, sourceUrl) {
       description: desc,
       specsText,
       specs,
-      orderedUrls,
+      orderedFrames,
     };
   });
+
+  const orderedFrames = parsed.orderedFrames || [];
+  const orderedUrls = orderedFrames.map((f) => f.url);
 
   return {
     source_url: sourceUrl,
@@ -194,7 +318,8 @@ async function parseProduct(page, sourceUrl) {
     price_display: parsed.price_display,
     description: parsed.description,
     specs: Object.keys(parsed.specs || {}).length ? parsed.specs : parseSpecPairs(parsed.specsText),
-    orderedUrls: parsed.orderedUrls || [],
+    orderedUrls,
+    orderedFrames,
     parsedAt: new Date().toISOString(),
   };
 }
@@ -214,23 +339,26 @@ async function saveParsed(parsed) {
   }
 
   const byRole = {};
-  const urls = parsed.orderedUrls || [];
-  const n = Math.min(urls.length, ROLE_SEQUENCE.length);
+  const frames =
+    Array.isArray(parsed.orderedFrames) && parsed.orderedFrames.length
+      ? parsed.orderedFrames
+      : (parsed.orderedUrls || []).map((url) => ({ url, hint: "" }));
 
-  for (let i = 0; i < n; i++) {
-    const role = ROLE_SEQUENCE[i];
-    const u = urls[i];
-    const tmp = path.join(os.tmpdir(), `rdm-${slug}-${role}-${Date.now()}`);
-    if (!(await download(u, tmp))) continue;
-    let buf;
-    try {
-      buf = fs.readFileSync(tmp);
-    } catch (_) {
-      continue;
-    }
-    try {
-      fs.unlinkSync(tmp);
-    } catch (_) {}
+  const maxSlots = ROLE_SEQUENCE.length;
+  const buffers = [];
+  for (let i = 0; i < Math.min(maxSlots, frames.length); i++) {
+    buffers.push(await downloadToBuffer(frames[i].url));
+  }
+
+  const { layout, roles } = await getRoleSequence(slug, frames, buffers);
+  if (process.env.RDM_LAYOUT_LOG === "1") {
+    console.error(`[rdm-layout] ${slug} → ${layout}`);
+  }
+
+  for (let i = 0; i < Math.min(roles.length, frames.length); i++) {
+    const buf = buffers[i];
+    if (!buf || !buf.length) continue;
+    const role = roles[i];
     try {
       byRole[role] = await saveBufferAsForeignUnified(buf, slug, role);
     } catch (_) {}

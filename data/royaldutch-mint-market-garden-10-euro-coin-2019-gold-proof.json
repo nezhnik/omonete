@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/market-garden-10-euro-coin-2019-gold-proof",
+    "slug": "market-garden-10-euro-coin-2019-gold-proof",
     "title": "Market Garden 10 Euro Coin 2019 Gold Proof",
     "price_display": "€389.95",
     "description": "It has been 75 years since Operation Market Garden took place, the largest airborne operation in history. The Royal Dutch Mint honours this anniversary with an official commemorative coin: The Market Garden 10 Euro Coin. Operation Market Garden Operation Market Garden took place in September 1944 and consisted of two parts: the airborne operation (Market) and the ground offensive from Belgium (Garden). It was a bold plan by British Field Marshal Bernard Montgomery, which was executed by 41,628 people from the English, American and Polish airborne troops and three divisions of ground troops. Read more about Operation Market Garden here. Inspiration of the designer Tim Breukers is the designer of the Market Garden 10 Euro Coin. He was inspired by the Airborne Museum Hartenstein in Oosterbeek, where embroidered badges and emblems caught his attention. He applied the various stitches to the design of the commemorative coin. The parachute on the coin depicts the largest airborne operation ever on Dutch territory. Also featured, is the bridge over the Rhine near Arnhem, to give the partial failure of the operation its place on the coin. The Allies failed to capture the bridge over the Rhine near Arnhem. Read more about the design from the designer himself on this page: “From the designer”. Watch our documentary Les Fuller was with the British 3rd Battalion Parachute Regiment and was one of the parachutists who jumped during Operation Market Garden. After a good landing, he faced many obstacles, which ultimately resulted in him losing his right arm and being held captive in a prison camp. The Royal Dutch Mint has produced a short documentary in which 98 year old Fuller tells his impressive story.",
@@ -15,20 +16,16 @@
       "Mintage": "1,000",
       "Edge": "serrated"
     },
-    "imageUrls": [
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-obv.webp",
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-rev.webp",
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-pack.webp",
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-box.webp",
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-cert.webp",
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-blister-obv.webp",
-      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-blister-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:18:05.616Z",
-    "slug": "market-garden-10-euro-coin-2019-gold-proof",
+    "parsedAt": "2026-04-05T09:22:03.625Z",
     "image_obverse": "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-obv.webp",
     "image_reverse": "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-rev.webp",
     "image_packaging": "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-pack.webp",
-    "image_box": "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-box.webp"
+    "image_box": null,
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-obv.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-rev.webp",
+      "/image/coins/foreign/market-garden-10-euro-coin-2019-gold-proof-pack.webp"
+    ]
   }
 }

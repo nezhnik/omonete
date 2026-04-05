@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition",
+    "slug": "official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition",
     "title": "Official Restrike: Ducaton 2025 Gold 2 Ounce – Royal Delft Edition",
     "price_display": "€7,999.00",
     "description": "#html-body [data-pb-style=FLAM0Y7]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}It’s back: the beloved Ducaton! And as you’re used to, the Ducaton is available in both Silver and Gold: this Golden restrike of the 1734 Ducaton is available in limited mintage and comes with a Certificate of Authenticity. The 2024 and 2023 issues were completely sold out: make sure you don’t miss it this year! Ducaton from Overijssel, 1734 The Ducaton that originates from the Dutch province of Overijssel has an interesting story. VOC ship The Flying Deer (also known as The Flying Heart), leaves the Vlissingen port (in the Dutch province of Zeeland) in 1735, with destination Batavia. About 18 kilometers offshore, things went terribly wrong. The ship hit a sandbank and sank: all 256 people on board died. The wreck of the ship however, wasn’t discovered until 1981. With this discovery, some interesting finds were made: one of these was a money chest, which also contained this Ducaton. This coin from 1734 is the model for our annual restrike of the Ducaton 2025. Special coin holder The Ducaton coin holder for your golden coin always has one certainty: this is hand-painted by Royal Delft and always unique. This new coin holder fits perfectly in your collection of Ducatons. On this particular issue, you will find a painted image of the most famous lighthouse of Zeeland: Westerlicht. The image is a nice link to the special story of the Ducaton that was found in the ship leaving the Zeeland port. Order your Golden restrike of the Ducaton today! Specifications Royal Delft coin holder Dimensions Diameter 110 mm diameter, height 40 mm Weight 280 g Material Earthenware Design Hand-painted Year of issue 2025",
@@ -14,18 +15,16 @@
       "Mintage": "25",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:26:49.782Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-obv.webp",
       "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-box.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:21:46.212Z",
-    "slug": "official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-ducaton-2025-gold-2-ounce-royal-delft-edition-pack.webp"
+    ]
   }
 }

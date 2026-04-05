@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-scheepjesschelling-2021-silver-2-ounce",
+    "slug": "official-restrike-scheepjesschelling-2021-silver-2-ounce",
     "title": "Official Restrike: “Scheepjesschelling” 2021 Silver 2 Ounce",
     "price_display": "€199.95",
     "description": "The Royal Dutch Mint proudly presents the Official Restrike of the original Utrecht “Scheepjesschelling” from 1786! The silver restrike is available in 1 and 2 troy ounce(s)! This system of units of mass is primarily used in the precious metals industry. It is internationally used and loved, and is therefore more than suitable for this former trade coin! Piedfort The silver restrike of the “Scheepjesschelling” is available in double thickness, also known as “Piedfort”. Traditionally, Piedfort coins were used as a way of showing wealth and power. In the sixteenth and seventeenth century, rulers across Europe started the tradition of giving “prestige pieces” to members of their court. Nowadays, Piedfort coins are real collector’s items. The silver restrike in Piedfort thickness is limited to 200 pieces worldwide, so don’t miss your chance to add this coin in double thickness to your collection! Design The obverse of the Scheepjesschelling depicts a warship with a flag on the stern. The inscription reads “CONCORDIA RES PARVAE CRESCUNT” which may be translated as Unity makes Strength. The reverse shows the province weapon of Utrecht and the inscription “MO:NO:ARG:ORDIN:TRAIECT”: MONETA NOVA ARGENTEA ORDINUM TRAIECTUM. It means New silver coin of Utrecht. The silver restrike of the Scheepjesschelling comes in luxury packaging, including a numbered Certificate of Authenticity.",
@@ -14,20 +15,16 @@
       "Mintage": "200",
       "Edge": "Smooth"
     },
-    "imageUrls": [
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-obv.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-rev.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-pack.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-box.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-cert.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-blister-obv.webp",
-      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-blister-rev.webp"
-    ],
-    "parsedAt": "2026-03-31T20:28:41.352Z",
-    "slug": "official-restrike-scheepjesschelling-2021-silver-2-ounce",
+    "parsedAt": "2026-04-05T09:36:39.339Z",
     "image_obverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-obv.webp",
     "image_reverse": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-rev.webp",
     "image_packaging": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-pack.webp",
-    "image_box": "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-box.webp"
+    "image_box": null,
+    "image_certificate": null,
+    "imageUrls": [
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-obv.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-rev.webp",
+      "/image/coins/foreign/official-restrike-scheepjesschelling-2021-silver-2-ounce-pack.webp"
+    ]
   }
 }

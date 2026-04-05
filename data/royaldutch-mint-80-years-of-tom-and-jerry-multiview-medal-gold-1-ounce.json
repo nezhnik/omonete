@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce",
+    "slug": "80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce",
     "title": "80 Years of Tom and Jerry Multiview Medal Gold 1 Ounce",
     "price_display": "€2,699.00",
     "description": "The most famous cat and mouse are without a doubt Tom and Jerry. In 2020, they celebrate their 80th birthday. In 1940, the first cartoon with the comical duo was aired on American television. The short clips show the frustrating attempts of Tom trying to catch Jerry. A true cat-and-mouse game in which the music and sound effects contribute to the humor and action. Together Tom and Jerry even won seven Academy Awards for Best Animated Short Film. You cannot have one without the other. That is why the Royal Dutch Mint brings them together on this comical issue. The film in honour of their 80th birthday is expected in March 2021. Obverse with two individual images! The exclusive and very special issue in gold depicts the mischievous two. Innovative multiview technique makes it possible that the obverse depicts not one, but two individual images which are only visible from a certain angle. Tilt the issue to one side, and you will see Tom, and tilt it to the other side to reveal Jerry! The extra large diameter of the issue in 1 ounce gold shows the multiview technique even better. The reverse depicts the Tom and Jerry anniversary logo. The gold issue in honour of Tom and Jerry’s 80th birthday is limited to 80 pieces and comes with a numbered Certificate of Authenticity.",
@@ -14,18 +15,16 @@
       "Mintage": "80",
       "Edge": "serrated"
     },
+    "parsedAt": "2026-04-05T09:00:53.118Z",
+    "image_obverse": "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-obv.webp",
+    "image_reverse": "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-rev.webp",
+    "image_packaging": "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-obv.webp",
       "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-rev.webp",
-      "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-box.webp",
-      "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-pack.webp",
-      "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-cert.webp",
-      "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-img-06.webp",
-      "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:08:10.993Z",
-    "slug": "80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce",
-    "image_obverse": "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-obv.webp",
-    "image_reverse": "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-rev.webp"
+      "/image/coins/foreign/80-years-of-tom-and-jerry-multiview-medal-gold-1-ounce-pack.webp"
+    ]
   }
 }

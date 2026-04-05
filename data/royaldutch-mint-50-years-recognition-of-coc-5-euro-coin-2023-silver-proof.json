@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof",
+    "slug": "50-years-recognition-of-coc-5-euro-coin-2023-silver-proof",
     "title": "50 years recognition of COC 5 Euro Coin 2023 Silver Proof",
     "price_display": "€49.95",
     "description": "In 1964, something happens on Dutch National television that has never happened before: chairman of the COC and gay man Benno Premsela is shown openly on screen. That is unheard of in those times, because until this moment, lesbian, gay and bisexual people were only shown on screen from the back or with a bar in front of their eyes. This very bold move by Premsela is one of the examples of a shout that is becoming louder and louder. A shout from the organization COC The Netherlands for more emancipation and social acceptation of LGBTI+ people. A little less than 10 years later, on September 19th 1973, the COC receives their long-awaited royal approval. The Royal Dutch Mint strikes an official commemorative coin: the 50 years recognition of COC 5 Euro coin in Silver Proof. The coin is commissioned by the Dutch Ministry of Finance. 50 years recognition COC COC (Directly translated to Culture and Relaxation Centre) The Netherlands is founded as the Shakespeare Club on December 7th 1946 by the reader’s club from magazine Levensrecht (Right to Live). This makes the COC the oldest, still existing LHBTI+ movement in the world. The organization uses the name COC since 1949 and is active in advocacy, equal rights and social acceptance of lesbian, gay, bi+, transgender and intersex people (LGBTI+). Although the COC has already submitted the application for legal personality several times, it is rejected twice due to resistance from political The Hague. A third attempt is successful: on September 19th 1973, COC receives recognition, also known as ‘Royal Approval’ by the Dutch government. This recognition means a lot: it stands for the government’s commitment to equal treatment for everyone. Milestones and challenges In the 50’s and 60’s, there was a great taboo on homosexuality. The arrival of the commemorative coin for COC in 2023 is the very opposite of a taboo. It shows the progress the organization has made and the steps that have been taken in the right direction. The connecting, pioneering and representative role that the COC has, created many great initiatives, such as Purple Friday for acceptance at school, a legal ban on discrimination and the anchoring of LGBTI+ rights in de Constitution. COC is also internationally active. This way, LGBTI+ organizations in more than 35 countries receive the support they need. 50 years after receiving its own recognition, the COC is able to help organizations in other countries with the same subject. However, there is still a long way to go. The Netherlands ranks the 14th place of countries where everything is well organized for LGBTI+ people. There is still physical and verbal violence and society still shows a lot of resistance and misunderstanding. COC remains tirelessly committed to a diverse and inclusive society. The design The 50 years recognition of COC 5 Euro coin is designed by Coen van Ham. The designer reflects on the development the COC has gone through during the recognition in 1973. The coin was designed as swirling confetti: the different kinds of confetti represent the milestones that the COC has achieved over the years. The obverse shows the portrait of King Willem-Alexander, build from swirling confetti. Around the portrait, the text “Willem-Alexander, King of the Netherlands”, is written, in a specially designed font. The reverse contains the COC logo in the middle. Around the logo are several symbols. These represent the milestones that COC has achieved, for example the opening of civil marriage to same-sex couples in 2001 (the two rings) and the obligation of LGBTI+ education in schools in 2012 (the booklet).",
@@ -15,18 +16,16 @@
       "Mintage": "3,500",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:57:08.677Z",
+    "image_obverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-obv.webp",
       "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-rev.webp",
-      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-box.webp",
-      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pack.webp",
-      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-cert.webp",
-      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-img-06.webp",
-      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:06:10.413Z",
-    "slug": "50-years-recognition-of-coc-5-euro-coin-2023-silver-proof",
-    "image_obverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-rev.webp"
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pack.webp"
+    ]
   }
 }

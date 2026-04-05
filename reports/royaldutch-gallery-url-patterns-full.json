@@ -1,0 +1,639 @@
+{
+  "generatedAt": "2026-04-04T21:20:58.276Z",
+  "filesScanned": 402,
+  "galleryOk": 402,
+  "fetchFail": 0,
+  "noGalleryOrEmpty": 0,
+  "note": "vz_-_ / kz_*: часто voorzijde/keerzijde монеты, но kz_-_zilveren_dukaat_* — короб/бренд серии, не реверс. omdoos*, leeuwendaalder_*_omdoos* — короб. Имена вида 64hex.jpeg — без семантики в URL.",
+  "hashVersusSemanticFirstSlide": {
+    "slot0_hashLikeBasename": 272,
+    "slot0_descriptiveBasename": 130
+  },
+  "slotTopBasenames": {
+    "0": {
+      "cd1e12f705c2cb5d8489a5ea0a805c80035d457468ea43078c4a819d4c3fdb8c.jpeg": 1,
+      "5aec10f4ebd8de13d69628f94c72d5d96d868625d285fe7f2e81b1f46ac5d40e.jpeg": 1,
+      "f883751c8690b3b2ca1d6f324d35b266ceb6529db04efe2c24251428d788d6ea.jpeg": 1,
+      "82e65b1d91976e07f7cffae274a61e60bc35b4f7c446796e03770cae82180595.jpeg": 1,
+      "083fd4f2b1e0e5a9c8a8709875265da570bafc76f3b18a578298122f6bc97e00.jpeg": 1,
+      "ab3b61b82113ebc504d7c1a699227e6f63a08a405e8c45bc6c37ddb2a7d43d36.jpeg": 1,
+      "f0b31e7a070d477b7e39d46578efdff2601a2b85fb4e41f043e98b5f188ca94f.jpeg": 1,
+      "2f30fa56381b0565ffb81cf498ae87ceb293373afcf380eb025b956b5314bfa9.jpeg": 1,
+      "37f05a88de42274c4df2edb41e84b46fc8df0003f0fc8d339064c8a0237c4962.jpeg": 1,
+      "b34bc954f4ffe71ea9c976d9803c2783a0ca052768e372f91dbe5d2809949954.jpeg": 1,
+      "8114271e24eb981f067c39ec07cfcbb5a7c26528b2f490e0bb3cbda794c7b5d5.jpeg": 1,
+      "a50416d116e8d5a954e85b707d7e184069e10345b6b9114eb6d366e99c30fa01.jpeg": 1
+    },
+    "1": {
+      "900fcb091d0f253b4573340b1ce2718809782278413fd4f021819403334b32f1.jpeg": 1,
+      "f91018257ca44e07024e66ad73bef2c4bf8f4727ce843a544f41c532df89ed3d.jpeg": 1,
+      "4dfb4abf78ab3f2f2c7a6e465065f99f5e3c154b26e6ce2b64885ecbd4c62504.jpeg": 1,
+      "76e6f845430d697c880caf4a677e3850b9ce93241441f61cf812fc9cd69324a1.jpeg": 1,
+      "873590270d8d7b26a1f05dbd9338d74be26fca79fdf5a8a32968c3e6c694ed73.jpeg": 1,
+      "f4b24cdaede2ef62465e19ab45f77af99048e54133965c2aa8c92d7ba8ed9480.jpeg": 1,
+      "073879bb2bba20664adf097d06ad8093f14bdad03b334d1208b41cd8c5e43f4a.jpeg": 1,
+      "07bd6a34cc3a3fc2d46f80e4ddf8428bd10adfa4b51f3cf65fdab7e4d8f106f2.jpeg": 1,
+      "2d46624141ea0cbc995db82f751c82654db3202629090cf58b184f47a7d7f4d6.jpeg": 1,
+      "cb2631a97061e2bf079bce65ea9a13d2412e3b149ebc5370f5c9954fa3fcd8f5.jpeg": 1,
+      "5dd75a76e2b32c0b1ffae45783ea5273c64d737830a376604df4d2d43828b118.jpeg": 1,
+      "0746d12cac0b821cc2afcd8f1d0c76d4022a9c3433d10fc27afc22e77ee8a5ec.jpeg": 1
+    },
+    "2": {
+      "887d39afcbfa3977087d52c0258d0e76562369cdfe9ea8ce1b93dcd1b246a913.jpeg": 1,
+      "100_jaar_tt_assen_5_euro_goud_vz.png": 1,
+      "100_jaar_tt_assen_5_euro_kz_1_1.png": 1,
+      "tt_assen_-_edu_-_kz_-_coincard.png": 1,
+      "100_jaar_tt_assen_5_euro_zilver_kz.png": 1,
+      "100_jaar_tt_assen_5_euro_kz_1.png": 1,
+      "kz_-_rijwielbelastingplaatje_-_zilver.png": 1,
+      "7c2b155f80fbf31ff28c989036ad218c7f972c4b5107a5a0b92bec8e569fc425.jpeg": 1,
+      "vz-25-euro-blake_mortimer-3d-goud_1.jpg": 1,
+      "59897cda49f266a980199ee7f66b262e020d9bc5c9b76dd26a24f4b0ec984632.jpeg": 1,
+      "d77ddeb34208c40696d1d521bdda2551f24c5bb32d639e421633e41275cad00f.jpeg": 1,
+      "113ad0cd300353cd1d14b482a62425ec779c2b325525cc2c6b25f17938f7b9aa.jpeg": 1
+    },
+    "3": {
+      "dfb8f49b8493623275a0ceb3448e292d1552431dddbd143e62d9464946e77d2f.jpeg": 1,
+      "100_jaar_tt_assen_5_euro_goud_vz-kz.png": 1,
+      "100_jaar_tt_assen_5_euro_vz_1_1.png": 1,
+      "100_jaar_tt_assen_5_euro_vz_1_2.png": 1,
+      "100_jaar_tt_assen_5_euro_zilver_vz.png": 1,
+      "100_jaar_tt_assen_5_euro_vz_1.png": 1,
+      "munthouder_kz_-_rijwielbelasting_-_2024.png": 1,
+      "kz-25-euro-blake_mortimer-3d-goud_1.jpg": 1,
+      "5a60342e57a00cd400dd6e919816ec60cc74ec1a163bc8d8177080191a07c29d.jpeg": 1,
+      "edc1f0459fe3924264667901e253329bc3ff5f151a4df408254ea5199a2a5170.jpeg": 1,
+      "3afe9b79c6b5c3b135d8c0d33c05682c2ec837f6c11f6bc1d44cbe02159fb3f6.jpeg": 1,
+      "1dd2129807bf4a2afe7dccb68cccb667bd8c4f8c65bbca803b17581c10dde117.jpeg": 1
+    },
+    "4": {
+      "c94f570b125b9924bc97733da7c826acbf6e53cb4173ba281fd8d1484428b6d7.jpeg": 1,
+      "cassette_-_tt_assen_-_dicht.png": 1,
+      "tt_assen_-_bu_-_vz-kz_-_coincard.png": 1,
+      "100_jaar_tt_assen_5_euro_kz_1_2.png": 1,
+      "100_jaar_tt_assen_5_euro_zilver_vz-kz.png": 1,
+      "tt_assen_-_unc_-_vz-kz_-_coincard_1.png": 1,
+      "munthouder_vz_-_rijwielbelasting_-_2024.png": 1,
+      "vz-en-kz_blake-en-mortimer_goud_1.jpg": 1,
+      "c430a6fb85e3b7799ee8dbf25a7000a32bf4fcade87d2f0142caf2b3d09d38ff.jpeg": 1,
+      "73a581ca76f4f44684fd8437df9e1a8f429d3b7d38b7718601416dd0fad6853c.jpeg": 1,
+      "35488a98d581af20bc24ee2ad67920f26463108d7f4b02cead4379fcc3f8bb96.jpeg": 1,
+      "da39a0cc1d2983a53e131f9ed10a54a5f6d06eaa4a08e7e7fa2a897e094be3fc.jpeg": 1
+    }
+  },
+  "firstFilenameTokenHistogram": {
+    "1": 3,
+    "slab": 48,
+    "munthouder": 18,
+    "vz": 10,
+    "cassette": 6,
+    "tt": 4,
+    "hollandse": 4,
+    "doosje": 3,
+    "aruba": 3,
+    "fanny": 3,
+    "jaap": 3,
+    "leeuwendaalder": 3,
+    "warner": 3,
+    "schokland": 3,
+    "omdoos": 2,
+    "amsterdam": 2,
+    "papegaai": 2,
+    "blikje": 2,
+    "scheepjesschelling": 2,
+    "cd1e12f705c2cb5d8489a5ea0a805c80035d457468ea43078c4a819d4c3fdb8c.jpeg": 1,
+    "5aec10f4ebd8de13d69628f94c72d5d96d868625d285fe7f2e81b1f46ac5d40e.jpeg": 1,
+    "f883751c8690b3b2ca1d6f324d35b266ceb6529db04efe2c24251428d788d6ea.jpeg": 1,
+    "82e65b1d91976e07f7cffae274a61e60bc35b4f7c446796e03770cae82180595.jpeg": 1,
+    "083fd4f2b1e0e5a9c8a8709875265da570bafc76f3b18a578298122f6bc97e00.jpeg": 1,
+    "ab3b61b82113ebc504d7c1a699227e6f63a08a405e8c45bc6c37ddb2a7d43d36.jpeg": 1,
+    "f0b31e7a070d477b7e39d46578efdff2601a2b85fb4e41f043e98b5f188ca94f.jpeg": 1,
+    "2f30fa56381b0565ffb81cf498ae87ceb293373afcf380eb025b956b5314bfa9.jpeg": 1,
+    "37f05a88de42274c4df2edb41e84b46fc8df0003f0fc8d339064c8a0237c4962.jpeg": 1,
+    "b34bc954f4ffe71ea9c976d9803c2783a0ca052768e372f91dbe5d2809949954.jpeg": 1,
+    "8114271e24eb981f067c39ec07cfcbb5a7c26528b2f490e0bb3cbda794c7b5d5.jpeg": 1
+  },
+  "prefixKzCountBySlot012": {
+    "0": 0,
+    "1": 11,
+    "2": 23
+  },
+  "prefixVzCountBySlot012": {
+    "0": 10,
+    "1": 19,
+    "2": 24
+  },
+  "omdoosSubstringCountBySlot012": {
+    "0": 3,
+    "1": 0,
+    "2": 0
+  },
+  "slot1isKzAndFilenameContainsDukaatSeries": {
+    "yes": 6,
+    "no": 5
+  },
+  "sampleProducts": [
+    {
+      "slug": "0119257",
+      "source_url": "https://www.royaldutchmint.com/0119257",
+      "slides": [
+        {
+          "i": 0,
+          "base": "cd1e12f705c2cb5d8489a5ea0a805c80035d457468ea43078c4a819d4c3fdb8c.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "900fcb091d0f253b4573340b1ce2718809782278413fd4f021819403334b32f1.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "1-cent-1819-1837-willem-i-fr",
+      "source_url": "https://www.royaldutchmint.com/1-cent-1819-1837-willem-i-fr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "5aec10f4ebd8de13d69628f94c72d5d96d868625d285fe7f2e81b1f46ac5d40e.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "f91018257ca44e07024e66ad73bef2c4bf8f4727ce843a544f41c532df89ed3d.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "1-cent-1860-1873-willem-iii-zfr",
+      "source_url": "https://www.royaldutchmint.com/1-cent-1860-1873-willem-iii-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "f883751c8690b3b2ca1d6f324d35b266ceb6529db04efe2c24251428d788d6ea.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "4dfb4abf78ab3f2f2c7a6e465065f99f5e3c154b26e6ce2b64885ecbd4c62504.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1848-1849-willem-ii-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1848-1849-willem-ii-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "82e65b1d91976e07f7cffae274a61e60bc35b4f7c446796e03770cae82180595.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "76e6f845430d697c880caf4a677e3850b9ce93241441f61cf812fc9cd69324a1.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1849-1874-willem-iii-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1849-1874-willem-iii-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "083fd4f2b1e0e5a9c8a8709875265da570bafc76f3b18a578298122f6bc97e00.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "873590270d8d7b26a1f05dbd9338d74be26fca79fdf5a8a32968c3e6c694ed73.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1876-1885-willem-iii-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1876-1885-willem-iii-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "ab3b61b82113ebc504d7c1a699227e6f63a08a405e8c45bc6c37ddb2a7d43d36.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "f4b24cdaede2ef62465e19ab45f77af99048e54133965c2aa8c92d7ba8ed9480.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1887-willem-iii-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1887-willem-iii-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "f0b31e7a070d477b7e39d46578efdff2601a2b85fb4e41f043e98b5f188ca94f.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "073879bb2bba20664adf097d06ad8093f14bdad03b334d1208b41cd8c5e43f4a.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1889-1890-willem-iii-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1889-1890-willem-iii-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "2f30fa56381b0565ffb81cf498ae87ceb293373afcf380eb025b956b5314bfa9.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "07bd6a34cc3a3fc2d46f80e4ddf8428bd10adfa4b51f3cf65fdab7e4d8f106f2.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1892-1897-wilhelmina-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1892-1897-wilhelmina-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "37f05a88de42274c4df2edb41e84b46fc8df0003f0fc8d339064c8a0237c4962.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "2d46624141ea0cbc995db82f751c82654db3202629090cf58b184f47a7d7f4d6.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1898-1906-wilhelmina-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1898-1906-wilhelmina-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "b34bc954f4ffe71ea9c976d9803c2783a0ca052768e372f91dbe5d2809949954.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "cb2631a97061e2bf079bce65ea9a13d2412e3b149ebc5370f5c9954fa3fcd8f5.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1910-1925-wilhelmina-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1910-1925-wilhelmina-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "8114271e24eb981f067c39ec07cfcbb5a7c26528b2f490e0bb3cbda794c7b5d5.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "5dd75a76e2b32c0b1ffae45783ea5273c64d737830a376604df4d2d43828b118.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1943-1944p-wilhelmina-pr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1943-1944p-wilhelmina-pr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "a50416d116e8d5a954e85b707d7e184069e10345b6b9114eb6d366e99c30fa01.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "0746d12cac0b821cc2afcd8f1d0c76d4022a9c3433d10fc27afc22e77ee8a5ec.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-cent-1944s-wilhelmina-zfr",
+      "source_url": "https://www.royaldutchmint.com/10-cent-1944s-wilhelmina-zfr",
+      "slides": [
+        {
+          "i": 0,
+          "base": "ee89f36be04ece1809acedc2f6ee17d28b3f15e9d7da650bd657c33aee187a33.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "ea6174b06f6be9d60966866cad172974f0e16cc43863893f5fb7a9310a944c52.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-euro-2002-huwelijksmunt-unc-coincard",
+      "source_url": "https://www.royaldutchmint.com/10-euro-2002-huwelijksmunt-unc-coincard",
+      "slides": [
+        {
+          "i": 0,
+          "base": "6cac8df8862947d0a340e5791a96ac558edb11bf5f9efd06bbb7c2631e1461f0.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "3a399b77262234175c3c2a552b18fe7a8e73750a5bc80a28d6fea62e8e2a48ae.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-euro-2004-geboortemunt-unc-coincard",
+      "source_url": "https://www.royaldutchmint.com/10-euro-2004-geboortemunt-unc-coincard",
+      "slides": [
+        {
+          "i": 0,
+          "base": "f049267a0a96824eb7b8fe84b50a4920f1baa6f4db92b6443a09e354a300a93a.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-euro-2005-regeringsjubileum-beatrix-unc-coincard",
+      "source_url": "https://www.royaldutchmint.com/10-euro-2005-regeringsjubileum-beatrix-unc-coincard",
+      "slides": [
+        {
+          "i": 0,
+          "base": "3cd83e320573b492c5c1abb680af5a62c2ebc6e7c4b84a666f6a250ab865b7a8.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-euro-2013-koningsmunt-unc-coincard",
+      "source_url": "https://www.royaldutchmint.com/10-euro-2013-koningsmunt-unc-coincard",
+      "slides": [
+        {
+          "i": 0,
+          "base": "cb32550b59bcfcb6bdb9e696cfeaf7efaca573cc393dae6a0e2a92d8a5eb1ad3.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "9b493d9870b5b5e0d6683f8fdd5344484223274691932500d394479023b573a8.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-euro-2017-willem-alexander-50-jaar-unc-coincard",
+      "source_url": "https://www.royaldutchmint.com/10-euro-2017-willem-alexander-50-jaar-unc-coincard",
+      "slides": [
+        {
+          "i": 0,
+          "base": "eb1c7acf171d7bad8da7766ee6d57e3f47785fb1c69b08041d9895598607ebea.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "540022066092b758e9118986898de99f4ea57e00722637850cf463b4f5813c8e.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-gulden-1997-marshall-plan-proof",
+      "source_url": "https://www.royaldutchmint.com/10-gulden-1997-marshall-plan-proof",
+      "slides": [
+        {
+          "i": 0,
+          "base": "f30a555190d53da8c4a330eb60b28d1c33598d4b24087a56f8dd15f808f3cd37.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "002e3522f894fd0ec0ad9fa1df26e97be9c1bde02a8a361271a7d4fab171d74c.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "10-years-of-king-s-day-silver-1-ounce",
+      "source_url": "https://www.royaldutchmint.com/10-years-of-king-s-day-silver-1-ounce",
+      "slides": [
+        {
+          "i": 0,
+          "base": "406aadd4b2be45b713cf75f55e8c98abebe0664c7cf0f086631e4e8208899e09.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "211fe5773f0f65461832da82aca0dbb2cbafe3a6360123f07e31854c740f4224.jpeg",
+          "tags": []
+        },
+        {
+          "i": 2,
+          "base": "887d39afcbfa3977087d52c0258d0e76562369cdfe9ea8ce1b93dcd1b246a913.jpeg",
+          "tags": []
+        },
+        {
+          "i": 3,
+          "base": "dfb8f49b8493623275a0ceb3448e292d1552431dddbd143e62d9464946e77d2f.jpeg",
+          "tags": []
+        },
+        {
+          "i": 4,
+          "base": "c94f570b125b9924bc97733da7c826acbf6e53cb4173ba281fd8d1484428b6d7.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "100-frank-1948-1950-54-fr-vier-koningen",
+      "source_url": "https://www.royaldutchmint.com/100-frank-1948-1950-54-fr-vier-koningen",
+      "slides": [
+        {
+          "i": 0,
+          "base": "6d8fc69c9b9e9f46471fa4e594870f0093cf94b7ea87da4a3650f8e7ba050a7d.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "da9d52fe28dd60469c78399dfeaef97c081140f7cc604e8ca13b956b046441cd.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "100-frank-1948-1951-nl-vier-koningen",
+      "source_url": "https://www.royaldutchmint.com/100-frank-1948-1951-nl-vier-koningen",
+      "slides": [
+        {
+          "i": 0,
+          "base": "6b408461572fcd0544ce3904b1f4976d16e204696b69111a46e0d9541209d249.jpeg",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "a25f497e98c85527f9a682ac5add7ba0b27b8e1028c5477fcfd1525b07300a7a.jpeg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "100-years-tt-assen-10-euro-coin-2025-gold-proof",
+      "source_url": "https://www.royaldutchmint.com/100-years-tt-assen-10-euro-coin-2025-gold-proof",
+      "slides": [
+        {
+          "i": 0,
+          "base": "cassette_-_tt_assen_-_10_euro_-_goud.png",
+          "tags": []
+        },
+        {
+          "i": 1,
+          "base": "100_jaar_tt_assen_5_euro_goud_kz.png",
+          "tags": []
+        },
+        {
+          "i": 2,
+          "base": "100_jaar_tt_assen_5_euro_goud_vz.png",
+          "tags": []
+        },
+        {
+          "i": 3,
+          "base": "100_jaar_tt_assen_5_euro_goud_vz-kz.png",
+          "tags": [
+            "pair"
+          ]
+        },
+        {
+          "i": 4,
+          "base": "cassette_-_tt_assen_-_dicht.png",
+          "tags": []
+        },
+        {
+          "i": 5,
+          "base": "100_jaar_tt_assen_10_euro_goud_vz_met_uitleg.png",
+          "tags": []
+        },
+        {
+          "i": 6,
+          "base": "100_jaar_tt_assen_10_euro_goud_kz_met_uitleg.png",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard",
+      "source_url": "https://www.royaldutchmint.com/100-years-tt-assen-5-euro-coin-2025-bu-quality-in-coincard",
+      "slides": [
+        {
+          "i": 0,
+          "base": "tt_assen_-_bu_-_vz_-_coincard_icon.png",
+          "tags": [
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 1,
+          "base": "tt_assen_-_bu_-_kz_-_coincard.png",
+          "tags": [
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 2,
+          "base": "100_jaar_tt_assen_5_euro_kz_1_1.png",
+          "tags": []
+        },
+        {
+          "i": 3,
+          "base": "100_jaar_tt_assen_5_euro_vz_1_1.png",
+          "tags": []
+        },
+        {
+          "i": 4,
+          "base": "tt_assen_-_bu_-_vz-kz_-_coincard.png",
+          "tags": [
+            "pair",
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 5,
+          "base": "100_jaar_tt_assen_5_euro_vz-kz_1_1.png",
+          "tags": [
+            "pair"
+          ]
+        },
+        {
+          "i": 6,
+          "base": "100_jaar_tt_assen_5_euro_zilver_vz_met_uitleg_1.png",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "slug": "100-years-tt-assen-5-euro-coin-2025-first-day-issue",
+      "source_url": "https://www.royaldutchmint.com/100-years-tt-assen-5-euro-coin-2025-first-day-issue",
+      "slides": [
+        {
+          "i": 0,
+          "base": "tt_assen_-_edu_-_kz_-_coincard_envelope.png",
+          "tags": [
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 1,
+          "base": "tt_assen_-_edu_-_vz_-_coincard_icon.png",
+          "tags": [
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 2,
+          "base": "tt_assen_-_edu_-_kz_-_coincard.png",
+          "tags": [
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 3,
+          "base": "100_jaar_tt_assen_5_euro_vz_1_2.png",
+          "tags": []
+        },
+        {
+          "i": 4,
+          "base": "100_jaar_tt_assen_5_euro_kz_1_2.png",
+          "tags": []
+        },
+        {
+          "i": 5,
+          "base": "tt_assen_-_edu_-_vz-kz_-_coincard.png",
+          "tags": [
+            "pair",
+            "holder_pack_word"
+          ]
+        },
+        {
+          "i": 6,
+          "base": "100_jaar_tt_assen_5_euro_vz-kz_1_2.png",
+          "tags": [
+            "pair"
+          ]
+        }
+      ]
+    }
+  ]
+}

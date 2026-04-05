@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-lion-dollar-2022-silver-piedfort-edition",
+    "slug": "official-restrike-lion-dollar-2022-silver-piedfort-edition",
     "title": "Official Restrike: Lion Dollar 2022 Silver – Piedfort Edition",
     "price_display": "€299.00",
     "description": "The Lion Dollar is an iconic trade coin that has been part of the annual program of the Royal Dutch Mint since 2017. The Lion Dollar owes its name to the depiction of the Dutch lion on the obverse and was first minted in 1575 by the provinces of the Netherlands. Each province had its own lion and its own mint where these coins were minted. The Lion Dollars were mainly used for maritime trade and quickly became internationally loved trade coins. Extremely Rare Lion Dollar from Nijmegen In recent years, the Royal Dutch Mint has restruck Lion Dollars from the most famous provinces, such as Utrecht, Zeeland, Gelderland, Holland and Overijssel. But did you know that Dutch cities have also minted Lion Dollars in the past? This year we are restriking the rare Lion Dollar from Nijmegen. Coincidentally, this year it has been 330 years since the last Nijmegen Lion Dollar was minted. Authentic copies of these Nijmegen Lion Dollars are extremely rare these days. This restrike will therefore be a valuable addition to your collection! Piedfort The restrikes in Piedfort have the same diameter as the regular editions, but are minted on twice as thick blanks. Traditionally, Piedfort coins were minted to convey prosperity and power. In the sixteenth and seventeenth centuries, rulers gave these prestigious coins to their household as a gift. Today, Piedfort coins are real collector's items. These double-thick editions are extra limited and twice as special. Coin Holder with Leather from Castelijn and Beerens For the coin holder, the Royal Dutch Mint has joined forces with Castelijn en Beerens, producer of luxury leather goods. As makers of wallets, among other things, this company has been a specialist in safe storage of coins for years! Both coins and tanning are age-old crafts, which makes it an extra special collaboration. The luxurious wooden coin holder of the silver Lion Dollars has a cognac-coloured leather at the top. The coin holder includes a numbered Certificate of Authenticity.",
@@ -14,18 +15,16 @@
       "Mintage": "50",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:32:58.117Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-obv.webp",
       "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-box.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:25:55.912Z",
-    "slug": "official-restrike-lion-dollar-2022-silver-piedfort-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-lion-dollar-2022-silver-piedfort-edition-pack.webp"
+    ]
   }
 }

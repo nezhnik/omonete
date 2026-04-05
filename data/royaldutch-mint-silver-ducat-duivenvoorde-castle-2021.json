@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-duivenvoorde-castle-2021",
+    "slug": "silver-ducat-duivenvoorde-castle-2021",
     "title": "Silver Ducat “Duivenvoorde Castle” 2021",
     "price_display": "€49.95",
     "description": "Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. The issue with Duivenvoorde Castle is part of the ongoing series “Dutch castles”. Are you also collecting these silver coins? Part 7: Discover the elegant Duivenvoorde Castle Duivenvoorde Castle, located near The Hague, was built in the 13th century as a defense tower. Remnants of this tower can still be seen in the facade and the front house of the castle. Over the years, the castle's defensive function has virtually disappeared and the building has primarily been given a residential function. Gradually, many halls and wings have been added to the main structure. The castle has always been owned by families: it has never been sold, only acquired by inheritance. As a result, the castle has been home to the Van Wassenaer family (13th-18th century), the Steengracht family (19th century) and finally the Schimmelpenninck Van Der Oye family (20th century). In 1960 the last owner, Ludolphine Henriette Baroness Schimmelpenninck Van Der Oye, placed Duivenvoorde into a foundation. The castle has been open to the public since 1963. Entire rooms remain intact and there are many personal belongings with historical value, making a visit to the castle feel like a journey through time. Knight Godard de Ginkell As written in the Dutch Mint Act, a Silver Ducat must depict a knight in armour with a shield showing the province weapon in front of his left leg. Godard de Ginkell (1644 –1703) puts on the knight’s armour on all Silver Ducats in the series “Dutch Castles”. The historical knight is known in the Netherlands as Godard van Reede, but is named Godard de Ginkell in the United Kingdom thanks to his military earnings there. Discover Godard de Ginkell and other historical knights on our website. Design The obverse of the Silver Ducat “Duivenvoorde Castle” depicts knight Godard de Ginkell in front of the famous castle. The province weapon of Zuid-Holland can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII. HOL MER.”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. “HOL MER.” stands for the province of Zuid-Holland. On the reverse of the Silver Ducat, the National coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Here you can also find the mint mark and the acting privy mark including an *. Are you curious to learn more about the Silver Ducats?",
@@ -14,18 +15,16 @@
       "Mintage": "2,000",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:45:47.915Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-obv.webp",
       "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-rev.webp",
-      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-box.webp",
-      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pack.webp",
-      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-cert.webp",
-      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-img-06.webp",
-      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:33:01.616Z",
-    "slug": "silver-ducat-duivenvoorde-castle-2021",
-    "image_obverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-rev.webp"
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pack.webp"
+    ]
   }
 }

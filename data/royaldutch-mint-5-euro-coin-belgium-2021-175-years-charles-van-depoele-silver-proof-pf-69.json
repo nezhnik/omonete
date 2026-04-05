@@ -1,23 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69",
+    "slug": "5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69",
     "title": "5 euro coin Belgium 2021 ‘175 years Charles Van Depoele’ Silver Proof PF 69",
     "price_display": "€59.95",
     "description": "#html-body [data-pb-style=LO2F8B1]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Writers, scholars or artists... Just about every country has produced important figures. A typical example from Belgium is Charles Van Depoele from Lichtervelde, who emigrated to America in 1869 to make a career in Detroit. In no time, he became a true pioneer of electricity with almost 250 patents to his name. Credit where credit is due! With his 175th birthday just around the corner, the Royal Mint of Belgium is issuing a Silver Proof 5 euro coin to put his merits back in the spotlight. The obverse shows Van Depoele's profile and his most important inventions: the electric arc lamp, the dynamo with carbon brushes and the electric tram. The reverse side shows the usual European style elements, the coin value and the country designation. A luxurious case provides the finishing touch.",
-    "specs": {},
+    "specs": {
+      "Article number": "0121199",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "14.60 g",
+      "Diameter": "30 mm",
+      "Quality": "Proof",
+      "Mintage": "11",
+      "Designer": "Luc Luycx"
+    },
+    "parsedAt": "2026-04-05T08:56:22.965Z",
+    "image_obverse": "/image/coins/foreign/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69-rev.webp",
+    "image_packaging": "/image/coins/foreign/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/01.png",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/02.jpg",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/03.png",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/04.png",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/05.png",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/06.jpg",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/07.jpg",
-      "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/08.jpg"
-    ],
-    "parsedAt": "2026-03-31T18:05:27.599Z",
-    "slug": "5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69",
-    "image_obverse": "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69/02.jpg"
+      "/image/coins/foreign/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69-obv.webp",
+      "/image/coins/foreign/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69-rev.webp",
+      "/image/coins/foreign/5-euro-coin-belgium-2021-175-years-charles-van-depoele-silver-proof-pf-69-pack.webp"
+    ]
   }
 }

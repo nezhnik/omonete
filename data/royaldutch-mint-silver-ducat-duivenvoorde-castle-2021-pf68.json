@@ -1,23 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-duivenvoorde-castle-2021-pf68",
+    "slug": "silver-ducat-duivenvoorde-castle-2021-pf68",
     "title": "Silver Ducat “Duivenvoorde Castle” 2021 PF68",
     "price_display": "€49.95",
     "description": "#html-body [data-pb-style=LEUHMV8]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Add a unique Silver Ducat to your collection today! The Silver Ducat “Duivenvoorde Castle” 2021 received a PF68 grading. PF68 coins offer great quality with only minimal signs of handling. The strike and luster remain bold and attractive. This amazing coin is a strong choice for collectors seeking value and beauty. A very limited offer is available! Design The obverse of the Silver Ducat “Duivenvoorde Castle” depicts knight Godard de Ginkell in front of the famous castle. The province weapon of Zuid-Holland can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII. HOL MER.”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. “HOL MER.” stands for the province of Zuid-Holland. On the reverse of the Silver Ducat, the National coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength.",
-    "specs": {},
+    "specs": {
+      "Article number": "0122564",
+      "Metal": "Silver",
+      "Content": "873/1000",
+      "Weight": "28.25 g",
+      "Diameter": "40 mm",
+      "Quality": "Proof",
+      "Mintage": "3",
+      "Edge": "Cable"
+    },
+    "parsedAt": "2026-04-05T09:45:54.528Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf68-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf68-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf68-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/01.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/02.jpg",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/03.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/04.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/05.png",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/06.jpg",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/07.jpg",
-      "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/08.jpg"
-    ],
-    "parsedAt": "2026-03-31T18:42:29.262Z",
-    "slug": "silver-ducat-duivenvoorde-castle-2021-pf68",
-    "image_obverse": "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/silver-ducat-duivenvoorde-castle-2021-pf68/02.jpg"
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf68-obv.webp",
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf68-rev.webp",
+      "/image/coins/foreign/silver-ducat-duivenvoorde-castle-2021-pf68-pack.webp"
+    ]
   }
 }

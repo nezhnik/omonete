@@ -1,23 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69",
+    "slug": "50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69",
     "title": "50 years recognition of COC 5 Euro Coin 2023 Silver Proof PF69",
     "price_display": "€64.95",
     "description": "#html-body [data-pb-style=QW4IBCT]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A Silver 50 years recognition of COC coin of demonstrable perfection in your collection? PF69 coins are nearly perfect, with superb detail and strong visual appeal. In this coin, any imperfections are tiny and barely noticeable. A beautiful piece that shines with exceptional quality: add the coin to your collection! The design The 50 years recognition of COC 5 Euro coin is designed by Coen van Ham. The designer reflects on the development the COC has gone through during the recognition in 1973. The coin was designed as swirling confetti: the different kinds of confetti represent the milestones that the COC has achieved over the years. The obverse shows the portrait of King Willem-Alexander, build from swirling confetti. Around the portrait, the text “Willem-Alexander, King of the Netherlands”, is written, in a specially designed font. The reverse contains the COC logo in the middle. Around the logo are several symbols. These represent the milestones that COC has achieved, for example the opening of civil marriage to same-sex couples in 2001 (the two rings) and the obligation of LGBTI+ education in schools in 2012 (the booklet).",
-    "specs": {},
+    "specs": {
+      "Article number": "0122556",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "125",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
+    "parsedAt": "2026-04-05T08:57:36.388Z",
+    "image_obverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69-obv.webp",
+    "image_reverse": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69-rev.webp",
+    "image_packaging": "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/01.png",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/02.jpg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/03.png",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/04.png",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/05.png",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/06.jpg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/07.jpg",
-      "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/08.jpg"
-    ],
-    "parsedAt": "2026-03-31T18:06:44.370Z",
-    "slug": "50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69",
-    "image_obverse": "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69/02.jpg"
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69-obv.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69-rev.webp",
+      "/image/coins/foreign/50-years-recognition-of-coc-5-euro-coin-2023-silver-proof-pf69-pack.webp"
+    ]
   }
 }

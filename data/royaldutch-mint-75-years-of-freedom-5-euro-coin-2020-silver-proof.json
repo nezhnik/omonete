@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/75-years-of-freedom-5-euro-coin-2020-silver-proof",
+    "slug": "75-years-of-freedom-5-euro-coin-2020-silver-proof",
     "title": "75 years of freedom 5 Euro Coin 2020 Silver Proof",
     "price_display": "€49.95",
     "description": "Although a part of the Netherlands was liberated a year before, in 2020 we celebrate that everyone in the Netherlands has lived in freedom since 5 May 1945. The “75 years of freedom Five Euro Coin” is the first commemorative coin of 2020 and is commissioned by the Dutch Ministry of Finance. The Gold issue of the commemorative coin has a nominal value of 10 euros and is called the “75 years of freedom Ten Euro Coin”. 75 years of freedom In 2020 we celebrate that we have lived in freedom for 75 years now, realising that we are all responsible to pass on freedom together. Read more about the celebration of 75 years of freedom in the Netherlands on our page. Inspiration from the designer Artist Marijke van Warmerdam is the designer of the 75 years of freedom 5 Euro Coin. She was inspired by the festivities on May 5th and therefore incorporated a jaunty ribbon on the obverse and reverse of her design. Read more about the design on this page: “From the artist”.",
@@ -15,18 +16,16 @@
       "Mintage": "6.500 (waarvan 2.000 in de Speciale Set)",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:59:21.704Z",
+    "image_obverse": "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-obv.webp",
       "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-rev.webp",
-      "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-box.webp",
-      "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-pack.webp",
-      "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-cert.webp",
-      "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-img-06.webp",
-      "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:07:22.320Z",
-    "slug": "75-years-of-freedom-5-euro-coin-2020-silver-proof",
-    "image_obverse": "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-rev.webp"
+      "/image/coins/foreign/75-years-of-freedom-5-euro-coin-2020-silver-proof-pack.webp"
+    ]
   }
 }

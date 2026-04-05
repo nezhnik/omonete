@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/gouden-dukaat-holland-1782-zfr",
+    "slug": "gouden-dukaat-holland-1782-zfr",
     "title": "DR Gouden Dukaat Holland 1782 ZFr",
     "price_display": "€950.00",
     "description": null,
@@ -10,15 +11,15 @@
       "Content": "983/1000",
       "Weight": "3.49 g"
     },
+    "parsedAt": "2026-04-05T09:11:59.623Z",
+    "image_obverse": "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-obv.webp",
+    "image_reverse": "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-rev.webp",
+    "image_packaging": null,
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-obv.webp",
-      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-rev.webp",
-      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-box.webp",
-      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-pack.webp"
-    ],
-    "parsedAt": "2026-03-31T20:13:04.959Z",
-    "slug": "gouden-dukaat-holland-1782-zfr",
-    "image_obverse": "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-obv.webp",
-    "image_reverse": "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-rev.webp"
+      "/image/coins/foreign/gouden-dukaat-holland-1782-zfr-rev.webp"
+    ]
   }
 }

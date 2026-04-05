@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aviation-5-euro-coin-2019-bu-quality-in-coincard",
+    "slug": "aviation-5-euro-coin-2019-bu-quality-in-coincard",
     "title": "Aviation 5 euro coin 2019 BU-quality in coincard",
     "price_display": "€12.50",
     "description": "BU-munten zijn de eerste munten die met een nieuwe muntstempel worden geslagen, waardoor ze meer glimmen dan de munten in uw portemonnee. De munten worden feitelijk niet geslagen om ze in omloop te brengen, maar zijn bedoeld voor verzamelaars en liefhebbers van aansprekende munten.",
@@ -13,18 +14,16 @@
       "Nominal value": "5 euro",
       "Mintage": "15,000"
     },
+    "parsedAt": "2026-04-05T09:03:53.663Z",
+    "image_obverse": "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-rev.webp",
+    "image_packaging": "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-obv.webp",
       "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-rev.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-box.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-pack.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-cert.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-img-06.webp",
-      "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:10:26.808Z",
-    "slug": "aviation-5-euro-coin-2019-bu-quality-in-coincard",
-    "image_obverse": "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-rev.webp"
+      "/image/coins/foreign/aviation-5-euro-coin-2019-bu-quality-in-coincard-pack.webp"
+    ]
   }
 }

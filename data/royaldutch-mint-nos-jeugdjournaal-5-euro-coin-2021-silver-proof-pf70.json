@@ -1,23 +1,31 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70",
+    "slug": "nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70",
     "title": "NOS Jeugdjournaal 5 Euro Coin 2021 Silver Proof PF70",
     "price_display": "€74.95",
     "description": "#html-body [data-pb-style=AW1ADEL]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A Silver NOS Jeugdjournaal coin of demonstrable perfection in your collection? PF70 is the ultimate grade – a perfect coin with no visible flaws, even under magnification. It’s a true masterpiece of minting, offering flawless beauty and craftsmanship. Add this treasure to your premium collection! The NOS Jeugdjournaal The news program for children was first broadcast on 5 January 1981. It was only on television on school days and lasted seven minutes. The program was not broadcast during school holidays. The NOS Jeugdjournaal can now be seen on TV daily and the broadcasting time has been expanded to twenty minutes. It is one of the longest-running children's news programs in the world, just like the BBC’s Newsround. Newsround had a positive approach in the first years, mainly bringing cheerful news. However, the NOS Jeugdjournaal did not want to shy away from taboos and heavy subjects, but wanted to address them in a clear and child-friendly way. Before the program started, research had shown that children needed a serious news program. Children are therefore actively involved in the news. For example, viewers can express their opinion and respond to statements on the website. During the NOS Jeugdjournaal election debate schoolchildren are allowed to interview the party leaders. This is unique in the world. The program has won various prizes over the years, such as the Gouden Stuiver (the most important prize for children's programs in the Netherlands) and an NPO Zapp Award.",
-    "specs": {},
+    "specs": {
+      "Article number": "0122565",
+      "Metal": "Silver",
+      "Content": "925/1000",
+      "Weight": "15.5 g",
+      "Diameter": "33 mm",
+      "Quality": "Proof",
+      "Nominal value": "5 euro",
+      "Mintage": "158",
+      "Edge lettering": "* GOD * ZIJ * MET * ONS"
+    },
+    "parsedAt": "2026-04-05T09:23:44.751Z",
+    "image_obverse": "/image/coins/foreign/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70-obv.webp",
+    "image_reverse": "/image/coins/foreign/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70-rev.webp",
+    "image_packaging": "/image/coins/foreign/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/01.png",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/02.jpg",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/03.png",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/04.png",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/05.png",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/06.jpg",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/07.jpg",
-      "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/08.jpg"
-    ],
-    "parsedAt": "2026-03-31T18:25:45.915Z",
-    "slug": "nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70",
-    "image_obverse": "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70/02.jpg"
+      "/image/coins/foreign/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70-obv.webp",
+      "/image/coins/foreign/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70-rev.webp",
+      "/image/coins/foreign/nos-jeugdjournaal-5-euro-coin-2021-silver-proof-pf70-pack.webp"
+    ]
   }
 }

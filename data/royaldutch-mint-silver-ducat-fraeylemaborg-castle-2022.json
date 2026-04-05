@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/silver-ducat-fraeylemaborg-castle-2022",
+    "slug": "silver-ducat-fraeylemaborg-castle-2022",
     "title": "Silver Ducat “Fraeylemaborg Castle” 2022",
     "price_display": "€54.95",
     "description": "Silver Ducats are commissioned by the Dutch Ministry of Finance and are collector coins. The issue depicting the Fraeylemaborg is part of the ongoing series “Dutch castles”. Are you also collecting these silver coins? Part 8: Discover the Historical Fraeylemaborg The Fraeylemaborg is located on an estate in Slochteren in Groningen, in the middle of a large park laid out in the English landscape style. The original “borg” (meaning a castle from the province of Groningen) building was founded more than seven centuries ago as a stone house. Over the centuries it grew into an impressive building with influential residents. The building was inhabited until 1972, after which it was sold to the Gerrit van Houten Foundation. The Fraeylemaborg was then restored and opened its doors as a museum. The rooms show images of the time up to the middle of the 20th century, the last phase of private habitation. The Great Hall is used for concerts and receptions, while the Small Hall is used as a wedding hall. There is also a restaurant on site in the former “schathuis” (or cattle shed) and a museum shop in the former coach house. In addition, there is an orangery, where a playful presentation can be seen about the development of the park, from the Ice Age to the present. Knight Godard de Ginkell As written in the Dutch Mint Act, a Silver Ducat must depict a knight in armour with a shield showing the province weapon in front of his left leg. Godard de Ginkell (1644 –1703) puts on the knight’s armour on all Silver Ducats in the series “Dutch Castles”. The historical knight is known in the Netherlands as Godard van Reede, but is named Godard de Ginkell in the United Kingdom thanks to his military earnings there. Discover Godard de Ginkell and other historical knights on our website. Design The obverse of the Silver Ducat “Fraeylemaborg Castle” depicts knight Godard de Ginkell in front of the famous building. The province weapon of Groningen can be found on his shield. The inscription on this issue reads: “MO.NO.ARG.REG.BELGII.GRO.”. “MO.NO.ARG.REG.BELGII.” is the Latin abbreviation for “Moneta Nova Argenta Regni Belgii”: New Silver coin of the Kingdom of the Netherlands. “GRO.” stands for the province of Groningen. On the reverse of the Silver Ducat, the national coat of arms of the Netherlands with the Royal Crown between the numbers of the year can be found. The inscription reads: “CONCORDIA RES PARVAE CRESCUNT”, Unity makes Strength. Here you can also find the mint mark and the privy mark. Are you curious to learn more about the Silver Ducats?",
@@ -14,18 +15,16 @@
       "Mintage": "2,000",
       "Edge": "Cable"
     },
+    "parsedAt": "2026-04-05T09:46:31.226Z",
+    "image_obverse": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-obv.webp",
+    "image_reverse": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-rev.webp",
+    "image_packaging": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-obv.webp",
       "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-rev.webp",
-      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-box.webp",
-      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-pack.webp",
-      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-cert.webp",
-      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-img-06.webp",
-      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:33:07.468Z",
-    "slug": "silver-ducat-fraeylemaborg-castle-2022",
-    "image_obverse": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-obv.webp",
-    "image_reverse": "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-rev.webp"
+      "/image/coins/foreign/silver-ducat-fraeylemaborg-castle-2022-pack.webp"
+    ]
   }
 }

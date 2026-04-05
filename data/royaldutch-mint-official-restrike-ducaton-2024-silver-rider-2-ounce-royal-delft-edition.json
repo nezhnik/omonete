@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition",
+    "slug": "official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition",
     "title": "Official Restrike: Ducaton 2024 “Silver Rider” 2 Ounce – Royal Delft Edition",
     "price_display": "€319.00",
     "description": "The Ducaton is a beloved Royal Dutch Mint issue: the 2023 edition was completely sold out. That is why we decided to release a new restrike of the Ducaton in 2024. And this time it’s a restrike of the coin from 1584. This beautiful coin is available in gold and silver. The silver restrike has a very limited mintage and has a Certificate of Authenticity. Make sure you don’t miss it! Father of the Fatherland and the Ducaton We have had many kinds of coins in the Netherlands. One of them is the Ducaton, a silver coin that originated from Italy. The coin was also used in Spain and later the Spanish Netherlands. The Ducaton was also in circulation during the lifetime of Prince William of Orange. His image and name appear on the packaging of this year. He has played an important part as leader in the Revolt against the Spaniards and as the Father of the Fatherland, Prince William of Orange is a beautiful part of the Ducaton story. The coin holder for the silver Ducaton issues of 2024, traditionally made by Royal Delft, show a high quality transfer image of Prince William of Orange, also known as the Father of the Fatherland. A unique detail is that Royal Delft is located in the city where the life of Prince William of Orange came to an end in 1584: Delft. On the inside of the coin holder, around the coin, is the text ‘Willem van Oranje • Vader des Vaderlands’, which translates to: William of Orange, Father of the Fatherland. A special silver restrike, a beautiful coin holder and an impressive history all come together in this issue! Specifications Royal Delft Coin Holder Size 110 mm diameter, 40 mm height Weight 280 g Material Earthenware Design High-quality transfer Year of issue 2024",
@@ -14,18 +15,16 @@
       "Mintage": "100",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:26:13.531Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-obv.webp",
       "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-box.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:21:28.407Z",
-    "slug": "official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-ducaton-2024-silver-rider-2-ounce-royal-delft-edition-pack.webp"
+    ]
   }
 }

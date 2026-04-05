@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/aruba-5-florin-blenchi-2020-silver-proof",
+    "slug": "aruba-5-florin-blenchi-2020-silver-proof",
     "title": "Aruba 5 Florin “Blenchi” 2020 Silver Proof",
     "price_display": "€54.95",
     "description": "A brightly coloured hummingbird steals the show on the Aruban commemorative coin of 2020. The hummingbird is known as “Blenchi” in Papiamento. This special bird found in Aruba is often mistaken for a bumblebee or other insect before it is identified as a hummingbird. Its wings can make 80 beats per minute, producing a buzzing, insectlike sound. The hummingbird can usually be discovered hovering near flowers. It uses its narrow beak to drink nectar, its main food source, straight out of the flower’s calyx. Due to its extraordinary fast wing-strokes and its tiny size (the hummingbird is the smallest bird in the world!), it is able to hold the perfect position to take a sip. There are over 300 different kinds of hummingbirds, some of which are found on Aruba. Add this very special coloured commemorative coin to your collection today! The Blenchi follows the commemorative coins with the Prikichi (brown-throated parakeet), Soldachi (hermit crab) and Turtuga (green sea turtle) and is the final issue in this series.",
@@ -15,17 +16,16 @@
       "Mintage": "550",
       "Edge lettering": "* DIOS * TA * CU * NOS"
     },
+    "parsedAt": "2026-04-05T09:02:48.251Z",
+    "image_obverse": "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-obv.webp",
       "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-rev.webp",
-      "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-box.webp",
-      "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-pack.webp",
-      "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-cert.webp",
-      "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-img-06.webp"
-    ],
-    "parsedAt": "2026-03-31T20:09:29.473Z",
-    "slug": "aruba-5-florin-blenchi-2020-silver-proof",
-    "image_obverse": "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-rev.webp"
+      "/image/coins/foreign/aruba-5-florin-blenchi-2020-silver-proof-pack.webp"
+    ]
   }
 }

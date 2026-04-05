@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/jaap-eden-5-euro-coin-bu-quality-in-coincard",
+    "slug": "jaap-eden-5-euro-coin-bu-quality-in-coincard",
     "title": "Jaap Eden 5 Euro Coin BU quality in coincard",
     "price_display": "€12.50",
     "description": "With the Jaap Eden 5 Euro Coin, the third issue in the Dutch Sport Icons series, the Netherlands honors its greatest skating legend of the past. Jacobus Johannes Eden (Groningen, October 19, 1873) became the Netherlands' greatest skating legend at the end of the 19th century. Although that was more than 100 years ago, his exceptional achievements are still widely recognized in our skating country. For example, the annual sports prize \"Athlete of the Year\" was named after him and the Jaap Eden Ice Rink was opened in Amsterdam in 1961. Read more about Jaap Eden here. Inspiration of the designer The Jaap Eden 5 Euro Coin is designed by artist Wineke Gartz. On the coin we see Jaap Eden, who comes to skate towards us in the manner of a great champion: strong and unyielding, but at the same time calm and self-evident. We see the bent posture of the winner who goes his own way, through storms and struggle, driven by the will to be the best. It even reminds us a little bit of the harsh winters of the past. The deep-lying scratches in the ice give the feeling of a Dutch landscape and symbolize the impression that Jaap Eden left as an athlete. On the front we see the scratches again, but mirrored. The impact of Jaap Eden literally presses through in the present. The superimposed scratches on the shiny background form a festive, radiant background for the portrait of King Willem-Alexander. Read more about the design from the designer herself on this page: “From the designer”.",
@@ -13,18 +14,16 @@
       "Nominal value": "5 euro",
       "Mintage": "15,000"
     },
+    "parsedAt": "2026-04-05T09:12:59.116Z",
+    "image_obverse": "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-obv.webp",
+    "image_reverse": "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-rev.webp",
+    "image_packaging": "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-obv.webp",
       "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-rev.webp",
-      "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-box.webp",
-      "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-pack.webp",
-      "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-cert.webp",
-      "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-img-06.webp",
-      "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:14:06.755Z",
-    "slug": "jaap-eden-5-euro-coin-bu-quality-in-coincard",
-    "image_obverse": "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-obv.webp",
-    "image_reverse": "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-rev.webp"
+      "/image/coins/foreign/jaap-eden-5-euro-coin-bu-quality-in-coincard-pack.webp"
+    ]
   }
 }

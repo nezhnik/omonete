@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/5-euro-2008-architectuur-proof",
+    "slug": "5-euro-2008-architectuur-proof",
     "title": "HM 5 Euro 2008 Architectuur Proof",
     "price_display": "€69.95",
     "description": null,
@@ -14,18 +15,16 @@
       "Mintage": "25,000",
       "Edge lettering": "* GOD * ZIJ * MET * ONS"
     },
+    "parsedAt": "2026-04-05T08:54:52.714Z",
+    "image_obverse": "/image/coins/foreign/5-euro-2008-architectuur-proof-obv.webp",
+    "image_reverse": "/image/coins/foreign/5-euro-2008-architectuur-proof-rev.webp",
+    "image_packaging": "/image/coins/foreign/5-euro-2008-architectuur-proof-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/5-euro-2008-architectuur-proof-obv.webp",
       "/image/coins/foreign/5-euro-2008-architectuur-proof-rev.webp",
-      "/image/coins/foreign/5-euro-2008-architectuur-proof-box.webp",
-      "/image/coins/foreign/5-euro-2008-architectuur-proof-pack.webp",
-      "/image/coins/foreign/5-euro-2008-architectuur-proof-cert.webp",
-      "/image/coins/foreign/5-euro-2008-architectuur-proof-img-06.webp",
-      "/image/coins/foreign/5-euro-2008-architectuur-proof-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:03:22.224Z",
-    "slug": "5-euro-2008-architectuur-proof",
-    "image_obverse": "/image/coins/foreign/5-euro-2008-architectuur-proof-obv.webp",
-    "image_reverse": "/image/coins/foreign/5-euro-2008-architectuur-proof-rev.webp"
+      "/image/coins/foreign/5-euro-2008-architectuur-proof-pack.webp"
+    ]
   }
 }

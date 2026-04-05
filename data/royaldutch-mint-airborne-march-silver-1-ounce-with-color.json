@@ -1,6 +1,7 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/airborne-march-silver-1-ounce-with-color",
+    "slug": "airborne-march-silver-1-ounce-with-color",
     "title": "Airborne March Silver 1 Ounce with color",
     "price_display": "€139.00",
     "description": "#html-body [data-pb-style=I03393F]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}Heritage comes in many different forms. In 2023 and 2022 we had a festive issue (for 10 years of Kingsday and Summer Carnival Rotterdam). Now, we have a very nice issue with an important message that shouldn’t be forgotten. The Royal Dutch Mint launches an exclusive Silver issue for the Airborne March, to commemorate the Allied soldiers and their sacrifices during the Battle for Arnhem in September 1944. The Airborne March Silver 1 Ounce with color is part of the series “Intangible Heritage of The Netherlands”. Airborne March From 17th to 25th of September 1944, there was a hard fight going on in and around the city of Arnhem. The landing on the 17th September and following battle where both part of Operation Market Garden. More than 5,000 men landed in Wolfheze and north of Heelsum, in the afternoon of 17 September. A day later, 1,900 parachutists landed near Ede and Wolfheze. After heavy battles, the Allied soldiers couldn’t keep possession of the John Frost Bridge over the Rhine River. In the night of 25th to 26th of September, 2,400 soldiers managed to get to safe territory, after crossing the Rhine near Oosterbeek. Almost 6,500 soldiers were held prisoners of war and weren’t freed until April or May 1945. To never forget the sacrifices of the Allied soldiers, the Politie Sportvereniging Renkum (Police Sports Association Renkum) organized an Airborne March for the first time in 1947. The idea was to create a commemorative march, to honor the onces that fought for the liberation of our county. Around 2,000 people took part in the first March. Today, thousands of people take part in the Airborne March. Participants can choose from four routes, of 10, 15, 25 and 40 kilometers. The routes pass important landmarks from those days in September 1944. Members of the Police Sports Association Renkum and hundreds of volunteers work hard every day to organize a great day. Design The Airborne March Silver issue is all about the Allied soldiers. That is why a group of soldiers is portrayed on the obverse, with parachutes in the background. In the middle is the text “Lest we forget”. These letters have been given a gold color, to emphasize the importance of this line. The reverse of this Silver issue has the logo of the Inventory Intangible Heritage The Netherlands. The Silver 1 Ounce issue is delivered in an amazing packaging.",
@@ -14,18 +15,16 @@
       "Mintage": "150",
       "Edge": "Smooth"
     },
+    "parsedAt": "2026-04-05T09:01:53.187Z",
+    "image_obverse": "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-obv.webp",
+    "image_reverse": "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-rev.webp",
+    "image_packaging": "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-obv.webp",
       "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-rev.webp",
-      "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-box.webp",
-      "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-pack.webp",
-      "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-cert.webp",
-      "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-img-06.webp",
-      "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T20:08:41.274Z",
-    "slug": "airborne-march-silver-1-ounce-with-color",
-    "image_obverse": "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-obv.webp",
-    "image_reverse": "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-rev.webp"
+      "/image/coins/foreign/airborne-march-silver-1-ounce-with-color-pack.webp"
+    ]
   }
 }

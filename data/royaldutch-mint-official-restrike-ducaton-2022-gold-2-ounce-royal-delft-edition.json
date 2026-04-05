@@ -1,22 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition",
+    "slug": "official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition",
     "title": "Official Restrike: Ducaton 2022 Gold 2 Ounce - Royal Delft Edition",
     "price_display": "€5,499.00",
     "description": "Following the success of previous editions, the Royal Dutch Mint is again launching restrikes of the Ducaton. This former trade coin depicts the “Silver Rider”: a rider on horseback with sword raised, ready for battle! The popular coin is available in silver and gold, in both a 1 ounce and a Piedfort edition. All Ducatons are strictly limited and will be delivered including a Certificate of Authenticity. Unique Coin Holder from Royal Delft The Ducaton 2022 of the Royal Dutch Mint is presented in the familiar earthenware coin holder, fabricated by Royal Delft. The Delftware coin holder reflects the scene on the coin and also shows a rider on horseback. Below the rider you see the Dutch coat of arms. The scene is surrounded by the text MO: NO: ARG: CONFOE: BELG: PRO: TRAI (New silver coin of the United Provinces of the Netherlands, Utrecht). The Royal Delfst coin holders are traditionally made, watch the video to see how! Moreover, the coin holders containing the golden restrikes of the Ducaton 2022 are hand-painted and uniquely numbered. Piedfort Edition The numismatic term “Piedfort” stands for a coin struck in double thickness. Besides in 1 ounce silver, the Silver Rider is also available in 2 ounces, twice as thick than the regular edition. Traditionally, Piedfort coins were minted to convey prosperity and power. In the sixteenth and seventeenth centuries, rulers gave these prestigious coins as gifts to their household. Today, Piedfort coins are highly sought-after collector's items. Specifications Royal Delft Coin Holder Size 110 mm diameter, 40 mm height Weight 280 g Material Earthenware Design Hand-painted and uniquely numbered Year of issue 2022",
-    "specs": {},
+    "specs": {
+      "Article number": "0113030",
+      "Metal": "Gold",
+      "Content": "999.9/1000",
+      "Weight": "2 troy ounce (62.2 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "20",
+      "Edge": "serrated"
+    },
+    "parsedAt": "2026-04-05T09:24:29.943Z",
+    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-obv.webp",
+    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-rev.webp",
+    "image_packaging": "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
       "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-obv.webp",
       "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-rev.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-box.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-pack.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-cert.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-img-06.webp",
-      "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-img-07.webp"
-    ],
-    "parsedAt": "2026-03-31T18:26:43.912Z",
-    "slug": "official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition",
-    "image_obverse": "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-obv.webp",
-    "image_reverse": "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-rev.webp"
+      "/image/coins/foreign/official-restrike-ducaton-2022-gold-2-ounce-royal-delft-edition-pack.webp"
+    ]
   }
 }

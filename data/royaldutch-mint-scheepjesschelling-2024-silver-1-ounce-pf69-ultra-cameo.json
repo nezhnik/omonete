@@ -1,23 +1,30 @@
 {
   "coin": {
     "source_url": "https://www.royaldutchmint.com/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo",
+    "slug": "scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo",
     "title": "“Scheepjesschelling” 2024 Silver 1 Ounce (PF69 Ultra Cameo)",
     "price_display": "€109.95",
     "description": "#html-body [data-pb-style=C3LU14G]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}A Silver Restrike coin of the highest quality in your possession? A limited amount of “Scheepjesschelling” Silver restrikes are now available as a graded PF69 coin. The “Scheepjesschelling” 2024 Silver 1 Ounce was graded by independent company NGC (Numismatic Guaranty Company). Only 3 pieces received the second highest possible grading: PF69 Ultra Cameo. PF69 means that the coin has almost no post-production. Ultra Cameo means that this coin has a very bold contrast on both sides of the coin. Thanks to this grading, you can have a classified, perfectly struck Silver restrike at home. Scan the QR code on this slabbed coin for the official NGC certification. More information about the total mintage and specifications of the “Scheepjesschelling” 2024 Silver 1 Ounce can be found here. “Scheepjesschelling” 2024 Silver The ‘Scheepjesschelling’ is a Dutch shilling that was minted to emphasize the status of the Dutch Republic. This shilling was especially popular with the trading in the East. Therefore it was given the name ‘Scheepjesschelling’. Every year, the Royal Dutch Mint strikes popular trade coins, such as the ‘Scheepjesschelling’. In 2024, we mint a restrike of the ‘Scheepjesschelling’ from Gelderland, which was minted in 1706. DesignThe obverse of the Silver 1 Ounce ‘Scheepjesschelling’ 2024 from Gelderland shows a warship. Around the ship is a Latin legend: VIGILATE.DEO.CONFIDENTES’, which means ‘Trusting on God’. The reverse of the silver coin shows the provincial coat of arms of Gelderland and the inscription ‘MO.ARG.ORD:DVC.GELETCZ’. which means: New coin for the Duchy of Gelderland and the County of Zutphen.",
-    "specs": {},
+    "specs": {
+      "Article number": "0120719",
+      "Metal": "Silver",
+      "Content": "999/1000",
+      "Weight": "1 troy ounce (31.1 g)",
+      "Diameter": "38.7 mm",
+      "Quality": "Proof",
+      "Mintage": "3",
+      "Edge": "Smooth"
+    },
+    "parsedAt": "2026-04-05T09:43:17.143Z",
+    "image_obverse": "/image/coins/foreign/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo-obv.webp",
+    "image_reverse": "/image/coins/foreign/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo-rev.webp",
+    "image_packaging": "/image/coins/foreign/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo-pack.webp",
+    "image_box": null,
+    "image_certificate": null,
     "imageUrls": [
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/01.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/02.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/03.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/04.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/05.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/06.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/07.png",
-      "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/08.png"
-    ],
-    "parsedAt": "2026-03-31T18:40:52.218Z",
-    "slug": "scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo",
-    "image_obverse": "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/01.png",
-    "image_reverse": "/image/coins/foreign/royaldutch/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo/02.png"
+      "/image/coins/foreign/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo-obv.webp",
+      "/image/coins/foreign/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo-rev.webp",
+      "/image/coins/foreign/scheepjesschelling-2024-silver-1-ounce-pf69-ultra-cameo-pack.webp"
+    ]
   }
 }
